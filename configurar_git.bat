@@ -22,8 +22,8 @@ echo [INFO] Descargando informacion de GitHub...
 git fetch origin
 
 echo [INFO] Vinculando rama local con la de GitHub...
-git checkout -f main
-git branch --set-upstream-to=origin/main main
+git checkout -f codigo-app
+git branch --set-upstream-to=origin/codigo-app codigo-app
 
 echo.
 echo ===========================================
