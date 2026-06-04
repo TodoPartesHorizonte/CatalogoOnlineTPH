@@ -151,6 +151,14 @@ def clean_text_for_catalog(raw_text, category):
     # Colapsar múltiples espacios
     text = re.sub(r'\s+', ' ', text).strip()
     
+    # Si contiene un UUID, removerlo. Si la descripción se vuelve vacía, usar la categoría.
+    uuid_pattern = r'[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}'
+    if re.search(uuid_pattern, text):
+        cleaned_from_uuid = re.sub(uuid_pattern, '', text).strip()
+        if len(cleaned_from_uuid) < 4:
+            return category.upper()
+        text = cleaned_from_uuid
+    
     # Convertir a mayúsculas
     text = text.upper()
     
