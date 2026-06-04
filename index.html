@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO PARTES Horizonte - Catálogo de Repuestos</title>
+    
+    <!-- Metadatos SEO -->
+    <meta name="description" content="Catálogo online de repuestos automotrices de las mejores marcas. Filtra, busca y consulta disponibilidad directamente por WhatsApp.">
+    <meta name="keywords" content="repuestos, automotriz, luv d-max, muñones, terminales, abrazaderas, TODO PARTES, Horizonte">
+    <meta name="author" content="TODO PARTES Horizonte">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Base de datos de productos (Evita bloqueos de CORS locales) -->
+    <script src="./products.js"></script>
+
+    
+    <style>
+        :root {
+            --bg-primary: #0a0a0c;
+            --bg-secondary: #111116;
+            --bg-card: rgba(17, 17, 22, 0.7);
+            --accent-orange: #ff6a00;
+            --accent-orange-hover: #f05a18;
+            --accent-green: #25d366;
+            --accent-green-hover: #128c7e;
+            --text-primary: #ffffff;
+            --text-secondary: #9ea0a8;
+            --text-muted: #5e6068;
+            --border-color: rgba(255, 255, 255, 0.05);
+            --border-glow: rgba(255, 106, 0, 0.15);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Reset y estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+            background-size: 24px 24px;
+            padding-bottom: 80px; /* Espacio para el FAB en móvil */
+        }
+
+        /* Scrollbar personalizado */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #22222a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-orange);
+        }
+
+        /* --- CABECERA --- */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 12, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 24px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        /* Branding - Logo tipo Flyer */
+        .logo-box {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-title {
+            font-size: 28px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-primary);
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .logo-title span {
+            color: var(--accent-orange);
+            background: linear-gradient(135deg, #ff8a00, var(--accent-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-subtitle {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .logo-rif {
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-top: 2px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2px 8px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logo-image {
+            max-height: 80px;
+            max-width: 280px;
+            object-fit: contain;
+            margin-bottom: 4px;
+        }
+
+
+        /* Buscador */
+        .search-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 14px 20px 14px 50px;
+            border-radius: 30px;
+            border: 1px solid var(--border-color);
+            background-color: rgba(255, 255, 255, 0.03);
+            color: var(--text-primary);
+            font-size: 15px;
+            font-weight: 500;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-orange);
+            background-color: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 15px var(--border-glow);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            fill: var(--text-secondary);
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+            transition: var(--transition);
+        }
+
+        .search-input:focus + .search-icon {
+            fill: var(--accent-orange);
+        }
+
+        /* --- FILTROS DE CATEGORÍAS --- */
+        .categories-container {
+            max-width: 1200px;
+            margin: 20px auto 0 auto;
+            padding: 0 24px;
+        }
+
+        .categories-scroll {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 8px 4px 16px 4px;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* IE and Edge */
+        }
+
+        .categories-scroll::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .category-pill {
+            white-space: nowrap;
+            padding: 10px 18px;
+            border-radius: 20px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .category-pill span {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 11px;
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        .category-pill:hover {
+            color: var(--text-primary);
+            border-color: rgba(255, 106, 0, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .category-pill.active {
+            background: linear-gradient(135deg, #ff8a00, var(--accent-orange));
+            border-color: transparent;
+            color: var(--text-primary);
+            box-shadow: 0 4px 15px rgba(255, 106, 0, 0.3);
+        }
+
+        .category-pill.active span {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--text-primary);
+        }
+
+        /* --- REJILLA DE PRODUCTOS --- */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 10px;
+        }
+
+        /* Tarjeta de Producto */
+        .product-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent-orange);
+            box-shadow: 0 10px 25px rgba(255, 106, 0, 0.15);
+        }
+
+        /* Contenedor de Imagen de Tarjeta */
+        .card-img-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4/5;
+            background-color: #0d0d12;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.05);
+        }
+
+        /* Etiqueta de Categoría */
+        .category-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(10, 10, 12, 0.75);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid var(--accent-orange);
+            color: var(--text-primary);
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 12px;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+
+        /* Contenido de Tarjeta */
+        .card-content {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 12px;
+        }
+
+        .product-desc {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.4;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex-grow: 1;
+        }
+
+        .card-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            border: 1px solid rgba(37, 211, 102, 0.2);
+            background: rgba(37, 211, 102, 0.05);
+            color: var(--accent-green);
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .card-btn:hover {
+            background: var(--accent-green);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+            border-color: transparent;
+        }
+
+        .card-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        /* --- SKELETON LOADERS --- */
+        .skeleton-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            height: 420px;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            position: relative;
+        }
+
+        .skeleton-img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            background: linear-gradient(90deg, #111116 25%, #1c1c24 50%, #111116 75%);
+            background-size: 200% 100%;
+            animation: loading-pulse 1.5s infinite;
+        }
+
+        .skeleton-info {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            flex-grow: 1;
+        }
+
+        .skeleton-title {
+            height: 40px;
+            background: linear-gradient(90deg, #111116 25%, #1c1c24 50%, #111116 75%);
+            background-size: 200% 100%;
+            animation: loading-pulse 1.5s infinite;
+            border-radius: 4px;
+        }
+
+        .skeleton-button {
+            height: 40px;
+            background: linear-gradient(90deg, #111116 25%, #1c1c24 50%, #111116 75%);
+            background-size: 200% 100%;
+            animation: loading-pulse 1.5s infinite;
+            border-radius: 12px;
+            margin-top: auto;
+        }
+
+        @keyframes loading-pulse {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* --- ESTADO COMPARTIDO VACÍO --- */
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 24px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .empty-state svg {
+            width: 64px;
+            height: 64px;
+            fill: var(--text-muted);
+        }
+
+        .empty-state h3 {
+            font-size: 18px;
+            color: var(--text-primary);
+        }
+
+        .empty-state p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            max-width: 400px;
+        }
+
+        /* --- VISUALIZADOR LIGHTBOX (MODAL) --- */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(6, 6, 8, 0.96);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            z-index: 1000;
+            display: none;
+            opacity: 0;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            transition: opacity 0.3s ease;
+        }
+
+        .lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 1010;
+        }
+
+        .lightbox-close:hover {
+            background: var(--accent-orange);
+            border-color: transparent;
+            transform: rotate(90deg);
+        }
+
+        .lightbox-content {
+            width: 100%;
+            max-width: 900px;
+            background: #0f0f13;
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            box-shadow: var(--glass-shadow);
+            transform: scale(0.9);
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .lightbox.active .lightbox-content {
+            transform: scale(1);
+        }
+
+        .lightbox-img-wrapper {
+            position: relative;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            aspect-ratio: 4/5;
+        }
+
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .lightbox-info {
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            border-left: 1px solid var(--border-color);
+        }
+
+        .lightbox-badge {
+            align-self: flex-start;
+            background: rgba(255, 106, 0, 0.1);
+            border: 1px solid var(--accent-orange);
+            color: var(--accent-orange);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .lightbox-desc {
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 1.4;
+            color: var(--text-primary);
+            text-transform: uppercase;
+        }
+
+        .lightbox-action-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px;
+            border-radius: 16px;
+            border: none;
+            background: var(--accent-green);
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .lightbox-action-btn:hover {
+            background: var(--accent-green-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .lightbox-action-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: #ffffff;
+        }
+
+        /* --- BOTÓN FLOTANTE GENERAL DE WHATSAPP (FAB) --- */
+        .fab-whatsapp {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--accent-green);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 90;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .fab-whatsapp:hover {
+            background: var(--accent-green-hover);
+            transform: scale(1.1) translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+        }
+
+        .fab-whatsapp svg {
+            width: 28px;
+            height: 28px;
+            fill: #ffffff;
+        }
+
+        /* --- RESPONSIVIDAD (MÓVIL / TABLETAS) --- */
+        @media (max-width: 768px) {
+            header {
+                padding: 16px;
+            }
+
+            .logo-title {
+                font-size: 22px;
+            }
+
+            .logo-subtitle {
+                font-size: 9px;
+                letter-spacing: 2px;
+            }
+
+            .categories-container {
+                padding: 0 16px;
+                margin-top: 12px;
+            }
+
+            .categories-scroll {
+                padding-bottom: 12px;
+            }
+
+            main {
+                padding: 0 16px;
+            }
+
+            .grid-container {
+                gap: 16px;
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            }
+
+            .product-card {
+                border-radius: 12px;
+            }
+
+            .category-badge {
+                font-size: 8px;
+                padding: 3px 8px;
+                top: 8px;
+                left: 8px;
+            }
+
+            .card-content {
+                padding: 12px;
+                gap: 8px;
+            }
+
+            .product-desc {
+                font-size: 11px;
+                font-weight: 700;
+                -webkit-line-clamp: 2;
+            }
+
+            .card-btn {
+                padding: 8px;
+                border-radius: 8px;
+                font-size: 11px;
+                gap: 4px;
+            }
+
+            .card-btn span {
+                display: none; /* Ocultar texto en móviles pequeños */
+            }
+            .card-btn::after {
+                content: "Consultar"; /* Texto abreviado */
+            }
+
+            .card-btn svg {
+                width: 14px;
+                height: 14px;
+            }
+
+            /* Lightbox adaptado a vertical en móvil */
+            .lightbox-content {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                border-radius: 16px;
+            }
+
+            .lightbox-info {
+                padding: 20px;
+                border-left: none;
+                border-top: 1px solid var(--border-color);
+                gap: 16px;
+            }
+
+            .lightbox-desc {
+                font-size: 15px;
+            }
+
+            .lightbox-action-btn {
+                padding: 12px;
+                border-radius: 12px;
+                font-size: 13px;
+            }
+
+            .lightbox-close {
+                top: 16px;
+                right: 16px;
+                width: 36px;
+                height: 36px;
+                font-size: 18px;
+            }
+        }
+
+        /* --- SELECTOR DE VISTA --- */
+        .view-selector {
+            display: flex;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 30px;
+            padding: 4px;
+            width: fit-content;
+            margin: 0 auto;
+            gap: 4px;
+        }
+
+        .view-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            padding: 8px 18px;
+            border-radius: 26px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .view-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .view-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .view-btn.active {
+            background: linear-gradient(135deg, #ff8a00, var(--accent-orange));
+            color: var(--text-primary);
+            box-shadow: 0 4px 15px rgba(255, 106, 0, 0.3);
+        }
+
+        /* --- TARJETAS DE CARPETA --- */
+        .category-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            aspect-ratio: 16/10;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .category-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-orange);
+            box-shadow: 0 8px 20px rgba(255, 106, 0, 0.15);
+        }
+
+        .category-card-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.25;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            filter: grayscale(30%) blur(1px);
+        }
+
+        .category-card:hover .category-card-bg {
+            transform: scale(1.08);
+            opacity: 0.4;
+            filter: grayscale(0%) blur(0px);
+        }
+
+        .category-card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(10, 10, 12, 0.95) 20%, rgba(10, 10, 12, 0.4) 100%);
+            z-index: 1;
+        }
+
+        .category-card-content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .category-card-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .category-card-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+
+        .category-card-count {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .category-card-icon {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 106, 0, 0.1);
+            border: 1px solid rgba(255, 106, 0, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-orange);
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+
+        .category-card:hover .category-card-icon {
+            background: var(--accent-orange);
+            color: var(--text-primary);
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 106, 0, 0.4);
+        }
+
+        .category-card-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        /* Mobile overrides for view selector */
+        @media (max-width: 768px) {
+            header {
+                padding: 12px 16px;
+            }
+            .header-container {
+                gap: 12px;
+            }
+            .logo-image {
+                max-height: 50px;
+            }
+            .view-selector {
+                width: 100%;
+            }
+            .view-btn {
+                flex: 1;
+                justify-content: center;
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+            .category-card {
+                aspect-ratio: 1.4;
+            }
+            .category-card-content {
+                padding: 12px;
+            }
+            .category-card-name {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <div class="header-container">
+            <div class="logo-box">
+                <h1 class="logo-title">TODO PARTES <span>Horizonte</span></h1>
+                <div class="logo-subtitle">Repuestos de las mejores marcas</div>
+                <div class="logo-rif">RIF: J-50180765-5</div>
+            </div>
+            
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="search-input" placeholder="Buscar por repuesto, marca o modelo..." autocomplete="off">
+                <svg class="search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+            </div>
+
+            <div class="view-selector">
+                <button class="view-btn active" id="btnViewPhotos" title="Ver fotos de productos">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                    </svg>
+                    Ver Fotos
+                </button>
+                <button class="view-btn" id="btnViewFolders" title="Ver carpetas de categorías">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                    </svg>
+                    Ver Carpetas
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BARRA DE CATEGORÍAS -->
+    <div class="categories-container" id="categoriesScrollContainer">
+        <div class="categories-scroll" id="categoriesScroll">
+            <!-- Cargado dinámicamente -->
+        </div>
+    </div>
+
+    <!-- CUERPO PRINCIPAL -->
+    <main>
+        <div class="grid-container" id="productsGrid">
+            <!-- Esqueleto mientras carga -->
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-title"></div><div class="skeleton-button"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-title"></div><div class="skeleton-button"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-title"></div><div class="skeleton-button"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-title"></div><div class="skeleton-button"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-title"></div><div class="skeleton-button"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-title"></div><div class="skeleton-button"></div></div></div>
+        </div>
+
+        <!-- Grilla de Carpetas (Nueva) -->
+        <div class="grid-container" id="foldersGrid" style="display: none; margin-top: 10px;">
+            <!-- Cargado dinámicamente -->
+        </div>
+
+        <!-- Estado Vacío -->
+        <div class="empty-state" id="emptyState">
+            <svg viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <h3>No se encontraron resultados</h3>
+            <p>Prueba buscando con otras palabras clave o seleccionando otra categoría.</p>
+        </div>
+    </main>
+
+    <!-- VISUALIZADOR LIGHTBOX (MODAL) -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar modal">&times;</button>
+        <div class="lightbox-content">
+            <div class="lightbox-img-wrapper">
+                <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            </div>
+            <div class="lightbox-info">
+                <span class="lightbox-badge" id="lightboxBadge">Categoría</span>
+                <h2 class="lightbox-desc" id="lightboxDesc">ABRAZADERA BARRA ESTABILIZADORA</h2>
+                <a href="" target="_blank" class="lightbox-action-btn" id="lightboxActionBtn">
+                    <svg viewBox="0 0 448 512">
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 512l147.7-38.7c32.4 17.7 68.8 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-87.9 23 23.4-85.6-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                    </svg>
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTÓN FLOTANTE GENERAL DE WHATSAPP -->
+    <a href="" target="_blank" class="fab-whatsapp" id="fabWhatsapp" aria-label="Enviar mensaje por WhatsApp">
+        <svg viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 512l147.7-38.7c32.4 17.7 68.8 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-87.9 23 23.4-85.6-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+
+    <!-- JAVASCRIPT DE CONTROL -->
+    <script>
+        // Configuración Global
+        let WHATSAPP_NUMBER = "584242116375";
+        let productsData = [];
+        let activeCategory = "ALL";
+        let searchQuery = "";
+        let activeView = "PHOTOS"; // "PHOTOS" o "FOLDERS"
+
+        // Elementos del DOM
+        const searchInput = document.getElementById('searchInput');
+        const categoriesScroll = document.getElementById('categoriesScroll');
+        const productsGrid = document.getElementById('productsGrid');
+        const foldersGrid = document.getElementById('foldersGrid');
+        const categoriesScrollContainer = document.getElementById('categoriesScrollContainer');
+        const btnViewPhotos = document.getElementById('btnViewPhotos');
+        const btnViewFolders = document.getElementById('btnViewFolders');
+        const emptyState = document.getElementById('emptyState');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxBadge = document.getElementById('lightboxBadge');
+        const lightboxDesc = document.getElementById('lightboxDesc');
+        const lightboxActionBtn = document.getElementById('lightboxActionBtn');
+        const fabWhatsapp = document.getElementById('fabWhatsapp');
+
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchProducts();
+            setupEventListeners();
+        });
+
+        // Carga de Datos desde products.js (cargado como script global PRODUCTS_DATA)
+        async function fetchProducts() {
+            try {
+                if (typeof PRODUCTS_DATA === 'undefined') {
+                    throw new Error('PRODUCTS_DATA no está definido.');
+                }
+                const data = PRODUCTS_DATA;
+                
+                // Actualizar configuración
+                productsData = data.products || [];
+                WHATSAPP_NUMBER = data.whatsapp_number || WHATSAPP_NUMBER;
+                
+                // Mostrar logo personalizado si existe
+                if (data.use_custom_logo) {
+                    const logoBox = document.querySelector('.logo-box');
+                    if (logoBox) {
+                        logoBox.innerHTML = `
+                            <img src="${data.use_custom_logo}" alt="Logo" class="logo-image">
+                            <div class="logo-rif">RIF: J-50180765-5</div>
+                        `;
+                    }
+                }
+
+
+                
+                // Configurar FAB General de WhatsApp
+                const catalogUrl = window.location.href.split('?')[0];
+                const generalMsg = encodeURIComponent(`¡Hola! Vengo desde el catálogo online y me gustaría hacer una consulta.`);
+                fabWhatsapp.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${generalMsg}`;
+
+                // Renderizar categorías y productos
+                renderCategories(productsData);
+                switchView('PHOTOS');
+            } catch (error) {
+                console.error('Error al inicializar el catálogo:', error);
+                productsGrid.innerHTML = `
+                    <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--accent-orange)">
+                        <p style="font-weight: 700; font-size: 18px;">Error al cargar el catálogo de productos</p>
+                        <p style="font-size: 14px; margin-top: 8px; color: var(--text-secondary)">Asegúrate de haber ejecutado el script de sincronización local.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Renderizado de Categorías
+        function renderCategories(products) {
+            // Contar productos por categoría
+            const counts = {};
+            products.forEach(p => {
+                counts[p.category] = (counts[p.category] || 0) + 1;
+            });
+
+            // Generar HTML de categorías
+            let html = `
+                <button class="category-pill active" data-category="ALL" id="cat-all">
+                    Ver Todo <span>${products.length}</span>
+                </button>
+            `;
+
+            // Ordenar categorías alfabéticamente
+            const categories = Object.keys(counts).sort();
+            
+            categories.forEach(cat => {
+                html += `
+                    <button class="category-pill" data-category="${cat}" id="cat-${cat.replace(/\s+/g, '-')}">
+                        ${cat} <span>${counts[cat]}</span>
+                    </button>
+                `;
+            });
+
+            categoriesScroll.innerHTML = html;
+
+            // Registrar eventos de clic para los filtros
+            document.querySelectorAll('.category-pill').forEach(pill => {
+                pill.addEventListener('click', (e) => {
+                    document.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
+                    const selectedPill = e.currentTarget;
+                    selectedPill.classList.add('active');
+                    
+                    activeCategory = selectedPill.getAttribute('data-category');
+                    renderProducts();
+                    
+                    // Desplazar pill seleccionada al centro en móviles
+                    selectedPill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                });
+            });
+        }
+
+        // Renderizado de Productos
+        function renderProducts() {
+            // Filtrar productos
+            const filteredProducts = productsData.filter(product => {
+                // Filtro por categoría
+                const matchesCategory = activeCategory === 'ALL' || product.category === activeCategory;
+                
+                // Filtro por buscador (búsqueda multi-término)
+                let matchesSearch = true;
+                if (searchQuery.trim() !== '') {
+                    const terms = searchQuery.toLowerCase().split(/\s+/).filter(t => t.length > 0);
+                    matchesSearch = terms.every(term => {
+                        const inDesc = product.description.toLowerCase().includes(term);
+                        const inCat = product.category.toLowerCase().includes(term);
+                        const inKeywords = product.keywords.some(k => k.toLowerCase().includes(term));
+                        return inDesc || inCat || inKeywords;
+                    });
+                }
+                
+                return matchesCategory && matchesSearch;
+            });
+
+            // Si no hay productos, mostrar estado vacío
+            if (filteredProducts.length === 0) {
+                productsGrid.style.display = 'none';
+                emptyState.style.display = 'flex';
+                return;
+            }
+
+            productsGrid.style.display = 'grid';
+            emptyState.style.display = 'none';
+
+            // Generar HTML de las tarjetas
+            let gridHtml = '';
+            filteredProducts.forEach(product => {
+                // Prefila el mensaje de consulta de WhatsApp
+                const cardUrl = `${window.location.origin}${window.location.pathname}`;
+                const waMsg = encodeURIComponent(
+                    `¡Hola! Estoy interesado en el repuesto: *${product.description}* (Categoría: *${product.category}*).\n¿Tienen disponibilidad y precio?\nEnlace: ${cardUrl}`
+                );
+                const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMsg}`;
+
+                gridHtml += `
+                    <div class="product-card" id="card-${product.id}">
+                        <div class="card-img-wrapper" onclick="openLightbox('${product.id}')">
+                            <span class="category-badge">${product.category}</span>
+                            <img src="${product.image_path}" alt="${product.description}" class="product-img" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="product-desc" title="${product.description}">${product.description}</div>
+                            <a href="${whatsappLink}" target="_blank" class="card-btn" id="btn-wa-${product.id}" aria-label="Consultar repuesto por WhatsApp">
+                                <svg viewBox="0 0 448 512">
+                                    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 512l147.7-38.7c32.4 17.7 68.8 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-87.9 23 23.4-85.6-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                                </svg>
+                                <span>Consultar</span>
+                            </a>
+                        </div>
+                    </div>
+                `;
+            });
+            productsGrid.innerHTML = gridHtml;
+        }
+
+        // Apertura del Lightbox Modal
+        window.openLightbox = function(productId) {
+            const product = productsData.find(p => p.id === productId);
+            if (!product) return;
+
+            lightboxImg.src = product.image_path;
+            lightboxImg.alt = product.description;
+            lightboxBadge.innerText = product.category;
+            lightboxDesc.innerText = product.description;
+            
+            // Redacción del mensaje automático de WhatsApp
+            const cardUrl = `${window.location.origin}${window.location.pathname}`;
+            const waMsg = encodeURIComponent(
+                `¡Hola! Estoy interesado en el repuesto: *${product.description}* (Categoría: *${product.category}*).\n¿Tienen disponibilidad y precio?\nEnlace: ${cardUrl}`
+            );
+            lightboxActionBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMsg}`;
+            
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Detener scroll de fondo
+        };
+
+        // Cierre del Lightbox Modal
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = ''; // Restaurar scroll
+            setTimeout(() => {
+                lightboxImg.src = '';
+            }, 300);
+        }
+
+        // Alternar entre vista de fotos y vista de carpetas
+        function switchView(view) {
+            activeView = view;
+            
+            if (activeView === 'PHOTOS') {
+                btnViewPhotos.classList.add('active');
+                btnViewFolders.classList.remove('active');
+                
+                categoriesScrollContainer.style.display = 'block';
+                productsGrid.style.display = 'grid';
+                foldersGrid.style.display = 'none';
+                
+                renderProducts();
+            } else {
+                btnViewPhotos.classList.remove('active');
+                btnViewFolders.classList.add('active');
+                
+                categoriesScrollContainer.style.display = 'none';
+                productsGrid.style.display = 'none';
+                foldersGrid.style.display = 'grid';
+                
+                renderFolders();
+            }
+        }
+
+        // Renderizado de Carpetas (Categorías como tarjetas visuales)
+        function renderFolders() {
+            const counts = {};
+            productsData.forEach(p => {
+                counts[p.category] = (counts[p.category] || 0) + 1;
+            });
+
+            const categories = Object.keys(counts).sort();
+
+            const filteredCategories = categories.filter(cat => {
+                if (searchQuery.trim() === '') return true;
+                const terms = searchQuery.toLowerCase().split(/\s+/).filter(t => t.length > 0);
+                return terms.every(term => cat.toLowerCase().includes(term));
+            });
+
+            if (filteredCategories.length === 0) {
+                foldersGrid.style.display = 'none';
+                emptyState.style.display = 'flex';
+                return;
+            }
+
+            foldersGrid.style.display = 'grid';
+            emptyState.style.display = 'none';
+
+            let foldersHtml = '';
+            filteredCategories.forEach(cat => {
+                const representativeProduct = productsData.find(p => p.category === cat);
+                const bgImage = representativeProduct ? representativeProduct.image_path : '';
+                const count = counts[cat];
+                const countText = count === 1 ? '1 repuesto' : `${count} repuestos`;
+                const folderId = `folder-${cat.replace(/\s+/g, '-')}`;
+
+                foldersHtml += `
+                    <div class="category-card" onclick="selectFolderCategory('${cat.replace(/'/g, "\\'")}')" id="${folderId}">
+                        ${bgImage ? `<img src="${bgImage}" alt="${cat}" class="category-card-bg" loading="lazy">` : ''}
+                        <div class="category-card-overlay"></div>
+                        <div class="category-card-content">
+                            <div class="category-card-info">
+                                <div class="category-card-name">${cat}</div>
+                                <div class="category-card-count">${countText}</div>
+                            </div>
+                            <div class="category-card-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            foldersGrid.innerHTML = foldersHtml;
+        }
+
+        // Selección de carpeta desde la vista de carpetas
+        window.selectFolderCategory = function(category) {
+            activeCategory = category;
+            
+            document.querySelectorAll('.category-pill').forEach(pill => {
+                if (pill.getAttribute('data-category') === category) {
+                    pill.classList.add('active');
+                    pill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                } else {
+                    pill.classList.remove('active');
+                }
+            });
+
+            switchView('PHOTOS');
+        };
+
+        // Registro de Eventos
+        function setupEventListeners() {
+            // Evento Buscador (Búsqueda en tiempo real)
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                if (activeView === 'PHOTOS') {
+                    renderProducts();
+                } else {
+                    renderFolders();
+                }
+            });
+
+            // Conmutadores de Vista
+            btnViewPhotos.addEventListener('click', () => switchView('PHOTOS'));
+            btnViewFolders.addEventListener('click', () => switchView('FOLDERS'));
+
+            // Cerrar Lightbox con botón
+            lightboxClose.addEventListener('click', closeLightbox);
+
+            // Cerrar Lightbox al hacer clic fuera del contenido
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Cerrar con tecla Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    closeLightbox();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
