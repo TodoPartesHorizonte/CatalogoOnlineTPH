@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+respaldos/
+config.json
+web/assets/*.webp
+web/products.js
