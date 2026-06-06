@@ -35,8 +35,8 @@ class App(ctk.CTk):
 
         # Configuración de Ventana
         self.title("TODO PARTES Horizonte - Gestor de Catálogo")
-        self.geometry("780x780")
-        self.minsize(750, 720)
+        self.geometry("850x920")
+        self.minsize(800, 800)
 
         # Establecer apariencia oscura y tema naranja
         ctk.set_appearance_mode("dark")
@@ -48,7 +48,7 @@ class App(ctk.CTk):
 
         # Configurar rejilla principal de la ventana
         self.grid_columnconfigure(0, weight=1)
-        self.grid_rowconfigure(2, weight=1) # El área del log se expande
+        self.grid_rowconfigure(2, weight=1, minsize=220) # El área del log se expande con altura mínima garantizada
 
         # --- CABECERA ---
         self.header_frame = ctk.CTkFrame(self, height=80, corner_radius=0, fg_color="#121216")
@@ -71,9 +71,9 @@ class App(ctk.CTk):
         )
         self.subtitle_label.grid(row=1, column=0, pady=(0, 15))
 
-        # --- FORMULARIO DE CONFIGURACIÓN ---
-        self.config_frame = ctk.CTkFrame(self)
-        self.config_frame.grid(row=1, column=0, sticky="ew", padx=20, pady=0)
+        # --- FORMULARIO DE CONFIGURACIÓN (CON SCROLLBAR) ---
+        self.config_frame = ctk.CTkScrollableFrame(self, height=420)
+        self.config_frame.grid(row=1, column=0, sticky="nsew", padx=20, pady=(0, 10))
         self.config_frame.grid_columnconfigure(0, weight=1) # El input de texto se expande
         self.config_frame.grid_columnconfigure(1, weight=0) # El botón tiene tamaño fijo
 
@@ -158,7 +158,7 @@ class App(ctk.CTk):
         self.lbl_log = ctk.CTkLabel(self.log_frame, text="Consola de Sincronización y Salida:", font=ctk.CTkFont(weight="bold"))
         self.lbl_log.grid(row=0, column=0, sticky="w", padx=15, pady=(10, 5))
 
-        self.txt_log = ctk.CTkTextbox(self.log_frame, fg_color="#0a0a0c", border_color="#1c1c24", border_width=1)
+        self.txt_log = ctk.CTkTextbox(self.log_frame, fg_color="#0a0a0c", border_color="#1c1c24", border_width=1, height=220)
         self.txt_log.grid(row=1, column=0, sticky="nsew", padx=15, pady=(0, 15))
         self.txt_log.configure(state="disabled")
 
@@ -281,8 +281,12 @@ class App(ctk.CTk):
         try:
             with open("config.json", "w", encoding="utf-8") as f:
                 json.dump(config, f, indent=2, ensure_ascii=False)
+            
+            # Actualizar rápidamente products.js con los nuevos enlaces y logo
+            generator.update_js_links(config)
+            
             if show_msg:
-                self.write_to_log("Ajustes guardados correctamente en config.json\n")
+                self.write_to_log("Ajustes guardados y aplicados directamente en el catálogo.\n")
             return True
         except Exception as e:
             self.write_to_log(f"Error al guardar la configuración: {e}\n")

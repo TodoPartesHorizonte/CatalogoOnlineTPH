@@ -400,5 +400,50 @@ def sync_catalog():
     except Exception as e:
         print(f"Error al guardar products.js: {e}")
 
+def update_js_links(config):
+    """Actualiza únicamente los enlaces de contacto en products.js sin escanear imágenes."""
+    js_path = Path("web/products.js")
+    if not js_path.exists():
+        return False
+        
+    try:
+        with open(js_path, "r", encoding="utf-8") as f:
+            content = f.read().strip()
+            
+        if content.startswith("const PRODUCTS_DATA ="):
+            json_str = content[len("const PRODUCTS_DATA ="):].strip()
+            if json_str.endswith(";"):
+                json_str = json_str[:-1].strip()
+            data = json.loads(json_str)
+            
+            data["whatsapp_number"] = config.get("whatsapp_number", "")
+            data["instagram_url"] = config.get("instagram_url", "")
+            data["facebook_url"] = config.get("facebook_url", "")
+            data["maps_url"] = config.get("maps_url", "")
+            data["reviews_url"] = config.get("reviews_url", "")
+            
+            # Copiar el logo si existe y está configurado
+            logo_path_str = config.get("logo_path", "")
+            if logo_path_str:
+                logo_file_path = Path(logo_path_str)
+                if logo_file_path.exists() and logo_file_path.is_file():
+                    assets_dir = Path("web/assets")
+                    assets_dir.mkdir(parents=True, exist_ok=True)
+                    logo_ext = logo_file_path.suffix.lower()
+                    dest_logo_path = assets_dir / f"logo{logo_ext}"
+                    shutil.copy2(logo_file_path, dest_logo_path)
+                    data["use_custom_logo"] = f"./assets/logo{logo_ext}"
+            
+            with open(js_path, "w", encoding="utf-8") as f:
+                f.write("const PRODUCTS_DATA = ")
+                json.dump(data, f, indent=2, ensure_ascii=False)
+                f.write(";\n")
+            print("Enlaces y logo actualizados rápidamente en products.js.")
+            return True
+    except Exception as e:
+        print(f"Error al actualizar enlaces rápidos en products.js: {e}")
+        
+    return False
+
 if __name__ == "__main__":
     sync_catalog()
