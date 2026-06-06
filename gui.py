@@ -346,7 +346,7 @@ class App(ctk.CTk):
             commands = [
                 ["git", "add", "."],
                 ["git", "commit", "-m", "Actualizacion desde Administrador de Catalogo"],
-                ["git", "push", "origin", "main"]
+                ["git", "push", "origin", "main", "--force"]
             ]
             
             web_path = os.path.abspath("web")
