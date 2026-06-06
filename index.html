@@ -1293,7 +1293,7 @@
             `;
 
             // Ordenar categorías alfabéticamente
-            const categories = Object.keys(counts).sort();
+            const categories = Object.keys(counts).sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
             
             categories.forEach(cat => {
                 html += `
@@ -1449,7 +1449,7 @@
                 counts[p.category] = (counts[p.category] || 0) + 1;
             });
 
-            const categories = Object.keys(counts).sort();
+            const categories = Object.keys(counts).sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
 
             const filteredCategories = categories.filter(cat => {
                 if (searchQuery.trim() === '') return true;
