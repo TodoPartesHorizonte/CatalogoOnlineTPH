@@ -135,10 +135,10 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: linear-gradient(rgba(10, 10, 12, 0.85), rgba(10, 10, 12, 0.85)), url('assets/header_bg.jpg') no-repeat center center;
+            background: linear-gradient(rgba(10, 10, 12, 0.55), rgba(10, 10, 12, 0.55)), url('assets/header_bg.jpg') no-repeat center center;
             background-size: cover;
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
             border-bottom: 1px solid var(--border-color);
             padding: 16px 24px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -171,6 +171,7 @@
             display: flex;
             align-items: center;
             gap: 4px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
         }
 
         .logo-title span {
@@ -187,17 +188,19 @@
             letter-spacing: 3px;
             color: var(--text-secondary);
             margin-top: 4px;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95);
         }
 
         .logo-rif {
             font-size: 10px;
             font-weight: 700;
-            color: var(--text-muted);
+            color: #ffffff;
             margin-top: 2px;
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(10, 10, 12, 0.85);
             padding: 2px 8px;
             border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
         }
 
         .logo-image {
@@ -219,18 +222,19 @@
             width: 100%;
             padding: 14px 20px 14px 50px;
             border-radius: 30px;
-            border: 1px solid var(--border-color);
-            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background-color: rgba(10, 10, 12, 0.9);
             color: var(--text-primary);
             font-size: 15px;
             font-weight: 500;
             outline: none;
             transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
 
         .search-input:focus {
             border-color: var(--accent-orange);
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: rgba(10, 10, 12, 0.95);
             box-shadow: 0 0 15px var(--border-glow);
         }
 
@@ -1148,9 +1152,10 @@
             font-weight: 600;
             text-decoration: none;
             color: var(--text-primary);
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--border-color);
+            background: rgba(10, 10, 12, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             transition: var(--transition);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         .contact-link svg {
@@ -1165,63 +1170,73 @@
         }
 
         .contact-link.whatsapp {
-            background: rgba(37, 211, 102, 0.08);
-            border: 1px solid rgba(37, 211, 102, 0.35);
+            background: rgba(10, 10, 12, 0.9);
+            border: 1.5px solid rgba(37, 211, 102, 0.7);
             color: #25d366;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
         }
         .contact-link.whatsapp:hover {
             background: #25d366;
             border-color: transparent;
             color: #ffffff;
-            box-shadow: 0 0 15px rgba(37, 211, 102, 0.45);
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
         }
 
         .contact-link.instagram {
-            background: rgba(225, 48, 108, 0.08);
-            border: 1px solid rgba(225, 48, 108, 0.35);
+            background: rgba(10, 10, 12, 0.9);
+            border: 1.5px solid rgba(225, 48, 108, 0.7);
             color: #ff508e;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
         }
         .contact-link.instagram:hover {
             background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
             border-color: transparent;
             color: #ffffff;
-            box-shadow: 0 0 15px rgba(225, 48, 108, 0.45);
+            box-shadow: 0 0 15px rgba(225, 48, 108, 0.5);
         }
 
         .contact-link.facebook {
-            background: rgba(24, 119, 242, 0.08);
-            border: 1px solid rgba(24, 119, 242, 0.35);
+            background: rgba(10, 10, 12, 0.9);
+            border: 1.5px solid rgba(24, 119, 242, 0.7);
             color: #2d88ff;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
         }
         .contact-link.facebook:hover {
             background: #1877f2;
             border-color: transparent;
             color: #ffffff;
-            box-shadow: 0 0 15px rgba(24, 119, 242, 0.45);
+            box-shadow: 0 0 15px rgba(24, 119, 242, 0.5);
         }
 
         .contact-link.google-maps {
-            background: rgba(234, 67, 53, 0.08);
-            border: 1px solid rgba(234, 67, 53, 0.35);
+            background: rgba(10, 10, 12, 0.9);
+            border: 1.5px solid rgba(234, 67, 53, 0.7);
             color: #ff6b5b;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
         }
         .contact-link.google-maps:hover {
             background: #ea4335;
             border-color: transparent;
             color: #ffffff;
-            box-shadow: 0 0 15px rgba(234, 67, 53, 0.45);
+            box-shadow: 0 0 15px rgba(234, 67, 53, 0.5);
         }
 
         .contact-link.google-reviews {
-            background: rgba(244, 180, 0, 0.08);
-            border: 1px solid rgba(244, 180, 0, 0.35);
+            background: rgba(10, 10, 12, 0.9);
+            border: 1.5px solid rgba(244, 180, 0, 0.7);
             color: #ffc83b;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
         }
         .contact-link.google-reviews:hover {
             background: #f4b400;
             border-color: transparent;
             color: #0c0c0e;
-            box-shadow: 0 0 15px rgba(244, 180, 0, 0.45);
+            box-shadow: 0 0 15px rgba(244, 180, 0, 0.5);
         }
 
         /* --- NAVEGACIÓN RETORNO --- */
@@ -1298,6 +1313,43 @@
                 transition: none !important;
                 animation-delay: 0s !important;
                 animation-duration: 0s !important;
+            }
+        }
+
+        /* --- VISTA HORIZONTAL EN MÓVILES (LANDSCAPE) --- */
+        @media (max-height: 520px) and (orientation: landscape) {
+            header {
+                position: relative !important; /* Evitar que ocupe toda la pantalla al scroll */
+                padding: 10px 16px !important;
+            }
+            .header-container {
+                flex-direction: row !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                gap: 12px !important;
+                flex-wrap: nowrap !important;
+            }
+            .logo-box {
+                flex-direction: row !important;
+                align-items: center !important;
+                gap: 8px !important;
+                text-align: left !important;
+            }
+            .logo-image {
+                max-height: 32px !important;
+                margin-bottom: 0 !important;
+            }
+            .logo-title {
+                font-size: 16px !important;
+            }
+            .logo-subtitle,
+            .logo-rif,
+            .social-links-header {
+                display: none !important; /* Ocultar detalles secundarios en horizontal */
+            }
+            .search-wrapper {
+                max-width: 280px !important;
+                margin: 0 !important;
             }
         }
     </style>
