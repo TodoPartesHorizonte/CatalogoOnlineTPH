@@ -696,6 +696,103 @@
             fill: #ffffff;
         }
 
+        /* --- FILTRO DE VEHÍCULOS --- */
+        .vehicle-filter-container {
+            max-width: 1200px;
+            margin: 20px auto 0 auto;
+            padding: 0 24px;
+        }
+
+        .vehicle-filter-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .vehicle-filter-title::after {
+            content: "";
+            flex-grow: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        .vehicle-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+            width: 100%;
+        }
+
+        @media (max-width: 900px) {
+            .vehicle-grid {
+                display: flex;
+                overflow-x: auto;
+                padding-bottom: 8px;
+                scrollbar-width: none;
+            }
+            .vehicle-grid::-webkit-scrollbar {
+                display: none;
+            }
+            .vehicle-card {
+                flex: 0 0 130px;
+            }
+        }
+
+        .vehicle-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            min-height: 80px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        .vehicle-card:hover {
+            border-color: rgba(255, 106, 0, 0.4);
+            transform: translateY(-2px);
+            color: var(--text-primary);
+            background: rgba(255, 106, 0, 0.02);
+        }
+
+        .vehicle-card.active {
+            border-color: var(--accent-orange);
+            background: rgba(255, 106, 0, 0.08);
+            color: var(--text-primary);
+            box-shadow: 0 0 15px rgba(255, 106, 0, 0.15);
+        }
+
+        .vehicle-logo {
+            width: 100%;
+            height: 40px;
+            color: currentColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .vehicle-name {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
         /* --- RESPONSIVIDAD (MÓVIL / TABLETAS) --- */
         @media (max-width: 768px) {
             header {
@@ -1225,6 +1322,57 @@
         </div>
     </header>
 
+    <!-- FILTRO DE VEHÍCULOS -->
+    <div class="vehicle-filter-container" id="vehicleFilterContainer" style="display: none;">
+        <div class="vehicle-filter-title">Filtrar por Vehículo</div>
+        <div class="vehicle-grid" id="vehicleGrid">
+            <div class="vehicle-card active" onclick="selectVehicleFilter('ALL')" id="vehicle-all">
+                <svg viewBox="0 0 80 40" class="vehicle-logo">
+                    <rect x="26" y="10" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <rect x="42" y="10" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <rect x="26" y="22" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <rect x="42" y="22" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                <div class="vehicle-name">Todos</div>
+            </div>
+            <div class="vehicle-card" onclick="selectVehicleFilter('CARIBE')" id="vehicle-caribe">
+                <svg viewBox="0 0 80 40" class="vehicle-logo">
+                    <rect x="10" y="8" width="60" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+                    <text x="50%" y="25" font-family="'Outfit', sans-serif" font-weight="900" font-style="italic" font-size="14" fill="currentColor" text-anchor="middle" letter-spacing="1">442</text>
+                </svg>
+                <div class="vehicle-name">Caribe</div>
+            </div>
+            <div class="vehicle-card" onclick="selectVehicleFilter('LUV')" id="vehicle-luv">
+                <svg viewBox="0 0 80 40" class="vehicle-logo">
+                    <path d="M25 15h10v-5h10v5h10l3 5-3 5H45v5H35v-5H25l-3-5z" fill="currentColor" opacity="0.8"/>
+                    <text x="50%" y="32" font-family="'Outfit', sans-serif" font-weight="800" font-size="8" fill="currentColor" text-anchor="middle" letter-spacing="2">CHEVROLET</text>
+                </svg>
+                <div class="vehicle-name">Luv</div>
+            </div>
+            <div class="vehicle-card" onclick="selectVehicleFilter('D-MAX')" id="vehicle-dmax">
+                <svg viewBox="0 0 80 40" class="vehicle-logo">
+                    <polygon points="12,8 68,8 63,32 17,32" fill="rgba(255, 106, 0, 0.08)" stroke="currentColor" stroke-width="1.5"/>
+                    <text x="50%" y="25" font-family="'Outfit', sans-serif" font-weight="900" font-style="italic" font-size="11" fill="var(--accent-orange)" text-anchor="middle" letter-spacing="0.5">D-MAX</text>
+                </svg>
+                <div class="vehicle-name">Luv D-Max</div>
+            </div>
+            <div class="vehicle-card" onclick="selectVehicleFilter('TROOPER')" id="vehicle-trooper">
+                <svg viewBox="0 0 80 40" class="vehicle-logo">
+                    <path d="M22 25 l8-12 l8 9 l12-14 l12 17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    <text x="50%" y="34" font-family="'Outfit', sans-serif" font-weight="800" font-size="8" fill="currentColor" text-anchor="middle" letter-spacing="1.5">TROOPER</text>
+                </svg>
+                <div class="vehicle-name">Trooper</div>
+            </div>
+            <div class="vehicle-card" onclick="selectVehicleFilter('RODEO')" id="vehicle-rodeo">
+                <svg viewBox="0 0 80 40" class="vehicle-logo">
+                    <path d="M15 22 Q 30 10, 45 25 T 65 18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <text x="50%" y="33" font-family="'Outfit', sans-serif" font-weight="800" font-style="italic" font-size="9" fill="currentColor" text-anchor="middle" letter-spacing="1.5">RODEO</text>
+                </svg>
+                <div class="vehicle-name">Rodeo</div>
+            </div>
+        </div>
+    </div>
+
     <!-- BARRA DE CATEGORÍAS -->
     <div class="categories-container" id="categoriesScrollContainer" style="display: none;">
         <div class="categories-scroll" id="categoriesScroll">
@@ -1301,8 +1449,58 @@
         let WHATSAPP_NUMBER = "584242116375";
         let productsData = [];
         let activeCategory = "ALL";
+        let activeVehicle = "ALL";
         let searchQuery = "";
         let activeView = "FOLDERS"; // Empezar por carpetas por defecto
+
+        function matchesVehicleFilter(product, filter) {
+            if (filter === 'ALL') return true;
+            
+            const desc = product.description.toLowerCase();
+            const keywords = (product.keywords || []).map(k => k.toLowerCase());
+            
+            if (filter === 'CARIBE') {
+                return desc.includes('caribe') || keywords.includes('caribe');
+            }
+            if (filter === 'LUV') {
+                const isDMax = desc.includes('d-max') || desc.includes('dmax') || keywords.includes('d-max') || keywords.includes('dmax');
+                const isLuv = desc.includes('luv') || keywords.includes('luv');
+                return isLuv && !isDMax;
+            }
+            if (filter === 'D-MAX') {
+                return desc.includes('d-max') || desc.includes('dmax') || keywords.includes('d-max') || keywords.includes('dmax');
+            }
+            if (filter === 'TROOPER') {
+                return desc.includes('trooper') || keywords.includes('trooper');
+            }
+            if (filter === 'RODEO') {
+                return desc.includes('rodeo') || keywords.includes('rodeo');
+            }
+            return true;
+        }
+
+        window.selectVehicleFilter = function(filter) {
+            activeVehicle = filter;
+            
+            // Actualizar clases activas en los botones de vehículos
+            document.querySelectorAll('.vehicle-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            const filterId = `vehicle-${filter.toLowerCase().replace('-', '')}`;
+            const activeCard = document.getElementById(filterId);
+            if (activeCard) {
+                activeCard.classList.add('active');
+            }
+            
+            // Re-renderizar categorías y el contenido
+            renderCategories();
+            
+            if (activeView === 'PHOTOS') {
+                renderProducts();
+            } else {
+                renderFolders();
+            }
+        };
 
         // Elementos del DOM
         const searchInput = document.getElementById('searchInput');
@@ -1355,8 +1553,14 @@
                 const generalMsg = encodeURIComponent(`¡Hola! Vengo desde el catálogo online y me gustaría hacer una consulta.`);
                 fabWhatsapp.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${generalMsg}`;
 
+                // Mostrar contenedor de filtro de vehículos
+                const vehicleFilterContainer = document.getElementById('vehicleFilterContainer');
+                if (vehicleFilterContainer) {
+                    vehicleFilterContainer.style.display = 'block';
+                }
+
                 // Renderizar categorías y productos
-                renderCategories(productsData);
+                renderCategories();
                 switchView('FOLDERS');
             } catch (error) {
                 console.error('Error al inicializar el catálogo:', error);
@@ -1370,17 +1574,39 @@
         }
 
         // Renderizado de Categorías
-        function renderCategories(products) {
+        function renderCategories() {
+            // Filtrar productos solo por el vehículo activo (y buscador) para obtener los conteos de categorías
+            const vehicleFiltered = productsData.filter(product => {
+                const matchesVehicle = matchesVehicleFilter(product, activeVehicle);
+                
+                let matchesSearch = true;
+                if (searchQuery.trim() !== '') {
+                    const terms = searchQuery.toLowerCase().split(/\s+/).filter(t => t.length > 0);
+                    matchesSearch = terms.every(term => {
+                        const inDesc = product.description.toLowerCase().includes(term);
+                        const inCat = product.category.toLowerCase().includes(term);
+                        const inKeywords = (product.keywords || []).map(k => k.toLowerCase()).some(k => k.includes(term));
+                        return inDesc || inCat || inKeywords;
+                    });
+                }
+                return matchesVehicle && matchesSearch;
+            });
+
             // Contar productos por categoría
             const counts = {};
-            products.forEach(p => {
+            vehicleFiltered.forEach(p => {
                 counts[p.category] = (counts[p.category] || 0) + 1;
             });
 
+            // Resolver consistencia de categoría seleccionada
+            if (activeCategory !== 'ALL' && !counts[activeCategory]) {
+                activeCategory = 'ALL';
+            }
+
             // Generar HTML de categorías
             let html = `
-                <button class="category-pill active" data-category="ALL" id="cat-all">
-                    Ver Todo <span>${products.length}</span>
+                <button class="category-pill ${activeCategory === 'ALL' ? 'active' : ''}" data-category="ALL" id="cat-all">
+                    Ver Todo <span>${vehicleFiltered.length}</span>
                 </button>
             `;
 
@@ -1389,7 +1615,7 @@
             
             categories.forEach(cat => {
                 html += `
-                    <button class="category-pill" data-category="${cat}" id="cat-${cat.replace(/\s+/g, '-')}">
+                    <button class="category-pill ${activeCategory === cat ? 'active' : ''}" data-category="${cat}" id="cat-${cat.replace(/\s+/g, '-')}">
                         ${cat} <span>${counts[cat]}</span>
                     </button>
                 `;
@@ -1420,6 +1646,9 @@
                 // Filtro por categoría
                 const matchesCategory = activeCategory === 'ALL' || product.category === activeCategory;
                 
+                // Filtro por vehículo
+                const matchesVehicle = matchesVehicleFilter(product, activeVehicle);
+
                 // Filtro por buscador (búsqueda multi-término)
                 let matchesSearch = true;
                 if (searchQuery.trim() !== '') {
@@ -1427,12 +1656,12 @@
                     matchesSearch = terms.every(term => {
                         const inDesc = product.description.toLowerCase().includes(term);
                         const inCat = product.category.toLowerCase().includes(term);
-                        const inKeywords = product.keywords.some(k => k.toLowerCase().includes(term));
+                        const inKeywords = (product.keywords || []).map(k => k.toLowerCase()).some(k => k.includes(term));
                         return inDesc || inCat || inKeywords;
                     });
                 }
                 
-                return matchesCategory && matchesSearch;
+                return matchesCategory && matchesVehicle && matchesSearch;
             });
 
             // Si no hay productos, mostrar estado vacío
@@ -1536,20 +1765,31 @@
 
         // Renderizado de Carpetas (Categorías como tarjetas visuales)
         function renderFolders() {
+            // Filtrar productos por vehículo y buscador
+            const vehicleFiltered = productsData.filter(product => {
+                const matchesVehicle = matchesVehicleFilter(product, activeVehicle);
+                
+                let matchesSearch = true;
+                if (searchQuery.trim() !== '') {
+                    const terms = searchQuery.toLowerCase().split(/\s+/).filter(t => t.length > 0);
+                    matchesSearch = terms.every(term => {
+                        const inDesc = product.description.toLowerCase().includes(term);
+                        const inCat = product.category.toLowerCase().includes(term);
+                        const inKeywords = (product.keywords || []).map(k => k.toLowerCase()).some(k => k.includes(term));
+                        return inDesc || inCat || inKeywords;
+                    });
+                }
+                return matchesVehicle && matchesSearch;
+            });
+
             const counts = {};
-            productsData.forEach(p => {
+            vehicleFiltered.forEach(p => {
                 counts[p.category] = (counts[p.category] || 0) + 1;
             });
 
             const categories = Object.keys(counts).sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }));
 
-            const filteredCategories = categories.filter(cat => {
-                if (searchQuery.trim() === '') return true;
-                const terms = searchQuery.toLowerCase().split(/\s+/).filter(t => t.length > 0);
-                return terms.every(term => cat.toLowerCase().includes(term));
-            });
-
-            if (filteredCategories.length === 0) {
+            if (categories.length === 0) {
                 foldersGrid.style.display = 'none';
                 emptyState.style.display = 'flex';
                 return;
@@ -1559,8 +1799,9 @@
             emptyState.style.display = 'none';
 
             let foldersHtml = '';
-            filteredCategories.forEach(cat => {
-                const representativeProduct = productsData.find(p => p.category === cat);
+            categories.forEach(cat => {
+                // Encontrar un producto representativo que pertenezca a la categoría y al filtro de vehículo
+                const representativeProduct = vehicleFiltered.find(p => p.category === cat);
                 const bgImage = representativeProduct ? representativeProduct.image_path : '';
                 const count = counts[cat];
                 const countText = count === 1 ? '1 repuesto' : `${count} repuestos`;
