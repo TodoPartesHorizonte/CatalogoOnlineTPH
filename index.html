@@ -748,14 +748,13 @@
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 12px;
-            padding: 10px;
+            padding: 8px 12px;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             transition: var(--transition);
-            min-height: 80px;
+            min-height: 56px;
             text-decoration: none;
             color: var(--text-secondary);
             text-align: center;
@@ -1345,34 +1344,28 @@
     <div class="vehicle-filter-container" id="vehicleFilterContainer" style="display: none;">
         <div class="vehicle-filter-title">Filtrar por Vehículo</div>
         <div class="vehicle-grid" id="vehicleGrid">
-            <div class="vehicle-card active" onclick="selectVehicleFilter('ALL')" id="vehicle-all">
+            <div class="vehicle-card active" onclick="selectVehicleFilter('ALL')" id="vehicle-all" aria-label="Todos los vehículos">
                 <svg viewBox="0 0 80 40" class="vehicle-logo">
                     <rect x="26" y="10" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                     <rect x="42" y="10" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                     <rect x="26" y="22" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                     <rect x="42" y="22" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                 </svg>
-                <div class="vehicle-name">Todos</div>
             </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('CARIBE')" id="vehicle-caribe">
+            <div class="vehicle-card" onclick="selectVehicleFilter('CARIBE')" id="vehicle-caribe" aria-label="Caribe">
                 <img src="./assets/caribe_logo.png" alt="Caribe" class="vehicle-logo-img">
-                <div class="vehicle-name">Caribe</div>
             </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('LUV')" id="vehicle-luv">
+            <div class="vehicle-card" onclick="selectVehicleFilter('LUV')" id="vehicle-luv" aria-label="Luv">
                 <img src="./assets/luv_logo.png" alt="Luv" class="vehicle-logo-img">
-                <div class="vehicle-name">Luv</div>
             </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('D-MAX')" id="vehicle-dmax">
+            <div class="vehicle-card" onclick="selectVehicleFilter('D-MAX')" id="vehicle-dmax" aria-label="Luv D-Max">
                 <img src="./assets/dmax_logo.png" alt="Luv D-Max" class="vehicle-logo-img">
-                <div class="vehicle-name">Luv D-Max</div>
             </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('TROOPER')" id="vehicle-trooper">
+            <div class="vehicle-card" onclick="selectVehicleFilter('TROOPER')" id="vehicle-trooper" aria-label="Trooper">
                 <img src="./assets/trooper_logo.png" alt="Trooper" class="vehicle-logo-img">
-                <div class="vehicle-name">Trooper</div>
             </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('RODEO')" id="vehicle-rodeo">
+            <div class="vehicle-card" onclick="selectVehicleFilter('RODEO')" id="vehicle-rodeo" aria-label="Rodeo">
                 <img src="./assets/rodeo_logo.png" alt="Rodeo" class="vehicle-logo-img">
-                <div class="vehicle-name">Rodeo</div>
             </div>
         </div>
     </div>
