@@ -2142,28 +2142,47 @@
                 }
             });
 
-            // Colapso dinámico de cabecera al hacer scroll (Totalmente estable con wrapper de altura fija)
+            // Colapso dinámico de cabecera al hacer scroll (Totalmente estable con wrapper de altura fija y sin saltos)
             const headerEl = document.querySelector('header');
             const wrapperEl = document.querySelector('.header-wrapper');
-            
+            let lastWidth = window.innerWidth;
+            let heightDiff = 170; // valor por defecto seguro
+
             function adjustWrapperHeight() {
                 const isFixed = window.getComputedStyle(headerEl).position === 'fixed';
                 if (isFixed) {
                     const wasCollapsed = headerEl.classList.contains('collapsed');
                     if (wasCollapsed) headerEl.classList.remove('collapsed');
-                    wrapperEl.style.height = `${headerEl.offsetHeight}px`;
-                    if (wasCollapsed) headerEl.classList.add('collapsed');
+                    
+                    const fullHeight = headerEl.offsetHeight;
+                    wrapperEl.style.height = `${fullHeight}px`;
+                    
+                    // Forzar cálculo de la altura colapsada
+                    headerEl.classList.add('collapsed');
+                    const collapsedHeight = headerEl.offsetHeight;
+                    heightDiff = fullHeight - collapsedHeight;
+                    
+                    // Restaurar el estado original anterior
+                    if (!wasCollapsed) headerEl.classList.remove('collapsed');
                 } else {
                     wrapperEl.style.height = '';
+                    heightDiff = 0;
                 }
             }
             
-            // Medir y ajustar al cargar y cambiar tamaño de pantalla
-            setTimeout(adjustWrapperHeight, 100); // Pequeño retardo para asegurar renderizado correcto
-            window.addEventListener('resize', adjustWrapperHeight);
+            // Medir y ajustar al cargar y al cambiar de tamaño horizontal (evitando bug de redimensionamiento de barra de dirección en móvil)
+            setTimeout(adjustWrapperHeight, 150);
+            
+            window.addEventListener('resize', () => {
+                if (window.innerWidth !== lastWidth) {
+                    lastWidth = window.innerWidth;
+                    adjustWrapperHeight();
+                }
+            });
 
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 80) {
+                // El colapso se activa exactamente cuando la página se ha desplazado el equivalente a la diferencia de altura, evitando huecos y saltos
+                if (window.scrollY > heightDiff) {
                     headerEl.classList.add('collapsed');
                 } else {
                     headerEl.classList.remove('collapsed');
