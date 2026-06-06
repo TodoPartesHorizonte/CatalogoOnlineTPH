@@ -785,6 +785,36 @@
             transition: var(--transition);
         }
 
+        .vehicle-logo-img {
+            height: 32px;
+            max-width: 95%;
+            object-fit: contain;
+            opacity: 0.75;
+            transition: var(--transition);
+        }
+
+        /* Invert dark black logos to white for dark mode compatibility */
+        .vehicle-logo-img.invert-logo {
+            filter: brightness(0) invert(1);
+        }
+
+        .vehicle-card:hover .vehicle-logo-img {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .vehicle-card.active .vehicle-logo-img {
+            opacity: 1;
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 5px rgba(255, 106, 0, 0.45));
+        }
+
+        .vehicle-card.active .vehicle-logo-img.invert-logo {
+            opacity: 1;
+            transform: scale(1.05);
+            filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 106, 0, 0.45));
+        }
+
         .vehicle-name {
             font-size: 11px;
             font-weight: 700;
@@ -1336,38 +1366,23 @@
                 <div class="vehicle-name">Todos</div>
             </div>
             <div class="vehicle-card" onclick="selectVehicleFilter('CARIBE')" id="vehicle-caribe">
-                <svg viewBox="0 0 80 40" class="vehicle-logo">
-                    <rect x="10" y="8" width="60" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
-                    <text x="50%" y="25" font-family="'Outfit', sans-serif" font-weight="900" font-style="italic" font-size="14" fill="currentColor" text-anchor="middle" letter-spacing="1">442</text>
-                </svg>
+                <img src="./assets/caribe_logo.png" alt="Caribe" class="vehicle-logo-img">
                 <div class="vehicle-name">Caribe</div>
             </div>
             <div class="vehicle-card" onclick="selectVehicleFilter('LUV')" id="vehicle-luv">
-                <svg viewBox="0 0 80 40" class="vehicle-logo">
-                    <path d="M25 15h10v-5h10v5h10l3 5-3 5H45v5H35v-5H25l-3-5z" fill="currentColor" opacity="0.8"/>
-                    <text x="50%" y="32" font-family="'Outfit', sans-serif" font-weight="800" font-size="8" fill="currentColor" text-anchor="middle" letter-spacing="2">CHEVROLET</text>
-                </svg>
+                <img src="./assets/luv_logo.png" alt="Luv" class="vehicle-logo-img">
                 <div class="vehicle-name">Luv</div>
             </div>
             <div class="vehicle-card" onclick="selectVehicleFilter('D-MAX')" id="vehicle-dmax">
-                <svg viewBox="0 0 80 40" class="vehicle-logo">
-                    <polygon points="12,8 68,8 63,32 17,32" fill="rgba(255, 106, 0, 0.08)" stroke="currentColor" stroke-width="1.5"/>
-                    <text x="50%" y="25" font-family="'Outfit', sans-serif" font-weight="900" font-style="italic" font-size="11" fill="var(--accent-orange)" text-anchor="middle" letter-spacing="0.5">D-MAX</text>
-                </svg>
+                <img src="./assets/dmax_logo.png" alt="Luv D-Max" class="vehicle-logo-img invert-logo">
                 <div class="vehicle-name">Luv D-Max</div>
             </div>
             <div class="vehicle-card" onclick="selectVehicleFilter('TROOPER')" id="vehicle-trooper">
-                <svg viewBox="0 0 80 40" class="vehicle-logo">
-                    <path d="M22 25 l8-12 l8 9 l12-14 l12 17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-                    <text x="50%" y="34" font-family="'Outfit', sans-serif" font-weight="800" font-size="8" fill="currentColor" text-anchor="middle" letter-spacing="1.5">TROOPER</text>
-                </svg>
+                <img src="./assets/trooper_logo.png" alt="Trooper" class="vehicle-logo-img invert-logo">
                 <div class="vehicle-name">Trooper</div>
             </div>
             <div class="vehicle-card" onclick="selectVehicleFilter('RODEO')" id="vehicle-rodeo">
-                <svg viewBox="0 0 80 40" class="vehicle-logo">
-                    <path d="M15 22 Q 30 10, 45 25 T 65 18" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                    <text x="50%" y="33" font-family="'Outfit', sans-serif" font-weight="800" font-style="italic" font-size="9" fill="currentColor" text-anchor="middle" letter-spacing="1.5">RODEO</text>
-                </svg>
+                <img src="./assets/rodeo_logo.png" alt="Rodeo" class="vehicle-logo-img invert-logo">
                 <div class="vehicle-name">Rodeo</div>
             </div>
         </div>
