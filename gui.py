@@ -1,6 +1,6 @@
-# Importar torch al inicio para evitar conflictos de inicialización de DLLs (WinError 1114) con tkinter/customtkinter
+# Importar torch y easyocr al inicio en el hilo principal para evitar conflictos de DLLs (WinError 1114) con tkinter/customtkinter
 try:
-    import torch
+    import easyocr
 except Exception:
     pass
 

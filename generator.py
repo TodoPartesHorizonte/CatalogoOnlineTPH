@@ -1,6 +1,6 @@
-# Importar torch al inicio para evitar conflictos de DLLs en Windows
+# Importar torch y easyocr al inicio para evitar conflictos de DLLs en Windows
 try:
-    import torch
+    import easyocr
 except Exception:
     pass
 
