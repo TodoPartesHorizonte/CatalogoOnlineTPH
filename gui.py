@@ -35,8 +35,8 @@ class App(ctk.CTk):
 
         # Configuración de Ventana
         self.title("TODO PARTES Horizonte - Gestor de Catálogo")
-        self.geometry("750x650")
-        self.minsize(700, 600)
+        self.geometry("780x780")
+        self.minsize(750, 720)
 
         # Establecer apariencia oscura y tema naranja
         ctk.set_appearance_mode("dark")
@@ -95,19 +95,12 @@ class App(ctk.CTk):
         )
         self.btn_origen.grid(row=1, column=1, sticky="e", padx=(5, 15), pady=(0, 10))
 
-        # Campo 2: Número de WhatsApp
-        self.lbl_whatsapp = ctk.CTkLabel(self.config_frame, text="Número de WhatsApp (ej: 584242116375):", font=ctk.CTkFont(weight="bold"))
-        self.lbl_whatsapp.grid(row=2, column=0, columnspan=2, sticky="w", padx=15, pady=(5, 2))
-        
-        self.entry_whatsapp = ctk.CTkEntry(self.config_frame, placeholder_text="Ej: 584242116375")
-        self.entry_whatsapp.grid(row=3, column=0, columnspan=2, sticky="ew", padx=15, pady=(0, 10))
-
         # Campo 3: Logotipo de la Empresa
         self.lbl_logo = ctk.CTkLabel(self.config_frame, text="Logotipo de la Empresa (Opcional):", font=ctk.CTkFont(weight="bold"))
-        self.lbl_logo.grid(row=4, column=0, columnspan=2, sticky="w", padx=15, pady=(5, 2))
+        self.lbl_logo.grid(row=2, column=0, columnspan=2, sticky="w", padx=15, pady=(5, 2))
         
         self.entry_logo = ctk.CTkEntry(self.config_frame, placeholder_text="Seleccione el archivo del logo (PNG, JPG)...")
-        self.entry_logo.grid(row=5, column=0, sticky="ew", padx=(15, 5), pady=(0, 15))
+        self.entry_logo.grid(row=3, column=0, sticky="ew", padx=(15, 5), pady=(0, 10))
         
         self.btn_logo = ctk.CTkButton(
             self.config_frame, 
@@ -118,7 +111,42 @@ class App(ctk.CTk):
             font=ctk.CTkFont(weight="bold"),
             command=self.browse_logo_file
         )
-        self.btn_logo.grid(row=5, column=1, sticky="e", padx=(5, 15), pady=(0, 15))
+        self.btn_logo.grid(row=3, column=1, sticky="e", padx=(5, 15), pady=(0, 10))
+
+        # --- ENLACES DE CONTACTO Y REDES SOCIALES ---
+        self.contacts_frame = ctk.CTkFrame(self.config_frame, fg_color="transparent")
+        self.contacts_frame.grid(row=4, column=0, columnspan=2, sticky="ew", padx=15, pady=(0, 15))
+        self.contacts_frame.grid_columnconfigure((0, 1), weight=1, uniform="contacts")
+        
+        # WhatsApp (Col 0, Row 0 & 1)
+        self.lbl_whatsapp = ctk.CTkLabel(self.contacts_frame, text="Número de WhatsApp (ej: 584242116375):", font=ctk.CTkFont(weight="bold"))
+        self.lbl_whatsapp.grid(row=0, column=0, sticky="w", padx=(0, 10), pady=(5, 2))
+        self.entry_whatsapp = ctk.CTkEntry(self.contacts_frame, placeholder_text="Ej: 584242116375")
+        self.entry_whatsapp.grid(row=1, column=0, sticky="ew", padx=(0, 10), pady=(0, 10))
+
+        # Instagram (Col 1, Row 0 & 1)
+        self.lbl_instagram = ctk.CTkLabel(self.contacts_frame, text="URL de Instagram (Opcional):", font=ctk.CTkFont(weight="bold"))
+        self.lbl_instagram.grid(row=0, column=1, sticky="w", padx=(10, 0), pady=(5, 2))
+        self.entry_instagram = ctk.CTkEntry(self.contacts_frame, placeholder_text="Ej: https://instagram.com/nombre")
+        self.entry_instagram.grid(row=1, column=1, sticky="ew", padx=(10, 0), pady=(0, 10))
+
+        # Facebook (Col 0, Row 2 & 3)
+        self.lbl_facebook = ctk.CTkLabel(self.contacts_frame, text="URL de Facebook (Opcional):", font=ctk.CTkFont(weight="bold"))
+        self.lbl_facebook.grid(row=2, column=0, sticky="w", padx=(0, 10), pady=(5, 2))
+        self.entry_facebook = ctk.CTkEntry(self.contacts_frame, placeholder_text="Ej: https://facebook.com/pagina")
+        self.entry_facebook.grid(row=3, column=0, sticky="ew", padx=(0, 10), pady=(0, 10))
+
+        # Ubicación Google Maps (Col 1, Row 2 & 3)
+        self.lbl_maps = ctk.CTkLabel(self.contacts_frame, text="Ubicación Google Maps (Opcional):", font=ctk.CTkFont(weight="bold"))
+        self.lbl_maps.grid(row=2, column=1, sticky="w", padx=(10, 0), pady=(5, 2))
+        self.entry_maps = ctk.CTkEntry(self.contacts_frame, placeholder_text="Ej: Enlace de Google Maps...")
+        self.entry_maps.grid(row=3, column=1, sticky="ew", padx=(10, 0), pady=(0, 10))
+
+        # Opiniones de Google (Col 0 & 1, Row 4 & 5)
+        self.lbl_reviews = ctk.CTkLabel(self.contacts_frame, text="Enlace de Reseñas de Google (Opcional):", font=ctk.CTkFont(weight="bold"))
+        self.lbl_reviews.grid(row=4, column=0, columnspan=2, sticky="w", padx=0, pady=(5, 2))
+        self.entry_reviews = ctk.CTkEntry(self.contacts_frame, placeholder_text="Ej: Enlace para dejar reseña...")
+        self.entry_reviews.grid(row=5, column=0, columnspan=2, sticky="ew", padx=0, pady=(0, 5))
 
 
         # --- ÁREA DE CONSOLA / LOGS ---
@@ -232,13 +260,21 @@ class App(ctk.CTk):
         self.entry_origen.insert(0, config.get("catalogo_origen_path", ""))
         self.entry_whatsapp.insert(0, config.get("whatsapp_number", ""))
         self.entry_logo.insert(0, config.get("logo_path", ""))
+        self.entry_instagram.insert(0, config.get("instagram_url", ""))
+        self.entry_facebook.insert(0, config.get("facebook_url", ""))
+        self.entry_maps.insert(0, config.get("maps_url", ""))
+        self.entry_reviews.insert(0, config.get("reviews_url", ""))
         self.write_to_log("Configuración cargada correctamente.\n")
 
     def save_config(self, show_msg=True):
         config = {
             "catalogo_origen_path": self.entry_origen.get().strip(),
             "whatsapp_number": self.entry_whatsapp.get().strip(),
-            "logo_path": self.entry_logo.get().strip()
+            "logo_path": self.entry_logo.get().strip(),
+            "instagram_url": self.entry_instagram.get().strip(),
+            "facebook_url": self.entry_facebook.get().strip(),
+            "maps_url": self.entry_maps.get().strip(),
+            "reviews_url": self.entry_reviews.get().strip()
         }
         
         # Guardar en config.json

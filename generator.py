@@ -22,7 +22,11 @@ def load_config():
     default_config = {
         "catalogo_origen_path": "catalogo_origen",
         "whatsapp_number": "584242116375",
-        "logo_path": ""
+        "logo_path": "",
+        "instagram_url": "",
+        "facebook_url": "",
+        "maps_url": "",
+        "reviews_url": ""
     }
     config_path = Path("config.json")
     if config_path.exists():
@@ -378,6 +382,10 @@ def sync_catalog():
     catalog_data = {
         "whatsapp_number": whatsapp_number,
         "use_custom_logo": use_custom_logo,
+        "instagram_url": config.get("instagram_url", ""),
+        "facebook_url": config.get("facebook_url", ""),
+        "maps_url": config.get("maps_url", ""),
+        "reviews_url": config.get("reviews_url", ""),
         "total_products": len(updated_products),
         "products": updated_products
     }
