@@ -51,11 +51,67 @@
             color: var(--text-primary);
             min-height: 100vh;
             overflow-x: hidden;
+            /* Modern, soft grid combined with a subtle radial gradient to create depth */
             background-image: 
-                linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
-            background-size: 24px 24px;
+                radial-gradient(circle at 50% 50%, transparent 30%, var(--bg-primary) 85%),
+                linear-gradient(rgba(255, 106, 0, 0.015) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 106, 0, 0.015) 1px, transparent 1px);
+            background-size: 100% 100%, 32px 32px, 32px 32px;
             padding-bottom: 80px; /* Espacio para el FAB en móvil */
+            position: relative;
+        }
+
+        /* Ambient Background Glows */
+        body::before,
+        body::after {
+            content: "";
+            position: fixed;
+            width: 60vw;
+            height: 60vw;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 106, 0, 0.035) 0%, rgba(255, 106, 0, 0) 70%);
+            filter: blur(80px);
+            z-index: -1;
+            pointer-events: none;
+            will-change: transform;
+            transform: translate3d(0, 0, 0);
+        }
+
+        body::before {
+            top: -15vw;
+            left: -15vw;
+            animation: driftFirst 25s infinite alternate ease-in-out;
+        }
+
+        body::after {
+            bottom: -15vw;
+            right: -15vw;
+            background: radial-gradient(circle, rgba(255, 106, 0, 0.025) 0%, rgba(255, 106, 0, 0) 70%);
+            animation: driftSecond 30s infinite alternate ease-in-out;
+        }
+
+        @keyframes driftFirst {
+            0% {
+                transform: translate3d(0, 0, 0) scale(1);
+            }
+            50% {
+                transform: translate3d(8vw, 12vw, 0) scale(1.1);
+            }
+            100% {
+                transform: translate3d(-4vw, 6vw, 0) scale(0.9);
+            }
+        }
+
+        @keyframes driftSecond {
+            0% {
+                transform: translate3d(0, 0, 0) scale(1.1);
+            }
+            50% {
+                transform: translate3d(-10vw, -8vw, 0) scale(0.95);
+            }
+            100% {
+                transform: translate3d(5vw, -12vw, 0) scale(1.05);
+            }
         }
 
         /* Scrollbar personalizado */
