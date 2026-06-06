@@ -35,8 +35,8 @@ class App(ctk.CTk):
 
         # Configuración de Ventana
         self.title("TODO PARTES Horizonte - Gestor de Catálogo")
-        self.geometry("850x920")
-        self.minsize(800, 800)
+        self.geometry("820x760")
+        self.minsize(780, 680)
 
         # Establecer apariencia oscura y tema naranja
         ctk.set_appearance_mode("dark")
@@ -48,7 +48,9 @@ class App(ctk.CTk):
 
         # Configurar rejilla principal de la ventana
         self.grid_columnconfigure(0, weight=1)
-        self.grid_rowconfigure(2, weight=1, minsize=220) # El área del log se expande con altura mínima garantizada
+        self.grid_rowconfigure(0, weight=0) # Cabecera fija arriba
+        self.grid_rowconfigure(1, weight=1) # El contenedor scrollable central se expande
+        self.grid_rowconfigure(2, weight=0) # El panel de botones inferior permanece fijo abajo
 
         # --- CABECERA ---
         self.header_frame = ctk.CTkFrame(self, height=80, corner_radius=0, fg_color="#121216")
@@ -71,9 +73,14 @@ class App(ctk.CTk):
         )
         self.subtitle_label.grid(row=1, column=0, pady=(0, 15))
 
-        # --- FORMULARIO DE CONFIGURACIÓN (CON SCROLLBAR) ---
-        self.config_frame = ctk.CTkScrollableFrame(self, height=420)
-        self.config_frame.grid(row=1, column=0, sticky="nsew", padx=20, pady=(0, 10))
+        # --- CONTENEDOR DESPLAZABLE PRINCIPAL ---
+        self.main_scrollable = ctk.CTkScrollableFrame(self, fg_color="transparent")
+        self.main_scrollable.grid(row=1, column=0, sticky="nsew", padx=10, pady=(0, 5))
+        self.main_scrollable.grid_columnconfigure(0, weight=1)
+
+        # --- FORMULARIO DE CONFIGURACIÓN ---
+        self.config_frame = ctk.CTkFrame(self.main_scrollable)
+        self.config_frame.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
         self.config_frame.grid_columnconfigure(0, weight=1) # El input de texto se expande
         self.config_frame.grid_columnconfigure(1, weight=0) # El botón tiene tamaño fijo
 
@@ -150,21 +157,21 @@ class App(ctk.CTk):
 
 
         # --- ÁREA DE CONSOLA / LOGS ---
-        self.log_frame = ctk.CTkFrame(self)
-        self.log_frame.grid(row=2, column=0, sticky="nsew", padx=20, pady=20)
+        self.log_frame = ctk.CTkFrame(self.main_scrollable)
+        self.log_frame.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
         self.log_frame.grid_columnconfigure(0, weight=1)
         self.log_frame.grid_rowconfigure(1, weight=1)
-
+ 
         self.lbl_log = ctk.CTkLabel(self.log_frame, text="Consola de Sincronización y Salida:", font=ctk.CTkFont(weight="bold"))
         self.lbl_log.grid(row=0, column=0, sticky="w", padx=15, pady=(10, 5))
-
+ 
         self.txt_log = ctk.CTkTextbox(self.log_frame, fg_color="#0a0a0c", border_color="#1c1c24", border_width=1, height=220)
         self.txt_log.grid(row=1, column=0, sticky="nsew", padx=15, pady=(0, 15))
         self.txt_log.configure(state="disabled")
 
-        # --- PANEL DE BOTONES ---
-        self.actions_frame = ctk.CTkFrame(self, fg_color="transparent")
-        self.actions_frame.grid(row=3, column=0, sticky="ew", padx=20, pady=(0, 20))
+        # --- PANEL DE BOTONES (ANCLADO ABAJO) ---
+        self.actions_frame = ctk.CTkFrame(self, fg_color="#121216", height=120, corner_radius=0)
+        self.actions_frame.grid(row=2, column=0, sticky="ew", padx=0, pady=0)
         self.actions_frame.grid_columnconfigure((0, 1), weight=1)
 
         self.btn_save = ctk.CTkButton(
@@ -175,7 +182,7 @@ class App(ctk.CTk):
             hover_color="#3d3d4d",
             command=self.save_config
         )
-        self.btn_save.grid(row=0, column=0, padx=5, pady=5, sticky="ew")
+        self.btn_save.grid(row=0, column=0, padx=(20, 10), pady=(12, 6), sticky="ew")
 
         self.btn_clear = ctk.CTkButton(
             self.actions_frame, 
@@ -186,7 +193,7 @@ class App(ctk.CTk):
             font=ctk.CTkFont(weight="bold"),
             command=self.clear_old_catalog
         )
-        self.btn_clear.grid(row=0, column=1, padx=5, pady=5, sticky="ew")
+        self.btn_clear.grid(row=0, column=1, padx=(10, 20), pady=(12, 6), sticky="ew")
 
         self.btn_generate = ctk.CTkButton(
             self.actions_frame, 
@@ -197,7 +204,7 @@ class App(ctk.CTk):
             font=ctk.CTkFont(weight="bold"),
             command=self.start_catalog_generation
         )
-        self.btn_generate.grid(row=1, column=0, padx=5, pady=5, sticky="ew")
+        self.btn_generate.grid(row=1, column=0, padx=(20, 10), pady=(6, 15), sticky="ew")
 
         self.btn_publish = ctk.CTkButton(
             self.actions_frame, 
@@ -208,7 +215,7 @@ class App(ctk.CTk):
             font=ctk.CTkFont(weight="bold"),
             command=self.start_github_publish
         )
-        self.btn_publish.grid(row=1, column=1, padx=5, pady=5, sticky="ew")
+        self.btn_publish.grid(row=1, column=1, padx=(10, 20), pady=(6, 15), sticky="ew")
 
 
         # Cargar valores guardados al iniciar
