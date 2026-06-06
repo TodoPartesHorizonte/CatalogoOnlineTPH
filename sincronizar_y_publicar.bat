@@ -41,7 +41,7 @@ echo.
 echo [INFO] 2/2: Publicando actualizaciones en GitHub Pages...
 if not exist "web\.git" (
     echo [ERROR] No se encontro un repositorio Git inicializado en la carpeta 'web'.
-    echo Por favor, asegúrate de correr el administrador (gui.py) al menos una vez para configurarlo.
+    echo Por favor, asegúrate de correr el administrador [gui.py] al menos una vez para configurarlo.
     pause
     exit /b 1
 )
