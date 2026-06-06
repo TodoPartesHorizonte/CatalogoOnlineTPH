@@ -1717,10 +1717,22 @@
             
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden'; // Detener scroll de fondo
+
+            // Registrar en el historial para permitir cerrar con el botón Atrás
+            history.pushState({ view: 'PHOTOS', category: activeCategory, lightbox: true }, "");
         };
 
-        // Cierre del Lightbox Modal
+        // Cierre del Lightbox Modal (mediante historial)
         function closeLightbox() {
+            if (history.state && history.state.lightbox) {
+                history.back();
+            } else {
+                closeLightboxDirect();
+            }
+        }
+
+        // Cierre directo del DOM del Lightbox
+        function closeLightboxDirect() {
             lightbox.classList.remove('active');
             document.body.style.overflow = ''; // Restaurar scroll
             setTimeout(() => {
@@ -1870,6 +1882,13 @@
         // Manejador del botón físico de atrás en el teléfono (popstate)
         window.addEventListener('popstate', (event) => {
             const state = event.state;
+            
+            // Si el lightbox está abierto y retrocedemos a un estado sin lightbox, lo cerramos
+            if (lightbox.classList.contains('active') && (!state || !state.lightbox)) {
+                closeLightboxDirect();
+                return;
+            }
+
             if (state && state.view === 'PHOTOS') {
                 activeView = 'PHOTOS';
                 if (state.search) {
