@@ -26,7 +26,9 @@ def load_config():
         "instagram_url": "",
         "facebook_url": "",
         "maps_url": "",
-        "reviews_url": ""
+        "reviews_url": "",
+        "ocr_crop_top": 0.33,
+        "ocr_crop_bottom": 0.55
     }
     config_path = Path("config.json")
     if config_path.exists():
@@ -99,15 +101,47 @@ def init_ocr():
         
     OCR_INITIALIZED = True
 
-def extract_text_from_image(image_path):
-    """Extrae texto de la imagen recortando la franja central (33% a 55% de altura) para aislar el título."""
+def generate_crop_preview(image_path, crop_top, crop_bottom, preview_path):
+    """Genera una imagen con un recuadro rojo que muestra la zona de recorte de OCR."""
+    from PIL import ImageDraw
+    try:
+        with Image.open(image_path) as img:
+            width, height = img.size
+            draw_img = img.copy()
+            draw = ImageDraw.Draw(draw_img)
+            top_y = int(height * crop_top)
+            bottom_y = int(height * crop_bottom)
+            draw.rectangle([0, top_y, width - 1, bottom_y], outline="red", width=5)
+            if width > 800:
+                ratio = 800 / width
+                draw_img = draw_img.resize((800, int(height * ratio)), Image.Resampling.LANCZOS)
+            preview_path.parent.mkdir(parents=True, exist_ok=True)
+            draw_img.convert("RGB").save(preview_path, "JPEG", quality=85)
+    except Exception as e:
+        print(f"Error al generar vista previa de OCR: {e}")
+
+def is_descriptive_filename(image_path):
+    """Determina si un archivo tiene un nombre descriptivo en vez de un ID genérico o de cámara/WhatsApp."""
+    filename = image_path.stem
+    uuid_pattern = r'^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+    if re.match(uuid_pattern, filename):
+        return False
+    if filename.lower().startswith('whatsapp image'):
+        return False
+    if filename.lower() in ('thumbs', 'desktop'):
+        return False
+    if len(filename) < 2:
+        return False
+    return True
+
+def extract_text_from_image(image_path, crop_top=0.33, crop_bottom=0.55):
+    """Extrae texto de la imagen recortando la franja especificada por crop_top y crop_bottom."""
     init_ocr() # Asegurar que los motores estén listos
     if OCR_READER is not None or TESSERACT_AVAILABLE:
         try:
-            # Abrir la imagen en memoria y recortar la zona del título central (33% a 55% de altura)
             with Image.open(image_path) as pil_img:
                 width, height = pil_img.size
-                crop_box = (0, int(height * 0.33), width, int(height * 0.55))
+                crop_box = (0, int(height * crop_top), width, int(height * crop_bottom))
                 cropped_img = pil_img.crop(crop_box)
                 img_rgb = cropped_img.convert('RGB')
                 
@@ -140,15 +174,157 @@ def extract_text_from_image(image_path):
 
 
 
-def clean_text_for_catalog(raw_text, category):
+def apply_ocr_corrections(text, category):
+    """Aplica reglas específicas de autocorrecion de OCR para categorías y repuestos."""
+    category_upper = category.upper()
+    
+    # Lista de reemplazos directos de palabras completas
+    word_replacements = [
+        ('ARANA', 'ARAÑA'),
+        ('MUNON', 'MUÑÓN'),
+        ('MUNONNFER0R', 'MUÑÓN INFERIOR'),
+        ('MUNONNFERIOR', 'MUÑÓN INFERIOR'),
+        ('MUNONFER0R', 'MUÑÓN INFERIOR'),
+        ('MUNONNFER10R', 'MUÑÓN INFERIOR'),
+        ('MUNONINFERIOR', 'MUÑÓN INFERIOR'),
+        ('MUNONN', 'MUÑÓN'),
+        ('MUNONNFEROR', 'MUÑÓN INFERIOR'),
+        ('CIGUEÑAL', 'CIGÜEÑAL'),
+        ('CIGÚEÑAL', 'CIGÜEÑAL'),
+        ('CICUEÑAL', 'CIGÜEÑAL'),
+        ('CIGUEAL', 'CIGÜEÑAL'),
+        ('CIGUE\u00d1AL', 'CIGÜEÑAL'),
+        ('CIGÚE\u00d1AL', 'CIGÜEÑAL'),
+        ('GUAYACAPOT', 'GUAYA CAPOT'),
+        ('JUEGODE', 'JUEGO DE'),
+        ('FILTROCAJA', 'FILTRO CAJA'),
+        ('BOMBADE', 'BOMBA DE'),
+        ('BOMBA DEACEITE', 'BOMBA DE ACEITE'),
+        ('REGULADORDE', 'REGULADOR DE'),
+        ('SENSORTPS', 'SENSOR TPS'),
+        ('BASECAJA', 'BASE CAJA'),
+        ('BASEFAN', 'BASE FAN'),
+        ('AMORTIGUADORDE', 'AMORTIGUADOR DE'),
+        ('EMPACADURADE', 'EMPACADURA DE'),
+        ('COPAARRANQUE', 'COPA ARRANQUE'),
+        ('TERMINAC EXTERN', 'TERMINAL EXTERNO'),
+        ('TUBOCALEFACCI\u00d3N', 'TUBO CALEFACCION'),
+        ('TUBOCALEFACCION', 'TUBO CALEFACCION'),
+        ('VALVULA ADMISION', 'VÁLVULA ADMISION'),
+        ('9DALADA V LEVA', 'SENSOR ARBOL DE LEVA'),
+        ('1 ZADNDALD', 'TAPA RADIADOR'),
+        ('N GAA', 'TAPA RIN'),
+        ('1 ADDADALAD', 'TERMINAL'),
+        ('DNAD 1L', 'TERMINAL'),
+        ('V ZAVUEL', 'VALVULA'),
+        ('B0MEAA D AU', 'BOMBA DE AGUA'),
+        ('B0MEAA', 'BOMBA'),
+        ('ISIABUDUE', 'DISTRIBUIDOR'),
+        ('RUADUGBAE9N', 'REGULADOR'),
+        ('DUN LA', 'COLLARIN'),
+        
+        # Normalizaciones de números de modelo comunes
+        ('LUV D-MAX 35', 'LUV D-MAX 3.5'),
+        ('LUV D-MAX 24', 'LUV D-MAX 2.4'),
+        ('LUV D-MAX 25', 'LUV D-MAX 2.5'),
+        ('LUV D-MAX 30', 'LUV D-MAX 3.0'),
+        ('LUV D-MAX 304X4', 'LUV D-MAX 3.0 4X4'),
+        ('LUV D-MAX 304X2', 'LUV D-MAX 3.0 4X2'),
+        ('LUV D-MAX 244X2', 'LUV D-MAX 2.4 4X2'),
+        ('LUV D-MAX24', 'LUV D-MAX 2.4'),
+        ('LUV D-MAX25', 'LUV D-MAX 2.5'),
+        
+        ('CARIBE G2OO', 'CARIBE G-2000'),
+        ('CARIBE G2OOO', 'CARIBE G-2000'),
+        ('CARIBE G-20O', 'CARIBE G-200'),
+        ('CARIBE G-2000', 'CARIBE G-2000'),
+        ('CARIBE23', 'CARIBE 2.3'),
+        ('CARIBE26', 'CARIBE 2.6'),
+        ('RODEO32', 'RODEO 3.2'),
+        ('RODEO 32', 'RODEO 3.2'),
+        ('TROOPER 32', 'TROOPER 3.2'),
+        ('TROOPER 32SOCH', 'TROOPER 3.2 SOHC'),
+        ('TROOPER 32SOCHH', 'TROOPER 3.2 SOHC'),
+        ('RODEO 32 SOCH', 'RODEO 3.2 SOHC'),
+        ('RODEO 32 SOCHH', 'RODEO 3.2 SOHC'),
+        ('LUV 32', 'LUV 3.2'),
+        ('LUV 22', 'LUV 2.2'),
+        ('LUV 23', 'LUV 2.3'),
+        ('CARIBE 26', 'CARIBE 2.6'),
+        ('CARIBE 20', 'CARIBE 2.0'),
+        ('CARIBE 23', 'CARIBE 2.3'),
+        ('CARIBE 2600', 'CARIBE 2600'),
+        ('CARIBE 2300', 'CARIBE 2300'),
+        ('CARIBE 2000', 'CARIBE 2000'),
+        ('CARIBE 200O', 'CARIBE 2000'),
+        ('CARIBE G20O', 'CARIBE G-200'),
+    ]
+    
+    # Aplicar reemplazos de palabras completas con límite unicode
+    for target, replacement in word_replacements:
+        pattern = r'(?<![A-Z0-9\u00c1\u00c9\u00cd\u00d3\u00da\u00d1])' + re.escape(target) + r'(?![A-Z0-9\u00c1\u00c9\u00cd\u00d3\u00da\u00d1])'
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+        
+    # Heurística específica basada en categorías para cuando el OCR falla totalmente
+    if category_upper == "TAPA RADIADOR" and "TAPA" not in text:
+        text = f"TAPA RADIADOR {text}"
+    elif category_upper == "TAPA RIN" and "TAPA" not in text:
+        text = f"TAPA RIN {text}"
+    elif "MUÑON" in category_upper and "MUÑÓN" not in text and "MUÑON" not in text:
+        text = f"MUÑÓN {text}"
+    elif "BUJE ARAÑA" in category_upper and "BUJE" not in text:
+        text = f"BUJE DE ARAÑA {text}"
+    elif category_upper == "ARAÑA" and "ARAÑA" not in text and "ARANA" not in text:
+        text = f"ARAÑA {text}"
+    elif category_upper == "SENSOR ARBOL DE LEVA" and "SENSOR" not in text:
+        text = f"SENSOR ARBOL DE LEVA {text}"
+    elif category_upper == "TERMINAL - ROTULA" and "TERMINAL" not in text and "ROTULA" not in text:
+        text = f"TERMINAL / ROTULA {text}"
+    elif category_upper == "VALVULA TEMPERATURA" and "VALVULA" not in text:
+        text = f"VALVULA TEMPERATURA {text}"
+    elif category_upper == "BOMBA DE AGUA" and "BOMBA" not in text:
+        text = f"BOMBA DE AGUA {text}"
+    elif category_upper == "BOMBA DE ACEITE" and "BOMBA" not in text:
+        text = f"BOMBA DE ACEITE {text}"
+    elif category_upper == "BOMBA DE GASOLINA" and "BOMBA" not in text and "PILA" not in text:
+        text = f"BOMBA DE GASOLINA {text}"
+    elif category_upper == "BOMBA DE FRENO" and "BOMBA" not in text:
+        text = f"BOMBA DE FRENO {text}"
+    elif category_upper == "DISTRIBUIDOR" and "DISTRIBUIDOR" not in text:
+        text = f"DISTRIBUIDOR {text}"
+    elif category_upper == "COLLARIN" and "COLLARIN" not in text and "ROLINERA" not in text:
+        text = f"COLLARIN {text}"
+    elif category_upper == "REGULADOR PRESION GASOLINA" and "REGULADOR" not in text:
+        text = f"REGULADOR DE GASOLINA {text}"
+    elif category_upper == "CARBURADOR" and "CARBURADOR" not in text:
+        if "GDAN" in text or len(text) < 15:
+            text = "CARBURADOR LUV"
+        else:
+            text = f"CARBURADOR {text}"
+    elif category_upper == "KIT DE MOTOR" and "KIT" not in text:
+        if "LU" in text:
+            text = text.replace("LU", "LUV")
+        text = f"KIT DE MOTOR {text}"
+        
+    return text
+
+def clean_text_for_catalog(raw_text, category, image_path=None):
     """Limpia el texto OCR, elimina saltos de línea y normaliza a mayúsculas."""
-    if not raw_text:
-        return category.upper()
+    if image_path and is_descriptive_filename(image_path):
+        filename_clean = image_path.stem.replace('-', ' ').replace('_', ' ').strip()
+        if category.upper() in filename_clean.upper():
+            text = filename_clean
+        else:
+            text = f"{category} {filename_clean}"
+    else:
+        if not raw_text:
+            return category.upper()
+        text = raw_text
         
     # Reemplazar saltos de línea y tabuladores por espacios
-    text = raw_text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+    text = text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
     
-    # Remover símbolos extraños pero conservar letras, números y guiones/barras
+    # Remover símbolos extraños pero conservar letras, números y guiones/barras/puntos
     text = re.sub(r'[^a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s\-\/\.]', ' ', text)
     
     # Colapsar múltiples espacios
@@ -164,6 +340,9 @@ def clean_text_for_catalog(raw_text, category):
     
     # Convertir a mayúsculas
     text = text.upper()
+    
+    # Aplicar calibraciones y correcciones de OCR específicas
+    text = apply_ocr_corrections(text, category)
     
     # Si la descripción quedó vacía o es muy corta, usar la categoría
     if len(text) < 4:
@@ -230,8 +409,10 @@ def sync_catalog():
     web_dir = Path("web")
     assets_dir = web_dir / "assets"
     js_path = web_dir / "products.js"
-
     
+    crop_top = float(config.get("ocr_crop_top", 0.33))
+    crop_bottom = float(config.get("ocr_crop_bottom", 0.55))
+
     # Crear directorios de destino si no existen
     assets_dir.mkdir(parents=True, exist_ok=True)
     
@@ -254,7 +435,6 @@ def sync_catalog():
             
     print(f"Escaneando carpeta de origen: {source_dir.absolute()}")
 
-    
     if not source_dir.exists():
         print(f"Error: La carpeta de origen '{source_dir}' no existe.")
         print("Por favor, crea la carpeta o edita config.json con la ruta correcta.")
@@ -301,6 +481,13 @@ def sync_catalog():
                 
     print(f"Se encontraron {len(found_files)} imágenes de repuestos en las subcarpetas.")
     
+    # Generar vista previa de calibración de OCR con la primera imagen encontrada
+    if found_files:
+        first_file_path, _ = found_files[0]
+        preview_file_path = assets_dir / "ocr_crop_preview.jpg"
+        generate_crop_preview(first_file_path, crop_top, crop_bottom, preview_file_path)
+        print(f"Vista previa de calibración de OCR generada en: {preview_file_path.name}")
+        
     # Procesar imágenes de forma incremental
     updated_products = []
     processed_ids = set()
@@ -339,8 +526,8 @@ def sync_catalog():
         print(f"Procesando [{category}] -> {file_path.name}...")
         
         # 1. Ejecutar OCR
-        raw_text = extract_text_from_image(file_path)
-        description = clean_text_for_catalog(raw_text, category)
+        raw_text = extract_text_from_image(file_path, crop_top=crop_top, crop_bottom=crop_bottom)
+        description = clean_text_for_catalog(raw_text, category, file_path)
         keywords = generate_keywords(description, category)
         
         # 2. Optimizar imagen y guardarla como WebP
@@ -358,6 +545,9 @@ def sync_catalog():
             new_count += 1
         else:
             print(f"Error al procesar la imagen {file_path.name}. Se omitió.")
+
+    # Ordenar los productos finales alfabéticamente por categoría y luego por descripción
+    updated_products.sort(key=lambda x: (x["category"].lower(), x["description"].lower()))
 
     # 3. Limpieza de bajas (eliminar archivos físicos de productos que ya no existen)
     deleted_count = 0

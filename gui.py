@@ -155,6 +155,17 @@ class App(ctk.CTk):
         self.entry_reviews = ctk.CTkEntry(self.contacts_frame, placeholder_text="Ej: Enlace para dejar reseña...")
         self.entry_reviews.grid(row=5, column=0, columnspan=2, sticky="ew", padx=0, pady=(0, 5))
 
+        # Calibración de OCR (Col 0 y Col 1, Row 6 y 7)
+        self.lbl_ocr_top = ctk.CTkLabel(self.contacts_frame, text="Límite Superior OCR % (ej: 0.33):", font=ctk.CTkFont(weight="bold"))
+        self.lbl_ocr_top.grid(row=6, column=0, sticky="w", padx=(0, 10), pady=(5, 2))
+        self.entry_ocr_top = ctk.CTkEntry(self.contacts_frame, placeholder_text="Ej: 0.33")
+        self.entry_ocr_top.grid(row=7, column=0, sticky="ew", padx=(0, 10), pady=(0, 5))
+
+        self.lbl_ocr_bottom = ctk.CTkLabel(self.contacts_frame, text="Límite Inferior OCR % (ej: 0.55):", font=ctk.CTkFont(weight="bold"))
+        self.lbl_ocr_bottom.grid(row=6, column=1, sticky="w", padx=(10, 0), pady=(5, 2))
+        self.entry_ocr_bottom = ctk.CTkEntry(self.contacts_frame, placeholder_text="Ej: 0.55")
+        self.entry_ocr_bottom.grid(row=7, column=1, sticky="ew", padx=(10, 0), pady=(0, 5))
+
 
         # --- ÁREA DE CONSOLA / LOGS ---
         self.log_frame = ctk.CTkFrame(self.main_scrollable)
@@ -271,9 +282,19 @@ class App(ctk.CTk):
         self.entry_facebook.insert(0, config.get("facebook_url", ""))
         self.entry_maps.insert(0, config.get("maps_url", ""))
         self.entry_reviews.insert(0, config.get("reviews_url", ""))
+        self.entry_ocr_top.insert(0, str(config.get("ocr_crop_top", 0.33)))
+        self.entry_ocr_bottom.insert(0, str(config.get("ocr_crop_bottom", 0.55)))
         self.write_to_log("Configuración cargada correctamente.\n")
 
     def save_config(self, show_msg=True):
+        try:
+            # Validar que sean flotantes válidos
+            crop_top = float(self.entry_ocr_top.get().strip() or "0.33")
+            crop_bottom = float(self.entry_ocr_bottom.get().strip() or "0.55")
+        except ValueError:
+            self.write_to_log("[Error] Los límites de recorte OCR deben ser números válidos (ej: 0.33 y 0.55).\n")
+            return False
+
         config = {
             "catalogo_origen_path": self.entry_origen.get().strip(),
             "whatsapp_number": self.entry_whatsapp.get().strip(),
@@ -281,7 +302,9 @@ class App(ctk.CTk):
             "instagram_url": self.entry_instagram.get().strip(),
             "facebook_url": self.entry_facebook.get().strip(),
             "maps_url": self.entry_maps.get().strip(),
-            "reviews_url": self.entry_reviews.get().strip()
+            "reviews_url": self.entry_reviews.get().strip(),
+            "ocr_crop_top": crop_top,
+            "ocr_crop_bottom": crop_bottom
         }
         
         # Guardar en config.json
