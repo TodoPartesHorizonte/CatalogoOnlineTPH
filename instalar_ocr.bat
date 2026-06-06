@@ -22,8 +22,8 @@ echo [INFO] Descargando instalador de Tesseract OCR...
 echo [INFO] Por favor, espera a que termine de descargar...
 echo.
 
-:: Descargar usando PowerShell de forma silenciosa
-powershell -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri '%URL%' -OutFile '%TEMP_EXE%'"
+:: Descargar usando PowerShell con un User-Agent de navegador para evitar el bloqueo HTTP 403 Forbidden
+powershell -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $w = New-Object System.Net.WebClient; $w.Headers.Add('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'); $w.DownloadFile('%URL%', '%TEMP_EXE%')"
 
 if %errorlevel% neq 0 (
     echo.
