@@ -142,10 +142,17 @@
             }
         }
 
+        .header-wrapper {
+            width: 100%;
+            display: block;
+        }
+
         /* --- CABECERA --- */
         header {
-            position: sticky;
+            position: fixed;
             top: 0;
+            left: 0;
+            right: 0;
             z-index: 100;
             background: linear-gradient(rgba(10, 10, 12, 0.55), rgba(10, 10, 12, 0.55)), url('assets/header_bg.jpg') no-repeat center center;
             background-size: cover;
@@ -154,7 +161,10 @@
             border-bottom: 1px solid var(--border-color);
             padding: 16px 24px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-            transition: padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), backdrop-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            /* Al expandirse: la transición de la cabecera (padding y fondo) inicia de inmediato (delay 0s) */
+            transition: padding 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s, 
+                        background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s, 
+                        backdrop-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
             animation: panHeaderBg 35s infinite ease-in-out;
         }
 
@@ -163,6 +173,10 @@
             background: linear-gradient(rgba(10, 10, 12, 0.92), rgba(10, 10, 12, 0.92));
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
+            /* Al colapsarse: la transición de la cabecera (padding y fondo) tiene un delay de 0.1s para permitir que las letras empiecen a ocultarse primero */
+            transition: padding 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s, 
+                        background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s, 
+                        backdrop-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
         }
 
         .header-container {
@@ -183,7 +197,11 @@
             max-height: 500px;
             opacity: 1;
             overflow: visible;
-            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), margin 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            /* Al expandirse: las letras y botones aparecen con un delay de 0.15s para que la imagen de fondo se expanda primero */
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s, 
+                        opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.15s, 
+                        margin 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s, 
+                        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
         }
 
         header.collapsed .logo-box {
@@ -194,6 +212,11 @@
             transform: translateY(-20px) scale(0.95);
             pointer-events: none;
             overflow: hidden;
+            /* Al colapsarse: las letras y botones se ocultan de inmediato (delay 0s) */
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s, 
+                        opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s, 
+                        margin 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s, 
+                        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0s;
         }
 
         .logo-title {
@@ -746,6 +769,7 @@
             max-width: 1200px;
             margin: 20px auto 0 auto;
             padding: 0 24px;
+            transition: margin-top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .vehicle-filter-title {
@@ -1397,41 +1421,43 @@
 <body>
 
     <!-- CABECERA -->
-    <header>
-        <div class="header-container">
-            <div class="logo-box">
-                <div id="logoContainer"></div>
-                <h1 class="logo-title" id="logoTitleText">TODO PARTES <span>Horizonte</span></h1>
-                <div class="logo-subtitle">Repuestos de las mejores marcas</div>
-                <div class="logo-rif">RIF: J-50180765-5</div>
+    <div class="header-wrapper">
+        <header>
+            <div class="header-container">
+                <div class="logo-box">
+                    <div id="logoContainer"></div>
+                    <h1 class="logo-title" id="logoTitleText">TODO PARTES <span>Horizonte</span></h1>
+                    <div class="logo-subtitle">Repuestos de las mejores marcas</div>
+                    <div class="logo-rif">RIF: J-50180765-5</div>
+                    
+                    <!-- Enlaces de contacto (Opción A) -->
+                    <div id="socialLinksHeader" class="social-links-header"></div>
+                </div>
                 
-                <!-- Enlaces de contacto (Opción A) -->
-                <div id="socialLinksHeader" class="social-links-header"></div>
-            </div>
-            
-            <div class="search-wrapper">
-                <input type="text" id="searchInput" class="search-input" placeholder="Buscar por repuesto, marca o modelo…" autocomplete="off">
-                <svg class="search-icon" viewBox="0 0 24 24">
-                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                </svg>
-            </div>
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Buscar por repuesto, marca o modelo…" autocomplete="off">
+                    <svg class="search-icon" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </div>
 
-            <div class="view-selector">
-                <button class="view-btn active" id="btnViewPhotos" title="Ver fotos de productos">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                    </svg>
-                    Ver Fotos
-                </button>
-                <button class="view-btn" id="btnViewFolders" title="Ver carpetas de categorías">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
-                    </svg>
-                    Ver Carpetas
-                </button>
+                <div class="view-selector">
+                    <button class="view-btn active" id="btnViewPhotos" title="Ver fotos de productos">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                        </svg>
+                        Ver Fotos
+                    </button>
+                    <button class="view-btn" id="btnViewFolders" title="Ver carpetas de categorías">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                        </svg>
+                        Ver Carpetas
+                    </button>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
 
     <!-- FILTRO DE VEHÍCULOS -->
     <div class="vehicle-filter-container" id="vehicleFilterContainer" style="display: none;">
@@ -2116,10 +2142,28 @@
                 }
             });
 
-            // Colapso dinámico de cabecera al hacer scroll (Shrinking Header)
+            // Colapso dinámico de cabecera al hacer scroll (Totalmente estable con wrapper de altura fija)
             const headerEl = document.querySelector('header');
+            const wrapperEl = document.querySelector('.header-wrapper');
+            
+            function adjustWrapperHeight() {
+                const isFixed = window.getComputedStyle(headerEl).position === 'fixed';
+                if (isFixed) {
+                    const wasCollapsed = headerEl.classList.contains('collapsed');
+                    if (wasCollapsed) headerEl.classList.remove('collapsed');
+                    wrapperEl.style.height = `${headerEl.offsetHeight}px`;
+                    if (wasCollapsed) headerEl.classList.add('collapsed');
+                } else {
+                    wrapperEl.style.height = '';
+                }
+            }
+            
+            // Medir y ajustar al cargar y cambiar tamaño de pantalla
+            setTimeout(adjustWrapperHeight, 100); // Pequeño retardo para asegurar renderizado correcto
+            window.addEventListener('resize', adjustWrapperHeight);
+
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
+                if (window.scrollY > 80) {
                     headerEl.classList.add('collapsed');
                 } else {
                     headerEl.classList.remove('collapsed');
