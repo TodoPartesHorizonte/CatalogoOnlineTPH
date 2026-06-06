@@ -844,9 +844,8 @@
             padding: 20px;
             margin-top: auto;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
+            flex-direction: column;
+            gap: 4px;
             width: 100%;
             box-sizing: border-box;
         }
@@ -855,6 +854,7 @@
             display: flex;
             flex-direction: column;
             gap: 4px;
+            width: 100%;
         }
 
         .category-card-name {
@@ -873,17 +873,20 @@
         }
 
         .category-card-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
             width: 36px;
             height: 36px;
-            background: rgba(255, 106, 0, 0.1);
-            border: 1px solid rgba(255, 106, 0, 0.2);
+            background: rgba(255, 106, 0, 0.15);
+            border: 1px solid rgba(255, 106, 0, 0.3);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--accent-orange);
             transition: var(--transition);
-            flex-shrink: 0;
+            z-index: 2;
         }
 
         .category-card:hover .category-card-icon {
@@ -926,7 +929,20 @@
                 padding: 12px;
             }
             .category-card-name {
-                font-size: 13px;
+                font-size: 12px;
+            }
+            .category-card-count {
+                font-size: 10px;
+            }
+            .category-card-icon {
+                top: 12px;
+                right: 12px;
+                width: 28px;
+                height: 28px;
+            }
+            .category-card-icon svg {
+                width: 14px;
+                height: 14px;
             }
         }
 
@@ -971,30 +987,64 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
+        .contact-link.whatsapp {
+            background: rgba(37, 211, 102, 0.08);
+            border: 1px solid rgba(37, 211, 102, 0.35);
+            color: #25d366;
+        }
         .contact-link.whatsapp:hover {
-            background: rgba(37, 211, 102, 0.1);
-            border-color: var(--accent-green);
-            color: var(--accent-green);
+            background: #25d366;
+            border-color: transparent;
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.45);
+        }
+
+        .contact-link.instagram {
+            background: rgba(225, 48, 108, 0.08);
+            border: 1px solid rgba(225, 48, 108, 0.35);
+            color: #ff508e;
         }
         .contact-link.instagram:hover {
-            background: rgba(225, 48, 108, 0.1);
-            border-color: var(--accent-pink);
-            color: var(--accent-pink);
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            border-color: transparent;
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(225, 48, 108, 0.45);
+        }
+
+        .contact-link.facebook {
+            background: rgba(24, 119, 242, 0.08);
+            border: 1px solid rgba(24, 119, 242, 0.35);
+            color: #2d88ff;
         }
         .contact-link.facebook:hover {
-            background: rgba(24, 119, 242, 0.1);
-            border-color: var(--accent-blue);
-            color: var(--accent-blue);
+            background: #1877f2;
+            border-color: transparent;
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(24, 119, 242, 0.45);
+        }
+
+        .contact-link.google-maps {
+            background: rgba(234, 67, 53, 0.08);
+            border: 1px solid rgba(234, 67, 53, 0.35);
+            color: #ff6b5b;
         }
         .contact-link.google-maps:hover {
-            background: rgba(255, 106, 0, 0.1);
-            border-color: var(--accent-orange);
-            color: var(--accent-orange);
+            background: #ea4335;
+            border-color: transparent;
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(234, 67, 53, 0.45);
+        }
+
+        .contact-link.google-reviews {
+            background: rgba(244, 180, 0, 0.08);
+            border: 1px solid rgba(244, 180, 0, 0.35);
+            color: #ffc83b;
         }
         .contact-link.google-reviews:hover {
-            background: rgba(244, 180, 0, 0.1);
-            border-color: var(--accent-yellow);
-            color: var(--accent-yellow);
+            background: #f4b400;
+            border-color: transparent;
+            color: #0c0c0e;
+            box-shadow: 0 0 15px rgba(244, 180, 0, 0.45);
         }
 
         /* --- NAVEGACIÓN RETORNO --- */
@@ -1137,8 +1187,8 @@
                 <span class="lightbox-badge" id="lightboxBadge">Categoría</span>
                 <h2 class="lightbox-desc" id="lightboxDesc">ABRAZADERA BARRA ESTABILIZADORA</h2>
                 <a href="" target="_blank" class="lightbox-action-btn" id="lightboxActionBtn">
-                    <svg viewBox="0 0 448 512">
-                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 512l147.7-38.7c32.4 17.7 68.8 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-87.9 23 23.4-85.6-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                    <svg viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.417 9.86-9.858.002-2.637-1.025-5.115-2.893-6.985C16.572 1.892 14.093.868 11.457.868c-5.442 0-9.863 4.419-9.865 9.861-.001 1.745.462 3.447 1.343 4.957l-.997 3.642 3.73-.978zm12.35-7.464c-.267-.134-1.58-.78-1.822-.867-.243-.088-.419-.133-.596.134-.176.268-.683.867-.837 1.046-.155.178-.309.2-.576.067-.267-.134-1.129-.417-2.15-1.328-.794-.709-1.33-1.584-1.486-1.852-.155-.267-.017-.412.117-.545.12-.12.267-.312.4-.469.133-.156.177-.268.267-.446.088-.178.044-.335-.022-.469-.066-.134-.596-1.436-.816-1.97-.215-.519-.431-.448-.596-.457-.154-.008-.33-.01-.506-.01-.177 0-.463.067-.706.335-.243.268-.927.906-.927 2.21 0 1.303.948 2.56 1.08 2.727.133.168 1.866 2.85 4.52 3.996.632.273 1.125.436 1.509.558.635.202 1.213.174 1.67.106.51-.077 1.58-.646 1.8-.1.22-.558.22-1.037.154-1.129-.066-.092-.242-.137-.509-.271z"/>
                     </svg>
                     Consultar por WhatsApp
                 </a>
@@ -1148,8 +1198,8 @@
 
     <!-- BOTÓN FLOTANTE GENERAL DE WHATSAPP -->
     <a href="" target="_blank" class="fab-whatsapp" id="fabWhatsapp" aria-label="Enviar mensaje por WhatsApp">
-        <svg viewBox="0 0 448 512">
-            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 512l147.7-38.7c32.4 17.7 68.8 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-87.9 23 23.4-85.6-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        <svg viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.417 9.86-9.858.002-2.637-1.025-5.115-2.893-6.985C16.572 1.892 14.093.868 11.457.868c-5.442 0-9.863 4.419-9.865 9.861-.001 1.745.462 3.447 1.343 4.957l-.997 3.642 3.73-.978zm12.35-7.464c-.267-.134-1.58-.78-1.822-.867-.243-.088-.419-.133-.596.134-.176.268-.683.867-.837 1.046-.155.178-.309.2-.576.067-.267-.134-1.129-.417-2.15-1.328-.794-.709-1.33-1.584-1.486-1.852-.155-.267-.017-.412.117-.545.12-.12.267-.312.4-.469.133-.156.177-.268.267-.446.088-.178.044-.335-.022-.469-.066-.134-.596-1.436-.816-1.97-.215-.519-.431-.448-.596-.457-.154-.008-.33-.01-.506-.01-.177 0-.463.067-.706.335-.243.268-.927.906-.927 2.21 0 1.303.948 2.56 1.08 2.727.133.168 1.866 2.85 4.52 3.996.632.273 1.125.436 1.509.558.635.202 1.213.174 1.67.106.51-.077 1.58-.646 1.8-.1.22-.558.22-1.037.154-1.129-.066-.092-.242-.137-.509-.271z"/>
         </svg>
     </a>
 
@@ -1322,8 +1372,8 @@
                         <div class="card-content">
                             <div class="product-desc" title="${product.description}">${product.description}</div>
                             <a href="${whatsappLink}" target="_blank" class="card-btn" id="btn-wa-${product.id}" aria-label="Consultar repuesto por WhatsApp">
-                                <svg viewBox="0 0 448 512">
-                                    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 512l147.7-38.7c32.4 17.7 68.8 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-87.9 23 23.4-85.6-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.417 9.86-9.858.002-2.637-1.025-5.115-2.893-6.985C16.572 1.892 14.093.868 11.457.868c-5.442 0-9.863 4.419-9.865 9.861-.001 1.745.462 3.447 1.343 4.957l-.997 3.642 3.73-.978zm12.35-7.464c-.267-.134-1.58-.78-1.822-.867-.243-.088-.419-.133-.596.134-.176.268-.683.867-.837 1.046-.155.178-.309.2-.576.067-.267-.134-1.129-.417-2.15-1.328-.794-.709-1.33-1.584-1.486-1.852-.155-.267-.017-.412.117-.545.12-.12.267-.312.4-.469.133-.156.177-.268.267-.446.088-.178.044-.335-.022-.469-.066-.134-.596-1.436-.816-1.97-.215-.519-.431-.448-.596-.457-.154-.008-.33-.01-.506-.01-.177 0-.463.067-.706.335-.243.268-.927.906-.927 2.21 0 1.303.948 2.56 1.08 2.727.133.168 1.866 2.85 4.52 3.996.632.273 1.125.436 1.509.558.635.202 1.213.174 1.67.106.51-.077 1.58-.646 1.8-.1.22-.558.22-1.037.154-1.129-.066-.092-.242-.137-.509-.271z"/>
                                 </svg>
                                 <span>Consultar</span>
                             </a>
@@ -1463,15 +1513,64 @@
             });
 
             switchView('PHOTOS');
+
+            // Registrar en el historial del navegador
+            history.pushState({ view: 'PHOTOS', category: category }, "");
         };
 
-        // Retorno al menú de carpetas
+        // Retorno al menú de carpetas (con soporte de navegación)
         window.goBackToFolders = function() {
+            if (history.state && history.state.view === 'PHOTOS') {
+                history.back();
+            } else {
+                goBackToFoldersDirect();
+            }
+        };
+
+        function goBackToFoldersDirect() {
             activeCategory = 'ALL';
             searchQuery = '';
             searchInput.value = '';
-            switchView('FOLDERS');
-        };
+            
+            activeView = 'FOLDERS';
+            categoriesScrollContainer.style.display = 'none';
+            productsGrid.style.display = 'none';
+            foldersGrid.style.display = 'grid';
+            
+            document.getElementById('navBackContainer').style.display = 'none';
+            renderFolders();
+        }
+
+        // Manejador del botón físico de atrás en el teléfono (popstate)
+        window.addEventListener('popstate', (event) => {
+            const state = event.state;
+            if (state && state.view === 'PHOTOS') {
+                activeView = 'PHOTOS';
+                if (state.search) {
+                    // Mantener estado de fotos en caso de búsqueda
+                } else {
+                    activeCategory = state.category || 'ALL';
+                    document.getElementById('navBackContainer').style.display = 'flex';
+                    document.getElementById('currentViewTitle').innerText = activeCategory;
+                    
+                    document.querySelectorAll('.category-pill').forEach(pill => {
+                        if (pill.getAttribute('data-category') === activeCategory) {
+                            pill.classList.add('active');
+                        } else {
+                            pill.classList.remove('active');
+                        }
+                    });
+                }
+                
+                categoriesScrollContainer.style.display = 'none';
+                productsGrid.style.display = 'grid';
+                foldersGrid.style.display = 'none';
+                renderProducts();
+            } else {
+                // Volver a la vista de carpetas (estado inicial)
+                goBackToFoldersDirect();
+            }
+        });
 
         // Renderizar enlaces de contacto y redes en cabecera (Opción A)
         function renderSocialLinks(data) {
@@ -1540,6 +1639,7 @@
             searchInput.addEventListener('input', (e) => {
                 searchQuery = e.target.value;
                 if (searchQuery.trim() !== '') {
+                    const wasFolders = activeView === 'FOLDERS';
                     activeCategory = 'ALL';
                     document.getElementById('navBackContainer').style.display = 'flex';
                     document.getElementById('currentViewTitle').innerText = `Buscando: "${searchQuery}"`;
@@ -1551,6 +1651,10 @@
                     foldersGrid.style.display = 'none';
                     
                     renderProducts();
+
+                    if (wasFolders) {
+                        history.pushState({ view: 'PHOTOS', search: true }, "");
+                    }
                 } else {
                     // Volver a carpetas al borrar
                     goBackToFolders();
