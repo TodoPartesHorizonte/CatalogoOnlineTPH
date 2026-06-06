@@ -1595,10 +1595,6 @@
                 counts[p.category] = (counts[p.category] || 0) + 1;
             });
 
-            // Resolver consistencia de categoría seleccionada
-            if (activeCategory !== 'ALL' && !counts[activeCategory]) {
-                activeCategory = 'ALL';
-            }
 
             // Generar HTML de categorías
             let html = `
