@@ -18,9 +18,12 @@ const PRODUCTS_DATA = {
       "id": "ba51f6b8-18a5-48c0-905d-d6dfddfbc14e",
       "category": "Acoplador",
       "image_path": "./assets/ba51f6b8-18a5-48c0-905d-d6dfddfbc14e.webp",
-      "description": "ACOPLADOR",
+      "description": "ACOPLADOR MANUABLUNV D-MAX/ TROOPER",
       "keywords": [
-        "ACOPLADOR"
+        "ACOPLADOR",
+        "D-MAX",
+        "MANUABLUNV",
+        "TROOPER"
       ]
     },
     {
@@ -54,9 +57,14 @@ const PRODUCTS_DATA = {
       "id": "58507b7e-35f2-41e9-86d5-67050720b134",
       "category": "Amortiguador",
       "image_path": "./assets/58507b7e-35f2-41e9-86d5-67050720b134.webp",
-      "description": "AMORTIGUADOR",
+      "description": "UADOR PP SELANTERO ARIBE/2000//2300",
       "keywords": [
-        "AMORTIGUADOR"
+        "2000",
+        "2300",
+        "AMORTIGUADOR",
+        "ARIBE",
+        "SELANTERO",
+        "UADOR"
       ]
     },
     {
@@ -90,7 +98,7 @@ const PRODUCTS_DATA = {
       "id": "eca47992-db7c-43c5-a44e-c556e0bf5777",
       "category": "Amortiguador",
       "image_path": "./assets/eca47992-db7c-43c5-a44e-c556e0bf5777.webp",
-      "description": "AMORTIGUADOR",
+      "description": "IW V LE P L I E UW 4",
       "keywords": [
         "AMORTIGUADOR"
       ]
@@ -231,18 +239,20 @@ const PRODUCTS_DATA = {
       "id": "6b7db40e-1189-49d9-859b-78d1013a6140",
       "category": "Araña",
       "image_path": "./assets/6b7db40e-1189-49d9-859b-78d1013a6140.webp",
-      "description": "ARAÑA",
+      "description": "ARANA LUVIDIMAX 2.4",
       "keywords": [
-        "ARANA"
+        "ARANA",
+        "LUVIDIMAX"
       ]
     },
     {
       "id": "76426ad5-1a55-4d2b-a14b-6aa8452aa8a8",
       "category": "Araña",
       "image_path": "./assets/76426ad5-1a55-4d2b-a14b-6aa8452aa8a8.webp",
-      "description": "ARAÑA",
+      "description": "ARANA LUVID-MMAX 3.0",
       "keywords": [
-        "ARANA"
+        "ARANA",
+        "LUVID-MMAX"
       ]
     },
     {
@@ -258,9 +268,10 @@ const PRODUCTS_DATA = {
       "id": "b7b8c2cf-1e10-425e-89e7-069f950f5ba5",
       "category": "Araña",
       "image_path": "./assets/b7b8c2cf-1e10-425e-89e7-069f950f5ba5.webp",
-      "description": "ARAÑA",
+      "description": "ARANA LUVIDIMAX 2.5",
       "keywords": [
-        "ARANA"
+        "ARANA",
+        "LUVIDIMAX"
       ]
     },
     {
@@ -276,9 +287,11 @@ const PRODUCTS_DATA = {
       "id": "51142567-a8d7-4dbc-b629-14012578b150",
       "category": "Arbol de Leva",
       "image_path": "./assets/51142567-a8d7-4dbc-b629-14012578b150.webp",
-      "description": "ARBOL DE LEVA",
+      "description": "EVA 7/2600",
       "keywords": [
+        "2600",
         "ARBOL",
+        "EVA",
         "LEVA"
       ]
     },
@@ -306,10 +319,13 @@ const PRODUCTS_DATA = {
       "id": "c410dbfa-5528-42ff-9a52-383e20d474de",
       "category": "Arbol de Leva",
       "image_path": "./assets/c410dbfa-5528-42ff-9a52-383e20d474de.webp",
-      "description": "ARBOL DE LEVA",
+      "description": "LUV DEMAX2.4 LUV D-MAX 2.4",
       "keywords": [
         "ARBOL",
-        "LEVA"
+        "D-MAX",
+        "DEMAX2",
+        "LEVA",
+        "LUV"
       ]
     },
     {
@@ -352,18 +368,20 @@ const PRODUCTS_DATA = {
       "id": "0627db9f-cc08-4f04-8adc-54b11027f803",
       "category": "Aspa",
       "image_path": "./assets/0627db9f-cc08-4f04-8adc-54b11027f803.webp",
-      "description": "ASPA",
+      "description": "TE XSS",
       "keywords": [
-        "ASPA"
+        "ASPA",
+        "XSS"
       ]
     },
     {
       "id": "2843342c-3ece-4b93-a556-0c318f0d44c9",
       "category": "Aspa",
       "image_path": "./assets/2843342c-3ece-4b93-a556-0c318f0d44c9.webp",
-      "description": "ASPA",
+      "description": "LUV/D",
       "keywords": [
-        "ASPA"
+        "ASPA",
+        "LUV"
       ]
     },
     {
@@ -379,9 +397,10 @@ const PRODUCTS_DATA = {
       "id": "cf2b74d0-7f96-4355-ac3a-ce88b58a15a7",
       "category": "Aspa",
       "image_path": "./assets/cf2b74d0-7f96-4355-ac3a-ce88b58a15a7.webp",
-      "description": "ASPA",
+      "description": "TROGEERD AG",
       "keywords": [
-        "ASPA"
+        "ASPA",
+        "TROGEERD"
       ]
     },
     {
@@ -397,9 +416,13 @@ const PRODUCTS_DATA = {
       "id": "4589b486-5c20-40c6-ab27-0c7824c305a9",
       "category": "Bandas",
       "image_path": "./assets/4589b486-5c20-40c6-ab27-0c7824c305a9.webp",
-      "description": "BANDAS",
+      "description": "JUEGO DE BANDAS LRASERA LUV E300",
       "keywords": [
-        "BANDAS"
+        "BANDAS",
+        "E300",
+        "JUEGO",
+        "LRASERA",
+        "LUV"
       ]
     },
     {
@@ -461,20 +484,27 @@ const PRODUCTS_DATA = {
       "id": "27245580-69dc-4455-9483-8f9d3b3e0155",
       "category": "Barra Central",
       "image_path": "./assets/27245580-69dc-4455-9483-8f9d3b3e0155.webp",
-      "description": "BARRA CENTRAL",
+      "description": "BARRACENTRAL CON HUECO SODEO",
       "keywords": [
         "BARRA",
-        "CENTRAL"
+        "BARRACENTRAL",
+        "CENTRAL",
+        "HUECO",
+        "SODEO"
       ]
     },
     {
       "id": "343b6601-98ed-40a5-bf43-958ac0321360",
       "category": "Barra Central",
       "image_path": "./assets/343b6601-98ed-40a5-bf43-958ac0321360.webp",
-      "description": "BARRA CENTRAL",
+      "description": "AL SIN CENTR UECO ELE BARRA",
       "keywords": [
         "BARRA",
-        "CENTRAL"
+        "CENTR",
+        "CENTRAL",
+        "ELE",
+        "SIN",
+        "UECO"
       ]
     },
     {
@@ -491,10 +521,13 @@ const PRODUCTS_DATA = {
       "id": "535b9863-da88-4417-a158-f7eb3462fe02",
       "category": "Barra Central",
       "image_path": "./assets/535b9863-da88-4417-a158-f7eb3462fe02.webp",
-      "description": "BARRA CENTRAL",
+      "description": "MANNE MURCONN UVI4AX4",
       "keywords": [
         "BARRA",
-        "CENTRAL"
+        "CENTRAL",
+        "MANNE",
+        "MURCONN",
+        "UVI4AX4"
       ]
     },
     {
@@ -521,10 +554,13 @@ const PRODUCTS_DATA = {
       "id": "6b2f842b-6def-4fe1-ba58-c20119f87beb",
       "category": "Barra Central",
       "image_path": "./assets/6b2f842b-6def-4fe1-ba58-c20119f87beb.webp",
-      "description": "BARRA CENTRAL",
+      "description": "BARRACENTRAL CON HUECO ROOPER",
       "keywords": [
         "BARRA",
-        "CENTRAL"
+        "BARRACENTRAL",
+        "CENTRAL",
+        "HUECO",
+        "ROOPER"
       ]
     },
     {
@@ -551,10 +587,13 @@ const PRODUCTS_DATA = {
       "id": "cdb88e12-fa34-4bcc-8248-7d99ea9bf1cb",
       "category": "Barra Central",
       "image_path": "./assets/cdb88e12-fa34-4bcc-8248-7d99ea9bf1cb.webp",
-      "description": "BARRA CENTRAL",
+      "description": "BARRA CENTRAL SIN HUECO RODEO",
       "keywords": [
         "BARRA",
-        "CENTRAL"
+        "CENTRAL",
+        "HUECO",
+        "RODEO",
+        "SIN"
       ]
     },
     {
@@ -591,8 +630,9 @@ const PRODUCTS_DATA = {
       "id": "a0c0b88a-fa46-4e21-a77a-b1ba01c8af58",
       "category": "Barra Link",
       "image_path": "./assets/a0c0b88a-fa46-4e21-a77a-b1ba01c8af58.webp",
-      "description": "BARRA LINK",
+      "description": "BARRA PL ANUEIN F",
       "keywords": [
+        "ANUEIN",
         "BARRA",
         "LINK"
       ]
@@ -621,10 +661,13 @@ const PRODUCTS_DATA = {
       "id": "f7cba48c-3bec-49f5-81ba-33ef5915c3fa",
       "category": "Base Amortiguador",
       "image_path": "./assets/f7cba48c-3bec-49f5-81ba-33ef5915c3fa.webp",
-      "description": "BASE AMORTIGUADOR",
+      "description": "SOPORTE IORTIGUADOR UV DIMAX",
       "keywords": [
         "AMORTIGUADOR",
-        "BASE"
+        "BASE",
+        "DIMAX",
+        "IORTIGUADOR",
+        "SOPORTE"
       ]
     },
     {
@@ -717,10 +760,11 @@ const PRODUCTS_DATA = {
       "id": "6894175f-3d25-4568-a320-73c55490710d",
       "category": "Base Caja",
       "image_path": "./assets/6894175f-3d25-4568-a320-73c55490710d.webp",
-      "description": "BASE CAJA",
+      "description": "CARIBE 26",
       "keywords": [
         "BASE",
-        "CAJA"
+        "CAJA",
+        "CARIBE"
       ]
     },
     {
@@ -757,10 +801,12 @@ const PRODUCTS_DATA = {
       "id": "a503c0c8-9dae-43f6-9f5b-ab1cdcf91015",
       "category": "Base Caja",
       "image_path": "./assets/a503c0c8-9dae-43f6-9f5b-ab1cdcf91015.webp",
-      "description": "BASE CAJA",
+      "description": "TROOPER / RODEO 3.2",
       "keywords": [
         "BASE",
-        "CAJA"
+        "CAJA",
+        "RODEO",
+        "TROOPER"
       ]
     },
     {
@@ -797,21 +843,24 @@ const PRODUCTS_DATA = {
       "id": "8a16ba3f-cf2b-4adc-be97-1e382aef266e",
       "category": "Base Fan Clutch",
       "image_path": "./assets/8a16ba3f-cf2b-4adc-be97-1e382aef266e.webp",
-      "description": "BASE FAN CLUTCH",
+      "description": "BASE FAN CLUTCH LUV D-MAX 3.5",
       "keywords": [
         "BASE",
         "CLUTCH",
-        "FAN"
+        "D-MAX",
+        "FAN",
+        "LUV"
       ]
     },
     {
       "id": "1583335e-695a-401e-88f3-d02241f6ceab",
       "category": "Base Filtro Aceite",
       "image_path": "./assets/1583335e-695a-401e-88f3-d02241f6ceab.webp",
-      "description": "BASE FILTRO ACEITE",
+      "description": "BASE FIL DE ACEITE U",
       "keywords": [
         "ACEITE",
         "BASE",
+        "FIL",
         "FILTRO"
       ]
     },
@@ -819,22 +868,30 @@ const PRODUCTS_DATA = {
       "id": "6d895a13-7bf5-4247-8449-5e95bdfca3bb",
       "category": "Base Filtro Aceite",
       "image_path": "./assets/6d895a13-7bf5-4247-8449-5e95bdfca3bb.webp",
-      "description": "BASE FILTRO ACEITE",
+      "description": "ILTRO DE ACE E OAS CARIBEZE",
       "keywords": [
+        "ACE",
         "ACEITE",
         "BASE",
-        "FILTRO"
+        "CARIBEZE",
+        "FILTRO",
+        "ILTRO",
+        "OAS"
       ]
     },
     {
       "id": "ed32225b-a15b-470e-8c12-72e09cee8cb8",
       "category": "Base Filtro Aceite",
       "image_path": "./assets/ed32225b-a15b-470e-8c12-72e09cee8cb8.webp",
-      "description": "BASE FILTRO ACEITE",
+      "description": "BASE FIL TRO DE ACE EOS",
       "keywords": [
+        "ACE",
         "ACEITE",
         "BASE",
-        "FILTRO"
+        "EOS",
+        "FIL",
+        "FILTRO",
+        "TRO"
       ]
     },
     {
@@ -851,9 +908,11 @@ const PRODUCTS_DATA = {
       "id": "76f7e0a4-36d5-4966-899f-870e67e875c9",
       "category": "Base Motor",
       "image_path": "./assets/76f7e0a4-36d5-4966-899f-870e67e875c9.webp",
-      "description": "BASE MOTOR",
+      "description": "BASE MOTOR LUV D-MAX 3.5 2A.",
       "keywords": [
         "BASE",
+        "D-MAX",
+        "LUV",
         "MOTOR"
       ]
     },
@@ -861,9 +920,12 @@ const PRODUCTS_DATA = {
       "id": "a0059bdd-83fc-42e3-864c-fd95f34358f9",
       "category": "Base Motor",
       "image_path": "./assets/a0059bdd-83fc-42e3-864c-fd95f34358f9.webp",
-      "description": "BASE MOTOR",
+      "description": "ASE MO LOR LUV 2",
       "keywords": [
+        "ASE",
         "BASE",
+        "LOR",
+        "LUV",
         "MOTOR"
       ]
     },
@@ -881,7 +943,7 @@ const PRODUCTS_DATA = {
       "id": "c612e4c6-c034-4b45-a9e7-ad8cf1639494",
       "category": "Base Motor",
       "image_path": "./assets/c612e4c6-c034-4b45-a9e7-ad8cf1639494.webp",
-      "description": "BASE MOTOR",
+      "description": "BASE MOTOR -",
       "keywords": [
         "BASE",
         "MOTOR"
@@ -891,10 +953,12 @@ const PRODUCTS_DATA = {
       "id": "cd1bf294-6cea-47d5-a579-0ec3ade979fd",
       "category": "Base Motor",
       "image_path": "./assets/cd1bf294-6cea-47d5-a579-0ec3ade979fd.webp",
-      "description": "BASE MOTOR",
+      "description": "ATA S TET ON YY",
       "keywords": [
+        "ATA",
         "BASE",
-        "MOTOR"
+        "MOTOR",
+        "TET"
       ]
     },
     {
@@ -911,10 +975,12 @@ const PRODUCTS_DATA = {
       "id": "f9ae61d3-38dc-4948-9b61-1d42614e9ce7",
       "category": "Base Motor",
       "image_path": "./assets/f9ae61d3-38dc-4948-9b61-1d42614e9ce7.webp",
-      "description": "BASE MOTOR",
+      "description": "Y-X-J OE ME LUV 2 3 YY",
       "keywords": [
         "BASE",
-        "MOTOR"
+        "LUV",
+        "MOTOR",
+        "Y-X-J"
       ]
     },
     {
@@ -930,9 +996,11 @@ const PRODUCTS_DATA = {
       "id": "8c7c7bcd-257e-42a6-9dd1-097ded2140dc",
       "category": "Bendix",
       "image_path": "./assets/8c7c7bcd-257e-42a6-9dd1-097ded2140dc.webp",
-      "description": "BENDIX",
+      "description": "AN NEL UJ RO OM HW A A BENDIXARRANQU -",
       "keywords": [
-        "BENDIX"
+        "BENDIX",
+        "BENDIXARRANQU",
+        "NEL"
       ]
     },
     {
@@ -957,9 +1025,10 @@ const PRODUCTS_DATA = {
       "id": "254903c4-7966-46a6-a802-dda1a979392e",
       "category": "Bobina",
       "image_path": "./assets/254903c4-7966-46a6-a802-dda1a979392e.webp",
-      "description": "BOBINA",
+      "description": "AN D DIE",
       "keywords": [
-        "BOBINA"
+        "BOBINA",
+        "DIE"
       ]
     },
     {
@@ -975,9 +1044,10 @@ const PRODUCTS_DATA = {
       "id": "cd767df5-01ae-4348-b44d-557660aba1fa",
       "category": "Bobina",
       "image_path": "./assets/cd767df5-01ae-4348-b44d-557660aba1fa.webp",
-      "description": "BOBINA",
+      "description": "BOBINA LUVD-MAX 6",
       "keywords": [
-        "BOBINA"
+        "BOBINA",
+        "LUVD-MAX"
       ]
     },
     {
@@ -1013,9 +1083,11 @@ const PRODUCTS_DATA = {
       "id": "8228dd97-0b9e-40d7-9a9f-6a013950547d",
       "category": "Bomba de aceite",
       "image_path": "./assets/8228dd97-0b9e-40d7-9a9f-6a013950547d.webp",
-      "description": "BOMBA DE ACEITE",
+      "description": "BEIT EE ASUS",
       "keywords": [
         "ACEITE",
+        "ASUS",
+        "BEIT",
         "BOMBA"
       ]
     },
@@ -1023,20 +1095,24 @@ const PRODUCTS_DATA = {
       "id": "b7fa779f-bf9f-404d-af6b-63bbc805b55b",
       "category": "Bomba de aceite",
       "image_path": "./assets/b7fa779f-bf9f-404d-af6b-63bbc805b55b.webp",
-      "description": "BOMBA DE ACEITE",
+      "description": "WD YS EW EE EE OE EE PW EE EE EEE ED EE CARIBE OE",
       "keywords": [
         "ACEITE",
-        "BOMBA"
+        "BOMBA",
+        "CARIBE",
+        "EEE"
       ]
     },
     {
       "id": "ce2b3b2c-fc22-4256-a61d-c8b655a6e4a5",
       "category": "Bomba de aceite",
       "image_path": "./assets/ce2b3b2c-fc22-4256-a61d-c8b655a6e4a5.webp",
-      "description": "BOMBA DE ACEITE",
+      "description": "BOMBA DE ACEITE CARIBE 2000",
       "keywords": [
+        "2000",
         "ACEITE",
-        "BOMBA"
+        "BOMBA",
+        "CARIBE"
       ]
     },
     {
@@ -1073,10 +1149,12 @@ const PRODUCTS_DATA = {
       "id": "59eed849-6677-4942-a72e-1a6326c1e83f",
       "category": "Bomba de agua",
       "image_path": "./assets/59eed849-6677-4942-a72e-1a6326c1e83f.webp",
-      "description": "BOMBA DE AGUA",
+      "description": "BOMBAIDEIAGUA IZUSU",
       "keywords": [
         "AGUA",
-        "BOMBA"
+        "BOMBA",
+        "BOMBAIDEIAGUA",
+        "IZUSU"
       ]
     },
     {
@@ -1103,20 +1181,26 @@ const PRODUCTS_DATA = {
       "id": "bb93e024-a20d-4b1e-bca7-ff033fcd07d3",
       "category": "Bomba de agua",
       "image_path": "./assets/bb93e024-a20d-4b1e-bca7-ff033fcd07d3.webp",
-      "description": "BOMBA DE AGUA",
+      "description": "WWW EW EE AE EE EE OO ET OE AES. LUVD-MAX",
       "keywords": [
+        "AES",
         "AGUA",
-        "BOMBA"
+        "BOMBA",
+        "LUVD-MAX",
+        "WWW"
       ]
     },
     {
       "id": "e1d22428-5277-4c55-836f-0ec27a11ed6b",
       "category": "Bomba de agua",
       "image_path": "./assets/e1d22428-5277-4c55-836f-0ec27a11ed6b.webp",
-      "description": "BOMBA DE AGUA",
+      "description": "BOMBAIDEAGUA LUV D-MAX 2.4",
       "keywords": [
         "AGUA",
-        "BOMBA"
+        "BOMBA",
+        "BOMBAIDEAGUA",
+        "D-MAX",
+        "LUV"
       ]
     },
     {
@@ -1153,9 +1237,10 @@ const PRODUCTS_DATA = {
       "id": "bc1aa21d-098e-41f3-8de2-198d13f62bd5",
       "category": "Bomba de Freno",
       "image_path": "./assets/bc1aa21d-098e-41f3-8de2-198d13f62bd5.webp",
-      "description": "BOMBA DE FRENO",
+      "description": "CARIBE 2.3",
       "keywords": [
         "BOMBA",
+        "CARIBE",
         "FRENO"
       ]
     },
@@ -1163,9 +1248,10 @@ const PRODUCTS_DATA = {
       "id": "f2beb1db-decd-4b85-8250-ffcbae6d9378",
       "category": "Bomba de Freno",
       "image_path": "./assets/f2beb1db-decd-4b85-8250-ffcbae6d9378.webp",
-      "description": "BOMBA DE FRENO",
+      "description": "CARIBE 26",
       "keywords": [
         "BOMBA",
+        "CARIBE",
         "FRENO"
       ]
     },
@@ -1173,9 +1259,10 @@ const PRODUCTS_DATA = {
       "id": "5b872bfa-f1a6-432b-8915-bc352961ba83",
       "category": "Bomba de Gasolina",
       "image_path": "./assets/5b872bfa-f1a6-432b-8915-bc352961ba83.webp",
-      "description": "BOMBA DE GASOLINA",
+      "description": "BSWEIVEINS FA 2/7 GASOLINA 2.6",
       "keywords": [
         "BOMBA",
+        "BSWEIVEINS",
         "GASOLINA"
       ]
     },
@@ -1183,8 +1270,9 @@ const PRODUCTS_DATA = {
       "id": "70cb8a8f-b7ec-4536-b6b0-c99ee9993fbc",
       "category": "Bomba de Gasolina",
       "image_path": "./assets/70cb8a8f-b7ec-4536-b6b0-c99ee9993fbc.webp",
-      "description": "BOMBA DE GASOLINA",
+      "description": "AD OT EW 8 BE OE BE BEE OE PT EW 6 EE BE AE HE",
       "keywords": [
+        "BEE",
         "BOMBA",
         "GASOLINA"
       ]
@@ -1203,9 +1291,12 @@ const PRODUCTS_DATA = {
       "id": "cf1dd59c-7c46-46f4-8c1b-a2f693728080",
       "category": "Bomba de Gasolina",
       "image_path": "./assets/cf1dd59c-7c46-46f4-8c1b-a2f693728080.webp",
-      "description": "BOMBA DE GASOLINA",
+      "description": "BOMBAIGASOLINA CARIBE 2000 BA A OE",
       "keywords": [
+        "2000",
         "BOMBA",
+        "BOMBAIGASOLINA",
+        "CARIBE",
         "GASOLINA"
       ]
     },
@@ -1254,7 +1345,7 @@ const PRODUCTS_DATA = {
       "id": "1ee745bc-f8b9-4ac0-b619-b4ddbeba4723",
       "category": "Bombin - Bomba Clutch",
       "image_path": "./assets/1ee745bc-f8b9-4ac0-b619-b4ddbeba4723.webp",
-      "description": "BOMBIN - BOMBA CLUTCH",
+      "description": "T VV TT",
       "keywords": [
         "BOMBA",
         "BOMBIN",
@@ -1276,7 +1367,7 @@ const PRODUCTS_DATA = {
       "id": "482c3255-6901-4c87-8488-7467322839cc",
       "category": "Bombin - Bomba Clutch",
       "image_path": "./assets/482c3255-6901-4c87-8488-7467322839cc.webp",
-      "description": "BOMBIN - BOMBA CLUTCH",
+      "description": "E I.YS ET",
       "keywords": [
         "BOMBA",
         "BOMBIN",
@@ -1298,44 +1389,54 @@ const PRODUCTS_DATA = {
       "id": "86e701aa-9458-4bb1-b78a-b7b6165ecd0f",
       "category": "Bombin - Bomba Clutch",
       "image_path": "./assets/86e701aa-9458-4bb1-b78a-b7b6165ecd0f.webp",
-      "description": "BOMBIN - BOMBA CLUTCH",
+      "description": "A DE CLUTCH LUV DSL MAX 2.4/2.5/3.0",
       "keywords": [
         "BOMBA",
         "BOMBIN",
-        "CLUTCH"
+        "CLUTCH",
+        "DSL",
+        "LUV",
+        "MAX"
       ]
     },
     {
       "id": "9fd78d6f-5741-49d5-add8-6b11924beda2",
       "category": "Bombin - Bomba Clutch",
       "image_path": "./assets/9fd78d6f-5741-49d5-add8-6b11924beda2.webp",
-      "description": "BOMBIN - BOMBA CLUTCH",
+      "description": "7 YE VV / JIN UVID-NMAX 2.4",
       "keywords": [
         "BOMBA",
         "BOMBIN",
-        "CLUTCH"
+        "CLUTCH",
+        "JIN",
+        "UVID-NMAX"
       ]
     },
     {
       "id": "ac59f30f-bf3b-41e8-97ce-76a6bc881096",
       "category": "Bombin - Bomba Clutch",
       "image_path": "./assets/ac59f30f-bf3b-41e8-97ce-76a6bc881096.webp",
-      "description": "BOMBIN - BOMBA CLUTCH",
+      "description": "IE 1. NEES EEN E ETLE I",
       "keywords": [
         "BOMBA",
         "BOMBIN",
-        "CLUTCH"
+        "CLUTCH",
+        "EEN",
+        "ETLE",
+        "NEES"
       ]
     },
     {
       "id": "ecfb021d-1e7b-4c42-8434-718c230baf41",
       "category": "Bombin - Bomba Clutch",
       "image_path": "./assets/ecfb021d-1e7b-4c42-8434-718c230baf41.webp",
-      "description": "BOMBIN - BOMBA CLUTCH",
+      "description": "YE V / 11N EUAV/ WA V",
       "keywords": [
+        "11N",
         "BOMBA",
         "BOMBIN",
-        "CLUTCH"
+        "CLUTCH",
+        "EUAV"
       ]
     },
     {
@@ -1362,10 +1463,11 @@ const PRODUCTS_DATA = {
       "id": "b2defeeb-876c-4b91-beeb-8b6a42054617",
       "category": "Brazo de Biela",
       "image_path": "./assets/b2defeeb-876c-4b91-beeb-8b6a42054617.webp",
-      "description": "BRAZO DE BIELA",
+      "description": "BRAZO DEE C LU SS AO",
       "keywords": [
         "BIELA",
-        "BRAZO"
+        "BRAZO",
+        "DEE"
       ]
     },
     {
@@ -1422,10 +1524,11 @@ const PRODUCTS_DATA = {
       "id": "9a959574-0226-41d5-bbfb-c94ce8cbe322",
       "category": "Buje Araña",
       "image_path": "./assets/9a959574-0226-41d5-bbfb-c94ce8cbe322.webp",
-      "description": "BUJE ARAÑA",
+      "description": "BUJE DEARANA",
       "keywords": [
         "ARANA",
-        "BUJE"
+        "BUJE",
+        "DEARANA"
       ]
     },
     {
@@ -1462,17 +1565,18 @@ const PRODUCTS_DATA = {
       "id": "0aa44f52-3ce0-443e-9a84-4186555f1520",
       "category": "Buje Ballesta",
       "image_path": "./assets/0aa44f52-3ce0-443e-9a84-4186555f1520.webp",
-      "description": "BUJE BALLESTA",
+      "description": "SDELANTERO O P",
       "keywords": [
         "BALLESTA",
-        "BUJE"
+        "BUJE",
+        "SDELANTERO"
       ]
     },
     {
       "id": "11720daf-dfed-4183-b97e-81c89e1dbbb5",
       "category": "Buje Ballesta",
       "image_path": "./assets/11720daf-dfed-4183-b97e-81c89e1dbbb5.webp",
-      "description": "BUJE BALLESTA",
+      "description": "A E I A",
       "keywords": [
         "BALLESTA",
         "BUJE"
@@ -1522,10 +1626,13 @@ const PRODUCTS_DATA = {
       "id": "932a2b6f-ac16-4e32-a2d6-133f2d009906",
       "category": "Buje Ballesta",
       "image_path": "./assets/932a2b6f-ac16-4e32-a2d6-133f2d009906.webp",
-      "description": "BUJE BALLESTA",
+      "description": "BUJE DEBALLESTA JP WANTER LUVIN",
       "keywords": [
         "BALLESTA",
-        "BUJE"
+        "BUJE",
+        "DEBALLESTA",
+        "LUVIN",
+        "WANTER"
       ]
     },
     {
@@ -1562,7 +1669,7 @@ const PRODUCTS_DATA = {
       "id": "fe33b2c2-0fac-4ee1-9e17-9cb75408d7cc",
       "category": "Buje Ballesta",
       "image_path": "./assets/fe33b2c2-0fac-4ee1-9e17-9cb75408d7cc.webp",
-      "description": "BUJE BALLESTA",
+      "description": "IL 4 IL",
       "keywords": [
         "BALLESTA",
         "BUJE"
@@ -1583,21 +1690,26 @@ const PRODUCTS_DATA = {
       "id": "bda19618-92b8-49f5-8831-f9f39a70b13b",
       "category": "Buje Eje Delantero",
       "image_path": "./assets/bda19618-92b8-49f5-8831-f9f39a70b13b.webp",
-      "description": "BUJE EJE DELANTERO",
+      "description": "BUJE DE EJE DELCLANTERO LUV D-MAX3 5 --",
       "keywords": [
         "BUJE",
+        "D-MAX3",
         "DELANTERO",
-        "EJE"
+        "DELCLANTERO",
+        "EJE",
+        "LUV"
       ]
     },
     {
       "id": "0465f604-da6f-42cf-8b02-484fcf123828",
       "category": "Buje Meseta",
       "image_path": "./assets/0465f604-da6f-42cf-8b02-484fcf123828.webp",
-      "description": "BUJE MESETA",
+      "description": "BUJE MESETAEXTERNO TROOPER",
       "keywords": [
         "BUJE",
-        "MESETA"
+        "MESETA",
+        "MESETAEXTERNO",
+        "TROOPER"
       ]
     },
     {
@@ -1614,9 +1726,12 @@ const PRODUCTS_DATA = {
       "id": "489d10c1-3277-4ce8-b7ce-0169b3d4e8f7",
       "category": "Buje Meseta",
       "image_path": "./assets/489d10c1-3277-4ce8-b7ce-0169b3d4e8f7.webp",
-      "description": "BUJE MESETA",
+      "description": "BUJEMESETA LUV DMAAX 2.4 CU",
       "keywords": [
         "BUJE",
+        "BUJEMESETA",
+        "DMAAX",
+        "LUV",
         "MESETA"
       ]
     },
@@ -1624,10 +1739,13 @@ const PRODUCTS_DATA = {
       "id": "4afdb5ba-8945-42a2-a08e-79f86cec54b5",
       "category": "Buje Meseta",
       "image_path": "./assets/4afdb5ba-8945-42a2-a08e-79f86cec54b5.webp",
-      "description": "BUJE MESETA",
+      "description": "BUJE MESETAINTERNO LUV DMAX 3 PA",
       "keywords": [
         "BUJE",
-        "MESETA"
+        "DMAX",
+        "LUV",
+        "MESETA",
+        "MESETAINTERNO"
       ]
     },
     {
@@ -1654,19 +1772,23 @@ const PRODUCTS_DATA = {
       "id": "8839d864-0c93-4273-ab1f-66a24d05ae6c",
       "category": "Buje Meseta",
       "image_path": "./assets/8839d864-0c93-4273-ab1f-66a24d05ae6c.webp",
-      "description": "BUJE MESETA",
+      "description": "BUJE MESETAINTERNO - LU HV/ SS ASF",
       "keywords": [
+        "ASF",
         "BUJE",
-        "MESETA"
+        "MESETA",
+        "MESETAINTERNO"
       ]
     },
     {
       "id": "8864853d-3cca-4b25-839b-bfeedb4b05e0",
       "category": "Buje Meseta",
       "image_path": "./assets/8864853d-3cca-4b25-839b-bfeedb4b05e0.webp",
-      "description": "BUJE MESETA",
+      "description": "BUJE MESETA INTERNO CARIBE .",
       "keywords": [
         "BUJE",
+        "CARIBE",
+        "INTERNO",
         "MESETA"
       ]
     },
@@ -1674,7 +1796,7 @@ const PRODUCTS_DATA = {
       "id": "890a0e77-2564-45dd-ac94-5cc1b188a01b",
       "category": "Buje Meseta",
       "image_path": "./assets/890a0e77-2564-45dd-ac94-5cc1b188a01b.webp",
-      "description": "BUJE MESETA",
+      "description": "IL TL",
       "keywords": [
         "BUJE",
         "MESETA"
@@ -1694,20 +1816,24 @@ const PRODUCTS_DATA = {
       "id": "c5ca5f23-b9b5-4b26-ab01-1c1ee27356ec",
       "category": "Buje Meseta",
       "image_path": "./assets/c5ca5f23-b9b5-4b26-ab01-1c1ee27356ec.webp",
-      "description": "BUJE MESETA",
+      "description": "BUJE MESETAEXTERNO CARIBE 26",
       "keywords": [
         "BUJE",
-        "MESETA"
+        "CARIBE",
+        "MESETA",
+        "MESETAEXTERNO"
       ]
     },
     {
       "id": "e280f9e3-dd82-47e0-ad4e-5361d3e70594",
       "category": "Buje Meseta",
       "image_path": "./assets/e280f9e3-dd82-47e0-ad4e-5361d3e70594.webp",
-      "description": "BUJE MESETA",
+      "description": "BUJE MESETAINTERNO TROOPER",
       "keywords": [
         "BUJE",
-        "MESETA"
+        "MESETA",
+        "MESETAINTERNO",
+        "TROOPER"
       ]
     },
     {
@@ -1724,18 +1850,21 @@ const PRODUCTS_DATA = {
       "id": "f94e147e-68c0-48a7-9bc4-20018cd832a2",
       "category": "Buje Meseta",
       "image_path": "./assets/f94e147e-68c0-48a7-9bc4-20018cd832a2.webp",
-      "description": "BUJE MESETA",
+      "description": "BUJE MESETAINTERNO 1310 DP E",
       "keywords": [
+        "1310",
         "BUJE",
-        "MESETA"
+        "MESETA",
+        "MESETAINTERNO"
       ]
     },
     {
       "id": "43f678c6-00df-448a-8a79-b8900ceb7136",
       "category": "Bujia",
       "image_path": "./assets/43f678c6-00df-448a-8a79-b8900ceb7136.webp",
-      "description": "BUJIA",
+      "description": "2300",
       "keywords": [
+        "2300",
         "BUJIA"
       ]
     },
@@ -1752,30 +1881,33 @@ const PRODUCTS_DATA = {
       "id": "8f495b26-84be-4a6c-9f6e-5b0d202059e5",
       "category": "Bujia",
       "image_path": "./assets/8f495b26-84be-4a6c-9f6e-5b0d202059e5.webp",
-      "description": "BUJIA",
+      "description": "1U NI PY LUV DIMAX 3.5",
       "keywords": [
-        "BUJIA"
+        "BUJIA",
+        "DIMAX",
+        "LUV"
       ]
     },
     {
       "id": "f2b7bd0d-ffa9-45d6-ad7d-9a03fd953ac5",
       "category": "Bujia",
       "image_path": "./assets/f2b7bd0d-ffa9-45d6-ad7d-9a03fd953ac5.webp",
-      "description": "BUJIA",
+      "description": "ISO IAL AR",
       "keywords": [
-        "BUJIA"
+        "BUJIA",
+        "IAL",
+        "ISO"
       ]
     },
     {
       "id": "WhatsApp Image 2026-02-09 at 1.42.49 PM",
       "category": "Bujia",
       "image_path": "./assets/WhatsApp Image 2026-02-09 at 1.42.49 PM.webp",
-      "description": "WHATSAPP IMAGE 2026 02 09 AT 1.42.49 PM",
+      "description": "IN OO TIBIDION 4 V MAX",
       "keywords": [
-        "2026",
         "BUJIA",
-        "IMAGE",
-        "WHATSAPP"
+        "MAX",
+        "TIBIDION"
       ]
     },
     {
@@ -1804,20 +1936,26 @@ const PRODUCTS_DATA = {
       "id": "3495e4ad-d024-468f-ba8f-4edd813ea421",
       "category": "Cables de Bujia",
       "image_path": "./assets/3495e4ad-d024-468f-ba8f-4edd813ea421.webp",
-      "description": "CABLES DE BUJIA",
+      "description": "JUEGO DE CABLE LUV/2300 OL",
       "keywords": [
+        "2300",
         "BUJIA",
-        "CABLES"
+        "CABLE",
+        "CABLES",
+        "JUEGO",
+        "LUV"
       ]
     },
     {
       "id": "5a10e516-d1ec-494d-97ab-ba39fa4f22bb",
       "category": "Cables de Bujia",
       "image_path": "./assets/5a10e516-d1ec-494d-97ab-ba39fa4f22bb.webp",
-      "description": "CABLES DE BUJIA",
+      "description": "JUEGO DE CABLES CARIBE",
       "keywords": [
         "BUJIA",
-        "CABLES"
+        "CABLES",
+        "CARIBE",
+        "JUEGO"
       ]
     },
     {
@@ -1834,13 +1972,10 @@ const PRODUCTS_DATA = {
       "id": "WhatsApp Image 2026-02-09 at 1.44.31 PM",
       "category": "Cadena Tiempo",
       "image_path": "./assets/WhatsApp Image 2026-02-09 at 1.44.31 PM.webp",
-      "description": "WHATSAPP IMAGE 2026 02 09 AT 1.44.31 PM",
+      "description": "CADENA TIEMPO",
       "keywords": [
-        "2026",
         "CADENA",
-        "IMAGE",
-        "TIEMPO",
-        "WHATSAPP"
+        "TIEMPO"
       ]
     },
     {
@@ -1857,10 +1992,13 @@ const PRODUCTS_DATA = {
       "id": "6650bae9-8193-4ff1-bf0c-adc69c49e02e",
       "category": "Cajetin de Direccion",
       "image_path": "./assets/6650bae9-8193-4ff1-bf0c-adc69c49e02e.webp",
-      "description": "CAJETIN DE DIRECCION",
+      "description": "FED 72009 8 CC 1S D 2 OR D MAS CA",
       "keywords": [
+        "72009",
         "CAJETIN",
-        "DIRECCION"
+        "DIRECCION",
+        "FED",
+        "MAS"
       ]
     },
     {
@@ -1886,10 +2024,12 @@ const PRODUCTS_DATA = {
       "id": "7e6f1d71-2184-4249-82ba-3526614f5929",
       "category": "Carbonera Arranque",
       "image_path": "./assets/7e6f1d71-2184-4249-82ba-3526614f5929.webp",
-      "description": "CARBONERA ARRANQUE",
+      "description": "CARBON CARIBE RA",
       "keywords": [
         "ARRANQUE",
-        "CARBONERA"
+        "CARBON",
+        "CARBONERA",
+        "CARIBE"
       ]
     },
     {
@@ -1915,17 +2055,21 @@ const PRODUCTS_DATA = {
       "id": "2eac7a4e-5ced-4738-9ca1-6767f584288f",
       "category": "Cigueñal",
       "image_path": "./assets/2eac7a4e-5ced-4738-9ca1-6767f584288f.webp",
-      "description": "CIGUEÑAL",
+      "description": "SB UENAL LUV /D MAXI2.4",
       "keywords": [
-        "CIGUENAL"
+        "CIGUENAL",
+        "LUV",
+        "MAXI2",
+        "UENAL"
       ]
     },
     {
       "id": "43838e64-9362-41cf-ba55-7388d9866c7b",
       "category": "Cigueñal",
       "image_path": "./assets/43838e64-9362-41cf-ba55-7388d9866c7b.webp",
-      "description": "CIGUEÑAL",
+      "description": "XN AII SE",
       "keywords": [
+        "AII",
         "CIGUENAL"
       ]
     },
@@ -1933,39 +2077,48 @@ const PRODUCTS_DATA = {
       "id": "fa4d3973-453c-412f-9cb7-d31200c3dda9",
       "category": "Cigueñal",
       "image_path": "./assets/fa4d3973-453c-412f-9cb7-d31200c3dda9.webp",
-      "description": "CIGUEÑAL",
+      "description": "EJ FE 8 L LUVS NE P - FX ATI BH SE",
       "keywords": [
-        "CIGUENAL"
+        "ATI",
+        "CIGUENAL",
+        "LUVS"
       ]
     },
     {
       "id": "0d07c431-3200-446b-aaf6-0ec0b05bae3e",
       "category": "Cilindro de Freno",
       "image_path": "./assets/0d07c431-3200-446b-aaf6-0ec0b05bae3e.webp",
-      "description": "CILINDRO DE FRENO",
+      "description": "SEES O A. AE",
       "keywords": [
         "CILINDRO",
-        "FRENO"
+        "FRENO",
+        "SEES"
       ]
     },
     {
       "id": "591d4b4b-1853-4d10-8759-b70051557300",
       "category": "Cilindro de Freno",
       "image_path": "./assets/591d4b4b-1853-4d10-8759-b70051557300.webp",
-      "description": "CILINDRO DE FRENO",
+      "description": "CILINDRC BREN E LUV D-MAX 3.5",
       "keywords": [
+        "BREN",
+        "CILINDRC",
         "CILINDRO",
-        "FRENO"
+        "D-MAX",
+        "FRENO",
+        "LUV"
       ]
     },
     {
       "id": "899ce35f-62ed-43e7-85bb-9548a995021b",
       "category": "Cilindro de Freno",
       "image_path": "./assets/899ce35f-62ed-43e7-85bb-9548a995021b.webp",
-      "description": "CILINDRO DE FRENO",
+      "description": "CC CINE OF NICO AI.",
       "keywords": [
         "CILINDRO",
-        "FRENO"
+        "CINE",
+        "FRENO",
+        "NICO"
       ]
     },
     {
@@ -1990,9 +2143,13 @@ const PRODUCTS_DATA = {
       "id": "1fd4a679-e0c4-4b5d-946c-5420763cd725",
       "category": "Collarin",
       "image_path": "./assets/1fd4a679-e0c4-4b5d-946c-5420763cd725.webp",
-      "description": "COLLARIN",
+      "description": "COLLECARIN CARIBE MOTOR 2000",
       "keywords": [
-        "COLLARIN"
+        "2000",
+        "CARIBE",
+        "COLLARIN",
+        "COLLECARIN",
+        "MOTOR"
       ]
     },
     {
@@ -2008,8 +2165,12 @@ const PRODUCTS_DATA = {
       "id": "2f247317-e094-4e3f-98ab-b11cadd76210",
       "category": "Collarin",
       "image_path": "./assets/2f247317-e094-4e3f-98ab-b11cadd76210.webp",
-      "description": "COLLARIN",
+      "description": "BO BEE BENS EE EE OW 2 BE EE A EE CARIBE 2600",
       "keywords": [
+        "2600",
+        "BEE",
+        "BENS",
+        "CARIBE",
         "COLLARIN"
       ]
     },
@@ -2035,9 +2196,12 @@ const PRODUCTS_DATA = {
       "id": "a6edf194-0573-4ecc-9b19-d0765310ee70",
       "category": "Collarin",
       "image_path": "./assets/a6edf194-0573-4ecc-9b19-d0765310ee70.webp",
-      "description": "COLLARIN",
+      "description": "COLLARIN CARIBE MOTOR 2300",
       "keywords": [
-        "COLLARIN"
+        "2300",
+        "CARIBE",
+        "COLLARIN",
+        "MOTOR"
       ]
     },
     {
@@ -2124,13 +2288,11 @@ const PRODUCTS_DATA = {
       "id": "WhatsApp Image 2026-02-09 at 12.26.58 PM",
       "category": "Concha de Biela",
       "image_path": "./assets/WhatsApp Image 2026-02-09 at 12.26.58 PM.webp",
-      "description": "WHATSAPP IMAGE 2026 02 09 AT 12.26.58 PM",
+      "description": "JUEGO",
       "keywords": [
-        "2026",
         "BIELA",
         "CONCHA",
-        "IMAGE",
-        "WHATSAPP"
+        "JUEGO"
       ]
     },
     {
@@ -2215,10 +2377,13 @@ const PRODUCTS_DATA = {
       "id": "89f185a2-d835-4549-998c-567e3e068ed1",
       "category": "Consola Central",
       "image_path": "./assets/89f185a2-d835-4549-998c-567e3e068ed1.webp",
-      "description": "CONSOLA CENTRAL",
+      "description": "59 BAMASEOOS 2050 INANE",
       "keywords": [
+        "2050",
+        "BAMASEOOS",
         "CENTRAL",
-        "CONSOLA"
+        "CONSOLA",
+        "INANE"
       ]
     },
     {
@@ -2329,26 +2494,31 @@ const PRODUCTS_DATA = {
       "id": "12ae5e21-8e1f-4047-9dfb-142e91800eb7",
       "category": "Cruceta",
       "image_path": "./assets/12ae5e21-8e1f-4047-9dfb-142e91800eb7.webp",
-      "description": "CRUCETA",
+      "description": "CRUCETA CARIBE GRANDE A IL",
       "keywords": [
-        "CRUCETA"
+        "CARIBE",
+        "CRUCETA",
+        "GRANDE"
       ]
     },
     {
       "id": "26579172-ff17-48f6-833e-2c6165a67f66",
       "category": "Cruceta",
       "image_path": "./assets/26579172-ff17-48f6-833e-2c6165a67f66.webp",
-      "description": "CRUCETA",
+      "description": "CRUCETA LUV D MAX 3.5 EE BB",
       "keywords": [
-        "CRUCETA"
+        "CRUCETA",
+        "LUV",
+        "MAX"
       ]
     },
     {
       "id": "45f4851f-c035-4e4c-b3ec-489586a6f5a6",
       "category": "Cruceta",
       "image_path": "./assets/45f4851f-c035-4e4c-b3ec-489586a6f5a6.webp",
-      "description": "CRUCETA",
+      "description": "EW -ITLE V",
       "keywords": [
+        "-ITLE",
         "CRUCETA"
       ]
     },
@@ -2356,18 +2526,23 @@ const PRODUCTS_DATA = {
       "id": "47f12c2a-cc16-485b-ad55-3656a8f1ec09",
       "category": "Cruceta",
       "image_path": "./assets/47f12c2a-cc16-485b-ad55-3656a8f1ec09.webp",
-      "description": "CRUCETA",
+      "description": "E CARS SEA RIA",
       "keywords": [
-        "CRUCETA"
+        "CARS",
+        "CRUCETA",
+        "RIA",
+        "SEA"
       ]
     },
     {
       "id": "267cf51d-6170-4eb5-806c-f636651f3fb7",
       "category": "Damper",
       "image_path": "./assets/267cf51d-6170-4eb5-806c-f636651f3fb7.webp",
-      "description": "DAMPER",
+      "description": "DAMPER LUV D-MAX 2.5",
       "keywords": [
-        "DAMPER"
+        "D-MAX",
+        "DAMPER",
+        "LUV"
       ]
     },
     {
@@ -2383,18 +2558,22 @@ const PRODUCTS_DATA = {
       "id": "dd54cacf-c2e6-4e95-8f2d-347e77ef7ef9",
       "category": "Damper",
       "image_path": "./assets/dd54cacf-c2e6-4e95-8f2d-347e77ef7ef9.webp",
-      "description": "DAMPER",
+      "description": "DAMPER LUV 2.3",
       "keywords": [
-        "DAMPER"
+        "DAMPER",
+        "LUV"
       ]
     },
     {
       "id": "e10321d4-4489-476d-acf7-92b5954261a7",
       "category": "Damper",
       "image_path": "./assets/e10321d4-4489-476d-acf7-92b5954261a7.webp",
-      "description": "DAMPER",
+      "description": "DYN Y L UVIDSRAD DZMAXX/3.0",
       "keywords": [
-        "DAMPER"
+        "DAMPER",
+        "DYN",
+        "DZMAXX",
+        "UVIDSRAD"
       ]
     },
     {
@@ -2411,39 +2590,32 @@ const PRODUCTS_DATA = {
       "id": "WhatsApp Image 2026-02-09 at 1.17.19 PM (1)",
       "category": "Disco de Clutch",
       "image_path": "./assets/WhatsApp Image 2026-02-09 at 1.17.19 PM (1).webp",
-      "description": "WHATSAPP IMAGE 2026 02 09 AT 1.17.19 PM 1",
+      "description": "DISCO CLUTCH CARIBE GRE0O",
       "keywords": [
-        "2026",
+        "CARIBE",
         "CLUTCH",
         "DISCO",
-        "IMAGE",
-        "WHATSAPP"
+        "GRE0O"
       ]
     },
     {
       "id": "WhatsApp Image 2026-02-09 at 1.17.19 PM",
       "category": "Disco de Clutch",
       "image_path": "./assets/WhatsApp Image 2026-02-09 at 1.17.19 PM.webp",
-      "description": "WHATSAPP IMAGE 2026 02 09 AT 1.17.19 PM",
+      "description": "DISCO CLUTCH EQ VE -",
       "keywords": [
-        "2026",
         "CLUTCH",
-        "DISCO",
-        "IMAGE",
-        "WHATSAPP"
+        "DISCO"
       ]
     },
     {
       "id": "WhatsApp Image 2026-02-09 at 1.17.20 PM (1)",
       "category": "Disco de Clutch",
       "image_path": "./assets/WhatsApp Image 2026-02-09 at 1.17.20 PM (1).webp",
-      "description": "WHATSAPP IMAGE 2026 02 09 AT 1.17.20 PM 1",
+      "description": "DISCO CLUTCH LA U AY / LM I",
       "keywords": [
-        "2026",
         "CLUTCH",
-        "DISCO",
-        "IMAGE",
-        "WHATSAPP"
+        "DISCO"
       ]
     },
     {
@@ -2463,13 +2635,11 @@ const PRODUCTS_DATA = {
       "id": "WhatsApp Image 2026-02-09 at 1.17.20 PM",
       "category": "Disco de Clutch",
       "image_path": "./assets/WhatsApp Image 2026-02-09 at 1.17.20 PM.webp",
-      "description": "WHATSAPP IMAGE 2026 02 09 AT 1.17.20 PM",
+      "description": "DISCO CLUTCH CARIBE 2.3",
       "keywords": [
-        "2026",
+        "CARIBE",
         "CLUTCH",
-        "DISCO",
-        "IMAGE",
-        "WHATSAPP"
+        "DISCO"
       ]
     },
     {
@@ -2502,10 +2672,13 @@ const PRODUCTS_DATA = {
       "id": "08b384ff-6dfc-453d-9b91-f0f5263b7f10",
       "category": "Disco de Freno",
       "image_path": "./assets/08b384ff-6dfc-453d-9b91-f0f5263b7f10.webp",
-      "description": "DISCO DE FRENO",
+      "description": "DISCO DE ERENO LUV/D MAXXI2.4 A",
       "keywords": [
         "DISCO",
-        "FRENO"
+        "ERENO",
+        "FRENO",
+        "LUV",
+        "MAXXI2"
       ]
     },
     {
@@ -2532,29 +2705,37 @@ const PRODUCTS_DATA = {
       "id": "670b5f18-30cf-448a-bf7b-fa32fd98269d",
       "category": "Disco de Freno",
       "image_path": "./assets/670b5f18-30cf-448a-bf7b-fa32fd98269d.webp",
-      "description": "DISCO DE FRENO",
+      "description": "DEFR OOO LUV DIMAXSO 4X4",
       "keywords": [
+        "4X4",
+        "DEFR",
+        "DIMAXSO",
         "DISCO",
-        "FRENO"
+        "FRENO",
+        "LUV",
+        "OOO"
       ]
     },
     {
       "id": "b725867f-9982-473c-86d0-941d41ab3fea",
       "category": "Disco de Freno",
       "image_path": "./assets/b725867f-9982-473c-86d0-941d41ab3fea.webp",
-      "description": "DISCO DE FRENO",
+      "description": "DISCO DE FRENO LUV/ID MAXI25 A",
       "keywords": [
         "DISCO",
-        "FRENO"
+        "FRENO",
+        "LUV",
+        "MAXI25"
       ]
     },
     {
       "id": "31237e25-9295-47c6-8fc8-54c0ff2bc7ad",
       "category": "Distribuidor",
       "image_path": "./assets/31237e25-9295-47c6-8fc8-54c0ff2bc7ad.webp",
-      "description": "DISTRIBUIDOR",
+      "description": "DISTRIBUIDOR LUV2300 I. GE",
       "keywords": [
-        "DISTRIBUIDOR"
+        "DISTRIBUIDOR",
+        "LUV2300"
       ]
     },
     {
@@ -2570,28 +2751,35 @@ const PRODUCTS_DATA = {
       "id": "2901f591-a6df-4fdf-927e-5c293424d271",
       "category": "Embolo",
       "image_path": "./assets/2901f591-a6df-4fdf-927e-5c293424d271.webp",
-      "description": "EMBOLO",
+      "description": "EMBOLOARRANQUE ANE BES WA",
       "keywords": [
-        "EMBOLO"
+        "ANE",
+        "BES",
+        "EMBOLO",
+        "EMBOLOARRANQUE"
       ]
     },
     {
       "id": "eb8a2335-e679-4b02-9a68-366dcfc5b320",
       "category": "Embolo",
       "image_path": "./assets/eb8a2335-e679-4b02-9a68-366dcfc5b320.webp",
-      "description": "EMBOLO",
+      "description": "EMBOLOARRANQUE TN UPEES WA",
       "keywords": [
-        "EMBOLO"
+        "EMBOLO",
+        "EMBOLOARRANQUE",
+        "UPEES"
       ]
     },
     {
       "id": "1482d0af-3b76-4ad9-9a22-fbc625c34565",
       "category": "Empacadura Bajante",
       "image_path": "./assets/1482d0af-3b76-4ad9-9a22-fbc625c34565.webp",
-      "description": "EMPACADURA BAJANTE",
+      "description": "A YN U EIPLANZ RY JAS BA",
       "keywords": [
         "BAJANTE",
-        "EMPACADURA"
+        "EIPLANZ",
+        "EMPACADURA",
+        "JAS"
       ]
     },
     {
@@ -2618,20 +2806,23 @@ const PRODUCTS_DATA = {
       "id": "de0590cb-6d5f-411a-bce4-f412c49d088e",
       "category": "Empacadura Bajante",
       "image_path": "./assets/de0590cb-6d5f-411a-bce4-f412c49d088e.webp",
-      "description": "EMPACADURA BAJANTE",
+      "description": "M 5 3 SRS TENSE CA",
       "keywords": [
         "BAJANTE",
-        "EMPACADURA"
+        "EMPACADURA",
+        "SRS",
+        "TENSE"
       ]
     },
     {
       "id": "0cfc4c93-3c12-40d4-8529-6fad56137e56",
       "category": "Empacadura Camara",
       "image_path": "./assets/0cfc4c93-3c12-40d4-8529-6fad56137e56.webp",
-      "description": "EMPACADURA CAMARA",
+      "description": "TCAMARA EE 2 AR LF .",
       "keywords": [
         "CAMARA",
-        "EMPACADURA"
+        "EMPACADURA",
+        "TCAMARA"
       ]
     },
     {
@@ -2688,10 +2879,11 @@ const PRODUCTS_DATA = {
       "id": "66251d7e-fba2-41f2-af6c-2fe035dacd9c",
       "category": "Empacadura Camara",
       "image_path": "./assets/66251d7e-fba2-41f2-af6c-2fe035dacd9c.webp",
-      "description": "EMPACADURA CAMARA",
+      "description": "TCAMARA EE 2 AR LF .",
       "keywords": [
         "CAMARA",
-        "EMPACADURA"
+        "EMPACADURA",
+        "TCAMARA"
       ]
     },
     {
@@ -2758,10 +2950,13 @@ const PRODUCTS_DATA = {
       "id": "8742d4eb-fae7-48bc-bb00-0edb71702c18",
       "category": "Empacadura Carter",
       "image_path": "./assets/8742d4eb-fae7-48bc-bb00-0edb71702c18.webp",
-      "description": "EMPACADURA CARTER",
+      "description": "NV O/S 21 S AOE . 2 AAA LUV/2 3 4",
       "keywords": [
+        "AAA",
+        "AOE",
         "CARTER",
-        "EMPACADURA"
+        "EMPACADURA",
+        "LUV"
       ]
     },
     {
@@ -2888,20 +3083,28 @@ const PRODUCTS_DATA = {
       "id": "1632a134-9026-464f-b3b7-a4c104bbb8b1",
       "category": "Empacadura Tapavalvula",
       "image_path": "./assets/1632a134-9026-464f-b3b7-a4c104bbb8b1.webp",
-      "description": "EMPACADURA TAPAVALVULA",
+      "description": "SNE VALCEAL VA ROO ALL",
       "keywords": [
+        "ALL",
         "EMPACADURA",
-        "TAPAVALVULA"
+        "ROO",
+        "SNE",
+        "TAPAVALVULA",
+        "VALCEAL"
       ]
     },
     {
       "id": "2817c810-9bd3-4dda-8f69-5c4b08e829d3",
       "category": "Empacadura Tapavalvula",
       "image_path": "./assets/2817c810-9bd3-4dda-8f69-5c4b08e829d3.webp",
-      "description": "EMPACADURA TAPAVALVULA",
+      "description": "EE VALNOLAL VA JOR LUV D C24",
       "keywords": [
+        "C24",
         "EMPACADURA",
-        "TAPAVALVULA"
+        "JOR",
+        "LUV",
+        "TAPAVALVULA",
+        "VALNOLAL"
       ]
     },
     {
@@ -2938,10 +3141,13 @@ const PRODUCTS_DATA = {
       "id": "fd9ed290-19fd-4a9e-90b3-5bc66583db74",
       "category": "Empacadura Tapavalvula",
       "image_path": "./assets/fd9ed290-19fd-4a9e-90b3-5bc66583db74.webp",
-      "description": "EMPACADURA TAPAVALVULA",
+      "description": "EG VALNGEAL VA TOR LUV/D 63.5",
       "keywords": [
         "EMPACADURA",
-        "TAPAVALVULA"
+        "LUV",
+        "TAPAVALVULA",
+        "TOR",
+        "VALNGEAL"
       ]
     },
     {
@@ -3000,9 +3206,12 @@ const PRODUCTS_DATA = {
       "id": "9e604de9-d1b8-4202-8f1c-5ad2fc47bae4",
       "category": "Engranaje Leva",
       "image_path": "./assets/9e604de9-d1b8-4202-8f1c-5ad2fc47bae4.webp",
-      "description": "ENGRANAJE LEVA",
+      "description": "ENGRANAVJE DE LEVA CARIBE G200 OW",
       "keywords": [
+        "CARIBE",
         "ENGRANAJE",
+        "ENGRANAVJE",
+        "G200",
         "LEVA"
       ]
     },
@@ -3020,9 +3229,10 @@ const PRODUCTS_DATA = {
       "id": "3a8378d4-45e2-4d81-8db3-bb492ba8ae3f",
       "category": "Envase Refrigerante",
       "image_path": "./assets/3a8378d4-45e2-4d81-8db3-bb492ba8ae3f.webp",
-      "description": "ENVASE REFRIGERANTE",
+      "description": "RANTE",
       "keywords": [
         "ENVASE",
+        "RANTE",
         "REFRIGERANTE"
       ]
     },
@@ -3048,9 +3258,13 @@ const PRODUCTS_DATA = {
       "id": "2363893d-7074-4215-8291-5a4006c5eb56",
       "category": "Espejo",
       "image_path": "./assets/2363893d-7074-4215-8291-5a4006c5eb56.webp",
-      "description": "ESPEJO",
+      "description": "4 IV DEMAASASOOC Y 7 LUV D-MAXG2005/2014 A EE",
       "keywords": [
-        "ESPEJO"
+        "2014",
+        "D-MAXG2005",
+        "DEMAASASOOC",
+        "ESPEJO",
+        "LUV"
       ]
     },
     {
@@ -3085,9 +3299,11 @@ const PRODUCTS_DATA = {
       "id": "083e4d9e-e3ce-4ffa-85ef-80bc1d785294",
       "category": "Estopera Arbol de Leva",
       "image_path": "./assets/083e4d9e-e3ce-4ffa-85ef-80bc1d785294.webp",
-      "description": "ESTOPERA ARBOL DE LEVA",
+      "description": "ESTOPERA ARES AME 2 6G",
       "keywords": [
+        "AME",
         "ARBOL",
+        "ARES",
         "ESTOPERA",
         "LEVA"
       ]
@@ -3096,22 +3312,27 @@ const PRODUCTS_DATA = {
       "id": "0c32faaa-c9fb-449b-aa38-86bccebd839e",
       "category": "Estopera Arbol de Leva",
       "image_path": "./assets/0c32faaa-c9fb-449b-aa38-86bccebd839e.webp",
-      "description": "ESTOPERA ARBOL DE LEVA",
+      "description": "ES OO ENES SARE FTUYE3",
       "keywords": [
         "ARBOL",
+        "ENES",
         "ESTOPERA",
-        "LEVA"
+        "FTUYE3",
+        "LEVA",
+        "SARE"
       ]
     },
     {
       "id": "494fc6bb-cfd3-4de0-a787-cecd545866a0",
       "category": "Estopera Arbol de Leva",
       "image_path": "./assets/494fc6bb-cfd3-4de0-a787-cecd545866a0.webp",
-      "description": "ESTOPERA ARBOL DE LEVA",
+      "description": "EAT 7S LUV D X 3.5",
       "keywords": [
         "ARBOL",
+        "EAT",
         "ESTOPERA",
-        "LEVA"
+        "LEVA",
+        "LUV"
       ]
     },
     {
@@ -3129,9 +3350,11 @@ const PRODUCTS_DATA = {
       "id": "b866102d-d4d4-4b71-9ae8-1539ef8179a6",
       "category": "Estopera Arbol de Leva",
       "image_path": "./assets/b866102d-d4d4-4b71-9ae8-1539ef8179a6.webp",
-      "description": "ESTOPERA ARBOL DE LEVA",
+      "description": "ESTOPERA ARES VE E23",
       "keywords": [
         "ARBOL",
+        "ARES",
+        "E23",
         "ESTOPERA",
         "LEVA"
       ]
@@ -3140,11 +3363,13 @@ const PRODUCTS_DATA = {
       "id": "c0916e15-f916-4d91-8a2a-302d81c32cc8",
       "category": "Estopera Arbol de Leva",
       "image_path": "./assets/c0916e15-f916-4d91-8a2a-302d81c32cc8.webp",
-      "description": "ESTOPERA ARBOL DE LEVA",
+      "description": "ESTOPERAARBOL DE VA MOO EO",
       "keywords": [
         "ARBOL",
         "ESTOPERA",
-        "LEVA"
+        "ESTOPERAARBOL",
+        "LEVA",
+        "MOO"
       ]
     },
     {
@@ -3305,10 +3530,11 @@ const PRODUCTS_DATA = {
       "id": "9040af76-7092-40cc-b809-de1fd17e4ef0",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/9040af76-7092-40cc-b809-de1fd17e4ef0.webp",
-      "description": "ESTOPERA CIGUEÑAL TRASERA",
+      "description": "TRASERA LUVE E I S",
       "keywords": [
         "CIGUENAL",
         "ESTOPERA",
+        "LUVE",
         "TRASERA"
       ]
     },
@@ -3316,21 +3542,24 @@ const PRODUCTS_DATA = {
       "id": "d5c4a1f4-df38-40aa-ac27-ee10d225edcf",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/d5c4a1f4-df38-40aa-ac27-ee10d225edcf.webp",
-      "description": "ESTOPERA CIGUEÑAL TRASERA",
+      "description": "CIGUENAL RA 3 OA SE UAV RA STOPE",
       "keywords": [
         "CIGUENAL",
         "ESTOPERA",
-        "TRASERA"
+        "STOPE",
+        "TRASERA",
+        "UAV"
       ]
     },
     {
       "id": "fcc26950-26ba-48a8-a5d2-4eba9780c589",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/fcc26950-26ba-48a8-a5d2-4eba9780c589.webp",
-      "description": "ESTOPERA CIGUEÑAL TRASERA",
+      "description": "ESTOPERA CIGUENAL TRASERA RODEO",
       "keywords": [
         "CIGUENAL",
         "ESTOPERA",
+        "RODEO",
         "TRASERA"
       ]
     },
@@ -3647,27 +3876,32 @@ const PRODUCTS_DATA = {
       "id": "03c39fcb-db42-4a0c-94a9-dc2676f3fef6",
       "category": "Fan Clutch",
       "image_path": "./assets/03c39fcb-db42-4a0c-94a9-dc2676f3fef6.webp",
-      "description": "FAN CLUTCH",
+      "description": "NIP J SG CILINDRO TR PER 3. A . LS",
       "keywords": [
+        "CILINDRO",
         "CLUTCH",
-        "FAN"
+        "FAN",
+        "NIP",
+        "PER"
       ]
     },
     {
       "id": "0f26f009-7c8c-45f8-8744-792d2fbf70ad",
       "category": "Fan Clutch",
       "image_path": "./assets/0f26f009-7c8c-45f8-8744-792d2fbf70ad.webp",
-      "description": "FAN CLUTCH",
+      "description": "FAN CLUTCH GCILINDR LUVS2 A . LS",
       "keywords": [
         "CLUTCH",
-        "FAN"
+        "FAN",
+        "GCILINDR",
+        "LUVS2"
       ]
     },
     {
       "id": "23bb9fce-921e-4da5-983b-be8379964902",
       "category": "Fan Clutch",
       "image_path": "./assets/23bb9fce-921e-4da5-983b-be8379964902.webp",
-      "description": "FAN CLUTCH",
+      "description": "WE I",
       "keywords": [
         "CLUTCH",
         "FAN"
@@ -3707,8 +3941,9 @@ const PRODUCTS_DATA = {
       "id": "6adbc5e4-e57c-47c3-ac28-bcfe27749cfa",
       "category": "Fan Clutch",
       "image_path": "./assets/6adbc5e4-e57c-47c3-ac28-bcfe27749cfa.webp",
-      "description": "FAN CLUTCH",
+      "description": "FAN CLUTCH 6 CILINDEROS A . LS",
       "keywords": [
+        "CILINDEROS",
         "CLUTCH",
         "FAN"
       ]
@@ -3717,10 +3952,12 @@ const PRODUCTS_DATA = {
       "id": "ec1ce2ee-05c5-4f33-9cb7-a5a683ad142e",
       "category": "Fan Clutch",
       "image_path": "./assets/ec1ce2ee-05c5-4f33-9cb7-a5a683ad142e.webp",
-      "description": "FAN CLUTCH",
+      "description": "AN E751 UW ME SE AR IDK. 2 .",
       "keywords": [
         "CLUTCH",
-        "FAN"
+        "E751",
+        "FAN",
+        "IDK"
       ]
     },
     {
@@ -3747,50 +3984,65 @@ const PRODUCTS_DATA = {
       "id": "19746c38-afc4-4f16-b041-901ffd39366e",
       "category": "Faro Delantero",
       "image_path": "./assets/19746c38-afc4-4f16-b041-901ffd39366e.webp",
-      "description": "FARO DELANTERO",
+      "description": "FARO DELANTERO LUV D MAX 10-14",
       "keywords": [
+        "10-14",
         "DELANTERO",
-        "FARO"
+        "FARO",
+        "LUV",
+        "MAX"
       ]
     },
     {
       "id": "1dae3939-9b37-40c5-913d-64636a09c57c",
       "category": "Faro Delantero",
       "image_path": "./assets/1dae3939-9b37-40c5-913d-64636a09c57c.webp",
-      "description": "FARO DELANTERO",
+      "description": "FARO REDONDO ARIBE/2000 SF I",
       "keywords": [
+        "2000",
+        "ARIBE",
         "DELANTERO",
-        "FARO"
+        "FARO",
+        "REDONDO"
       ]
     },
     {
       "id": "4de199ed-4bca-4fb6-8d1c-a64e4f38c2b6",
       "category": "Faro Delantero",
       "image_path": "./assets/4de199ed-4bca-4fb6-8d1c-a64e4f38c2b6.webp",
-      "description": "FARO DELANTERO",
+      "description": "FARO REDONDO CARIBE/2 300 SF I",
       "keywords": [
+        "300",
+        "CARIBE",
         "DELANTERO",
-        "FARO"
+        "FARO",
+        "REDONDO"
       ]
     },
     {
       "id": "57bb529b-263b-4c43-8508-606ef8d1ed10",
       "category": "Faro Delantero",
       "image_path": "./assets/57bb529b-263b-4c43-8508-606ef8d1ed10.webp",
-      "description": "FARO DELANTERO",
+      "description": "FARO DELANTERO LUV D-MAX 04-08 7 AE",
       "keywords": [
+        "04-08",
+        "D-MAX",
         "DELANTERO",
-        "FARO"
+        "FARO",
+        "LUV"
       ]
     },
     {
       "id": "c4f3a06f-4ecf-4f14-9538-27879680edd7",
       "category": "Faro Delantero",
       "image_path": "./assets/c4f3a06f-4ecf-4f14-9538-27879680edd7.webp",
-      "description": "FARO DELANTERO",
+      "description": "FARO DELAN TERO LUVI93-YO",
       "keywords": [
+        "DELAN",
         "DELANTERO",
-        "FARO"
+        "FARO",
+        "LUVI93-YO",
+        "TERO"
       ]
     },
     {
@@ -3807,9 +4059,11 @@ const PRODUCTS_DATA = {
       "id": "404ab3cc-87ec-4444-8ab8-597d078e8067",
       "category": "Filtro Aceite",
       "image_path": "./assets/404ab3cc-87ec-4444-8ab8-597d078e8067.webp",
-      "description": "FILTRO ACEITE",
+      "description": "-ILTROACEITE CARIBE 26",
       "keywords": [
+        "-ILTROACEITE",
         "ACEITE",
+        "CARIBE",
         "FILTRO"
       ]
     },
@@ -3827,19 +4081,24 @@ const PRODUCTS_DATA = {
       "id": "7b6055e9-0927-4025-8e91-bc96f97cc4cf",
       "category": "Filtro Aceite",
       "image_path": "./assets/7b6055e9-0927-4025-8e91-bc96f97cc4cf.webp",
-      "description": "FILTRO ACEITE",
+      "description": "FRILI TIR ACELILE TROOPER 3.2 Z",
       "keywords": [
         "ACEITE",
-        "FILTRO"
+        "ACELILE",
+        "FILTRO",
+        "FRILI",
+        "TIR",
+        "TROOPER"
       ]
     },
     {
       "id": "88da127b-3437-41bd-86c1-e86e16950dba",
       "category": "Filtro Aceite",
       "image_path": "./assets/88da127b-3437-41bd-86c1-e86e16950dba.webp",
-      "description": "FILTRO ACEITE",
+      "description": "FILERC - E PB",
       "keywords": [
         "ACEITE",
+        "FILERC",
         "FILTRO"
       ]
     },
@@ -3847,10 +4106,14 @@ const PRODUCTS_DATA = {
       "id": "982770f0-80fc-4072-992f-2c2c4fe53675",
       "category": "Filtro Aceite",
       "image_path": "./assets/982770f0-80fc-4072-992f-2c2c4fe53675.webp",
-      "description": "FILTRO ACEITE",
+      "description": "ILEE IL ROACE MI I -JJ 7 WME E A I",
       "keywords": [
+        "-JJ",
         "ACEITE",
-        "FILTRO"
+        "FILTRO",
+        "ILEE",
+        "ROACE",
+        "WME"
       ]
     },
     {
@@ -3867,10 +4130,11 @@ const PRODUCTS_DATA = {
       "id": "4111f08e-8d3a-4794-b8c4-3c305d4b5c45",
       "category": "Filtro Antipolen",
       "image_path": "./assets/4111f08e-8d3a-4794-b8c4-3c305d4b5c45.webp",
-      "description": "FILTRO ANTIPOLEN",
+      "description": "UT LUDEMAXS",
       "keywords": [
         "ANTIPOLEN",
-        "FILTRO"
+        "FILTRO",
+        "LUDEMAXS"
       ]
     },
     {
@@ -3897,18 +4161,23 @@ const PRODUCTS_DATA = {
       "id": "bb10d1b3-22ef-4f3c-aa50-557027f14618",
       "category": "Filtro Gasolina",
       "image_path": "./assets/bb10d1b3-22ef-4f3c-aa50-557027f14618.webp",
-      "description": "FILTRO GASOLINA",
+      "description": "PE. RO SEE LUV D-MA I",
       "keywords": [
+        "D-MA",
         "FILTRO",
-        "GASOLINA"
+        "GASOLINA",
+        "LUV",
+        "SEE"
       ]
     },
     {
       "id": "0cc1849a-011f-4156-abc9-b0b4feb9bb72",
       "category": "Flauta",
       "image_path": "./assets/0cc1849a-011f-4156-abc9-b0b4feb9bb72.webp",
-      "description": "FLAUTA",
+      "description": "FLAUTA DEADMISION CARIBE ON",
       "keywords": [
+        "CARIBE",
+        "DEADMISION",
         "FLAUTA"
       ]
     },
@@ -3979,27 +4248,41 @@ const PRODUCTS_DATA = {
       "id": "63ba9348-37cb-4f16-b469-f95cd5dd8e31",
       "category": "Gato",
       "image_path": "./assets/63ba9348-37cb-4f16-b469-f95cd5dd8e31.webp",
-      "description": "GATO",
+      "description": "GATO TIPO BOTELLA LUV DSMAX3 5",
       "keywords": [
-        "GATO"
+        "BOTELLA",
+        "DSMAX3",
+        "GATO",
+        "LUV",
+        "TIPO"
       ]
     },
     {
       "id": "5499ae62-2b61-40fc-9209-a19d2c3617b6",
       "category": "Gemelos",
       "image_path": "./assets/5499ae62-2b61-40fc-9209-a19d2c3617b6.webp",
-      "description": "GEMELOS",
+      "description": "A A EJ 3 ELE Y EE VAN ES L ESTA CAPRIE E744 EIT I EA UAV",
       "keywords": [
-        "GEMELOS"
+        "CAPRIE",
+        "E744",
+        "EIT",
+        "ELE",
+        "GEMELOS",
+        "UAV",
+        "VAN"
       ]
     },
     {
       "id": "ccf5a16e-3193-4d0a-81b1-81af68357c22",
       "category": "Gemelos",
       "image_path": "./assets/ccf5a16e-3193-4d0a-81b1-81af68357c22.webp",
-      "description": "GEMELOS",
+      "description": "GEMELO BALLESTA LUV D-MAX TR",
       "keywords": [
-        "GEMELOS"
+        "BALLESTA",
+        "D-MAX",
+        "GEMELO",
+        "GEMELOS",
+        "LUV"
       ]
     },
     {
@@ -4016,9 +4299,11 @@ const PRODUCTS_DATA = {
       "id": "28f12c6c-ed00-419e-9320-2d461209d113",
       "category": "Juego de Empacadura",
       "image_path": "./assets/28f12c6c-ed00-419e-9320-2d461209d113.webp",
-      "description": "JUEGO DE EMPACADURA",
+      "description": "JUEGO DE EMPACADURF RA CARIBE 2.3 A",
       "keywords": [
+        "CARIBE",
         "EMPACADURA",
+        "EMPACADURF",
         "JUEGO"
       ]
     },
@@ -4036,8 +4321,10 @@ const PRODUCTS_DATA = {
       "id": "81adf477-3712-4627-a4ff-c339d816ee50",
       "category": "Juego de Empacadura",
       "image_path": "./assets/81adf477-3712-4627-a4ff-c339d816ee50.webp",
-      "description": "JUEGO DE EMPACADURA",
+      "description": "JUEGO DE EMPACADURA CARIBE 260C AE",
       "keywords": [
+        "260C",
+        "CARIBE",
         "EMPACADURA",
         "JUEGO"
       ]
@@ -4056,8 +4343,9 @@ const PRODUCTS_DATA = {
       "id": "9f2bcb59-fe26-487d-9d8a-61c0def8865c",
       "category": "Kit Clutch",
       "image_path": "./assets/9f2bcb59-fe26-487d-9d8a-61c0def8865c.webp",
-      "description": "KIT CLUTCH",
+      "description": "- CLE -",
       "keywords": [
+        "CLE",
         "CLUTCH",
         "KIT"
       ]
@@ -4126,9 +4414,12 @@ const PRODUCTS_DATA = {
       "id": "43aeca58-a952-4aa9-b441-62ec4b822b2d",
       "category": "Kit Satelite y Planetario",
       "image_path": "./assets/43aeca58-a952-4aa9-b441-62ec4b822b2d.webp",
-      "description": "KIT SATELITE Y PLANETARIO",
+      "description": "KIT SATELITE Y PLAN ETARIO LUV",
       "keywords": [
+        "ETARIO",
         "KIT",
+        "LUV",
+        "PLAN",
         "PLANETARIO",
         "SATELITE"
       ]
@@ -4137,20 +4428,25 @@ const PRODUCTS_DATA = {
       "id": "ac95970f-3b15-4807-9076-a05be13bd714",
       "category": "Kit Satelite y Planetario",
       "image_path": "./assets/ac95970f-3b15-4807-9076-a05be13bd714.webp",
-      "description": "KIT SATELITE Y PLANETARIO",
+      "description": "KIT SATELLITE Y PLANETARIO CARIBE",
       "keywords": [
+        "CARIBE",
         "KIT",
         "PLANETARIO",
-        "SATELITE"
+        "SATELITE",
+        "SATELLITE"
       ]
     },
     {
       "id": "6fc5b16f-5c7b-4ec1-8d19-9abb8b986a45",
       "category": "Manilla Capot",
       "image_path": "./assets/6fc5b16f-5c7b-4ec1-8d19-9abb8b986a45.webp",
-      "description": "MANILLA CAPOT",
+      "description": "MANILLA CAPO LUV D-MAX",
       "keywords": [
+        "CAPO",
         "CAPOT",
+        "D-MAX",
+        "LUV",
         "MANILLA"
       ]
     },
@@ -4158,8 +4454,10 @@ const PRODUCTS_DATA = {
       "id": "19047b13-ac19-4444-86c6-ce1d02fcc05c",
       "category": "Manilla Interna",
       "image_path": "./assets/19047b13-ac19-4444-86c6-ce1d02fcc05c.webp",
-      "description": "MANILLA INTERNA",
+      "description": "A CAINTERNA UN D-MAX",
       "keywords": [
+        "CAINTERNA",
+        "D-MAX",
         "INTERNA",
         "MANILLA"
       ]
@@ -4265,10 +4563,13 @@ const PRODUCTS_DATA = {
       "id": "4cc19aad-fc1e-4448-8d82-1dbc73c5ba2a",
       "category": "Sensor Arbol de Leva",
       "image_path": "./assets/4cc19aad-fc1e-4448-8d82-1dbc73c5ba2a.webp",
-      "description": "SENSOR ARBOL DE LEVA",
+      "description": "WW EE EN WE FAP EWE 67 LEVA LUVD-MAX ES",
       "keywords": [
         "ARBOL",
+        "EWE",
+        "FAP",
         "LEVA",
+        "LUVD-MAX",
         "SENSOR"
       ]
     },
@@ -4276,8 +4577,9 @@ const PRODUCTS_DATA = {
       "id": "2e514905-48bf-4a0b-8922-84a282e99046",
       "category": "Sensor TPS",
       "image_path": "./assets/2e514905-48bf-4a0b-8922-84a282e99046.webp",
-      "description": "SENSOR TPS",
+      "description": "SENSOR TPS LUVD-MAX 3.5 YS 7. AE",
       "keywords": [
+        "LUVD-MAX",
         "SENSOR",
         "TPS"
       ]
@@ -4286,9 +4588,11 @@ const PRODUCTS_DATA = {
       "id": "2d1a9557-3325-4382-92dc-36004e0a9bb1",
       "category": "Soporte Cardan",
       "image_path": "./assets/2d1a9557-3325-4382-92dc-36004e0a9bb1.webp",
-      "description": "SOPORTE CARDAN",
+      "description": "LUV D-MAX35",
       "keywords": [
         "CARDAN",
+        "D-MAX35",
+        "LUV",
         "SOPORTE"
       ]
     },
@@ -4306,9 +4610,11 @@ const PRODUCTS_DATA = {
       "id": "f347a121-d748-4682-8a50-1f2ef141350e",
       "category": "Soporte Cardan",
       "image_path": "./assets/f347a121-d748-4682-8a50-1f2ef141350e.webp",
-      "description": "SOPORTE CARDAN",
+      "description": "CARIBE 2600",
       "keywords": [
+        "2600",
         "CARDAN",
+        "CARIBE",
         "SOPORTE"
       ]
     },
@@ -4377,9 +4683,15 @@ const PRODUCTS_DATA = {
       "id": "832d245c-95c4-4226-a065-4968e5db32fb",
       "category": "Terminal - Rotula",
       "image_path": "./assets/832d245c-95c4-4226-a065-4968e5db32fb.webp",
-      "description": "TERMINAL - ROTULA",
+      "description": "REW 5 QE FM EF OE ET EWE EE SOT EE INTERNO CARIBE / LUVD-MAX",
       "keywords": [
+        "CARIBE",
+        "EWE",
+        "INTERNO",
+        "LUVD-MAX",
+        "REW",
         "ROTULA",
+        "SOT",
         "TERMINAL"
       ]
     },
@@ -4387,8 +4699,10 @@ const PRODUCTS_DATA = {
       "id": "d121fa1c-fa0e-4f4f-a48e-88d51ff40618",
       "category": "Terminal - Rotula",
       "image_path": "./assets/d121fa1c-fa0e-4f4f-a48e-88d51ff40618.webp",
-      "description": "TERMINAL - ROTULA",
+      "description": "TERMINAL EATERNGO CARIBE 19/23/26 EO",
       "keywords": [
+        "CARIBE",
+        "EATERNGO",
         "ROTULA",
         "TERMINAL"
       ]
@@ -4397,10 +4711,17 @@ const PRODUCTS_DATA = {
       "id": "dcf3e44f-5d0c-4a6a-bbb5-d8c8456dbb3c",
       "category": "Terminal - Rotula",
       "image_path": "./assets/dcf3e44f-5d0c-4a6a-bbb5-d8c8456dbb3c.webp",
-      "description": "TERMINAL - ROTULA",
+      "description": "2 BE ORV EEEN OA EE YO PAPC ESE / LUVD-MAX/ TROOPER /RODEO .",
       "keywords": [
+        "EEEN",
+        "ESE",
+        "LUVD-MAX",
+        "ORV",
+        "PAPC",
+        "RODEO",
         "ROTULA",
-        "TERMINAL"
+        "TERMINAL",
+        "TROOPER"
       ]
     },
     {
@@ -4486,10 +4807,11 @@ const PRODUCTS_DATA = {
       "id": "CARIBE 2.6",
       "category": "Tren Delantero",
       "image_path": "./assets/CARIBE 2.6.webp",
-      "description": "CARIBE 2.6",
+      "description": "SLA SULESLES GS",
       "keywords": [
-        "CARIBE",
         "DELANTERO",
+        "SLA",
+        "SULESLES",
         "TREN"
       ]
     },
@@ -4497,21 +4819,24 @@ const PRODUCTS_DATA = {
       "id": "Caribe 83-88",
       "category": "Tren Delantero",
       "image_path": "./assets/Caribe 83-88.webp",
-      "description": "CARIBE 83 88",
+      "description": "WS2ILAALM AU LE L ES ODI OHO EEE",
       "keywords": [
-        "CARIBE",
         "DELANTERO",
-        "TREN"
+        "EEE",
+        "ODI",
+        "OHO",
+        "TREN",
+        "WS2ILAALM"
       ]
     },
     {
       "id": "DMAX 2.4",
       "category": "Tren Delantero",
       "image_path": "./assets/DMAX 2.4.webp",
-      "description": "DMAX 2.4",
+      "description": "DES WY NU LAS CS",
       "keywords": [
         "DELANTERO",
-        "DMAX",
+        "DES",
         "TREN"
       ]
     },
@@ -4519,10 +4844,11 @@ const PRODUCTS_DATA = {
       "id": "DMAX 3.5",
       "category": "Tren Delantero",
       "image_path": "./assets/DMAX 3.5.webp",
-      "description": "DMAX 3.5",
+      "description": "DS WY LE LUNSIUL ALAS DE",
       "keywords": [
+        "ALAS",
         "DELANTERO",
-        "DMAX",
+        "LUNSIUL",
         "TREN"
       ]
     },
@@ -4542,11 +4868,9 @@ const PRODUCTS_DATA = {
       "id": "Luv 4x4",
       "category": "Tren Delantero",
       "image_path": "./assets/Luv 4x4.webp",
-      "description": "LUV 4X4",
+      "description": "A ON EG 8 NE",
       "keywords": [
-        "4X4",
         "DELANTERO",
-        "LUV",
         "TREN"
       ]
     },
@@ -4554,10 +4878,11 @@ const PRODUCTS_DATA = {
       "id": "RODEO",
       "category": "Tren Delantero",
       "image_path": "./assets/RODEO.webp",
-      "description": "RODEO",
+      "description": "LAC LY LER",
       "keywords": [
         "DELANTERO",
-        "RODEO",
+        "LAC",
+        "LER",
         "TREN"
       ]
     },
@@ -4565,30 +4890,35 @@ const PRODUCTS_DATA = {
       "id": "TROOPER 3.2",
       "category": "Tren Delantero",
       "image_path": "./assets/TROOPER 3.2.webp",
-      "description": "TROOPER 3.2",
+      "description": "EO NE BE",
       "keywords": [
         "DELANTERO",
-        "TREN",
-        "TROOPER"
+        "TREN"
       ]
     },
     {
       "id": "71403928-72d2-4174-a469-04391a684d9f",
       "category": "Tubo de Agua",
       "image_path": "./assets/71403928-72d2-4174-a469-04391a684d9f.webp",
-      "description": "TUBO DE AGUA",
+      "description": "TUVEES 7LUVIE AWA V2 B 4",
       "keywords": [
+        "7LUVIE",
         "AGUA",
-        "TUBO"
+        "AWA",
+        "TUBO",
+        "TUVEES"
       ]
     },
     {
       "id": "7e6b5f40-24e6-4af0-8b02-1c2120353154",
       "category": "Tubo de Agua",
       "image_path": "./assets/7e6b5f40-24e6-4af0-8b02-1c2120353154.webp",
-      "description": "TUBO DE AGUA",
+      "description": "RTUBO CALEF NS IN I CARIBEZLUV 2.3 WE",
       "keywords": [
         "AGUA",
+        "CALEF",
+        "CARIBEZLUV",
+        "RTUBO",
         "TUBO"
       ]
     },
@@ -4596,9 +4926,11 @@ const PRODUCTS_DATA = {
       "id": "8232b8ba-9eb3-40ec-9ce5-a6fe753d7cb0",
       "category": "Tubo de Agua",
       "image_path": "./assets/8232b8ba-9eb3-40ec-9ce5-a6fe753d7cb0.webp",
-      "description": "TUBO DE AGUA",
+      "description": "TUBO CALEFACCION TROOPERS 2 EE",
       "keywords": [
         "AGUA",
+        "CALEFACCION",
+        "TROOPERS",
         "TUBO"
       ]
     },
@@ -4616,9 +4948,11 @@ const PRODUCTS_DATA = {
       "id": "a45589ea-7807-4cbc-a698-838e972d2a51",
       "category": "Tubo de Agua",
       "image_path": "./assets/a45589ea-7807-4cbc-a698-838e972d2a51.webp",
-      "description": "TUBO DE AGUA",
+      "description": "UA TT DERECHO LL IV D-MAX 0 HC U",
       "keywords": [
         "AGUA",
+        "D-MAX",
+        "DERECHO",
         "TUBO"
       ]
     },
@@ -4637,9 +4971,11 @@ const PRODUCTS_DATA = {
       "id": "1a857adf-8796-4887-9644-bf690fc60537",
       "category": "Valvula Admision y Escape",
       "image_path": "./assets/1a857adf-8796-4887-9644-bf690fc60537.webp",
-      "description": "VALVULA ADMISION Y ESCAPE",
+      "description": "A D APE 2 ALVU EI A JJ/-J",
       "keywords": [
         "ADMISION",
+        "ALVU",
+        "APE",
         "ESCAPE",
         "VALVULA"
       ]
@@ -4648,10 +4984,15 @@ const PRODUCTS_DATA = {
       "id": "30a47487-1861-478b-a6d7-ceb507792f38",
       "category": "Valvula Admision y Escape",
       "image_path": "./assets/30a47487-1861-478b-a6d7-ceb507792f38.webp",
-      "description": "VALVULA ADMISION Y ESCAPE",
+      "description": "VALVU NDES API 2 IBE PAHS",
       "keywords": [
         "ADMISION",
+        "API",
         "ESCAPE",
+        "IBE",
+        "NDES",
+        "PAHS",
+        "VALVU",
         "VALVULA"
       ]
     },
@@ -4659,10 +5000,13 @@ const PRODUCTS_DATA = {
       "id": "30f61386-1ede-4631-bb0e-3bc20eae1a80",
       "category": "Valvula Admision y Escape",
       "image_path": "./assets/30f61386-1ede-4631-bb0e-3bc20eae1a80.webp",
-      "description": "VALVULA ADMISION Y ESCAPE",
+      "description": "U VALVU AL Y RINEESOCK. JI- .",
       "keywords": [
         "ADMISION",
         "ESCAPE",
+        "JI-",
+        "RINEESOCK",
+        "VALVU",
         "VALVULA"
       ]
     },
@@ -4670,10 +5014,12 @@ const PRODUCTS_DATA = {
       "id": "35b86779-a492-48bb-98da-8999f3821621",
       "category": "Valvula Admision y Escape",
       "image_path": "./assets/35b86779-a492-48bb-98da-8999f3821621.webp",
-      "description": "VALVULA ADMISION Y ESCAPE",
+      "description": "VAL CTOVIZAY",
       "keywords": [
         "ADMISION",
+        "CTOVIZAY",
         "ESCAPE",
+        "VAL",
         "VALVULA"
       ]
     },
@@ -4681,11 +5027,13 @@ const PRODUCTS_DATA = {
       "id": "35fd5df8-bec1-4b15-bd18-4d406cc0f6d2",
       "category": "Valvula Admision y Escape",
       "image_path": "./assets/35fd5df8-bec1-4b15-bd18-4d406cc0f6d2.webp",
-      "description": "VALVULA ADMISION Y ESCAPE",
+      "description": "VALVULAADMISION D MAX /2/4",
       "keywords": [
         "ADMISION",
         "ESCAPE",
-        "VALVULA"
+        "MAX",
+        "VALVULA",
+        "VALVULAADMISION"
       ]
     },
     {
@@ -4703,9 +5051,11 @@ const PRODUCTS_DATA = {
       "id": "5571b0dd-0f9a-4b88-b8f3-3b4d83133f15",
       "category": "Valvula Admision y Escape",
       "image_path": "./assets/5571b0dd-0f9a-4b88-b8f3-3b4d83133f15.webp",
-      "description": "VALVULA ADMISION Y ESCAPE",
+      "description": "A D APE 2 ALVU EI A JJ/-J",
       "keywords": [
         "ADMISION",
+        "ALVU",
+        "APE",
         "ESCAPE",
         "VALVULA"
       ]
@@ -4714,11 +5064,14 @@ const PRODUCTS_DATA = {
       "id": "7efdc005-e9ff-48be-8d35-b155ca9b054e",
       "category": "Valvula Admision y Escape",
       "image_path": "./assets/7efdc005-e9ff-48be-8d35-b155ca9b054e.webp",
-      "description": "VALVULA ADMISION Y ESCAPE",
+      "description": "TL VALVULAIADMISION RIBE 2O00OO",
       "keywords": [
+        "2O00OO",
         "ADMISION",
         "ESCAPE",
-        "VALVULA"
+        "RIBE",
+        "VALVULA",
+        "VALVULAIADMISION"
       ]
     },
     {
@@ -4736,7 +5089,7 @@ const PRODUCTS_DATA = {
       "id": "09d029a4-045a-4f53-b99f-b111e4991aa9",
       "category": "Valvula Minimo",
       "image_path": "./assets/09d029a4-045a-4f53-b99f-b111e4991aa9.webp",
-      "description": "VALVULA MINIMO",
+      "description": "VA EX U A D C",
       "keywords": [
         "MINIMO",
         "VALVULA"
@@ -4746,19 +5099,23 @@ const PRODUCTS_DATA = {
       "id": "99f53117-e122-4149-be45-84ce023b7bb0",
       "category": "Valvula Minimo",
       "image_path": "./assets/99f53117-e122-4149-be45-84ce023b7bb0.webp",
-      "description": "VALVULA MINIMO",
+      "description": "VALVULADENINIMO",
       "keywords": [
         "MINIMO",
-        "VALVULA"
+        "VALVULA",
+        "VALVULADENINIMO"
       ]
     },
     {
       "id": "b519d535-5428-4e3d-8b05-269f9ef5f2b2",
       "category": "Valvula Minimo",
       "image_path": "./assets/b519d535-5428-4e3d-8b05-269f9ef5f2b2.webp",
-      "description": "VALVULA MINIMO",
+      "description": "0 SENNA ANDIS ES SALSA",
       "keywords": [
+        "ANDIS",
         "MINIMO",
+        "SALSA",
+        "SENNA",
         "VALVULA"
       ]
     },
@@ -4766,10 +5123,12 @@ const PRODUCTS_DATA = {
       "id": "6fa82ba8-530c-4c1a-a053-0d76fe5d104f",
       "category": "Valvula PCV",
       "image_path": "./assets/6fa82ba8-530c-4c1a-a053-0d76fe5d104f.webp",
-      "description": "VALVULA PCV",
+      "description": "VEG DEMS",
       "keywords": [
+        "DEMS",
         "PCV",
-        "VALVULA"
+        "VALVULA",
+        "VEG"
       ]
     },
     {
@@ -4796,9 +5155,10 @@ const PRODUCTS_DATA = {
       "id": "fbac8774-8ee6-4715-98e2-577722ac75c4",
       "category": "Varilla Aceite",
       "image_path": "./assets/fbac8774-8ee6-4715-98e2-577722ac75c4.webp",
-      "description": "VARILLA ACEITE",
+      "description": "7 N A D-MAX RS A 4",
       "keywords": [
         "ACEITE",
+        "D-MAX",
         "VARILLA"
       ]
     }
