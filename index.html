@@ -130,6 +130,18 @@
             background: var(--accent-orange);
         }
 
+        @keyframes panHeaderBg {
+            0% {
+                background-position: center center, 15% center;
+            }
+            50% {
+                background-position: center center, 85% center;
+            }
+            100% {
+                background-position: center center, 15% center;
+            }
+        }
+
         /* --- CABECERA --- */
         header {
             position: sticky;
@@ -142,6 +154,15 @@
             border-bottom: 1px solid var(--border-color);
             padding: 16px 24px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            transition: padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), backdrop-filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: panHeaderBg 35s infinite ease-in-out;
+        }
+
+        header.collapsed {
+            padding: 10px 16px;
+            background: linear-gradient(rgba(10, 10, 12, 0.92), rgba(10, 10, 12, 0.92));
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
 
         .header-container {
@@ -159,6 +180,20 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-height: 500px;
+            opacity: 1;
+            overflow: visible;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), margin 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        header.collapsed .logo-box {
+            max-height: 0;
+            opacity: 0;
+            margin: 0 !important;
+            padding: 0 !important;
+            transform: translateY(-20px) scale(0.95);
+            pointer-events: none;
+            overflow: hidden;
         }
 
         .logo-title {
@@ -2080,6 +2115,16 @@
                     closeLightbox();
                 }
             });
+
+            // Colapso dinámico de cabecera al hacer scroll (Shrinking Header)
+            const headerEl = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    headerEl.classList.add('collapsed');
+                } else {
+                    headerEl.classList.remove('collapsed');
+                }
+            }, { passive: true });
         }
     </script>
 </body>
