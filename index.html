@@ -929,6 +929,119 @@
                 font-size: 13px;
             }
         }
+
+        /* --- SELECTOR DE VISTA (OCULTO) --- */
+        .view-selector {
+            display: none !important;
+        }
+
+        /* --- ENLACES DE CONTACTO EN CABECERA (OPCIÓN A) --- */
+        .social-links-header {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 14px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .contact-link svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .contact-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-link.whatsapp:hover {
+            background: rgba(37, 211, 102, 0.1);
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+        }
+        .contact-link.instagram:hover {
+            background: rgba(225, 48, 108, 0.1);
+            border-color: var(--accent-pink);
+            color: var(--accent-pink);
+        }
+        .contact-link.facebook:hover {
+            background: rgba(24, 119, 242, 0.1);
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+        .contact-link.google-maps:hover {
+            background: rgba(255, 106, 0, 0.1);
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+        }
+        .contact-link.google-reviews:hover {
+            background: rgba(244, 180, 0, 0.1);
+            border-color: var(--accent-yellow);
+            color: var(--accent-yellow);
+        }
+
+        /* --- NAVEGACIÓN RETORNO --- */
+        .nav-back-container {
+            max-width: 1200px;
+            margin: 20px auto 10px auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .nav-back-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .nav-back-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .nav-back-btn:hover {
+            background: rgba(255, 106, 0, 0.1);
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+            transform: translateX(-4px);
+        }
+
+        .current-view-title {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-primary);
+        }
     </style>
 </head>
 <body>
@@ -937,9 +1050,13 @@
     <header>
         <div class="header-container">
             <div class="logo-box">
-                <h1 class="logo-title">TODO PARTES <span>Horizonte</span></h1>
+                <div id="logoContainer"></div>
+                <h1 class="logo-title" id="logoTitleText">TODO PARTES <span>Horizonte</span></h1>
                 <div class="logo-subtitle">Repuestos de las mejores marcas</div>
                 <div class="logo-rif">RIF: J-50180765-5</div>
+                
+                <!-- Enlaces de contacto (Opción A) -->
+                <div id="socialLinksHeader" class="social-links-header"></div>
             </div>
             
             <div class="search-wrapper">
@@ -967,10 +1084,19 @@
     </header>
 
     <!-- BARRA DE CATEGORÍAS -->
-    <div class="categories-container" id="categoriesScrollContainer">
+    <div class="categories-container" id="categoriesScrollContainer" style="display: none;">
         <div class="categories-scroll" id="categoriesScroll">
             <!-- Cargado dinámicamente -->
         </div>
+    </div>
+
+    <!-- NAVEGACIÓN RETORNO -->
+    <div class="nav-back-container" id="navBackContainer" style="display: none;">
+        <button class="nav-back-btn" onclick="goBackToFolders()">
+            <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            <span>Volver a Categorías</span>
+        </button>
+        <div class="current-view-title" id="currentViewTitle">Categorías</div>
     </div>
 
     <!-- CUERPO PRINCIPAL -->
@@ -1034,7 +1160,7 @@
         let productsData = [];
         let activeCategory = "ALL";
         let searchQuery = "";
-        let activeView = "PHOTOS"; // "PHOTOS" o "FOLDERS"
+        let activeView = "FOLDERS"; // Empezar por carpetas por defecto
 
         // Elementos del DOM
         const searchInput = document.getElementById('searchInput');
@@ -1073,17 +1199,15 @@
                 
                 // Mostrar logo personalizado si existe
                 if (data.use_custom_logo) {
-                    const logoBox = document.querySelector('.logo-box');
-                    if (logoBox) {
-                        logoBox.innerHTML = `
-                            <img src="${data.use_custom_logo}" alt="Logo" class="logo-image">
-                            <div class="logo-rif">RIF: J-50180765-5</div>
-                        `;
+                    const logoContainer = document.getElementById('logoContainer');
+                    if (logoContainer) {
+                        logoContainer.innerHTML = `<img src="${data.use_custom_logo}" alt="Logo" class="logo-image">`;
                     }
                 }
-
-
                 
+                // Renderizar redes sociales y contacto (Opción A)
+                renderSocialLinks(data);
+
                 // Configurar FAB General de WhatsApp
                 const catalogUrl = window.location.href.split('?')[0];
                 const generalMsg = encodeURIComponent(`¡Hola! Vengo desde el catálogo online y me gustaría hacer una consulta.`);
@@ -1091,7 +1215,7 @@
 
                 // Renderizar categorías y productos
                 renderCategories(productsData);
-                switchView('PHOTOS');
+                switchView('FOLDERS');
             } catch (error) {
                 console.error('Error al inicializar el catálogo:', error);
                 productsGrid.innerHTML = `
@@ -1245,21 +1369,24 @@
             activeView = view;
             
             if (activeView === 'PHOTOS') {
-                btnViewPhotos.classList.add('active');
-                btnViewFolders.classList.remove('active');
+                if (btnViewPhotos) btnViewPhotos.classList.add('active');
+                if (btnViewFolders) btnViewFolders.classList.remove('active');
                 
-                categoriesScrollContainer.style.display = 'block';
+                categoriesScrollContainer.style.display = 'none';
                 productsGrid.style.display = 'grid';
                 foldersGrid.style.display = 'none';
                 
                 renderProducts();
             } else {
-                btnViewPhotos.classList.remove('active');
-                btnViewFolders.classList.add('active');
+                if (btnViewPhotos) btnViewPhotos.classList.remove('active');
+                if (btnViewFolders) btnViewFolders.classList.add('active');
                 
                 categoriesScrollContainer.style.display = 'none';
                 productsGrid.style.display = 'none';
                 foldersGrid.style.display = 'grid';
+                
+                // Ocultar botón de volver al estar en el menú principal de carpetas
+                document.getElementById('navBackContainer').style.display = 'none';
                 
                 renderFolders();
             }
@@ -1323,10 +1450,13 @@
         window.selectFolderCategory = function(category) {
             activeCategory = category;
             
+            // Mostrar botón de volver y título de categoría
+            document.getElementById('navBackContainer').style.display = 'flex';
+            document.getElementById('currentViewTitle').innerText = category;
+            
             document.querySelectorAll('.category-pill').forEach(pill => {
                 if (pill.getAttribute('data-category') === category) {
                     pill.classList.add('active');
-                    pill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                 } else {
                     pill.classList.remove('active');
                 }
@@ -1335,21 +1465,97 @@
             switchView('PHOTOS');
         };
 
+        // Retorno al menú de carpetas
+        window.goBackToFolders = function() {
+            activeCategory = 'ALL';
+            searchQuery = '';
+            searchInput.value = '';
+            switchView('FOLDERS');
+        };
+
+        // Renderizar enlaces de contacto y redes en cabecera (Opción A)
+        function renderSocialLinks(data) {
+            const container = document.getElementById('socialLinksHeader');
+            if (!container) return;
+            
+            let html = '';
+            
+            // WhatsApp
+            if (data.whatsapp_number) {
+                const generalMsg = encodeURIComponent(`¡Hola! Vengo desde el catálogo online y me gustaría hacer una consulta.`);
+                html += `
+                    <a href="https://wa.me/${data.whatsapp_number}?text=${generalMsg}" target="_blank" class="contact-link whatsapp" title="WhatsApp">
+                        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.417 9.86-9.858.002-2.637-1.025-5.115-2.893-6.985C16.572 1.892 14.093.868 11.457.868c-5.442 0-9.863 4.419-9.865 9.861-.001 1.745.462 3.447 1.343 4.957l-.997 3.642 3.73-.978zm12.35-7.464c-.267-.134-1.58-.78-1.822-.867-.243-.088-.419-.133-.596.134-.176.268-.683.867-.837 1.046-.155.178-.309.2-.576.067-.267-.134-1.129-.417-2.15-1.328-.794-.709-1.33-1.584-1.486-1.852-.155-.267-.017-.412.117-.545.12-.12.267-.312.4-.469.133-.156.177-.268.267-.446.088-.178.044-.335-.022-.469-.066-.134-.596-1.436-.816-1.97-.215-.519-.431-.448-.596-.457-.154-.008-.33-.01-.506-.01-.177 0-.463.067-.706.335-.243.268-.927.906-.927 2.21 0 1.303.948 2.56 1.08 2.727.133.168 1.866 2.85 4.52 3.996.632.273 1.125.436 1.509.558.635.202 1.213.174 1.67.106.51-.077 1.58-.646 1.8-.1.22-.558.22-1.037.154-1.129-.066-.092-.242-.137-.509-.271z"/></svg>
+                        <span>WhatsApp</span>
+                    </a>
+                `;
+            }
+            
+            // Instagram
+            if (data.instagram_url) {
+                html += `
+                    <a href="${data.instagram_url}" target="_blank" class="contact-link instagram" title="Instagram">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        <span>Instagram</span>
+                    </a>
+                `;
+            }
+            
+            // Facebook
+            if (data.facebook_url) {
+                html += `
+                    <a href="${data.facebook_url}" target="_blank" class="contact-link facebook" title="Facebook">
+                        <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        <span>Facebook</span>
+                    </a>
+                `;
+            }
+            
+            // Google Maps
+            if (data.maps_url) {
+                html += `
+                    <a href="${data.maps_url}" target="_blank" class="contact-link google-maps" title="Ubicación">
+                        <svg viewBox="0 0 24 24"><path d="M12 0C7.802 0 4.4 3.402 4.4 7.602C4.4 13.01 12 24 12 24S19.6 13.01 19.6 7.602C19.6 3.402 16.198 0 12 0ZM12 10.4C10.454 10.4 9.2 9.146 9.2 7.6C9.2 6.054 10.454 4.8 12 4.8C13.546 4.8 14.8 6.054 14.8 7.6C14.8 9.146 13.546 10.4 12 10.4Z"/></svg>
+                        <span>Ubicación</span>
+                    </a>
+                `;
+            }
+            
+            // Google Reviews
+            if (data.reviews_url) {
+                html += `
+                    <a href="${data.reviews_url}" target="_blank" class="contact-link google-reviews" title="Opiniones Google">
+                        <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        <span>Opiniones</span>
+                    </a>
+                `;
+            }
+            
+            container.innerHTML = html;
+        }
+
         // Registro de Eventos
         function setupEventListeners() {
             // Evento Buscador (Búsqueda en tiempo real)
             searchInput.addEventListener('input', (e) => {
                 searchQuery = e.target.value;
-                if (activeView === 'PHOTOS') {
+                if (searchQuery.trim() !== '') {
+                    activeCategory = 'ALL';
+                    document.getElementById('navBackContainer').style.display = 'flex';
+                    document.getElementById('currentViewTitle').innerText = `Buscando: "${searchQuery}"`;
+                    
+                    // Forzar vista de fotos
+                    activeView = 'PHOTOS';
+                    categoriesScrollContainer.style.display = 'none';
+                    productsGrid.style.display = 'grid';
+                    foldersGrid.style.display = 'none';
+                    
                     renderProducts();
                 } else {
-                    renderFolders();
+                    // Volver a carpetas al borrar
+                    goBackToFolders();
                 }
             });
-
-            // Conmutadores de Vista
-            btnViewPhotos.addEventListener('click', () => switchView('PHOTOS'));
-            btnViewFolders.addEventListener('click', () => switchView('FOLDERS'));
 
             // Cerrar Lightbox con botón
             lightboxClose.addEventListener('click', closeLightbox);
