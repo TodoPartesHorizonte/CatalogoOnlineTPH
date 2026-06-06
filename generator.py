@@ -130,8 +130,7 @@ def extract_text_from_image(image_path):
             
     # Si todo falla, extraer texto básico del nombre del archivo (removiendo UUIDs o extensiones)
     filename = image_path.stem
-    # Limpiar UUIDs comunes (ej. b3cb7097-6502-499b-9a68-41ab28bfa8cd)
-    clean_name = re.sub(r'[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}', '', filename)
+    clean_name = re.sub(r'[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}', '', filename)
     clean_name = clean_name.replace('-', ' ').replace('_', ' ').strip()
     return clean_name if clean_name else filename
 
@@ -314,7 +313,14 @@ def sync_catalog():
         relative_image_path = f"./assets/{webp_filename}"
         
         # Verificar si ya existe en la base de datos y la imagen optimizada está física
-        if product_id in existing_products and output_image_path.exists():
+        is_uuid = False
+        if product_id in existing_products:
+            old_desc = existing_products[product_id].get("description", "")
+            uuid_pattern = r'^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$'
+            if re.match(uuid_pattern, old_desc) or not old_desc.strip():
+                is_uuid = True
+        
+        if product_id in existing_products and output_image_path.exists() and not is_uuid:
             # Conservar registro anterior (actualizando categoría por si cambió de carpeta)
             old_prod = existing_products[product_id]
             # Si cambió de carpeta, refrescar categoría y palabras clave
