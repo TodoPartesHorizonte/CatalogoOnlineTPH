@@ -793,11 +793,6 @@
             transition: var(--transition);
         }
 
-        /* Invert dark black logos to white for dark mode compatibility */
-        .vehicle-logo-img.invert-logo {
-            filter: brightness(0) invert(1);
-        }
-
         .vehicle-card:hover .vehicle-logo-img {
             opacity: 1;
             transform: scale(1.05);
@@ -807,12 +802,6 @@
             opacity: 1;
             transform: scale(1.05);
             filter: drop-shadow(0 0 5px rgba(255, 106, 0, 0.45));
-        }
-
-        .vehicle-card.active .vehicle-logo-img.invert-logo {
-            opacity: 1;
-            transform: scale(1.05);
-            filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 106, 0, 0.45));
         }
 
         .vehicle-name {
@@ -1374,15 +1363,15 @@
                 <div class="vehicle-name">Luv</div>
             </div>
             <div class="vehicle-card" onclick="selectVehicleFilter('D-MAX')" id="vehicle-dmax">
-                <img src="./assets/dmax_logo.png" alt="Luv D-Max" class="vehicle-logo-img invert-logo">
+                <img src="./assets/dmax_logo.png" alt="Luv D-Max" class="vehicle-logo-img">
                 <div class="vehicle-name">Luv D-Max</div>
             </div>
             <div class="vehicle-card" onclick="selectVehicleFilter('TROOPER')" id="vehicle-trooper">
-                <img src="./assets/trooper_logo.png" alt="Trooper" class="vehicle-logo-img invert-logo">
+                <img src="./assets/trooper_logo.png" alt="Trooper" class="vehicle-logo-img">
                 <div class="vehicle-name">Trooper</div>
             </div>
             <div class="vehicle-card" onclick="selectVehicleFilter('RODEO')" id="vehicle-rodeo">
-                <img src="./assets/rodeo_logo.png" alt="Rodeo" class="vehicle-logo-img invert-logo">
+                <img src="./assets/rodeo_logo.png" alt="Rodeo" class="vehicle-logo-img">
                 <div class="vehicle-name">Rodeo</div>
             </div>
         </div>
