@@ -5,7 +5,7 @@ const PRODUCTS_DATA = {
   "facebook_url": "https://www.facebook.com/todoparteshorizonte493/",
   "maps_url": "https://share.google/3jXZ44CMybUut4NUb",
   "reviews_url": "https://g.page/r/CXMpkN_I_0jiEBM/review",
-  "total_products": 471,
+  "total_products": 470,
   "products": [
     {
       "id": "b3cb7097-6502-499b-9a68-41ab28bfa8cd",
@@ -329,10 +329,10 @@ const PRODUCTS_DATA = {
       "id": "b045a39a-cb77-4753-860e-5b690f97d0ee",
       "category": "Araña",
       "image_path": "./assets/b045a39a-cb77-4753-860e-5b690f97d0ee.webp",
-      "description": "ARAÑA LUV AX4",
+      "description": "ARAÑA LUV 4X4",
       "keywords": [
+        "4X4",
         "ARANA",
-        "AX4",
         "LUV"
       ]
     },
@@ -925,18 +925,6 @@ const PRODUCTS_DATA = {
         "CAJA",
         "D-MAX",
         "LUV"
-      ]
-    },
-    {
-      "id": "a503c0c8-9dae-43f6-9f5b-ab1cdcf91015",
-      "category": "Base Caja",
-      "image_path": "./assets/a503c0c8-9dae-43f6-9f5b-ab1cdcf91015.webp",
-      "description": "BASE CAJA TROOPER / RODEO 3.2",
-      "keywords": [
-        "BASE",
-        "CAJA",
-        "RODEO",
-        "TROOPER"
       ]
     },
     {
