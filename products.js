@@ -135,12 +135,10 @@ const PRODUCTS_DATA = {
       "id": "e23c4001-2672-4a96-aab7-26912a29eaf5",
       "category": "Amortiguador",
       "image_path": "./assets/e23c4001-2672-4a96-aab7-26912a29eaf5.webp",
-      "description": "AMORTIGUADOR TRASERO DER/IZO LUV D-MAX",
+      "description": "AMORTIGUADOR TRASERO LUV D-MAX",
       "keywords": [
         "AMORTIGUADOR",
         "D-MAX",
-        "DER",
-        "IZO",
         "LUV",
         "TRASERO"
       ]
@@ -226,14 +224,13 @@ const PRODUCTS_DATA = {
       "id": "6def469c-67cc-4050-b270-46783d05e0b0",
       "category": "Arandela Punta de Eje",
       "image_path": "./assets/6def469c-67cc-4050-b270-46783d05e0b0.webp",
-      "description": "ARANDELA PTAEJE DELANTERO CARIBE 2000",
+      "description": "ARANDELA PUNTA DE EJE DELANTERO CARIBE 2000",
       "keywords": [
         "2000",
         "ARANDELA",
         "CARIBE",
         "DELANTERO",
         "EJE",
-        "PTAEJE",
         "PUNTA"
       ]
     },
@@ -241,14 +238,13 @@ const PRODUCTS_DATA = {
       "id": "1fdd7890-4ea3-49b9-a052-1c08236caec6",
       "category": "Arandela Punta de Eje",
       "image_path": "./assets/1fdd7890-4ea3-49b9-a052-1c08236caec6.webp",
-      "description": "ARANDELA PTAEJE DELANTERO CARIBE 2300",
+      "description": "ARANDELA PUNTA DE EJE DELANTERO CARIBE 2300",
       "keywords": [
         "2300",
         "ARANDELA",
         "CARIBE",
         "DELANTERO",
         "EJE",
-        "PTAEJE",
         "PUNTA"
       ]
     },
@@ -278,11 +274,10 @@ const PRODUCTS_DATA = {
       "id": "41977e7f-e551-4143-9616-e7c6ec2d4f52",
       "category": "Araña",
       "image_path": "./assets/41977e7f-e551-4143-9616-e7c6ec2d4f52.webp",
-      "description": "ARAÑA DELANTERA LUV D-MAX 3.5",
+      "description": "ARAÑA LUV D-MAX 3.5",
       "keywords": [
         "ARANA",
         "D-MAX",
-        "DELANTERA",
         "LUV"
       ]
     },
@@ -323,33 +318,29 @@ const PRODUCTS_DATA = {
       "id": "320e43f0-b5ba-4cf5-829a-5351038080f9",
       "category": "Araña",
       "image_path": "./assets/320e43f0-b5ba-4cf5-829a-5351038080f9.webp",
-      "description": "ARAÑA SUPERIOR DELANTERA CARIBE 2600",
+      "description": "ARAÑA CARIBE 2600",
       "keywords": [
         "2600",
         "ARANA",
-        "CARIBE",
-        "DELANTERA",
-        "SUPERIOR"
+        "CARIBE"
       ]
     },
     {
       "id": "b045a39a-cb77-4753-860e-5b690f97d0ee",
       "category": "Araña",
       "image_path": "./assets/b045a39a-cb77-4753-860e-5b690f97d0ee.webp",
-      "description": "ARAÑA SUPERIOR DELANTERA LUV AX4",
+      "description": "ARAÑA LUV AX4",
       "keywords": [
         "ARANA",
         "AX4",
-        "DELANTERA",
-        "LUV",
-        "SUPERIOR"
+        "LUV"
       ]
     },
     {
       "id": "51142567-a8d7-4dbc-b629-14012578b150",
       "category": "Arbol de Leva",
       "image_path": "./assets/51142567-a8d7-4dbc-b629-14012578b150.webp",
-      "description": "ARBOL DE LEVA CARIBE 2300/ 2600",
+      "description": "ARBOL DE LEVA CARIBE 2300 / 2600",
       "keywords": [
         "2300",
         "2600",
@@ -397,7 +388,7 @@ const PRODUCTS_DATA = {
       "id": "14925e53-fa9d-4c49-9cd8-368f33182cd1",
       "category": "Arranque",
       "image_path": "./assets/14925e53-fa9d-4c49-9cd8-368f33182cd1.webp",
-      "description": "ARRANQUE CARIBE 2.3/26",
+      "description": "ARRANQUE CARIBE 2.3/2.6",
       "keywords": [
         "ARRANQUE",
         "CARIBE"
@@ -407,11 +398,11 @@ const PRODUCTS_DATA = {
       "id": "d2781187-6ec6-4bbf-a179-58e51b2147a9",
       "category": "Arranque",
       "image_path": "./assets/d2781187-6ec6-4bbf-a179-58e51b2147a9.webp",
-      "description": "ARRANQUE CARIBE G-2000",
+      "description": "ARRANQUE CARIBE G-200",
       "keywords": [
         "ARRANQUE",
         "CARIBE",
-        "G-2000"
+        "G-200"
       ]
     },
     {
