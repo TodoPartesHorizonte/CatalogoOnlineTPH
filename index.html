@@ -2569,6 +2569,7 @@
                     selectedPill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                     
                     syncStateToURL(false);
+                    window.scrollTo({ top: 0, behavior: 'instant' });
                 });
             });
         }
@@ -2704,6 +2705,7 @@
                 
                 renderFolders();
             }
+            window.scrollTo({ top: 0, behavior: 'instant' });
         }
 
         // Renderizado de Carpetas (Categorías como tarjetas visuales)
@@ -2787,6 +2789,7 @@
             activeView = 'PHOTOS';
             syncStateToURL(true);
             parseURLState();
+            window.scrollTo({ top: 0, behavior: 'instant' });
         };
 
         // Retorno al menú de carpetas (con soporte de navegación)
@@ -2801,6 +2804,7 @@
                 if (searchInput) searchInput.value = '';
                 syncStateToURL(false);
                 parseURLState();
+                window.scrollTo({ top: 0, behavior: 'instant' });
             }
         };
 
@@ -2888,8 +2892,10 @@
         function setupEventListeners() {
             // Evento Buscador (Búsqueda en tiempo real)
             searchInput.addEventListener('input', (e) => {
+                const oldQuery = searchQuery;
                 searchQuery = e.target.value;
                 if (searchQuery.trim() !== '') {
+                    const wasFolders = activeView === 'FOLDERS';
                     activeCategory = 'ALL';
                     activeView = 'PHOTOS';
                     
@@ -2903,12 +2909,17 @@
                     foldersGrid.style.display = 'none';
                     
                     renderProducts();
+                    
+                    if (wasFolders || oldQuery.trim() === '') {
+                        window.scrollTo({ top: 0, behavior: 'instant' });
+                    }
                 } else {
                     // Volver a carpetas al borrar
                     activeCategory = 'ALL';
                     activeView = 'FOLDERS';
                     syncStateToURL(false);
                     parseURLState();
+                    window.scrollTo({ top: 0, behavior: 'instant' });
                 }
             });
 
