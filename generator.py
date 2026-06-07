@@ -394,15 +394,60 @@ def optimize_image(input_path, output_path):
                     new_height = max_size
                     new_width = int(width * (max_size / height))
                 img = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
-                
-            # Guardar como WebP comprimido
-            img.save(output_path, "WEBP", quality=80)
-            return True
+            
+            img.save(output_path, "WEBP", quality=85)
+        return True
     except Exception as e:
-        print(f"Error al optimizar imagen {input_path.name}: {e}")
+        print(f"Error optimizando imagen {input_path}: {e}")
         return False
 
-def sync_catalog():
+def read_catalog_js():
+    """Lee y decodifica la base de datos JSON de products.js para evitar redundancias."""
+    js_path = Path("web/products.js")
+    if not js_path.exists():
+        return None
+    try:
+        with open(js_path, "r", encoding="utf-8") as f:
+            content = f.read().strip()
+            if content.startswith("const PRODUCTS_DATA ="):
+                json_str = content[len("const PRODUCTS_DATA ="):].strip()
+                if json_str.endswith(";"):
+                    json_str = json_str[:-1].strip()
+                return json.loads(json_str)
+    except Exception as e:
+        print(f"Error al leer products.js: {e}")
+    return None
+
+def write_catalog_js(catalog_data):
+    """Escribe el diccionario en products.js en el formato adecuado."""
+    js_path = Path("web/products.js")
+    try:
+        js_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(js_path, "w", encoding="utf-8") as f:
+            f.write("const PRODUCTS_DATA = ")
+            json.dump(catalog_data, f, indent=2, ensure_ascii=False)
+            f.write(";\n")
+        return True
+    except Exception as e:
+        print(f"Error al escribir products.js: {e}")
+        return False
+
+def get_first_product_image():
+    """Busca la primera imagen de repuesto en las subcarpetas del catálogo."""
+    config = load_config()
+    source_dir = Path(config["catalogo_origen_path"])
+    valid_extensions = {'.jpg', '.jpeg', '.png', '.webp', '.bmp'}
+    if source_dir.exists():
+        for root, dirs, files in os.walk(source_dir, followlinks=True):
+            if root == str(source_dir):
+                continue
+            for file in files:
+                ext = os.path.splitext(file)[1].lower()
+                if ext in valid_extensions:
+                    return Path(root) / file
+    return None
+
+def sync_catalog(progress_callback=None):
     """Ejecuta el escaneo, OCR y generación de catálogo de forma incremental."""
     config = load_config()
     source_dir = Path(config["catalogo_origen_path"])
@@ -438,29 +483,20 @@ def sync_catalog():
     if not source_dir.exists():
         print(f"Error: La carpeta de origen '{source_dir}' no existe.")
         print("Por favor, crea la carpeta o edita config.json con la ruta correcta.")
+        if progress_callback:
+            progress_callback(0, 1, f"Error: Carpeta de origen no existe.")
         return
         
     # Cargar base de datos existente si existe
     existing_products = {}
     whatsapp_number = config["whatsapp_number"]
     
-    if js_path.exists():
-        try:
-            with open(js_path, "r", encoding="utf-8") as f:
-                content = f.read().strip()
-                if content.startswith("const PRODUCTS_DATA ="):
-                    json_str = content[len("const PRODUCTS_DATA ="):].strip()
-                    if json_str.endswith(";"):
-                        json_str = json_str[:-1].strip()
-                    data = json.loads(json_str)
-                    # Extraer lista de productos
-                    if isinstance(data, dict) and "products" in data:
-                        existing_list = data["products"]
-                        existing_products = {p["id"]: p for p in existing_list}
-                        # Usar el whatsapp_number configurado en config.json
-                        whatsapp_number = config.get("whatsapp_number", data.get("whatsapp_number", whatsapp_number))
-        except Exception as e:
-            print(f"No se pudo cargar products.js anterior ({e}). Se generará uno nuevo.")
+    data = read_catalog_js()
+    if data:
+        if isinstance(data, dict) and "products" in data:
+            existing_list = data["products"]
+            existing_products = {p["id"]: p for p in existing_list}
+            whatsapp_number = config.get("whatsapp_number", data.get("whatsapp_number", whatsapp_number))
 
     # Escanear archivos en catalogo_origen
     valid_extensions = {'.jpg', '.jpeg', '.png', '.webp', '.bmp'}
@@ -493,8 +529,13 @@ def sync_catalog():
     processed_ids = set()
     new_count = 0
     skipped_count = 0
+    newly_processed_ids = []
     
-    for file_path, category in found_files:
+    total_files = len(found_files)
+    if progress_callback:
+        progress_callback(0, total_files or 1, "Iniciando procesamiento de imágenes...")
+
+    for idx, (file_path, category) in enumerate(found_files):
         # Usar el nombre de archivo sin extensión como ID único
         product_id = file_path.stem
         processed_ids.add(product_id)
@@ -503,6 +544,10 @@ def sync_catalog():
         output_image_path = assets_dir / webp_filename
         relative_image_path = f"./assets/{webp_filename}"
         
+        # Reportar progreso
+        if progress_callback:
+            progress_callback(idx, total_files, f"Procesando [{category}] -> {file_path.name}")
+
         # Verificar si ya existe en la base de datos y la imagen optimizada está física
         is_uuid = False
         if product_id in existing_products:
@@ -543,6 +588,7 @@ def sync_catalog():
             }
             updated_products.append(new_prod)
             new_count += 1
+            newly_processed_ids.append(product_id)
         else:
             print(f"Error al procesar la imagen {file_path.name}. Se omitió.")
 
@@ -580,60 +626,90 @@ def sync_catalog():
         "products": updated_products
     }
 
-    
-    try:
-        with open(js_path, "w", encoding="utf-8") as f:
-            f.write("const PRODUCTS_DATA = ")
-            json.dump(catalog_data, f, indent=2, ensure_ascii=False)
-            f.write(";\n")
+    write_success = write_catalog_js(catalog_data)
+    if write_success:
         print(f"¡Catálogo JS guardado con éxito en: {js_path}!")
-    except Exception as e:
-        print(f"Error al guardar products.js: {e}")
+        if progress_callback:
+            progress_callback(total_files, total_files, "Catálogo generado y guardado con éxito.")
+    else:
+        print(f"Error al guardar products.js")
+        if progress_callback:
+            progress_callback(total_files, total_files, "Error al guardar el catálogo JS.")
+            
+    return newly_processed_ids
 
 def update_js_links(config):
     """Actualiza únicamente los enlaces de contacto en products.js sin escanear imágenes."""
-    js_path = Path("web/products.js")
-    if not js_path.exists():
-        return False
-        
     try:
-        with open(js_path, "r", encoding="utf-8") as f:
-            content = f.read().strip()
+        data = read_catalog_js()
+        if not data:
+            return False
             
-        if content.startswith("const PRODUCTS_DATA ="):
-            json_str = content[len("const PRODUCTS_DATA ="):].strip()
-            if json_str.endswith(";"):
-                json_str = json_str[:-1].strip()
-            data = json.loads(json_str)
-            
-            data["whatsapp_number"] = config.get("whatsapp_number", "")
-            data["instagram_url"] = config.get("instagram_url", "")
-            data["facebook_url"] = config.get("facebook_url", "")
-            data["maps_url"] = config.get("maps_url", "")
-            data["reviews_url"] = config.get("reviews_url", "")
-            
-            # Copiar el logo si existe y está configurado
-            logo_path_str = config.get("logo_path", "")
-            if logo_path_str:
-                logo_file_path = Path(logo_path_str)
-                if logo_file_path.exists() and logo_file_path.is_file():
-                    assets_dir = Path("web/assets")
-                    assets_dir.mkdir(parents=True, exist_ok=True)
-                    logo_ext = logo_file_path.suffix.lower()
-                    dest_logo_path = assets_dir / f"logo{logo_ext}"
-                    shutil.copy2(logo_file_path, dest_logo_path)
-                    data["use_custom_logo"] = f"./assets/logo{logo_ext}"
-            
-            with open(js_path, "w", encoding="utf-8") as f:
-                f.write("const PRODUCTS_DATA = ")
-                json.dump(data, f, indent=2, ensure_ascii=False)
-                f.write(";\n")
+        data["whatsapp_number"] = config.get("whatsapp_number", "")
+        data["instagram_url"] = config.get("instagram_url", "")
+        data["facebook_url"] = config.get("facebook_url", "")
+        data["maps_url"] = config.get("maps_url", "")
+        data["reviews_url"] = config.get("reviews_url", "")
+        
+        # Copiar el logo si existe y está configurado
+        logo_path_str = config.get("logo_path", "")
+        if logo_path_str:
+            logo_file_path = Path(logo_path_str)
+            if logo_file_path.exists() and logo_file_path.is_file():
+                assets_dir = Path("web/assets")
+                assets_dir.mkdir(parents=True, exist_ok=True)
+                logo_ext = logo_file_path.suffix.lower()
+                dest_logo_path = assets_dir / f"logo{logo_ext}"
+                shutil.copy2(logo_file_path, dest_logo_path)
+                data["use_custom_logo"] = f"./assets/logo{logo_ext}"
+        
+        success = write_catalog_js(data)
+        if success:
             print("Enlaces y logo actualizados rápidamente en products.js.")
             return True
     except Exception as e:
         print(f"Error al actualizar enlaces rápidos en products.js: {e}")
         
     return False
+
+def delete_product(product_id, category):
+    """Elimina un producto del catálogo web y también intenta borrar la foto de origen."""
+    try:
+        # 1. Borrar la imagen optimizada WebP
+        assets_dir = Path("web/assets")
+        webp_path = assets_dir / f"{product_id}.webp"
+        if webp_path.exists():
+            os.remove(webp_path)
+            print(f"Imagen WebP optimizada eliminada: {webp_path}")
+            
+        # 2. Borrar la foto original de la carpeta origen
+        config = load_config()
+        source_dir = Path(config.get("catalogo_origen_path", ""))
+        if source_dir.exists():
+            category_dir = source_dir / category
+            if category_dir.exists():
+                valid_extensions = {'.jpg', '.jpeg', '.png', '.webp', '.bmp'}
+                for ext in valid_extensions:
+                    orig_path = category_dir / f"{product_id}{ext}"
+                    if orig_path.exists():
+                        try:
+                            os.remove(orig_path)
+                            print(f"Foto de origen eliminada: {orig_path}")
+                        except Exception as e:
+                            print(f"Error al eliminar foto de origen {orig_path}: {e}")
+                
+        # 3. Leer products.js, remover de la lista y escribir
+        data = read_catalog_js()
+        if data and "products" in data:
+            old_products = data["products"]
+            new_products = [p for p in old_products if p["id"] != product_id]
+            data["products"] = new_products
+            data["total_products"] = len(new_products)
+            write_catalog_js(data)
+            
+        return True, "Producto eliminado correctamente."
+    except Exception as e:
+        return False, str(e)
 
 if __name__ == "__main__":
     sync_catalog()
