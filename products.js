@@ -475,51 +475,48 @@ const PRODUCTS_DATA = {
       "id": "3b16da16-0575-464d-8a72-1ba5762ac377",
       "category": "Bandas",
       "image_path": "./assets/3b16da16-0575-464d-8a72-1ba5762ac377.webp",
-      "description": "JUEGO DE BANDA TRASERA LUV D-MAX 4X2",
+      "description": "JUEGO DE BANDAS DE FRENO LUV D-MAX 2.4",
       "keywords": [
-        "4X2",
-        "BANDA",
         "BANDAS",
         "D-MAX",
+        "FRENO",
         "JUEGO",
-        "LUV",
-        "TRASERA"
+        "LUV"
       ]
     },
     {
       "id": "4589b486-5c20-40c6-ab27-0c7824c305a9",
       "category": "Bandas",
       "image_path": "./assets/4589b486-5c20-40c6-ab27-0c7824c305a9.webp",
-      "description": "JUEGO DE BANDAS TRASERA LUV 2300",
+      "description": "JUEGO DE BANDAS DE FRENO LUV 2300",
       "keywords": [
         "2300",
         "BANDAS",
+        "FRENO",
         "JUEGO",
-        "LUV",
-        "TRASERA"
+        "LUV"
       ]
     },
     {
       "id": "f546720e-f021-4c7a-9a0a-59755de2132a",
       "category": "Bandas",
       "image_path": "./assets/f546720e-f021-4c7a-9a0a-59755de2132a.webp",
-      "description": "JUEGO DE BANDAS TRASERAS CARIBE 83-88",
+      "description": "JUEGO DE BANDAS DE FRENO CARIBE 83-88",
       "keywords": [
         "83-88",
         "BANDAS",
         "CARIBE",
-        "JUEGO",
-        "TRASERAS"
+        "FRENO",
+        "JUEGO"
       ]
     },
     {
       "id": "8ce8c6aa-a82f-43f1-ae23-c253dc916c43",
       "category": "Bandas",
       "image_path": "./assets/8ce8c6aa-a82f-43f1-ae23-c253dc916c43.webp",
-      "description": "JUEGO DE BANDASDE FRENO LUV D-MAX 3.5",
+      "description": "JUEGO DE BANDAS DE FRENO LUV D-MAX 3.5",
       "keywords": [
         "BANDAS",
-        "BANDASDE",
         "D-MAX",
         "FRENO",
         "JUEGO",
@@ -602,9 +599,9 @@ const PRODUCTS_DATA = {
       "id": "535b9863-da88-4417-a158-f7eb3462fe02",
       "category": "Barra Central",
       "image_path": "./assets/535b9863-da88-4417-a158-f7eb3462fe02.webp",
-      "description": "BARRA CENTRAL CON HUECO LUV AX4",
+      "description": "BARRA CENTRAL CON HUECO LUV 4X4",
       "keywords": [
-        "AX4",
+        "4X4",
         "BARRA",
         "CENTRAL",
         "HUECO",
@@ -664,9 +661,9 @@ const PRODUCTS_DATA = {
       "id": "c80c7c3a-19fd-4774-99fb-dac66fd17524",
       "category": "Barra Central",
       "image_path": "./assets/c80c7c3a-19fd-4774-99fb-dac66fd17524.webp",
-      "description": "BARRA CENTRAL SIN HUECO LUV AX4",
+      "description": "BARRA CENTRAL SIN HUECO LUV 4X4",
       "keywords": [
-        "AX4",
+        "4X4",
         "BARRA",
         "CENTRAL",
         "HUECO",
@@ -704,11 +701,10 @@ const PRODUCTS_DATA = {
       "id": "e950d38e-7730-4c55-a513-8eb447405c28",
       "category": "Barra Link",
       "image_path": "./assets/e950d38e-7730-4c55-a513-8eb447405c28.webp",
-      "description": "BARRA LINK DELANTERA LUV D-MAX 2.4",
+      "description": "BARRA LINK LUV D-MAX 2.4",
       "keywords": [
         "BARRA",
         "D-MAX",
-        "DELANTERA",
         "LINK",
         "LUV"
       ]
@@ -717,11 +713,10 @@ const PRODUCTS_DATA = {
       "id": "5027e2f2-5d00-461f-b09c-8333a359e862",
       "category": "Barra Link",
       "image_path": "./assets/5027e2f2-5d00-461f-b09c-8333a359e862.webp",
-      "description": "BARRA LINK DELANTERA LUV D-MAX 2.5",
+      "description": "BARRA LINK LUV D-MAX 2.5",
       "keywords": [
         "BARRA",
         "D-MAX",
-        "DELANTERA",
         "LINK",
         "LUV"
       ]
@@ -730,11 +725,10 @@ const PRODUCTS_DATA = {
       "id": "701727db-8a89-4535-a7c4-bcec9d9119ca",
       "category": "Barra Link",
       "image_path": "./assets/701727db-8a89-4535-a7c4-bcec9d9119ca.webp",
-      "description": "BARRA LINK DELANTERA LUV D-MAX 3.0",
+      "description": "BARRA LINK LUV D-MAX 3.0",
       "keywords": [
         "BARRA",
         "D-MAX",
-        "DELANTERA",
         "LINK",
         "LUV"
       ]
@@ -743,12 +737,10 @@ const PRODUCTS_DATA = {
       "id": "829ed8a1-530e-422f-acff-75ba0f681f96",
       "category": "Barra Link",
       "image_path": "./assets/829ed8a1-530e-422f-acff-75ba0f681f96.webp",
-      "description": "BARRA LINK DELANTERA LUV D-MAX AX4",
+      "description": "BARRA LINK LUV D-MAX 3.5",
       "keywords": [
-        "AX4",
         "BARRA",
         "D-MAX",
-        "DELANTERA",
         "LINK",
         "LUV"
       ]
@@ -757,7 +749,7 @@ const PRODUCTS_DATA = {
       "id": "a0c0b88a-fa46-4e21-a77a-b1ba01c8af58",
       "category": "Barra Link",
       "image_path": "./assets/a0c0b88a-fa46-4e21-a77a-b1ba01c8af58.webp",
-      "description": "BARRA LINK DELANTERA TROOPER",
+      "description": "BARRA LINK DELANTERA TROOPER 3.2",
       "keywords": [
         "BARRA",
         "DELANTERA",
@@ -769,9 +761,9 @@ const PRODUCTS_DATA = {
       "id": "4d125caa-7f54-4874-be5a-88783a9ae853",
       "category": "Barra Tensora",
       "image_path": "./assets/4d125caa-7f54-4874-be5a-88783a9ae853.webp",
-      "description": "BARRA TENSORA LUV AX2",
+      "description": "BARRA TENSORA LUV 4X2",
       "keywords": [
-        "AX2",
+        "4X2",
         "BARRA",
         "LUV",
         "TENSORA"
@@ -781,7 +773,7 @@ const PRODUCTS_DATA = {
       "id": "f7cba48c-3bec-49f5-81ba-33ef5915c3fa",
       "category": "Base Amortiguador",
       "image_path": "./assets/f7cba48c-3bec-49f5-81ba-33ef5915c3fa.webp",
-      "description": "SOPORTE AMORTIGUADOR LUV D-MAX",
+      "description": "SOPORTE AMORTIGUADOR LUV D-MAX 2.4",
       "keywords": [
         "AMORTIGUADOR",
         "BASE",
@@ -806,14 +798,12 @@ const PRODUCTS_DATA = {
       "id": "b88d5c46-a748-489a-8773-4a88bd2e6a8e",
       "category": "Base Brazo Loco",
       "image_path": "./assets/b88d5c46-a748-489a-8773-4a88bd2e6a8e.webp",
-      "description": "BASE BRAZO LOCO DIR HIDRALICA CARIBE 2000",
+      "description": "BASE BRAZO LOCO CARIBE 2000",
       "keywords": [
         "2000",
         "BASE",
         "BRAZO",
         "CARIBE",
-        "DIR",
-        "HIDRALICA",
         "LOCO"
       ]
     },
@@ -821,14 +811,12 @@ const PRODUCTS_DATA = {
       "id": "1ce439e2-a38e-4069-b18a-132c24417efb",
       "category": "Base Brazo Loco",
       "image_path": "./assets/1ce439e2-a38e-4069-b18a-132c24417efb.webp",
-      "description": "BASE BRAZO LOCO DIR HIDRALICA CARIBE 2300",
+      "description": "BASE BRAZO LOCO CARIBE 2300",
       "keywords": [
         "2300",
         "BASE",
         "BRAZO",
         "CARIBE",
-        "DIR",
-        "HIDRALICA",
         "LOCO"
       ]
     },
@@ -895,9 +883,9 @@ const PRODUCTS_DATA = {
       "id": "593070d9-bd8e-4910-8cbc-ac6bb5d78882",
       "category": "Base Caja",
       "image_path": "./assets/593070d9-bd8e-4910-8cbc-ac6bb5d78882.webp",
-      "description": "BASE CAJA LUV AXA",
+      "description": "BASE CAJA LUV 4X4",
       "keywords": [
-        "AXA",
+        "4X4",
         "BASE",
         "CAJA",
         "LUV"
@@ -931,9 +919,8 @@ const PRODUCTS_DATA = {
       "id": "a416083a-34d7-45ab-9d87-160cfc5d827b",
       "category": "Base Caja",
       "image_path": "./assets/a416083a-34d7-45ab-9d87-160cfc5d827b.webp",
-      "description": "BASE CAJA LUV D-MAX 4X2",
+      "description": "BASE CAJA LUV D-MAX",
       "keywords": [
-        "4X2",
         "BASE",
         "CAJA",
         "D-MAX",
@@ -978,14 +965,11 @@ const PRODUCTS_DATA = {
       "id": "ccf3bf5a-69bb-4f9e-93ed-449b9c660df0",
       "category": "Base Casilla",
       "image_path": "./assets/ccf3bf5a-69bb-4f9e-93ed-449b9c660df0.webp",
-      "description": "BASECASILLA DOBLE CON METAL CARIBE",
+      "description": "BASE CASILLA CARIBE",
       "keywords": [
         "BASE",
-        "BASECASILLA",
         "CARIBE",
-        "CASILLA",
-        "DOBLE",
-        "METAL"
+        "CASILLA"
       ]
     },
     {
@@ -1123,7 +1107,7 @@ const PRODUCTS_DATA = {
       "id": "c612e4c6-c034-4b45-a9e7-ad8cf1639494",
       "category": "Base Motor",
       "image_path": "./assets/c612e4c6-c034-4b45-a9e7-ad8cf1639494.webp",
-      "description": "BASE MOTOR LUV D-MAX DIESEL",
+      "description": "BASE MOTOR LUV D-MAX 3.0 DIESEL",
       "keywords": [
         "BASE",
         "D-MAX",
@@ -1206,10 +1190,11 @@ const PRODUCTS_DATA = {
       "id": "cd767df5-01ae-4348-b44d-557660aba1fa",
       "category": "Bobina",
       "image_path": "./assets/cd767df5-01ae-4348-b44d-557660aba1fa.webp",
-      "description": "BOBINA LUVD-MAX",
+      "description": "BOBINA LUV D-MAX 3.5",
       "keywords": [
         "BOBINA",
-        "LUVD-MAX"
+        "D-MAX",
+        "LUV"
       ]
     },
     {
@@ -1262,34 +1247,35 @@ const PRODUCTS_DATA = {
       "id": "178ad439-c77d-4953-ab7c-f3af06a04993",
       "category": "Bomba de aceite",
       "image_path": "./assets/178ad439-c77d-4953-ab7c-f3af06a04993.webp",
-      "description": "BOMBA DE ACEITE LUVD-MAX",
+      "description": "BOMBA DE ACEITE LUV D-MAX",
       "keywords": [
         "ACEITE",
         "BOMBA",
-        "LUVD-MAX"
+        "D-MAX",
+        "LUV"
       ]
     },
     {
       "id": "b7fa779f-bf9f-404d-af6b-63bbc805b55b",
       "category": "Bomba de aceite",
       "image_path": "./assets/b7fa779f-bf9f-404d-af6b-63bbc805b55b.webp",
-      "description": "BOMBA DE ACEITE NN NALD 2 CARIBE",
+      "description": "BOMBA DE ACEITE CARIBE 2.3",
       "keywords": [
         "ACEITE",
         "BOMBA",
-        "CARIBE",
-        "NALD"
+        "CARIBE"
       ]
     },
     {
       "id": "bb93e024-a20d-4b1e-bca7-ff033fcd07d3",
       "category": "Bomba de agua",
       "image_path": "./assets/bb93e024-a20d-4b1e-bca7-ff033fcd07d3.webp",
-      "description": "BOMBA DE AGUA AL LUVD-MAX",
+      "description": "BOMBA DE AGUA AL LUV D-MAX 3.5",
       "keywords": [
         "AGUA",
         "BOMBA",
-        "LUVD-MAX"
+        "D-MAX",
+        "LUV"
       ]
     },
     {
@@ -1331,7 +1317,7 @@ const PRODUCTS_DATA = {
       "id": "59eed849-6677-4942-a72e-1a6326c1e83f",
       "category": "Bomba de agua",
       "image_path": "./assets/59eed849-6677-4942-a72e-1a6326c1e83f.webp",
-      "description": "BOMBA DE AGUA IZUSU RODEO",
+      "description": "BOMBA DE AGUA IZUSU RODEO 3.2",
       "keywords": [
         "AGUA",
         "BOMBA",
@@ -1427,12 +1413,13 @@ const PRODUCTS_DATA = {
       "id": "adc20dca-be71-434a-8b24-2da57f792bac",
       "category": "Bomba de Freno",
       "image_path": "./assets/adc20dca-be71-434a-8b24-2da57f792bac.webp",
-      "description": "BOMBA DE FRENO LUV D-MAX2009/2015 CON BASTAGO",
+      "description": "BOMBA DE FRENO LUV D-MAX 2010/2015 CON BASTAGO",
       "keywords": [
+        "2010",
         "2015",
         "BASTAGO",
         "BOMBA",
-        "D-MAX2009",
+        "D-MAX",
         "FRENO",
         "LUV"
       ]
@@ -1441,11 +1428,11 @@ const PRODUCTS_DATA = {
       "id": "5b872bfa-f1a6-432b-8915-bc352961ba83",
       "category": "Bomba de Gasolina",
       "image_path": "./assets/5b872bfa-f1a6-432b-8915-bc352961ba83.webp",
-      "description": "BOMBA DE GASOLINA D GASOLINA26",
+      "description": "BOMBA DE GASOLINA CARIBE 2.6",
       "keywords": [
         "BOMBA",
-        "GASOLINA",
-        "GASOLINA26"
+        "CARIBE",
+        "GASOLINA"
       ]
     },
     {
@@ -1465,12 +1452,12 @@ const PRODUCTS_DATA = {
       "id": "f9cd4a69-55a6-4bca-b66f-0be26e9972b3",
       "category": "Bomba de Gasolina",
       "image_path": "./assets/f9cd4a69-55a6-4bca-b66f-0be26e9972b3.webp",
-      "description": "BOMBA DE GASOLINA MODULO DEGAS LN LUVD-MAX",
+      "description": "BOMBA DE GASOLINA (MODULO) LUV D-MAX",
       "keywords": [
         "BOMBA",
-        "DEGAS",
+        "D-MAX",
         "GASOLINA",
-        "LUVD-MAX",
+        "LUV",
         "MODULO"
       ]
     },
@@ -1478,7 +1465,7 @@ const PRODUCTS_DATA = {
       "id": "70cb8a8f-b7ec-4536-b6b0-c99ee9993fbc",
       "category": "Bomba de Gasolina",
       "image_path": "./assets/70cb8a8f-b7ec-4536-b6b0-c99ee9993fbc.webp",
-      "description": "BOMBA DE GASOLINA O CARIBE 2.3",
+      "description": "BOMBA DE GASOLINA CARIBE 2.3",
       "keywords": [
         "BOMBA",
         "CARIBE",
@@ -1552,7 +1539,7 @@ const PRODUCTS_DATA = {
       "id": "86e701aa-9458-4bb1-b78a-b7b6165ecd0f",
       "category": "Bombin - Bomba Clutch",
       "image_path": "./assets/86e701aa-9458-4bb1-b78a-b7b6165ecd0f.webp",
-      "description": "BOMBA DE CLUTCH LUV D-MAX 2.4/25/30",
+      "description": "BOMBA DE CLUTCH LUV D-MAX 2.4/ 2.5/ 3.0",
       "keywords": [
         "BOMBA",
         "BOMBIN",
@@ -1603,11 +1590,12 @@ const PRODUCTS_DATA = {
       "id": "1ee745bc-f8b9-4ac0-b619-b4ddbeba4723",
       "category": "Bombin - Bomba Clutch",
       "image_path": "./assets/1ee745bc-f8b9-4ac0-b619-b4ddbeba4723.webp",
-      "description": "BOMBIN DE CLUTCH 22",
+      "description": "BOMBIN DE CLUTCH LUV 2.2",
       "keywords": [
         "BOMBA",
         "BOMBIN",
-        "CLUTCH"
+        "CLUTCH",
+        "LUV"
       ]
     },
     {
@@ -1640,11 +1628,10 @@ const PRODUCTS_DATA = {
       "id": "77f6489a-823b-4669-a3f1-4439228fcca9",
       "category": "Brazo de Biela",
       "image_path": "./assets/77f6489a-823b-4669-a3f1-4439228fcca9.webp",
-      "description": "BRAZODE BIELA LUV 2.2",
+      "description": "BRAZO DE BIELA LUV 2.2",
       "keywords": [
         "BIELA",
         "BRAZO",
-        "BRAZODE",
         "LUV"
       ]
     },
@@ -1652,11 +1639,10 @@ const PRODUCTS_DATA = {
       "id": "b2defeeb-876c-4b91-beeb-8b6a42054617",
       "category": "Brazo de Biela",
       "image_path": "./assets/b2defeeb-876c-4b91-beeb-8b6a42054617.webp",
-      "description": "BRAZODE BIELA LUV D-MAX 2.4",
+      "description": "BRAZO DE BIELA LUV D-MAX 2.4",
       "keywords": [
         "BIELA",
         "BRAZO",
-        "BRAZODE",
         "D-MAX",
         "LUV"
       ]
@@ -1665,11 +1651,10 @@ const PRODUCTS_DATA = {
       "id": "3dbd660d-128d-4fe5-9e45-0179f70e143d",
       "category": "Brazo de Biela",
       "image_path": "./assets/3dbd660d-128d-4fe5-9e45-0179f70e143d.webp",
-      "description": "BRAZODE BIELA LUV D-MAX 3.5",
+      "description": "BRAZO DE BIELA LUV D-MAX 3.5",
       "keywords": [
         "BIELA",
         "BRAZO",
-        "BRAZODE",
         "D-MAX",
         "LUV"
       ]
@@ -1723,11 +1708,11 @@ const PRODUCTS_DATA = {
       "id": "fbac5b36-1cfb-4a88-b578-6e4b97557826",
       "category": "Buje Araña",
       "image_path": "./assets/fbac5b36-1cfb-4a88-b578-6e4b97557826.webp",
-      "description": "BUJE DE ARAÑA LUV DMAX",
+      "description": "BUJE DE ARAÑA LUV D-MAX 3.5",
       "keywords": [
         "ARANA",
         "BUJE",
-        "DMAX",
+        "D-MAX",
         "LUV"
       ]
     },
@@ -1735,11 +1720,11 @@ const PRODUCTS_DATA = {
       "id": "9a959574-0226-41d5-bbfb-c94ce8cbe322",
       "category": "Buje Araña",
       "image_path": "./assets/9a959574-0226-41d5-bbfb-c94ce8cbe322.webp",
-      "description": "BUJE DE ARAÑA LUV DMAX24",
+      "description": "BUJE DE ARAÑA LUV D-MAX 2.4",
       "keywords": [
         "ARANA",
         "BUJE",
-        "DMAX24",
+        "D-MAX",
         "LUV"
       ]
     },
@@ -1758,7 +1743,7 @@ const PRODUCTS_DATA = {
       "id": "1e244653-183c-4c70-9955-de901d5233ce",
       "category": "Buje Araña",
       "image_path": "./assets/1e244653-183c-4c70-9955-de901d5233ce.webp",
-      "description": "BUJE DE ARAÑA TROOPER",
+      "description": "BUJE DE ARAÑA TROOPER 3.2",
       "keywords": [
         "ARANA",
         "BUJE",
@@ -1782,11 +1767,12 @@ const PRODUCTS_DATA = {
       "id": "fe33b2c2-0fac-4ee1-9e17-9cb75408d7cc",
       "category": "Buje Ballesta",
       "image_path": "./assets/fe33b2c2-0fac-4ee1-9e17-9cb75408d7cc.webp",
-      "description": "BUJE BALLESTA DELANTEROCARIBE23",
+      "description": "BUJE BALLESTA DELANTERO CARIBE 2.3",
       "keywords": [
         "BALLESTA",
         "BUJE",
-        "DELANTEROCARIBE23"
+        "CARIBE",
+        "DELANTERO"
       ]
     },
     {
@@ -1928,10 +1914,9 @@ const PRODUCTS_DATA = {
       "id": "bda19618-92b8-49f5-8831-f9f39a70b13b",
       "category": "Buje Eje Delantero",
       "image_path": "./assets/bda19618-92b8-49f5-8831-f9f39a70b13b.webp",
-      "description": "BUJEDE EJE DELANTERO LUV D-MAX 3.5",
+      "description": "BUJE DE EJE DELANTERO LUV D-MAX 3.5",
       "keywords": [
         "BUJE",
-        "BUJEDE",
         "D-MAX",
         "DELANTERO",
         "EJE",
@@ -1977,9 +1962,9 @@ const PRODUCTS_DATA = {
       "id": "83bd59f2-02ce-41c6-9169-61784fd09432",
       "category": "Buje Meseta",
       "image_path": "./assets/83bd59f2-02ce-41c6-9169-61784fd09432.webp",
-      "description": "BUJE MESETA EXTERNO LUV AX4",
+      "description": "BUJE MESETA EXTERNO LUV 4X4",
       "keywords": [
-        "AX4",
+        "4X4",
         "BUJE",
         "EXTERNO",
         "LUV",
@@ -1990,10 +1975,10 @@ const PRODUCTS_DATA = {
       "id": "516f1dfe-5093-4a46-8581-bc4c709e6840",
       "category": "Buje Meseta",
       "image_path": "./assets/516f1dfe-5093-4a46-8581-bc4c709e6840.webp",
-      "description": "BUJE MESETA EXTERNO LUV DMAX 35",
+      "description": "BUJE MESETA EXTERNO LUV D-MAX 3.5",
       "keywords": [
         "BUJE",
-        "DMAX",
+        "D-MAX",
         "EXTERNO",
         "LUV",
         "MESETA"
@@ -2015,7 +2000,7 @@ const PRODUCTS_DATA = {
       "id": "0465f604-da6f-42cf-8b02-484fcf123828",
       "category": "Buje Meseta",
       "image_path": "./assets/0465f604-da6f-42cf-8b02-484fcf123828.webp",
-      "description": "BUJE MESETA EXTERNO TROOPER",
+      "description": "BUJE MESETA EXTERNO TROOPER 3.2",
       "keywords": [
         "BUJE",
         "EXTERNO",
@@ -2039,9 +2024,9 @@ const PRODUCTS_DATA = {
       "id": "8839d864-0c93-4273-ab1f-66a24d05ae6c",
       "category": "Buje Meseta",
       "image_path": "./assets/8839d864-0c93-4273-ab1f-66a24d05ae6c.webp",
-      "description": "BUJE MESETA INTERNO LUV AXA",
+      "description": "BUJE MESETA INTERNO LUV 4X4",
       "keywords": [
-        "AXA",
+        "4X4",
         "BUJE",
         "INTERNO",
         "LUV",
@@ -2052,10 +2037,10 @@ const PRODUCTS_DATA = {
       "id": "4afdb5ba-8945-42a2-a08e-79f86cec54b5",
       "category": "Buje Meseta",
       "image_path": "./assets/4afdb5ba-8945-42a2-a08e-79f86cec54b5.webp",
-      "description": "BUJE MESETA INTERNO LUV DMAX 3.5",
+      "description": "BUJE MESETA INTERNO LUV D-MAX 3.5",
       "keywords": [
         "BUJE",
-        "DMAX",
+        "D-MAX",
         "INTERNO",
         "LUV",
         "MESETA"
@@ -2077,7 +2062,7 @@ const PRODUCTS_DATA = {
       "id": "e280f9e3-dd82-47e0-ad4e-5361d3e70594",
       "category": "Buje Meseta",
       "image_path": "./assets/e280f9e3-dd82-47e0-ad4e-5361d3e70594.webp",
-      "description": "BUJE MESETA INTERNO TROOPER",
+      "description": "BUJE MESETA INTERNO TROOPER 3.2",
       "keywords": [
         "BUJE",
         "INTERNO",
@@ -2101,10 +2086,10 @@ const PRODUCTS_DATA = {
       "id": "489d10c1-3277-4ce8-b7ce-0169b3d4e8f7",
       "category": "Buje Meseta",
       "image_path": "./assets/489d10c1-3277-4ce8-b7ce-0169b3d4e8f7.webp",
-      "description": "BUJE MESETA LUV DMAX24",
+      "description": "BUJE MESETA LUV D-MAX 2.4",
       "keywords": [
         "BUJE",
-        "DMAX24",
+        "D-MAX",
         "LUV",
         "MESETA"
       ]
@@ -2212,11 +2197,11 @@ const PRODUCTS_DATA = {
       "id": "24651f81-e426-4e02-9253-cfe0745a73c9",
       "category": "Cables de Bujia",
       "image_path": "./assets/24651f81-e426-4e02-9253-cfe0745a73c9.webp",
-      "description": "JUEGO DE CABLES BUJIA LUV D-MAX24L",
+      "description": "JUEGO DE CABLES BUJIA LUV D-MAX 2.4",
       "keywords": [
         "BUJIA",
         "CABLES",
-        "D-MAX24L",
+        "D-MAX",
         "JUEGO",
         "LUV"
       ]
@@ -2290,9 +2275,10 @@ const PRODUCTS_DATA = {
       "id": "afd3f08e-df23-4f3f-bfda-424e60f0aa8a",
       "category": "Camara",
       "image_path": "./assets/afd3f08e-df23-4f3f-bfda-424e60f0aa8a.webp",
-      "description": "CAMARA",
+      "description": "CAMARA CARIBE 2.3",
       "keywords": [
-        "CAMARA"
+        "CAMARA",
+        "CARIBE"
       ]
     },
     {
@@ -2310,22 +2296,23 @@ const PRODUCTS_DATA = {
       "id": "adb6450f-1a9e-494e-bd71-3a9de0cfb8c6",
       "category": "Carbones de Arranque",
       "image_path": "./assets/adb6450f-1a9e-494e-bd71-3a9de0cfb8c6.webp",
-      "description": "JUEGOCARBÓN DE ARRANQUE CARIBE 2300",
+      "description": "CARBÓN DE ARRANQUE CARIBE 2300",
       "keywords": [
         "2300",
         "ARRANQUE",
+        "CARBON",
         "CARBONES",
-        "CARIBE",
-        "JUEGOCARBON"
+        "CARIBE"
       ]
     },
     {
       "id": "a090e99b-b986-459e-af66-1a513f8fb2f6",
       "category": "Carburador",
       "image_path": "./assets/a090e99b-b986-459e-af66-1a513f8fb2f6.webp",
-      "description": "CARBURADOR LUV",
+      "description": "CARBURADOR CARIBE 2.3 / LUV 2.3",
       "keywords": [
         "CARBURADOR",
+        "CARIBE",
         "LUV"
       ]
     },
@@ -2333,23 +2320,19 @@ const PRODUCTS_DATA = {
       "id": "43838e64-9362-41cf-ba55-7388d9866c7b",
       "category": "Cigueñal",
       "image_path": "./assets/43838e64-9362-41cf-ba55-7388d9866c7b.webp",
-      "description": "CIG EÑAL CARIBE 2.3",
+      "description": "CIGUEÑAL CARIBE 2.3",
       "keywords": [
         "CARIBE",
-        "CIG",
-        "CIGUENAL",
-        "ENAL"
+        "CIGUENAL"
       ]
     },
     {
       "id": "fa4d3973-453c-412f-9cb7-d31200c3dda9",
       "category": "Cigueñal",
       "image_path": "./assets/fa4d3973-453c-412f-9cb7-d31200c3dda9.webp",
-      "description": "CIG EÑAL LUV 2.3",
+      "description": "CIGUEÑAL LUV 2.3",
       "keywords": [
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "LUV"
       ]
     },
@@ -2357,12 +2340,10 @@ const PRODUCTS_DATA = {
       "id": "2eac7a4e-5ced-4738-9ca1-6767f584288f",
       "category": "Cigueñal",
       "image_path": "./assets/2eac7a4e-5ced-4738-9ca1-6767f584288f.webp",
-      "description": "CIG EÑAL LUV D-MAX 2.4",
+      "description": "CIGUEÑAL LUV D-MAX 2.4",
       "keywords": [
-        "CIG",
         "CIGUENAL",
         "D-MAX",
-        "ENAL",
         "LUV"
       ]
     },
@@ -2394,10 +2375,10 @@ const PRODUCTS_DATA = {
       "id": "899ce35f-62ed-43e7-85bb-9548a995021b",
       "category": "Cilindro de Freno",
       "image_path": "./assets/899ce35f-62ed-43e7-85bb-9548a995021b.webp",
-      "description": "CILINDRO FRENO LUV D-MAX244X2",
+      "description": "CILINDRO FRENO LUV D-MAX 2.4",
       "keywords": [
         "CILINDRO",
-        "D-MAX244X2",
+        "D-MAX",
         "FRENO",
         "LUV"
       ]
@@ -2406,11 +2387,12 @@ const PRODUCTS_DATA = {
       "id": "14a20cef-1740-452e-8ee6-be5c241646c3",
       "category": "Cocuyo",
       "image_path": "./assets/14a20cef-1740-452e-8ee6-be5c241646c3.webp",
-      "description": "COCUYO CARIBE FAROCUADRADO",
+      "description": "COCUYO CARIBE FARO CUADRADO",
       "keywords": [
         "CARIBE",
         "COCUYO",
-        "FAROCUADRADO"
+        "CUADRADO",
+        "FARO"
       ]
     },
     {
@@ -2441,49 +2423,43 @@ const PRODUCTS_DATA = {
       "id": "1fd4a679-e0c4-4b5d-946c-5420763cd725",
       "category": "Collarin",
       "image_path": "./assets/1fd4a679-e0c4-4b5d-946c-5420763cd725.webp",
-      "description": "COLLARIN CARIBE MOTOR 2000",
+      "description": "COLLARIN CARIBE 2000",
       "keywords": [
         "2000",
         "CARIBE",
-        "COLLARIN",
-        "MOTOR"
+        "COLLARIN"
       ]
     },
     {
       "id": "a6edf194-0573-4ecc-9b19-d0765310ee70",
       "category": "Collarin",
       "image_path": "./assets/a6edf194-0573-4ecc-9b19-d0765310ee70.webp",
-      "description": "COLLARIN CARIBE MOTOR 2300",
+      "description": "COLLARIN CARIBE 2300",
       "keywords": [
         "2300",
         "CARIBE",
-        "COLLARIN",
-        "MOTOR"
+        "COLLARIN"
       ]
     },
     {
       "id": "6b36226e-a905-4538-babe-1ebf33ec08ca",
       "category": "Collarin",
       "image_path": "./assets/6b36226e-a905-4538-babe-1ebf33ec08ca.webp",
-      "description": "COLLARIN COMPLETO LUV D-MAX MOTOR24",
+      "description": "COLLARIN LUV D-MAX 2.4",
       "keywords": [
         "COLLARIN",
-        "COMPLETO",
         "D-MAX",
-        "LUV",
-        "MOTOR24"
+        "LUV"
       ]
     },
     {
       "id": "20d01a14-9af6-46c8-bbe0-3e5c1c05b967",
       "category": "Collarin",
       "image_path": "./assets/20d01a14-9af6-46c8-bbe0-3e5c1c05b967.webp",
-      "description": "COLLARIN COMPLETO LUV MOTOR22",
+      "description": "COLLARIN LUV 2.2",
       "keywords": [
         "COLLARIN",
-        "COMPLETO",
-        "LUV",
-        "MOTOR22"
+        "LUV"
       ]
     },
     {
@@ -2511,12 +2487,11 @@ const PRODUCTS_DATA = {
       "id": "c433dd78-7f97-4acc-b675-a7b9c8cb4822",
       "category": "Collarin",
       "image_path": "./assets/c433dd78-7f97-4acc-b675-a7b9c8cb4822.webp",
-      "description": "ROLINERA COLLARIN LUV MOTOR 2300",
+      "description": "ROLINERA COLLARIN LUV 2300",
       "keywords": [
         "2300",
         "COLLARIN",
         "LUV",
-        "MOTOR",
         "ROLINERA"
       ]
     },
@@ -2575,14 +2550,14 @@ const PRODUCTS_DATA = {
       "id": "f4e4bf9b-9a04-4b87-b592-067d01512059",
       "category": "Concha de Bancada",
       "image_path": "./assets/f4e4bf9b-9a04-4b87-b592-067d01512059.webp",
-      "description": "JUEGO DE CONCHAS BANCADA CARIBE G-2300/ 2600",
+      "description": "JUEGO DE CONCHAS BANCADA CARIBE 2300/ 2600",
       "keywords": [
+        "2300",
         "2600",
         "BANCADA",
         "CARIBE",
         "CONCHA",
         "CONCHAS",
-        "G-2300",
         "JUEGO"
       ]
     },
@@ -2639,11 +2614,11 @@ const PRODUCTS_DATA = {
       "id": "33aafd89-de24-4a08-9b68-e75910cf0ee2",
       "category": "Condensador",
       "image_path": "./assets/33aafd89-de24-4a08-9b68-e75910cf0ee2.webp",
-      "description": "CONDENSADOR CARIBE G-2000",
+      "description": "CONDENSADOR CARIBE G-200",
       "keywords": [
         "CARIBE",
         "CONDENSADOR",
-        "G-2000"
+        "G-200"
       ]
     },
     {
@@ -2674,13 +2649,11 @@ const PRODUCTS_DATA = {
       "id": "d9b9e608-16ac-4abd-aa4e-74a15e3bafec",
       "category": "Conmutador Encendido",
       "image_path": "./assets/d9b9e608-16ac-4abd-aa4e-74a15e3bafec.webp",
-      "description": "RAMAL DE SUICHERA CARIBE",
+      "description": "CONMUTADOR ENCENDIDO CARIBE",
       "keywords": [
         "CARIBE",
         "CONMUTADOR",
-        "ENCENDIDO",
-        "RAMAL",
-        "SUICHERA"
+        "ENCENDIDO"
       ]
     },
     {
@@ -2785,12 +2758,10 @@ const PRODUCTS_DATA = {
       "id": "7ff901d9-a3f6-4ca3-9374-92aeeadf7503",
       "category": "Correa de Tiempo",
       "image_path": "./assets/7ff901d9-a3f6-4ca3-9374-92aeeadf7503.webp",
-      "description": "CORREA DE TIEMPO LUV D-MAX 3.5 191 DIENTES",
+      "description": "CORREA DE TIEMPO LUV D-MAX 3.5",
       "keywords": [
-        "191",
         "CORREA",
         "D-MAX",
-        "DIENTES",
         "LUV",
         "TIEMPO"
       ]
@@ -3105,10 +3076,9 @@ const PRODUCTS_DATA = {
       "id": "26ece359-ea1b-4789-b373-52008aedbcee",
       "category": "Empacadura Bajante",
       "image_path": "./assets/26ece359-ea1b-4789-b373-52008aedbcee.webp",
-      "description": "EMPACADURA BAJASTE CONICA CARIBE",
+      "description": "EMPACADURA BAJANTE CONICA CARIBE",
       "keywords": [
         "BAJANTE",
-        "BAJASTE",
         "CARIBE",
         "CONICA",
         "EMPACADURA"
@@ -3118,10 +3088,9 @@ const PRODUCTS_DATA = {
       "id": "1623dae2-f765-4610-9c66-f5f1b76eb606",
       "category": "Empacadura Bajante",
       "image_path": "./assets/1623dae2-f765-4610-9c66-f5f1b76eb606.webp",
-      "description": "EMPACADURA BAJASTE CONICA LUV",
+      "description": "EMPACADURA BAJANTE CONICA LUV",
       "keywords": [
         "BAJANTE",
-        "BAJASTE",
         "CONICA",
         "EMPACADURA",
         "LUV"
@@ -3131,10 +3100,9 @@ const PRODUCTS_DATA = {
       "id": "de0590cb-6d5f-411a-bce4-f412c49d088e",
       "category": "Empacadura Bajante",
       "image_path": "./assets/de0590cb-6d5f-411a-bce4-f412c49d088e.webp",
-      "description": "EMPACADURA BAJASTE PLANA CARIBE",
+      "description": "EMPACADURA BAJANTE PLANA CARIBE",
       "keywords": [
         "BAJANTE",
-        "BAJASTE",
         "CARIBE",
         "EMPACADURA",
         "PLANA"
@@ -3144,10 +3112,9 @@ const PRODUCTS_DATA = {
       "id": "1482d0af-3b76-4ad9-9a22-fbc625c34565",
       "category": "Empacadura Bajante",
       "image_path": "./assets/1482d0af-3b76-4ad9-9a22-fbc625c34565.webp",
-      "description": "EMPACADURA BAJASTE PLANA LUV",
+      "description": "EMPACADURA BAJANTE PLANA LUV",
       "keywords": [
         "BAJANTE",
-        "BAJASTE",
         "EMPACADURA",
         "LUV",
         "PLANA"
@@ -3311,9 +3278,9 @@ const PRODUCTS_DATA = {
       "id": "8742d4eb-fae7-48bc-bb00-0edb71702c18",
       "category": "Empacadura Carter",
       "image_path": "./assets/8742d4eb-fae7-48bc-bb00-0edb71702c18.webp",
-      "description": "EMPACADURA CARTER LUV 234X2",
+      "description": "EMPACADURA CARTER LUV 2.3 4X2",
       "keywords": [
-        "234X2",
+        "4X2",
         "CARTER",
         "EMPACADURA",
         "LUV"
@@ -3529,11 +3496,11 @@ const PRODUCTS_DATA = {
       "id": "13f6a048-f403-48c8-86c4-4b7f75147d86",
       "category": "Empacadura Tapavalvula",
       "image_path": "./assets/13f6a048-f403-48c8-86c4-4b7f75147d86.webp",
-      "description": "EMPACADURA TAPA VALVULA RODEO 3.2 SOCHH",
+      "description": "EMPACADURA TAPA VALVULA RODEO 3.2 SOCH",
       "keywords": [
         "EMPACADURA",
         "RODEO",
-        "SOCHH",
+        "SOCH",
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
@@ -3567,13 +3534,11 @@ const PRODUCTS_DATA = {
       "id": "05a12365-8615-4bac-97d5-e3aa36b3954d",
       "category": "Engranaje Cigueñal",
       "image_path": "./assets/05a12365-8615-4bac-97d5-e3aa36b3954d.webp",
-      "description": "ENGRANAJE DE CIG EÑAL CARIBE 2000",
+      "description": "ENGRANAJE DE CIGUEÑAL CARIBE 2000",
       "keywords": [
         "2000",
         "CARIBE",
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "ENGRANAJE"
       ]
     },
@@ -3581,13 +3546,11 @@ const PRODUCTS_DATA = {
       "id": "8f20f130-6e4f-403b-975d-8625838a91fa",
       "category": "Engranaje Cigueñal",
       "image_path": "./assets/8f20f130-6e4f-403b-975d-8625838a91fa.webp",
-      "description": "ENGRANAJE DE CIG EÑAL CARIBE 2300",
+      "description": "ENGRANAJE DE CIGUEÑAL CARIBE 2300",
       "keywords": [
         "2300",
         "CARIBE",
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "ENGRANAJE"
       ]
     },
@@ -3595,11 +3558,9 @@ const PRODUCTS_DATA = {
       "id": "961eeb1b-7f04-4e16-adda-d8821763dbe8",
       "category": "Engranaje Cigueñal",
       "image_path": "./assets/961eeb1b-7f04-4e16-adda-d8821763dbe8.webp",
-      "description": "ENGRANAJE DE CIG EÑAL LUV 2.3",
+      "description": "ENGRANAJE DE CIGUEÑAL LUV 2.3",
       "keywords": [
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "ENGRANAJE",
         "LUV"
       ]
@@ -3646,10 +3607,10 @@ const PRODUCTS_DATA = {
       "id": "e0f4b301-d03b-4a98-b17d-cced2229d238",
       "category": "Esparrago",
       "image_path": "./assets/e0f4b301-d03b-4a98-b17d-cced2229d238.webp",
-      "description": "ESPARRAGO RUEDA DELANTERO LUV D-MAX",
+      "description": "ESPARRAGO RUEDA DELANTERA LUV D-MAX",
       "keywords": [
         "D-MAX",
-        "DELANTERO",
+        "DELANTERA",
         "ESPARRAGO",
         "LUV",
         "RUEDA"
@@ -3659,13 +3620,13 @@ const PRODUCTS_DATA = {
       "id": "e145d007-c260-401f-bcb3-59658fd6a98a",
       "category": "Esparrago",
       "image_path": "./assets/e145d007-c260-401f-bcb3-59658fd6a98a.webp",
-      "description": "ESPARRAGO RUEDA TRASERO LUV D-MAX",
+      "description": "ESPARRAGO RUEDA TRASERA LUV D-MAX",
       "keywords": [
         "D-MAX",
         "ESPARRAGO",
         "LUV",
         "RUEDA",
-        "TRASERO"
+        "TRASERA"
       ]
     },
     {
@@ -3735,10 +3696,9 @@ const PRODUCTS_DATA = {
       "id": "b866102d-d4d4-4b71-9ae8-1539ef8179a6",
       "category": "Estopera Arbol de Leva",
       "image_path": "./assets/b866102d-d4d4-4b71-9ae8-1539ef8179a6.webp",
-      "description": "ESTOPERA ARBOLDE LEVA CARIBE 2.3",
+      "description": "ESTOPERA ARBOL DE LEVA CARIBE 2.3",
       "keywords": [
         "ARBOL",
-        "ARBOLDE",
         "CARIBE",
         "ESTOPERA",
         "LEVA"
@@ -3748,10 +3708,9 @@ const PRODUCTS_DATA = {
       "id": "083e4d9e-e3ce-4ffa-85ef-80bc1d785294",
       "category": "Estopera Arbol de Leva",
       "image_path": "./assets/083e4d9e-e3ce-4ffa-85ef-80bc1d785294.webp",
-      "description": "ESTOPERA ARBOLDE LEVA CARIBE 2.6",
+      "description": "ESTOPERA ARBOL DE LEVA CARIBE 2.6",
       "keywords": [
         "ARBOL",
-        "ARBOLDE",
         "CARIBE",
         "ESTOPERA",
         "LEVA"
@@ -3761,10 +3720,9 @@ const PRODUCTS_DATA = {
       "id": "0c32faaa-c9fb-449b-aa38-86bccebd839e",
       "category": "Estopera Arbol de Leva",
       "image_path": "./assets/0c32faaa-c9fb-449b-aa38-86bccebd839e.webp",
-      "description": "ESTOPERA ARBOLDE LEVA LUV 2.3",
+      "description": "ESTOPERA ARBOL DE LEVA LUV 2.3",
       "keywords": [
         "ARBOL",
-        "ARBOLDE",
         "ESTOPERA",
         "LEVA",
         "LUV"
@@ -3774,10 +3732,9 @@ const PRODUCTS_DATA = {
       "id": "494fc6bb-cfd3-4de0-a787-cecd545866a0",
       "category": "Estopera Arbol de Leva",
       "image_path": "./assets/494fc6bb-cfd3-4de0-a787-cecd545866a0.webp",
-      "description": "ESTOPERA ARBOLDE LEVA LUV D-MAX 3.5",
+      "description": "ESTOPERA ARBOL DE LEVA LUV D-MAX 3.5",
       "keywords": [
         "ARBOL",
-        "ARBOLDE",
         "D-MAX",
         "ESTOPERA",
         "LEVA",
@@ -3788,10 +3745,9 @@ const PRODUCTS_DATA = {
       "id": "c0916e15-f916-4d91-8a2a-302d81c32cc8",
       "category": "Estopera Arbol de Leva",
       "image_path": "./assets/c0916e15-f916-4d91-8a2a-302d81c32cc8.webp",
-      "description": "ESTOPERA ARBOLDE LEVA RODEO",
+      "description": "ESTOPERA ARBOL DE LEVA RODEO",
       "keywords": [
         "ARBOL",
-        "ARBOLDE",
         "ESTOPERA",
         "LEVA",
         "RODEO"
@@ -3825,14 +3781,12 @@ const PRODUCTS_DATA = {
       "id": "2db7326c-6d57-46cd-87f9-b72b8f21a8b7",
       "category": "Estopera Cigueñal Delantera",
       "image_path": "./assets/2db7326c-6d57-46cd-87f9-b72b8f21a8b7.webp",
-      "description": "ESTOPERA BOMBA ACEITE / CIG EÑAL LUV 2.2",
+      "description": "ESTOPERA BOMBA ACEITE / CIGUEÑAL LUV 2.2",
       "keywords": [
         "ACEITE",
         "BOMBA",
-        "CIG",
         "CIGUENAL",
         "DELANTERA",
-        "ENAL",
         "ESTOPERA",
         "LUV"
       ]
@@ -3841,15 +3795,13 @@ const PRODUCTS_DATA = {
       "id": "b7efd8d3-8eea-46ba-a232-738677fe2921",
       "category": "Estopera Cigueñal Delantera",
       "image_path": "./assets/b7efd8d3-8eea-46ba-a232-738677fe2921.webp",
-      "description": "ESTOPERA BOMBA ACEITE / CIG EÑAL LUV D-MAX 2.4",
+      "description": "ESTOPERA BOMBA ACEITE / CIGUEÑAL LUV D-MAX 2.4",
       "keywords": [
         "ACEITE",
         "BOMBA",
-        "CIG",
         "CIGUENAL",
         "D-MAX",
         "DELANTERA",
-        "ENAL",
         "ESTOPERA",
         "LUV"
       ]
@@ -3858,13 +3810,11 @@ const PRODUCTS_DATA = {
       "id": "559ae8f5-b39f-4482-b98e-4e70e625a814",
       "category": "Estopera Cigueñal Delantera",
       "image_path": "./assets/559ae8f5-b39f-4482-b98e-4e70e625a814.webp",
-      "description": "ESTOPERA CIG EÑAL DELANTERA CARIBE 2.3",
+      "description": "ESTOPERA CIGUEÑAL DELANTERA CARIBE 2.3",
       "keywords": [
         "CARIBE",
-        "CIG",
         "CIGUENAL",
         "DELANTERA",
-        "ENAL",
         "ESTOPERA"
       ]
     },
@@ -3872,13 +3822,11 @@ const PRODUCTS_DATA = {
       "id": "c5a1c51e-ee0e-48d5-ad09-6ac0a218a0bc",
       "category": "Estopera Cigueñal Delantera",
       "image_path": "./assets/c5a1c51e-ee0e-48d5-ad09-6ac0a218a0bc.webp",
-      "description": "ESTOPERA CIG EÑAL DELANTERA CARIBE 2.6",
+      "description": "ESTOPERA CIGUEÑAL DELANTERA CARIBE 2.6",
       "keywords": [
         "CARIBE",
-        "CIG",
         "CIGUENAL",
         "DELANTERA",
-        "ENAL",
         "ESTOPERA"
       ]
     },
@@ -3886,14 +3834,12 @@ const PRODUCTS_DATA = {
       "id": "d98dd80a-da11-4478-9570-d3fb37c37208",
       "category": "Estopera Cigueñal Delantera",
       "image_path": "./assets/d98dd80a-da11-4478-9570-d3fb37c37208.webp",
-      "description": "ESTOPERA CIG EÑAL DELANTERA CARIBE 2000",
+      "description": "ESTOPERA CIGUEÑAL DELANTERA CARIBE 2000",
       "keywords": [
         "2000",
         "CARIBE",
-        "CIG",
         "CIGUENAL",
         "DELANTERA",
-        "ENAL",
         "ESTOPERA"
       ]
     },
@@ -3901,12 +3847,10 @@ const PRODUCTS_DATA = {
       "id": "8f68d104-8968-4226-ad0e-9b490db10419",
       "category": "Estopera Cigueñal Delantera",
       "image_path": "./assets/8f68d104-8968-4226-ad0e-9b490db10419.webp",
-      "description": "ESTOPERA CIG EÑAL DELANTERA LUV 2.3",
+      "description": "ESTOPERA CIGUEÑAL DELANTERA LUV 2.3",
       "keywords": [
-        "CIG",
         "CIGUENAL",
         "DELANTERA",
-        "ENAL",
         "ESTOPERA",
         "LUV"
       ]
@@ -3915,13 +3859,11 @@ const PRODUCTS_DATA = {
       "id": "cf7e33e7-2e5d-4c5f-a6de-df2f13cb9e58",
       "category": "Estopera Cigueñal Delantera",
       "image_path": "./assets/cf7e33e7-2e5d-4c5f-a6de-df2f13cb9e58.webp",
-      "description": "ESTOPERA CIG EÑAL DELANTERA LUV D-MAX 3.5",
+      "description": "ESTOPERA CIGUEÑAL DELANTERA LUV D-MAX 3.5",
       "keywords": [
-        "CIG",
         "CIGUENAL",
         "D-MAX",
         "DELANTERA",
-        "ENAL",
         "ESTOPERA",
         "LUV"
       ]
@@ -3930,12 +3872,10 @@ const PRODUCTS_DATA = {
       "id": "79bbb45a-1489-4ffa-bd31-2493d8f5c9bd",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/79bbb45a-1489-4ffa-bd31-2493d8f5c9bd.webp",
-      "description": "ESTOPERA CIG EÑAL TRASERA CARIBE 2.3",
+      "description": "ESTOPERA CIGUEÑAL TRASERA CARIBE 2.3",
       "keywords": [
         "CARIBE",
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "ESTOPERA",
         "TRASERA"
       ]
@@ -3944,12 +3884,10 @@ const PRODUCTS_DATA = {
       "id": "3929a2df-c6c7-4631-8bd5-3fd403236e49",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/3929a2df-c6c7-4631-8bd5-3fd403236e49.webp",
-      "description": "ESTOPERA CIG EÑAL TRASERA CARIBE 2.6",
+      "description": "ESTOPERA CIGUEÑAL TRASERA CARIBE 2.6",
       "keywords": [
         "CARIBE",
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "ESTOPERA",
         "TRASERA"
       ]
@@ -3958,13 +3896,11 @@ const PRODUCTS_DATA = {
       "id": "4a870e66-0ed8-4929-9fa8-b57831ed3e81",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/4a870e66-0ed8-4929-9fa8-b57831ed3e81.webp",
-      "description": "ESTOPERA CIG EÑAL TRASERA CARIBE 2000",
+      "description": "ESTOPERA CIGUEÑAL TRASERA CARIBE 2000",
       "keywords": [
         "2000",
         "CARIBE",
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "ESTOPERA",
         "TRASERA"
       ]
@@ -3973,11 +3909,9 @@ const PRODUCTS_DATA = {
       "id": "9040af76-7092-40cc-b809-de1fd17e4ef0",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/9040af76-7092-40cc-b809-de1fd17e4ef0.webp",
-      "description": "ESTOPERA CIG EÑAL TRASERA LUV 2.2",
+      "description": "ESTOPERA CIGUEÑAL TRASERA LUV 2.2",
       "keywords": [
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "ESTOPERA",
         "LUV",
         "TRASERA"
@@ -3987,11 +3921,9 @@ const PRODUCTS_DATA = {
       "id": "d5c4a1f4-df38-40aa-ac27-ee10d225edcf",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/d5c4a1f4-df38-40aa-ac27-ee10d225edcf.webp",
-      "description": "ESTOPERA CIG EÑAL TRASERA LUV 2.3",
+      "description": "ESTOPERA CIGUEÑAL TRASERA LUV 2.3",
       "keywords": [
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "ESTOPERA",
         "LUV",
         "TRASERA"
@@ -4001,12 +3933,10 @@ const PRODUCTS_DATA = {
       "id": "2528f224-be12-4869-bbf6-20b4e5c7c963",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/2528f224-be12-4869-bbf6-20b4e5c7c963.webp",
-      "description": "ESTOPERA CIG EÑAL TRASERA LUV D-MAX 3.5",
+      "description": "ESTOPERA CIGUEÑAL TRASERA LUV D-MAX 3.5",
       "keywords": [
-        "CIG",
         "CIGUENAL",
         "D-MAX",
-        "ENAL",
         "ESTOPERA",
         "LUV",
         "TRASERA"
@@ -4016,11 +3946,9 @@ const PRODUCTS_DATA = {
       "id": "fcc26950-26ba-48a8-a5d2-4eba9780c589",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/fcc26950-26ba-48a8-a5d2-4eba9780c589.webp",
-      "description": "ESTOPERA CIG EÑAL TRASERA RODEO",
+      "description": "ESTOPERA CIGUEÑAL TRASERA RODEO",
       "keywords": [
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "ESTOPERA",
         "RODEO",
         "TRASERA"
@@ -4030,11 +3958,9 @@ const PRODUCTS_DATA = {
       "id": "4263bc09-e565-4c5e-8426-557b16f9c5f9",
       "category": "Estopera Cigueñal Trasera",
       "image_path": "./assets/4263bc09-e565-4c5e-8426-557b16f9c5f9.webp",
-      "description": "ESTOPERA CIG EÑAL TRASERA TROOPER",
+      "description": "ESTOPERA CIGUEÑAL TRASERA TROOPER",
       "keywords": [
-        "CIG",
         "CIGUENAL",
-        "ENAL",
         "ESTOPERA",
         "TRASERA",
         "TROOPER"
@@ -4081,11 +4007,10 @@ const PRODUCTS_DATA = {
       "id": "c0d33aec-a9f0-41d1-ac60-1656aec88d59",
       "category": "Estopera Cola de Caja",
       "image_path": "./assets/c0d33aec-a9f0-41d1-ac60-1656aec88d59.webp",
-      "description": "ESTOPERA COLA DE CAJA LUV D-MAX 32",
+      "description": "ESTOPERA COLA DE CAJA LUV 3.2",
       "keywords": [
         "CAJA",
         "COLA",
-        "D-MAX",
         "ESTOPERA",
         "LUV"
       ]
@@ -4106,12 +4031,11 @@ const PRODUCTS_DATA = {
       "id": "8cef6705-c503-4fc3-ad64-5ace898e07a2",
       "category": "Estopera Cola de Caja",
       "image_path": "./assets/8cef6705-c503-4fc3-ad64-5ace898e07a2.webp",
-      "description": "ESTOPERA COLA DECAJA CARIBE 2.3",
+      "description": "ESTOPERA COLA DE CAJA CARIBE 2.3",
       "keywords": [
         "CAJA",
         "CARIBE",
         "COLA",
-        "DECAJA",
         "ESTOPERA"
       ]
     },
@@ -4119,11 +4043,10 @@ const PRODUCTS_DATA = {
       "id": "b1a2c61a-58ef-455d-b9fc-f040ce095aea",
       "category": "Estopera Cola de Caja",
       "image_path": "./assets/b1a2c61a-58ef-455d-b9fc-f040ce095aea.webp",
-      "description": "ESTOPERA COLA DECAJA TROOPER",
+      "description": "ESTOPERA COLA DE CAJA TROOPER",
       "keywords": [
         "CAJA",
         "COLA",
-        "DECAJA",
         "ESTOPERA",
         "TROOPER"
       ]
@@ -4145,26 +4068,24 @@ const PRODUCTS_DATA = {
       "id": "d0c53343-cd56-4787-8637-e3dd4545c206",
       "category": "Estopera Piñon Ataque",
       "image_path": "./assets/d0c53343-cd56-4787-8637-e3dd4545c206.webp",
-      "description": "ESTOPERA PIÑONDE ATAQUE CARIBE 2.6",
+      "description": "ESTOPERA PIÑON DE ATAQUE CARIBE 2.6",
       "keywords": [
         "ATAQUE",
         "CARIBE",
         "ESTOPERA",
-        "PINON",
-        "PINONDE"
+        "PINON"
       ]
     },
     {
       "id": "ca062de9-4b68-4b20-9cda-366c301ec094",
       "category": "Estopera Piñon Ataque",
       "image_path": "./assets/ca062de9-4b68-4b20-9cda-366c301ec094.webp",
-      "description": "ESTOPERA PIÑONDE ATAQUE TRASERA CARIBE 2.0",
+      "description": "ESTOPERA PIÑON DE ATAQUE TRASERA CARIBE 2.0",
       "keywords": [
         "ATAQUE",
         "CARIBE",
         "ESTOPERA",
         "PINON",
-        "PINONDE",
         "TRASERA"
       ]
     },
@@ -4172,13 +4093,12 @@ const PRODUCTS_DATA = {
       "id": "3a1ce750-3f55-4943-a825-5009c18abcf0",
       "category": "Estopera Piñon Ataque",
       "image_path": "./assets/3a1ce750-3f55-4943-a825-5009c18abcf0.webp",
-      "description": "ESTOPERA PIÑONDE ATAQUE TRASERA CARIBE 2.3",
+      "description": "ESTOPERA PIÑON DE ATAQUE TRASERA CARIBE 2.3",
       "keywords": [
         "ATAQUE",
         "CARIBE",
         "ESTOPERA",
         "PINON",
-        "PINONDE",
         "TRASERA"
       ]
     },
@@ -4186,14 +4106,13 @@ const PRODUCTS_DATA = {
       "id": "183e62bd-176b-4cac-abd9-7b6367986f74",
       "category": "Estopera Punta de Eje Delantera",
       "image_path": "./assets/183e62bd-176b-4cac-abd9-7b6367986f74.webp",
-      "description": "ESTOPERA RUEDA / PUNTADE EJE DELANTERA CARIBE 2.6",
+      "description": "ESTOPERA RUEDA / PUNTA DE EJE DELANTERA CARIBE 2.6",
       "keywords": [
         "CARIBE",
         "DELANTERA",
         "EJE",
         "ESTOPERA",
         "PUNTA",
-        "PUNTADE",
         "RUEDA"
       ]
     },
@@ -4201,7 +4120,7 @@ const PRODUCTS_DATA = {
       "id": "e3687500-749c-42f9-8637-7901b0fa6ee2",
       "category": "Estopera Punta de Eje Delantera",
       "image_path": "./assets/e3687500-749c-42f9-8637-7901b0fa6ee2.webp",
-      "description": "ESTOPERA RUEDA / PUNTADE EJE DELANTERA LUV D-MAX 3.5",
+      "description": "ESTOPERA RUEDA / PUNTA DE EJE DELANTERA LUV D-MAX 3.5",
       "keywords": [
         "D-MAX",
         "DELANTERA",
@@ -4209,7 +4128,6 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "PUNTA",
-        "PUNTADE",
         "RUEDA"
       ]
     },
@@ -4217,15 +4135,13 @@ const PRODUCTS_DATA = {
       "id": "ebd16b93-5973-4834-b0e5-cd8d3b2a0f60",
       "category": "Estopera Punta de Eje Delantera",
       "image_path": "./assets/ebd16b93-5973-4834-b0e5-cd8d3b2a0f60.webp",
-      "description": "ESTOPERA RUEDA / PUNTADE EJE DELANTERA LUV D-MAX 32",
+      "description": "ESTOPERA RUEDA / PUNTA DE EJE DELANTERA LUV 3.2",
       "keywords": [
-        "D-MAX",
         "DELANTERA",
         "EJE",
         "ESTOPERA",
         "LUV",
         "PUNTA",
-        "PUNTADE",
         "RUEDA"
       ]
     },
@@ -4233,7 +4149,7 @@ const PRODUCTS_DATA = {
       "id": "e331a608-7ce7-47a9-93f1-22ef7cb94ebb",
       "category": "Estopera Punta de Eje Delantera",
       "image_path": "./assets/e331a608-7ce7-47a9-93f1-22ef7cb94ebb.webp",
-      "description": "ESTOPERA RUEDA PUNTA DE EJE DELANTERA CARIBE 2.3",
+      "description": "ESTOPERA RUEDA / PUNTA DE EJE DELANTERA CARIBE 2.3",
       "keywords": [
         "CARIBE",
         "DELANTERA",
@@ -4247,12 +4163,13 @@ const PRODUCTS_DATA = {
       "id": "55c705ca-eba4-478d-a282-31d102952445",
       "category": "Estopera Punta de Eje Delantera",
       "image_path": "./assets/55c705ca-eba4-478d-a282-31d102952445.webp",
-      "description": "ESTOPERA RUEDA PUNTA DE EJE DELANTERA CARIBE20",
+      "description": "ESTOPERA RUEDA / PUNTA DE EJE DELANTERA CARIBE G200",
       "keywords": [
-        "CARIBE20",
+        "CARIBE",
         "DELANTERA",
         "EJE",
         "ESTOPERA",
+        "G200",
         "PUNTA",
         "RUEDA"
       ]
@@ -4261,9 +4178,8 @@ const PRODUCTS_DATA = {
       "id": "a7160b7f-307f-4a84-b93c-baa4ccc034fc",
       "category": "Estopera Punta de Eje Delantera",
       "image_path": "./assets/a7160b7f-307f-4a84-b93c-baa4ccc034fc.webp",
-      "description": "ESTOPERA RUEDA PUNTA DE EJE DELANTERA LUV D-MAX AX2",
+      "description": "ESTOPERA RUEDA / PUNTA DE EJE DELANTERA LUV D-MAX 2.4",
       "keywords": [
-        "AX2",
         "D-MAX",
         "DELANTERA",
         "EJE",
@@ -4319,14 +4235,13 @@ const PRODUCTS_DATA = {
       "id": "85435ec7-add2-40e4-9d68-231eca846618",
       "category": "Estopera Punta de Eje Trasera",
       "image_path": "./assets/85435ec7-add2-40e4-9d68-231eca846618.webp",
-      "description": "ESTOPERA PUNTADE EJE / TUNEL TRASERA INTERNA CARIBE 2.0",
+      "description": "ESTOPERA PUNTA DE EJE / TUNEL TRASERA INTERNA CARIBE 2.0",
       "keywords": [
         "CARIBE",
         "EJE",
         "ESTOPERA",
         "INTERNA",
         "PUNTA",
-        "PUNTADE",
         "TRASERA",
         "TUNEL"
       ]
@@ -4335,14 +4250,13 @@ const PRODUCTS_DATA = {
       "id": "43987597-2356-4264-96bf-45d51e7b91c8",
       "category": "Estopera Punta de Eje Trasera",
       "image_path": "./assets/43987597-2356-4264-96bf-45d51e7b91c8.webp",
-      "description": "ESTOPERA PUNTADE EJE / TUNEL TRASERA INTERNA CARIBE 2.3",
+      "description": "ESTOPERA PUNTA DE EJE / TUNEL TRASERA INTERNA CARIBE 2.3",
       "keywords": [
         "CARIBE",
         "EJE",
         "ESTOPERA",
         "INTERNA",
         "PUNTA",
-        "PUNTADE",
         "TRASERA",
         "TUNEL"
       ]
@@ -4351,14 +4265,13 @@ const PRODUCTS_DATA = {
       "id": "94f9554f-38bb-4965-9b62-313ae338be6d",
       "category": "Estopera Punta de Eje Trasera",
       "image_path": "./assets/94f9554f-38bb-4965-9b62-313ae338be6d.webp",
-      "description": "ESTOPERA PUNTADE EJE / TUNEL TRASERA INTERNA CARIBE 2.6",
+      "description": "ESTOPERA PUNTA DE EJE / TUNEL TRASERA INTERNA CARIBE 2.6",
       "keywords": [
         "CARIBE",
         "EJE",
         "ESTOPERA",
         "INTERNA",
         "PUNTA",
-        "PUNTADE",
         "TRASERA",
         "TUNEL"
       ]
@@ -4367,13 +4280,12 @@ const PRODUCTS_DATA = {
       "id": "b40ad255-0787-4c83-8f31-65bd971ee6a5",
       "category": "Estopera Punta de Eje Trasera",
       "image_path": "./assets/b40ad255-0787-4c83-8f31-65bd971ee6a5.webp",
-      "description": "ESTOPERA RUEDA PUNTA DE EJE TRASERA EXT LUV D-MAX AX2",
+      "description": "ESTOPERA RUEDA PUNTA DE EJE TRASERA EXTERNA LUV D-MAX 2.4",
       "keywords": [
-        "AX2",
         "D-MAX",
         "EJE",
         "ESTOPERA",
-        "EXT",
+        "EXTERNA",
         "LUV",
         "PUNTA",
         "RUEDA",
@@ -4384,13 +4296,12 @@ const PRODUCTS_DATA = {
       "id": "3856f626-a81e-4639-8f9f-b66b02921eec",
       "category": "Estopera Punta de Eje Trasera",
       "image_path": "./assets/3856f626-a81e-4639-8f9f-b66b02921eec.webp",
-      "description": "ESTOPERA RUEDA PUNTA DE EJE TRASERA EXT LUV D-MAX AX4",
+      "description": "ESTOPERA RUEDA / PUNTA DE EJE TRASERA EXTERNA LUV D-MAX 3.5",
       "keywords": [
-        "AX4",
         "D-MAX",
         "EJE",
         "ESTOPERA",
-        "EXT",
+        "EXTERNA",
         "LUV",
         "PUNTA",
         "RUEDA",
@@ -4425,9 +4336,8 @@ const PRODUCTS_DATA = {
       "id": "6adbc5e4-e57c-47c3-ac28-bcfe27749cfa",
       "category": "Fan Clutch",
       "image_path": "./assets/6adbc5e4-e57c-47c3-ac28-bcfe27749cfa.webp",
-      "description": "FAN CLUTCH 6 CILINDROS RODEO 3.2",
+      "description": "FAN CLUTCH RODEO 3.2",
       "keywords": [
-        "CILINDROS",
         "CLUTCH",
         "FAN",
         "RODEO"
@@ -4437,9 +4347,8 @@ const PRODUCTS_DATA = {
       "id": "03c39fcb-db42-4a0c-94a9-dc2676f3fef6",
       "category": "Fan Clutch",
       "image_path": "./assets/03c39fcb-db42-4a0c-94a9-dc2676f3fef6.webp",
-      "description": "FAN CLUTCH 6 CILINDROS TROOPER 3.2",
+      "description": "FAN CLUTCH TROOPER 3.2",
       "keywords": [
-        "CILINDROS",
         "CLUTCH",
         "FAN",
         "TROOPER"
@@ -4471,12 +4380,10 @@ const PRODUCTS_DATA = {
       "id": "0f26f009-7c8c-45f8-8744-792d2fbf70ad",
       "category": "Fan Clutch",
       "image_path": "./assets/0f26f009-7c8c-45f8-8744-792d2fbf70ad.webp",
-      "description": "FANCLUTCH 6 CILINDROS LUV 3.2",
+      "description": "FAN CLUTCH LUV 3.2",
       "keywords": [
-        "CILINDROS",
         "CLUTCH",
         "FAN",
-        "FANCLUTCH",
         "LUV"
       ]
     },
@@ -4484,11 +4391,10 @@ const PRODUCTS_DATA = {
       "id": "42c8f3fb-7b8c-4dd9-8fd6-babe35164e3b",
       "category": "Fan Clutch",
       "image_path": "./assets/42c8f3fb-7b8c-4dd9-8fd6-babe35164e3b.webp",
-      "description": "FANCLUTCH LUV 2.2",
+      "description": "FAN CLUTCH LUV 2.2",
       "keywords": [
         "CLUTCH",
         "FAN",
-        "FANCLUTCH",
         "LUV"
       ]
     },
@@ -4496,11 +4402,10 @@ const PRODUCTS_DATA = {
       "id": "2c022690-a42d-437b-9c58-ae5ceba5e42e",
       "category": "Fan Clutch",
       "image_path": "./assets/2c022690-a42d-437b-9c58-ae5ceba5e42e.webp",
-      "description": "FANCLUTCH LUV 2.3",
+      "description": "FAN CLUTCH LUV 2.3",
       "keywords": [
         "CLUTCH",
         "FAN",
-        "FANCLUTCH",
         "LUV"
       ]
     },
@@ -4508,12 +4413,11 @@ const PRODUCTS_DATA = {
       "id": "23bb9fce-921e-4da5-983b-be8379964902",
       "category": "Fan Clutch",
       "image_path": "./assets/23bb9fce-921e-4da5-983b-be8379964902.webp",
-      "description": "FANCLUTCH LUV D-MAX 2.4",
+      "description": "FAN CLUTCH LUV D-MAX 2.4",
       "keywords": [
         "CLUTCH",
         "D-MAX",
         "FAN",
-        "FANCLUTCH",
         "LUV"
       ]
     },
@@ -4521,15 +4425,16 @@ const PRODUCTS_DATA = {
       "id": "f74cfe6c-add1-45dd-b671-a11a48081cf9",
       "category": "Faro Antineblina",
       "image_path": "./assets/f74cfe6c-add1-45dd-b671-a11a48081cf9.webp",
-      "description": "COCUYOPARACHOQUE DELANTERO LUV D-MAX 05-09",
+      "description": "COCUYO PARACHOQUE DELANTERO LUV D-MAX 05-09",
       "keywords": [
         "05-09",
         "ANTINEBLINA",
-        "COCUYOPARACHOQUE",
+        "COCUYO",
         "D-MAX",
         "DELANTERO",
         "FARO",
-        "LUV"
+        "LUV",
+        "PARACHOQUE"
       ]
     },
     {
@@ -4945,8 +4850,9 @@ const PRODUCTS_DATA = {
       "id": "017b4823-6098-4cf6-8575-31d016be674f",
       "category": "Kit de Motor",
       "image_path": "./assets/017b4823-6098-4cf6-8575-31d016be674f.webp",
-      "description": "KIT DE MOTOR",
+      "description": "KIT DE MOTOR CARIBE 2.6",
       "keywords": [
+        "CARIBE",
         "KIT",
         "MOTOR"
       ]
@@ -4955,8 +4861,9 @@ const PRODUCTS_DATA = {
       "id": "3af3381b-4805-4bb1-a387-9a346ead5b7b",
       "category": "Kit de Motor",
       "image_path": "./assets/3af3381b-4805-4bb1-a387-9a346ead5b7b.webp",
-      "description": "KIT DE MOTOR",
+      "description": "KIT DE MOTOR CARIBE 2.3",
       "keywords": [
+        "CARIBE",
         "KIT",
         "MOTOR"
       ]
@@ -4965,9 +4872,11 @@ const PRODUCTS_DATA = {
       "id": "3df50731-b569-449a-83e7-6eb87c3da3b2",
       "category": "Kit de Motor",
       "image_path": "./assets/3df50731-b569-449a-83e7-6eb87c3da3b2.webp",
-      "description": "KIT DE MOTOR",
+      "description": "KIT DE MOTOR LUV D-MAX 2.4",
       "keywords": [
+        "D-MAX",
         "KIT",
+        "LUV",
         "MOTOR"
       ]
     },
@@ -4975,9 +4884,10 @@ const PRODUCTS_DATA = {
       "id": "354e53fa-9dc2-4030-b3e1-81e7f50c5064",
       "category": "Kit de Motor",
       "image_path": "./assets/354e53fa-9dc2-4030-b3e1-81e7f50c5064.webp",
-      "description": "KIT DE MOTOR / 1D",
+      "description": "KIT DE MOTOR LUV 2.3",
       "keywords": [
         "KIT",
+        "LUV",
         "MOTOR"
       ]
     },
@@ -4985,22 +4895,20 @@ const PRODUCTS_DATA = {
       "id": "1a46bc27-602c-4abf-92b3-f9762991429d",
       "category": "Kit de Motor",
       "image_path": "./assets/1a46bc27-602c-4abf-92b3-f9762991429d.webp",
-      "description": "KIT DE MOTOR 3 5 CIC USA OPIOA",
+      "description": "KIT DE MOTOR LUV D-MAX 3.5",
       "keywords": [
-        "CIC",
+        "D-MAX",
         "KIT",
-        "MOTOR",
-        "OPIOA",
-        "USA"
+        "LUV",
+        "MOTOR"
       ]
     },
     {
       "id": "51e18417-4719-4085-bf14-662e91b31f6e",
       "category": "Kit de Motor",
       "image_path": "./assets/51e18417-4719-4085-bf14-662e91b31f6e.webp",
-      "description": "KIT DE MOTOR LUV 242",
+      "description": "KIT DE MOTOR LUV 2.2",
       "keywords": [
-        "242",
         "KIT",
         "LUV",
         "MOTOR"
@@ -5080,11 +4988,13 @@ const PRODUCTS_DATA = {
       "id": "b9843ce5-9515-4fcd-b51f-2d1bdc0592fe",
       "category": "Muñon",
       "image_path": "./assets/b9843ce5-9515-4fcd-b51f-2d1bdc0592fe.webp",
-      "description": "MUÑÓN DA LUVD-MAX AX4 / TROOPER",
+      "description": "MUÑÓN SUPERIOR LUV D-MAX 4X4 / TROOPER",
       "keywords": [
-        "AX4",
-        "LUVD-MAX",
+        "4X4",
+        "D-MAX",
+        "LUV",
         "MUNON",
+        "SUPERIOR",
         "TROOPER"
       ]
     },
@@ -5092,9 +5002,10 @@ const PRODUCTS_DATA = {
       "id": "ad2ac172-db0d-4c16-a05d-bcecda0a2a19",
       "category": "Muñon",
       "image_path": "./assets/ad2ac172-db0d-4c16-a05d-bcecda0a2a19.webp",
-      "description": "MUÑÓN INFERIOR CARIBE 19/23",
+      "description": "MUÑÓN INFERIOR CARIBE G200 / 2.3",
       "keywords": [
         "CARIBE",
+        "G200",
         "INFERIOR",
         "MUNON"
       ]
@@ -5103,9 +5014,9 @@ const PRODUCTS_DATA = {
       "id": "c7c78e8a-6752-4a52-8058-fe82dbc4b7cd",
       "category": "Muñon",
       "image_path": "./assets/c7c78e8a-6752-4a52-8058-fe82dbc4b7cd.webp",
-      "description": "MUÑÓN LUV D-MAX 2.4/25/ 3OAX2",
+      "description": "MUÑÓN LUV D-MAX 2.4 /2.5/ 3.O 4X2",
       "keywords": [
-        "3OAX2",
+        "4X2",
         "D-MAX",
         "LUV",
         "MUNON"
@@ -5115,10 +5026,10 @@ const PRODUCTS_DATA = {
       "id": "fb1cb839-9e62-4c43-b647-ac3b53e28b20",
       "category": "Pastillas de Freno",
       "image_path": "./assets/fb1cb839-9e62-4c43-b647-ac3b53e28b20.webp",
-      "description": "JUEGO PASTILLAS DE FRENOCARIBE / LUVD-MAX / TROOPER 1 RODEO",
+      "description": "JUEGO PASTILLAS DE FRENO CARIBE / LUVD-MAX / TROOPER / RODEO",
       "keywords": [
+        "CARIBE",
         "FRENO",
-        "FRENOCARIBE",
         "JUEGO",
         "LUVD-MAX",
         "PASTILLAS",
@@ -5169,10 +5080,11 @@ const PRODUCTS_DATA = {
       "id": "631207ea-7f5f-464e-b8c7-775445084f4e",
       "category": "Regulador Presion Gasolina",
       "image_path": "./assets/631207ea-7f5f-464e-b8c7-775445084f4e.webp",
-      "description": "REGULADOR DE GASOLINA LUVD-MAX",
+      "description": "REGULADOR DE GASOLINA LUV D-MAX 3.5",
       "keywords": [
+        "D-MAX",
         "GASOLINA",
-        "LUVD-MAX",
+        "LUV",
         "PRESION",
         "REGULADOR"
       ]
@@ -5181,11 +5093,12 @@ const PRODUCTS_DATA = {
       "id": "4cc19aad-fc1e-4448-8d82-1dbc73c5ba2a",
       "category": "Sensor Arbol de Leva",
       "image_path": "./assets/4cc19aad-fc1e-4448-8d82-1dbc73c5ba2a.webp",
-      "description": "SENSOR ARBOL DE LEVA LUVD-MAX",
+      "description": "SENSOR ARBOL DE LEVA LUV D-MAX 3.5",
       "keywords": [
         "ARBOL",
+        "D-MAX",
         "LEVA",
-        "LUVD-MAX",
+        "LUV",
         "SENSOR"
       ]
     },
@@ -5193,9 +5106,10 @@ const PRODUCTS_DATA = {
       "id": "2e514905-48bf-4a0b-8922-84a282e99046",
       "category": "Sensor TPS",
       "image_path": "./assets/2e514905-48bf-4a0b-8922-84a282e99046.webp",
-      "description": "SENSOR TPS LUVD-MAX 3.5",
+      "description": "SENSOR TPS LUV D-MAX 3.5",
       "keywords": [
-        "LUVD-MAX",
+        "D-MAX",
+        "LUV",
         "SENSOR",
         "TPS"
       ]
@@ -5204,11 +5118,11 @@ const PRODUCTS_DATA = {
       "id": "f347a121-d748-4682-8a50-1f2ef141350e",
       "category": "Soporte Cardan",
       "image_path": "./assets/f347a121-d748-4682-8a50-1f2ef141350e.webp",
-      "description": "CARIBE 2600",
+      "description": "SOPORTE CARDAN / CHUMACERA CARIBE 2.6",
       "keywords": [
-        "2600",
         "CARDAN",
         "CARIBE",
+        "CHUMACERA",
         "SOPORTE"
       ]
     },
@@ -5216,9 +5130,10 @@ const PRODUCTS_DATA = {
       "id": "2fc2136b-7227-4ae5-90c9-290d4ab68b21",
       "category": "Soporte Cardan",
       "image_path": "./assets/2fc2136b-7227-4ae5-90c9-290d4ab68b21.webp",
-      "description": "LUV 2.3",
+      "description": "SOPORTE CARDAN / CHUMACERA LUV 2.3",
       "keywords": [
         "CARDAN",
+        "CHUMACERA",
         "LUV",
         "SOPORTE"
       ]
@@ -5227,9 +5142,10 @@ const PRODUCTS_DATA = {
       "id": "2d1a9557-3325-4382-92dc-36004e0a9bb1",
       "category": "Soporte Cardan",
       "image_path": "./assets/2d1a9557-3325-4382-92dc-36004e0a9bb1.webp",
-      "description": "LUV D-MAX 3.5",
+      "description": "SOPORTE CARDAN / CHUMACERA LUV D-MAX 3.5",
       "keywords": [
         "CARDAN",
+        "CHUMACERA",
         "D-MAX",
         "LUV",
         "SOPORTE"
@@ -5254,9 +5170,10 @@ const PRODUCTS_DATA = {
       "id": "17ec1405-aebc-4734-972a-2c4ef729890a",
       "category": "Tanque Radiador",
       "image_path": "./assets/17ec1405-aebc-4734-972a-2c4ef729890a.webp",
-      "description": "TANQUE RADIADOR LUV D-MAX 3.5",
+      "description": "TANQUE RADIADOR ENTRADA LUV D-MAX 3.5",
       "keywords": [
         "D-MAX",
+        "ENTRADA",
         "LUV",
         "RADIADOR",
         "TANQUE"
@@ -5291,9 +5208,10 @@ const PRODUCTS_DATA = {
       "id": "6a68317a-6532-497e-9490-c4d267878628",
       "category": "Tapa Radiador",
       "image_path": "./assets/6a68317a-6532-497e-9490-c4d267878628.webp",
-      "description": "TAPA RADIADOR LUVD-MAX / TROOPER 1 9",
+      "description": "TAPA RADIADOR LUV D-MAX / TROOPER",
       "keywords": [
-        "LUVD-MAX",
+        "D-MAX",
+        "LUV",
         "RADIADOR",
         "TAPA",
         "TROOPER"
@@ -5303,9 +5221,10 @@ const PRODUCTS_DATA = {
       "id": "b660d112-3060-4602-a982-3cca96a8ec01",
       "category": "Tapa Rin",
       "image_path": "./assets/b660d112-3060-4602-a982-3cca96a8ec01.webp",
-      "description": "TAPA RIN LUVD-MAX",
+      "description": "TAPA RIN LUV D-MAX",
       "keywords": [
-        "LUVD-MAX",
+        "D-MAX",
+        "LUV",
         "RIN",
         "TAPA"
       ]
@@ -5314,9 +5233,11 @@ const PRODUCTS_DATA = {
       "id": "dcf3e44f-5d0c-4a6a-bbb5-d8c8456dbb3c",
       "category": "Terminal - Rotula",
       "image_path": "./assets/dcf3e44f-5d0c-4a6a-bbb5-d8c8456dbb3c.webp",
-      "description": "TERMINAL 4 LUVD-MAX / TROOPER 1 RODEO",
+      "description": "TERMINAL EXTERNO LUV D-MAX / TROOPER / RODEO",
       "keywords": [
-        "LUVD-MAX",
+        "D-MAX",
+        "EXTERNO",
+        "LUV",
         "RODEO",
         "ROTULA",
         "TERMINAL",
@@ -5327,10 +5248,11 @@ const PRODUCTS_DATA = {
       "id": "d121fa1c-fa0e-4f4f-a48e-88d51ff40618",
       "category": "Terminal - Rotula",
       "image_path": "./assets/d121fa1c-fa0e-4f4f-a48e-88d51ff40618.webp",
-      "description": "TERMINAL EXTERNO CARIBE 19/23/26",
+      "description": "TERMINAL EXTERNO CARIBE G200/ 2.3",
       "keywords": [
         "CARIBE",
         "EXTERNO",
+        "G200",
         "ROTULA",
         "TERMINAL"
       ]
@@ -5339,11 +5261,12 @@ const PRODUCTS_DATA = {
       "id": "832d245c-95c4-4226-a065-4968e5db32fb",
       "category": "Terminal - Rotula",
       "image_path": "./assets/832d245c-95c4-4226-a065-4968e5db32fb.webp",
-      "description": "TERMINAL INTERNO CARIBE / LUVD-MAX",
+      "description": "TERMINAL INTERNO CARIBE / LUV D-MAX",
       "keywords": [
         "CARIBE",
+        "D-MAX",
         "INTERNO",
-        "LUVD-MAX",
+        "LUV",
         "ROTULA",
         "TERMINAL"
       ]
@@ -5363,19 +5286,22 @@ const PRODUCTS_DATA = {
       "id": "38b62fdd-868d-4890-b54d-f58e0d70c849",
       "category": "Tren Delantero",
       "image_path": "./assets/38b62fdd-868d-4890-b54d-f58e0d70c849.webp",
-      "description": "TREN DELANTERO",
+      "description": "TREN DELANTERO TROOPER 3.2",
       "keywords": [
         "DELANTERO",
-        "TREN"
+        "TREN",
+        "TROOPER"
       ]
     },
     {
       "id": "878c1ab0-9980-4d41-9c56-c41a56c8badc",
       "category": "Tren Delantero",
       "image_path": "./assets/878c1ab0-9980-4d41-9c56-c41a56c8badc.webp",
-      "description": "TREN DELANTERO",
+      "description": "TREN DELANTERO LUV 4X2",
       "keywords": [
+        "4X2",
         "DELANTERO",
+        "LUV",
         "TREN"
       ]
     },
@@ -5383,9 +5309,11 @@ const PRODUCTS_DATA = {
       "id": "b08e1a8a-76c6-4720-9c70-c04d539f645b",
       "category": "Tren Delantero",
       "image_path": "./assets/b08e1a8a-76c6-4720-9c70-c04d539f645b.webp",
-      "description": "TREN DELANTERO",
+      "description": "TREN DELANTERO LUV D-MAX 2.4",
       "keywords": [
+        "D-MAX",
         "DELANTERO",
+        "LUV",
         "TREN"
       ]
     },
@@ -5393,9 +5321,11 @@ const PRODUCTS_DATA = {
       "id": "ca6f2c65-9a2c-4d5d-9868-b940c475fb9c",
       "category": "Tren Delantero",
       "image_path": "./assets/ca6f2c65-9a2c-4d5d-9868-b940c475fb9c.webp",
-      "description": "TREN DELANTERO",
+      "description": "TREN DELANTERO LUV D-MAX 3.5",
       "keywords": [
+        "D-MAX",
         "DELANTERO",
+        "LUV",
         "TREN"
       ]
     },
@@ -5403,8 +5333,9 @@ const PRODUCTS_DATA = {
       "id": "4662265b-262d-4d56-b35e-5385c614d9a8",
       "category": "Tren Delantero",
       "image_path": "./assets/4662265b-262d-4d56-b35e-5385c614d9a8.webp",
-      "description": "TREN DELANTERO",
+      "description": "TREN DELANTERO CARIBE 2.6",
       "keywords": [
+        "CARIBE",
         "DELANTERO",
         "TREN"
       ]
@@ -5413,8 +5344,10 @@ const PRODUCTS_DATA = {
       "id": "3718c7db-d352-4ec6-8972-20f020293dda",
       "category": "Tren Delantero",
       "image_path": "./assets/3718c7db-d352-4ec6-8972-20f020293dda.webp",
-      "description": "TREN DELANTERO",
+      "description": "TREN DELANTERO CARIBE 83-88",
       "keywords": [
+        "83-88",
+        "CARIBE",
         "DELANTERO",
         "TREN"
       ]
@@ -5423,9 +5356,11 @@ const PRODUCTS_DATA = {
       "id": "7d137634-a97a-41dc-a5de-7fabc249a9bc",
       "category": "Tren Delantero",
       "image_path": "./assets/7d137634-a97a-41dc-a5de-7fabc249a9bc.webp",
-      "description": "TREN DELANTERO",
+      "description": "TREN DELANTERO LUV 4X4",
       "keywords": [
+        "4X4",
         "DELANTERO",
+        "LUV",
         "TREN"
       ]
     },
@@ -5444,8 +5379,9 @@ const PRODUCTS_DATA = {
       "id": "Caribe 83-88",
       "category": "Tren Delantero",
       "image_path": "./assets/Caribe 83-88.webp",
-      "description": "TREN DELANTERO CARIBE 83 88",
+      "description": "TREN DELANTERO CARIBE 83-88",
       "keywords": [
+        "83-88",
         "CARIBE",
         "DELANTERO",
         "TREN"
@@ -5455,10 +5391,11 @@ const PRODUCTS_DATA = {
       "id": "DMAX 2.4",
       "category": "Tren Delantero",
       "image_path": "./assets/DMAX 2.4.webp",
-      "description": "TREN DELANTERO DMAX 2.4",
+      "description": "TREN DELANTERO LUV D-MAX 2.4",
       "keywords": [
+        "D-MAX",
         "DELANTERO",
-        "DMAX",
+        "LUV",
         "TREN"
       ]
     },
@@ -5466,10 +5403,11 @@ const PRODUCTS_DATA = {
       "id": "DMAX 3.5",
       "category": "Tren Delantero",
       "image_path": "./assets/DMAX 3.5.webp",
-      "description": "TREN DELANTERO DMAX 3.5",
+      "description": "TREN DELANTERO LUV D-MAX 3.5",
       "keywords": [
+        "D-MAX",
         "DELANTERO",
-        "DMAX",
+        "LUV",
         "TREN"
       ]
     },
@@ -5561,10 +5499,9 @@ const PRODUCTS_DATA = {
       "id": "a45589ea-7807-4cbc-a698-838e972d2a51",
       "category": "Tubo de Agua",
       "image_path": "./assets/a45589ea-7807-4cbc-a698-838e972d2a51.webp",
-      "description": "TUBO DE AGUA DERECHO CHEVROLET LUV D-MAX",
+      "description": "TUBO DE AGUA DERECHO LUV D-MAX 3.5",
       "keywords": [
         "AGUA",
-        "CHEVROLET",
         "D-MAX",
         "DERECHO",
         "LUV",
@@ -5575,10 +5512,9 @@ const PRODUCTS_DATA = {
       "id": "8a412829-f6db-4c14-bbcd-0a180e021def",
       "category": "Tubo de Agua",
       "image_path": "./assets/8a412829-f6db-4c14-bbcd-0a180e021def.webp",
-      "description": "TUBO DE AGUA IZQUIERDO CHEVROLET LUV D-MAX",
+      "description": "TUBO DE AGUA IZQUIERDO LUV D-MAX 3.5",
       "keywords": [
         "AGUA",
-        "CHEVROLET",
         "D-MAX",
         "IZQUIERDO",
         "LUV",
@@ -5773,10 +5709,11 @@ const PRODUCTS_DATA = {
       "id": "560341f0-7054-4bcc-bb51-64752dd42dfa",
       "category": "Valvula Temperatura",
       "image_path": "./assets/560341f0-7054-4bcc-bb51-64752dd42dfa.webp",
-      "description": "VALVULA TEMPERATURA CARIBE / LUVD-MAX / TROOPER / RODEO",
+      "description": "VALVULA TEMPERATURA CARIBE / LUV D-MAX / TROOPER / RODEO",
       "keywords": [
         "CARIBE",
-        "LUVD-MAX",
+        "D-MAX",
+        "LUV",
         "RODEO",
         "TEMPERATURA",
         "TROOPER",
