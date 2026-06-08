@@ -490,10 +490,10 @@
             border-bottom: 1px solid var(--border-subtle);
             overflow: hidden;
             background-image: 
-                radial-gradient(circle at 50% 50%, rgba(234, 67, 53, 0.1) 0%, transparent 60%),
-                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-            background-size: 100% 100%, 20px 20px, 20px 20px;
+                radial-gradient(circle at 50% 50%, rgba(234, 67, 53, 0.15) 0%, rgba(0,0,0,0.6) 100%),
+                url('./assets/map_preview.png');
+            background-size: 100% 100%, cover;
+            background-position: center;
         }
 
         .map-icon-large {
@@ -736,6 +736,8 @@
             .info-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
+                padding-top: 8px; /* Reduce la separación en móvil */
+                padding-bottom: 60px;
             }
             .social-grid {
                 display: grid;
