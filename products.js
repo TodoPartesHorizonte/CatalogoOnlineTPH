@@ -1,6 +1,6 @@
 const PRODUCTS_DATA = {
   "whatsapp_number": "584242116375",
-  "use_custom_logo": "",
+  "use_custom_logo": "./assets/logo.png",
   "instagram_url": "https://www.instagram.com/todopartes_horizonte?igsh=c3F0ZDJ3aXF0ejdv",
   "facebook_url": "https://www.facebook.com/todoparteshorizonte493/",
   "maps_url": "https://share.google/3jXZ44CMybUut4NUb",
