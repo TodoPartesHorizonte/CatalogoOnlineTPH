@@ -738,21 +738,26 @@
                 gap: 20px;
             }
             .social-grid {
-                display: flex;
-                overflow-x: auto;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
                 padding-bottom: 24px;
-                scrollbar-width: none;
-                snap-type: x mandatory;
-                margin: 0 -24px;
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-            .social-grid::-webkit-scrollbar {
-                display: none;
+                padding-top: 12px; /* Espacio extra para que no se corte el hover de la tarjeta */
             }
             .social-card {
-                flex: 0 0 260px;
-                scroll-snap-align: center;
+                padding: 24px 12px;
+            }
+            .social-card:hover {
+                transform: translateY(-4px);
+            }
+            .social-icon {
+                margin-bottom: 0;
+                width: 36px;
+                height: 36px;
+            }
+            .social-title,
+            .social-desc {
+                display: none; /* Estilo minimalista solo logos en móvil */
             }
             .cta-button {
                 width: 100%;
