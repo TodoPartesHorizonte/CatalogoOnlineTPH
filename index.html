@@ -1267,8 +1267,9 @@
             letter-spacing: 1.5px;
             line-height: 1.15;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-            word-break: break-word;
-            hyphens: auto;
+            word-break: keep-all; /* Mantiene las palabras completas */
+            overflow-wrap: break-word; /* Permite saltos normales entre palabras */
+            hyphens: none; /* Desactiva los guiones por separación de sílabas */
             transition: var(--transition);
         }
 
