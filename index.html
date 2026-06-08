@@ -9,6 +9,44 @@
     <meta name="description" content="Catálogo online de repuestos automotrices de las mejores marcas. Filtra, busca y consulta disponibilidad directamente por WhatsApp.">
     <meta name="keywords" content="repuestos, automotriz, luv d-max, muñones, terminales, abrazaderas, TODO PARTES, Horizonte">
     <meta name="author" content="TODO PARTES Horizonte">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://todoparteshorizonte.github.io/CatalogoOnlineTPH/">
+
+    <!-- Metadatos Open Graph / Redes Sociales (WhatsApp Previews) -->
+    <meta property="og:title" content="TODO PARTES Horizonte - Catálogo de Repuestos">
+    <meta property="og:description" content="Catálogo online de repuestos automotrices de las mejores marcas. Filtra, busca y consulta disponibilidad directamente por WhatsApp.">
+    <meta property="og:image" content="https://todoparteshorizonte.github.io/CatalogoOnlineTPH/assets/logo.png">
+    <meta property="og:url" content="https://todoparteshorizonte.github.io/CatalogoOnlineTPH/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="TODO PARTES Horizonte - Catálogo de Repuestos">
+    <meta name="twitter:description" content="Catálogo online de repuestos automotrices de las mejores marcas. Filtra, busca y consulta disponibilidad directamente por WhatsApp.">
+    <meta name="twitter:image" content="https://todoparteshorizonte.github.io/CatalogoOnlineTPH/assets/logo.png">
+
+    <!-- Marcado de Datos Estructurados JSON-LD (SEO Local) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoPartsStore",
+      "name": "TODO PARTES Horizonte",
+      "image": "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/assets/logo.png",
+      "@id": "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/#store",
+      "url": "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/",
+      "telephone": "+584242116375",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Caracas",
+        "addressLocality": "Caracas",
+        "addressCountry": "VE"
+      },
+      "sameAs": [
+        "https://www.instagram.com/todopartes_horizonte",
+        "https://www.facebook.com/todoparteshorizonte493/"
+      ]
+    }
+    </script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2071,7 +2109,7 @@
                 <div class="header-top-row">
                     <div class="brand-lockup" onclick="goBackToFolders()">
                         <div id="logoContainer" class="logo-container">
-                            <img id="logoImage" alt="Logo" class="logo-image" style="display: none;">
+                            <img id="logoImage" alt="Logo de TODO PARTES Horizonte" class="logo-image" style="display: none;">
                         </div>
                         <script>
                             // Cargar el logo inmediatamente durante el parseo de HTML para evitar parpadeos y retrasos
@@ -2654,6 +2692,16 @@
             lightboxImg.alt = product.description;
             lightboxBadge.innerText = product.category;
             lightboxDesc.innerText = product.description;
+
+            // Actualizar título y metadatos dinámicamente para indexabilidad SEO de Google
+            window.originalTitle = window.originalTitle || document.title;
+            const descMeta = document.querySelector('meta[name="description"]');
+            window.originalDesc = window.originalDesc || (descMeta ? descMeta.getAttribute('content') : '');
+            
+            document.title = `${product.description} | TODO PARTES Horizonte`;
+            if (descMeta) {
+                descMeta.setAttribute('content', `Consigue ${product.description} en TODO PARTES Horizonte. Repuesto de categoría ${product.category}. Consulta disponibilidad por WhatsApp.`);
+            }
             
             const cardUrl = `${window.location.origin}${window.location.pathname}?producto=${productId}`;
             const waMsg = encodeURIComponent(
@@ -2972,6 +3020,16 @@
             lightbox.classList.remove('active');
             document.body.style.overflow = ''; // Restaurar scroll
             window.currentProductId = null;
+
+            // Restaurar título y metadatos SEO por defecto
+            if (window.originalTitle) {
+                document.title = window.originalTitle;
+            }
+            const descMeta = document.querySelector('meta[name="description"]');
+            if (descMeta && window.originalDesc) {
+                descMeta.setAttribute('content', window.originalDesc);
+            }
+
             setTimeout(() => {
                 if (!lightbox.classList.contains('active')) {
                     lightboxImg.src = '';
