@@ -1763,6 +1763,29 @@
             transform: rotate(90deg);
         }
 
+        .cart-clear-btn {
+            background: rgba(217, 83, 79, 0.1);
+            border: 1px solid rgba(217, 83, 79, 0.3);
+            color: #d9534f;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-left: auto;
+            margin-right: 12px;
+        }
+
+        .cart-clear-btn:hover {
+            background: #d9534f;
+            color: #ffffff;
+            border-color: transparent;
+            box-shadow: 0 0 8px rgba(217, 83, 79, 0.4);
+        }
+
         .cart-body {
             flex-grow: 1;
             overflow-y: auto;
@@ -2213,6 +2236,7 @@
     <div class="cart-drawer" id="cartDrawer">
         <div class="cart-header">
             <h3>Tu Lista de Pedido</h3>
+            <button class="cart-clear-btn" id="cartClearBtn" onclick="clearCart()" style="display: none;">Vaciar</button>
             <button class="cart-close" id="cartCloseBtn" aria-label="Cerrar lista de pedido">&times;</button>
         </div>
         <div class="cart-body" id="cartItemsContainer">
@@ -2258,15 +2282,15 @@
                        .replace(/[^a-z0-9\s]/g, ""); // Deja solo letras, números y espacios
         }
 
-        // Inicializar carrito cargándolo de localStorage
+        // Inicializar carrito cargándolo de sessionStorage (mantiene los datos por sesión)
         function initCart() {
             try {
-                const storedCart = localStorage.getItem('tph_cart');
+                const storedCart = sessionStorage.getItem('tph_cart');
                 if (storedCart) {
                     cart = JSON.parse(storedCart);
                 }
             } catch (e) {
-                console.error("Error al cargar el carrito de localStorage:", e);
+                console.error("Error al cargar el carrito de sessionStorage:", e);
                 cart = [];
             }
             renderCart();
@@ -2275,11 +2299,21 @@
         // Guardar estado del carrito
         function saveCart() {
             try {
-                localStorage.setItem('tph_cart', JSON.stringify(cart));
+                sessionStorage.setItem('tph_cart', JSON.stringify(cart));
             } catch (e) {
-                console.error("Error al guardar el carrito en localStorage:", e);
+                console.error("Error al guardar el carrito en sessionStorage:", e);
             }
         }
+
+        // Vaciar todo el carrito con confirmación
+        window.clearCart = function() {
+            if (confirm("¿Estás seguro de que deseas vaciar toda tu lista de pedido?")) {
+                cart = [];
+                saveCart();
+                renderCart();
+                toggleCart(false); // Cierra el cajón al vaciar
+            }
+        };
 
         // Alternar el cajón del carrito
         function toggleCart(forceOpen) {
@@ -2408,6 +2442,12 @@
                     `;
                 });
                 container.innerHTML = html;
+            }
+
+            // Mostrar/ocultar botón de vaciar
+            const clearBtn = document.getElementById('cartClearBtn');
+            if (clearBtn) {
+                clearBtn.style.display = cart.length === 0 ? 'none' : 'block';
             }
 
             totalItemsEl.innerText = totalQty;
