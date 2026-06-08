@@ -1170,13 +1170,33 @@
             border-radius: 16px;
             overflow: hidden;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: stretch;
+            justify-content: stretch;
             aspect-ratio: 16/10;
             cursor: pointer;
             transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
             border: 1px solid rgba(255, 255, 255, 0.06);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Icono de carpeta sutil en la esquina superior izquierda */
+        .category-card-icon {
+            position: absolute;
+            top: 16px;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            fill: var(--accent-orange);
+            opacity: 0.35;
+            transition: var(--transition);
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .category-card:hover .category-card-icon {
+            opacity: 0.85;
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 8px rgba(255, 106, 0, 0.45));
         }
 
         /* Fondo base con degradado industrial */
@@ -1244,20 +1264,20 @@
                 linear-gradient(135deg, #0d0d10 0%, #18181e 50%, rgba(255, 106, 0, 0.1) 100%);
         }
 
-        /* Contenido centrado */
+        /* Contenido alineado al bottom-left moderno */
         .category-card-content {
             position: relative;
             z-index: 2;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 16px 20px;
+            align-items: flex-start;
+            justify-content: flex-end;
+            text-align: left;
+            padding: 16px 20px 18px 20px;
             width: 100%;
             height: 100%;
             box-sizing: border-box;
-            gap: 6px;
+            gap: 4px;
         }
 
         .category-card-name {
@@ -1267,10 +1287,11 @@
             letter-spacing: 1.5px;
             line-height: 1.15;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-            word-break: keep-all; /* Mantiene las palabras completas */
-            overflow-wrap: break-word; /* Permite saltos normales entre palabras */
-            hyphens: none; /* Desactiva los guiones por separación de sílabas */
+            word-break: normal; /* Permite saltos estándar de palabra */
+            overflow-wrap: break-word; /* Evita que las palabras se rompan a mitad a menos que sea necesario */
+            hyphens: none; /* Desactiva guiones */
             transition: var(--transition);
+            width: 100%;
         }
 
         .category-card:hover .category-card-name {
@@ -1345,7 +1366,14 @@
                 aspect-ratio: 1.4;
             }
             .category-card-content {
-                padding: 10px 14px;
+                padding: 12px 14px 14px 14px;
+                gap: 3px;
+            }
+            .category-card-icon {
+                top: 12px;
+                left: 14px;
+                width: 16px;
+                height: 16px;
             }
             .category-card-count-badge {
                 width: 26px;
@@ -2909,6 +2937,9 @@
                 foldersHtml += `
                     <div class="category-card" onclick="selectFolderCategory('${cat.replace(/'/g, "\\'")}')" id="${folderId}">
                         <div class="category-card-bg-layer" style="background: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ff6a00' fill-opacity='0.025'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;), linear-gradient(${gradAngle}deg, #0d0d10 0%, #141418 50%, rgba(255, 106, 0, 0.06) 100%)"></div>
+                        <svg class="category-card-icon" viewBox="0 0 24 24">
+                            <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                        </svg>
                         <div class="category-card-count-badge">${count}</div>
                         <div class="category-card-content">
                             <div class="category-card-name">${cat}</div>
@@ -2929,10 +2960,37 @@
             document.querySelectorAll('.category-card-name').forEach(el => {
                 const card = el.closest('.category-card');
                 if (!card) return;
-                const cardWidth = card.offsetWidth;
-                const textLen = el.textContent.length;
-                // Base: 22px para nombres cortos, baja progresivamente para largos
-                let fontSize = Math.max(11, Math.min(22, cardWidth / (textLen * 0.62)));
+                
+                // Calcular el ancho interno neto real restando el padding
+                const isMobile = window.innerWidth <= 768;
+                const horizontalPadding = isMobile ? 28 : 40; // Padding izquierdo + derecho
+                const availableWidth = card.offsetWidth - horizontalPadding;
+                
+                const text = el.textContent;
+                
+                // Encontrar la palabra más larga
+                const words = text.split(/\s+/);
+                let maxWordLength = 0;
+                words.forEach(word => {
+                    if (word.length > maxWordLength) {
+                        maxWordLength = word.length;
+                    }
+                });
+                
+                // Parámetros tipográficos de Outfit Bold en mayúsculas
+                const letterSpacing = 1.5;
+                const charRatio = 0.72; // Razón de ancho/alto
+                
+                // Fórmula matemática exacta:
+                // availableWidth = maxWordLength * (fontSize * charRatio) + (maxWordLength - 1) * letterSpacing
+                let sizeByMaxWord = (availableWidth - (maxWordLength - 1) * letterSpacing) / (maxWordLength * charRatio);
+                
+                // Tamaño aproximado según la longitud total
+                let sizeByTotalLen = availableWidth / (text.length * 0.52);
+                
+                // El menor valor para evitar desbordes tanto horizontales como verticales.
+                // Ajustado el mínimo a 9px para dar un poco más de margen en pantallas muy pequeñas.
+                let fontSize = Math.max(9, Math.min(20, sizeByTotalLen, sizeByMaxWord));
                 el.style.fontSize = fontSize + 'px';
             });
         }
