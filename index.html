@@ -1324,11 +1324,12 @@
         }
 
         .category-card-name {
+            font-size: 13px;
             font-weight: 800;
             color: var(--text-primary);
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            line-height: 1.15;
+            letter-spacing: 1px;
+            line-height: 1.25;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
             word-break: normal; /* Permite saltos estándar de palabra */
             overflow-wrap: break-word; /* Evita que las palabras se rompan a mitad a menos que sea necesario */
@@ -1411,6 +1412,11 @@
             .category-card-content {
                 padding: 12px 14px 14px 14px;
                 gap: 3px;
+            }
+            .category-card-name {
+                font-size: 10px;
+                letter-spacing: 0.8px;
+                line-height: 1.25;
             }
             .category-card-icon {
                 top: 12px;
@@ -2237,6 +2243,7 @@
         let searchQuery = "";
         let activeView = "FOLDERS"; // Empezar por carpetas por defecto
         window.currentProductId = null;
+        let hasNavigatedWithinApp = false;
 
         // Estado del Carrito y Funciones de Soporte
         let cart = [];
@@ -2515,6 +2522,7 @@
 
             if (pushNewState) {
                 history.pushState(stateData, "", newUrl);
+                hasNavigatedWithinApp = true;
             } else {
                 if (window.location.search !== queryString) {
                     history.replaceState(stateData, "", newUrl);
@@ -2910,11 +2918,12 @@
         // Cierre del Lightbox Modal (mediante historial o directo)
         function closeLightbox() {
             const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.has('producto')) {
+            if (hasNavigatedWithinApp && urlParams.has('producto')) {
                 history.back();
             } else {
                 closeLightboxDirect();
                 syncStateToURL(false);
+                parseURLState();
             }
         }
 
@@ -3026,42 +3035,7 @@
 
         // Función reutilizable para ajustar tipografía dinámica de carpetas
         function resizeFolderCardNames() {
-            document.querySelectorAll('.category-card-name').forEach(el => {
-                const card = el.closest('.category-card');
-                if (!card) return;
-                
-                // Calcular el ancho interno neto real restando el padding
-                const isMobile = window.innerWidth <= 768;
-                const horizontalPadding = isMobile ? 28 : 40; // Padding izquierdo + derecho
-                const availableWidth = card.offsetWidth - horizontalPadding;
-                
-                const text = el.textContent;
-                
-                // Encontrar la palabra más larga
-                const words = text.split(/\s+/);
-                let maxWordLength = 0;
-                words.forEach(word => {
-                    if (word.length > maxWordLength) {
-                        maxWordLength = word.length;
-                    }
-                });
-                
-                // Parámetros tipográficos de Outfit Bold en mayúsculas
-                const letterSpacing = 1.5;
-                const charRatio = 0.72; // Razón de ancho/alto
-                
-                // Fórmula matemática exacta:
-                // availableWidth = maxWordLength * (fontSize * charRatio) + (maxWordLength - 1) * letterSpacing
-                let sizeByMaxWord = (availableWidth - (maxWordLength - 1) * letterSpacing) / (maxWordLength * charRatio);
-                
-                // Tamaño aproximado según la longitud total
-                let sizeByTotalLen = availableWidth / (text.length * 0.52);
-                
-                // El menor valor para evitar desbordes tanto horizontales como verticales.
-                // Ajustado el mínimo a 9px para dar un poco más de margen en pantallas muy pequeñas.
-                let fontSize = Math.max(9, Math.min(20, sizeByTotalLen, sizeByMaxWord));
-                el.style.fontSize = fontSize + 'px';
-            });
+            // Deshabilitado para mantener tipografía uniforme y legible en todo el catálogo (controlado por CSS)
         }
 
         // Selección de carpeta desde la vista de carpetas
@@ -3076,7 +3050,7 @@
         // Retorno al menú de carpetas (con soporte de navegación)
         window.goBackToFolders = function() {
             const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.has('categoria') || urlParams.has('buscar') || urlParams.has('producto')) {
+            if (hasNavigatedWithinApp && (urlParams.has('categoria') || urlParams.has('buscar') || urlParams.has('producto'))) {
                 history.back();
             } else {
                 activeCategory = 'ALL';
