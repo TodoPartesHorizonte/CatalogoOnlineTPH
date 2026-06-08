@@ -5,7 +5,7 @@ const PRODUCTS_DATA = {
   "facebook_url": "aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3RvZG9wYXJ0ZXNob3Jpem9udGU0OTMv",
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
-  "google_analytics_id": "MTUwMjU4Mzk5Nzk=",
+  "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "total_products": 470,
   "products": [
     {
