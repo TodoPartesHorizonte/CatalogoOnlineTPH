@@ -1,10 +1,11 @@
 const PRODUCTS_DATA = {
-  "whatsapp_number": "584242116375",
+  "whatsapp_number": "NTg0MjQyMTE2Mzc1",
   "use_custom_logo": "./assets/logo.png",
-  "instagram_url": "https://www.instagram.com/todopartes_horizonte?igsh=c3F0ZDJ3aXF0ejdv",
-  "facebook_url": "https://www.facebook.com/todoparteshorizonte493/",
-  "maps_url": "https://share.google/3jXZ44CMybUut4NUb",
-  "reviews_url": "https://g.page/r/CXMpkN_I_0jiEBM/review",
+  "instagram_url": "aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS90b2RvcGFydGVzX2hvcml6b250ZT9pZ3NoPWMzRjBaREozYVhGMGVqZHY=",
+  "facebook_url": "aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3RvZG9wYXJ0ZXNob3Jpem9udGU0OTMv",
+  "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
+  "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
+  "google_analytics_id": "MTUwMjU4Mzk5Nzk=",
   "total_products": 470,
   "products": [
     {
