@@ -103,6 +103,83 @@
             position: relative;
         }
 
+        /* Blueprint Holograma — Collage lateral */
+        .bg-blueprint {
+            position: fixed;
+            inset: 0;
+            z-index: -3;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .bg-blueprint-layer {
+            position: absolute;
+            width: 45%;
+            height: 50%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            opacity: 0;
+            filter: saturate(2.5) brightness(1.8) contrast(1.2);
+        }
+
+        /* Posiciones y Máscaras (Compartidas) */
+        .pos-tl {
+            top: 5%;
+            left: -5%;
+            mask-image: radial-gradient(ellipse 60% 60% at 40% 50%, rgba(0,0,0,0.8) 0%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse 60% 60% at 40% 50%, rgba(0,0,0,0.8) 0%, transparent 70%);
+        }
+        .pos-tr {
+            top: 0%;
+            right: -5%;
+            mask-image: radial-gradient(ellipse 60% 60% at 60% 50%, rgba(0,0,0,0.8) 0%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse 60% 60% at 60% 50%, rgba(0,0,0,0.8) 0%, transparent 70%);
+        }
+        .pos-bl {
+            bottom: 10%;
+            left: -8%;
+            mask-image: radial-gradient(ellipse 60% 60% at 35% 50%, rgba(0,0,0,0.8) 0%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse 60% 60% at 35% 50%, rgba(0,0,0,0.8) 0%, transparent 70%);
+        }
+        .pos-br {
+            bottom: 5%;
+            right: -8%;
+            mask-image: radial-gradient(ellipse 60% 60% at 65% 50%, rgba(0,0,0,0.8) 0%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse 60% 60% at 65% 50%, rgba(0,0,0,0.8) 0%, transparent 70%);
+        }
+
+        /* Vehículo 1: SUV Clásico (0s a 24s) */
+        .bp-front  { background-image: url('./assets/bp_front.png'); animation: holoCycle 48s infinite 0s; }
+        .bp-side   { background-image: url('./assets/bp_side.png');  animation: holoCycle 48s infinite 6s; }
+        .bp-rear   { background-image: url('./assets/bp_rear.png');  animation: holoCycle 48s infinite 12s; }
+        .bp-top    { background-image: url('./assets/bp_top.png');   animation: holoCycle 48s infinite 18s; }
+
+        /* Vehículo 2: D-Max (24s a 48s) */
+        .bp-dmax-front { background-image: url('./assets/bp_dmax_front.png'); animation: holoCycle 48s infinite 24s; }
+        .bp-dmax-side  { background-image: url('./assets/bp_dmax_side.png');  animation: holoCycle 48s infinite 30s; }
+        .bp-dmax-rear  { background-image: url('./assets/bp_dmax_rear.png');  animation: holoCycle 48s infinite 36s; }
+        .bp-dmax-top   { background-image: url('./assets/bp_dmax_top.png');   animation: holoCycle 48s infinite 42s; }
+
+        @keyframes holoCycle {
+            0%   { opacity: 0;    transform: scale(1); }
+            2%   { opacity: 0.28; transform: scale(1.01); }
+            10.5%{ opacity: 0.28; transform: scale(1.03); }
+            12.5%{ opacity: 0;    transform: scale(1.04); }
+            100% { opacity: 0;    transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            .bg-blueprint-layer {
+                width: 90%;
+                height: 35%;
+            }
+            .pos-tl { left: -35%; top: 5%; }
+            .pos-tr { right: -35%; top: 2%; }
+            .pos-bl { left: -40%; bottom: 8%; }
+            .pos-br { right: -40%; bottom: 5%; }
+        }
+
         /* Fondo Industrial de Malla y Luces */
         .bg-pattern {
             position: fixed;
@@ -300,6 +377,173 @@
 
         .cta-button:hover svg {
             transform: translateX(6px);
+        }
+
+        /* Curiosity Section — Psychological Triggers */
+        .curiosity-box {
+            margin: 24px 0 36px;
+            text-align: center;
+        }
+
+        .curiosity-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 60, 0, 0.15);
+            border: 1px solid rgba(255, 60, 0, 0.3);
+            color: #ff5500;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            animation: pulseBadge 2s infinite alternate;
+        }
+
+        @keyframes pulseBadge {
+            from { box-shadow: 0 0 0 rgba(255, 60, 0, 0); }
+            to { box-shadow: 0 0 15px rgba(255, 60, 0, 0.4); }
+        }
+
+        .curiosity-text {
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 24px;
+            line-height: 1.4;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .curiosity-text strong {
+            color: var(--accent-orange-bright);
+            font-weight: 800;
+            border-bottom: 1px dashed var(--accent-orange-bright);
+        }
+
+        .silhouettes-container {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .silhouette-item {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: linear-gradient(145deg, #111, #0a0a0a);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.05);
+        }
+
+        .silhouette-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(14px) brightness(0.3) grayscale(0.5);
+            transition: all 0.5s ease;
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+
+        /* High-tech Scanner Line */
+        .silhouette-item::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--accent-orange-bright);
+            box-shadow: 0 0 15px 5px rgba(255, 106, 0, 0.4);
+            z-index: 3;
+            animation: scan 3s infinite linear;
+            opacity: 0.5;
+        }
+
+        @keyframes scan {
+            0% { top: -10%; opacity: 0; }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% { top: 110%; opacity: 0; }
+        }
+
+        /* Dark overlay for contrast */
+        .silhouette-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            transition: background 0.4s;
+        }
+
+        /* The mystery lock icon container */
+        .mystery-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+            color: rgba(255, 255, 255, 0.4);
+            transition: all 0.4s bounce;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mystery-icon svg {
+            width: 28px;
+            height: 28px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));
+        }
+
+        /* Hover states */
+        .silhouette-item:hover {
+            transform: translateY(-8px) scale(1.05);
+            border-color: var(--accent-orange);
+            box-shadow: 0 15px 35px rgba(255, 106, 0, 0.3), inset 0 0 20px rgba(255, 106, 0, 0.1);
+        }
+
+        .silhouette-item:hover .silhouette-img {
+            filter: blur(4px) brightness(0.7) grayscale(0);
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        .silhouette-item:hover::after {
+            background: rgba(255, 106, 0, 0.1);
+        }
+
+        .silhouette-item:hover .mystery-icon {
+            color: var(--accent-orange-bright);
+            transform: translate(-50%, -50%) scale(1.2);
+            filter: drop-shadow(0 0 10px rgba(255,106,0,0.6));
+        }
+
+        /* SVG morphing (Lock to Unlock/Eye) handled via simple CSS rotation/opacity if we use dual icons, or just let JS/HTML do it. 
+           We'll use a single lock icon that changes color/glow. */
+
+        @media (max-width: 768px) {
+            .silhouette-item {
+                width: 85px;
+                height: 85px;
+            }
+            .silhouette-item:nth-child(3) {
+                display: none;
+            }
+            .curiosity-text {
+                font-size: 14px;
+            }
         }
 
         .stats {
@@ -784,6 +1028,18 @@
 <body>
 
     <!-- Elementos Decorativos de Fondo -->
+    <div class="bg-blueprint">
+        <!-- SUV Clásico -->
+        <div class="bg-blueprint-layer pos-tl bp-front"></div>
+        <div class="bg-blueprint-layer pos-tr bp-side"></div>
+        <div class="bg-blueprint-layer pos-bl bp-rear"></div>
+        <div class="bg-blueprint-layer pos-br bp-top"></div>
+        <!-- Pickup D-Max -->
+        <div class="bg-blueprint-layer pos-tl bp-dmax-front"></div>
+        <div class="bg-blueprint-layer pos-tr bp-dmax-side"></div>
+        <div class="bg-blueprint-layer pos-bl bp-dmax-rear"></div>
+        <div class="bg-blueprint-layer pos-br bp-dmax-top"></div>
+    </div>
     <div class="bg-pattern"></div>
     <div class="bg-lights"></div>
 
@@ -797,8 +1053,19 @@
                 <p class="hero-subtitle">El mayor catálogo de repuestos automotrices de las mejores marcas en Caracas.</p>
                 <div class="hero-rif">RIF: J-50180765-5</div>
                 
+                <div class="curiosity-box">
+                    <div class="curiosity-badge">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        Stock Muy Limitado
+                    </div>
+                    <div class="curiosity-text">Alguien acaba de comprar repuestos difíciles de encontrar. Descubre los tuyos <strong>antes de que se agoten</strong>.</div>
+                    <div class="silhouettes-container" id="curiosityImages">
+                        <!-- Filled dynamically with random product images -->
+                    </div>
+                </div>
+                
                 <a href="catalogo.html" class="cta-button">
-                    Ver Catálogo
+                    Descubrir Repuestos
                     <svg viewBox="0 0 24 24">
                         <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -932,6 +1199,38 @@
                     const logoImg = document.getElementById('heroLogo');
                     logoImg.src = PRODUCTS_DATA.use_custom_logo;
                     logoImg.style.display = 'block';
+                }
+
+                // Curiosity: llenar con imágenes aleatorias de productos reales
+                if (PRODUCTS_DATA.products && PRODUCTS_DATA.products.length > 0) {
+                    const container = document.getElementById('curiosityImages');
+                    if (container) {
+                        const shuffled = [...PRODUCTS_DATA.products]
+                            .sort(() => Math.random() - 0.5)
+                            .slice(0, 3);
+                        shuffled.forEach(product => {
+                            const link = document.createElement('a');
+                            link.href = 'catalogo.html';
+                            link.className = 'silhouette-item';
+                            link.title = 'Descubrir producto';
+                            link.addEventListener('click', () => trackEvent('curiosity_click', { event_category: 'engagement' }));
+
+                            const img = document.createElement('img');
+                            img.src = product.image_path;
+                            img.alt = 'Producto misterioso';
+                            img.className = 'silhouette-img';
+                            img.loading = 'lazy';
+
+                            // Add lock icon overlay
+                            const iconDiv = document.createElement('div');
+                            iconDiv.className = 'mystery-icon';
+                            iconDiv.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>';
+
+                            link.appendChild(img);
+                            link.appendChild(iconDiv);
+                            container.appendChild(link);
+                        });
+                    }
                 }
 
                 // Configurar cantidad de productos
