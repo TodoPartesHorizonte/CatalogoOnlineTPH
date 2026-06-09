@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 513,
+  "total_products": 508,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -4814,86 +4814,6 @@ const PRODUCTS_DATA = {
         "FLOTANTE",
         "GRANDE",
         "LUV"
-      ]
-    },
-    {
-      "id": "1_65621a9c-2e92-4e0b-9484-af5fff899274",
-      "category": "Fotos_Para_Estado_Seleccionadas",
-      "image_path": "./assets/1_65621a9c-2e92-4e0b-9484-af5fff899274.webp",
-      "description": "FOTOS PARA ESTADO SELECCIONADAS 1 65621A9C 2E92 4E0B 9484 AF5FFF899274",
-      "keywords": [
-        "2E92",
-        "4E0B",
-        "65621A9C",
-        "9484",
-        "AF5FFF899274",
-        "ESTADO",
-        "FOTOS",
-        "SELECCIONADAS"
-      ]
-    },
-    {
-      "id": "2_f9cd4a69-55a6-4bca-b66f-0be26e9972b3",
-      "category": "Fotos_Para_Estado_Seleccionadas",
-      "image_path": "./assets/2_f9cd4a69-55a6-4bca-b66f-0be26e9972b3.webp",
-      "description": "FOTOS PARA ESTADO SELECCIONADAS 2 F9CD4A69 55A6 4BCA B66F 0BE26E9972B3",
-      "keywords": [
-        "0BE26E9972B3",
-        "4BCA",
-        "55A6",
-        "B66F",
-        "ESTADO",
-        "F9CD4A69",
-        "FOTOS",
-        "SELECCIONADAS"
-      ]
-    },
-    {
-      "id": "3_4fdfe45f-a859-4097-97ca-9bd5d3a652cb",
-      "category": "Fotos_Para_Estado_Seleccionadas",
-      "image_path": "./assets/3_4fdfe45f-a859-4097-97ca-9bd5d3a652cb.webp",
-      "description": "FOTOS PARA ESTADO SELECCIONADAS 3 4FDFE45F A859 4097 97CA 9BD5D3A652CB",
-      "keywords": [
-        "4097",
-        "4FDFE45F",
-        "97CA",
-        "9BD5D3A652CB",
-        "A859",
-        "ESTADO",
-        "FOTOS",
-        "SELECCIONADAS"
-      ]
-    },
-    {
-      "id": "4_482c3255-6901-4c87-8488-7467322839cc",
-      "category": "Fotos_Para_Estado_Seleccionadas",
-      "image_path": "./assets/4_482c3255-6901-4c87-8488-7467322839cc.webp",
-      "description": "FOTOS PARA ESTADO SELECCIONADAS 4 482C3255 6901 4C87 8488 7467322839CC",
-      "keywords": [
-        "482C3255",
-        "4C87",
-        "6901",
-        "7467322839CC",
-        "8488",
-        "ESTADO",
-        "FOTOS",
-        "SELECCIONADAS"
-      ]
-    },
-    {
-      "id": "5_8cef6705-c503-4fc3-ad64-5ace898e07a2",
-      "category": "Fotos_Para_Estado_Seleccionadas",
-      "image_path": "./assets/5_8cef6705-c503-4fc3-ad64-5ace898e07a2.webp",
-      "description": "FOTOS PARA ESTADO SELECCIONADAS 5 8CEF6705 C503 4FC3 AD64 5ACE898E07A2",
-      "keywords": [
-        "4FC3",
-        "5ACE898E07A2",
-        "8CEF6705",
-        "AD64",
-        "C503",
-        "ESTADO",
-        "FOTOS",
-        "SELECCIONADAS"
       ]
     },
     {
