@@ -1134,7 +1134,7 @@
         <section class="info-grid" id="infoGrid">
             
             <!-- Ubicacion -->
-            <div class="info-card">
+            <a href="#" class="info-card" id="linkMaps" target="_blank" style="text-decoration: none; color: inherit; display: block;">
                 <div class="map-wrapper" style="background: #111; background-image: none;">
                     <iframe class="map-iframe" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" src="./map_embed.html"></iframe>
                     <!-- Icono decorativo de mapa -->
@@ -1145,7 +1145,9 @@
                 <div class="info-card-content">
                     <div class="location-info">
                         <div class="location-title">Nuestra Ubicación</div>
-                        
+                        <div style="font-size: 15px; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.4;">
+                            Av. Principal de Boleíta Sur, Caracas<br>(Zona Industrial)
+                        </div>
                         <div class="hours-badge">
                             <div class="hours-row">
                                 <span class="hours-day">Lunes a Viernes</span>
@@ -1158,19 +1160,12 @@
                         </div>
                     </div>
                     
-                    <a href="#" id="linkMaps" class="btn-outline btn-maps" target="_blank">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                        </svg>
-                        Ver en Google Maps
-                    </a>
                 </div>
-            </div>
+            </a>
 
-            <!-- Reseñas -->
-            <div class="info-card review-card">
-                <div class="info-card-content">
-                    <div class="stars-container">
+            <a href="#" class="info-card review-card" id="linkReviews" target="_blank" style="text-decoration: none; color: inherit; display: flex; flex-direction: column;">
+                <div class="info-card-content" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; padding-top: 48px; padding-bottom: 48px;">
+                    <div class="stars-container" style="margin-bottom: 24px;">
                         <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
@@ -1178,19 +1173,13 @@
                         <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                     </div>
                     
-                    <div class="review-content">
+                    <div class="review-content" style="flex-grow: 0; margin-bottom: 0;">
                         <div class="review-quote">"Tu opinión nos ayuda a seguir ofreciendo el mejor servicio."</div>
                         <div class="review-text">Califica tu experiencia con TODO PARTES HORIZONTE. Valoramos cada comentario.</div>
                     </div>
 
-                    <a href="#" id="linkReviews" class="btn-outline btn-reviews" target="_blank">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M21.99 10.39l-7.19-.61L12 3 9.19 9.78 2 10.39l5.46 4.73-1.64 7.03L12 18.27l6.18 3.88-1.64-7.03z"/>
-                        </svg>
-                        Dejar mi Opinión
-                    </a>
                 </div>
-            </div>
+            </a>
 
         </section>
     </div>
