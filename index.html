@@ -1495,14 +1495,9 @@
             justify-content: flex-end;
             gap: 6px;
             margin-top: 0;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
-        }
-        
-        .social-links-header::-webkit-scrollbar {
-            display: none; /* Chrome, Safari and Opera */
+            flex-wrap: wrap;
+            overflow: visible;
+            padding: 10px 5px; /* Espacio para que el glow no se corte */
         }
 
         @media (max-width: 768px) {
