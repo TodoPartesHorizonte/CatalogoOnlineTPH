@@ -2430,13 +2430,14 @@
             renderCart();
 
             // Rastrear evento en GA4
-            trackEvent('add_to_cart', {
+            trackEvent('agregar_al_carrito', {
                 items: [{
                     item_id: product.id,
                     item_name: product.description,
                     item_category: product.category,
                     quantity: 1
-                }]
+                }],
+                descripcion: 'Se agregó un producto al carrito de compras'
             });
 
             // Animación visual del botón que corresponda
@@ -2584,10 +2585,11 @@
             msg += `Quedo atento a su respuesta. ¡Muchas gracias!`;
 
             // Rastrear evento en GA4
-            trackEvent('generate_lead', {
-                event_category: 'engagement',
-                event_label: 'whatsapp_checkout',
-                value: cart.length
+            trackEvent('enviar_pedido_whatsapp', {
+                categoria: 'conversion',
+                origen: 'carrito_compras',
+                cantidad_productos: cart.length,
+                descripcion: 'El usuario hizo clic en enviar carrito por WhatsApp'
             });
 
             const waMsgEncoded = encodeURIComponent(msg);
@@ -2740,12 +2742,11 @@
             lightboxActionBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMsg}`;
             
             // Rastrear evento en GA4
-            trackEvent('view_item', {
-                items: [{
-                    item_id: product.id,
-                    item_name: product.description,
-                    item_category: product.category
-                }]
+            trackEvent('ver_detalle_producto', {
+                producto_id: product.id,
+                producto_nombre: product.description,
+                producto_categoria: product.category,
+                descripcion: 'El usuario abrió la ventana de detalles de un producto'
             });
 
             // Asignar evento al botón de agregar en el lightbox
@@ -3437,11 +3438,12 @@
                     const productId = cardBtn.id.replace('btn-wa-', '');
                     const product = productsData.find(p => p.id === productId);
                     if (product) {
-                        trackEvent('generate_lead', {
-                            event_category: 'engagement',
-                            event_label: 'whatsapp_consult_card',
-                            item_id: product.id,
-                            item_name: product.description
+                        trackEvent('consultar_producto_whatsapp', {
+                            categoria: 'lead',
+                            origen: 'tarjeta_producto',
+                            producto_id: product.id,
+                            producto_nombre: product.description,
+                            descripcion: 'Clic en consultar directamente desde la tarjeta del producto'
                         });
                     }
                 }
@@ -3454,11 +3456,12 @@
                     if (window.currentProductId) {
                         const product = productsData.find(p => p.id === window.currentProductId);
                         if (product) {
-                            trackEvent('generate_lead', {
-                                event_category: 'engagement',
-                                event_label: 'whatsapp_consult_lightbox',
-                                item_id: product.id,
-                                item_name: product.description
+                            trackEvent('consultar_producto_whatsapp', {
+                                categoria: 'lead',
+                                origen: 'ventana_detalles',
+                                producto_id: product.id,
+                                producto_nombre: product.description,
+                                descripcion: 'Clic en consultar desde el Lightbox (ventana de detalles)'
                             });
                         }
                     }

@@ -1233,7 +1233,7 @@
                             link.href = 'catalogo.html';
                             link.className = 'silhouette-item';
                             link.title = 'Descubrir producto';
-                            link.addEventListener('click', () => trackEvent('curiosity_click', { event_category: 'engagement' }));
+                            link.addEventListener('click', () => trackEvent('clic_producto_misterioso', { seccion: 'siluetas', descripcion: 'Clic en una de las siluetas del index' }));
 
                             const img = document.createElement('img');
                             img.src = product.image_path;
@@ -1276,14 +1276,14 @@
                     const whatsappLink = document.getElementById('linkWhatsapp');
                     whatsappLink.href = `https://wa.me/${number}?text=Hola,%20vengo%20de%20la%20página%20web.%20Quisiera%20hacer%20una%20consulta.`;
                     whatsappLink.addEventListener('click', () => {
-                        trackEvent('generate_lead', { event_category: 'engagement', event_label: 'whatsapp_landing' });
+                        trackEvent('contacto_whatsapp', { origen: 'index_hero', descripcion: 'Clic en el botón de WhatsApp principal' });
                     });
                 }
 
                 if (PRODUCTS_DATA.instagram_url) {
                     const instagramLink = document.getElementById('linkInstagram');
                     instagramLink.href = deobfuscate(PRODUCTS_DATA.instagram_url);
-                    instagramLink.addEventListener('click', () => trackEvent('click_social', { social_network: 'instagram' }));
+                    instagramLink.addEventListener('click', () => trackEvent('clic_redes_sociales', { red_social: 'instagram' }));
                 } else {
                     document.getElementById('linkInstagram').style.display = 'none';
                 }
@@ -1291,7 +1291,7 @@
                 if (PRODUCTS_DATA.facebook_url) {
                     const facebookLink = document.getElementById('linkFacebook');
                     facebookLink.href = deobfuscate(PRODUCTS_DATA.facebook_url);
-                    facebookLink.addEventListener('click', () => trackEvent('click_social', { social_network: 'facebook' }));
+                    facebookLink.addEventListener('click', () => trackEvent('clic_redes_sociales', { red_social: 'facebook' }));
                 } else {
                     document.getElementById('linkFacebook').style.display = 'none';
                 }
@@ -1299,7 +1299,7 @@
                 if (PRODUCTS_DATA.maps_url) {
                     const mapsLink = document.getElementById('linkMaps');
                     mapsLink.href = deobfuscate(PRODUCTS_DATA.maps_url);
-                    mapsLink.addEventListener('click', () => trackEvent('click_location', { event_category: 'engagement' }));
+                    mapsLink.addEventListener('click', () => trackEvent('clic_ver_mapa', { origen: 'index_tarjeta_info' }));
                 } else {
                     document.getElementById('linkMaps').style.display = 'none';
                 }
@@ -1307,7 +1307,7 @@
                 if (PRODUCTS_DATA.reviews_url) {
                     const reviewsLink = document.getElementById('linkReviews');
                     reviewsLink.href = deobfuscate(PRODUCTS_DATA.reviews_url);
-                    reviewsLink.addEventListener('click', () => trackEvent('click_reviews', { event_category: 'engagement' }));
+                    reviewsLink.addEventListener('click', () => trackEvent('clic_ver_resenas', { origen: 'index_tarjeta_info' }));
                 } else {
                     document.getElementById('linkReviews').style.display = 'none';
                 }
@@ -1315,7 +1315,7 @@
                 // Track CTA
                 const ctaBtn = document.querySelector('.cta-button');
                 if (ctaBtn) {
-                    ctaBtn.addEventListener('click', () => trackEvent('enter_catalog', { event_category: 'navigation' }));
+                    ctaBtn.addEventListener('click', () => trackEvent('clic_entrar_catalogo', { boton: 'cta_principal' }));
                 }
             }
 
