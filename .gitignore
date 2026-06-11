@@ -4,3 +4,4 @@ respaldos/
 config.json
 web/assets/*.webp
 web/products.js
+/admin/

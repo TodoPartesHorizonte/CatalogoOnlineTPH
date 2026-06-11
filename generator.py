@@ -8,6 +8,7 @@ import os
 import json
 import re
 import shutil
+import base64
 from pathlib import Path
 from PIL import Image
 
@@ -16,6 +17,14 @@ STOP_WORDS = {
     'DE', 'EL', 'LA', 'PARA', 'CON', 'DEL', 'LOS', 'LAS', 'UN', 'UNA', 'Y', 'O', 
     'A', 'EN', 'POR', 'AL', 'LO', 'SU', 'SUS', 'DEL', 'E', 'SE', 'ESTE', 'ESTA'
 }
+
+def obfuscate_value(value):
+    """Codifica un valor en Base64 para evitar raspado de datos simple en el frontend."""
+    if value is None:
+        return ""
+    val_str = str(value).strip()
+    return base64.b64encode(val_str.encode('utf-8')).decode('utf-8')
+
 
 def load_config():
     """Carga la configuración desde config.json en la raíz del proyecto."""
@@ -27,6 +36,8 @@ def load_config():
         "facebook_url": "",
         "maps_url": "",
         "reviews_url": "",
+        "google_analytics_id": "",
+        "looker_studio_url": "",
         "ocr_crop_top": 0.33,
         "ocr_crop_bottom": 0.55
     }
@@ -447,6 +458,87 @@ def get_first_product_image():
                     return Path(root) / file
     return None
 
+def get_site_base_url():
+    """Detecta automáticamente el dominio del catálogo en GitHub Pages a partir del origen Git remoto."""
+    try:
+        import subprocess
+        # Ejecutar comando de git para obtener la URL del remoto origin
+        result = subprocess.run(
+            ["git", "config", "--get", "remote.origin.url"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        url = result.stdout.strip()
+        if "github.com" in url:
+            if url.startswith("git@"):
+                parts = url.split("github.com:")[-1].replace(".git", "").split("/")
+            else:
+                parts = url.split("github.com/")[-1].replace(".git", "").split("/")
+            if len(parts) >= 2:
+                owner, repo = parts[0], parts[1]
+                return f"https://{owner.lower()}.github.io/{repo}/"
+    except Exception as e:
+        print(f"Advertencia: No se pudo obtener el dominio de Git ({e}). Usando fallback.")
+    
+    # Fallback por defecto si falla o no es repositorio git
+    return "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/"
+
+def generate_seo_files(products, web_dir):
+    """Genera automáticamente sitemap.xml y robots.txt en la carpeta web."""
+    web_path = Path(web_dir)
+    base_url = get_site_base_url()
+    
+    # 1. Generar robots.txt
+    robots_path = web_path / "robots.txt"
+    try:
+        with open(robots_path, "w", encoding="utf-8") as f:
+            f.write("# /robots.txt para TODO PARTES Horizonte\n")
+            f.write("User-agent: *\n")
+            f.write("Allow: /\n")
+            f.write(f"\nSitemap: {base_url}sitemap.xml\n")
+        print(f"robots.txt generado exitosamente en: {robots_path.name}")
+    except Exception as e:
+        print(f"Error al generar robots.txt: {e}")
+        
+    # 2. Generar sitemap.xml
+    sitemap_path = web_path / "sitemap.xml"
+    try:
+        from datetime import datetime
+        today = datetime.today().strftime('%Y-%m-%d')
+        
+        with open(sitemap_path, "w", encoding="utf-8") as f:
+            f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+            f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+            
+            # URL principal del catálogo
+            f.write('  <url>\n')
+            f.write(f'    <loc>{base_url}</loc>\n')
+            f.write(f'    <lastmod>{today}</lastmod>\n')
+            f.write('    <changefreq>daily</changefreq>\n')
+            f.write('    <priority>1.0</priority>\n')
+            f.write('  </url>\n')
+            
+            # URL de cada producto del catálogo
+            import urllib.parse
+            for prod in products:
+                prod_id = prod.get("id")
+                if prod_id:
+                    # Enlace profundo al producto (codificando espacios y caracteres especiales para XML válido)
+                    encoded_prod_id = urllib.parse.quote(prod_id)
+                    prod_url = f"{base_url}catalogo.html?producto={encoded_prod_id}"
+                    f.write('  <url>\n')
+                    f.write(f'    <loc>{prod_url}</loc>\n')
+                    f.write(f'    <lastmod>{today}</lastmod>\n')
+                    f.write('    <changefreq>weekly</changefreq>\n')
+                    f.write('    <priority>0.8</priority>\n')
+                    f.write('  </url>\n')
+                    
+            f.write('</urlset>\n')
+        print(f"sitemap.xml generado exitosamente con {len(products)} productos en: {sitemap_path.name}")
+    except Exception as e:
+        print(f"Error al generar sitemap.xml: {e}")
+
 def sync_catalog(progress_callback=None):
     """Ejecuta el escaneo, OCR y generación de catálogo de forma incremental."""
     config = load_config()
@@ -461,7 +553,7 @@ def sync_catalog(progress_callback=None):
     # Crear directorios de destino si no existen
     assets_dir.mkdir(parents=True, exist_ok=True)
     
-    # Manejar copia de logo si está configurado y existe
+    # Manejar copia de logo si está configurado y existe (optimizado)
     logo_path_str = config.get("logo_path", "")
     use_custom_logo = ""
     if logo_path_str:
@@ -470,9 +562,18 @@ def sync_catalog(progress_callback=None):
             try:
                 logo_ext = logo_file_path.suffix.lower()
                 dest_logo_path = assets_dir / f"logo{logo_ext}"
-                shutil.copy2(logo_file_path, dest_logo_path)
+                
+                # Optimizar logo para reducir su peso en red
+                try:
+                    with Image.open(logo_file_path) as img:
+                        img.thumbnail((300, 300))
+                        img.save(dest_logo_path, optimize=True)
+                    print(f"Logo optimizado y copiado exitosamente a: {dest_logo_path.name}")
+                except Exception as img_err:
+                    print(f"Advertencia: No se pudo optimizar el logo ({img_err}). Copiando archivo original...")
+                    shutil.copy2(logo_file_path, dest_logo_path)
+                
                 use_custom_logo = f"./assets/logo{logo_ext}"
-                print(f"Logo copiado exitosamente a: {dest_logo_path.name}")
             except Exception as e:
                 print(f"Error al copiar el logo: {e}")
         else:
@@ -616,12 +717,13 @@ def sync_catalog(progress_callback=None):
     
     # Guardar base de datos JSON
     catalog_data = {
-        "whatsapp_number": whatsapp_number,
+        "whatsapp_number": obfuscate_value(whatsapp_number),
         "use_custom_logo": use_custom_logo,
-        "instagram_url": config.get("instagram_url", ""),
-        "facebook_url": config.get("facebook_url", ""),
-        "maps_url": config.get("maps_url", ""),
-        "reviews_url": config.get("reviews_url", ""),
+        "instagram_url": obfuscate_value(config.get("instagram_url", "")),
+        "facebook_url": obfuscate_value(config.get("facebook_url", "")),
+        "maps_url": obfuscate_value(config.get("maps_url", "")),
+        "reviews_url": obfuscate_value(config.get("reviews_url", "")),
+        "google_analytics_id": obfuscate_value(config.get("google_analytics_id", "")),
         "total_products": len(updated_products),
         "products": updated_products
     }
@@ -629,6 +731,8 @@ def sync_catalog(progress_callback=None):
     write_success = write_catalog_js(catalog_data)
     if write_success:
         print(f"¡Catálogo JS guardado con éxito en: {js_path}!")
+        # Generar sitemap y robots.txt para SEO
+        generate_seo_files(updated_products, web_dir)
         if progress_callback:
             progress_callback(total_files, total_files, "Catálogo generado y guardado con éxito.")
     else:
@@ -645,13 +749,14 @@ def update_js_links(config):
         if not data:
             return False
             
-        data["whatsapp_number"] = config.get("whatsapp_number", "")
-        data["instagram_url"] = config.get("instagram_url", "")
-        data["facebook_url"] = config.get("facebook_url", "")
-        data["maps_url"] = config.get("maps_url", "")
-        data["reviews_url"] = config.get("reviews_url", "")
+        data["whatsapp_number"] = obfuscate_value(config.get("whatsapp_number", ""))
+        data["instagram_url"] = obfuscate_value(config.get("instagram_url", ""))
+        data["facebook_url"] = obfuscate_value(config.get("facebook_url", ""))
+        data["maps_url"] = obfuscate_value(config.get("maps_url", ""))
+        data["reviews_url"] = obfuscate_value(config.get("reviews_url", ""))
+        data["google_analytics_id"] = obfuscate_value(config.get("google_analytics_id", ""))
         
-        # Copiar el logo si existe y está configurado
+        # Copiar el logo si existe y está configurado (optimizado)
         logo_path_str = config.get("logo_path", "")
         if logo_path_str:
             logo_file_path = Path(logo_path_str)
@@ -660,12 +765,21 @@ def update_js_links(config):
                 assets_dir.mkdir(parents=True, exist_ok=True)
                 logo_ext = logo_file_path.suffix.lower()
                 dest_logo_path = assets_dir / f"logo{logo_ext}"
-                shutil.copy2(logo_file_path, dest_logo_path)
+                try:
+                    with Image.open(logo_file_path) as img:
+                        img.thumbnail((300, 300))
+                        img.save(dest_logo_path, optimize=True)
+                    print(f"Logo optimizado y copiado exitosamente a: {dest_logo_path.name}")
+                except Exception as img_err:
+                    print(f"Advertencia: No se pudo optimizar el logo ({img_err}). Copiando archivo original...")
+                    shutil.copy2(logo_file_path, dest_logo_path)
                 data["use_custom_logo"] = f"./assets/logo{logo_ext}"
         
         success = write_catalog_js(data)
         if success:
             print("Enlaces y logo actualizados rápidamente en products.js.")
+            # Generar sitemap y robots.txt para SEO
+            generate_seo_files(data.get("products", []), "web")
             return True
     except Exception as e:
         print(f"Error al actualizar enlaces rápidos en products.js: {e}")
