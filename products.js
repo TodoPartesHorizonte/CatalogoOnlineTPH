@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 508,
+  "total_products": 514,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5229,6 +5229,85 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV",
         "MANILLA"
+      ]
+    },
+    {
+      "category": "Guaya Freno de Mano",
+      "description": "GUAYA FRENO MANO LUV D-MAX 3.0 DIESEL 4X4",
+      "id": "071f6f7e-1ca9-47b7-b142-ea066e59594c",
+      "image_path": "./assets/071f6f7e-1ca9-47b7-b142-ea066e59594c.webp",
+      "keywords": [
+        "4X4",
+        "D-MAX",
+        "DIESEL",
+        "FRENO",
+        "GUAYA",
+        "LUV",
+        "MANO"
+      ]
+    },
+    {
+      "category": "Guaya Freno de Mano",
+      "description": "GUAYA FRENO MANO LUV D-MAX 3.5",
+      "id": "2bfd3aec-de02-45df-a21e-39566e56e208",
+      "image_path": "./assets/2bfd3aec-de02-45df-a21e-39566e56e208.webp",
+      "keywords": [
+        "D-MAX",
+        "FRENO",
+        "GUAYA",
+        "LUV",
+        "MANO"
+      ]
+    },
+    {
+      "category": "Guaya Selectora de Cambio",
+      "description": "GUAYA SELECTORADE CAMBIO LUV D-MAX 3.5 AUTOMATICO",
+      "id": "250e5e0c-5601-404e-8536-d03541b22f52",
+      "image_path": "./assets/250e5e0c-5601-404e-8536-d03541b22f52.webp",
+      "keywords": [
+        "AUTOMATICO",
+        "CAMBIO",
+        "D-MAX",
+        "GUAYA",
+        "LUV",
+        "SELECTORA",
+        "SELECTORADE"
+      ]
+    },
+    {
+      "category": "Guaya Velocimetro - Kilometraje",
+      "description": "GUAYA VELOCIMETRO CARIBE 83-88",
+      "id": "d145da97-b176-4b40-83ed-25446f7a1629",
+      "image_path": "./assets/d145da97-b176-4b40-83ed-25446f7a1629.webp",
+      "keywords": [
+        "83-88",
+        "CARIBE",
+        "GUAYA",
+        "KILOMETRAJE",
+        "VELOCIMETRO"
+      ]
+    },
+    {
+      "category": "Guia de Valvula",
+      "description": "GUIA DE VALVULA CARIBE 2300",
+      "id": "b42c9115-b467-4f5b-938c-7e8ea6271451",
+      "image_path": "./assets/b42c9115-b467-4f5b-938c-7e8ea6271451.webp",
+      "keywords": [
+        "2300",
+        "CARIBE",
+        "GUIA",
+        "VALVULA"
+      ]
+    },
+    {
+      "category": "Guia de Valvula",
+      "description": "GUIA DE VALVULA LUV 2.3",
+      "id": "b18ffae9-f6bc-4b9e-991a-c4f7b6584cc0",
+      "image_path": "./assets/b18ffae9-f6bc-4b9e-991a-c4f7b6584cc0.webp",
+      "keywords": [
+        "GUIA",
+        "LUV",
+        "VALVULA"
       ]
     },
     {
