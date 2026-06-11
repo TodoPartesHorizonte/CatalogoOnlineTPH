@@ -67,10 +67,11 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet"></noscript>
     
     <!-- Base de datos de productos (Evita bloqueos de CORS locales) -->
-    <script src="./products.js"></script>
+    <script defer src="./products.js"></script>
 
     <!-- Script de Seguridad (Desofuscación) y Analíticas (Google Analytics) -->
     <script>
@@ -85,12 +86,19 @@
             }
         }
 
-        // Inicializar Google Analytics 4 dinámicamente si el ID está presente
-        (function() {
+        // Función global de rastreo de eventos
+        function trackEvent(eventName, params = {}) {
+            if (typeof gtag === 'function') {
+                gtag('event', eventName, params);
+            }
+        }
+
+        // Inicializar dependencias no críticas una vez cargado el DOM para no bloquear renderizado inicial
+        document.addEventListener('DOMContentLoaded', function() {
             if (typeof PRODUCTS_DATA !== 'undefined' && PRODUCTS_DATA.google_analytics_id) {
                 const gaId = deobfuscate(PRODUCTS_DATA.google_analytics_id).trim();
                 if (gaId && gaId.startsWith('G-')) {
-                    // Cargar script oficial de Google Analytics
+                    // Cargar script oficial de Google Analytics de forma asíncrona
                     const script = document.createElement('script');
                     script.async = true;
                     script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
@@ -105,14 +113,7 @@
                     console.log("Google Analytics 4 inicializado de forma segura.");
                 }
             }
-        })();
-
-        // Función global de rastreo de eventos
-        function trackEvent(eventName, params = {}) {
-            if (typeof gtag === 'function') {
-                gtag('event', eventName, params);
-            }
-        }
+        });
     </script>
 
     
@@ -2175,17 +2176,19 @@
                 <div class="header-top-row">
                     <div class="brand-lockup" onclick="goBackToFolders()">
                         <div id="logoContainer" class="logo-container">
-                            <img id="logoImage" alt="Logo de TODO PARTES HORIZONTE" class="logo-image" style="display: none;">
+                            <img id="logoImage" alt="Logo de TODO PARTES HORIZONTE" class="logo-image" style="display: none;" width="72" height="72" loading="eager">
                         </div>
                         <script>
-                            // Cargar el logo inmediatamente durante el parseo de HTML para evitar parpadeos y retrasos
-                            if (typeof PRODUCTS_DATA !== 'undefined' && PRODUCTS_DATA.use_custom_logo) {
-                                const logoImg = document.getElementById('logoImage');
-                                if (logoImg) {
-                                    logoImg.src = PRODUCTS_DATA.use_custom_logo;
-                                    logoImg.style.display = 'block';
+                            // Cargar el logo en cuanto el DOM esté listo (debido al defer en products.js)
+                            document.addEventListener('DOMContentLoaded', function() {
+                                if (typeof PRODUCTS_DATA !== 'undefined' && PRODUCTS_DATA.use_custom_logo) {
+                                    const logoImg = document.getElementById('logoImage');
+                                    if (logoImg) {
+                                        logoImg.src = PRODUCTS_DATA.use_custom_logo;
+                                        logoImg.style.display = 'block';
+                                    }
                                 }
-                            }
+                            });
                         </script>
                         <div class="brand-text">
                             <h1 class="logo-title" id="logoTitleText">TODO PARTES <span>HORIZONTE</span></h1>
@@ -2231,28 +2234,28 @@
     <div class="vehicle-filter-container" id="vehicleFilterContainer" style="display: none;">
         <div class="vehicle-filter-title">Filtrar por Vehículo</div>
         <div class="vehicle-grid" id="vehicleGrid">
-            <div class="vehicle-card active" onclick="selectVehicleFilter('ALL')" id="vehicle-all" aria-label="Todos los vehículos">
-                <svg viewBox="0 0 80 40" class="vehicle-logo">
+            <div class="vehicle-card active" onclick="selectVehicleFilter('ALL')" id="vehicle-all" aria-label="Todos los vehículos" role="button" tabindex="0">
+                <svg viewBox="0 0 80 40" class="vehicle-logo" width="100" height="32">
                     <rect x="26" y="10" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                     <rect x="42" y="10" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                     <rect x="26" y="22" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                     <rect x="42" y="22" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                 </svg>
             </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('CARIBE')" id="vehicle-caribe" aria-label="Caribe">
-                <img src="./assets/caribe_logo.png" alt="Caribe" class="vehicle-logo-img">
+            <div class="vehicle-card" onclick="selectVehicleFilter('CARIBE')" id="vehicle-caribe" aria-label="Caribe" role="button" tabindex="0">
+                <img src="./assets/caribe_logo.png" alt="Caribe" class="vehicle-logo-img" width="100" height="32" loading="lazy">
             </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('LUV')" id="vehicle-luv" aria-label="Luv">
-                <img src="./assets/luv_logo.png" alt="Luv" class="vehicle-logo-img">
+            <div class="vehicle-card" onclick="selectVehicleFilter('LUV')" id="vehicle-luv" aria-label="Luv" role="button" tabindex="0">
+                <img src="./assets/luv_logo.png" alt="Luv" class="vehicle-logo-img" width="100" height="32" loading="lazy">
             </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('D-MAX')" id="vehicle-dmax" aria-label="Luv D-Max">
-                <img src="./assets/dmax_logo.png" alt="Luv D-Max" class="vehicle-logo-img">
+            <div class="vehicle-card" onclick="selectVehicleFilter('D-MAX')" id="vehicle-dmax" aria-label="Luv D-Max" role="button" tabindex="0">
+                <img src="./assets/dmax_logo.png" alt="Luv D-Max" class="vehicle-logo-img" width="100" height="32" loading="lazy">
             </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('TROOPER')" id="vehicle-trooper" aria-label="Trooper">
-                <img src="./assets/trooper_logo.png" alt="Trooper" class="vehicle-logo-img">
+            <div class="vehicle-card" onclick="selectVehicleFilter('TROOPER')" id="vehicle-trooper" aria-label="Trooper" role="button" tabindex="0">
+                <img src="./assets/trooper_logo.png" alt="Trooper" class="vehicle-logo-img" width="100" height="32" loading="lazy">
             </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('RODEO')" id="vehicle-rodeo" aria-label="Rodeo">
-                <img src="./assets/rodeo_logo.png" alt="Rodeo" class="vehicle-logo-img">
+            <div class="vehicle-card" onclick="selectVehicleFilter('RODEO')" id="vehicle-rodeo" aria-label="Rodeo" role="button" tabindex="0">
+                <img src="./assets/rodeo_logo.png" alt="Rodeo" class="vehicle-logo-img" width="100" height="32" loading="lazy">
             </div>
         </div>
     </div>
@@ -2295,7 +2298,7 @@
             <svg viewBox="0 0 24 24">
                 <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
             </svg>
-            <h3>No se encontraron resultados</h3>
+            <h2>No se encontraron resultados</h2>
             <p>Prueba buscando con otras palabras clave o seleccionando otra categoría.</p>
         </div>
     </main>
@@ -2305,7 +2308,7 @@
         <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar modal">&times;</button>
         <div class="lightbox-content">
             <div class="lightbox-img-wrapper">
-                <img src="" alt="" class="lightbox-img" id="lightboxImg">
+                <img src="" alt="" class="lightbox-img" id="lightboxImg" width="400" height="500">
             </div>
             <div class="lightbox-info">
                 <span class="lightbox-badge" id="lightboxBadge">Categoría</span>
@@ -2339,7 +2342,7 @@
     <!-- CAJÓN DEL CARRITO (SIDE DRAWER) -->
     <div class="cart-drawer" id="cartDrawer">
         <div class="cart-header">
-            <h3>Tu Lista de Pedido</h3>
+            <h2>Tu Lista de Pedido</h2>
             <button class="cart-clear-btn" id="cartClearBtn" onclick="clearCart()" style="display: none;">Vaciar</button>
             <button class="cart-close" id="cartCloseBtn" aria-label="Cerrar lista de pedido">&times;</button>
         </div>
@@ -2529,7 +2532,7 @@
                     totalQty += item.quantity;
                     html += `
                         <div class="cart-item" id="cart-item-${item.id}">
-                            <img src="${item.image_path}" alt="${item.description}" class="cart-item-img">
+                            <img src="${item.image_path}" alt="${item.description}" class="cart-item-img" width="60" height="60" loading="lazy">
                             <div class="cart-item-info">
                                 <span class="cart-item-category">${item.category}</span>
                                 <div class="cart-item-title" title="${item.description}">${item.description}</div>
@@ -3034,7 +3037,7 @@
 
                 gridHtml += `
                     <div class="product-card" id="card-${product.id}">
-                        <div class="card-img-wrapper" onclick="openLightbox('${product.id}')">
+                        <div class="card-img-wrapper" onclick="openLightbox('${product.id}')" role="button" tabindex="0" aria-label="Ver detalles del repuesto">
                             <span class="category-badge">${product.category}</span>
                             <img src="${product.image_path}" alt="${product.description}" class="product-img img-lazy" loading="lazy" width="280" height="350" onload="this.classList.add('img-loaded')">
                         </div>
@@ -3176,7 +3179,7 @@
                 const gradAngle = 120 + (index % 5) * 15;
 
                 foldersHtml += `
-                    <div class="category-card" onclick="selectFolderCategory('${cat.replace(/'/g, "\\'")}')" id="${folderId}">
+                    <div class="category-card" onclick="selectFolderCategory('${cat.replace(/'/g, "\\'")}')" id="${folderId}" role="button" tabindex="0" aria-label="Ver categoría ${cat}">
                         <div class="category-card-bg-layer" style="background: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ff6a00' fill-opacity='0.025'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;), linear-gradient(${gradAngle}deg, #0d0d10 0%, #141418 50%, rgba(255, 106, 0, 0.06) 100%)"></div>
                         <svg class="category-card-icon" viewBox="0 0 24 24">
                             <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
