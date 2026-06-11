@@ -1,6 +1,6 @@
 const PRODUCTS_DATA = {
   "whatsapp_number": "NTg0MjQyMTE2Mzc1",
-  "use_custom_logo": "./assets/logo.png",
+  "use_custom_logo": "./assets/logo.webp",
   "instagram_url": "aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS90b2RvcGFydGVzX2hvcml6b250ZT9pZ3NoPWMzRjBaREozYVhGMGVqZHY=",
   "facebook_url": "aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3RvZG9wYXJ0ZXNob3Jpem9udGU0OTMv",
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",

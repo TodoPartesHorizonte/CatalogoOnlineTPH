@@ -67,6 +67,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="./assets/header_bg.webp" as="image" fetchpriority="high">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet"></noscript>
     
@@ -232,7 +233,7 @@
 
     <!-- CUERPO PRINCIPAL -->
     <main>
-        <div class="grid-container" id="productsGrid">
+        <div class="grid-container" id="productsGrid" style="display: none;">
             <!-- Esqueleto mientras carga -->
             <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-title"></div><div class="skeleton-button"></div></div></div>
             <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-info"><div class="skeleton-title"></div><div class="skeleton-button"></div></div></div>
@@ -243,8 +244,13 @@
         </div>
 
         <!-- Grilla de Carpetas (Nueva) -->
-        <div class="grid-container" id="foldersGrid" style="display: none; margin-top: 10px;">
-            <!-- Cargado dinámicamente -->
+        <div class="grid-container" id="foldersGrid" style="display: grid; margin-top: 10px;">
+            <div class="skeleton-folder-card"></div>
+            <div class="skeleton-folder-card"></div>
+            <div class="skeleton-folder-card"></div>
+            <div class="skeleton-folder-card"></div>
+            <div class="skeleton-folder-card"></div>
+            <div class="skeleton-folder-card"></div>
         </div>
 
         <!-- Estado Vacío -->
