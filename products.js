@@ -1,12 +1,12 @@
 const PRODUCTS_DATA = {
   "whatsapp_number": "NTg0MjQyMTE2Mzc1",
-  "use_custom_logo": "./assets/logo.webp",
+  "use_custom_logo": "./assets/logo.png",
   "instagram_url": "aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS90b2RvcGFydGVzX2hvcml6b250ZT9pZ3NoPWMzRjBaREozYVhGMGVqZHY=",
   "facebook_url": "aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3RvZG9wYXJ0ZXNob3Jpem9udGU0OTMv",
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 514,
+  "total_products": 518,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5220,6 +5220,17 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Guaya Capot",
+      "description": "GUAYA CAPOT CARIBE",
+      "id": "642b488c-2f91-484a-8553-f7f1faaa8076",
+      "image_path": "./assets/642b488c-2f91-484a-8553-f7f1faaa8076.webp",
+      "keywords": [
+        "CAPOT",
+        "CARIBE",
+        "GUAYA"
+      ]
+    },
+    {
+      "category": "Guaya Capot",
       "description": "GUAYA CAPOT CON MANILLA LUV D-MAX",
       "id": "4cc555b9-d491-4943-8192-7622ee6cc861",
       "image_path": "./assets/4cc555b9-d491-4943-8192-7622ee6cc861.webp",
@@ -5229,6 +5240,41 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV",
         "MANILLA"
+      ]
+    },
+    {
+      "category": "Guaya Capot",
+      "description": "GUAYA CAPOT LUV 2300",
+      "id": "42eebc99-d6e3-4a4a-a832-41f92ba8907a",
+      "image_path": "./assets/42eebc99-d6e3-4a4a-a832-41f92ba8907a.webp",
+      "keywords": [
+        "2300",
+        "CAPOT",
+        "GUAYA",
+        "LUV"
+      ]
+    },
+    {
+      "category": "Guaya Capot",
+      "description": "GUAYA CAPOT LUV D-MAX",
+      "id": "5ed3fdf3-4fcb-423b-8e27-162fc2ba4666",
+      "image_path": "./assets/5ed3fdf3-4fcb-423b-8e27-162fc2ba4666.webp",
+      "keywords": [
+        "CAPOT",
+        "D-MAX",
+        "GUAYA",
+        "LUV"
+      ]
+    },
+    {
+      "category": "Guaya Clutch",
+      "description": "GUAYA DE CLUTCH CARIBE",
+      "id": "17e6b8ad-b5f9-4789-9056-e456ac14a5a5",
+      "image_path": "./assets/17e6b8ad-b5f9-4789-9056-e456ac14a5a5.webp",
+      "keywords": [
+        "CARIBE",
+        "CLUTCH",
+        "GUAYA"
       ]
     },
     {
