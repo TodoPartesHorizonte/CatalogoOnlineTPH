@@ -19,7 +19,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ESTABILIZADORA",
         "LUV"
-      ]
+      ],
+      "slug": "abrazadera-barra-estabilizadora-luv-d-max"
     },
     {
       "category": "Acoplador",
@@ -32,7 +33,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANUAL",
         "TROOPER"
-      ]
+      ],
+      "slug": "acoplador-manual-luv-d-max-trooper"
     },
     {
       "category": "Alternador",
@@ -43,7 +45,8 @@ const PRODUCTS_DATA = {
         "ALTERNADOR",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "alternador-luv-d-max-3-5"
     },
     {
       "category": "Amortiguador",
@@ -56,7 +59,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "DELANTERO"
-      ]
+      ],
+      "slug": "amortiguador-delantero-caribe-2000-2300"
     },
     {
       "category": "Amortiguador",
@@ -68,7 +72,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "DELANTERO"
-      ]
+      ],
+      "slug": "amortiguador-delantero-caribe-2600"
     },
     {
       "category": "Amortiguador",
@@ -80,7 +85,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERO",
         "LUV"
-      ]
+      ],
+      "slug": "amortiguador-delantero-luv-d-max-2-4"
     },
     {
       "category": "Amortiguador",
@@ -93,7 +99,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERO",
         "LUV"
-      ]
+      ],
+      "slug": "amortiguador-delantero-luv-d-max-3-0-4x4"
     },
     {
       "category": "Amortiguador",
@@ -105,7 +112,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERO",
         "LUV"
-      ]
+      ],
+      "slug": "amortiguador-delantero-luv-d-max-3-5"
     },
     {
       "category": "Amortiguador",
@@ -118,7 +126,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "TRASERO"
-      ]
+      ],
+      "slug": "amortiguador-trasero-caribe-2000-2300"
     },
     {
       "category": "Amortiguador",
@@ -130,7 +139,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "TRASERO"
-      ]
+      ],
+      "slug": "amortiguador-trasero-caribe-2600"
     },
     {
       "category": "Amortiguador",
@@ -142,7 +152,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "TRASERO"
-      ]
+      ],
+      "slug": "amortiguador-trasero-luv-d-max"
     },
     {
       "category": "Amortiguador Direccion",
@@ -153,7 +164,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "DIRECCION"
-      ]
+      ],
+      "slug": "amortiguador-de-direccion-caribe-2-3"
     },
     {
       "category": "Amortiguador Direccion",
@@ -165,7 +177,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DIRECCION",
         "G-200"
-      ]
+      ],
+      "slug": "amortiguador-de-direccion-caribe-g-200"
     },
     {
       "category": "Amortiguador Direccion",
@@ -176,7 +189,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "DIRECCION"
-      ]
+      ],
+      "slug": "amortiguador-direccion-caribe-2-6"
     },
     {
       "category": "Amortiguador Direccion",
@@ -187,7 +201,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "DIRECCION",
         "LUV"
-      ]
+      ],
+      "slug": "amortiguador-direccion-luv-2-3"
     },
     {
       "category": "Amortiguador Direccion",
@@ -198,7 +213,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "DIRECCION",
         "TROOPER"
-      ]
+      ],
+      "slug": "amortiguador-direccion-trooper"
     },
     {
       "category": "Anillos",
@@ -208,7 +224,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "ANILLOS",
         "CARIBE"
-      ]
+      ],
+      "slug": "anillos-para-tu-caribe"
     },
     {
       "category": "Anillos",
@@ -219,7 +236,8 @@ const PRODUCTS_DATA = {
         "ANILLOS",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "anillos-para-tu-luv-d-max"
     },
     {
       "category": "Arandela Punta de Eje",
@@ -233,7 +251,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "EJE",
         "PUNTA"
-      ]
+      ],
+      "slug": "arandela-punta-de-eje-delantero-caribe-2000"
     },
     {
       "category": "Arandela Punta de Eje",
@@ -247,7 +266,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "EJE",
         "PUNTA"
-      ]
+      ],
+      "slug": "arandela-punta-de-eje-delantero-caribe-2300"
     },
     {
       "category": "Araña",
@@ -258,7 +278,8 @@ const PRODUCTS_DATA = {
         "2000",
         "ARANA",
         "CARIBE"
-      ]
+      ],
+      "slug": "arana-caribe-2000"
     },
     {
       "category": "Araña",
@@ -269,7 +290,8 @@ const PRODUCTS_DATA = {
         "2300",
         "ARANA",
         "CARIBE"
-      ]
+      ],
+      "slug": "arana-caribe-2300"
     },
     {
       "category": "Araña",
@@ -280,7 +302,8 @@ const PRODUCTS_DATA = {
         "2600",
         "ARANA",
         "CARIBE"
-      ]
+      ],
+      "slug": "arana-caribe-2600"
     },
     {
       "category": "Araña",
@@ -291,7 +314,8 @@ const PRODUCTS_DATA = {
         "4X4",
         "ARANA",
         "LUV"
-      ]
+      ],
+      "slug": "arana-luv-4x4"
     },
     {
       "category": "Araña",
@@ -302,7 +326,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "arana-luv-d-max-2-4"
     },
     {
       "category": "Araña",
@@ -313,7 +338,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "arana-luv-d-max-2-5"
     },
     {
       "category": "Araña",
@@ -324,7 +350,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "arana-luv-d-max-3-0"
     },
     {
       "category": "Araña",
@@ -335,7 +362,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "arana-luv-d-max-3-5"
     },
     {
       "category": "Arbol de Leva",
@@ -348,7 +376,8 @@ const PRODUCTS_DATA = {
         "ARBOL",
         "CARIBE",
         "LEVA"
-      ]
+      ],
+      "slug": "arbol-de-leva-caribe-2300-2600"
     },
     {
       "category": "Arbol de Leva",
@@ -360,7 +389,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G-2000",
         "LEVA"
-      ]
+      ],
+      "slug": "arbol-de-leva-caribe-g-2000"
     },
     {
       "category": "Arbol de Leva",
@@ -371,7 +401,8 @@ const PRODUCTS_DATA = {
         "ARBOL",
         "LEVA",
         "LUV"
-      ]
+      ],
+      "slug": "arbol-de-leva-luv-2-2"
     },
     {
       "category": "Arbol de Leva",
@@ -383,7 +414,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LEVA",
         "LUV"
-      ]
+      ],
+      "slug": "arbol-de-leva-luv-d-max-2-4"
     },
     {
       "category": "Arranque",
@@ -393,7 +425,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "ARRANQUE",
         "CARIBE"
-      ]
+      ],
+      "slug": "arranque-caribe-2-3-2-6"
     },
     {
       "category": "Arranque",
@@ -404,7 +437,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "CARIBE",
         "G-200"
-      ]
+      ],
+      "slug": "arranque-caribe-g-200"
     },
     {
       "category": "Arranque",
@@ -414,7 +448,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "ARRANQUE",
         "LUV"
-      ]
+      ],
+      "slug": "arranque-luv-2-3"
     },
     {
       "category": "Arranque",
@@ -425,7 +460,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "arranque-luv-d-max-3-5"
     },
     {
       "category": "Aspa",
@@ -437,7 +473,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "FAN"
-      ]
+      ],
+      "slug": "aspa-de-fan-clutch-caribe"
     },
     {
       "category": "Aspa",
@@ -450,7 +487,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FAN",
         "LUV"
-      ]
+      ],
+      "slug": "aspa-fan-clutch-luv-d-max-3-5"
     },
     {
       "category": "Aspa",
@@ -460,7 +498,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "ASPA",
         "RODEO"
-      ]
+      ],
+      "slug": "aspa-rodeo-3-2"
     },
     {
       "category": "Aspa",
@@ -470,7 +509,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "ASPA",
         "TROOPER"
-      ]
+      ],
+      "slug": "aspa-trooper-3-2"
     },
     {
       "category": "Bandas",
@@ -483,7 +523,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FRENO",
         "JUEGO"
-      ]
+      ],
+      "slug": "juego-de-bandas-de-freno-caribe-83-88"
     },
     {
       "category": "Bandas",
@@ -496,7 +537,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-de-bandas-de-freno-luv-2300"
     },
     {
       "category": "Bandas",
@@ -509,7 +551,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-de-bandas-de-freno-luv-d-max-2-4"
     },
     {
       "category": "Bandas",
@@ -522,7 +565,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-de-bandas-de-freno-luv-d-max-3-5"
     },
     {
       "category": "Baquelita",
@@ -534,7 +578,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "GASOLINA"
-      ]
+      ],
+      "slug": "baquelita-bomba-gasolina-caribe"
     },
     {
       "category": "Baquelita",
@@ -546,7 +591,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "GASOLINA",
         "LUV"
-      ]
+      ],
+      "slug": "baquelita-bomba-gasolina-luv-2-3"
     },
     {
       "category": "Baquelita",
@@ -558,7 +604,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "GASOLINA",
         "TROOPER"
-      ]
+      ],
+      "slug": "baquelita-bomba-gasolina-trooper"
     },
     {
       "category": "Barra Central",
@@ -570,7 +617,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CARIBE",
         "CENTRAL"
-      ]
+      ],
+      "slug": "barra-central-caribe-2300"
     },
     {
       "category": "Barra Central",
@@ -582,7 +630,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CENTRAL",
         "G-2000"
-      ]
+      ],
+      "slug": "barra-central-caribe-g-2000"
     },
     {
       "category": "Barra Central",
@@ -594,7 +643,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CENTRAL",
         "HUECO"
-      ]
+      ],
+      "slug": "barra-central-con-hueco-caribe-2-6"
     },
     {
       "category": "Barra Central",
@@ -607,7 +657,8 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "HUECO",
         "LUV"
-      ]
+      ],
+      "slug": "barra-central-con-hueco-luv-4x4"
     },
     {
       "category": "Barra Central",
@@ -619,7 +670,8 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "HUECO",
         "RODEO"
-      ]
+      ],
+      "slug": "barra-central-con-hueco-rodeo"
     },
     {
       "category": "Barra Central",
@@ -631,7 +683,8 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "HUECO",
         "TROOPER"
-      ]
+      ],
+      "slug": "barra-central-con-hueco-trooper"
     },
     {
       "category": "Barra Central",
@@ -643,7 +696,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CENTRAL",
         "LUV"
-      ]
+      ],
+      "slug": "barra-central-luv-4x2"
     },
     {
       "category": "Barra Central",
@@ -656,7 +710,8 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "HUECO",
         "SIN"
-      ]
+      ],
+      "slug": "barra-central-sin-hueco-caribe-2-6"
     },
     {
       "category": "Barra Central",
@@ -670,7 +725,8 @@ const PRODUCTS_DATA = {
         "HUECO",
         "LUV",
         "SIN"
-      ]
+      ],
+      "slug": "barra-central-sin-hueco-luv-4x4"
     },
     {
       "category": "Barra Central",
@@ -683,7 +739,8 @@ const PRODUCTS_DATA = {
         "HUECO",
         "RODEO",
         "SIN"
-      ]
+      ],
+      "slug": "barra-central-sin-hueco-rodeo"
     },
     {
       "category": "Barra Central",
@@ -696,7 +753,8 @@ const PRODUCTS_DATA = {
         "HUECO",
         "SIN",
         "TROOPER"
-      ]
+      ],
+      "slug": "barra-central-sin-hueco-trooper"
     },
     {
       "category": "Barra Link",
@@ -708,7 +766,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "LINK",
         "TROOPER"
-      ]
+      ],
+      "slug": "barra-link-delantera-trooper-3-2"
     },
     {
       "category": "Barra Link",
@@ -720,7 +779,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LINK",
         "LUV"
-      ]
+      ],
+      "slug": "barra-link-luv-d-max-2-4"
     },
     {
       "category": "Barra Link",
@@ -732,7 +792,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LINK",
         "LUV"
-      ]
+      ],
+      "slug": "barra-link-luv-d-max-2-5"
     },
     {
       "category": "Barra Link",
@@ -744,7 +805,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LINK",
         "LUV"
-      ]
+      ],
+      "slug": "barra-link-luv-d-max-3-0"
     },
     {
       "category": "Barra Link",
@@ -756,7 +818,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LINK",
         "LUV"
-      ]
+      ],
+      "slug": "barra-link-luv-d-max-3-5"
     },
     {
       "category": "Barra Tensora",
@@ -768,7 +831,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "LUV",
         "TENSORA"
-      ]
+      ],
+      "slug": "barra-tensora-luv-4x2"
     },
     {
       "category": "Base Amortiguador",
@@ -781,7 +845,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "SOPORTE"
-      ]
+      ],
+      "slug": "soporte-amortiguador-luv-d-max-2-4"
     },
     {
       "category": "Base Brazo Loco",
@@ -793,7 +858,8 @@ const PRODUCTS_DATA = {
         "BRAZO",
         "CARIBE",
         "LOCO"
-      ]
+      ],
+      "slug": "base-brazo-loco-caribe"
     },
     {
       "category": "Base Brazo Loco",
@@ -806,7 +872,8 @@ const PRODUCTS_DATA = {
         "BRAZO",
         "CARIBE",
         "LOCO"
-      ]
+      ],
+      "slug": "base-brazo-loco-caribe-2000"
     },
     {
       "category": "Base Brazo Loco",
@@ -819,7 +886,8 @@ const PRODUCTS_DATA = {
         "BRAZO",
         "CARIBE",
         "LOCO"
-      ]
+      ],
+      "slug": "base-brazo-loco-caribe-2300"
     },
     {
       "category": "Base Brazo Loco",
@@ -831,7 +899,8 @@ const PRODUCTS_DATA = {
         "BRAZO",
         "LOCO",
         "LUV"
-      ]
+      ],
+      "slug": "base-brazo-loco-luv"
     },
     {
       "category": "Base Brazo Loco",
@@ -843,7 +912,8 @@ const PRODUCTS_DATA = {
         "BRAZO",
         "LOCO",
         "RODEO"
-      ]
+      ],
+      "slug": "base-brazo-loco-rodeo"
     },
     {
       "category": "Base Brazo Loco",
@@ -855,7 +925,8 @@ const PRODUCTS_DATA = {
         "BRAZO",
         "LOCO",
         "TROOPER"
-      ]
+      ],
+      "slug": "base-brazo-loco-trooper"
     },
     {
       "category": "Base Caja",
@@ -866,7 +937,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CAJA",
         "CARIBE"
-      ]
+      ],
+      "slug": "base-caja-caribe-2-3"
     },
     {
       "category": "Base Caja",
@@ -878,7 +950,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CAJA",
         "CARIBE"
-      ]
+      ],
+      "slug": "base-caja-caribe-2600"
     },
     {
       "category": "Base Caja",
@@ -890,7 +963,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CAJA",
         "LUV"
-      ]
+      ],
+      "slug": "base-caja-luv-4x4"
     },
     {
       "category": "Base Caja",
@@ -902,7 +976,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "base-caja-luv-d-max"
     },
     {
       "category": "Base Caja",
@@ -914,7 +989,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "base-caja-luv-d-max-2-4"
     },
     {
       "category": "Base Caja",
@@ -926,7 +1002,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "base-caja-luv-d-max-3-5"
     },
     {
       "category": "Base Caja",
@@ -938,7 +1015,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "RODEO",
         "TROOPER"
-      ]
+      ],
+      "slug": "base-caja-trooper-rodeo-3-2"
     },
     {
       "category": "Base Caja",
@@ -949,7 +1027,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CAJA",
         "TROOPER"
-      ]
+      ],
+      "slug": "base-caja-trooper-3-2"
     },
     {
       "category": "Base Caja",
@@ -960,7 +1039,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CAJA",
         "TROOPER"
-      ]
+      ],
+      "slug": "base-caja-trooper-3-2-2"
     },
     {
       "category": "Base Casilla",
@@ -971,7 +1051,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CARIBE",
         "CASILLA"
-      ]
+      ],
+      "slug": "base-casilla-caribe"
     },
     {
       "category": "Base Fan Clutch",
@@ -984,7 +1065,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FAN",
         "LUV"
-      ]
+      ],
+      "slug": "base-fan-clutch-luv-d-max-3-5"
     },
     {
       "category": "Base Filtro Aceite",
@@ -996,7 +1078,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CARIBE",
         "FILTRO"
-      ]
+      ],
+      "slug": "base-filtro-de-aceite-caribe-2-3"
     },
     {
       "category": "Base Filtro Aceite",
@@ -1008,7 +1091,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "FILTRO",
         "LUV"
-      ]
+      ],
+      "slug": "base-filtro-de-aceite-luv-2-3"
     },
     {
       "category": "Base Filtro Aceite",
@@ -1021,7 +1105,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FILTRO",
         "FILTRODE"
-      ]
+      ],
+      "slug": "base-filtrode-aceite-caribe-2-6"
     },
     {
       "category": "Base Motor",
@@ -1032,7 +1117,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CARIBE",
         "MOTOR"
-      ]
+      ],
+      "slug": "base-motor-caribe-2-6"
     },
     {
       "category": "Base Motor",
@@ -1044,7 +1130,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CARIBE",
         "MOTOR"
-      ]
+      ],
+      "slug": "base-motor-caribe-2300"
     },
     {
       "category": "Base Motor",
@@ -1056,7 +1143,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G-2000",
         "MOTOR"
-      ]
+      ],
+      "slug": "base-motor-caribe-g-2000"
     },
     {
       "category": "Base Motor",
@@ -1067,7 +1155,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "LUV",
         "MOTOR"
-      ]
+      ],
+      "slug": "base-motor-luv-2-2"
     },
     {
       "category": "Base Motor",
@@ -1078,7 +1167,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "LUV",
         "MOTOR"
-      ]
+      ],
+      "slug": "base-motor-luv-2-3"
     },
     {
       "category": "Base Motor",
@@ -1090,7 +1180,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "MOTOR"
-      ]
+      ],
+      "slug": "base-motor-luv-d-max-2-5"
     },
     {
       "category": "Base Motor",
@@ -1103,7 +1194,8 @@ const PRODUCTS_DATA = {
         "DIESEL",
         "LUV",
         "MOTOR"
-      ]
+      ],
+      "slug": "base-motor-luv-d-max-3-0-diesel"
     },
     {
       "category": "Base Motor",
@@ -1115,7 +1207,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "MOTOR"
-      ]
+      ],
+      "slug": "base-motor-luv-d-max-3-5"
     },
     {
       "category": "Bendix",
@@ -1126,7 +1219,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "BENDIX",
         "LUV"
-      ]
+      ],
+      "slug": "bendix-arranque-luv-2-2"
     },
     {
       "category": "Bendix",
@@ -1138,7 +1232,8 @@ const PRODUCTS_DATA = {
         "BENDIX",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "bendix-arranque-luv-d-max-2-4"
     },
     {
       "category": "Bendix",
@@ -1150,7 +1245,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "BENDIX",
         "CARIBE"
-      ]
+      ],
+      "slug": "bendix-de-arranque-caribe-2300"
     },
     {
       "category": "Bendix",
@@ -1162,7 +1258,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "BENDIX",
         "CARIBE"
-      ]
+      ],
+      "slug": "bendix-de-arranque-caribe-2600"
     },
     {
       "category": "Bobina",
@@ -1173,7 +1270,8 @@ const PRODUCTS_DATA = {
         "BOBINA",
         "ENCENDIDO",
         "LUV"
-      ]
+      ],
+      "slug": "bobina-encendido-luv-2-2"
     },
     {
       "category": "Bobina",
@@ -1185,7 +1283,8 @@ const PRODUCTS_DATA = {
         "ISUZU",
         "RODEO",
         "TROOPER"
-      ]
+      ],
+      "slug": "bobina-isuzu-rodeo-trooper"
     },
     {
       "category": "Bobina",
@@ -1196,7 +1295,8 @@ const PRODUCTS_DATA = {
         "BOBINA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "bobina-luv-d-max-3-5"
     },
     {
       "category": "Bobina",
@@ -1208,7 +1308,8 @@ const PRODUCTS_DATA = {
         "RESISTENCIA",
         "SECA",
         "UNIVERSAL"
-      ]
+      ],
+      "slug": "bobina-seca-con-resistencia-universal"
     },
     {
       "category": "Bomba de aceite",
@@ -1219,7 +1320,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BOMBA",
         "CARIBE"
-      ]
+      ],
+      "slug": "bomba-de-aceite-caribe-2-3"
     },
     {
       "category": "Bomba de aceite",
@@ -1230,7 +1332,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BOMBA",
         "CARIBE"
-      ]
+      ],
+      "slug": "bomba-de-aceite-caribe-2-6"
     },
     {
       "category": "Bomba de aceite",
@@ -1242,7 +1345,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BOMBA",
         "CARIBE"
-      ]
+      ],
+      "slug": "bomba-de-aceite-caribe-2000"
     },
     {
       "category": "Bomba de aceite",
@@ -1253,7 +1357,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BOMBA",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-aceite-luv-2-2"
     },
     {
       "category": "Bomba de aceite",
@@ -1265,7 +1370,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-aceite-luv-d-max"
     },
     {
       "category": "Bomba de agua",
@@ -1277,7 +1383,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-agua-al-luv-d-max-3-5"
     },
     {
       "category": "Bomba de agua",
@@ -1288,7 +1395,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "BOMBA",
         "CARIBE"
-      ]
+      ],
+      "slug": "bomba-de-agua-caribe"
     },
     {
       "category": "Bomba de agua",
@@ -1300,7 +1408,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "BOMBA",
         "CARIBE"
-      ]
+      ],
+      "slug": "bomba-de-agua-caribe-2300"
     },
     {
       "category": "Bomba de agua",
@@ -1312,7 +1421,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "BOMBA",
         "CARIBE"
-      ]
+      ],
+      "slug": "bomba-de-agua-caribe-2600"
     },
     {
       "category": "Bomba de agua",
@@ -1324,7 +1434,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "IZUSU",
         "RODEO"
-      ]
+      ],
+      "slug": "bomba-de-agua-izusu-rodeo-3-2"
     },
     {
       "category": "Bomba de agua",
@@ -1336,7 +1447,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "IZUSU",
         "TROOPER"
-      ]
+      ],
+      "slug": "bomba-de-agua-izusu-trooper-3-2"
     },
     {
       "category": "Bomba de agua",
@@ -1347,7 +1459,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "BOMBA",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-agua-luv-2-2"
     },
     {
       "category": "Bomba de agua",
@@ -1359,7 +1472,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-agua-luv-d-max-2-4"
     },
     {
       "category": "Bomba de Freno",
@@ -1372,7 +1486,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "G-2000",
         "HUECOS"
-      ]
+      ],
+      "slug": "bomba-de-freno-4-huecos-caribe-g-2000"
     },
     {
       "category": "Bomba de Freno",
@@ -1383,7 +1498,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "FRENO"
-      ]
+      ],
+      "slug": "bomba-de-freno-caribe-2-3"
     },
     {
       "category": "Bomba de Freno",
@@ -1394,7 +1510,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "FRENO"
-      ]
+      ],
+      "slug": "bomba-de-freno-caribe-2-6"
     },
     {
       "category": "Bomba de Freno",
@@ -1408,7 +1525,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FRENO",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-freno-luv-d-max-2005-2009"
     },
     {
       "category": "Bomba de Freno",
@@ -1423,7 +1541,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FRENO",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-freno-luv-d-max-2010-2015-con-bastago"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1436,7 +1555,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV",
         "MODULO"
-      ]
+      ],
+      "slug": "bomba-de-gasolina-modulo-luv-d-max"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1447,7 +1567,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "GASOLINA"
-      ]
+      ],
+      "slug": "bomba-de-gasolina-caribe-2-3"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1458,7 +1579,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "GASOLINA"
-      ]
+      ],
+      "slug": "bomba-de-gasolina-caribe-2-6"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1471,7 +1593,8 @@ const PRODUCTS_DATA = {
         "EXTERNA",
         "GASOLINA",
         "UNIVERSAL"
-      ]
+      ],
+      "slug": "bomba-de-gasolina-electrica-universal-externa"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1483,7 +1606,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "GASOLINA"
-      ]
+      ],
+      "slug": "bomba-gasolina-caribe-2000"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1496,7 +1620,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV",
         "PILA"
-      ]
+      ],
+      "slug": "pila-bomba-de-gasolina-luv-d-max-3-5"
     },
     {
       "category": "Bomba Direccion",
@@ -1508,7 +1633,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DIRECCION",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-direccion-luv-d-max-3-5"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1521,7 +1647,8 @@ const PRODUCTS_DATA = {
         "BOMBIN",
         "CARIBE",
         "CLUTCH"
-      ]
+      ],
+      "slug": "bomba-de-clutch-caribe-2600"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1534,7 +1661,8 @@ const PRODUCTS_DATA = {
         "BOMBIN",
         "CLUTCH",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-clutch-luv-2300"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1547,7 +1675,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-clutch-luv-d-max-2-4-2-5-3-0"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1560,7 +1689,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "bomba-de-clutch-luv-d-max-3-5"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1573,7 +1703,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "bombin-clutch-luv-d-max-3-5"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1585,7 +1716,8 @@ const PRODUCTS_DATA = {
         "BOMBIN",
         "CLUTCH",
         "TROOPER"
-      ]
+      ],
+      "slug": "bombin-clutch-trooper-3-2"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1598,7 +1730,8 @@ const PRODUCTS_DATA = {
         "BOMBIN",
         "CARIBE",
         "CLUTCH"
-      ]
+      ],
+      "slug": "bombin-de-clutch-caribe-2600"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1610,7 +1743,8 @@ const PRODUCTS_DATA = {
         "BOMBIN",
         "CLUTCH",
         "LUV"
-      ]
+      ],
+      "slug": "bombin-de-clutch-luv-2-2"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1623,7 +1757,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "bombin-luv-d-max-2-4"
     },
     {
       "category": "Brazo de Biela",
@@ -1634,7 +1769,8 @@ const PRODUCTS_DATA = {
         "BIELA",
         "BRAZO",
         "LUV"
-      ]
+      ],
+      "slug": "brazo-de-biela-luv-2-2"
     },
     {
       "category": "Brazo de Biela",
@@ -1646,7 +1782,8 @@ const PRODUCTS_DATA = {
         "BRAZO",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "brazo-de-biela-luv-d-max-2-4"
     },
     {
       "category": "Brazo de Biela",
@@ -1658,7 +1795,8 @@ const PRODUCTS_DATA = {
         "BRAZO",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "brazo-de-biela-luv-d-max-3-5"
     },
     {
       "category": "Buje Araña",
@@ -1669,7 +1807,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "CARIBE"
-      ]
+      ],
+      "slug": "buje-de-arana-caribe-2-3"
     },
     {
       "category": "Buje Araña",
@@ -1680,7 +1819,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "CARIBE"
-      ]
+      ],
+      "slug": "buje-de-arana-caribe-2-6"
     },
     {
       "category": "Buje Araña",
@@ -1692,7 +1832,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "G-200"
-      ]
+      ],
+      "slug": "buje-de-arana-caribe-g-200"
     },
     {
       "category": "Buje Araña",
@@ -1703,7 +1844,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "LUV"
-      ]
+      ],
+      "slug": "buje-de-arana-luv"
     },
     {
       "category": "Buje Araña",
@@ -1715,7 +1857,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "buje-de-arana-luv-d-max-2-4"
     },
     {
       "category": "Buje Araña",
@@ -1727,7 +1870,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "buje-de-arana-luv-d-max-3-5"
     },
     {
       "category": "Buje Araña",
@@ -1738,7 +1882,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "RODEO"
-      ]
+      ],
+      "slug": "buje-de-arana-rodeo"
     },
     {
       "category": "Buje Araña",
@@ -1749,7 +1894,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "TROOPER"
-      ]
+      ],
+      "slug": "buje-de-arana-trooper-3-2"
     },
     {
       "category": "Buje Ballesta",
@@ -1761,7 +1907,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "DELANTERO"
-      ]
+      ],
+      "slug": "buje-ballesta-delantero-caribe-2-3"
     },
     {
       "category": "Buje Ballesta",
@@ -1774,7 +1921,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "G-2000"
-      ]
+      ],
+      "slug": "buje-ballesta-delantero-caribe-g-2000"
     },
     {
       "category": "Buje Ballesta",
@@ -1786,7 +1934,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "TRASERO"
-      ]
+      ],
+      "slug": "buje-ballesta-trasero-caribe"
     },
     {
       "category": "Buje Ballesta",
@@ -1798,7 +1947,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "LUV",
         "TRASERO"
-      ]
+      ],
+      "slug": "buje-ballesta-trasero-luv"
     },
     {
       "category": "Buje Ballesta",
@@ -1811,7 +1961,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "TRASERO"
-      ]
+      ],
+      "slug": "buje-ballesta-trasero-luv-dmax"
     },
     {
       "category": "Buje Ballesta",
@@ -1823,7 +1974,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "RODEO",
         "TRASERO"
-      ]
+      ],
+      "slug": "buje-ballesta-trasero-rodeo"
     },
     {
       "category": "Buje Ballesta",
@@ -1835,7 +1987,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "TRASERO",
         "TROOPER"
-      ]
+      ],
+      "slug": "buje-ballesta-trasero-trooper"
     },
     {
       "category": "Buje Ballesta",
@@ -1847,7 +2000,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "DELANTERO"
-      ]
+      ],
+      "slug": "buje-de-ballesta-delantero-caribe-2-6"
     },
     {
       "category": "Buje Ballesta",
@@ -1859,7 +2013,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "DELANTERO",
         "LUV"
-      ]
+      ],
+      "slug": "buje-de-ballesta-delantero-luv"
     },
     {
       "category": "Buje Ballesta",
@@ -1872,7 +2027,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERO",
         "LUV"
-      ]
+      ],
+      "slug": "buje-de-ballesta-delantero-luv-d-max"
     },
     {
       "category": "Buje Ballesta",
@@ -1884,7 +2040,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "DELANTERO",
         "RODEO"
-      ]
+      ],
+      "slug": "buje-de-ballesta-delantero-rodeo"
     },
     {
       "category": "Buje Ballesta",
@@ -1896,7 +2053,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "DELANTERO",
         "TROOPER"
-      ]
+      ],
+      "slug": "buje-de-ballesta-delantero-trooper"
     },
     {
       "category": "Buje Cajetin Direccion",
@@ -1909,7 +2067,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DIRECCION",
         "LUV"
-      ]
+      ],
+      "slug": "buje-cajetin-direccion-luv-d-max"
     },
     {
       "category": "Buje Eje Delantero",
@@ -1922,7 +2081,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "EJE",
         "LUV"
-      ]
+      ],
+      "slug": "buje-de-eje-delantero-luv-d-max-3-5"
     },
     {
       "category": "Buje Meseta",
@@ -1933,7 +2093,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "MESETA"
-      ]
+      ],
+      "slug": "buje-meseta-caribe-2-3"
     },
     {
       "category": "Buje Meseta",
@@ -1945,7 +2106,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G-200",
         "MESETA"
-      ]
+      ],
+      "slug": "buje-meseta-caribe-g-200"
     },
     {
       "category": "Buje Meseta",
@@ -1957,7 +2119,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EXTERNO",
         "MESETA"
-      ]
+      ],
+      "slug": "buje-meseta-externo-caribe-2-6"
     },
     {
       "category": "Buje Meseta",
@@ -1970,7 +2133,8 @@ const PRODUCTS_DATA = {
         "EXTERNO",
         "LUV",
         "MESETA"
-      ]
+      ],
+      "slug": "buje-meseta-externo-luv-4x4"
     },
     {
       "category": "Buje Meseta",
@@ -1983,7 +2147,8 @@ const PRODUCTS_DATA = {
         "EXTERNO",
         "LUV",
         "MESETA"
-      ]
+      ],
+      "slug": "buje-meseta-externo-luv-d-max-3-5"
     },
     {
       "category": "Buje Meseta",
@@ -1995,7 +2160,8 @@ const PRODUCTS_DATA = {
         "EXTERNO",
         "MESETA",
         "RODEO"
-      ]
+      ],
+      "slug": "buje-meseta-externo-rodeo"
     },
     {
       "category": "Buje Meseta",
@@ -2007,7 +2173,8 @@ const PRODUCTS_DATA = {
         "EXTERNO",
         "MESETA",
         "TROOPER"
-      ]
+      ],
+      "slug": "buje-meseta-externo-trooper-3-2"
     },
     {
       "category": "Buje Meseta",
@@ -2019,7 +2186,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "INTERNO",
         "MESETA"
-      ]
+      ],
+      "slug": "buje-meseta-interno-caribe-2-6"
     },
     {
       "category": "Buje Meseta",
@@ -2032,7 +2200,8 @@ const PRODUCTS_DATA = {
         "INTERNO",
         "LUV",
         "MESETA"
-      ]
+      ],
+      "slug": "buje-meseta-interno-luv-4x4"
     },
     {
       "category": "Buje Meseta",
@@ -2045,7 +2214,8 @@ const PRODUCTS_DATA = {
         "INTERNO",
         "LUV",
         "MESETA"
-      ]
+      ],
+      "slug": "buje-meseta-interno-luv-d-max-3-5"
     },
     {
       "category": "Buje Meseta",
@@ -2057,7 +2227,8 @@ const PRODUCTS_DATA = {
         "INTERNO",
         "MESETA",
         "RODEO"
-      ]
+      ],
+      "slug": "buje-meseta-interno-rodeo"
     },
     {
       "category": "Buje Meseta",
@@ -2069,7 +2240,8 @@ const PRODUCTS_DATA = {
         "INTERNO",
         "MESETA",
         "TROOPER"
-      ]
+      ],
+      "slug": "buje-meseta-interno-trooper-3-2"
     },
     {
       "category": "Buje Meseta",
@@ -2081,7 +2253,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "LUV",
         "MESETA"
-      ]
+      ],
+      "slug": "buje-meseta-luv-4x2"
     },
     {
       "category": "Buje Meseta",
@@ -2093,7 +2266,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "MESETA"
-      ]
+      ],
+      "slug": "buje-meseta-luv-d-max-2-4"
     },
     {
       "category": "Bujia",
@@ -2104,7 +2278,8 @@ const PRODUCTS_DATA = {
         "BUJIA",
         "CARIBE",
         "CHAMPION"
-      ]
+      ],
+      "slug": "bujia-champion-caribe"
     },
     {
       "category": "Bujia",
@@ -2116,7 +2291,8 @@ const PRODUCTS_DATA = {
         "BUJIA",
         "CHAMPION",
         "LUV"
-      ]
+      ],
+      "slug": "bujia-champion-luv-2300"
     },
     {
       "category": "Bujia",
@@ -2130,7 +2306,8 @@ const PRODUCTS_DATA = {
         "IRIDIO",
         "LUV",
         "PUNTA"
-      ]
+      ],
+      "slug": "bujia-denso-punta-iridio-luv-d-max"
     },
     {
       "category": "Bujia",
@@ -2144,7 +2321,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PLATINO",
         "PUNTA"
-      ]
+      ],
+      "slug": "bujia-denso-punta-platino-luv-d-max"
     },
     {
       "category": "Bujia",
@@ -2155,7 +2333,8 @@ const PRODUCTS_DATA = {
         "BUJIA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "bujia-luv-d-max-3-5"
     },
     {
       "category": "Bujia",
@@ -2166,7 +2345,8 @@ const PRODUCTS_DATA = {
         "BUJIA",
         "CARIBE",
         "DENSO"
-      ]
+      ],
+      "slug": "bujia-denso-caribe"
     },
     {
       "category": "Cables de Bujia",
@@ -2180,7 +2360,8 @@ const PRODUCTS_DATA = {
         "CABLES",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-de-cable-luv-2300"
     },
     {
       "category": "Cables de Bujia",
@@ -2192,7 +2373,8 @@ const PRODUCTS_DATA = {
         "CABLES",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-de-cables-bujia-luv-2-2"
     },
     {
       "category": "Cables de Bujia",
@@ -2205,7 +2387,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-de-cables-bujia-luv-d-max-2-4"
     },
     {
       "category": "Cables de Bujia",
@@ -2217,7 +2400,8 @@ const PRODUCTS_DATA = {
         "CABLES",
         "CARIBE",
         "JUEGO"
-      ]
+      ],
+      "slug": "juego-de-cables-caribe"
     },
     {
       "category": "Cadena Tiempo",
@@ -2229,7 +2413,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G-200",
         "TIEMPO"
-      ]
+      ],
+      "slug": "cadena-de-tiempo-caribe-g-200"
     },
     {
       "category": "Cadena Trasnfer",
@@ -2242,7 +2427,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRANSFER",
         "TRASNFER"
-      ]
+      ],
+      "slug": "cadena-transfer-luv-d-max-3-0-3-5"
     },
     {
       "category": "Cajetin de Direccion",
@@ -2256,7 +2442,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DIRECCION",
         "LUV"
-      ]
+      ],
+      "slug": "cajetin-direccion-luv-d-max-2005-2009"
     },
     {
       "category": "Cajetin de Direccion",
@@ -2270,7 +2457,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DIRECCION",
         "LUV"
-      ]
+      ],
+      "slug": "cajetin-direccion-luv-d-max-2010-2015"
     },
     {
       "category": "Camara",
@@ -2280,7 +2468,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "CAMARA",
         "CARIBE"
-      ]
+      ],
+      "slug": "camara-caribe-2-3"
     },
     {
       "category": "Carbonera Arranque",
@@ -2291,7 +2480,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "CARBONERA",
         "CARIBE"
-      ]
+      ],
+      "slug": "carbonera-caribe"
     },
     {
       "category": "Carbones de Arranque",
@@ -2304,7 +2494,8 @@ const PRODUCTS_DATA = {
         "CARBON",
         "CARBONES",
         "CARIBE"
-      ]
+      ],
+      "slug": "carbon-de-arranque-caribe-2300"
     },
     {
       "category": "Carburador",
@@ -2315,7 +2506,8 @@ const PRODUCTS_DATA = {
         "CARBURADOR",
         "CARIBE",
         "LUV"
-      ]
+      ],
+      "slug": "carburador-caribe-2-3-luv-2-3"
     },
     {
       "category": "Cigueñal",
@@ -2325,7 +2517,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "CARIBE",
         "CIGUENAL"
-      ]
+      ],
+      "slug": "ciguenal-caribe-2-3"
     },
     {
       "category": "Cigueñal",
@@ -2335,7 +2528,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "CIGUENAL",
         "LUV"
-      ]
+      ],
+      "slug": "ciguenal-luv-2-3"
     },
     {
       "category": "Cigueñal",
@@ -2346,7 +2540,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "ciguenal-luv-d-max-2-4"
     },
     {
       "category": "Cilindro de Freno",
@@ -2358,7 +2553,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CILINDRO",
         "FRENO"
-      ]
+      ],
+      "slug": "cilindro-freno-caribe-2300"
     },
     {
       "category": "Cilindro de Freno",
@@ -2370,7 +2566,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FRENO",
         "LUV"
-      ]
+      ],
+      "slug": "cilindro-freno-luv-d-max-2-4"
     },
     {
       "category": "Cilindro de Freno",
@@ -2382,7 +2579,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FRENO",
         "LUV"
-      ]
+      ],
+      "slug": "cilindro-freno-luv-d-max-3-5"
     },
     {
       "category": "Cocuyo",
@@ -2394,7 +2592,8 @@ const PRODUCTS_DATA = {
         "COCUYO",
         "CUADRADO",
         "FARO"
-      ]
+      ],
+      "slug": "cocuyo-caribe-faro-cuadrado"
     },
     {
       "category": "Cocuyo",
@@ -2407,7 +2606,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "FARO",
         "LUV"
-      ]
+      ],
+      "slug": "cocuyo-faro-delantero-luv-97-02"
     },
     {
       "category": "Collarin",
@@ -2418,7 +2618,8 @@ const PRODUCTS_DATA = {
         "2000",
         "CARIBE",
         "COLLARIN"
-      ]
+      ],
+      "slug": "collarin-caribe-2000"
     },
     {
       "category": "Collarin",
@@ -2429,7 +2630,8 @@ const PRODUCTS_DATA = {
         "2300",
         "CARIBE",
         "COLLARIN"
-      ]
+      ],
+      "slug": "collarin-caribe-2300"
     },
     {
       "category": "Collarin",
@@ -2440,7 +2642,8 @@ const PRODUCTS_DATA = {
         "2600",
         "CARIBE",
         "COLLARIN"
-      ]
+      ],
+      "slug": "collarin-caribe-2600"
     },
     {
       "category": "Collarin",
@@ -2450,7 +2653,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "COLLARIN",
         "LUV"
-      ]
+      ],
+      "slug": "collarin-luv-2-2"
     },
     {
       "category": "Collarin",
@@ -2461,7 +2665,8 @@ const PRODUCTS_DATA = {
         "COLLARIN",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "collarin-luv-d-max-2-4"
     },
     {
       "category": "Collarin",
@@ -2472,7 +2677,8 @@ const PRODUCTS_DATA = {
         "COLLARIN",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "collarin-luv-d-max-3-5"
     },
     {
       "category": "Collarin",
@@ -2482,7 +2688,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "COLLARIN",
         "TROOPER"
-      ]
+      ],
+      "slug": "collarin-trooper-3-2"
     },
     {
       "category": "Collarin",
@@ -2494,7 +2701,8 @@ const PRODUCTS_DATA = {
         "COLLARIN",
         "LUV",
         "ROLINERA"
-      ]
+      ],
+      "slug": "rolinera-collarin-luv-2300"
     },
     {
       "category": "Concha de Bancada",
@@ -2507,7 +2715,8 @@ const PRODUCTS_DATA = {
         "CONCHA",
         "G-2000",
         "JUEGO"
-      ]
+      ],
+      "slug": "juego-concha-bancada-caribe-g-2000"
     },
     {
       "category": "Concha de Bancada",
@@ -2519,7 +2728,8 @@ const PRODUCTS_DATA = {
         "CONCHA",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-concha-bancada-luv-2-2"
     },
     {
       "category": "Concha de Bancada",
@@ -2532,7 +2742,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-concha-bancada-luv-d-max-2-4"
     },
     {
       "category": "Concha de Bancada",
@@ -2545,7 +2756,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-concha-bancada-luv-d-max-3-5"
     },
     {
       "category": "Concha de Bancada",
@@ -2560,7 +2772,8 @@ const PRODUCTS_DATA = {
         "CONCHA",
         "CONCHAS",
         "JUEGO"
-      ]
+      ],
+      "slug": "juego-de-conchas-bancada-caribe-2300-2600"
     },
     {
       "category": "Concha de Biela",
@@ -2571,7 +2784,8 @@ const PRODUCTS_DATA = {
         "BIELA",
         "CARIBE",
         "CONCHA"
-      ]
+      ],
+      "slug": "concha-biela-caribe"
     },
     {
       "category": "Concha de Biela",
@@ -2583,7 +2797,8 @@ const PRODUCTS_DATA = {
         "CONCHA",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-concha-biela-luv-2-2"
     },
     {
       "category": "Concha de Biela",
@@ -2596,7 +2811,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-concha-biela-luv-d-max-2-4"
     },
     {
       "category": "Concha de Biela",
@@ -2609,7 +2825,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-concha-biela-luv-d-max-3-5"
     },
     {
       "category": "Condensador",
@@ -2620,7 +2837,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CONDENSADOR",
         "G-200"
-      ]
+      ],
+      "slug": "condensador-caribe-g-200"
     },
     {
       "category": "Conector de Bobina",
@@ -2632,7 +2850,8 @@ const PRODUCTS_DATA = {
         "CONECTOR",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "conector-de-bobina-luv-d-max-3-5"
     },
     {
       "category": "Conmutador Encendido",
@@ -2643,7 +2862,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CONMUTADOR",
         "ENCENDIDO"
-      ]
+      ],
+      "slug": "conmutador-encendido-caribe"
     },
     {
       "category": "Conmutador Encendido",
@@ -2655,7 +2875,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ENCENDIDO",
         "LUV"
-      ]
+      ],
+      "slug": "conmutador-encendido-luv-d-max-3-5"
     },
     {
       "category": "Consola Central",
@@ -2668,7 +2889,8 @@ const PRODUCTS_DATA = {
         "CONSOLA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "consola-central-luv-d-max-2005-2009"
     },
     {
       "category": "Control Aire Acondicionado",
@@ -2683,7 +2905,8 @@ const PRODUCTS_DATA = {
         "CONTROL",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "control-aire-acondicionado-luv-d-max-2005-2009"
     },
     {
       "category": "Copa Arranque",
@@ -2695,7 +2918,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "CARIBE",
         "COPA"
-      ]
+      ],
+      "slug": "copa-arranque-caribe-2300"
     },
     {
       "category": "Copa Arranque",
@@ -2707,7 +2931,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "CARIBE",
         "COPA"
-      ]
+      ],
+      "slug": "copa-arranque-caribe-2600"
     },
     {
       "category": "Correa de Tiempo",
@@ -2719,7 +2944,8 @@ const PRODUCTS_DATA = {
         "CORREA",
         "LUV",
         "TIEMPO"
-      ]
+      ],
+      "slug": "correa-de-tiempo-caribe-2-3-luv-2-3"
     },
     {
       "category": "Correa de Tiempo",
@@ -2730,7 +2956,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CORREA",
         "TIEMPO"
-      ]
+      ],
+      "slug": "correa-de-tiempo-caribe-2-6"
     },
     {
       "category": "Correa de Tiempo",
@@ -2741,7 +2968,8 @@ const PRODUCTS_DATA = {
         "CORREA",
         "LUV",
         "TIEMPO"
-      ]
+      ],
+      "slug": "correa-de-tiempo-luv-2-2"
     },
     {
       "category": "Correa de Tiempo",
@@ -2753,7 +2981,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "TIEMPO"
-      ]
+      ],
+      "slug": "correa-de-tiempo-luv-d-max-2-4"
     },
     {
       "category": "Correa de Tiempo",
@@ -2765,7 +2994,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "TIEMPO"
-      ]
+      ],
+      "slug": "correa-de-tiempo-luv-d-max-3-5"
     },
     {
       "category": "Correa de Tiempo",
@@ -2777,7 +3007,8 @@ const PRODUCTS_DATA = {
         "SOHC",
         "TIEMPO",
         "TROOPER"
-      ]
+      ],
+      "slug": "correa-de-tiempo-trooper-3-2-sohc"
     },
     {
       "category": "Correa Unica",
@@ -2789,7 +3020,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "UNICA"
-      ]
+      ],
+      "slug": "correa-unica-luv-d-max-3-5"
     },
     {
       "category": "Cruceta",
@@ -2800,7 +3032,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CRUCETA",
         "GRANDE"
-      ]
+      ],
+      "slug": "cruceta-caribe-grande"
     },
     {
       "category": "Cruceta",
@@ -2811,7 +3044,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CRUCETA",
         "PEQUENA"
-      ]
+      ],
+      "slug": "cruceta-caribe-pequena"
     },
     {
       "category": "Cruceta",
@@ -2822,7 +3056,8 @@ const PRODUCTS_DATA = {
         "CRUCETA",
         "D-MAX",
         "LUV"
-      ]
+      ],
+      "slug": "cruceta-luv-d-max-3-5"
     },
     {
       "category": "Cruceta",
@@ -2833,7 +3068,8 @@ const PRODUCTS_DATA = {
         "369",
         "CRUCETA",
         "UNIVERSAL"
-      ]
+      ],
+      "slug": "cruceta-universal-369"
     },
     {
       "category": "Damper",
@@ -2843,7 +3079,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "CARIBE",
         "DAMPER"
-      ]
+      ],
+      "slug": "damper-caribe-2-3"
     },
     {
       "category": "Damper",
@@ -2853,7 +3090,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "DAMPER",
         "LUV"
-      ]
+      ],
+      "slug": "damper-luv-2-3"
     },
     {
       "category": "Damper",
@@ -2864,7 +3102,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DAMPER",
         "LUV"
-      ]
+      ],
+      "slug": "damper-luv-d-max-2-5"
     },
     {
       "category": "Damper",
@@ -2875,7 +3114,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DAMPER",
         "LUV"
-      ]
+      ],
+      "slug": "damper-luv-d-max-3-0"
     },
     {
       "category": "Disco de Clutch",
@@ -2886,7 +3126,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "DISCO"
-      ]
+      ],
+      "slug": "disco-clutch-caribe-2-3"
     },
     {
       "category": "Disco de Clutch",
@@ -2897,7 +3138,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "DISCO"
-      ]
+      ],
+      "slug": "disco-clutch-caribe-2-6"
     },
     {
       "category": "Disco de Clutch",
@@ -2909,7 +3151,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "DISCO",
         "G-200"
-      ]
+      ],
+      "slug": "disco-clutch-caribe-g-200"
     },
     {
       "category": "Disco de Clutch",
@@ -2920,7 +3163,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "DISCO",
         "LUV"
-      ]
+      ],
+      "slug": "disco-clutch-luv-2-2"
     },
     {
       "category": "Disco de Clutch",
@@ -2931,7 +3175,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "DISCO",
         "LUV"
-      ]
+      ],
+      "slug": "disco-clutch-luv-2-3"
     },
     {
       "category": "Disco de Clutch",
@@ -2943,7 +3188,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DISCO",
         "LUV"
-      ]
+      ],
+      "slug": "disco-clutch-luv-d-max-3-5"
     },
     {
       "category": "Disco de Clutch",
@@ -2954,7 +3200,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "DISCO",
         "RODEO"
-      ]
+      ],
+      "slug": "disco-clutch-rodeo-3-2"
     },
     {
       "category": "Disco de Clutch",
@@ -2965,7 +3212,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "DISCO",
         "TROOPER"
-      ]
+      ],
+      "slug": "disco-clutch-trooper-3-2"
     },
     {
       "category": "Disco de Freno",
@@ -2977,7 +3225,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "FRENO",
         "LUV"
-      ]
+      ],
+      "slug": "disco-de-freno-luv-d-max-2-4"
     },
     {
       "category": "Disco de Freno",
@@ -2989,7 +3238,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "FRENO",
         "LUV"
-      ]
+      ],
+      "slug": "disco-de-freno-luv-d-max-2-5"
     },
     {
       "category": "Disco de Freno",
@@ -3002,7 +3252,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "FRENO",
         "LUV"
-      ]
+      ],
+      "slug": "disco-de-freno-luv-d-max-3-0-4x2"
     },
     {
       "category": "Disco de Freno",
@@ -3015,7 +3266,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "FRENO",
         "LUV"
-      ]
+      ],
+      "slug": "disco-de-freno-luv-d-max-3-0-4x4"
     },
     {
       "category": "Disco de Freno",
@@ -3027,7 +3279,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "FRENO",
         "LUV"
-      ]
+      ],
+      "slug": "disco-de-freno-luv-d-max-3-5"
     },
     {
       "category": "Distribuidor",
@@ -3038,7 +3291,8 @@ const PRODUCTS_DATA = {
         "2000",
         "CARIBE",
         "DISTRIBUIDOR"
-      ]
+      ],
+      "slug": "distribuidor-caribe-2000"
     },
     {
       "category": "Distribuidor",
@@ -3049,7 +3303,8 @@ const PRODUCTS_DATA = {
         "2300",
         "DISTRIBUIDOR",
         "LUV"
-      ]
+      ],
+      "slug": "distribuidor-luv-2300"
     },
     {
       "category": "Embolo",
@@ -3060,7 +3315,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "CARIBE",
         "EMBOLO"
-      ]
+      ],
+      "slug": "embolo-arranque-caribe-2-3"
     },
     {
       "category": "Embolo",
@@ -3071,7 +3327,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "EMBOLO",
         "LUV"
-      ]
+      ],
+      "slug": "embolo-arranque-luv-2-3"
     },
     {
       "category": "Empacadura Bajante",
@@ -3083,7 +3340,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CONICA",
         "EMPACADURA"
-      ]
+      ],
+      "slug": "empacadura-bajante-conica-caribe"
     },
     {
       "category": "Empacadura Bajante",
@@ -3095,7 +3353,8 @@ const PRODUCTS_DATA = {
         "CONICA",
         "EMPACADURA",
         "LUV"
-      ]
+      ],
+      "slug": "empacadura-bajante-conica-luv"
     },
     {
       "category": "Empacadura Bajante",
@@ -3107,7 +3366,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA",
         "PLANA"
-      ]
+      ],
+      "slug": "empacadura-bajante-plana-caribe"
     },
     {
       "category": "Empacadura Bajante",
@@ -3119,7 +3379,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV",
         "PLANA"
-      ]
+      ],
+      "slug": "empacadura-bajante-plana-luv"
     },
     {
       "category": "Empacadura Camara",
@@ -3131,7 +3392,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "RODEO",
         "SOCH"
-      ]
+      ],
+      "slug": "empacadura-camara-rodeo-3-2-soch"
     },
     {
       "category": "Empacadura Camara",
@@ -3143,7 +3405,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "SOHC",
         "TROOPER"
-      ]
+      ],
+      "slug": "empacadura-camara-trooper-3-2-sohc"
     },
     {
       "category": "Empacadura Camara",
@@ -3154,7 +3417,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "CARIBE",
         "EMPACADURA"
-      ]
+      ],
+      "slug": "empacadura-de-camara-caribe-2-3"
     },
     {
       "category": "Empacadura Camara",
@@ -3165,7 +3429,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "CARIBE",
         "EMPACADURA"
-      ]
+      ],
+      "slug": "empacadura-de-camara-caribe-2-3-2"
     },
     {
       "category": "Empacadura Camara",
@@ -3176,7 +3441,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "CARIBE",
         "EMPACADURA"
-      ]
+      ],
+      "slug": "empacadura-de-camara-caribe-2-6"
     },
     {
       "category": "Empacadura Camara",
@@ -3188,7 +3454,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA",
         "G-200"
-      ]
+      ],
+      "slug": "empacadura-de-camara-caribe-g-200"
     },
     {
       "category": "Empacadura Camara",
@@ -3201,7 +3468,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "EMPACADURA",
         "LUV"
-      ]
+      ],
+      "slug": "empacadura-de-camara-de-amianto-luv-d-max-3-5"
     },
     {
       "category": "Empacadura Camara",
@@ -3212,7 +3480,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "EMPACADURA",
         "LUV"
-      ]
+      ],
+      "slug": "empacadura-de-camara-luv-2-2"
     },
     {
       "category": "Empacadura Camara",
@@ -3224,7 +3493,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "EMPACADURA",
         "LUV"
-      ]
+      ],
+      "slug": "empacadura-de-camara-luv-d-max-2-4"
     },
     {
       "category": "Empacadura Camara",
@@ -3237,7 +3507,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV",
         "METALICA"
-      ]
+      ],
+      "slug": "empacadura-de-camara-metalica-luv-d-max-3-5"
     },
     {
       "category": "Empacadura Camarin",
@@ -3249,7 +3520,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "EMPACADURA",
         "LUV"
-      ]
+      ],
+      "slug": "empacadura-camarin-luv-d-max-3-5"
     },
     {
       "category": "Empacadura Camarin",
@@ -3261,7 +3533,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "RODEO",
         "SOCH"
-      ]
+      ],
+      "slug": "empacadura-camarin-rodeo-3-2-soch"
     },
     {
       "category": "Empacadura Camarin",
@@ -3273,7 +3546,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "SOHC",
         "TROOPER"
-      ]
+      ],
+      "slug": "empacadura-camarin-trooper-3-2-sohc"
     },
     {
       "category": "Empacadura Carter",
@@ -3285,7 +3559,8 @@ const PRODUCTS_DATA = {
         "CARTER",
         "EMPACADURA",
         "LUV"
-      ]
+      ],
+      "slug": "empacadura-carter-luv-2-3-4x2"
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -3297,7 +3572,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA",
         "MULTIPLE"
-      ]
+      ],
+      "slug": "empacadura-multiple-admision-caribe-2-3"
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -3309,7 +3585,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA",
         "MULTIPLE"
-      ]
+      ],
+      "slug": "empacadura-multiple-admision-caribe-2-6"
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -3321,7 +3598,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV",
         "MULTIPLE"
-      ]
+      ],
+      "slug": "empacadura-multiple-admision-luv-2-3"
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -3334,7 +3612,8 @@ const PRODUCTS_DATA = {
         "MULTIPLE",
         "RODEO",
         "SOCH"
-      ]
+      ],
+      "slug": "empacadura-multiple-de-admision-rodeo-3-2-soch"
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -3347,7 +3626,8 @@ const PRODUCTS_DATA = {
         "MULTIPLE",
         "SOHC",
         "TROOPER"
-      ]
+      ],
+      "slug": "empacadura-multiple-de-admision-trooper-3-2-sohc"
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -3359,7 +3639,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "ESCAPE",
         "MULTIPLE"
-      ]
+      ],
+      "slug": "empacadura-multiple-de-escape-caribe-2-3"
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -3371,7 +3652,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "ESCAPE",
         "MULTIPLE"
-      ]
+      ],
+      "slug": "empacadura-multiple-de-escape-caribe-2-6"
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -3383,7 +3665,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "LUV",
         "MULTIPLE"
-      ]
+      ],
+      "slug": "empacadura-multiple-de-escape-luv-2-3"
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -3396,7 +3679,8 @@ const PRODUCTS_DATA = {
         "MULTIPLE",
         "RODEO",
         "SOCH"
-      ]
+      ],
+      "slug": "empacadura-multiple-de-escape-rodeo-3-2-soch"
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -3409,7 +3693,8 @@ const PRODUCTS_DATA = {
         "MULTIPLE",
         "SOHC",
         "TROOPER"
-      ]
+      ],
+      "slug": "empacadura-multiple-de-escape-trooper-3-2-sohc"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -3423,7 +3708,8 @@ const PRODUCTS_DATA = {
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
-      ]
+      ],
+      "slug": "empacadura-tapa-valvula-caribe-2300"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -3437,7 +3723,8 @@ const PRODUCTS_DATA = {
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
-      ]
+      ],
+      "slug": "empacadura-tapa-valvula-caribe-2600"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -3450,7 +3737,8 @@ const PRODUCTS_DATA = {
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
-      ]
+      ],
+      "slug": "empacadura-tapa-valvula-luv-2-2"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -3463,7 +3751,8 @@ const PRODUCTS_DATA = {
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
-      ]
+      ],
+      "slug": "empacadura-tapa-valvula-luv-2-3"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -3477,7 +3766,8 @@ const PRODUCTS_DATA = {
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
-      ]
+      ],
+      "slug": "empacadura-tapa-valvula-luv-d-max-2-4"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -3491,7 +3781,8 @@ const PRODUCTS_DATA = {
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
-      ]
+      ],
+      "slug": "empacadura-tapa-valvula-luv-d-max-3-5"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -3505,7 +3796,8 @@ const PRODUCTS_DATA = {
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
-      ]
+      ],
+      "slug": "empacadura-tapa-valvula-rodeo-3-2-soch"
     },
     {
       "category": "Engranaje Bomba Aceite",
@@ -3517,7 +3809,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "ENGRANAJE"
-      ]
+      ],
+      "slug": "engranaje-bomba-aceite-caribe-2-3"
     },
     {
       "category": "Engranaje Bomba Aceite",
@@ -3529,7 +3822,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "ENGRANAJE",
         "LUV"
-      ]
+      ],
+      "slug": "engranaje-bomba-aceite-luv-2-3"
     },
     {
       "category": "Engranaje Cigueñal",
@@ -3541,7 +3835,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CIGUENAL",
         "ENGRANAJE"
-      ]
+      ],
+      "slug": "engranaje-de-ciguenal-caribe-2000"
     },
     {
       "category": "Engranaje Cigueñal",
@@ -3553,7 +3848,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CIGUENAL",
         "ENGRANAJE"
-      ]
+      ],
+      "slug": "engranaje-de-ciguenal-caribe-2300"
     },
     {
       "category": "Engranaje Cigueñal",
@@ -3564,7 +3860,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ENGRANAJE",
         "LUV"
-      ]
+      ],
+      "slug": "engranaje-de-ciguenal-luv-2-3"
     },
     {
       "category": "Engranaje Leva",
@@ -3576,7 +3873,8 @@ const PRODUCTS_DATA = {
         "ENGRANAJE",
         "G-2000",
         "LEVA"
-      ]
+      ],
+      "slug": "engranaje-de-leva-caribe-g-2000"
     },
     {
       "category": "Envase Direccion",
@@ -3590,7 +3888,8 @@ const PRODUCTS_DATA = {
         "ENVASE",
         "LUV",
         "RESERVORIO"
-      ]
+      ],
+      "slug": "reservorio-aceite-direccion-luv-d-max"
     },
     {
       "category": "Envase Refrigerante",
@@ -3602,7 +3901,8 @@ const PRODUCTS_DATA = {
         "ENVASE",
         "LUV",
         "REFRIGERANTE"
-      ]
+      ],
+      "slug": "envase-refrigerante-luv-d-max"
     },
     {
       "category": "Esparrago",
@@ -3615,7 +3915,8 @@ const PRODUCTS_DATA = {
         "ESPARRAGO",
         "LUV",
         "RUEDA"
-      ]
+      ],
+      "slug": "esparrago-rueda-delantera-luv-d-max"
     },
     {
       "category": "Esparrago",
@@ -3628,7 +3929,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "RUEDA",
         "TRASERA"
-      ]
+      ],
+      "slug": "esparrago-rueda-trasera-luv-d-max"
     },
     {
       "category": "Espejo",
@@ -3641,7 +3943,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ESPEJO",
         "LUV"
-      ]
+      ],
+      "slug": "espejo-luv-d-max-2005-2014"
     },
     {
       "category": "Espejo",
@@ -3654,7 +3957,8 @@ const PRODUCTS_DATA = {
         "DERECHO",
         "ESPEJO",
         "RETROVISOR"
-      ]
+      ],
+      "slug": "espejo-retrovisor-derecho-caribe-2300"
     },
     {
       "category": "Espejo",
@@ -3667,7 +3971,8 @@ const PRODUCTS_DATA = {
         "DERECHO",
         "ESPEJO",
         "RETROVISOR"
-      ]
+      ],
+      "slug": "espejo-retrovisor-derecho-caribe-2600"
     },
     {
       "category": "Espejo Luna",
@@ -3679,7 +3984,8 @@ const PRODUCTS_DATA = {
         "ESPEJO",
         "LUNA",
         "LUV"
-      ]
+      ],
+      "slug": "luna-espejo-luv-d-max"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -3691,7 +3997,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTOPERA",
         "LEVA"
-      ]
+      ],
+      "slug": "estopera-arbol-de-leva-caribe-2-3"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -3703,7 +4010,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTOPERA",
         "LEVA"
-      ]
+      ],
+      "slug": "estopera-arbol-de-leva-caribe-2-6"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -3715,7 +4023,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LEVA",
         "LUV"
-      ]
+      ],
+      "slug": "estopera-arbol-de-leva-luv-2-3"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -3728,7 +4037,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LEVA",
         "LUV"
-      ]
+      ],
+      "slug": "estopera-arbol-de-leva-luv-d-max-3-5"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -3740,7 +4050,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LEVA",
         "RODEO"
-      ]
+      ],
+      "slug": "estopera-arbol-de-leva-rodeo"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -3752,7 +4063,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LEVA",
         "TROOPER"
-      ]
+      ],
+      "slug": "estopera-arbol-de-leva-trooper"
     },
     {
       "category": "Estopera Bomba de Aceite",
@@ -3764,7 +4076,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "ESTOPERA"
-      ]
+      ],
+      "slug": "estopera-bomba-de-aceite-caribe"
     },
     {
       "category": "Estopera Bomba de Aceite",
@@ -3776,7 +4089,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "ESTOPERA",
         "LUV"
-      ]
+      ],
+      "slug": "estopera-bomba-de-aceite-luv-2-3"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -3790,7 +4104,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "ESTOPERA",
         "LUV"
-      ]
+      ],
+      "slug": "estopera-bomba-aceite-ciguenal-luv-2-2"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -3805,7 +4120,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "ESTOPERA",
         "LUV"
-      ]
+      ],
+      "slug": "estopera-bomba-aceite-ciguenal-luv-d-max-2-4"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -3817,7 +4133,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "DELANTERA",
         "ESTOPERA"
-      ]
+      ],
+      "slug": "estopera-ciguenal-delantera-caribe-2-3"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -3829,7 +4146,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "DELANTERA",
         "ESTOPERA"
-      ]
+      ],
+      "slug": "estopera-ciguenal-delantera-caribe-2-6"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -3842,7 +4160,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "DELANTERA",
         "ESTOPERA"
-      ]
+      ],
+      "slug": "estopera-ciguenal-delantera-caribe-2000"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -3854,7 +4173,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "ESTOPERA",
         "LUV"
-      ]
+      ],
+      "slug": "estopera-ciguenal-delantera-luv-2-3"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -3867,7 +4187,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "ESTOPERA",
         "LUV"
-      ]
+      ],
+      "slug": "estopera-ciguenal-delantera-luv-d-max-3-5"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -3879,7 +4200,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ESTOPERA",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-ciguenal-trasera-caribe-2-3"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -3891,7 +4213,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ESTOPERA",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-ciguenal-trasera-caribe-2-6"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -3904,7 +4227,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ESTOPERA",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-ciguenal-trasera-caribe-2000"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -3916,7 +4240,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-ciguenal-trasera-luv-2-2"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -3928,7 +4253,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-ciguenal-trasera-luv-2-3"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -3941,7 +4267,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-ciguenal-trasera-luv-d-max-3-5"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -3953,7 +4280,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "RODEO",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-ciguenal-trasera-rodeo"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -3965,7 +4293,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "TRASERA",
         "TROOPER"
-      ]
+      ],
+      "slug": "estopera-ciguenal-trasera-trooper"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -3977,7 +4306,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COLA",
         "ESTOPERA"
-      ]
+      ],
+      "slug": "estopera-cola-de-caja-caribe-2-3"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -3989,7 +4319,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COLA",
         "ESTOPERA"
-      ]
+      ],
+      "slug": "estopera-cola-de-caja-caribe-2-6"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -4001,7 +4332,8 @@ const PRODUCTS_DATA = {
         "COLA",
         "ESTOPERA",
         "LUV"
-      ]
+      ],
+      "slug": "estopera-cola-de-caja-luv-2-3"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -4013,7 +4345,8 @@ const PRODUCTS_DATA = {
         "COLA",
         "ESTOPERA",
         "LUV"
-      ]
+      ],
+      "slug": "estopera-cola-de-caja-luv-3-2"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -4026,7 +4359,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ESTOPERA",
         "LUV"
-      ]
+      ],
+      "slug": "estopera-cola-de-caja-luv-d-max-3-5"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -4038,7 +4372,8 @@ const PRODUCTS_DATA = {
         "COLA",
         "ESTOPERA",
         "RODEO"
-      ]
+      ],
+      "slug": "estopera-cola-de-caja-rodeo"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -4050,7 +4385,8 @@ const PRODUCTS_DATA = {
         "COLA",
         "ESTOPERA",
         "TROOPER"
-      ]
+      ],
+      "slug": "estopera-cola-de-caja-trooper"
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -4062,7 +4398,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTOPERA",
         "PINON"
-      ]
+      ],
+      "slug": "estopera-pinon-de-ataque-caribe-2-6"
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -4075,7 +4412,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "PINON"
-      ]
+      ],
+      "slug": "estopera-pinon-de-ataque-luv-d-max"
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -4088,7 +4426,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "PINON",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-pinon-de-ataque-trasera-caribe-2-0"
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -4101,7 +4440,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "PINON",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-pinon-de-ataque-trasera-caribe-2-3"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -4115,7 +4455,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "PUNTA",
         "RUEDA"
-      ]
+      ],
+      "slug": "estopera-rueda-punta-de-eje-delantera-caribe-2-3"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -4129,7 +4470,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "PUNTA",
         "RUEDA"
-      ]
+      ],
+      "slug": "estopera-rueda-punta-de-eje-delantera-caribe-2-6"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -4144,7 +4486,8 @@ const PRODUCTS_DATA = {
         "G200",
         "PUNTA",
         "RUEDA"
-      ]
+      ],
+      "slug": "estopera-rueda-punta-de-eje-delantera-caribe-g200"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -4158,7 +4501,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "RUEDA"
-      ]
+      ],
+      "slug": "estopera-rueda-punta-de-eje-delantera-luv-3-2"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -4173,7 +4517,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "RUEDA"
-      ]
+      ],
+      "slug": "estopera-rueda-punta-de-eje-delantera-luv-d-max-2-4"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -4188,7 +4533,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "RUEDA"
-      ]
+      ],
+      "slug": "estopera-rueda-punta-de-eje-delantera-luv-d-max-3-5"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -4203,7 +4549,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TRASERA",
         "TUNEL"
-      ]
+      ],
+      "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-0"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -4218,7 +4565,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TRASERA",
         "TUNEL"
-      ]
+      ],
+      "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-3"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -4233,7 +4581,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TRASERA",
         "TUNEL"
-      ]
+      ],
+      "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-6"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -4247,7 +4596,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-punta-de-eje-trasera-luv-d-max-2-4"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -4261,7 +4611,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-punta-de-eje-trasera-luv-d-max-3-0"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -4275,7 +4626,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-punta-de-eje-trasera-luv-d-max-3-5"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -4291,7 +4643,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-3-5"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -4307,7 +4660,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA",
         "TRASERA"
-      ]
+      ],
+      "slug": "estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-2-4"
     },
     {
       "category": "Estopera Yoke",
@@ -4319,7 +4673,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "TRANSFER",
         "YOKE"
-      ]
+      ],
+      "slug": "estopera-yoke-transfer-caribe-2-0"
     },
     {
       "category": "Estopera Yoke",
@@ -4331,7 +4686,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "TRANSFER",
         "YOKE"
-      ]
+      ],
+      "slug": "estopera-yoke-transfer-caribe-2-3"
     },
     {
       "category": "Fan Clutch",
@@ -4342,7 +4698,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "FAN"
-      ]
+      ],
+      "slug": "fan-clutch-caribe-2-3"
     },
     {
       "category": "Fan Clutch",
@@ -4353,7 +4710,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "FAN"
-      ]
+      ],
+      "slug": "fan-clutch-caribe-2-6"
     },
     {
       "category": "Fan Clutch",
@@ -4364,7 +4722,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FAN",
         "LUV"
-      ]
+      ],
+      "slug": "fan-clutch-luv-2-2"
     },
     {
       "category": "Fan Clutch",
@@ -4375,7 +4734,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FAN",
         "LUV"
-      ]
+      ],
+      "slug": "fan-clutch-luv-2-3"
     },
     {
       "category": "Fan Clutch",
@@ -4386,7 +4746,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FAN",
         "LUV"
-      ]
+      ],
+      "slug": "fan-clutch-luv-3-2"
     },
     {
       "category": "Fan Clutch",
@@ -4398,7 +4759,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FAN",
         "LUV"
-      ]
+      ],
+      "slug": "fan-clutch-luv-d-max-2-4"
     },
     {
       "category": "Fan Clutch",
@@ -4410,7 +4772,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FAN",
         "LUV"
-      ]
+      ],
+      "slug": "fan-clutch-luv-d-max-3-5"
     },
     {
       "category": "Fan Clutch",
@@ -4421,7 +4784,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FAN",
         "RODEO"
-      ]
+      ],
+      "slug": "fan-clutch-rodeo-3-2"
     },
     {
       "category": "Fan Clutch",
@@ -4432,7 +4796,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FAN",
         "TROOPER"
-      ]
+      ],
+      "slug": "fan-clutch-trooper-3-2"
     },
     {
       "category": "Faro Antineblina",
@@ -4448,7 +4813,8 @@ const PRODUCTS_DATA = {
         "FARO",
         "LUV",
         "PARACHOQUE"
-      ]
+      ],
+      "slug": "cocuyo-parachoque-delantero-luv-d-max-05-09"
     },
     {
       "category": "Faro Antineblina",
@@ -4462,7 +4828,8 @@ const PRODUCTS_DATA = {
         "FARO",
         "LUV",
         "NEBLINA"
-      ]
+      ],
+      "slug": "faro-neblina-luv-d-max-10-14"
     },
     {
       "category": "Faro Delantero",
@@ -4474,7 +4841,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "FARO",
         "LUV"
-      ]
+      ],
+      "slug": "faro-delantero-luv-93-96"
     },
     {
       "category": "Faro Delantero",
@@ -4487,7 +4855,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "FARO",
         "LUV"
-      ]
+      ],
+      "slug": "faro-delantero-luv-d-max-04-08"
     },
     {
       "category": "Faro Delantero",
@@ -4500,7 +4869,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "FARO",
         "LUV"
-      ]
+      ],
+      "slug": "faro-delantero-luv-d-max-10-14"
     },
     {
       "category": "Faro Delantero",
@@ -4513,7 +4883,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "FARO",
         "REDONDO"
-      ]
+      ],
+      "slug": "faro-redondo-caribe-2000"
     },
     {
       "category": "Faro Delantero",
@@ -4526,7 +4897,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "FARO",
         "REDONDO"
-      ]
+      ],
+      "slug": "faro-redondo-caribe-2300"
     },
     {
       "category": "Faro Placa",
@@ -4540,7 +4912,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PLACA",
         "TRASERA"
-      ]
+      ],
+      "slug": "luces-placa-trasera-luv-d-max"
     },
     {
       "category": "Filtro Aceite",
@@ -4551,7 +4924,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "CARIBE",
         "FILTRO"
-      ]
+      ],
+      "slug": "filtro-aceite-caribe-2-0"
     },
     {
       "category": "Filtro Aceite",
@@ -4562,7 +4936,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "CARIBE",
         "FILTRO"
-      ]
+      ],
+      "slug": "filtro-aceite-caribe-2-6"
     },
     {
       "category": "Filtro Aceite",
@@ -4573,7 +4948,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "FILTRO",
         "LUV"
-      ]
+      ],
+      "slug": "filtro-aceite-luv-2-3"
     },
     {
       "category": "Filtro Aceite",
@@ -4586,7 +4962,8 @@ const PRODUCTS_DATA = {
         "DIESEL",
         "FILTRO",
         "LUV"
-      ]
+      ],
+      "slug": "filtro-aceite-luv-d-max-3-0-diesel"
     },
     {
       "category": "Filtro Aceite",
@@ -4597,7 +4974,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "FILTRO",
         "RODEO"
-      ]
+      ],
+      "slug": "filtro-aceite-rodeo-3-2"
     },
     {
       "category": "Filtro Aceite",
@@ -4608,7 +4986,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "FILTRO",
         "TROOPER"
-      ]
+      ],
+      "slug": "filtro-aceite-trooper-3-2"
     },
     {
       "category": "Filtro Aire",
@@ -4619,7 +4998,8 @@ const PRODUCTS_DATA = {
         "AIRE",
         "FILTRO",
         "LUV"
-      ]
+      ],
+      "slug": "filtro-aire-luv-2-2"
     },
     {
       "category": "Filtro Aire",
@@ -4630,7 +5010,8 @@ const PRODUCTS_DATA = {
         "AIRE",
         "FILTRO",
         "LUV"
-      ]
+      ],
+      "slug": "filtro-aire-luv-3-2"
     },
     {
       "category": "Filtro Aire",
@@ -4642,7 +5023,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FILTRO",
         "LUV"
-      ]
+      ],
+      "slug": "filtro-aire-luv-d-max"
     },
     {
       "category": "Filtro Aire",
@@ -4653,7 +5035,8 @@ const PRODUCTS_DATA = {
         "AIRE",
         "FILTRO",
         "RODEO"
-      ]
+      ],
+      "slug": "filtro-aire-rodeo-3-2"
     },
     {
       "category": "Filtro Aire",
@@ -4664,7 +5047,8 @@ const PRODUCTS_DATA = {
         "AIRE",
         "FILTRO",
         "TROOPER"
-      ]
+      ],
+      "slug": "filtro-aire-trooper-3-2"
     },
     {
       "category": "Filtro Antipolen",
@@ -4676,7 +5060,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FILTRO",
         "LUV"
-      ]
+      ],
+      "slug": "filtro-antipolen-luv-d-max"
     },
     {
       "category": "Filtro Caja",
@@ -4689,7 +5074,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FILTRO",
         "LUV"
-      ]
+      ],
+      "slug": "filtro-caja-automatica-luv-d-max-3-5"
     },
     {
       "category": "Filtro Gasolina",
@@ -4701,7 +5087,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "GASOLINA",
         "LUV"
-      ]
+      ],
+      "slug": "filtro-gasolina-luv-d-max"
     },
     {
       "category": "Filtro Gasolina",
@@ -4712,7 +5099,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "GASOLINA",
         "UNIVERSAL"
-      ]
+      ],
+      "slug": "filtro-gasolina-universal"
     },
     {
       "category": "Flauta",
@@ -4723,7 +5111,8 @@ const PRODUCTS_DATA = {
         "ADMISION",
         "CARIBE",
         "FLAUTA"
-      ]
+      ],
+      "slug": "flauta-de-admision-caribe"
     },
     {
       "category": "Flauta",
@@ -4734,7 +5123,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESCAPE",
         "FLAUTA"
-      ]
+      ],
+      "slug": "flauta-de-escape-caribe"
     },
     {
       "category": "Flotante",
@@ -4745,7 +5135,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FLOTANTE",
         "GASOLINA"
-      ]
+      ],
+      "slug": "flotante-gasolina-caribe"
     },
     {
       "category": "Flotante",
@@ -4756,7 +5147,8 @@ const PRODUCTS_DATA = {
         "FLOTANTE",
         "GASOLINA",
         "LUV"
-      ]
+      ],
+      "slug": "flotante-gasolina-luv"
     },
     {
       "category": "Flotante",
@@ -4768,7 +5160,8 @@ const PRODUCTS_DATA = {
         "FLOTANTE",
         "GASOLINA",
         "LUV"
-      ]
+      ],
+      "slug": "flotante-gasolina-luv-d-max-2-4"
     },
     {
       "category": "Flotante",
@@ -4780,7 +5173,8 @@ const PRODUCTS_DATA = {
         "FLOTANTE",
         "GASOLINA",
         "LUV"
-      ]
+      ],
+      "slug": "flotante-gasolina-luv-d-max-3-5"
     },
     {
       "category": "Flotante",
@@ -4791,7 +5185,8 @@ const PRODUCTS_DATA = {
         "FLOTANTE",
         "GASOLINA",
         "RODEO"
-      ]
+      ],
+      "slug": "flotante-gasolina-rodeo"
     },
     {
       "category": "Flotante",
@@ -4802,7 +5197,8 @@ const PRODUCTS_DATA = {
         "FLOTANTE",
         "GASOLINA",
         "TROOPER"
-      ]
+      ],
+      "slug": "flotante-gasolina-trooper"
     },
     {
       "category": "Flotante",
@@ -4814,7 +5210,8 @@ const PRODUCTS_DATA = {
         "FLOTANTE",
         "GRANDE",
         "LUV"
-      ]
+      ],
+      "slug": "flotante-luv-d-max-grande"
     },
     {
       "category": "Gato",
@@ -4827,7 +5224,8 @@ const PRODUCTS_DATA = {
         "GATO",
         "LUV",
         "TIPO"
-      ]
+      ],
+      "slug": "gato-tipo-botella-luv-d-max-3-5"
     },
     {
       "category": "Gemelos",
@@ -4840,7 +5238,8 @@ const PRODUCTS_DATA = {
         "GEMELO",
         "GEMELOS",
         "LUV"
-      ]
+      ],
+      "slug": "gemelo-ballesta-caribe-luv"
     },
     {
       "category": "Gemelos",
@@ -4854,7 +5253,8 @@ const PRODUCTS_DATA = {
         "GEMELOS",
         "LUV",
         "TROOPER"
-      ]
+      ],
+      "slug": "gemelo-ballesta-luv-d-max-trooper"
     },
     {
       "category": "Goma Barra Estabilizadora",
@@ -4866,7 +5266,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTABILIZADORA",
         "GOMA"
-      ]
+      ],
+      "slug": "goma-barra-estabilizadora-caribe"
     },
     {
       "category": "Goma Barra Estabilizadora",
@@ -4878,7 +5279,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "GOMA",
         "LUV"
-      ]
+      ],
+      "slug": "goma-barra-estabilizadora-luv"
     },
     {
       "category": "Goma Barra Tensora",
@@ -4890,7 +5292,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GOMA",
         "TENSORA"
-      ]
+      ],
+      "slug": "goma-barra-tensora-caribe"
     },
     {
       "category": "Goma Barra Tensora",
@@ -4902,7 +5305,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV",
         "TENSORA"
-      ]
+      ],
+      "slug": "goma-barra-tensora-luv"
     },
     {
       "category": "Goma Soporte Amortiguador",
@@ -4917,7 +5321,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "SILENCIADOR",
         "SOPORTE"
-      ]
+      ],
+      "slug": "goma-soporte-silenciador-3-huecos-luv-d-max"
     },
     {
       "category": "Goma Tripoide",
@@ -4928,7 +5333,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GOMA",
         "TRIPOIDE"
-      ]
+      ],
+      "slug": "goma-tripoide-caribe-2-3"
     },
     {
       "category": "Goma Tripoide",
@@ -4939,7 +5345,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GOMA",
         "TRIPOIDE"
-      ]
+      ],
+      "slug": "goma-tripoide-caribe-2-6"
     },
     {
       "category": "Goma Tripoide",
@@ -4951,7 +5358,8 @@ const PRODUCTS_DATA = {
         "G-200",
         "GOMA",
         "TRIPOIDE"
-      ]
+      ],
+      "slug": "goma-tripoide-caribe-g-200"
     },
     {
       "category": "Goma Tripoide",
@@ -4962,7 +5370,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV",
         "TRIPOIDE"
-      ]
+      ],
+      "slug": "goma-tripoide-luv-2-3"
     },
     {
       "category": "Goma Tripoide",
@@ -4974,7 +5383,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV",
         "TRIPOIDE"
-      ]
+      ],
+      "slug": "goma-tripoide-luv-d-max"
     },
     {
       "category": "Goma Tripoide",
@@ -4985,7 +5395,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "RODEO",
         "TRIPOIDE"
-      ]
+      ],
+      "slug": "goma-tripoide-rodeo"
     },
     {
       "category": "Goma Tripoide",
@@ -4996,7 +5407,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "TRIPOIDE",
         "TROOPER"
-      ]
+      ],
+      "slug": "goma-tripoide-trooper"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -5008,7 +5420,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTABILIZADORA",
         "GOMA"
-      ]
+      ],
+      "slug": "goma-u-barra-estabilizadora-caribe-2-6"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -5020,7 +5433,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTABILIZADORA",
         "GOMA"
-      ]
+      ],
+      "slug": "goma-u-barra-estabilizadora-caribe-2-3"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -5033,7 +5447,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "G-200",
         "GOMA"
-      ]
+      ],
+      "slug": "goma-u-barra-estabilizadora-caribe-g-200"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -5045,7 +5460,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "GOMA",
         "LUV"
-      ]
+      ],
+      "slug": "goma-u-barra-estabilizadora-luv-2-2"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -5057,7 +5473,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "GOMA",
         "LUV"
-      ]
+      ],
+      "slug": "goma-u-barra-estabilizadora-luv-2-3"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -5070,7 +5487,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "GOMA",
         "LUV"
-      ]
+      ],
+      "slug": "goma-u-barra-estabilizadora-luv-d-max"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -5082,7 +5500,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "GOMA",
         "TROOPER"
-      ]
+      ],
+      "slug": "goma-u-barra-estabilizadora-trooper"
     },
     {
       "category": "Goma U Cajetin",
@@ -5095,7 +5514,8 @@ const PRODUCTS_DATA = {
         "DIRECCION",
         "GOMA",
         "LUV"
-      ]
+      ],
+      "slug": "goma-u-cajetin-direccion-luv-d-max"
     },
     {
       "category": "Gomas de Valvula",
@@ -5109,7 +5529,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV",
         "VALVULA"
-      ]
+      ],
+      "slug": "juego-goma-valvula-luv-d-max-3-5"
     },
     {
       "category": "Gomas de Valvula",
@@ -5123,7 +5544,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "VALVULA",
         "VALVULAS"
-      ]
+      ],
+      "slug": "juego-goma-valvulas-caribe"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -5134,7 +5556,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GUARDAPOLVO",
         "HORQUILLA"
-      ]
+      ],
+      "slug": "guardapolvo-horquilla-caribe-2-0"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -5145,7 +5568,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GUARDAPOLVO",
         "HORQUILLA"
-      ]
+      ],
+      "slug": "guardapolvo-horquilla-caribe-2-3"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -5156,7 +5580,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GUARDAPOLVO",
         "HORQUILLA"
-      ]
+      ],
+      "slug": "guardapolvo-horquilla-caribe-2-6"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -5167,7 +5592,8 @@ const PRODUCTS_DATA = {
         "GUARDAPOLVO",
         "HORQUILLA",
         "LUV"
-      ]
+      ],
+      "slug": "guardapolvo-horquilla-luv-2-2"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -5178,7 +5604,8 @@ const PRODUCTS_DATA = {
         "GUARDAPOLVO",
         "HORQUILLA",
         "LUV"
-      ]
+      ],
+      "slug": "guardapolvo-horquilla-luv-2-3"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -5190,7 +5617,8 @@ const PRODUCTS_DATA = {
         "GUARDAPOLVO",
         "HORQUILLA",
         "LUV"
-      ]
+      ],
+      "slug": "guardapolvo-horquilla-luv-d-max-2-4"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -5203,7 +5631,8 @@ const PRODUCTS_DATA = {
         "GUARDAPOLVO",
         "HORQUILLA",
         "LUV"
-      ]
+      ],
+      "slug": "guardapolvo-horquilla-luv-d-max-2-5-diesel"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -5216,7 +5645,8 @@ const PRODUCTS_DATA = {
         "GUARDAPOLVO",
         "HORQUILLA",
         "LUV"
-      ]
+      ],
+      "slug": "guardapolvo-horquilla-luv-d-max-3-0-diesel"
     },
     {
       "category": "Guaya Capot",
@@ -5227,7 +5657,8 @@ const PRODUCTS_DATA = {
         "CAPOT",
         "CARIBE",
         "GUAYA"
-      ]
+      ],
+      "slug": "guaya-capot-caribe"
     },
     {
       "category": "Guaya Capot",
@@ -5240,7 +5671,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV",
         "MANILLA"
-      ]
+      ],
+      "slug": "guaya-capot-con-manilla-luv-d-max"
     },
     {
       "category": "Guaya Capot",
@@ -5252,7 +5684,8 @@ const PRODUCTS_DATA = {
         "CAPOT",
         "GUAYA",
         "LUV"
-      ]
+      ],
+      "slug": "guaya-capot-luv-2300"
     },
     {
       "category": "Guaya Capot",
@@ -5264,7 +5697,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "GUAYA",
         "LUV"
-      ]
+      ],
+      "slug": "guaya-capot-luv-d-max"
     },
     {
       "category": "Guaya Clutch",
@@ -5275,7 +5709,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "GUAYA"
-      ]
+      ],
+      "slug": "guaya-de-clutch-caribe"
     },
     {
       "category": "Guaya Freno de Mano",
@@ -5290,7 +5725,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV",
         "MANO"
-      ]
+      ],
+      "slug": "guaya-freno-mano-luv-d-max-3-0-diesel-4x4"
     },
     {
       "category": "Guaya Freno de Mano",
@@ -5303,7 +5739,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV",
         "MANO"
-      ]
+      ],
+      "slug": "guaya-freno-mano-luv-d-max-3-5"
     },
     {
       "category": "Guaya Selectora de Cambio",
@@ -5318,7 +5755,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "SELECTORA",
         "SELECTORADE"
-      ]
+      ],
+      "slug": "guaya-selectorade-cambio-luv-d-max-3-5-automatico"
     },
     {
       "category": "Guaya Velocimetro - Kilometraje",
@@ -5331,7 +5769,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "KILOMETRAJE",
         "VELOCIMETRO"
-      ]
+      ],
+      "slug": "guaya-velocimetro-caribe-83-88"
     },
     {
       "category": "Guia de Valvula",
@@ -5343,7 +5782,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GUIA",
         "VALVULA"
-      ]
+      ],
+      "slug": "guia-de-valvula-caribe-2300"
     },
     {
       "category": "Guia de Valvula",
@@ -5354,7 +5794,8 @@ const PRODUCTS_DATA = {
         "GUIA",
         "LUV",
         "VALVULA"
-      ]
+      ],
+      "slug": "guia-de-valvula-luv-2-3"
     },
     {
       "category": "Juego de Empacadura",
@@ -5365,7 +5806,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA",
         "JUEGO"
-      ]
+      ],
+      "slug": "juego-de-empacadura-caribe-2-3"
     },
     {
       "category": "Juego de Empacadura",
@@ -5377,7 +5819,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA",
         "JUEGO"
-      ]
+      ],
+      "slug": "juego-de-empacadura-caribe-2600"
     },
     {
       "category": "Juego de Empacadura",
@@ -5389,7 +5832,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "JUEGO",
         "LUV"
-      ]
+      ],
+      "slug": "juego-de-empacadura-luv-d-max-3-5"
     },
     {
       "category": "Kit Clutch",
@@ -5401,7 +5845,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "KIT"
-      ]
+      ],
+      "slug": "kit-de-clutch-caribe-2600"
     },
     {
       "category": "Kit Clutch",
@@ -5413,7 +5858,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "KIT",
         "LUV"
-      ]
+      ],
+      "slug": "kit-de-clutch-luv-d-max-3-5"
     },
     {
       "category": "Kit de Motor",
@@ -5424,7 +5870,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "KIT",
         "MOTOR"
-      ]
+      ],
+      "slug": "kit-de-motor-caribe-2-3"
     },
     {
       "category": "Kit de Motor",
@@ -5435,7 +5882,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "KIT",
         "MOTOR"
-      ]
+      ],
+      "slug": "kit-de-motor-caribe-2-6"
     },
     {
       "category": "Kit de Motor",
@@ -5446,7 +5894,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV",
         "MOTOR"
-      ]
+      ],
+      "slug": "kit-de-motor-luv-2-2"
     },
     {
       "category": "Kit de Motor",
@@ -5457,7 +5906,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV",
         "MOTOR"
-      ]
+      ],
+      "slug": "kit-de-motor-luv-2-3"
     },
     {
       "category": "Kit de Motor",
@@ -5469,7 +5919,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV",
         "MOTOR"
-      ]
+      ],
+      "slug": "kit-de-motor-luv-d-max-2-4"
     },
     {
       "category": "Kit de Motor",
@@ -5481,7 +5932,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV",
         "MOTOR"
-      ]
+      ],
+      "slug": "kit-de-motor-luv-d-max-3-5"
     },
     {
       "category": "Kit Satelite y Planetario",
@@ -5493,7 +5945,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "PLANETARIO",
         "SATELITE"
-      ]
+      ],
+      "slug": "kit-satelite-y-planetario-caribe"
     },
     {
       "category": "Kit Satelite y Planetario",
@@ -5505,7 +5958,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PLANETARIO",
         "SATELITE"
-      ]
+      ],
+      "slug": "kit-satelite-y-planetario-luv"
     },
     {
       "category": "Manilla Capot",
@@ -5517,7 +5971,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "MANILLA"
-      ]
+      ],
+      "slug": "manilla-capot-luv-d-max"
     },
     {
       "category": "Manilla Interna",
@@ -5529,7 +5984,8 @@ const PRODUCTS_DATA = {
         "INTERNA",
         "LUV",
         "MANILLA"
-      ]
+      ],
+      "slug": "manilla-interna-luv-d-max"
     },
     {
       "category": "Modulo Con Bobina",
@@ -5540,7 +5996,8 @@ const PRODUCTS_DATA = {
         "BOBINA",
         "CARIBE",
         "MODULO"
-      ]
+      ],
+      "slug": "modulo-con-bobina-caribe"
     },
     {
       "category": "Modulo Con Bobina",
@@ -5551,7 +6008,8 @@ const PRODUCTS_DATA = {
         "BOBINA",
         "LUV",
         "MODULO"
-      ]
+      ],
+      "slug": "modulo-con-bobina-luv"
     },
     {
       "category": "Muñon",
@@ -5563,7 +6021,8 @@ const PRODUCTS_DATA = {
         "G200",
         "INFERIOR",
         "MUNON"
-      ]
+      ],
+      "slug": "munon-inferior-caribe-g200-2-3"
     },
     {
       "category": "Muñon",
@@ -5575,7 +6034,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "MUNON"
-      ]
+      ],
+      "slug": "munon-luv-d-max-2-4-2-5-3-o-4x2"
     },
     {
       "category": "Muñon",
@@ -5589,7 +6049,8 @@ const PRODUCTS_DATA = {
         "MUNON",
         "SUPERIOR",
         "TROOPER"
-      ]
+      ],
+      "slug": "munon-superior-luv-d-max-4x4-trooper"
     },
     {
       "category": "Pastillas de Freno",
@@ -5604,7 +6065,8 @@ const PRODUCTS_DATA = {
         "PASTILLAS",
         "RODEO",
         "TROOPER"
-      ]
+      ],
+      "slug": "juego-pastillas-de-freno-caribe-luvd-max-trooper-rodeo"
     },
     {
       "category": "Piston",
@@ -5617,7 +6079,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "PISTON",
         "PISTONES"
-      ]
+      ],
+      "slug": "juego-de-pistones-caribe-2300"
     },
     {
       "category": "Piston",
@@ -5630,7 +6093,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PISTON",
         "PISTONES"
-      ]
+      ],
+      "slug": "juego-de-pistones-luv-d-max-3-5"
     },
     {
       "category": "Regulador Presion Gasolina",
@@ -5643,7 +6107,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PRESION",
         "REGULADOR"
-      ]
+      ],
+      "slug": "regulador-de-gasolina-luv-d-max-2-4"
     },
     {
       "category": "Regulador Presion Gasolina",
@@ -5656,7 +6121,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PRESION",
         "REGULADOR"
-      ]
+      ],
+      "slug": "regulador-de-gasolina-luv-d-max-3-5"
     },
     {
       "category": "Sensor Arbol de Leva",
@@ -5669,7 +6135,8 @@ const PRODUCTS_DATA = {
         "LEVA",
         "LUV",
         "SENSOR"
-      ]
+      ],
+      "slug": "sensor-arbol-de-leva-luv-d-max-3-5"
     },
     {
       "category": "Sensor TPS",
@@ -5681,7 +6148,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "SENSOR",
         "TPS"
-      ]
+      ],
+      "slug": "sensor-tps-luv-d-max-3-5"
     },
     {
       "category": "Soporte Cardan",
@@ -5693,7 +6161,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CHUMACERA",
         "SOPORTE"
-      ]
+      ],
+      "slug": "soporte-cardan-chumacera-caribe-2-6"
     },
     {
       "category": "Soporte Cardan",
@@ -5705,7 +6174,8 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "LUV",
         "SOPORTE"
-      ]
+      ],
+      "slug": "soporte-cardan-chumacera-luv-2-3"
     },
     {
       "category": "Soporte Cardan",
@@ -5718,7 +6188,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "SOPORTE"
-      ]
+      ],
+      "slug": "soporte-cardan-chumacera-luv-d-max-3-5"
     },
     {
       "category": "Switch Aire Acondicionado",
@@ -5733,7 +6204,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANDO",
         "SWITCH"
-      ]
+      ],
+      "slug": "switch-mando-control-aire-acondicionado-luv-d-max"
     },
     {
       "category": "Tanque Radiador",
@@ -5746,7 +6218,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "RADIADOR",
         "TANQUE"
-      ]
+      ],
+      "slug": "tanque-radiador-entrada-luv-d-max-3-5"
     },
     {
       "category": "Tanque Radiador",
@@ -5759,7 +6232,8 @@ const PRODUCTS_DATA = {
         "RADIADOR",
         "SALIDA",
         "TANQUE"
-      ]
+      ],
+      "slug": "tanque-radiador-salida-luv-d-max"
     },
     {
       "category": "Tapa Gasolina",
@@ -5771,7 +6245,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV",
         "TAPA"
-      ]
+      ],
+      "slug": "tapa-gasolina-luv-d-max"
     },
     {
       "category": "Tapa Radiador",
@@ -5784,7 +6259,8 @@ const PRODUCTS_DATA = {
         "RADIADOR",
         "TAPA",
         "TROOPER"
-      ]
+      ],
+      "slug": "tapa-radiador-luv-d-max-trooper"
     },
     {
       "category": "Tapa Rin",
@@ -5796,7 +6272,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "RIN",
         "TAPA"
-      ]
+      ],
+      "slug": "tapa-rin-luv-d-max"
     },
     {
       "category": "Terminal - Rotula",
@@ -5809,7 +6286,8 @@ const PRODUCTS_DATA = {
         "G200",
         "ROTULA",
         "TERMINAL"
-      ]
+      ],
+      "slug": "terminal-externo-caribe-g200-2-3"
     },
     {
       "category": "Terminal - Rotula",
@@ -5824,7 +6302,8 @@ const PRODUCTS_DATA = {
         "ROTULA",
         "TERMINAL",
         "TROOPER"
-      ]
+      ],
+      "slug": "terminal-externo-luv-d-max-trooper-rodeo"
     },
     {
       "category": "Terminal - Rotula",
@@ -5838,7 +6317,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "ROTULA",
         "TERMINAL"
-      ]
+      ],
+      "slug": "terminal-interno-caribe-luv-d-max"
     },
     {
       "category": "Termostato",
@@ -5849,7 +6329,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "TERMOSTATO"
-      ]
+      ],
+      "slug": "termostato-luv-d-max-3-5"
     },
     {
       "category": "Tren Delantero",
@@ -5860,7 +6341,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-caribe-2-6"
     },
     {
       "category": "Tren Delantero",
@@ -5871,7 +6353,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-caribe-2-6-2"
     },
     {
       "category": "Tren Delantero",
@@ -5883,7 +6366,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-caribe-83-88"
     },
     {
       "category": "Tren Delantero",
@@ -5895,7 +6379,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-caribe-83-88-2"
     },
     {
       "category": "Tren Delantero",
@@ -5907,7 +6392,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-luv-4x2"
     },
     {
       "category": "Tren Delantero",
@@ -5919,7 +6405,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-luv-4x2-2"
     },
     {
       "category": "Tren Delantero",
@@ -5931,7 +6418,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-luv-4x4"
     },
     {
       "category": "Tren Delantero",
@@ -5943,7 +6431,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-luv-4x4-2"
     },
     {
       "category": "Tren Delantero",
@@ -5955,7 +6444,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-luv-d-max-2-4"
     },
     {
       "category": "Tren Delantero",
@@ -5967,7 +6457,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-luv-d-max-2-4-2"
     },
     {
       "category": "Tren Delantero",
@@ -5979,7 +6470,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-luv-d-max-3-5"
     },
     {
       "category": "Tren Delantero",
@@ -5991,7 +6483,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-luv-d-max-3-5-2"
     },
     {
       "category": "Tren Delantero",
@@ -6002,7 +6495,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "RODEO",
         "TREN"
-      ]
+      ],
+      "slug": "tren-delantero-rodeo"
     },
     {
       "category": "Tren Delantero",
@@ -6013,7 +6507,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "TREN",
         "TROOPER"
-      ]
+      ],
+      "slug": "tren-delantero-trooper-3-2"
     },
     {
       "category": "Tren Delantero",
@@ -6024,7 +6519,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "TREN",
         "TROOPER"
-      ]
+      ],
+      "slug": "tren-delantero-trooper-3-2-2"
     },
     {
       "category": "Tubo de Agua",
@@ -6037,7 +6533,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "TUBO"
-      ]
+      ],
+      "slug": "tubo-calefaccion-luv-2-2-luv-d-max-2-4"
     },
     {
       "category": "Tubo de Agua",
@@ -6049,7 +6546,8 @@ const PRODUCTS_DATA = {
         "CALEFACCION",
         "TROOPER",
         "TUBO"
-      ]
+      ],
+      "slug": "tubo-calefaccion-trooper-3-2"
     },
     {
       "category": "Tubo de Agua",
@@ -6062,7 +6560,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "LUV",
         "TUBO"
-      ]
+      ],
+      "slug": "tubo-calefaccion-caribe-luv-2-3"
     },
     {
       "category": "Tubo de Agua",
@@ -6075,7 +6574,8 @@ const PRODUCTS_DATA = {
         "DERECHO",
         "LUV",
         "TUBO"
-      ]
+      ],
+      "slug": "tubo-de-agua-derecho-luv-d-max-3-5"
     },
     {
       "category": "Tubo de Agua",
@@ -6088,7 +6588,8 @@ const PRODUCTS_DATA = {
         "IZQUIERDO",
         "LUV",
         "TUBO"
-      ]
+      ],
+      "slug": "tubo-de-agua-izquierdo-luv-d-max-3-5"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -6101,7 +6602,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESCAPE",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-admision-caribe-2000"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -6114,7 +6616,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESCAPE",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-admision-caribe-2300"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -6126,7 +6629,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "LUV",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-admision-luv-2-2"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -6139,7 +6643,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "LUV",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-admision-luv-d-max-2-4"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -6152,7 +6657,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESCAPE",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-admision-caribe-2600"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -6165,7 +6671,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESCAPE",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-de-escape-caribe-2000"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -6178,7 +6685,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESCAPE",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-de-escape-caribe-2300"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -6191,7 +6699,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESCAPE",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-de-escape-caribe-2600"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -6203,7 +6712,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "LUV",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-de-escape-luv-2-2"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -6216,7 +6726,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "LUV",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-de-escape-luv-d-max-2-4"
     },
     {
       "category": "Valvula Minimo",
@@ -6227,7 +6738,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "MINIMO",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-de-minimo-caribe-2-3"
     },
     {
       "category": "Valvula Minimo",
@@ -6238,7 +6750,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "MINIMO",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-de-minimo-caribe-2-6"
     },
     {
       "category": "Valvula Minimo",
@@ -6249,7 +6762,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MINIMO",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-de-minimo-luv-2-3"
     },
     {
       "category": "Valvula PCV",
@@ -6260,7 +6774,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "PCV",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-pcv-caribe"
     },
     {
       "category": "Valvula PCV",
@@ -6272,7 +6787,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PCV",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-pcv-luv-d-max"
     },
     {
       "category": "Valvula Temperatura",
@@ -6287,7 +6803,8 @@ const PRODUCTS_DATA = {
         "TEMPERATURA",
         "TROOPER",
         "VALVULA"
-      ]
+      ],
+      "slug": "valvula-temperatura-caribe-luv-d-max-trooper-rodeo"
     },
     {
       "category": "Varilla Aceite",
@@ -6299,7 +6816,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "VARILLA"
-      ]
+      ],
+      "slug": "varilla-aceite-luv-d-max-3-5"
     }
   ]
 };
