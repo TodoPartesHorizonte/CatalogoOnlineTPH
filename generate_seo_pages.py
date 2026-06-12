@@ -47,14 +47,14 @@ def generate_pages(data):
     <title>{description} | Repuestos Isuzu TODO PARTES</title>
     <meta name="description" content="Comprar {description} para vehículos Isuzu. Repuesto especializado en Caracas. Consulta disponibilidad y precio vía WhatsApp.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://todoparteshorizonte.github.io/CatalogoOnlineTPH/p/{id}.html">
+    <link rel="canonical" href="https://todoparteshorizonte.github.io/CatalogoOnlineTPH/p/{safe_filename}">
     <link rel="icon" href="../assets/logo.png" type="image/png">
     
     <!-- Open Graph -->
     <meta property="og:title" content="{description} | Repuestos Isuzu">
     <meta property="og:description" content="Comprar {description} para Isuzu. Repuesto especializado en Caracas. Consulta disponibilidad vía WhatsApp.">
     <meta property="og:image" content="https://todoparteshorizonte.github.io/CatalogoOnlineTPH/assets/{id}.webp">
-    <meta property="og:url" content="https://todoparteshorizonte.github.io/CatalogoOnlineTPH/p/{id}.html">
+    <meta property="og:url" content="https://todoparteshorizonte.github.io/CatalogoOnlineTPH/p/{safe_filename}">
     <meta property="og:type" content="product">
     
     <!-- JSON-LD -->
@@ -74,7 +74,7 @@ def generate_pages(data):
         "availability": "https://schema.org/InStock",
         "priceCurrency": "USD",
         "price": "0.00",
-        "url": "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/p/{slug}.html"
+        "url": "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/p/{safe_filename}"
       }}
     }}
     </script>
@@ -135,7 +135,8 @@ def generate_pages(data):
         
         html_content = template.format(
             id=p_id,
-            slug=p_slug,
+            slug=p_slug if p_slug else p_id,
+            safe_filename=safe_filename,
             description=desc,
             url_description=url_desc,
             category=cat,
