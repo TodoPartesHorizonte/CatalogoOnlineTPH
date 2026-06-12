@@ -530,6 +530,27 @@ def generate_seo_files(products, web_dir):
     p_dir = web_path / "p"
     p_dir.mkdir(parents=True, exist_ok=True)
     
+    # Limpiar archivos HTML obsoletos que no correspondan a los productos actuales
+    expected_filenames = set()
+    for prod in products:
+        p_id = prod.get('id', '')
+        p_slug = prod.get('slug', '')
+        if p_slug:
+            safe_filename = f"{p_slug}.html"
+        else:
+            safe_filename = p_id.replace(' ', '%20') + '.html'
+            if '%' not in safe_filename and ' ' in p_id:
+                safe_filename = p_id.replace(' ', '_') + '.html'
+        expected_filenames.add(safe_filename)
+        
+    for item in p_dir.iterdir():
+        if item.is_file() and item.suffix == ".html" and item.name not in expected_filenames:
+            try:
+                os.remove(item)
+                print(f"Eliminado archivo SEO obsoleto: {item.name}")
+            except Exception as e:
+                print(f"Error al eliminar archivo SEO obsoleto {item.name}: {e}")
+                
     config = load_config()
     whatsapp_number = config.get("whatsapp_number", "")
     ga_id = config.get("google_analytics_id", "")
