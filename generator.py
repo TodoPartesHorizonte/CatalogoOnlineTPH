@@ -381,6 +381,28 @@ def generate_keywords(text, category):
             
     return sorted(list(keywords))
 
+def generate_unique_slug(text, used_slugs):
+    """Genera un slug SEO amigable y único a partir de la descripción."""
+    # Eliminar acentos
+    a, b = 'áéíóúüñÁÉÍÓÚÜÑ', 'aeiouunAEIOUUN'
+    trans = str.maketrans(a, b)
+    slug_base = text.translate(trans).lower()
+    
+    # Reemplazar caracteres no alfanuméricos por guiones
+    slug_base = re.sub(r'[^a-z0-9]+', '-', slug_base).strip('-')
+    
+    if not slug_base:
+        slug_base = "producto"
+        
+    slug = slug_base
+    counter = 2
+    while slug in used_slugs:
+        slug = f"{slug_base}-{counter}"
+        counter += 1
+        
+    used_slugs.add(slug)
+    return slug
+
 def optimize_image(input_path, output_path):
     """Redimensiona la imagen a máx 1000px y la guarda comprimida como WebP."""
     try:
@@ -484,8 +506,11 @@ def get_site_base_url():
     # Fallback por defecto si falla o no es repositorio git
     return "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/"
 
+def escape_html(text):
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;").replace("'", "&#39;")
+
 def generate_seo_files(products, web_dir):
-    """Genera automáticamente sitemap.xml y robots.txt en la carpeta web."""
+    """Genera automáticamente sitemap.xml, robots.txt y páginas estáticas de productos en la carpeta web/p/."""
     web_path = Path(web_dir)
     base_url = get_site_base_url()
     
@@ -501,7 +526,156 @@ def generate_seo_files(products, web_dir):
     except Exception as e:
         print(f"Error al generar robots.txt: {e}")
         
-    # 2. Generar sitemap.xml
+    # 2. Generar Páginas Estáticas (Programmatic SEO)
+    p_dir = web_path / "p"
+    p_dir.mkdir(parents=True, exist_ok=True)
+    
+    config = load_config()
+    whatsapp_number = config.get("whatsapp_number", "")
+    ga_id = config.get("google_analytics_id", "")
+    
+    # Extraer la extensión correcta del logo
+    logo_path_str = config.get("logo_path", "")
+    logo_ext = ".png" # por defecto
+    if logo_path_str:
+        logo_file_path = Path(logo_path_str)
+        if logo_file_path.exists():
+            logo_ext = logo_file_path.suffix.lower()
+            
+    ga_script = ""
+    if ga_id:
+        ga_script = f"""
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={ga_id}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', '{ga_id}');
+    </script>"""
+    
+    template = """<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net;">
+    <title>{description} | Repuestos Isuzu TODO PARTES</title>
+    <meta name="description" content="Comprar {description} para vehículos Isuzu. Repuesto especializado en Caracas. Consulta disponibilidad y precio vía WhatsApp.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{base_url}p/{safe_filename}">
+    <link rel="icon" href="../assets/logo{logo_ext}" type="image/{logo_type}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{description} | Repuestos Isuzu">
+    <meta property="og:description" content="Comprar {description} para Isuzu. Repuesto especializado en Caracas. Consulta disponibilidad vía WhatsApp.">
+    <meta property="og:image" content="{base_url}assets/{id}.webp">
+    <meta property="og:url" content="{base_url}p/{safe_filename}">
+    <meta property="og:type" content="product">
+    
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "{description}",
+      "image": "{base_url}assets/{id}.webp",
+      "description": "{description} para vehículos Isuzu. Especialistas en repuestos en Caracas.",
+      "brand": {{
+        "@type": "Brand",
+        "name": "Isuzu"
+      }},
+      "offers": {{
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "USD",
+        "price": "0.00",
+        "url": "{base_url}p/{safe_filename}"
+      }}
+    }}
+    </script>{ga_script}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {{ background-color: #030304; color: #fff; font-family: 'Outfit', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; text-align: center; }}
+        .product-card {{ background: #0a0a0e; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 30px; max-width: 500px; width: 100%; box-shadow: 0 15px 35px rgba(0,0,0,0.5); }}
+        .product-img {{ max-width: 100%; border-radius: 8px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); }}
+        .product-title {{ font-size: 24px; font-weight: 800; color: #fff; margin-bottom: 10px; line-height: 1.2; }}
+        .product-category {{ color: #ff6a00; font-weight: 600; text-transform: uppercase; margin-bottom: 24px; font-size: 14px; letter-spacing: 1px; }}
+        .btn {{ display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: #ff6a00; color: #fff; padding: 16px 30px; border-radius: 4px; text-decoration: none; font-weight: 800; text-transform: uppercase; margin-top: 10px; transition: all 0.3s ease; width: 100%; box-sizing: border-box; }}
+        .btn:hover {{ background: #ff8a00; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(255,106,0,0.3); }}
+        .btn-secondary {{ background: transparent; border: 1px solid rgba(255, 106, 0, 0.4); color: #fff; }}
+        .btn-secondary:hover {{ background: rgba(255, 106, 0, 0.1); }}
+        .logo {{ margin-bottom: 30px; width: 90px; border-radius: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }}
+        svg {{ width: 24px; height: 24px; fill: currentColor; }}
+    </style>
+</head>
+<body>
+    <img src="../assets/logo{logo_ext}" alt="TODO PARTES HORIZONTE" class="logo">
+    <div class="product-card">
+        <img src=".{image_path}" alt="{description}" class="product-img">
+        <h1 class="product-title">{description}</h1>
+        <div class="product-category">Categoría: {category}</div>
+        
+        <a href="https://wa.me/{whatsapp_number}?text=Hola,%20quisiera%20consultar%20disponibilidad%20y%20precio%20del%20repuesto:%20{url_description}" class="btn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Consultar por WhatsApp
+        </a>
+        <a href="../index.html?producto={id}" class="btn btn-secondary">
+            Ver en Catálogo Completo
+        </a>
+    </div>
+</body>
+</html>"""
+
+    generated_pages = 0
+    import urllib.parse
+    for prod in products:
+        try:
+            p_id = escape_html(prod.get('id', ''))
+            safe_filename = p_id.replace(' ', '%20') + '.html'
+            if '%' not in safe_filename and ' ' in p_id:
+                safe_filename = p_id.replace(' ', '_') + '.html'
+                
+            desc = escape_html(prod.get('description', 'Repuesto Isuzu'))
+            url_desc = desc.replace(' ', '%20')
+            cat = escape_html(prod.get('category', 'Repuestos'))
+            img_path = escape_html(prod.get('image_path', ''))
+            img_path = img_path.replace('./assets', '/assets')
+            
+            logo_type = "image/png"
+            if logo_ext == ".jpg" or logo_ext == ".jpeg":
+                logo_type = "image/jpeg"
+            elif logo_ext == ".webp":
+                logo_type = "image/webp"
+            elif logo_ext == ".svg":
+                logo_type = "image/svg+xml"
+            
+            html_content = template.format(
+                id=p_id,
+                description=desc,
+                url_description=url_desc,
+                category=cat,
+                image_path=img_path,
+                whatsapp_number=whatsapp_number,
+                base_url=base_url,
+                safe_filename=safe_filename,
+                ga_script=ga_script,
+                logo_ext=logo_ext,
+                logo_type=logo_type
+            )
+            
+            file_path = p_dir / safe_filename
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(html_content)
+            generated_pages += 1
+        except Exception as e:
+            print(f"Error al generar pagina para {prod.get('id')}: {e}")
+            
+    print(f"Páginas estáticas SEO generadas: {generated_pages}")
+
+    # 3. Generar sitemap.xml
     sitemap_path = web_path / "sitemap.xml"
     try:
         from datetime import datetime
@@ -519,23 +693,29 @@ def generate_seo_files(products, web_dir):
             f.write('    <priority>1.0</priority>\n')
             f.write('  </url>\n')
             
-            # URL de cada producto del catálogo
-            import urllib.parse
+            # Info url
+            f.write('  <url>\n')
+            f.write(f'    <loc>{base_url}informacion.html</loc>\n')
+            f.write(f'    <lastmod>{today}</lastmod>\n')
+            f.write('    <changefreq>weekly</changefreq>\n')
+            f.write('    <priority>0.9</priority>\n')
+            f.write('  </url>\n')
+            
+            # URL de cada página estática
             for prod in products:
                 prod_id = prod.get("id")
                 if prod_id:
-                    # Enlace profundo al producto (codificando espacios y caracteres especiales para XML válido)
-                    encoded_prod_id = urllib.parse.quote(prod_id)
-                    prod_url = f"{base_url}catalogo.html?producto={encoded_prod_id}"
+                    safe_filename = prod_id.replace(' ', '%20') + '.html'
+                    prod_url = f"{base_url}p/{safe_filename}"
                     f.write('  <url>\n')
                     f.write(f'    <loc>{prod_url}</loc>\n')
                     f.write(f'    <lastmod>{today}</lastmod>\n')
-                    f.write('    <changefreq>weekly</changefreq>\n')
+                    f.write('    <changefreq>monthly</changefreq>\n')
                     f.write('    <priority>0.8</priority>\n')
                     f.write('  </url>\n')
                     
             f.write('</urlset>\n')
-        print(f"sitemap.xml generado exitosamente con {len(products)} productos en: {sitemap_path.name}")
+        print(f"sitemap.xml generado exitosamente con {len(products)+2} URLs en: {sitemap_path.name}")
     except Exception as e:
         print(f"Error al generar sitemap.xml: {e}")
 
@@ -692,6 +872,21 @@ def sync_catalog(progress_callback=None):
             newly_processed_ids.append(product_id)
         else:
             print(f"Error al procesar la imagen {file_path.name}. Se omitió.")
+
+    # 2.5 Asegurar slugs únicos para todos los productos
+    used_slugs = set()
+    # Primero reservamos los slugs existentes para mantener la estabilidad (SEO)
+    for prod in updated_products:
+        if prod.get("slug"):
+            if prod["slug"] not in used_slugs:
+                used_slugs.add(prod["slug"])
+            else:
+                prod["slug"] = None # Colisión, se regenerará
+                
+    # Generar slugs para los que no tienen
+    for prod in updated_products:
+        if not prod.get("slug"):
+            prod["slug"] = generate_unique_slug(prod["description"], used_slugs)
 
     # Ordenar los productos finales alfabéticamente por categoría y luego por descripción
     updated_products.sort(key=lambda x: (x["category"].lower(), x["description"].lower()))
