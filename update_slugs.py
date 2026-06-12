@@ -1,8 +1,7 @@
 import json
 import os
 import re
-from generator import generate_unique_slug, read_catalog_js, write_catalog_js
-from web.generate_seo_pages import generate_pages, generate_sitemap
+from generator import generate_unique_slug, read_catalog_js, write_catalog_js, generate_seo_files
 
 def main():
     print("Reading catalog data...")
@@ -33,8 +32,7 @@ def main():
     
     # Regenerate SEO Pages
     print("Regenerating SEO pages...")
-    generate_pages(data)
-    generate_sitemap(data)
+    generate_seo_files(products, "web")
     
     print("Done!")
 
