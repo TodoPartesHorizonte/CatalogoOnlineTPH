@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 518,
+  "total_products": 525,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5647,6 +5647,95 @@ const PRODUCTS_DATA = {
         "LUV"
       ],
       "slug": "guardapolvo-horquilla-luv-d-max-3-0-diesel"
+    },
+    {
+      "category": "Guaya Acelerador",
+      "description": "GUAYA ACELERADOR CARIBE 2.3",
+      "id": "c098c5d1-7c7d-4bcf-a7d1-413bd4cf9835",
+      "image_path": "./assets/c098c5d1-7c7d-4bcf-a7d1-413bd4cf9835.webp",
+      "keywords": [
+        "ACELERADOR",
+        "CARIBE",
+        "GUAYA"
+      ],
+      "slug": "guaya-acelerador-caribe-2-3"
+    },
+    {
+      "category": "Guaya Acelerador",
+      "description": "GUAYA ACELERADOR CARIBE 2.6",
+      "id": "31b9c2e4-f83b-47bc-b726-e90ad8b8eb71",
+      "image_path": "./assets/31b9c2e4-f83b-47bc-b726-e90ad8b8eb71.webp",
+      "keywords": [
+        "ACELERADOR",
+        "CARIBE",
+        "GUAYA"
+      ],
+      "slug": "guaya-acelerador-caribe-2-6"
+    },
+    {
+      "category": "Guaya Acelerador",
+      "description": "GUAYA ACELERADOR LARGA CARIBE G-2000",
+      "id": "5392a0ae-da3d-4db3-8769-1ef4a0c76c60",
+      "image_path": "./assets/5392a0ae-da3d-4db3-8769-1ef4a0c76c60.webp",
+      "keywords": [
+        "ACELERADOR",
+        "CARIBE",
+        "G-2000",
+        "GUAYA",
+        "LARGA"
+      ],
+      "slug": "guaya-acelerador-larga-caribe-g-2000"
+    },
+    {
+      "category": "Guaya Acelerador",
+      "description": "GUAYA ACELERADOR LUV 2.3",
+      "id": "b8d5fdeb-a5c6-4c2b-91f7-129714bfec59",
+      "image_path": "./assets/b8d5fdeb-a5c6-4c2b-91f7-129714bfec59.webp",
+      "keywords": [
+        "ACELERADOR",
+        "GUAYA",
+        "LUV"
+      ],
+      "slug": "guaya-acelerador-luv-2-3"
+    },
+    {
+      "category": "Guaya Acelerador",
+      "description": "GUAYA ACELERADOR LUV D-MAX 2.4",
+      "id": "f8419888-c073-4816-ac19-889d792c19c9",
+      "image_path": "./assets/f8419888-c073-4816-ac19-889d792c19c9.webp",
+      "keywords": [
+        "ACELERADOR",
+        "D-MAX",
+        "GUAYA",
+        "LUV"
+      ],
+      "slug": "guayaacelerador-luv-d-max-2-4"
+    },
+    {
+      "category": "Guaya Acelerador",
+      "description": "GUAYA ACELERADOR LUV D-MAX 3.5",
+      "id": "f122e53e-0054-42e8-b8f3-c03ac767668a",
+      "image_path": "./assets/f122e53e-0054-42e8-b8f3-c03ac767668a.webp",
+      "keywords": [
+        "ACELERADOR",
+        "D-MAX",
+        "GUAYA",
+        "LUV"
+      ],
+      "slug": "guayaacelerador-luv-d-max-3-5"
+    },
+    {
+      "category": "Guaya Acelerador",
+      "description": "GUAYA ACELERADOR LUV D-MAX 2.5",
+      "id": "1233e31d-b2a8-42a5-905f-cb26f1b62f82",
+      "image_path": "./assets/1233e31d-b2a8-42a5-905f-cb26f1b62f82.webp",
+      "keywords": [
+        "ACELERADOR",
+        "D-MAX",
+        "GUAYA",
+        "LUV"
+      ],
+      "slug": "guayaacelerador-luv-d-max-4x225"
     },
     {
       "category": "Guaya Capot",
