@@ -8,6 +8,12 @@
         window.currentProductId = null;
         let hasNavigatedWithinApp = false;
 
+        // Paginacion Infinita
+        let currentFilteredProducts = [];
+        let currentProductIndex = 0;
+        const productsPerPage = 20;
+        let productObserver = null;
+
         // Estado del Carrito y Funciones de Soporte
         let cart = [];
 
@@ -640,45 +646,60 @@
         }
 
         // Renderizado de Productos
-        function renderProducts() {
-            // Filtrar productos
-            const filteredProducts = productsData.filter(product => {
-                // Filtro por categoría
-                const matchesCategory = activeCategory === 'ALL' || product.category === activeCategory;
-                
-                // Filtro por vehículo
-                const matchesVehicle = matchesVehicleFilter(product, activeVehicle);
+        function renderProducts(reset = true) {
+            if (reset) {
+                // Filtrar productos
+                currentFilteredProducts = productsData.filter(product => {
+                    // Filtro por categoría
+                    const matchesCategory = activeCategory === 'ALL' || product.category === activeCategory;
+                    
+                    // Filtro por vehículo
+                    const matchesVehicle = matchesVehicleFilter(product, activeVehicle);
 
-                // Filtro por buscador (búsqueda multi-término)
-                let matchesSearch = true;
-                if (searchQuery.trim() !== '') {
-                    const normalizedQuery = normalizeText(searchQuery);
-                    const terms = normalizedQuery.split(/\s+/).filter(t => t.length > 0);
-                    matchesSearch = terms.every(term => {
-                        const inDesc = normalizeText(product.description).includes(term);
-                        const inCat = normalizeText(product.category).includes(term);
-                        const inKeywords = (product.keywords || []).some(k => normalizeText(k).includes(term));
-                        return inDesc || inCat || inKeywords;
-                    });
+                    // Filtro por buscador (búsqueda multi-término)
+                    let matchesSearch = true;
+                    if (searchQuery.trim() !== '') {
+                        const normalizedQuery = normalizeText(searchQuery);
+                        const terms = normalizedQuery.split(/\s+/).filter(t => t.length > 0);
+                        matchesSearch = terms.every(term => {
+                            const inDesc = normalizeText(product.description).includes(term);
+                            const inCat = normalizeText(product.category).includes(term);
+                            const inKeywords = (product.keywords || []).some(k => normalizeText(k).includes(term));
+                            return inDesc || inCat || inKeywords;
+                        });
+                    }
+                    
+                    return matchesCategory && matchesVehicle && matchesSearch;
+                });
+
+                // Si no hay productos, mostrar estado vacío
+                if (currentFilteredProducts.length === 0) {
+                    productsGrid.style.display = 'none';
+                    emptyState.style.display = 'flex';
+                    return;
                 }
-                
-                return matchesCategory && matchesVehicle && matchesSearch;
-            });
 
-            // Si no hay productos, mostrar estado vacío
-            if (filteredProducts.length === 0) {
-                productsGrid.style.display = 'none';
-                emptyState.style.display = 'flex';
-                return;
+                productsGrid.style.display = 'grid';
+                emptyState.style.display = 'none';
+                productsGrid.innerHTML = '';
+                currentProductIndex = 0;
+
+                // Desconectar observer previo si existe
+                if (productObserver) {
+                    productObserver.disconnect();
+                }
             }
 
-            productsGrid.style.display = 'grid';
-            emptyState.style.display = 'none';
+            // Obtener el siguiente lote de productos
+            const nextBatch = currentFilteredProducts.slice(currentProductIndex, currentProductIndex + productsPerPage);
+            if (nextBatch.length === 0) return;
 
             // Generar HTML de las tarjetas
             let gridHtml = '';
-            filteredProducts.forEach((product, index) => {
-                let imgPriority = index < 4 ? 'fetchpriority="high"' : 'loading="lazy"';
+            nextBatch.forEach((product, index) => {
+                let isLcp = reset && index < 4;
+                let imgPriority = isLcp ? 'fetchpriority="high"' : 'loading="lazy"';
+                
                 // Prefila el mensaje de consulta de WhatsApp
                 const cardUrl = `${window.location.origin}${window.location.pathname}?producto=${product.slug || product.id}`;
                 const waMsg = encodeURIComponent(
@@ -712,10 +733,27 @@
                     </div>
                 `;
             });
-            productsGrid.innerHTML = gridHtml;
-        }
+            
+            productsGrid.insertAdjacentHTML('beforeend', gridHtml);
+            currentProductIndex += nextBatch.length;
 
-        // Apertura del Lightbox Modal
+            // Configurar el IntersectionObserver para cargar más si aún hay productos
+            if (currentProductIndex < currentFilteredProducts.length) {
+                const lastCard = productsGrid.lastElementChild;
+                
+                productObserver = new IntersectionObserver((entries) => {
+                    if (entries[0].isIntersecting) {
+                        productObserver.unobserve(lastCard);
+                        renderProducts(false); // Cargar siguiente página
+                    }
+                }, {
+                    rootMargin: '200px' // Cargar 200px antes de llegar al final
+                });
+                
+                productObserver.observe(lastCard);
+            }
+        }
+// Apertura del Lightbox Modal
         window.openLightbox = function(productId) {
             window.currentProductId = productId;
             openLightboxDirect(productId);
