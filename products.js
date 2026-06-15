@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 528,
+  "total_products": 529,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5585,6 +5585,21 @@ const PRODUCTS_DATA = {
         "LUV"
       ],
       "slug": "graduadorde-freno-mano-luv-d-max-3-5"
+    },
+    {
+      "id": "bc97b3a3-cbf9-418e-a72f-f865f82d91f1",
+      "category": "Guardapolvo de Guardafango",
+      "image_path": "./assets/bc97b3a3-cbf9-418e-a72f-f865f82d91f1.webp",
+      "description": "GUARDAPOLVO DE GUARDAFANGO DELANTERO LUV D-MAX 10-14",
+      "keywords": [
+        "10-14",
+        "D-MAX",
+        "DELANTERO",
+        "GUARDAFANGO",
+        "GUARDAPOLVO",
+        "LUV"
+      ],
+      "slug": "guardapolvo-de-guardafango-delantero-luv-d-max-10-14"
     },
     {
       "category": "Guardapolvo Horquilla",
