@@ -442,8 +442,8 @@ def read_catalog_js():
     try:
         with open(js_path, "r", encoding="utf-8") as f:
             content = f.read().strip()
-            if content.startswith("const PRODUCTS_DATA ="):
-                json_str = content[len("const PRODUCTS_DATA ="):].strip()
+            if content.startswith("const PRODUCTS_DATA =") or content.startswith("const PRODUCTS_DATA="):
+                json_str = content[content.find("{"):].strip()
                 if json_str.endswith(";"):
                     json_str = json_str[:-1].strip()
                 return json.loads(json_str)
@@ -463,6 +463,40 @@ def write_catalog_js(catalog_data):
         return True
     except Exception as e:
         print(f"Error al escribir products.js: {e}")
+        return False
+
+def inject_preload_images(catalog_data):
+    """Inyecta etiquetas de precarga en index.html para las 4 fotos más recientes (LCP)."""
+    try:
+        products = catalog_data.get("products", [])
+        if not products:
+            return False
+            
+        index_path = Path("web/index.html")
+        if not index_path.exists():
+            return False
+            
+        with open(index_path, "r", encoding="utf-8") as f:
+            content = f.read()
+            
+        import re
+        start_marker = "<!-- INICIO PRECARGA -->"
+        end_marker = "<!-- FIN PRECARGA -->"
+        
+        if start_marker in content and end_marker in content:
+            preloads = []
+            for p in products[:4]:
+                if "image_path" in p:
+                    preloads.append(f'    <link rel="preload" as="image" href="{p["image_path"]}" fetchpriority="high">')
+            
+            replacement = f"{start_marker}\n" + "\n".join(preloads) + f"\n    {end_marker}"
+            new_content = re.sub(rf"{start_marker}.*?{end_marker}", replacement, content, flags=re.DOTALL)
+            
+            with open(index_path, "w", encoding="utf-8") as f:
+                f.write(new_content)
+            return True
+    except Exception as e:
+        print(f"Error inyectando preloads en index.html: {e}")
         return False
 
 def get_first_product_image():
@@ -994,6 +1028,7 @@ def sync_catalog(progress_callback=None):
         print(f"¡Catálogo JS guardado con éxito en: {js_path}!")
         # Generar sitemap y robots.txt para SEO
         generate_seo_files(updated_products, web_dir)
+        inject_preload_images(catalog_data)
         if progress_callback:
             progress_callback(total_files, total_files, "Catálogo generado y guardado con éxito.")
     else:
@@ -1041,6 +1076,7 @@ def update_js_links(config):
             print("Enlaces y logo actualizados rápidamente en products.js.")
             # Generar sitemap y robots.txt para SEO
             generate_seo_files(data.get("products", []), "web")
+            inject_preload_images(data)
             return True
     except Exception as e:
         print(f"Error al actualizar enlaces rápidos en products.js: {e}")
