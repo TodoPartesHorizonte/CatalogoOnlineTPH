@@ -5713,19 +5713,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Guaya Acelerador",
-      "description": "GUAYA ACELERADOR LUV D-MAX 3.5",
-      "id": "f122e53e-0054-42e8-b8f3-c03ac767668a",
-      "image_path": "./assets/f122e53e-0054-42e8-b8f3-c03ac767668a.webp",
-      "keywords": [
-        "ACELERADOR",
-        "D-MAX",
-        "GUAYA",
-        "LUV"
-      ],
-      "slug": "guayaacelerador-luv-d-max-3-5"
-    },
-    {
-      "category": "Guaya Acelerador",
       "description": "GUAYA ACELERADOR LUV D-MAX 2.5",
       "id": "1233e31d-b2a8-42a5-905f-cb26f1b62f82",
       "image_path": "./assets/1233e31d-b2a8-42a5-905f-cb26f1b62f82.webp",
@@ -5736,6 +5723,19 @@ const PRODUCTS_DATA = {
         "LUV"
       ],
       "slug": "guayaacelerador-luv-d-max-4x225"
+    },
+    {
+      "category": "Guaya Acelerador",
+      "description": "GUAYA ACELERADOR LUV D-MAX 3.5",
+      "id": "f122e53e-0054-42e8-b8f3-c03ac767668a",
+      "image_path": "./assets/f122e53e-0054-42e8-b8f3-c03ac767668a.webp",
+      "keywords": [
+        "ACELERADOR",
+        "D-MAX",
+        "GUAYA",
+        "LUV"
+      ],
+      "slug": "guayaacelerador-luv-d-max-3-5"
     },
     {
       "category": "Guaya Capot",
