@@ -511,6 +511,8 @@ def escape_html(text):
 
 def generate_seo_files(products, web_dir):
     """Genera automáticamente sitemap.xml, robots.txt y páginas estáticas de productos en la carpeta web/p/."""
+    import re
+    uuid_pattern = re.compile(r'^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$')
     web_path = Path(web_dir)
     base_url = get_site_base_url()
     
@@ -535,12 +537,10 @@ def generate_seo_files(products, web_dir):
     for prod in products:
         p_id = prod.get('id', '')
         p_slug = prod.get('slug', '')
-        if p_slug:
-            safe_filename = f"{p_slug}.html"
-        else:
-            safe_filename = p_id.replace(' ', '%20') + '.html'
-            if '%' not in safe_filename and ' ' in p_id:
-                safe_filename = p_id.replace(' ', '_') + '.html'
+        # Omitir si no hay slug, o si el slug es un UUID, o si coincide con el ID
+        if not p_slug or uuid_pattern.match(p_slug) or p_slug == p_id:
+            continue
+        safe_filename = f"{p_slug}.html"
         expected_filenames.add(safe_filename)
         
     for item in p_dir.iterdir():
@@ -585,7 +585,7 @@ def generate_seo_files(products, web_dir):
     <meta name="description" content="Comprar {description} para vehículos Isuzu. Repuesto especializado en Caracas. Consulta disponibilidad y precio vía WhatsApp.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{base_url}p/{safe_filename}">
-    <link rel="icon" href="../assets/logo{logo_ext}" type="image/{logo_type}">
+    <link rel="icon" href="../assets/logo{logo_ext}" type="{logo_type}">
     
     <!-- Open Graph -->
     <meta property="og:title" content="{description} | Repuestos Isuzu">
@@ -657,12 +657,11 @@ def generate_seo_files(products, web_dir):
             p_id = escape_html(prod.get('id', ''))
             p_slug = escape_html(prod.get('slug', ''))
             
-            if p_slug:
-                safe_filename = f"{p_slug}.html"
-            else:
-                safe_filename = p_id.replace(' ', '%20') + '.html'
-                if '%' not in safe_filename and ' ' in p_id:
-                    safe_filename = p_id.replace(' ', '_') + '.html'
+            # Omitir si no hay slug, o si el slug es un UUID, o si coincide con el ID (nombre de foto)
+            if not p_slug or uuid_pattern.match(p_slug) or p_slug == p_id:
+                continue
+                
+            safe_filename = f"{p_slug}.html"
                 
             desc = escape_html(prod.get('description', 'Repuesto Isuzu'))
             url_desc = desc.replace(' ', '%20')
@@ -702,55 +701,89 @@ def generate_seo_files(products, web_dir):
             
     print(f"Páginas estáticas SEO generadas: {generated_pages}")
 
-    # 3. Generar sitemap.xml
-    sitemap_path = web_path / "sitemap.xml"
+    # 3. Generar sitemaps divididos (máximo 100 URLs por archivo) + sitemap index
     try:
         from datetime import datetime
         today = datetime.today().strftime('%Y-%m-%d')
         
-        with open(sitemap_path, "w", encoding="utf-8") as f:
+        # Recopilar todas las URLs válidas de productos
+        product_urls = []
+        for prod in products:
+            prod_id = prod.get("id")
+            p_slug = prod.get("slug")
+            if prod_id:
+                if not p_slug or uuid_pattern.match(p_slug) or p_slug == prod_id:
+                    continue
+                safe_filename = f"{p_slug}.html"
+                product_urls.append(f"{base_url}p/{safe_filename}")
+        
+        # Dividir en lotes de 100 URLs
+        BATCH_SIZE = 100
+        batches = [product_urls[i:i + BATCH_SIZE] for i in range(0, len(product_urls), BATCH_SIZE)]
+        
+        # Limpiar sub-sitemaps anteriores para evitar archivos huérfanos
+        for old_file in web_path.glob("sitemap-*.xml"):
+            try:
+                os.remove(old_file)
+            except Exception:
+                pass
+        
+        # Generar sub-sitemaps
+        sitemap_filenames = []
+        
+        # Sitemap 1: páginas principales
+        main_sitemap = web_path / "sitemap-main.xml"
+        with open(main_sitemap, "w", encoding="utf-8") as f:
             f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
             f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-            
-            # URL principal del catálogo
             f.write('  <url>\n')
             f.write(f'    <loc>{base_url}</loc>\n')
             f.write(f'    <lastmod>{today}</lastmod>\n')
             f.write('    <changefreq>daily</changefreq>\n')
             f.write('    <priority>1.0</priority>\n')
             f.write('  </url>\n')
-            
-            # Info url
             f.write('  <url>\n')
             f.write(f'    <loc>{base_url}informacion.html</loc>\n')
             f.write(f'    <lastmod>{today}</lastmod>\n')
             f.write('    <changefreq>weekly</changefreq>\n')
             f.write('    <priority>0.9</priority>\n')
             f.write('  </url>\n')
-            
-            # URL de cada página estática
-            for prod in products:
-                prod_id = prod.get("id")
-                p_slug = prod.get("slug")
-                if prod_id:
-                    if p_slug:
-                        safe_filename = f"{p_slug}.html"
-                    else:
-                        safe_filename = prod_id.replace(' ', '%20') + '.html'
-                        if '%' not in safe_filename and ' ' in prod_id:
-                            safe_filename = prod_id.replace(' ', '_') + '.html'
-                    prod_url = f"{base_url}p/{safe_filename}"
+            f.write('</urlset>\n')
+        sitemap_filenames.append("sitemap-main.xml")
+        
+        # Sitemaps de productos en lotes de 100
+        for idx, batch in enumerate(batches, start=1):
+            filename = f"sitemap-productos-{idx}.xml"
+            batch_path = web_path / filename
+            with open(batch_path, "w", encoding="utf-8") as f:
+                f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+                f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+                for prod_url in batch:
                     f.write('  <url>\n')
                     f.write(f'    <loc>{prod_url}</loc>\n')
                     f.write(f'    <lastmod>{today}</lastmod>\n')
                     f.write('    <changefreq>monthly</changefreq>\n')
                     f.write('    <priority>0.8</priority>\n')
                     f.write('  </url>\n')
-                    
-            f.write('</urlset>\n')
-        print(f"sitemap.xml generado exitosamente con {len(products)+2} URLs en: {sitemap_path.name}")
+                f.write('</urlset>\n')
+            sitemap_filenames.append(filename)
+        
+        # Generar sitemap index principal
+        sitemap_index_path = web_path / "sitemap.xml"
+        with open(sitemap_index_path, "w", encoding="utf-8") as f:
+            f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+            f.write('<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+            for sm_filename in sitemap_filenames:
+                f.write('  <sitemap>\n')
+                f.write(f'    <loc>{base_url}{sm_filename}</loc>\n')
+                f.write(f'    <lastmod>{today}</lastmod>\n')
+                f.write('  </sitemap>\n')
+            f.write('</sitemapindex>\n')
+        
+        total_urls = len(product_urls) + 2
+        print(f"Sitemap index generado con {len(sitemap_filenames)} sub-sitemaps ({total_urls} URLs totales)")
     except Exception as e:
-        print(f"Error al generar sitemap.xml: {e}")
+        print(f"Error al generar sitemaps: {e}")
 
 def sync_catalog(progress_callback=None):
     """Ejecuta el escaneo, OCR y generación de catálogo de forma incremental."""
