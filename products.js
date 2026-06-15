@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 525,
+  "total_products": 528,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5546,6 +5546,45 @@ const PRODUCTS_DATA = {
         "VALVULAS"
       ],
       "slug": "juego-goma-valvulas-caribe"
+    },
+    {
+      "category": "Graduador de Freno",
+      "description": "GRADUADOR DE FRENO CARIBE 83-88",
+      "id": "89ed4d2d-f4b3-4249-ab49-2a010a94f06c",
+      "image_path": "./assets/89ed4d2d-f4b3-4249-ab49-2a010a94f06c.webp",
+      "keywords": [
+        "83-88",
+        "CARIBE",
+        "FRENO",
+        "GRADUADOR"
+      ],
+      "slug": "graduador-de-freno-caribe-83-88"
+    },
+    {
+      "category": "Graduador de Freno",
+      "description": "GRADUADOR DE FRENO LUV D-MAX 2.4",
+      "id": "a777193f-d61b-495f-a5be-0b056424154c",
+      "image_path": "./assets/a777193f-d61b-495f-a5be-0b056424154c.webp",
+      "keywords": [
+        "D-MAX",
+        "FRENO",
+        "GRADUADOR",
+        "LUV"
+      ],
+      "slug": "graduador-de-freno-luv-d-max-2-4"
+    },
+    {
+      "category": "Graduador de Freno",
+      "description": "GRADUADOR DE FRENO LUV D-MAX 3.5",
+      "id": "8d041c31-881a-466f-8a51-e1aad4ccdfc5",
+      "image_path": "./assets/8d041c31-881a-466f-8a51-e1aad4ccdfc5.webp",
+      "keywords": [
+        "D-MAX",
+        "FRENO",
+        "GRADUADOR",
+        "LUV"
+      ],
+      "slug": "graduadorde-freno-mano-luv-d-max-3-5"
     },
     {
       "category": "Guardapolvo Horquilla",
