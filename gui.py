@@ -175,9 +175,9 @@ def run_sync():
             return jsonify({"success": False, "message": "Ya se está ejecutando una sincronización."}), 400
         is_syncing = True
         
-    print("\n===================================================")
-    print("INICIANDO PROCESAMIENTO DE IMÁGENES Y OCR...")
-    print("===================================================\n")
+    print("\n==================================================================")
+    print("⚡ INICIANDO PROCESAMIENTO DE IMÁGENES Y LECTURA OCR...")
+    print("==================================================================\n")
     
     def sync_task():
         global is_syncing, session_newly_added_ids
@@ -189,15 +189,15 @@ def run_sync():
                 with open("last_sync.json", "w", encoding="utf-8") as f:
                     json.dump(session_newly_added_ids, f)
             except Exception as e:
-                print(f"Error al guardar persistencia de nuevos IDs: {e}")
+                print(f"❌ Error al guardar persistencia de nuevos IDs: {e}")
         except Exception as e:
-            print(f"\nERROR durante la ejecución: {e}\n")
+            print(f"\n🚨 ERROR durante la ejecución: {e}\n")
         finally:
             with bg_lock:
                 is_syncing = False
-            print("\n===================================================")
-            print("PROCESO TERMINADO EN LOCAL.")
-            print("===================================================\n")
+            print("\n==================================================================")
+            print("🎉 PROCESO LOCAL TERMINADO CORRECTAMENTE.")
+            print("==================================================================\n")
             
     threading.Thread(target=sync_task).start()
     return jsonify({"success": True, "message": "Sincronización iniciada."})
@@ -216,9 +216,9 @@ def run_publish():
             is_publishing = False
         return jsonify({"success": False, "message": "Git no está inicializado en la carpeta 'web'. Revisa la configuración de Git en tu consola."}), 400
 
-    print("\n===================================================")
-    print("SUBIENDO ACTUALIZACIONES A GITHUB PAGES...")
-    print("===================================================\n")
+    print("\n==================================================================")
+    print("🚀 SUBIENDO ACTUALIZACIONES A LA NUBE (CLOUDFLARE/GITHUB)...")
+    print("==================================================================\n")
 
     def publish_task():
         global is_publishing
@@ -231,7 +231,7 @@ def run_publish():
             web_path = os.path.abspath("web")
             
             for cmd in commands:
-                print(f"Ejecutando: {' '.join(cmd)}")
+                print(f"📦 Ejecutando: {' '.join(cmd)}")
                 process = subprocess.Popen(
                     cmd, 
                     cwd=web_path, 
@@ -244,23 +244,23 @@ def run_publish():
                 if stdout.strip():
                     print(stdout)
                 if stderr.strip() and process.returncode != 0:
-                    print(f"[Error]: {stderr}")
+                    print(f"❌ [Error]: {stderr}")
                     
                 if process.returncode != 0:
                     if cmd[1] == "commit" and "nothing to commit" in (stdout + stderr):
-                        print("No hay cambios nuevos para guardar en el commit.")
+                        print("ℹ️ No hay cambios nuevos para guardar en el commit.")
                     else:
-                        print(f"El comando falló con código {process.returncode}")
+                        print(f"❌ El comando falló con código {process.returncode}")
                         break
         except Exception as e:
-            print(f"\nERROR al publicar en GitHub: {e}\n")
+            print(f"\n🚨 ERROR al publicar en GitHub: {e}\n")
         finally:
             with bg_lock:
                 is_publishing = False
-            print("\n===================================================")
-            print("PROCESO DE SUBIDA COMPLETADO.")
-            print("Tu sitio web tardará 1-2 minutos en actualizarse en internet.")
-            print("===================================================\n")
+            print("\n==================================================================")
+            print("✅ PROCESO DE SUBIDA COMPLETADO CON ÉXITO.")
+            print("El nuevo catálogo se ha cargado en GitHub. Cloudflare Pages lo actualizará en 1-2 minutos.")
+            print("==================================================================\n")
 
     threading.Thread(target=publish_task).start()
     return jsonify({"success": True, "message": "Publicación iniciada."})

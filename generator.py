@@ -75,16 +75,16 @@ def init_ocr():
     if OCR_INITIALIZED:
         return
         
-    print("Inicializando motores OCR...")
+    print("⚙️ Inicializando motores de lectura OCR...")
     
     # 1. Intentar cargar EasyOCR
     try:
         import easyocr
         # Inicializa el lector para español e inglés
         OCR_READER = easyocr.Reader(['es', 'en'])
-        print("-> EasyOCR cargado correctamente (recomendado).")
+        print("   ✅ EasyOCR cargado correctamente (recomendado).")
     except Exception as e:
-        print(f"-> EasyOCR no disponible o con error de inicializacion ({e}). Intentando cargar pytesseract...")
+        print(f"   ⚠️ EasyOCR no disponible ({e}). Intentando cargar Pytesseract...")
 
     # 2. Intentar cargar Pytesseract si EasyOCR no está
     if OCR_READER is None:
@@ -104,12 +104,12 @@ def init_ocr():
             # Probar si funciona ejecutando una versión simple
             pytesseract.get_tesseract_version()
             TESSERACT_AVAILABLE = True
-            print("-> Pytesseract (Tesseract OCR) cargado correctamente.")
+            print("   ✅ Pytesseract (Tesseract OCR) cargado correctamente.")
         except Exception as e:
-            print(f"-> Pytesseract no disponible o no configurado en el sistema ({e}).")
+            print(f"   ⚠️ Pytesseract no disponible o no configurado ({e}).")
 
     if OCR_READER is None and not TESSERACT_AVAILABLE:
-        print("-> ¡ALERTA! No hay ningún motor OCR disponible. El script usará el nombre del archivo como descripción.")
+        print("   🚨 ¡ALERTA! No hay ningún motor OCR disponible. Se usará el nombre de los archivos.")
         
     OCR_INITIALIZED = True
 
@@ -557,9 +557,9 @@ def generate_seo_files(products, web_dir):
             f.write("Allow: /\n")
             f.write("Disallow: /admin/\n")
             f.write(f"\nSitemap: {base_url}sitemap.xml\n")
-        print(f"robots.txt generado exitosamente en: {robots_path.name}")
+        print(f"🤖 robots.txt generado exitosamente en: {robots_path.name}")
     except Exception as e:
-        print(f"Error al generar robots.txt: {e}")
+        print(f"❌ Error al generar robots.txt: {e}")
         
     # 2. Generar Páginas Estáticas (Programmatic SEO)
     p_dir = web_path / "p"
@@ -580,9 +580,9 @@ def generate_seo_files(products, web_dir):
         if item.is_file() and item.suffix == ".html" and item.name not in expected_filenames:
             try:
                 os.remove(item)
-                print(f"Eliminado archivo SEO obsoleto: {item.name}")
+                print(f"🧹 Eliminado archivo SEO obsoleto: {item.name}")
             except Exception as e:
-                print(f"Error al eliminar archivo SEO obsoleto {item.name}: {e}")
+                print(f"❌ Error al eliminar archivo SEO obsoleto {item.name}: {e}")
                 
     config = load_config()
     whatsapp_number = config.get("whatsapp_number", "")
@@ -1769,9 +1769,9 @@ def generate_seo_files(products, web_dir):
                 f.write(html_content)
             generated_pages += 1
         except Exception as e:
-            print(f"Error al generar pagina para {prod.get('id')}: {e}")
+            print(f"❌ Error al generar pagina para {prod.get('id')}: {e}")
             
-    print(f"Páginas estáticas SEO generadas: {generated_pages}")
+    print(f"📄 Páginas estáticas SEO generadas: {generated_pages}")
 
     # 3. Generar sitemaps divididos (máximo 100 URLs por archivo) + sitemap index
     try:
@@ -1853,9 +1853,9 @@ def generate_seo_files(products, web_dir):
             f.write('</sitemapindex>\n')
         
         total_urls = len(product_urls) + 2
-        print(f"Sitemap index generado con {len(sitemap_filenames)} sub-sitemaps ({total_urls} URLs totales)")
+        print(f"🗺️ Sitemap index generado con {len(sitemap_filenames)} sub-sitemaps ({total_urls} URLs totales)")
     except Exception as e:
-        print(f"Error al generar sitemaps: {e}")
+        print(f"❌ Error al generar sitemaps: {e}")
 
 def sync_catalog(progress_callback=None):
     """Ejecuta el escaneo, OCR y generación de catálogo de forma incremental."""
@@ -1886,22 +1886,22 @@ def sync_catalog(progress_callback=None):
                     with Image.open(logo_file_path) as img:
                         img.thumbnail((300, 300))
                         img.save(dest_logo_path, optimize=True)
-                    print(f"Logo optimizado y copiado exitosamente a: {dest_logo_path.name}")
+                    print(f"🎨 Logo optimizado y copiado exitosamente a: {dest_logo_path.name}")
                 except Exception as img_err:
-                    print(f"Advertencia: No se pudo optimizar el logo ({img_err}). Copiando archivo original...")
+                    print(f"⚠️ Advertencia: No se pudo optimizar el logo ({img_err}). Copiando archivo original...")
                     shutil.copy2(logo_file_path, dest_logo_path)
                 
                 use_custom_logo = f"./assets/logo{logo_ext}"
             except Exception as e:
-                print(f"Error al copiar el logo: {e}")
+                print(f"❌ Error al copiar el logo: {e}")
         else:
-            print(f"Advertencia: El archivo de logo en '{logo_path_str}' no existe.")
+            print(f"⚠️ Advertencia: El archivo de logo en '{logo_path_str}' no existe.")
             
-    print(f"Escaneando carpeta de origen: {source_dir.absolute()}")
+    print(f"🔍 Escaneando carpeta de origen: {source_dir.absolute()}")
 
     if not source_dir.exists():
-        print(f"Error: La carpeta de origen '{source_dir}' no existe.")
-        print("Por favor, crea la carpeta o edita config.json con la ruta correcta.")
+        print(f"❌ Error: La carpeta de origen '{source_dir}' no existe.")
+        print("💡 Por favor, crea la carpeta o edita config.json con la ruta correcta.")
         if progress_callback:
             progress_callback(0, 1, f"Error: Carpeta de origen no existe.")
         return
@@ -1934,14 +1934,14 @@ def sync_catalog(progress_callback=None):
                 file_path = Path(root) / file
                 found_files.append((file_path, category))
                 
-    print(f"Se encontraron {len(found_files)} imágenes de repuestos en las subcarpetas.")
+    print(f"📂 Se encontraron {len(found_files)} imágenes de repuestos en las subcarpetas.")
     
     # Generar vista previa de calibración de OCR con la primera imagen encontrada
     if found_files:
         first_file_path, _ = found_files[0]
         preview_file_path = assets_dir / "ocr_crop_preview.jpg"
         generate_crop_preview(first_file_path, crop_top, crop_bottom, preview_file_path)
-        print(f"Vista previa de calibración de OCR generada en: {preview_file_path.name}")
+        print(f"👁️ Vista previa de calibración de OCR generada en: {preview_file_path.name}")
         
     # Procesar imágenes de forma incremental
     updated_products = []
@@ -1987,7 +1987,7 @@ def sync_catalog(progress_callback=None):
             continue
             
         # Si no existe, es una imagen nueva o fue modificada
-        print(f"Procesando [{category}] -> {file_path.name}...")
+        print(f"⏳ Procesando [{category}] -> {file_path.name}...")
         
         # 1. Ejecutar OCR
         raw_text = extract_text_from_image(file_path, crop_top=crop_top, crop_bottom=crop_bottom)
@@ -2009,7 +2009,7 @@ def sync_catalog(progress_callback=None):
             new_count += 1
             newly_processed_ids.append(product_id)
         else:
-            print(f"Error al procesar la imagen {file_path.name}. Se omitió.")
+            print(f"❌ Error al procesar la imagen {file_path.name}. Se omitió.")
 
     # 2.5 Asegurar slugs únicos para todos los productos
     used_slugs = set()
@@ -2039,14 +2039,14 @@ def sync_catalog(progress_callback=None):
                 try:
                     os.remove(old_webp)
                 except Exception as e:
-                    print(f"No se pudo eliminar archivo obsoleto {old_webp.name}: {e}")
+                    print(f"❌ No se pudo eliminar archivo obsoleto {old_webp.name}: {e}")
             deleted_count += 1
             
-    print(f"Resumen de Sincronización:")
-    print(f"  - Omitidas (ya procesadas): {skipped_count}")
-    print(f"  - Nuevas procesadas: {new_count}")
-    print(f"  - Eliminadas del catálogo: {deleted_count}")
-    print(f"  - Total actual en catálogo: {len(updated_products)}")
+    print(f"\n📊 Resumen de Sincronización:")
+    print(f"  🔹 Omitidas (ya procesadas): {skipped_count}")
+    print(f"  🔸 Nuevas procesadas: {new_count}")
+    print(f"  🗑️ Eliminadas del catálogo: {deleted_count}")
+    print(f"  📦 Total actual en catálogo: {len(updated_products)}")
     
     # Guardar base de datos JSON
     catalog_data = {
@@ -2063,14 +2063,14 @@ def sync_catalog(progress_callback=None):
 
     write_success = write_catalog_js(catalog_data)
     if write_success:
-        print(f"¡Catálogo JS guardado con éxito en: {js_path}!")
+        print(f"💾 ¡Catálogo JS guardado con éxito en: {js_path}!")
         # Generar sitemap y robots.txt para SEO
         generate_seo_files(updated_products, web_dir)
         inject_preload_images(catalog_data)
         if progress_callback:
             progress_callback(total_files, total_files, "Catálogo generado y guardado con éxito.")
     else:
-        print(f"Error al guardar products.js")
+        print(f"❌ Error al guardar products.js")
         if progress_callback:
             progress_callback(total_files, total_files, "Error al guardar el catálogo JS.")
             
