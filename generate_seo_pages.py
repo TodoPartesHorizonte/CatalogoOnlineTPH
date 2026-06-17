@@ -137,6 +137,41 @@ def generate_pages(data):
         "seller": {{
           "@type": "AutoPartsStore",
           "@id": "{base_url}#store"
+        }},
+        "shippingDetails": {{
+          "@type": "OfferShippingDetails",
+          "shippingRate": {{
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          }},
+          "shippingDestination": {{
+            "@type": "DefinedRegion",
+            "addressCountry": "VE"
+          }},
+          "deliveryTime": {{
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {{
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            }},
+            "transitTime": {{
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 3,
+              "unitCode": "DAY"
+            }}
+          }}
+        }},
+        "hasMerchantReturnPolicy": {{
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "VE",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 7,
+          "returnMethod": "https://schema.org/ReturnInStore",
+          "returnFees": "https://schema.org/FreeReturn"
         }}
       }},
       "aggregateRating": {{
