@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
-Sitemap: https://todoparteshorizonte.github.io/CatalogoOnlineTPH/sitemap.xml
+Sitemap: https://todoparteshorizonte.com/sitemap.xml

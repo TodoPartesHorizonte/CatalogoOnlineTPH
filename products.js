@@ -2,11 +2,11 @@ const PRODUCTS_DATA = {
   "whatsapp_number": "NTg0MjQyMTE2Mzc1",
   "use_custom_logo": "./assets/logo.png",
   "instagram_url": "aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS90b2RvcGFydGVzX2hvcml6b250ZT9pZ3NoPWMzRjBaREozYVhGMGVqZHY=",
-  "facebook_url": "aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3RvZG9wYXJ0ZXNob3Jpem9udGU0OTMv",
+  "facebook_url": "aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3RvZG9wYXJ0ZXNob3Jpem9udGU0OTM=",
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 542,
+  "total_products": 549,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5587,10 +5587,10 @@ const PRODUCTS_DATA = {
       "slug": "graduadorde-freno-mano-luv-d-max-3-5"
     },
     {
-      "id": "bc97b3a3-cbf9-418e-a72f-f865f82d91f1",
       "category": "Guardapolvo de Guardafango",
-      "image_path": "./assets/bc97b3a3-cbf9-418e-a72f-f865f82d91f1.webp",
       "description": "GUARDAPOLVO DE GUARDAFANGO DELANTERO LUV D-MAX 10-14",
+      "id": "bc97b3a3-cbf9-418e-a72f-f865f82d91f1",
+      "image_path": "./assets/bc97b3a3-cbf9-418e-a72f-f865f82d91f1.webp",
       "keywords": [
         "10-14",
         "D-MAX",
@@ -5941,10 +5941,10 @@ const PRODUCTS_DATA = {
       "slug": "guia-de-valvula-luv-2-3"
     },
     {
-      "id": "3ae7e8ea-70fe-430c-953b-f0d6f2da5040",
       "category": "Horquilla Clutch",
-      "image_path": "./assets/3ae7e8ea-70fe-430c-953b-f0d6f2da5040.webp",
       "description": "HORQUILLA CLUTCH CARIBE 2.6",
+      "id": "3ae7e8ea-70fe-430c-953b-f0d6f2da5040",
+      "image_path": "./assets/3ae7e8ea-70fe-430c-953b-f0d6f2da5040.webp",
       "keywords": [
         "CARIBE",
         "CLUTCH",
@@ -5953,10 +5953,10 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-caribe-2-6"
     },
     {
-      "id": "48809eb9-3d56-4ca0-856e-30c81392988b",
       "category": "Horquilla Clutch",
-      "image_path": "./assets/48809eb9-3d56-4ca0-856e-30c81392988b.webp",
       "description": "HORQUILLA CLUTCH LUV 2.2",
+      "id": "48809eb9-3d56-4ca0-856e-30c81392988b",
+      "image_path": "./assets/48809eb9-3d56-4ca0-856e-30c81392988b.webp",
       "keywords": [
         "CLUTCH",
         "HORQUILLA",
@@ -5965,10 +5965,10 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-luv-2-2"
     },
     {
-      "id": "36af001a-1d92-4d98-b7af-572aa4eeb15e",
       "category": "Horquilla Clutch",
-      "image_path": "./assets/36af001a-1d92-4d98-b7af-572aa4eeb15e.webp",
       "description": "HORQUILLA CLUTCH LUV 2.3",
+      "id": "36af001a-1d92-4d98-b7af-572aa4eeb15e",
+      "image_path": "./assets/36af001a-1d92-4d98-b7af-572aa4eeb15e.webp",
       "keywords": [
         "CLUTCH",
         "HORQUILLA",
@@ -5977,10 +5977,10 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-luv-2-3"
     },
     {
-      "id": "b88daaee-904a-47fe-8765-6a13aac7f166",
       "category": "Horquilla Clutch",
-      "image_path": "./assets/b88daaee-904a-47fe-8765-6a13aac7f166.webp",
       "description": "HORQUILLA CLUTCH LUV D-MAX 2.4",
+      "id": "b88daaee-904a-47fe-8765-6a13aac7f166",
+      "image_path": "./assets/b88daaee-904a-47fe-8765-6a13aac7f166.webp",
       "keywords": [
         "CLUTCH",
         "D-MAX",
@@ -5990,10 +5990,10 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-luv-d-max-2-4"
     },
     {
-      "id": "8379c836-efb1-46b9-9f35-5d89708d5710",
       "category": "Horquilla Clutch",
-      "image_path": "./assets/8379c836-efb1-46b9-9f35-5d89708d5710.webp",
       "description": "HORQUILLA CLUTCH LUV D-MAX 2.5",
+      "id": "8379c836-efb1-46b9-9f35-5d89708d5710",
+      "image_path": "./assets/8379c836-efb1-46b9-9f35-5d89708d5710.webp",
       "keywords": [
         "CLUTCH",
         "D-MAX",
@@ -6003,10 +6003,10 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-luv-d-max-2-5"
     },
     {
-      "id": "6d4df51a-c04b-4f84-9d75-2b71cec82257",
       "category": "Horquilla Clutch",
-      "image_path": "./assets/6d4df51a-c04b-4f84-9d75-2b71cec82257.webp",
       "description": "HORQUILLA CLUTCH LUV D-MAX 3.0",
+      "id": "6d4df51a-c04b-4f84-9d75-2b71cec82257",
+      "image_path": "./assets/6d4df51a-c04b-4f84-9d75-2b71cec82257.webp",
       "keywords": [
         "CLUTCH",
         "D-MAX",
@@ -6016,10 +6016,10 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-luv-d-max-3-0"
     },
     {
-      "id": "86f24c24-b6ee-4a47-b71c-9369c9a30a36",
       "category": "Inyector",
-      "image_path": "./assets/86f24c24-b6ee-4a47-b71c-9369c9a30a36.webp",
       "description": "INYECTOR COMBUSTIBLE LUV D-MAX 3507-14",
+      "id": "86f24c24-b6ee-4a47-b71c-9369c9a30a36",
+      "image_path": "./assets/86f24c24-b6ee-4a47-b71c-9369c9a30a36.webp",
       "keywords": [
         "3507-14",
         "COMBUSTIBLE",
@@ -6030,10 +6030,10 @@ const PRODUCTS_DATA = {
       "slug": "inyector-combustible-luv-d-max-3507-14"
     },
     {
-      "id": "7b894360-1357-466f-8527-adbd0fd0dfdb",
       "category": "Inyector",
-      "image_path": "./assets/7b894360-1357-466f-8527-adbd0fd0dfdb.webp",
       "description": "INYECTOR LUV 2.2",
+      "id": "7b894360-1357-466f-8527-adbd0fd0dfdb",
+      "image_path": "./assets/7b894360-1357-466f-8527-adbd0fd0dfdb.webp",
       "keywords": [
         "INYECTOR",
         "LUV"
@@ -6041,10 +6041,10 @@ const PRODUCTS_DATA = {
       "slug": "inyector-luv-2-2"
     },
     {
-      "id": "80c91f7c-fc59-48d6-9bce-d9d27053f0ab",
       "category": "Inyector",
-      "image_path": "./assets/80c91f7c-fc59-48d6-9bce-d9d27053f0ab.webp",
       "description": "INYECTOR LUV D-MAX 2.4",
+      "id": "80c91f7c-fc59-48d6-9bce-d9d27053f0ab",
+      "image_path": "./assets/80c91f7c-fc59-48d6-9bce-d9d27053f0ab.webp",
       "keywords": [
         "D-MAX",
         "INYECTOR",
@@ -6091,10 +6091,10 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-empacadura-luv-d-max-3-5"
     },
     {
-      "id": "30bc3b62-1105-464f-a58b-3e6b4e4e6ec3",
       "category": "Kit Bomba Clutch",
-      "image_path": "./assets/30bc3b62-1105-464f-a58b-3e6b4e4e6ec3.webp",
       "description": "KIT DE BOMBA CLUTCH CARIBE G-2600",
+      "id": "30bc3b62-1105-464f-a58b-3e6b4e4e6ec3",
+      "image_path": "./assets/30bc3b62-1105-464f-a58b-3e6b4e4e6ec3.webp",
       "keywords": [
         "BOMBA",
         "CARIBE",
@@ -6105,10 +6105,65 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-bomba-clutch-caribe-g-2600"
     },
     {
-      "id": "95aa5382-a8de-4c16-8854-e3e1dff0c7ca",
+      "category": "Kit Bomba de Freno",
+      "description": "KIT BOMBA DE FRENO CARIBE 2300",
+      "id": "58611ad6-36d2-4219-8220-b452e5a6eb80",
+      "image_path": "./assets/58611ad6-36d2-4219-8220-b452e5a6eb80.webp",
+      "keywords": [
+        "2300",
+        "BOMBA",
+        "CARIBE",
+        "FRENO",
+        "KIT"
+      ],
+      "slug": "kit-bomba-de-freno-caribe-2300"
+    },
+    {
+      "category": "Kit Bomba de Freno",
+      "description": "KIT BOMBA DE FRENO CARIBE 2600",
+      "id": "6e8f9989-e8fc-40d5-b5b9-f4d1283dfd82",
+      "image_path": "./assets/6e8f9989-e8fc-40d5-b5b9-f4d1283dfd82.webp",
+      "keywords": [
+        "2600",
+        "BOMBA",
+        "CARIBE",
+        "FRENO",
+        "KIT"
+      ],
+      "slug": "kit-bomba-de-freno-caribe-2600"
+    },
+    {
+      "category": "Kit Bomba de Freno",
+      "description": "KIT BOMBA DE FRENO CARIBE G-2000",
+      "id": "e08a19e1-ab93-428d-bc95-6559562745c6",
+      "image_path": "./assets/e08a19e1-ab93-428d-bc95-6559562745c6.webp",
+      "keywords": [
+        "BOMBA",
+        "CARIBE",
+        "FRENO",
+        "G-2000",
+        "KIT"
+      ],
+      "slug": "kit-bomba-de-freno-caribe-g-2000"
+    },
+    {
+      "category": "Kit Bomba de Freno",
+      "description": "KIT BOMBA DE FRENO LUV 2.3",
+      "id": "2d4f5c70-c690-4f36-a5c4-fec66274c241",
+      "image_path": "./assets/2d4f5c70-c690-4f36-a5c4-fec66274c241.webp",
+      "keywords": [
+        "BOMBA",
+        "FRENO",
+        "KIT",
+        "LUV"
+      ],
+      "slug": "kit-bomba-de-freno-luv-2-3"
+    },
+    {
       "category": "Kit Bomba Direccion",
-      "image_path": "./assets/95aa5382-a8de-4c16-8854-e3e1dff0c7ca.webp",
       "description": "KIT BOMBA DIRECCIÓN CARIBE 2.6",
+      "id": "95aa5382-a8de-4c16-8854-e3e1dff0c7ca",
+      "image_path": "./assets/95aa5382-a8de-4c16-8854-e3e1dff0c7ca.webp",
       "keywords": [
         "BOMBA",
         "CARIBE",
@@ -6118,10 +6173,10 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-direccion-caribe-2-6"
     },
     {
-      "id": "23dee8bd-cf09-4b94-b146-f3f6f68d3433",
       "category": "Kit Bomba Direccion",
-      "image_path": "./assets/23dee8bd-cf09-4b94-b146-f3f6f68d3433.webp",
       "description": "KIT BOMBA DIRECCIÓN LUV 2.3",
+      "id": "23dee8bd-cf09-4b94-b146-f3f6f68d3433",
+      "image_path": "./assets/23dee8bd-cf09-4b94-b146-f3f6f68d3433.webp",
       "keywords": [
         "BOMBA",
         "DIRECCION",
@@ -6131,10 +6186,36 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-direccion-luv-2-3"
     },
     {
-      "id": "b9945842-5f68-4916-8a85-c0af2f87018d",
+      "category": "Kit Bomba Direccion",
+      "description": "KIT BOMBA DIRECCIÓN RODEO 3.2",
+      "id": "7c1bd394-938f-45c5-a328-2e6df967bb96",
+      "image_path": "./assets/7c1bd394-938f-45c5-a328-2e6df967bb96.webp",
+      "keywords": [
+        "BOMBA",
+        "DIRECCION",
+        "KIT",
+        "RODEO"
+      ],
+      "slug": "kit-bomba-direccion-rodeo-3-2"
+    },
+    {
+      "category": "Kit Bomba Direccion",
+      "description": "KIT BOMBA DIRECCIÓN TROOPER 32",
+      "id": "17e5db2e-a07c-404f-934b-e342d8d36eb5",
+      "image_path": "./assets/17e5db2e-a07c-404f-934b-e342d8d36eb5.webp",
+      "keywords": [
+        "BOMBA",
+        "DIRECCION",
+        "KIT",
+        "TROOPER"
+      ],
+      "slug": "kit-bomba-direccion-trooper32"
+    },
+    {
       "category": "Kit Bombin Clutch",
-      "image_path": "./assets/b9945842-5f68-4916-8a85-c0af2f87018d.webp",
       "description": "KIT BOMBIN LUV D-MAX",
+      "id": "b9945842-5f68-4916-8a85-c0af2f87018d",
+      "image_path": "./assets/b9945842-5f68-4916-8a85-c0af2f87018d.webp",
       "keywords": [
         "BOMBIN",
         "CLUTCH",
@@ -6143,6 +6224,20 @@ const PRODUCTS_DATA = {
         "LUV"
       ],
       "slug": "kit-bombin-luv-d-max"
+    },
+    {
+      "category": "Kit Cajetin",
+      "description": "KIT CAJETIN LUV D-MAX 2010-2014",
+      "id": "0e5666da-83a8-4db8-b304-bea50336a72a",
+      "image_path": "./assets/0e5666da-83a8-4db8-b304-bea50336a72a.webp",
+      "keywords": [
+        "2010-2014",
+        "CAJETIN",
+        "D-MAX",
+        "KIT",
+        "LUV"
+      ],
+      "slug": "kit-cajetin-luv-d-max-2010-2014"
     },
     {
       "category": "Kit Clutch",
