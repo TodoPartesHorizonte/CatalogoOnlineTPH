@@ -1,5 +1,6 @@
 # /robots.txt para TODO PARTES Horizonte
 User-agent: *
 Allow: /
+Disallow: /admin/
 
 Sitemap: https://todoparteshorizonte.github.io/CatalogoOnlineTPH/sitemap.xml
