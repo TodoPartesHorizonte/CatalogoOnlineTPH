@@ -6017,12 +6017,11 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Inyector",
-      "description": "INYECTOR COMBUSTIBLE LUV D-MAX 3507-14",
+      "description": "INYECTOR LUV D-MAX 3.5 07-14",
       "id": "86f24c24-b6ee-4a47-b71c-9369c9a30a36",
       "image_path": "./assets/86f24c24-b6ee-4a47-b71c-9369c9a30a36.webp",
       "keywords": [
-        "3507-14",
-        "COMBUSTIBLE",
+        "07-14",
         "D-MAX",
         "INYECTOR",
         "LUV"
