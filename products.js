@@ -6005,19 +6005,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Inyector",
-      "description": "INYECTOR LUV D-MAX 3.5 07-14",
-      "id": "86f24c24-b6ee-4a47-b71c-9369c9a30a36",
-      "image_path": "./assets/86f24c24-b6ee-4a47-b71c-9369c9a30a36.webp",
-      "keywords": [
-        "07-14",
-        "D-MAX",
-        "INYECTOR",
-        "LUV"
-      ],
-      "slug": "inyector-combustible-luv-d-max-3507-14"
-    },
-    {
-      "category": "Inyector",
       "description": "INYECTOR LUV 2.2",
       "id": "7b894360-1357-466f-8527-adbd0fd0dfdb",
       "image_path": "./assets/7b894360-1357-466f-8527-adbd0fd0dfdb.webp",
@@ -6038,6 +6025,19 @@ const PRODUCTS_DATA = {
         "LUV"
       ],
       "slug": "inyector-luv-d-max-2-4"
+    },
+    {
+      "category": "Inyector",
+      "description": "INYECTOR LUV D-MAX 3.5 07-14",
+      "id": "86f24c24-b6ee-4a47-b71c-9369c9a30a36",
+      "image_path": "./assets/86f24c24-b6ee-4a47-b71c-9369c9a30a36.webp",
+      "keywords": [
+        "07-14",
+        "D-MAX",
+        "INYECTOR",
+        "LUV"
+      ],
+      "slug": "inyector-combustible-luv-d-max-3507-14"
     },
     {
       "category": "Juego de Empacadura",

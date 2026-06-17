@@ -475,12 +475,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/base-caja-trooper-3-2-2.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/base-casilla-caribe.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -596,6 +590,12 @@
   </url>
   <url>
     <loc>https://todoparteshorizonte.com/p/bobina-luv-d-max-3-5.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bobina-seca-con-resistencia-universal.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
