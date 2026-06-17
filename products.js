@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 549,
+  "total_products": 548,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -1029,18 +1029,6 @@ const PRODUCTS_DATA = {
         "TROOPER"
       ],
       "slug": "base-caja-trooper-3-2"
-    },
-    {
-      "category": "Base Caja",
-      "description": "BASE CAJA TROOPER 3.2",
-      "id": "37caf0f4-c675-4aa3-bc32-018f8ce3881d",
-      "image_path": "./assets/37caf0f4-c675-4aa3-bc32-018f8ce3881d.webp",
-      "keywords": [
-        "BASE",
-        "CAJA",
-        "TROOPER"
-      ],
-      "slug": "base-caja-trooper-3-2-2"
     },
     {
       "category": "Base Casilla",
