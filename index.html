@@ -140,20 +140,8 @@
                 <div class="header-top-row">
                     <div class="brand-lockup" onclick="goBackToFolders()">
                         <div id="logoContainer" class="logo-container">
-                            <img id="logoImage" alt="Logo de TODO PARTES HORIZONTE" class="logo-image" style="display: none;" width="72" height="72" loading="eager">
+                            <img id="logoImage" src="./assets/logo.png" alt="Logo de TODO PARTES HORIZONTE" class="logo-image" width="72" height="72" loading="eager" onerror="this.onerror=null; this.src='./assets/logo.webp';">
                         </div>
-                        <script>
-                            // Cargar el logo en cuanto el DOM esté listo (debido al defer en products.js)
-                            document.addEventListener('DOMContentLoaded', function() {
-                                if (typeof PRODUCTS_DATA !== 'undefined' && PRODUCTS_DATA.use_custom_logo) {
-                                    const logoImg = document.getElementById('logoImage');
-                                    if (logoImg) {
-                                        logoImg.src = PRODUCTS_DATA.use_custom_logo;
-                                        logoImg.style.display = 'block';
-                                    }
-                                }
-                            });
-                        </script>
                         <div class="brand-text">
                             <h1 class="logo-title" id="logoTitleText">TODO PARTES <span>HORIZONTE</span></h1>
                             <div class="brand-meta">

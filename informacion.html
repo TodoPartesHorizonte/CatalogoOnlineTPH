@@ -140,7 +140,7 @@
         <section class="hero">
             
             <div class="hero-content">
-                <img src="./assets/logo.png" alt="TODO PARTES HORIZONTE Logo" class="hero-logo-img" id="heroLogo" style="display: none;">
+                <img src="./assets/logo.png" alt="TODO PARTES HORIZONTE Logo" class="hero-logo-img" id="heroLogo" onerror="this.onerror=null; this.src='./assets/logo.webp';">
                 <h1 class="hero-title">TODO PARTES <br><span>HORIZONTE</span></h1>
                 <p class="hero-subtitle">El mayor catálogo de repuestos automotrices de las mejores marcas en Caracas.</p>
                 <div class="hero-rif">RIF: J-50180765-5</div>
@@ -273,11 +273,10 @@
         // Cargar datos al iniciar
         document.addEventListener('DOMContentLoaded', () => {
             if (typeof PRODUCTS_DATA !== 'undefined') {
-                // Configurar logo
-                if (PRODUCTS_DATA.use_custom_logo) {
+                // Configurar logo personalizado si es diferente al por defecto
+                if (PRODUCTS_DATA.use_custom_logo && PRODUCTS_DATA.use_custom_logo !== './assets/logo.png') {
                     const logoImg = document.getElementById('heroLogo');
                     logoImg.src = PRODUCTS_DATA.use_custom_logo;
-                    logoImg.style.display = 'block';
                 }
 
                 // Configuracion de redes ya no necesita las sombras de curiosity
