@@ -226,7 +226,7 @@ def run_publish():
             commands = [
                 ["git", "add", "."],
                 ["git", "commit", "-m", "Actualizacion desde Administrador de Catalogo"],
-                ["git", "push", "origin", "main", "--force"]
+                ["git", "push", "origin", "HEAD:main", "--force"]
             ]
             web_path = os.path.abspath("web")
             
