@@ -38,6 +38,7 @@ def load_config():
         "reviews_url": "",
         "google_analytics_id": "",
         "looker_studio_url": "",
+        "base_url": "https://todoparteshorizonte.com/",
         "ocr_crop_top": 0.33,
         "ocr_crop_bottom": 0.55
     }
@@ -515,30 +516,17 @@ def get_first_product_image():
     return None
 
 def get_site_base_url():
-    """Detecta automáticamente el dominio del catálogo en GitHub Pages a partir del origen Git remoto."""
+    """Obtiene el dominio base del catálogo. Busca primero en la configuración y luego usa el dominio oficial."""
     try:
-        import subprocess
-        # Ejecutar comando de git para obtener la URL del remoto origin
-        result = subprocess.run(
-            ["git", "config", "--get", "remote.origin.url"],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-        url = result.stdout.strip()
-        if "github.com" in url:
-            if url.startswith("git@"):
-                parts = url.split("github.com:")[-1].replace(".git", "").split("/")
-            else:
-                parts = url.split("github.com/")[-1].replace(".git", "").split("/")
-            if len(parts) >= 2:
-                owner, repo = parts[0], parts[1]
-                return f"https://{owner.lower()}.github.io/{repo}/"
-    except Exception as e:
-        print(f"Advertencia: No se pudo obtener el dominio de Git ({e}). Usando fallback.")
-    
-    # Fallback por defecto si falla o no es repositorio git
-    return "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/"
+        config = load_config()
+        if "base_url" in config and config["base_url"].strip():
+            url = config["base_url"].strip()
+            if not url.endswith("/"):
+                url += "/"
+            return url
+    except Exception:
+        pass
+    return "https://todoparteshorizonte.com/"
 
 def escape_html(text):
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;").replace("'", "&#39;")
