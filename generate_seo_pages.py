@@ -1250,45 +1250,86 @@ def generate_pages(data):
 def generate_sitemap(data):
     products = data.get('products', [])
     today = datetime.now().strftime('%Y-%m-%d')
+    base_url = "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/"
+    uuid_pattern = re.compile(r'^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$')
     
-    xml = f'''<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://todoparteshorizonte.github.io/CatalogoOnlineTPH/</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.github.io/CatalogoOnlineTPH/informacion.html</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-'''
-    
+    # Recopilar todas las URLs válidas de productos
+    product_urls = []
     for product in products:
-        p_id = escape_html(product.get('id', ''))
-        p_slug = escape_html(product.get('slug', ''))
-        
-        if p_slug:
+        prod_id = product.get("id")
+        p_slug = product.get("slug")
+        if prod_id:
+            # Omitir si no hay slug, o si el slug es un UUID, o si coincide con el ID
+            if not p_slug or uuid_pattern.match(p_slug) or p_slug == prod_id:
+                continue
             safe_filename = f"{p_slug}.html"
-        else:
-            safe_filename = p_id.replace(' ', '%20') + '.html'
-        
-        xml += f'''  <url>
-    <loc>https://todoparteshorizonte.github.io/CatalogoOnlineTPH/p/{safe_filename}</loc>
-    <lastmod>{today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>\n'''
-  
-    xml += "</urlset>"
+            product_urls.append(f"{base_url}p/{safe_filename}")
+            
+    # Dividir en lotes de 100 URLs
+    BATCH_SIZE = 100
+    batches = [product_urls[i:i + BATCH_SIZE] for i in range(0, len(product_urls), BATCH_SIZE)]
     
-    with open(SITEMAP_FILE, 'w', encoding='utf-8') as f:
-        f.write(xml)
+    # Limpiar sub-sitemaps anteriores para evitar archivos huérfanos
+    for filename in os.listdir(BASE_DIR):
+        if filename.startswith("sitemap-") and filename.endswith(".xml"):
+            try:
+                os.remove(os.path.join(BASE_DIR, filename))
+            except Exception:
+                pass
+                
+    # Generar sub-sitemaps
+    sitemap_filenames = []
+    
+    # Sitemap 1: páginas principales
+    main_sitemap = os.path.join(BASE_DIR, "sitemap-main.xml")
+    with open(main_sitemap, "w", encoding="utf-8") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        f.write('  <url>\n')
+        f.write(f'    <loc>{base_url}</loc>\n')
+        f.write(f'    <lastmod>{today}</lastmod>\n')
+        f.write('    <changefreq>daily</changefreq>\n')
+        f.write('    <priority>1.0</priority>\n')
+        f.write('  </url>\n')
+        f.write('  <url>\n')
+        f.write(f'    <loc>{base_url}informacion.html</loc>\n')
+        f.write(f'    <lastmod>{today}</lastmod>\n')
+        f.write('    <changefreq>weekly</changefreq>\n')
+        f.write('    <priority>0.9</priority>\n')
+        f.write('  </url>\n')
+        f.write('</urlset>\n')
+    sitemap_filenames.append("sitemap-main.xml")
+    
+    # Sitemaps de productos en lotes de 100
+    for idx, batch in enumerate(batches, start=1):
+        filename = f"sitemap-productos-{idx}.xml"
+        batch_path = os.path.join(BASE_DIR, filename)
+        with open(batch_path, "w", encoding="utf-8") as f:
+            f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+            f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+            for prod_url in batch:
+                f.write('  <url>\n')
+                f.write(f'    <loc>{prod_url}</loc>\n')
+                f.write(f'    <lastmod>{today}</lastmod>\n')
+                f.write('    <changefreq>monthly</changefreq>\n')
+                f.write('    <priority>0.8</priority>\n')
+                f.write('  </url>\n')
+            f.write('</urlset>\n')
+        sitemap_filenames.append(filename)
         
-    print(f"Sitemap generado con éxito. ({len(products) + 2} URLs)")
+    # Generar sitemap index principal
+    with open(SITEMAP_FILE, "w", encoding="utf-8") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        for sm_filename in sitemap_filenames:
+            f.write('  <sitemap>\n')
+            f.write(f'    <loc>{base_url}{sm_filename}</loc>\n')
+            f.write(f'    <lastmod>{today}</lastmod>\n')
+            f.write('  </sitemap>\n')
+        f.write('</sitemapindex>\n')
+        
+    total_urls = len(product_urls) + 2
+    print(f"Sitemap index generado con {len(sitemap_filenames)} sub-sitemaps ({total_urls} URLs totales)")
 
 if __name__ == '__main__':
     data = read_products()
