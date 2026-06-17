@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 548,
+  "total_products": 557,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5929,6 +5929,18 @@ const PRODUCTS_DATA = {
       "slug": "guia-de-valvula-luv-2-3"
     },
     {
+      "category": "Hidrovac",
+      "description": "HIDROVAC LUV D-MAX 3.5",
+      "id": "276d29e7-11c7-44da-b3a5-d7c6d8dad19b",
+      "image_path": "./assets/276d29e7-11c7-44da-b3a5-d7c6d8dad19b.webp",
+      "keywords": [
+        "D-MAX",
+        "HIDROVAC",
+        "LUV"
+      ],
+      "slug": "hidrovac-luv-d-max-3-5"
+    },
+    {
       "category": "Horquilla Clutch",
       "description": "HORQUILLA CLUTCH CARIBE 2.6",
       "id": "3ae7e8ea-70fe-430c-953b-f0d6f2da5040",
@@ -6078,6 +6090,33 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-empacadura-luv-d-max-3-5"
     },
     {
+      "category": "Kit Barra Tensora",
+      "description": "KIT BARRA TENSORA LUV 2300",
+      "id": "277d7754-934b-43d8-9a72-996c9e95b34d",
+      "image_path": "./assets/277d7754-934b-43d8-9a72-996c9e95b34d.webp",
+      "keywords": [
+        "2300",
+        "BARRA",
+        "KIT",
+        "LUV",
+        "TENSORA"
+      ],
+      "slug": "kit-barra-tensora-luv-2300"
+    },
+    {
+      "category": "Kit Barra Tensora",
+      "description": "KIT BARRA TENSORA TROOPER",
+      "id": "e96f5b62-4a86-4844-8ebb-debdfa043910",
+      "image_path": "./assets/e96f5b62-4a86-4844-8ebb-debdfa043910.webp",
+      "keywords": [
+        "BARRA",
+        "KIT",
+        "TENSORA",
+        "TROOPER"
+      ],
+      "slug": "kit-barra-tensora-trooper"
+    },
+    {
       "category": "Kit Bomba Clutch",
       "description": "KIT DE BOMBA CLUTCH CARIBE G-2600",
       "id": "30bc3b62-1105-464f-a58b-3e6b4e4e6ec3",
@@ -6174,6 +6213,35 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Kit Bomba Direccion",
+      "description": "KIT BOMBA DIRECCIÓN LUV D-MAX 3.5",
+      "id": "20986db6-09e2-4770-a9d4-c7572f78740c",
+      "image_path": "./assets/20986db6-09e2-4770-a9d4-c7572f78740c.webp",
+      "keywords": [
+        "BOMBA",
+        "D-MAX",
+        "DIRECCION",
+        "KIT",
+        "LUV"
+      ],
+      "slug": "kit-bomba-direccion-luv-d-max-3-5"
+    },
+    {
+      "category": "Kit Bomba Direccion",
+      "description": "KIT BOMBA DIRECCIÓN LUV D-MAX DIESEL 3.0",
+      "id": "fe3d8756-2457-4307-952f-eb7d9ef30a9e",
+      "image_path": "./assets/fe3d8756-2457-4307-952f-eb7d9ef30a9e.webp",
+      "keywords": [
+        "BOMBA",
+        "D-MAX",
+        "DIESEL",
+        "DIRECCION",
+        "KIT",
+        "LUV"
+      ],
+      "slug": "kit-bomba-direccion-luv-d-max-diesel-30"
+    },
+    {
+      "category": "Kit Bomba Direccion",
       "description": "KIT BOMBA DIRECCIÓN RODEO 3.2",
       "id": "7c1bd394-938f-45c5-a328-2e6df967bb96",
       "image_path": "./assets/7c1bd394-938f-45c5-a328-2e6df967bb96.webp",
@@ -6211,6 +6279,59 @@ const PRODUCTS_DATA = {
         "LUV"
       ],
       "slug": "kit-bombin-luv-d-max"
+    },
+    {
+      "category": "Kit Cajetin",
+      "description": "KIT CAJETIN CARIBE 2000",
+      "id": "50e5f6b4-5c1b-48a2-82b4-d86046a85ec4",
+      "image_path": "./assets/50e5f6b4-5c1b-48a2-82b4-d86046a85ec4.webp",
+      "keywords": [
+        "2000",
+        "CAJETIN",
+        "CARIBE",
+        "KIT"
+      ],
+      "slug": "kit-ajetin-caribe-2000"
+    },
+    {
+      "category": "Kit Cajetin",
+      "description": "KIT CAJETIN CARIBE 2300",
+      "id": "72a144ce-e860-48af-8743-286d4b38b928",
+      "image_path": "./assets/72a144ce-e860-48af-8743-286d4b38b928.webp",
+      "keywords": [
+        "2300",
+        "CAJETIN",
+        "CARIBE",
+        "KIT"
+      ],
+      "slug": "kit-ajetin-caribe-2300"
+    },
+    {
+      "category": "Kit Cajetin",
+      "description": "KIT CAJETIN CARIBE 2600",
+      "id": "8910e78e-9da2-4f07-a7ac-074f11947cac",
+      "image_path": "./assets/8910e78e-9da2-4f07-a7ac-074f11947cac.webp",
+      "keywords": [
+        "2600",
+        "CAJETIN",
+        "CARIBE",
+        "KIT"
+      ],
+      "slug": "kit-ajetin-caribe-2600"
+    },
+    {
+      "category": "Kit Cajetin",
+      "description": "KIT CAJETIN LUV D-MAX 05-09",
+      "id": "81518abc-3991-47f6-85e8-b731539dc664",
+      "image_path": "./assets/81518abc-3991-47f6-85e8-b731539dc664.webp",
+      "keywords": [
+        "05-09",
+        "CAJETIN",
+        "D-MAX",
+        "KIT",
+        "LUV"
+      ],
+      "slug": "kit-ajetin-luv-d-max-05-09"
     },
     {
       "category": "Kit Cajetin",
