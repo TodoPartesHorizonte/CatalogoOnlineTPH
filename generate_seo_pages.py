@@ -117,9 +117,15 @@ def generate_pages(data):
     <!-- Open Graph -->
     <meta property="og:title" content="{description} | Repuestos">
     <meta property="og:description" content="Comprar {description}. Repuesto especializado en Caracas. Consulta disponibilidad vía WhatsApp.">
-    <meta property="og:image" content="{base_url}assets/{id}.webp">
+    <meta property="og:image" content="{image_url_seo}">
     <meta property="og:url" content="{base_url}p/{safe_filename}">
     <meta property="og:type" content="product">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{description} | Repuestos">
+    <meta name="twitter:description" content="Comprar {description}. Repuesto especializado en Caracas. Consulta disponibilidad vía WhatsApp.">
+    <meta name="twitter:image" content="{image_url_seo}">
     
     <!-- JSON-LD -->
     <script type="application/ld+json">
@@ -127,7 +133,7 @@ def generate_pages(data):
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "{description}",
-      "image": "{base_url}assets/{id}.webp",
+      "image": "{image_url_seo}",
       "description": "{description}. Especialistas en repuestos en Caracas.",
       "brand": {{
         "@type": "Brand",
@@ -1226,6 +1232,10 @@ def generate_pages(data):
         img_path = img_path.replace('./assets', '/assets')
         cat_slug = re.sub(r'[^a-z0-9]+', '-', cat.lower()).strip('-')
         
+        import urllib.parse
+        filename = img_path.split('/')[-1]
+        image_url_seo = f"{base_url.rstrip('/')}/assets/{urllib.parse.quote(filename)}"
+        
         html_content = template.format(
             id=p_id,
             slug=p_slug if p_slug else p_id,
@@ -1235,6 +1245,7 @@ def generate_pages(data):
             category=cat,
             category_slug=cat_slug,
             image_path=img_path,
+            image_url_seo=image_url_seo,
             whatsapp_number=whatsapp_number,
             base_url=base_url,
             ga_script=ga_script,
