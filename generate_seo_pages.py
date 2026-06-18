@@ -102,11 +102,17 @@ def generate_pages(data):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com;">
-    <title>{description} | Repuestos TODO PARTES</title>
+    <title>{description} | Repuestos TODO PARTES HORIZONTE</title>
     <meta name="description" content="Comprar {description} al mejor precio. Repuesto especializado en Caracas. Consulta disponibilidad y precio vía WhatsApp.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{base_url}p/{safe_filename}">
-    <link rel="icon" href="../assets/logo{logo_ext}" type="{logo_type}">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="../assets/favicon-48x48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="../assets/favicon-96x96.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="../assets/favicon-192x192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
     
     <!-- Open Graph -->
     <meta property="og:title" content="{description} | Repuestos">
