@@ -1,4 +1,4 @@
-﻿// Configuración Global
+// Configuración Global
         let WHATSAPP_NUMBER = "584242116375";
         let productsData = [];
         let activeCategory = "ALL";
@@ -89,6 +89,9 @@
         function addToCart(productId) {
             const product = productsData.find(p => p.id === productId);
             if (!product) return;
+
+            // Increment feedback interaction
+            incrementInteractionCount();
 
             const existingItem = cart.find(item => item.id === productId);
             if (existingItem) {
@@ -403,6 +406,9 @@
             const product = productsData.find(p => p.id === productId);
             if (!product) return;
 
+            // Increment feedback interaction
+            incrementInteractionCount();
+
             lightboxImg.src = product.image_path;
             lightboxImg.alt = product.description;
             lightboxBadge.innerText = product.category;
@@ -520,6 +526,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             fetchProducts();
             setupEventListeners();
+            initFeedbackModal();
         });
 
         // Carga de Datos desde products.js (cargado como script global PRODUCTS_DATA)
@@ -633,6 +640,9 @@
                         category_name: activeCategory,
                         origen: 'catalogo_page'
                     });
+
+                    // Increment feedback interaction
+                    incrementInteractionCount();
 
                     renderProducts();
                     
@@ -900,6 +910,9 @@
             syncStateToURL(true);
             parseURLState();
             window.scrollTo({ top: 0, behavior: 'instant' });
+            
+            // Increment feedback interaction
+            incrementInteractionCount();
         };
 
         // Retorno al menú de carpetas (con soporte de navegación)
@@ -1019,6 +1032,8 @@
                         search_term: e.target.value,
                         origen: 'catalogo_page'
                     });
+                    // Increment feedback interaction
+                    incrementInteractionCount();
                 }
             });
 
@@ -1178,7 +1193,13 @@
                             item_id: product.id,
                             origen: 'catalogo_page'
                         });
+                        incrementInteractionCount();
                     }
+                }
+                
+                // Track category clicks for feedback
+                if (e.target.closest('.category-item')) {
+                    incrementInteractionCount();
                 }
             });
 
@@ -1195,8 +1216,250 @@
                                 origen: 'catalogo_lightbox',
                                 descripcion: 'Clic en consultar desde el Lightbox (ventana de detalles)'
                             });
+                            incrementInteractionCount();
                         }
                     }
                 });
             }
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initFeedbackModal();
+        });
+
+        /* ========================================================
+           LÓGICA DEL MODAL FLOTANTE DE FEEDBACK Y REDES SOCIALES
+           ======================================================== */
+        const FEEDBACK_INTERACTIONS_KEY = "feedback_interaction_count";
+        const FEEDBACK_SHOWN_KEY = "feedback_modal_shown";
+        const INTERACTIONS_THRESHOLD = 3; // Trigger after 3 interactions
+
+        function incrementInteractionCount() {
+            if (localStorage.getItem(FEEDBACK_SHOWN_KEY) === "true") return;
+
+            let count = parseInt(localStorage.getItem(FEEDBACK_INTERACTIONS_KEY) || "0", 10);
+            count++;
+            localStorage.setItem(FEEDBACK_INTERACTIONS_KEY, count.toString());
+
+            if (count >= INTERACTIONS_THRESHOLD) {
+                showFeedbackModal();
+            }
+        }
+
+        function initFeedbackModal() {
+            if (localStorage.getItem(FEEDBACK_SHOWN_KEY) === "true") return;
+            const overlay = document.getElementById('feedbackModalOverlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+                overlay.classList.remove('active');
+            }
+        }
+
+        function showFeedbackModal() {
+            const overlay = document.getElementById('feedbackModalOverlay');
+            const content = document.getElementById('feedbackModalContent');
+            const card = document.getElementById('feedbackModalCard');
+            if (!overlay || !content || !card) return;
+
+            if (typeof PRODUCTS_DATA === 'undefined') return;
+            
+            const whatsappNum = deobfuscate(PRODUCTS_DATA.whatsapp_number);
+            const instagramUrl = deobfuscate(PRODUCTS_DATA.instagram_url);
+            const facebookUrl = deobfuscate(PRODUCTS_DATA.facebook_url);
+            const reviewsUrl = deobfuscate(PRODUCTS_DATA.reviews_url);
+
+            const variants = [];
+
+            if (instagramUrl) {
+                variants.push({
+                    type: 'instagram',
+                    title: '¡Síguenos en Instagram!',
+                    text: 'Conoce nuestras novedades, fotos reales de repuestos Isuzu y tips de mantenimiento directamente en tu feed.',
+                    buttonText: 'Seguir en Instagram',
+                    url: instagramUrl,
+                    icon: `<svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>`
+                });
+            }
+
+            if (facebookUrl) {
+                variants.push({
+                    type: 'facebook',
+                    title: '¡Únete a nuestra comunidad!',
+                    text: 'Visítanos en Facebook para estar al tanto de ofertas especiales, consultas directas y novedades de nuestro inventario.',
+                    buttonText: 'Visitar en Facebook',
+                    url: facebookUrl,
+                    icon: `<svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>`
+                });
+            }
+
+            if (whatsappNum) {
+                const whatsappChatUrl = `https://wa.me/${whatsappNum}?text=${encodeURIComponent("Hola, me gustaría recibir asesoría técnica y cotizaciones rápidas sobre repuestos Isuzu.")}`;
+                variants.push({
+                    type: 'whatsapp',
+                    title: '¿Necesitas asesoría técnica?',
+                    text: 'Conversa directamente con nuestros especialistas en repuestos Isuzu y cotiza en segundos vía chat.',
+                    buttonText: 'Chatear por WhatsApp',
+                    url: whatsappChatUrl,
+                    icon: `<svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.489 0 9.953-4.43 9.956-9.878.002-2.64-1.019-5.123-2.877-6.982C16.59 1.885 14.113.864 11.472.863 5.98 .863 1.519 5.293 1.516 10.741c-.002 1.624.437 3.208 1.272 4.607L1.82 21.05l5.827-1.526zM17.51 14.36c-.3-.149-1.772-.874-2.047-.973-.274-.1-.474-.149-.673.15-.199.299-.772.973-.947 1.172-.174.199-.349.224-.648.075-.3-.149-1.266-.467-2.41-1.485-.89-.793-1.492-1.773-1.666-2.07-.174-.3-.019-.462.13-.61.135-.133.3-.349.449-.523.149-.174.199-.299.299-.497.1-.2.05-.374-.025-.523-.075-.15-.673-1.62-.922-2.218-.242-.584-.487-.506-.673-.506-.174-.002-.374-.002-.573-.002-.2 0-.523.075-.797.373-.274.3-1.047 1.022-1.047 2.49 0 1.468 1.07 2.887 1.22 3.087.149.199 2.106 3.216 5.099 4.508.712.308 1.268.492 1.702.63.716.227 1.368.195 1.884.118.574-.085 1.772-.723 2.022-1.42.25-.697.25-1.294.174-1.42-.075-.126-.274-.199-.573-.349z"/></svg>`
+                });
+            }
+
+            if (reviewsUrl) {
+                variants.push({
+                    type: 'google',
+                    title: '¡Tu opinión nos importa mucho!',
+                    text: '¿Te ha sido de utilidad este catálogo online? Déjanos una reseña corta en Google para seguir mejorando el servicio.',
+                    buttonText: 'Dejar Opinión en Google',
+                    url: reviewsUrl,
+                    icon: `<svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L6.02 21z"/></svg>`
+                });
+            }
+
+            if (variants.length === 0) return;
+
+            const randomIndex = Math.floor(Math.random() * variants.length);
+            const selected = variants[randomIndex];
+
+            card.className = "feedback-modal-card";
+            card.classList.add(`modal-variant-${selected.type}`);
+
+            let modalHTML = '';
+
+            if (selected.type === 'google') {
+                modalHTML = `
+                    <div class="feedback-modal-header">
+                        <div class="feedback-modal-icon-container">
+                            ${selected.icon}
+                        </div>
+                        <h3 class="feedback-modal-title">${selected.title}</h3>
+                    </div>
+                    <div class="feedback-modal-body">
+                        <div id="feedbackRatingSection">
+                            <p class="feedback-modal-text">${selected.text}</p>
+                            <div class="feedback-stars-container" id="feedbackStarsContainer">
+                                <span class="feedback-star" data-rating="1">&#9733;</span>
+                                <span class="feedback-star" data-rating="2">&#9733;</span>
+                                <span class="feedback-star" data-rating="3">&#9733;</span>
+                                <span class="feedback-star" data-rating="4">&#9733;</span>
+                                <span class="feedback-star" data-rating="5">&#9733;</span>
+                            </div>
+                            <div class="feedback-modal-actions">
+                                <a href="${selected.url}" id="googleFeedbackBtn" target="_blank" rel="noopener noreferrer" class="feedback-btn-primary" onclick="handleFeedbackSubmit(true)">
+                                    ${selected.buttonText}
+                                </a>
+                                <button class="feedback-btn-secondary" onclick="closeFeedbackModal()">Quizás más tarde</button>
+                            </div>
+                        </div>
+                        <div class="feedback-success-state" id="feedbackSuccessState">
+                            <div class="feedback-success-checkmark">&#10004;</div>
+                            <h4 class="feedback-modal-title" style="color: #25d366; font-size: 18px;">¡Muchas gracias!</h4>
+                            <p class="feedback-modal-text" style="margin-bottom: 0; font-size: 14px;">Tu valoración nos ayuda a seguir creciendo y ofreciéndote el mejor servicio.</p>
+                        </div>
+                    </div>
+                `;
+            } else {
+                modalHTML = `
+                    <div class="feedback-modal-header">
+                        <div class="feedback-modal-icon-container">
+                            ${selected.icon}
+                        </div>
+                        <h3 class="feedback-modal-title">${selected.title}</h3>
+                    </div>
+                    <div class="feedback-modal-body">
+                        <p class="feedback-modal-text">${selected.text}</p>
+                        <div class="feedback-modal-actions">
+                            <a href="${selected.url}" target="_blank" rel="noopener noreferrer" class="feedback-btn-primary" onclick="handleFeedbackSubmit(false, '${selected.type}')">
+                                ${selected.buttonText}
+                            </a>
+                            <button class="feedback-btn-secondary" onclick="closeFeedbackModal()">Quizás más tarde</button>
+                        </div>
+                    </div>
+                `;
+            }
+
+            content.innerHTML = modalHTML;
+
+            overlay.style.display = 'flex';
+            overlay.offsetHeight;
+            overlay.classList.add('active');
+
+            trackEvent('ver_modal_feedback', { tipo_modal: selected.type });
+
+            if (selected.type === 'google') {
+                setupGoogleStars(selected.url);
+            }
+        }
+
+        function setupGoogleStars(reviewsUrl) {
+            const starsContainer = document.getElementById('feedbackStarsContainer');
+            if (!starsContainer) return;
+
+            const stars = starsContainer.querySelectorAll('.feedback-star');
+
+            stars.forEach(star => {
+                star.addEventListener('mouseover', () => {
+                    const rating = parseInt(star.getAttribute('data-rating'), 10);
+                    highlightStars(stars, rating);
+                });
+
+                star.addEventListener('mouseout', () => {
+                    highlightStars(stars, 0);
+                });
+
+                star.addEventListener('click', () => {
+                    const rating = parseInt(star.getAttribute('data-rating'), 10);
+                    
+                    if (rating >= 4) {
+                        trackEvent('valoracion_estrellas_alta', { estrellas: rating });
+                        window.open(reviewsUrl, '_blank', 'noopener,noreferrer');
+                        showFeedbackSuccessState();
+                    } else {
+                        trackEvent('valoracion_estrellas_baja', { estrellas: rating });
+                        showFeedbackSuccessState();
+                    }
+                });
+            });
+        }
+
+        function highlightStars(stars, rating) {
+            stars.forEach(star => {
+                const starRating = parseInt(star.getAttribute('data-rating'), 10);
+                if (starRating <= rating) {
+                    star.classList.add('hovered');
+                } else {
+                    star.classList.remove('hovered');
+                }
+            });
+        }
+
+        function showFeedbackSuccessState() {
+            const ratingSection = document.getElementById('feedbackRatingSection');
+            const successSection = document.getElementById('feedbackSuccessState');
+            if (ratingSection && successSection) {
+                ratingSection.style.display = 'none';
+                successSection.style.display = 'flex';
+                localStorage.setItem(FEEDBACK_SHOWN_KEY, "true");
+                setTimeout(closeFeedbackModal, 3000);
+            }
+        }
+
+        window.handleFeedbackSubmit = function(isGoogle, type = '') {
+            localStorage.setItem(FEEDBACK_SHOWN_KEY, "true");
+            if (isGoogle) {
+                trackEvent('conversion_feedback_google', { accion: 'clic_dejar_opinion' });
+            } else {
+                trackEvent(`conversion_feedback_${type}`, { accion: 'clic_enlace_social' });
+            }
+            setTimeout(closeFeedbackModal, 500);
+        };
+
+        window.closeFeedbackModal = function() {
+            const overlay = document.getElementById('feedbackModalOverlay');
+            if (!overlay) return;
+
+            overlay.classList.remove('active');
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                localStorage.setItem(FEEDBACK_SHOWN_KEY, "true");
+            }, 400);
+        };

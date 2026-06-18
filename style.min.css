@@ -1926,4 +1926,297 @@ height:18px;
     color: #fff;
 }
 
+/* ==========================================
+   FEEDBACK & SOCIAL MEDIA FLOATING MODAL
+   ========================================== */
+.feedback-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 12, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s;
+    padding: 20px;
+}
+
+.feedback-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.feedback-modal-card {
+    background: linear-gradient(135deg, rgba(26, 26, 36, 0.95), rgba(18, 18, 24, 0.98));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    transform: translateY(30px) scale(0.95);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+.feedback-modal-overlay.active .feedback-modal-card {
+    transform: translateY(0) scale(1);
+}
+
+.feedback-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.feedback-modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transform: rotate(90deg);
+}
+
+.feedback-modal-header {
+    padding: 40px 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.feedback-modal-icon-container {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.modal-variant-instagram .feedback-modal-icon-container {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aec 90%);
+}
+.modal-variant-facebook .feedback-modal-icon-container {
+    background: #1877f2;
+}
+.modal-variant-whatsapp .feedback-modal-icon-container {
+    background: #25d366;
+}
+.modal-variant-google .feedback-modal-icon-container {
+    background: #fff;
+}
+
+.feedback-modal-icon-container svg {
+    width: 36px;
+    height: 36px;
+    fill: #fff;
+}
+
+.modal-variant-google .feedback-modal-icon-container svg {
+    fill: #f4b400; /* We can use a custom star or google icon */
+}
+
+.feedback-modal-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.feedback-modal-body {
+    padding: 0 30px 30px;
+    text-align: center;
+}
+
+.feedback-modal-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.feedback-stars-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.feedback-star {
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.feedback-star.active,
+.feedback-star.hovered {
+    color: #f4b400;
+    transform: scale(1.15);
+    text-shadow: 0 0 10px rgba(244, 180, 0, 0.4);
+}
+
+.feedback-modal-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feedback-btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 28px;
+    font-size: 15.5px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modal-variant-instagram .feedback-btn-primary {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.modal-variant-instagram .feedback-btn-primary:hover {
+    box-shadow: 0 6px 20px rgba(220, 39, 67, 0.4);
+    transform: translateY(-2px);
+}
+
+.modal-variant-facebook .feedback-btn-primary {
+    background: #1877f2;
+}
+.modal-variant-facebook .feedback-btn-primary:hover {
+    background: #1565c0;
+    box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4);
+    transform: translateY(-2px);
+}
+
+.modal-variant-whatsapp .feedback-btn-primary {
+    background: #25d366;
+}
+.modal-variant-whatsapp .feedback-btn-primary:hover {
+    background: #20ba5a;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    transform: translateY(-2px);
+}
+
+.modal-variant-google .feedback-btn-primary {
+    background: #4285f4;
+}
+.modal-variant-google .feedback-btn-primary:hover {
+    background: #357ae8;
+    box-shadow: 0 6px 20px rgba(66, 133, 244, 0.4);
+    transform: translateY(-2px);
+}
+
+.feedback-btn-secondary {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.feedback-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.feedback-success-state {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    animation: feedbackFadeIn 0.4s ease forwards;
+}
+
+@keyframes feedbackFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.feedback-success-checkmark {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(37, 211, 102, 0.1);
+    border: 2px solid #25d366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: #25d366;
+    font-size: 28px;
+    animation: scaleCheckmark 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes scaleCheckmark {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 480px) {
+    .feedback-modal-overlay {
+        padding: 15px;
+        align-items: flex-end;
+    }
+    .feedback-modal-card {
+        border-radius: 24px 24px 20px 20px;
+        transform: translateY(100px) scale(1);
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .feedback-modal-overlay.active .feedback-modal-card {
+        transform: translateY(0) scale(1);
+    }
+    .feedback-modal-header {
+        padding: 30px 20px 18px;
+    }
+    .feedback-modal-body {
+        padding: 0 20px 24px;
+    }
+    .feedback-modal-title {
+        font-size: 19px;
+    }
+    .feedback-modal-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+
 
