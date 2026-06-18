@@ -411,6 +411,11 @@
 
             lightboxImg.src = product.image_path;
             lightboxImg.alt = product.description;
+            lightboxImg.style.cursor = 'pointer';
+            lightboxImg.title = 'Haz clic para abrir la página individual y compartirla';
+            lightboxImg.onclick = () => {
+                window.location.href = `./p/${product.slug || product.id}.html`;
+            };
             lightboxBadge.innerText = product.category;
             lightboxDesc.innerText = product.description;
 
@@ -443,6 +448,31 @@
             if (lightboxAddBtn) {
                 lightboxAddBtn.onclick = () => {
                     addToCart(productId);
+                };
+            }
+
+            // Asignar evento al botón de compartir en el lightbox
+            const lightboxShareBtn = document.getElementById('lightboxShareBtn');
+            const lightboxShareText = document.getElementById('lightboxShareText');
+            if (lightboxShareBtn && lightboxShareText) {
+                lightboxShareBtn.onclick = () => {
+                    const shareUrl = `${window.location.origin}/p/${product.slug || product.id}.html`;
+                    navigator.clipboard.writeText(shareUrl).then(() => {
+                        const originalText = lightboxShareText.innerText;
+                        lightboxShareText.innerText = '¡Copiado!';
+                        lightboxShareBtn.style.color = '#fff';
+                        lightboxShareBtn.style.background = 'var(--accent-orange)';
+                        lightboxShareBtn.style.borderColor = 'var(--accent-orange)';
+                        setTimeout(() => {
+                            lightboxShareText.innerText = originalText;
+                            lightboxShareBtn.style.color = 'var(--text-primary)';
+                            lightboxShareBtn.style.background = 'transparent';
+                            lightboxShareBtn.style.borderColor = 'var(--surface-border)';
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Error al copiar enlace: ', err);
+                        alert('No se pudo copiar el enlace. La URL es: ' + shareUrl);
+                    });
                 };
             }
 
