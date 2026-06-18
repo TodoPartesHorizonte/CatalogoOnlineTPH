@@ -102,7 +102,7 @@ def generate_pages(data):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com;">
-    <title>{description} | Repuestos TODO PARTES HORIZONTE</title>
+    <title>{description} | Repuestos - Todo Partes Horizonte</title>
     <meta name="description" content="Comprar {description} al mejor precio. Repuesto especializado en Caracas. Consulta disponibilidad y precio vía WhatsApp.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{base_url}p/{safe_filename}">
@@ -115,7 +115,8 @@ def generate_pages(data):
     <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="{description} | Repuestos">
+    <meta property="og:title" content="{description} | Repuestos - Todo Partes Horizonte">
+    <meta property="og:site_name" content="Todo Partes Horizonte">
     <meta property="og:description" content="Comprar {description}. Repuesto especializado en Caracas. Consulta disponibilidad vía WhatsApp.">
     <meta property="og:image" content="{image_url_seo}">
     <meta property="og:url" content="{base_url}p/{safe_filename}">
@@ -123,7 +124,7 @@ def generate_pages(data):
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{description} | Repuestos">
+    <meta name="twitter:title" content="{description} | Repuestos - Todo Partes Horizonte">
     <meta name="twitter:description" content="Comprar {description}. Repuesto especializado en Caracas. Consulta disponibilidad vía WhatsApp.">
     <meta name="twitter:image" content="{image_url_seo}">
     
