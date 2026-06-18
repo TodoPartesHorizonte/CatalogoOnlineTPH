@@ -2033,7 +2033,7 @@ height:18px;
 }
 
 .modal-variant-google .feedback-modal-icon-container svg {
-    fill: #f4b400; /* We can use a custom star or google icon */
+    fill: none; /* Let path inline fills work for colorful Google logo */
 }
 
 .feedback-modal-title {
