@@ -59,7 +59,7 @@ def generate_pages(data):
     ga_encoded = data.get('google_analytics_id', '')
     ga_id = decode_base64(ga_encoded)
     
-    base_url = "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/"
+    base_url = "https://todoparteshorizonte.com/"
     
     # Intentar obtener la extensión correcta de logo desde el config.json del padre
     config_path = os.path.join(os.path.dirname(BASE_DIR), 'config.json')
@@ -1250,7 +1250,7 @@ def generate_pages(data):
 def generate_sitemap(data):
     products = data.get('products', [])
     today = datetime.now().strftime('%Y-%m-%d')
-    base_url = "https://todoparteshorizonte.github.io/CatalogoOnlineTPH/"
+    base_url = "https://todoparteshorizonte.com/"
     uuid_pattern = re.compile(r'^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$')
     
     # Recopilar todas las URLs válidas de productos

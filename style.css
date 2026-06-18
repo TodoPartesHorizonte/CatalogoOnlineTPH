@@ -358,6 +358,7 @@ color:var(--text-primary);
 main {max-width:1200px;
 margin:0 auto;
 padding:0 24px;
+min-height:80vh;
 }
 
 .grid-container {display:grid;
@@ -1208,7 +1209,7 @@ font-size:12px;
 gap:3px;
 }
 
-.category-card-name {font-size:10px;
+.category-card-name {font-size:12px;
 letter-spacing:0.8px;
 line-height:1.25;
 }
@@ -1221,7 +1222,7 @@ height:16px;
 
 .category-card-count-badge {width:26px;
 height:26px;
-font-size:10px;
+font-size:11px;
 top:8px;
 right:8px;
 }
