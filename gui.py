@@ -91,6 +91,26 @@ if os.path.exists("last_sync.json"):
     except Exception:
         pass
 
+# --- FILTROS DE SEGURIDAD (CSRF LOCAL) ---
+
+@app.before_request
+def protect_csrf():
+    # Bloquear peticiones cruzadas (cross-origin) no autorizadas de modificación
+    if request.method in ['POST', 'PUT', 'DELETE']:
+        origin = request.headers.get('Origin')
+        referer = request.headers.get('Referer')
+        
+        # 1. Validar cabecera Origin
+        if origin:
+            if not (origin.startswith('http://127.0.0.1:') or origin.startswith('http://localhost:')):
+                print(f"🚨 Intento de ataque CSRF bloqueado. Origin: {origin}")
+                return jsonify({"success": False, "message": "Acceso cross-origin bloqueado por políticas de seguridad."}), 403
+        # 2. Si no hay Origin pero hay Referer, validar Referer
+        elif referer:
+            if not (referer.startswith('http://127.0.0.1:') or referer.startswith('http://localhost:')):
+                print(f"🚨 Intento de ataque CSRF bloqueado. Referer: {referer}")
+                return jsonify({"success": False, "message": "Acceso cross-origin bloqueado por políticas de seguridad."}), 403
+
 # --- RUTAS DE LA INTERFAZ WEB ---
 
 @app.route('/admin')

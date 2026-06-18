@@ -2123,6 +2123,12 @@ def update_js_links(config):
 
 def delete_product(product_id, category):
     """Elimina un producto del catálogo web y también intenta borrar la foto de origen."""
+    import re
+    # Validar caracteres para evitar Path Traversal (Seguridad)
+    if not re.match(r'^[a-zA-Z0-9_\-\.]+$', product_id) or not re.match(r'^[a-zA-Z0-9_\-\s]+$', category):
+        print(f"⚠️ Alerta de Seguridad: Se detectaron caracteres inválidos en el intento de eliminación. ID: {product_id}, Categoría: {category}")
+        return False, "Error: Identificador de producto o categoría con caracteres inválidos."
+        
     try:
         # 1. Borrar la imagen optimizada WebP
         assets_dir = Path("web/assets")
