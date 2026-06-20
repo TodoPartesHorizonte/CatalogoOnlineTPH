@@ -1275,19 +1275,34 @@ def generate_pages(data):
         elif len(desc) <= 60:
             title_description = desc
         else:
-            title_description = desc[:57] + "..."
+            title_description = desc[:56] + "..."
             
         if len(title_description) < 30:
-            title_description = f"{title_description} | Todo Partes"[:60]
+            extras = [" | Todo Partes Horizonte", " | Todo Partes", " | TPH"]
+            for extra in extras:
+                if len(title_description) + len(extra) <= 60:
+                    title_description += extra
+                    break
         
-        # Meta Descripción: Menor a 160 caracteres
-        desc_limite = desc[:80] + "..." if len(desc) > 80 else desc
+        # Meta Descripción: > 120 y < 160 caracteres
+        desc_limite = desc[:60] + "..." if len(desc) > 60 else desc
         if brands:
-            meta_description = f"Compra {desc_limite}. Repuestos {brand_name} en Caracas. Envíos nacionales."
+            meta_description = f"Compra {desc_limite}. Repuestos originales {brand_name} en Caracas. Envíos nacionales."
             schema_description = f"Compra {desc_limite} original en Caracas. Repuestos para {brand_name}."
         else:
             meta_description = f"Compra {desc_limite} en Caracas. Repuestos con envíos a toda Venezuela."
             schema_description = f"Compra {desc_limite} original en Caracas. Repuestos con envíos nacionales."
+            
+        # Rellenar la descripción si es muy corta (< 120) para mejorar el SEO
+        fillers = [
+            " Especialistas en autopartes de alta calidad.",
+            " Contamos con tienda física y entregas personales.",
+            " Consulta disponibilidad y precio vía WhatsApp.",
+            " Atención personalizada para tu vehículo."
+        ]
+        for filler in fillers:
+            if len(meta_description) < 120 and len(meta_description) + len(filler) <= 158:
+                meta_description += filler
             
         image_alt = f"Fotografía de repuesto {desc} original - Todo Partes Horizonte"
         
@@ -1436,43 +1451,43 @@ def generate_vehicle_pages(base_url):
             vehicles_config = [
                 {
                     "filename": "repuestos-isuzu-caribe-442.html",
-                    "title": "Repuestos Isuzu Caribe 442",
+                    "title": "Repuestos para Isuzu Caribe 442 | Todo Partes Horizonte",
                     "desc": "Encuentra repuestos para Isuzu Caribe 442 en Venezuela. Amortiguadores, partes de motor, embrague y componentes de dirección con envíos a nivel nacional.",
                     "filter": "CARIBE",
                     "card_id": "vehicle-caribe",
-                    "h1": "Repuestos Isuzu Caribe 442"
+                    "h1": "Repuestos para tu Isuzu Caribe 442"
                 },
                 {
                     "filename": "repuestos-chevrolet-luv.html",
-                    "title": "Repuestos Chevrolet Luv",
+                    "title": "Repuestos para Chevrolet Luv | Todo Partes Horizonte",
                     "desc": "Encuentra repuestos para Chevrolet Luv en Venezuela. Amortiguadores, partes de motor, componentes eléctricos y dirección con envíos a nivel nacional.",
                     "filter": "LUV",
                     "card_id": "vehicle-luv",
-                    "h1": "Repuestos Chevrolet Luv"
+                    "h1": "Repuestos para tu Chevrolet Luv"
                 },
                 {
                     "filename": "repuestos-chevrolet-luv-d-max.html",
-                    "title": "Repuestos Chevrolet Luv D-Max",
+                    "title": "Repuestos para Chevrolet Luv D-Max | Todo Partes Horizonte",
                     "desc": "Encuentra repuestos para Chevrolet Luv D-Max en Venezuela. Accesorios de motor, tren delantero, filtros y suspensión con envíos a nivel nacional.",
                     "filter": "D-MAX",
                     "card_id": "vehicle-dmax",
-                    "h1": "Repuestos Chevrolet Luv D-Max"
+                    "h1": "Repuestos para tu Chevrolet Luv D-Max"
                 },
                 {
                     "filename": "repuestos-isuzu-rodeo.html",
-                    "title": "Repuestos Isuzu Rodeo",
+                    "title": "Repuestos para Isuzu Rodeo | Todo Partes Horizonte",
                     "desc": "Encuentra repuestos para Isuzu Rodeo en Venezuela. Componentes de suspensión, embrague, motor y frenos con envíos a nivel nacional.",
                     "filter": "RODEO",
                     "card_id": "vehicle-rodeo",
-                    "h1": "Repuestos Isuzu Rodeo"
+                    "h1": "Repuestos para tu Isuzu Rodeo"
                 },
                 {
                     "filename": "repuestos-isuzu-trooper.html",
-                    "title": "Repuestos Isuzu Trooper",
+                    "title": "Repuestos para Isuzu Trooper | Todo Partes Horizonte",
                     "desc": "Encuentra repuestos para Isuzu Trooper en Venezuela. Tren delantero, bomba de agua, embrague y frenos con envíos a nivel nacional.",
                     "filter": "TROOPER",
                     "card_id": "vehicle-trooper",
-                    "h1": "Repuestos Isuzu Trooper"
+                    "h1": "Repuestos para tu Isuzu Trooper"
                 }
             ]
 
@@ -1525,7 +1540,7 @@ def generate_vehicle_pages(base_url):
                 # Eliminamos el texto "Filtrar por Vehículo" y ponemos el título real
                 v_content = v_content.replace(
                     '<h2 class="vehicle-filter-title">Filtrar por Vehículo</h2>',
-                    f'<h1 class="vehicle-filter-title" style="text-transform: uppercase;">Repuestos para tu {v["title"].replace("Repuestos ", "").lower()}</h1>'
+                    f'<h1 class="vehicle-filter-title" style="text-transform: uppercase;">{v["h1"]}</h1>'
                 )
 
                 # 7. Cambiar filtro activo de vehículo en el selector
