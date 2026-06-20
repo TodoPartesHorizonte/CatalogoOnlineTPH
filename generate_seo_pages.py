@@ -1266,14 +1266,28 @@ def generate_pages(data):
         brand_title = f" para {brand_name}" if brands else ""
         
         # Construcción de textos optimizados para SEO
-        title_description = f"{desc} | Repuestos{brand_title}"
-        
-        if brands:
-            meta_description = f"Comprar {desc} al mejor precio. Especialistas en repuestos {brand_name} en Caracas con envíos a toda Venezuela. Consulta disponibilidad vía WhatsApp."
-            schema_description = f"Comprar {desc} original en Caracas, Venezuela. Repuestos para {brand_name} con envíos nacionales."
+        # Título: Entre 30 y 60 caracteres
+        base_title = f"{desc} | Repuestos{brand_title}"
+        if len(base_title) <= 60:
+            title_description = base_title
+        elif len(f"{desc} | Repuestos") <= 60:
+            title_description = f"{desc} | Repuestos"
+        elif len(desc) <= 60:
+            title_description = desc
         else:
-            meta_description = f"Comprar {desc} al mejor precio. Repuestos en Caracas con envíos a nivel nacional. Consulta disponibilidad y precio vía WhatsApp."
-            schema_description = f"Comprar {desc} original en Caracas, Venezuela. Repuestos de alta calidad con envíos nacionales."
+            title_description = desc[:57] + "..."
+            
+        if len(title_description) < 30:
+            title_description = f"{title_description} | Todo Partes"[:60]
+        
+        # Meta Descripción: Menor a 160 caracteres
+        desc_limite = desc[:80] + "..." if len(desc) > 80 else desc
+        if brands:
+            meta_description = f"Compra {desc_limite}. Repuestos {brand_name} en Caracas. Envíos nacionales."
+            schema_description = f"Compra {desc_limite} original en Caracas. Repuestos para {brand_name}."
+        else:
+            meta_description = f"Compra {desc_limite} en Caracas. Repuestos con envíos a toda Venezuela."
+            schema_description = f"Compra {desc_limite} original en Caracas. Repuestos con envíos nacionales."
             
         image_alt = f"Fotografía de repuesto {desc} original - Todo Partes Horizonte"
         
@@ -1510,7 +1524,7 @@ def generate_vehicle_pages(base_url):
                 # 6. Insertar H1 de SEO para el vehículo (Visible arriba del filtro)
                 # Eliminamos el texto "Filtrar por Vehículo" y ponemos el título real
                 v_content = v_content.replace(
-                    '<h1 class="vehicle-filter-title">Filtrar por Vehículo</h1>',
+                    '<h2 class="vehicle-filter-title">Filtrar por Vehículo</h2>',
                     f'<h1 class="vehicle-filter-title" style="text-transform: uppercase;">Repuestos para tu {v["title"].replace("Repuestos ", "").lower()}</h1>'
                 )
 
