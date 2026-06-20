@@ -34,6 +34,22 @@ def decode_base64(encoded_str):
 def escape_html(text):
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;").replace("'", "&#39;")
 
+def get_site_base_url():
+    base_url = "https://todoparteshorizonte.com/"
+    try:
+        config_path = os.path.join(os.path.dirname(BASE_DIR), 'config.json')
+        if os.path.exists(config_path):
+            with open(config_path, 'r', encoding='utf-8') as f:
+                config = json.load(f)
+                if "base_url" in config and config["base_url"].strip():
+                    url = config["base_url"].strip()
+                    if not url.endswith("/"):
+                        url += "/"
+                    return url
+    except:
+        pass
+    return base_url
+
 def generate_pages(data):
     def to_title_case(text):
         if not text:
@@ -59,7 +75,7 @@ def generate_pages(data):
     ga_encoded = data.get('google_analytics_id', '')
     ga_id = decode_base64(ga_encoded)
     
-    base_url = "https://todoparteshorizonte.com/"
+    base_url = get_site_base_url()
     
     # Intentar obtener la extensión correcta de logo desde el config.json del padre
     config_path = os.path.join(os.path.dirname(BASE_DIR), 'config.json')
@@ -1268,7 +1284,7 @@ def generate_pages(data):
 def generate_sitemap(data):
     products = data.get('products', [])
     today = datetime.now().strftime('%Y-%m-%d')
-    base_url = "https://todoparteshorizonte.com/"
+    base_url = get_site_base_url()
     uuid_pattern = re.compile(r'^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$')
     
     # Recopilar todas las URLs válidas de productos
@@ -1493,4 +1509,5 @@ if __name__ == '__main__':
     data = read_products()
     generate_pages(data)
     generate_sitemap(data)
-    generate_vehicle_pages("https://todoparteshorizonte.com/")
+    base_url = get_site_base_url()
+    generate_vehicle_pages(base_url)

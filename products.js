@@ -3551,10 +3551,10 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-carter-luv-2-3-4x2"
     },
     {
-      "id": "ba75afef-0c6d-400d-9af3-33f2437c0a87",
       "category": "Empacadura Carter",
-      "image_path": "./assets/juego-empacadura-carter-caribe-2300.webp",
       "description": "JUEGO EMPACADURA CARTER CARIBE 2300",
+      "id": "ba75afef-0c6d-400d-9af3-33f2437c0a87",
+      "image_path": "./assets/juego-empacadura-carter-caribe-2300.webp",
       "keywords": [
         "2300",
         "CARIBE",
@@ -3565,10 +3565,10 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-carter-caribe-2300"
     },
     {
-      "id": "5aabc8aa-c9ad-4c2b-9b29-0c2f16aa8247",
       "category": "Empacadura Carter",
-      "image_path": "./assets/juego-empacadura-carter-caribe-2600.webp",
       "description": "JUEGO EMPACADURA CARTER CARIBE 2600",
+      "id": "5aabc8aa-c9ad-4c2b-9b29-0c2f16aa8247",
+      "image_path": "./assets/juego-empacadura-carter-caribe-2600.webp",
       "keywords": [
         "2600",
         "CARIBE",
@@ -3579,12 +3579,12 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-carter-caribe-2600"
     },
     {
-      "id": "22674e7d-ae2e-43bb-bcfb-fda5cf1f74c1",
       "category": "Empacadura Carter",
+      "description": "JUEGO EMPACADURA CARTER LUV 2.3 4X4",
+      "id": "22674e7d-ae2e-43bb-bcfb-fda5cf1f74c1",
       "image_path": "./assets/juego-empacadura-carter-luv-23ax4.webp",
-      "description": "JUEGO EMPACADURA CARTER LUV 23AX4",
       "keywords": [
-        "23AX4",
+        "4X4",
         "CARTER",
         "EMPACADURA",
         "JUEGO",
@@ -6390,10 +6390,10 @@ const PRODUCTS_DATA = {
       "slug": "kit-cajetin-luv-d-max-2010-2014"
     },
     {
-      "id": "6df4422d-f721-41c4-8aff-c8af3e186c82",
       "category": "Kit Caliper",
-      "image_path": "./assets/kit-aliper-delantero-caribe-2300.webp",
       "description": "KIT ALIPER DELANTERO CARIBE 2300",
+      "id": "6df4422d-f721-41c4-8aff-c8af3e186c82",
+      "image_path": "./assets/kit-aliper-delantero-caribe-2300.webp",
       "keywords": [
         "2300",
         "ALIPER",
@@ -6405,10 +6405,10 @@ const PRODUCTS_DATA = {
       "slug": "kit-aliper-delantero-caribe-2300"
     },
     {
-      "id": "e1dd1014-7ced-446e-b917-5d3aec169130",
       "category": "Kit Caliper",
-      "image_path": "./assets/kit-aliper-delantero-caribe-2600.webp",
       "description": "KIT ALIPER DELANTERO CARIBE 2600",
+      "id": "e1dd1014-7ced-446e-b917-5d3aec169130",
+      "image_path": "./assets/kit-aliper-delantero-caribe-2600.webp",
       "keywords": [
         "2600",
         "ALIPER",
@@ -6420,10 +6420,10 @@ const PRODUCTS_DATA = {
       "slug": "kit-aliper-delantero-caribe-2600"
     },
     {
-      "id": "72ba4f09-293b-4146-b2a2-45935aada29a",
       "category": "Kit Caliper",
-      "image_path": "./assets/kit-caliper-delantero-luv.webp",
       "description": "KIT CALIPER DELANTERO LUV",
+      "id": "72ba4f09-293b-4146-b2a2-45935aada29a",
+      "image_path": "./assets/kit-caliper-delantero-luv.webp",
       "keywords": [
         "CALIPER",
         "DELANTERO",
@@ -6433,10 +6433,10 @@ const PRODUCTS_DATA = {
       "slug": "kit-caliper-delantero-luv"
     },
     {
-      "id": "95469a10-ceb9-4d46-9483-c15c260842f1",
       "category": "Kit Camarin",
-      "image_path": "./assets/kit-de-camarin-luv-d-max-3-5.webp",
       "description": "KIT DE CAMARIN LUV D-MAX 3.5",
+      "id": "95469a10-ceb9-4d46-9483-c15c260842f1",
+      "image_path": "./assets/kit-de-camarin-luv-d-max-3-5.webp",
       "keywords": [
         "CAMARIN",
         "D-MAX",
@@ -6446,10 +6446,10 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-camarin-luv-d-max-3-5"
     },
     {
-      "id": "4eabaa37-8bad-441c-97a0-cfb6aeeed3d2",
       "category": "Kit Carburador",
-      "image_path": "./assets/kit-carburador-caribe-2300.webp",
       "description": "KIT CARBURADOR CARIBE 2300",
+      "id": "4eabaa37-8bad-441c-97a0-cfb6aeeed3d2",
+      "image_path": "./assets/kit-carburador-caribe-2300.webp",
       "keywords": [
         "2300",
         "CARBURADOR",
@@ -6459,10 +6459,10 @@ const PRODUCTS_DATA = {
       "slug": "kit-carburador-caribe-2300"
     },
     {
-      "id": "975d0294-10db-4ebd-86f3-9acd860e9051",
       "category": "Kit Carburador",
-      "image_path": "./assets/kit-carburador-caribe-g-200.webp",
       "description": "KIT CARBURADOR CARIBE G-200",
+      "id": "975d0294-10db-4ebd-86f3-9acd860e9051",
+      "image_path": "./assets/kit-carburador-caribe-g-200.webp",
       "keywords": [
         "CARBURADOR",
         "CARIBE",
