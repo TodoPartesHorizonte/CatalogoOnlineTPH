@@ -1482,7 +1482,7 @@ def generate_vehicle_pages(base_url):
                 # Eliminamos el texto "Filtrar por Vehículo" y ponemos el título real
                 v_content = v_content.replace(
                     '<h1 class="vehicle-filter-title">Filtrar por Vehículo</h1>',
-                    f'<h1 class="vehicle-filter-title" style="text-transform: capitalize;">Repuestos para tu {v["title"].replace("Repuestos ", "").lower()}</h1>'
+                    f'<h1 class="vehicle-filter-title" style="text-transform: uppercase;">Repuestos para tu {v["title"].replace("Repuestos ", "").lower()}</h1>'
                 )
 
                 # 7. Cambiar filtro activo de vehículo en el selector
