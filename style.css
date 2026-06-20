@@ -2218,5 +2218,53 @@ height:18px;
     }
 }
 
+/* SECCIÓN DE ENLACES SEO DE VEHÍCULOS */
+.vehicle-seo-section {
+    margin: 40px auto;
+    padding: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    max-width: 1200px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.seo-section-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    border-left: 3px solid var(--accent-orange);
+    padding-left: 10px;
+}
+.seo-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+.seo-links-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    color: var(--text-secondary);
+    font-size: 13.5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    text-align: center;
+}
+.seo-links-grid a:hover {
+    border-color: var(--accent-orange);
+    color: #ffffff;
+    background: rgba(255, 106, 0, 0.05);
+    transform: translateY(-2px);
+}
+
 
 

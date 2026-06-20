@@ -324,7 +324,7 @@
         // Cargar y reconstruir el estado visual en base a los parámetros de la URL
         function parseURLState() {
             const urlParams = new URLSearchParams(window.location.search);
-            const initVehicle = urlParams.get('vehiculo') || 'ALL';
+            const initVehicle = urlParams.get('vehiculo') || window.defaultVehicleFilter || 'ALL';
             const initCategory = urlParams.get('categoria') || 'ALL';
             const initSearch = urlParams.get('buscar') || '';
             const initView = urlParams.get('vista') || 'FOLDERS';

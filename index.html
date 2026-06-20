@@ -7,7 +7,7 @@
     <title>Catálogo de Repuestos | TODO PARTES HORIZONTE</title>
     
     <!-- Metadatos SEO -->
-    <meta name="description" content="Catálogo online especializado en repuestos y autopartes. Consulta disponibilidad para modelos Caribe 442, Trooper, Rodeo, Luv y D-Max vía WhatsApp.">
+    <meta name="description" content="Somos tienda de repuestos encargada de vender autopartes de vehículos Isuzu y Chevrolet (Caribe, Trooper, Rodeo, Luv, Luv D-Max). Envíos nacionales y asesoría técnica especializada.">
     <meta name="keywords" content="ventas de repuestos, autopartes, repuestos originales, repuestos caribe 442, Caribe442, repuestos luv, repuestos luv d-max, repuestos trooper, repuestos rodeo, TODO PARTES, Horizonte">
     <meta name="author" content="TODO PARTES HORIZONTE">
     <meta name="robots" content="index, follow">
@@ -27,7 +27,7 @@
     <!-- Metadatos Open Graph / Redes Sociales (WhatsApp Previews) -->
     <meta property="og:title" content="Catálogo de Repuestos | TODO PARTES HORIZONTE">
     <meta property="og:site_name" content="TODO PARTES HORIZONTE">
-    <meta property="og:description" content="Catálogo online especializado en repuestos y autopartes. Consulta disponibilidad para modelos Caribe 442, Trooper, Rodeo, Luv y D-Max vía WhatsApp.">
+    <meta property="og:description" content="Somos tienda de repuestos encargada de vender autopartes de vehículos Isuzu y Chevrolet (Caribe, Trooper, Rodeo, Luv, Luv D-Max) vía WhatsApp.">
     <meta property="og:image" content="https://todoparteshorizonte.com/assets/logo.png">
     <meta property="og:url" content="https://todoparteshorizonte.com/">
     <meta property="og:type" content="website">
@@ -35,7 +35,7 @@
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Catálogo de Repuestos | TODO PARTES HORIZONTE">
-    <meta name="twitter:description" content="Catálogo online especializado en repuestos y autopartes. Consulta disponibilidad para modelos Caribe 442, Trooper, Rodeo, Luv y D-Max vía WhatsApp.">
+    <meta name="twitter:description" content="Somos tienda de repuestos encargada de vender autopartes de vehículos Isuzu y Chevrolet (Caribe, Trooper, Rodeo, Luv, Luv D-Max) vía WhatsApp.">
     <meta name="twitter:image" content="https://todoparteshorizonte.com/assets/logo.png">
 
     <!-- Marcado de Datos Estructurados JSON-LD (SEO Local) -->
@@ -193,29 +193,29 @@
     <div class="vehicle-filter-container" id="vehicleFilterContainer" style="display: none;">
         <div class="vehicle-filter-title">Filtrar por Vehículo</div>
         <div class="vehicle-grid" id="vehicleGrid">
-            <div class="vehicle-card active" onclick="selectVehicleFilter('ALL')" id="vehicle-all" aria-label="Todos los vehículos" role="button" tabindex="0">
+            <a href="./index.html" class="vehicle-card active" id="vehicle-all" aria-label="Todos los vehículos" role="button" tabindex="0">
                 <svg viewBox="0 0 80 40" class="vehicle-logo" width="100" height="32" aria-hidden="true">
                     <rect x="26" y="10" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                     <rect x="42" y="10" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                     <rect x="26" y="22" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                     <rect x="42" y="22" width="12" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/>
                 </svg>
-            </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('CARIBE')" id="vehicle-caribe" aria-label="Caribe" role="button" tabindex="0">
+            </a>
+            <a href="./repuestos-isuzu-caribe-442.html" class="vehicle-card" id="vehicle-caribe" aria-label="Caribe" role="button" tabindex="0">
                 <img src="./assets/caribe_logo.webp" alt="Caribe" class="vehicle-logo-img" width="100" height="32" loading="eager">
-            </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('LUV')" id="vehicle-luv" aria-label="Luv" role="button" tabindex="0">
+            </a>
+            <a href="./repuestos-chevrolet-luv.html" class="vehicle-card" id="vehicle-luv" aria-label="Luv" role="button" tabindex="0">
                 <img src="./assets/luv_logo.webp" alt="Luv" class="vehicle-logo-img" width="100" height="32" loading="eager">
-            </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('D-MAX')" id="vehicle-dmax" aria-label="Luv D-Max" role="button" tabindex="0">
+            </a>
+            <a href="./repuestos-chevrolet-luv-d-max.html" class="vehicle-card" id="vehicle-dmax" aria-label="Luv D-Max" role="button" tabindex="0">
                 <img src="./assets/dmax_logo.webp" alt="Luv D-Max" class="vehicle-logo-img" width="100" height="32" loading="eager">
-            </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('TROOPER')" id="vehicle-trooper" aria-label="Trooper" role="button" tabindex="0">
+            </a>
+            <a href="./repuestos-isuzu-trooper.html" class="vehicle-card" id="vehicle-trooper" aria-label="Trooper" role="button" tabindex="0">
                 <img src="./assets/trooper_logo.webp" alt="Trooper" class="vehicle-logo-img" width="100" height="32" loading="eager">
-            </div>
-            <div class="vehicle-card" onclick="selectVehicleFilter('RODEO')" id="vehicle-rodeo" aria-label="Rodeo" role="button" tabindex="0">
+            </a>
+            <a href="./repuestos-isuzu-rodeo.html" class="vehicle-card" id="vehicle-rodeo" aria-label="Rodeo" role="button" tabindex="0">
                 <img src="./assets/rodeo_logo.webp" alt="Rodeo" class="vehicle-logo-img" width="100" height="32" loading="eager">
-            </div>
+            </a>
         </div>
     </div>
 
@@ -265,6 +265,18 @@
             <h2>No se encontraron resultados</h2>
             <p>Prueba buscando con otras palabras clave o seleccionando otra categoría.</p>
         </div>
+        
+        <!-- SECCIÓN DE ENLACES SEO DE VEHÍCULOS -->
+        <section class="vehicle-seo-section" aria-label="Repuestos Chevrolet e Isuzu por Modelo">
+            <h2 class="seo-section-title">Repuestos Chevrolet e Isuzu en Venezuela por Modelo</h2>
+            <div class="seo-links-grid">
+                <a href="./repuestos-isuzu-caribe-442.html">Repuestos Isuzu Caribe 442</a>
+                <a href="./repuestos-chevrolet-luv.html">Repuestos Chevrolet Luv</a>
+                <a href="./repuestos-chevrolet-luv-d-max.html">Repuestos Chevrolet Luv D-Max</a>
+                <a href="./repuestos-isuzu-trooper.html">Repuestos Isuzu Trooper</a>
+                <a href="./repuestos-isuzu-rodeo.html">Repuestos Isuzu Rodeo</a>
+            </div>
+        </section>
     </main>
 
     <!-- VISUALIZADOR LIGHTBOX (MODAL) -->

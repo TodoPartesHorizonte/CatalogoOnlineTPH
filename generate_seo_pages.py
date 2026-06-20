@@ -1186,7 +1186,7 @@ def generate_pages(data):
         <div class="footer-content">
             <div class="footer-col">
                 <h4 class="footer-title">TODO PARTES HORIZONTE</h4>
-                <p class="footer-text">Somos especialistas en repuestos e importación directa para vehículos Isuzu con más de 30 años de trayectoria en Caracas. Brindamos asesoría técnica calificada para asegurar el repuesto correcto para tu vehículo.</p>
+                <p class="footer-text">Somos una tienda de repuestos encargada de vender autopartes de alta calidad para vehículos Chevrolet e Isuzu (Caribe, Trooper, Rodeo, Luv y Luv D-Max) con más de 30 años de trayectoria en Caracas. Brindamos asesoría técnica calificada para asegurar el repuesto correcto para tu vehículo.</p>
             </div>
             <div class="footer-col">
                 <h4 class="footer-title">Enlaces Rápidos</h4>
