@@ -1401,6 +1401,21 @@ def generate_sitemap(data):
         f.write('    <changefreq>weekly</changefreq>\n')
         f.write('    <priority>0.9</priority>\n')
         f.write('  </url>\n')
+        
+        car_pages = [
+            "repuestos-isuzu-caribe-442.html",
+            "repuestos-chevrolet-luv.html",
+            "repuestos-chevrolet-luv-d-max.html",
+            "repuestos-isuzu-rodeo.html",
+            "repuestos-isuzu-trooper.html"
+        ]
+        for car_page in car_pages:
+            f.write('  <url>\n')
+            f.write(f'    <loc>{base_url}{car_page}</loc>\n')
+            f.write(f'    <lastmod>{today}</lastmod>\n')
+            f.write('    <changefreq>weekly</changefreq>\n')
+            f.write('    <priority>0.9</priority>\n')
+            f.write('  </url>\n')
         f.write('</urlset>\n')
     sitemap_filenames.append("sitemap-main.xml")
     
