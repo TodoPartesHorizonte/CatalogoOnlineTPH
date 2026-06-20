@@ -619,14 +619,14 @@ def generate_seo_files(products, web_dir):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net;">
     <title>{description} | Repuestos TODO PARTES</title>
-    <meta name="description" content="Comprar {description} al mejor precio. Repuesto especializado en Caracas. Consulta disponibilidad y precio vía WhatsApp.">
+    <meta name="description" content="Comprar {description} al mejor precio. Estamos ubicados en Caracas y hacemos envíos a todo nivel de Venezuela. Consulta disponibilidad y precio vía WhatsApp.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{base_url}p/{safe_filename}">
     <link rel="icon" href="../assets/logo{logo_ext}" type="{logo_type}">
     
     <!-- Open Graph -->
     <meta property="og:title" content="{description} | Repuestos">
-    <meta property="og:description" content="Comprar {description}. Repuesto especializado en Caracas. Consulta disponibilidad vía WhatsApp.">
+    <meta property="og:description" content="Comprar {description}. Estamos ubicados en Caracas y hacemos envíos a todo nivel de Venezuela. Consulta disponibilidad vía WhatsApp.">
     <meta property="og:image" content="{base_url}assets/{id}.webp">
     <meta property="og:url" content="{base_url}p/{safe_filename}">
     <meta property="og:type" content="product">
@@ -1689,7 +1689,7 @@ def generate_seo_files(products, web_dir):
         <div class="footer-content">
             <div class="footer-col">
                 <h4 class="footer-title">TODO PARTES HORIZONTE</h4>
-                <p class="footer-text">Somos especialistas en repuestos e importación directa con más de 30 años de trayectoria en Caracas. Brindamos asesoría técnica calificada para asegurar el repuesto correcto para tu vehículo.</p>
+                <p class="footer-text">Somos una tienda de repuestos encargada de vender autopartes de alta calidad para vehículos Chevrolet e Isuzu (Caribe, Trooper, Rodeo, Luv y Luv D-Max) con más de 30 años de trayectoria en Caracas. Brindamos asesoría técnica calificada para asegurar el repuesto correcto para tu vehículo.</p>
             </div>
             <div class="footer-col">
                 <h4 class="footer-title">Enlaces Rápidos</h4>
@@ -1780,6 +1780,8 @@ def generate_seo_files(products, web_dir):
         
         # Recopilar todas las URLs válidas de productos
         product_urls = []
+        import urllib.parse
+        import html
         for prod in products:
             prod_id = prod.get("id")
             p_slug = prod.get("slug")
@@ -1787,7 +1789,17 @@ def generate_seo_files(products, web_dir):
                 if not p_slug or uuid_pattern.match(p_slug) or p_slug == prod_id:
                     continue
                 safe_filename = f"{p_slug}.html"
-                product_urls.append(f"{base_url}p/{safe_filename}")
+                
+                img_path = prod.get('image_path', '')
+                filename = img_path.split('/')[-1] if img_path else ''
+                image_url = f"{base_url.rstrip('/')}/assets/{urllib.parse.quote(filename)}" if filename else ""
+                desc = html.escape(prod.get('description', 'Repuesto'))
+                
+                product_urls.append({
+                    "url": f"{base_url}p/{safe_filename}",
+                    "image_url": image_url,
+                    "title": desc
+                })
         
         # Dividir en lotes de 100 URLs
         BATCH_SIZE = 100
@@ -1829,10 +1841,15 @@ def generate_seo_files(products, web_dir):
             batch_path = web_path / filename
             with open(batch_path, "w", encoding="utf-8") as f:
                 f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
-                f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-                for prod_url in batch:
+                f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n')
+                for prod in batch:
                     f.write('  <url>\n')
-                    f.write(f'    <loc>{prod_url}</loc>\n')
+                    f.write(f'    <loc>{prod["url"]}</loc>\n')
+                    if prod.get("image_url"):
+                        f.write('    <image:image>\n')
+                        f.write(f'      <image:loc>{prod["image_url"]}</image:loc>\n')
+                        f.write(f'      <image:title>{prod["title"]}</image:title>\n')
+                        f.write('    </image:image>\n')
                     f.write(f'    <lastmod>{today}</lastmod>\n')
                     f.write('    <changefreq>monthly</changefreq>\n')
                     f.write('    <priority>0.8</priority>\n')
@@ -1856,6 +1873,129 @@ def generate_seo_files(products, web_dir):
         print(f"🗺️ Sitemap index generado con {len(sitemap_filenames)} sub-sitemaps ({total_urls} URLs totales)")
     except Exception as e:
         print(f"❌ Error al generar sitemaps: {e}")
+
+    # 4. Generar/Actualizar páginas estáticas por vehículo a partir de index.html
+    try:
+        index_path = web_path / "index.html"
+        if index_path.exists():
+            print("[INFO] Generando paginas estaticas por vehiculo a partir de index.html...")
+            with open(index_path, "r", encoding="utf-8") as f:
+                index_content = f.read()
+
+            vehicles_config = [
+                {
+                    "filename": "repuestos-isuzu-caribe-442.html",
+                    "title": "Repuestos Isuzu Caribe 442",
+                    "desc": "Encuentra repuestos para Isuzu Caribe 442 en Venezuela. Amortiguadores, partes de motor, embrague y componentes de dirección con envíos a nivel nacional.",
+                    "filter": "CARIBE",
+                    "card_id": "vehicle-caribe",
+                    "h1": "Repuestos Isuzu Caribe 442"
+                },
+                {
+                    "filename": "repuestos-chevrolet-luv.html",
+                    "title": "Repuestos Chevrolet Luv",
+                    "desc": "Encuentra repuestos para Chevrolet Luv en Venezuela. Amortiguadores, partes de motor, componentes eléctricos y dirección con envíos a nivel nacional.",
+                    "filter": "LUV",
+                    "card_id": "vehicle-luv",
+                    "h1": "Repuestos Chevrolet Luv"
+                },
+                {
+                    "filename": "repuestos-chevrolet-luv-d-max.html",
+                    "title": "Repuestos Chevrolet Luv D-Max",
+                    "desc": "Encuentra repuestos para Chevrolet Luv D-Max en Venezuela. Accesorios de motor, tren delantero, filtros y suspensión con envíos a nivel nacional.",
+                    "filter": "D-MAX",
+                    "card_id": "vehicle-dmax",
+                    "h1": "Repuestos Chevrolet Luv D-Max"
+                },
+                {
+                    "filename": "repuestos-isuzu-rodeo.html",
+                    "title": "Repuestos Isuzu Rodeo",
+                    "desc": "Encuentra repuestos para Isuzu Rodeo en Venezuela. Componentes de suspensión, embrague, motor y frenos con envíos a nivel nacional.",
+                    "filter": "RODEO",
+                    "card_id": "vehicle-rodeo",
+                    "h1": "Repuestos Isuzu Rodeo"
+                },
+                {
+                    "filename": "repuestos-isuzu-trooper.html",
+                    "title": "Repuestos Isuzu Trooper",
+                    "desc": "Encuentra repuestos para Isuzu Trooper en Venezuela. Tren delantero, bomba de agua, embrague y frenos con envíos a nivel nacional.",
+                    "filter": "TROOPER",
+                    "card_id": "vehicle-trooper",
+                    "h1": "Repuestos Isuzu Trooper"
+                }
+            ]
+
+            for v in vehicles_config:
+                v_path = web_path / v["filename"]
+                v_content = index_content
+
+                # 1. Reemplazar Title
+                v_content = re.sub(r'<title>.*?</title>', f'<title>{v["title"]}</title>', v_content)
+
+                # 2. Reemplazar Meta Description
+                v_content = re.sub(
+                    r'<meta name="description" content="[^"]*"',
+                    f'<meta name="description" content="{v["desc"]}"',
+                    v_content
+                )
+
+                # 3. Reemplazar Meta Canonical
+                v_content = re.sub(
+                    r'<link rel="canonical" href="[^"]*"',
+                    f'<link rel="canonical" href="{base_url}{v["filename"]}"',
+                    v_content
+                )
+
+                # 4. Reemplazar Open Graph Title, Description, Url
+                v_content = re.sub(
+                    r'<meta property="og:title" content="[^"]*"',
+                    f'<meta property="og:title" content="{v["title"]}"',
+                    v_content
+                )
+                v_content = re.sub(
+                    r'<meta property="og:description" content="[^"]*"',
+                    f'<meta property="og:description" content="{v["desc"]}"',
+                    v_content
+                )
+                v_content = re.sub(
+                    r'<meta property="og:url" content="[^"]*"',
+                    f'<meta property="og:url" content="{base_url}{v["filename"]}"',
+                    v_content
+                )
+
+                # 5. Reemplazar h1 de cabecera por div
+                v_content = re.sub(
+                    r'<h1 class="logo-title"([^>]*)>(.*?)</h1>',
+                    r'<div class="logo-title"\1>\2</div>',
+                    v_content
+                )
+
+                # 6. Insertar H1 de SEO para el vehículo (Visible arriba del filtro)
+                # Eliminamos el texto "Filtrar por Vehículo" y ponemos el título real
+                v_content = v_content.replace(
+                    '<h1 class="vehicle-filter-title">Filtrar por Vehículo</h1>',
+                    f'<h1 class="vehicle-filter-title" style="text-transform: capitalize;">Repuestos para tu {v["title"].replace("Repuestos ", "").lower()}</h1>'
+                )
+
+                # 7. Cambiar filtro activo de vehículo en el selector
+                v_content = v_content.replace('class="vehicle-card active" id="vehicle-all"', 'class="vehicle-card" id="vehicle-all"')
+                v_content = v_content.replace(f'class="vehicle-card" id="{v["card_id"]}"', f'class="vehicle-card active" id="{v["card_id"]}"')
+
+                # 8. Agregar JavaScript de filtro predeterminado al final del body
+                control_script = f"""<!-- JAVASCRIPT DE CONTROL -->
+    <script>window.defaultVehicleFilter = '{v["filter"]}';</script>
+    <script defer src="./app.min.js"></script>"""
+                
+                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\n    <script defer src="./app.min.js"></script>', control_script)
+                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\r\n    <script defer src="./app.min.js"></script>', control_script)
+
+                with open(v_path, "w", encoding="utf-8") as out_f:
+                    out_f.write(v_content)
+                print(f"   [OK] Generada pagina de vehiculo: {v['filename']}")
+        else:
+            print("[WARN] No se encontro index.html para generar paginas de vehiculos.")
+    except Exception as e:
+        print(f"[ERROR] Error al generar paginas por vehiculo: {e}")
 
 def sync_catalog(progress_callback=None):
     """Ejecuta el escaneo, OCR y generación de catálogo de forma incremental."""
@@ -2025,6 +2165,29 @@ def sync_catalog(progress_callback=None):
     for prod in updated_products:
         if not prod.get("slug"):
             prod["slug"] = generate_unique_slug(prod["description"], used_slugs)
+
+    # 2.6 Renombrar imágenes físicas para que coincidan con el slug (nombre del repuesto)
+    for prod in updated_products:
+        old_image_path_str = prod.get("image_path")
+        if old_image_path_str and prod.get("slug"):
+            expected_filename = f"{prod['slug']}.webp"
+            expected_relative = f"./assets/{expected_filename}"
+            if old_image_path_str != expected_relative:
+                old_file_path = assets_dir / Path(old_image_path_str).name
+                new_file_path = assets_dir / expected_filename
+                
+                # Si existe el archivo viejo, lo renombramos al nuevo
+                if old_file_path.exists():
+                    try:
+                        if new_file_path.exists() and old_file_path != new_file_path:
+                            new_file_path.unlink()
+                        old_file_path.rename(new_file_path)
+                        prod["image_path"] = expected_relative
+                    except Exception as e:
+                        print(f"Error renombrando imagen {old_file_path.name} a {new_file_path.name}: {e}")
+                # Si el viejo no existe pero el nuevo sí (pudo haberse renombrado en ejecuciones previas)
+                elif new_file_path.exists():
+                    prod["image_path"] = expected_relative
 
     # Ordenar los productos finales alfabéticamente por categoría y luego por descripción
     updated_products.sort(key=lambda x: (x["category"].lower(), x["description"].lower()))
