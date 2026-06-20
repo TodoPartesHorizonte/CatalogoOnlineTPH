@@ -118,8 +118,8 @@ def generate_pages(data):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com;">
-    <title>{description} | Repuestos - Todo Partes Horizonte</title>
-    <meta name="description" content="Comprar {description} al mejor precio. Estamos ubicados en Caracas y hacemos envíos a todo nivel de Venezuela. Consulta disponibilidad y precio vía WhatsApp.">
+    <title>{title_description} | Todo Partes Horizonte</title>
+    <meta name="description" content="{meta_description}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{base_url}p/{safe_filename}">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -131,17 +131,17 @@ def generate_pages(data):
     <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="{description} | Repuestos - Todo Partes Horizonte">
+    <meta property="og:title" content="{title_description} | Todo Partes Horizonte">
     <meta property="og:site_name" content="Todo Partes Horizonte">
-    <meta property="og:description" content="Comprar {description}. Estamos ubicados en Caracas y hacemos envíos a todo nivel de Venezuela. Consulta disponibilidad vía WhatsApp.">
+    <meta property="og:description" content="{meta_description}">
     <meta property="og:image" content="{image_url_seo}">
     <meta property="og:url" content="{base_url}p/{safe_filename}">
     <meta property="og:type" content="product">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{description} | Repuestos - Todo Partes Horizonte">
-    <meta name="twitter:description" content="Comprar {description}. Estamos ubicados en Caracas y hacemos envíos a todo nivel de Venezuela. Consulta disponibilidad vía WhatsApp.">
+    <meta name="twitter:title" content="{title_description} | Todo Partes Horizonte">
+    <meta name="twitter:description" content="{meta_description}">
     <meta name="twitter:image" content="{image_url_seo}">
     
     <!-- JSON-LD -->
@@ -151,10 +151,10 @@ def generate_pages(data):
       "@type": "Product",
       "name": "{description}",
       "image": "{image_url_seo}",
-      "description": "{description}. Especialistas en repuestos en Caracas.",
+      "description": "{schema_description}",
       "brand": {{
         "@type": "Brand",
-        "name": "Original"
+        "name": "{brand_schema_name}"
       }},
       "offers": {{
         "@type": "Offer",
@@ -1146,7 +1146,7 @@ def generate_pages(data):
 
         <div class="product-layout">
             <div class="image-card">
-                <img src="..{image_path}" alt="{description}" class="product-img">
+                <img src="..{image_path}" alt="{image_alt}" class="product-img">
             </div>
 
             <div class="details-panel">
@@ -1253,6 +1253,30 @@ def generate_pages(data):
         filename = img_path.split('/')[-1]
         image_url_seo = f"{base_url.rstrip('/')}/assets/{urllib.parse.quote(filename)}"
         
+        # Inteligencia de Marca para SEO
+        desc_lower = desc.lower()
+        brands = []
+        if 'caribe' in desc_lower or 'trooper' in desc_lower or 'rodeo' in desc_lower or 'isuzu' in desc_lower:
+            brands.append("Isuzu")
+        if 'luv' in desc_lower or 'd-max' in desc_lower or 'chevrolet' in desc_lower:
+            brands.append("Chevrolet")
+            
+        brand_schema_name = " / ".join(brands) if brands else "Original"
+        brand_name = " y ".join(brands) if brands else ""
+        brand_title = f" para {brand_name}" if brands else ""
+        
+        # Construcción de textos optimizados para SEO
+        title_description = f"{desc} | Repuestos{brand_title}"
+        
+        if brands:
+            meta_description = f"Comprar {desc} al mejor precio. Especialistas en repuestos {brand_name} en Caracas con envíos a toda Venezuela. Consulta disponibilidad vía WhatsApp."
+            schema_description = f"Comprar {desc} original en Caracas, Venezuela. Repuestos para {brand_name} con envíos nacionales."
+        else:
+            meta_description = f"Comprar {desc} al mejor precio. Repuestos en Caracas con envíos a nivel nacional. Consulta disponibilidad y precio vía WhatsApp."
+            schema_description = f"Comprar {desc} original en Caracas, Venezuela. Repuestos de alta calidad con envíos nacionales."
+            
+        image_alt = f"Fotografía de repuesto {desc} original - Todo Partes Horizonte"
+        
         html_content = template.format(
             id=p_id,
             slug=p_slug if p_slug else p_id,
@@ -1271,7 +1295,12 @@ def generate_pages(data):
             instagram_url=instagram_url,
             facebook_url=facebook_url,
             maps_url=maps_url,
-            reviews_url=reviews_url
+            reviews_url=reviews_url,
+            title_description=title_description,
+            meta_description=meta_description,
+            schema_description=schema_description,
+            brand_schema_name=brand_schema_name,
+            image_alt=image_alt
         )
         
         # Guardar archivo
