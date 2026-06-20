@@ -118,7 +118,7 @@ def generate_pages(data):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com;">
-    <title>{title_description} | Todo Partes Horizonte</title>
+    <title>{title_description}</title>
     <meta name="description" content="{meta_description}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{base_url}p/{safe_filename}">
@@ -131,7 +131,7 @@ def generate_pages(data):
     <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="{title_description} | Todo Partes Horizonte">
+    <meta property="og:title" content="{title_description}">
     <meta property="og:site_name" content="Todo Partes Horizonte">
     <meta property="og:description" content="{meta_description}">
     <meta property="og:image" content="{image_url_seo}">
@@ -140,7 +140,7 @@ def generate_pages(data):
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{title_description} | Todo Partes Horizonte">
+    <meta name="twitter:title" content="{title_description}">
     <meta name="twitter:description" content="{meta_description}">
     <meta name="twitter:image" content="{image_url_seo}">
     
