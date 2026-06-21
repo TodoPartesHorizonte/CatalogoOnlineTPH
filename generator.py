@@ -84,7 +84,7 @@ def init_ocr():
         OCR_READER = easyocr.Reader(['es', 'en'])
         print("   ✅ EasyOCR cargado correctamente (recomendado).")
     except Exception as e:
-        print(f"   ⚠️ EasyOCR no disponible ({e}). Intentando cargar Pytesseract...")
+        print(f"   EasyOCR no disponible ({e}). Intentando cargar Pytesseract...")
 
     # 2. Intentar cargar Pytesseract si EasyOCR no está
     if OCR_READER is None:
@@ -106,7 +106,7 @@ def init_ocr():
             TESSERACT_AVAILABLE = True
             print("   ✅ Pytesseract (Tesseract OCR) cargado correctamente.")
         except Exception as e:
-            print(f"   ⚠️ Pytesseract no disponible o no configurado ({e}).")
+            print(f"   Pytesseract no disponible o no configurado ({e}).")
 
     if OCR_READER is None and not TESSERACT_AVAILABLE:
         print("   🚨 ¡ALERTA! No hay ningún motor OCR disponible. Se usará el nombre de los archivos.")
@@ -552,7 +552,7 @@ def generate_seo_files(products, web_dir):
             f.write(f"\nSitemap: {base_url}sitemap.xml\n")
         print(f"🤖 robots.txt generado exitosamente en: {robots_path.name}")
     except Exception as e:
-        print(f"❌ Error al generar robots.txt: {e}")
+        print(f"Error al generar robots.txt: {e}")
 
     # 2. Delegar la generación de páginas SEO y sitemaps al script especializado en la carpeta web
     try:
@@ -580,9 +580,9 @@ def generate_seo_files(products, web_dir):
             generate_seo_pages.generate_vehicle_pages(base_url)
             print("🚀 Proceso de SEO y sitemaps completado con éxito.")
         else:
-            print("❌ Error: No se pudieron cargar los datos de products.js para el SEO.")
+            print("Error: No se pudieron cargar los datos de products.js para el SEO.")
     except Exception as e:
-        print(f"❌ Error al ejecutar generate_seo_pages: {e}")
+        print(f"Error al ejecutar generate_seo_pages: {e}")
 
 def sync_catalog(progress_callback=None):
     """Ejecuta el escaneo, OCR y generación de catálogo de forma incremental."""
@@ -605,29 +605,34 @@ def sync_catalog(progress_callback=None):
         logo_file_path = Path(logo_path_str)
         if logo_file_path.exists() and logo_file_path.is_file():
             try:
-                logo_ext = logo_file_path.suffix.lower()
-                dest_logo_path = assets_dir / f"logo{logo_ext}"
+                dest_logo_path = assets_dir / "logo.webp"
                 
-                # Optimizar logo para reducir su peso en red
+                # Optimizar logo para reducir su peso en red y convertir a WebP
                 try:
                     with Image.open(logo_file_path) as img:
+                        # Mantener transparencia si existe, sino convertir a RGB
+                        if img.mode in ('RGBA', 'LA') or (img.mode == 'P' and 'transparency' in img.info):
+                            img = img.convert('RGBA')
+                        elif img.mode != 'RGB':
+                            img = img.convert('RGB')
                         img.thumbnail((300, 300))
-                        img.save(dest_logo_path, optimize=True)
-                    print(f"🎨 Logo optimizado y copiado exitosamente a: {dest_logo_path.name}")
+                        img.save(dest_logo_path, "WEBP", quality=85)
+                    print(f"Logo optimizado a WebP y copiado exitosamente a: {dest_logo_path.name}")
                 except Exception as img_err:
-                    print(f"⚠️ Advertencia: No se pudo optimizar el logo ({img_err}). Copiando archivo original...")
+                    print(f"Advertencia: No se pudo optimizar el logo ({img_err}). Copiando archivo original...")
+                    dest_logo_path = assets_dir / f"logo{logo_file_path.suffix.lower()}"
                     shutil.copy2(logo_file_path, dest_logo_path)
                 
-                use_custom_logo = f"./assets/logo{logo_ext}"
+                use_custom_logo = f"./assets/{dest_logo_path.name}"
             except Exception as e:
-                print(f"❌ Error al copiar el logo: {e}")
+                print(f"Error al copiar el logo: {e}")
         else:
-            print(f"⚠️ Advertencia: El archivo de logo en '{logo_path_str}' no existe.")
+            print(f"Advertencia: El archivo de logo en '{logo_path_str}' no existe.")
             
-    print(f"🔍 Escaneando carpeta de origen: {source_dir.absolute()}")
+    print(f"Escaneando carpeta de origen: {source_dir.absolute()}")
 
     if not source_dir.exists():
-        print(f"❌ Error: La carpeta de origen '{source_dir}' no existe.")
+        print(f"Error: La carpeta de origen '{source_dir}' no existe.")
         print("💡 Por favor, crea la carpeta o edita config.json con la ruta correcta.")
         if progress_callback:
             progress_callback(0, 1, f"Error: Carpeta de origen no existe.")
@@ -747,7 +752,7 @@ def sync_catalog(progress_callback=None):
             new_count += 1
             newly_processed_ids.append(product_id)
         else:
-            print(f"❌ Error al procesar la imagen {file_path.name}. Se omitió.")
+            print(f"Error al procesar la imagen {file_path.name}. Se omitió.")
 
     # 2.5 Asegurar slugs únicos para todos los productos
     used_slugs = set()
@@ -800,14 +805,14 @@ def sync_catalog(progress_callback=None):
                 try:
                     os.remove(old_webp)
                 except Exception as e:
-                    print(f"❌ No se pudo eliminar archivo obsoleto {old_webp.name}: {e}")
+                    print(f"No se pudo eliminar archivo obsoleto {old_webp.name}: {e}")
             deleted_count += 1
             
     print(f"\n📊 Resumen de Sincronización:")
     print(f"  🔹 Omitidas (ya procesadas): {skipped_count}")
     print(f"  🔸 Nuevas procesadas: {new_count}")
     print(f"  🗑️ Eliminadas del catálogo: {deleted_count}")
-    print(f"  📦 Total actual en catálogo: {len(updated_products)}")
+    print(f"  Total actual en catálogo: {len(updated_products)}")
     
     # Guardar base de datos JSON
     catalog_data = {
@@ -831,7 +836,7 @@ def sync_catalog(progress_callback=None):
         if progress_callback:
             progress_callback(total_files, total_files, "Catálogo generado y guardado con éxito.")
     else:
-        print(f"❌ Error al guardar products.js")
+        print(f"Error al guardar products.js")
         if progress_callback:
             progress_callback(total_files, total_files, "Error al guardar el catálogo JS.")
             
@@ -858,17 +863,22 @@ def update_js_links(config):
             if logo_file_path.exists() and logo_file_path.is_file():
                 assets_dir = Path("web/assets")
                 assets_dir.mkdir(parents=True, exist_ok=True)
-                logo_ext = logo_file_path.suffix.lower()
-                dest_logo_path = assets_dir / f"logo{logo_ext}"
+                dest_logo_path = assets_dir / "logo.webp"
                 try:
                     with Image.open(logo_file_path) as img:
+                        # Mantener transparencia si existe, sino convertir a RGB
+                        if img.mode in ('RGBA', 'LA') or (img.mode == 'P' and 'transparency' in img.info):
+                            img = img.convert('RGBA')
+                        elif img.mode != 'RGB':
+                            img = img.convert('RGB')
                         img.thumbnail((300, 300))
-                        img.save(dest_logo_path, optimize=True)
-                    print(f"Logo optimizado y copiado exitosamente a: {dest_logo_path.name}")
+                        img.save(dest_logo_path, "WEBP", quality=85)
+                    print(f"Logo optimizado a WebP y copiado exitosamente a: {dest_logo_path.name}")
                 except Exception as img_err:
                     print(f"Advertencia: No se pudo optimizar el logo ({img_err}). Copiando archivo original...")
+                    dest_logo_path = assets_dir / f"logo{logo_file_path.suffix.lower()}"
                     shutil.copy2(logo_file_path, dest_logo_path)
-                data["use_custom_logo"] = f"./assets/logo{logo_ext}"
+                data["use_custom_logo"] = f"./assets/{dest_logo_path.name}"
         
         success = write_catalog_js(data)
         if success:
@@ -887,7 +897,7 @@ def delete_product(product_id, category):
     import re
     # Validar caracteres para evitar Path Traversal (Seguridad)
     if not re.match(r'^[a-zA-Z0-9_\-\.]+$', product_id) or not re.match(r'^[a-zA-Z0-9_\-\s]+$', category):
-        print(f"⚠️ Alerta de Seguridad: Se detectaron caracteres inválidos en el intento de eliminación. ID: {product_id}, Categoría: {category}")
+        print(f"Alerta de Seguridad: Se detectaron caracteres inválidos en el intento de eliminación. ID: {product_id}, Categoría: {category}")
         return False, "Error: Identificador de producto o categoría con caracteres inválidos."
         
     try:

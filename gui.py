@@ -103,12 +103,12 @@ def protect_csrf():
         # 1. Validar cabecera Origin
         if origin:
             if not (origin.startswith('http://127.0.0.1:') or origin.startswith('http://localhost:')):
-                print(f"🚨 Intento de ataque CSRF bloqueado. Origin: {origin}")
+                print(f"Intento de ataque CSRF bloqueado. Origin: {origin}")
                 return jsonify({"success": False, "message": "Acceso cross-origin bloqueado por políticas de seguridad."}), 403
         # 2. Si no hay Origin pero hay Referer, validar Referer
         elif referer:
             if not (referer.startswith('http://127.0.0.1:') or referer.startswith('http://localhost:')):
-                print(f"🚨 Intento de ataque CSRF bloqueado. Referer: {referer}")
+                print(f"Intento de ataque CSRF bloqueado. Referer: {referer}")
                 return jsonify({"success": False, "message": "Acceso cross-origin bloqueado por políticas de seguridad."}), 403
 
 # --- RUTAS DE LA INTERFAZ WEB ---
@@ -196,7 +196,7 @@ def run_sync():
         is_syncing = True
         
     print("\n==================================================================")
-    print("⚡ INICIANDO PROCESAMIENTO DE IMÁGENES Y LECTURA OCR...")
+    print("INICIANDO PROCESAMIENTO DE IMÁGENES Y LECTURA OCR...")
     print("==================================================================\n")
     
     def sync_task():
@@ -209,14 +209,14 @@ def run_sync():
                 with open("last_sync.json", "w", encoding="utf-8") as f:
                     json.dump(session_newly_added_ids, f)
             except Exception as e:
-                print(f"❌ Error al guardar persistencia de nuevos IDs: {e}")
+                print(f"Error al guardar persistencia de nuevos IDs: {e}")
         except Exception as e:
-            print(f"\n🚨 ERROR durante la ejecución: {e}\n")
+            print(f"\nERROR durante la ejecución: {e}\n")
         finally:
             with bg_lock:
                 is_syncing = False
             print("\n==================================================================")
-            print("🎉 PROCESO LOCAL TERMINADO CORRECTAMENTE.")
+            print("PROCESO LOCAL TERMINADO CORRECTAMENTE.")
             print("==================================================================\n")
             
     threading.Thread(target=sync_task).start()
@@ -237,7 +237,7 @@ def run_publish():
         return jsonify({"success": False, "message": "Git no está inicializado en la carpeta 'web'. Revisa la configuración de Git en tu consola."}), 400
 
     print("\n==================================================================")
-    print("🚀 SUBIENDO ACTUALIZACIONES A LA NUBE (CLOUDFLARE/GITHUB)...")
+    print("SUBIENDO ACTUALIZACIONES A LA NUBE (CLOUDFLARE/GITHUB)...")
     print("==================================================================\n")
 
     def publish_task():
@@ -251,7 +251,7 @@ def run_publish():
             web_path = os.path.abspath("web")
             
             for cmd in commands:
-                print(f"📦 Ejecutando: {' '.join(cmd)}")
+                print(f"Ejecutando: {' '.join(cmd)}")
                 process = subprocess.Popen(
                     cmd, 
                     cwd=web_path, 
@@ -264,21 +264,21 @@ def run_publish():
                 if stdout.strip():
                     print(stdout)
                 if stderr.strip() and process.returncode != 0:
-                    print(f"❌ [Error]: {stderr}")
+                    print(f"[Error]: {stderr}")
                     
                 if process.returncode != 0:
                     if cmd[1] == "commit" and "nothing to commit" in (stdout + stderr):
-                        print("ℹ️ No hay cambios nuevos para guardar en el commit.")
+                        print("No hay cambios nuevos para guardar en el commit.")
                     else:
-                        print(f"❌ El comando falló con código {process.returncode}")
+                        print(f"El comando falló con código {process.returncode}")
                         break
         except Exception as e:
-            print(f"\n🚨 ERROR al publicar en GitHub: {e}\n")
+            print(f"\nERROR al publicar en GitHub: {e}\n")
         finally:
             with bg_lock:
                 is_publishing = False
             print("\n==================================================================")
-            print("✅ PROCESO DE SUBIDA COMPLETADO CON ÉXITO.")
+            print("PROCESO DE SUBIDA COMPLETADO CON ÉXITO.")
             print("El nuevo catálogo se ha cargado en GitHub. Cloudflare Pages lo actualizará en 1-2 minutos.")
             print("==================================================================\n")
 
