@@ -42,6 +42,12 @@
         "@type": "Brand",
         "name": "Chevrolet"
       },
+      "isAccessoryOrSparePartFor": [
+      {
+        "@type": "Vehicle",
+        "name": "Chevrolet Luv D-Max"
+      }
+    ],
       "offers": {
         "@type": "Offer",
         "availability": "https://schema.org/InStock",
@@ -68,6 +74,38 @@
         },
         "reviewBody": "Excelente atención y variedad de repuestos."
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Tienen disponibilidad de este repuesto Guaya Capot Con Manilla Luv D-Max?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, contamos con disponibilidad en almacén de Guaya Capot Con Manilla Luv D-Max en Caracas. Te recomendamos contactarnos por WhatsApp para confirmar stock y coordinar tu entrega o retiro personal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde puedo comprar este repuesto en Caracas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puedes retirar tu repuesto en nuestra sede física ubicada en Boleíta Sur, Caracas. También realizamos envíos nacionales cobro en destino."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hacen envíos al interior de Venezuela?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, hacemos envíos a nivel nacional a través de agencias de encomienda confiables como Zoom, Tealca y MRW con cobro en destino."
+          }
+        }
+      ]
     }
     </script>
     <!-- Google Analytics -->
@@ -535,6 +573,112 @@
 
         .info-item strong {
             color: #fff;
+        }
+
+        .compatibility-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .compatibility-card h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-left: 3px solid var(--accent-orange);
+            padding-left: 10px;
+            margin: 0 0 4px 0;
+        }
+
+        .comp-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            padding-bottom: 8px;
+        }
+
+        .comp-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .comp-label {
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .comp-value {
+            color: #fff;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .faq-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .faq-section h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 3px solid var(--accent-orange);
+            padding-left: 10px;
+            margin: 0;
+            text-align: left;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .faq-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }
+        }
+
+        .faq-item {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            text-align: left;
+        }
+
+        .faq-question {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin: 0;
+        }
+
+        .faq-answer {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin: 0;
         }
 
         footer {
@@ -1009,7 +1153,14 @@
                 <div class="category-badge">Guaya Capot</div>
                 <h1 class="product-title">Guaya Capot Con Manilla Luv D-Max</h1>
                 
-
+                <!-- Ficha de Compatibilidad -->
+                <div class="compatibility-card">
+                    <h3>Compatibilidad de la Autoparte</h3>
+                    <div class="comp-item">
+                        <span class="comp-label">Vehículo(s):</span>
+                        <span class="comp-value">Chevrolet Luv D-Max</span>
+                    </div>
+                </div>
 
                 <div class="cta-card">
                     <a href="https://wa.me/584242116375?text=Hola,%20quisiera%20consultar%20disponibilidad%20y%20precio%20del%20repuesto:%20Guaya%20Capot%20Con%20Manilla%20Luv%20D-Max" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
@@ -1049,6 +1200,25 @@
                             Atención al cliente personalizada y asesoría técnica vía WhatsApp.
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <div class="faq-section">
+            <h3>Preguntas Frecuentes sobre Guaya Capot Con Manilla Luv D-Max</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4 class="faq-question">¿Tienen disponibilidad del repuesto Guaya Capot Con Manilla Luv D-Max?</h4>
+                    <p class="faq-answer">Sí, contamos con stock de este repuesto en Caracas. Te sugerimos confirmar disponibilidad exacta de forma rápida haciendo clic en el botón de WhatsApp.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">¿Dónde puedo retirar la pieza?</h4>
+                    <p class="faq-answer">Puedes retirar tu pedido personalmente en nuestra oficina comercial en Boleíta Sur, Caracas. También realizamos envíos a nivel nacional.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">¿Qué métodos de envío manejan para el interior de Venezuela?</h4>
+                    <p class="faq-answer">Realizamos envíos cobro en destino a todo el país a través de agencias de encomienda confiables como Zoom, Tealca y MRW.</p>
                 </div>
             </div>
         </div>

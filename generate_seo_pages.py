@@ -60,6 +60,84 @@ def generate_pages(data):
             return w.capitalize()
         return ' '.join(cap_word(w) for w in text.split())
 
+    def extract_compatibility(desc):
+        desc_upper = desc.upper()
+        
+        # 1. Detectar Vehículos
+        vehicles = []
+        if "D-MAX" in desc_upper or "DMAX" in desc_upper:
+            vehicles.append("Chevrolet Luv D-Max")
+        elif "LUV" in desc_upper:
+            vehicles.append("Chevrolet Luv")
+        
+        if "CARIBE" in desc_upper:
+            vehicles.append("Isuzu Caribe 442")
+        if "RODEO" in desc_upper:
+            vehicles.append("Isuzu Rodeo")
+        if "TROOPER" in desc_upper:
+            vehicles.append("Isuzu Trooper")
+            
+        if not vehicles:
+            if "ISUZU" in desc_upper:
+                vehicles.append("Isuzu")
+            elif "CHEVROLET" in desc_upper:
+                vehicles.append("Chevrolet")
+            else:
+                vehicles.append("Chevrolet / Isuzu")
+
+        # 2. Detectar Motorización
+        engines = []
+        # Buscar patrones de motores decimales (1.0L a 6.0L)
+        motor_matches = re.findall(r'\b([1-5]\.\d|6\.0)\b', desc_upper)
+        for m in motor_matches:
+            engines.append(f"Motor {m}L")
+            
+        # Buscar códigos de Caribe/Luv
+        if "G-200" in desc_upper or "G200" in desc_upper:
+            if "G-2000" not in desc_upper and "G2000" not in desc_upper:
+                engines.append("Motor G200 (2.0L)")
+        if "G-2000" in desc_upper or "G2000" in desc_upper:
+            engines.append("Motor G2000 (2.0L)")
+            
+        if "2000" in desc_upper and "G-2000" not in desc_upper and "G2000" not in desc_upper:
+            if "CARIBE" in desc_upper:
+                engines.append("Motor 2.0L (2000 cc)")
+        if "2300" in desc_upper:
+            engines.append("Motor 2.3L (2300 cc)")
+        if "2600" in desc_upper:
+            engines.append("Motor 2.6L (2600 cc)")
+            
+        engine_str = " / ".join(engines) if engines else None
+
+        # 3. Detectar Años
+        years = []
+        # Rangos de 2 o 4 dígitos (ej. 83-88, 1983-1988, 97-02, 05-14)
+        range_match = re.search(r'\b(\d{2,4})-(\d{2,4})\b', desc_upper)
+        if range_match:
+            y1, y2 = range_match.groups()
+            y1_full = y1 if len(y1) == 4 else (f"19{y1}" if int(y1) > 50 else f"20{y1}")
+            y2_full = y2 if len(y2) == 4 else (f"19{y2}" if int(y2) > 50 else f"20{y2}")
+            years.append(f"{y1_full} - {y2_full}")
+        else:
+            # Años sueltos de 4 dígitos
+            year_matches = re.findall(r'\b(19\d{2}|20\d{2})\b', desc_upper)
+            filtered_years = []
+            for y in year_matches:
+                if y in ["2000", "2300", "2600"] and "CARIBE" in desc_upper:
+                    continue
+                filtered_years.append(y)
+            if filtered_years:
+                years.append(", ".join(filtered_years))
+                
+        year_str = years[0] if years else None
+        
+        return {
+            "vehicles": " / ".join(vehicles),
+            "vehicles_list": vehicles,
+            "engines": engine_str,
+            "years": year_str
+        }
+
     products = data.get('products', [])
     whatsapp_encoded = data.get('whatsapp_number', '')
     whatsapp_number = decode_base64(whatsapp_encoded)
@@ -156,6 +234,7 @@ def generate_pages(data):
         "@type": "Brand",
         "name": "{brand_schema_name}"
       }},
+      {schema_compatibility_json}
       "offers": {{
         "@type": "Offer",
         "availability": "https://schema.org/InStock",
@@ -182,6 +261,38 @@ def generate_pages(data):
         }},
         "reviewBody": "Excelente atención y variedad de repuestos."
       }}
+    }}
+    </script>
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {{
+          "@type": "Question",
+          "name": "¿Tienen disponibilidad de este repuesto {description}?",
+          "acceptedAnswer": {{
+            "@type": "Answer",
+            "text": "Sí, contamos con disponibilidad en almacén de {description} en Caracas. Te recomendamos contactarnos por WhatsApp para confirmar stock y coordinar tu entrega o retiro personal."
+          }}
+        }},
+        {{
+          "@type": "Question",
+          "name": "¿Dónde puedo comprar este repuesto en Caracas?",
+          "acceptedAnswer": {{
+            "@type": "Answer",
+            "text": "Puedes retirar tu repuesto en nuestra sede física ubicada en Boleíta Sur, Caracas. También realizamos envíos nacionales cobro en destino."
+          }}
+        }},
+        {{
+          "@type": "Question",
+          "name": "¿Hacen envíos al interior de Venezuela?",
+          "acceptedAnswer": {{
+            "@type": "Answer",
+            "text": "Sí, hacemos envíos a nivel nacional a través de agencias de encomienda confiables como Zoom, Tealca y MRW con cobro en destino."
+          }}
+        }}
+      ]
     }}
     </script>{ga_script}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -641,6 +752,112 @@ def generate_pages(data):
 
         .info-item strong {{
             color: #fff;
+        }}
+
+        .compatibility-card {{
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 8px;
+            text-align: left;
+        }}
+
+        .compatibility-card h3 {{
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-left: 3px solid var(--accent-orange);
+            padding-left: 10px;
+            margin: 0 0 4px 0;
+        }}
+
+        .comp-item {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            padding-bottom: 8px;
+        }}
+
+        .comp-item:last-child {{
+            border-bottom: none;
+            padding-bottom: 0;
+        }}
+
+        .comp-label {{
+            color: var(--text-secondary);
+            font-weight: 600;
+        }}
+
+        .comp-value {{
+            color: #fff;
+            font-weight: 700;
+            text-align: right;
+        }}
+
+        .faq-section {{
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }}
+
+        .faq-section h3 {{
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 3px solid var(--accent-orange);
+            padding-left: 10px;
+            margin: 0;
+            text-align: left;
+        }}
+
+        .faq-grid {{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }}
+
+        @media (min-width: 768px) {{
+            .faq-grid {{
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }}
+        }}
+
+        .faq-item {{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            text-align: left;
+        }}
+
+        .faq-question {{
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin: 0;
+        }}
+
+        .faq-answer {{
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin: 0;
         }}
 
         footer {{
@@ -1115,7 +1332,8 @@ def generate_pages(data):
                 <div class="category-badge">{category}</div>
                 <h1 class="product-title">{description}</h1>
                 
-
+                <!-- Ficha de Compatibilidad -->
+                {compatibility_card}
 
                 <div class="cta-card">
                     <a href="https://wa.me/{whatsapp_number}?text=Hola,%20quisiera%20consultar%20disponibilidad%20y%20precio%20del%20repuesto:%20{url_description}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
@@ -1155,6 +1373,25 @@ def generate_pages(data):
                             Atención al cliente personalizada y asesoría técnica vía WhatsApp.
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <div class="faq-section">
+            <h3>Preguntas Frecuentes sobre {description}</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4 class="faq-question">¿Tienen disponibilidad del repuesto {description}?</h4>
+                    <p class="faq-answer">Sí, contamos con stock de este repuesto en Caracas. Te sugerimos confirmar disponibilidad exacta de forma rápida haciendo clic en el botón de WhatsApp.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">¿Dónde puedo retirar la pieza?</h4>
+                    <p class="faq-answer">Puedes retirar tu pedido personalmente en nuestra oficina comercial en Boleíta Sur, Caracas. También realizamos envíos a nivel nacional.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">¿Qué métodos de envío manejan para el interior de Venezuela?</h4>
+                    <p class="faq-answer">Realizamos envíos cobro en destino a todo el país a través de agencias de encomienda confiables como Zoom, Tealca y MRW.</p>
                 </div>
             </div>
         </div>
@@ -1268,6 +1505,47 @@ def generate_pages(data):
             
         image_alt = f"Fotografía de repuesto {desc} original - Todo Partes Horizonte"
         
+        compat = extract_compatibility(desc)
+        
+        # Construir Ficha de Compatibilidad HTML dinámicamente
+        compat_rows = []
+        if compat["vehicles"]:
+            compat_rows.append(f"""                    <div class="comp-item">
+                        <span class="comp-label">Vehículo(s):</span>
+                        <span class="comp-value">{compat["vehicles"]}</span>
+                    </div>""")
+        if compat["engines"]:
+            compat_rows.append(f"""                    <div class="comp-item">
+                        <span class="comp-label">Motorización:</span>
+                        <span class="comp-value">{compat["engines"]}</span>
+                    </div>""")
+        if compat["years"]:
+            compat_rows.append(f"""                    <div class="comp-item">
+                        <span class="comp-label">Año(s):</span>
+                        <span class="comp-value">{compat["years"]}</span>
+                    </div>""")
+                    
+        compatibility_card_html = f"""<div class="compatibility-card">
+                    <h3>Compatibilidad de la Autoparte</h3>
+{"\n".join(compat_rows)}
+                </div>"""
+                
+        # Construir JSON-LD schema_compatibility_json dinámicamente
+        schema_vehicles = []
+        for v in compat["vehicles_list"]:
+            vehicle_props = [
+                f'        "@type": "Vehicle"',
+                f'        "name": "{v}"'
+            ]
+            if compat["engines"]:
+                vehicle_props.append(f'        "vehicleEngine": {{\n          "@type": "EngineSpecification",\n          "name": "{compat["engines"]}"\n        }}')
+            if compat["years"]:
+                vehicle_props.append(f'        "modelDate": "{compat["years"]}"')
+                
+            schema_vehicles.append(f'{{\n' + ',\n'.join(vehicle_props) + '\n      }')
+            
+        schema_compatibility_json = '"isAccessoryOrSparePartFor": [\n      ' + ',\n      '.join(schema_vehicles) + '\n    ],'
+        
         html_content = template.format(
             id=p_id,
             slug=p_slug if p_slug else p_id,
@@ -1291,7 +1569,9 @@ def generate_pages(data):
             meta_description=meta_description,
             schema_description=schema_description,
             brand_schema_name=brand_schema_name,
-            image_alt=image_alt
+            image_alt=image_alt,
+            compatibility_card=compatibility_card_html,
+            schema_compatibility_json=schema_compatibility_json
         )
         
         # Guardar archivo
