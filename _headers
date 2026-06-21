@@ -3,3 +3,19 @@
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Content-Security-Policy: default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; upgrade-insecure-requests;
+
+# Recursos estáticos (JS, CSS, imágenes)
+/*.css
+  Cache-Control: max-age=31536000, immutable
+/*.js
+  Cache-Control: max-age=31536000, immutable
+/assets/*
+  Cache-Control: max-age=31536000, immutable
+
+# Páginas HTML, raíz y base de datos (dinámico)
+/*.html
+  Cache-Control: max-age=3600, must-revalidate
+/
+  Cache-Control: max-age=3600, must-revalidate
+/products.js
+  Cache-Control: max-age=3600, must-revalidate
