@@ -155,28 +155,9 @@ def generate_pages(data):
     
     base_url = get_site_base_url()
     
-    # Intentar obtener la extensión correcta de logo desde el config.json del padre
-    config_path = os.path.join(os.path.dirname(BASE_DIR), 'config.json')
-    logo_ext = ".png"
-    if os.path.exists(config_path):
-        try:
-            with open(config_path, 'r', encoding='utf-8') as f:
-                config = json.load(f)
-                logo_path_str = config.get("logo_path", "")
-                if logo_path_str:
-                    logo_ext = os.path.splitext(logo_path_str)[1].lower()
-                    if not logo_ext:
-                        logo_ext = ".png"
-        except:
-            pass
-            
-    logo_type = "image/png"
-    if logo_ext == ".jpg" or logo_ext == ".jpeg":
-        logo_type = "image/jpeg"
-    elif logo_ext == ".webp":
-        logo_type = "image/webp"
-    elif logo_ext == ".svg":
-        logo_type = "image/svg+xml"
+    # Usar logo .webp por defecto con fallback en el HTML
+    logo_ext = ".webp"
+    logo_type = "image/webp"
         
     ga_script = ""
     if ga_id:
@@ -1444,7 +1425,7 @@ def generate_pages(data):
     <header>
         <div class="header-container">
             <a href="../index.html" class="brand-lockup">
-                <img src="../assets/logo{logo_ext}" alt="Logo de TODO PARTES HORIZONTE" class="logo-image">
+                <img src="../assets/logo{logo_ext}" alt="Logo de TODO PARTES HORIZONTE" class="logo-image" onerror="this.onerror=null; this.src='../assets/logo.png';">
                 <div class="brand-text">
                     <h2 class="logo-title">TODO PARTES <span>HORIZONTE</span></h2>
                     <div class="logo-subtitle">Repuestos Isuzu en Caracas</div>
