@@ -1578,9 +1578,43 @@ def generate_vehicle_pages(base_url):
     except Exception as e:
         print(f"[ERROR] Error al generar paginas por vehiculo: {e}")
 
+def update_index_seo_links(products):
+    import html
+    index_path = os.path.join(BASE_DIR, "index.html")
+    if not os.path.exists(index_path):
+        return
+        
+    with open(index_path, "r", encoding="utf-8") as f:
+        content = f.read()
+        
+    start_marker = "<!-- INICIO ENLACES SEO -->"
+    end_marker = "<!-- FIN ENLACES SEO -->"
+    
+    if start_marker in content and end_marker in content:
+        start_idx = content.find(start_marker) + len(start_marker)
+        end_idx = content.find(end_marker)
+        
+        links = []
+        uuid_pattern = re.compile(r'^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$')
+        for product in products:
+            prod_id = product.get("id")
+            p_slug = product.get("slug")
+            if prod_id and p_slug and not uuid_pattern.match(p_slug) and p_slug != prod_id:
+                safe_filename = f"{p_slug}.html"
+                desc = html.escape(product.get('description', 'Repuesto'))
+                links.append(f'        <a href="./p/{safe_filename}">{desc}</a>')
+                
+        new_links_html = "\n" + "\n".join(links) + "\n        "
+        new_content = content[:start_idx] + new_links_html + content[end_idx:]
+        
+        with open(index_path, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        print(f"Se actualizaron los enlaces SEO en index.html ({len(links)} enlaces).")
+
 if __name__ == '__main__':
     data = read_products()
     generate_pages(data)
     generate_sitemap(data)
+    update_index_seo_links(data.get('products', []))
     base_url = get_site_base_url()
     generate_vehicle_pages(base_url)
