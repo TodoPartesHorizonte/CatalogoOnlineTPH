@@ -343,10 +343,11 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Araña",
-      "description": "ARAÑA LUV D-MAX 3.0",
+      "description": "ARAÑA LUV D-MAX 3.0 4X2",
       "id": "76426ad5-1a55-4d2b-a14b-6aa8452aa8a8",
       "image_path": "./assets/arana-luv-d-max-3-0.webp",
       "keywords": [
+        "4X2",
         "ARANA",
         "D-MAX",
         "LUV"
