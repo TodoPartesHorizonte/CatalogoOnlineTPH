@@ -4,6 +4,15 @@ try:
 except Exception:
     pass
 
+import sys
+# Configurar la codificación de la consola en Windows para admitir UTF-8 y evitar errores al imprimir emojis
+if sys.platform == 'win32':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
+
 import os
 import json
 import re
