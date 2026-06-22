@@ -220,6 +220,8 @@ def generate_pages(data):
       {schema_compatibility_json}
       "offers": {{
         "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
         "url": "{base_url}p/{safe_filename}",
         "seller": {{
