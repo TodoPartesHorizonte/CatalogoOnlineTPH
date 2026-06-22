@@ -727,7 +727,7 @@ def sync_catalog(progress_callback=None):
                 if physical_img_path.exists():
                     image_exists = True
 
-        if product_id in existing_products and image_exists and not is_uuid:
+        if product_id in existing_products and image_exists:
             # Conservar registro anterior (actualizando categoría por si cambió de carpeta)
             old_prod = existing_products[product_id]
             # Si cambió de carpeta, refrescar categoría y palabras clave
