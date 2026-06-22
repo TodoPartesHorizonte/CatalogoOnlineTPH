@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 566,
+  "total_products": 577,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -6133,6 +6133,52 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-empacadura-luv-d-max-3-5"
     },
     {
+      "category": "Kit Arandela y Tuerca Punta Eje",
+      "description": "KIT ARANDELA Y TUERCA PUNTA DE EJE CARIBE 2.0",
+      "id": "66ea6147-495d-484a-bacd-e7db7e874ba5",
+      "image_path": "./assets/kit-arandela-y-tuerca-punta-de-eje-caribe-2-0.webp",
+      "keywords": [
+        "ARANDELA",
+        "CARIBE",
+        "EJE",
+        "KIT",
+        "PUNTA",
+        "TUERCA"
+      ],
+      "slug": "kit-arandela-y-tuerca-punta-de-eje-caribe-2-0"
+    },
+    {
+      "category": "Kit Arandela y Tuerca Punta Eje",
+      "description": "KIT ARANDELA Y TUERCA PUNTA DE EJE CARIBE 2.3",
+      "id": "3a5f43c6-f994-457f-9d54-5b1438bfa740",
+      "image_path": "./assets/kit-arandela-y-tuerca-punta-de-eje-caribe-2-3.webp",
+      "keywords": [
+        "ARANDELA",
+        "CARIBE",
+        "EJE",
+        "KIT",
+        "PUNTA",
+        "TUERCA"
+      ],
+      "slug": "kit-arandela-y-tuerca-punta-de-eje-caribe-2-3"
+    },
+    {
+      "category": "Kit Arandela y Tuerca Punta Eje",
+      "description": "KIT ARANDELA Y TUERCA PUNTADE EJE CARIBE 2.6",
+      "id": "f3b264dc-2829-4917-8961-af35a1f77992",
+      "image_path": "./assets/f3b264dc-2829-4917-8961-af35a1f77992.webp",
+      "keywords": [
+        "ARANDELA",
+        "CARIBE",
+        "EJE",
+        "KIT",
+        "PUNTA",
+        "PUNTADE",
+        "TUERCA"
+      ],
+      "slug": "kit-arandela-y-tuerca-puntade-eje-caribe-2-6"
+    },
+    {
       "category": "Kit Barra Tensora",
       "description": "KIT BARRA TENSORA LUV 2300",
       "id": "277d7754-934b-43d8-9a72-996c9e95b34d",
@@ -6487,6 +6533,19 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Kit Clutch",
+      "description": "KIT DE CLUTCH LUV D-MAX 2.4",
+      "id": "e5ef7872-8ba7-4ac6-a199-a9c77963bc8c",
+      "image_path": "./assets/kit-de-clutch-luv-d-max-2-4.webp",
+      "keywords": [
+        "CLUTCH",
+        "D-MAX",
+        "KIT",
+        "LUV"
+      ],
+      "slug": "kit-de-clutch-luv-d-max-2-4"
+    },
+    {
+      "category": "Kit Clutch",
       "description": "KIT DE CLUTCH LUV D-MAX 3.5",
       "id": "02448505-b941-4452-b250-55bf899f7701",
       "image_path": "./assets/kit-de-clutch-luv-d-max-3-5.webp",
@@ -6571,6 +6630,81 @@ const PRODUCTS_DATA = {
         "MOTOR"
       ],
       "slug": "kit-de-motor-luv-d-max-3-5"
+    },
+    {
+      "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO CARIBE 2000",
+      "id": "dcaceea8-ada8-4bc0-872e-642db573e9e6",
+      "image_path": "./assets/kit-de-tiempo-caribe-2000.webp",
+      "keywords": [
+        "2000",
+        "CARIBE",
+        "KIT",
+        "TIEMPO"
+      ],
+      "slug": "kit-de-tiempo-caribe-2000"
+    },
+    {
+      "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO LUV 2.2",
+      "id": "908b9e53-9ff0-4113-ad58-b1a98d50ecc6",
+      "image_path": "./assets/kit-de-tiempo-chevrolet-luv-2-2.webp",
+      "keywords": [
+        "KIT",
+        "LUV",
+        "TIEMPO"
+      ],
+      "slug": "kit-de-tiempo-chevrolet-luv-2-2"
+    },
+    {
+      "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO LUV D-MAX 2.4",
+      "id": "833fa2f2-94ae-4be0-bf51-fb93142e0926",
+      "image_path": "./assets/kit-de-tiempo-chevrolet-luv-d-max-2-4.webp",
+      "keywords": [
+        "D-MAX",
+        "KIT",
+        "LUV",
+        "TIEMPO"
+      ],
+      "slug": "kit-de-tiempo-chevrolet-luv-d-max-2-4"
+    },
+    {
+      "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO LUV D-MAX 3.5",
+      "id": "0df62e16-fef2-494c-926f-0c9366b2f646",
+      "image_path": "./assets/kit-de-tiempo-luv-d-max-3-5.webp",
+      "keywords": [
+        "D-MAX",
+        "KIT",
+        "LUV",
+        "TIEMPO"
+      ],
+      "slug": "kit-de-tiempo-luv-d-max-3-5"
+    },
+    {
+      "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO RODEO 3.2",
+      "id": "d7ad6e9b-e09f-4629-9faa-bde687718807",
+      "image_path": "./assets/kit-de-tiempo-rodeo-3-2.webp",
+      "keywords": [
+        "KIT",
+        "RODEO",
+        "TIEMPO"
+      ],
+      "slug": "kit-de-tiempo-rodeo-3-2"
+    },
+    {
+      "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO TROOPER 3.2",
+      "id": "3429e89c-adf3-4f89-bc41-d3a6ed86e6f9",
+      "image_path": "./assets/kit-de-tiempo-trooper-3-2.webp",
+      "keywords": [
+        "KIT",
+        "TIEMPO",
+        "TROOPER"
+      ],
+      "slug": "kit-de-tiempo-trooper-3-2"
     },
     {
       "category": "Kit Satelite y Planetario",
@@ -6732,6 +6866,22 @@ const PRODUCTS_DATA = {
         "PISTONES"
       ],
       "slug": "juego-de-pistones-luv-d-max-3-5"
+    },
+    {
+      "category": "Posapies Parachoque Trasero",
+      "description": "KIT POSAPIE PARACHOQUE TRASERO LUV D-MAX",
+      "id": "ee6191a1-ea9b-4af7-aaaf-29da00b00ed7",
+      "image_path": "./assets/kit-posapie-parachoque-trasero-luv-d-max.webp",
+      "keywords": [
+        "D-MAX",
+        "KIT",
+        "LUV",
+        "PARACHOQUE",
+        "POSAPIE",
+        "POSAPIES",
+        "TRASERO"
+      ],
+      "slug": "kit-posapie-parachoque-trasero-luv-d-max"
     },
     {
       "category": "Regulador Presion Gasolina",

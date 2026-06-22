@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-motor-luv-2-2.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-motor-luv-2-2.webp</image:loc>
+      <image:title>KIT DE MOTOR LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-motor-luv-2-3.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-motor-luv-2-3.webp</image:loc>
+      <image:title>KIT DE MOTOR LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-motor-luv-d-max-2-4.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-motor-luv-d-max-2-4.webp</image:loc>
+      <image:title>KIT DE MOTOR LUV D-MAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-motor-luv-d-max-3-5.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-motor-luv-d-max-3-5.webp</image:loc>
+      <image:title>KIT DE MOTOR LUV D-MAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-tiempo-caribe-2000.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-tiempo-caribe-2000.webp</image:loc>
+      <image:title>KIT DE TIEMPO CARIBE 2000</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-tiempo-chevrolet-luv-2-2.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-tiempo-chevrolet-luv-2-2.webp</image:loc>
+      <image:title>KIT DE TIEMPO CHEVROLET LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-tiempo-chevrolet-luv-d-max-2-4.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-tiempo-chevrolet-luv-d-max-2-4.webp</image:loc>
+      <image:title>KIT DE TIEMPO CHEVROLET LUV D-MAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-tiempo-luv-d-max-3-5.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-tiempo-luv-d-max-3-5.webp</image:loc>
+      <image:title>KIT DE TIEMPO LUV D-MAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-tiempo-rodeo-3-2.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-tiempo-rodeo-3-2.webp</image:loc>
+      <image:title>KIT DE TIEMPO RODEO 3.2</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-tiempo-trooper-3-2.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-tiempo-trooper-3-2.webp</image:loc>
+      <image:title>KIT DE TIEMPO TROOPER 3.2</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/kit-satelite-y-planetario-caribe.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/kit-satelite-y-planetario-caribe.webp</image:loc>
@@ -115,6 +215,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/juego-de-pistones-luv-d-max-3-5.webp</image:loc>
       <image:title>JUEGO DE PISTONES LUV D-MAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-posapie-parachoque-trasero-luv-d-max.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-posapie-parachoque-trasero-luv-d-max.webp</image:loc>
+      <image:title>KIT POSAPIE PARACHOQUE TRASERO LUV D-MAX</image:title>
     </image:image>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
