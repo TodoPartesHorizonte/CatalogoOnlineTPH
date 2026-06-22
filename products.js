@@ -6357,7 +6357,7 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Kit Bombin Clutch",
-      "description": "KIT BOMBIN LUV D-MAX",
+      "description": "KIT BOMBIN LUV D-MAX 3.5",
       "id": "b9945842-5f68-4916-8a85-c0af2f87018d",
       "image_path": "./assets/kit-bombin-luv-d-max.webp",
       "keywords": [
