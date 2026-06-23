@@ -250,6 +250,21 @@ def generate_pages(data):
           "shippingDestination": {{
             "@type": "DefinedRegion",
             "addressCountry": "VE"
+          }},
+          "deliveryTime": {{
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {{
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 1,
+              "unitCode": "DAY"
+            }},
+            "transitTime": {{
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 3,
+              "unitCode": "DAY"
+            }}
           }}
         }},
         "hasMerchantReturnPolicy": {{
@@ -258,7 +273,12 @@ def generate_pages(data):
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 10,
           "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/ReturnShippingFees"
+          "returnFees": "https://schema.org/ReturnShippingFees",
+          "returnShippingFeesAmount": {{
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          }}
         }}
       }},
       "aggregateRating": {{
