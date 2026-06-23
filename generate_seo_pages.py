@@ -276,7 +276,7 @@ def generate_pages(data):
           "returnFees": "https://schema.org/ReturnShippingFees",
           "returnShippingFeesAmount": {{
             "@type": "MonetaryAmount",
-            "value": "0.00",
+            "value": "5.00",
             "currency": "USD"
           }}
         }}
