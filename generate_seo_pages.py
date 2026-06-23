@@ -239,6 +239,26 @@ def generate_pages(data):
             "addressRegion": "Miranda",
             "addressCountry": "VE"
           }}
+        }},
+        "shippingDetails": {{
+          "@type": "OfferShippingDetails",
+          "shippingRate": {{
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          }},
+          "shippingDestination": {{
+            "@type": "DefinedRegion",
+            "addressCountry": "VE"
+          }}
+        }},
+        "hasMerchantReturnPolicy": {{
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "VE",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 10,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/ReturnShippingFees"
         }}
       }},
       "aggregateRating": {{

@@ -7085,7 +7085,7 @@ const PRODUCTS_DATA = {
       "category": "Kit Arandela y Tuerca Punta Eje",
       "description": "KIT ARANDELA Y TUERCA PUNTADE EJE CARIBE 2.6",
       "id": "f3b264dc-2829-4917-8961-af35a1f77992",
-      "image_path": "./assets/f3b264dc-2829-4917-8961-af35a1f77992.webp",
+      "image_path": "./assets/kit-arandela-y-tuerca-puntade-eje-caribe-2-6.webp",
       "keywords": [
         "ARANDELA",
         "CARIBE",
