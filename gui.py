@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import re
 import queue
 import threading
 import subprocess
@@ -120,6 +121,51 @@ def serve_admin_index():
 @app.route('/admin/<path:path>')
 def serve_admin_files(path):
     return send_from_directory('admin', path)
+
+# Endpoint de Inventario Local desde Drive (respaldo offline)
+@app.route('/api/inventory', methods=['GET'])
+def get_inventory():
+    try:
+        path = r"G:\.shortcut-targets-by-id\1KiaMi4TfoEyXFHc-IJ8qNnO2xnrcRMUL\FOTOS PARA REDES\respaldo_inventario.html"
+        if not os.path.exists(path):
+            return jsonify({"success": False, "message": f"No se encontró el archivo de inventario en {path}"})
+            
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read()
+            
+        # Buscar "const inventoryData = [ ... ]" usando regex
+        match = re.search(r'const\s+inventoryData\s*=\s*(\[.*?\])\s*;', content, re.DOTALL)
+        if not match:
+            match = re.search(r'const\s+inventoryData\s*=\s*(\[.*?\])', content, re.DOTALL)
+            
+        if not match:
+            return jsonify({"success": False, "message": "No se pudo extraer la variable inventoryData del archivo HTML."})
+            
+        json_data = json.loads(match.group(1))
+        
+        # Asignar un uid único secuencial a cada repuesto de inventario para la vinculación en el modal
+        for idx, item in enumerate(json_data):
+            item["uid"] = f"inv-{idx}"
+            
+        # Intentar extraer la tasa BCV dinámica desde "const params = { ... }"
+        bcv_rate = 40.0
+        params_match = re.search(r'const\s+params\s*=\s*(\{.*?\})\s*;', content, re.DOTALL)
+        if params_match:
+            try:
+                params = json.loads(params_match.group(1))
+                bcv_rate = float(params.get("tasa_bcv", 40.0))
+            except Exception:
+                pass
+                
+        rates = {"bcv": bcv_rate}
+        
+        return jsonify({
+            "success": True,
+            "inventory": json_data,
+            "rates": rates
+        })
+    except Exception as e:
+        return jsonify({"success": False, "message": f"Error al leer inventario: {str(e)}"}), 500
 
 # --- ENDPOINTS DE API ---
 
@@ -318,12 +364,16 @@ def save_products():
         data["products"] = updated_products
         data["total_products"] = len(updated_products)
         
-        # Re-indexar keywords por si cambiaron las descripciones
+        # Re-indexar keywords por si cambiaron las descripciones o los números OEM
         for product in data["products"]:
-            product["keywords"] = generator.generate_keywords(product["description"], product["category"])
+            product["keywords"] = generator.generate_keywords(product["description"], product["category"], product.get("oem"))
             
         success = generator.write_catalog_js(data)
         if success:
+            try:
+                generator.generate_seo_files(data["products"], "web")
+            except Exception as seo_err:
+                print(f"Error al generar páginas SEO en guardado: {seo_err}")
             return jsonify({"success": True, "message": "Cambios guardados con éxito en products.js."})
         return jsonify({"success": False, "message": "Error al guardar el archivo de catálogo."}), 500
     except Exception as e:

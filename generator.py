@@ -371,10 +371,12 @@ def clean_text_for_catalog(raw_text, category, image_path=None):
         
     return text
 
-def generate_keywords(text, category):
+def generate_keywords(text, category, oem=None):
     """Genera una lista de palabras clave únicas filtrando stop words."""
-    # Unir descripción y categoría
+    # Unir descripción, categoría y OEM si existe
     full_text = f"{text} {category}"
+    if oem:
+        full_text += f" {oem}"
     # Normalizar (eliminar acentos de forma simple para mejor coincidencia de búsqueda)
     a, b = 'áéíóúüñÁÉÍÓÚÜÑ', 'aeiouunAEIOUUN'
     trans = str.maketrans(a, b)
@@ -733,7 +735,7 @@ def sync_catalog(progress_callback=None):
             # Si cambió de carpeta, refrescar categoría y palabras clave
             if old_prod["category"] != category:
                 old_prod["category"] = category
-                old_prod["keywords"] = generate_keywords(old_prod["description"], category)
+                old_prod["keywords"] = generate_keywords(old_prod["description"], category, old_prod.get("oem"))
             updated_products.append(old_prod)
             skipped_count += 1
             continue
