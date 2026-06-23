@@ -212,7 +212,7 @@ def generate_pages(data):
       "image": "{image_url_seo}",
       "description": "{schema_description}",
       "sku": "{id}",
-      "mpn": "{id}",
+      "mpn": {mpn_code},
       "brand": {{
         "@type": "Brand",
         "name": "{brand_schema_name}"
@@ -1467,6 +1467,7 @@ def generate_pages(data):
             <div class="details-panel">
                 <div class="category-badge">{category}</div>
                 <h1 class="product-title">{description}</h1>
+                {oem_html}
                 
                 <!-- Ficha de Compatibilidad -->
                 {compatibility_card}
@@ -1604,18 +1605,47 @@ def generate_pages(data):
         brand_name = " y ".join(brands) if brands else ""
         brand_title = f" para {brand_name}" if brands else ""
         
+        # OEM para SEO (extraer aquí para uso en títulos y metas)
+        p_oem_raw = product.get('oem', '').strip()
+        
+        # Procesar múltiples códigos OEM si están separados por '/' o ','
+        oem_list_raw = []
+        if p_oem_raw:
+            # Dividir por slash o coma y limpiar espacios
+            oem_list_raw = [part.strip() for part in re.split(r'[/,]', p_oem_raw) if part.strip()]
+            
+        # Para el buscador y SEO de Google es mejor indexar sin guiones
+        oem_list_seo = [part.replace('-', '').replace(' ', '') for part in oem_list_raw]
+        
+        # Usar únicamente el primer código OEM (el principal) para los límites rígidos de Título y Meta Descripción
+        p_oem_seo_main = oem_list_seo[0] if oem_list_seo else ""
+        
         # Construcción de textos optimizados para SEO
-        # Título: Entre 30 y 60 caracteres
-        base_title = f"{desc} | Repuestos{brand_title}"
-        if len(base_title) <= 60:
-            title_description = base_title
-        elif len(f"{desc} | Repuestos") <= 60:
-            title_description = f"{desc} | Repuestos"
-        elif len(desc) <= 60:
-            title_description = desc
-        else:
+        # ═══════════════════════════════════════════════
+        # REGLA TÍTULO: entre 30 y 60 caracteres (Google trunca a ~60)
+        # REGLA META DESC: entre 120 y 158 caracteres (Google trunca a ~160)
+        # ═══════════════════════════════════════════════
+        
+        # --- TÍTULO (30-60 chars) ---
+        title_candidates = []
+        if p_oem_seo_main:
+            title_candidates.append(f"{desc} {p_oem_seo_main} | Repuestos{brand_title}")
+            title_candidates.append(f"{desc} {p_oem_seo_main} | Repuestos")
+            title_candidates.append(f"{desc} {p_oem_seo_main}")
+        title_candidates.append(f"{desc} | Repuestos{brand_title}")
+        title_candidates.append(f"{desc} | Repuestos")
+        title_candidates.append(desc)
+        
+        title_description = None
+        for candidate in title_candidates:
+            if len(candidate) <= 60:
+                title_description = candidate
+                break
+        
+        if title_description is None:
             title_description = desc[:56] + "..."
             
+        # Si el título es muy corto (< 30), agregar sufijo de marca
         if len(title_description) < 30:
             extras = [" | Todo Partes Horizonte", " | Todo Partes", " | TPH"]
             for extra in extras:
@@ -1623,14 +1653,24 @@ def generate_pages(data):
                     title_description += extra
                     break
         
-        # Meta Descripción: > 120 y < 160 caracteres
+        # --- META DESCRIPCIÓN (120-158 chars) ---
         desc_limite = desc[:60] + "..." if len(desc) > 60 else desc
+        oem_meta_part = f" Código OEM: {p_oem_seo_main}." if p_oem_seo_main else ""
+        
         if brands:
-            meta_description = f"Compra {desc_limite}. Repuestos originales {brand_name} en Caracas. Envíos nacionales."
-            schema_description = f"Compra {desc_limite} original en Caracas. Repuestos para {brand_name}."
+            meta_base_with_oem = f"Compra {desc_limite}.{oem_meta_part} Repuestos originales {brand_name} en Caracas. Envíos nacionales."
+            meta_base_no_oem = f"Compra {desc_limite}. Repuestos originales {brand_name} en Caracas. Envíos nacionales."
+            schema_description = f"Compra {desc_limite} original en Caracas.{oem_meta_part} Repuestos para {brand_name}."
         else:
-            meta_description = f"Compra {desc_limite} en Caracas. Repuestos con envíos a toda Venezuela."
-            schema_description = f"Compra {desc_limite} original en Caracas. Repuestos con envíos nacionales."
+            meta_base_with_oem = f"Compra {desc_limite} en Caracas.{oem_meta_part} Repuestos con envíos a toda Venezuela."
+            meta_base_no_oem = f"Compra {desc_limite} en Caracas. Repuestos con envíos a toda Venezuela."
+            schema_description = f"Compra {desc_limite} original en Caracas.{oem_meta_part} Repuestos con envíos nacionales."
+        
+        # Usar versión con OEM solo si cabe en 158 chars, si no, usar sin OEM
+        if len(meta_base_with_oem) <= 158:
+            meta_description = meta_base_with_oem
+        else:
+            meta_description = meta_base_no_oem
             
         # Rellenar la descripción si es muy corta (< 120) para mejorar el SEO
         fillers = [
@@ -1642,6 +1682,10 @@ def generate_pages(data):
         for filler in fillers:
             if len(meta_description) < 120 and len(meta_description) + len(filler) <= 158:
                 meta_description += filler
+        
+        # Guardia final: truncar si por alguna razón se excedió (safety net)
+        if len(meta_description) > 158:
+            meta_description = meta_description[:155] + "..."
             
         image_alt = f"Fotografía de repuesto {desc} original - Todo Partes Horizonte"
         
@@ -1652,31 +1696,31 @@ def generate_pages(data):
         if compat["vehicles_list"]:
             vehicle_tags = "".join([f'<span class="tag-capsule vehicle-tag">{v}</span>' for v in compat["vehicles_list"]])
             compat_rows.append(f"""                    <div class="comp-item">
-                        <span class="comp-label">Vehículo(s)</span>
+                        <span class="comp-label">Vehículo:</span>
                         <div class="comp-tags">{vehicle_tags}</div>
                     </div>""")
         if compat["engines"]:
-            engine_list = [e.strip() for e in compat["engines"].split(" / ") if e.strip()]
-            engine_tags = "".join([f'<span class="tag-capsule engine-tag">{e}</span>' for e in engine_list])
             compat_rows.append(f"""                    <div class="comp-item">
-                        <span class="comp-label">Motorización</span>
-                        <div class="comp-tags">{engine_tags}</div>
+                        <span class="comp-label">Motor:</span>
+                        <span class="tag-capsule engine-tag">{compat["engines"]}</span>
                     </div>""")
         if compat["years"]:
-            year_tags = f'<span class="tag-capsule year-tag">{compat["years"]}</span>'
             compat_rows.append(f"""                    <div class="comp-item">
-                        <span class="comp-label">Año(s)</span>
-                        <div class="comp-tags">{year_tags}</div>
+                        <span class="comp-label">Año:</span>
+                        <span class="tag-capsule year-tag">{compat["years"]}</span>
                     </div>""")
                     
         compatibility_card_html = f"""<div class="compatibility-card">
-                    <h3>Compatibilidad de la Autoparte</h3>
-{"\n".join(compat_rows)}
+                    <h3>Compatibilidad Garantizada</h3>
+                    {"\n".join(compat_rows)}
                 </div>"""
                 
         # Generar párrafo de descripción semántico para SEO y motores de IA
         brand_name_str = " y ".join(brands) if brands else "Chevrolet / Isuzu"
         desc_paragraph = f"El repuesto <strong>{desc}</strong> está diseñado específicamente para vehículos <strong>{brand_name_str}</strong>. Esta pieza pertenece a la categoría de <strong>{cat}</strong>, cumpliendo con los estándares de rendimiento y acople original para asegurar la durabilidad y correcto funcionamiento de tu vehículo."
+        if p_oem_raw:
+            # Mostramos visualmente el OEM con sus guiones originales
+            desc_paragraph += f" Número de parte OEM: <strong>{escape_html(p_oem_raw)}</strong>."
         if compat["engines"]:
             desc_paragraph += f" Es totalmente compatible con motorizaciones <strong>{compat['engines']}</strong>."
         if compat["years"]:
@@ -1706,6 +1750,18 @@ def generate_pages(data):
             
         schema_compatibility_json = '"isAccessoryOrSparePartFor": [\n      ' + ',\n      '.join(schema_vehicles) + '\n    ],'
         
+        # OEM and MPN Code
+        p_oem = escape_html(p_oem_raw)
+        # Visualmente mostramos el OEM original en la página
+        oem_html = f'<div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600;">OEM: {p_oem}</div>' if p_oem else ''
+        
+        # Formatear el mpn para JSON-LD. Si hay múltiples OEM, lo inyectamos como un array válido de JSON
+        import json
+        if len(oem_list_seo) > 1:
+            mpn_code = json.dumps(oem_list_seo)
+        else:
+            mpn_code = f'"{oem_list_seo[0]}"' if oem_list_seo else f'"{p_id}"'
+
         html_content = template.format(
             id=p_id,
             slug=p_slug if p_slug else p_id,
@@ -1732,7 +1788,9 @@ def generate_pages(data):
             image_alt=image_alt,
             compatibility_card=compatibility_card_html,
             description_card=description_card_html,
-            schema_compatibility_json=schema_compatibility_json
+            schema_compatibility_json=schema_compatibility_json,
+            oem_html=oem_html,
+            mpn_code=mpn_code
         )
         
         # Guardar archivo

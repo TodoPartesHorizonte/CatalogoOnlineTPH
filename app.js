@@ -755,6 +755,7 @@
                         </div>
                         <div class="card-content">
                             <div class="product-desc" title="${product.description}">${product.description}</div>
+                            ${product.oem ? `<div class="product-oem" style="font-family: monospace; font-size: 11px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -4px;">OEM: ${product.oem}</div>` : ''}
                             <div class="card-actions">
                                 <a href="${whatsappLink}" target="_blank" class="card-btn" id="btn-wa-${product.id}" aria-label="Consultar repuesto por WhatsApp">
                                     <svg aria-hidden="true" viewBox="0 0 24 24">

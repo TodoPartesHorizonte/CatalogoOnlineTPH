@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://todoparteshorizonte.com/p/gemelo-ballesta-caribe-luv.html</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/gemelo-ballesta-caribe-luv.webp</image:loc>
-      <image:title>GEMELO BALLESTA CARIBE / LUV</image:title>
-    </image:image>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/gemelo-ballesta-luv-d-max-trooper.html</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/gemelo-ballesta-luv-d-max-trooper.webp</image:loc>
-      <image:title>GEMELO BALLESTA LUV D-MAX / TROOPER</image:title>
-    </image:image>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/goma-barra-estabilizadora-caribe.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/goma-barra-estabilizadora-caribe.webp</image:loc>
@@ -634,7 +614,7 @@
     <loc>https://todoparteshorizonte.com/p/inyector-combustible-luv-d-max-3507-14.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/inyector-combustible-luv-d-max-3507-14.webp</image:loc>
-      <image:title>INYECTOR LUV D-MAX 3.5 07-14</image:title>
+      <image:title>INYECTOR LUV D-MAX 3.5</image:title>
     </image:image>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -834,7 +814,7 @@
     <loc>https://todoparteshorizonte.com/p/kit-bombin-luv-d-max.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/kit-bombin-luv-d-max.webp</image:loc>
-      <image:title>KIT BOMBIN LUV D-MAX</image:title>
+      <image:title>KIT BOMBIN LUV D-MAX 3.5</image:title>
     </image:image>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -894,7 +874,7 @@
     <loc>https://todoparteshorizonte.com/p/kit-aliper-delantero-caribe-2300.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/kit-aliper-delantero-caribe-2300.webp</image:loc>
-      <image:title>KIT ALIPER DELANTERO CARIBE 2300</image:title>
+      <image:title>KIT CALIPER DELANTERO CARIBE 2300</image:title>
     </image:image>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -904,7 +884,7 @@
     <loc>https://todoparteshorizonte.com/p/kit-aliper-delantero-caribe-2600.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/kit-aliper-delantero-caribe-2600.webp</image:loc>
-      <image:title>KIT ALIPER DELANTERO CARIBE 2600</image:title>
+      <image:title>KIT CALIPER DELANTERO CARIBE 2600</image:title>
     </image:image>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -995,6 +975,26 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/kit-de-motor-caribe-2-6.webp</image:loc>
       <image:title>KIT DE MOTOR CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-motor-luv-2-2.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-motor-luv-2-2.webp</image:loc>
+      <image:title>KIT DE MOTOR LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-motor-luv-2-3.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-motor-luv-2-3.webp</image:loc>
+      <image:title>KIT DE MOTOR LUV 2.3</image:title>
     </image:image>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
