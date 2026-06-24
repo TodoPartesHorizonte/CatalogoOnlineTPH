@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 575,
+  "total_products": 585,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -1293,8 +1293,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "MOTOR"
       ],
-      "slug": "base-motor-caribe-2300",
-      "oem": "8-94414-3930 / 8-94414-3940"
+      "oem": "8-94414-3930 / 8-94414-3940",
+      "slug": "base-motor-caribe-2300"
     },
     {
       "category": "Base Motor",
@@ -1309,8 +1309,8 @@ const PRODUCTS_DATA = {
         "G-2000",
         "MOTOR"
       ],
-      "slug": "base-motor-caribe-g-2000",
-      "oem": "8-94414-3930 / 8-94414-3940"
+      "oem": "8-94414-3930 / 8-94414-3940",
+      "slug": "base-motor-caribe-g-2000"
     },
     {
       "category": "Base Motor",
@@ -1324,8 +1324,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MOTOR"
       ],
-      "slug": "base-motor-luv-2-2",
-      "oem": "8-97216-7541 / 8-97216-7551"
+      "oem": "8-97216-7541 / 8-97216-7551",
+      "slug": "base-motor-luv-2-2"
     },
     {
       "category": "Base Motor",
@@ -1339,8 +1339,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MOTOR"
       ],
-      "slug": "base-motor-luv-2-3",
-      "oem": "8-94482-4050 / 8-94482-4060"
+      "oem": "8-94482-4050 / 8-94482-4060",
+      "slug": "base-motor-luv-2-3"
     },
     {
       "category": "Base Motor",
@@ -1355,8 +1355,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MOTOR"
       ],
-      "slug": "base-motor-luv-d-max-2-5",
-      "oem": "197020 / 197021"
+      "oem": "197020 / 197021",
+      "slug": "base-motor-luv-d-max-2-5"
     },
     {
       "category": "Base Motor",
@@ -1372,8 +1372,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MOTOR"
       ],
-      "slug": "base-motor-luv-d-max-3-0-diesel",
-      "oem": "8-97363-5430 / 8-97367-2730"
+      "oem": "8-97363-5430 / 8-97367-2730",
+      "slug": "base-motor-luv-d-max-3-0-diesel"
     },
     {
       "category": "Base Motor",
@@ -1388,8 +1388,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MOTOR"
       ],
-      "slug": "base-motor-luv-d-max-3-5",
-      "oem": "8-98051-3310 / 8-98051-3320"
+      "oem": "8-98051-3310 / 8-98051-3320",
+      "slug": "base-motor-luv-d-max-3-5"
     },
     {
       "category": "Bendix",
@@ -1402,8 +1402,8 @@ const PRODUCTS_DATA = {
         "BENDIX",
         "LUV"
       ],
-      "slug": "bendix-arranque-luv-2-2",
-      "oem": "93170383"
+      "oem": "93170383",
+      "slug": "bendix-arranque-luv-2-2"
     },
     {
       "category": "Bendix",
@@ -1417,8 +1417,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "bendix-arranque-luv-d-max-2-4",
-      "oem": "93170383"
+      "oem": "93170383",
+      "slug": "bendix-arranque-luv-d-max-2-4"
     },
     {
       "category": "Bendix",
@@ -1432,8 +1432,8 @@ const PRODUCTS_DATA = {
         "BENDIX",
         "CARIBE"
       ],
-      "slug": "bendix-de-arranque-caribe-2300",
-      "oem": "8-94129-1870"
+      "oem": "8-94129-1870",
+      "slug": "bendix-de-arranque-caribe-2300"
     },
     {
       "category": "Bendix",
@@ -1447,8 +1447,8 @@ const PRODUCTS_DATA = {
         "BENDIX",
         "CARIBE"
       ],
-      "slug": "bendix-de-arranque-caribe-2600",
-      "oem": "8-94129-1870"
+      "oem": "8-94129-1870",
+      "slug": "bendix-de-arranque-caribe-2600"
     },
     {
       "category": "Bobina",
@@ -1461,8 +1461,8 @@ const PRODUCTS_DATA = {
         "ENCENDIDO",
         "LUV"
       ],
-      "slug": "bobina-encendido-luv-2-2",
-      "oem": "93363483"
+      "oem": "93363483",
+      "slug": "bobina-encendido-luv-2-2"
     },
     {
       "category": "Bobina",
@@ -1476,8 +1476,8 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TROOPER"
       ],
-      "slug": "bobina-isuzu-rodeo-trooper",
-      "oem": "12AY090027N"
+      "oem": "12AY090027N",
+      "slug": "bobina-isuzu-rodeo-trooper"
     },
     {
       "category": "Bobina",
@@ -1490,8 +1490,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "bobina-luv-d-max-3-5",
-      "oem": "8-97136-3250"
+      "oem": "8-97136-3250",
+      "slug": "bobina-luv-d-max-3-5"
     },
     {
       "category": "Bobina",
@@ -1505,8 +1505,8 @@ const PRODUCTS_DATA = {
         "SECA",
         "UNIVERSAL"
       ],
-      "slug": "bobina-seca-con-resistencia-universal",
-      "oem": "MC-2000"
+      "oem": "MC-2000",
+      "slug": "bobina-seca-con-resistencia-universal"
     },
     {
       "category": "Bomba de aceite",
@@ -1519,8 +1519,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE"
       ],
-      "slug": "bomba-de-aceite-caribe-2-3",
-      "oem": "8-94445-6650"
+      "oem": "8-94445-6650",
+      "slug": "bomba-de-aceite-caribe-2-3"
     },
     {
       "category": "Bomba de aceite",
@@ -1533,8 +1533,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE"
       ],
-      "slug": "bomba-de-aceite-caribe-2-6",
-      "oem": "8-94459-7301"
+      "oem": "8-94459-7301",
+      "slug": "bomba-de-aceite-caribe-2-6"
     },
     {
       "category": "Bomba de aceite",
@@ -1548,8 +1548,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE"
       ],
-      "slug": "bomba-de-aceite-caribe-2000",
-      "oem": "8-94215-6370"
+      "oem": "8-94215-6370",
+      "slug": "bomba-de-aceite-caribe-2000"
     },
     {
       "category": "Bomba de aceite",
@@ -1562,8 +1562,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "LUV"
       ],
-      "slug": "bomba-de-aceite-luv-2-2",
-      "oem": "8-90570-9250"
+      "oem": "8-90570-9250",
+      "slug": "bomba-de-aceite-luv-2-2"
     },
     {
       "category": "Bomba de aceite",
@@ -1577,8 +1577,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "bomba-de-aceite-luv-d-max",
-      "oem": "8-97136-4630"
+      "oem": "8-97136-4630",
+      "slug": "bomba-de-aceite-luv-d-max"
     },
     {
       "category": "Bomba de agua",
@@ -1592,8 +1592,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "bomba-de-agua-al-luv-d-max-3-5",
-      "oem": "8-97167-5540"
+      "oem": "8-97167-5540",
+      "slug": "bomba-de-agua-al-luv-d-max-3-5"
     },
     {
       "category": "Bomba de agua",
@@ -1607,8 +1607,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE"
       ],
-      "slug": "bomba-de-agua-caribe-2300",
-      "oem": "8-94146-3260"
+      "oem": "8-94146-3260",
+      "slug": "bomba-de-agua-caribe-2300"
     },
     {
       "category": "Bomba de agua",
@@ -1622,8 +1622,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE"
       ],
-      "slug": "bomba-de-agua-caribe-2600",
-      "oem": "8-97081-6230"
+      "oem": "8-97081-6230",
+      "slug": "bomba-de-agua-caribe-2600"
     },
     {
       "category": "Bomba de agua",
@@ -1637,8 +1637,8 @@ const PRODUCTS_DATA = {
         "IZUSU",
         "RODEO"
       ],
-      "slug": "bomba-de-agua-izusu-rodeo-3-2",
-      "oem": "8-97061-2800"
+      "oem": "8-97061-2800",
+      "slug": "bomba-de-agua-izusu-rodeo-3-2"
     },
     {
       "category": "Bomba de agua",
@@ -1652,8 +1652,8 @@ const PRODUCTS_DATA = {
         "IZUSU",
         "TROOPER"
       ],
-      "slug": "bomba-de-agua-izusu-trooper-3-2",
-      "oem": "8-97061-2800"
+      "oem": "8-97061-2800",
+      "slug": "bomba-de-agua-izusu-trooper-3-2"
     },
     {
       "category": "Bomba de agua",
@@ -1666,8 +1666,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "LUV"
       ],
-      "slug": "bomba-de-agua-luv-2-2",
-      "oem": "8-92064-3910"
+      "oem": "8-92064-3910",
+      "slug": "bomba-de-agua-luv-2-2"
     },
     {
       "category": "Bomba de agua",
@@ -1681,8 +1681,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "bomba-de-agua-luv-d-max-2-4",
-      "oem": "8-92064-3910"
+      "oem": "8-92064-3910",
+      "slug": "bomba-de-agua-luv-d-max-2-4"
     },
     {
       "category": "Bomba de Freno",
@@ -1697,8 +1697,8 @@ const PRODUCTS_DATA = {
         "G-2000",
         "HUECOS"
       ],
-      "slug": "bomba-de-freno-4-huecos-caribe-g-2000",
-      "oem": "8-94222-6602"
+      "oem": "8-94222-6602",
+      "slug": "bomba-de-freno-4-huecos-caribe-g-2000"
     },
     {
       "category": "Bomba de Freno",
@@ -1711,8 +1711,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FRENO"
       ],
-      "slug": "bomba-de-freno-caribe-2-3",
-      "oem": "8-94112-6251"
+      "oem": "8-94112-6251",
+      "slug": "bomba-de-freno-caribe-2-3"
     },
     {
       "category": "Bomba de Freno",
@@ -1725,8 +1725,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FRENO"
       ],
-      "slug": "bomba-de-freno-caribe-2-6",
-      "oem": "8-94332-9490"
+      "oem": "8-94332-9490",
+      "slug": "bomba-de-freno-caribe-2-6"
     },
     {
       "category": "Bomba de Freno",
@@ -1742,8 +1742,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "slug": "bomba-de-freno-luv-d-max-2005-2009",
-      "oem": "8-97354-0501"
+      "oem": "8-97354-0501",
+      "slug": "bomba-de-freno-luv-d-max-2005-2009"
     },
     {
       "category": "Bomba de Freno",
@@ -1760,8 +1760,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "slug": "bomba-de-freno-luv-d-max-2010-2015-con-bastago",
-      "oem": "8-98006-9410"
+      "oem": "8-98006-9410",
+      "slug": "bomba-de-freno-luv-d-max-2010-2015-con-bastago"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1776,8 +1776,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MODULO"
       ],
-      "slug": "bomba-de-gasolina-modulo-luv-d-max",
-      "oem": "8-97943-1830"
+      "oem": "8-97943-1830",
+      "slug": "bomba-de-gasolina-modulo-luv-d-max"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1790,8 +1790,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GASOLINA"
       ],
-      "slug": "bomba-de-gasolina-caribe-2-3",
-      "oem": "8-94438-5330"
+      "oem": "8-94438-5330",
+      "slug": "bomba-de-gasolina-caribe-2-3"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1804,8 +1804,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GASOLINA"
       ],
-      "slug": "bomba-de-gasolina-caribe-2-6",
-      "oem": "8-94438-5330"
+      "oem": "8-94438-5330",
+      "slug": "bomba-de-gasolina-caribe-2-6"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1820,8 +1820,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "UNIVERSAL"
       ],
-      "slug": "bomba-de-gasolina-electrica-universal-externa",
-      "oem": "E8012"
+      "oem": "E8012",
+      "slug": "bomba-de-gasolina-electrica-universal-externa"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1835,8 +1835,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GASOLINA"
       ],
-      "slug": "bomba-gasolina-caribe-2000",
-      "oem": "8-94238-6000"
+      "oem": "8-94238-6000",
+      "slug": "bomba-gasolina-caribe-2000"
     },
     {
       "category": "Bomba de Gasolina",
@@ -1851,8 +1851,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PILA"
       ],
-      "slug": "pila-bomba-de-gasolina-luv-d-max-3-5",
-      "oem": "25362992"
+      "oem": "25362992",
+      "slug": "pila-bomba-de-gasolina-luv-d-max-3-5"
     },
     {
       "category": "Bomba Direccion",
@@ -1866,8 +1866,8 @@ const PRODUCTS_DATA = {
         "DIRECCION",
         "LUV"
       ],
-      "slug": "bomba-de-direccion-luv-d-max-3-5",
-      "oem": "8-97946-6960"
+      "oem": "8-97946-6960",
+      "slug": "bomba-de-direccion-luv-d-max-3-5"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1882,8 +1882,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH"
       ],
-      "slug": "bomba-de-clutch-caribe-2600",
-      "oem": "8-94463-9321"
+      "oem": "8-94463-9321",
+      "slug": "bomba-de-clutch-caribe-2600"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1898,8 +1898,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "LUV"
       ],
-      "slug": "bomba-de-clutch-luv-2300",
-      "oem": "8-97024-9402"
+      "oem": "8-97024-9402",
+      "slug": "bomba-de-clutch-luv-2300"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1914,8 +1914,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "bomba-de-clutch-luv-d-max-2-4-2-5-3-0",
-      "oem": "8-97943-4070"
+      "oem": "8-97943-4070",
+      "slug": "bomba-de-clutch-luv-d-max-2-4-2-5-3-0"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1930,8 +1930,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "bomba-de-clutch-luv-d-max-3-5",
-      "oem": "8-97943-4080"
+      "oem": "8-97943-4080",
+      "slug": "bomba-de-clutch-luv-d-max-3-5"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1946,8 +1946,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "bombin-clutch-luv-d-max-3-5",
-      "oem": "8-97941-5190"
+      "oem": "8-97941-5190",
+      "slug": "bombin-clutch-luv-d-max-3-5"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1961,8 +1961,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "TROOPER"
       ],
-      "slug": "bombin-clutch-trooper-3-2",
-      "oem": "8-97941-5190"
+      "oem": "8-97941-5190",
+      "slug": "bombin-clutch-trooper-3-2"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1977,8 +1977,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH"
       ],
-      "slug": "bombin-de-clutch-caribe-2600",
-      "oem": "8-94389-1920"
+      "oem": "8-94389-1920",
+      "slug": "bombin-de-clutch-caribe-2600"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -1992,8 +1992,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "LUV"
       ],
-      "slug": "bombin-de-clutch-luv-2-2",
-      "oem": "8-97184-9930"
+      "oem": "8-97184-9930",
+      "slug": "bombin-de-clutch-luv-2-2"
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -2020,8 +2020,8 @@ const PRODUCTS_DATA = {
         "BRAZO",
         "LUV"
       ],
-      "slug": "brazo-de-biela-luv-2-2",
-      "oem": "8-92068-1550"
+      "oem": "8-92068-1550",
+      "slug": "brazo-de-biela-luv-2-2"
     },
     {
       "category": "Brazo de Biela",
@@ -2035,8 +2035,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "brazo-de-biela-luv-d-max-2-4",
-      "oem": "8-90530-1690"
+      "oem": "8-90530-1690",
+      "slug": "brazo-de-biela-luv-d-max-2-4"
     },
     {
       "category": "Brazo de Biela",
@@ -2050,8 +2050,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "brazo-de-biela-luv-d-max-3-5",
-      "oem": "8-97351-1590"
+      "oem": "8-97351-1590",
+      "slug": "brazo-de-biela-luv-d-max-3-5"
     },
     {
       "category": "Buje Araña",
@@ -2064,8 +2064,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE"
       ],
-      "slug": "buje-de-arana-caribe-2-3",
-      "oem": "8-94226-5572"
+      "oem": "8-94226-5572",
+      "slug": "buje-de-arana-caribe-2-3"
     },
     {
       "category": "Buje Araña",
@@ -2078,8 +2078,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE"
       ],
-      "slug": "buje-de-arana-caribe-2-6",
-      "oem": "8-94408-8402"
+      "oem": "8-94408-8402",
+      "slug": "buje-de-arana-caribe-2-6"
     },
     {
       "category": "Buje Araña",
@@ -2093,8 +2093,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G-200"
       ],
-      "slug": "buje-de-arana-caribe-g-200",
-      "oem": "8-94226-5572"
+      "oem": "8-94226-5572",
+      "slug": "buje-de-arana-caribe-g-200"
     },
     {
       "category": "Buje Araña",
@@ -2107,8 +2107,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "LUV"
       ],
-      "slug": "buje-de-arana-luv",
-      "oem": "8-94408-8402"
+      "oem": "8-94408-8402",
+      "slug": "buje-de-arana-luv"
     },
     {
       "category": "Buje Araña",
@@ -2122,8 +2122,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "buje-de-arana-luv-d-max-2-4",
-      "oem": "8-97364-1730"
+      "oem": "8-97364-1730",
+      "slug": "buje-de-arana-luv-d-max-2-4"
     },
     {
       "category": "Buje Araña",
@@ -2137,8 +2137,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "buje-de-arana-luv-d-max-3-5",
-      "oem": "8-94408-8402"
+      "oem": "8-94408-8402",
+      "slug": "buje-de-arana-luv-d-max-3-5"
     },
     {
       "category": "Buje Araña",
@@ -2151,8 +2151,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "RODEO"
       ],
-      "slug": "buje-de-arana-rodeo",
-      "oem": "8-94408-8402"
+      "oem": "8-94408-8402",
+      "slug": "buje-de-arana-rodeo"
     },
     {
       "category": "Buje Araña",
@@ -2165,8 +2165,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "TROOPER"
       ],
-      "slug": "buje-de-arana-trooper-3-2",
-      "oem": "8-94408-8402"
+      "oem": "8-94408-8402",
+      "slug": "buje-de-arana-trooper-3-2"
     },
     {
       "category": "Buje Ballesta",
@@ -2180,8 +2180,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO"
       ],
-      "slug": "buje-ballesta-delantero-caribe-2-3",
-      "oem": "8-94223-1680"
+      "oem": "8-94223-1680",
+      "slug": "buje-ballesta-delantero-caribe-2-3"
     },
     {
       "category": "Buje Ballesta",
@@ -2196,8 +2196,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "G-2000"
       ],
-      "slug": "buje-ballesta-delantero-caribe-g-2000",
-      "oem": "8-94223-1680"
+      "oem": "8-94223-1680",
+      "slug": "buje-ballesta-delantero-caribe-g-2000"
     },
     {
       "category": "Buje Ballesta",
@@ -2211,8 +2211,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "TRASERO"
       ],
-      "slug": "buje-ballesta-trasero-caribe",
-      "oem": "8-94234-3190"
+      "oem": "8-94234-3190",
+      "slug": "buje-ballesta-trasero-caribe"
     },
     {
       "category": "Buje Ballesta",
@@ -2226,8 +2226,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRASERO"
       ],
-      "slug": "buje-ballesta-trasero-luv",
-      "oem": "8-94234-3190"
+      "oem": "8-94234-3190",
+      "slug": "buje-ballesta-trasero-luv"
     },
     {
       "category": "Buje Ballesta",
@@ -2242,8 +2242,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRASERO"
       ],
-      "slug": "buje-ballesta-trasero-luv-dmax",
-      "oem": "8-94234-3190"
+      "oem": "8-94234-3190",
+      "slug": "buje-ballesta-trasero-luv-dmax"
     },
     {
       "category": "Buje Ballesta",
@@ -2257,8 +2257,8 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TRASERO"
       ],
-      "slug": "buje-ballesta-trasero-rodeo",
-      "oem": "8-94234-3190"
+      "oem": "8-94234-3190",
+      "slug": "buje-ballesta-trasero-rodeo"
     },
     {
       "category": "Buje Ballesta",
@@ -2272,8 +2272,8 @@ const PRODUCTS_DATA = {
         "TRASERO",
         "TROOPER"
       ],
-      "slug": "buje-ballesta-trasero-trooper",
-      "oem": "8-94234-3190"
+      "oem": "8-94234-3190",
+      "slug": "buje-ballesta-trasero-trooper"
     },
     {
       "category": "Buje Ballesta",
@@ -2287,8 +2287,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO"
       ],
-      "slug": "buje-de-ballesta-delantero-caribe-2-6",
-      "oem": "8-94171-2741"
+      "oem": "8-94171-2741",
+      "slug": "buje-de-ballesta-delantero-caribe-2-6"
     },
     {
       "category": "Buje Ballesta",
@@ -2302,8 +2302,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV"
       ],
-      "slug": "buje-de-ballesta-delantero-luv",
-      "oem": "8-94171-2741"
+      "oem": "8-94171-2741",
+      "slug": "buje-de-ballesta-delantero-luv"
     },
     {
       "category": "Buje Ballesta",
@@ -2318,8 +2318,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV"
       ],
-      "slug": "buje-de-ballesta-delantero-luv-d-max",
-      "oem": "8-94171-2741"
+      "oem": "8-94171-2741",
+      "slug": "buje-de-ballesta-delantero-luv-d-max"
     },
     {
       "category": "Buje Ballesta",
@@ -2333,8 +2333,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "RODEO"
       ],
-      "slug": "buje-de-ballesta-delantero-rodeo",
-      "oem": "8-94171-2741"
+      "oem": "8-94171-2741",
+      "slug": "buje-de-ballesta-delantero-rodeo"
     },
     {
       "category": "Buje Ballesta",
@@ -2348,8 +2348,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "TROOPER"
       ],
-      "slug": "buje-de-ballesta-delantero-trooper",
-      "oem": "8-94171-2741"
+      "oem": "8-94171-2741",
+      "slug": "buje-de-ballesta-delantero-trooper"
     },
     {
       "category": "Buje Cajetin Direccion",
@@ -2378,8 +2378,8 @@ const PRODUCTS_DATA = {
         "EJE",
         "LUV"
       ],
-      "slug": "buje-de-eje-delantero-luv-d-max-3-5",
-      "oem": "8-97364-3190"
+      "oem": "8-97364-3190",
+      "slug": "buje-de-eje-delantero-luv-d-max-3-5"
     },
     {
       "category": "Buje Meseta",
@@ -2392,8 +2392,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "MESETA"
       ],
-      "slug": "buje-meseta-caribe-2-3",
-      "oem": "5-51225-0020"
+      "oem": "5-51225-0020",
+      "slug": "buje-meseta-caribe-2-3"
     },
     {
       "category": "Buje Meseta",
@@ -2407,8 +2407,8 @@ const PRODUCTS_DATA = {
         "G-200",
         "MESETA"
       ],
-      "slug": "buje-meseta-caribe-g-200",
-      "oem": "5-51225-0020"
+      "oem": "5-51225-0020",
+      "slug": "buje-meseta-caribe-g-200"
     },
     {
       "category": "Buje Meseta",
@@ -2422,8 +2422,8 @@ const PRODUCTS_DATA = {
         "EXTERNO",
         "MESETA"
       ],
-      "slug": "buje-meseta-externo-caribe-2-6",
-      "oem": "8-94408-8411"
+      "oem": "8-94408-8411",
+      "slug": "buje-meseta-externo-caribe-2-6"
     },
     {
       "category": "Buje Meseta",
@@ -2438,8 +2438,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "slug": "buje-meseta-externo-luv-4x4",
-      "oem": "8-94408-8411"
+      "oem": "8-94408-8411",
+      "slug": "buje-meseta-externo-luv-4x4"
     },
     {
       "category": "Buje Meseta",
@@ -2454,8 +2454,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "slug": "buje-meseta-externo-luv-d-max-3-5",
-      "oem": "8-94408-8411"
+      "oem": "8-94408-8411",
+      "slug": "buje-meseta-externo-luv-d-max-3-5"
     },
     {
       "category": "Buje Meseta",
@@ -2469,8 +2469,8 @@ const PRODUCTS_DATA = {
         "MESETA",
         "RODEO"
       ],
-      "slug": "buje-meseta-externo-rodeo",
-      "oem": "8-94408-8411"
+      "oem": "8-94408-8411",
+      "slug": "buje-meseta-externo-rodeo"
     },
     {
       "category": "Buje Meseta",
@@ -2484,8 +2484,8 @@ const PRODUCTS_DATA = {
         "MESETA",
         "TROOPER"
       ],
-      "slug": "buje-meseta-externo-trooper-3-2",
-      "oem": "8-94408-8411"
+      "oem": "8-94408-8411",
+      "slug": "buje-meseta-externo-trooper-3-2"
     },
     {
       "category": "Buje Meseta",
@@ -2499,8 +2499,8 @@ const PRODUCTS_DATA = {
         "INTERNO",
         "MESETA"
       ],
-      "slug": "buje-meseta-interno-caribe-2-6",
-      "oem": "8-94408-8420"
+      "oem": "8-94408-8420",
+      "slug": "buje-meseta-interno-caribe-2-6"
     },
     {
       "category": "Buje Meseta",
@@ -2515,8 +2515,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "slug": "buje-meseta-interno-luv-4x4",
-      "oem": "8-94408-8420"
+      "oem": "8-94408-8420",
+      "slug": "buje-meseta-interno-luv-4x4"
     },
     {
       "category": "Buje Meseta",
@@ -2531,8 +2531,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "slug": "buje-meseta-interno-luv-d-max-3-5",
-      "oem": "8-94408-8420"
+      "oem": "8-94408-8420",
+      "slug": "buje-meseta-interno-luv-d-max-3-5"
     },
     {
       "category": "Buje Meseta",
@@ -2546,8 +2546,8 @@ const PRODUCTS_DATA = {
         "MESETA",
         "RODEO"
       ],
-      "slug": "buje-meseta-interno-rodeo",
-      "oem": "8-94408-8420"
+      "oem": "8-94408-8420",
+      "slug": "buje-meseta-interno-rodeo"
     },
     {
       "category": "Buje Meseta",
@@ -2561,8 +2561,8 @@ const PRODUCTS_DATA = {
         "MESETA",
         "TROOPER"
       ],
-      "slug": "buje-meseta-interno-trooper-3-2",
-      "oem": "8-94408-8420"
+      "oem": "8-94408-8420",
+      "slug": "buje-meseta-interno-trooper-3-2"
     },
     {
       "category": "Buje Meseta",
@@ -2576,8 +2576,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "slug": "buje-meseta-luv-4x2",
-      "oem": "8-94136-9030"
+      "oem": "8-94136-9030",
+      "slug": "buje-meseta-luv-4x2"
     },
     {
       "category": "Buje Meseta",
@@ -2591,8 +2591,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "slug": "buje-meseta-luv-d-max-2-4",
-      "oem": "8-97364-1740"
+      "oem": "8-97364-1740",
+      "slug": "buje-meseta-luv-d-max-2-4"
     },
     {
       "category": "Bujia",
@@ -2605,8 +2605,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CHAMPION"
       ],
-      "slug": "bujia-champion-caribe",
-      "oem": "9-82513-1030"
+      "oem": "9-82513-1030",
+      "slug": "bujia-champion-caribe"
     },
     {
       "category": "Bujia",
@@ -2620,8 +2620,8 @@ const PRODUCTS_DATA = {
         "CHAMPION",
         "LUV"
       ],
-      "slug": "bujia-champion-luv-2300",
-      "oem": "9-82513-1030"
+      "oem": "9-82513-1030",
+      "slug": "bujia-champion-luv-2300"
     },
     {
       "category": "Bujia",
@@ -2637,8 +2637,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA"
       ],
-      "slug": "bujia-denso-punta-iridio-luv-d-max",
-      "oem": "IK20TT"
+      "oem": "IK20TT",
+      "slug": "bujia-denso-punta-iridio-luv-d-max"
     },
     {
       "category": "Bujia",
@@ -2654,8 +2654,8 @@ const PRODUCTS_DATA = {
         "PLATINO",
         "PUNTA"
       ],
-      "slug": "bujia-denso-punta-platino-luv-d-max",
-      "oem": "PK20TT"
+      "oem": "PK20TT",
+      "slug": "bujia-denso-punta-platino-luv-d-max"
     },
     {
       "category": "Bujia",
@@ -2668,8 +2668,8 @@ const PRODUCTS_DATA = {
         "K20PR-U11",
         "LUV"
       ],
-      "slug": "bujia-luv-d-max-3-5",
-      "oem": "K20PR-U11"
+      "oem": "K20PR-U11",
+      "slug": "bujia-luv-d-max-3-5"
     },
     {
       "category": "Bujia",
@@ -2682,8 +2682,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DENSO"
       ],
-      "slug": "bujia-denso-caribe",
-      "oem": "9-82513-1030"
+      "oem": "9-82513-1030",
+      "slug": "bujia-denso-caribe"
     },
     {
       "category": "Cables de Bujia",
@@ -2699,8 +2699,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "slug": "juego-de-cable-luv-2300",
-      "oem": "8-94433-3641"
+      "oem": "8-94433-3641",
+      "slug": "juego-de-cable-luv-2300"
     },
     {
       "category": "Cables de Bujia",
@@ -2714,8 +2714,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "slug": "juego-de-cables-bujia-luv-2-2",
-      "oem": "8-92066-0290"
+      "oem": "8-92066-0290",
+      "slug": "juego-de-cables-bujia-luv-2-2"
     },
     {
       "category": "Cables de Bujia",
@@ -2730,8 +2730,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "slug": "juego-de-cables-bujia-luv-d-max-2-4",
-      "oem": "8-92066-0310"
+      "oem": "8-92066-0310",
+      "slug": "juego-de-cables-bujia-luv-d-max-2-4"
     },
     {
       "category": "Cables de Bujia",
@@ -2745,8 +2745,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "JUEGO"
       ],
-      "slug": "juego-de-cables-caribe",
-      "oem": "8-94433-3641"
+      "oem": "8-94433-3641",
+      "slug": "juego-de-cables-caribe"
     },
     {
       "category": "Cadena Tiempo",
@@ -2760,8 +2760,8 @@ const PRODUCTS_DATA = {
         "G-200",
         "TIEMPO"
       ],
-      "slug": "cadena-de-tiempo-caribe-g-200",
-      "oem": "8-94213-8170"
+      "oem": "8-94213-8170",
+      "slug": "cadena-de-tiempo-caribe-g-200"
     },
     {
       "category": "Cadena Trasnfer",
@@ -2776,8 +2776,8 @@ const PRODUCTS_DATA = {
         "TRANSFER",
         "TRASNFER"
       ],
-      "slug": "cadena-transfer-luv-d-max-3-0-3-5",
-      "oem": "8-97323-1770"
+      "oem": "8-97323-1770",
+      "slug": "cadena-transfer-luv-d-max-3-0-3-5"
     },
     {
       "category": "Cajetin de Direccion",
@@ -2793,8 +2793,8 @@ const PRODUCTS_DATA = {
         "DIRECCION",
         "LUV"
       ],
-      "slug": "cajetin-direccion-luv-d-max-2005-2009",
-      "oem": "8-97943-5190"
+      "oem": "8-97943-5190",
+      "slug": "cajetin-direccion-luv-d-max-2005-2009"
     },
     {
       "category": "Cajetin de Direccion",
@@ -2810,8 +2810,8 @@ const PRODUCTS_DATA = {
         "DIRECCION",
         "LUV"
       ],
-      "slug": "cajetin-direccion-luv-d-max-2010-2015",
-      "oem": "8-98101-7800"
+      "oem": "8-98101-7800",
+      "slug": "cajetin-direccion-luv-d-max-2010-2015"
     },
     {
       "category": "Camara",
@@ -2823,8 +2823,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "CARIBE"
       ],
-      "slug": "camara-caribe-2-3",
-      "oem": "8-94159-1920"
+      "oem": "8-94159-1920",
+      "slug": "camara-caribe-2-3"
     },
     {
       "category": "Carbonera Arranque",
@@ -2837,8 +2837,8 @@ const PRODUCTS_DATA = {
         "CARBONERA",
         "CARIBE"
       ],
-      "slug": "carbonera-caribe",
-      "oem": "5-81118-0220"
+      "oem": "5-81118-0220",
+      "slug": "carbonera-caribe"
     },
     {
       "category": "Carbones de Arranque",
@@ -2853,8 +2853,8 @@ const PRODUCTS_DATA = {
         "CARBONES",
         "CARIBE"
       ],
-      "slug": "carbon-de-arranque-caribe-2300",
-      "oem": "68-8203"
+      "oem": "68-8203",
+      "slug": "carbon-de-arranque-caribe-2300"
     },
     {
       "category": "Carburador",
@@ -2867,8 +2867,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "LUV"
       ],
-      "slug": "carburador-caribe-2-3-luv-2-3",
-      "oem": "8-94159-2140"
+      "oem": "8-94159-2140",
+      "slug": "carburador-caribe-2-3-luv-2-3"
     },
     {
       "category": "Cigueñal",
@@ -2903,8 +2903,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "ciguenal-luv-d-max-2-4",
-      "oem": "8-93281-9990"
+      "oem": "8-93281-9990",
+      "slug": "ciguenal-luv-d-max-2-4"
     },
     {
       "category": "Cilindro de Freno",
@@ -2918,8 +2918,8 @@ const PRODUCTS_DATA = {
         "CILINDRO",
         "FRENO"
       ],
-      "slug": "cilindro-freno-caribe-2300",
-      "oem": "8-94230-5411"
+      "oem": "8-94230-5411",
+      "slug": "cilindro-freno-caribe-2300"
     },
     {
       "category": "Cilindro de Freno",
@@ -2933,8 +2933,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "slug": "cilindro-freno-luv-d-max-2-4",
-      "oem": "8-97301-4780"
+      "oem": "8-97301-4780",
+      "slug": "cilindro-freno-luv-d-max-2-4"
     },
     {
       "category": "Cilindro de Freno",
@@ -2948,8 +2948,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "slug": "cilindro-freno-luv-d-max-3-5",
-      "oem": "8-97319-3000"
+      "oem": "8-97319-3000",
+      "slug": "cilindro-freno-luv-d-max-3-5"
     },
     {
       "category": "Cocuyo",
@@ -2964,8 +2964,8 @@ const PRODUCTS_DATA = {
         "CUADRADO",
         "FARO"
       ],
-      "slug": "cocuyo-caribe-faro-cuadrado",
-      "oem": "8-94424-0431 / 8-94424-0441"
+      "oem": "8-94424-0431 / 8-94424-0441",
+      "slug": "cocuyo-caribe-faro-cuadrado"
     },
     {
       "category": "Cocuyo",
@@ -2981,8 +2981,8 @@ const PRODUCTS_DATA = {
         "FARO",
         "LUV"
       ],
-      "slug": "cocuyo-faro-delantero-luv-97-02",
-      "oem": "8-94324-1040 / 8-94324-1050"
+      "oem": "8-94324-1040 / 8-94324-1050",
+      "slug": "cocuyo-faro-delantero-luv-97-02"
     },
     {
       "category": "Collarin",
@@ -2995,8 +2995,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COLLARIN"
       ],
-      "slug": "collarin-caribe-2000",
-      "oem": "5-31321-0033"
+      "oem": "5-31321-0033",
+      "slug": "collarin-caribe-2000"
     },
     {
       "category": "Collarin",
@@ -3009,8 +3009,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COLLARIN"
       ],
-      "slug": "collarin-caribe-2300",
-      "oem": "5-31321-0033"
+      "oem": "5-31321-0033",
+      "slug": "collarin-caribe-2300"
     },
     {
       "category": "Collarin",
@@ -3023,8 +3023,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COLLARIN"
       ],
-      "slug": "collarin-caribe-2600",
-      "oem": "8-94379-4990"
+      "oem": "8-94379-4990",
+      "slug": "collarin-caribe-2600"
     },
     {
       "category": "Collarin",
@@ -3036,8 +3036,8 @@ const PRODUCTS_DATA = {
         "COLLARIN",
         "LUV"
       ],
-      "slug": "collarin-luv-2-2",
-      "oem": "8-97209-1970"
+      "oem": "8-97209-1970",
+      "slug": "collarin-luv-2-2"
     },
     {
       "category": "Collarin",
@@ -3050,8 +3050,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "collarin-luv-d-max-2-4",
-      "oem": "8-97209-1970"
+      "oem": "8-97209-1970",
+      "slug": "collarin-luv-d-max-2-4"
     },
     {
       "category": "Collarin",
@@ -3064,8 +3064,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "collarin-luv-d-max-3-5",
-      "oem": "8-94377-4171"
+      "oem": "8-94377-4171",
+      "slug": "collarin-luv-d-max-3-5"
     },
     {
       "category": "Collarin",
@@ -3077,8 +3077,8 @@ const PRODUCTS_DATA = {
         "COLLARIN",
         "TROOPER"
       ],
-      "slug": "collarin-trooper-3-2",
-      "oem": "8-94377-4171"
+      "oem": "8-94377-4171",
+      "slug": "collarin-trooper-3-2"
     },
     {
       "category": "Collarin",
@@ -3092,8 +3092,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "ROLINERA"
       ],
-      "slug": "rolinera-collarin-luv-2300",
-      "oem": "8-94101-2430"
+      "oem": "8-94101-2430",
+      "slug": "rolinera-collarin-luv-2300"
     },
     {
       "category": "Concha de Bancada",
@@ -3108,8 +3108,8 @@ const PRODUCTS_DATA = {
         "G-2000",
         "JUEGO"
       ],
-      "slug": "juego-concha-bancada-caribe-g-2000",
-      "oem": "8-94215-6410"
+      "oem": "8-94215-6410",
+      "slug": "juego-concha-bancada-caribe-g-2000"
     },
     {
       "category": "Concha de Bancada",
@@ -3123,8 +3123,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "slug": "juego-concha-bancada-luv-2-2",
-      "oem": "8-92066-6330"
+      "oem": "8-92066-6330",
+      "slug": "juego-concha-bancada-luv-2-2"
     },
     {
       "category": "Concha de Bancada",
@@ -3139,8 +3139,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "slug": "juego-concha-bancada-luv-d-max-2-4",
-      "oem": "8-92066-6330"
+      "oem": "8-92066-6330",
+      "slug": "juego-concha-bancada-luv-d-max-2-4"
     },
     {
       "category": "Concha de Bancada",
@@ -3155,8 +3155,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "slug": "juego-concha-bancada-luv-d-max-3-5",
-      "oem": "8-97179-2960"
+      "oem": "8-97179-2960",
+      "slug": "juego-concha-bancada-luv-d-max-3-5"
     },
     {
       "category": "Concha de Bancada",
@@ -3173,8 +3173,8 @@ const PRODUCTS_DATA = {
         "CONCHAS",
         "JUEGO"
       ],
-      "slug": "juego-de-conchas-bancada-caribe-2300-2600",
-      "oem": "8-94251-2631"
+      "oem": "8-94251-2631",
+      "slug": "juego-de-conchas-bancada-caribe-2300-2600"
     },
     {
       "category": "Concha de Biela",
@@ -3187,8 +3187,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CONCHA"
       ],
-      "slug": "concha-biela-caribe",
-      "oem": "8-94251-2660"
+      "oem": "8-94251-2660",
+      "slug": "concha-biela-caribe"
     },
     {
       "category": "Concha de Biela",
@@ -3202,8 +3202,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "slug": "juego-concha-biela-luv-2-2",
-      "oem": "8-92028-8170"
+      "oem": "8-92028-8170",
+      "slug": "juego-concha-biela-luv-2-2"
     },
     {
       "category": "Concha de Biela",
@@ -3218,8 +3218,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "slug": "juego-concha-biela-luv-d-max-2-4",
-      "oem": "8-92028-8170"
+      "oem": "8-92028-8170",
+      "slug": "juego-concha-biela-luv-d-max-2-4"
     },
     {
       "category": "Concha de Biela",
@@ -3234,8 +3234,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "slug": "juego-concha-biela-luv-d-max-3-5",
-      "oem": "8-97179-2930"
+      "oem": "8-97179-2930",
+      "slug": "juego-concha-biela-luv-d-max-3-5"
     },
     {
       "category": "Condensador",
@@ -3248,8 +3248,8 @@ const PRODUCTS_DATA = {
         "CONDENSADOR",
         "G-200"
       ],
-      "slug": "condensador-caribe-g-200",
-      "oem": "8-94208-4180"
+      "oem": "8-94208-4180",
+      "slug": "condensador-caribe-g-200"
     },
     {
       "category": "Conector de Bobina",
@@ -3263,8 +3263,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "conector-de-bobina-luv-d-max-3-5",
-      "oem": "8-97136-3250B"
+      "oem": "8-97136-3250B",
+      "slug": "conector-de-bobina-luv-d-max-3-5"
     },
     {
       "category": "Conmutador Encendido",
@@ -3277,8 +3277,8 @@ const PRODUCTS_DATA = {
         "CONMUTADOR",
         "ENCENDIDO"
       ],
-      "slug": "conmutador-encendido-caribe",
-      "oem": "8-94222-6130"
+      "oem": "8-94222-6130",
+      "slug": "conmutador-encendido-caribe"
     },
     {
       "category": "Conmutador Encendido",
@@ -3292,8 +3292,8 @@ const PRODUCTS_DATA = {
         "ENCENDIDO",
         "LUV"
       ],
-      "slug": "conmutador-encendido-luv-d-max-3-5",
-      "oem": "8-97350-0720"
+      "oem": "8-97350-0720",
+      "slug": "conmutador-encendido-luv-d-max-3-5"
     },
     {
       "category": "Consola Central",
@@ -3308,8 +3308,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "consola-central-luv-d-max-2005-2009",
-      "oem": "8-97396-2500"
+      "oem": "8-97396-2500",
+      "slug": "consola-central-luv-d-max-2005-2009"
     },
     {
       "category": "Control Aire Acondicionado",
@@ -3326,8 +3326,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "slug": "control-aire-acondicionado-luv-d-max-2005-2009",
-      "oem": "8-98038-1190"
+      "oem": "8-98038-1190",
+      "slug": "control-aire-acondicionado-luv-d-max-2005-2009"
     },
     {
       "category": "Copa Arranque",
@@ -3341,8 +3341,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COPA"
       ],
-      "slug": "copa-arranque-caribe-2300",
-      "oem": "8-94172-3280"
+      "oem": "8-94172-3280",
+      "slug": "copa-arranque-caribe-2300"
     },
     {
       "category": "Copa Arranque",
@@ -3356,8 +3356,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COPA"
       ],
-      "slug": "copa-arranque-caribe-2600",
-      "oem": "8-94172-3280"
+      "oem": "8-94172-3280",
+      "slug": "copa-arranque-caribe-2600"
     },
     {
       "category": "Correa de Tiempo",
@@ -3371,8 +3371,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TIEMPO"
       ],
-      "slug": "correa-de-tiempo-caribe-2-3-luv-2-3",
-      "oem": "8-97041-7840"
+      "oem": "8-97041-7840",
+      "slug": "correa-de-tiempo-caribe-2-3-luv-2-3"
     },
     {
       "category": "Correa de Tiempo",
@@ -3385,8 +3385,8 @@ const PRODUCTS_DATA = {
         "CORREA",
         "TIEMPO"
       ],
-      "slug": "correa-de-tiempo-caribe-2-6",
-      "oem": "8-97042-2680"
+      "oem": "8-97042-2680",
+      "slug": "correa-de-tiempo-caribe-2-6"
     },
     {
       "category": "Correa de Tiempo",
@@ -3399,8 +3399,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TIEMPO"
       ],
-      "slug": "correa-de-tiempo-luv-2-2",
-      "oem": "8-92062-5210"
+      "oem": "8-92062-5210",
+      "slug": "correa-de-tiempo-luv-2-2"
     },
     {
       "category": "Correa de Tiempo",
@@ -3414,8 +3414,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TIEMPO"
       ],
-      "slug": "correa-de-tiempo-luv-d-max-2-4",
-      "oem": "8-92062-5210"
+      "oem": "8-92062-5210",
+      "slug": "correa-de-tiempo-luv-d-max-2-4"
     },
     {
       "category": "Correa de Tiempo",
@@ -3429,8 +3429,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TIEMPO"
       ],
-      "slug": "correa-de-tiempo-luv-d-max-3-5",
-      "oem": "8-97191-0361"
+      "oem": "8-97191-0361",
+      "slug": "correa-de-tiempo-luv-d-max-3-5"
     },
     {
       "category": "Correa de Tiempo",
@@ -3444,8 +3444,8 @@ const PRODUCTS_DATA = {
         "TIEMPO",
         "TROOPER"
       ],
-      "slug": "correa-de-tiempo-trooper-3-2-sohc",
-      "oem": "8-94386-4970"
+      "oem": "8-94386-4970",
+      "slug": "correa-de-tiempo-trooper-3-2-sohc"
     },
     {
       "category": "Correa Unica",
@@ -3459,8 +3459,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "UNICA"
       ],
-      "slug": "correa-unica-luv-d-max-3-5",
-      "oem": "8-97130-5600"
+      "oem": "8-97130-5600",
+      "slug": "correa-unica-luv-d-max-3-5"
     },
     {
       "category": "Cruceta",
@@ -3473,8 +3473,8 @@ const PRODUCTS_DATA = {
         "GRANDE",
         "GUIS-52"
       ],
-      "slug": "cruceta-caribe-grande",
-      "oem": "GUIS-52"
+      "oem": "GUIS-52",
+      "slug": "cruceta-caribe-grande"
     },
     {
       "category": "Cruceta",
@@ -3487,8 +3487,8 @@ const PRODUCTS_DATA = {
         "GU-500",
         "PEQUENA"
       ],
-      "slug": "cruceta-caribe-pequena",
-      "oem": "GU-500"
+      "oem": "GU-500",
+      "slug": "cruceta-caribe-pequena"
     },
     {
       "category": "Cruceta",
@@ -3501,8 +3501,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TIS-174"
       ],
-      "slug": "cruceta-luv-d-max-3-5",
-      "oem": "TIS-174"
+      "oem": "TIS-174",
+      "slug": "cruceta-luv-d-max-3-5"
     },
     {
       "category": "Cruceta",
@@ -3514,8 +3514,8 @@ const PRODUCTS_DATA = {
         "CRUCETA",
         "UNIVERSAL"
       ],
-      "slug": "cruceta-universal-369",
-      "oem": "369"
+      "oem": "369",
+      "slug": "cruceta-universal-369"
     },
     {
       "category": "Damper",
@@ -3527,8 +3527,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DAMPER"
       ],
-      "slug": "damper-caribe-2-3",
-      "oem": "8-97073-0790"
+      "oem": "8-97073-0790",
+      "slug": "damper-caribe-2-3"
     },
     {
       "category": "Damper",
@@ -3540,8 +3540,8 @@ const PRODUCTS_DATA = {
         "DAMPER",
         "LUV"
       ],
-      "slug": "damper-luv-2-3",
-      "oem": "8-97073-0790"
+      "oem": "8-97073-0790",
+      "slug": "damper-luv-2-3"
     },
     {
       "category": "Damper",
@@ -3554,8 +3554,8 @@ const PRODUCTS_DATA = {
         "DAMPER",
         "LUV"
       ],
-      "slug": "damper-luv-d-max-2-5",
-      "oem": "8-97350-5481"
+      "oem": "8-97350-5481",
+      "slug": "damper-luv-d-max-2-5"
     },
     {
       "category": "Damper",
@@ -3568,8 +3568,8 @@ const PRODUCTS_DATA = {
         "DAMPER",
         "LUV"
       ],
-      "slug": "damper-luv-d-max-3-0",
-      "oem": "8-97350-5481"
+      "oem": "8-97350-5481",
+      "slug": "damper-luv-d-max-3-0"
     },
     {
       "category": "Disco de Clutch",
@@ -3582,8 +3582,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "DISCO"
       ],
-      "slug": "disco-clutch-caribe-2-3",
-      "oem": "8-94229-3880"
+      "oem": "8-94229-3880",
+      "slug": "disco-clutch-caribe-2-3"
     },
     {
       "category": "Disco de Clutch",
@@ -3596,8 +3596,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "DISCO"
       ],
-      "slug": "disco-clutch-caribe-2-6",
-      "oem": "8-97036-0620"
+      "oem": "8-97036-0620",
+      "slug": "disco-clutch-caribe-2-6"
     },
     {
       "category": "Disco de Clutch",
@@ -3611,8 +3611,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "G-200"
       ],
-      "slug": "disco-clutch-caribe-g-200",
-      "oem": "8-94229-3880"
+      "oem": "8-94229-3880",
+      "slug": "disco-clutch-caribe-g-200"
     },
     {
       "category": "Disco de Clutch",
@@ -3625,8 +3625,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "LUV"
       ],
-      "slug": "disco-clutch-luv-2-2",
-      "oem": "8-94229-3880"
+      "oem": "8-94229-3880",
+      "slug": "disco-clutch-luv-2-2"
     },
     {
       "category": "Disco de Clutch",
@@ -3639,8 +3639,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "LUV"
       ],
-      "slug": "disco-clutch-luv-2-3",
-      "oem": "8-94229-3880"
+      "oem": "8-94229-3880",
+      "slug": "disco-clutch-luv-2-3"
     },
     {
       "category": "Disco de Clutch",
@@ -3654,8 +3654,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "LUV"
       ],
-      "slug": "disco-clutch-luv-d-max-3-5",
-      "oem": "8-97941-5290"
+      "oem": "8-97941-5290",
+      "slug": "disco-clutch-luv-d-max-3-5"
     },
     {
       "category": "Disco de Clutch",
@@ -3668,8 +3668,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "RODEO"
       ],
-      "slug": "disco-clutch-rodeo-3-2",
-      "oem": "8-97941-5290"
+      "oem": "8-97941-5290",
+      "slug": "disco-clutch-rodeo-3-2"
     },
     {
       "category": "Disco de Clutch",
@@ -3682,8 +3682,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "TROOPER"
       ],
-      "slug": "disco-clutch-trooper-3-2",
-      "oem": "8-97941-5290"
+      "oem": "8-97941-5290",
+      "slug": "disco-clutch-trooper-3-2"
     },
     {
       "category": "Disco de Freno",
@@ -3697,8 +3697,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "slug": "disco-de-freno-luv-d-max-2-4",
-      "oem": "8-97308-8680"
+      "oem": "8-97308-8680",
+      "slug": "disco-de-freno-luv-d-max-2-4"
     },
     {
       "category": "Disco de Freno",
@@ -3712,8 +3712,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "slug": "disco-de-freno-luv-d-max-2-5",
-      "oem": "8-97308-8680"
+      "oem": "8-97308-8680",
+      "slug": "disco-de-freno-luv-d-max-2-5"
     },
     {
       "category": "Disco de Freno",
@@ -3728,8 +3728,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "slug": "disco-de-freno-luv-d-max-3-0-4x2",
-      "oem": "8-97308-8680"
+      "oem": "8-97308-8680",
+      "slug": "disco-de-freno-luv-d-max-3-0-4x2"
     },
     {
       "category": "Disco de Freno",
@@ -3744,8 +3744,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "slug": "disco-de-freno-luv-d-max-3-0-4x4",
-      "oem": "8-97360-6780"
+      "oem": "8-97360-6780",
+      "slug": "disco-de-freno-luv-d-max-3-0-4x4"
     },
     {
       "category": "Disco de Freno",
@@ -3759,8 +3759,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "slug": "disco-de-freno-luv-d-max-3-5",
-      "oem": "8-97360-6780"
+      "oem": "8-97360-6780",
+      "slug": "disco-de-freno-luv-d-max-3-5"
     },
     {
       "category": "Distribuidor",
@@ -3773,8 +3773,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DISTRIBUIDOR"
       ],
-      "slug": "distribuidor-caribe-2000",
-      "oem": "8-94219-9540"
+      "oem": "8-94219-9540",
+      "slug": "distribuidor-caribe-2000"
     },
     {
       "category": "Distribuidor",
@@ -3787,8 +3787,8 @@ const PRODUCTS_DATA = {
         "DISTRIBUIDOR",
         "LUV"
       ],
-      "slug": "distribuidor-luv-2300",
-      "oem": "8-94476-1421"
+      "oem": "8-94476-1421",
+      "slug": "distribuidor-luv-2300"
     },
     {
       "category": "Embolo",
@@ -3801,8 +3801,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMBOLO"
       ],
-      "slug": "embolo-arranque-caribe-2-3",
-      "oem": "053660-0440"
+      "oem": "053660-0440",
+      "slug": "embolo-arranque-caribe-2-3"
     },
     {
       "category": "Embolo",
@@ -3815,8 +3815,8 @@ const PRODUCTS_DATA = {
         "EMBOLO",
         "LUV"
       ],
-      "slug": "embolo-arranque-luv-2-3",
-      "oem": "053660-0440"
+      "oem": "053660-0440",
+      "slug": "embolo-arranque-luv-2-3"
     },
     {
       "category": "Empacadura Bajante",
@@ -3830,8 +3830,8 @@ const PRODUCTS_DATA = {
         "CONICA",
         "EMPACADURA"
       ],
-      "slug": "empacadura-bajante-conica-caribe",
-      "oem": "9-22116-0210"
+      "oem": "9-22116-0210",
+      "slug": "empacadura-bajante-conica-caribe"
     },
     {
       "category": "Empacadura Bajante",
@@ -3845,8 +3845,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV"
       ],
-      "slug": "empacadura-bajante-conica-luv",
-      "oem": "9-22116-0210"
+      "oem": "9-22116-0210",
+      "slug": "empacadura-bajante-conica-luv"
     },
     {
       "category": "Empacadura Bajante",
@@ -3860,8 +3860,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "PLANA"
       ],
-      "slug": "empacadura-bajante-plana-caribe",
-      "oem": "8-97069-2870"
+      "oem": "8-97069-2870",
+      "slug": "empacadura-bajante-plana-caribe"
     },
     {
       "category": "Empacadura Bajante",
@@ -3875,8 +3875,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PLANA"
       ],
-      "slug": "empacadura-bajante-plana-luv",
-      "oem": "8-97069-2870"
+      "oem": "8-97069-2870",
+      "slug": "empacadura-bajante-plana-luv"
     },
     {
       "category": "Empacadura Camara",
@@ -3890,8 +3890,8 @@ const PRODUCTS_DATA = {
         "RODEO",
         "SOCH"
       ],
-      "slug": "empacadura-camara-rodeo-3-2-soch",
-      "oem": "8-97019-3611"
+      "oem": "8-97019-3611",
+      "slug": "empacadura-camara-rodeo-3-2-soch"
     },
     {
       "category": "Empacadura Camara",
@@ -3905,8 +3905,8 @@ const PRODUCTS_DATA = {
         "SOHC",
         "TROOPER"
       ],
-      "slug": "empacadura-camara-trooper-3-2-sohc",
-      "oem": "8-97019-3611"
+      "oem": "8-97019-3611",
+      "slug": "empacadura-camara-trooper-3-2-sohc"
     },
     {
       "category": "Empacadura Camara",
@@ -3919,8 +3919,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA"
       ],
-      "slug": "empacadura-de-camara-caribe-2-3-2",
-      "oem": "8-94146-2441"
+      "oem": "8-94146-2441",
+      "slug": "empacadura-de-camara-caribe-2-3-2"
     },
     {
       "category": "Empacadura Camara",
@@ -3933,8 +3933,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA"
       ],
-      "slug": "empacadura-de-camara-caribe-2-6",
-      "oem": "8-94174-2790"
+      "oem": "8-94174-2790",
+      "slug": "empacadura-de-camara-caribe-2-6"
     },
     {
       "category": "Empacadura Camara",
@@ -3948,8 +3948,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "G-200"
       ],
-      "slug": "empacadura-de-camara-caribe-g-200",
-      "oem": "8-94213-8091"
+      "oem": "8-94213-8091",
+      "slug": "empacadura-de-camara-caribe-g-200"
     },
     {
       "category": "Empacadura Camara",
@@ -3964,8 +3964,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV"
       ],
-      "slug": "empacadura-de-camara-de-amianto-luv-d-max-3-5",
-      "oem": "8-97262-0940"
+      "oem": "8-97262-0940",
+      "slug": "empacadura-de-camara-de-amianto-luv-d-max-3-5"
     },
     {
       "category": "Empacadura Camara",
@@ -3978,8 +3978,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV"
       ],
-      "slug": "empacadura-de-camara-luv-2-2",
-      "oem": "8-92062-3300"
+      "oem": "8-92062-3300",
+      "slug": "empacadura-de-camara-luv-2-2"
     },
     {
       "category": "Empacadura Camara",
@@ -3993,8 +3993,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV"
       ],
-      "slug": "empacadura-de-camara-luv-d-max-2-4",
-      "oem": "8-92062-3300"
+      "oem": "8-92062-3300",
+      "slug": "empacadura-de-camara-luv-d-max-2-4"
     },
     {
       "category": "Empacadura Camara",
@@ -4009,8 +4009,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "METALICA"
       ],
-      "slug": "empacadura-de-camara-metalica-luv-d-max-3-5",
-      "oem": "8-97262-0940"
+      "oem": "8-97262-0940",
+      "slug": "empacadura-de-camara-metalica-luv-d-max-3-5"
     },
     {
       "category": "Empacadura Camarin",
@@ -4024,8 +4024,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV"
       ],
-      "slug": "empacadura-camarin-luv-d-max-3-5",
-      "oem": "8-97254-4480"
+      "oem": "8-97254-4480",
+      "slug": "empacadura-camarin-luv-d-max-3-5"
     },
     {
       "category": "Empacadura Camarin",
@@ -4039,8 +4039,8 @@ const PRODUCTS_DATA = {
         "RODEO",
         "SOCH"
       ],
-      "slug": "empacadura-camarin-rodeo-3-2-soch",
-      "oem": "8-94364-5770"
+      "oem": "8-94364-5770",
+      "slug": "empacadura-camarin-rodeo-3-2-soch"
     },
     {
       "category": "Empacadura Camarin",
@@ -4054,8 +4054,8 @@ const PRODUCTS_DATA = {
         "SOHC",
         "TROOPER"
       ],
-      "slug": "empacadura-camarin-trooper-3-2-sohc",
-      "oem": "8-94364-5770"
+      "oem": "8-94364-5770",
+      "slug": "empacadura-camarin-trooper-3-2-sohc"
     },
     {
       "category": "Empacadura Carter",
@@ -4069,8 +4069,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV"
       ],
-      "slug": "empacadura-carter-luv-2-3-4x2",
-      "oem": "8-94235-2881"
+      "oem": "8-94235-2881",
+      "slug": "empacadura-carter-luv-2-3-4x2"
     },
     {
       "category": "Empacadura Carter",
@@ -4085,8 +4085,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "OS-209"
       ],
-      "slug": "juego-empacadura-carter-caribe-2300",
-      "oem": "OS-209"
+      "oem": "OS-209",
+      "slug": "juego-empacadura-carter-caribe-2300"
     },
     {
       "category": "Empacadura Carter",
@@ -4101,8 +4101,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "OS-209"
       ],
-      "slug": "juego-empacadura-carter-caribe-2600",
-      "oem": "OS-209"
+      "oem": "OS-209",
+      "slug": "juego-empacadura-carter-caribe-2600"
     },
     {
       "category": "Empacadura Carter",
@@ -4117,8 +4117,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "OS-209"
       ],
-      "slug": "juego-empacadura-carter-luv-23ax4",
-      "oem": "OS-209"
+      "oem": "OS-209",
+      "slug": "juego-empacadura-carter-luv-23ax4"
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -4132,8 +4132,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "MULTIPLE"
       ],
-      "slug": "empacadura-multiple-admision-caribe-2-3",
-      "oem": "8-94146-2490"
+      "oem": "8-94146-2490",
+      "slug": "empacadura-multiple-admision-caribe-2-3"
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -4147,8 +4147,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "MULTIPLE"
       ],
-      "slug": "empacadura-multiple-admision-caribe-2-6",
-      "oem": "8-94146-2490"
+      "oem": "8-94146-2490",
+      "slug": "empacadura-multiple-admision-caribe-2-6"
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -4162,8 +4162,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MULTIPLE"
       ],
-      "slug": "empacadura-multiple-admision-luv-2-3",
-      "oem": "8-94146-2490"
+      "oem": "8-94146-2490",
+      "slug": "empacadura-multiple-admision-luv-2-3"
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -4178,8 +4178,8 @@ const PRODUCTS_DATA = {
         "RODEO",
         "SOCH"
       ],
-      "slug": "empacadura-multiple-de-admision-rodeo-3-2-soch",
-      "oem": "8-94364-5770"
+      "oem": "8-94364-5770",
+      "slug": "empacadura-multiple-de-admision-rodeo-3-2-soch"
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -4194,8 +4194,8 @@ const PRODUCTS_DATA = {
         "SOHC",
         "TROOPER"
       ],
-      "slug": "empacadura-multiple-de-admision-trooper-3-2-sohc",
-      "oem": "8-94364-5770"
+      "oem": "8-94364-5770",
+      "slug": "empacadura-multiple-de-admision-trooper-3-2-sohc"
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -4209,8 +4209,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "MULTIPLE"
       ],
-      "slug": "empacadura-multiple-de-escape-caribe-2-3",
-      "oem": "8-94246-1090"
+      "oem": "8-94246-1090",
+      "slug": "empacadura-multiple-de-escape-caribe-2-3"
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -4224,8 +4224,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "MULTIPLE"
       ],
-      "slug": "empacadura-multiple-de-escape-caribe-2-6",
-      "oem": "8-94246-1090"
+      "oem": "8-94246-1090",
+      "slug": "empacadura-multiple-de-escape-caribe-2-6"
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -4239,8 +4239,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MULTIPLE"
       ],
-      "slug": "empacadura-multiple-de-escape-luv-2-3",
-      "oem": "8-94246-1090"
+      "oem": "8-94246-1090",
+      "slug": "empacadura-multiple-de-escape-luv-2-3"
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -4255,8 +4255,8 @@ const PRODUCTS_DATA = {
         "RODEO",
         "SOCH"
       ],
-      "slug": "empacadura-multiple-de-escape-rodeo-3-2-soch",
-      "oem": "8-94323-1730"
+      "oem": "8-94323-1730",
+      "slug": "empacadura-multiple-de-escape-rodeo-3-2-soch"
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -4271,8 +4271,8 @@ const PRODUCTS_DATA = {
         "SOHC",
         "TROOPER"
       ],
-      "slug": "empacadura-multiple-de-escape-trooper-3-2-sohc",
-      "oem": "8-94323-1730"
+      "oem": "8-94323-1730",
+      "slug": "empacadura-multiple-de-escape-trooper-3-2-sohc"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -4288,8 +4288,8 @@ const PRODUCTS_DATA = {
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "slug": "empacadura-tapa-valvula-caribe-2300",
-      "oem": "8-94214-9850"
+      "oem": "8-94214-9850",
+      "slug": "empacadura-tapa-valvula-caribe-2300"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -4305,8 +4305,8 @@ const PRODUCTS_DATA = {
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "slug": "empacadura-tapa-valvula-caribe-2600",
-      "oem": "8-94214-9850"
+      "oem": "8-94214-9850",
+      "slug": "empacadura-tapa-valvula-caribe-2600"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -4321,8 +4321,8 @@ const PRODUCTS_DATA = {
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "slug": "empacadura-tapa-valvula-luv-2-2",
-      "oem": "8-90467-6610"
+      "oem": "8-90467-6610",
+      "slug": "empacadura-tapa-valvula-luv-2-2"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -4337,8 +4337,8 @@ const PRODUCTS_DATA = {
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "slug": "empacadura-tapa-valvula-luv-2-3",
-      "oem": "8-94214-9850"
+      "oem": "8-94214-9850",
+      "slug": "empacadura-tapa-valvula-luv-2-3"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -4354,8 +4354,8 @@ const PRODUCTS_DATA = {
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "slug": "empacadura-tapa-valvula-luv-d-max-2-4",
-      "oem": "8-90467-6610"
+      "oem": "8-90467-6610",
+      "slug": "empacadura-tapa-valvula-luv-d-max-2-4"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -4371,8 +4371,8 @@ const PRODUCTS_DATA = {
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "slug": "empacadura-tapa-valvula-luv-d-max-3-5",
-      "oem": "8-97172-3940"
+      "oem": "8-97172-3940",
+      "slug": "empacadura-tapa-valvula-luv-d-max-3-5"
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -4388,8 +4388,8 @@ const PRODUCTS_DATA = {
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "slug": "empacadura-tapa-valvula-rodeo-3-2-soch",
-      "oem": "8-97048-7202"
+      "oem": "8-97048-7202",
+      "slug": "empacadura-tapa-valvula-rodeo-3-2-soch"
     },
     {
       "category": "Engranaje Bomba Aceite",
@@ -4429,8 +4429,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ENGRANAJE"
       ],
-      "slug": "engranaje-de-ciguenal-caribe-2000",
-      "oem": "8-94213-8150"
+      "oem": "8-94213-8150",
+      "slug": "engranaje-de-ciguenal-caribe-2000"
     },
     {
       "category": "Engranaje Cigueñal",
@@ -4444,8 +4444,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ENGRANAJE"
       ],
-      "slug": "engranaje-de-ciguenal-caribe-2300",
-      "oem": "8-94231-1651"
+      "oem": "8-94231-1651",
+      "slug": "engranaje-de-ciguenal-caribe-2300"
     },
     {
       "category": "Engranaje Cigueñal",
@@ -4458,8 +4458,8 @@ const PRODUCTS_DATA = {
         "ENGRANAJE",
         "LUV"
       ],
-      "slug": "engranaje-de-ciguenal-luv-2-3",
-      "oem": "8-94231-1651"
+      "oem": "8-94231-1651",
+      "slug": "engranaje-de-ciguenal-luv-2-3"
     },
     {
       "category": "Engranaje Leva",
@@ -4473,8 +4473,8 @@ const PRODUCTS_DATA = {
         "G-2000",
         "LEVA"
       ],
-      "slug": "engranaje-de-leva-caribe-g-2000",
-      "oem": "8-94213-8160"
+      "oem": "8-94213-8160",
+      "slug": "engranaje-de-leva-caribe-g-2000"
     },
     {
       "category": "Envase Direccion",
@@ -4490,8 +4490,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "RESERVORIO"
       ],
-      "slug": "reservorio-aceite-direccion-luv-d-max",
-      "oem": "8-97234-3500"
+      "oem": "8-97234-3500",
+      "slug": "reservorio-aceite-direccion-luv-d-max"
     },
     {
       "category": "Envase Refrigerante",
@@ -4505,8 +4505,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "REFRIGERANTE"
       ],
-      "slug": "envase-refrigerante-luv-d-max",
-      "oem": "8-97941-5013"
+      "oem": "8-97941-5013",
+      "slug": "envase-refrigerante-luv-d-max"
     },
     {
       "category": "Esparrago",
@@ -4521,8 +4521,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "RUEDA"
       ],
-      "slug": "esparrago-rueda-delantera-luv-d-max",
-      "oem": "8-97213-8710"
+      "oem": "8-97213-8710",
+      "slug": "esparrago-rueda-delantera-luv-d-max"
     },
     {
       "category": "Esparrago",
@@ -4537,8 +4537,8 @@ const PRODUCTS_DATA = {
         "RUEDA",
         "TRASERA"
       ],
-      "slug": "esparrago-rueda-trasera-luv-d-max",
-      "oem": "8-97213-8700"
+      "oem": "8-97213-8700",
+      "slug": "esparrago-rueda-trasera-luv-d-max"
     },
     {
       "category": "Espejo",
@@ -4554,8 +4554,8 @@ const PRODUCTS_DATA = {
         "ESPEJO",
         "LUV"
       ],
-      "slug": "espejo-luv-d-max-2005-2014",
-      "oem": "8-97357-8750 / 8-97357-8740"
+      "oem": "8-97357-8750 / 8-97357-8740",
+      "slug": "espejo-luv-d-max-2005-2014"
     },
     {
       "category": "Espejo",
@@ -4570,8 +4570,8 @@ const PRODUCTS_DATA = {
         "ESPEJO",
         "RETROVISOR"
       ],
-      "slug": "espejo-retrovisor-derecho-caribe-2300",
-      "oem": "8-94495-2281"
+      "oem": "8-94495-2281",
+      "slug": "espejo-retrovisor-derecho-caribe-2300"
     },
     {
       "category": "Espejo",
@@ -4586,8 +4586,8 @@ const PRODUCTS_DATA = {
         "ESPEJO",
         "RETROVISOR"
       ],
-      "slug": "espejo-retrovisor-derecho-caribe-2600",
-      "oem": "8-94495-2281"
+      "oem": "8-94495-2281",
+      "slug": "espejo-retrovisor-derecho-caribe-2600"
     },
     {
       "category": "Espejo Luna",
@@ -4602,8 +4602,8 @@ const PRODUCTS_DATA = {
         "LUNA",
         "LUV"
       ],
-      "slug": "luna-espejo-luv-d-max",
-      "oem": "8-97349-9820 / 8-97349-9810"
+      "oem": "8-97349-9820 / 8-97349-9810",
+      "slug": "luna-espejo-luv-d-max"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -4617,8 +4617,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LEVA"
       ],
-      "slug": "estopera-arbol-de-leva-caribe-2-3",
-      "oem": "8-94215-2200"
+      "oem": "8-94215-2200",
+      "slug": "estopera-arbol-de-leva-caribe-2-3"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -4632,8 +4632,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LEVA"
       ],
-      "slug": "estopera-arbol-de-leva-caribe-2-6",
-      "oem": "8-94215-2200"
+      "oem": "8-94215-2200",
+      "slug": "estopera-arbol-de-leva-caribe-2-6"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -4647,8 +4647,8 @@ const PRODUCTS_DATA = {
         "LEVA",
         "LUV"
       ],
-      "slug": "estopera-arbol-de-leva-luv-2-3",
-      "oem": "8-94215-2200"
+      "oem": "8-94215-2200",
+      "slug": "estopera-arbol-de-leva-luv-2-3"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -4663,8 +4663,8 @@ const PRODUCTS_DATA = {
         "LEVA",
         "LUV"
       ],
-      "slug": "estopera-arbol-de-leva-luv-d-max-3-5",
-      "oem": "8-94215-2200"
+      "oem": "8-94215-2200",
+      "slug": "estopera-arbol-de-leva-luv-d-max-3-5"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -4678,8 +4678,8 @@ const PRODUCTS_DATA = {
         "LEVA",
         "RODEO"
       ],
-      "slug": "estopera-arbol-de-leva-rodeo",
-      "oem": "8-94215-2200"
+      "oem": "8-94215-2200",
+      "slug": "estopera-arbol-de-leva-rodeo"
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -4693,8 +4693,8 @@ const PRODUCTS_DATA = {
         "LEVA",
         "TROOPER"
       ],
-      "slug": "estopera-arbol-de-leva-trooper",
-      "oem": "8-94215-2200"
+      "oem": "8-94215-2200",
+      "slug": "estopera-arbol-de-leva-trooper"
     },
     {
       "category": "Estopera Bomba de Aceite",
@@ -4708,8 +4708,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTOPERA"
       ],
-      "slug": "estopera-bomba-de-aceite-caribe",
-      "oem": "8-94369-5160"
+      "oem": "8-94369-5160",
+      "slug": "estopera-bomba-de-aceite-caribe"
     },
     {
       "category": "Estopera Bomba de Aceite",
@@ -4723,8 +4723,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV"
       ],
-      "slug": "estopera-bomba-de-aceite-luv-2-3",
-      "oem": "8-94369-5160"
+      "oem": "8-94369-5160",
+      "slug": "estopera-bomba-de-aceite-luv-2-3"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -4740,8 +4740,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV"
       ],
-      "slug": "estopera-bomba-aceite-ciguenal-luv-2-2",
-      "oem": "8-90183-5720"
+      "oem": "8-90183-5720",
+      "slug": "estopera-bomba-aceite-ciguenal-luv-2-2"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -4758,8 +4758,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV"
       ],
-      "slug": "estopera-bomba-aceite-ciguenal-luv-d-max-2-4",
-      "oem": "8-90183-5720"
+      "oem": "8-90183-5720",
+      "slug": "estopera-bomba-aceite-ciguenal-luv-d-max-2-4"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -4773,8 +4773,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "ESTOPERA"
       ],
-      "slug": "estopera-ciguenal-delantera-caribe-2-3",
-      "oem": "8-94214-9120"
+      "oem": "8-94214-9120",
+      "slug": "estopera-ciguenal-delantera-caribe-2-3"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -4788,8 +4788,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "ESTOPERA"
       ],
-      "slug": "estopera-ciguenal-delantera-caribe-2-6",
-      "oem": "8-94214-9120"
+      "oem": "8-94214-9120",
+      "slug": "estopera-ciguenal-delantera-caribe-2-6"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -4804,8 +4804,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "ESTOPERA"
       ],
-      "slug": "estopera-ciguenal-delantera-caribe-2000",
-      "oem": "8-09924-2960"
+      "oem": "8-09924-2960",
+      "slug": "estopera-ciguenal-delantera-caribe-2000"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -4819,8 +4819,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV"
       ],
-      "slug": "estopera-ciguenal-delantera-luv-2-3",
-      "oem": "8-94214-9120"
+      "oem": "8-94214-9120",
+      "slug": "estopera-ciguenal-delantera-luv-2-3"
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -4835,8 +4835,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV"
       ],
-      "slug": "estopera-ciguenal-delantera-luv-d-max-3-5",
-      "oem": "8-97023-3730"
+      "oem": "8-97023-3730",
+      "slug": "estopera-ciguenal-delantera-luv-d-max-3-5"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -4850,8 +4850,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "TRASERA"
       ],
-      "slug": "estopera-ciguenal-trasera-caribe-2-3",
-      "oem": "8-94391-2330"
+      "oem": "8-94391-2330",
+      "slug": "estopera-ciguenal-trasera-caribe-2-3"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -4865,8 +4865,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "TRASERA"
       ],
-      "slug": "estopera-ciguenal-trasera-caribe-2-6",
-      "oem": "8-94391-2330"
+      "oem": "8-94391-2330",
+      "slug": "estopera-ciguenal-trasera-caribe-2-6"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -4881,8 +4881,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "TRASERA"
       ],
-      "slug": "estopera-ciguenal-trasera-caribe-2000",
-      "oem": "9-09924-4490"
+      "oem": "9-09924-4490",
+      "slug": "estopera-ciguenal-trasera-caribe-2000"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -4896,8 +4896,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRASERA"
       ],
-      "slug": "estopera-ciguenal-trasera-luv-2-2",
-      "oem": "8-90354-3780"
+      "oem": "8-90354-3780",
+      "slug": "estopera-ciguenal-trasera-luv-2-2"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -4911,8 +4911,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRASERA"
       ],
-      "slug": "estopera-ciguenal-trasera-luv-2-3",
-      "oem": "8-94391-2330"
+      "oem": "8-94391-2330",
+      "slug": "estopera-ciguenal-trasera-luv-2-3"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -4927,8 +4927,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRASERA"
       ],
-      "slug": "estopera-ciguenal-trasera-luv-d-max-3-5",
-      "oem": "8-94391-2330"
+      "oem": "8-94391-2330",
+      "slug": "estopera-ciguenal-trasera-luv-d-max-3-5"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -4942,8 +4942,8 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TRASERA"
       ],
-      "slug": "estopera-ciguenal-trasera-rodeo",
-      "oem": "8-94391-2330"
+      "oem": "8-94391-2330",
+      "slug": "estopera-ciguenal-trasera-rodeo"
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -4957,8 +4957,8 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TROOPER"
       ],
-      "slug": "estopera-ciguenal-trasera-trooper",
-      "oem": "8-94391-2330"
+      "oem": "8-94391-2330",
+      "slug": "estopera-ciguenal-trasera-trooper"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -4972,8 +4972,8 @@ const PRODUCTS_DATA = {
         "COLA",
         "ESTOPERA"
       ],
-      "slug": "estopera-cola-de-caja-caribe-2-3",
-      "oem": "8-97046-7053"
+      "oem": "8-97046-7053",
+      "slug": "estopera-cola-de-caja-caribe-2-3"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -4987,8 +4987,8 @@ const PRODUCTS_DATA = {
         "COLA",
         "ESTOPERA"
       ],
-      "slug": "estopera-cola-de-caja-caribe-2-6",
-      "oem": "8-97046-7053"
+      "oem": "8-97046-7053",
+      "slug": "estopera-cola-de-caja-caribe-2-6"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -5002,8 +5002,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV"
       ],
-      "slug": "estopera-cola-de-caja-luv-2-3",
-      "oem": "8-97046-7053"
+      "oem": "8-97046-7053",
+      "slug": "estopera-cola-de-caja-luv-2-3"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -5017,8 +5017,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV"
       ],
-      "slug": "estopera-cola-de-caja-luv-3-2",
-      "oem": "8-97046-7053"
+      "oem": "8-97046-7053",
+      "slug": "estopera-cola-de-caja-luv-3-2"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -5033,8 +5033,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV"
       ],
-      "slug": "estopera-cola-de-caja-luv-d-max-3-5",
-      "oem": "8-97046-7053"
+      "oem": "8-97046-7053",
+      "slug": "estopera-cola-de-caja-luv-d-max-3-5"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -5048,8 +5048,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "RODEO"
       ],
-      "slug": "estopera-cola-de-caja-rodeo",
-      "oem": "8-97046-7053"
+      "oem": "8-97046-7053",
+      "slug": "estopera-cola-de-caja-rodeo"
     },
     {
       "category": "Estopera Cola de Caja",
@@ -5063,8 +5063,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "TROOPER"
       ],
-      "slug": "estopera-cola-de-caja-trooper",
-      "oem": "8-97046-7053"
+      "oem": "8-97046-7053",
+      "slug": "estopera-cola-de-caja-trooper"
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -5078,8 +5078,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "PINON"
       ],
-      "slug": "estopera-pinon-de-ataque-caribe-2-6",
-      "oem": "8-94408-0840"
+      "oem": "8-94408-0840",
+      "slug": "estopera-pinon-de-ataque-caribe-2-6"
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -5094,8 +5094,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PINON"
       ],
-      "slug": "estopera-pinon-de-ataque-luv-d-max",
-      "oem": "8-97146-8260"
+      "oem": "8-97146-8260",
+      "slug": "estopera-pinon-de-ataque-luv-d-max"
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -5110,8 +5110,8 @@ const PRODUCTS_DATA = {
         "PINON",
         "TRASERA"
       ],
-      "slug": "estopera-pinon-de-ataque-trasera-caribe-2-0",
-      "oem": "9-09724-0030"
+      "oem": "9-09724-0030",
+      "slug": "estopera-pinon-de-ataque-trasera-caribe-2-0"
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -5126,8 +5126,8 @@ const PRODUCTS_DATA = {
         "PINON",
         "TRASERA"
       ],
-      "slug": "estopera-pinon-de-ataque-trasera-caribe-2-3",
-      "oem": "9-09724-0030"
+      "oem": "9-09724-0030",
+      "slug": "estopera-pinon-de-ataque-trasera-caribe-2-3"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -5143,8 +5143,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "slug": "estopera-rueda-punta-de-eje-delantera-caribe-2-3",
-      "oem": "8-94227-0481"
+      "oem": "8-94227-0481",
+      "slug": "estopera-rueda-punta-de-eje-delantera-caribe-2-3"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -5160,8 +5160,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "slug": "estopera-rueda-punta-de-eje-delantera-caribe-2-6",
-      "oem": "8-94407-7110"
+      "oem": "8-94407-7110",
+      "slug": "estopera-rueda-punta-de-eje-delantera-caribe-2-6"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -5178,8 +5178,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "slug": "estopera-rueda-punta-de-eje-delantera-caribe-g200",
-      "oem": "8-94227-0481"
+      "oem": "8-94227-0481",
+      "slug": "estopera-rueda-punta-de-eje-delantera-caribe-g200"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -5195,8 +5195,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "slug": "estopera-rueda-punta-de-eje-delantera-luv-3-2",
-      "oem": "8-94407-7110"
+      "oem": "8-94407-7110",
+      "slug": "estopera-rueda-punta-de-eje-delantera-luv-3-2"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -5213,8 +5213,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "slug": "estopera-rueda-punta-de-eje-delantera-luv-d-max-2-4",
-      "oem": "8-94433-7180"
+      "oem": "8-94433-7180",
+      "slug": "estopera-rueda-punta-de-eje-delantera-luv-d-max-2-4"
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -5231,8 +5231,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "slug": "estopera-rueda-punta-de-eje-delantera-luv-d-max-3-5",
-      "oem": "8-94407-7110"
+      "oem": "8-94407-7110",
+      "slug": "estopera-rueda-punta-de-eje-delantera-luv-d-max-3-5"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -5249,8 +5249,8 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TUNEL"
       ],
-      "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-0",
-      "oem": "8-94318-9100"
+      "oem": "8-94318-9100",
+      "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-0"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -5267,8 +5267,8 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TUNEL"
       ],
-      "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-3",
-      "oem": "8-94318-9100"
+      "oem": "8-94318-9100",
+      "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-3"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -5285,8 +5285,8 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TUNEL"
       ],
-      "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-6",
-      "oem": "8-94178-2770"
+      "oem": "8-94178-2770",
+      "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-6"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -5302,8 +5302,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TRASERA"
       ],
-      "slug": "estopera-punta-de-eje-trasera-luv-d-max-2-4",
-      "oem": "8-97323-2970"
+      "oem": "8-97323-2970",
+      "slug": "estopera-punta-de-eje-trasera-luv-d-max-2-4"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -5319,8 +5319,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TRASERA"
       ],
-      "slug": "estopera-punta-de-eje-trasera-luv-d-max-3-0",
-      "oem": "8-97323-2970"
+      "oem": "8-97323-2970",
+      "slug": "estopera-punta-de-eje-trasera-luv-d-max-3-0"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -5336,8 +5336,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TRASERA"
       ],
-      "slug": "estopera-punta-de-eje-trasera-luv-d-max-3-5",
-      "oem": "8-97323-2970"
+      "oem": "8-97323-2970",
+      "slug": "estopera-punta-de-eje-trasera-luv-d-max-3-5"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -5355,8 +5355,8 @@ const PRODUCTS_DATA = {
         "RUEDA",
         "TRASERA"
       ],
-      "slug": "estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-3-5",
-      "oem": "8-97216-7920"
+      "oem": "8-97216-7920",
+      "slug": "estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-3-5"
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -5374,8 +5374,8 @@ const PRODUCTS_DATA = {
         "RUEDA",
         "TRASERA"
       ],
-      "slug": "estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-2-4",
-      "oem": "8-97216-7920"
+      "oem": "8-97216-7920",
+      "slug": "estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-2-4"
     },
     {
       "category": "Estopera Yoke",
@@ -5389,8 +5389,8 @@ const PRODUCTS_DATA = {
         "TRANSFER",
         "YOKE"
       ],
-      "slug": "estopera-yoke-transfer-caribe-2-0",
-      "oem": "5-09625-0590"
+      "oem": "5-09625-0590",
+      "slug": "estopera-yoke-transfer-caribe-2-0"
     },
     {
       "category": "Estopera Yoke",
@@ -5404,8 +5404,8 @@ const PRODUCTS_DATA = {
         "TRANSFER",
         "YOKE"
       ],
-      "slug": "estopera-yoke-transfer-caribe-2-3",
-      "oem": "5-09625-0590"
+      "oem": "5-09625-0590",
+      "slug": "estopera-yoke-transfer-caribe-2-3"
     },
     {
       "category": "Fan Clutch",
@@ -5418,8 +5418,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FAN"
       ],
-      "slug": "fan-clutch-caribe-2-3",
-      "oem": "8-94412-0300"
+      "oem": "8-94412-0300",
+      "slug": "fan-clutch-caribe-2-3"
     },
     {
       "category": "Fan Clutch",
@@ -5432,8 +5432,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FAN"
       ],
-      "slug": "fan-clutch-caribe-2-6",
-      "oem": "8-94412-0300"
+      "oem": "8-94412-0300",
+      "slug": "fan-clutch-caribe-2-6"
     },
     {
       "category": "Fan Clutch",
@@ -5446,8 +5446,8 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "slug": "fan-clutch-luv-2-2",
-      "oem": "8-94412-0300"
+      "oem": "8-94412-0300",
+      "slug": "fan-clutch-luv-2-2"
     },
     {
       "category": "Fan Clutch",
@@ -5460,8 +5460,8 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "slug": "fan-clutch-luv-2-3",
-      "oem": "8-94412-0300"
+      "oem": "8-94412-0300",
+      "slug": "fan-clutch-luv-2-3"
     },
     {
       "category": "Fan Clutch",
@@ -5474,8 +5474,8 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "slug": "fan-clutch-luv-3-2",
-      "oem": "8-97018-9181"
+      "oem": "8-97018-9181",
+      "slug": "fan-clutch-luv-3-2"
     },
     {
       "category": "Fan Clutch",
@@ -5489,8 +5489,8 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "slug": "fan-clutch-luv-d-max-2-4",
-      "oem": "8-94412-0300"
+      "oem": "8-94412-0300",
+      "slug": "fan-clutch-luv-d-max-2-4"
     },
     {
       "category": "Fan Clutch",
@@ -5504,8 +5504,8 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "slug": "fan-clutch-luv-d-max-3-5",
-      "oem": "8-97349-7610"
+      "oem": "8-97349-7610",
+      "slug": "fan-clutch-luv-d-max-3-5"
     },
     {
       "category": "Fan Clutch",
@@ -5518,8 +5518,8 @@ const PRODUCTS_DATA = {
         "FAN",
         "RODEO"
       ],
-      "slug": "fan-clutch-rodeo-3-2",
-      "oem": "8-97018-9181"
+      "oem": "8-97018-9181",
+      "slug": "fan-clutch-rodeo-3-2"
     },
     {
       "category": "Fan Clutch",
@@ -5532,8 +5532,8 @@ const PRODUCTS_DATA = {
         "FAN",
         "TROOPER"
       ],
-      "slug": "fan-clutch-trooper-3-2",
-      "oem": "8-97018-9181"
+      "oem": "8-97018-9181",
+      "slug": "fan-clutch-trooper-3-2"
     },
     {
       "category": "Faro Antineblina",
@@ -5551,8 +5551,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PARACHOQUE"
       ],
-      "slug": "cocuyo-parachoque-delantero-luv-d-max-05-09",
-      "oem": "GL-017-002"
+      "oem": "GL-017-002",
+      "slug": "cocuyo-parachoque-delantero-luv-d-max-05-09"
     },
     {
       "category": "Faro Antineblina",
@@ -5568,8 +5568,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "NEBLINA"
       ],
-      "slug": "faro-neblina-luv-d-max-10-14",
-      "oem": "8-97374-6611"
+      "oem": "8-97374-6611",
+      "slug": "faro-neblina-luv-d-max-10-14"
     },
     {
       "category": "Faro Delantero",
@@ -5584,8 +5584,8 @@ const PRODUCTS_DATA = {
         "FARO",
         "LUV"
       ],
-      "slug": "faro-delantero-luv-93-96",
-      "oem": "8-94434-5572 / 8-94434-5582"
+      "oem": "8-94434-5572 / 8-94434-5582",
+      "slug": "faro-delantero-luv-93-96"
     },
     {
       "category": "Faro Delantero",
@@ -5601,8 +5601,8 @@ const PRODUCTS_DATA = {
         "FARO",
         "LUV"
       ],
-      "slug": "faro-delantero-luv-d-max-04-08",
-      "oem": "8-97237-4973 / 8-97237-4983"
+      "oem": "8-97237-4973 / 8-97237-4983",
+      "slug": "faro-delantero-luv-d-max-04-08"
     },
     {
       "category": "Faro Delantero",
@@ -5618,8 +5618,8 @@ const PRODUCTS_DATA = {
         "FARO",
         "LUV"
       ],
-      "slug": "faro-delantero-luv-d-max-10-14",
-      "oem": "8-98079-9930 / 8-98079-9940"
+      "oem": "8-98079-9930 / 8-98079-9940",
+      "slug": "faro-delantero-luv-d-max-10-14"
     },
     {
       "category": "Faro Delantero",
@@ -5635,8 +5635,8 @@ const PRODUCTS_DATA = {
         "FARO",
         "REDONDO"
       ],
-      "slug": "faro-redondo-caribe-2000",
-      "oem": "8-94244-6820 / 8-94244-6830"
+      "oem": "8-94244-6820 / 8-94244-6830",
+      "slug": "faro-redondo-caribe-2000"
     },
     {
       "category": "Faro Delantero",
@@ -5652,8 +5652,8 @@ const PRODUCTS_DATA = {
         "FARO",
         "REDONDO"
       ],
-      "slug": "faro-redondo-caribe-2300",
-      "oem": "8-94244-6820 / 8-94244-6830"
+      "oem": "8-94244-6820 / 8-94244-6830",
+      "slug": "faro-redondo-caribe-2300"
     },
     {
       "category": "Faro Placa",
@@ -5669,8 +5669,8 @@ const PRODUCTS_DATA = {
         "PLACA",
         "TRASERA"
       ],
-      "slug": "luces-placa-trasera-luv-d-max",
-      "oem": "8-97236-6901"
+      "oem": "8-97236-6901",
+      "slug": "luces-placa-trasera-luv-d-max"
     },
     {
       "category": "Filtro Aceite",
@@ -5683,8 +5683,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FILTRO"
       ],
-      "slug": "filtro-aceite-caribe-2-0",
-      "oem": "8-94456-7412"
+      "oem": "8-94456-7412",
+      "slug": "filtro-aceite-caribe-2-0"
     },
     {
       "category": "Filtro Aceite",
@@ -5697,8 +5697,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FILTRO"
       ],
-      "slug": "filtro-aceite-caribe-2-6",
-      "oem": "8-94456-7412"
+      "oem": "8-94456-7412",
+      "slug": "filtro-aceite-caribe-2-6"
     },
     {
       "category": "Filtro Aceite",
@@ -5711,8 +5711,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "slug": "filtro-aceite-luv-2-3",
-      "oem": "8-94456-7412"
+      "oem": "8-94456-7412",
+      "slug": "filtro-aceite-luv-2-3"
     },
     {
       "category": "Filtro Aceite",
@@ -5727,8 +5727,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "slug": "filtro-aceite-luv-d-max-3-0-diesel",
-      "oem": "8-94456-7412"
+      "oem": "8-94456-7412",
+      "slug": "filtro-aceite-luv-d-max-3-0-diesel"
     },
     {
       "category": "Filtro Aceite",
@@ -5741,8 +5741,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "RODEO"
       ],
-      "slug": "filtro-aceite-rodeo-3-2",
-      "oem": "8-94456-7412"
+      "oem": "8-94456-7412",
+      "slug": "filtro-aceite-rodeo-3-2"
     },
     {
       "category": "Filtro Aceite",
@@ -5755,8 +5755,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "TROOPER"
       ],
-      "slug": "filtro-aceite-trooper-3-2",
-      "oem": "8-94456-7412"
+      "oem": "8-94456-7412",
+      "slug": "filtro-aceite-trooper-3-2"
     },
     {
       "category": "Filtro Aire",
@@ -5769,8 +5769,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "slug": "filtro-aire-luv-2-2",
-      "oem": "8-97039-0020"
+      "oem": "8-97039-0020",
+      "slug": "filtro-aire-luv-2-2"
     },
     {
       "category": "Filtro Aire",
@@ -5783,8 +5783,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "slug": "filtro-aire-luv-3-2",
-      "oem": "8-97039-0020"
+      "oem": "8-97039-0020",
+      "slug": "filtro-aire-luv-3-2"
     },
     {
       "category": "Filtro Aire",
@@ -5798,8 +5798,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "slug": "filtro-aire-luv-d-max",
-      "oem": "8-97251-9430"
+      "oem": "8-97251-9430",
+      "slug": "filtro-aire-luv-d-max"
     },
     {
       "category": "Filtro Aire",
@@ -5812,8 +5812,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "RODEO"
       ],
-      "slug": "filtro-aire-rodeo-3-2",
-      "oem": "8-97039-0020"
+      "oem": "8-97039-0020",
+      "slug": "filtro-aire-rodeo-3-2"
     },
     {
       "category": "Filtro Aire",
@@ -5826,8 +5826,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "TROOPER"
       ],
-      "slug": "filtro-aire-trooper-3-2",
-      "oem": "8-97039-0020"
+      "oem": "8-97039-0020",
+      "slug": "filtro-aire-trooper-3-2"
     },
     {
       "category": "Filtro Antipolen",
@@ -5841,8 +5841,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "slug": "filtro-antipolen-luv-d-max",
-      "oem": "8-97356-1270"
+      "oem": "8-97356-1270",
+      "slug": "filtro-antipolen-luv-d-max"
     },
     {
       "category": "Filtro Caja",
@@ -5857,8 +5857,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "slug": "filtro-caja-automatica-luv-d-max-3-5",
-      "oem": "8-97207-1430"
+      "oem": "8-97207-1430",
+      "slug": "filtro-caja-automatica-luv-d-max-3-5"
     },
     {
       "category": "Filtro Gasolina",
@@ -5872,8 +5872,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV"
       ],
-      "slug": "filtro-gasolina-luv-d-max",
-      "oem": "96335719"
+      "oem": "96335719",
+      "slug": "filtro-gasolina-luv-d-max"
     },
     {
       "category": "Filtro Gasolina",
@@ -5886,8 +5886,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "UNIVERSAL"
       ],
-      "slug": "filtro-gasolina-universal",
-      "oem": "5-13200-0661"
+      "oem": "5-13200-0661",
+      "slug": "filtro-gasolina-universal"
     },
     {
       "category": "Flauta",
@@ -5900,8 +5900,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FLAUTA"
       ],
-      "slug": "flauta-de-admision-caribe",
-      "oem": "8-94200-7022"
+      "oem": "8-94200-7022",
+      "slug": "flauta-de-admision-caribe"
     },
     {
       "category": "Flauta",
@@ -5914,8 +5914,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "FLAUTA"
       ],
-      "slug": "flauta-de-escape-caribe",
-      "oem": "8-94200-7032"
+      "oem": "8-94200-7032",
+      "slug": "flauta-de-escape-caribe"
     },
     {
       "category": "Flotante",
@@ -5928,8 +5928,8 @@ const PRODUCTS_DATA = {
         "FLOTANTE",
         "GASOLINA"
       ],
-      "slug": "flotante-gasolina-caribe",
-      "oem": "8-94131-4470"
+      "oem": "8-94131-4470",
+      "slug": "flotante-gasolina-caribe"
     },
     {
       "category": "Flotante",
@@ -5942,8 +5942,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV"
       ],
-      "slug": "flotante-gasolina-luv",
-      "oem": "8-94131-4470"
+      "oem": "8-94131-4470",
+      "slug": "flotante-gasolina-luv"
     },
     {
       "category": "Flotante",
@@ -5957,8 +5957,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV"
       ],
-      "slug": "flotante-gasolina-luv-d-max-2-4",
-      "oem": "EM2154"
+      "oem": "EM2154",
+      "slug": "flotante-gasolina-luv-d-max-2-4"
     },
     {
       "category": "Flotante",
@@ -5972,8 +5972,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV"
       ],
-      "slug": "flotante-gasolina-luv-d-max-3-5",
-      "oem": "EM2154"
+      "oem": "EM2154",
+      "slug": "flotante-gasolina-luv-d-max-3-5"
     },
     {
       "category": "Flotante",
@@ -5986,8 +5986,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "RODEO"
       ],
-      "slug": "flotante-gasolina-rodeo",
-      "oem": "8-94131-4470"
+      "oem": "8-94131-4470",
+      "slug": "flotante-gasolina-rodeo"
     },
     {
       "category": "Flotante",
@@ -6000,8 +6000,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "TROOPER"
       ],
-      "slug": "flotante-gasolina-trooper",
-      "oem": "8-94131-4470"
+      "oem": "8-94131-4470",
+      "slug": "flotante-gasolina-trooper"
     },
     {
       "category": "Flotante",
@@ -6015,8 +6015,8 @@ const PRODUCTS_DATA = {
         "GRANDE",
         "LUV"
       ],
-      "slug": "flotante-luv-d-max-grande",
-      "oem": "8-97943-1780"
+      "oem": "8-97943-1780",
+      "slug": "flotante-luv-d-max-grande"
     },
     {
       "category": "Gato",
@@ -6031,8 +6031,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TIPO"
       ],
-      "slug": "gato-tipo-botella-luv-d-max-3-5",
-      "oem": "8-97217-7881"
+      "oem": "8-97217-7881",
+      "slug": "gato-tipo-botella-luv-d-max-3-5"
     },
     {
       "category": "Gemelos",
@@ -6047,8 +6047,8 @@ const PRODUCTS_DATA = {
         "GEMELOS",
         "LUV"
       ],
-      "slug": "gemelo-ballesta-caribe-luv",
-      "oem": "8-94223-1672"
+      "oem": "8-94223-1672",
+      "slug": "gemelo-ballesta-caribe-luv"
     },
     {
       "category": "Gemelos",
@@ -6064,8 +6064,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TROOPER"
       ],
-      "slug": "gemelo-ballesta-luv-d-max-trooper",
-      "oem": "8-97245-6470"
+      "oem": "8-97245-6470",
+      "slug": "gemelo-ballesta-luv-d-max-trooper"
     },
     {
       "category": "Goma Barra Estabilizadora",
@@ -6079,8 +6079,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "GOMA"
       ],
-      "slug": "goma-barra-estabilizadora-caribe",
-      "oem": "5-51631-0170"
+      "oem": "5-51631-0170",
+      "slug": "goma-barra-estabilizadora-caribe"
     },
     {
       "category": "Goma Barra Estabilizadora",
@@ -6094,8 +6094,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV"
       ],
-      "slug": "goma-barra-estabilizadora-luv",
-      "oem": "5-51631-0170"
+      "oem": "5-51631-0170",
+      "slug": "goma-barra-estabilizadora-luv"
     },
     {
       "category": "Goma Barra Tensora",
@@ -6109,8 +6109,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "TENSORA"
       ],
-      "slug": "goma-barra-tensora-caribe",
-      "oem": "9-51631-6191"
+      "oem": "9-51631-6191",
+      "slug": "goma-barra-tensora-caribe"
     },
     {
       "category": "Goma Barra Tensora",
@@ -6124,8 +6124,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TENSORA"
       ],
-      "slug": "goma-barra-tensora-luv",
-      "oem": "8-94433-6720"
+      "oem": "8-94433-6720",
+      "slug": "goma-barra-tensora-luv"
     },
     {
       "category": "Goma Soporte Amortiguador",
@@ -6154,8 +6154,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "TRIPOIDE"
       ],
-      "slug": "goma-tripoide-caribe-2-3",
-      "oem": "5-43319-0190"
+      "oem": "5-43319-0190",
+      "slug": "goma-tripoide-caribe-2-3"
     },
     {
       "category": "Goma Tripoide",
@@ -6168,8 +6168,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "TRIPOIDE"
       ],
-      "slug": "goma-tripoide-caribe-2-6",
-      "oem": "8-94313-1060"
+      "oem": "8-94313-1060",
+      "slug": "goma-tripoide-caribe-2-6"
     },
     {
       "category": "Goma Tripoide",
@@ -6183,8 +6183,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "TRIPOIDE"
       ],
-      "slug": "goma-tripoide-caribe-g-200",
-      "oem": "5-43319-0190"
+      "oem": "5-43319-0190",
+      "slug": "goma-tripoide-caribe-g-200"
     },
     {
       "category": "Goma Tripoide",
@@ -6197,8 +6197,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRIPOIDE"
       ],
-      "slug": "goma-tripoide-luv-2-3",
-      "oem": "8-94313-1060"
+      "oem": "8-94313-1060",
+      "slug": "goma-tripoide-luv-2-3"
     },
     {
       "category": "Goma Tripoide",
@@ -6212,8 +6212,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRIPOIDE"
       ],
-      "slug": "goma-tripoide-luv-d-max",
-      "oem": "8-94313-1060"
+      "oem": "8-94313-1060",
+      "slug": "goma-tripoide-luv-d-max"
     },
     {
       "category": "Goma Tripoide",
@@ -6226,8 +6226,8 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TRIPOIDE"
       ],
-      "slug": "goma-tripoide-rodeo",
-      "oem": "8-94313-1060"
+      "oem": "8-94313-1060",
+      "slug": "goma-tripoide-rodeo"
     },
     {
       "category": "Goma Tripoide",
@@ -6240,8 +6240,8 @@ const PRODUCTS_DATA = {
         "TRIPOIDE",
         "TROOPER"
       ],
-      "slug": "goma-tripoide-trooper",
-      "oem": "8-94313-1060"
+      "oem": "8-94313-1060",
+      "slug": "goma-tripoide-trooper"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -6255,8 +6255,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "GOMA"
       ],
-      "slug": "goma-u-barra-estabilizadora-caribe-2-6",
-      "oem": "8-97235-7840"
+      "oem": "8-97235-7840",
+      "slug": "goma-u-barra-estabilizadora-caribe-2-6"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -6270,8 +6270,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "GOMA"
       ],
-      "slug": "goma-u-barra-estabilizadora-caribe-2-3",
-      "oem": "8-94143-3210"
+      "oem": "8-94143-3210",
+      "slug": "goma-u-barra-estabilizadora-caribe-2-3"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -6286,8 +6286,8 @@ const PRODUCTS_DATA = {
         "G-200",
         "GOMA"
       ],
-      "slug": "goma-u-barra-estabilizadora-caribe-g-200",
-      "oem": "8-94143-3210"
+      "oem": "8-94143-3210",
+      "slug": "goma-u-barra-estabilizadora-caribe-g-200"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -6301,8 +6301,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV"
       ],
-      "slug": "goma-u-barra-estabilizadora-luv-2-2",
-      "oem": "8-94143-3210"
+      "oem": "8-94143-3210",
+      "slug": "goma-u-barra-estabilizadora-luv-2-2"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -6316,8 +6316,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV"
       ],
-      "slug": "goma-u-barra-estabilizadora-luv-2-3",
-      "oem": "8-94143-3210"
+      "oem": "8-94143-3210",
+      "slug": "goma-u-barra-estabilizadora-luv-2-3"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -6332,8 +6332,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV"
       ],
-      "slug": "goma-u-barra-estabilizadora-luv-d-max",
-      "oem": "8-97235-7840"
+      "oem": "8-97235-7840",
+      "slug": "goma-u-barra-estabilizadora-luv-d-max"
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -6347,8 +6347,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "TROOPER"
       ],
-      "slug": "goma-u-barra-estabilizadora-trooper",
-      "oem": "8-97235-7840"
+      "oem": "8-97235-7840",
+      "slug": "goma-u-barra-estabilizadora-trooper"
     },
     {
       "category": "Goma U Cajetin",
@@ -6363,8 +6363,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV"
       ],
-      "slug": "goma-u-cajetin-direccion-luv-d-max",
-      "oem": "8-97304-9230"
+      "oem": "8-97304-9230",
+      "slug": "goma-u-cajetin-direccion-luv-d-max"
     },
     {
       "category": "Gomas de Valvula",
@@ -6380,8 +6380,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "slug": "juego-goma-valvula-luv-d-max-3-5",
-      "oem": "8-97146-7330"
+      "oem": "8-97146-7330",
+      "slug": "juego-goma-valvula-luv-d-max-3-5"
     },
     {
       "category": "Gomas de Valvula",
@@ -6397,8 +6397,8 @@ const PRODUCTS_DATA = {
         "VALVULA",
         "VALVULAS"
       ],
-      "slug": "juego-goma-valvulas-caribe",
-      "oem": "8-94208-5220"
+      "oem": "8-94208-5220",
+      "slug": "juego-goma-valvulas-caribe"
     },
     {
       "category": "Graduador de Freno",
@@ -6412,8 +6412,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "GRADUADOR"
       ],
-      "slug": "graduador-de-freno-caribe-83-88",
-      "oem": "8-94232-3530"
+      "oem": "8-94232-3530",
+      "slug": "graduador-de-freno-caribe-83-88"
     },
     {
       "category": "Graduador de Freno",
@@ -6428,8 +6428,8 @@ const PRODUCTS_DATA = {
         "GRADUADOR",
         "LUV"
       ],
-      "slug": "graduador-de-freno-luv-d-max-2-4",
-      "oem": "8-97301-4940 / 8-97301-4950"
+      "oem": "8-97301-4940 / 8-97301-4950",
+      "slug": "graduador-de-freno-luv-d-max-2-4"
     },
     {
       "category": "Graduador de Freno",
@@ -6444,8 +6444,8 @@ const PRODUCTS_DATA = {
         "GRADUADOR",
         "LUV"
       ],
-      "slug": "graduadorde-freno-mano-luv-d-max-3-5",
-      "oem": "8-98007-9790 / 8-98007-9800"
+      "oem": "8-98007-9790 / 8-98007-9800",
+      "slug": "graduadorde-freno-mano-luv-d-max-3-5"
     },
     {
       "category": "Guardapolvo de Guardafango",
@@ -6462,8 +6462,8 @@ const PRODUCTS_DATA = {
         "GUARDAPOLVO",
         "LUV"
       ],
-      "slug": "guardapolvo-de-guardafango-delantero-luv-d-max-10-14",
-      "oem": "8-98007-1343 / 8-98007-1333"
+      "oem": "8-98007-1343 / 8-98007-1333",
+      "slug": "guardapolvo-de-guardafango-delantero-luv-d-max-10-14"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -6476,8 +6476,8 @@ const PRODUCTS_DATA = {
         "GUARDAPOLVO",
         "HORQUILLA"
       ],
-      "slug": "guardapolvo-horquilla-caribe-2-0",
-      "oem": "5-31131-0050"
+      "oem": "5-31131-0050",
+      "slug": "guardapolvo-horquilla-caribe-2-0"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -6490,8 +6490,8 @@ const PRODUCTS_DATA = {
         "GUARDAPOLVO",
         "HORQUILLA"
       ],
-      "slug": "guardapolvo-horquilla-caribe-2-3",
-      "oem": "5-31131-0050"
+      "oem": "5-31131-0050",
+      "slug": "guardapolvo-horquilla-caribe-2-3"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -6504,8 +6504,8 @@ const PRODUCTS_DATA = {
         "GUARDAPOLVO",
         "HORQUILLA"
       ],
-      "slug": "guardapolvo-horquilla-caribe-2-6",
-      "oem": "8-94156-7000"
+      "oem": "8-94156-7000",
+      "slug": "guardapolvo-horquilla-caribe-2-6"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -6518,8 +6518,8 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "slug": "guardapolvo-horquilla-luv-2-2",
-      "oem": "8-94156-7000"
+      "oem": "8-94156-7000",
+      "slug": "guardapolvo-horquilla-luv-2-2"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -6532,8 +6532,8 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "slug": "guardapolvo-horquilla-luv-2-3",
-      "oem": "8-94156-7000"
+      "oem": "8-94156-7000",
+      "slug": "guardapolvo-horquilla-luv-2-3"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -6547,8 +6547,8 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "slug": "guardapolvo-horquilla-luv-d-max-2-4",
-      "oem": "8-94156-7000"
+      "oem": "8-94156-7000",
+      "slug": "guardapolvo-horquilla-luv-d-max-2-4"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -6563,8 +6563,8 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "slug": "guardapolvo-horquilla-luv-d-max-2-5-diesel",
-      "oem": "8-94156-7000"
+      "oem": "8-94156-7000",
+      "slug": "guardapolvo-horquilla-luv-d-max-2-5-diesel"
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -6579,8 +6579,8 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "slug": "guardapolvo-horquilla-luv-d-max-3-0-diesel",
-      "oem": "8-94156-7000"
+      "oem": "8-94156-7000",
+      "slug": "guardapolvo-horquilla-luv-d-max-3-0-diesel"
     },
     {
       "category": "Guaya Acelerador",
@@ -6593,8 +6593,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GUAYA"
       ],
-      "slug": "guaya-acelerador-caribe-2-3",
-      "oem": "8-94495-0191"
+      "oem": "8-94495-0191",
+      "slug": "guaya-acelerador-caribe-2-3"
     },
     {
       "category": "Guaya Acelerador",
@@ -6607,8 +6607,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GUAYA"
       ],
-      "slug": "guaya-acelerador-caribe-2-6",
-      "oem": "8-94499-9592"
+      "oem": "8-94499-9592",
+      "slug": "guaya-acelerador-caribe-2-6"
     },
     {
       "category": "Guaya Acelerador",
@@ -6623,8 +6623,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LARGA"
       ],
-      "slug": "guaya-acelerador-larga-caribe-g-2000",
-      "oem": "8-94222-5532"
+      "oem": "8-94222-5532",
+      "slug": "guaya-acelerador-larga-caribe-g-2000"
     },
     {
       "category": "Guaya Acelerador",
@@ -6637,8 +6637,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV"
       ],
-      "slug": "guaya-acelerador-luv-2-3",
-      "oem": "8-94495-0191"
+      "oem": "8-94495-0191",
+      "slug": "guaya-acelerador-luv-2-3"
     },
     {
       "category": "Guaya Acelerador",
@@ -6652,8 +6652,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV"
       ],
-      "slug": "guayaacelerador-luv-d-max-2-4",
-      "oem": "8-97362-9490"
+      "oem": "8-97362-9490",
+      "slug": "guayaacelerador-luv-d-max-2-4"
     },
     {
       "category": "Guaya Acelerador",
@@ -6667,8 +6667,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV"
       ],
-      "slug": "guayaacelerador-luv-d-max-4x225",
-      "oem": "8-97369-0080"
+      "oem": "8-97369-0080",
+      "slug": "guayaacelerador-luv-d-max-4x225"
     },
     {
       "category": "Guaya Acelerador",
@@ -6682,8 +6682,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV"
       ],
-      "slug": "guayaacelerador-luv-d-max-3-5",
-      "oem": "8-97315-9651"
+      "oem": "8-97315-9651",
+      "slug": "guayaacelerador-luv-d-max-3-5"
     },
     {
       "category": "Guaya Capot",
@@ -6696,8 +6696,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GUAYA"
       ],
-      "slug": "guaya-capot-caribe",
-      "oem": "8-94217-6814"
+      "oem": "8-94217-6814",
+      "slug": "guaya-capot-caribe"
     },
     {
       "category": "Guaya Capot",
@@ -6712,8 +6712,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANILLA"
       ],
-      "slug": "guaya-capot-con-manilla-luv-d-max",
-      "oem": "8-98072-3680"
+      "oem": "8-98072-3680",
+      "slug": "guaya-capot-con-manilla-luv-d-max"
     },
     {
       "category": "Guaya Capot",
@@ -6727,8 +6727,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV"
       ],
-      "slug": "guaya-capot-luv-2300",
-      "oem": "8-97106-1310"
+      "oem": "8-97106-1310",
+      "slug": "guaya-capot-luv-2300"
     },
     {
       "category": "Guaya Capot",
@@ -6742,8 +6742,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV"
       ],
-      "slug": "guaya-capot-luv-d-max",
-      "oem": "8-97334-4362"
+      "oem": "8-97334-4362",
+      "slug": "guaya-capot-luv-d-max"
     },
     {
       "category": "Guaya Clutch",
@@ -6757,8 +6757,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "GUAYA"
       ],
-      "slug": "guaya-de-clutch-caribe",
-      "oem": "8-94297-1201 / 8-94181-2322"
+      "oem": "8-94297-1201 / 8-94181-2322",
+      "slug": "guaya-de-clutch-caribe"
     },
     {
       "category": "Guaya Freno de Mano",
@@ -6776,8 +6776,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANO"
       ],
-      "slug": "guaya-freno-mano-luv-d-max-3-0-diesel-4x4",
-      "oem": "8-97368-0680 / 8-97363-3460"
+      "oem": "8-97368-0680 / 8-97363-3460",
+      "slug": "guaya-freno-mano-luv-d-max-3-0-diesel-4x4"
     },
     {
       "category": "Guaya Freno de Mano",
@@ -6793,8 +6793,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANO"
       ],
-      "slug": "guaya-freno-mano-luv-d-max-3-5",
-      "oem": "8-97368-0680 / 8-97363-3460"
+      "oem": "8-97368-0680 / 8-97363-3460",
+      "slug": "guaya-freno-mano-luv-d-max-3-5"
     },
     {
       "category": "Guaya Selectora de Cambio",
@@ -6811,8 +6811,8 @@ const PRODUCTS_DATA = {
         "SELECTORA",
         "SELECTORADE"
       ],
-      "slug": "guaya-selectorade-cambio-luv-d-max-3-5-automatico",
-      "oem": "8-97307-4722"
+      "oem": "8-97307-4722",
+      "slug": "guaya-selectorade-cambio-luv-d-max-3-5-automatico"
     },
     {
       "category": "Guaya Velocimetro - Kilometraje",
@@ -6827,8 +6827,8 @@ const PRODUCTS_DATA = {
         "KILOMETRAJE",
         "VELOCIMETRO"
       ],
-      "slug": "guaya-velocimetro-caribe-83-88",
-      "oem": "8-94159-1530"
+      "oem": "8-94159-1530",
+      "slug": "guaya-velocimetro-caribe-83-88"
     },
     {
       "category": "Guia de Valvula",
@@ -6843,8 +6843,8 @@ const PRODUCTS_DATA = {
         "GUIA",
         "VALVULA"
       ],
-      "slug": "guia-de-valvula-caribe-2300",
-      "oem": "8-94206-7620 / 8-94206-7630"
+      "oem": "8-94206-7620 / 8-94206-7630",
+      "slug": "guia-de-valvula-caribe-2300"
     },
     {
       "category": "Guia de Valvula",
@@ -6858,8 +6858,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "slug": "guia-de-valvula-luv-2-3",
-      "oem": "8-94206-7620 / 8-94206-7630"
+      "oem": "8-94206-7620 / 8-94206-7630",
+      "slug": "guia-de-valvula-luv-2-3"
     },
     {
       "category": "Hidrovac",
@@ -6872,8 +6872,8 @@ const PRODUCTS_DATA = {
         "HIDROVAC",
         "LUV"
       ],
-      "slug": "hidrovac-luv-d-max-3-5",
-      "oem": "8-97365-5180"
+      "oem": "8-97365-5180",
+      "slug": "hidrovac-luv-d-max-3-5"
     },
     {
       "category": "Horquilla Clutch",
@@ -6886,8 +6886,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "HORQUILLA"
       ],
-      "slug": "horquilla-clutch-caribe-2-6",
-      "oem": "8-94324-4180"
+      "oem": "8-94324-4180",
+      "slug": "horquilla-clutch-caribe-2-6"
     },
     {
       "category": "Horquilla Clutch",
@@ -6900,8 +6900,8 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "slug": "horquilla-clutch-luv-2-2",
-      "oem": "8-94324-4180"
+      "oem": "8-94324-4180",
+      "slug": "horquilla-clutch-luv-2-2"
     },
     {
       "category": "Horquilla Clutch",
@@ -6914,8 +6914,8 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "slug": "horquilla-clutch-luv-2-3",
-      "oem": "8-94324-4180"
+      "oem": "8-94324-4180",
+      "slug": "horquilla-clutch-luv-2-3"
     },
     {
       "category": "Horquilla Clutch",
@@ -6929,8 +6929,8 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "slug": "horquilla-clutch-luv-d-max-2-4",
-      "oem": "8-94324-4180"
+      "oem": "8-94324-4180",
+      "slug": "horquilla-clutch-luv-d-max-2-4"
     },
     {
       "category": "Horquilla Clutch",
@@ -6944,8 +6944,8 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "slug": "horquilla-clutch-luv-d-max-2-5",
-      "oem": "8-94324-4180"
+      "oem": "8-94324-4180",
+      "slug": "horquilla-clutch-luv-d-max-2-5"
     },
     {
       "category": "Horquilla Clutch",
@@ -6959,8 +6959,8 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "slug": "horquilla-clutch-luv-d-max-3-0",
-      "oem": "8-94324-4180"
+      "oem": "8-94324-4180",
+      "slug": "horquilla-clutch-luv-d-max-3-0"
     },
     {
       "category": "Inyector",
@@ -6972,8 +6972,8 @@ const PRODUCTS_DATA = {
         "INYECTOR",
         "LUV"
       ],
-      "slug": "inyector-luv-2-2",
-      "oem": "8-17125-0970"
+      "oem": "8-17125-0970",
+      "slug": "inyector-luv-2-2"
     },
     {
       "category": "Inyector",
@@ -6986,8 +6986,8 @@ const PRODUCTS_DATA = {
         "INYECTOR",
         "LUV"
       ],
-      "slug": "inyector-luv-d-max-2-4",
-      "oem": "8-17125-0970"
+      "oem": "8-17125-0970",
+      "slug": "inyector-luv-d-max-2-4"
     },
     {
       "category": "Inyector",
@@ -7000,8 +7000,8 @@ const PRODUCTS_DATA = {
         "INYECTOR",
         "LUV"
       ],
-      "slug": "inyector-combustible-luv-d-max-3507-14",
-      "oem": "8-97318-6200"
+      "oem": "8-97318-6200",
+      "slug": "inyector-combustible-luv-d-max-3507-14"
     },
     {
       "category": "Juego de Empacadura",
@@ -7014,8 +7014,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "JUEGO"
       ],
-      "slug": "juego-de-empacadura-caribe-2-3",
-      "oem": "5-87810-3191"
+      "oem": "5-87810-3191",
+      "slug": "juego-de-empacadura-caribe-2-3"
     },
     {
       "category": "Juego de Empacadura",
@@ -7029,8 +7029,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "JUEGO"
       ],
-      "slug": "juego-de-empacadura-caribe-2600",
-      "oem": "8-94312-5870"
+      "oem": "8-94312-5870",
+      "slug": "juego-de-empacadura-caribe-2600"
     },
     {
       "category": "Juego de Empacadura",
@@ -7044,8 +7044,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "slug": "juego-de-empacadura-luv-d-max-3-5",
-      "oem": "5-87814-3231"
+      "oem": "5-87814-3231",
+      "slug": "juego-de-empacadura-luv-d-max-3-5"
     },
     {
       "category": "Kit Arandela y Tuerca Punta Eje",
@@ -7061,8 +7061,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TUERCA"
       ],
-      "slug": "kit-arandela-y-tuerca-punta-de-eje-caribe-2-0",
-      "oem": "KIT-1000"
+      "oem": "KIT-1000",
+      "slug": "kit-arandela-y-tuerca-punta-de-eje-caribe-2-0"
     },
     {
       "category": "Kit Arandela y Tuerca Punta Eje",
@@ -7078,8 +7078,8 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TUERCA"
       ],
-      "slug": "kit-arandela-y-tuerca-punta-de-eje-caribe-2-3",
-      "oem": "KIT-1000"
+      "oem": "KIT-1000",
+      "slug": "kit-arandela-y-tuerca-punta-de-eje-caribe-2-3"
     },
     {
       "category": "Kit Arandela y Tuerca Punta Eje",
@@ -7096,8 +7096,8 @@ const PRODUCTS_DATA = {
         "PUNTADE",
         "TUERCA"
       ],
-      "slug": "kit-arandela-y-tuerca-puntade-eje-caribe-2-6",
-      "oem": "KIT-1001"
+      "oem": "KIT-1001",
+      "slug": "kit-arandela-y-tuerca-puntade-eje-caribe-2-6"
     },
     {
       "category": "Kit Barra Tensora",
@@ -7112,8 +7112,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TENSORA"
       ],
-      "slug": "kit-barra-tensora-luv-2300",
-      "oem": "8-99443-6720"
+      "oem": "8-99443-6720",
+      "slug": "kit-barra-tensora-luv-2300"
     },
     {
       "category": "Kit Barra Tensora",
@@ -7127,8 +7127,8 @@ const PRODUCTS_DATA = {
         "TENSORA",
         "TROOPER"
       ],
-      "slug": "kit-barra-tensora-trooper",
-      "oem": "8-99443-6720"
+      "oem": "8-99443-6720",
+      "slug": "kit-barra-tensora-trooper"
     },
     {
       "category": "Kit Bomba Clutch",
@@ -7143,8 +7143,8 @@ const PRODUCTS_DATA = {
         "G-2600",
         "KIT"
       ],
-      "slug": "kit-de-bomba-clutch-caribe-g-2600",
-      "oem": "5-87830-8250"
+      "oem": "5-87830-8250",
+      "slug": "kit-de-bomba-clutch-caribe-g-2600"
     },
     {
       "category": "Kit Bomba de Freno",
@@ -7159,8 +7159,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "KIT"
       ],
-      "slug": "kit-bomba-de-freno-caribe-2300",
-      "oem": "8-94136-6720"
+      "oem": "8-94136-6720",
+      "slug": "kit-bomba-de-freno-caribe-2300"
     },
     {
       "category": "Kit Bomba de Freno",
@@ -7175,8 +7175,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "KIT"
       ],
-      "slug": "kit-bomba-de-freno-caribe-2600",
-      "oem": "8-94454-5630"
+      "oem": "8-94454-5630",
+      "slug": "kit-bomba-de-freno-caribe-2600"
     },
     {
       "category": "Kit Bomba de Freno",
@@ -7191,8 +7191,8 @@ const PRODUCTS_DATA = {
         "G-2000",
         "KIT"
       ],
-      "slug": "kit-bomba-de-freno-caribe-g-2000",
-      "oem": "8-94231-5490"
+      "oem": "8-94231-5490",
+      "slug": "kit-bomba-de-freno-caribe-g-2000"
     },
     {
       "category": "Kit Bomba de Freno",
@@ -7206,8 +7206,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "slug": "kit-bomba-de-freno-luv-2-3",
-      "oem": "8-94454-5630"
+      "oem": "8-94454-5630",
+      "slug": "kit-bomba-de-freno-luv-2-3"
     },
     {
       "category": "Kit Bomba Direccion",
@@ -7221,8 +7221,8 @@ const PRODUCTS_DATA = {
         "DIRECCION",
         "KIT"
       ],
-      "slug": "kit-bomba-direccion-caribe-2-6",
-      "oem": "8-94311-9831"
+      "oem": "8-94311-9831",
+      "slug": "kit-bomba-direccion-caribe-2-6"
     },
     {
       "category": "Kit Bomba Direccion",
@@ -7236,8 +7236,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "slug": "kit-bomba-direccion-luv-2-3",
-      "oem": "8-94311-9831"
+      "oem": "8-94311-9831",
+      "slug": "kit-bomba-direccion-luv-2-3"
     },
     {
       "category": "Kit Bomba Direccion",
@@ -7252,8 +7252,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "slug": "kit-bomba-direccion-luv-d-max-3-5",
-      "oem": "8-97205-6260"
+      "oem": "8-97205-6260",
+      "slug": "kit-bomba-direccion-luv-d-max-3-5"
     },
     {
       "category": "Kit Bomba Direccion",
@@ -7269,8 +7269,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "slug": "kit-bomba-direccion-luv-d-max-diesel-30",
-      "oem": "8-97184-7350"
+      "oem": "8-97184-7350",
+      "slug": "kit-bomba-direccion-luv-d-max-diesel-30"
     },
     {
       "category": "Kit Bomba Direccion",
@@ -7284,8 +7284,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "RODEO"
       ],
-      "slug": "kit-bomba-direccion-rodeo-3-2",
-      "oem": "8-97081-8670"
+      "oem": "8-97081-8670",
+      "slug": "kit-bomba-direccion-rodeo-3-2"
     },
     {
       "category": "Kit Bomba Direccion",
@@ -7299,8 +7299,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "TROOPER"
       ],
-      "slug": "kit-bomba-direccion-trooper32",
-      "oem": "8-97081-8670"
+      "oem": "8-97081-8670",
+      "slug": "kit-bomba-direccion-trooper32"
     },
     {
       "category": "Kit Bombin Clutch",
@@ -7315,8 +7315,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "slug": "kit-bombin-luv-d-max",
-      "oem": "5-87832-0670"
+      "oem": "5-87832-0670",
+      "slug": "kit-bombin-luv-d-max"
     },
     {
       "category": "Kit Cajetin",
@@ -7330,8 +7330,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "KIT"
       ],
-      "slug": "kit-ajetin-caribe-2000",
-      "oem": "8-97029-9450"
+      "oem": "8-97029-9450",
+      "slug": "kit-ajetin-caribe-2000"
     },
     {
       "category": "Kit Cajetin",
@@ -7345,8 +7345,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "KIT"
       ],
-      "slug": "kit-ajetin-caribe-2300",
-      "oem": "8-97029-9450"
+      "oem": "8-97029-9450",
+      "slug": "kit-ajetin-caribe-2300"
     },
     {
       "category": "Kit Cajetin",
@@ -7360,8 +7360,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "KIT"
       ],
-      "slug": "kit-ajetin-caribe-2600",
-      "oem": "8-97029-9450"
+      "oem": "8-97029-9450",
+      "slug": "kit-ajetin-caribe-2600"
     },
     {
       "category": "Kit Cajetin",
@@ -7376,8 +7376,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "slug": "kit-ajetin-luv-d-max-05-09",
-      "oem": "71004876"
+      "oem": "71004876",
+      "slug": "kit-ajetin-luv-d-max-05-09"
     },
     {
       "category": "Kit Cajetin",
@@ -7406,8 +7406,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "KIT"
       ],
-      "slug": "kit-aliper-delantero-caribe-2300",
-      "oem": "8-94136-6430"
+      "oem": "8-94136-6430",
+      "slug": "kit-aliper-delantero-caribe-2300"
     },
     {
       "category": "Kit Caliper",
@@ -7422,8 +7422,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "KIT"
       ],
-      "slug": "kit-aliper-delantero-caribe-2600",
-      "oem": "8-94461-2500"
+      "oem": "8-94461-2500",
+      "slug": "kit-aliper-delantero-caribe-2600"
     },
     {
       "category": "Kit Caliper",
@@ -7437,8 +7437,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "slug": "kit-caliper-delantero-luv",
-      "oem": "8-94461-2500"
+      "oem": "8-94461-2500",
+      "slug": "kit-caliper-delantero-luv"
     },
     {
       "category": "Kit Camarin",
@@ -7452,8 +7452,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "RMA3082"
       ],
-      "slug": "kit-de-camarin-luv-d-max-3-5",
-      "oem": "RMA3082"
+      "oem": "RMA3082",
+      "slug": "kit-de-camarin-luv-d-max-3-5"
     },
     {
       "category": "Kit Carburador",
@@ -7467,8 +7467,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "KIT"
       ],
-      "slug": "kit-carburador-caribe-2300",
-      "oem": "8-94402-9090"
+      "oem": "8-94402-9090",
+      "slug": "kit-carburador-caribe-2300"
     },
     {
       "category": "Kit Carburador",
@@ -7482,8 +7482,67 @@ const PRODUCTS_DATA = {
         "G-200",
         "KIT"
       ],
-      "slug": "kit-carburador-caribe-g-200",
-      "oem": "8-94204-4290"
+      "oem": "8-94204-4290",
+      "slug": "kit-carburador-caribe-g-200"
+    },
+    {
+      "category": "Kit Clutch",
+      "description": "KIT CLUTCH CARIBE 2.3",
+      "id": "ddf89eff-1e07-44d5-af87-d9da20075b50",
+      "image_path": "./assets/kit-clutch-caribe-2-3.webp",
+      "keywords": [
+        "CARIBE",
+        "CLUTCH",
+        "KIS10B",
+        "KIT"
+      ],
+      "slug": "kit-clutch-caribe-2-3",
+      "oem": "KIS10B"
+    },
+    {
+      "category": "Kit Clutch",
+      "description": "KIT CLUTCH CARIBE G-2000",
+      "id": "8bf3cda6-55b1-492a-a644-5d2781233726",
+      "image_path": "./assets/kit-clutch-caribe-g-2000.webp",
+      "keywords": [
+        "CARIBE",
+        "CLUTCH",
+        "G-2000",
+        "KIS10B",
+        "KIT"
+      ],
+      "slug": "kit-clutch-caribe-g-2000",
+      "oem": "KIS10B"
+    },
+    {
+      "category": "Kit Clutch",
+      "description": "KIT CLUTCH LUV 2.3",
+      "id": "2fe6783c-ae61-4de5-8a63-54969cee27cd",
+      "image_path": "./assets/kit-clutch-luv-2-3.webp",
+      "keywords": [
+        "CLUTCH",
+        "KIS10B",
+        "KIT",
+        "LUV"
+      ],
+      "slug": "kit-clutch-luv-2-3",
+      "oem": "KIS10B"
+    },
+    {
+      "category": "Kit Clutch",
+      "description": "KIT CLUTCH LUV D-MAX 3.0 DIÉSEL",
+      "id": "2622d034-a257-4499-827c-33a32fdfca74",
+      "image_path": "./assets/kit-clutch-luv-d-max-3-0-diesel.webp",
+      "keywords": [
+        "5-87610-2191",
+        "CLUTCH",
+        "D-MAX",
+        "DIESEL",
+        "KIT",
+        "LUV"
+      ],
+      "slug": "kit-clutch-luv-d-max-3-0-diesel",
+      "oem": "5-87610-2191"
     },
     {
       "category": "Kit Clutch",
@@ -7497,8 +7556,8 @@ const PRODUCTS_DATA = {
         "KIS27B",
         "KIT"
       ],
-      "slug": "kit-de-clutch-caribe-2600",
-      "oem": "KIS27B"
+      "oem": "KIS27B",
+      "slug": "kit-de-clutch-caribe-2600"
     },
     {
       "category": "Kit Clutch",
@@ -7512,8 +7571,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "slug": "kit-de-clutch-luv-d-max-2-4",
-      "oem": "ISK-092B"
+      "oem": "ISK-092B",
+      "slug": "kit-de-clutch-luv-d-max-2-4"
     },
     {
       "category": "Kit Clutch",
@@ -7527,8 +7586,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "slug": "kit-de-clutch-luv-d-max-3-5",
-      "oem": "KIS01"
+      "oem": "KIS01",
+      "slug": "kit-de-clutch-luv-d-max-3-5"
     },
     {
       "category": "Kit de Motor",
@@ -7606,6 +7665,34 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO CARIBE 2.3",
+      "id": "99138650-5fca-403a-9960-934a9d495fbb",
+      "image_path": "./assets/kit-de-tiempo-caribe-2-3.webp",
+      "keywords": [
+        "CARIBE",
+        "KIT",
+        "TIEMPO",
+        "TK125"
+      ],
+      "slug": "kit-de-tiempo-caribe-2-3",
+      "oem": "TK125"
+    },
+    {
+      "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO CARIBE 2.6",
+      "id": "67734395-345f-432b-8d77-450bb9555605",
+      "image_path": "./assets/kit-de-tiempo-caribe-2-6.webp",
+      "keywords": [
+        "CARIBE",
+        "KIT",
+        "TIEMPO",
+        "TK126"
+      ],
+      "slug": "kit-de-tiempo-caribe-2-6",
+      "oem": "TK126"
+    },
+    {
+      "category": "Kit de Tiempo",
       "description": "KIT DE TIEMPO CARIBE 2000",
       "id": "dcaceea8-ada8-4bc0-872e-642db573e9e6",
       "image_path": "./assets/kit-de-tiempo-caribe-2000.webp",
@@ -7616,8 +7703,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "TIEMPO"
       ],
-      "slug": "kit-de-tiempo-caribe-2000",
-      "oem": "I403K"
+      "oem": "I403K",
+      "slug": "kit-de-tiempo-caribe-2000"
     },
     {
       "category": "Kit de Tiempo",
@@ -7630,8 +7717,22 @@ const PRODUCTS_DATA = {
         "TIEMPO",
         "TK-133"
       ],
-      "slug": "kit-de-tiempo-chevrolet-luv-2-2",
-      "oem": "TK-133"
+      "oem": "TK-133",
+      "slug": "kit-de-tiempo-chevrolet-luv-2-2"
+    },
+    {
+      "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO LUV 2.3",
+      "id": "b9e27132-e292-4638-aa83-0fee571e169d",
+      "image_path": "./assets/kit-de-tiempo-luv-2-3.webp",
+      "keywords": [
+        "KIT",
+        "LUV",
+        "TIEMPO",
+        "TK125"
+      ],
+      "slug": "kit-de-tiempo-luv-2-3",
+      "oem": "TK125"
     },
     {
       "category": "Kit de Tiempo",
@@ -7645,8 +7746,8 @@ const PRODUCTS_DATA = {
         "TIEMPO",
         "TK-133"
       ],
-      "slug": "kit-de-tiempo-chevrolet-luv-d-max-2-4",
-      "oem": "TK-133"
+      "oem": "TK-133",
+      "slug": "kit-de-tiempo-chevrolet-luv-d-max-2-4"
     },
     {
       "category": "Kit de Tiempo",
@@ -7660,8 +7761,8 @@ const PRODUCTS_DATA = {
         "TIEMPO",
         "TK-135"
       ],
-      "slug": "kit-de-tiempo-luv-d-max-3-5",
-      "oem": "TK-135"
+      "oem": "TK-135",
+      "slug": "kit-de-tiempo-luv-d-max-3-5"
     },
     {
       "category": "Kit de Tiempo",
@@ -7674,8 +7775,22 @@ const PRODUCTS_DATA = {
         "TIEMPO",
         "TK-137"
       ],
-      "slug": "kit-de-tiempo-rodeo-3-2",
-      "oem": "TK-137"
+      "oem": "TK-137",
+      "slug": "kit-de-tiempo-rodeo-3-2"
+    },
+    {
+      "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO RODEO 31",
+      "id": "d53d1090-4cb9-4eb4-a008-7e714b023fa8",
+      "image_path": "./assets/kit-de-tiempo-rodeo-31.webp",
+      "keywords": [
+        "76061",
+        "KIT",
+        "RODEO",
+        "TIEMPO"
+      ],
+      "slug": "kit-de-tiempo-rodeo-31",
+      "oem": "76061"
     },
     {
       "category": "Kit de Tiempo",
@@ -7688,8 +7803,38 @@ const PRODUCTS_DATA = {
         "TK-137",
         "TROOPER"
       ],
-      "slug": "kit-de-tiempo-trooper-3-2",
-      "oem": "TK-137"
+      "oem": "TK-137",
+      "slug": "kit-de-tiempo-trooper-3-2"
+    },
+    {
+      "category": "Kit Locha Arranque",
+      "description": "KIT LOCHA ARRANQUE CARIBE",
+      "id": "bf7b3c2b-7cdb-4831-ae3a-f536d1e8955a",
+      "image_path": "./assets/kit-locha-arranque-caribe-fohniio0-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-aronlyno-oono-suvc.webp",
+      "keywords": [
+        "ARRANQUE",
+        "CARIBE",
+        "KIT",
+        "LOCHA",
+        "M-1530"
+      ],
+      "slug": "kit-locha-arranque-caribe-fohniio0-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-aronlyno-oono-suvc",
+      "oem": "M-1530"
+    },
+    {
+      "category": "Kit Locha Arranque",
+      "description": "KIT LOCHA ARRANQUE LUV",
+      "id": "b0bf066e-5f9c-41d7-a366-796007e4e95e",
+      "image_path": "./assets/kit-locha-arranque-luv-toaloo-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-rnoniynso-n-suvc.webp",
+      "keywords": [
+        "ARRANQUE",
+        "KIT",
+        "LOCHA",
+        "LUV",
+        "M-1530"
+      ],
+      "slug": "kit-locha-arranque-luv-toaloo-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-rnoniynso-n-suvc",
+      "oem": "M-1530"
     },
     {
       "category": "Kit Satelite y Planetario",
@@ -7703,8 +7848,8 @@ const PRODUCTS_DATA = {
         "PLANETARIO",
         "SATELITE"
       ],
-      "slug": "kit-satelite-y-planetario-caribe",
-      "oem": "0200SD-06027"
+      "oem": "0200SD-06027",
+      "slug": "kit-satelite-y-planetario-caribe"
     },
     {
       "category": "Kit Satelite y Planetario",
@@ -7718,8 +7863,8 @@ const PRODUCTS_DATA = {
         "PLANETARIO",
         "SATELITE"
       ],
-      "slug": "kit-satelite-y-planetario-luv",
-      "oem": "0200SD-06027"
+      "oem": "0200SD-06027",
+      "slug": "kit-satelite-y-planetario-luv"
     },
     {
       "category": "Manilla Capot",
@@ -7733,8 +7878,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANILLA"
       ],
-      "slug": "manilla-capot-luv-d-max",
-      "oem": "8-97397-8480"
+      "oem": "8-97397-8480",
+      "slug": "manilla-capot-luv-d-max"
     },
     {
       "category": "Manilla Interna",
@@ -7749,8 +7894,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANILLA"
       ],
-      "slug": "manilla-interna-luv-d-max",
-      "oem": "8-97293-9981 / 8-97293-9971"
+      "oem": "8-97293-9981 / 8-97293-9971",
+      "slug": "manilla-interna-luv-d-max"
     },
     {
       "category": "Modulo Con Bobina",
@@ -7788,8 +7933,8 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "MUNON"
       ],
-      "slug": "munon-inferior-caribe-g200-2-3",
-      "oem": "8-94243-2360"
+      "oem": "8-94243-2360",
+      "slug": "munon-inferior-caribe-g200-2-3"
     },
     {
       "category": "Muñon",
@@ -7803,8 +7948,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MUNON"
       ],
-      "slug": "munon-luv-d-max-2-4-2-5-3-o-4x2",
-      "oem": "8-97365-0180"
+      "oem": "8-97365-0180",
+      "slug": "munon-luv-d-max-2-4-2-5-3-o-4x2"
     },
     {
       "category": "Muñon",
@@ -7820,8 +7965,8 @@ const PRODUCTS_DATA = {
         "SUPERIOR",
         "TROOPER"
       ],
-      "slug": "munon-superior-luv-d-max-4x4-trooper",
-      "oem": "8-97365-0190"
+      "oem": "8-97365-0190",
+      "slug": "munon-superior-luv-d-max-4x4-trooper"
     },
     {
       "category": "Pastillas de Freno",
@@ -7852,8 +7997,8 @@ const PRODUCTS_DATA = {
         "PISTON",
         "PISTONES"
       ],
-      "slug": "juego-de-pistones-caribe-2300",
-      "oem": "8-97176-7430"
+      "oem": "8-97176-7430",
+      "slug": "juego-de-pistones-caribe-2300"
     },
     {
       "category": "Piston",
@@ -7868,8 +8013,8 @@ const PRODUCTS_DATA = {
         "PISTON",
         "PISTONES"
       ],
-      "slug": "juego-de-pistones-luv-d-max-3-5",
-      "oem": "8-97358-0400"
+      "oem": "8-97358-0400",
+      "slug": "juego-de-pistones-luv-d-max-3-5"
     },
     {
       "category": "Posapies Parachoque Trasero",
@@ -7886,8 +8031,8 @@ const PRODUCTS_DATA = {
         "POSAPIES",
         "TRASERO"
       ],
-      "slug": "kit-posapie-parachoque-trasero-luv-d-max",
-      "oem": "8-97357-9240"
+      "oem": "8-97357-9240",
+      "slug": "kit-posapie-parachoque-trasero-luv-d-max"
     },
     {
       "category": "Regulador Presion Gasolina",
@@ -7902,8 +8047,8 @@ const PRODUCTS_DATA = {
         "PRESION",
         "REGULADOR"
       ],
-      "slug": "regulador-de-gasolina-luv-d-max-2-4",
-      "oem": "8-17091-4100"
+      "oem": "8-17091-4100",
+      "slug": "regulador-de-gasolina-luv-d-max-2-4"
     },
     {
       "category": "Regulador Presion Gasolina",
@@ -7918,8 +8063,8 @@ const PRODUCTS_DATA = {
         "PRESION",
         "REGULADOR"
       ],
-      "slug": "regulador-de-gasolina-luv-d-max-3-5",
-      "oem": "8-97070-6200"
+      "oem": "8-97070-6200",
+      "slug": "regulador-de-gasolina-luv-d-max-3-5"
     },
     {
       "category": "Sensor Arbol de Leva",
@@ -7934,8 +8079,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "SENSOR"
       ],
-      "slug": "sensor-arbol-de-leva-luv-d-max-3-5",
-      "oem": "8-10456-5410"
+      "oem": "8-10456-5410",
+      "slug": "sensor-arbol-de-leva-luv-d-max-3-5"
     },
     {
       "category": "Sensor TPS",
@@ -7949,8 +8094,8 @@ const PRODUCTS_DATA = {
         "SENSOR",
         "TPS"
       ],
-      "slug": "sensor-tps-luv-d-max-3-5",
-      "oem": "8-97181-7170"
+      "oem": "8-97181-7170",
+      "slug": "sensor-tps-luv-d-max-3-5"
     },
     {
       "category": "Soporte Cardan",
@@ -7964,8 +8109,8 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "SOPORTE"
       ],
-      "slug": "soporte-cardan-chumacera-caribe-2-6",
-      "oem": "8-94328-7990"
+      "oem": "8-94328-7990",
+      "slug": "soporte-cardan-chumacera-caribe-2-6"
     },
     {
       "category": "Soporte Cardan",
@@ -7979,8 +8124,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "slug": "soporte-cardan-chumacera-luv-2-3",
-      "oem": "8-94328-7990"
+      "oem": "8-94328-7990",
+      "slug": "soporte-cardan-chumacera-luv-2-3"
     },
     {
       "category": "Soporte Cardan",
@@ -7995,8 +8140,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "slug": "soporte-cardan-chumacera-luv-d-max-3-5",
-      "oem": "8-97942-8770"
+      "oem": "8-97942-8770",
+      "slug": "soporte-cardan-chumacera-luv-d-max-3-5"
     },
     {
       "category": "Switch Aire Acondicionado",
@@ -8013,8 +8158,8 @@ const PRODUCTS_DATA = {
         "MANDO",
         "SWITCH"
       ],
-      "slug": "switch-mando-control-aire-acondicionado-luv-d-max",
-      "oem": "HS420"
+      "oem": "HS420",
+      "slug": "switch-mando-control-aire-acondicionado-luv-d-max"
     },
     {
       "category": "Tanque Radiador",
@@ -8029,8 +8174,8 @@ const PRODUCTS_DATA = {
         "RADIADOR",
         "TANQUE"
       ],
-      "slug": "tanque-radiador-entrada-luv-d-max-3-5",
-      "oem": "GM-9937"
+      "oem": "GM-9937",
+      "slug": "tanque-radiador-entrada-luv-d-max-3-5"
     },
     {
       "category": "Tanque Radiador",
@@ -8045,8 +8190,8 @@ const PRODUCTS_DATA = {
         "SALIDA",
         "TANQUE"
       ],
-      "slug": "tanque-radiador-salida-luv-d-max",
-      "oem": "GM-7871"
+      "oem": "GM-7871",
+      "slug": "tanque-radiador-salida-luv-d-max"
     },
     {
       "category": "Tapa Gasolina",
@@ -8060,8 +8205,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPA"
       ],
-      "slug": "tapa-gasolina-luv-d-max",
-      "oem": "8-22660-0030"
+      "oem": "8-22660-0030",
+      "slug": "tapa-gasolina-luv-d-max"
     },
     {
       "category": "Tapa Radiador",
@@ -8076,8 +8221,8 @@ const PRODUCTS_DATA = {
         "TAPA",
         "TROOPER"
       ],
-      "slug": "tapa-radiador-luv-d-max-trooper",
-      "oem": "8-97942-2681"
+      "oem": "8-97942-2681",
+      "slug": "tapa-radiador-luv-d-max-trooper"
     },
     {
       "category": "Tapa Rin",
@@ -8091,8 +8236,8 @@ const PRODUCTS_DATA = {
         "RIN",
         "TAPA"
       ],
-      "slug": "tapa-rin-luv-d-max",
-      "oem": "8-97302-0011"
+      "oem": "8-97302-0011",
+      "slug": "tapa-rin-luv-d-max"
     },
     {
       "category": "Terminal - Rotula",
@@ -8107,8 +8252,8 @@ const PRODUCTS_DATA = {
         "ROTULA",
         "TERMINAL"
       ],
-      "slug": "terminal-externo-caribe-g200-2-3",
-      "oem": "8-94237-3511"
+      "oem": "8-94237-3511",
+      "slug": "terminal-externo-caribe-g200-2-3"
     },
     {
       "category": "Terminal - Rotula",
@@ -8125,8 +8270,8 @@ const PRODUCTS_DATA = {
         "TERMINAL",
         "TROOPER"
       ],
-      "slug": "terminal-externo-luv-d-max-trooper-rodeo",
-      "oem": "8-97304-9280"
+      "oem": "8-97304-9280",
+      "slug": "terminal-externo-luv-d-max-trooper-rodeo"
     },
     {
       "category": "Terminal - Rotula",
@@ -8154,8 +8299,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TERMOSTATO"
       ],
-      "slug": "termostato-luv-d-max-3-5",
-      "oem": "8-97362-8940"
+      "oem": "8-97362-8940",
+      "slug": "termostato-luv-d-max-3-5"
     },
     {
       "category": "Tren Delantero",
@@ -8360,8 +8505,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
-      "slug": "tubo-calefaccion-luv-2-2-luv-d-max-2-4",
-      "oem": "8-92063-6530"
+      "oem": "8-92063-6530",
+      "slug": "tubo-calefaccion-luv-2-2-luv-d-max-2-4"
     },
     {
       "category": "Tubo de Agua",
@@ -8375,8 +8520,8 @@ const PRODUCTS_DATA = {
         "TROOPER",
         "TUBO"
       ],
-      "slug": "tubo-calefaccion-trooper-3-2",
-      "oem": "8-97075-4671"
+      "oem": "8-97075-4671",
+      "slug": "tubo-calefaccion-trooper-3-2"
     },
     {
       "category": "Tubo de Agua",
@@ -8392,8 +8537,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
-      "slug": "tubo-calefaccion-caribe-luv-2-3",
-      "oem": "8-94136-7562 / 8-94474-0783"
+      "oem": "8-94136-7562 / 8-94474-0783",
+      "slug": "tubo-calefaccion-caribe-luv-2-3"
     },
     {
       "category": "Tubo de Agua",
@@ -8408,8 +8553,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
-      "slug": "tubo-de-agua-derecho-luv-d-max-3-5",
-      "oem": "8-97321-3320"
+      "oem": "8-97321-3320",
+      "slug": "tubo-de-agua-derecho-luv-d-max-3-5"
     },
     {
       "category": "Tubo de Agua",
@@ -8424,8 +8569,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
-      "slug": "tubo-de-agua-izquierdo-luv-d-max-3-5",
-      "oem": "8-97321-3331"
+      "oem": "8-97321-3331",
+      "slug": "tubo-de-agua-izquierdo-luv-d-max-3-5"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -8440,8 +8585,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "slug": "valvula-admision-caribe-2000",
-      "oem": "8-94217-1780"
+      "oem": "8-94217-1780",
+      "slug": "valvula-admision-caribe-2000"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -8456,8 +8601,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "slug": "valvula-admision-caribe-2300",
-      "oem": "8-94153-9690"
+      "oem": "8-94153-9690",
+      "slug": "valvula-admision-caribe-2300"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -8471,8 +8616,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "slug": "valvula-admision-luv-2-2",
-      "oem": "8-90220-1210"
+      "oem": "8-90220-1210",
+      "slug": "valvula-admision-luv-2-2"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -8487,8 +8632,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "slug": "valvula-admision-luv-d-max-2-4",
-      "oem": "8-90220-1210"
+      "oem": "8-90220-1210",
+      "slug": "valvula-admision-luv-d-max-2-4"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -8503,8 +8648,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "slug": "valvula-admision-caribe-2600",
-      "oem": "8-94174-2221"
+      "oem": "8-94174-2221",
+      "slug": "valvula-admision-caribe-2600"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -8519,8 +8664,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "slug": "valvula-de-escape-caribe-2000",
-      "oem": "8-94217-1790"
+      "oem": "8-94217-1790",
+      "slug": "valvula-de-escape-caribe-2000"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -8535,8 +8680,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "slug": "valvula-de-escape-caribe-2300",
-      "oem": "8-94136-7270"
+      "oem": "8-94136-7270",
+      "slug": "valvula-de-escape-caribe-2300"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -8551,8 +8696,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "slug": "valvula-de-escape-caribe-2600",
-      "oem": "8-97110-2560"
+      "oem": "8-97110-2560",
+      "slug": "valvula-de-escape-caribe-2600"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -8566,8 +8711,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "slug": "valvula-de-escape-luv-2-2",
-      "oem": "8-90323-7570"
+      "oem": "8-90323-7570",
+      "slug": "valvula-de-escape-luv-2-2"
     },
     {
       "category": "Valvula Admision y Escape",
@@ -8582,8 +8727,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "slug": "valvula-de-escape-luv-d-max-2-4",
-      "oem": "8-90323-7570"
+      "oem": "8-90323-7570",
+      "slug": "valvula-de-escape-luv-d-max-2-4"
     },
     {
       "category": "Valvula Minimo",
@@ -8596,8 +8741,8 @@ const PRODUCTS_DATA = {
         "MINIMO",
         "VALVULA"
       ],
-      "slug": "valvula-de-minimo-caribe-2-3",
-      "oem": "8-94312-0250"
+      "oem": "8-94312-0250",
+      "slug": "valvula-de-minimo-caribe-2-3"
     },
     {
       "category": "Valvula Minimo",
@@ -8610,8 +8755,8 @@ const PRODUCTS_DATA = {
         "MINIMO",
         "VALVULA"
       ],
-      "slug": "valvula-de-minimo-caribe-2-6",
-      "oem": "8-94312-0250"
+      "oem": "8-94312-0250",
+      "slug": "valvula-de-minimo-caribe-2-6"
     },
     {
       "category": "Valvula Minimo",
@@ -8624,8 +8769,8 @@ const PRODUCTS_DATA = {
         "MINIMO",
         "VALVULA"
       ],
-      "slug": "valvula-de-minimo-luv-2-3",
-      "oem": "8-94312-0250"
+      "oem": "8-94312-0250",
+      "slug": "valvula-de-minimo-luv-2-3"
     },
     {
       "category": "Valvula PCV",
@@ -8638,8 +8783,8 @@ const PRODUCTS_DATA = {
         "PCV",
         "VALVULA"
       ],
-      "slug": "valvula-pcv-caribe",
-      "oem": "8-94152-8590"
+      "oem": "8-94152-8590",
+      "slug": "valvula-pcv-caribe"
     },
     {
       "category": "Valvula PCV",
@@ -8653,8 +8798,8 @@ const PRODUCTS_DATA = {
         "PCV",
         "VALVULA"
       ],
-      "slug": "valvula-pcv-luv-d-max",
-      "oem": "8-97118-8600"
+      "oem": "8-97118-8600",
+      "slug": "valvula-pcv-luv-d-max"
     },
     {
       "category": "Valvula Temperatura",
@@ -8671,8 +8816,8 @@ const PRODUCTS_DATA = {
         "TROOPER",
         "VALVULA"
       ],
-      "slug": "valvula-temperatura-caribe-luv-d-max-trooper-rodeo",
-      "oem": "8-94247-4370"
+      "oem": "8-94247-4370",
+      "slug": "valvula-temperatura-caribe-luv-d-max-trooper-rodeo"
     },
     {
       "category": "Varilla Aceite",
@@ -8686,8 +8831,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "VARILLA"
       ],
-      "slug": "varilla-aceite-luv-d-max-3-5",
-      "oem": "8-97326-9971"
+      "oem": "8-97326-9971",
+      "slug": "varilla-aceite-luv-d-max-3-5"
     }
   ]
 };
