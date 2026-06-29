@@ -50,6 +50,103 @@ def get_site_base_url():
         pass
     return base_url
 
+import sqlite3
+
+def load_db_config_and_prices(products):
+    db_path = os.path.join(os.path.dirname(BASE_DIR), 'inventario.db')
+    if not os.path.exists(db_path):
+        return {}, {}
+        
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+    
+    # 1. Load active config
+    config = {}
+    try:
+        row = cursor.execute("SELECT tasa_bcv, tasa_usdt, modo_precio, porcentaje_incremento FROM configuracion WHERE id = 1").fetchone()
+        if row:
+            config = dict(row)
+    except Exception as e:
+        print(f"Error loading config from DB: {e}")
+        
+    # 2. Check if normalized
+    is_normalized = False
+    try:
+        cursor.execute("SELECT id FROM repuestos LIMIT 1")
+        is_normalized = True
+    except sqlite3.OperationalError:
+        pass
+        
+    # 3. Fetch linked items data
+    product_db_data = {}
+    
+    # Collect all linked ids
+    all_linked_ids = []
+    for p in products:
+        linked = p.get('linked_ids', [])
+        if linked:
+            all_linked_ids.extend([int(x) for x in linked if str(x).isdigit()])
+            
+    if all_linked_ids:
+        placeholders = ",".join(["?"] * len(all_linked_ids))
+        if is_normalized:
+            query = f"""
+                SELECT 
+                    r.id AS id,
+                    rv.precio_venta_usd AS precio_venta_usd,
+                    rv.existencia AS existencia,
+                    r.medida_variante AS medida_variante
+                FROM repuestos r
+                LEFT JOIN repuesto_variantes rv ON rv.id_repuesto = r.id
+                WHERE r.id IN ({placeholders})
+            """
+        else:
+            query = f"""
+                SELECT 
+                    id,
+                    precio_venta_usd,
+                    existencia,
+                    medida_variante
+                FROM inventario
+                WHERE id IN ({placeholders})
+            """
+            
+        try:
+            # We want unique IDs to avoid duplicate parameters
+            unique_linked_ids = list(set(all_linked_ids))
+            placeholders = ",".join(["?"] * len(unique_linked_ids))
+            query = query.replace(f"IN ({','.join(['?'] * len(all_linked_ids))})", f"IN ({placeholders})")
+            rows = cursor.execute(query, unique_linked_ids).fetchall()
+            for r in rows:
+                p_data = dict(r)
+                p_id = p_data['id']
+                if p_id not in product_db_data:
+                    product_db_data[p_id] = []
+                product_db_data[p_id].append(p_data)
+        except Exception as e:
+            print(f"Error loading products details from DB: {e}")
+            
+    conn.close()
+    return config, product_db_data
+
+def calculate_price_bs(base_price_usd, config):
+    mode = config.get('modo_precio', 'USDT')
+    bcv = config.get('tasa_bcv', 1.0) or 1.0
+    usdt = config.get('tasa_usdt', 1.0) or 1.0
+    increment = config.get('porcentaje_incremento', 0.0) or 0.0
+    base = float(base_price_usd or 0.0)
+    
+    if mode == 'INCREMENTO':
+        final_usd = round(base * (1.0 + (increment / 100.0)), 2)
+        price_bs = round(final_usd * bcv, 2)
+    elif mode == 'ESTANDAR':
+        price_bs = round(base * bcv, 2)
+    else:
+        price_bs = round(base * usdt, 2)
+        
+    return price_bs
+
 def generate_pages(data):
     def to_title_case(text):
         if not text:
@@ -211,7 +308,7 @@ def generate_pages(data):
       "name": "{description}",
       "image": "{image_url_seo}",
       "description": "{schema_description}",
-      "sku": "{id}",
+      "sku": "{sku}",
       "mpn": {mpn_code},
       "brand": {{
         "@type": "Brand",
@@ -220,9 +317,9 @@ def generate_pages(data):
       {schema_compatibility_json}
       "offers": {{
         "@type": "Offer",
-        "price": "0.00",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
+        "price": "{price_bs}",
+        "priceCurrency": "VES",
+        "availability": "{availability}",
         "url": "{base_url}p/{safe_filename}",
         "seller": {{
           "@type": "AutoPartsStore",
@@ -1512,6 +1609,9 @@ def generate_pages(data):
                 <!-- Ficha de Compatibilidad -->
                 {compatibility_card}
 
+                <!-- Ficha Técnica (Medidas) -->
+                {specs_card}
+
                 <!-- Descripción del Producto -->
                 {description_card}
 
@@ -1601,13 +1701,13 @@ def generate_pages(data):
                 </p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 TODO PARTES HORIZONTE. Todos los derechos reservados.</p>
             <p>RIF: J-50180765-5 · Especialistas Isuzu</p>
         </div>
     </footer>
 </body>
 </html>"""
+
+    db_config, db_products = load_db_config_and_prices(products)
 
     for product in products:
         p_id = escape_html(product.get('id', ''))
@@ -1633,25 +1733,12 @@ def generate_pages(data):
         filename = img_path.split('/')[-1]
         image_url_seo = f"{base_url.rstrip('/')}/assets/{urllib.parse.quote(filename)}"
         
-        # Inteligencia de Marca para SEO
-        desc_lower = desc.lower()
-        brands = []
-        if 'caribe' in desc_lower or 'trooper' in desc_lower or 'rodeo' in desc_lower or 'isuzu' in desc_lower:
-            brands.append("Isuzu")
-        if 'luv' in desc_lower or 'd-max' in desc_lower or 'chevrolet' in desc_lower:
-            brands.append("Chevrolet")
-            
-        brand_schema_name = " / ".join(brands) if brands else "Original"
-        brand_name = " y ".join(brands) if brands else ""
-        brand_title = f" para {brand_name}" if brands else ""
-        
         # OEM para SEO (extraer aquí para uso en títulos y metas)
         p_oem_raw = product.get('oem', '').strip()
         
         # Procesar múltiples códigos OEM si están separados por '/' o ','
         oem_list_raw = []
         if p_oem_raw:
-            # Dividir por slash o coma y limpiar espacios
             oem_list_raw = [part.strip() for part in re.split(r'[/,]', p_oem_raw) if part.strip()]
             
         # Para el buscador y SEO de Google es mejor indexar sin guiones
@@ -1660,19 +1747,39 @@ def generate_pages(data):
         # Usar únicamente el primer código OEM (el principal) para los límites rígidos de Título y Meta Descripción
         p_oem_seo_main = oem_list_seo[0] if oem_list_seo else ""
         
-        # Construcción de textos optimizados para SEO
-        # ═══════════════════════════════════════════════
-        # REGLA TÍTULO: entre 30 y 60 caracteres (Google trunca a ~60)
-        # REGLA META DESC: entre 120 y 158 caracteres (Google trunca a ~160)
-        # ═══════════════════════════════════════════════
+        # Consultar variantes del repuesto en la BD para calcular precios en Bs.
+        linked_ids = product.get('linked_ids', [])
+        variant_prices_bs = []
+        medidas = []
+        has_stock = False
         
+        for lid in linked_ids:
+            lid_key = int(lid) if str(lid).isdigit() else lid
+            db_vars = db_products.get(lid_key, [])
+            for db_var in db_vars:
+                precio_usd = db_var.get('precio_venta_usd') or 0.0
+                price_bs = calculate_price_bs(precio_usd, db_config)
+                variant_prices_bs.append(price_bs)
+                
+                existencia = db_var.get('existencia') or 0.0
+                if existencia > 0:
+                    has_stock = True
+                    
+                medida = db_var.get('medida_variante')
+                if medida and str(medida).strip():
+                    medidas.append(str(medida).strip())
+                    
+        # Seleccionar el precio máximo en Bs.
+        max_price_bs = max(variant_prices_bs) if variant_prices_bs else 0.0
+        price_bs_str = f"{max_price_bs:.2f}"
+        availability_str = "https://schema.org/InStock"
+        
+        # Construcción de textos optimizados para SEO sin marcas
         # --- TÍTULO (30-60 chars) ---
         title_candidates = []
         if p_oem_seo_main:
-            title_candidates.append(f"{desc} {p_oem_seo_main} | Repuestos{brand_title}")
             title_candidates.append(f"{desc} {p_oem_seo_main} | Repuestos")
             title_candidates.append(f"{desc} {p_oem_seo_main}")
-        title_candidates.append(f"{desc} | Repuestos{brand_title}")
         title_candidates.append(f"{desc} | Repuestos")
         title_candidates.append(desc)
         
@@ -1685,7 +1792,6 @@ def generate_pages(data):
         if title_description is None:
             title_description = desc[:56] + "..."
             
-        # Si el título es muy corto (< 30), agregar sufijo de marca
         if len(title_description) < 30:
             extras = [" | Todo Partes Horizonte", " | Todo Partes", " | TPH"]
             for extra in extras:
@@ -1697,22 +1803,15 @@ def generate_pages(data):
         desc_limite = desc[:60] + "..." if len(desc) > 60 else desc
         oem_meta_part = f" Código OEM: {p_oem_seo_main}." if p_oem_seo_main else ""
         
-        if brands:
-            meta_base_with_oem = f"Compra {desc_limite}.{oem_meta_part} Repuestos originales {brand_name} en Caracas. Envíos nacionales."
-            meta_base_no_oem = f"Compra {desc_limite}. Repuestos originales {brand_name} en Caracas. Envíos nacionales."
-            schema_description = f"Compra {desc_limite} original en Caracas.{oem_meta_part} Repuestos para {brand_name}."
-        else:
-            meta_base_with_oem = f"Compra {desc_limite} en Caracas.{oem_meta_part} Repuestos con envíos a toda Venezuela."
-            meta_base_no_oem = f"Compra {desc_limite} en Caracas. Repuestos con envíos a toda Venezuela."
-            schema_description = f"Compra {desc_limite} original en Caracas.{oem_meta_part} Repuestos con envíos nacionales."
+        meta_base_with_oem = f"Compra {desc_limite}.{oem_meta_part} Repuestos originales en Caracas. Envíos nacionales."
+        meta_base_no_oem = f"Compra {desc_limite}. Repuestos originales en Caracas. Envíos nacionales."
+        schema_description = f"Compra {desc_limite} original en Caracas.{oem_meta_part} Repuestos con envíos nacionales."
         
-        # Usar versión con OEM solo si cabe en 158 chars, si no, usar sin OEM
         if len(meta_base_with_oem) <= 158:
             meta_description = meta_base_with_oem
         else:
             meta_description = meta_base_no_oem
             
-        # Rellenar la descripción si es muy corta (< 120) para mejorar el SEO
         fillers = [
             " Especialistas en autopartes de alta calidad.",
             " Contamos con tienda física y entregas personales.",
@@ -1723,13 +1822,40 @@ def generate_pages(data):
             if len(meta_description) < 120 and len(meta_description) + len(filler) <= 158:
                 meta_description += filler
         
-        # Guardia final: truncar si por alguna razón se excedió (safety net)
         if len(meta_description) > 158:
             meta_description = meta_description[:155] + "..."
             
         image_alt = f"Fotografía de repuesto {desc} original - Todo Partes Horizonte"
         
         compat = extract_compatibility(desc)
+        
+        # Inteligencia de Marca para SEO
+        desc_lower = desc.lower()
+        brands = []
+        if 'caribe' in desc_lower or 'trooper' in desc_lower or 'rodeo' in desc_lower or 'isuzu' in desc_lower:
+            brands.append("Isuzu")
+        if 'luv' in desc_lower or 'd-max' in desc_lower or 'chevrolet' in desc_lower:
+            brands.append("Chevrolet")
+            
+        brand_schema_name = " / ".join(brands) if brands else "Original"
+        brand_name = " y ".join(brands) if brands else ""
+        brand_title = f" para {brand_name}" if brands else ""
+
+        # Construir JSON-LD schema_compatibility_json dinámicamente
+        schema_vehicles = []
+        for v in compat["vehicles_list"]:
+            vehicle_props = [
+                f'        "@type": "Vehicle"',
+                f'        "name": "{v}"'
+            ]
+            if compat["engines"]:
+                vehicle_props.append(f'        "vehicleEngine": {{\n          "@type": "EngineSpecification",\n          "name": "{compat["engines"]}"\n        }}')
+            if compat["years"]:
+                vehicle_props.append(f'        "modelDate": "{compat["years"]}"')
+                
+            schema_vehicles.append(f'{{\n' + ',\n'.join(vehicle_props) + '\n      }')
+            
+        schema_compatibility_json = '"isAccessoryOrSparePartFor": [\n      ' + ',\n      '.join(schema_vehicles) + '\n    ],'
         
         # Construir Ficha de Compatibilidad HTML dinámicamente
         compat_rows = []
@@ -1755,16 +1881,29 @@ def generate_pages(data):
                     {"\n".join(compat_rows)}
                 </div>"""
                 
-        # Generar párrafo de descripción semántico para SEO y motores de IA
-        brand_name_str = " y ".join(brands) if brands else "Chevrolet / Isuzu"
-        desc_paragraph = f"El repuesto <strong>{desc}</strong> está diseñado específicamente para vehículos <strong>{brand_name_str}</strong>. Esta pieza pertenece a la categoría de <strong>{cat}</strong>, cumpliendo con los estándares de rendimiento y acople original para asegurar la durabilidad y correcto funcionamiento de tu vehículo."
+        # Construir Ficha Técnica HTML de Medidas / Variantes
+        specs_card_html = ""
+        unique_medidas = []
+        for m in medidas:
+            if m not in unique_medidas:
+                unique_medidas.append(m)
+                
+        if unique_medidas:
+            medida_val = escape_html(" / ".join(unique_medidas))
+            specs_card_html = f"""<div class="compatibility-card">
+                    <h3>Especificaciones Técnicas</h3>
+                    <div class="comp-item">
+                        <span class="comp-label">Medidas / Variantes:</span>
+                        <span class="tag-capsule year-tag" style="color: #fff; background: rgba(255,255,255,0.04);">{medida_val}</span>
+                    </div>
+                </div>"""
+                
+        # Generar párrafo de descripción semántico para SEO y motores de IA sin marcas
+        desc_paragraph = f"El repuesto <strong>{desc}</strong> está diseñado y fabricado bajo los estándares de rendimiento y acople original para asegurar la durabilidad y correcto funcionamiento de tu vehículo. Esta pieza pertenece a la categoría de <strong>{cat}</strong>."
         if p_oem_raw:
-            # Mostramos visualmente el OEM con sus guiones originales
             desc_paragraph += f" Número de parte OEM: <strong>{escape_html(p_oem_raw)}</strong>."
-        if compat["engines"]:
-            desc_paragraph += f" Es totalmente compatible con motorizaciones <strong>{compat['engines']}</strong>."
-        if compat["years"]:
-            desc_paragraph += f" Aplica para los modelos de los años <strong>{compat['years']}</strong>."
+        if unique_medidas:
+            desc_paragraph += f" Presenta especificaciones técnicas de: <strong>{escape_html(' / '.join(unique_medidas))}</strong>."
         desc_paragraph += " Puedes retirar este producto personalmente en nuestra sede física ubicada en Boleíta Sur, Caracas, o solicitar un envío nacional a través de agencias de encomienda confiables como Zoom, Tealca o MRW con cobro en destino."
         
         desc_paragraph_clean = desc_paragraph.replace('<strong>', '').replace('</strong>', '')
@@ -1773,37 +1912,22 @@ def generate_pages(data):
                     <h3>Descripción del Producto</h3>
                     <p>{desc_paragraph}</p>
                 </div>"""
-                
-        # Construir JSON-LD schema_compatibility_json dinámicamente
-        schema_vehicles = []
-        for v in compat["vehicles_list"]:
-            vehicle_props = [
-                f'        "@type": "Vehicle"',
-                f'        "name": "{v}"'
-            ]
-            if compat["engines"]:
-                vehicle_props.append(f'        "vehicleEngine": {{\n          "@type": "EngineSpecification",\n          "name": "{compat["engines"]}"\n        }}')
-            if compat["years"]:
-                vehicle_props.append(f'        "modelDate": "{compat["years"]}"')
-                
-            schema_vehicles.append(f'{{\n' + ',\n'.join(vehicle_props) + '\n      }')
-            
-        schema_compatibility_json = '"isAccessoryOrSparePartFor": [\n      ' + ',\n      '.join(schema_vehicles) + '\n    ],'
         
-        # OEM and MPN Code
         p_oem = escape_html(p_oem_raw)
-        # Visualmente mostramos el OEM original en la página
         oem_html = f'<div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600;">OEM: {p_oem}</div>' if p_oem else ''
         
-        # Formatear el mpn para JSON-LD. Si hay múltiples OEM, lo inyectamos como un array válido de JSON
         import json
         if len(oem_list_seo) > 1:
             mpn_code = json.dumps(oem_list_seo)
         else:
             mpn_code = f'"{oem_list_seo[0]}"' if oem_list_seo else f'"{p_id}"'
+ 
+        # Calcular SKU optimizado para SEO (primer OEM limpio o fallback al slug)
+        sku_code = oem_list_seo[0] if oem_list_seo else (p_slug if p_slug else p_id)
 
         html_content = template.format(
             id=p_id,
+            sku=sku_code,
             slug=p_slug if p_slug else p_id,
             safe_filename=safe_filename,
             description=desc,
@@ -1827,10 +1951,13 @@ def generate_pages(data):
             brand_schema_name=brand_schema_name,
             image_alt=image_alt,
             compatibility_card=compatibility_card_html,
+            specs_card=specs_card_html,
             description_card=description_card_html,
             schema_compatibility_json=schema_compatibility_json,
             oem_html=oem_html,
-            mpn_code=mpn_code
+            mpn_code=mpn_code,
+            price_bs=price_bs_str,
+            availability=availability_str
         )
         
         # Guardar archivo
