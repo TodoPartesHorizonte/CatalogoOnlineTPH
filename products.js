@@ -284,28 +284,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Amortiguador",
-      "description": "AMORTIGUADOR TRASEROS CARIBE 2.6",
-      "id": "961eff38-1079-4c53-bb13-4417e0b72071",
-      "image_path": "./assets/amortiguador-trasero-caribe-2600.webp",
-      "keywords": [
-        "AMORTIGUADOR",
-        "CARIBE",
-        "TRASEROS"
-      ],
-      "linked_ids": [
-        22
-      ],
-      "slug": "amortiguador-trasero-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "VA-22159",
-          "brand": "Original",
-          "precio_usd": 0
-        }
-      ]
-    },
-    {
-      "category": "Amortiguador",
       "description": "AMORTIGUADOR TRASERO LUV D-MAX",
       "id": "e23c4001-2672-4a96-aab7-26912a29eaf5",
       "image_path": "./assets/amortiguador-trasero-luv-d-max.webp",
@@ -349,6 +327,32 @@ const PRODUCTS_DATA = {
           "precio_usd": 30
         }
       ]
+    },
+    {
+      "category": "Amortiguador",
+      "description": "AMORTIGUADOR TRASEROS CARIBE 2.6",
+      "id": "961eff38-1079-4c53-bb13-4417e0b72071",
+      "image_path": "./assets/amortiguador-trasero-caribe-2600.webp",
+      "keywords": [
+        "2835",
+        "444083P",
+        "AMORTIGUADOR",
+        "CARIBE",
+        "TRASEROS",
+        "VA-22159"
+      ],
+      "linked_ids": [
+        22
+      ],
+      "slug": "amortiguador-trasero-caribe-2600",
+      "variants": [
+        {
+          "codigo_oem": "VA-22159",
+          "brand": "Original",
+          "precio_usd": 0
+        }
+      ],
+      "oem": "VA-22159 / 444083P / 2835"
     },
     {
       "category": "Amortiguador Direccion",
@@ -8996,6 +9000,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2000",
         "8-09924-2960",
+        "8-94214-9690",
         "8-94232-2920",
         "8-94369-5160",
         "CARIBE",
@@ -9004,9 +9009,10 @@ const PRODUCTS_DATA = {
         "ESTOPERA"
       ],
       "linked_ids": [
+        492,
         493
       ],
-      "oem": "8-09924-2960 / 8-94369-5160 / 8-94232-2920",
+      "oem": "8-94369-5160 / 8-94214-9690 / 8-09924-2960 / 8-94232-2920",
       "slug": "estopera-ciguenal-delantera-caribe-2000",
       "variants": [
         {
