@@ -404,44 +404,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/amortiguador-de-direccion-caribe-g-200.webp",
       "keywords": [
         "8-94241-4692",
-        "8-97372-2870",
         "AMORTIGUADOR",
         "CARIBE",
         "DIRECCION",
         "G-200"
       ],
       "linked_ids": [
-        13,
         17
       ],
-      "oem": "8-97372-2870 / 8-94241-4692",
+      "oem": "8-94241-4692",
       "slug": "amortiguador-de-direccion-caribe-g-200",
       "variants": [
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "CIC",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "MASARU",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "GREKIS",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "KYB",
-          "precio_usd": 90
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "TAIKEN",
-          "precio_usd": 30
-        },
         {
           "codigo_oem": "8-94241-4692",
           "brand": "SHIBUMI",
