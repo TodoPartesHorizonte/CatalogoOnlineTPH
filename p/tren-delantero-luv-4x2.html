@@ -194,6 +194,15 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        /* Ocultar flecha nativa de details/summary para el desplegable de OEM */
+        .oem-details summary::-webkit-details-marker {
+            display: none !important;
+        }
+        .oem-details summary {
+            list-style: none !important;
+            outline: none;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;

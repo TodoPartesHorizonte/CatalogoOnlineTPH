@@ -198,6 +198,15 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        /* Ocultar flecha nativa de details/summary para el desplegable de OEM */
+        .oem-details summary::-webkit-details-marker {
+            display: none !important;
+        }
+        .oem-details summary {
+            list-style: none !important;
+            outline: none;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -1351,7 +1360,7 @@
             <div class="details-panel">
                 <div class="category-badge">Kit Carburador</div>
                 <h1 class="product-title">Kit Carburador Caribe 2300</h1>
-                <div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600;">OEM: 8-94402-9090 / 8688</div>
+                <div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 6px 12px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600; line-height: 1.5;">OEM: 8-94402-9090 / 8688</div>
                 
                 <!-- Ficha de Compatibilidad -->
                 <div class="compatibility-card">
