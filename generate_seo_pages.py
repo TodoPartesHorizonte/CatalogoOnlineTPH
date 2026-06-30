@@ -1924,21 +1924,24 @@ def generate_pages(data):
         
         p_oem = escape_html(p_oem_raw)
         oem_parts = [part.strip() for part in p_oem.split('/')] if p_oem else []
-        if len(oem_parts) <= 5:
-            oem_html = f'<div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 6px 12px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600; line-height: 1.5;">OEM: {p_oem}</div>' if p_oem else ''
+        if len(oem_parts) <= 1:
+            oem_html = f'<div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 8px 12px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600;">OEM: {p_oem}</div>' if p_oem else ''
         else:
-            visible_parts = oem_parts[:5]
-            hidden_parts = oem_parts[5:]
-            visible_str = " / ".join(visible_parts)
-            hidden_str = " / ".join(hidden_parts)
+            primary_oem = oem_parts[0]
+            hidden_parts = oem_parts[1:]
+            
+            grid_items_html = "".join([f'<div style="font-family: monospace; font-size: 12px; color: var(--text-secondary); padding: 4px 8px; background: rgba(255,255,255,0.02); border-radius: 4px; border: 1px solid rgba(255,255,255,0.05); text-align: center; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">{part}</div>' for part in hidden_parts])
+            
             oem_html = (
                 f'<div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); '
-                f'background: rgba(255, 106, 0, 0.05); padding: 6px 12px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); '
-                f'align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600; line-height: 1.5; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px;">'
-                f'<span>OEM: {visible_str}</span>'
-                f'<details style="display: inline-block;" class="oem-details">'
-                f'<summary style="display: inline-block; cursor: pointer; color: #ff6a00; font-weight: 700; outline: none; list-style: none; user-select: none;">+ Ver más ({len(hidden_parts)})</summary>'
-                f'<span style="margin-left: 4px;">/ {hidden_str}</span>'
+                f'background: rgba(255, 106, 0, 0.05); padding: 8px 12px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); '
+                f'align-self: stretch; margin-top: -8px; margin-bottom: 8px; font-weight: 600; line-height: 1.5; display: flex; flex-direction: column; gap: 4px;">'
+                f'<div>OEM Principal: {primary_oem}</div>'
+                f'<details class="oem-details" style="width: 100%; margin-top: 4px;">'
+                f'<summary style="cursor: pointer; color: #ff6a00; font-weight: 700; outline: none; list-style: none; user-select: none; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">+ Ver alternativos ({len(hidden_parts)})</summary>'
+                f'<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(255, 106, 0, 0.15);">'
+                f'{grid_items_html}'
+                f'</div>'
                 f'</details>'
                 f'</div>'
             )
