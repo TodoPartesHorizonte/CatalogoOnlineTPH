@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 585,
+  "total_products": 590,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -19508,6 +19508,103 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 105
         }
+      ]
+    },
+    {
+      "id": "824f3cb8-3ad4-4bc8-afb3-6cb7183c4b22",
+      "category": "Manguera Desfogue",
+      "image_path": "./assets/manguera-desfogue-luv-2-2.webp",
+      "description": "MANGUERA DESFOGUE LUV 2.2",
+      "keywords": [
+        "4720",
+        "DESFOGUE",
+        "LUV",
+        "MANGUERA"
+      ],
+      "oem": "4720",
+      "slug": "manguera-desfogue-luv-2-2",
+      "original_filename": "Manguera Desfogue/824f3cb8-3ad4-4bc8-afb3-6cb7183c4b22.jpg",
+      "linked_ids": [
+        695
+      ]
+    },
+    {
+      "id": "dbfd0c51-d9b3-4de5-838a-b77e2f9d633a",
+      "category": "Manguera Llenado Gasolina",
+      "image_path": "./assets/manguera-gasolina-luv-2-3.webp",
+      "description": "MANGUERA GASOLINA LUV 2.3",
+      "keywords": [
+        "8-97132-2271",
+        "GASOLINA",
+        "LLENADO",
+        "LUV",
+        "MANGUERA"
+      ],
+      "oem": "8-97132-2271",
+      "slug": "manguera-gasolina-luv-2-3",
+      "original_filename": "Manguera Llenado Gasolina/dbfd0c51-d9b3-4de5-838a-b77e2f9d633a.jpg",
+      "linked_ids": [
+        700
+      ]
+    },
+    {
+      "id": "e10ac381-5b62-4592-982e-b93556481d16",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-superior-luv-2-2.webp",
+      "description": "MANGUERA RADIADOR SUPERIOR LUV 2.2",
+      "keywords": [
+        "8-97181-3900",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR",
+        "SUPERIOR"
+      ],
+      "oem": "8-97181-3900",
+      "slug": "manguera-radiador-superior-luv-2-2",
+      "original_filename": "Manguera Radiador/e10ac381-5b62-4592-982e-b93556481d16.jpg",
+      "linked_ids": [
+        712
+      ]
+    },
+    {
+      "id": "5b1e3e01-8eda-41a8-ac4a-0f87fbaa2176",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-superior-luv-2-2-2.webp",
+      "description": "MANGUERA RADIADOR SUPERIOR LUV 2.2",
+      "keywords": [
+        "8-97181-3900",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR",
+        "SUPERIOR"
+      ],
+      "oem": "8-97181-3900",
+      "slug": "manguera-radiador-superior-luv-2-2-2",
+      "original_filename": "Manguera Radiador/5b1e3e01-8eda-41a8-ac4a-0f87fbaa2176.jpg",
+      "linked_ids": [
+        712
+      ]
+    },
+    {
+      "id": "2f8233e3-6644-4312-8b7b-a619b36fa311",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-superior-luv-dmax-2-5.webp",
+      "description": "MANGUERA RADIADOR SUPERIOR LUV DMAX 2.5",
+      "keywords": [
+        "8-97248-4292",
+        "8-98003-9940",
+        "8-98003-9960",
+        "DMAX",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR",
+        "SUPERIOR"
+      ],
+      "oem": "8-98003-9960 / 8-98003-9940 / 8-97248-4292",
+      "slug": "manguera-radiador-superior-luv-dmax-2-5",
+      "original_filename": "Manguera Radiador/2f8233e3-6644-4312-8b7b-a619b36fa311.jpg",
+      "linked_ids": [
+        716
       ]
     },
     {
