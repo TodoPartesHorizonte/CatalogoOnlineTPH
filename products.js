@@ -292,10 +292,10 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "TRASEROS"
       ],
-      "slug": "amortiguador-trasero-caribe-2600",
       "linked_ids": [
         22
       ],
+      "slug": "amortiguador-trasero-caribe-2600",
       "variants": [
         {
           "codigo_oem": "VA-22159",
@@ -4558,14 +4558,14 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Buje Cajetin Direccion",
-      "description": "BUJE CAJETIN DIRECCION LUV D-MAX",
+      "description": "BUJE CAJETIN DIRECCION LUV DMAX",
       "id": "6a24d37b-cca4-4bd2-9352-38e3149673b3",
       "image_path": "./assets/buje-cajetin-direccion-luv-d-max.webp",
       "keywords": [
         "BUJE",
         "CAJETIN",
-        "D-MAX",
         "DIRECCION",
+        "DMAX",
         "LUV"
       ],
       "slug": "buje-cajetin-direccion-luv-d-max"
