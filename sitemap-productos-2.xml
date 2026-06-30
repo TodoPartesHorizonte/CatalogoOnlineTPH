@@ -291,6 +291,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/bombin-luv-d-max-2-4.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bombin-luv-d-max-2-4.webp</image:loc>
+      <image:title>BOMBIN CLUTCH LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/bombin-clutch-trooper-3-2.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bombin-clutch-trooper-3-2.webp</image:loc>
@@ -315,16 +325,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bombin-de-clutch-luv-2-2.webp</image:loc>
       <image:title>BOMBIN DE CLUTCH LUV 2.2</image:title>
-    </image:image>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/bombin-luv-d-max-2-4.html</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/bombin-luv-d-max-2-4.webp</image:loc>
-      <image:title>BOMBIN CLUTCH LUV DMAX 2.4</image:title>
     </image:image>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>

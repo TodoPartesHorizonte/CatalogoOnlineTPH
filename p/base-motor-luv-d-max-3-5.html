@@ -198,6 +198,15 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        /* Ocultar flecha nativa de details/summary para el desplegable de OEM */
+        .oem-details summary::-webkit-details-marker {
+            display: none !important;
+        }
+        .oem-details summary {
+            list-style: none !important;
+            outline: none;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -1351,7 +1360,7 @@
             <div class="details-panel">
                 <div class="category-badge">Base Motor</div>
                 <h1 class="product-title">Base Motor Luv D-Max 3.5</h1>
-                <div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600;">OEM: 8-97371-5534 / 2C4571-040 / 8-97136-1350 / 2M4945-STD / 32674.STD / 8-98051-3310 / 197035 / 8-98051-3320 / 197036</div>
+                <div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 6px 12px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600; line-height: 1.5; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px;"><span>OEM: 8-97371-5534 / 2C4571-040 / 8-97136-1350 / 2M4945-STD / 32674.STD</span><details style="display: inline-block;" class="oem-details"><summary style="display: inline-block; cursor: pointer; color: #ff6a00; font-weight: 700; outline: none; list-style: none; user-select: none;">+ Ver más (4)</summary><span style="margin-left: 4px;">/ 8-98051-3310 / 197035 / 8-98051-3320 / 197036</span></details></div>
                 
                 <!-- Ficha de Compatibilidad -->
                 <div class="compatibility-card">

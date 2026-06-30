@@ -111,33 +111,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Amortiguador",
-      "description": "AMORTIGUADOR DELANTERO CARIBE G200/ CARIBE 2.3",
-      "id": "58507b7e-35f2-41e9-86d5-67050720b134",
-      "image_path": "./assets/amortiguador-delantero-caribe-2000-2300.webp",
-      "keywords": [
-        "2204",
-        "443188S",
-        "AMORTIGUADOR",
-        "CARIBE",
-        "DELANTERO",
-        "G200",
-        "VA-22123"
-      ],
-      "linked_ids": [
-        7
-      ],
-      "oem": "VA-22123 / 443188S / 2204",
-      "slug": "amortiguador-delantero-caribe-2000-2300",
-      "variants": [
-        {
-          "codigo_oem": "VA-22123",
-          "brand": "SHIBUMI",
-          "precio_usd": 0
-        }
-      ]
-    },
-    {
-      "category": "Amortiguador",
       "description": "AMORTIGUADOR DELANTERO CARIBE 2600",
       "id": "11ae76f1-e3d6-436a-a05e-bf09e2666328",
       "image_path": "./assets/amortiguador-delantero-caribe-2600.webp",
@@ -168,6 +141,33 @@ const PRODUCTS_DATA = {
           "codigo_oem": "VA-22158",
           "brand": "TOKIKO",
           "precio_usd": 45
+        }
+      ]
+    },
+    {
+      "category": "Amortiguador",
+      "description": "AMORTIGUADOR DELANTERO CARIBE G200/ CARIBE 2.3",
+      "id": "58507b7e-35f2-41e9-86d5-67050720b134",
+      "image_path": "./assets/amortiguador-delantero-caribe-2000-2300.webp",
+      "keywords": [
+        "2204",
+        "443188S",
+        "AMORTIGUADOR",
+        "CARIBE",
+        "DELANTERO",
+        "G200",
+        "VA-22123"
+      ],
+      "linked_ids": [
+        7
+      ],
+      "oem": "VA-22123 / 443188S / 2204",
+      "slug": "amortiguador-delantero-caribe-2000-2300",
+      "variants": [
+        {
+          "codigo_oem": "VA-22123",
+          "brand": "SHIBUMI",
+          "precio_usd": 0
         }
       ]
     },
@@ -354,32 +354,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Amortiguador",
-      "description": "AMORTIGUADOR TRASEROS CARIBE 2.6",
-      "id": "961eff38-1079-4c53-bb13-4417e0b72071",
-      "image_path": "./assets/amortiguador-trasero-caribe-2600.webp",
-      "keywords": [
-        "2835",
-        "444083P",
-        "AMORTIGUADOR",
-        "CARIBE",
-        "TRASEROS",
-        "VA-22159"
-      ],
-      "linked_ids": [
-        22
-      ],
-      "oem": "VA-22159 / 444083P / 2835",
-      "slug": "amortiguador-trasero-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "VA-22159",
-          "brand": "Original",
-          "precio_usd": 0
-        }
-      ]
-    },
-    {
-      "category": "Amortiguador",
       "description": "AMORTIGUADOR TRASERO LUV D-MAX",
       "id": "e23c4001-2672-4a96-aab7-26912a29eaf5",
       "image_path": "./assets/amortiguador-trasero-luv-d-max.webp",
@@ -433,6 +407,32 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97368-5990",
           "brand": "TAIKEN",
           "precio_usd": 30
+        }
+      ]
+    },
+    {
+      "category": "Amortiguador",
+      "description": "AMORTIGUADOR TRASEROS CARIBE 2.6",
+      "id": "961eff38-1079-4c53-bb13-4417e0b72071",
+      "image_path": "./assets/amortiguador-trasero-caribe-2600.webp",
+      "keywords": [
+        "2835",
+        "444083P",
+        "AMORTIGUADOR",
+        "CARIBE",
+        "TRASEROS",
+        "VA-22159"
+      ],
+      "linked_ids": [
+        22
+      ],
+      "oem": "VA-22159 / 444083P / 2835",
+      "slug": "amortiguador-trasero-caribe-2600",
+      "variants": [
+        {
+          "codigo_oem": "VA-22159",
+          "brand": "Original",
+          "precio_usd": 0
         }
       ]
     },
@@ -4771,6 +4771,32 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Bombin - Bomba Clutch",
+      "description": "BOMBIN CLUTCH LUV DMAX 2.4",
+      "id": "9fd78d6f-5741-49d5-add8-6b11924beda2",
+      "image_path": "./assets/bombin-luv-d-max-2-4.webp",
+      "keywords": [
+        "8-97942-3220",
+        "BOMBA",
+        "BOMBIN",
+        "CLUTCH",
+        "DMAX",
+        "LUV"
+      ],
+      "linked_ids": [
+        268
+      ],
+      "oem": "8-97942-3220",
+      "slug": "bombin-luv-d-max-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-97942-3220",
+          "brand": "Original",
+          "precio_usd": 0
+        }
+      ]
+    },
+    {
+      "category": "Bombin - Bomba Clutch",
       "description": "BOMBIN CLUTCH TROOPER 3.2",
       "id": "ac59f30f-bf3b-41e8-97ce-76a6bc881096",
       "image_path": "./assets/bombin-clutch-trooper-3-2.webp",
@@ -4866,32 +4892,6 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97184-9930",
           "brand": "Original",
           "precio_usd": 30
-        }
-      ]
-    },
-    {
-      "category": "Bombin - Bomba Clutch",
-      "description": "BOMBIN CLUTCH LUV DMAX 2.4",
-      "id": "9fd78d6f-5741-49d5-add8-6b11924beda2",
-      "image_path": "./assets/bombin-luv-d-max-2-4.webp",
-      "keywords": [
-        "8-97942-3220",
-        "BOMBA",
-        "BOMBIN",
-        "CLUTCH",
-        "DMAX",
-        "LUV"
-      ],
-      "linked_ids": [
-        268
-      ],
-      "oem": "8-97942-3220",
-      "slug": "bombin-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97942-3220",
-          "brand": "Original",
-          "precio_usd": 0
         }
       ]
     },
@@ -7626,6 +7626,84 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Concha de Bancada",
+      "description": "CONCHA BANCADA CARIBE 2.3 / CARIBE 2.6",
+      "id": "f4e4bf9b-9a04-4b87-b592-067d01512059",
+      "image_path": "./assets/juego-de-conchas-bancada-caribe-2300-2600.webp",
+      "keywords": [
+        "1620-010",
+        "1620-020",
+        "1620-030",
+        "1620-040",
+        "1620-050",
+        "1620-060",
+        "1620-STD",
+        "8-94133-0281",
+        "8-94133-0290",
+        "8-94133-0311",
+        "8-94251-2631-010",
+        "8-94251-2631-020",
+        "8-94251-2631-030",
+        "8-94251-2631-040",
+        "8-94251-2631-050",
+        "8-94251-2631-060",
+        "8-94251-2631-STD",
+        "8-97063-2430",
+        "8-97063-2450",
+        "BANCADA",
+        "CARIBE",
+        "CONCHA"
+      ],
+      "linked_ids": [
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354
+      ],
+      "oem": "8-94251-2631-STD / 1620-STD / 8-97063-2430 / 8-97063-2450 / 8-94251-2631-010 / 1620-010 / 8-94133-0281 / 8-94251-2631-020 / 1620-020 / 8-94133-0290 / 8-94251-2631-030 / 1620-030 / 8-94251-2631-040 / 1620-040 / 8-94133-0311 / 8-94251-2631-050 / 1620-050 / 8-94251-2631-060 / 1620-060",
+      "slug": "juego-de-conchas-bancada-caribe-2300-2600",
+      "variants": [
+        {
+          "codigo_oem": "8-94251-2631-STD",
+          "brand": "Original",
+          "precio_usd": 25
+        },
+        {
+          "codigo_oem": "8-94251-2631-010",
+          "brand": "Original",
+          "precio_usd": 25
+        },
+        {
+          "codigo_oem": "8-94251-2631-020",
+          "brand": "Original",
+          "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-94251-2631-030",
+          "brand": "Original",
+          "precio_usd": 25
+        },
+        {
+          "codigo_oem": "8-94251-2631-040",
+          "brand": "Original",
+          "precio_usd": 25
+        },
+        {
+          "codigo_oem": "8-94251-2631-050",
+          "brand": "Original",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "8-94251-2631-060",
+          "brand": "Original",
+          "precio_usd": 0
+        }
+      ]
+    },
+    {
+      "category": "Concha de Bancada",
       "description": "CONCHA BANCADA CARIBE G200",
       "id": "WhatsApp Image 2026-02-09 at 12.27.01 PM",
       "image_path": "./assets/juego-concha-bancada-caribe-g-2000.webp",
@@ -7922,84 +8000,6 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97179-2960-040",
           "brand": "NDC",
           "precio_usd": 70
-        }
-      ]
-    },
-    {
-      "category": "Concha de Bancada",
-      "description": "CONCHA BANCADA CARIBE 2.3 / CARIBE 2.6",
-      "id": "f4e4bf9b-9a04-4b87-b592-067d01512059",
-      "image_path": "./assets/juego-de-conchas-bancada-caribe-2300-2600.webp",
-      "keywords": [
-        "1620-010",
-        "1620-020",
-        "1620-030",
-        "1620-040",
-        "1620-050",
-        "1620-060",
-        "1620-STD",
-        "8-94133-0281",
-        "8-94133-0290",
-        "8-94133-0311",
-        "8-94251-2631-010",
-        "8-94251-2631-020",
-        "8-94251-2631-030",
-        "8-94251-2631-040",
-        "8-94251-2631-050",
-        "8-94251-2631-060",
-        "8-94251-2631-STD",
-        "8-97063-2430",
-        "8-97063-2450",
-        "BANCADA",
-        "CARIBE",
-        "CONCHA"
-      ],
-      "linked_ids": [
-        348,
-        349,
-        350,
-        351,
-        352,
-        353,
-        354
-      ],
-      "oem": "8-94251-2631-STD / 1620-STD / 8-97063-2430 / 8-97063-2450 / 8-94251-2631-010 / 1620-010 / 8-94133-0281 / 8-94251-2631-020 / 1620-020 / 8-94133-0290 / 8-94251-2631-030 / 1620-030 / 8-94251-2631-040 / 1620-040 / 8-94133-0311 / 8-94251-2631-050 / 1620-050 / 8-94251-2631-060 / 1620-060",
-      "slug": "juego-de-conchas-bancada-caribe-2300-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94251-2631-STD",
-          "brand": "Original",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94251-2631-010",
-          "brand": "Original",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94251-2631-020",
-          "brand": "Original",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-94251-2631-030",
-          "brand": "Original",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94251-2631-040",
-          "brand": "Original",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94251-2631-050",
-          "brand": "Original",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-94251-2631-060",
-          "brand": "Original",
-          "precio_usd": 0
         }
       ]
     },
@@ -20389,18 +20389,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO CARIBE 2.6",
-      "id": "CARIBE 2.6",
-      "image_path": "./assets/tren-delantero-caribe-2-6.webp",
-      "keywords": [
-        "CARIBE",
-        "DELANTERO",
-        "TREN"
-      ],
-      "slug": "tren-delantero-caribe-2-6"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO CARIBE 2.6",
       "id": "4662265b-262d-4d56-b35e-5385c614d9a8",
       "image_path": "./assets/tren-delantero-caribe-2-6-2.webp",
       "keywords": [
@@ -20412,16 +20400,15 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Tren Delantero",
-      "description": "TREN DELANTERO CARIBE 83-88",
-      "id": "Caribe 83-88",
-      "image_path": "./assets/tren-delantero-caribe-83-88.webp",
+      "description": "TREN DELANTERO CARIBE 2.6",
+      "id": "CARIBE 2.6",
+      "image_path": "./assets/tren-delantero-caribe-2-6.webp",
       "keywords": [
-        "83-88",
         "CARIBE",
         "DELANTERO",
         "TREN"
       ],
-      "slug": "tren-delantero-caribe-83-88"
+      "slug": "tren-delantero-caribe-2-6"
     },
     {
       "category": "Tren Delantero",
@@ -20435,6 +20422,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-caribe-83-88-2"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO CARIBE 83-88",
+      "id": "Caribe 83-88",
+      "image_path": "./assets/tren-delantero-caribe-83-88.webp",
+      "keywords": [
+        "83-88",
+        "CARIBE",
+        "DELANTERO",
+        "TREN"
+      ],
+      "slug": "tren-delantero-caribe-83-88"
     },
     {
       "category": "Tren Delantero",
@@ -20465,19 +20465,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO LUV 4X4",
-      "id": "Luv 4x4",
-      "image_path": "./assets/tren-delantero-luv-4x4.webp",
-      "keywords": [
-        "4X4",
-        "DELANTERO",
-        "LUV",
-        "TREN"
-      ],
-      "slug": "tren-delantero-luv-4x4"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO LUV 4X4",
       "id": "7d137634-a97a-41dc-a5de-7fabc249a9bc",
       "image_path": "./assets/tren-delantero-luv-4x4-2.webp",
       "keywords": [
@@ -20487,6 +20474,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-luv-4x4-2"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO LUV 4X4",
+      "id": "Luv 4x4",
+      "image_path": "./assets/tren-delantero-luv-4x4.webp",
+      "keywords": [
+        "4X4",
+        "DELANTERO",
+        "LUV",
+        "TREN"
+      ],
+      "slug": "tren-delantero-luv-4x4"
     },
     {
       "category": "Tren Delantero",
@@ -20517,19 +20517,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO LUV D-MAX 3.5",
-      "id": "DMAX 3.5",
-      "image_path": "./assets/tren-delantero-luv-d-max-3-5.webp",
-      "keywords": [
-        "D-MAX",
-        "DELANTERO",
-        "LUV",
-        "TREN"
-      ],
-      "slug": "tren-delantero-luv-d-max-3-5"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO LUV D-MAX 3.5",
       "id": "ca6f2c65-9a2c-4d5d-9868-b940c475fb9c",
       "image_path": "./assets/tren-delantero-luv-d-max-3-5-2.webp",
       "keywords": [
@@ -20539,6 +20526,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-luv-d-max-3-5-2"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO LUV D-MAX 3.5",
+      "id": "DMAX 3.5",
+      "image_path": "./assets/tren-delantero-luv-d-max-3-5.webp",
+      "keywords": [
+        "D-MAX",
+        "DELANTERO",
+        "LUV",
+        "TREN"
+      ],
+      "slug": "tren-delantero-luv-d-max-3-5"
     },
     {
       "category": "Tren Delantero",

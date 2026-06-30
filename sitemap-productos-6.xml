@@ -481,16 +481,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-2-6.html</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6.webp</image:loc>
-      <image:title>TREN DELANTERO CARIBE 2.6</image:title>
-    </image:image>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-2-6-2.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6-2.webp</image:loc>
@@ -501,10 +491,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-83-88.html</loc>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-2-6.html</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-83-88.webp</image:loc>
-      <image:title>TREN DELANTERO CARIBE 83-88</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6.webp</image:loc>
+      <image:title>TREN DELANTERO CARIBE 2.6</image:title>
     </image:image>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -514,6 +504,16 @@
     <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-83-88-2.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-83-88-2.webp</image:loc>
+      <image:title>TREN DELANTERO CARIBE 83-88</image:title>
+    </image:image>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-83-88.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-83-88.webp</image:loc>
       <image:title>TREN DELANTERO CARIBE 83-88</image:title>
     </image:image>
     <lastmod>2026-06-30</lastmod>
@@ -541,9 +541,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4.html</loc>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4-2.html</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4-2.webp</image:loc>
       <image:title>TREN DELANTERO LUV 4X4</image:title>
     </image:image>
     <lastmod>2026-06-30</lastmod>
@@ -551,9 +551,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4-2.html</loc>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4.html</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4-2.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4.webp</image:loc>
       <image:title>TREN DELANTERO LUV 4X4</image:title>
     </image:image>
     <lastmod>2026-06-30</lastmod>
@@ -581,9 +581,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5.html</loc>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5-2.html</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5-2.webp</image:loc>
       <image:title>TREN DELANTERO LUV D-MAX 3.5</image:title>
     </image:image>
     <lastmod>2026-06-30</lastmod>
@@ -591,9 +591,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5-2.html</loc>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5.html</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5-2.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5.webp</image:loc>
       <image:title>TREN DELANTERO LUV D-MAX 3.5</image:title>
     </image:image>
     <lastmod>2026-06-30</lastmod>

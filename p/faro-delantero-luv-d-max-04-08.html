@@ -195,6 +195,15 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        /* Ocultar flecha nativa de details/summary para el desplegable de OEM */
+        .oem-details summary::-webkit-details-marker {
+            display: none !important;
+        }
+        .oem-details summary {
+            list-style: none !important;
+            outline: none;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -1348,7 +1357,7 @@
             <div class="details-panel">
                 <div class="category-badge">Faro Delantero</div>
                 <h1 class="product-title">Faro Delantero Luv D-Max 04-08</h1>
-                <div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600;">OEM: 8-97069-2870 / LA-8624-1 / 8-97237-4983 / 8-97374-2120 / 8-98004-3100 / 8-98023-8320 / 8-97237-4973 / 8-97367-7250 / 8-98004-3090 / 8-98023-8310</div>
+                <div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 6px 12px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600; line-height: 1.5; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px;"><span>OEM: 8-97069-2870 / LA-8624-1 / 8-97237-4983 / 8-97374-2120 / 8-98004-3100</span><details style="display: inline-block;" class="oem-details"><summary style="display: inline-block; cursor: pointer; color: #ff6a00; font-weight: 700; outline: none; list-style: none; user-select: none;">+ Ver más (5)</summary><span style="margin-left: 4px;">/ 8-98023-8320 / 8-97237-4973 / 8-97367-7250 / 8-98004-3090 / 8-98023-8310</span></details></div>
                 
                 <!-- Ficha de Compatibilidad -->
                 <div class="compatibility-card">

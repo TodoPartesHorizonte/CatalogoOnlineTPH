@@ -61,6 +61,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/juego-de-conchas-bancada-caribe-2300-2600.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/juego-de-conchas-bancada-caribe-2300-2600.webp</image:loc>
+      <image:title>CONCHA BANCADA CARIBE 2.3 / CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/juego-concha-bancada-caribe-g-2000.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/juego-concha-bancada-caribe-g-2000.webp</image:loc>
@@ -95,16 +105,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/juego-concha-bancada-luv-d-max-3-5.webp</image:loc>
       <image:title>CONCHA BANCADA LUV DMAX 3.5</image:title>
-    </image:image>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/juego-de-conchas-bancada-caribe-2300-2600.html</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/juego-de-conchas-bancada-caribe-2300-2600.webp</image:loc>
-      <image:title>CONCHA BANCADA CARIBE 2.3 / CARIBE 2.6</image:title>
     </image:image>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>

@@ -451,6 +451,15 @@ def generate_pages(data):
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }}
 
+        /* Ocultar flecha nativa de details/summary para el desplegable de OEM */
+        .oem-details summary::-webkit-details-marker {{
+            display: none !important;
+        }}
+        .oem-details summary {{
+            list-style: none !important;
+            outline: none;
+        }}
+
         * {{
             box-sizing: border-box;
             margin: 0;
@@ -1914,7 +1923,25 @@ def generate_pages(data):
                 </div>"""
         
         p_oem = escape_html(p_oem_raw)
-        oem_html = f'<div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600;">OEM: {p_oem}</div>' if p_oem else ''
+        oem_parts = [part.strip() for part in p_oem.split('/')] if p_oem else []
+        if len(oem_parts) <= 5:
+            oem_html = f'<div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 6px 12px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600; line-height: 1.5;">OEM: {p_oem}</div>' if p_oem else ''
+        else:
+            visible_parts = oem_parts[:5]
+            hidden_parts = oem_parts[5:]
+            visible_str = " / ".join(visible_parts)
+            hidden_str = " / ".join(hidden_parts)
+            oem_html = (
+                f'<div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); '
+                f'background: rgba(255, 106, 0, 0.05); padding: 6px 12px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); '
+                f'align-self: flex-start; margin-top: -8px; margin-bottom: 8px; font-weight: 600; line-height: 1.5; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px;">'
+                f'<span>OEM: {visible_str}</span>'
+                f'<details style="display: inline-block;" class="oem-details">'
+                f'<summary style="display: inline-block; cursor: pointer; color: #ff6a00; font-weight: 700; outline: none; list-style: none; user-select: none;">+ Ver más ({len(hidden_parts)})</summary>'
+                f'<span style="margin-left: 4px;">/ {hidden_str}</span>'
+                f'</details>'
+                f'</div>'
+            )
         
         import json
         if len(oem_list_seo) > 1:
