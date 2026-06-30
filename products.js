@@ -10,7 +10,7 @@ const PRODUCTS_DATA = {
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
-      "description": "ABRAZADERA BARRA ESTABILIZADORA LUV D-MAX",
+      "description": "ABRAZADERA BARRA ESTABILIZADORA CARIBE 2.6 / LUV DMAX",
       "id": "b3cb7097-6502-499b-9a68-41ab28bfa8cd",
       "image_path": "./assets/abrazadera-barra-estabilizadora-luv-d-max.webp",
       "keywords": [
@@ -18,15 +18,16 @@ const PRODUCTS_DATA = {
         "ABRAZADERA",
         "ALA4051",
         "BARRA",
-        "D-MAX",
+        "CARIBE",
+        "DMAX",
         "ESTABILIZADORA",
         "LUV"
       ],
+      "oem": "8-97235-7800 / ALA4051",
+      "slug": "abrazadera-barra-estabilizadora-luv-d-max",
       "linked_ids": [
         1
       ],
-      "oem": "8-97235-7800 / ALA4051",
-      "slug": "abrazadera-barra-estabilizadora-luv-d-max",
       "variants": [
         {
           "codigo_oem": "8-97235-7800",
@@ -41,6 +42,8 @@ const PRODUCTS_DATA = {
       "id": "ba51f6b8-18a5-48c0-905d-d6dfddfbc14e",
       "image_path": "./assets/acoplador-manual-luv-d-max-trooper.webp",
       "keywords": [
+        "432",
+        "8-94230-9761",
         "8-97062-0180",
         "8-97113-4461",
         "ACOPLADOR",
@@ -49,22 +52,11 @@ const PRODUCTS_DATA = {
         "MANUAL",
         "TROOPER"
       ],
-      "linked_ids": [
-        3
-      ],
-      "oem": "8-97113-4461 / 8-97062-0180",
+      "oem": "8-94230-9761 / 432 / 8-97113-4461 / 8-97062-0180",
       "slug": "acoplador-manual-luv-d-max-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-97113-4461",
-          "brand": "AISIN",
-          "precio_usd": 300
-        },
-        {
-          "codigo_oem": "8-97113-4461",
-          "brand": "JOMO",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        2,
+        3
       ]
     },
     {
@@ -73,22 +65,19 @@ const PRODUCTS_DATA = {
       "id": "91fe7760-3a17-418b-9b4d-99d70f06669a",
       "image_path": "./assets/alternador-luv-d-max-3-5.webp",
       "keywords": [
+        "100211-2290",
+        "8-94156-6720",
+        "8-94156-6721",
         "8-97210-3730",
         "ALTERNADOR",
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        6
-      ],
-      "oem": "8-97210-3730",
+      "oem": "8-94156-6721 / 8-94156-6720 / 100211-2290 / 8-97210-3730",
       "slug": "alternador-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97210-3730",
-          "brand": "COUNGUARD",
-          "precio_usd": 190
-        }
+      "linked_ids": [
+        5,
+        6
       ]
     },
     {
@@ -114,23 +103,18 @@ const PRODUCTS_DATA = {
         "2600",
         "2794",
         "343324P",
+        "8-97210-3730",
         "AMORTIGUADOR",
         "CARIBE",
         "DELANTERO",
         "E2794P",
         "VA-22158"
       ],
-      "linked_ids": [
-        8
-      ],
-      "oem": "VA-22158 / E2794P / 343324P / 2794",
+      "oem": "8-97210-3730 / VA-22158 / E2794P / 343324P / 2794",
       "slug": "amortiguador-delantero-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "VA-22158",
-          "brand": "TOKIKO",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        6,
+        8
       ]
     },
     {
@@ -143,24 +127,14 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "D-MAX",
         "DELANTERO",
-        "LUV"
+        "LUV",
+        "VA-46068"
       ],
-      "linked_ids": [
-        11
-      ],
-      "oem": "8-97236-2990",
+      "oem": "VA-46068 / 8-97236-2990",
       "slug": "amortiguador-delantero-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97236-2990",
-          "brand": "TAIKEN",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-97236-2990",
-          "brand": "MASARU",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        10,
+        11
       ]
     },
     {
@@ -170,43 +144,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/amortiguador-delantero-luv-d-max-3-0-4x4.webp",
       "keywords": [
         "4X4",
+        "8-97236-2990",
         "8-97372-2870",
         "AMORTIGUADOR",
         "D-MAX",
         "DELANTERO",
         "LUV"
       ],
-      "linked_ids": [
-        13
-      ],
-      "oem": "8-97372-2870",
+      "oem": "8-97236-2990 / 8-97372-2870",
       "slug": "amortiguador-delantero-luv-d-max-3-0-4x4",
-      "variants": [
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "CIC",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "MASARU",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "GREKIS",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "KYB",
-          "precio_usd": 90
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "TAIKEN",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        11,
+        13
       ]
     },
     {
@@ -215,43 +164,18 @@ const PRODUCTS_DATA = {
       "id": "f7ee7a35-2e2b-4fbb-837a-345969e13427",
       "image_path": "./assets/amortiguador-delantero-luv-d-max-3-5.webp",
       "keywords": [
+        "8-97236-2990",
         "8-97372-2870",
         "AMORTIGUADOR",
         "D-MAX",
         "DELANTERO",
         "LUV"
       ],
-      "linked_ids": [
-        13
-      ],
-      "oem": "8-97372-2870",
+      "oem": "8-97236-2990 / 8-97372-2870",
       "slug": "amortiguador-delantero-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "CIC",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "MASARU",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "GREKIS",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "KYB",
-          "precio_usd": 90
-        },
-        {
-          "codigo_oem": "8-97372-2870",
-          "brand": "TAIKEN",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        11,
+        13
       ]
     },
     {
@@ -269,18 +193,25 @@ const PRODUCTS_DATA = {
         "TRASERO",
         "VA-45203"
       ],
-      "linked_ids": [
-        21
-      ],
       "oem": "VA-45203 / 22124 / 443211",
       "slug": "amortiguador-trasero-caribe-2000-2300",
-      "variants": [
-        {
-          "codigo_oem": "VA-45203",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        15,
+        21
       ]
+    },
+    {
+      "category": "Amortiguador",
+      "description": "AMORTIGUADOR TRASERO CARIBE 2600",
+      "id": "961eff38-1079-4c53-bb13-4417e0b72071",
+      "image_path": "./assets/amortiguador-trasero-caribe-2600.webp",
+      "keywords": [
+        "2600",
+        "AMORTIGUADOR",
+        "CARIBE",
+        "TRASERO"
+      ],
+      "slug": "amortiguador-trasero-caribe-2600"
     },
     {
       "category": "Amortiguador",
@@ -288,6 +219,7 @@ const PRODUCTS_DATA = {
       "id": "e23c4001-2672-4a96-aab7-26912a29eaf5",
       "image_path": "./assets/amortiguador-trasero-luv-d-max.webp",
       "keywords": [
+        "8-94241-4692",
         "8-97368-5980",
         "8-97368-5990",
         "AMORTIGUADOR",
@@ -295,64 +227,12 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRASERO"
       ],
-      "linked_ids": [
-        24
-      ],
-      "oem": "8-97368-5990 / 8-97368-5980",
+      "oem": "8-94241-4692 / 8-97368-5990 / 8-97368-5980",
       "slug": "amortiguador-trasero-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97368-5990",
-          "brand": "KYB",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97368-5990",
-          "brand": "MASARU",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97368-5990",
-          "brand": "KAIZEN",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-97368-5990",
-          "brand": "GREKIS",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97368-5990",
-          "brand": "TAIKEN",
-          "precio_usd": 30
-        }
-      ]
-    },
-    {
-      "category": "Amortiguador",
-      "description": "AMORTIGUADOR TRASEROS CARIBE 2.6",
-      "id": "961eff38-1079-4c53-bb13-4417e0b72071",
-      "image_path": "./assets/amortiguador-trasero-caribe-2600.webp",
-      "keywords": [
-        "2835",
-        "444083P",
-        "AMORTIGUADOR",
-        "CARIBE",
-        "TRASEROS",
-        "VA-22159"
-      ],
       "linked_ids": [
-        22
-      ],
-      "slug": "amortiguador-trasero-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "VA-22159",
-          "brand": "Original",
-          "precio_usd": 0
-        }
-      ],
-      "oem": "VA-22159 / 444083P / 2835"
+        17,
+        24
+      ]
     },
     {
       "category": "Amortiguador Direccion",
@@ -361,26 +241,16 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/amortiguador-de-direccion-caribe-2-3.webp",
       "keywords": [
         "8-94241-4692",
+        "8-97372-2870",
         "AMORTIGUADOR",
         "CARIBE",
         "DIRECCION"
       ],
-      "linked_ids": [
-        17
-      ],
-      "oem": "8-94241-4692",
+      "oem": "8-97372-2870 / 8-94241-4692",
       "slug": "amortiguador-de-direccion-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94241-4692",
-          "brand": "SHIBUMI",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-94241-4692",
-          "brand": "TOKIKO",
-          "precio_usd": 110
-        }
+      "linked_ids": [
+        13,
+        17
       ]
     },
     {
@@ -390,27 +260,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/amortiguador-de-direccion-caribe-g-200.webp",
       "keywords": [
         "8-94241-4692",
+        "8-97372-2870",
         "AMORTIGUADOR",
         "CARIBE",
         "DIRECCION",
         "G-200"
       ],
-      "linked_ids": [
-        17
-      ],
-      "oem": "8-94241-4692",
+      "oem": "8-97372-2870 / 8-94241-4692",
       "slug": "amortiguador-de-direccion-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "8-94241-4692",
-          "brand": "SHIBUMI",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-94241-4692",
-          "brand": "TOKIKO",
-          "precio_usd": 110
-        }
+      "linked_ids": [
+        13,
+        17
       ]
     },
     {
@@ -425,22 +285,11 @@ const PRODUCTS_DATA = {
         "DIRECCION",
         "KS0005"
       ],
-      "linked_ids": [
-        19
-      ],
       "oem": "8-94312-8140 / KS0005",
       "slug": "amortiguador-direccion-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94312-8140",
-          "brand": "PERFECT",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-94312-8140",
-          "brand": "TOKIKO",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        12,
+        19
       ]
     },
     {
@@ -455,22 +304,11 @@ const PRODUCTS_DATA = {
         "KS0005",
         "LUV"
       ],
-      "linked_ids": [
-        19
-      ],
       "oem": "8-94312-8140 / KS0005",
       "slug": "amortiguador-direccion-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94312-8140",
-          "brand": "PERFECT",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-94312-8140",
-          "brand": "TOKIKO",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        12,
+        19
       ]
     },
     {
@@ -485,22 +323,11 @@ const PRODUCTS_DATA = {
         "KS0005",
         "TROOPER"
       ],
-      "linked_ids": [
-        19
-      ],
       "oem": "8-94312-8140 / KS0005",
       "slug": "amortiguador-direccion-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-94312-8140",
-          "brand": "PERFECT",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-94312-8140",
-          "brand": "TOKIKO",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        12,
+        19
       ]
     },
     {
@@ -540,17 +367,11 @@ const PRODUCTS_DATA = {
         "EJE",
         "PUNTA"
       ],
-      "linked_ids": [
-        163
-      ],
       "oem": "5-09532-0022",
       "slug": "arandela-punta-de-eje-delantero-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "5-09532-0022",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        70,
+        163
       ]
     },
     {
@@ -567,17 +388,11 @@ const PRODUCTS_DATA = {
         "EJE",
         "PUNTA"
       ],
-      "linked_ids": [
-        163
-      ],
       "oem": "5-09532-0022",
       "slug": "arandela-punta-de-eje-delantero-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "5-09532-0022",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        70,
+        163
       ]
     },
     {
@@ -593,17 +408,11 @@ const PRODUCTS_DATA = {
         "SH-99003",
         "SH-99004"
       ],
-      "linked_ids": [
-        1062
-      ],
       "oem": "8-94243-2320 / SH-99003 / SH-99004",
       "slug": "arana-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94243-2320",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        72,
+        1062
       ]
     },
     {
@@ -619,17 +428,11 @@ const PRODUCTS_DATA = {
         "SH-99003",
         "SH-99004"
       ],
-      "linked_ids": [
-        1062
-      ],
       "oem": "8-94243-2320 / SH-99003 / SH-99004",
       "slug": "arana-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94243-2320",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        72,
+        1062
       ]
     },
     {
@@ -639,30 +442,22 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/arana-caribe-2600.webp",
       "keywords": [
         "2600",
+        "6159-040",
         "8-94173-3460",
         "8-94173-3470",
         "811606013",
         "811606023",
         "ARANA",
-        "CARIBE"
+        "CARIBE",
+        "SWI10144-4"
       ],
+      "oem": "6159-040 / SWI10144-4 / 8-94173-3470 / 811606023 / 8-94173-3460 / 811606013",
+      "slug": "arana-caribe-2600",
       "linked_ids": [
+        73,
+        78,
         165,
         1063
-      ],
-      "oem": "8-94173-3470 / 811606023 / 8-94173-3460 / 811606013",
-      "slug": "arana-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94173-3460",
-          "brand": "Original",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-94173-3470",
-          "brand": "Original",
-          "precio_usd": 60
-        }
       ]
     },
     {
@@ -672,30 +467,22 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/arana-luv-4x4.webp",
       "keywords": [
         "4X4",
+        "6159-040",
         "8-94173-3460",
         "8-94173-3470",
         "811606013",
         "811606023",
         "ARANA",
-        "LUV"
+        "LUV",
+        "SWI10144-4"
       ],
+      "oem": "6159-040 / SWI10144-4 / 8-94173-3470 / 811606023 / 8-94173-3460 / 811606013",
+      "slug": "arana-luv-4x4",
       "linked_ids": [
+        73,
+        78,
         165,
         1063
-      ],
-      "oem": "8-94173-3470 / 811606023 / 8-94173-3460 / 811606013",
-      "slug": "arana-luv-4x4",
-      "variants": [
-        {
-          "codigo_oem": "8-94173-3460",
-          "brand": "Original",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-94173-3470",
-          "brand": "Original",
-          "precio_usd": 60
-        }
       ]
     },
     {
@@ -704,29 +491,20 @@ const PRODUCTS_DATA = {
       "id": "6b7db40e-1189-49d9-859b-78d1013a6140",
       "image_path": "./assets/arana-luv-d-max-2-4.webp",
       "keywords": [
+        "6159-010",
         "8-97365-0100",
         "8-97365-0110",
         "ARANA",
         "D-MAX",
         "LUV"
       ],
+      "oem": "6159-010 / 8-97365-0110 / 8-97365-0100",
+      "slug": "arana-luv-d-max-2-4",
       "linked_ids": [
+        75,
+        80,
         169,
         1067
-      ],
-      "oem": "8-97365-0110 / 8-97365-0100",
-      "slug": "arana-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97365-0100",
-          "brand": "Original",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-97365-0110",
-          "brand": "Original",
-          "precio_usd": 60
-        }
       ]
     },
     {
@@ -735,29 +513,20 @@ const PRODUCTS_DATA = {
       "id": "b7b8c2cf-1e10-425e-89e7-069f950f5ba5",
       "image_path": "./assets/arana-luv-d-max-2-5.webp",
       "keywords": [
+        "6159-010",
         "8-97365-0100",
         "8-97365-0110",
         "ARANA",
         "D-MAX",
         "LUV"
       ],
+      "oem": "6159-010 / 8-97365-0110 / 8-97365-0100",
+      "slug": "arana-luv-d-max-2-5",
       "linked_ids": [
+        75,
+        80,
         169,
         1067
-      ],
-      "oem": "8-97365-0110 / 8-97365-0100",
-      "slug": "arana-luv-d-max-2-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97365-0100",
-          "brand": "Original",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-97365-0110",
-          "brand": "Original",
-          "precio_usd": 60
-        }
       ]
     },
     {
@@ -767,29 +536,20 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/arana-luv-d-max-3-0.webp",
       "keywords": [
         "4X2",
+        "6159-010",
         "8-97365-0100",
         "8-97365-0110",
         "ARANA",
         "D-MAX",
         "LUV"
       ],
+      "oem": "6159-010 / 8-97365-0110 / 8-97365-0100",
+      "slug": "arana-luv-d-max-3-0",
       "linked_ids": [
+        75,
+        80,
         169,
         1067
-      ],
-      "oem": "8-97365-0110 / 8-97365-0100",
-      "slug": "arana-luv-d-max-3-0",
-      "variants": [
-        {
-          "codigo_oem": "8-97365-0100",
-          "brand": "Original",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-97365-0110",
-          "brand": "Original",
-          "precio_usd": 60
-        }
       ]
     },
     {
@@ -798,6 +558,7 @@ const PRODUCTS_DATA = {
       "id": "41977e7f-e551-4143-9616-e7c6ec2d4f52",
       "image_path": "./assets/arana-luv-d-max-3-5.webp",
       "keywords": [
+        "6159-020",
         "716CV05A170",
         "716CV05A270",
         "8-97365-0120",
@@ -806,23 +567,13 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
+      "oem": "6159-020 / 8-97365-0130 / 716CV05A270 / 8-97365-0120 / 716CV05A170",
+      "slug": "arana-luv-d-max-3-5",
       "linked_ids": [
+        76,
+        81,
         168,
         1066
-      ],
-      "oem": "8-97365-0130 / 716CV05A270 / 8-97365-0120 / 716CV05A170",
-      "slug": "arana-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97365-0120",
-          "brand": "Original",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-97365-0130",
-          "brand": "Original",
-          "precio_usd": 60
-        }
       ]
     },
     {
@@ -838,22 +589,11 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "LEVA"
       ],
-      "linked_ids": [
-        171
-      ],
       "oem": "8-94136-7841",
       "slug": "arbol-de-leva-caribe-2300-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94136-7841",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94136-7841",
-          "brand": "POWER SEALED",
-          "precio_usd": 110
-        }
+      "linked_ids": [
+        83,
+        171
       ]
     },
     {
@@ -868,17 +608,11 @@ const PRODUCTS_DATA = {
         "G-2000",
         "LEVA"
       ],
-      "linked_ids": [
-        170
-      ],
       "oem": "8-94203-0840",
       "slug": "arbol-de-leva-caribe-g-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94203-0840",
-          "brand": "Original",
-          "precio_usd": 70
-        }
+      "linked_ids": [
+        84,
+        170
       ]
     },
     {
@@ -893,17 +627,11 @@ const PRODUCTS_DATA = {
         "LEVA",
         "LUV"
       ],
-      "linked_ids": [
-        172
-      ],
       "oem": "90233484 / 93205394",
       "slug": "arbol-de-leva-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "90233484",
-          "brand": "Original",
-          "precio_usd": 130
-        }
+      "linked_ids": [
+        85,
+        172
       ]
     },
     {
@@ -919,17 +647,11 @@ const PRODUCTS_DATA = {
         "LEVA",
         "LUV"
       ],
-      "linked_ids": [
-        172
-      ],
       "oem": "90233484 / 93205394",
       "slug": "arbol-de-leva-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "90233484",
-          "brand": "Original",
-          "precio_usd": 130
-        }
+      "linked_ids": [
+        85,
+        172
       ]
     },
     {
@@ -942,17 +664,11 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "CARIBE"
       ],
-      "linked_ids": [
-        176
-      ],
       "oem": "8-94156-6710",
       "slug": "arranque-caribe-2-3-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94156-6710",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        89,
+        176
       ]
     },
     {
@@ -968,17 +684,11 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G-200"
       ],
-      "linked_ids": [
-        175
-      ],
       "oem": "8-94234-0650 / 16270-AZ / 19011",
       "slug": "arranque-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "8-94234-0650",
-          "brand": "Original",
-          "precio_usd": 125
-        }
+      "linked_ids": [
+        90,
+        175
       ]
     },
     {
@@ -991,17 +701,11 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "LUV"
       ],
-      "linked_ids": [
-        176
-      ],
       "oem": "8-94156-6710",
       "slug": "arranque-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94156-6710",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        89,
+        176
       ]
     },
     {
@@ -1015,22 +719,11 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        178
-      ],
       "oem": "8-94384-3141",
       "slug": "arranque-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-94384-3141",
-          "brand": "VULKO",
-          "precio_usd": 130
-        },
-        {
-          "codigo_oem": "8-94384-3141",
-          "brand": "COUNGUARD",
-          "precio_usd": 170
-        }
+      "linked_ids": [
+        92,
+        178
       ]
     },
     {
@@ -1046,17 +739,11 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FAN"
       ],
-      "linked_ids": [
-        180
-      ],
       "oem": "8-94158-7641 / 16361-38010",
       "slug": "aspa-de-fan-clutch-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94158-7641",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        93,
+        180
       ]
     },
     {
@@ -1065,6 +752,7 @@ const PRODUCTS_DATA = {
       "id": "2843342c-3ece-4b93-a556-0c318f0d44c9",
       "image_path": "./assets/aspa-fan-clutch-luv-d-max-3-5.webp",
       "keywords": [
+        "41470-STD",
         "8-97130-7571",
         "ASPA",
         "CLUTCH",
@@ -1072,22 +760,11 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "linked_ids": [
-        181
-      ],
-      "oem": "8-97130-7571",
+      "oem": "41470-STD / 8-97130-7571",
       "slug": "aspa-fan-clutch-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97130-7571",
-          "brand": "PRESENTACION",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "8-97130-7571",
-          "brand": "KAIZEN",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        94,
+        181
       ]
     },
     {
@@ -1096,21 +773,16 @@ const PRODUCTS_DATA = {
       "id": "2c8316c9-41b0-4146-a6d0-675be86e77e5",
       "image_path": "./assets/aspa-rodeo-3-2.webp",
       "keywords": [
+        "41470-010",
         "8-97130-7570",
         "ASPA",
         "RODEO"
       ],
-      "linked_ids": [
-        183
-      ],
-      "oem": "8-97130-7570",
+      "oem": "41470-010 / 8-97130-7570",
       "slug": "aspa-rodeo-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97130-7570",
-          "brand": "Original",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        95,
+        183
       ]
     },
     {
@@ -1119,21 +791,16 @@ const PRODUCTS_DATA = {
       "id": "cf2b74d0-7f96-4355-ac3a-ce88b58a15a7",
       "image_path": "./assets/aspa-trooper-3-2.webp",
       "keywords": [
+        "41470-010",
         "8-97130-7570",
         "ASPA",
         "TROOPER"
       ],
-      "linked_ids": [
-        183
-      ],
-      "oem": "8-97130-7570",
+      "oem": "41470-010 / 8-97130-7570",
       "slug": "aspa-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97130-7570",
-          "brand": "Original",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        95,
+        183
       ]
     },
     {
@@ -1149,17 +816,11 @@ const PRODUCTS_DATA = {
         "FRENO",
         "JUEGO"
       ],
-      "linked_ids": [
-        187
-      ],
       "oem": "8-94230-5391",
       "slug": "juego-de-bandas-de-freno-caribe-83-88",
-      "variants": [
-        {
-          "codigo_oem": "8-94230-5391",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        100,
+        187
       ]
     },
     {
@@ -1176,17 +837,11 @@ const PRODUCTS_DATA = {
         "K4452",
         "LUV"
       ],
-      "linked_ids": [
-        188
-      ],
       "oem": "8-94479-7070 / K4452",
       "slug": "juego-de-bandas-de-freno-luv-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94479-7070",
-          "brand": "TAKASHI",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        101,
+        188
       ]
     },
     {
@@ -1202,17 +857,11 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV"
       ],
-      "linked_ids": [
-        189
-      ],
       "oem": "5-87832-0910",
       "slug": "juego-de-bandas-de-freno-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "5-87832-0910",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        102,
+        189
       ]
     },
     {
@@ -1229,22 +878,11 @@ const PRODUCTS_DATA = {
         "K4467",
         "LUV"
       ],
-      "linked_ids": [
-        190
-      ],
       "oem": "5-87832-0900 / K4467",
       "slug": "juego-de-bandas-de-freno-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "5-87832-0900",
-          "brand": "XTENDER",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "5-87832-0900",
-          "brand": "TAKASHI",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        103,
+        190
       ]
     },
     {
@@ -1253,23 +891,18 @@ const PRODUCTS_DATA = {
       "id": "ca1797dd-cfcc-4b3e-a10a-53c105b55636",
       "image_path": "./assets/baquelita-bomba-gasolina-caribe.webp",
       "keywords": [
+        "41470-020",
         "8-94146-2580",
         "BAQUELITA",
         "BOMBA",
         "CARIBE",
         "GASOLINA"
       ],
-      "linked_ids": [
-        184
-      ],
-      "oem": "8-94146-2580",
+      "oem": "41470-020 / 8-94146-2580",
       "slug": "baquelita-bomba-gasolina-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94146-2580",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        96,
+        184
       ]
     },
     {
@@ -1278,23 +911,18 @@ const PRODUCTS_DATA = {
       "id": "9ff15034-0e89-4934-8a92-d30f3ab2c668",
       "image_path": "./assets/baquelita-bomba-gasolina-luv-2-3.webp",
       "keywords": [
+        "41470-020",
         "8-94146-2580",
         "BAQUELITA",
         "BOMBA",
         "GASOLINA",
         "LUV"
       ],
-      "linked_ids": [
-        184
-      ],
-      "oem": "8-94146-2580",
+      "oem": "41470-020 / 8-94146-2580",
       "slug": "baquelita-bomba-gasolina-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94146-2580",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        96,
+        184
       ]
     },
     {
@@ -1303,23 +931,18 @@ const PRODUCTS_DATA = {
       "id": "804521d3-f69c-42fd-adff-b089ff07fc54",
       "image_path": "./assets/baquelita-bomba-gasolina-trooper.webp",
       "keywords": [
+        "41470-020",
         "8-94146-2580",
         "BAQUELITA",
         "BOMBA",
         "GASOLINA",
         "TROOPER"
       ],
-      "linked_ids": [
-        184
-      ],
-      "oem": "8-94146-2580",
+      "oem": "41470-020 / 8-94146-2580",
       "slug": "baquelita-bomba-gasolina-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-94146-2580",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        96,
+        184
       ]
     },
     {
@@ -1334,17 +957,11 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CENTRAL"
       ],
-      "linked_ids": [
-        192
-      ],
       "oem": "8-94241-4670",
       "slug": "barra-central-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94241-4670",
-          "brand": "SHIBUMI",
-          "precio_usd": 55
-        }
+      "linked_ids": [
+        106,
+        192
       ]
     },
     {
@@ -1359,17 +976,11 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "G-2000"
       ],
-      "linked_ids": [
-        192
-      ],
       "oem": "8-94241-4670",
       "slug": "barra-central-caribe-g-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94241-4670",
-          "brand": "SHIBUMI",
-          "precio_usd": 55
-        }
+      "linked_ids": [
+        106,
+        192
       ]
     },
     {
@@ -1384,17 +995,11 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "HUECO"
       ],
-      "linked_ids": [
-        193
-      ],
       "oem": "8-94389-2222",
       "slug": "barra-central-con-hueco-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94389-2222",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        104,
+        193
       ]
     },
     {
@@ -1410,17 +1015,11 @@ const PRODUCTS_DATA = {
         "HUECO",
         "LUV"
       ],
-      "linked_ids": [
-        193
-      ],
       "oem": "8-94389-2222",
       "slug": "barra-central-con-hueco-luv-4x4",
-      "variants": [
-        {
-          "codigo_oem": "8-94389-2222",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        104,
+        193
       ]
     },
     {
@@ -1435,17 +1034,11 @@ const PRODUCTS_DATA = {
         "HUECO",
         "RODEO"
       ],
-      "linked_ids": [
-        193
-      ],
       "oem": "8-94389-2222",
       "slug": "barra-central-con-hueco-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94389-2222",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        104,
+        193
       ]
     },
     {
@@ -1460,17 +1053,11 @@ const PRODUCTS_DATA = {
         "HUECO",
         "TROOPER"
       ],
-      "linked_ids": [
-        193
-      ],
       "oem": "8-94389-2222",
       "slug": "barra-central-con-hueco-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-94389-2222",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        104,
+        193
       ]
     },
     {
@@ -1485,17 +1072,11 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "LUV"
       ],
-      "linked_ids": [
-        195
-      ],
       "oem": "8-94389-2102",
       "slug": "barra-central-luv-4x2",
-      "variants": [
-        {
-          "codigo_oem": "8-94389-2102",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        107,
+        195
       ]
     },
     {
@@ -1513,17 +1094,11 @@ const PRODUCTS_DATA = {
         "SC-5335",
         "SIN"
       ],
-      "linked_ids": [
-        194
-      ],
       "oem": "8-94419-3791 / DS-1163 / SC-5335",
       "slug": "barra-central-sin-hueco-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94419-3791",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        105,
+        194
       ]
     },
     {
@@ -1542,17 +1117,11 @@ const PRODUCTS_DATA = {
         "SC-5335",
         "SIN"
       ],
-      "linked_ids": [
-        194
-      ],
       "oem": "8-94419-3791 / DS-1163 / SC-5335",
       "slug": "barra-central-sin-hueco-luv-4x4",
-      "variants": [
-        {
-          "codigo_oem": "8-94419-3791",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        105,
+        194
       ]
     },
     {
@@ -1570,17 +1139,11 @@ const PRODUCTS_DATA = {
         "SC-5335",
         "SIN"
       ],
-      "linked_ids": [
-        194
-      ],
       "oem": "8-94419-3791 / DS-1163 / SC-5335",
       "slug": "barra-central-sin-hueco-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94419-3791",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        105,
+        194
       ]
     },
     {
@@ -1598,17 +1161,11 @@ const PRODUCTS_DATA = {
         "SIN",
         "TROOPER"
       ],
-      "linked_ids": [
-        194
-      ],
       "oem": "8-94419-3791 / DS-1163 / SC-5335",
       "slug": "barra-central-sin-hueco-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-94419-3791",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        105,
+        194
       ]
     },
     {
@@ -1617,23 +1174,18 @@ const PRODUCTS_DATA = {
       "id": "a0c0b88a-fa46-4e21-a77a-b1ba01c8af58",
       "image_path": "./assets/barra-link-delantera-trooper-3-2.webp",
       "keywords": [
+        "2C5158-020",
         "8-97018-2272",
         "BARRA",
         "DELANTERA",
         "LINK",
         "TROOPER"
       ],
-      "linked_ids": [
-        198
-      ],
-      "oem": "8-97018-2272",
+      "oem": "2C5158-020 / 8-97018-2272",
       "slug": "barra-link-delantera-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97018-2272",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        111,
+        198
       ]
     },
     {
@@ -1653,33 +1205,13 @@ const PRODUCTS_DATA = {
         "LUV",
         "SL-5360"
       ],
-      "linked_ids": [
-        197,
-        274
-      ],
       "oem": "8-94408-8402 / SL-5360 / 8-94408-8401 / 8-94408-8403 / 8-97364-1750 / FR-9740",
       "slug": "barra-link-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "MASARU",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "555 JAPON",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        108,
+        191,
+        197,
+        274
       ]
     },
     {
@@ -1699,33 +1231,13 @@ const PRODUCTS_DATA = {
         "LUV",
         "SL-5360"
       ],
-      "linked_ids": [
-        197,
-        274
-      ],
       "oem": "8-94408-8402 / SL-5360 / 8-94408-8401 / 8-94408-8403 / 8-97364-1750 / FR-9740",
       "slug": "barra-link-luv-d-max-2-5",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "MASARU",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "555 JAPON",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        108,
+        191,
+        197,
+        274
       ]
     },
     {
@@ -1745,33 +1257,13 @@ const PRODUCTS_DATA = {
         "LUV",
         "SL-5360"
       ],
-      "linked_ids": [
-        197,
-        274
-      ],
       "oem": "8-94408-8402 / SL-5360 / 8-94408-8401 / 8-94408-8403 / 8-97364-1750 / FR-9740",
       "slug": "barra-link-luv-d-max-3-0",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "MASARU",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "555 JAPON",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        108,
+        191,
+        197,
+        274
       ]
     },
     {
@@ -1780,6 +1272,8 @@ const PRODUCTS_DATA = {
       "id": "829ed8a1-530e-422f-acff-75ba0f681f96",
       "image_path": "./assets/barra-link-luv-d-max-3-5.webp",
       "keywords": [
+        "2C5158-010",
+        "2C5158-030",
         "703CV05A001",
         "703CV05A002",
         "8-97235-7861",
@@ -1791,33 +1285,13 @@ const PRODUCTS_DATA = {
         "LINK",
         "LUV"
       ],
+      "oem": "2C5158-010 / 2C5158-030 / 8-97235-7861 / 703CV05A001 / 8-97944-5680 / 8-97235-7871 / 703CV05A002 / 8-97944-5690",
+      "slug": "barra-link-luv-d-max-3-5",
       "linked_ids": [
+        110,
+        112,
         196,
         1070
-      ],
-      "oem": "8-97235-7861 / 703CV05A001 / 8-97944-5680 / 8-97235-7871 / 703CV05A002 / 8-97944-5690",
-      "slug": "barra-link-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97235-7861",
-          "brand": "JAPON",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-97235-7861",
-          "brand": "TAIWAN",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-97235-7871",
-          "brand": "TAIWAN",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-97235-7871",
-          "brand": "JAPON",
-          "precio_usd": 25
-        }
       ]
     },
     {
@@ -1826,30 +1300,24 @@ const PRODUCTS_DATA = {
       "id": "4d125caa-7f54-4874-be5a-88783a9ae853",
       "image_path": "./assets/barra-tensora-luv-4x2.webp",
       "keywords": [
+        "2C4171-010",
+        "2C4171-STD",
         "4X2",
         "8-94473-1914",
         "8-94473-1924",
+        "93359241-010",
+        "93359241-STD",
         "BARRA",
         "LUV",
         "TENSORA"
       ],
+      "oem": "93359241-STD / 2C4171-STD / 93359241-010 / 2C4171-010 / 8-94473-1914 / 8-94473-1924",
+      "slug": "barra-tensora-luv-4x2",
       "linked_ids": [
+        114,
+        115,
         200,
         1077
-      ],
-      "oem": "8-94473-1914 / 8-94473-1924",
-      "slug": "barra-tensora-luv-4x2",
-      "variants": [
-        {
-          "codigo_oem": "8-94473-1914",
-          "brand": "Original",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "8-94473-1924",
-          "brand": "Original",
-          "precio_usd": 45
-        }
       ]
     },
     {
@@ -1858,24 +1326,20 @@ const PRODUCTS_DATA = {
       "id": "f7cba48c-3bec-49f5-81ba-33ef5915c3fa",
       "image_path": "./assets/soporte-amortiguador-luv-d-max-2-4.webp",
       "keywords": [
+        "2C4171-020",
         "8-97236-3000",
+        "93359241-020",
         "AMORTIGUADOR",
         "BASE",
         "D-MAX",
         "LUV",
         "SOPORTE"
       ],
-      "linked_ids": [
-        201
-      ],
-      "oem": "8-97236-3000",
+      "oem": "93359241-020 / 2C4171-020 / 8-97236-3000",
       "slug": "soporte-amortiguador-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97236-3000",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        116,
+        201
       ]
     },
     {
@@ -1884,24 +1348,20 @@ const PRODUCTS_DATA = {
       "id": "eba3d8ff-3d86-4dcc-b654-5054d474a1d8",
       "image_path": "./assets/base-brazo-loco-caribe.webp",
       "keywords": [
+        "2C4171-040",
         "8-97028-9700",
         "8-97028-9720",
+        "93359241-040",
         "BASE",
         "BRAZO",
         "CARIBE",
         "LOCO"
       ],
-      "linked_ids": [
-        203
-      ],
-      "oem": "8-97028-9720 / 8-97028-9700",
+      "oem": "93359241-040 / 2C4171-040 / 8-97028-9720 / 8-97028-9700",
       "slug": "base-brazo-loco-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-97028-9720",
-          "brand": "Original",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        118,
+        203
       ]
     },
     {
@@ -1911,23 +1371,19 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/base-brazo-loco-caribe-2000.webp",
       "keywords": [
         "2000",
+        "2C4171-030",
         "8-94241-7670",
+        "93359241-030",
         "BASE",
         "BRAZO",
         "CARIBE",
         "LOCO"
       ],
-      "linked_ids": [
-        202
-      ],
-      "oem": "8-94241-7670",
+      "oem": "93359241-030 / 2C4171-030 / 8-94241-7670",
       "slug": "base-brazo-loco-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94241-7670",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        117,
+        202
       ]
     },
     {
@@ -1937,23 +1393,19 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/base-brazo-loco-caribe-2300.webp",
       "keywords": [
         "2300",
+        "2C4171-030",
         "8-94241-7670",
+        "93359241-030",
         "BASE",
         "BRAZO",
         "CARIBE",
         "LOCO"
       ],
-      "linked_ids": [
-        202
-      ],
-      "oem": "8-94241-7670",
+      "oem": "93359241-030 / 2C4171-030 / 8-94241-7670",
       "slug": "base-brazo-loco-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94241-7670",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        117,
+        202
       ]
     },
     {
@@ -1962,24 +1414,20 @@ const PRODUCTS_DATA = {
       "id": "ab31d8e5-9e55-4079-acb4-e018f9c1a560",
       "image_path": "./assets/base-brazo-loco-luv.webp",
       "keywords": [
+        "2C4171-040",
         "8-97028-9700",
         "8-97028-9720",
+        "93359241-040",
         "BASE",
         "BRAZO",
         "LOCO",
         "LUV"
       ],
-      "linked_ids": [
-        203
-      ],
-      "oem": "8-97028-9720 / 8-97028-9700",
+      "oem": "93359241-040 / 2C4171-040 / 8-97028-9720 / 8-97028-9700",
       "slug": "base-brazo-loco-luv",
-      "variants": [
-        {
-          "codigo_oem": "8-97028-9720",
-          "brand": "Original",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        118,
+        203
       ]
     },
     {
@@ -1988,24 +1436,20 @@ const PRODUCTS_DATA = {
       "id": "bd4d5d8f-dbf0-4648-a5e5-f35a63b24125",
       "image_path": "./assets/base-brazo-loco-rodeo.webp",
       "keywords": [
+        "2C4171-040",
         "8-97028-9700",
         "8-97028-9720",
+        "93359241-040",
         "BASE",
         "BRAZO",
         "LOCO",
         "RODEO"
       ],
-      "linked_ids": [
-        203
-      ],
-      "oem": "8-97028-9720 / 8-97028-9700",
+      "oem": "93359241-040 / 2C4171-040 / 8-97028-9720 / 8-97028-9700",
       "slug": "base-brazo-loco-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-97028-9720",
-          "brand": "Original",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        118,
+        203
       ]
     },
     {
@@ -2014,24 +1458,20 @@ const PRODUCTS_DATA = {
       "id": "53653b95-cec3-4d3d-b4f0-a7d12459be16",
       "image_path": "./assets/base-brazo-loco-trooper.webp",
       "keywords": [
+        "2C4171-040",
         "8-97028-9700",
         "8-97028-9720",
+        "93359241-040",
         "BASE",
         "BRAZO",
         "LOCO",
         "TROOPER"
       ],
-      "linked_ids": [
-        203
-      ],
-      "oem": "8-97028-9720 / 8-97028-9700",
+      "oem": "93359241-040 / 2C4171-040 / 8-97028-9720 / 8-97028-9700",
       "slug": "base-brazo-loco-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-97028-9720",
-          "brand": "Original",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        118,
+        203
       ]
     },
     {
@@ -2046,17 +1486,11 @@ const PRODUCTS_DATA = {
         "CAJA",
         "CARIBE"
       ],
-      "linked_ids": [
-        205
-      ],
       "oem": "8-94441-5100 / 8-94166-8492",
       "slug": "base-caja-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94441-5100",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        119,
+        205
       ]
     },
     {
@@ -2071,17 +1505,11 @@ const PRODUCTS_DATA = {
         "CAJA",
         "CARIBE"
       ],
-      "linked_ids": [
-        206
-      ],
       "oem": "8-94458-3832",
       "slug": "base-caja-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94458-3832",
-          "brand": "Original",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        120,
+        206
       ]
     },
     {
@@ -2097,17 +1525,11 @@ const PRODUCTS_DATA = {
         "CAJA",
         "LUV"
       ],
-      "linked_ids": [
-        205
-      ],
       "oem": "8-94441-5100 / 8-94166-8492",
       "slug": "base-caja-luv-4x4",
-      "variants": [
-        {
-          "codigo_oem": "8-94441-5100",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        119,
+        205
       ]
     },
     {
@@ -2127,17 +1549,11 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        204
-      ],
       "oem": "8-94135-9851 / 8-94434-2081 / 8-98073-0630 / 197029 / 197030 / 8-94229-3002",
       "slug": "base-caja-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-94135-9851",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        121,
+        204
       ]
     },
     {
@@ -2152,17 +1568,11 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        207
-      ],
       "oem": "197037",
       "slug": "base-caja-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "197037",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        122,
+        207
       ]
     },
     {
@@ -2177,17 +1587,11 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        207
-      ],
       "oem": "197037",
       "slug": "base-caja-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "197037",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        122,
+        207
       ]
     },
     {
@@ -2202,17 +1606,11 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TROOPER"
       ],
-      "linked_ids": [
-        208
-      ],
       "oem": "8-94386-4861",
       "slug": "base-caja-trooper-rodeo-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94386-4861",
-          "brand": "Original",
-          "precio_usd": 55
-        }
+      "linked_ids": [
+        124,
+        208
       ]
     },
     {
@@ -2226,17 +1624,11 @@ const PRODUCTS_DATA = {
         "CAJA",
         "TROOPER"
       ],
-      "linked_ids": [
-        208
-      ],
       "oem": "8-94386-4861",
       "slug": "base-caja-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94386-4861",
-          "brand": "Original",
-          "precio_usd": 55
-        }
+      "linked_ids": [
+        124,
+        208
       ]
     },
     {
@@ -2250,17 +1642,11 @@ const PRODUCTS_DATA = {
         "CASILLA",
         "GU-224"
       ],
-      "linked_ids": [
-        210
-      ],
       "oem": "GU-224",
       "slug": "base-casilla-caribe",
-      "variants": [
-        {
-          "codigo_oem": "GU-224",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        125,
+        210
       ]
     },
     {
@@ -2276,17 +1662,11 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "linked_ids": [
-        214
-      ],
       "oem": "8-97231-7180",
       "slug": "base-fan-clutch-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97231-7180",
-          "brand": "Original",
-          "precio_usd": 90
-        }
+      "linked_ids": [
+        129,
+        214
       ]
     },
     {
@@ -2301,17 +1681,11 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FILTRO"
       ],
-      "linked_ids": [
-        215
-      ],
       "oem": "8-94476-1270",
       "slug": "base-filtro-de-aceite-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94476-1270",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        130,
+        215
       ]
     },
     {
@@ -2326,17 +1700,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "linked_ids": [
-        215
-      ],
       "oem": "8-94476-1270",
       "slug": "base-filtro-de-aceite-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94476-1270",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        130,
+        215
       ]
     },
     {
@@ -2352,17 +1720,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "FILTRODE"
       ],
-      "linked_ids": [
-        215
-      ],
       "oem": "8-94476-1270",
       "slug": "base-filtrode-aceite-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94476-1270",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        130,
+        215
       ]
     },
     {
@@ -2380,23 +1742,13 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "MOTOR"
       ],
-      "linked_ids": [
-        217,
-        1056
-      ],
       "oem": "8-94482-4050 / 8-94422-8682 / 197010 / 8-94482-4060 / 197011",
       "slug": "base-motor-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94482-4050",
-          "brand": "Original",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-94482-4060",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        132,
+        139,
+        217,
+        1056
       ]
     },
     {
@@ -2414,23 +1766,13 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "MOTOR"
       ],
-      "linked_ids": [
-        216,
-        1055
-      ],
       "oem": "8-94414-3930 / 8-94225-9632 / 8-94414-3940 / 8-94225-9642",
       "slug": "base-motor-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94414-3930",
-          "brand": "Original",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94414-3940",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        133,
+        140,
+        216,
+        1055
       ]
     },
     {
@@ -2448,23 +1790,13 @@ const PRODUCTS_DATA = {
         "G-2000",
         "MOTOR"
       ],
-      "linked_ids": [
-        216,
-        1055
-      ],
       "oem": "8-94414-3930 / 8-94225-9632 / 8-94414-3940 / 8-94225-9642",
       "slug": "base-motor-caribe-g-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94414-3930",
-          "brand": "Original",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94414-3940",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        133,
+        140,
+        216,
+        1055
       ]
     },
     {
@@ -2475,29 +1807,21 @@ const PRODUCTS_DATA = {
       "keywords": [
         "197017",
         "197018",
+        "2C4571-STD",
         "8-97216-7541",
         "8-97216-7551",
+        "8-97371-5330",
         "BASE",
         "LUV",
         "MOTOR"
       ],
+      "oem": "8-97371-5330 / 2C4571-STD / 8-97216-7541 / 197017 / 8-97216-7551 / 197018",
+      "slug": "base-motor-luv-2-2",
       "linked_ids": [
+        134,
+        141,
         218,
         1057
-      ],
-      "oem": "8-97216-7541 / 197017 / 8-97216-7551 / 197018",
-      "slug": "base-motor-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97216-7541",
-          "brand": "Original",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-97216-7551",
-          "brand": "Original",
-          "precio_usd": 35
-        }
       ]
     },
     {
@@ -2515,23 +1839,13 @@ const PRODUCTS_DATA = {
         "LUV",
         "MOTOR"
       ],
-      "linked_ids": [
-        217,
-        1056
-      ],
       "oem": "8-94482-4050 / 8-94422-8682 / 197010 / 8-94482-4060 / 197011",
       "slug": "base-motor-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94482-4050",
-          "brand": "Original",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-94482-4060",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        132,
+        139,
+        217,
+        1056
       ]
     },
     {
@@ -2542,28 +1856,20 @@ const PRODUCTS_DATA = {
       "keywords": [
         "197020",
         "197021",
+        "2C4571-020",
+        "8-97371-5532",
         "BASE",
         "D-MAX",
         "LUV",
         "MOTOR"
       ],
+      "oem": "8-97371-5532 / 2C4571-020 / 197020 / 197021",
+      "slug": "base-motor-luv-d-max-2-5",
       "linked_ids": [
+        136,
+        142,
         220,
         1058
-      ],
-      "oem": "197020 / 197021",
-      "slug": "base-motor-luv-d-max-2-5",
-      "variants": [
-        {
-          "codigo_oem": "197020",
-          "brand": "Original",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "197021",
-          "brand": "Original",
-          "precio_usd": 35
-        }
       ]
     },
     {
@@ -2574,31 +1880,23 @@ const PRODUCTS_DATA = {
       "keywords": [
         "197022",
         "197023",
+        "2C4571-030",
         "8-97363-5430",
         "8-97367-2730",
+        "8-97371-5533",
         "BASE",
         "D-MAX",
         "DIESEL",
         "LUV",
         "MOTOR"
       ],
+      "oem": "8-97371-5533 / 2C4571-030 / 8-97363-5430 / 197022 / 8-97367-2730 / 197023",
+      "slug": "base-motor-luv-d-max-3-0-diesel",
       "linked_ids": [
+        137,
+        143,
         221,
         1059
-      ],
-      "oem": "8-97363-5430 / 197022 / 8-97367-2730 / 197023",
-      "slug": "base-motor-luv-d-max-3-0-diesel",
-      "variants": [
-        {
-          "codigo_oem": "8-97363-5430",
-          "brand": "Original",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-97367-2730",
-          "brand": "Original",
-          "precio_usd": 40
-        }
       ]
     },
     {
@@ -2609,30 +1907,26 @@ const PRODUCTS_DATA = {
       "keywords": [
         "197035",
         "197036",
+        "2C4571-040",
+        "2M4945-STD",
+        "32674",
+        "8-97136-1350",
+        "8-97371-5534",
         "8-98051-3310",
         "8-98051-3320",
         "BASE",
         "D-MAX",
         "LUV",
-        "MOTOR"
+        "MOTOR",
+        "STD"
       ],
+      "oem": "8-97371-5534 / 2C4571-040 / 8-97136-1350 / 2M4945-STD / 32674.STD / 8-98051-3310 / 197035 / 8-98051-3320 / 197036",
+      "slug": "base-motor-luv-d-max-3-5",
       "linked_ids": [
+        138,
+        144,
         222,
         1060
-      ],
-      "oem": "8-98051-3310 / 197035 / 8-98051-3320 / 197036",
-      "slug": "base-motor-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-98051-3310",
-          "brand": "Original",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-98051-3320",
-          "brand": "Original",
-          "precio_usd": 30
-        }
       ]
     },
     {
@@ -2641,22 +1935,19 @@ const PRODUCTS_DATA = {
       "id": "8c7c7bcd-257e-42a6-9dd1-097ded2140dc",
       "image_path": "./assets/bendix-arranque-luv-2-2.webp",
       "keywords": [
+        "2M4945-020",
+        "32674-020",
+        "8-97136-1352",
         "93170383",
         "ARRANQUE",
         "BENDIX",
         "LUV"
       ],
-      "linked_ids": [
-        225
-      ],
-      "oem": "93170383",
+      "oem": "8-97136-1352 / 2M4945-020 / 32674-020 / 93170383",
       "slug": "bendix-arranque-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "93170383",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        146,
+        225
       ]
     },
     {
@@ -2665,23 +1956,20 @@ const PRODUCTS_DATA = {
       "id": "815eda26-b29e-489f-b323-789fc14ac9e4",
       "image_path": "./assets/bendix-arranque-luv-d-max-2-4.webp",
       "keywords": [
+        "2M4945-020",
+        "32674-020",
+        "8-97136-1352",
         "93170383",
         "ARRANQUE",
         "BENDIX",
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        225
-      ],
-      "oem": "93170383",
+      "oem": "8-97136-1352 / 2M4945-020 / 32674-020 / 93170383",
       "slug": "bendix-arranque-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "93170383",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        146,
+        225
       ]
     },
     {
@@ -2691,22 +1979,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bendix-de-arranque-caribe-2300.webp",
       "keywords": [
         "2300",
+        "2M4945-010",
         "8-94129-1870",
+        "8-97136-1351",
         "ARRANQUE",
         "BENDIX",
         "CARIBE"
       ],
-      "linked_ids": [
-        224
-      ],
-      "oem": "8-94129-1870",
+      "oem": "8-97136-1351 / 2M4945-010 / 8-94129-1870",
       "slug": "bendix-de-arranque-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94129-1870",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        145,
+        224
       ]
     },
     {
@@ -2716,22 +2000,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bendix-de-arranque-caribe-2600.webp",
       "keywords": [
         "2600",
+        "2M4945-010",
         "8-94129-1870",
+        "8-97136-1351",
         "ARRANQUE",
         "BENDIX",
         "CARIBE"
       ],
-      "linked_ids": [
-        224
-      ],
-      "oem": "8-94129-1870",
+      "oem": "8-97136-1351 / 2M4945-010 / 8-94129-1870",
       "slug": "bendix-de-arranque-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94129-1870",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        145,
+        224
       ]
     },
     {
@@ -2740,27 +2020,18 @@ const PRODUCTS_DATA = {
       "id": "254903c4-7966-46a6-a802-dda1a979392e",
       "image_path": "./assets/bobina-encendido-luv-2-2.webp",
       "keywords": [
+        "2M4945-030",
+        "8-97136-1353",
         "93363483",
         "BOBINA",
         "ENCENDIDO",
         "LUV"
       ],
-      "linked_ids": [
-        226
-      ],
-      "oem": "93363483",
+      "oem": "8-97136-1353 / 2M4945-030 / 93363483",
       "slug": "bobina-encendido-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "93363483",
-          "brand": "YUKKAZO",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "93363483",
-          "brand": "TAIKEN",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        147,
+        226
       ]
     },
     {
@@ -2775,17 +2046,11 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TROOPER"
       ],
-      "linked_ids": [
-        228
-      ],
       "oem": "12AY090027N",
       "slug": "bobina-isuzu-rodeo-trooper",
-      "variants": [
-        {
-          "codigo_oem": "12AY090027N",
-          "brand": "YUKKAZO",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        149,
+        228
       ]
     },
     {
@@ -2795,27 +2060,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bobina-luv-d-max-3-5.webp",
       "keywords": [
         "12AM031009N",
+        "2M4945-040",
+        "8-97136-1354",
         "8-97136-3250",
         "BOBINA",
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        227
-      ],
-      "oem": "8-97136-3250 / 12AM031009N",
+      "oem": "8-97136-1354 / 2M4945-040 / 8-97136-3250 / 12AM031009N",
       "slug": "bobina-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97136-3250",
-          "brand": "ARCIERETECH",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-97136-3250",
-          "brand": "MAX POWER",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        148,
+        227
       ]
     },
     {
@@ -2830,17 +2086,11 @@ const PRODUCTS_DATA = {
         "SECA",
         "UNIVERSAL"
       ],
-      "linked_ids": [
-        229
-      ],
       "oem": "MC-2000",
       "slug": "bobina-seca-con-resistencia-universal",
-      "variants": [
-        {
-          "codigo_oem": "MC-2000",
-          "brand": "TANIKEN",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        150,
+        229
       ]
     },
     {
@@ -2858,17 +2108,11 @@ const PRODUCTS_DATA = {
         "OP4005",
         "RM154"
       ],
-      "linked_ids": [
-        231
-      ],
       "oem": "8-94445-6650 / M-154 / 8-94427-3031 / OP4005 / RM154",
       "slug": "bomba-de-aceite-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94445-6650",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        151,
+        231
       ]
     },
     {
@@ -2884,17 +2128,11 @@ const PRODUCTS_DATA = {
         "M-173",
         "OP4015"
       ],
-      "linked_ids": [
-        232
-      ],
       "oem": "8-94459-7301 / M-173 / OP4015",
       "slug": "bomba-de-aceite-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94459-7301",
-          "brand": "Original",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        152,
+        232
       ]
     },
     {
@@ -2910,17 +2148,11 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "OP1019"
       ],
-      "linked_ids": [
-        230
-      ],
       "oem": "8-94215-6370 / OP1019",
       "slug": "bomba-de-aceite-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94215-6370",
-          "brand": "CIC",
-          "precio_usd": 55
-        }
+      "linked_ids": [
+        153,
+        230
       ]
     },
     {
@@ -2929,23 +2161,19 @@ const PRODUCTS_DATA = {
       "id": "8228dd97-0b9e-40d7-9a9f-6a013950547d",
       "image_path": "./assets/bomba-de-aceite-luv-2-2.webp",
       "keywords": [
+        "13144",
         "8-90570-9250",
         "ACEITE",
         "BOMBA",
+        "KL-82115",
         "LUV",
         "OP1013"
       ],
-      "linked_ids": [
-        233
-      ],
-      "oem": "8-90570-9250 / OP1013",
+      "oem": "KL-82115 / 13144 / 8-90570-9250 / OP1013",
       "slug": "bomba-de-aceite-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-90570-9250",
-          "brand": "CIC",
-          "precio_usd": 105
-        }
+      "linked_ids": [
+        154,
+        233
       ]
     },
     {
@@ -2959,39 +2187,14 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "D-MAX",
         "DK191494",
+        "KL-17281",
         "LUV"
       ],
-      "linked_ids": [
-        235
-      ],
-      "oem": "8-97136-4630 / DK191494",
+      "oem": "KL-17281 / 8-97136-4630 / DK191494",
       "slug": "bomba-de-aceite-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97136-4630",
-          "brand": "ANCOV",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97136-4630",
-          "brand": "CIC",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97136-4630",
-          "brand": "TBK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97136-4630",
-          "brand": "DENKO",
-          "precio_usd": 100
-        },
-        {
-          "codigo_oem": "8-97136-4630",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        156,
+        235
       ]
     },
     {
@@ -3001,37 +2204,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-agua-al-luv-d-max-3-5.webp",
       "keywords": [
         "8-97167-5540",
+        "9-09853-0260",
         "AGUA",
         "BOMBA",
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        245
-      ],
-      "oem": "8-97167-5540",
+      "oem": "9-09853-0260 / 8-97167-5540",
       "slug": "bomba-de-agua-al-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "CHINA",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "TAIKEN",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "GMB",
-          "precio_usd": 105
-        }
+      "linked_ids": [
+        164,
+        245
       ]
     },
     {
@@ -3041,6 +2224,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-agua-caribe-2300.webp",
       "keywords": [
         "2300",
+        "5868",
         "8-94146-3260",
         "AGUA",
         "AW-9105",
@@ -3048,17 +2232,11 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GWIS-22A"
       ],
-      "linked_ids": [
-        241
-      ],
-      "oem": "8-94146-3260 / GWIS-22A / AW-9105",
+      "oem": "5868 / 8-94146-3260 / GWIS-22A / AW-9105",
       "slug": "bomba-de-agua-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94146-3260",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        159,
+        241
       ]
     },
     {
@@ -3068,6 +2246,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-agua-caribe-2600.webp",
       "keywords": [
         "2600",
+        "5868K",
         "8-94332-6380",
         "8-97021-7740",
         "8-97081-6230",
@@ -3075,17 +2254,11 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE"
       ],
-      "linked_ids": [
-        242
-      ],
-      "oem": "8-97081-6230 / 8-97021-7740 / 8-94332-6380",
+      "oem": "5868K / 8-97081-6230 / 8-97021-7740 / 8-94332-6380",
       "slug": "bomba-de-agua-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-97081-6230",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        160,
+        242
       ]
     },
     {
@@ -3094,23 +2267,18 @@ const PRODUCTS_DATA = {
       "id": "59eed849-6677-4942-a72e-1a6326c1e83f",
       "image_path": "./assets/bomba-de-agua-izusu-rodeo-3-2.webp",
       "keywords": [
+        "8-94445-5511",
         "8-97061-2800",
         "AGUA",
         "BOMBA",
         "IZUSU",
         "RODEO"
       ],
-      "linked_ids": [
-        249
-      ],
-      "oem": "8-97061-2800",
+      "oem": "8-94445-5511 / 8-97061-2800",
       "slug": "bomba-de-agua-izusu-rodeo-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97061-2800",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        166,
+        249
       ]
     },
     {
@@ -3119,23 +2287,18 @@ const PRODUCTS_DATA = {
       "id": "4358f105-5b8b-4366-9187-bfffd22e0e0a",
       "image_path": "./assets/bomba-de-agua-izusu-trooper-3-2.webp",
       "keywords": [
+        "8-94445-5511",
         "8-97061-2800",
         "AGUA",
         "BOMBA",
         "IZUSU",
         "TROOPER"
       ],
-      "linked_ids": [
-        249
-      ],
-      "oem": "8-97061-2800",
+      "oem": "8-94445-5511 / 8-97061-2800",
       "slug": "bomba-de-agua-izusu-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97061-2800",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        166,
+        249
       ]
     },
     {
@@ -3145,21 +2308,16 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-agua-luv-2-2.webp",
       "keywords": [
         "8-92064-3910",
+        "8-94200-7700",
         "AGUA",
         "BOMBA",
         "LUV"
       ],
-      "linked_ids": [
-        243
-      ],
-      "oem": "8-92064-3910",
+      "oem": "8-94200-7700 / 8-92064-3910",
       "slug": "bomba-de-agua-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-92064-3910",
-          "brand": "Original",
-          "precio_usd": 65
-        }
+      "linked_ids": [
+        162,
+        243
       ]
     },
     {
@@ -3169,22 +2327,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-agua-luv-d-max-2-4.webp",
       "keywords": [
         "8-92064-3910",
+        "8-94200-7700",
         "AGUA",
         "BOMBA",
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        243
-      ],
-      "oem": "8-92064-3910",
+      "oem": "8-94200-7700 / 8-92064-3910",
       "slug": "bomba-de-agua-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-92064-3910",
-          "brand": "Original",
-          "precio_usd": 65
-        }
+      "linked_ids": [
+        162,
+        243
       ]
     },
     {
@@ -3193,25 +2346,22 @@ const PRODUCTS_DATA = {
       "id": "384545d6-18cb-4ec8-a231-93c2e31e2421",
       "image_path": "./assets/bomba-de-freno-4-huecos-caribe-g-2000.webp",
       "keywords": [
+        "16270-AZ",
+        "19011",
         "8-94222-6532",
         "8-94222-6602",
+        "8-94234-0650",
         "BOMBA",
         "CARIBE",
         "FRENO",
         "G-2000",
         "HUECOS"
       ],
-      "linked_ids": [
-        257
-      ],
-      "oem": "8-94222-6602 / 8-94222-6532",
+      "oem": "8-94234-0650 / 16270-AZ / 19011 / 8-94222-6602 / 8-94222-6532",
       "slug": "bomba-de-freno-4-huecos-caribe-g-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94222-6602",
-          "brand": "Original",
-          "precio_usd": 105
-        }
+      "linked_ids": [
+        175,
+        257
       ]
     },
     {
@@ -3221,26 +2371,16 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-freno-caribe-2-3.webp",
       "keywords": [
         "8-94112-6251",
+        "8-97146-5691",
         "BOMBA",
         "CARIBE",
         "FRENO"
       ],
-      "linked_ids": [
-        258
-      ],
-      "oem": "8-94112-6251",
+      "oem": "8-97146-5691 / 8-94112-6251",
       "slug": "bomba-de-freno-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94112-6251",
-          "brand": "PERFECTION",
-          "precio_usd": 70
-        },
-        {
-          "codigo_oem": "8-94112-6251",
-          "brand": "MISAWA",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        173,
+        258
       ]
     },
     {
@@ -3251,21 +2391,16 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94332-9490",
         "8-97038-2500",
+        "8-97146-5721",
         "BOMBA",
         "CARIBE",
         "FRENO"
       ],
-      "linked_ids": [
-        260
-      ],
-      "oem": "8-94332-9490 / 8-97038-2500",
+      "oem": "8-97146-5721 / 8-94332-9490 / 8-97038-2500",
       "slug": "bomba-de-freno-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94332-9490",
-          "brand": "PERFECTION",
-          "precio_usd": 75
-        }
+      "linked_ids": [
+        174,
+        260
       ]
     },
     {
@@ -3276,6 +2411,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2005",
         "2009",
+        "8-94156-6710",
         "8-97301-5320",
         "8-97354-0501",
         "BOMBA",
@@ -3283,22 +2419,11 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "linked_ids": [
-        261
-      ],
-      "oem": "8-97354-0501 / 8-97301-5320",
+      "oem": "8-94156-6710 / 8-97354-0501 / 8-97301-5320",
       "slug": "bomba-de-freno-luv-d-max-2005-2009",
-      "variants": [
-        {
-          "codigo_oem": "8-97354-0501",
-          "brand": "KAIZEN",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97354-0501",
-          "brand": "PGT",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        176,
+        261
       ]
     },
     {
@@ -3309,6 +2434,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2010",
         "2015",
+        "8-92065-9210",
         "8-98006-9410",
         "BASTAGO",
         "BOMBA",
@@ -3316,22 +2442,11 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "linked_ids": [
-        262
-      ],
-      "oem": "8-98006-9410",
+      "oem": "8-92065-9210 / 8-98006-9410",
       "slug": "bomba-de-freno-luv-d-max-2010-2015-con-bastago",
-      "variants": [
-        {
-          "codigo_oem": "8-98006-9410",
-          "brand": "KAIZEN",
-          "precio_usd": 55
-        },
-        {
-          "codigo_oem": "8-98006-9410",
-          "brand": "PGT",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        177,
+        262
       ]
     },
     {
@@ -3341,33 +2456,19 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-gasolina-modulo-luv-d-max.webp",
       "keywords": [
         "8-97943-1830",
+        "95625623",
         "BOMBA",
         "D-MAX",
         "GASOLINA",
+        "ISK-092B",
         "LUV",
         "MODULO"
       ],
-      "linked_ids": [
-        736
-      ],
-      "oem": "8-97943-1830",
+      "oem": "ISK-092B / 95625623 / 8-97943-1830",
       "slug": "bomba-de-gasolina-modulo-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97943-1830",
-          "brand": "ASSTY",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97943-1830",
-          "brand": "JEMAX",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97943-1830",
-          "brand": "NOVATEC",
-          "precio_usd": 90
-        }
+      "linked_ids": [
+        662,
+        736
       ]
     },
     {
@@ -3377,27 +2478,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-gasolina-caribe-2-3.webp",
       "keywords": [
         "8-94146-2570",
+        "8-94384-3141",
         "8-94438-5330",
         "BOMBA",
         "CARIBE",
         "GASOLINA"
       ],
-      "linked_ids": [
-        264
-      ],
-      "oem": "8-94438-5330 / 8-94146-2570",
+      "oem": "8-94384-3141 / 8-94438-5330 / 8-94146-2570",
       "slug": "bomba-de-gasolina-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "JAPON",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "TOMITA CHINA",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        178,
+        264
       ]
     },
     {
@@ -3407,27 +2498,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-gasolina-caribe-2-6.webp",
       "keywords": [
         "8-94146-2570",
+        "8-94384-3141",
         "8-94438-5330",
         "BOMBA",
         "CARIBE",
         "GASOLINA"
       ],
-      "linked_ids": [
-        264
-      ],
-      "oem": "8-94438-5330 / 8-94146-2570",
+      "oem": "8-94384-3141 / 8-94438-5330 / 8-94146-2570",
       "slug": "bomba-de-gasolina-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "JAPON",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "TOMITA CHINA",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        178,
+        264
       ]
     },
     {
@@ -3436,6 +2517,8 @@ const PRODUCTS_DATA = {
       "id": "b13f2c46-19dd-4d98-a875-0d3b5f52b8a4",
       "image_path": "./assets/bomba-de-gasolina-electrica-universal-externa.webp",
       "keywords": [
+        "16361-38010",
+        "8-94158-7641",
         "BOMBA",
         "E8012",
         "ELECTRICA",
@@ -3443,17 +2526,11 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "UNIVERSAL"
       ],
-      "linked_ids": [
-        265
-      ],
-      "oem": "E8012",
+      "oem": "8-94158-7641 / 16361-38010 / E8012",
       "slug": "bomba-de-gasolina-electrica-universal-externa",
-      "variants": [
-        {
-          "codigo_oem": "E8012",
-          "brand": "ONE4CARS",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        180,
+        265
       ]
     },
     {
@@ -3469,17 +2546,11 @@ const PRODUCTS_DATA = {
         "DW-491",
         "GASOLINA"
       ],
-      "linked_ids": [
-        263
-      ],
       "oem": "8-94238-6000 / DW-491",
       "slug": "bomba-gasolina-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94238-6000",
-          "brand": "DAEWHA",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        179,
+        263
       ]
     },
     {
@@ -3499,32 +2570,10 @@ const PRODUCTS_DATA = {
         "PILA",
         "YGGE38261"
       ],
-      "linked_ids": [
-        770
-      ],
       "oem": "25362992 / 17AY031002N / DA16010A / YGGE38261 / EP-3848A",
       "slug": "pila-bomba-de-gasolina-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "25362992",
-          "brand": "NOVATECH",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "25362992",
-          "brand": "YUKKAZO",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "25362992",
-          "brand": "ANCOV",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "25362992",
-          "brand": "CRQ",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        770
       ]
     },
     {
@@ -3535,33 +2584,19 @@ const PRODUCTS_DATA = {
       "keywords": [
         "14150",
         "8-97946-6960",
+        "90233484",
+        "93205394",
         "BOMBA",
         "D-MAX",
         "DIRECCION",
         "DK125390",
         "LUV"
       ],
-      "linked_ids": [
-        256
-      ],
-      "oem": "8-97946-6960 / 14150 / DK125390",
+      "oem": "90233484 / 93205394 / 8-97946-6960 / 14150 / DK125390",
       "slug": "bomba-de-direccion-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97946-6960",
-          "brand": "KAIZEN",
-          "precio_usd": 150
-        },
-        {
-          "codigo_oem": "8-97946-6960",
-          "brand": "STEER",
-          "precio_usd": 200
-        },
-        {
-          "codigo_oem": "8-97946-6960",
-          "brand": "DENKO",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        172,
+        256
       ]
     },
     {
@@ -3572,6 +2607,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2600",
         "8-94315-5591",
+        "8-94374-4195",
         "8-94463-9321",
         "801IZ01C000",
         "BOMBA",
@@ -3580,22 +2616,11 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FM-6211"
       ],
-      "linked_ids": [
-        251
-      ],
-      "oem": "8-94463-9321 / 8-94315-5591 / 801IZ01C000 / FM-6211",
+      "oem": "8-94374-4195 / 8-94463-9321 / 8-94315-5591 / 801IZ01C000 / FM-6211",
       "slug": "bomba-de-clutch-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94463-9321",
-          "brand": "TAIWAN",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-94463-9321",
-          "brand": "FIC",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        167,
+        251
       ]
     },
     {
@@ -3605,26 +2630,22 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-clutch-luv-2300.webp",
       "keywords": [
         "2300",
+        "716CV05A270",
         "8-97022-6142",
         "8-97024-9402",
         "8-97136-4450",
         "8-97201-0070",
+        "8-97365-0130",
         "BOMBA",
         "BOMBIN",
         "CLUTCH",
         "LUV"
       ],
-      "linked_ids": [
-        252
-      ],
-      "oem": "8-97024-9402 / 8-97136-4450 / 8-97022-6142 / 8-97201-0070",
+      "oem": "8-97365-0130 / 716CV05A270 / 8-97024-9402 / 8-97136-4450 / 8-97022-6142 / 8-97201-0070",
       "slug": "bomba-de-clutch-luv-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-97024-9402",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        168,
+        252
       ]
     },
     {
@@ -3633,6 +2654,7 @@ const PRODUCTS_DATA = {
       "id": "86e701aa-9458-4bb1-b78a-b7b6165ecd0f",
       "image_path": "./assets/bomba-de-clutch-luv-d-max-2-4-2-5-3-0.webp",
       "keywords": [
+        "8-97365-0110",
         "8-97943-4070",
         "801CV05A001",
         "BOMBA",
@@ -3641,17 +2663,11 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        253
-      ],
-      "oem": "8-97943-4070 / 801CV05A001",
+      "oem": "8-97365-0110 / 8-97943-4070 / 801CV05A001",
       "slug": "bomba-de-clutch-luv-d-max-2-4-2-5-3-0",
-      "variants": [
-        {
-          "codigo_oem": "8-97943-4070",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        169,
+        253
       ]
     },
     {
@@ -3660,6 +2676,7 @@ const PRODUCTS_DATA = {
       "id": "0854f274-4e36-4eac-8df2-74b35f63e800",
       "image_path": "./assets/bomba-de-clutch-luv-d-max-3-5.webp",
       "keywords": [
+        "8-94203-0840",
         "8-97943-4080",
         "BOMBA",
         "BOMBIN",
@@ -3668,27 +2685,11 @@ const PRODUCTS_DATA = {
         "DK125604",
         "LUV"
       ],
-      "linked_ids": [
-        254
-      ],
-      "oem": "8-97943-4080 / DK125604",
+      "oem": "8-94203-0840 / 8-97943-4080 / DK125604",
       "slug": "bomba-de-clutch-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97943-4080",
-          "brand": "MISAWA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97943-4080",
-          "brand": "PERFECTION",
-          "precio_usd": 90
-        },
-        {
-          "codigo_oem": "8-97943-4080",
-          "brand": "DENKO",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        170,
+        254
       ]
     },
     {
@@ -3697,25 +2698,21 @@ const PRODUCTS_DATA = {
       "id": "ecfb021d-1e7b-4c42-8434-718c230baf41",
       "image_path": "./assets/bombin-clutch-luv-d-max-3-5.webp",
       "keywords": [
+        "8-94360-8011",
         "8-97941-5190",
         "BOMBA",
         "BOMBIN",
         "CLUTCH",
         "D-MAX",
         "LUV",
+        "MC-7032",
         "PF3100"
       ],
-      "linked_ids": [
-        270
-      ],
-      "oem": "8-97941-5190 / PF3100",
+      "oem": "8-94360-8011 / MC-7032 / 8-97941-5190 / PF3100",
       "slug": "bombin-clutch-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97941-5190",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        185,
+        270
       ]
     },
     {
@@ -3724,24 +2721,20 @@ const PRODUCTS_DATA = {
       "id": "ac59f30f-bf3b-41e8-97ce-76a6bc881096",
       "image_path": "./assets/bombin-clutch-trooper-3-2.webp",
       "keywords": [
+        "8-94360-8011",
         "8-97941-5190",
         "BOMBA",
         "BOMBIN",
         "CLUTCH",
+        "MC-7032",
         "PF3100",
         "TROOPER"
       ],
-      "linked_ids": [
-        270
-      ],
-      "oem": "8-97941-5190 / PF3100",
+      "oem": "8-94360-8011 / MC-7032 / 8-97941-5190 / PF3100",
       "slug": "bombin-clutch-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97941-5190",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        185,
+        270
       ]
     },
     {
@@ -3754,22 +2747,17 @@ const PRODUCTS_DATA = {
         "8-94389-1920",
         "8-94460-2100",
         "8-97039-7060",
+        "8-97130-7571",
         "BOMBA",
         "BOMBIN",
         "CARIBE",
         "CLUTCH"
       ],
-      "linked_ids": [
-        266
-      ],
-      "oem": "8-94389-1920 / 8-97039-7060 / 8-94460-2100",
+      "oem": "8-97130-7571 / 8-94389-1920 / 8-97039-7060 / 8-94460-2100",
       "slug": "bombin-de-clutch-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94389-1920",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        181,
+        266
       ]
     },
     {
@@ -3784,17 +2772,11 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "LUV"
       ],
-      "linked_ids": [
-        267
-      ],
       "oem": "8-97184-9930",
       "slug": "bombin-de-clutch-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97184-9930",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        182,
+        267
       ]
     },
     {
@@ -3819,21 +2801,16 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-90530-4520",
         "8-92068-1550",
+        "8-94230-5391",
         "BIELA",
         "BRAZO",
         "LUV"
       ],
-      "linked_ids": [
-        1142
-      ],
-      "oem": "8-92068-1550 / 8-90530-4520",
+      "oem": "8-94230-5391 / 8-92068-1550 / 8-90530-4520",
       "slug": "brazo-de-biela-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-92068-1550",
-          "brand": "Original",
-          "precio_usd": 65
-        }
+      "linked_ids": [
+        187,
+        1142
       ]
     },
     {
@@ -3843,22 +2820,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/brazo-de-biela-luv-d-max-2-4.webp",
       "keywords": [
         "8-90530-1690",
+        "8-94479-7070",
         "BIELA",
         "BRAZO",
         "D-MAX",
+        "K4452",
         "LUV"
       ],
-      "linked_ids": [
-        1182
-      ],
-      "oem": "8-90530-1690",
+      "oem": "8-94479-7070 / K4452 / 8-90530-1690",
       "slug": "brazo-de-biela-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-90530-1690",
-          "brand": "Original",
-          "precio_usd": 65
-        }
+      "linked_ids": [
+        188,
+        1182
       ]
     },
     {
@@ -3867,23 +2840,18 @@ const PRODUCTS_DATA = {
       "id": "3dbd660d-128d-4fe5-9e45-0179f70e143d",
       "image_path": "./assets/brazo-de-biela-luv-d-max-3-5.webp",
       "keywords": [
+        "5-87832-0910",
         "8-97351-1590",
         "BIELA",
         "BRAZO",
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        1093
-      ],
-      "oem": "8-97351-1590",
+      "oem": "5-87832-0910 / 8-97351-1590",
       "slug": "brazo-de-biela-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97351-1590",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        189,
+        1093
       ]
     },
     {
@@ -3893,21 +2861,16 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/buje-de-arana-caribe-2-3.webp",
       "keywords": [
         "8-94226-5572",
+        "8-94241-4670",
         "ARANA",
         "BUJE",
         "CARIBE"
       ],
-      "linked_ids": [
-        273
-      ],
-      "oem": "8-94226-5572",
+      "oem": "8-94241-4670 / 8-94226-5572",
       "slug": "buje-de-arana-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94226-5572",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        192,
+        273
       ]
     },
     {
@@ -3926,33 +2889,13 @@ const PRODUCTS_DATA = {
         "FR-9740",
         "SL-5360"
       ],
-      "linked_ids": [
-        197,
-        274
-      ],
       "oem": "8-94408-8402 / SL-5360 / 8-94408-8401 / 8-94408-8403 / 8-97364-1750 / FR-9740",
       "slug": "buje-de-arana-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "MASARU",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "555 JAPON",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        108,
+        191,
+        197,
+        274
       ]
     },
     {
@@ -3962,22 +2905,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/buje-de-arana-caribe-g-200.webp",
       "keywords": [
         "8-94226-5572",
+        "8-94241-4670",
         "ARANA",
         "BUJE",
         "CARIBE",
         "G-200"
       ],
-      "linked_ids": [
-        273
-      ],
-      "oem": "8-94226-5572",
+      "oem": "8-94241-4670 / 8-94226-5572",
       "slug": "buje-de-arana-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "8-94226-5572",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        192,
+        273
       ]
     },
     {
@@ -3996,33 +2934,13 @@ const PRODUCTS_DATA = {
         "LUV",
         "SL-5360"
       ],
-      "linked_ids": [
-        197,
-        274
-      ],
       "oem": "8-94408-8402 / SL-5360 / 8-94408-8401 / 8-94408-8403 / 8-97364-1750 / FR-9740",
       "slug": "buje-de-arana-luv",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "MASARU",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "555 JAPON",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        108,
+        191,
+        197,
+        274
       ]
     },
     {
@@ -4032,28 +2950,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/buje-de-arana-luv-d-max-2-4.webp",
       "keywords": [
         "117022",
+        "8-94389-2222",
         "8-97364-1730",
         "ARANA",
         "BUJE",
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        276
-      ],
-      "oem": "8-97364-1730 / 117022",
+      "oem": "8-94389-2222 / 8-97364-1730 / 117022",
       "slug": "buje-de-arana-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97364-1730",
-          "brand": "GOMA",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-97364-1730",
-          "brand": "POLIURETANO",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        193,
+        276
       ]
     },
     {
@@ -4073,33 +2981,13 @@ const PRODUCTS_DATA = {
         "LUV",
         "SL-5360"
       ],
-      "linked_ids": [
-        197,
-        274
-      ],
       "oem": "8-94408-8402 / SL-5360 / 8-94408-8401 / 8-94408-8403 / 8-97364-1750 / FR-9740",
       "slug": "buje-de-arana-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "MASARU",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "555 JAPON",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        108,
+        191,
+        197,
+        274
       ]
     },
     {
@@ -4118,33 +3006,13 @@ const PRODUCTS_DATA = {
         "RODEO",
         "SL-5360"
       ],
-      "linked_ids": [
-        197,
-        274
-      ],
       "oem": "8-94408-8402 / SL-5360 / 8-94408-8401 / 8-94408-8403 / 8-97364-1750 / FR-9740",
       "slug": "buje-de-arana-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "MASARU",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "555 JAPON",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        108,
+        191,
+        197,
+        274
       ]
     },
     {
@@ -4163,33 +3031,13 @@ const PRODUCTS_DATA = {
         "SL-5360",
         "TROOPER"
       ],
-      "linked_ids": [
-        197,
-        274
-      ],
       "oem": "8-94408-8402 / SL-5360 / 8-94408-8401 / 8-94408-8403 / 8-97364-1750 / FR-9740",
       "slug": "buje-de-arana-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "MASARU",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "555 JAPON",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94408-8402",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        108,
+        191,
+        197,
+        274
       ]
     },
     {
@@ -4199,22 +3047,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/buje-ballesta-delantero-caribe-2-3.webp",
       "keywords": [
         "8-94223-1680",
+        "8-94389-2102",
         "BALLESTA",
         "BUJE",
         "CARIBE",
         "DELANTERO"
       ],
-      "linked_ids": [
-        278
-      ],
-      "oem": "8-94223-1680",
+      "oem": "8-94389-2102 / 8-94223-1680",
       "slug": "buje-ballesta-delantero-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94223-1680",
-          "brand": "GOMA",
-          "precio_usd": 3
-        }
+      "linked_ids": [
+        195,
+        278
       ]
     },
     {
@@ -4224,23 +3067,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/buje-ballesta-delantero-caribe-g-2000.webp",
       "keywords": [
         "8-94223-1680",
+        "8-94389-2102",
         "BALLESTA",
         "BUJE",
         "CARIBE",
         "DELANTERO",
         "G-2000"
       ],
-      "linked_ids": [
-        278
-      ],
-      "oem": "8-94223-1680",
+      "oem": "8-94389-2102 / 8-94223-1680",
       "slug": "buje-ballesta-delantero-caribe-g-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94223-1680",
-          "brand": "GOMA",
-          "precio_usd": 3
-        }
+      "linked_ids": [
+        195,
+        278
       ]
     },
     {
@@ -4249,29 +3087,21 @@ const PRODUCTS_DATA = {
       "id": "11720daf-dfed-4183-b97e-81c89e1dbbb5",
       "image_path": "./assets/buje-ballesta-trasero-caribe.webp",
       "keywords": [
+        "703CV05A001",
         "8-94234-3190",
+        "8-97235-7861",
+        "8-97944-5680",
         "BALLESTA",
         "BUJE",
         "CARIBE",
         "FR-9304",
         "TRASERO"
       ],
-      "linked_ids": [
-        281
-      ],
-      "oem": "8-94234-3190 / FR-9304",
+      "oem": "8-97235-7861 / 703CV05A001 / 8-97944-5680 / 8-94234-3190 / FR-9304",
       "slug": "buje-ballesta-trasero-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94234-3190",
-          "brand": "GOMA",
-          "precio_usd": 2
-        },
-        {
-          "codigo_oem": "8-94234-3190",
-          "brand": "POLIURETANO",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        196,
+        281
       ]
     },
     {
@@ -4280,29 +3110,21 @@ const PRODUCTS_DATA = {
       "id": "fd536be3-2db8-47dd-8285-d580e6433e02",
       "image_path": "./assets/buje-ballesta-trasero-luv.webp",
       "keywords": [
+        "703CV05A001",
         "8-94234-3190",
+        "8-97235-7861",
+        "8-97944-5680",
         "BALLESTA",
         "BUJE",
         "FR-9304",
         "LUV",
         "TRASERO"
       ],
-      "linked_ids": [
-        281
-      ],
-      "oem": "8-94234-3190 / FR-9304",
+      "oem": "8-97235-7861 / 703CV05A001 / 8-97944-5680 / 8-94234-3190 / FR-9304",
       "slug": "buje-ballesta-trasero-luv",
-      "variants": [
-        {
-          "codigo_oem": "8-94234-3190",
-          "brand": "GOMA",
-          "precio_usd": 2
-        },
-        {
-          "codigo_oem": "8-94234-3190",
-          "brand": "POLIURETANO",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        196,
+        281
       ]
     },
     {
@@ -4311,7 +3133,10 @@ const PRODUCTS_DATA = {
       "id": "ed89f0df-1c1b-416d-9c13-32b45b4e4cdc",
       "image_path": "./assets/buje-ballesta-trasero-luv-dmax.webp",
       "keywords": [
+        "703CV05A001",
         "8-94234-3190",
+        "8-97235-7861",
+        "8-97944-5680",
         "BALLESTA",
         "BUJE",
         "DMAX",
@@ -4319,22 +3144,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRASERO"
       ],
-      "linked_ids": [
-        281
-      ],
-      "oem": "8-94234-3190 / FR-9304",
+      "oem": "8-97235-7861 / 703CV05A001 / 8-97944-5680 / 8-94234-3190 / FR-9304",
       "slug": "buje-ballesta-trasero-luv-dmax",
-      "variants": [
-        {
-          "codigo_oem": "8-94234-3190",
-          "brand": "GOMA",
-          "precio_usd": 2
-        },
-        {
-          "codigo_oem": "8-94234-3190",
-          "brand": "POLIURETANO",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        196,
+        281
       ]
     },
     {
@@ -4343,29 +3157,21 @@ const PRODUCTS_DATA = {
       "id": "2f5bdebc-1336-49bd-8437-66c92d57d27e",
       "image_path": "./assets/buje-ballesta-trasero-rodeo.webp",
       "keywords": [
+        "703CV05A001",
         "8-94234-3190",
+        "8-97235-7861",
+        "8-97944-5680",
         "BALLESTA",
         "BUJE",
         "FR-9304",
         "RODEO",
         "TRASERO"
       ],
-      "linked_ids": [
-        281
-      ],
-      "oem": "8-94234-3190 / FR-9304",
+      "oem": "8-97235-7861 / 703CV05A001 / 8-97944-5680 / 8-94234-3190 / FR-9304",
       "slug": "buje-ballesta-trasero-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94234-3190",
-          "brand": "GOMA",
-          "precio_usd": 2
-        },
-        {
-          "codigo_oem": "8-94234-3190",
-          "brand": "POLIURETANO",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        196,
+        281
       ]
     },
     {
@@ -4374,29 +3180,21 @@ const PRODUCTS_DATA = {
       "id": "299dc237-abc8-4b36-9dea-e52b0e3f1570",
       "image_path": "./assets/buje-ballesta-trasero-trooper.webp",
       "keywords": [
+        "703CV05A001",
         "8-94234-3190",
+        "8-97235-7861",
+        "8-97944-5680",
         "BALLESTA",
         "BUJE",
         "FR-9304",
         "TRASERO",
         "TROOPER"
       ],
-      "linked_ids": [
-        281
-      ],
-      "oem": "8-94234-3190 / FR-9304",
+      "oem": "8-97235-7861 / 703CV05A001 / 8-97944-5680 / 8-94234-3190 / FR-9304",
       "slug": "buje-ballesta-trasero-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-94234-3190",
-          "brand": "GOMA",
-          "precio_usd": 2
-        },
-        {
-          "codigo_oem": "8-94234-3190",
-          "brand": "POLIURETANO",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        196,
+        281
       ]
     },
     {
@@ -4407,28 +3205,20 @@ const PRODUCTS_DATA = {
       "keywords": [
         "117025",
         "8-94171-2741",
+        "8-94419-3791",
         "8-97332-6420",
         "BALLESTA",
         "BUJE",
         "CARIBE",
-        "DELANTERO"
+        "DELANTERO",
+        "DS-1163",
+        "SC-5335"
       ],
-      "linked_ids": [
-        279
-      ],
-      "oem": "8-94171-2741 / 117025 / 8-97332-6420",
+      "oem": "8-94419-3791 / DS-1163 / SC-5335 / 8-94171-2741 / 117025 / 8-97332-6420",
       "slug": "buje-de-ballesta-delantero-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94171-2741",
-          "brand": "METAL/GOMA",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94171-2741",
-          "brand": "METAL/POLIURETANO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        194,
+        279
       ]
     },
     {
@@ -4439,28 +3229,20 @@ const PRODUCTS_DATA = {
       "keywords": [
         "117025",
         "8-94171-2741",
+        "8-94419-3791",
         "8-97332-6420",
         "BALLESTA",
         "BUJE",
         "DELANTERO",
-        "LUV"
+        "DS-1163",
+        "LUV",
+        "SC-5335"
       ],
-      "linked_ids": [
-        279
-      ],
-      "oem": "8-94171-2741 / 117025 / 8-97332-6420",
+      "oem": "8-94419-3791 / DS-1163 / SC-5335 / 8-94171-2741 / 117025 / 8-97332-6420",
       "slug": "buje-de-ballesta-delantero-luv",
-      "variants": [
-        {
-          "codigo_oem": "8-94171-2741",
-          "brand": "METAL/GOMA",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94171-2741",
-          "brand": "METAL/POLIURETANO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        194,
+        279
       ]
     },
     {
@@ -4471,29 +3253,21 @@ const PRODUCTS_DATA = {
       "keywords": [
         "117025",
         "8-94171-2741",
+        "8-94419-3791",
         "8-97332-6420",
         "BALLESTA",
         "BUJE",
         "D-MAX",
         "DELANTERO",
-        "LUV"
+        "DS-1163",
+        "LUV",
+        "SC-5335"
       ],
-      "linked_ids": [
-        279
-      ],
-      "oem": "8-94171-2741 / 117025 / 8-97332-6420",
+      "oem": "8-94419-3791 / DS-1163 / SC-5335 / 8-94171-2741 / 117025 / 8-97332-6420",
       "slug": "buje-de-ballesta-delantero-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-94171-2741",
-          "brand": "METAL/GOMA",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94171-2741",
-          "brand": "METAL/POLIURETANO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        194,
+        279
       ]
     },
     {
@@ -4504,28 +3278,20 @@ const PRODUCTS_DATA = {
       "keywords": [
         "117025",
         "8-94171-2741",
+        "8-94419-3791",
         "8-97332-6420",
         "BALLESTA",
         "BUJE",
         "DELANTERO",
-        "RODEO"
+        "DS-1163",
+        "RODEO",
+        "SC-5335"
       ],
-      "linked_ids": [
-        279
-      ],
-      "oem": "8-94171-2741 / 117025 / 8-97332-6420",
+      "oem": "8-94419-3791 / DS-1163 / SC-5335 / 8-94171-2741 / 117025 / 8-97332-6420",
       "slug": "buje-de-ballesta-delantero-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94171-2741",
-          "brand": "METAL/GOMA",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94171-2741",
-          "brand": "METAL/POLIURETANO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        194,
+        279
       ]
     },
     {
@@ -4536,40 +3302,32 @@ const PRODUCTS_DATA = {
       "keywords": [
         "117025",
         "8-94171-2741",
+        "8-94419-3791",
         "8-97332-6420",
         "BALLESTA",
         "BUJE",
         "DELANTERO",
+        "DS-1163",
+        "SC-5335",
         "TROOPER"
       ],
-      "linked_ids": [
-        279
-      ],
-      "oem": "8-94171-2741 / 117025 / 8-97332-6420",
+      "oem": "8-94419-3791 / DS-1163 / SC-5335 / 8-94171-2741 / 117025 / 8-97332-6420",
       "slug": "buje-de-ballesta-delantero-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-94171-2741",
-          "brand": "METAL/GOMA",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94171-2741",
-          "brand": "METAL/POLIURETANO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        194,
+        279
       ]
     },
     {
       "category": "Buje Cajetin Direccion",
-      "description": "BUJE CAJETIN DIRECCION LUV DMAX",
+      "description": "BUJE CAJETIN DIRECCION LUV D-MAX",
       "id": "6a24d37b-cca4-4bd2-9352-38e3149673b3",
       "image_path": "./assets/buje-cajetin-direccion-luv-d-max.webp",
       "keywords": [
         "BUJE",
         "CAJETIN",
+        "D-MAX",
         "DIRECCION",
-        "DMAX",
         "LUV"
       ],
       "slug": "buje-cajetin-direccion-luv-d-max"
@@ -4582,6 +3340,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "117026",
         "117027",
+        "188003",
+        "8-97018-1251",
         "8-97364-3190",
         "8-97364-3230",
         "BUJE",
@@ -4590,17 +3350,11 @@ const PRODUCTS_DATA = {
         "EJE",
         "LUV"
       ],
-      "linked_ids": [
-        284
-      ],
-      "oem": "8-97364-3190 / 8-97364-3230 / 117026 / 117027",
+      "oem": "8-97018-1251 / 188003 / 8-97364-3190 / 8-97364-3230 / 117026 / 117027",
       "slug": "buje-de-eje-delantero-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97364-3190",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        199,
+        284
       ]
     },
     {
@@ -4610,21 +3364,16 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/buje-meseta-caribe-2-3.webp",
       "keywords": [
         "5-51225-0020",
+        "8-94473-1914",
         "BUJE",
         "CARIBE",
         "MESETA"
       ],
-      "linked_ids": [
-        285
-      ],
-      "oem": "5-51225-0020",
+      "oem": "8-94473-1914 / 5-51225-0020",
       "slug": "buje-meseta-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "5-51225-0020",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        200,
+        285
       ]
     },
     {
@@ -4634,22 +3383,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/buje-meseta-caribe-g-200.webp",
       "keywords": [
         "5-51225-0020",
+        "8-94473-1914",
         "BUJE",
         "CARIBE",
         "G-200",
         "MESETA"
       ],
-      "linked_ids": [
-        285
-      ],
-      "oem": "5-51225-0020",
+      "oem": "8-94473-1914 / 5-51225-0020",
       "slug": "buje-meseta-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "5-51225-0020",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        200,
+        285
       ]
     },
     {
@@ -4660,23 +3404,19 @@ const PRODUCTS_DATA = {
       "keywords": [
         "117010",
         "8-94408-8411",
+        "8-97028-9700",
+        "8-97028-9720",
         "8-97364-1760",
         "BUJE",
         "CARIBE",
         "EXTERNO",
         "MESETA"
       ],
-      "linked_ids": [
-        289
-      ],
-      "oem": "8-94408-8411 / 8-97364-1760 / 117010",
+      "oem": "8-97028-9720 / 8-97028-9700 / 8-94408-8411 / 8-97364-1760 / 117010",
       "slug": "buje-meseta-externo-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8411",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        203,
+        289
       ]
     },
     {
@@ -4688,23 +3428,19 @@ const PRODUCTS_DATA = {
         "117010",
         "4X4",
         "8-94408-8411",
+        "8-97028-9700",
+        "8-97028-9720",
         "8-97364-1760",
         "BUJE",
         "EXTERNO",
         "LUV",
         "MESETA"
       ],
-      "linked_ids": [
-        289
-      ],
-      "oem": "8-94408-8411 / 8-97364-1760 / 117010",
+      "oem": "8-97028-9720 / 8-97028-9700 / 8-94408-8411 / 8-97364-1760 / 117010",
       "slug": "buje-meseta-externo-luv-4x4",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8411",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        203,
+        289
       ]
     },
     {
@@ -4715,6 +3451,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "117010",
         "8-94408-8411",
+        "8-97028-9700",
+        "8-97028-9720",
         "8-97364-1760",
         "BUJE",
         "D-MAX",
@@ -4722,17 +3460,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "linked_ids": [
-        289
-      ],
-      "oem": "8-94408-8411 / 8-97364-1760 / 117010",
+      "oem": "8-97028-9720 / 8-97028-9700 / 8-94408-8411 / 8-97364-1760 / 117010",
       "slug": "buje-meseta-externo-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8411",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        203,
+        289
       ]
     },
     {
@@ -4743,23 +3475,19 @@ const PRODUCTS_DATA = {
       "keywords": [
         "117010",
         "8-94408-8411",
+        "8-97028-9700",
+        "8-97028-9720",
         "8-97364-1760",
         "BUJE",
         "EXTERNO",
         "MESETA",
         "RODEO"
       ],
-      "linked_ids": [
-        289
-      ],
-      "oem": "8-94408-8411 / 8-97364-1760 / 117010",
+      "oem": "8-97028-9720 / 8-97028-9700 / 8-94408-8411 / 8-97364-1760 / 117010",
       "slug": "buje-meseta-externo-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8411",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        203,
+        289
       ]
     },
     {
@@ -4770,23 +3498,19 @@ const PRODUCTS_DATA = {
       "keywords": [
         "117010",
         "8-94408-8411",
+        "8-97028-9700",
+        "8-97028-9720",
         "8-97364-1760",
         "BUJE",
         "EXTERNO",
         "MESETA",
         "TROOPER"
       ],
-      "linked_ids": [
-        289
-      ],
-      "oem": "8-94408-8411 / 8-97364-1760 / 117010",
+      "oem": "8-97028-9720 / 8-97028-9700 / 8-94408-8411 / 8-97364-1760 / 117010",
       "slug": "buje-meseta-externo-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8411",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        203,
+        289
       ]
     },
     {
@@ -4795,24 +3519,24 @@ const PRODUCTS_DATA = {
       "id": "8864853d-3cca-4b25-839b-bfeedb4b05e0",
       "image_path": "./assets/buje-meseta-interno-caribe-2-6.webp",
       "keywords": [
+        "197029",
+        "197030",
+        "8-94135-9851",
+        "8-94229-3002",
         "8-94408-8420",
+        "8-94434-2081",
         "8-97364-1770",
+        "8-98073-0630",
         "BUJE",
         "CARIBE",
         "INTERNO",
         "MESETA"
       ],
-      "linked_ids": [
-        290
-      ],
-      "oem": "8-94408-8420 / 8-97364-1770",
+      "oem": "8-94135-9851 / 8-94434-2081 / 8-98073-0630 / 197029 / 197030 / 8-94229-3002 / 8-94408-8420 / 8-97364-1770",
       "slug": "buje-meseta-interno-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8420",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        204,
+        290
       ]
     },
     {
@@ -4821,25 +3545,25 @@ const PRODUCTS_DATA = {
       "id": "8839d864-0c93-4273-ab1f-66a24d05ae6c",
       "image_path": "./assets/buje-meseta-interno-luv-4x4.webp",
       "keywords": [
+        "197029",
+        "197030",
         "4X4",
+        "8-94135-9851",
+        "8-94229-3002",
         "8-94408-8420",
+        "8-94434-2081",
         "8-97364-1770",
+        "8-98073-0630",
         "BUJE",
         "INTERNO",
         "LUV",
         "MESETA"
       ],
-      "linked_ids": [
-        290
-      ],
-      "oem": "8-94408-8420 / 8-97364-1770",
+      "oem": "8-94135-9851 / 8-94434-2081 / 8-98073-0630 / 197029 / 197030 / 8-94229-3002 / 8-94408-8420 / 8-97364-1770",
       "slug": "buje-meseta-interno-luv-4x4",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8420",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        204,
+        290
       ]
     },
     {
@@ -4848,25 +3572,25 @@ const PRODUCTS_DATA = {
       "id": "4afdb5ba-8945-42a2-a08e-79f86cec54b5",
       "image_path": "./assets/buje-meseta-interno-luv-d-max-3-5.webp",
       "keywords": [
+        "197029",
+        "197030",
+        "8-94135-9851",
+        "8-94229-3002",
         "8-94408-8420",
+        "8-94434-2081",
         "8-97364-1770",
+        "8-98073-0630",
         "BUJE",
         "D-MAX",
         "INTERNO",
         "LUV",
         "MESETA"
       ],
-      "linked_ids": [
-        290
-      ],
-      "oem": "8-94408-8420 / 8-97364-1770",
+      "oem": "8-94135-9851 / 8-94434-2081 / 8-98073-0630 / 197029 / 197030 / 8-94229-3002 / 8-94408-8420 / 8-97364-1770",
       "slug": "buje-meseta-interno-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8420",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        204,
+        290
       ]
     },
     {
@@ -4875,24 +3599,24 @@ const PRODUCTS_DATA = {
       "id": "f94e147e-68c0-48a7-9bc4-20018cd832a2",
       "image_path": "./assets/buje-meseta-interno-rodeo.webp",
       "keywords": [
+        "197029",
+        "197030",
+        "8-94135-9851",
+        "8-94229-3002",
         "8-94408-8420",
+        "8-94434-2081",
         "8-97364-1770",
+        "8-98073-0630",
         "BUJE",
         "INTERNO",
         "MESETA",
         "RODEO"
       ],
-      "linked_ids": [
-        290
-      ],
-      "oem": "8-94408-8420 / 8-97364-1770",
+      "oem": "8-94135-9851 / 8-94434-2081 / 8-98073-0630 / 197029 / 197030 / 8-94229-3002 / 8-94408-8420 / 8-97364-1770",
       "slug": "buje-meseta-interno-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8420",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        204,
+        290
       ]
     },
     {
@@ -4901,24 +3625,24 @@ const PRODUCTS_DATA = {
       "id": "e280f9e3-dd82-47e0-ad4e-5361d3e70594",
       "image_path": "./assets/buje-meseta-interno-trooper-3-2.webp",
       "keywords": [
+        "197029",
+        "197030",
+        "8-94135-9851",
+        "8-94229-3002",
         "8-94408-8420",
+        "8-94434-2081",
         "8-97364-1770",
+        "8-98073-0630",
         "BUJE",
         "INTERNO",
         "MESETA",
         "TROOPER"
       ],
-      "linked_ids": [
-        290
-      ],
-      "oem": "8-94408-8420 / 8-97364-1770",
+      "oem": "8-94135-9851 / 8-94434-2081 / 8-98073-0630 / 197029 / 197030 / 8-94229-3002 / 8-94408-8420 / 8-97364-1770",
       "slug": "buje-meseta-interno-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-8420",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        204,
+        290
       ]
     },
     {
@@ -4930,21 +3654,16 @@ const PRODUCTS_DATA = {
         "117001",
         "4X2",
         "8-94136-9030",
+        "8-97236-3000",
         "BUJE",
         "LUV",
         "MESETA"
       ],
-      "linked_ids": [
-        286
-      ],
-      "oem": "8-94136-9030 / 117001",
+      "oem": "8-97236-3000 / 8-94136-9030 / 117001",
       "slug": "buje-meseta-luv-4x2",
-      "variants": [
-        {
-          "codigo_oem": "8-94136-9030",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        201,
+        286
       ]
     },
     {
@@ -4954,28 +3673,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/buje-meseta-luv-d-max-2-4.webp",
       "keywords": [
         "117020",
+        "8-94241-7670",
         "8-97364-1740",
         "BUJE",
         "D-MAX",
         "LUV",
         "MESETA"
       ],
-      "linked_ids": [
-        287
-      ],
-      "oem": "8-97364-1740 / 117020",
+      "oem": "8-94241-7670 / 8-97364-1740 / 117020",
       "slug": "buje-meseta-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97364-1740",
-          "brand": "GOMA",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-97364-1740",
-          "brand": "POLIURETANO",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        202,
+        287
       ]
     },
     {
@@ -4984,6 +3693,7 @@ const PRODUCTS_DATA = {
       "id": "48080079-a3fc-482b-8721-f3709b241d4c",
       "image_path": "./assets/bujia-champion-caribe.webp",
       "keywords": [
+        "197037",
         "3043",
         "9-82513-1030",
         "BUJIA",
@@ -4993,27 +3703,11 @@ const PRODUCTS_DATA = {
         "N9YC",
         "W20EP-U"
       ],
-      "linked_ids": [
-        292
-      ],
-      "oem": "9-82513-1030 / 3043 / F6RTC-11 / N9YC / W20EP-U",
+      "oem": "197037 / 9-82513-1030 / 3043 / F6RTC-11 / N9YC / W20EP-U",
       "slug": "bujia-champion-caribe",
-      "variants": [
-        {
-          "codigo_oem": "9-82513-1030",
-          "brand": "DENSO",
-          "precio_usd": 3.75
-        },
-        {
-          "codigo_oem": "9-82513-1030",
-          "brand": "CHAMPION",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "9-82513-1030",
-          "brand": "NOVATEC",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        207,
+        292
       ]
     },
     {
@@ -5022,6 +3716,7 @@ const PRODUCTS_DATA = {
       "id": "43f678c6-00df-448a-8a79-b8900ceb7136",
       "image_path": "./assets/bujia-champion-luv-2300.webp",
       "keywords": [
+        "197037",
         "2300",
         "3043",
         "9-82513-1030",
@@ -5032,27 +3727,11 @@ const PRODUCTS_DATA = {
         "N9YC",
         "W20EP-U"
       ],
-      "linked_ids": [
-        292
-      ],
-      "oem": "9-82513-1030 / 3043 / F6RTC-11 / N9YC / W20EP-U",
+      "oem": "197037 / 9-82513-1030 / 3043 / F6RTC-11 / N9YC / W20EP-U",
       "slug": "bujia-champion-luv-2300",
-      "variants": [
-        {
-          "codigo_oem": "9-82513-1030",
-          "brand": "DENSO",
-          "precio_usd": 3.75
-        },
-        {
-          "codigo_oem": "9-82513-1030",
-          "brand": "CHAMPION",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "9-82513-1030",
-          "brand": "NOVATEC",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        207,
+        292
       ]
     },
     {
@@ -5065,22 +3744,17 @@ const PRODUCTS_DATA = {
         "BUJIA",
         "D-MAX",
         "DENSO",
+        "GU-224",
         "IK20TT",
         "IRIDIO",
         "LUV",
         "PUNTA"
       ],
-      "linked_ids": [
-        297
-      ],
-      "oem": "IK20TT / 4702",
+      "oem": "GU-224 / IK20TT / 4702",
       "slug": "bujia-denso-punta-iridio-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "IK20TT",
-          "brand": "DENSO",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        210,
+        297
       ]
     },
     {
@@ -5090,6 +3764,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bujia-denso-punta-platino-luv-d-max.webp",
       "keywords": [
         "4504",
+        "ALS4414",
         "BUJIA",
         "D-MAX",
         "DENSO",
@@ -5098,17 +3773,11 @@ const PRODUCTS_DATA = {
         "PLATINO",
         "PUNTA"
       ],
-      "linked_ids": [
-        296
-      ],
-      "oem": "PK20TT / 4504",
+      "oem": "ALS4414 / PK20TT / 4504",
       "slug": "bujia-denso-punta-platino-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "PK20TT",
-          "brand": "DENSO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        209,
+        296
       ]
     },
     {
@@ -5118,23 +3787,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bujia-luv-d-max-3-5.webp",
       "keywords": [
         "3121",
+        "8-94386-4861",
         "8-97125-9690",
         "BUJIA",
         "D-MAX",
         "K20PR-U11",
         "LUV"
       ],
-      "linked_ids": [
-        295
-      ],
-      "oem": "K20PR-U11 / 8-97125-9690; 3121",
+      "oem": "8-94386-4861 / K20PR-U11 / 8-97125-9690; 3121",
       "slug": "bujia-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "K20PR-U11",
-          "brand": "DENSO",
-          "precio_usd": 3.5
-        }
+      "linked_ids": [
+        208,
+        295
       ]
     },
     {
@@ -5143,6 +3807,7 @@ const PRODUCTS_DATA = {
       "id": "f2b7bd0d-ffa9-45d6-ad7d-9a03fd953ac5",
       "image_path": "./assets/bujia-denso-caribe.webp",
       "keywords": [
+        "197037",
         "3043",
         "9-82513-1030",
         "BUJIA",
@@ -5152,27 +3817,11 @@ const PRODUCTS_DATA = {
         "N9YC",
         "W20EP-U"
       ],
-      "linked_ids": [
-        292
-      ],
-      "oem": "9-82513-1030 / 3043 / F6RTC-11 / N9YC / W20EP-U",
+      "oem": "197037 / 9-82513-1030 / 3043 / F6RTC-11 / N9YC / W20EP-U",
       "slug": "bujia-denso-caribe",
-      "variants": [
-        {
-          "codigo_oem": "9-82513-1030",
-          "brand": "DENSO",
-          "precio_usd": 3.75
-        },
-        {
-          "codigo_oem": "9-82513-1030",
-          "brand": "CHAMPION",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "9-82513-1030",
-          "brand": "NOVATEC",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        207,
+        292
       ]
     },
     {
@@ -5183,23 +3832,18 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2300",
         "8-94433-3641",
+        "8-94438-3000",
         "BUJIA",
         "CABLE",
         "CABLES",
         "JUEGO",
         "LUV"
       ],
-      "linked_ids": [
-        300
-      ],
-      "oem": "8-94433-3641",
+      "oem": "8-94438-3000 / 8-94433-3641",
       "slug": "juego-de-cable-luv-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94433-3641",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        213,
+        300
       ]
     },
     {
@@ -5209,22 +3853,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/juego-de-cables-bujia-luv-2-2.webp",
       "keywords": [
         "8-92066-0290",
+        "8-97231-7180",
         "BUJIA",
         "CABLES",
         "JUEGO",
         "LUV"
       ],
-      "linked_ids": [
-        301
-      ],
-      "oem": "8-92066-0290",
+      "oem": "8-97231-7180 / 8-92066-0290",
       "slug": "juego-de-cables-bujia-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-92066-0290",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        214,
+        301
       ]
     },
     {
@@ -5234,23 +3873,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/juego-de-cables-bujia-luv-d-max-2-4.webp",
       "keywords": [
         "8-92066-0310",
+        "8-94476-1270",
         "BUJIA",
         "CABLES",
         "D-MAX",
         "JUEGO",
         "LUV"
       ],
-      "linked_ids": [
-        302
-      ],
-      "oem": "8-92066-0310",
+      "oem": "8-94476-1270 / 8-92066-0310",
       "slug": "juego-de-cables-bujia-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-92066-0310",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        215,
+        302
       ]
     },
     {
@@ -5260,22 +3894,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/juego-de-cables-caribe.webp",
       "keywords": [
         "8-94433-3641",
+        "8-94438-3000",
         "BUJIA",
         "CABLES",
         "CARIBE",
         "JUEGO"
       ],
-      "linked_ids": [
-        300
-      ],
-      "oem": "8-94433-3641",
+      "oem": "8-94438-3000 / 8-94433-3641",
       "slug": "juego-de-cables-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94433-3641",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        213,
+        300
       ]
     },
     {
@@ -5284,23 +3913,19 @@ const PRODUCTS_DATA = {
       "id": "WhatsApp Image 2026-02-09 at 1.44.31 PM",
       "image_path": "./assets/cadena-de-tiempo-caribe-g-200.webp",
       "keywords": [
+        "197017",
         "8-94213-8170",
+        "8-97216-7541",
         "CADENA",
         "CARIBE",
         "G-200",
         "TIEMPO"
       ],
-      "linked_ids": [
-        305
-      ],
-      "oem": "8-94213-8170",
+      "oem": "8-97216-7541 / 197017 / 8-94213-8170",
       "slug": "cadena-de-tiempo-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "8-94213-8170",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        218,
+        305
       ]
     },
     {
@@ -5309,6 +3934,7 @@ const PRODUCTS_DATA = {
       "id": "0417eba4-bf0b-46f8-8a48-ac189cd2a99f",
       "image_path": "./assets/cadena-transfer-luv-d-max-3-0-3-5.webp",
       "keywords": [
+        "197033",
         "8-97323-1770",
         "CADENA",
         "D-MAX",
@@ -5316,17 +3942,11 @@ const PRODUCTS_DATA = {
         "TRANSFER",
         "TRASNFER"
       ],
-      "linked_ids": [
-        306
-      ],
-      "oem": "8-97323-1770",
+      "oem": "197033 / 8-97323-1770",
       "slug": "cadena-transfer-luv-d-max-3-0-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97323-1770",
-          "brand": "Original",
-          "precio_usd": 165
-        }
+      "linked_ids": [
+        219,
+        306
       ]
     },
     {
@@ -5335,6 +3955,7 @@ const PRODUCTS_DATA = {
       "id": "6650bae9-8193-4ff1-bf0c-adc69c49e02e",
       "image_path": "./assets/cajetin-direccion-luv-d-max-2005-2009.webp",
       "keywords": [
+        "197080",
         "2005",
         "2009",
         "8-97943-5190",
@@ -5344,17 +3965,11 @@ const PRODUCTS_DATA = {
         "KC0005",
         "LUV"
       ],
-      "linked_ids": [
-        309
-      ],
-      "oem": "8-97943-5190 / KC0005",
+      "oem": "197080 / 8-97943-5190 / KC0005",
       "slug": "cajetin-direccion-luv-d-max-2005-2009",
-      "variants": [
-        {
-          "codigo_oem": "8-97943-5190",
-          "brand": "KAIZEN",
-          "precio_usd": 260
-        }
+      "linked_ids": [
+        223,
+        309
       ]
     },
     {
@@ -5365,6 +3980,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2010",
         "2015",
+        "8-94129-1870",
         "8-98101-7800",
         "C0034",
         "CAJETIN",
@@ -5372,17 +3988,11 @@ const PRODUCTS_DATA = {
         "DIRECCION",
         "LUV"
       ],
-      "linked_ids": [
-        310
-      ],
-      "oem": "8-98101-7800 / C0034",
+      "oem": "8-94129-1870 / 8-98101-7800 / C0034",
       "slug": "cajetin-direccion-luv-d-max-2010-2015",
-      "variants": [
-        {
-          "codigo_oem": "8-98101-7800",
-          "brand": "TOMITA",
-          "precio_usd": 315
-        }
+      "linked_ids": [
+        224,
+        310
       ]
     },
     {
@@ -5393,19 +4003,14 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94159-1920",
         "CAMARA",
-        "CARIBE"
+        "CARIBE",
+        "MC-2000"
       ],
-      "linked_ids": [
-        313
-      ],
-      "oem": "8-94159-1920",
+      "oem": "MC-2000 / 8-94159-1920",
       "slug": "camara-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94159-1920",
-          "brand": "Original",
-          "precio_usd": 565
-        }
+      "linked_ids": [
+        229,
+        313
       ]
     },
     {
@@ -5420,19 +4025,14 @@ const PRODUCTS_DATA = {
         "8-97041-4240",
         "ARRANQUE",
         "CARBONERA",
-        "CARIBE"
+        "CARIBE",
+        "OP1029"
       ],
-      "linked_ids": [
-        319
-      ],
-      "oem": "5-81118-0220 / 8-94377-2580 / 1962 / 8-97041-4240",
+      "oem": "OP1029 / 5-81118-0220 / 8-94377-2580 / 1962 / 8-97041-4240",
       "slug": "carbonera-caribe",
-      "variants": [
-        {
-          "codigo_oem": "5-81118-0220",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        238,
+        319
       ]
     },
     {
@@ -5443,22 +4043,18 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2300",
         "68-8203",
+        "8-97103-8640",
         "ARRANQUE",
         "CARBON",
         "CARBONES",
-        "CARIBE"
+        "CARIBE",
+        "OP1039"
       ],
-      "linked_ids": [
-        320
-      ],
-      "oem": "68-8203",
+      "oem": "8-97103-8640 / OP1039 / 68-8203",
       "slug": "carbon-de-arranque-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "68-8203",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        239,
+        320
       ]
     },
     {
@@ -5468,28 +4064,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/carburador-caribe-2-3-luv-2-3.webp",
       "keywords": [
         "8-94159-2140",
+        "8-94224-8940",
         "8-94337-6320",
         "CARBURADOR",
         "CARIBE",
         "LUV",
         "NK5630"
       ],
-      "linked_ids": [
-        321
-      ],
-      "oem": "8-94159-2140 / NK5630 / 8-94337-6320",
+      "oem": "8-94224-8940 / 8-94159-2140 / NK5630 / 8-94337-6320",
       "slug": "carburador-caribe-2-3-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94159-2140",
-          "brand": "TOMITA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94159-2140",
-          "brand": "RALLY",
-          "precio_usd": 165
-        }
+      "linked_ids": [
+        240,
+        321
       ]
     },
     {
@@ -5499,7 +4085,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/ciguenal-caribe-2-3.webp",
       "keywords": [
         "CARIBE",
-        "CIGUENAL"
+        "CIGUE"
       ],
       "slug": "ciguenal-caribe-2-3"
     },
@@ -5509,7 +4095,7 @@ const PRODUCTS_DATA = {
       "id": "fa4d3973-453c-412f-9cb7-d31200c3dda9",
       "image_path": "./assets/ciguenal-luv-2-3.webp",
       "keywords": [
-        "CIGUENAL",
+        "CIGUE",
         "LUV"
       ],
       "slug": "ciguenal-luv-2-3"
@@ -5525,17 +4111,11 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        328
-      ],
       "oem": "8-93281-9990",
       "slug": "ciguenal-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-93281-9990",
-          "brand": "Original",
-          "precio_usd": 700
-        }
+      "linked_ids": [
+        247,
+        328
       ]
     },
     {
@@ -5545,6 +4125,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/cilindro-freno-caribe-2300.webp",
       "keywords": [
         "2300",
+        "8-12482-6900",
         "8-94230-5411",
         "8-94230-5413",
         "8-94230-5415",
@@ -5554,17 +4135,11 @@ const PRODUCTS_DATA = {
         "CILINDRO",
         "FRENO"
       ],
-      "linked_ids": [
-        330
-      ],
-      "oem": "8-94230-5411 / 8-94230-5413 / 8-94230-5415 / 8-97127-6160 / 8-97309-9540",
+      "oem": "8-12482-6900 / 8-94230-5411 / 8-94230-5413 / 8-94230-5415 / 8-97127-6160 / 8-97309-9540",
       "slug": "cilindro-freno-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94230-5411",
-          "brand": "PERFECTION",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        250,
+        330
       ]
     },
     {
@@ -5573,23 +4148,21 @@ const PRODUCTS_DATA = {
       "id": "899ce35f-62ed-43e7-85bb-9548a995021b",
       "image_path": "./assets/cilindro-freno-luv-d-max-2-4.webp",
       "keywords": [
+        "8-94315-5591",
+        "8-94463-9321",
         "8-97301-4780",
+        "801IZ01C000",
         "CILINDRO",
         "D-MAX",
+        "FM-6211",
         "FRENO",
         "LUV"
       ],
-      "linked_ids": [
-        331
-      ],
-      "oem": "8-97301-4780",
+      "oem": "8-94463-9321 / 8-94315-5591 / 801IZ01C000 / FM-6211 / 8-97301-4780",
       "slug": "cilindro-freno-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97301-4780",
-          "brand": "JT",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        251,
+        331
       ]
     },
     {
@@ -5598,23 +4171,21 @@ const PRODUCTS_DATA = {
       "id": "591d4b4b-1853-4d10-8759-b70051557300",
       "image_path": "./assets/cilindro-freno-luv-d-max-3-5.webp",
       "keywords": [
+        "8-97022-6142",
+        "8-97024-9402",
+        "8-97136-4450",
+        "8-97201-0070",
         "8-97319-3000",
         "CILINDRO",
         "D-MAX",
         "FRENO",
         "LUV"
       ],
-      "linked_ids": [
-        332
-      ],
-      "oem": "8-97319-3000",
+      "oem": "8-97024-9402 / 8-97136-4450 / 8-97022-6142 / 8-97201-0070 / 8-97319-3000",
       "slug": "cilindro-freno-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97319-3000",
-          "brand": "PERFECTION",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        252,
+        332
       ]
     },
     {
@@ -5625,30 +4196,24 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2131506L",
         "2131506R",
+        "8-94222-6532",
+        "8-94222-6602",
         "8-94424-0431",
         "8-94424-0441",
+        "8-97943-4070",
+        "801CV05A001",
         "CARIBE",
         "COCUYO",
         "CUADRADO",
         "FARO"
       ],
+      "oem": "8-97943-4070 / 801CV05A001 / 8-94222-6602 / 8-94222-6532 / 8-94424-0431 / 2131506R / 8-94424-0441 / 2131506L",
+      "slug": "cocuyo-caribe-faro-cuadrado",
       "linked_ids": [
+        253,
+        257,
         333,
         1102
-      ],
-      "oem": "8-94424-0431 / 2131506R / 8-94424-0441 / 2131506L",
-      "slug": "cocuyo-caribe-faro-cuadrado",
-      "variants": [
-        {
-          "codigo_oem": "8-94424-0431",
-          "brand": "Original",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94424-0441",
-          "brand": "Original",
-          "precio_usd": 25
-        }
       ]
     },
     {
@@ -5659,29 +4224,20 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94324-1040",
         "8-94324-1050",
+        "8-97104-0200",
         "97-02",
         "COCUYO",
         "DELANTERO",
         "FARO",
         "LUV"
       ],
+      "oem": "8-97104-0200 / 8-94324-1040 / 8-94324-1050",
+      "slug": "cocuyo-faro-delantero-luv-97-02",
       "linked_ids": [
+        255,
+        259,
         335,
         1105
-      ],
-      "oem": "8-94324-1040 / 8-94324-1050",
-      "slug": "cocuyo-faro-delantero-luv-97-02",
-      "variants": [
-        {
-          "codigo_oem": "8-94324-1040",
-          "brand": "Original",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-94324-1050",
-          "brand": "Original",
-          "precio_usd": 35
-        }
       ]
     },
     {
@@ -5693,35 +4249,22 @@ const PRODUCTS_DATA = {
         "2000",
         "24TK308B2",
         "5-31321-0033",
+        "8-97301-5320",
+        "8-97354-0501",
         "9-00095-0401",
         "CARIBE",
         "COLLARIN",
         "N2100H",
         "RCT38SL1"
       ],
+      "oem": "5-31321-0033 / 8-97354-0501 / 8-97301-5320 / N2100H / 9-00095-0401 / 24TK308B2 / RCT38SL1",
+      "slug": "collarin-caribe-2000",
       "linked_ids": [
+        127,
         211,
+        261,
         337,
         868
-      ],
-      "oem": "5-31321-0033 / N2100H / 9-00095-0401 / 24TK308B2 / RCT38SL1",
-      "slug": "collarin-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "5-31321-0033",
-          "brand": "Original",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "5-31321-0033",
-          "brand": "Original",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "9-00095-0401",
-          "brand": "Original",
-          "precio_usd": 15
-        }
       ]
     },
     {
@@ -5733,35 +4276,22 @@ const PRODUCTS_DATA = {
         "2300",
         "24TK308B2",
         "5-31321-0033",
+        "8-97301-5320",
+        "8-97354-0501",
         "9-00095-0401",
         "CARIBE",
         "COLLARIN",
         "N2100H",
         "RCT38SL1"
       ],
+      "oem": "5-31321-0033 / 8-97354-0501 / 8-97301-5320 / N2100H / 9-00095-0401 / 24TK308B2 / RCT38SL1",
+      "slug": "collarin-caribe-2300",
       "linked_ids": [
+        127,
         211,
+        261,
         337,
         868
-      ],
-      "oem": "5-31321-0033 / N2100H / 9-00095-0401 / 24TK308B2 / RCT38SL1",
-      "slug": "collarin-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "5-31321-0033",
-          "brand": "Original",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "5-31321-0033",
-          "brand": "Original",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "9-00095-0401",
-          "brand": "Original",
-          "precio_usd": 15
-        }
       ]
     },
     {
@@ -5777,27 +4307,10 @@ const PRODUCTS_DATA = {
         "COLLARIN",
         "RCT422SA1FG"
       ],
-      "linked_ids": [
-        870
-      ],
       "oem": "8-94379-4990 / 613012 / RCT422SA1FG",
       "slug": "collarin-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94379-4990",
-          "brand": "PERFECTION",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-94379-4990",
-          "brand": "ICHIBAN",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94379-4990",
-          "brand": "KOYO",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        870
       ]
     },
     {
@@ -5808,20 +4321,15 @@ const PRODUCTS_DATA = {
       "keywords": [
         "48TKB3204RI",
         "8-97209-1970",
+        "8-98006-9410",
         "COLLARIN",
         "LUV"
       ],
-      "linked_ids": [
-        338
-      ],
-      "oem": "8-97209-1970 / 48TKB3204RI",
+      "oem": "8-98006-9410 / 8-97209-1970 / 48TKB3204RI",
       "slug": "collarin-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97209-1970",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        262,
+        338
       ]
     },
     {
@@ -5832,21 +4340,16 @@ const PRODUCTS_DATA = {
       "keywords": [
         "48TKB3204RI",
         "8-97209-1970",
+        "8-98006-9410",
         "COLLARIN",
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        338
-      ],
-      "oem": "8-97209-1970 / 48TKB3204RI",
+      "oem": "8-98006-9410 / 8-97209-1970 / 48TKB3204RI",
       "slug": "collarin-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97209-1970",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        262,
+        338
       ]
     },
     {
@@ -5855,22 +4358,18 @@ const PRODUCTS_DATA = {
       "id": "9367ac22-adad-4090-bd11-91206d485633",
       "image_path": "./assets/collarin-luv-d-max-3-5.webp",
       "keywords": [
+        "8-94146-2570",
         "8-94377-4171",
+        "8-94438-5330",
         "COLLARIN",
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        340
-      ],
-      "oem": "8-94377-4171",
+      "oem": "8-94438-5330 / 8-94146-2570 / 8-94377-4171",
       "slug": "collarin-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-94377-4171",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        264,
+        340
       ]
     },
     {
@@ -5879,21 +4378,17 @@ const PRODUCTS_DATA = {
       "id": "fb2d0414-950b-4c6b-b162-aef23eb7bc49",
       "image_path": "./assets/collarin-trooper-3-2.webp",
       "keywords": [
+        "8-94146-2570",
         "8-94377-4171",
+        "8-94438-5330",
         "COLLARIN",
         "TROOPER"
       ],
-      "linked_ids": [
-        340
-      ],
-      "oem": "8-94377-4171",
+      "oem": "8-94438-5330 / 8-94146-2570 / 8-94377-4171",
       "slug": "collarin-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94377-4171",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        264,
+        340
       ]
     },
     {
@@ -5909,17 +4404,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "ROLINERA"
       ],
-      "linked_ids": [
-        873
-      ],
       "oem": "8-94101-2430 / 48TKA3214",
       "slug": "rolinera-collarin-luv-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94101-2430",
-          "brand": "TRIX",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        741,
+        873
       ]
     },
     {
@@ -6071,23 +4560,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/condensador-caribe-g-200.webp",
       "keywords": [
         "8-94208-4180",
+        "8-97943-5180",
         "CARIBE",
         "CND-204",
         "CONDENSADOR",
         "G-200",
         "SC-158"
       ],
-      "linked_ids": [
-        394
-      ],
-      "oem": "8-94208-4180 / CND-204 / SC-158",
+      "oem": "8-97943-5180 / 8-94208-4180 / CND-204 / SC-158",
       "slug": "condensador-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "8-94208-4180",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        308,
+        394
       ]
     },
     {
@@ -6097,23 +4581,20 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/conector-de-bobina-luv-d-max-3-5.webp",
       "keywords": [
         "13AY031005N",
+        "8-94146-3260",
         "8-97136-3250B",
+        "AW-9105",
         "BOBINA",
         "CONECTOR",
         "D-MAX",
+        "GWIS-22A",
         "LUV"
       ],
-      "linked_ids": [
-        322
-      ],
-      "oem": "8-97136-3250B / 13AY031005N",
+      "oem": "8-94146-3260 / GWIS-22A / AW-9105 / 8-97136-3250B / 13AY031005N",
       "slug": "conector-de-bobina-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97136-3250B",
-          "brand": "YUKAZO",
-          "precio_usd": 55
-        }
+      "linked_ids": [
+        241,
+        322
       ]
     },
     {
@@ -6122,22 +4603,17 @@ const PRODUCTS_DATA = {
       "id": "d9b9e608-16ac-4abd-aa4e-74a15e3bafec",
       "image_path": "./assets/conmutador-encendido-caribe.webp",
       "keywords": [
+        "2-91226-9420",
         "8-94222-6130",
         "CARIBE",
         "CONMUTADOR",
         "ENCENDIDO"
       ],
-      "linked_ids": [
-        398
-      ],
-      "oem": "8-94222-6130",
+      "oem": "2-91226-9420 / 8-94222-6130",
       "slug": "conmutador-encendido-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94222-6130",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        312,
+        398
       ]
     },
     {
@@ -6146,6 +4622,7 @@ const PRODUCTS_DATA = {
       "id": "80545cd8-e0fc-42a1-b4d3-b907a80ef86a",
       "image_path": "./assets/conmutador-encendido-luv-d-max-3-5.webp",
       "keywords": [
+        "8-94159-1920",
         "8-97350-0710",
         "8-97350-0720",
         "CONMUTADOR",
@@ -6153,22 +4630,11 @@ const PRODUCTS_DATA = {
         "ENCENDIDO",
         "LUV"
       ],
-      "linked_ids": [
-        399
-      ],
-      "oem": "8-97350-0720 / 8-97350-0710",
+      "oem": "8-94159-1920 / 8-97350-0720 / 8-97350-0710",
       "slug": "conmutador-encendido-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97350-0720",
-          "brand": "GEN",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-97350-0720",
-          "brand": "NIKHO",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        313,
+        399
       ]
     },
     {
@@ -6184,17 +4650,11 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        400
-      ],
       "oem": "8-97396-2500",
       "slug": "consola-central-luv-d-max-2005-2009",
-      "variants": [
-        {
-          "codigo_oem": "8-97396-2500",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        314,
+        400
       ]
     },
     {
@@ -6205,6 +4665,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2005",
         "2009",
+        "8-97316-7401",
         "8-98013-4450",
         "8-98038-1190",
         "ACONDICIONADO",
@@ -6213,17 +4674,11 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV"
       ],
-      "linked_ids": [
-        1089
-      ],
-      "oem": "8-98038-1190 / 8-98013-4450",
+      "oem": "8-97316-7401 / 8-98038-1190 / 8-98013-4450",
       "slug": "control-aire-acondicionado-luv-d-max-2005-2009",
-      "variants": [
-        {
-          "codigo_oem": "8-98038-1190",
-          "brand": "Original",
-          "precio_usd": 235
-        }
+      "linked_ids": [
+        315,
+        1089
       ]
     },
     {
@@ -6236,23 +4691,19 @@ const PRODUCTS_DATA = {
         "6878",
         "8-94167-4350",
         "8-94172-3280",
+        "8-94359-4560",
+        "8-94489-9371",
         "ARRANQUE",
         "CARIBE",
         "COP-12051",
         "COPA",
         "VK-CTN-16"
       ],
-      "linked_ids": [
-        401
-      ],
-      "oem": "8-94172-3280 / 8-94167-4350 / 6878 / VK-CTN-16 / COP-12051",
+      "oem": "8-94359-4560 / 8-94489-9371 / 8-94172-3280 / 8-94167-4350 / 6878 / VK-CTN-16 / COP-12051",
       "slug": "copa-arranque-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94172-3280",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        316,
+        401
       ]
     },
     {
@@ -6265,23 +4716,19 @@ const PRODUCTS_DATA = {
         "6878",
         "8-94167-4350",
         "8-94172-3280",
+        "8-94359-4560",
+        "8-94489-9371",
         "ARRANQUE",
         "CARIBE",
         "COP-12051",
         "COPA",
         "VK-CTN-16"
       ],
-      "linked_ids": [
-        401
-      ],
-      "oem": "8-94172-3280 / 8-94167-4350 / 6878 / VK-CTN-16 / COP-12051",
+      "oem": "8-94359-4560 / 8-94489-9371 / 8-94172-3280 / 8-94167-4350 / 6878 / VK-CTN-16 / COP-12051",
       "slug": "copa-arranque-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94172-3280",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        316,
+        401
       ]
     },
     {
@@ -6290,24 +4737,20 @@ const PRODUCTS_DATA = {
       "id": "c933718c-fb2c-4083-bf00-060254ce44c8",
       "image_path": "./assets/correa-de-tiempo-caribe-2-3-luv-2-3.webp",
       "keywords": [
+        "313101011",
         "8-94160-6560",
         "8-97041-7840",
+        "8-97192-1640",
         "CARIBE",
         "CORREA",
         "LUV",
         "TIEMPO"
       ],
-      "linked_ids": [
-        402
-      ],
-      "oem": "8-97041-7840 / 8-94160-6560",
+      "oem": "8-97192-1640 / 313101011 / 8-97041-7840 / 8-94160-6560",
       "slug": "correa-de-tiempo-caribe-2-3-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-97041-7840",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        317,
+        402
       ]
     },
     {
@@ -6318,21 +4761,16 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94174-3060",
         "8-97042-2680",
+        "8-97363-7810",
         "CARIBE",
         "CORREA",
         "TIEMPO"
       ],
-      "linked_ids": [
-        403
-      ],
-      "oem": "8-97042-2680 / 8-94174-3060",
+      "oem": "8-97363-7810 / 8-97042-2680 / 8-94174-3060",
       "slug": "correa-de-tiempo-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-97042-2680",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        318,
+        403
       ]
     },
     {
@@ -6341,25 +4779,23 @@ const PRODUCTS_DATA = {
       "id": "c14fca94-adde-4158-8b86-9274b6d3f34c",
       "image_path": "./assets/correa-de-tiempo-luv-2-2.webp",
       "keywords": [
+        "1962",
+        "5-81118-0220",
         "8-12065-3030",
         "8-92062-5210",
         "8-92065-3030",
         "8-92065-9770",
+        "8-94377-2580",
+        "8-97041-4240",
         "CORREA",
         "LUV",
         "TIEMPO"
       ],
-      "linked_ids": [
-        404
-      ],
-      "oem": "8-92062-5210 / 8-92065-3030 / 8-12065-3030 / 8-92065-9770",
+      "oem": "5-81118-0220 / 8-94377-2580 / 1962 / 8-97041-4240 / 8-92062-5210 / 8-92065-3030 / 8-12065-3030 / 8-92065-9770",
       "slug": "correa-de-tiempo-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-92062-5210",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        319,
+        404
       ]
     },
     {
@@ -6368,26 +4804,24 @@ const PRODUCTS_DATA = {
       "id": "327589ed-9fd9-4a80-8818-29962169ba83",
       "image_path": "./assets/correa-de-tiempo-luv-d-max-2-4.webp",
       "keywords": [
+        "1962",
+        "5-81118-0220",
         "8-12065-3030",
         "8-92062-5210",
         "8-92065-3030",
         "8-92065-9770",
+        "8-94377-2580",
+        "8-97041-4240",
         "CORREA",
         "D-MAX",
         "LUV",
         "TIEMPO"
       ],
-      "linked_ids": [
-        404
-      ],
-      "oem": "8-92062-5210 / 8-92065-3030 / 8-12065-3030 / 8-92065-9770",
+      "oem": "5-81118-0220 / 8-94377-2580 / 1962 / 8-97041-4240 / 8-92062-5210 / 8-92065-3030 / 8-12065-3030 / 8-92065-9770",
       "slug": "correa-de-tiempo-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-92062-5210",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        319,
+        404
       ]
     },
     {
@@ -6396,28 +4830,18 @@ const PRODUCTS_DATA = {
       "id": "7ff901d9-a3f6-4ca3-9374-92aeeadf7503",
       "image_path": "./assets/correa-de-tiempo-luv-d-max-3-5.webp",
       "keywords": [
+        "68-8203",
         "8-97191-0361",
         "CORREA",
         "D-MAX",
         "LUV",
         "TIEMPO"
       ],
-      "linked_ids": [
-        405
-      ],
-      "oem": "8-97191-0361",
+      "oem": "68-8203 / 8-97191-0361",
       "slug": "correa-de-tiempo-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97191-0361",
-          "brand": "BANDO",
-          "precio_usd": 65
-        },
-        {
-          "codigo_oem": "8-97191-0361",
-          "brand": "MICHELIN",
-          "precio_usd": 95
-        }
+      "linked_ids": [
+        320,
+        405
       ]
     },
     {
@@ -6426,23 +4850,20 @@ const PRODUCTS_DATA = {
       "id": "WhatsApp Image 2026-02-09 at 1.17.22 PM",
       "image_path": "./assets/correa-de-tiempo-trooper-3-2-sohc.webp",
       "keywords": [
+        "8-94159-2140",
+        "8-94337-6320",
         "8-94386-4970",
         "CORREA",
+        "NK5630",
         "SOHC",
         "TIEMPO",
         "TROOPER"
       ],
-      "linked_ids": [
-        408
-      ],
-      "oem": "8-94386-4970",
+      "oem": "8-94159-2140 / NK5630 / 8-94337-6320 / 8-94386-4970",
       "slug": "correa-de-tiempo-trooper-3-2-sohc",
-      "variants": [
-        {
-          "codigo_oem": "8-94386-4970",
-          "brand": "Original",
-          "precio_usd": 70
-        }
+      "linked_ids": [
+        321,
+        408
       ]
     },
     {
@@ -6453,27 +4874,17 @@ const PRODUCTS_DATA = {
       "keywords": [
         "6PK2288",
         "8-97130-5600",
+        "8-97136-3250B2",
         "CORREA",
         "D-MAX",
         "LUV",
         "UNICA"
       ],
-      "linked_ids": [
-        409
-      ],
-      "oem": "8-97130-5600 / 6PK2288",
+      "oem": "8-97136-3250B2 / 8-97130-5600 / 6PK2288",
       "slug": "correa-unica-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97130-5600",
-          "brand": "BANDO",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97130-5600",
-          "brand": "MICHELIN",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        323,
+        409
       ]
     },
     {
@@ -6483,6 +4894,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/cruceta-caribe-grande.webp",
       "keywords": [
         "383",
+        "8-94136-1640",
         "8-94238-9300",
         "8-94332-6830",
         "CARIBE",
@@ -6490,17 +4902,11 @@ const PRODUCTS_DATA = {
         "GRANDE",
         "GUIS-52"
       ],
-      "linked_ids": [
-        413
-      ],
-      "oem": "GUIS-52 / 383 / 8-94332-6830 / 8-94238-9300",
+      "oem": "8-94136-1640 / GUIS-52 / 383 / 8-94332-6830 / 8-94238-9300",
       "slug": "cruceta-caribe-grande",
-      "variants": [
-        {
-          "codigo_oem": "GUIS-52",
-          "brand": "TRIX",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        325,
+        413
       ]
     },
     {
@@ -6512,22 +4918,18 @@ const PRODUCTS_DATA = {
         "340",
         "341",
         "5-37300-0310",
+        "8-94163-1881",
+        "8-97107-9201",
         "CARIBE",
         "CRUCETA",
         "GU-500",
         "PEQUENA"
       ],
-      "linked_ids": [
-        412
-      ],
-      "oem": "GU-500 / 341 / 5-37300-0310 / 340",
+      "oem": "8-94163-1881 / 8-97107-9201 / GU-500 / 341 / 5-37300-0310 / 340",
       "slug": "cruceta-caribe-pequena",
-      "variants": [
-        {
-          "codigo_oem": "GU-500",
-          "brand": "TRIX",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        326,
+        412
       ]
     },
     {
@@ -6536,22 +4938,17 @@ const PRODUCTS_DATA = {
       "id": "26579172-ff17-48f6-833e-2c6165a67f66",
       "image_path": "./assets/cruceta-luv-d-max-3-5.webp",
       "keywords": [
+        "8-90530-4540",
         "CRUCETA",
         "D-MAX",
         "LUV",
         "TIS-174"
       ],
-      "linked_ids": [
-        414
-      ],
-      "oem": "TIS-174",
+      "oem": "8-90530-4540 / TIS-174",
       "slug": "cruceta-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "TIS-174",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        327,
+        414
       ]
     },
     {
@@ -6561,20 +4958,15 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/cruceta-universal-369.webp",
       "keywords": [
         "369",
+        "8-93281-9990",
         "CRUCETA",
         "UNIVERSAL"
       ],
-      "linked_ids": [
-        415
-      ],
-      "oem": "369",
+      "oem": "8-93281-9990 / 369",
       "slug": "cruceta-universal-369",
-      "variants": [
-        {
-          "codigo_oem": "369",
-          "brand": "ONE4CARS",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        328,
+        415
       ]
     },
     {
@@ -6585,20 +4977,15 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94165-5151",
         "8-97073-0790",
+        "8-97358-4760",
         "CARIBE",
         "DAMPER"
       ],
-      "linked_ids": [
-        417
-      ],
-      "oem": "8-97073-0790 / 8-94165-5151",
+      "oem": "8-97358-4760 / 8-97073-0790 / 8-94165-5151",
       "slug": "damper-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-97073-0790",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        329,
+        417
       ]
     },
     {
@@ -6609,20 +4996,15 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94165-5151",
         "8-97073-0790",
+        "8-97358-4760",
         "DAMPER",
         "LUV"
       ],
-      "linked_ids": [
-        417
-      ],
-      "oem": "8-97073-0790 / 8-94165-5151",
+      "oem": "8-97358-4760 / 8-97073-0790 / 8-94165-5151",
       "slug": "damper-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-97073-0790",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        329,
+        417
       ]
     },
     {
@@ -6631,22 +5013,18 @@ const PRODUCTS_DATA = {
       "id": "267cf51d-6170-4eb5-806c-f636651f3fb7",
       "image_path": "./assets/damper-luv-d-max-2-5.webp",
       "keywords": [
+        "2131506R",
+        "8-94424-0431",
         "8-97350-5481",
         "D-MAX",
         "DAMPER",
         "LUV"
       ],
-      "linked_ids": [
-        419
-      ],
-      "oem": "8-97350-5481",
+      "oem": "8-94424-0431 / 2131506R / 8-97350-5481",
       "slug": "damper-luv-d-max-2-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97350-5481",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        333,
+        419
       ]
     },
     {
@@ -6655,22 +5033,18 @@ const PRODUCTS_DATA = {
       "id": "e10321d4-4489-476d-acf7-92b5954261a7",
       "image_path": "./assets/damper-luv-d-max-3-0.webp",
       "keywords": [
+        "2131506R",
+        "8-94424-0431",
         "8-97350-5481",
         "D-MAX",
         "DAMPER",
         "LUV"
       ],
-      "linked_ids": [
-        419
-      ],
-      "oem": "8-97350-5481",
+      "oem": "8-94424-0431 / 2131506R / 8-97350-5481",
       "slug": "damper-luv-d-max-3-0",
-      "variants": [
-        {
-          "codigo_oem": "8-97350-5481",
-          "brand": "Original",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        333,
+        419
       ]
     },
     {
@@ -6681,6 +5055,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94229-3880",
         "8-97106-9790",
+        "8-97111-8540",
         "8-97182-7811",
         "8-97182-8581",
         "8-97321-0240",
@@ -6690,17 +5065,11 @@ const PRODUCTS_DATA = {
         "IS-10",
         "N2303"
       ],
-      "linked_ids": [
-        422
-      ],
-      "oem": "8-94229-3880 / 8-97106-9790 / 8-97182-8581 / IS-10 / 8-97321-0240 / 8-97182-7811 / N2303",
+      "oem": "8-97111-8540 / 8-94229-3880 / 8-97106-9790 / 8-97182-8581 / IS-10 / 8-97321-0240 / 8-97182-7811 / N2303",
       "slug": "disco-clutch-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94229-3880",
-          "brand": "PERFECTION",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        336,
+        422
       ]
     },
     {
@@ -6709,6 +5078,7 @@ const PRODUCTS_DATA = {
       "id": "222a0cc1-cbd9-440a-878b-54bc75eb1246",
       "image_path": "./assets/disco-clutch-caribe-2-6.webp",
       "keywords": [
+        "8-94324-1040",
         "8-97036-0620",
         "8-97941-5270",
         "CARIBE",
@@ -6716,22 +5086,11 @@ const PRODUCTS_DATA = {
         "DISCO",
         "N2316"
       ],
-      "linked_ids": [
-        423
-      ],
-      "oem": "8-97036-0620 / 8-97941-5270 / N2316",
+      "oem": "8-94324-1040 / 8-97036-0620 / 8-97941-5270 / N2316",
       "slug": "disco-clutch-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-97036-0620",
-          "brand": "PERFECTION",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "8-97036-0620",
-          "brand": "DAIKIN",
-          "precio_usd": 120
-        }
+      "linked_ids": [
+        335,
+        423
       ]
     },
     {
@@ -6742,6 +5101,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94229-3880",
         "8-97106-9790",
+        "8-97111-8540",
         "8-97182-7811",
         "8-97182-8581",
         "8-97321-0240",
@@ -6752,17 +5112,11 @@ const PRODUCTS_DATA = {
         "IS-10",
         "N2303"
       ],
-      "linked_ids": [
-        422
-      ],
-      "oem": "8-94229-3880 / 8-97106-9790 / 8-97182-8581 / IS-10 / 8-97321-0240 / 8-97182-7811 / N2303",
+      "oem": "8-97111-8540 / 8-94229-3880 / 8-97106-9790 / 8-97182-8581 / IS-10 / 8-97321-0240 / 8-97182-7811 / N2303",
       "slug": "disco-clutch-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "8-94229-3880",
-          "brand": "PERFECTION",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        336,
+        422
       ]
     },
     {
@@ -6773,6 +5127,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94229-3880",
         "8-97106-9790",
+        "8-97111-8540",
         "8-97182-7811",
         "8-97182-8581",
         "8-97321-0240",
@@ -6782,17 +5137,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "N2303"
       ],
-      "linked_ids": [
-        422
-      ],
-      "oem": "8-94229-3880 / 8-97106-9790 / 8-97182-8581 / IS-10 / 8-97321-0240 / 8-97182-7811 / N2303",
+      "oem": "8-97111-8540 / 8-94229-3880 / 8-97106-9790 / 8-97182-8581 / IS-10 / 8-97321-0240 / 8-97182-7811 / N2303",
       "slug": "disco-clutch-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94229-3880",
-          "brand": "PERFECTION",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        336,
+        422
       ]
     },
     {
@@ -6803,6 +5152,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94229-3880",
         "8-97106-9790",
+        "8-97111-8540",
         "8-97182-7811",
         "8-97182-8581",
         "8-97321-0240",
@@ -6812,17 +5162,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "N2303"
       ],
-      "linked_ids": [
-        422
-      ],
-      "oem": "8-94229-3880 / 8-97106-9790 / 8-97182-8581 / IS-10 / 8-97321-0240 / 8-97182-7811 / N2303",
+      "oem": "8-97111-8540 / 8-94229-3880 / 8-97106-9790 / 8-97182-8581 / IS-10 / 8-97321-0240 / 8-97182-7811 / N2303",
       "slug": "disco-clutch-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94229-3880",
-          "brand": "PERFECTION",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        336,
+        422
       ]
     },
     {
@@ -6831,6 +5175,7 @@ const PRODUCTS_DATA = {
       "id": "WhatsApp Image 2026-02-09 at 1.17.20 PM (2)",
       "image_path": "./assets/disco-clutch-luv-d-max-3-5.webp",
       "keywords": [
+        "5-31321-0033",
         "8-94374-8981",
         "8-97120-6901",
         "8-97138-1350",
@@ -6839,24 +5184,14 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "DISCO",
-        "LUV"
+        "LUV",
+        "N2100H"
       ],
-      "linked_ids": [
-        425
-      ],
-      "oem": "8-97941-5290 / 8-94374-8981 / 8-97120-6901 / 8-97138-1350 / 8-97238-3670",
+      "oem": "5-31321-0033 / N2100H / 8-97941-5290 / 8-94374-8981 / 8-97120-6901 / 8-97138-1350 / 8-97238-3670",
       "slug": "disco-clutch-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97941-5290",
-          "brand": "PERFECTION",
-          "precio_usd": 75
-        },
-        {
-          "codigo_oem": "8-97941-5290",
-          "brand": "DAIKIN",
-          "precio_usd": 245
-        }
+      "linked_ids": [
+        337,
+        425
       ]
     },
     {
@@ -6865,6 +5200,7 @@ const PRODUCTS_DATA = {
       "id": "WhatsApp Image 2026-02-09 at 1.17.21 PM (1)",
       "image_path": "./assets/disco-clutch-rodeo-3-2.webp",
       "keywords": [
+        "5-31321-0033",
         "8-94374-8981",
         "8-97120-6901",
         "8-97138-1350",
@@ -6872,24 +5208,14 @@ const PRODUCTS_DATA = {
         "8-97941-5290",
         "CLUTCH",
         "DISCO",
+        "N2100H",
         "RODEO"
       ],
-      "linked_ids": [
-        425
-      ],
-      "oem": "8-97941-5290 / 8-94374-8981 / 8-97120-6901 / 8-97138-1350 / 8-97238-3670",
+      "oem": "5-31321-0033 / N2100H / 8-97941-5290 / 8-94374-8981 / 8-97120-6901 / 8-97138-1350 / 8-97238-3670",
       "slug": "disco-clutch-rodeo-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97941-5290",
-          "brand": "PERFECTION",
-          "precio_usd": 75
-        },
-        {
-          "codigo_oem": "8-97941-5290",
-          "brand": "DAIKIN",
-          "precio_usd": 245
-        }
+      "linked_ids": [
+        337,
+        425
       ]
     },
     {
@@ -6898,6 +5224,7 @@ const PRODUCTS_DATA = {
       "id": "WhatsApp Image 2026-02-09 at 1.17.21 PM",
       "image_path": "./assets/disco-clutch-trooper-3-2.webp",
       "keywords": [
+        "5-31321-0033",
         "8-94374-8981",
         "8-97120-6901",
         "8-97138-1350",
@@ -6905,24 +5232,14 @@ const PRODUCTS_DATA = {
         "8-97941-5290",
         "CLUTCH",
         "DISCO",
+        "N2100H",
         "TROOPER"
       ],
-      "linked_ids": [
-        425
-      ],
-      "oem": "8-97941-5290 / 8-94374-8981 / 8-97120-6901 / 8-97138-1350 / 8-97238-3670",
+      "oem": "5-31321-0033 / N2100H / 8-97941-5290 / 8-94374-8981 / 8-97120-6901 / 8-97138-1350 / 8-97238-3670",
       "slug": "disco-clutch-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97941-5290",
-          "brand": "PERFECTION",
-          "precio_usd": 75
-        },
-        {
-          "codigo_oem": "8-97941-5290",
-          "brand": "DAIKIN",
-          "precio_usd": 245
-        }
+      "linked_ids": [
+        337,
+        425
       ]
     },
     {
@@ -6931,6 +5248,8 @@ const PRODUCTS_DATA = {
       "id": "08b384ff-6dfc-453d-9b91-f0f5263b7f10",
       "image_path": "./assets/disco-de-freno-luv-d-max-2-4.webp",
       "keywords": [
+        "1103-020",
+        "8-94215-6410-020",
         "8-97308-8680",
         "8-98006-2580",
         "D-MAX",
@@ -6938,17 +5257,11 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "linked_ids": [
-        433
-      ],
-      "oem": "8-97308-8680 / 8-98006-2580",
+      "oem": "8-94215-6410-020 / 1103-020 / 8-97308-8680 / 8-98006-2580",
       "slug": "disco-de-freno-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97308-8680",
-          "brand": "TAKASHI",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        343,
+        433
       ]
     },
     {
@@ -6957,6 +5270,8 @@ const PRODUCTS_DATA = {
       "id": "b725867f-9982-473c-86d0-941d41ab3fea",
       "image_path": "./assets/disco-de-freno-luv-d-max-2-5.webp",
       "keywords": [
+        "1103-020",
+        "8-94215-6410-020",
         "8-97308-8680",
         "8-98006-2580",
         "D-MAX",
@@ -6964,17 +5279,11 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "linked_ids": [
-        433
-      ],
-      "oem": "8-97308-8680 / 8-98006-2580",
+      "oem": "8-94215-6410-020 / 1103-020 / 8-97308-8680 / 8-98006-2580",
       "slug": "disco-de-freno-luv-d-max-2-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97308-8680",
-          "brand": "TAKASHI",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        343,
+        433
       ]
     },
     {
@@ -6983,7 +5292,9 @@ const PRODUCTS_DATA = {
       "id": "3f05a51d-190a-49cf-ab04-fa032715eb8a",
       "image_path": "./assets/disco-de-freno-luv-d-max-3-0-4x2.webp",
       "keywords": [
+        "1103-020",
         "4X2",
+        "8-94215-6410-020",
         "8-97308-8680",
         "8-98006-2580",
         "D-MAX",
@@ -6991,17 +5302,11 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "linked_ids": [
-        433
-      ],
-      "oem": "8-97308-8680 / 8-98006-2580",
+      "oem": "8-94215-6410-020 / 1103-020 / 8-97308-8680 / 8-98006-2580",
       "slug": "disco-de-freno-luv-d-max-3-0-4x2",
-      "variants": [
-        {
-          "codigo_oem": "8-97308-8680",
-          "brand": "TAKASHI",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        343,
+        433
       ]
     },
     {
@@ -7010,7 +5315,9 @@ const PRODUCTS_DATA = {
       "id": "670b5f18-30cf-448a-bf7b-fa32fd98269d",
       "image_path": "./assets/disco-de-freno-luv-d-max-3-0-4x4.webp",
       "keywords": [
+        "1103-030",
         "4X4",
+        "8-94215-6410-030",
         "8-97360-6770",
         "8-97360-6780",
         "8-98006-2590",
@@ -7019,22 +5326,11 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "linked_ids": [
-        432
-      ],
-      "oem": "8-97360-6780 / 8-98006-2590 / 8-97360-6770",
+      "oem": "8-94215-6410-030 / 1103-030 / 8-97360-6780 / 8-98006-2590 / 8-97360-6770",
       "slug": "disco-de-freno-luv-d-max-3-0-4x4",
-      "variants": [
-        {
-          "codigo_oem": "8-97360-6780",
-          "brand": "HIPERFREIOS",
-          "precio_usd": 95
-        },
-        {
-          "codigo_oem": "8-97360-6780",
-          "brand": "PGT",
-          "precio_usd": 80
-        }
+      "linked_ids": [
+        344,
+        432
       ]
     },
     {
@@ -7043,6 +5339,8 @@ const PRODUCTS_DATA = {
       "id": "17950c1e-2820-4c58-a6bc-b8900e2bf7a9",
       "image_path": "./assets/disco-de-freno-luv-d-max-3-5.webp",
       "keywords": [
+        "1103-030",
+        "8-94215-6410-030",
         "8-97360-6770",
         "8-97360-6780",
         "8-98006-2590",
@@ -7051,22 +5349,11 @@ const PRODUCTS_DATA = {
         "FRENO",
         "LUV"
       ],
-      "linked_ids": [
-        432
-      ],
-      "oem": "8-97360-6780 / 8-98006-2590 / 8-97360-6770",
+      "oem": "8-94215-6410-030 / 1103-030 / 8-97360-6780 / 8-98006-2590 / 8-97360-6770",
       "slug": "disco-de-freno-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97360-6780",
-          "brand": "HIPERFREIOS",
-          "precio_usd": 95
-        },
-        {
-          "codigo_oem": "8-97360-6780",
-          "brand": "PGT",
-          "precio_usd": 80
-        }
+      "linked_ids": [
+        344,
+        432
       ]
     },
     {
@@ -7075,22 +5362,18 @@ const PRODUCTS_DATA = {
       "id": "6f9a6c68-dcdc-4bb8-bfac-43a1cebe3f65",
       "image_path": "./assets/distribuidor-caribe-2000.webp",
       "keywords": [
+        "1103-050",
         "2000",
+        "8-94215-6410-050",
         "8-94219-9540",
         "CARIBE",
         "DISTRIBUIDOR"
       ],
-      "linked_ids": [
-        434
-      ],
-      "oem": "8-94219-9540",
+      "oem": "8-94215-6410-050 / 1103-050 / 8-94219-9540",
       "slug": "distribuidor-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94219-9540",
-          "brand": "Original",
-          "precio_usd": 120
-        }
+      "linked_ids": [
+        346,
+        434
       ]
     },
     {
@@ -7099,23 +5382,19 @@ const PRODUCTS_DATA = {
       "id": "31237e25-9295-47c6-8fc8-54c0ff2bc7ad",
       "image_path": "./assets/distribuidor-luv-2300.webp",
       "keywords": [
+        "1103-060",
         "2300",
+        "8-94215-6410-060",
         "8-94476-1421",
         "8-97129-7480",
         "DISTRIBUIDOR",
         "LUV"
       ],
-      "linked_ids": [
-        436
-      ],
-      "oem": "8-94476-1421 / 8-97129-7480",
+      "oem": "8-94215-6410-060 / 1103-060 / 8-94476-1421 / 8-97129-7480",
       "slug": "distribuidor-luv-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94476-1421",
-          "brand": "Original",
-          "precio_usd": 220
-        }
+      "linked_ids": [
+        347,
+        436
       ]
     },
     {
@@ -7128,21 +5407,19 @@ const PRODUCTS_DATA = {
         "053660-0441",
         "053660-0442",
         "1-81129-4990",
+        "1620-STD",
+        "8-94251-2631-STD",
+        "8-97063-2430",
+        "8-97063-2450",
         "ARRANQUE",
         "CARIBE",
         "EMBOLO"
       ],
-      "linked_ids": [
-        437
-      ],
-      "oem": "053660-0440 / 053660-0441 / 053660-0442 / 1-81129-4990",
+      "oem": "8-94251-2631-STD / 1620-STD / 8-97063-2430 / 8-97063-2450 / 053660-0440 / 053660-0441 / 053660-0442 / 1-81129-4990",
       "slug": "embolo-arranque-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "053660-0440",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        348,
+        437
       ]
     },
     {
@@ -7155,21 +5432,19 @@ const PRODUCTS_DATA = {
         "053660-0441",
         "053660-0442",
         "1-81129-4990",
+        "1620-STD",
+        "8-94251-2631-STD",
+        "8-97063-2430",
+        "8-97063-2450",
         "ARRANQUE",
         "EMBOLO",
         "LUV"
       ],
-      "linked_ids": [
-        437
-      ],
-      "oem": "053660-0440 / 053660-0441 / 053660-0442 / 1-81129-4990",
+      "oem": "8-94251-2631-STD / 1620-STD / 8-97063-2430 / 8-97063-2450 / 053660-0440 / 053660-0441 / 053660-0442 / 1-81129-4990",
       "slug": "embolo-arranque-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "053660-0440",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        348,
+        437
       ]
     },
     {
@@ -7178,6 +5453,9 @@ const PRODUCTS_DATA = {
       "id": "26ece359-ea1b-4789-b373-52008aedbcee",
       "image_path": "./assets/empacadura-bajante-conica-caribe.webp",
       "keywords": [
+        "1620-020",
+        "8-94133-0290",
+        "8-94251-2631-020",
         "9-22116-0210",
         "BAJANTE",
         "CARIBE",
@@ -7185,17 +5463,11 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LA-8194-1"
       ],
-      "linked_ids": [
-        439
-      ],
-      "oem": "9-22116-0210 / LA-8194-1",
+      "oem": "8-94251-2631-020 / 1620-020 / 8-94133-0290 / 9-22116-0210 / LA-8194-1",
       "slug": "empacadura-bajante-conica-caribe",
-      "variants": [
-        {
-          "codigo_oem": "9-22116-0210",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        350,
+        439
       ]
     },
     {
@@ -7204,6 +5476,9 @@ const PRODUCTS_DATA = {
       "id": "1623dae2-f765-4610-9c66-f5f1b76eb606",
       "image_path": "./assets/empacadura-bajante-conica-luv.webp",
       "keywords": [
+        "1620-020",
+        "8-94133-0290",
+        "8-94251-2631-020",
         "9-22116-0210",
         "BAJANTE",
         "CONICA",
@@ -7211,17 +5486,11 @@ const PRODUCTS_DATA = {
         "LA-8194-1",
         "LUV"
       ],
-      "linked_ids": [
-        439
-      ],
-      "oem": "9-22116-0210 / LA-8194-1",
+      "oem": "8-94251-2631-020 / 1620-020 / 8-94133-0290 / 9-22116-0210 / LA-8194-1",
       "slug": "empacadura-bajante-conica-luv",
-      "variants": [
-        {
-          "codigo_oem": "9-22116-0210",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        350,
+        439
       ]
     },
     {
@@ -7230,6 +5499,9 @@ const PRODUCTS_DATA = {
       "id": "de0590cb-6d5f-411a-bce4-f412c49d088e",
       "image_path": "./assets/empacadura-bajante-plana-caribe.webp",
       "keywords": [
+        "1620-010",
+        "8-94133-0281",
+        "8-94251-2631-010",
         "8-97069-2870",
         "BAJANTE",
         "CARIBE",
@@ -7237,17 +5509,11 @@ const PRODUCTS_DATA = {
         "LA-8624-1",
         "PLANA"
       ],
-      "linked_ids": [
-        438
-      ],
-      "oem": "8-97069-2870 / LA-8624-1",
+      "oem": "8-94251-2631-010 / 1620-010 / 8-94133-0281 / 8-97069-2870 / LA-8624-1",
       "slug": "empacadura-bajante-plana-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-97069-2870",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        349,
+        438
       ]
     },
     {
@@ -7256,6 +5522,9 @@ const PRODUCTS_DATA = {
       "id": "1482d0af-3b76-4ad9-9a22-fbc625c34565",
       "image_path": "./assets/empacadura-bajante-plana-luv.webp",
       "keywords": [
+        "1620-010",
+        "8-94133-0281",
+        "8-94251-2631-010",
         "8-97069-2870",
         "BAJANTE",
         "EMPACADURA",
@@ -7263,17 +5532,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "PLANA"
       ],
-      "linked_ids": [
-        438
-      ],
-      "oem": "8-97069-2870 / LA-8624-1",
+      "oem": "8-94251-2631-010 / 1620-010 / 8-94133-0281 / 8-97069-2870 / LA-8624-1",
       "slug": "empacadura-bajante-plana-luv",
-      "variants": [
-        {
-          "codigo_oem": "8-97069-2870",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        349,
+        438
       ]
     },
     {
@@ -7282,23 +5545,19 @@ const PRODUCTS_DATA = {
       "id": "7b633566-2ccf-46b2-8be0-28f20ff4174d",
       "image_path": "./assets/empacadura-camara-rodeo-3-2-soch.webp",
       "keywords": [
+        "7108M-020",
+        "8-92066-6330-020",
         "8-97019-3611",
         "CAMARA",
         "EMPACADURA",
         "RODEO",
         "SOCH"
       ],
-      "linked_ids": [
-        451
-      ],
-      "oem": "8-97019-3611",
+      "oem": "8-92066-6330-020 / 7108M-020 / 8-97019-3611",
       "slug": "empacadura-camara-rodeo-3-2-soch",
-      "variants": [
-        {
-          "codigo_oem": "8-97019-3611",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        357,
+        451
       ]
     },
     {
@@ -7307,23 +5566,19 @@ const PRODUCTS_DATA = {
       "id": "dc596f10-35e2-4904-a342-539733d51295",
       "image_path": "./assets/empacadura-camara-trooper-3-2-sohc.webp",
       "keywords": [
+        "7108M-020",
+        "8-92066-6330-020",
         "8-97019-3611",
         "CAMARA",
         "EMPACADURA",
         "SOHC",
         "TROOPER"
       ],
-      "linked_ids": [
-        451
-      ],
-      "oem": "8-97019-3611",
+      "oem": "8-92066-6330-020 / 7108M-020 / 8-97019-3611",
       "slug": "empacadura-camara-trooper-3-2-sohc",
-      "variants": [
-        {
-          "codigo_oem": "8-97019-3611",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        357,
+        451
       ]
     },
     {
@@ -7332,28 +5587,20 @@ const PRODUCTS_DATA = {
       "id": "0cfc4c93-3c12-40d4-8529-6fad56137e56",
       "image_path": "./assets/empacadura-de-camara-caribe-2-3-2.webp",
       "keywords": [
+        "1620-040",
+        "8-94133-0311",
         "8-94146-2441",
+        "8-94251-2631-040",
         "8-94324-0530",
         "CAMARA",
         "CARIBE",
         "EMPACADURA"
       ],
-      "linked_ids": [
-        442
-      ],
-      "oem": "8-94146-2441 / 8-94324-0530",
+      "oem": "8-94251-2631-040 / 1620-040 / 8-94133-0311 / 8-94146-2441 / 8-94324-0530",
       "slug": "empacadura-de-camara-caribe-2-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94146-2441",
-          "brand": "AMER.PRTS",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94146-2441",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        352,
+        442
       ]
     },
     {
@@ -7362,27 +5609,18 @@ const PRODUCTS_DATA = {
       "id": "2d0a986c-aa88-490a-9f7b-8c2b82d4a0b2",
       "image_path": "./assets/empacadura-de-camara-caribe-2-6.webp",
       "keywords": [
+        "1620-050",
         "8-94174-2790",
+        "8-94251-2631-050",
         "CAMARA",
         "CARIBE",
         "EMPACADURA"
       ],
-      "linked_ids": [
-        444
-      ],
-      "oem": "8-94174-2790",
+      "oem": "8-94251-2631-050 / 1620-050 / 8-94174-2790",
       "slug": "empacadura-de-camara-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94174-2790",
-          "brand": "AMER.PRTS",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94174-2790",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        353,
+        444
       ]
     },
     {
@@ -7391,23 +5629,19 @@ const PRODUCTS_DATA = {
       "id": "f9de0047-a43b-45eb-a5b1-849a7311a6d7",
       "image_path": "./assets/empacadura-de-camara-caribe-g-200.webp",
       "keywords": [
+        "1620-060",
         "8-94213-8091",
+        "8-94251-2631-060",
         "CAMARA",
         "CARIBE",
         "EMPACADURA",
         "G-200"
       ],
-      "linked_ids": [
-        441
-      ],
-      "oem": "8-94213-8091",
+      "oem": "8-94251-2631-060 / 1620-060 / 8-94213-8091",
       "slug": "empacadura-de-camara-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "8-94213-8091",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        354,
+        441
       ]
     },
     {
@@ -7416,6 +5650,8 @@ const PRODUCTS_DATA = {
       "id": "3c61cb43-4b97-417a-8630-627d505a15d9",
       "image_path": "./assets/empacadura-de-camara-de-amianto-luv-d-max-3-5.webp",
       "keywords": [
+        "7108M-010",
+        "8-92066-6330-010",
         "8-97136-2593",
         "8-97148-5203",
         "8-97262-0940",
@@ -7426,38 +5662,12 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV"
       ],
+      "oem": "8-92066-6330-010 / 7108M-010 / 8-97262-0940 / 8-97136-2593 / 8-97148-5203 / 8-97262-0960",
+      "slug": "empacadura-de-camara-de-amianto-luv-d-max-3-5",
       "linked_ids": [
+        356,
         447,
         449
-      ],
-      "oem": "8-97262-0940 / 8-97136-2593 / 8-97148-5203 / 8-97262-0960",
-      "slug": "empacadura-de-camara-de-amianto-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97262-0940",
-          "brand": "PRESENTACION",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97262-0940",
-          "brand": "KP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97262-0940",
-          "brand": "NIKHO",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-97262-0940",
-          "brand": "RINTOCA",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-97262-0940",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        }
       ]
     },
     {
@@ -7466,23 +5676,19 @@ const PRODUCTS_DATA = {
       "id": "3a290ebf-35ed-4454-8329-3edb39e337dc",
       "image_path": "./assets/empacadura-de-camara-luv-2-2.webp",
       "keywords": [
+        "7108M-STD",
         "8-92062-3300",
+        "8-92066-6330-STD",
         "8-93282-6650",
         "CAMARA",
         "EMPACADURA",
         "LUV"
       ],
-      "linked_ids": [
-        446
-      ],
-      "oem": "8-92062-3300 / 8-93282-6650",
+      "oem": "8-92066-6330-STD / 7108M-STD / 8-92062-3300 / 8-93282-6650",
       "slug": "empacadura-de-camara-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-92062-3300",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        355,
+        446
       ]
     },
     {
@@ -7491,24 +5697,20 @@ const PRODUCTS_DATA = {
       "id": "5910b9bf-3add-49c6-8c87-5eb31a69dff6",
       "image_path": "./assets/empacadura-de-camara-luv-d-max-2-4.webp",
       "keywords": [
+        "7108M-STD",
         "8-92062-3300",
+        "8-92066-6330-STD",
         "8-93282-6650",
         "CAMARA",
         "D-MAX",
         "EMPACADURA",
         "LUV"
       ],
-      "linked_ids": [
-        446
-      ],
-      "oem": "8-92062-3300 / 8-93282-6650",
+      "oem": "8-92066-6330-STD / 7108M-STD / 8-92062-3300 / 8-93282-6650",
       "slug": "empacadura-de-camara-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-92062-3300",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        355,
+        446
       ]
     },
     {
@@ -7517,6 +5719,8 @@ const PRODUCTS_DATA = {
       "id": "16ef7a02-c825-4b49-81d4-a2f98cd1b07f",
       "image_path": "./assets/empacadura-de-camara-metalica-luv-d-max-3-5.webp",
       "keywords": [
+        "7108M-010",
+        "8-92066-6330-010",
         "8-97136-2593",
         "8-97148-5203",
         "8-97262-0940",
@@ -7527,38 +5731,12 @@ const PRODUCTS_DATA = {
         "LUV",
         "METALICA"
       ],
+      "oem": "8-92066-6330-010 / 7108M-010 / 8-97262-0940 / 8-97136-2593 / 8-97148-5203 / 8-97262-0960",
+      "slug": "empacadura-de-camara-metalica-luv-d-max-3-5",
       "linked_ids": [
+        356,
         447,
         449
-      ],
-      "oem": "8-97262-0940 / 8-97136-2593 / 8-97148-5203 / 8-97262-0960",
-      "slug": "empacadura-de-camara-metalica-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97262-0940",
-          "brand": "PRESENTACION",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97262-0940",
-          "brand": "KP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97262-0940",
-          "brand": "NIKHO",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-97262-0940",
-          "brand": "RINTOCA",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-97262-0940",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        }
       ]
     },
     {
@@ -7567,6 +5745,8 @@ const PRODUCTS_DATA = {
       "id": "65621a9c-2e92-4e0b-9484-af5fff899274",
       "image_path": "./assets/empacadura-camarin-luv-d-max-3-5.webp",
       "keywords": [
+        "7108M-030",
+        "8-92066-6330-030",
         "8-97146-0741",
         "8-97254-4480",
         "CAMARIN",
@@ -7574,17 +5754,11 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LUV"
       ],
-      "linked_ids": [
-        452
-      ],
-      "oem": "8-97254-4480 / 8-97146-0741",
+      "oem": "8-92066-6330-030 / 7108M-030 / 8-97254-4480 / 8-97146-0741",
       "slug": "empacadura-camarin-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97254-4480",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        358,
+        452
       ]
     },
     {
@@ -7593,6 +5767,8 @@ const PRODUCTS_DATA = {
       "id": "1c8741df-2ddd-4d5b-aa76-66ab0f31c886",
       "image_path": "./assets/empacadura-camarin-rodeo-3-2-soch.webp",
       "keywords": [
+        "7108M-040",
+        "8-92066-6330-040",
         "8-94364-5770",
         "8-97095-8610",
         "CAMARIN",
@@ -7600,23 +5776,13 @@ const PRODUCTS_DATA = {
         "RODEO",
         "SOCH"
       ],
+      "oem": "8-92066-6330-040 / 7108M-040 / 8-94364-5770 / 8-97095-8610",
+      "slug": "empacadura-camarin-rodeo-3-2-soch",
       "linked_ids": [
+        359,
+        368,
         461,
         1112
-      ],
-      "oem": "8-94364-5770 / 8-97095-8610",
-      "slug": "empacadura-camarin-rodeo-3-2-soch",
-      "variants": [
-        {
-          "codigo_oem": "8-94364-5770",
-          "brand": "Original",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94364-5770",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -7625,6 +5791,8 @@ const PRODUCTS_DATA = {
       "id": "976b4d64-6efa-4864-8195-d455844cf064",
       "image_path": "./assets/empacadura-camarin-trooper-3-2-sohc.webp",
       "keywords": [
+        "7108M-040",
+        "8-92066-6330-040",
         "8-94364-5770",
         "8-97095-8610",
         "CAMARIN",
@@ -7632,23 +5800,13 @@ const PRODUCTS_DATA = {
         "SOHC",
         "TROOPER"
       ],
+      "oem": "8-92066-6330-040 / 7108M-040 / 8-94364-5770 / 8-97095-8610",
+      "slug": "empacadura-camarin-trooper-3-2-sohc",
       "linked_ids": [
+        359,
+        368,
         461,
         1112
-      ],
-      "oem": "8-94364-5770 / 8-97095-8610",
-      "slug": "empacadura-camarin-trooper-3-2-sohc",
-      "variants": [
-        {
-          "codigo_oem": "8-94364-5770",
-          "brand": "Original",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94364-5770",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -7657,23 +5815,22 @@ const PRODUCTS_DATA = {
       "id": "8742d4eb-fae7-48bc-bb00-0edb71702c18",
       "image_path": "./assets/empacadura-carter-luv-2-3-4x2.webp",
       "keywords": [
+        "4842M-STD",
         "4X2",
         "8-94235-2881",
+        "8-97179-2960-STD",
+        "8-97179-2970",
+        "8-97179-2980",
+        "8-97179-3000",
         "CARTER",
         "EMPACADURA",
         "LUV"
       ],
-      "linked_ids": [
-        454
-      ],
-      "oem": "8-94235-2881",
+      "oem": "8-97179-2960-STD / 4842M-STD / 8-97179-2970 / 8-97179-2980 / 8-97179-3000 / 8-94235-2881",
       "slug": "empacadura-carter-luv-2-3-4x2",
-      "variants": [
-        {
-          "codigo_oem": "8-94235-2881",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        361,
+        454
       ]
     },
     {
@@ -7683,23 +5840,24 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/juego-empacadura-carter-caribe-2300.webp",
       "keywords": [
         "2300",
+        "8-97304-8520",
+        "8-97304-8540",
+        "8-97944-5140",
+        "8-97944-5150",
+        "8-97945-4230",
+        "8-98055-7450",
         "CARIBE",
         "CARTER",
         "EMPACADURA",
         "JUEGO",
+        "M-102",
         "OS-209"
       ],
-      "linked_ids": [
-        655
-      ],
-      "oem": "OS-209",
+      "oem": "8-97304-8520 / M-102 / 8-97304-8540 / 8-97944-5140 / 8-97944-5150 / 8-97945-4230 / 8-98055-7450 / OS-209",
       "slug": "juego-empacadura-carter-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "OS-209",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        577,
+        655
       ]
     },
     {
@@ -7709,23 +5867,24 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/juego-empacadura-carter-caribe-2600.webp",
       "keywords": [
         "2600",
+        "8-97304-8520",
+        "8-97304-8540",
+        "8-97944-5140",
+        "8-97944-5150",
+        "8-97945-4230",
+        "8-98055-7450",
         "CARIBE",
         "CARTER",
         "EMPACADURA",
         "JUEGO",
+        "M-102",
         "OS-209"
       ],
-      "linked_ids": [
-        655
-      ],
-      "oem": "OS-209",
+      "oem": "8-97304-8520 / M-102 / 8-97304-8540 / 8-97944-5140 / 8-97944-5150 / 8-97945-4230 / 8-98055-7450 / OS-209",
       "slug": "juego-empacadura-carter-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "OS-209",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        577,
+        655
       ]
     },
     {
@@ -7735,23 +5894,24 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/juego-empacadura-carter-luv-23ax4.webp",
       "keywords": [
         "4X4",
+        "8-97304-8520",
+        "8-97304-8540",
+        "8-97944-5140",
+        "8-97944-5150",
+        "8-97945-4230",
+        "8-98055-7450",
         "CARTER",
         "EMPACADURA",
         "JUEGO",
         "LUV",
+        "M-102",
         "OS-209"
       ],
-      "linked_ids": [
-        655
-      ],
-      "oem": "OS-209",
+      "oem": "8-97304-8520 / M-102 / 8-97304-8540 / 8-97944-5140 / 8-97944-5150 / 8-97945-4230 / 8-98055-7450 / OS-209",
       "slug": "juego-empacadura-carter-luv-23ax4",
-      "variants": [
-        {
-          "codigo_oem": "OS-209",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        577,
+        655
       ]
     },
     {
@@ -7760,24 +5920,20 @@ const PRODUCTS_DATA = {
       "id": "06a16014-2f21-4d50-8933-cd7b717086cf",
       "image_path": "./assets/empacadura-multiple-admision-caribe-2-3.webp",
       "keywords": [
+        "4842M-040",
         "8-94146-2490",
         "8-94324-0520",
+        "8-97179-2960-040",
         "ADMISION",
         "CARIBE",
         "EMPACADURA",
         "MULTIPLE"
       ],
-      "linked_ids": [
-        459
-      ],
-      "oem": "8-94146-2490 / 8-94324-0520",
+      "oem": "8-97179-2960-040 / 4842M-040 / 8-94146-2490 / 8-94324-0520",
       "slug": "empacadura-multiple-admision-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94146-2490",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        365,
+        459
       ]
     },
     {
@@ -7786,24 +5942,20 @@ const PRODUCTS_DATA = {
       "id": "fa2690f3-6860-4436-8ffe-f7ff447d9f3b",
       "image_path": "./assets/empacadura-multiple-admision-caribe-2-6.webp",
       "keywords": [
+        "4842M-040",
         "8-94146-2490",
         "8-94324-0520",
+        "8-97179-2960-040",
         "ADMISION",
         "CARIBE",
         "EMPACADURA",
         "MULTIPLE"
       ],
-      "linked_ids": [
-        459
-      ],
-      "oem": "8-94146-2490 / 8-94324-0520",
+      "oem": "8-97179-2960-040 / 4842M-040 / 8-94146-2490 / 8-94324-0520",
       "slug": "empacadura-multiple-admision-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94146-2490",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        365,
+        459
       ]
     },
     {
@@ -7812,24 +5964,20 @@ const PRODUCTS_DATA = {
       "id": "3b830167-ada1-47d5-b328-06d4354e1c7c",
       "image_path": "./assets/empacadura-multiple-admision-luv-2-3.webp",
       "keywords": [
+        "4842M-040",
         "8-94146-2490",
         "8-94324-0520",
+        "8-97179-2960-040",
         "ADMISION",
         "EMPACADURA",
         "LUV",
         "MULTIPLE"
       ],
-      "linked_ids": [
-        459
-      ],
-      "oem": "8-94146-2490 / 8-94324-0520",
+      "oem": "8-97179-2960-040 / 4842M-040 / 8-94146-2490 / 8-94324-0520",
       "slug": "empacadura-multiple-admision-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94146-2490",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        365,
+        459
       ]
     },
     {
@@ -7838,6 +5986,8 @@ const PRODUCTS_DATA = {
       "id": "6f2820a5-51cb-421a-9d9d-7e25c41187f5",
       "image_path": "./assets/empacadura-multiple-de-admision-rodeo-3-2-soch.webp",
       "keywords": [
+        "7108M-040",
+        "8-92066-6330-040",
         "8-94364-5770",
         "8-97095-8610",
         "ADMISION",
@@ -7846,23 +5996,13 @@ const PRODUCTS_DATA = {
         "RODEO",
         "SOCH"
       ],
+      "oem": "8-92066-6330-040 / 7108M-040 / 8-94364-5770 / 8-97095-8610",
+      "slug": "empacadura-multiple-de-admision-rodeo-3-2-soch",
       "linked_ids": [
+        359,
+        368,
         461,
         1112
-      ],
-      "oem": "8-94364-5770 / 8-97095-8610",
-      "slug": "empacadura-multiple-de-admision-rodeo-3-2-soch",
-      "variants": [
-        {
-          "codigo_oem": "8-94364-5770",
-          "brand": "Original",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94364-5770",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -7871,6 +6011,8 @@ const PRODUCTS_DATA = {
       "id": "5155237e-83a9-4a80-859d-6ef0571cee1d",
       "image_path": "./assets/empacadura-multiple-de-admision-trooper-3-2-sohc.webp",
       "keywords": [
+        "7108M-040",
+        "8-92066-6330-040",
         "8-94364-5770",
         "8-97095-8610",
         "ADMISION",
@@ -7879,23 +6021,13 @@ const PRODUCTS_DATA = {
         "SOHC",
         "TROOPER"
       ],
+      "oem": "8-92066-6330-040 / 7108M-040 / 8-94364-5770 / 8-97095-8610",
+      "slug": "empacadura-multiple-de-admision-trooper-3-2-sohc",
       "linked_ids": [
+        359,
+        368,
         461,
         1112
-      ],
-      "oem": "8-94364-5770 / 8-97095-8610",
-      "slug": "empacadura-multiple-de-admision-trooper-3-2-sohc",
-      "variants": [
-        {
-          "codigo_oem": "8-94364-5770",
-          "brand": "Original",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94364-5770",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -7911,17 +6043,11 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "MULTIPLE"
       ],
-      "linked_ids": [
-        463
-      ],
       "oem": "8-94246-1090 / 8-94324-0540",
       "slug": "empacadura-multiple-de-escape-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94246-1090",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        369,
+        463
       ]
     },
     {
@@ -7937,17 +6063,11 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "MULTIPLE"
       ],
-      "linked_ids": [
-        463
-      ],
       "oem": "8-94246-1090 / 8-94324-0540",
       "slug": "empacadura-multiple-de-escape-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94246-1090",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        369,
+        463
       ]
     },
     {
@@ -7963,17 +6083,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "MULTIPLE"
       ],
-      "linked_ids": [
-        463
-      ],
       "oem": "8-94246-1090 / 8-94324-0540",
       "slug": "empacadura-multiple-de-escape-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94246-1090",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        369,
+        463
       ]
     },
     {
@@ -7982,6 +6096,9 @@ const PRODUCTS_DATA = {
       "id": "025ab5c2-79aa-4e4e-9ac2-b12d7643969e",
       "image_path": "./assets/empacadura-multiple-de-escape-rodeo-3-2-soch.webp",
       "keywords": [
+        "3570-010",
+        "8-94133-0260",
+        "8-94251-2660-010",
         "8-94323-1730",
         "8-97104-3160",
         "EMPACADURA",
@@ -7990,17 +6107,11 @@ const PRODUCTS_DATA = {
         "RODEO",
         "SOCH"
       ],
-      "linked_ids": [
-        465
-      ],
-      "oem": "8-94323-1730 / 8-97104-3160",
+      "oem": "8-94251-2660-010 / 8-94133-0260 / 3570-010 / 8-94323-1730 / 8-97104-3160",
       "slug": "empacadura-multiple-de-escape-rodeo-3-2-soch",
-      "variants": [
-        {
-          "codigo_oem": "8-94323-1730",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        372,
+        465
       ]
     },
     {
@@ -8009,6 +6120,9 @@ const PRODUCTS_DATA = {
       "id": "dbf02031-ee3e-4126-88d3-12e29fd9d8ff",
       "image_path": "./assets/empacadura-multiple-de-escape-trooper-3-2-sohc.webp",
       "keywords": [
+        "3570-010",
+        "8-94133-0260",
+        "8-94251-2660-010",
         "8-94323-1730",
         "8-97104-3160",
         "EMPACADURA",
@@ -8017,17 +6131,11 @@ const PRODUCTS_DATA = {
         "SOHC",
         "TROOPER"
       ],
-      "linked_ids": [
-        465
-      ],
-      "oem": "8-94323-1730 / 8-97104-3160",
+      "oem": "8-94251-2660-010 / 8-94133-0260 / 3570-010 / 8-94323-1730 / 8-97104-3160",
       "slug": "empacadura-multiple-de-escape-trooper-3-2-sohc",
-      "variants": [
-        {
-          "codigo_oem": "8-94323-1730",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        372,
+        465
       ]
     },
     {
@@ -8037,24 +6145,21 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/empacadura-tapa-valvula-caribe-2300.webp",
       "keywords": [
         "2300",
+        "3570-020",
+        "8-94133-0270",
         "8-94214-9850",
+        "8-94251-2660-020",
         "CARIBE",
         "EMPACADURA",
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "linked_ids": [
-        467
-      ],
-      "oem": "8-94214-9850",
+      "oem": "8-94251-2660-020 / 8-94133-0270 / 3570-020 / 8-94214-9850",
       "slug": "empacadura-tapa-valvula-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94214-9850",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        373,
+        467
       ]
     },
     {
@@ -8064,24 +6169,21 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/empacadura-tapa-valvula-caribe-2600.webp",
       "keywords": [
         "2600",
+        "3570-020",
+        "8-94133-0270",
         "8-94214-9850",
+        "8-94251-2660-020",
         "CARIBE",
         "EMPACADURA",
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "linked_ids": [
-        467
-      ],
-      "oem": "8-94214-9850",
+      "oem": "8-94251-2660-020 / 8-94133-0270 / 3570-020 / 8-94214-9850",
       "slug": "empacadura-tapa-valvula-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94214-9850",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        373,
+        467
       ]
     },
     {
@@ -8090,24 +6192,20 @@ const PRODUCTS_DATA = {
       "id": "1632a134-9026-464f-b3b7-a4c104bbb8b1",
       "image_path": "./assets/empacadura-tapa-valvula-luv-2-2.webp",
       "keywords": [
+        "3570-040",
         "8-90467-6610",
+        "8-94251-2660-040",
         "EMPACADURA",
         "LUV",
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "linked_ids": [
-        468
-      ],
-      "oem": "8-90467-6610",
+      "oem": "8-94251-2660-040 / 3570-040 / 8-90467-6610",
       "slug": "empacadura-tapa-valvula-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-90467-6610",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        375,
+        468
       ]
     },
     {
@@ -8116,24 +6214,21 @@ const PRODUCTS_DATA = {
       "id": "8339181b-b966-436d-bd2e-b70bc2bfab0d",
       "image_path": "./assets/empacadura-tapa-valvula-luv-2-3.webp",
       "keywords": [
+        "3570-020",
+        "8-94133-0270",
         "8-94214-9850",
+        "8-94251-2660-020",
         "EMPACADURA",
         "LUV",
         "TAPA",
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "linked_ids": [
-        467
-      ],
-      "oem": "8-94214-9850",
+      "oem": "8-94251-2660-020 / 8-94133-0270 / 3570-020 / 8-94214-9850",
       "slug": "empacadura-tapa-valvula-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94214-9850",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        373,
+        467
       ]
     },
     {
@@ -8142,7 +6237,9 @@ const PRODUCTS_DATA = {
       "id": "2817c810-9bd3-4dda-8f69-5c4b08e829d3",
       "image_path": "./assets/empacadura-tapa-valvula-luv-d-max-2-4.webp",
       "keywords": [
+        "3570-040",
         "8-90467-6610",
+        "8-94251-2660-040",
         "D-MAX",
         "EMPACADURA",
         "LUV",
@@ -8150,17 +6247,11 @@ const PRODUCTS_DATA = {
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "linked_ids": [
-        468
-      ],
-      "oem": "8-90467-6610",
+      "oem": "8-94251-2660-040 / 3570-040 / 8-90467-6610",
       "slug": "empacadura-tapa-valvula-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-90467-6610",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        375,
+        468
       ]
     },
     {
@@ -8169,6 +6260,8 @@ const PRODUCTS_DATA = {
       "id": "fd9ed290-19fd-4a9e-90b3-5bc66583db74",
       "image_path": "./assets/empacadura-tapa-valvula-luv-d-max-3-5.webp",
       "keywords": [
+        "3570-050",
+        "8-94251-2660-050",
         "8-97172-3940",
         "D-MAX",
         "EMPACADURA",
@@ -8177,27 +6270,11 @@ const PRODUCTS_DATA = {
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "linked_ids": [
-        469
-      ],
-      "oem": "8-97172-3940",
+      "oem": "8-94251-2660-050 / 3570-050 / 8-97172-3940",
       "slug": "empacadura-tapa-valvula-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97172-3940",
-          "brand": "PRESENTACION",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97172-3940",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97172-3940",
-          "brand": "AMERICAN PARTS",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        376,
+        469
       ]
     },
     {
@@ -8206,6 +6283,8 @@ const PRODUCTS_DATA = {
       "id": "13f6a048-f403-48c8-86c4-4b7f75147d86",
       "image_path": "./assets/empacadura-tapa-valvula-rodeo-3-2-soch.webp",
       "keywords": [
+        "3570-060",
+        "8-94251-2660-060",
         "8-97048-7202",
         "EMPACADURA",
         "RODEO",
@@ -8214,17 +6293,11 @@ const PRODUCTS_DATA = {
         "TAPAVALVULA",
         "VALVULA"
       ],
-      "linked_ids": [
-        471
-      ],
-      "oem": "8-97048-7202",
+      "oem": "8-94251-2660-060 / 3570-060 / 8-97048-7202",
       "slug": "empacadura-tapa-valvula-rodeo-3-2-soch",
-      "variants": [
-        {
-          "codigo_oem": "8-97048-7202",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        377,
+        471
       ]
     },
     {
@@ -8260,22 +6333,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/engranaje-de-ciguenal-caribe-2000.webp",
       "keywords": [
         "2000",
+        "4-1490-030",
+        "8-92028-8170-030",
         "8-94213-8150",
         "CARIBE",
         "CIGUENAL",
         "ENGRANAJE"
       ],
-      "linked_ids": [
-        473
-      ],
-      "oem": "8-94213-8150",
+      "oem": "8-92028-8170-030 / 4-1490-030 / 8-94213-8150",
       "slug": "engranaje-de-ciguenal-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94213-8150",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        381,
+        473
       ]
     },
     {
@@ -8285,22 +6354,19 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/engranaje-de-ciguenal-caribe-2300.webp",
       "keywords": [
         "2300",
+        "4-1490-010",
+        "8-92028-8170-010",
+        "8-92028-8180",
         "8-94231-1651",
         "CARIBE",
         "CIGUENAL",
         "ENGRANAJE"
       ],
-      "linked_ids": [
-        474
-      ],
-      "oem": "8-94231-1651",
+      "oem": "8-92028-8170-010 / 4-1490-010 / 8-92028-8180 / 8-94231-1651",
       "slug": "engranaje-de-ciguenal-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94231-1651",
-          "brand": "Original",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        379,
+        474
       ]
     },
     {
@@ -8309,22 +6375,19 @@ const PRODUCTS_DATA = {
       "id": "961eeb1b-7f04-4e16-adda-d8821763dbe8",
       "image_path": "./assets/engranaje-de-ciguenal-luv-2-3.webp",
       "keywords": [
+        "4-1490-010",
+        "8-92028-8170-010",
+        "8-92028-8180",
         "8-94231-1651",
         "CIGUENAL",
         "ENGRANAJE",
         "LUV"
       ],
-      "linked_ids": [
-        474
-      ],
-      "oem": "8-94231-1651",
+      "oem": "8-92028-8170-010 / 4-1490-010 / 8-92028-8180 / 8-94231-1651",
       "slug": "engranaje-de-ciguenal-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94231-1651",
-          "brand": "Original",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        379,
+        474
       ]
     },
     {
@@ -8333,6 +6396,8 @@ const PRODUCTS_DATA = {
       "id": "9e604de9-d1b8-4202-8f1c-5ad2fc47bae4",
       "image_path": "./assets/engranaje-de-leva-caribe-g-2000.webp",
       "keywords": [
+        "4-1490-050",
+        "8-92028-8170-050",
         "8-94200-9730",
         "8-94213-8160",
         "CARIBE",
@@ -8340,17 +6405,11 @@ const PRODUCTS_DATA = {
         "G-2000",
         "LEVA"
       ],
-      "linked_ids": [
-        477
-      ],
-      "oem": "8-94213-8160 / 8-94200-9730",
+      "oem": "8-92028-8170-050 / 4-1490-050 / 8-94213-8160 / 8-94200-9730",
       "slug": "engranaje-de-leva-caribe-g-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94213-8160",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        383,
+        477
       ]
     },
     {
@@ -8359,6 +6418,8 @@ const PRODUCTS_DATA = {
       "id": "e9321147-8560-4407-8899-520169d080a5",
       "image_path": "./assets/reservorio-aceite-direccion-luv-d-max.webp",
       "keywords": [
+        "6-1940-040",
+        "8-97179-2930-040",
         "8-97234-3500",
         "ACEITE",
         "D-MAX",
@@ -8367,17 +6428,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "RESERVORIO"
       ],
-      "linked_ids": [
-        481
-      ],
-      "oem": "8-97234-3500",
+      "oem": "8-97179-2930-040 / 6-1940-040 / 8-97234-3500",
       "slug": "reservorio-aceite-direccion-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97234-3500",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        388,
+        481
       ]
     },
     {
@@ -8386,23 +6441,19 @@ const PRODUCTS_DATA = {
       "id": "3a8378d4-45e2-4d81-8db3-bb492ba8ae3f",
       "image_path": "./assets/envase-refrigerante-luv-d-max.webp",
       "keywords": [
+        "6-1940-030",
+        "8-97179-2930-030",
         "8-97941-5013",
         "D-MAX",
         "ENVASE",
         "LUV",
         "REFRIGERANTE"
       ],
-      "linked_ids": [
-        478
-      ],
-      "oem": "8-97941-5013",
+      "oem": "8-97179-2930-030 / 6-1940-030 / 8-97941-5013",
       "slug": "envase-refrigerante-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97941-5013",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        387,
+        478
       ]
     },
     {
@@ -8418,17 +6469,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "RUEDA"
       ],
-      "linked_ids": [
-        484
-      ],
       "oem": "8-97213-8710",
       "slug": "esparrago-rueda-delantera-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97213-8710",
-          "brand": "Original",
-          "precio_usd": 2
-        }
+      "linked_ids": [
+        391,
+        484
       ]
     },
     {
@@ -8444,17 +6489,11 @@ const PRODUCTS_DATA = {
         "RUEDA",
         "TRASERA"
       ],
-      "linked_ids": [
-        1053
-      ],
       "oem": "8-97213-8700",
       "slug": "esparrago-rueda-trasera-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97213-8700",
-          "brand": "Original",
-          "precio_usd": 2
-        }
+      "linked_ids": [
+        392,
+        1053
       ]
     },
     {
@@ -8465,39 +6504,23 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2005",
         "2014",
+        "8-94208-4180",
         "8-97357-8740",
         "8-97357-8750",
+        "ALC6171",
+        "CND-204",
         "D-MAX",
         "ESPEJO",
-        "LUV"
+        "LUV",
+        "SC-158"
       ],
+      "oem": "8-94208-4180 / CND-204 / SC-158 / ALC6171 / 8-97357-8750 / 8-97357-8740",
+      "slug": "espejo-luv-d-max-2005-2014",
       "linked_ids": [
+        394,
+        396,
         486,
         1115
-      ],
-      "oem": "8-97357-8750 / 8-97357-8740",
-      "slug": "espejo-luv-d-max-2005-2014",
-      "variants": [
-        {
-          "codigo_oem": "8-97357-8750",
-          "brand": "YOSAI",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-97357-8750",
-          "brand": "TYC",
-          "precio_usd": 70
-        },
-        {
-          "codigo_oem": "8-97357-8740",
-          "brand": "YOSAI",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-97357-8740",
-          "brand": "TYC",
-          "precio_usd": 70
-        }
       ]
     },
     {
@@ -8513,17 +6536,11 @@ const PRODUCTS_DATA = {
         "ESPEJO",
         "RETROVISOR"
       ],
-      "linked_ids": [
-        1114
-      ],
       "oem": "8-94495-2281",
       "slug": "espejo-retrovisor-derecho-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94495-2281",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        393,
+        1114
       ]
     },
     {
@@ -8539,17 +6556,11 @@ const PRODUCTS_DATA = {
         "ESPEJO",
         "RETROVISOR"
       ],
-      "linked_ids": [
-        1114
-      ],
       "oem": "8-94495-2281",
       "slug": "espejo-retrovisor-derecho-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94495-2281",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        393,
+        1114
       ]
     },
     {
@@ -8558,30 +6569,22 @@ const PRODUCTS_DATA = {
       "id": "a3205684-d945-4560-b6ea-6578b520d322",
       "image_path": "./assets/luna-espejo-luv-d-max.webp",
       "keywords": [
+        "8-94222-6130",
         "8-97349-9810",
         "8-97349-9820",
         "D-MAX",
         "ESPEJO",
         "LUNA",
-        "LUV"
+        "LUV",
+        "SQ-502"
       ],
+      "oem": "SQ-502 / 8-94222-6130 / 8-97349-9820 / 8-97349-9810",
+      "slug": "luna-espejo-luv-d-max",
       "linked_ids": [
+        397,
+        398,
         488,
         1117
-      ],
-      "oem": "8-97349-9820 / 8-97349-9810",
-      "slug": "luna-espejo-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97349-9820",
-          "brand": "Original",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-97349-9810",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -8594,32 +6597,18 @@ const PRODUCTS_DATA = {
         "8-94327-0620",
         "8-94334-8450",
         "8-94389-5931",
+        "8-97350-0710",
+        "8-97350-0720",
         "ARBOL",
         "CARIBE",
         "ESTOPERA",
         "LEVA"
       ],
-      "linked_ids": [
-        489
-      ],
-      "oem": "8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
+      "oem": "8-97350-0720 / 8-97350-0710 / 8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
       "slug": "estopera-arbol-de-leva-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "PRESENTACION",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "SABO",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "FELPRO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        399,
+        489
       ]
     },
     {
@@ -8632,32 +6621,18 @@ const PRODUCTS_DATA = {
         "8-94327-0620",
         "8-94334-8450",
         "8-94389-5931",
+        "8-97350-0710",
+        "8-97350-0720",
         "ARBOL",
         "CARIBE",
         "ESTOPERA",
         "LEVA"
       ],
-      "linked_ids": [
-        489
-      ],
-      "oem": "8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
+      "oem": "8-97350-0720 / 8-97350-0710 / 8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
       "slug": "estopera-arbol-de-leva-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "PRESENTACION",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "SABO",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "FELPRO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        399,
+        489
       ]
     },
     {
@@ -8670,32 +6645,18 @@ const PRODUCTS_DATA = {
         "8-94327-0620",
         "8-94334-8450",
         "8-94389-5931",
+        "8-97350-0710",
+        "8-97350-0720",
         "ARBOL",
         "ESTOPERA",
         "LEVA",
         "LUV"
       ],
-      "linked_ids": [
-        489
-      ],
-      "oem": "8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
+      "oem": "8-97350-0720 / 8-97350-0710 / 8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
       "slug": "estopera-arbol-de-leva-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "PRESENTACION",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "SABO",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "FELPRO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        399,
+        489
       ]
     },
     {
@@ -8708,33 +6669,19 @@ const PRODUCTS_DATA = {
         "8-94327-0620",
         "8-94334-8450",
         "8-94389-5931",
+        "8-97350-0710",
+        "8-97350-0720",
         "ARBOL",
         "D-MAX",
         "ESTOPERA",
         "LEVA",
         "LUV"
       ],
-      "linked_ids": [
-        489
-      ],
-      "oem": "8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
+      "oem": "8-97350-0720 / 8-97350-0710 / 8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
       "slug": "estopera-arbol-de-leva-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "PRESENTACION",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "SABO",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "FELPRO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        399,
+        489
       ]
     },
     {
@@ -8747,32 +6694,18 @@ const PRODUCTS_DATA = {
         "8-94327-0620",
         "8-94334-8450",
         "8-94389-5931",
+        "8-97350-0710",
+        "8-97350-0720",
         "ARBOL",
         "ESTOPERA",
         "LEVA",
         "RODEO"
       ],
-      "linked_ids": [
-        489
-      ],
-      "oem": "8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
+      "oem": "8-97350-0720 / 8-97350-0710 / 8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
       "slug": "estopera-arbol-de-leva-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "PRESENTACION",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "SABO",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "FELPRO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        399,
+        489
       ]
     },
     {
@@ -8785,32 +6718,18 @@ const PRODUCTS_DATA = {
         "8-94327-0620",
         "8-94334-8450",
         "8-94389-5931",
+        "8-97350-0710",
+        "8-97350-0720",
         "ARBOL",
         "ESTOPERA",
         "LEVA",
         "TROOPER"
       ],
-      "linked_ids": [
-        489
-      ],
-      "oem": "8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
+      "oem": "8-97350-0720 / 8-97350-0710 / 8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931",
       "slug": "estopera-arbol-de-leva-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "PRESENTACION",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "SABO",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94215-2200",
-          "brand": "FELPRO",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        399,
+        489
       ]
     },
     {
@@ -8819,32 +6738,29 @@ const PRODUCTS_DATA = {
       "id": "5eb234ae-fde3-4ec9-a607-455c52a5b6b4",
       "image_path": "./assets/estopera-bomba-de-aceite-caribe.webp",
       "keywords": [
+        "6878",
         "8-09924-2960",
+        "8-94167-4350",
+        "8-94172-3280",
+        "8-94174-3060",
         "8-94214-9690",
         "8-94232-2920",
         "8-94369-5160",
+        "8-97042-2680",
         "ACEITE",
         "BOMBA",
         "CARIBE",
-        "ESTOPERA"
+        "COP-12051",
+        "ESTOPERA",
+        "VK-CTN-16"
       ],
+      "oem": "8-94172-3280 / 8-94167-4350 / 6878 / VK-CTN-16 / COP-12051 / 8-97042-2680 / 8-94174-3060 / 8-94369-5160 / 8-94214-9690 / 8-09924-2960 / 8-94232-2920",
+      "slug": "estopera-bomba-de-aceite-caribe",
       "linked_ids": [
+        401,
+        403,
         492,
         493
-      ],
-      "oem": "8-94369-5160 / 8-94214-9690 / 8-09924-2960 / 8-94232-2920",
-      "slug": "estopera-bomba-de-aceite-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94369-5160",
-          "brand": "Original",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-09924-2960",
-          "brand": "Original",
-          "precio_usd": 5
-        }
       ]
     },
     {
@@ -8853,32 +6769,29 @@ const PRODUCTS_DATA = {
       "id": "99f6dda2-62a4-4f95-bbb3-2586923de1ba",
       "image_path": "./assets/estopera-bomba-de-aceite-luv-2-3.webp",
       "keywords": [
+        "6878",
         "8-09924-2960",
+        "8-94167-4350",
+        "8-94172-3280",
+        "8-94174-3060",
         "8-94214-9690",
         "8-94232-2920",
         "8-94369-5160",
+        "8-97042-2680",
         "ACEITE",
         "BOMBA",
+        "COP-12051",
         "ESTOPERA",
-        "LUV"
+        "LUV",
+        "VK-CTN-16"
       ],
+      "oem": "8-94172-3280 / 8-94167-4350 / 6878 / VK-CTN-16 / COP-12051 / 8-97042-2680 / 8-94174-3060 / 8-94369-5160 / 8-94214-9690 / 8-09924-2960 / 8-94232-2920",
+      "slug": "estopera-bomba-de-aceite-luv-2-3",
       "linked_ids": [
+        401,
+        403,
         492,
         493
-      ],
-      "oem": "8-94369-5160 / 8-94214-9690 / 8-09924-2960 / 8-94232-2920",
-      "slug": "estopera-bomba-de-aceite-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94369-5160",
-          "brand": "Original",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-09924-2960",
-          "brand": "Original",
-          "precio_usd": 5
-        }
       ]
     },
     {
@@ -8887,7 +6800,11 @@ const PRODUCTS_DATA = {
       "id": "2db7326c-6d57-46cd-87f9-b72b8f21a8b7",
       "image_path": "./assets/estopera-bomba-aceite-ciguenal-luv-2-2.webp",
       "keywords": [
+        "8-12065-3030",
         "8-90183-5720",
+        "8-92062-5210",
+        "8-92065-3030",
+        "8-92065-9770",
         "ACEITE",
         "BOMBA",
         "CIGUENAL",
@@ -8895,17 +6812,11 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV"
       ],
-      "linked_ids": [
-        495
-      ],
-      "oem": "8-90183-5720",
+      "oem": "8-92062-5210 / 8-92065-3030 / 8-12065-3030 / 8-92065-9770 / 8-90183-5720",
       "slug": "estopera-bomba-aceite-ciguenal-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-90183-5720",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        404,
+        495
       ]
     },
     {
@@ -8914,7 +6825,11 @@ const PRODUCTS_DATA = {
       "id": "b7efd8d3-8eea-46ba-a232-738677fe2921",
       "image_path": "./assets/estopera-bomba-aceite-ciguenal-luv-d-max-2-4.webp",
       "keywords": [
+        "8-12065-3030",
         "8-90183-5720",
+        "8-92062-5210",
+        "8-92065-3030",
+        "8-92065-9770",
         "ACEITE",
         "BOMBA",
         "CIGUENAL",
@@ -8923,17 +6838,11 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV"
       ],
-      "linked_ids": [
-        495
-      ],
-      "oem": "8-90183-5720",
+      "oem": "8-92062-5210 / 8-92065-3030 / 8-12065-3030 / 8-92065-9770 / 8-90183-5720",
       "slug": "estopera-bomba-aceite-ciguenal-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-90183-5720",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        404,
+        495
       ]
     },
     {
@@ -8942,8 +6851,10 @@ const PRODUCTS_DATA = {
       "id": "559ae8f5-b39f-4482-b98e-4e70e625a814",
       "image_path": "./assets/estopera-ciguenal-delantera-caribe-2-3.webp",
       "keywords": [
+        "8-94160-6560",
         "8-94214-9120",
         "8-94339-9970",
+        "8-97041-7840",
         "8-97352-7450",
         "CARIBE",
         "CIGUENAL",
@@ -8951,17 +6862,11 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "I3615"
       ],
-      "linked_ids": [
-        494
-      ],
-      "oem": "8-94214-9120 / I3615 / 8-94339-9970 / 8-97352-7450",
+      "oem": "8-97041-7840 / 8-94160-6560 / 8-94214-9120 / I3615 / 8-94339-9970 / 8-97352-7450",
       "slug": "estopera-ciguenal-delantera-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94214-9120",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        402,
+        494
       ]
     },
     {
@@ -8970,8 +6875,10 @@ const PRODUCTS_DATA = {
       "id": "c5a1c51e-ee0e-48d5-ad09-6ac0a218a0bc",
       "image_path": "./assets/estopera-ciguenal-delantera-caribe-2-6.webp",
       "keywords": [
+        "8-94160-6560",
         "8-94214-9120",
         "8-94339-9970",
+        "8-97041-7840",
         "8-97352-7450",
         "CARIBE",
         "CIGUENAL",
@@ -8979,17 +6886,11 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "I3615"
       ],
-      "linked_ids": [
-        494
-      ],
-      "oem": "8-94214-9120 / I3615 / 8-94339-9970 / 8-97352-7450",
+      "oem": "8-97041-7840 / 8-94160-6560 / 8-94214-9120 / I3615 / 8-94339-9970 / 8-97352-7450",
       "slug": "estopera-ciguenal-delantera-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94214-9120",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        402,
+        494
       ]
     },
     {
@@ -8999,27 +6900,29 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-ciguenal-delantera-caribe-2000.webp",
       "keywords": [
         "2000",
+        "6878",
         "8-09924-2960",
+        "8-94167-4350",
+        "8-94172-3280",
+        "8-94174-3060",
         "8-94214-9690",
         "8-94232-2920",
         "8-94369-5160",
+        "8-97042-2680",
         "CARIBE",
         "CIGUENAL",
+        "COP-12051",
         "DELANTERA",
-        "ESTOPERA"
+        "ESTOPERA",
+        "VK-CTN-16"
       ],
+      "oem": "8-94172-3280 / 8-94167-4350 / 6878 / VK-CTN-16 / COP-12051 / 8-97042-2680 / 8-94174-3060 / 8-94369-5160 / 8-94214-9690 / 8-09924-2960 / 8-94232-2920",
+      "slug": "estopera-ciguenal-delantera-caribe-2000",
       "linked_ids": [
+        401,
+        403,
         492,
         493
-      ],
-      "oem": "8-94369-5160 / 8-94214-9690 / 8-09924-2960 / 8-94232-2920",
-      "slug": "estopera-ciguenal-delantera-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-09924-2960",
-          "brand": "Original",
-          "precio_usd": 5
-        }
       ]
     },
     {
@@ -9028,8 +6931,10 @@ const PRODUCTS_DATA = {
       "id": "8f68d104-8968-4226-ad0e-9b490db10419",
       "image_path": "./assets/estopera-ciguenal-delantera-luv-2-3.webp",
       "keywords": [
+        "8-94160-6560",
         "8-94214-9120",
         "8-94339-9970",
+        "8-97041-7840",
         "8-97352-7450",
         "CIGUENAL",
         "DELANTERA",
@@ -9037,17 +6942,11 @@ const PRODUCTS_DATA = {
         "I3615",
         "LUV"
       ],
-      "linked_ids": [
-        494
-      ],
-      "oem": "8-94214-9120 / I3615 / 8-94339-9970 / 8-97352-7450",
+      "oem": "8-97041-7840 / 8-94160-6560 / 8-94214-9120 / I3615 / 8-94339-9970 / 8-97352-7450",
       "slug": "estopera-ciguenal-delantera-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94214-9120",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        402,
+        494
       ]
     },
     {
@@ -9057,28 +6956,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-ciguenal-delantera-luv-d-max-3-5.webp",
       "keywords": [
         "8-97023-3730",
+        "8-97191-0361",
         "CIGUENAL",
         "D-MAX",
         "DELANTERA",
         "ESTOPERA",
         "LUV"
       ],
-      "linked_ids": [
-        496
-      ],
-      "oem": "8-97023-3730",
+      "oem": "8-97191-0361 / 8-97023-3730",
       "slug": "estopera-ciguenal-delantera-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97023-3730",
-          "brand": "PRESENTACION",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97023-3730",
-          "brand": "SABO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        405,
+        496
       ]
     },
     {
@@ -9095,27 +6984,11 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "TRASERA"
       ],
-      "linked_ids": [
-        498
-      ],
       "oem": "8-94391-2330 / 8-97025-2060 / 8-97071-5611",
       "slug": "estopera-ciguenal-trasera-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "PRESENTACION",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "SABO",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "FELPRO",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        406,
+        498
       ]
     },
     {
@@ -9132,27 +7005,11 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "TRASERA"
       ],
-      "linked_ids": [
-        498
-      ],
       "oem": "8-94391-2330 / 8-97025-2060 / 8-97071-5611",
       "slug": "estopera-ciguenal-trasera-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "PRESENTACION",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "SABO",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "FELPRO",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        406,
+        498
       ]
     },
     {
@@ -9162,23 +7019,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-ciguenal-trasera-caribe-2000.webp",
       "keywords": [
         "2000",
+        "8-97016-3260",
         "9-09924-4490",
         "CARIBE",
         "CIGUENAL",
         "ESTOPERA",
         "TRASERA"
       ],
-      "linked_ids": [
-        497
-      ],
-      "oem": "9-09924-4490",
+      "oem": "8-97016-3260 / 9-09924-4490",
       "slug": "estopera-ciguenal-trasera-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "9-09924-4490",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        407,
+        497
       ]
     },
     {
@@ -9189,22 +7041,17 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-90298-4080",
         "8-90354-3780",
+        "8-94386-4970",
         "CIGUENAL",
         "ESTOPERA",
         "LUV",
         "TRASERA"
       ],
-      "linked_ids": [
-        500
-      ],
-      "oem": "8-90354-3780 / 8-90298-4080",
+      "oem": "8-94386-4970 / 8-90354-3780 / 8-90298-4080",
       "slug": "estopera-ciguenal-trasera-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-90354-3780",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        408,
+        500
       ]
     },
     {
@@ -9221,27 +7068,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRASERA"
       ],
-      "linked_ids": [
-        498
-      ],
       "oem": "8-94391-2330 / 8-97025-2060 / 8-97071-5611",
       "slug": "estopera-ciguenal-trasera-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "PRESENTACION",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "SABO",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "FELPRO",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        406,
+        498
       ]
     },
     {
@@ -9259,27 +7090,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TRASERA"
       ],
-      "linked_ids": [
-        498
-      ],
       "oem": "8-94391-2330 / 8-97025-2060 / 8-97071-5611",
       "slug": "estopera-ciguenal-trasera-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "PRESENTACION",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "SABO",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "FELPRO",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        406,
+        498
       ]
     },
     {
@@ -9296,27 +7111,11 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TRASERA"
       ],
-      "linked_ids": [
-        498
-      ],
       "oem": "8-94391-2330 / 8-97025-2060 / 8-97071-5611",
       "slug": "estopera-ciguenal-trasera-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "PRESENTACION",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "SABO",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "FELPRO",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        406,
+        498
       ]
     },
     {
@@ -9333,27 +7132,11 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TROOPER"
       ],
-      "linked_ids": [
-        498
-      ],
       "oem": "8-94391-2330 / 8-97025-2060 / 8-97071-5611",
       "slug": "estopera-ciguenal-trasera-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "PRESENTACION",
-          "precio_usd": 10
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "SABO",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94391-2330",
-          "brand": "FELPRO",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        406,
+        498
       ]
     },
     {
@@ -9363,30 +7146,21 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-cola-de-caja-caribe-2-3.webp",
       "keywords": [
         "5-09625-0621",
+        "6PK2288",
         "8-94340-3170",
         "8-97046-7052",
         "8-97046-7053",
+        "8-97130-5600",
         "CAJA",
         "CARIBE",
         "COLA",
         "ESTOPERA"
       ],
-      "linked_ids": [
-        501
-      ],
-      "oem": "8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
+      "oem": "8-97130-5600 / 6PK2288 / 8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
       "slug": "estopera-cola-de-caja-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "TAIWAN",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        409,
+        501
       ]
     },
     {
@@ -9396,30 +7170,21 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-cola-de-caja-caribe-2-6.webp",
       "keywords": [
         "5-09625-0621",
+        "6PK2288",
         "8-94340-3170",
         "8-97046-7052",
         "8-97046-7053",
+        "8-97130-5600",
         "CAJA",
         "CARIBE",
         "COLA",
         "ESTOPERA"
       ],
-      "linked_ids": [
-        501
-      ],
-      "oem": "8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
+      "oem": "8-97130-5600 / 6PK2288 / 8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
       "slug": "estopera-cola-de-caja-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "TAIWAN",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        409,
+        501
       ]
     },
     {
@@ -9429,30 +7194,21 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-cola-de-caja-luv-2-3.webp",
       "keywords": [
         "5-09625-0621",
+        "6PK2288",
         "8-94340-3170",
         "8-97046-7052",
         "8-97046-7053",
+        "8-97130-5600",
         "CAJA",
         "COLA",
         "ESTOPERA",
         "LUV"
       ],
-      "linked_ids": [
-        501
-      ],
-      "oem": "8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
+      "oem": "8-97130-5600 / 6PK2288 / 8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
       "slug": "estopera-cola-de-caja-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "TAIWAN",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        409,
+        501
       ]
     },
     {
@@ -9462,30 +7218,21 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-cola-de-caja-luv-3-2.webp",
       "keywords": [
         "5-09625-0621",
+        "6PK2288",
         "8-94340-3170",
         "8-97046-7052",
         "8-97046-7053",
+        "8-97130-5600",
         "CAJA",
         "COLA",
         "ESTOPERA",
         "LUV"
       ],
-      "linked_ids": [
-        501
-      ],
-      "oem": "8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
+      "oem": "8-97130-5600 / 6PK2288 / 8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
       "slug": "estopera-cola-de-caja-luv-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "TAIWAN",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        409,
+        501
       ]
     },
     {
@@ -9495,31 +7242,22 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-cola-de-caja-luv-d-max-3-5.webp",
       "keywords": [
         "5-09625-0621",
+        "6PK2288",
         "8-94340-3170",
         "8-97046-7052",
         "8-97046-7053",
+        "8-97130-5600",
         "CAJA",
         "COLA",
         "D-MAX",
         "ESTOPERA",
         "LUV"
       ],
-      "linked_ids": [
-        501
-      ],
-      "oem": "8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
+      "oem": "8-97130-5600 / 6PK2288 / 8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
       "slug": "estopera-cola-de-caja-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "TAIWAN",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        409,
+        501
       ]
     },
     {
@@ -9529,30 +7267,21 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-cola-de-caja-rodeo.webp",
       "keywords": [
         "5-09625-0621",
+        "6PK2288",
         "8-94340-3170",
         "8-97046-7052",
         "8-97046-7053",
+        "8-97130-5600",
         "CAJA",
         "COLA",
         "ESTOPERA",
         "RODEO"
       ],
-      "linked_ids": [
-        501
-      ],
-      "oem": "8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
+      "oem": "8-97130-5600 / 6PK2288 / 8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
       "slug": "estopera-cola-de-caja-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "TAIWAN",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        409,
+        501
       ]
     },
     {
@@ -9562,30 +7291,21 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-cola-de-caja-trooper.webp",
       "keywords": [
         "5-09625-0621",
+        "6PK2288",
         "8-94340-3170",
         "8-97046-7052",
         "8-97046-7053",
+        "8-97130-5600",
         "CAJA",
         "COLA",
         "ESTOPERA",
         "TROOPER"
       ],
-      "linked_ids": [
-        501
-      ],
-      "oem": "8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
+      "oem": "8-97130-5600 / 6PK2288 / 8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052",
       "slug": "estopera-cola-de-caja-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "TAIWAN",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97046-7053",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        409,
+        501
       ]
     },
     {
@@ -9594,23 +7314,21 @@ const PRODUCTS_DATA = {
       "id": "d0c53343-cd56-4787-8637-e3dd4545c206",
       "image_path": "./assets/estopera-pinon-de-ataque-caribe-2-6.webp",
       "keywords": [
+        "383",
+        "8-94238-9300",
+        "8-94332-6830",
         "8-94408-0840",
         "ATAQUE",
         "CARIBE",
         "ESTOPERA",
+        "GUIS-52",
         "PINON"
       ],
-      "linked_ids": [
-        505
-      ],
-      "oem": "8-94408-0840",
+      "oem": "GUIS-52 / 383 / 8-94332-6830 / 8-94238-9300 / 8-94408-0840",
       "slug": "estopera-pinon-de-ataque-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94408-0840",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        413,
+        505
       ]
     },
     {
@@ -9619,6 +7337,7 @@ const PRODUCTS_DATA = {
       "id": "0af2423f-46f2-4e38-adea-f0dfc1a63e18",
       "image_path": "./assets/estopera-pinon-de-ataque-luv-d-max.webp",
       "keywords": [
+        "369",
         "8-97146-8260",
         "ATAQUE",
         "D-MAX",
@@ -9626,17 +7345,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "PINON"
       ],
-      "linked_ids": [
-        506
-      ],
-      "oem": "8-97146-8260",
+      "oem": "369 / 8-97146-8260",
       "slug": "estopera-pinon-de-ataque-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97146-8260",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        415,
+        506
       ]
     },
     {
@@ -9651,24 +7364,14 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTOPERA",
         "PINON",
+        "TIS-174",
         "TRASERA"
       ],
-      "linked_ids": [
-        503
-      ],
-      "oem": "9-09724-0030 / 8-94121-5390",
+      "oem": "TIS-174 / 9-09724-0030 / 8-94121-5390",
       "slug": "estopera-pinon-de-ataque-trasera-caribe-2-0",
-      "variants": [
-        {
-          "codigo_oem": "9-09724-0030",
-          "brand": "TAIWAN ",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "9-09724-0030",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        414,
+        503
       ]
     },
     {
@@ -9683,24 +7386,14 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTOPERA",
         "PINON",
+        "TIS-174",
         "TRASERA"
       ],
-      "linked_ids": [
-        503
-      ],
-      "oem": "9-09724-0030 / 8-94121-5390",
+      "oem": "TIS-174 / 9-09724-0030 / 8-94121-5390",
       "slug": "estopera-pinon-de-ataque-trasera-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "9-09724-0030",
-          "brand": "TAIWAN ",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "9-09724-0030",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        414,
+        503
       ]
     },
     {
@@ -9709,7 +7402,9 @@ const PRODUCTS_DATA = {
       "id": "e331a608-7ce7-47a9-93f1-22ef7cb94ebb",
       "image_path": "./assets/estopera-rueda-punta-de-eje-delantera-caribe-2-3.webp",
       "keywords": [
+        "8-94165-5151",
         "8-94227-0481",
+        "8-97073-0790",
         "CARIBE",
         "DELANTERA",
         "EJE",
@@ -9717,17 +7412,11 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "linked_ids": [
-        507
-      ],
-      "oem": "8-94227-0481",
+      "oem": "8-97073-0790 / 8-94165-5151 / 8-94227-0481",
       "slug": "estopera-rueda-punta-de-eje-delantera-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94227-0481",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        417,
+        507
       ]
     },
     {
@@ -9736,6 +7425,7 @@ const PRODUCTS_DATA = {
       "id": "183e62bd-176b-4cac-abd9-7b6367986f74",
       "image_path": "./assets/estopera-rueda-punta-de-eje-delantera-caribe-2-6.webp",
       "keywords": [
+        "8-94242-6510",
         "8-94407-7110",
         "8-98036-5930",
         "8-98036-5940",
@@ -9746,17 +7436,11 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "linked_ids": [
-        508
-      ],
-      "oem": "8-94407-7110 / 8-98036-5940 / 8-98036-5930",
+      "oem": "8-94242-6510 / 8-94407-7110 / 8-98036-5940 / 8-98036-5930",
       "slug": "estopera-rueda-punta-de-eje-delantera-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94407-7110",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        416,
+        508
       ]
     },
     {
@@ -9765,7 +7449,9 @@ const PRODUCTS_DATA = {
       "id": "55c705ca-eba4-478d-a282-31d102952445",
       "image_path": "./assets/estopera-rueda-punta-de-eje-delantera-caribe-g200.webp",
       "keywords": [
+        "8-94165-5151",
         "8-94227-0481",
+        "8-97073-0790",
         "CARIBE",
         "DELANTERA",
         "EJE",
@@ -9774,17 +7460,11 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "linked_ids": [
-        507
-      ],
-      "oem": "8-94227-0481",
+      "oem": "8-97073-0790 / 8-94165-5151 / 8-94227-0481",
       "slug": "estopera-rueda-punta-de-eje-delantera-caribe-g200",
-      "variants": [
-        {
-          "codigo_oem": "8-94227-0481",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        417,
+        507
       ]
     },
     {
@@ -9793,6 +7473,7 @@ const PRODUCTS_DATA = {
       "id": "ebd16b93-5973-4834-b0e5-cd8d3b2a0f60",
       "image_path": "./assets/estopera-rueda-punta-de-eje-delantera-luv-3-2.webp",
       "keywords": [
+        "8-94242-6510",
         "8-94407-7110",
         "8-98036-5930",
         "8-98036-5940",
@@ -9803,17 +7484,11 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "linked_ids": [
-        508
-      ],
-      "oem": "8-94407-7110 / 8-98036-5940 / 8-98036-5930",
+      "oem": "8-94242-6510 / 8-94407-7110 / 8-98036-5940 / 8-98036-5930",
       "slug": "estopera-rueda-punta-de-eje-delantera-luv-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94407-7110",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        416,
+        508
       ]
     },
     {
@@ -9823,6 +7498,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-rueda-punta-de-eje-delantera-luv-d-max-2-4.webp",
       "keywords": [
         "8-94433-7180",
+        "8-97073-1570",
         "D-MAX",
         "DELANTERA",
         "EJE",
@@ -9831,17 +7507,11 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "linked_ids": [
-        509
-      ],
-      "oem": "8-94433-7180",
+      "oem": "8-97073-1570 / 8-94433-7180",
       "slug": "estopera-rueda-punta-de-eje-delantera-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-94433-7180",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        418,
+        509
       ]
     },
     {
@@ -9850,6 +7520,7 @@ const PRODUCTS_DATA = {
       "id": "e3687500-749c-42f9-8637-7901b0fa6ee2",
       "image_path": "./assets/estopera-rueda-punta-de-eje-delantera-luv-d-max-3-5.webp",
       "keywords": [
+        "8-94242-6510",
         "8-94407-7110",
         "8-98036-5930",
         "8-98036-5940",
@@ -9861,17 +7532,11 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "RUEDA"
       ],
-      "linked_ids": [
-        508
-      ],
-      "oem": "8-94407-7110 / 8-98036-5940 / 8-98036-5930",
+      "oem": "8-94242-6510 / 8-94407-7110 / 8-98036-5940 / 8-98036-5930",
       "slug": "estopera-rueda-punta-de-eje-delantera-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-94407-7110",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        416,
+        508
       ]
     },
     {
@@ -9880,6 +7545,7 @@ const PRODUCTS_DATA = {
       "id": "85435ec7-add2-40e4-9d68-231eca846618",
       "image_path": "./assets/estopera-punta-de-eje-tunel-trasera-interna-caribe-2-0.webp",
       "keywords": [
+        "8-92063-5890",
         "8-94257-3180",
         "8-94318-9100",
         "CARIBE",
@@ -9890,17 +7556,11 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TUNEL"
       ],
-      "linked_ids": [
-        511
-      ],
-      "oem": "8-94318-9100 / 8-94257-3180",
+      "oem": "8-92063-5890 / 8-94318-9100 / 8-94257-3180",
       "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-0",
-      "variants": [
-        {
-          "codigo_oem": "8-94318-9100",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        421,
+        511
       ]
     },
     {
@@ -9909,6 +7569,7 @@ const PRODUCTS_DATA = {
       "id": "43987597-2356-4264-96bf-45d51e7b91c8",
       "image_path": "./assets/estopera-punta-de-eje-tunel-trasera-interna-caribe-2-3.webp",
       "keywords": [
+        "8-92063-5890",
         "8-94257-3180",
         "8-94318-9100",
         "CARIBE",
@@ -9919,17 +7580,11 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TUNEL"
       ],
-      "linked_ids": [
-        511
-      ],
-      "oem": "8-94318-9100 / 8-94257-3180",
+      "oem": "8-92063-5890 / 8-94318-9100 / 8-94257-3180",
       "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94318-9100",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        421,
+        511
       ]
     },
     {
@@ -9939,6 +7594,8 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/estopera-punta-de-eje-tunel-trasera-interna-caribe-2-6.webp",
       "keywords": [
         "8-94178-2770",
+        "8-97321-2960",
+        "8-97328-6040",
         "CARIBE",
         "EJE",
         "ESTOPERA",
@@ -9947,17 +7604,11 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TUNEL"
       ],
-      "linked_ids": [
-        512
-      ],
-      "oem": "8-94178-2770",
+      "oem": "8-97328-6040 / 8-97321-2960 / 8-94178-2770",
       "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94178-2770",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        420,
+        512
       ]
     },
     {
@@ -9966,25 +7617,22 @@ const PRODUCTS_DATA = {
       "id": "67bbaa95-d8bd-4853-be72-2545c881685b",
       "image_path": "./assets/estopera-punta-de-eje-trasera-luv-d-max-2-4.webp",
       "keywords": [
+        "8-97036-0620",
         "8-97323-2970",
+        "8-97941-5270",
         "D-MAX",
         "EJE",
         "ESTOPERA",
         "LUV",
+        "N2316",
         "PUNTA",
         "TRASERA"
       ],
-      "linked_ids": [
-        514
-      ],
-      "oem": "8-97323-2970",
+      "oem": "8-97036-0620 / 8-97941-5270 / N2316 / 8-97323-2970",
       "slug": "estopera-punta-de-eje-trasera-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97323-2970",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        423,
+        514
       ]
     },
     {
@@ -9993,25 +7641,22 @@ const PRODUCTS_DATA = {
       "id": "610388fe-9867-4b5e-9659-f2a3f9804293",
       "image_path": "./assets/estopera-punta-de-eje-trasera-luv-d-max-3-0.webp",
       "keywords": [
+        "8-97036-0620",
         "8-97323-2970",
+        "8-97941-5270",
         "D-MAX",
         "EJE",
         "ESTOPERA",
         "LUV",
+        "N2316",
         "PUNTA",
         "TRASERA"
       ],
-      "linked_ids": [
-        514
-      ],
-      "oem": "8-97323-2970",
+      "oem": "8-97036-0620 / 8-97941-5270 / N2316 / 8-97323-2970",
       "slug": "estopera-punta-de-eje-trasera-luv-d-max-3-0",
-      "variants": [
-        {
-          "codigo_oem": "8-97323-2970",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        423,
+        514
       ]
     },
     {
@@ -10020,25 +7665,22 @@ const PRODUCTS_DATA = {
       "id": "d113f1cf-8d14-4d12-a17d-04a170af2317",
       "image_path": "./assets/estopera-punta-de-eje-trasera-luv-d-max-3-5.webp",
       "keywords": [
+        "8-97036-0620",
         "8-97323-2970",
+        "8-97941-5270",
         "D-MAX",
         "EJE",
         "ESTOPERA",
         "LUV",
+        "N2316",
         "PUNTA",
         "TRASERA"
       ],
-      "linked_ids": [
-        514
-      ],
-      "oem": "8-97323-2970",
+      "oem": "8-97036-0620 / 8-97941-5270 / N2316 / 8-97323-2970",
       "slug": "estopera-punta-de-eje-trasera-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97323-2970",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        423,
+        514
       ]
     },
     {
@@ -10047,27 +7689,28 @@ const PRODUCTS_DATA = {
       "id": "3856f626-a81e-4639-8f9f-b66b02921eec",
       "image_path": "./assets/estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-3-5.webp",
       "keywords": [
+        "8-94229-3880",
+        "8-97106-9790",
+        "8-97182-7811",
+        "8-97182-8581",
         "8-97216-7920",
+        "8-97321-0240",
         "D-MAX",
         "EJE",
         "ESTOPERA",
         "EXTERNA",
+        "IS-10",
         "LUV",
+        "N2303",
         "PUNTA",
         "RUEDA",
         "TRASERA"
       ],
-      "linked_ids": [
-        513
-      ],
-      "oem": "8-97216-7920",
+      "oem": "8-94229-3880 / 8-97106-9790 / 8-97182-8581 / IS-10 / 8-97321-0240 / 8-97182-7811 / N2303 / 8-97216-7920",
       "slug": "estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97216-7920",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        422,
+        513
       ]
     },
     {
@@ -10076,27 +7719,28 @@ const PRODUCTS_DATA = {
       "id": "b40ad255-0787-4c83-8f31-65bd971ee6a5",
       "image_path": "./assets/estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-2-4.webp",
       "keywords": [
+        "8-94229-3880",
+        "8-97106-9790",
+        "8-97182-7811",
+        "8-97182-8581",
         "8-97216-7920",
+        "8-97321-0240",
         "D-MAX",
         "EJE",
         "ESTOPERA",
         "EXTERNA",
+        "IS-10",
         "LUV",
+        "N2303",
         "PUNTA",
         "RUEDA",
         "TRASERA"
       ],
-      "linked_ids": [
-        513
-      ],
-      "oem": "8-97216-7920",
+      "oem": "8-94229-3880 / 8-97106-9790 / 8-97182-8581 / IS-10 / 8-97321-0240 / 8-97182-7811 / N2303 / 8-97216-7920",
       "slug": "estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97216-7920",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        422,
+        513
       ]
     },
     {
@@ -10111,17 +7755,10 @@ const PRODUCTS_DATA = {
         "TRANSFER",
         "YOKE"
       ],
-      "linked_ids": [
-        1199
-      ],
       "oem": "5-09625-0590",
       "slug": "estopera-yoke-transfer-caribe-2-0",
-      "variants": [
-        {
-          "codigo_oem": "5-09625-0590",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        1199
       ]
     },
     {
@@ -10136,17 +7773,10 @@ const PRODUCTS_DATA = {
         "TRANSFER",
         "YOKE"
       ],
-      "linked_ids": [
-        1199
-      ],
       "oem": "5-09625-0590",
       "slug": "estopera-yoke-transfer-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "5-09625-0590",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        1199
       ]
     },
     {
@@ -10161,17 +7791,11 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FAN"
       ],
-      "linked_ids": [
-        517
-      ],
       "oem": "8-94412-0300 / 8-94311-2520",
       "slug": "fan-clutch-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94412-0300",
-          "brand": "Original",
-          "precio_usd": 65
-        }
+      "linked_ids": [
+        426,
+        517
       ]
     },
     {
@@ -10186,17 +7810,11 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "FAN"
       ],
-      "linked_ids": [
-        517
-      ],
       "oem": "8-94412-0300 / 8-94311-2520",
       "slug": "fan-clutch-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94412-0300",
-          "brand": "Original",
-          "precio_usd": 65
-        }
+      "linked_ids": [
+        426,
+        517
       ]
     },
     {
@@ -10211,17 +7829,11 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "linked_ids": [
-        517
-      ],
       "oem": "8-94412-0300 / 8-94311-2520",
       "slug": "fan-clutch-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94412-0300",
-          "brand": "Original",
-          "precio_usd": 65
-        }
+      "linked_ids": [
+        426,
+        517
       ]
     },
     {
@@ -10236,17 +7848,11 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "linked_ids": [
-        517
-      ],
       "oem": "8-94412-0300 / 8-94311-2520",
       "slug": "fan-clutch-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94412-0300",
-          "brand": "Original",
-          "precio_usd": 65
-        }
+      "linked_ids": [
+        426,
+        517
       ]
     },
     {
@@ -10255,6 +7861,7 @@ const PRODUCTS_DATA = {
       "id": "0f26f009-7c8c-45f8-8744-792d2fbf70ad",
       "image_path": "./assets/fan-clutch-luv-3-2.webp",
       "keywords": [
+        "8-94173-2441",
         "8-97018-9181",
         "8-97102-9030",
         "8-97130-3621",
@@ -10263,17 +7870,11 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "linked_ids": [
-        520
-      ],
-      "oem": "8-97018-9181 / 8-97102-9030 / 8-97135-1670 / 8-97130-3621",
+      "oem": "8-94173-2441 / 8-97018-9181 / 8-97102-9030 / 8-97135-1670 / 8-97130-3621",
       "slug": "fan-clutch-luv-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97018-9181",
-          "brand": "Original",
-          "precio_usd": 95
-        }
+      "linked_ids": [
+        430,
+        520
       ]
     },
     {
@@ -10289,17 +7890,11 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "linked_ids": [
-        517
-      ],
       "oem": "8-94412-0300 / 8-94311-2520",
       "slug": "fan-clutch-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-94412-0300",
-          "brand": "Original",
-          "precio_usd": 65
-        }
+      "linked_ids": [
+        426,
+        517
       ]
     },
     {
@@ -10308,6 +7903,8 @@ const PRODUCTS_DATA = {
       "id": "deef21cf-6157-4675-81b9-b2e97c52c5c5",
       "image_path": "./assets/fan-clutch-luv-d-max-3-5.webp",
       "keywords": [
+        "3233",
+        "8-94172-3761",
         "8-97329-9540",
         "8-97349-7610",
         "CLUTCH",
@@ -10315,17 +7912,11 @@ const PRODUCTS_DATA = {
         "FAN",
         "LUV"
       ],
-      "linked_ids": [
-        519
-      ],
-      "oem": "8-97349-7610 / 8-97329-9540",
+      "oem": "8-94172-3761 / 3233 / 8-97349-7610 / 8-97329-9540",
       "slug": "fan-clutch-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97349-7610",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        429,
+        519
       ]
     },
     {
@@ -10334,6 +7925,7 @@ const PRODUCTS_DATA = {
       "id": "6adbc5e4-e57c-47c3-ac28-bcfe27749cfa",
       "image_path": "./assets/fan-clutch-rodeo-3-2.webp",
       "keywords": [
+        "8-94173-2441",
         "8-97018-9181",
         "8-97102-9030",
         "8-97130-3621",
@@ -10342,17 +7934,11 @@ const PRODUCTS_DATA = {
         "FAN",
         "RODEO"
       ],
-      "linked_ids": [
-        520
-      ],
-      "oem": "8-97018-9181 / 8-97102-9030 / 8-97135-1670 / 8-97130-3621",
+      "oem": "8-94173-2441 / 8-97018-9181 / 8-97102-9030 / 8-97135-1670 / 8-97130-3621",
       "slug": "fan-clutch-rodeo-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97018-9181",
-          "brand": "Original",
-          "precio_usd": 95
-        }
+      "linked_ids": [
+        430,
+        520
       ]
     },
     {
@@ -10361,6 +7947,7 @@ const PRODUCTS_DATA = {
       "id": "03c39fcb-db42-4a0c-94a9-dc2676f3fef6",
       "image_path": "./assets/fan-clutch-trooper-3-2.webp",
       "keywords": [
+        "8-94173-2441",
         "8-97018-9181",
         "8-97102-9030",
         "8-97130-3621",
@@ -10369,17 +7956,11 @@ const PRODUCTS_DATA = {
         "FAN",
         "TROOPER"
       ],
-      "linked_ids": [
-        520
-      ],
-      "oem": "8-97018-9181 / 8-97102-9030 / 8-97135-1670 / 8-97130-3621",
+      "oem": "8-94173-2441 / 8-97018-9181 / 8-97102-9030 / 8-97135-1670 / 8-97130-3621",
       "slug": "fan-clutch-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97018-9181",
-          "brand": "Original",
-          "precio_usd": 95
-        }
+      "linked_ids": [
+        430,
+        520
       ]
     },
     {
@@ -10389,6 +7970,8 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/cocuyo-parachoque-delantero-luv-d-max-05-09.webp",
       "keywords": [
         "05-09",
+        "8-94375-4164",
+        "8-94375-5334",
         "ANTINEBLINA",
         "COCUYO",
         "D-MAX",
@@ -10398,17 +7981,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "PARACHOQUE"
       ],
-      "linked_ids": [
-        528
-      ],
-      "oem": "GL-017-002",
+      "oem": "8-94375-5334 / 8-94375-4164 / GL-017-002",
       "slug": "cocuyo-parachoque-delantero-luv-d-max-05-09",
-      "variants": [
-        {
-          "codigo_oem": "GL-017-002",
-          "brand": "Original",
-          "precio_usd": 65
-        }
+      "linked_ids": [
+        431,
+        528
       ]
     },
     {
@@ -10418,7 +7995,10 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/faro-neblina-luv-d-max-10-14.webp",
       "keywords": [
         "10-14",
+        "8-97360-6770",
+        "8-97360-6780",
         "8-97374-6611",
+        "8-98006-2590",
         "8-98144-2290",
         "8-98169-6800",
         "ANTINEBLINA",
@@ -10427,17 +8007,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "NEBLINA"
       ],
-      "linked_ids": [
-        529
-      ],
-      "oem": "8-97374-6611 / 8-98144-2290 / 8-98169-6800",
+      "oem": "8-97360-6780 / 8-98006-2590 / 8-97360-6770 / 8-97374-6611 / 8-98144-2290 / 8-98169-6800",
       "slug": "faro-neblina-luv-d-max-10-14",
-      "variants": [
-        {
-          "codigo_oem": "8-97374-6611",
-          "brand": "Original",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        432,
+        529
       ]
     },
     {
@@ -10446,6 +8020,12 @@ const PRODUCTS_DATA = {
       "id": "c4f3a06f-4ecf-4f14-9538-27879680edd7",
       "image_path": "./assets/faro-delantero-luv-93-96.webp",
       "keywords": [
+        "053660-0440",
+        "053660-0441",
+        "053660-0442",
+        "1-81129-4990",
+        "8-94146-2441",
+        "8-94324-0530",
         "8-94434-5572",
         "8-94434-5582",
         "93-96",
@@ -10453,23 +8033,13 @@ const PRODUCTS_DATA = {
         "FARO",
         "LUV"
       ],
+      "oem": "053660-0440 / 053660-0441 / 053660-0442 / 1-81129-4990 / 8-94146-2441 / 8-94324-0530 / 8-94434-5582 / 8-94434-5572",
+      "slug": "faro-delantero-luv-93-96",
       "linked_ids": [
+        437,
+        442,
         523,
         1125
-      ],
-      "oem": "8-94434-5582 / 8-94434-5572",
-      "slug": "faro-delantero-luv-93-96",
-      "variants": [
-        {
-          "codigo_oem": "8-94434-5572",
-          "brand": "Original",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-94434-5582",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -10479,6 +8049,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/faro-delantero-luv-d-max-04-08.webp",
       "keywords": [
         "04-08",
+        "8-97069-2870",
         "8-97237-4973",
         "8-97237-4983",
         "8-97367-7250",
@@ -10490,35 +8061,16 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERO",
         "FARO",
+        "LA-8624-1",
         "LUV"
       ],
+      "oem": "8-97069-2870 / LA-8624-1 / 8-97237-4983 / 8-97374-2120 / 8-98004-3100 / 8-98023-8320 / 8-97237-4973 / 8-97367-7250 / 8-98004-3090 / 8-98023-8310",
+      "slug": "faro-delantero-luv-d-max-04-08",
       "linked_ids": [
+        438,
+        443,
         524,
         1126
-      ],
-      "oem": "8-97237-4983 / 8-97374-2120 / 8-98004-3100 / 8-98023-8320 / 8-97237-4973 / 8-97367-7250 / 8-98004-3090 / 8-98023-8310",
-      "slug": "faro-delantero-luv-d-max-04-08",
-      "variants": [
-        {
-          "codigo_oem": "8-97237-4973",
-          "brand": "DENKO",
-          "precio_usd": 85
-        },
-        {
-          "codigo_oem": "8-97237-4973",
-          "brand": "TYC",
-          "precio_usd": 85
-        },
-        {
-          "codigo_oem": "8-97237-4983",
-          "brand": "DENKO",
-          "precio_usd": 85
-        },
-        {
-          "codigo_oem": "8-97237-4983",
-          "brand": "TYC",
-          "precio_usd": 85
-        }
       ]
     },
     {
@@ -10528,42 +8080,25 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/faro-delantero-luv-d-max-10-14.webp",
       "keywords": [
         "10-14",
+        "8-94174-2790",
         "8-98079-9930",
         "8-98079-9940",
         "8-98080-0030",
         "8-98080-0040",
+        "9-22116-0210",
         "D-MAX",
         "DELANTERO",
         "FARO",
+        "LA-8194-1",
         "LUV"
       ],
+      "oem": "9-22116-0210 / LA-8194-1 / 8-94174-2790 / 8-98079-9940 / 8-98080-0040 / 8-98079-9930 / 8-98080-0030",
+      "slug": "faro-delantero-luv-d-max-10-14",
       "linked_ids": [
+        439,
+        444,
         526,
         1128
-      ],
-      "oem": "8-98079-9940 / 8-98080-0040 / 8-98079-9930 / 8-98080-0030",
-      "slug": "faro-delantero-luv-d-max-10-14",
-      "variants": [
-        {
-          "codigo_oem": "8-98079-9930",
-          "brand": "YOSAI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-98079-9930",
-          "brand": "TYC",
-          "precio_usd": 95
-        },
-        {
-          "codigo_oem": "8-98079-9940",
-          "brand": "YOSAI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-98079-9940",
-          "brand": "TYC",
-          "precio_usd": 95
-        }
       ]
     },
     {
@@ -10574,31 +8109,24 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2000",
         "8-94162-6120",
+        "8-94213-8091",
         "8-94244-6820",
         "8-94244-6830",
         "8-94244-6850",
+        "8-94476-1421",
+        "8-97129-7480",
         "CARIBE",
         "DELANTERO",
         "FARO",
         "REDONDO"
       ],
+      "oem": "8-94476-1421 / 8-97129-7480 / 8-94213-8091 / 8-94244-6830 / 8-94244-6850 / 8-94244-6820 / 8-94162-6120",
+      "slug": "faro-redondo-caribe-2000",
       "linked_ids": [
+        436,
+        441,
         522,
         1124
-      ],
-      "oem": "8-94244-6830 / 8-94244-6850 / 8-94244-6820 / 8-94162-6120",
-      "slug": "faro-redondo-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94244-6820",
-          "brand": "Original",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94244-6830",
-          "brand": "Original",
-          "precio_usd": 15
-        }
       ]
     },
     {
@@ -10609,31 +8137,24 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2300",
         "8-94162-6120",
+        "8-94213-8091",
         "8-94244-6820",
         "8-94244-6830",
         "8-94244-6850",
+        "8-94476-1421",
+        "8-97129-7480",
         "CARIBE",
         "DELANTERO",
         "FARO",
         "REDONDO"
       ],
+      "oem": "8-94476-1421 / 8-97129-7480 / 8-94213-8091 / 8-94244-6830 / 8-94244-6850 / 8-94244-6820 / 8-94162-6120",
+      "slug": "faro-redondo-caribe-2300",
       "linked_ids": [
+        436,
+        441,
         522,
         1124
-      ],
-      "oem": "8-94244-6830 / 8-94244-6850 / 8-94244-6820 / 8-94162-6120",
-      "slug": "faro-redondo-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94244-6820",
-          "brand": "Original",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94244-6830",
-          "brand": "Original",
-          "precio_usd": 15
-        }
       ]
     },
     {
@@ -10651,17 +8172,11 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "V-03412301"
       ],
-      "linked_ids": [
-        530
-      ],
       "oem": "8-97236-6901 / V-03412301",
       "slug": "luces-placa-trasera-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97236-6901",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        445,
+        530
       ]
     },
     {
@@ -10671,6 +8186,8 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/filtro-aceite-caribe-2-0.webp",
       "keywords": [
         "26300-35504",
+        "8-92062-3300",
+        "8-93282-6650",
         "8-94430-4111",
         "8-94456-7412",
         "ACEITE",
@@ -10678,17 +8195,11 @@ const PRODUCTS_DATA = {
         "CH3807",
         "FILTRO"
       ],
-      "linked_ids": [
-        531
-      ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-92062-3300 / 8-93282-6650 / 8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
       "slug": "filtro-aceite-caribe-2-0",
-      "variants": [
-        {
-          "codigo_oem": "8-94456-7412",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        446,
+        531
       ]
     },
     {
@@ -10698,6 +8209,8 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/filtro-aceite-caribe-2-6.webp",
       "keywords": [
         "26300-35504",
+        "8-92062-3300",
+        "8-93282-6650",
         "8-94430-4111",
         "8-94456-7412",
         "ACEITE",
@@ -10705,17 +8218,11 @@ const PRODUCTS_DATA = {
         "CH3807",
         "FILTRO"
       ],
-      "linked_ids": [
-        531
-      ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-92062-3300 / 8-93282-6650 / 8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
       "slug": "filtro-aceite-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94456-7412",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        446,
+        531
       ]
     },
     {
@@ -10725,6 +8232,8 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/filtro-aceite-luv-2-3.webp",
       "keywords": [
         "26300-35504",
+        "8-92062-3300",
+        "8-93282-6650",
         "8-94430-4111",
         "8-94456-7412",
         "ACEITE",
@@ -10732,17 +8241,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "linked_ids": [
-        531
-      ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-92062-3300 / 8-93282-6650 / 8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
       "slug": "filtro-aceite-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94456-7412",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        446,
+        531
       ]
     },
     {
@@ -10752,6 +8255,8 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/filtro-aceite-luv-d-max-3-0-diesel.webp",
       "keywords": [
         "26300-35504",
+        "8-92062-3300",
+        "8-93282-6650",
         "8-94430-4111",
         "8-94456-7412",
         "ACEITE",
@@ -10761,17 +8266,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "linked_ids": [
-        531
-      ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-92062-3300 / 8-93282-6650 / 8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
       "slug": "filtro-aceite-luv-d-max-3-0-diesel",
-      "variants": [
-        {
-          "codigo_oem": "8-94456-7412",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        446,
+        531
       ]
     },
     {
@@ -10781,6 +8280,8 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/filtro-aceite-rodeo-3-2.webp",
       "keywords": [
         "26300-35504",
+        "8-92062-3300",
+        "8-93282-6650",
         "8-94430-4111",
         "8-94456-7412",
         "ACEITE",
@@ -10788,17 +8289,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "RODEO"
       ],
-      "linked_ids": [
-        531
-      ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-92062-3300 / 8-93282-6650 / 8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
       "slug": "filtro-aceite-rodeo-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94456-7412",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        446,
+        531
       ]
     },
     {
@@ -10808,6 +8303,8 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/filtro-aceite-trooper-3-2.webp",
       "keywords": [
         "26300-35504",
+        "8-92062-3300",
+        "8-93282-6650",
         "8-94430-4111",
         "8-94456-7412",
         "ACEITE",
@@ -10815,17 +8312,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "TROOPER"
       ],
-      "linked_ids": [
-        531
-      ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-92062-3300 / 8-93282-6650 / 8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
       "slug": "filtro-aceite-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94456-7412",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        446,
+        531
       ]
     },
     {
@@ -10840,17 +8331,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "linked_ids": [
-        535
-      ],
       "oem": "8-97039-0020 / AK-8067",
       "slug": "filtro-aire-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97039-0020",
-          "brand": "A1",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        450,
+        535
       ]
     },
     {
@@ -10865,17 +8350,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "linked_ids": [
-        535
-      ],
       "oem": "8-97039-0020 / AK-8067",
       "slug": "filtro-aire-luv-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97039-0020",
-          "brand": "A1",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        450,
+        535
       ]
     },
     {
@@ -10884,6 +8363,7 @@ const PRODUCTS_DATA = {
       "id": "89d9835a-7ba8-4b43-aa87-00750ec27dfd",
       "image_path": "./assets/filtro-aire-luv-d-max.webp",
       "keywords": [
+        "8-97019-3611",
         "8-97251-9430",
         "8-97251-9440",
         "8-97369-2930",
@@ -10892,17 +8372,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "linked_ids": [
-        536
-      ],
-      "oem": "8-97251-9430 / 8-97251-9440 / 8-97369-2930",
+      "oem": "8-97019-3611 / 8-97251-9430 / 8-97251-9440 / 8-97369-2930",
       "slug": "filtro-aire-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97251-9430",
-          "brand": "SIFT",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        451,
+        536
       ]
     },
     {
@@ -10917,17 +8391,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "RODEO"
       ],
-      "linked_ids": [
-        535
-      ],
       "oem": "8-97039-0020 / AK-8067",
       "slug": "filtro-aire-rodeo-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97039-0020",
-          "brand": "A1",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        450,
+        535
       ]
     },
     {
@@ -10942,17 +8410,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "TROOPER"
       ],
-      "linked_ids": [
-        535
-      ],
       "oem": "8-97039-0020 / AK-8067",
       "slug": "filtro-aire-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97039-0020",
-          "brand": "A1",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        450,
+        535
       ]
     },
     {
@@ -10961,24 +8423,20 @@ const PRODUCTS_DATA = {
       "id": "4111f08e-8d3a-4794-b8c4-3c305d4b5c45",
       "image_path": "./assets/filtro-antipolen-luv-d-max.webp",
       "keywords": [
+        "8-94204-4310",
         "8-97356-1270",
         "8-98008-4420",
         "ANTIPOLEN",
         "D-MAX",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "OS-435"
       ],
-      "linked_ids": [
-        538
-      ],
-      "oem": "8-97356-1270 / 8-98008-4420",
+      "oem": "8-94204-4310 / OS-435 / 8-97356-1270 / 8-98008-4420",
       "slug": "filtro-antipolen-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97356-1270",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        453,
+        538
       ]
     },
     {
@@ -10988,6 +8446,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/filtro-caja-automatica-luv-d-max-3-5.webp",
       "keywords": [
         "35330-60030",
+        "8-94235-2881",
         "8-97207-1430",
         "A343",
         "AUTOMATICA",
@@ -10996,17 +8455,11 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV"
       ],
-      "linked_ids": [
-        539
-      ],
-      "oem": "8-97207-1430 / 35330-60030 / A343",
+      "oem": "8-94235-2881 / 8-97207-1430 / 35330-60030 / A343",
       "slug": "filtro-caja-automatica-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97207-1430",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        454,
+        539
       ]
     },
     {
@@ -11016,6 +8469,8 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/filtro-gasolina-luv-d-max.webp",
       "keywords": [
         "33850",
+        "8-94152-7890",
+        "8-94324-2000",
         "96335719",
         "D-MAX",
         "FILTRO",
@@ -11023,17 +8478,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "MF-619"
       ],
-      "linked_ids": [
-        542
-      ],
-      "oem": "96335719 / MF-619 / 33850",
+      "oem": "8-94152-7890 / 8-94324-2000 / 96335719 / MF-619 / 33850",
       "slug": "filtro-gasolina-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "96335719",
-          "brand": "SIFT",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        457,
+        542
       ]
     },
     {
@@ -11043,21 +8492,16 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/filtro-gasolina-universal.webp",
       "keywords": [
         "5-13200-0661",
+        "8-92062-9340",
         "FILTRO",
         "GASOLINA",
         "UNIVERSAL"
       ],
-      "linked_ids": [
-        540
-      ],
-      "oem": "5-13200-0661",
+      "oem": "8-92062-9340 / 5-13200-0661",
       "slug": "filtro-gasolina-universal",
-      "variants": [
-        {
-          "codigo_oem": "5-13200-0661",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        455,
+        540
       ]
     },
     {
@@ -11067,22 +8511,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/flauta-de-admision-caribe.webp",
       "keywords": [
         "8-94110-6461",
+        "8-94146-2490",
         "8-94200-7022",
+        "8-94324-0520",
         "ADMISION",
         "CARIBE",
         "FLAUTA"
       ],
-      "linked_ids": [
-        544
-      ],
-      "oem": "8-94200-7022 / 8-94110-6461",
+      "oem": "8-94146-2490 / 8-94324-0520 / 8-94200-7022 / 8-94110-6461",
       "slug": "flauta-de-admision-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94200-7022",
-          "brand": "NPC",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        459,
+        544
       ]
     },
     {
@@ -11093,21 +8533,17 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94129-2270",
         "8-94200-7032",
+        "8-97131-8942",
+        "8-97237-5380",
         "CARIBE",
         "ESCAPE",
         "FLAUTA"
       ],
-      "linked_ids": [
-        1051
-      ],
-      "oem": "8-94200-7032 / 8-94129-2270",
+      "oem": "8-97237-5380 / 8-97131-8942 / 8-94200-7032 / 8-94129-2270",
       "slug": "flauta-de-escape-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94200-7032",
-          "brand": "NPC",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        460,
+        1051
       ]
     },
     {
@@ -11117,23 +8553,20 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/flotante-gasolina-caribe.webp",
       "keywords": [
         "8-94131-4470",
+        "8-94207-2840",
+        "8-94207-2850",
+        "8-94207-2860",
         "8-94318-3960",
         "8-94407-4240",
         "CARIBE",
         "FLOTANTE",
         "GASOLINA"
       ],
-      "linked_ids": [
-        546
-      ],
-      "oem": "8-94131-4470 / 8-94407-4240 / 8-94318-3960",
+      "oem": "8-94207-2840 / 8-94207-2850 / 8-94207-2860 / 8-94131-4470 / 8-94407-4240 / 8-94318-3960",
       "slug": "flotante-gasolina-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94131-4470",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        462,
+        546
       ]
     },
     {
@@ -11143,23 +8576,20 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/flotante-gasolina-luv.webp",
       "keywords": [
         "8-94131-4470",
+        "8-94207-2840",
+        "8-94207-2850",
+        "8-94207-2860",
         "8-94318-3960",
         "8-94407-4240",
         "FLOTANTE",
         "GASOLINA",
         "LUV"
       ],
-      "linked_ids": [
-        546
-      ],
-      "oem": "8-94131-4470 / 8-94407-4240 / 8-94318-3960",
+      "oem": "8-94207-2840 / 8-94207-2850 / 8-94207-2860 / 8-94131-4470 / 8-94407-4240 / 8-94318-3960",
       "slug": "flotante-gasolina-luv",
-      "variants": [
-        {
-          "codigo_oem": "8-94131-4470",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        462,
+        546
       ]
     },
     {
@@ -11168,23 +8598,19 @@ const PRODUCTS_DATA = {
       "id": "952c8c3f-0663-437e-8e9d-1ea6660f0103",
       "image_path": "./assets/flotante-gasolina-luv-d-max-2-4.webp",
       "keywords": [
+        "8-97148-7170",
+        "8-97245-2680",
         "D-MAX",
         "EM2154",
         "FLOTANTE",
         "GASOLINA",
         "LUV"
       ],
-      "linked_ids": [
-        548
-      ],
-      "oem": "EM2154",
+      "oem": "8-97148-7170 / 8-97245-2680 / EM2154",
       "slug": "flotante-gasolina-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "EM2154",
-          "brand": "CLIPSE",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        464,
+        548
       ]
     },
     {
@@ -11193,23 +8619,19 @@ const PRODUCTS_DATA = {
       "id": "da3688d4-bf88-4227-87f5-41159d8cd3ef",
       "image_path": "./assets/flotante-gasolina-luv-d-max-3-5.webp",
       "keywords": [
+        "8-97148-7170",
+        "8-97245-2680",
         "D-MAX",
         "EM2154",
         "FLOTANTE",
         "GASOLINA",
         "LUV"
       ],
-      "linked_ids": [
-        548
-      ],
-      "oem": "EM2154",
+      "oem": "8-97148-7170 / 8-97245-2680 / EM2154",
       "slug": "flotante-gasolina-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "EM2154",
-          "brand": "CLIPSE",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        464,
+        548
       ]
     },
     {
@@ -11219,23 +8641,20 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/flotante-gasolina-rodeo.webp",
       "keywords": [
         "8-94131-4470",
+        "8-94207-2840",
+        "8-94207-2850",
+        "8-94207-2860",
         "8-94318-3960",
         "8-94407-4240",
         "FLOTANTE",
         "GASOLINA",
         "RODEO"
       ],
-      "linked_ids": [
-        546
-      ],
-      "oem": "8-94131-4470 / 8-94407-4240 / 8-94318-3960",
+      "oem": "8-94207-2840 / 8-94207-2850 / 8-94207-2860 / 8-94131-4470 / 8-94407-4240 / 8-94318-3960",
       "slug": "flotante-gasolina-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94131-4470",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        462,
+        546
       ]
     },
     {
@@ -11245,23 +8664,20 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/flotante-gasolina-trooper.webp",
       "keywords": [
         "8-94131-4470",
+        "8-94207-2840",
+        "8-94207-2850",
+        "8-94207-2860",
         "8-94318-3960",
         "8-94407-4240",
         "FLOTANTE",
         "GASOLINA",
         "TROOPER"
       ],
-      "linked_ids": [
-        546
-      ],
-      "oem": "8-94131-4470 / 8-94407-4240 / 8-94318-3960",
+      "oem": "8-94207-2840 / 8-94207-2850 / 8-94207-2860 / 8-94131-4470 / 8-94407-4240 / 8-94318-3960",
       "slug": "flotante-gasolina-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-94131-4470",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        462,
+        546
       ]
     },
     {
@@ -11270,6 +8686,8 @@ const PRODUCTS_DATA = {
       "id": "81b96578-3867-491b-ab92-da9d10fd11c6",
       "image_path": "./assets/flotante-luv-d-max-grande.webp",
       "keywords": [
+        "8-94246-1090",
+        "8-94324-0540",
         "8-97943-1780",
         "8-97945-2590",
         "D-MAX",
@@ -11277,17 +8695,11 @@ const PRODUCTS_DATA = {
         "GRANDE",
         "LUV"
       ],
-      "linked_ids": [
-        547
-      ],
-      "oem": "8-97943-1780 / 8-97945-2590",
+      "oem": "8-94246-1090 / 8-94324-0540 / 8-97943-1780 / 8-97945-2590",
       "slug": "flotante-luv-d-max-grande",
-      "variants": [
-        {
-          "codigo_oem": "8-97943-1780",
-          "brand": "Original",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        463,
+        547
       ]
     },
     {
@@ -11296,6 +8708,7 @@ const PRODUCTS_DATA = {
       "id": "63ba9348-37cb-4f16-b469-f95cd5dd8e31",
       "image_path": "./assets/gato-tipo-botella-luv-d-max-3-5.webp",
       "keywords": [
+        "8-94200-7151",
         "8-97217-7881",
         "BOTELLA",
         "D-MAX",
@@ -11303,17 +8716,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TIPO"
       ],
-      "linked_ids": [
-        1094
-      ],
-      "oem": "8-97217-7881",
+      "oem": "8-94200-7151 / 8-97217-7881",
       "slug": "gato-tipo-botella-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97217-7881",
-          "brand": "Original",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        466,
+        1094
       ]
     },
     {
@@ -11322,6 +8729,7 @@ const PRODUCTS_DATA = {
       "id": "5499ae62-2b61-40fc-9209-a19d2c3617b6",
       "image_path": "./assets/gemelo-ballesta-caribe-luv.webp",
       "keywords": [
+        "8-94214-9850",
         "8-94223-1672",
         "ALBL1013",
         "BALLESTA",
@@ -11330,17 +8738,11 @@ const PRODUCTS_DATA = {
         "GEMELOS",
         "LUV"
       ],
-      "linked_ids": [
-        550
-      ],
-      "oem": "8-94223-1672 / ALBL1013",
+      "oem": "8-94214-9850 / 8-94223-1672 / ALBL1013",
       "slug": "gemelo-ballesta-caribe-luv",
-      "variants": [
-        {
-          "codigo_oem": "8-94223-1672",
-          "brand": "Original",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        467,
+        550
       ]
     },
     {
@@ -11360,17 +8762,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TROOPER"
       ],
-      "linked_ids": [
-        551
-      ],
       "oem": "8-97245-6470 / 8-97245-6501 / 8-98005-8140 / ALBL1017",
       "slug": "gemelo-ballesta-luv-d-max-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-97245-6470",
-          "brand": "Original",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        470,
+        551
       ]
     },
     {
@@ -11381,6 +8777,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "5-51631-0170",
         "8-94143-2100",
+        "8-97048-7202",
         "BARRA",
         "C-1014",
         "CARIBE",
@@ -11388,17 +8785,11 @@ const PRODUCTS_DATA = {
         "FR-9632",
         "GOMA"
       ],
-      "linked_ids": [
-        554
-      ],
-      "oem": "5-51631-0170 / C-1014 / FR-9632 / 8-94143-2100",
+      "oem": "8-97048-7202 / 5-51631-0170 / C-1014 / FR-9632 / 8-94143-2100",
       "slug": "goma-barra-estabilizadora-caribe",
-      "variants": [
-        {
-          "codigo_oem": "5-51631-0170",
-          "brand": "Original",
-          "precio_usd": 2
-        }
+      "linked_ids": [
+        471,
+        554
       ]
     },
     {
@@ -11409,6 +8800,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "5-51631-0170",
         "8-94143-2100",
+        "8-97048-7202",
         "BARRA",
         "C-1014",
         "ESTABILIZADORA",
@@ -11416,17 +8808,11 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV"
       ],
-      "linked_ids": [
-        554
-      ],
-      "oem": "5-51631-0170 / C-1014 / FR-9632 / 8-94143-2100",
+      "oem": "8-97048-7202 / 5-51631-0170 / C-1014 / FR-9632 / 8-94143-2100",
       "slug": "goma-barra-estabilizadora-luv",
-      "variants": [
-        {
-          "codigo_oem": "5-51631-0170",
-          "brand": "Original",
-          "precio_usd": 2
-        }
+      "linked_ids": [
+        471,
+        554
       ]
     },
     {
@@ -11436,23 +8822,19 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/goma-barra-tensora-caribe.webp",
       "keywords": [
         "137003",
+        "8-94174-2241",
+        "8-94231-1661",
         "9-51631-6191",
         "BARRA",
         "CARIBE",
         "GOMA",
         "TENSORA"
       ],
-      "linked_ids": [
-        562
-      ],
-      "oem": "9-51631-6191 / 137003",
+      "oem": "8-94231-1661 / 8-94174-2241 / 9-51631-6191 / 137003",
       "slug": "goma-barra-tensora-caribe",
-      "variants": [
-        {
-          "codigo_oem": "9-51631-6191",
-          "brand": "Original",
-          "precio_usd": 2.5
-        }
+      "linked_ids": [
+        472,
+        562
       ]
     },
     {
@@ -11462,23 +8844,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/goma-barra-tensora-luv.webp",
       "keywords": [
         "137011",
+        "8-94213-8150",
         "8-94433-6720",
         "BARRA",
         "GOMA",
         "LUV",
         "TENSORA"
       ],
-      "linked_ids": [
-        563
-      ],
-      "oem": "8-94433-6720 / 137011",
+      "oem": "8-94213-8150 / 8-94433-6720 / 137011",
       "slug": "goma-barra-tensora-luv",
-      "variants": [
-        {
-          "codigo_oem": "8-94433-6720",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        473,
+        563
       ]
     },
     {
@@ -11506,20 +8883,15 @@ const PRODUCTS_DATA = {
         "5-43319-0190",
         "8-94124-6330",
         "CARIBE",
+        "CL-2030",
         "GOMA",
         "TRIPOIDE"
       ],
-      "linked_ids": [
-        564
-      ],
-      "oem": "5-43319-0190 / 8-94124-6330",
+      "oem": "CL-2030 / 5-43319-0190 / 8-94124-6330",
       "slug": "goma-tripoide-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "5-43319-0190",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        482,
+        564
       ]
     },
     {
@@ -11533,6 +8905,7 @@ const PRODUCTS_DATA = {
         "8-94313-1060",
         "8-97131-3990",
         "8-97138-9810",
+        "8-97234-3500",
         "8-97349-9550",
         "8-97387-4780",
         "CARIBE",
@@ -11540,22 +8913,11 @@ const PRODUCTS_DATA = {
         "M-005N",
         "TRIPOIDE"
       ],
-      "linked_ids": [
-        565
-      ],
-      "oem": "8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N",
+      "oem": "8-97234-3500 / 8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N",
       "slug": "goma-tripoide-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94313-1060",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94313-1060",
-          "brand": "NITRILO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        481,
+        565
       ]
     },
     {
@@ -11567,21 +8929,16 @@ const PRODUCTS_DATA = {
         "5-43319-0190",
         "8-94124-6330",
         "CARIBE",
+        "CL-2030",
         "G-200",
         "GOMA",
         "TRIPOIDE"
       ],
-      "linked_ids": [
-        564
-      ],
-      "oem": "5-43319-0190 / 8-94124-6330",
+      "oem": "CL-2030 / 5-43319-0190 / 8-94124-6330",
       "slug": "goma-tripoide-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "5-43319-0190",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        482,
+        564
       ]
     },
     {
@@ -11595,6 +8952,7 @@ const PRODUCTS_DATA = {
         "8-94313-1060",
         "8-97131-3990",
         "8-97138-9810",
+        "8-97234-3500",
         "8-97349-9550",
         "8-97387-4780",
         "GOMA",
@@ -11602,22 +8960,11 @@ const PRODUCTS_DATA = {
         "M-005N",
         "TRIPOIDE"
       ],
-      "linked_ids": [
-        565
-      ],
-      "oem": "8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N",
+      "oem": "8-97234-3500 / 8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N",
       "slug": "goma-tripoide-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94313-1060",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94313-1060",
-          "brand": "NITRILO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        481,
+        565
       ]
     },
     {
@@ -11631,6 +8978,7 @@ const PRODUCTS_DATA = {
         "8-94313-1060",
         "8-97131-3990",
         "8-97138-9810",
+        "8-97234-3500",
         "8-97349-9550",
         "8-97387-4780",
         "D-MAX",
@@ -11639,22 +8987,11 @@ const PRODUCTS_DATA = {
         "M-005N",
         "TRIPOIDE"
       ],
-      "linked_ids": [
-        565
-      ],
-      "oem": "8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N",
+      "oem": "8-97234-3500 / 8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N",
       "slug": "goma-tripoide-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-94313-1060",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94313-1060",
-          "brand": "NITRILO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        481,
+        565
       ]
     },
     {
@@ -11668,6 +9005,7 @@ const PRODUCTS_DATA = {
         "8-94313-1060",
         "8-97131-3990",
         "8-97138-9810",
+        "8-97234-3500",
         "8-97349-9550",
         "8-97387-4780",
         "GOMA",
@@ -11675,22 +9013,11 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TRIPOIDE"
       ],
-      "linked_ids": [
-        565
-      ],
-      "oem": "8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N",
+      "oem": "8-97234-3500 / 8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N",
       "slug": "goma-tripoide-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94313-1060",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94313-1060",
-          "brand": "NITRILO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        481,
+        565
       ]
     },
     {
@@ -11704,6 +9031,7 @@ const PRODUCTS_DATA = {
         "8-94313-1060",
         "8-97131-3990",
         "8-97138-9810",
+        "8-97234-3500",
         "8-97349-9550",
         "8-97387-4780",
         "GOMA",
@@ -11711,22 +9039,11 @@ const PRODUCTS_DATA = {
         "TRIPOIDE",
         "TROOPER"
       ],
-      "linked_ids": [
-        565
-      ],
-      "oem": "8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N",
+      "oem": "8-97234-3500 / 8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N",
       "slug": "goma-tripoide-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-94313-1060",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-94313-1060",
-          "brand": "NITRILO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        481,
+        565
       ]
     },
     {
@@ -11739,6 +9056,7 @@ const PRODUCTS_DATA = {
         "137021",
         "8-97036-3420",
         "8-97039-5180",
+        "8-97213-8710",
         "8-97235-7840",
         "8-97247-0830",
         "BARRA",
@@ -11747,22 +9065,11 @@ const PRODUCTS_DATA = {
         "FR-9640",
         "GOMA"
       ],
-      "linked_ids": [
-        567
-      ],
-      "oem": "8-97235-7840 / 137021 / 137020 / 8-97036-3420 / 8-97039-5180 / 8-97247-0830 / FR-9640",
+      "oem": "8-97213-8710 / 8-97235-7840 / 137021 / 137020 / 8-97036-3420 / 8-97039-5180 / 8-97247-0830 / FR-9640",
       "slug": "goma-u-barra-estabilizadora-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-97235-7840",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97235-7840",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        484,
+        567
       ]
     },
     {
@@ -11773,23 +9080,18 @@ const PRODUCTS_DATA = {
       "keywords": [
         "137010",
         "8-94143-3210",
+        "8-94223-2000",
         "8-94227-0610",
         "BARRA",
         "CARIBE",
         "ESTABILIZADORA",
         "GOMA"
       ],
-      "linked_ids": [
-        566
-      ],
-      "oem": "8-94143-3210 / 137010 / 8-94227-0610",
+      "oem": "8-94223-2000 / 8-94143-3210 / 137010 / 8-94227-0610",
       "slug": "goma-u-barra-estabilizadora-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94143-3210",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        483,
+        566
       ]
     },
     {
@@ -11800,6 +9102,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "137010",
         "8-94143-3210",
+        "8-94223-2000",
         "8-94227-0610",
         "BARRA",
         "CARIBE",
@@ -11807,17 +9110,11 @@ const PRODUCTS_DATA = {
         "G-200",
         "GOMA"
       ],
-      "linked_ids": [
-        566
-      ],
-      "oem": "8-94143-3210 / 137010 / 8-94227-0610",
+      "oem": "8-94223-2000 / 8-94143-3210 / 137010 / 8-94227-0610",
       "slug": "goma-u-barra-estabilizadora-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "8-94143-3210",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        483,
+        566
       ]
     },
     {
@@ -11828,23 +9125,18 @@ const PRODUCTS_DATA = {
       "keywords": [
         "137010",
         "8-94143-3210",
+        "8-94223-2000",
         "8-94227-0610",
         "BARRA",
         "ESTABILIZADORA",
         "GOMA",
         "LUV"
       ],
-      "linked_ids": [
-        566
-      ],
-      "oem": "8-94143-3210 / 137010 / 8-94227-0610",
+      "oem": "8-94223-2000 / 8-94143-3210 / 137010 / 8-94227-0610",
       "slug": "goma-u-barra-estabilizadora-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94143-3210",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        483,
+        566
       ]
     },
     {
@@ -11855,23 +9147,18 @@ const PRODUCTS_DATA = {
       "keywords": [
         "137010",
         "8-94143-3210",
+        "8-94223-2000",
         "8-94227-0610",
         "BARRA",
         "ESTABILIZADORA",
         "GOMA",
         "LUV"
       ],
-      "linked_ids": [
-        566
-      ],
-      "oem": "8-94143-3210 / 137010 / 8-94227-0610",
+      "oem": "8-94223-2000 / 8-94143-3210 / 137010 / 8-94227-0610",
       "slug": "goma-u-barra-estabilizadora-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94143-3210",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        483,
+        566
       ]
     },
     {
@@ -11884,6 +9171,7 @@ const PRODUCTS_DATA = {
         "137021",
         "8-97036-3420",
         "8-97039-5180",
+        "8-97213-8710",
         "8-97235-7840",
         "8-97247-0830",
         "BARRA",
@@ -11893,22 +9181,11 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV"
       ],
-      "linked_ids": [
-        567
-      ],
-      "oem": "8-97235-7840 / 137021 / 137020 / 8-97036-3420 / 8-97039-5180 / 8-97247-0830 / FR-9640",
+      "oem": "8-97213-8710 / 8-97235-7840 / 137021 / 137020 / 8-97036-3420 / 8-97039-5180 / 8-97247-0830 / FR-9640",
       "slug": "goma-u-barra-estabilizadora-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97235-7840",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97235-7840",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        484,
+        567
       ]
     },
     {
@@ -11921,6 +9198,7 @@ const PRODUCTS_DATA = {
         "137021",
         "8-97036-3420",
         "8-97039-5180",
+        "8-97213-8710",
         "8-97235-7840",
         "8-97247-0830",
         "BARRA",
@@ -11929,22 +9207,11 @@ const PRODUCTS_DATA = {
         "GOMA",
         "TROOPER"
       ],
-      "linked_ids": [
-        567
-      ],
-      "oem": "8-97235-7840 / 137021 / 137020 / 8-97036-3420 / 8-97039-5180 / 8-97247-0830 / FR-9640",
+      "oem": "8-97213-8710 / 8-97235-7840 / 137021 / 137020 / 8-97036-3420 / 8-97039-5180 / 8-97247-0830 / FR-9640",
       "slug": "goma-u-barra-estabilizadora-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-97235-7840",
-          "brand": "GOMA",
-          "precio_usd": 5
-        },
-        {
-          "codigo_oem": "8-97235-7840",
-          "brand": "POLIURETANO",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        484,
+        567
       ]
     },
     {
@@ -11954,6 +9221,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/goma-u-cajetin-direccion-luv-d-max.webp",
       "keywords": [
         "137022",
+        "8-94231-1651",
         "8-97304-9230",
         "CAJETIN",
         "D-MAX",
@@ -11961,17 +9229,11 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV"
       ],
-      "linked_ids": [
-        555
-      ],
-      "oem": "8-97304-9230 / 137022",
+      "oem": "8-94231-1651 / 8-97304-9230 / 137022",
       "slug": "goma-u-cajetin-direccion-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97304-9230",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        474,
+        555
       ]
     },
     {
@@ -11990,27 +9252,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "linked_ids": [
-        571
-      ],
       "oem": "8-97146-7330 / 8-97332-3590 / 8-94324-1581",
       "slug": "juego-goma-valvula-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97146-7330",
-          "brand": "NIKHO",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-97146-7330",
-          "brand": "RUSHMORE",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-97146-7330",
-          "brand": "MUSASHI",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        487,
+        571
       ]
     },
     {
@@ -12021,6 +9267,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94208-5220",
         "8-94338-9210",
+        "8-94495-2291",
         "8-97033-6730",
         "CARIBE",
         "GOMA",
@@ -12029,17 +9276,11 @@ const PRODUCTS_DATA = {
         "VALVULA",
         "VALVULAS"
       ],
-      "linked_ids": [
-        569
-      ],
-      "oem": "8-94208-5220 / 8-97033-6730 / 8-94338-9210",
+      "oem": "8-94495-2291 / 8-94208-5220 / 8-97033-6730 / 8-94338-9210",
       "slug": "juego-goma-valvulas-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94208-5220",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        485,
+        569
       ]
     },
     {
@@ -12050,23 +9291,18 @@ const PRODUCTS_DATA = {
       "keywords": [
         "11166",
         "8-94232-3530",
+        "8-97349-9820",
         "83-88",
         "CARIBE",
         "FRENO",
         "GRADUADOR",
         "KG-240618"
       ],
-      "linked_ids": [
-        572
-      ],
-      "oem": "8-94232-3530 / 11166 / KG-240618",
+      "oem": "8-97349-9820 / 8-94232-3530 / 11166 / KG-240618",
       "slug": "graduador-de-freno-caribe-83-88",
-      "variants": [
-        {
-          "codigo_oem": "8-94232-3530",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        488,
+        572
       ]
     },
     {
@@ -12075,6 +9311,11 @@ const PRODUCTS_DATA = {
       "id": "a777193f-d61b-495f-a5be-0b056424154c",
       "image_path": "./assets/graduador-de-freno-luv-d-max-2-4.webp",
       "keywords": [
+        "8-90280-4630",
+        "8-94215-2200",
+        "8-94327-0620",
+        "8-94334-8450",
+        "8-94389-5931",
         "8-97301-4940",
         "8-97301-4950",
         "D-MAX",
@@ -12082,23 +9323,13 @@ const PRODUCTS_DATA = {
         "GRADUADOR",
         "LUV"
       ],
+      "oem": "8-94215-2200 / 8-94327-0620 / 8-94334-8450 / 8-94389-5931 / 8-90280-4630 / 8-97301-4950 / 8-97301-4940",
+      "slug": "graduador-de-freno-luv-d-max-2-4",
       "linked_ids": [
+        489,
+        491,
         573,
         1132
-      ],
-      "oem": "8-97301-4950 / 8-97301-4940",
-      "slug": "graduador-de-freno-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97301-4940",
-          "brand": "Original",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-97301-4950",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -12107,6 +9338,8 @@ const PRODUCTS_DATA = {
       "id": "8d041c31-881a-466f-8a51-e1aad4ccdfc5",
       "image_path": "./assets/graduadorde-freno-mano-luv-d-max-3-5.webp",
       "keywords": [
+        "8-94214-9690",
+        "8-94369-5160",
         "8-97301-5280",
         "8-97307-5270",
         "8-98007-9790",
@@ -12118,23 +9351,13 @@ const PRODUCTS_DATA = {
         "KG-61015",
         "LUV"
       ],
+      "oem": "8-94369-5160 / 8-94214-9690 / 8-98007-9790 / 8-97307-5270 / KG-61014 / 8-98007-9800 / 8-97301-5280 / KG-61015",
+      "slug": "graduadorde-freno-mano-luv-d-max-3-5",
       "linked_ids": [
+        490,
+        492,
         1133,
         1134
-      ],
-      "oem": "8-98007-9790 / 8-97307-5270 / KG-61014 / 8-98007-9800 / 8-97301-5280 / KG-61015",
-      "slug": "graduadorde-freno-mano-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-98007-9790",
-          "brand": "Original",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-98007-9800",
-          "brand": "Original",
-          "precio_usd": 35
-        }
       ]
     },
     {
@@ -12144,31 +9367,23 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guardapolvo-de-guardafango-delantero-luv-d-max-10-14.webp",
       "keywords": [
         "10-14",
+        "8-97023-3730",
         "8-98007-1333",
         "8-98007-1343",
+        "9-09924-4490",
         "D-MAX",
         "DELANTERO",
         "GUARDAFANGO",
         "GUARDAPOLVO",
         "LUV"
       ],
+      "oem": "8-97023-3730 / 9-09924-4490 / 8-98007-1333 / 8-98007-1343",
+      "slug": "guardapolvo-de-guardafango-delantero-luv-d-max-10-14",
       "linked_ids": [
+        496,
+        497,
         576,
         1136
-      ],
-      "oem": "8-98007-1333 / 8-98007-1343",
-      "slug": "guardapolvo-de-guardafango-delantero-luv-d-max-10-14",
-      "variants": [
-        {
-          "codigo_oem": "8-98007-1343",
-          "brand": "Original",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-98007-1333",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -12178,22 +9393,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guardapolvo-horquilla-caribe-2-0.webp",
       "keywords": [
         "5-31131-0050",
+        "8-90411-7660",
+        "90411766",
         "ALG4104",
         "CARIBE",
         "GUARDAPOLVO",
         "HORQUILLA"
       ],
-      "linked_ids": [
-        556
-      ],
-      "oem": "5-31131-0050 / ALG4104",
+      "oem": "8-90411-7660 / 90411766 / 5-31131-0050 / ALG4104",
       "slug": "guardapolvo-horquilla-caribe-2-0",
-      "variants": [
-        {
-          "codigo_oem": "5-31131-0050",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        476,
+        556
       ]
     },
     {
@@ -12203,22 +9414,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guardapolvo-horquilla-caribe-2-3.webp",
       "keywords": [
         "5-31131-0050",
+        "8-90411-7660",
+        "90411766",
         "ALG4104",
         "CARIBE",
         "GUARDAPOLVO",
         "HORQUILLA"
       ],
-      "linked_ids": [
-        556
-      ],
-      "oem": "5-31131-0050 / ALG4104",
+      "oem": "8-90411-7660 / 90411766 / 5-31131-0050 / ALG4104",
       "slug": "guardapolvo-horquilla-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "5-31131-0050",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        476,
+        556
       ]
     },
     {
@@ -12228,22 +9435,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guardapolvo-horquilla-caribe-2-6.webp",
       "keywords": [
         "8-94156-7000",
+        "8-94457-8890",
         "ALG4105",
         "CARIBE",
         "GUARDAPOLVO",
         "HORQUILLA"
       ],
-      "linked_ids": [
-        557
-      ],
-      "oem": "8-94156-7000 / ALG4105",
+      "oem": "8-94457-8890 / 8-94156-7000 / ALG4105",
       "slug": "guardapolvo-horquilla-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94156-7000",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        475,
+        557
       ]
     },
     {
@@ -12253,22 +9455,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guardapolvo-horquilla-luv-2-2.webp",
       "keywords": [
         "8-94156-7000",
+        "8-94457-8890",
         "ALG4105",
         "GUARDAPOLVO",
         "HORQUILLA",
         "LUV"
       ],
-      "linked_ids": [
-        557
-      ],
-      "oem": "8-94156-7000 / ALG4105",
+      "oem": "8-94457-8890 / 8-94156-7000 / ALG4105",
       "slug": "guardapolvo-horquilla-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94156-7000",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        475,
+        557
       ]
     },
     {
@@ -12278,22 +9475,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guardapolvo-horquilla-luv-2-3.webp",
       "keywords": [
         "8-94156-7000",
+        "8-94457-8890",
         "ALG4105",
         "GUARDAPOLVO",
         "HORQUILLA",
         "LUV"
       ],
-      "linked_ids": [
-        557
-      ],
-      "oem": "8-94156-7000 / ALG4105",
+      "oem": "8-94457-8890 / 8-94156-7000 / ALG4105",
       "slug": "guardapolvo-horquilla-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94156-7000",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        475,
+        557
       ]
     },
     {
@@ -12303,23 +9495,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guardapolvo-horquilla-luv-d-max-2-4.webp",
       "keywords": [
         "8-94156-7000",
+        "8-94457-8890",
         "ALG4105",
         "D-MAX",
         "GUARDAPOLVO",
         "HORQUILLA",
         "LUV"
       ],
-      "linked_ids": [
-        557
-      ],
-      "oem": "8-94156-7000 / ALG4105",
+      "oem": "8-94457-8890 / 8-94156-7000 / ALG4105",
       "slug": "guardapolvo-horquilla-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-94156-7000",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        475,
+        557
       ]
     },
     {
@@ -12329,6 +9516,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guardapolvo-horquilla-luv-d-max-2-5-diesel.webp",
       "keywords": [
         "8-94156-7000",
+        "8-94457-8890",
         "ALG4105",
         "D-MAX",
         "DIESEL",
@@ -12336,17 +9524,11 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "linked_ids": [
-        557
-      ],
-      "oem": "8-94156-7000 / ALG4105",
+      "oem": "8-94457-8890 / 8-94156-7000 / ALG4105",
       "slug": "guardapolvo-horquilla-luv-d-max-2-5-diesel",
-      "variants": [
-        {
-          "codigo_oem": "8-94156-7000",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        475,
+        557
       ]
     },
     {
@@ -12356,6 +9538,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guardapolvo-horquilla-luv-d-max-3-0-diesel.webp",
       "keywords": [
         "8-94156-7000",
+        "8-94457-8890",
         "ALG4105",
         "D-MAX",
         "DIESEL",
@@ -12363,17 +9546,11 @@ const PRODUCTS_DATA = {
         "HORQUILLA",
         "LUV"
       ],
-      "linked_ids": [
-        557
-      ],
-      "oem": "8-94156-7000 / ALG4105",
+      "oem": "8-94457-8890 / 8-94156-7000 / ALG4105",
       "slug": "guardapolvo-horquilla-luv-d-max-3-0-diesel",
-      "variants": [
-        {
-          "codigo_oem": "8-94156-7000",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        475,
+        557
       ]
     },
     {
@@ -12390,17 +9567,11 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GUAYA"
       ],
-      "linked_ids": [
-        579
-      ],
       "oem": "8-94495-0191 / 11-017 / 8-94473-3774 / 8-94473-3773",
       "slug": "guaya-acelerador-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94495-0191",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        499,
+        579
       ]
     },
     {
@@ -12409,22 +9580,18 @@ const PRODUCTS_DATA = {
       "id": "31b9c2e4-f83b-47bc-b726-e90ad8b8eb71",
       "image_path": "./assets/guaya-acelerador-caribe-2-6.webp",
       "keywords": [
+        "8-90298-4080",
+        "8-90354-3780",
         "8-94499-9592",
         "ACELERADOR",
         "CARIBE",
         "GUAYA"
       ],
-      "linked_ids": [
-        580
-      ],
-      "oem": "8-94499-9592",
+      "oem": "8-90354-3780 / 8-90298-4080 / 8-94499-9592",
       "slug": "guaya-acelerador-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94499-9592",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        500,
+        580
       ]
     },
     {
@@ -12434,24 +9601,22 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guaya-acelerador-larga-caribe-g-2000.webp",
       "keywords": [
         "11-016",
+        "5-09625-0621",
         "8-94222-5532",
+        "8-94340-3170",
+        "8-97046-7052",
+        "8-97046-7053",
         "ACELERADOR",
         "CARIBE",
         "G-2000",
         "GUAYA",
         "LARGA"
       ],
-      "linked_ids": [
-        578
-      ],
-      "oem": "8-94222-5532 / 11-016",
+      "oem": "8-97046-7053 / 5-09625-0621 / 8-94340-3170 / 8-97046-7052 / 8-94222-5532 / 11-016",
       "slug": "guaya-acelerador-larga-caribe-g-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94222-5532",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        501,
+        578
       ]
     },
     {
@@ -12468,17 +9633,11 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV"
       ],
-      "linked_ids": [
-        579
-      ],
       "oem": "8-94495-0191 / 11-017 / 8-94473-3774 / 8-94473-3773",
       "slug": "guaya-acelerador-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94495-0191",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        499,
+        579
       ]
     },
     {
@@ -12493,17 +9652,11 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV"
       ],
-      "linked_ids": [
-        581
-      ],
       "oem": "8-97362-9490",
       "slug": "guayaacelerador-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-97362-9490",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        502,
+        581
       ]
     },
     {
@@ -12512,23 +9665,19 @@ const PRODUCTS_DATA = {
       "id": "1233e31d-b2a8-42a5-905f-cb26f1b62f82",
       "image_path": "./assets/guayaacelerador-luv-d-max-4x225.webp",
       "keywords": [
+        "8-94121-5390",
         "8-97369-0080",
+        "9-09724-0030",
         "ACELERADOR",
         "D-MAX",
         "GUAYA",
         "LUV"
       ],
-      "linked_ids": [
-        582
-      ],
-      "oem": "8-97369-0080",
+      "oem": "9-09724-0030 / 8-94121-5390 / 8-97369-0080",
       "slug": "guayaacelerador-luv-d-max-4x225",
-      "variants": [
-        {
-          "codigo_oem": "8-97369-0080",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        503,
+        582
       ]
     },
     {
@@ -12537,23 +9686,18 @@ const PRODUCTS_DATA = {
       "id": "f122e53e-0054-42e8-b8f3-c03ac767668a",
       "image_path": "./assets/guayaacelerador-luv-d-max-3-5.webp",
       "keywords": [
+        "8-94408-0840",
         "8-97315-9651",
         "ACELERADOR",
         "D-MAX",
         "GUAYA",
         "LUV"
       ],
-      "linked_ids": [
-        584
-      ],
-      "oem": "8-97315-9651",
+      "oem": "8-94408-0840 / 8-97315-9651",
       "slug": "guayaacelerador-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97315-9651",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        505,
+        584
       ]
     },
     {
@@ -12563,21 +9707,16 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guaya-capot-caribe.webp",
       "keywords": [
         "8-94217-6814",
+        "8-97146-8260",
         "CAPOT",
         "CARIBE",
         "GUAYA"
       ],
-      "linked_ids": [
-        585
-      ],
-      "oem": "8-94217-6814",
+      "oem": "8-97146-8260 / 8-94217-6814",
       "slug": "guaya-capot-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94217-6814",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        506,
+        585
       ]
     },
     {
@@ -12586,6 +9725,7 @@ const PRODUCTS_DATA = {
       "id": "4cc555b9-d491-4943-8192-7622ee6cc861",
       "image_path": "./assets/guaya-capot-con-manilla-luv-d-max.webp",
       "keywords": [
+        "8-94433-7180",
         "8-98072-3680",
         "CAPOT",
         "D-MAX",
@@ -12593,17 +9733,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANILLA"
       ],
-      "linked_ids": [
-        588
-      ],
-      "oem": "8-98072-3680",
+      "oem": "8-94433-7180 / 8-98072-3680",
       "slug": "guaya-capot-con-manilla-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-98072-3680",
-          "brand": "Original",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        509,
+        588
       ]
     },
     {
@@ -12613,23 +9747,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guaya-capot-luv-2300.webp",
       "keywords": [
         "2300",
+        "8-94227-0481",
         "8-97106-1310",
         "942225661",
         "CAPOT",
         "GUAYA",
         "LUV"
       ],
-      "linked_ids": [
-        586
-      ],
-      "oem": "8-97106-1310 / 942225661",
+      "oem": "8-94227-0481 / 8-97106-1310 / 942225661",
       "slug": "guaya-capot-luv-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-97106-1310",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        507,
+        586
       ]
     },
     {
@@ -12638,23 +9767,20 @@ const PRODUCTS_DATA = {
       "id": "5ed3fdf3-4fcb-423b-8e27-162fc2ba4666",
       "image_path": "./assets/guaya-capot-luv-d-max.webp",
       "keywords": [
+        "8-94407-7110",
         "8-97334-4362",
+        "8-98036-5930",
+        "8-98036-5940",
         "CAPOT",
         "D-MAX",
         "GUAYA",
         "LUV"
       ],
-      "linked_ids": [
-        587
-      ],
-      "oem": "8-97334-4362",
+      "oem": "8-94407-7110 / 8-98036-5940 / 8-98036-5930 / 8-97334-4362",
       "slug": "guaya-capot-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97334-4362",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        508,
+        587
       ]
     },
     {
@@ -12667,28 +9793,23 @@ const PRODUCTS_DATA = {
         "8-94238-1841",
         "8-94238-1842",
         "8-94238-1853",
+        "8-94257-3180",
         "8-94297-1201",
+        "8-94318-9090",
+        "8-94318-9100",
+        "9-09724-0640",
         "CARIBE",
         "CLUTCH",
-        "GUAYA"
+        "GUAYA",
+        "I3599"
       ],
+      "oem": "9-09724-0640 / I3599 / 8-94318-9090 / 8-94318-9100 / 8-94257-3180 / 8-94181-2322 / 8-94238-1841 / 8-94238-1853 / 8-94297-1201 / 8-94238-1842",
+      "slug": "guaya-de-clutch-caribe",
       "linked_ids": [
+        510,
+        511,
         589,
         590
-      ],
-      "oem": "8-94181-2322 / 8-94238-1841 / 8-94238-1853 / 8-94297-1201 / 8-94238-1842",
-      "slug": "guaya-de-clutch-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94181-2322",
-          "brand": "Original",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-94297-1201",
-          "brand": "Original",
-          "precio_usd": 30
-        }
       ]
     },
     {
@@ -12701,8 +9822,11 @@ const PRODUCTS_DATA = {
         "8-97363-3460",
         "8-97368-0680",
         "8-97368-0690",
+        "8-97944-1491",
         "8-98007-0101",
         "8-98007-0111",
+        "8-98079-9940",
+        "8-98080-0040",
         "D-MAX",
         "DIESEL",
         "FRENO",
@@ -12710,23 +9834,13 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANO"
       ],
+      "oem": "8-97944-1491 / 8-98079-9940 / 8-98080-0040 / 8-97363-3460 / 8-98007-0111 / 8-97368-0680 / 8-98007-0101 / 8-97368-0690",
+      "slug": "guaya-freno-mano-luv-d-max-3-0-diesel-4x4",
       "linked_ids": [
+        518,
+        526,
         591,
         598
-      ],
-      "oem": "8-97363-3460 / 8-98007-0111 / 8-97368-0680 / 8-98007-0101 / 8-97368-0690",
-      "slug": "guaya-freno-mano-luv-d-max-3-0-diesel-4x4",
-      "variants": [
-        {
-          "codigo_oem": "8-97368-0680",
-          "brand": "Original",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-97363-3460",
-          "brand": "Original",
-          "precio_usd": 0
-        }
       ]
     },
     {
@@ -12738,31 +9852,24 @@ const PRODUCTS_DATA = {
         "8-97363-3460",
         "8-97368-0680",
         "8-97368-0690",
+        "8-97944-1491",
         "8-98007-0101",
         "8-98007-0111",
+        "8-98079-9940",
+        "8-98080-0040",
         "D-MAX",
         "FRENO",
         "GUAYA",
         "LUV",
         "MANO"
       ],
+      "oem": "8-97944-1491 / 8-98079-9940 / 8-98080-0040 / 8-97363-3460 / 8-98007-0111 / 8-97368-0680 / 8-98007-0101 / 8-97368-0690",
+      "slug": "guaya-freno-mano-luv-d-max-3-5",
       "linked_ids": [
+        518,
+        526,
         591,
         598
-      ],
-      "oem": "8-97363-3460 / 8-98007-0111 / 8-97368-0680 / 8-98007-0101 / 8-97368-0690",
-      "slug": "guaya-freno-mano-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97368-0680",
-          "brand": "Original",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "8-97363-3460",
-          "brand": "Original",
-          "precio_usd": 0
-        }
       ]
     },
     {
@@ -12772,6 +9879,9 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guaya-selectorade-cambio-luv-d-max-3-5-automatico.webp",
       "keywords": [
         "8-97307-4722",
+        "8-97374-6611",
+        "8-98144-2290",
+        "8-98169-6800",
         "AUTOMATICO",
         "CAMBIO",
         "D-MAX",
@@ -12780,17 +9890,11 @@ const PRODUCTS_DATA = {
         "SELECTORA",
         "SELECTORADE"
       ],
-      "linked_ids": [
-        606
-      ],
-      "oem": "8-97307-4722",
+      "oem": "8-97374-6611 / 8-98144-2290 / 8-98169-6800 / 8-97307-4722",
       "slug": "guaya-selectorade-cambio-luv-d-max-3-5-automatico",
-      "variants": [
-        {
-          "codigo_oem": "8-97307-4722",
-          "brand": "Original",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        529,
+        606
       ]
     },
     {
@@ -12805,21 +9909,16 @@ const PRODUCTS_DATA = {
         "83-88",
         "9-83111-5770",
         "CARIBE",
+        "GL-017-002",
         "GUAYA",
         "KILOMETRAJE",
         "VELOCIMETRO"
       ],
-      "linked_ids": [
-        605
-      ],
-      "oem": "8-94159-1530 / 8-94224-2401 / 11-142 / 9-83111-5770",
+      "oem": "GL-017-002 / 8-94159-1530 / 8-94224-2401 / 11-142 / 9-83111-5770",
       "slug": "guaya-velocimetro-caribe-83-88",
-      "variants": [
-        {
-          "codigo_oem": "8-94159-1530",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        528,
+        605
       ]
     },
     {
@@ -12829,29 +9928,25 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/guia-de-valvula-caribe-2300.webp",
       "keywords": [
         "2300",
+        "26300-35504",
         "8-94206-7620",
         "8-94206-7630",
+        "8-94430-4111",
+        "8-94456-7412",
+        "8-97236-6901",
         "CARIBE",
+        "CH3807",
         "GUIA",
+        "V-03412301",
         "VALVULA"
       ],
+      "oem": "8-97236-6901 / V-03412301 / 8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111 / 8-94206-7620 / 8-94206-7630",
+      "slug": "guia-de-valvula-caribe-2300",
       "linked_ids": [
+        530,
+        531,
         607,
         1139
-      ],
-      "oem": "8-94206-7620 / 8-94206-7630",
-      "slug": "guia-de-valvula-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94206-7620",
-          "brand": "Original",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-94206-7630",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -12860,29 +9955,25 @@ const PRODUCTS_DATA = {
       "id": "b18ffae9-f6bc-4b9e-991a-c4f7b6584cc0",
       "image_path": "./assets/guia-de-valvula-luv-2-3.webp",
       "keywords": [
+        "26300-35504",
         "8-94206-7620",
         "8-94206-7630",
+        "8-94430-4111",
+        "8-94456-7412",
+        "8-97236-6901",
+        "CH3807",
         "GUIA",
         "LUV",
+        "V-03412301",
         "VALVULA"
       ],
+      "oem": "8-97236-6901 / V-03412301 / 8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111 / 8-94206-7620 / 8-94206-7630",
+      "slug": "guia-de-valvula-luv-2-3",
       "linked_ids": [
+        530,
+        531,
         607,
         1139
-      ],
-      "oem": "8-94206-7620 / 8-94206-7630",
-      "slug": "guia-de-valvula-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94206-7620",
-          "brand": "Original",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-94206-7630",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -12891,29 +9982,20 @@ const PRODUCTS_DATA = {
       "id": "276d29e7-11c7-44da-b3a5-d7c6d8dad19b",
       "image_path": "./assets/hidrovac-luv-d-max-3-5.webp",
       "keywords": [
+        "8-97039-0020",
         "8-97365-5180",
         "8-97365-5190",
         "8-98006-7890",
+        "AK-8067",
         "D-MAX",
         "HIDROVAC",
         "LUV"
       ],
-      "linked_ids": [
-        609
-      ],
-      "oem": "8-97365-5180 / 8-97365-5190 / 8-98006-7890",
+      "oem": "8-97039-0020 / AK-8067 / 8-97365-5180 / 8-97365-5190 / 8-98006-7890",
       "slug": "hidrovac-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97365-5180",
-          "brand": "TSA",
-          "precio_usd": 115
-        },
-        {
-          "codigo_oem": "8-97365-5180",
-          "brand": "TOMITA",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        535,
+        609
       ]
     },
     {
@@ -12922,26 +10004,23 @@ const PRODUCTS_DATA = {
       "id": "3ae7e8ea-70fe-430c-953b-f0d6f2da5040",
       "image_path": "./assets/horquilla-clutch-caribe-2-6.webp",
       "keywords": [
+        "33850",
         "8-94167-7510",
         "8-94324-4180",
         "8-94457-2091",
         "8-97039-2660",
         "8-97365-6540",
+        "96335719",
         "CARIBE",
         "CLUTCH",
-        "HORQUILLA"
+        "HORQUILLA",
+        "MF-619"
       ],
-      "linked_ids": [
-        614
-      ],
-      "oem": "8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
+      "oem": "96335719 / MF-619 / 33850 / 8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
       "slug": "horquilla-clutch-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94324-4180",
-          "brand": "Original",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        542,
+        614
       ]
     },
     {
@@ -12950,26 +10029,23 @@ const PRODUCTS_DATA = {
       "id": "48809eb9-3d56-4ca0-856e-30c81392988b",
       "image_path": "./assets/horquilla-clutch-luv-2-2.webp",
       "keywords": [
+        "33850",
         "8-94167-7510",
         "8-94324-4180",
         "8-94457-2091",
         "8-97039-2660",
         "8-97365-6540",
+        "96335719",
         "CLUTCH",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "MF-619"
       ],
-      "linked_ids": [
-        614
-      ],
-      "oem": "8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
+      "oem": "96335719 / MF-619 / 33850 / 8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
       "slug": "horquilla-clutch-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-94324-4180",
-          "brand": "Original",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        542,
+        614
       ]
     },
     {
@@ -12978,26 +10054,23 @@ const PRODUCTS_DATA = {
       "id": "36af001a-1d92-4d98-b7af-572aa4eeb15e",
       "image_path": "./assets/horquilla-clutch-luv-2-3.webp",
       "keywords": [
+        "33850",
         "8-94167-7510",
         "8-94324-4180",
         "8-94457-2091",
         "8-97039-2660",
         "8-97365-6540",
+        "96335719",
         "CLUTCH",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "MF-619"
       ],
-      "linked_ids": [
-        614
-      ],
-      "oem": "8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
+      "oem": "96335719 / MF-619 / 33850 / 8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
       "slug": "horquilla-clutch-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94324-4180",
-          "brand": "Original",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        542,
+        614
       ]
     },
     {
@@ -13006,27 +10079,24 @@ const PRODUCTS_DATA = {
       "id": "b88daaee-904a-47fe-8765-6a13aac7f166",
       "image_path": "./assets/horquilla-clutch-luv-d-max-2-4.webp",
       "keywords": [
+        "33850",
         "8-94167-7510",
         "8-94324-4180",
         "8-94457-2091",
         "8-97039-2660",
         "8-97365-6540",
+        "96335719",
         "CLUTCH",
         "D-MAX",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "MF-619"
       ],
-      "linked_ids": [
-        614
-      ],
-      "oem": "8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
+      "oem": "96335719 / MF-619 / 33850 / 8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
       "slug": "horquilla-clutch-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-94324-4180",
-          "brand": "Original",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        542,
+        614
       ]
     },
     {
@@ -13035,27 +10105,24 @@ const PRODUCTS_DATA = {
       "id": "8379c836-efb1-46b9-9f35-5d89708d5710",
       "image_path": "./assets/horquilla-clutch-luv-d-max-2-5.webp",
       "keywords": [
+        "33850",
         "8-94167-7510",
         "8-94324-4180",
         "8-94457-2091",
         "8-97039-2660",
         "8-97365-6540",
+        "96335719",
         "CLUTCH",
         "D-MAX",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "MF-619"
       ],
-      "linked_ids": [
-        614
-      ],
-      "oem": "8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
+      "oem": "96335719 / MF-619 / 33850 / 8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
       "slug": "horquilla-clutch-luv-d-max-2-5",
-      "variants": [
-        {
-          "codigo_oem": "8-94324-4180",
-          "brand": "Original",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        542,
+        614
       ]
     },
     {
@@ -13064,27 +10131,24 @@ const PRODUCTS_DATA = {
       "id": "6d4df51a-c04b-4f84-9d75-2b71cec82257",
       "image_path": "./assets/horquilla-clutch-luv-d-max-3-0.webp",
       "keywords": [
+        "33850",
         "8-94167-7510",
         "8-94324-4180",
         "8-94457-2091",
         "8-97039-2660",
         "8-97365-6540",
+        "96335719",
         "CLUTCH",
         "D-MAX",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "MF-619"
       ],
-      "linked_ids": [
-        614
-      ],
-      "oem": "8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
+      "oem": "96335719 / MF-619 / 33850 / 8-94324-4180 / 8-94167-7510 / 8-97039-2660 / 8-94457-2091 / 8-97365-6540",
       "slug": "horquilla-clutch-luv-d-max-3-0",
-      "variants": [
-        {
-          "codigo_oem": "8-94324-4180",
-          "brand": "Original",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        542,
+        614
       ]
     },
     {
@@ -13095,19 +10159,14 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-17125-0970",
         "INYECTOR",
-        "LUV"
+        "LUV",
+        "PT56B"
       ],
-      "linked_ids": [
-        615
-      ],
-      "oem": "8-17125-0970",
+      "oem": "PT56B / 8-17125-0970",
       "slug": "inyector-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-17125-0970",
-          "brand": "Original",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        543,
+        615
       ]
     },
     {
@@ -13119,19 +10178,14 @@ const PRODUCTS_DATA = {
         "8-17125-0970",
         "D-MAX",
         "INYECTOR",
-        "LUV"
+        "LUV",
+        "PT56B"
       ],
-      "linked_ids": [
-        615
-      ],
-      "oem": "8-17125-0970",
+      "oem": "PT56B / 8-17125-0970",
       "slug": "inyector-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-17125-0970",
-          "brand": "Original",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        543,
+        615
       ]
     },
     {
@@ -13140,22 +10194,18 @@ const PRODUCTS_DATA = {
       "id": "86f24c24-b6ee-4a47-b71c-9369c9a30a36",
       "image_path": "./assets/inyector-combustible-luv-d-max-3507-14.webp",
       "keywords": [
+        "8-94110-6461",
+        "8-94200-7022",
         "8-97318-6200",
         "D-MAX",
         "INYECTOR",
         "LUV"
       ],
-      "linked_ids": [
-        616
-      ],
-      "oem": "8-97318-6200",
+      "oem": "8-94200-7022 / 8-94110-6461 / 8-97318-6200",
       "slug": "inyector-combustible-luv-d-max-3507-14",
-      "variants": [
-        {
-          "codigo_oem": "8-97318-6200",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        544,
+        616
       ]
     },
     {
@@ -13166,31 +10216,18 @@ const PRODUCTS_DATA = {
       "keywords": [
         "5-87810-3191",
         "8-87810-3192",
+        "8-94131-4470",
+        "8-94318-3960",
+        "8-94407-4240",
         "CARIBE",
         "EMPACADURA",
         "JUEGO"
       ],
-      "linked_ids": [
-        618
-      ],
-      "oem": "5-87810-3191 / 8-87810-3192",
+      "oem": "8-94131-4470 / 8-94407-4240 / 8-94318-3960 / 5-87810-3191 / 8-87810-3192",
       "slug": "juego-de-empacadura-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "5-87810-3191",
-          "brand": "KP",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "5-87810-3191",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87810-3191",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        546,
+        618
       ]
     },
     {
@@ -13203,27 +10240,18 @@ const PRODUCTS_DATA = {
         "5-87811-9440",
         "8-94312-5870",
         "8-94335-8390",
+        "8-97943-1780",
+        "8-97945-2590",
         "CARIBE",
         "EMPACADURA",
         "JUEGO",
         "RFS812"
       ],
-      "linked_ids": [
-        621
-      ],
-      "oem": "8-94312-5870 / 5-87811-9440 / 8-94335-8390 / RFS812",
+      "oem": "8-97943-1780 / 8-97945-2590 / 8-94312-5870 / 5-87811-9440 / 8-94335-8390 / RFS812",
       "slug": "juego-de-empacadura-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94312-5870",
-          "brand": "KP",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "8-94312-5870",
-          "brand": "RUSHMORE",
-          "precio_usd": 90
-        }
+      "linked_ids": [
+        547,
+        621
       ]
     },
     {
@@ -13236,39 +10264,20 @@ const PRODUCTS_DATA = {
         "5-87813-6180",
         "5-87813-7552",
         "5-87814-3231",
+        "8-94223-1672",
+        "ALBL1013",
         "D-MAX",
         "EMPACADURA",
         "JUEGO",
         "LUV",
         "RFS3082-A"
       ],
+      "oem": "8-94223-1672 / ALBL1013 / 5-87814-3231 / 5-87813-0530 / 5-87813-6180 / 5-87813-7552 / RFS3082-A",
+      "slug": "juego-de-empacadura-luv-d-max-3-5",
       "linked_ids": [
+        550,
         625,
         1107
-      ],
-      "oem": "5-87814-3231 / 5-87813-0530 / 5-87813-6180 / 5-87813-7552 / RFS3082-A",
-      "slug": "juego-de-empacadura-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "ANCOV",
-          "precio_usd": 65
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "RUSHMORE",
-          "precio_usd": 190
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        }
       ]
     },
     {
@@ -13277,6 +10286,7 @@ const PRODUCTS_DATA = {
       "id": "66ea6147-495d-484a-bacd-e7db7e874ba5",
       "image_path": "./assets/kit-arandela-y-tuerca-punta-de-eje-caribe-2-0.webp",
       "keywords": [
+        "8-94228-7610",
         "ARANDELA",
         "CARIBE",
         "EJE",
@@ -13285,17 +10295,11 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TUERCA"
       ],
-      "linked_ids": [
-        683
-      ],
-      "oem": "KIT-1000",
+      "oem": "8-94228-7610 / KIT-1000",
       "slug": "kit-arandela-y-tuerca-punta-de-eje-caribe-2-0",
-      "variants": [
-        {
-          "codigo_oem": "KIT-1000",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        602,
+        683
       ]
     },
     {
@@ -13304,6 +10308,7 @@ const PRODUCTS_DATA = {
       "id": "3a5f43c6-f994-457f-9d54-5b1438bfa740",
       "image_path": "./assets/kit-arandela-y-tuerca-punta-de-eje-caribe-2-3.webp",
       "keywords": [
+        "8-94228-7610",
         "ARANDELA",
         "CARIBE",
         "EJE",
@@ -13312,17 +10317,11 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TUERCA"
       ],
-      "linked_ids": [
-        683
-      ],
-      "oem": "KIT-1000",
+      "oem": "8-94228-7610 / KIT-1000",
       "slug": "kit-arandela-y-tuerca-punta-de-eje-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "KIT-1000",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        602,
+        683
       ]
     },
     {
@@ -13331,6 +10330,10 @@ const PRODUCTS_DATA = {
       "id": "f3b264dc-2829-4917-8961-af35a1f77992",
       "image_path": "./assets/kit-arandela-y-tuerca-puntade-eje-caribe-2-6.webp",
       "keywords": [
+        "8-94366-7622",
+        "8-94366-7692",
+        "94366773",
+        "94434618",
         "ARANDELA",
         "CARIBE",
         "EJE",
@@ -13340,17 +10343,11 @@ const PRODUCTS_DATA = {
         "PUNTADE",
         "TUERCA"
       ],
-      "linked_ids": [
-        684
-      ],
-      "oem": "KIT-1001",
+      "oem": "8-94366-7622 / 94366773 / 94434618 / 8-94366-7692 / KIT-1001",
       "slug": "kit-arandela-y-tuerca-puntade-eje-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "KIT-1001",
-          "brand": "Original",
-          "precio_usd": 40
-        }
+      "linked_ids": [
+        601,
+        684
       ]
     },
     {
@@ -13362,22 +10359,17 @@ const PRODUCTS_DATA = {
         "162710",
         "2300",
         "8-99443-6720",
+        "ALBL1012",
         "BARRA",
         "KIT",
         "LUV",
         "TENSORA"
       ],
-      "linked_ids": [
-        630
-      ],
-      "oem": "8-99443-6720 / 162710",
+      "oem": "ALBL1012 / 8-99443-6720 / 162710",
       "slug": "kit-barra-tensora-luv-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-99443-6720",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        553,
+        630
       ]
     },
     {
@@ -13388,22 +10380,17 @@ const PRODUCTS_DATA = {
       "keywords": [
         "162710",
         "8-99443-6720",
+        "ALBL1012",
         "BARRA",
         "KIT",
         "TENSORA",
         "TROOPER"
       ],
-      "linked_ids": [
-        630
-      ],
-      "oem": "8-99443-6720 / 162710",
+      "oem": "ALBL1012 / 8-99443-6720 / 162710",
       "slug": "kit-barra-tensora-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-99443-6720",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        553,
+        630
       ]
     },
     {
@@ -13413,24 +10400,22 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/kit-de-bomba-clutch-caribe-g-2600.webp",
       "keywords": [
         "04311-17030",
+        "5-51631-0170",
         "5-87830-8250",
+        "8-94143-2100",
         "BOMBA",
+        "C-1014",
         "CARIBE",
         "CLUTCH",
+        "FR-9632",
         "G-2600",
         "KIT"
       ],
-      "linked_ids": [
-        631
-      ],
-      "oem": "5-87830-8250 / 04311-17030",
+      "oem": "5-51631-0170 / C-1014 / FR-9632 / 8-94143-2100 / 5-87830-8250 / 04311-17030",
       "slug": "kit-de-bomba-clutch-caribe-g-2600",
-      "variants": [
-        {
-          "codigo_oem": "5-87830-8250",
-          "brand": "Original",
-          "precio_usd": 5
-        }
+      "linked_ids": [
+        554,
+        631
       ]
     },
     {
@@ -13443,23 +10428,18 @@ const PRODUCTS_DATA = {
         "8-94136-6720",
         "8-94136-6721",
         "8-94327-2531",
+        "8-94338-0511",
         "8-94454-5620",
         "BOMBA",
         "CARIBE",
         "FRENO",
         "KIT"
       ],
-      "linked_ids": [
-        638
-      ],
-      "oem": "8-94136-6720 / 8-94136-6721 / 8-94454-5620 / 8-94327-2531",
+      "oem": "8-94338-0511 / 8-94136-6720 / 8-94136-6721 / 8-94454-5620 / 8-94327-2531",
       "slug": "kit-bomba-de-freno-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94136-6720",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        560,
+        638
       ]
     },
     {
@@ -13472,22 +10452,18 @@ const PRODUCTS_DATA = {
         "8-94454-5630",
         "8-97071-8040",
         "8-97160-7070",
+        "8-97289-1690",
         "BOMBA",
+        "C0564",
         "CARIBE",
         "FRENO",
         "KIT"
       ],
-      "linked_ids": [
-        639
-      ],
-      "oem": "8-94454-5630 / 8-97071-8040 / 8-97160-7070",
+      "oem": "8-97289-1690 / C0564 / 8-94454-5630 / 8-97071-8040 / 8-97160-7070",
       "slug": "kit-bomba-de-freno-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94454-5630",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        561,
+        639
       ]
     },
     {
@@ -13496,24 +10472,20 @@ const PRODUCTS_DATA = {
       "id": "e08a19e1-ab93-428d-bc95-6559562745c6",
       "image_path": "./assets/kit-bomba-de-freno-caribe-g-2000.webp",
       "keywords": [
+        "137003",
         "8-94231-5490",
+        "9-51631-6191",
         "BOMBA",
         "CARIBE",
         "FRENO",
         "G-2000",
         "KIT"
       ],
-      "linked_ids": [
-        637
-      ],
-      "oem": "8-94231-5490",
+      "oem": "9-51631-6191 / 137003 / 8-94231-5490",
       "slug": "kit-bomba-de-freno-caribe-g-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94231-5490",
-          "brand": "Original",
-          "precio_usd": 15
-        }
+      "linked_ids": [
+        562,
+        637
       ]
     },
     {
@@ -13525,22 +10497,18 @@ const PRODUCTS_DATA = {
         "8-94454-5630",
         "8-97071-8040",
         "8-97160-7070",
+        "8-97289-1690",
         "BOMBA",
+        "C0564",
         "FRENO",
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        639
-      ],
-      "oem": "8-94454-5630 / 8-97071-8040 / 8-97160-7070",
+      "oem": "8-97289-1690 / C0564 / 8-94454-5630 / 8-97071-8040 / 8-97160-7070",
       "slug": "kit-bomba-de-freno-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94454-5630",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        561,
+        639
       ]
     },
     {
@@ -13549,23 +10517,19 @@ const PRODUCTS_DATA = {
       "id": "95aa5382-a8de-4c16-8854-e3e1dff0c7ca",
       "image_path": "./assets/kit-bomba-direccion-caribe-2-6.webp",
       "keywords": [
+        "5-31131-0050",
         "8-94311-9831",
+        "ALG4104",
         "BOMBA",
         "CARIBE",
         "DIRECCION",
         "KIT"
       ],
-      "linked_ids": [
-        633
-      ],
-      "oem": "8-94311-9831",
+      "oem": "5-31131-0050 / ALG4104 / 8-94311-9831",
       "slug": "kit-bomba-direccion-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94311-9831",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        556,
+        633
       ]
     },
     {
@@ -13574,23 +10538,19 @@ const PRODUCTS_DATA = {
       "id": "23dee8bd-cf09-4b94-b146-f3f6f68d3433",
       "image_path": "./assets/kit-bomba-direccion-luv-2-3.webp",
       "keywords": [
+        "5-31131-0050",
         "8-94311-9831",
+        "ALG4104",
         "BOMBA",
         "DIRECCION",
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        633
-      ],
-      "oem": "8-94311-9831",
+      "oem": "5-31131-0050 / ALG4104 / 8-94311-9831",
       "slug": "kit-bomba-direccion-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94311-9831",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        556,
+        633
       ]
     },
     {
@@ -13599,6 +10559,7 @@ const PRODUCTS_DATA = {
       "id": "20986db6-09e2-4770-a9d4-c7572f78740c",
       "image_path": "./assets/kit-bomba-direccion-luv-d-max-3-5.webp",
       "keywords": [
+        "8-94159-9512",
         "8-97205-6260",
         "BOMBA",
         "D-MAX",
@@ -13606,17 +10567,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        636
-      ],
-      "oem": "8-97205-6260",
+      "oem": "8-94159-9512 / 8-97205-6260",
       "slug": "kit-bomba-direccion-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97205-6260",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        558,
+        636
       ]
     },
     {
@@ -13625,7 +10580,9 @@ const PRODUCTS_DATA = {
       "id": "fe3d8756-2457-4307-952f-eb7d9ef30a9e",
       "image_path": "./assets/kit-bomba-direccion-luv-d-max-diesel-30.webp",
       "keywords": [
+        "8-94156-7000",
         "8-97184-7350",
+        "ALG4105",
         "BOMBA",
         "D-MAX",
         "DIESEL",
@@ -13633,17 +10590,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        635
-      ],
-      "oem": "8-97184-7350",
+      "oem": "8-94156-7000 / ALG4105 / 8-97184-7350",
       "slug": "kit-bomba-direccion-luv-d-max-diesel-30",
-      "variants": [
-        {
-          "codigo_oem": "8-97184-7350",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        557,
+        635
       ]
     },
     {
@@ -13652,6 +10603,7 @@ const PRODUCTS_DATA = {
       "id": "7c1bd394-938f-45c5-a328-2e6df967bb96",
       "image_path": "./assets/kit-bomba-direccion-rodeo-3-2.webp",
       "keywords": [
+        "8-94159-9503",
         "8-97081-8670",
         "8360",
         "BOMBA",
@@ -13659,17 +10611,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "RODEO"
       ],
-      "linked_ids": [
-        634
-      ],
-      "oem": "8-97081-8670 / 8360",
+      "oem": "8-94159-9503 / 8-97081-8670 / 8360",
       "slug": "kit-bomba-direccion-rodeo-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97081-8670",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        559,
+        634
       ]
     },
     {
@@ -13678,6 +10624,7 @@ const PRODUCTS_DATA = {
       "id": "17e5db2e-a07c-404f-934b-e342d8d36eb5",
       "image_path": "./assets/kit-bomba-direccion-trooper32.webp",
       "keywords": [
+        "8-94159-9503",
         "8-97081-8670",
         "8360",
         "BOMBA",
@@ -13685,17 +10632,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "TROOPER"
       ],
-      "linked_ids": [
-        634
-      ],
-      "oem": "8-97081-8670 / 8360",
+      "oem": "8-94159-9503 / 8-97081-8670 / 8360",
       "slug": "kit-bomba-direccion-trooper32",
-      "variants": [
-        {
-          "codigo_oem": "8-97081-8670",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        559,
+        634
       ]
     },
     {
@@ -13704,25 +10645,21 @@ const PRODUCTS_DATA = {
       "id": "b9945842-5f68-4916-8a85-c0af2f87018d",
       "image_path": "./assets/kit-bombin-luv-d-max.webp",
       "keywords": [
+        "5-43319-0190",
         "5-87831-2210",
         "5-87832-0670",
+        "8-94124-6330",
         "BOMBIN",
         "CLUTCH",
         "D-MAX",
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        641
-      ],
-      "oem": "5-87832-0670 / 5-87831-2210",
+      "oem": "5-43319-0190 / 8-94124-6330 / 5-87832-0670 / 5-87831-2210",
       "slug": "kit-bombin-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "5-87832-0670",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        564,
+        641
       ]
     },
     {
@@ -13733,34 +10670,26 @@ const PRODUCTS_DATA = {
       "keywords": [
         "01-8461",
         "2000",
+        "8-94312-6780",
+        "8-94313-1050",
+        "8-94313-1060",
         "8-97029-9450",
         "8-97029-9451",
+        "8-97131-3990",
         "8-97132-7000",
+        "8-97138-9810",
+        "8-97349-9550",
+        "8-97387-4780",
         "CAJETIN",
         "CARIBE",
-        "KIT"
+        "KIT",
+        "M-005N"
       ],
-      "linked_ids": [
-        642
-      ],
-      "oem": "8-97029-9450 / 01-8461 / 8-97029-9451 / 8-97132-7000",
+      "oem": "8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N / 8-97029-9450 / 01-8461 / 8-97029-9451 / 8-97132-7000",
       "slug": "kit-ajetin-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-97029-9450",
-          "brand": "ALLPARK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97029-9450",
-          "brand": "TRANSRTEC",
-          "precio_usd": 100
-        },
-        {
-          "codigo_oem": "8-97029-9450",
-          "brand": "TEZUKA",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        565,
+        642
       ]
     },
     {
@@ -13771,34 +10700,26 @@ const PRODUCTS_DATA = {
       "keywords": [
         "01-8461",
         "2300",
+        "8-94312-6780",
+        "8-94313-1050",
+        "8-94313-1060",
         "8-97029-9450",
         "8-97029-9451",
+        "8-97131-3990",
         "8-97132-7000",
+        "8-97138-9810",
+        "8-97349-9550",
+        "8-97387-4780",
         "CAJETIN",
         "CARIBE",
-        "KIT"
+        "KIT",
+        "M-005N"
       ],
-      "linked_ids": [
-        642
-      ],
-      "oem": "8-97029-9450 / 01-8461 / 8-97029-9451 / 8-97132-7000",
+      "oem": "8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N / 8-97029-9450 / 01-8461 / 8-97029-9451 / 8-97132-7000",
       "slug": "kit-ajetin-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-97029-9450",
-          "brand": "ALLPARK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97029-9450",
-          "brand": "TRANSRTEC",
-          "precio_usd": 100
-        },
-        {
-          "codigo_oem": "8-97029-9450",
-          "brand": "TEZUKA",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        565,
+        642
       ]
     },
     {
@@ -13809,34 +10730,26 @@ const PRODUCTS_DATA = {
       "keywords": [
         "01-8461",
         "2600",
+        "8-94312-6780",
+        "8-94313-1050",
+        "8-94313-1060",
         "8-97029-9450",
         "8-97029-9451",
+        "8-97131-3990",
         "8-97132-7000",
+        "8-97138-9810",
+        "8-97349-9550",
+        "8-97387-4780",
         "CAJETIN",
         "CARIBE",
-        "KIT"
+        "KIT",
+        "M-005N"
       ],
-      "linked_ids": [
-        642
-      ],
-      "oem": "8-97029-9450 / 01-8461 / 8-97029-9451 / 8-97132-7000",
+      "oem": "8-94313-1060 / 8-94312-6780 / 8-94313-1050 / 8-97131-3990 / 8-97138-9810 / 8-97349-9550 / 8-97387-4780 / M-005N / 8-97029-9450 / 01-8461 / 8-97029-9451 / 8-97132-7000",
       "slug": "kit-ajetin-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-97029-9450",
-          "brand": "ALLPARK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97029-9450",
-          "brand": "TRANSRTEC",
-          "precio_usd": 100
-        },
-        {
-          "codigo_oem": "8-97029-9450",
-          "brand": "TEZUKA",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        565,
+        642
       ]
     },
     {
@@ -13853,17 +10766,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        646
-      ],
       "oem": "71004876 / 01-8221",
       "slug": "kit-ajetin-luv-d-max-05-09",
-      "variants": [
-        {
-          "codigo_oem": "71004876",
-          "brand": "TRANSTEC",
-          "precio_usd": 60
-        }
+      "linked_ids": [
+        568,
+        646
       ]
     },
     {
@@ -13887,23 +10794,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/kit-aliper-delantero-caribe-2300.webp",
       "keywords": [
         "2300",
+        "8-90215-2960",
         "8-94136-6430",
         "CALIPER",
         "CARIBE",
         "DELANTERO",
         "KIT"
       ],
-      "linked_ids": [
-        647
-      ],
-      "oem": "8-94136-6430",
+      "oem": "8-90215-2960 / 8-94136-6430",
       "slug": "kit-aliper-delantero-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94136-6430",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        570,
+        647
       ]
     },
     {
@@ -13913,25 +10815,22 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/kit-aliper-delantero-caribe-2600.webp",
       "keywords": [
         "2600",
+        "8-94208-5220",
+        "8-94338-9210",
         "8-94388-0220",
         "8-94461-2500",
+        "8-97033-6730",
         "8-97134-7150",
         "CALIPER",
         "CARIBE",
         "DELANTERO",
         "KIT"
       ],
-      "linked_ids": [
-        648
-      ],
-      "oem": "8-94461-2500 / 8-97134-7150 / 8-94388-0220",
+      "oem": "8-94208-5220 / 8-97033-6730 / 8-94338-9210 / 8-94461-2500 / 8-97134-7150 / 8-94388-0220",
       "slug": "kit-aliper-delantero-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94461-2500",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        569,
+        648
       ]
     },
     {
@@ -13940,25 +10839,22 @@ const PRODUCTS_DATA = {
       "id": "72ba4f09-293b-4146-b2a2-45935aada29a",
       "image_path": "./assets/kit-caliper-delantero-luv.webp",
       "keywords": [
+        "8-94208-5220",
+        "8-94338-9210",
         "8-94388-0220",
         "8-94461-2500",
+        "8-97033-6730",
         "8-97134-7150",
         "CALIPER",
         "DELANTERO",
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        648
-      ],
-      "oem": "8-94461-2500 / 8-97134-7150 / 8-94388-0220",
+      "oem": "8-94208-5220 / 8-97033-6730 / 8-94338-9210 / 8-94461-2500 / 8-97134-7150 / 8-94388-0220",
       "slug": "kit-caliper-delantero-luv",
-      "variants": [
-        {
-          "codigo_oem": "8-94461-2500",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        569,
+        648
       ]
     },
     {
@@ -13967,23 +10863,18 @@ const PRODUCTS_DATA = {
       "id": "95469a10-ceb9-4d46-9483-c15c260842f1",
       "image_path": "./assets/kit-de-camarin-luv-d-max-3-5.webp",
       "keywords": [
+        "8-97301-4950",
         "CAMARIN",
         "D-MAX",
         "KIT",
         "LUV",
         "RMA3082"
       ],
-      "linked_ids": [
-        651
-      ],
-      "oem": "RMA3082",
+      "oem": "8-97301-4950 / RMA3082",
       "slug": "kit-de-camarin-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "RMA3082",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        573,
+        651
       ]
     },
     {
@@ -13993,23 +10884,20 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/kit-carburador-caribe-2300.webp",
       "keywords": [
         "2300",
+        "314102021",
         "8-94402-9090",
+        "8-97234-7556",
+        "8-97387-3680",
         "8688",
         "CARBURADOR",
         "CARIBE",
         "KIT"
       ],
-      "linked_ids": [
-        653
-      ],
-      "oem": "8-94402-9090 / 8688",
+      "oem": "8-97387-3680 / 8-97234-7556 / 314102021 / 8-94402-9090 / 8688",
       "slug": "kit-carburador-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94402-9090",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        574,
+        653
       ]
     },
     {
@@ -14019,22 +10907,17 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/kit-carburador-caribe-g-200.webp",
       "keywords": [
         "8-94204-4290",
+        "8-98007-1333",
         "CARBURADOR",
         "CARIBE",
         "G-200",
         "KIT"
       ],
-      "linked_ids": [
-        652
-      ],
-      "oem": "8-94204-4290",
+      "oem": "8-98007-1333 / 8-94204-4290",
       "slug": "kit-carburador-caribe-g-200",
-      "variants": [
-        {
-          "codigo_oem": "8-94204-4290",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        576,
+        652
       ]
     },
     {
@@ -14043,32 +10926,20 @@ const PRODUCTS_DATA = {
       "id": "ddf89eff-1e07-44d5-af87-d9da20075b50",
       "image_path": "./assets/kit-clutch-caribe-2-3.webp",
       "keywords": [
+        "11-017",
+        "8-94473-3773",
+        "8-94473-3774",
+        "8-94495-0191",
         "CARIBE",
         "CLUTCH",
         "KIS10B",
         "KIT"
       ],
-      "linked_ids": [
-        656
-      ],
-      "oem": "KIS10B",
+      "oem": "8-94495-0191 / 11-017 / 8-94473-3774 / 8-94473-3773 / KIS10B",
       "slug": "kit-clutch-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "KIS10B",
-          "brand": "PERFECTION",
-          "precio_usd": 140
-        },
-        {
-          "codigo_oem": "KIS10B",
-          "brand": "TRIX",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "KIS10B",
-          "brand": "BM",
-          "precio_usd": 120
-        }
+      "linked_ids": [
+        579,
+        656
       ]
     },
     {
@@ -14077,33 +10948,21 @@ const PRODUCTS_DATA = {
       "id": "8bf3cda6-55b1-492a-a644-5d2781233726",
       "image_path": "./assets/kit-clutch-caribe-g-2000.webp",
       "keywords": [
+        "11-017",
+        "8-94473-3773",
+        "8-94473-3774",
+        "8-94495-0191",
         "CARIBE",
         "CLUTCH",
         "G-2000",
         "KIS10B",
         "KIT"
       ],
-      "linked_ids": [
-        656
-      ],
-      "oem": "KIS10B",
+      "oem": "8-94495-0191 / 11-017 / 8-94473-3774 / 8-94473-3773 / KIS10B",
       "slug": "kit-clutch-caribe-g-2000",
-      "variants": [
-        {
-          "codigo_oem": "KIS10B",
-          "brand": "PERFECTION",
-          "precio_usd": 140
-        },
-        {
-          "codigo_oem": "KIS10B",
-          "brand": "TRIX",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "KIS10B",
-          "brand": "BM",
-          "precio_usd": 120
-        }
+      "linked_ids": [
+        579,
+        656
       ]
     },
     {
@@ -14112,32 +10971,20 @@ const PRODUCTS_DATA = {
       "id": "2fe6783c-ae61-4de5-8a63-54969cee27cd",
       "image_path": "./assets/kit-clutch-luv-2-3.webp",
       "keywords": [
+        "11-017",
+        "8-94473-3773",
+        "8-94473-3774",
+        "8-94495-0191",
         "CLUTCH",
         "KIS10B",
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        656
-      ],
-      "oem": "KIS10B",
+      "oem": "8-94495-0191 / 11-017 / 8-94473-3774 / 8-94473-3773 / KIS10B",
       "slug": "kit-clutch-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "KIS10B",
-          "brand": "PERFECTION",
-          "precio_usd": 140
-        },
-        {
-          "codigo_oem": "KIS10B",
-          "brand": "TRIX",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "KIS10B",
-          "brand": "BM",
-          "precio_usd": 120
-        }
+      "linked_ids": [
+        579,
+        656
       ]
     },
     {
@@ -14147,6 +10994,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/kit-clutch-luv-d-max-3-0-diesel.webp",
       "keywords": [
         "5-87610-2191",
+        "8-97315-9651",
         "CLUTCH",
         "D-MAX",
         "DIESEL",
@@ -14155,17 +11003,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        669
-      ],
-      "oem": "5-87610-2191 / ISK-093 / ISK-003",
+      "oem": "8-97315-9651 / 5-87610-2191 / ISK-093 / ISK-003",
       "slug": "kit-clutch-luv-d-max-3-0-diesel",
-      "variants": [
-        {
-          "codigo_oem": "5-87610-2191",
-          "brand": "Original",
-          "precio_usd": 310
-        }
+      "linked_ids": [
+        584,
+        669
       ]
     },
     {
@@ -14174,28 +11016,19 @@ const PRODUCTS_DATA = {
       "id": "9f2bcb59-fe26-487d-9d8a-61c0def8865c",
       "image_path": "./assets/kit-de-clutch-caribe-2600.webp",
       "keywords": [
+        "11-016",
         "2600",
+        "8-94222-5532",
         "CARIBE",
         "CLUTCH",
         "KIS27B",
         "KIT"
       ],
-      "linked_ids": [
-        658
-      ],
-      "oem": "KIS27B",
+      "oem": "8-94222-5532 / 11-016 / KIS27B",
       "slug": "kit-de-clutch-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "KIS27B",
-          "brand": "PERFECTION",
-          "precio_usd": 175
-        },
-        {
-          "codigo_oem": "KIS27B",
-          "brand": "ICHIBAN",
-          "precio_usd": 145
-        }
+      "linked_ids": [
+        578,
+        658
       ]
     },
     {
@@ -14204,6 +11037,7 @@ const PRODUCTS_DATA = {
       "id": "e5ef7872-8ba7-4ac6-a199-a9c77963bc8c",
       "image_path": "./assets/kit-de-clutch-luv-d-max-2-4.webp",
       "keywords": [
+        "8-97369-0080",
         "95625623",
         "CLUTCH",
         "D-MAX",
@@ -14211,22 +11045,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        662
-      ],
-      "oem": "ISK-092B / 95625623",
+      "oem": "8-97369-0080 / ISK-092B / 95625623",
       "slug": "kit-de-clutch-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "ISK-092B",
-          "brand": "VALEO",
-          "precio_usd": 405
-        },
-        {
-          "codigo_oem": "ISK-092B",
-          "brand": "PERFECTION",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        582,
+        662
       ]
     },
     {
@@ -14235,6 +11058,8 @@ const PRODUCTS_DATA = {
       "id": "02448505-b941-4452-b250-55bf899f7701",
       "image_path": "./assets/kit-de-clutch-luv-d-max-3-5.webp",
       "keywords": [
+        "8-97106-1310",
+        "942225661",
         "95625609",
         "CLUTCH",
         "D-MAX",
@@ -14242,42 +11067,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "LUV"
       ],
-      "linked_ids": [
-        663
-      ],
-      "oem": "KIS01 / 95625609",
+      "oem": "8-97106-1310 / 942225661 / KIS01 / 95625609",
       "slug": "kit-de-clutch-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "KIS01",
-          "brand": "TRIX",
-          "precio_usd": 160
-        },
-        {
-          "codigo_oem": "KIS01",
-          "brand": "ANCOV",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "KIS01",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "KIS01",
-          "brand": "PERFECTION",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "KIS01",
-          "brand": "DAIKIN EXEDY",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "KIS01",
-          "brand": "BWB",
-          "precio_usd": 350
-        }
+      "linked_ids": [
+        586,
+        663
       ]
     },
     {
@@ -14360,23 +11154,18 @@ const PRODUCTS_DATA = {
       "id": "99138650-5fca-403a-9960-934a9d495fbb",
       "image_path": "./assets/kit-de-tiempo-caribe-2-3.webp",
       "keywords": [
+        "8-94366-7760",
         "CARIBE",
         "KIT",
         "TIEMPO",
         "TK-125",
         "TKTB122"
       ],
-      "linked_ids": [
-        676
-      ],
-      "oem": "TK-125 / TKTB122",
+      "oem": "8-94366-7760 / TK-125 / TKTB122",
       "slug": "kit-de-tiempo-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "TK-125",
-          "brand": "CIC",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        593,
+        676
       ]
     },
     {
@@ -14385,23 +11174,19 @@ const PRODUCTS_DATA = {
       "id": "67734395-345f-432b-8d77-450bb9555605",
       "image_path": "./assets/kit-de-tiempo-caribe-2-6.webp",
       "keywords": [
+        "8-94366-7702",
+        "94366774",
         "CARIBE",
         "KIT",
         "TIEMPO",
         "TK-126",
         "TKTB147"
       ],
-      "linked_ids": [
-        677
-      ],
-      "oem": "TK-126 / TKTB147",
+      "oem": "8-94366-7702 / 94366774 / TK-126 / TKTB147",
       "slug": "kit-de-tiempo-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "TK-126",
-          "brand": "CIC",
-          "precio_usd": 50
-        }
+      "linked_ids": [
+        594,
+        677
       ]
     },
     {
@@ -14412,6 +11197,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "2000",
         "76043",
+        "8-94228-7620",
         "CARIBE",
         "CTKIS2",
         "I403B",
@@ -14419,22 +11205,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "TIEMPO"
       ],
-      "linked_ids": [
-        674
-      ],
-      "oem": "I403K / 76043 / CTKIS2 / I403B",
+      "oem": "8-94228-7620 / I403K / 76043 / CTKIS2 / I403B",
       "slug": "kit-de-tiempo-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "I403K",
-          "brand": "TAIWAN",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "I403K",
-          "brand": "CIC",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        595,
+        674
       ]
     },
     {
@@ -14449,17 +11224,11 @@ const PRODUCTS_DATA = {
         "TK-133",
         "TKB133"
       ],
-      "linked_ids": [
-        678
-      ],
       "oem": "TK-133 / TKB133",
       "slug": "kit-de-tiempo-chevrolet-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "TK-133",
-          "brand": "CIC",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        596,
+        678
       ]
     },
     {
@@ -14468,23 +11237,18 @@ const PRODUCTS_DATA = {
       "id": "b9e27132-e292-4638-aa83-0fee571e169d",
       "image_path": "./assets/kit-de-tiempo-luv-2-3.webp",
       "keywords": [
+        "8-94366-7760",
         "KIT",
         "LUV",
         "TIEMPO",
         "TK-125",
         "TKTB122"
       ],
-      "linked_ids": [
-        676
-      ],
-      "oem": "TK-125 / TKTB122",
+      "oem": "8-94366-7760 / TK-125 / TKTB122",
       "slug": "kit-de-tiempo-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "TK-125",
-          "brand": "CIC",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        593,
+        676
       ]
     },
     {
@@ -14500,17 +11264,11 @@ const PRODUCTS_DATA = {
         "TK-133",
         "TKB133"
       ],
-      "linked_ids": [
-        678
-      ],
       "oem": "TK-133 / TKB133",
       "slug": "kit-de-tiempo-chevrolet-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "TK-133",
-          "brand": "CIC",
-          "precio_usd": 85
-        }
+      "linked_ids": [
+        596,
+        678
       ]
     },
     {
@@ -14527,27 +11285,11 @@ const PRODUCTS_DATA = {
         "TK-135",
         "TKB135"
       ],
-      "linked_ids": [
-        679
-      ],
       "oem": "TK-135 / TCK303 / TKB135",
       "slug": "kit-de-tiempo-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "TK-135",
-          "brand": "TAIKEN",
-          "precio_usd": 175
-        },
-        {
-          "codigo_oem": "TK-135",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "TK-135",
-          "brand": "MICHELIN",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        597,
+        679
       ]
     },
     {
@@ -14556,22 +11298,19 @@ const PRODUCTS_DATA = {
       "id": "d7ad6e9b-e09f-4629-9faa-bde687718807",
       "image_path": "./assets/kit-de-tiempo-rodeo-3-2.webp",
       "keywords": [
+        "8-94366-7750",
+        "8-94434-6280",
+        "94366775",
         "KIT",
         "RODEO",
         "TIEMPO",
         "TK-137"
       ],
-      "linked_ids": [
-        681
-      ],
-      "oem": "TK-137",
+      "oem": "8-94434-6280 / 94366775 / 8-94366-7750 / TK-137",
       "slug": "kit-de-tiempo-rodeo-3-2",
-      "variants": [
-        {
-          "codigo_oem": "TK-137",
-          "brand": "CIC",
-          "precio_usd": 120
-        }
+      "linked_ids": [
+        600,
+        681
       ]
     },
     {
@@ -14581,21 +11320,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/kit-de-tiempo-rodeo-31.webp",
       "keywords": [
         "76061",
+        "8-94366-7712",
+        "8-94434-6201",
+        "94366771",
         "KIT",
         "RODEO",
         "TIEMPO"
       ],
-      "linked_ids": [
-        682
-      ],
-      "oem": "76061",
+      "oem": "8-94434-6201 / 94366771 / 8-94366-7712 / 76061",
       "slug": "kit-de-tiempo-rodeo-31",
-      "variants": [
-        {
-          "codigo_oem": "76061",
-          "brand": "CIC",
-          "precio_usd": 95
-        }
+      "linked_ids": [
+        599,
+        682
       ]
     },
     {
@@ -14604,22 +11340,19 @@ const PRODUCTS_DATA = {
       "id": "3429e89c-adf3-4f89-bc41-d3a6ed86e6f9",
       "image_path": "./assets/kit-de-tiempo-trooper-3-2.webp",
       "keywords": [
+        "8-94366-7750",
+        "8-94434-6280",
+        "94366775",
         "KIT",
         "TIEMPO",
         "TK-137",
         "TROOPER"
       ],
-      "linked_ids": [
-        681
-      ],
-      "oem": "TK-137",
+      "oem": "8-94434-6280 / 94366775 / 8-94366-7750 / TK-137",
       "slug": "kit-de-tiempo-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "TK-137",
-          "brand": "CIC",
-          "precio_usd": 120
-        }
+      "linked_ids": [
+        600,
+        681
       ]
     },
     {
@@ -14628,23 +11361,19 @@ const PRODUCTS_DATA = {
       "id": "bf7b3c2b-7cdb-4831-ae3a-f536d1e8955a",
       "image_path": "./assets/kit-locha-arranque-caribe-fohniio0-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-aronlyno-oono-suvc.webp",
       "keywords": [
+        "8-94238-1842",
+        "8-94297-1201",
         "ARRANQUE",
         "CARIBE",
         "KIT",
         "LOCHA",
         "M-1530"
       ],
-      "linked_ids": [
-        672
-      ],
-      "oem": "M-1530",
+      "oem": "8-94297-1201 / 8-94238-1842 / M-1530",
       "slug": "kit-locha-arranque-caribe-fohniio0-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-aronlyno-oono-suvc",
-      "variants": [
-        {
-          "codigo_oem": "M-1530",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        590,
+        672
       ]
     },
     {
@@ -14653,23 +11382,19 @@ const PRODUCTS_DATA = {
       "id": "b0bf066e-5f9c-41d7-a366-796007e4e95e",
       "image_path": "./assets/kit-locha-arranque-luv-toaloo-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-rnoniynso-n-suvc.webp",
       "keywords": [
+        "8-94238-1842",
+        "8-94297-1201",
         "ARRANQUE",
         "KIT",
         "LOCHA",
         "LUV",
         "M-1530"
       ],
-      "linked_ids": [
-        672
-      ],
-      "oem": "M-1530",
+      "oem": "8-94297-1201 / 8-94238-1842 / M-1530",
       "slug": "kit-locha-arranque-luv-toaloo-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-rnoniynso-n-suvc",
-      "variants": [
-        {
-          "codigo_oem": "M-1530",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        590,
+        672
       ]
     },
     {
@@ -14679,23 +11404,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/kit-satelite-y-planetario-caribe.webp",
       "keywords": [
         "0200SD-06027",
+        "8-94434-6211",
         "CARIBE",
         "KIT",
         "PLANETARIO",
         "SATELITE",
         "SP3151M"
       ],
-      "linked_ids": [
-        685
-      ],
-      "oem": "0200SD-06027 / SP3151M",
+      "oem": "8-94434-6211 / 0200SD-06027 / SP3151M",
       "slug": "kit-satelite-y-planetario-caribe",
-      "variants": [
-        {
-          "codigo_oem": "0200SD-06027",
-          "brand": "Original",
-          "precio_usd": 105
-        }
+      "linked_ids": [
+        592,
+        685
       ]
     },
     {
@@ -14705,23 +11425,18 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/kit-satelite-y-planetario-luv.webp",
       "keywords": [
         "0200SD-06027",
+        "8-94434-6211",
         "KIT",
         "LUV",
         "PLANETARIO",
         "SATELITE",
         "SP3151M"
       ],
-      "linked_ids": [
-        685
-      ],
-      "oem": "0200SD-06027 / SP3151M",
+      "oem": "8-94434-6211 / 0200SD-06027 / SP3151M",
       "slug": "kit-satelite-y-planetario-luv",
-      "variants": [
-        {
-          "codigo_oem": "0200SD-06027",
-          "brand": "Original",
-          "precio_usd": 105
-        }
+      "linked_ids": [
+        592,
+        685
       ]
     },
     {
@@ -14730,6 +11445,9 @@ const PRODUCTS_DATA = {
       "id": "6fc5b16f-5c7b-4ec1-8d19-9abb8b986a45",
       "image_path": "./assets/manilla-capot-luv-d-max.webp",
       "keywords": [
+        "8-94454-5630",
+        "8-97071-8040",
+        "8-97160-7070",
         "8-97333-1420",
         "8-97397-8480",
         "8-97411-7810",
@@ -14738,17 +11456,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANILLA"
       ],
-      "linked_ids": [
-        720
-      ],
-      "oem": "8-97397-8480 / 8-97333-1420 / 8-97411-7810",
+      "oem": "8-94454-5630 / 8-97071-8040 / 8-97160-7070 / 8-97397-8480 / 8-97333-1420 / 8-97411-7810",
       "slug": "manilla-capot-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97397-8480",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        639,
+        720
       ]
     },
     {
@@ -14764,23 +11476,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANILLA"
       ],
+      "oem": "8-97293-9971 / 8-97293-9981",
+      "slug": "manilla-interna-luv-d-max",
       "linked_ids": [
         1187,
         1188
-      ],
-      "oem": "8-97293-9971 / 8-97293-9981",
-      "slug": "manilla-interna-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97293-9971",
-          "brand": "Original",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-97293-9981",
-          "brand": "Original",
-          "precio_usd": 20
-        }
       ]
     },
     {
@@ -14791,6 +11491,7 @@ const PRODUCTS_DATA = {
       "keywords": [
         "BOBINA",
         "CARIBE",
+        "DULO",
         "MODULO"
       ],
       "slug": "modulo-con-bobina-caribe"
@@ -14802,6 +11503,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/modulo-con-bobina-luv.webp",
       "keywords": [
         "BOBINA",
+        "DULO",
         "LUV",
         "MODULO"
       ],
@@ -14820,22 +11522,11 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "MUNON"
       ],
-      "linked_ids": [
-        738
-      ],
       "oem": "8-94243-2360 / 8-94452-1071",
       "slug": "munon-inferior-caribe-g200-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94243-2360",
-          "brand": "TAIWAN",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-94243-2360",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        665,
+        738
       ]
     },
     {
@@ -14845,28 +11536,20 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/munon-luv-d-max-2-4-2-5-3-o-4x2.webp",
       "keywords": [
         "4X2",
+        "5-87610-2180",
         "8-97365-0180",
         "8-98005-8270",
+        "826563",
         "D-MAX",
+        "ISK-089B",
         "LUV",
         "MUNON"
       ],
-      "linked_ids": [
-        746
-      ],
-      "oem": "8-97365-0180 / 8-98005-8270",
+      "oem": "5-87610-2180 / ISK-089B / 826563 / 8-97365-0180 / 8-98005-8270",
       "slug": "munon-luv-d-max-2-4-2-5-3-o-4x2",
-      "variants": [
-        {
-          "codigo_oem": "8-97365-0180",
-          "brand": "TAIWAN",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-97365-0180",
-          "brand": "JAPON",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        668,
+        746
       ]
     },
     {
@@ -14876,31 +11559,23 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/munon-superior-luv-d-max-4x4-trooper.webp",
       "keywords": [
         "4X4",
+        "5-87610-2191",
         "8-94374-4240",
         "8-97365-0190",
         "8-98005-8260",
         "D-MAX",
+        "ISK-003",
+        "ISK-093",
         "LUV",
         "MUNON",
         "SUPERIOR",
         "TROOPER"
       ],
-      "linked_ids": [
-        748
-      ],
-      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
+      "oem": "5-87610-2191 / ISK-093 / ISK-003 / 8-97365-0190 / 8-94374-4240 / 8-98005-8260",
       "slug": "munon-superior-luv-d-max-4x4-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-97365-0190",
-          "brand": "TAIWAN",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-97365-0190",
-          "brand": "JAPON",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        669,
+        748
       ]
     },
     {
@@ -14933,17 +11608,10 @@ const PRODUCTS_DATA = {
         "PISTON",
         "PISTONES"
       ],
-      "linked_ids": [
-        784
-      ],
       "oem": "8-97176-7430 / EPV-2900R-STD-3",
       "slug": "juego-de-pistones-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-97176-7430",
-          "brand": "Original",
-          "precio_usd": 165
-        }
+      "linked_ids": [
+        784
       ]
     },
     {
@@ -14961,17 +11629,10 @@ const PRODUCTS_DATA = {
         "PISTON",
         "PISTONES"
       ],
-      "linked_ids": [
-        815
-      ],
       "oem": "8-97358-0400 / 8-97358-0410 / 8-97358-0420",
       "slug": "juego-de-pistones-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97358-0400",
-          "brand": "Original",
-          "precio_usd": 150
-        }
+      "linked_ids": [
+        815
       ]
     },
     {
@@ -14989,17 +11650,10 @@ const PRODUCTS_DATA = {
         "POSAPIES",
         "TRASERO"
       ],
-      "linked_ids": [
-        1193
-      ],
       "oem": "8-97357-9240",
       "slug": "kit-posapie-parachoque-trasero-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97357-9240",
-          "brand": "Original",
-          "precio_usd": 115
-        }
+      "linked_ids": [
+        1193
       ]
     },
     {
@@ -15021,22 +11675,10 @@ const PRODUCTS_DATA = {
         "PRESION",
         "REGULADOR"
       ],
-      "linked_ids": [
-        857
-      ],
       "oem": "8-17091-4100 / 8-17112-2760 / 8-17107-0100 / 17091410 / 17113271 / 17103467 / 17107478",
       "slug": "regulador-de-gasolina-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-17091-4100",
-          "brand": "DS",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-17091-4100",
-          "brand": "FP",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        857
       ]
     },
     {
@@ -15048,28 +11690,19 @@ const PRODUCTS_DATA = {
         "8-97070-6200",
         "8-97179-5850",
         "8-97254-8450",
+        "8-97365-0140",
+        "8-98005-8320",
         "D-MAX",
         "GASOLINA",
         "LUV",
         "PRESION",
         "REGULADOR"
       ],
-      "linked_ids": [
-        859
-      ],
-      "oem": "8-97070-6200 / 8-97254-8450 / 8-97179-5850",
+      "oem": "8-98005-8320 / 8-97365-0140 / 8-97070-6200 / 8-97254-8450 / 8-97179-5850",
       "slug": "regulador-de-gasolina-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97070-6200",
-          "brand": "DS",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97070-6200",
-          "brand": "NIKHO",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        731,
+        859
       ]
     },
     {
@@ -15078,7 +11711,14 @@ const PRODUCTS_DATA = {
       "id": "4cc19aad-fc1e-4448-8d82-1dbc73c5ba2a",
       "image_path": "./assets/sensor-arbol-de-leva-luv-d-max-3-5.webp",
       "keywords": [
+        "7943",
         "8-10456-5410",
+        "8-97368-2510",
+        "8-97368-2520",
+        "8-98051-1140",
+        "8-98051-1150",
+        "8-98051-1160",
+        "8-98051-1170",
         "ARBOL",
         "D-MAX",
         "GS9541",
@@ -15086,22 +11726,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "SENSOR"
       ],
-      "linked_ids": [
-        895
-      ],
-      "oem": "8-10456-5410 / GS9541",
+      "oem": "7943 / 8-97368-2510 / 8-98051-1170 / 8-97368-2520 / 8-98051-1160 / 8-98051-1150 / 8-98051-1140 / 8-10456-5410 / GS9541",
       "slug": "sensor-arbol-de-leva-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-10456-5410",
-          "brand": "NIKHO",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "8-10456-5410",
-          "brand": "GAUSS",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        762,
+        895
       ]
     },
     {
@@ -15110,23 +11739,22 @@ const PRODUCTS_DATA = {
       "id": "2e514905-48bf-4a0b-8922-84a282e99046",
       "image_path": "./assets/sensor-tps-luv-d-max-3-5.webp",
       "keywords": [
+        "17AY031002N",
+        "25362992",
         "8-97181-7170",
         "D-MAX",
+        "DA16010A",
+        "EP-3848A",
         "LUV",
         "SENSOR",
-        "TPS"
+        "TPS",
+        "YGGE38261"
       ],
-      "linked_ids": [
-        903
-      ],
-      "oem": "8-97181-7170",
+      "oem": "25362992 / 17AY031002N / DA16010A / YGGE38261 / EP-3848A / 8-97181-7170",
       "slug": "sensor-tps-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97181-7170",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        770,
+        903
       ]
     },
     {
@@ -15142,17 +11770,10 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "SOPORTE"
       ],
-      "linked_ids": [
-        915
-      ],
       "oem": "8-94328-7990 / 8-94386-8540",
       "slug": "soporte-cardan-chumacera-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94328-7990",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        915
       ]
     },
     {
@@ -15168,17 +11789,10 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "linked_ids": [
-        915
-      ],
       "oem": "8-94328-7990 / 8-94386-8540",
       "slug": "soporte-cardan-chumacera-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94328-7990",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        915
       ]
     },
     {
@@ -15196,17 +11810,10 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "linked_ids": [
-        920
-      ],
       "oem": "8-97942-8770 / 8-97946-2530 / 8979428780",
       "slug": "soporte-cardan-chumacera-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97942-8770",
-          "brand": "Original",
-          "precio_usd": 35
-        }
+      "linked_ids": [
+        920
       ]
     },
     {
@@ -15225,17 +11832,10 @@ const PRODUCTS_DATA = {
         "MANDO",
         "SWITCH"
       ],
-      "linked_ids": [
-        932
-      ],
       "oem": "HS420 / HS422",
       "slug": "switch-mando-control-aire-acondicionado-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "HS420",
-          "brand": "Original",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        932
       ]
     },
     {
@@ -15251,17 +11851,10 @@ const PRODUCTS_DATA = {
         "RADIADOR",
         "TANQUE"
       ],
-      "linked_ids": [
-        936
-      ],
       "oem": "GM-9937",
       "slug": "tanque-radiador-entrada-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "GM-9937",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        936
       ]
     },
     {
@@ -15277,17 +11870,10 @@ const PRODUCTS_DATA = {
         "SALIDA",
         "TANQUE"
       ],
-      "linked_ids": [
-        935
-      ],
       "oem": "GM-7871",
       "slug": "tanque-radiador-salida-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "GM-7871",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        935
       ]
     },
     {
@@ -15304,17 +11890,10 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPA"
       ],
-      "linked_ids": [
-        943
-      ],
       "oem": "8-22660-0030 / 8-97369-5600 / 8-97308-6141",
       "slug": "tapa-gasolina-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-22660-0030",
-          "brand": "Original",
-          "precio_usd": 25
-        }
+      "linked_ids": [
+        943
       ]
     },
     {
@@ -15331,17 +11910,10 @@ const PRODUCTS_DATA = {
         "TAPA",
         "TROOPER"
       ],
-      "linked_ids": [
-        946
-      ],
       "oem": "8-97942-2681 / 8-52477-5520",
       "slug": "tapa-radiador-luv-d-max-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-97942-2681",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        946
       ]
     },
     {
@@ -15356,17 +11928,10 @@ const PRODUCTS_DATA = {
         "RIN",
         "TAPA"
       ],
-      "linked_ids": [
-        939
-      ],
       "oem": "8-97302-0011",
       "slug": "tapa-rin-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97302-0011",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        939
       ]
     },
     {
@@ -15382,22 +11947,10 @@ const PRODUCTS_DATA = {
         "ROTULA",
         "TERMINAL"
       ],
-      "linked_ids": [
-        964
-      ],
       "oem": "8-94237-3511",
       "slug": "terminal-externo-caribe-g200-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94237-3511",
-          "brand": "TAIWAN",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94237-3511",
-          "brand": "JAPON",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        964
       ]
     },
     {
@@ -15407,6 +11960,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/terminal-externo-luv-d-max-trooper-rodeo.webp",
       "keywords": [
         "720IZ01A100",
+        "8-94438-6890",
         "8-94459-4800",
         "8-97020-9531",
         "8-97304-8550",
@@ -15416,27 +11970,17 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "EXTERNO",
         "LUV",
+        "PF-7646",
         "RODEO",
         "ROTULA",
         "TERMINAL",
         "TROOPER"
       ],
-      "linked_ids": [
-        966
-      ],
-      "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
+      "oem": "8-94438-6890 / PF-7646 / 8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
       "slug": "terminal-externo-luv-d-max-trooper-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-97304-9280",
-          "brand": "TAIWAN",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-97304-9280",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "linked_ids": [
+        831,
+        966
       ]
     },
     {
@@ -15465,30 +12009,12 @@ const PRODUCTS_DATA = {
         "LUV",
         "TERMOSTATO"
       ],
-      "linked_ids": [
-        979
-      ],
       "oem": "8-97362-8940",
       "slug": "termostato-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97362-8940",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        841,
+        979
       ]
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO CARIBE 2.6",
-      "id": "4662265b-262d-4d56-b35e-5385c614d9a8",
-      "image_path": "./assets/tren-delantero-caribe-2-6-2.webp",
-      "keywords": [
-        "CARIBE",
-        "DELANTERO",
-        "TREN"
-      ],
-      "slug": "tren-delantero-caribe-2-6-2"
     },
     {
       "category": "Tren Delantero",
@@ -15504,16 +12030,15 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Tren Delantero",
-      "description": "TREN DELANTERO CARIBE 83-88",
-      "id": "3718c7db-d352-4ec6-8972-20f020293dda",
-      "image_path": "./assets/tren-delantero-caribe-83-88-2.webp",
+      "description": "TREN DELANTERO CARIBE 2.6",
+      "id": "4662265b-262d-4d56-b35e-5385c614d9a8",
+      "image_path": "./assets/tren-delantero-caribe-2-6-2.webp",
       "keywords": [
-        "83-88",
         "CARIBE",
         "DELANTERO",
         "TREN"
       ],
-      "slug": "tren-delantero-caribe-83-88-2"
+      "slug": "tren-delantero-caribe-2-6-2"
     },
     {
       "category": "Tren Delantero",
@@ -15527,6 +12052,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-caribe-83-88"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO CARIBE 83-88",
+      "id": "3718c7db-d352-4ec6-8972-20f020293dda",
+      "image_path": "./assets/tren-delantero-caribe-83-88-2.webp",
+      "keywords": [
+        "83-88",
+        "CARIBE",
+        "DELANTERO",
+        "TREN"
+      ],
+      "slug": "tren-delantero-caribe-83-88-2"
     },
     {
       "category": "Tren Delantero",
@@ -15557,19 +12095,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO LUV 4X4",
-      "id": "7d137634-a97a-41dc-a5de-7fabc249a9bc",
-      "image_path": "./assets/tren-delantero-luv-4x4-2.webp",
-      "keywords": [
-        "4X4",
-        "DELANTERO",
-        "LUV",
-        "TREN"
-      ],
-      "slug": "tren-delantero-luv-4x4-2"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO LUV 4X4",
       "id": "Luv 4x4",
       "image_path": "./assets/tren-delantero-luv-4x4.webp",
       "keywords": [
@@ -15579,6 +12104,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-luv-4x4"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO LUV 4X4",
+      "id": "7d137634-a97a-41dc-a5de-7fabc249a9bc",
+      "image_path": "./assets/tren-delantero-luv-4x4-2.webp",
+      "keywords": [
+        "4X4",
+        "DELANTERO",
+        "LUV",
+        "TREN"
+      ],
+      "slug": "tren-delantero-luv-4x4-2"
     },
     {
       "category": "Tren Delantero",
@@ -15609,19 +12147,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO LUV D-MAX 3.5",
-      "id": "ca6f2c65-9a2c-4d5d-9868-b940c475fb9c",
-      "image_path": "./assets/tren-delantero-luv-d-max-3-5-2.webp",
-      "keywords": [
-        "D-MAX",
-        "DELANTERO",
-        "LUV",
-        "TREN"
-      ],
-      "slug": "tren-delantero-luv-d-max-3-5-2"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO LUV D-MAX 3.5",
       "id": "DMAX 3.5",
       "image_path": "./assets/tren-delantero-luv-d-max-3-5.webp",
       "keywords": [
@@ -15631,6 +12156,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-luv-d-max-3-5"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO LUV D-MAX 3.5",
+      "id": "ca6f2c65-9a2c-4d5d-9868-b940c475fb9c",
+      "image_path": "./assets/tren-delantero-luv-d-max-3-5-2.webp",
+      "keywords": [
+        "D-MAX",
+        "DELANTERO",
+        "LUV",
+        "TREN"
+      ],
+      "slug": "tren-delantero-luv-d-max-3-5-2"
     },
     {
       "category": "Tren Delantero",
@@ -15683,23 +12221,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
+      "oem": "8-92063-6530 / 2014 / 2079",
+      "slug": "tubo-calefaccion-luv-2-2-luv-d-max-2-4",
       "linked_ids": [
         996,
         1000
-      ],
-      "oem": "8-92063-6530 / 2014 / 2079",
-      "slug": "tubo-calefaccion-luv-2-2-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-92063-6530",
-          "brand": "Original",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "8-92063-6530",
-          "brand": "Original",
-          "precio_usd": 65
-        }
       ]
     },
     {
@@ -15715,17 +12241,10 @@ const PRODUCTS_DATA = {
         "TROOPER",
         "TUBO"
       ],
-      "linked_ids": [
-        997
-      ],
       "oem": "8-97075-4671 / 8-97075-4660",
       "slug": "tubo-calefaccion-trooper-3-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97075-4671",
-          "brand": "Original",
-          "precio_usd": 90
-        }
+      "linked_ids": [
+        997
       ]
     },
     {
@@ -15743,23 +12262,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
+      "oem": "8-94136-7562 / 2012T / 8-94474-0783",
+      "slug": "tubo-calefaccion-caribe-luv-2-3",
       "linked_ids": [
         998,
         999
-      ],
-      "oem": "8-94136-7562 / 2012T / 8-94474-0783",
-      "slug": "tubo-calefaccion-caribe-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94136-7562",
-          "brand": "Original",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-94474-0783",
-          "brand": "Original",
-          "precio_usd": 45
-        }
       ]
     },
     {
@@ -15776,17 +12283,10 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
-      "linked_ids": [
-        1001
-      ],
       "oem": "8-97321-3320 / 2056",
       "slug": "tubo-de-agua-derecho-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97321-3320",
-          "brand": "Original",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        1001
       ]
     },
     {
@@ -15804,17 +12304,10 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
-      "linked_ids": [
-        1002
-      ],
       "oem": "8-97321-3331 / 2055 / 8-94478-8692",
       "slug": "tubo-de-agua-izquierdo-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97321-3331",
-          "brand": "Original",
-          "precio_usd": 45
-        }
+      "linked_ids": [
+        1002
       ]
     },
     {
@@ -15830,17 +12323,10 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "linked_ids": [
-        1013
-      ],
       "oem": "8-94217-1780",
       "slug": "valvula-admision-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94217-1780",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1013
       ]
     },
     {
@@ -15857,17 +12343,10 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "linked_ids": [
-        1014
-      ],
       "oem": "8-94153-9690 / 8-94251-2750",
       "slug": "valvula-admision-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94153-9690",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1014
       ]
     },
     {
@@ -15883,17 +12362,10 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "linked_ids": [
-        1016
-      ],
       "oem": "8-90220-1210 / 8-90220-1230",
       "slug": "valvula-admision-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-90220-1210",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1016
       ]
     },
     {
@@ -15910,17 +12382,10 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "linked_ids": [
-        1016
-      ],
       "oem": "8-90220-1210 / 8-90220-1230",
       "slug": "valvula-admision-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-90220-1210",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1016
       ]
     },
     {
@@ -15930,6 +12395,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/valvula-admision-caribe-2600.webp",
       "keywords": [
         "2600",
+        "8-94167-6370",
         "8-94174-2221",
         "ADMISION",
         "CARIBE",
@@ -15937,17 +12403,11 @@ const PRODUCTS_DATA = {
         "IIS-0197",
         "VALVULA"
       ],
-      "linked_ids": [
-        1015
-      ],
-      "oem": "8-94174-2221 / IIS-0197",
+      "oem": "8-94167-6370 / 8-94174-2221 / IIS-0197",
       "slug": "valvula-admision-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94174-2221",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        874,
+        1015
       ]
     },
     {
@@ -15963,17 +12423,10 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "linked_ids": [
-        1078
-      ],
       "oem": "8-94217-1790",
       "slug": "valvula-de-escape-caribe-2000",
-      "variants": [
-        {
-          "codigo_oem": "8-94217-1790",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1078
       ]
     },
     {
@@ -15990,17 +12443,10 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "linked_ids": [
-        1079
-      ],
       "oem": "8-94136-7270 / 8-97119-7510",
       "slug": "valvula-de-escape-caribe-2300",
-      "variants": [
-        {
-          "codigo_oem": "8-94136-7270",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1079
       ]
     },
     {
@@ -16018,17 +12464,10 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "VALVULA"
       ],
-      "linked_ids": [
-        1080
-      ],
       "oem": "8-97110-2560 / EIS-5197 / 8-94174-2231",
       "slug": "valvula-de-escape-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-97110-2560",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1080
       ]
     },
     {
@@ -16044,17 +12483,10 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "linked_ids": [
-        1081
-      ],
       "oem": "8-90323-7570 / 8-90323-7560",
       "slug": "valvula-de-escape-luv-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-90323-7570",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1081
       ]
     },
     {
@@ -16071,17 +12503,10 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "linked_ids": [
-        1081
-      ],
       "oem": "8-90323-7570 / 8-90323-7560",
       "slug": "valvula-de-escape-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-90323-7570",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1081
       ]
     },
     {
@@ -16090,22 +12515,18 @@ const PRODUCTS_DATA = {
       "id": "b519d535-5428-4e3d-8b05-269f9ef5f2b2",
       "image_path": "./assets/valvula-de-minimo-caribe-2-3.webp",
       "keywords": [
+        "32209",
         "8-94312-0250",
+        "9-00032-2090",
         "CARIBE",
         "MINIMO",
         "VALVULA"
       ],
-      "linked_ids": [
-        1091
-      ],
-      "oem": "8-94312-0250",
+      "oem": "32209 / 9-00032-2090 / 8-94312-0250",
       "slug": "valvula-de-minimo-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94312-0250",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        890,
+        1091
       ]
     },
     {
@@ -16114,22 +12535,18 @@ const PRODUCTS_DATA = {
       "id": "99f53117-e122-4149-be45-84ce023b7bb0",
       "image_path": "./assets/valvula-de-minimo-caribe-2-6.webp",
       "keywords": [
+        "32209",
         "8-94312-0250",
+        "9-00032-2090",
         "CARIBE",
         "MINIMO",
         "VALVULA"
       ],
-      "linked_ids": [
-        1091
-      ],
-      "oem": "8-94312-0250",
+      "oem": "32209 / 9-00032-2090 / 8-94312-0250",
       "slug": "valvula-de-minimo-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94312-0250",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        890,
+        1091
       ]
     },
     {
@@ -16138,22 +12555,18 @@ const PRODUCTS_DATA = {
       "id": "09d029a4-045a-4f53-b99f-b111e4991aa9",
       "image_path": "./assets/valvula-de-minimo-luv-2-3.webp",
       "keywords": [
+        "32209",
         "8-94312-0250",
+        "9-00032-2090",
         "LUV",
         "MINIMO",
         "VALVULA"
       ],
-      "linked_ids": [
-        1091
-      ],
-      "oem": "8-94312-0250",
+      "oem": "32209 / 9-00032-2090 / 8-94312-0250",
       "slug": "valvula-de-minimo-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94312-0250",
-          "brand": "Original",
-          "precio_usd": 30
-        }
+      "linked_ids": [
+        890,
+        1091
       ]
     },
     {
@@ -16168,17 +12581,10 @@ const PRODUCTS_DATA = {
         "PCV",
         "VALVULA"
       ],
-      "linked_ids": [
-        1024
-      ],
       "oem": "8-94152-8590 / 8-94331-2090",
       "slug": "valvula-pcv-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94152-8590",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1024
       ]
     },
     {
@@ -16187,23 +12593,18 @@ const PRODUCTS_DATA = {
       "id": "6fa82ba8-530c-4c1a-a053-0d76fe5d104f",
       "image_path": "./assets/valvula-pcv-luv-d-max.webp",
       "keywords": [
+        "8-94221-2060",
         "8-97118-8600",
         "D-MAX",
         "LUV",
         "PCV",
         "VALVULA"
       ],
-      "linked_ids": [
-        1026
-      ],
-      "oem": "8-97118-8600",
+      "oem": "8-94221-2060 / 8-97118-8600",
       "slug": "valvula-pcv-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97118-8600",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        892,
+        1026
       ]
     },
     {
@@ -16222,17 +12623,10 @@ const PRODUCTS_DATA = {
         "TROOPER",
         "VALVULA"
       ],
-      "linked_ids": [
-        1031
-      ],
       "oem": "8-94247-4370 / 8-94247-4371",
       "slug": "valvula-temperatura-caribe-luv-d-max-trooper-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94247-4370",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "linked_ids": [
+        1031
       ]
     },
     {
@@ -16249,17 +12643,10 @@ const PRODUCTS_DATA = {
         "LUV",
         "VARILLA"
       ],
-      "linked_ids": [
-        1034
-      ],
       "oem": "8-97326-9971 / 8-97148-6972 / 8-97326-9970",
       "slug": "varilla-aceite-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97326-9971",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "linked_ids": [
+        1034
       ]
     }
   ]
