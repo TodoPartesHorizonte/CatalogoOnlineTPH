@@ -171,6 +171,8 @@ align-items:center;
 gap:16px;
 cursor:pointer;
 flex-shrink:0;
+text-decoration:none;
+color:inherit;
 }
 
 .logo-container {display:flex;
@@ -1849,9 +1851,15 @@ height:18px;
     position:relative;
     border-radius:16px;
     overflow:hidden;
-    aspect-ratio:1.4;
+    aspect-ratio:16/10;
     border:1px solid var(--border-color);
     background:var(--bg-card);
+}
+
+@media (max-width:768px) {
+    .skeleton-folder-card {
+        aspect-ratio:1.4;
+    }
 }
 
 .skeleton-folder-card::before {
@@ -2292,6 +2300,166 @@ height:18px;
     background: rgba(255, 106, 0, 0.05);
     transform: translateY(-2px);
 }
+
+/* PIE DE PAGINA (FOOTER) Y ENLACES SEO */
+.footer-catalog {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 40px 24px 20px 24px;
+    margin-top: 60px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-left: 3px solid var(--accent-orange);
+    padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-title {
+        border-left: none;
+        padding-left: 0;
+        position: relative;
+        display: inline-block;
+    }
+}
+
+.footer-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    font-size: 13.5px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .footer-links a:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* Directorio SEO Accordion */
+.seo-directory-details {
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.01);
+    overflow: hidden;
+}
+
+.seo-directory-details summary {
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    cursor: pointer;
+    user-select: none;
+    transition: var(--transition);
+    outline: none;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.seo-directory-details summary:hover {
+    color: #ffffff;
+    background: rgba(255, 106, 0, 0.05);
+}
+
+.seo-directory-details[open] summary {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--accent-orange);
+}
+
+.seo-links-container {
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.seo-links-container a {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.02);
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.seo-links-container a:hover {
+    color: #ffffff;
+    background: rgba(255, 106, 0, 0.1);
+    border-color: var(--accent-orange);
+}
+
+/* Soporte de altura de cabecera responsiva para CLS */
+@media (max-width: 768px) {
+    .header-wrapper {
+        min-height: 250px;
+    }
+}
+
 
 
 

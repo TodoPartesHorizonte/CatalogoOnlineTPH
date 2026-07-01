@@ -127,10 +127,7 @@
 
     
     <!-- INICIO PRECARGA -->
-    <link rel="preload" as="image" href="./assets/abrazadera-barra-estabilizadora-luv-d-max.webp" fetchpriority="high">
-    <link rel="preload" as="image" href="./assets/acoplador-manual-luv-d-max-trooper.webp" fetchpriority="high">
-    <link rel="preload" as="image" href="./assets/alternador-luv-d-max-3-5.webp" fetchpriority="high">
-    <link rel="preload" as="image" href="./assets/amortiguador-delantero-caribe-2600.webp" fetchpriority="high">
+    <link rel="preload" href="./assets/logo.webp" as="image" fetchpriority="high">
     <!-- FIN PRECARGA -->
     <link rel="preload" href="./style.min.css" as="style">
     <link rel="stylesheet" href="./style.min.css">
@@ -144,7 +141,7 @@
             <div class="header-container">
                 <!-- Fila Superior: Logo, Título y Enlaces de Contacto -->
                 <div class="header-top-row">
-                    <div class="brand-lockup" onclick="goBackToFolders()">
+                    <a href="./index.html" class="brand-lockup" id="logoBrandLink">
                         <div id="logoContainer" class="logo-container">
                             <img id="logoImage" src="./assets/logo.webp" alt="Logo de TODO PARTES HORIZONTE" class="logo-image" width="72" height="72" loading="eager" onerror="this.onerror=null; this.src='./assets/logo.png';">
                         </div>
@@ -155,7 +152,7 @@
                                 <div class="logo-rif">RIF: J-50180765-5</div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!-- Enlaces de contacto -->
                     <div id="socialLinksHeader" class="social-links-header"></div>
                 </div>
@@ -190,7 +187,7 @@
     </div>
 
     <!-- FILTRO DE VEHÍCULOS -->
-    <div class="vehicle-filter-container" id="vehicleFilterContainer" style="display: none;">
+    <div class="vehicle-filter-container" id="vehicleFilterContainer">
         <h1 class="vehicle-filter-title" style="text-transform: uppercase;">Repuestos para tu Chevrolet Luv D-Max</h1>
         <div class="vehicle-grid" id="vehicleGrid">
             <a href="./index.html" class="vehicle-card" id="vehicle-all" aria-label="Todos los vehículos" role="button" tabindex="0">
@@ -373,9 +370,39 @@
     </div>
     <div class="cart-overlay" id="cartOverlay"></div>
 
-    <!-- ENLACES SEO -->
-    <div style="display: none;" aria-hidden="true">
-        <!-- INICIO ENLACES SEO -->
+    <!-- PIE DE PAGINA (FOOTER) Y ENLACES SEO -->
+    <footer class="footer-catalog">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4 class="footer-title">TODO PARTES HORIZONTE</h4>
+                <p class="footer-text">Somos una tienda de repuestos encargada de vender autopartes para vehículos Chevrolet e Isuzu (Caribe, Trooper, Rodeo, Luv y Luv D-Max) con más de 30 años de trayectoria en Caracas. Brindamos asesoría técnica calificada para asegurar el repuesto correcto para tu vehículo.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Enlaces Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Catálogo Principal</a></li>
+                    <li><a href="./informacion.html">Sobre Nosotros (Ubicación, Horarios, Contacto)</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Modelos de Vehículos</h4>
+                <ul class="footer-links">
+                    <li><a href="./repuestos-isuzu-caribe-442.html">Repuestos Isuzu Caribe 442</a></li>
+                    <li><a href="./repuestos-chevrolet-luv.html">Repuestos Chevrolet Luv</a></li>
+                    <li><a href="./repuestos-chevrolet-luv-d-max.html">Repuestos Chevrolet Luv D-Max</a></li>
+                    <li><a href="./repuestos-isuzu-trooper.html">Repuestos Isuzu Trooper</a></li>
+                    <li><a href="./repuestos-isuzu-rodeo.html">Repuestos Isuzu Rodeo</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>RIF: J-50180765-5 · Especialistas Isuzu · Caracas, Venezuela</p>
+        </div>
+        
+        <details class="seo-directory-details">
+            <summary>Directorio Completo de Repuestos</summary>
+            <div class="seo-links-container">
+                <!-- INICIO ENLACES SEO -->
         <a href="./p/abrazadera-barra-estabilizadora-luv-d-max.html">ABRAZADERA BARRA ESTABILIZADORA LUV DMAX</a>
         <a href="./p/acoplador-manual-luv-d-max-trooper.html">ACOPLADOR MANUAL LUV D-MAX / TROOPER</a>
         <a href="./p/alternador-luv-d-max-3-5.html">ALTERNADOR LUV D-MAX 3.5</a>
@@ -889,8 +916,8 @@
         <a href="./p/kit-de-tiempo-luv-2-3.html">KIT DE TIEMPO LUV 2.3</a>
         <a href="./p/kit-de-tiempo-chevrolet-luv-d-max-2-4.html">KIT DE TIEMPO LUV D-MAX 2.4</a>
         <a href="./p/kit-de-tiempo-luv-d-max-3-5.html">KIT DE TIEMPO LUV D-MAX 3.5</a>
-        <a href="./p/kit-de-tiempo-rodeo-3-2.html">KIT DE TIEMPO RODEO 3.2</a>
         <a href="./p/kit-de-tiempo-rodeo-31.html">KIT DE TIEMPO RODEO 3.1</a>
+        <a href="./p/kit-de-tiempo-rodeo-3-2.html">KIT DE TIEMPO RODEO 3.2</a>
         <a href="./p/kit-de-tiempo-trooper-3-2.html">KIT DE TIEMPO TROOPER 3.2</a>
         <a href="./p/kit-locha-arranque-caribe-fohniio0-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-aronlyno-oono-suvc.html">KIT LOCHA ARRANQUE CARIBE</a>
         <a href="./p/kit-locha-arranque-luv-toaloo-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-rnoniynso-n-suvc.html">KIT LOCHA ARRANQUE LUV</a>
@@ -967,7 +994,9 @@
         <a href="./p/valvula-temperatura-caribe-luv-d-max-trooper-rodeo.html">VALVULA TEMPERATURA CARIBE / LUV D-MAX / TROOPER / RODEO</a>
         <a href="./p/varilla-aceite-luv-d-max-3-5.html">VARILLA ACEITE LUV D-MAX 3.5</a>
         <!-- FIN ENLACES SEO -->
-    </div>
+            </div>
+        </details>
+    </footer>
 
     <!-- MODAL DE AGRADECIMIENTO Y FEEDBACK -->
     <div class="feedback-modal-overlay" id="feedbackModalOverlay" role="dialog" aria-modal="true" aria-hidden="true">
