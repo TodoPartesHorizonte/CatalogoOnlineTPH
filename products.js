@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 590,
+  "total_products": 597,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -15401,6 +15401,45 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "506f56a8-7ca1-4311-8873-d57cd671e3ff",
+      "category": "Manguera Calefaccion",
+      "image_path": "./assets/manguera-calefaccion-caribe-g200.webp",
+      "description": "MANGUERA CALEFACCION CARIBE G200",
+      "keywords": [
+        "5509",
+        "8-94201-9431",
+        "CALEFACCION",
+        "CARIBE",
+        "G200",
+        "MANGUERA"
+      ],
+      "oem": "8-94201-9431 / 5509",
+      "slug": "manguera-calefaccion-caribe-g200",
+      "original_filename": "Manguera Calefaccion/506f56a8-7ca1-4311-8873-d57cd671e3ff.jpg",
+      "linked_ids": [
+        1201
+      ]
+    },
+    {
+      "id": "21b2ff79-08c1-4203-af86-4d02fa9b6b57",
+      "category": "Manguera Calefaccion",
+      "image_path": "./assets/manguera-calefaccion-luv-dmax-2-4.webp",
+      "description": "MANGUERA CALEFACCION LUV DMAX 2.4",
+      "keywords": [
+        "ACM036",
+        "CALEFACCION",
+        "DMAX",
+        "LUV",
+        "MANGUERA"
+      ],
+      "oem": "ACM036",
+      "slug": "manguera-calefaccion-luv-dmax-2-4",
+      "original_filename": "Manguera Calefaccion/21b2ff79-08c1-4203-af86-4d02fa9b6b57.jpg",
+      "linked_ids": [
+        694
+      ]
+    },
+    {
       "category": "Manguera Desfogue",
       "description": "MANGUERA DESFOGUE LUV 2.2",
       "id": "824f3cb8-3ad4-4bc8-afb3-6cb7183c4b22",
@@ -15449,6 +15488,44 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 25
         }
+      ]
+    },
+    {
+      "id": "2b9d879a-d411-46eb-a937-7bcb47055cb2",
+      "category": "Manguera Llenado Gasolina",
+      "image_path": "./assets/manguera-gasolina-trooper-3-2.webp",
+      "description": "MANGUERA GASOLINA TROOPER 3.2",
+      "keywords": [
+        "8-97012-1580",
+        "GASOLINA",
+        "LLENADO",
+        "MANGUERA",
+        "TROOPER"
+      ],
+      "oem": "8-97012-1580",
+      "slug": "manguera-gasolina-trooper-3-2",
+      "original_filename": "Manguera Llenado Gasolina/2b9d879a-d411-46eb-a937-7bcb47055cb2.jpg",
+      "linked_ids": [
+        701
+      ]
+    },
+    {
+      "id": "06801f30-16cd-4ea7-89c6-c8e32e0031cb",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-inferior-luv-2-2.webp",
+      "description": "MANGUERA RADIADOR INFERIOR LUV 2.2",
+      "keywords": [
+        "8-97210-5920",
+        "INFERIOR",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR"
+      ],
+      "oem": "8-97210-5920",
+      "slug": "manguera-radiador-inferior-luv-2-2",
+      "original_filename": "Manguera Radiador/06801f30-16cd-4ea7-89c6-c8e32e0031cb.jpg",
+      "linked_ids": [
+        704
       ]
     },
     {
@@ -15530,6 +15607,70 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 20
         }
+      ]
+    },
+    {
+      "id": "390e80e4-ee43-4fcc-9111-95ac9025c87e",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-superior-luv-dmax-2-5-2.webp",
+      "description": "MANGUERA RADIADOR SUPERIOR LUV DMAX 2.5",
+      "keywords": [
+        "8-97363-6041",
+        "DMAX",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR",
+        "SUPERIOR"
+      ],
+      "oem": "8-97363-6041",
+      "slug": "manguera-radiador-superior-luv-dmax-2-5-2",
+      "original_filename": "Manguera Radiador/390e80e4-ee43-4fcc-9111-95ac9025c87e.jpg",
+      "linked_ids": [
+        717
+      ]
+    },
+    {
+      "id": "528342c4-47df-458b-8b4b-5a5d169d193b",
+      "category": "Manguera Retorno Aceite",
+      "image_path": "./assets/manguera-retorno-enfreiamiento-aceite-luv-dmax-2-5.webp",
+      "description": "MANGUERA RETORNO ENFREIAMIENTO ACEITE LUV DMAX 2.5",
+      "keywords": [
+        "8-97213-9192",
+        "ACEITE",
+        "ACM2087",
+        "DMAX",
+        "ENFREIAMIENTO",
+        "LUV",
+        "MANGUERA",
+        "RETORNO"
+      ],
+      "oem": "8-97213-9192 / ACM2087",
+      "slug": "manguera-retorno-enfreiamiento-aceite-luv-dmax-2-5",
+      "original_filename": "Manguera Retorno Aceite/528342c4-47df-458b-8b4b-5a5d169d193b.jpg",
+      "linked_ids": [
+        718
+      ]
+    },
+    {
+      "id": "54825614-1983-4e25-b9a0-87418224d345",
+      "category": "Manguera Retorno Aceite",
+      "image_path": "./assets/manguera-retorno-enfreiamiento-aceite-luv-dmax-3-0.webp",
+      "description": "MANGUERA RETORNO ENFREIAMIENTO ACEITE LUV DMAX 3.0",
+      "keywords": [
+        "8-97213-9192",
+        "ACEITE",
+        "ACM2087",
+        "DMAX",
+        "ENFREIAMIENTO",
+        "LUV",
+        "MANGUERA",
+        "RETORNO"
+      ],
+      "oem": "8-97213-9192 / ACM2087",
+      "slug": "manguera-retorno-enfreiamiento-aceite-luv-dmax-3-0",
+      "original_filename": "Manguera Retorno Aceite/54825614-1983-4e25-b9a0-87418224d345.jpg",
+      "linked_ids": [
+        718
       ]
     },
     {
