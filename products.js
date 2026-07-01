@@ -15228,30 +15228,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Kit de Tiempo",
-      "description": "KIT DE TIEMPO RODEO 3.2",
-      "id": "d7ad6e9b-e09f-4629-9faa-bde687718807",
-      "image_path": "./assets/kit-de-tiempo-rodeo-3-2.webp",
-      "keywords": [
-        "KIT",
-        "RODEO",
-        "TIEMPO",
-        "TK-137"
-      ],
-      "linked_ids": [
-        681
-      ],
-      "oem": "TK-137",
-      "slug": "kit-de-tiempo-rodeo-3-2",
-      "variants": [
-        {
-          "codigo_oem": "TK-137",
-          "brand": "CIC",
-          "precio_usd": 120
-        }
-      ]
-    },
-    {
-      "category": "Kit de Tiempo",
       "description": "KIT DE TIEMPO RODEO 3.1",
       "id": "d53d1090-4cb9-4eb4-a008-7e714b023fa8",
       "image_path": "./assets/kit-de-tiempo-rodeo-31.webp",
@@ -15271,6 +15247,30 @@ const PRODUCTS_DATA = {
           "codigo_oem": "76061",
           "brand": "CIC",
           "precio_usd": 95
+        }
+      ]
+    },
+    {
+      "category": "Kit de Tiempo",
+      "description": "KIT DE TIEMPO RODEO 3.2",
+      "id": "d7ad6e9b-e09f-4629-9faa-bde687718807",
+      "image_path": "./assets/kit-de-tiempo-rodeo-3-2.webp",
+      "keywords": [
+        "KIT",
+        "RODEO",
+        "TIEMPO",
+        "TK-137"
+      ],
+      "linked_ids": [
+        681
+      ],
+      "oem": "TK-137",
+      "slug": "kit-de-tiempo-rodeo-3-2",
+      "variants": [
+        {
+          "codigo_oem": "TK-137",
+          "brand": "CIC",
+          "precio_usd": 120
         }
       ]
     },
