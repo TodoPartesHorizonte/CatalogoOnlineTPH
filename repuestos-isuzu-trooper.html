@@ -79,9 +79,6 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet"></noscript>
     
-    <!-- Base de datos de productos (Evita bloqueos de CORS locales) -->
-    <script defer src="./products.js"></script>
-
     <!-- Script de Seguridad (Desofuscación) y Analíticas (Google Analytics) -->
     <script>
         // Función para descodificar cadenas Base64 (protección contra raspado)
@@ -102,26 +99,28 @@
             }
         }
 
-        // Inicializar dependencias no críticas una vez cargado el DOM para no bloquear renderizado inicial
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof PRODUCTS_DATA !== 'undefined' && PRODUCTS_DATA.google_analytics_id) {
-                const gaId = deobfuscate(PRODUCTS_DATA.google_analytics_id).trim();
-                if (gaId && gaId.startsWith('G-')) {
-                    // Cargar script oficial de Google Analytics de forma asíncrona
-                    const script = document.createElement('script');
-                    script.async = true;
-                    script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
-                    document.head.appendChild(script);
+        // Inicializar dependencias no críticas tras el evento de carga completa de forma diferida (TBT)
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                if (typeof PRODUCTS_DATA !== 'undefined' && PRODUCTS_DATA.google_analytics_id) {
+                    const gaId = deobfuscate(PRODUCTS_DATA.google_analytics_id).trim();
+                    if (gaId && gaId.startsWith('G-')) {
+                        // Cargar script oficial de Google Analytics de forma asíncrona
+                        const script = document.createElement('script');
+                        script.async = true;
+                        script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
+                        document.head.appendChild(script);
 
-                    // Inicializar dataLayer y gtag
-                    window.dataLayer = window.dataLayer || [];
-                    window.gtag = function() { window.dataLayer.push(arguments); };
-                    gtag('js', new Date());
-                    gtag('config', gaId);
-                    
-                    console.log("Google Analytics 4 inicializado de forma segura.");
+                        // Inicializar dataLayer y gtag
+                        window.dataLayer = window.dataLayer || [];
+                        window.gtag = function() { window.dataLayer.push(arguments); };
+                        gtag('js', new Date());
+                        gtag('config', gaId);
+                        
+                        console.log("Google Analytics 4 inicializado de forma diferida (TBT).");
+                    }
                 }
-            }
+            }, 1500);
         });
     </script>
 
@@ -1007,6 +1006,7 @@
     </div>
 
     <!-- JAVASCRIPT DE CONTROL -->
+    <script defer src="./products.js"></script>
     <script>window.defaultVehicleFilter = 'TROOPER';</script>
     <script defer src="./app.min.js"></script>
 </body>

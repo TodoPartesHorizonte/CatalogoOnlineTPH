@@ -259,13 +259,21 @@ def generate_pages(data):
     ga_script = ""
     if ga_id:
         ga_script = f"""
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={ga_id}"></script>
+    <!-- Google Analytics Diferido para TBT -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){{dataLayer.push(arguments);}}
-      gtag('js', new Date());
-      gtag('config', '{ga_id}');
+      window.addEventListener('load', function() {{
+        setTimeout(function() {{
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id={ga_id}';
+          document.head.appendChild(script);
+          
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function() {{ window.dataLayer.push(arguments); }};
+          gtag('js', new Date());
+          gtag('config', '{ga_id}');
+        }}, 1500);
+      }});
     </script>"""
     
     template = """<!DOCTYPE html>
@@ -2222,11 +2230,12 @@ def generate_vehicle_pages(base_url):
 
                 # 8. Agregar JavaScript de filtro predeterminado al final del body
                 control_script = f"""<!-- JAVASCRIPT DE CONTROL -->
+    <script defer src="./products.js"></script>
     <script>window.defaultVehicleFilter = '{v["filter"]}';</script>
     <script defer src="./app.min.js"></script>"""
                 
-                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\n    <script defer src="./app.min.js"></script>', control_script)
-                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\r\n    <script defer src="./app.min.js"></script>', control_script)
+                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\n    <script defer src="./products.js"></script>\n    <script defer src="./app.min.js"></script>', control_script)
+                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\r\n    <script defer src="./products.js"></script>\r\n    <script defer src="./app.min.js"></script>', control_script)
 
                 with open(v_path, "w", encoding="utf-8") as out_f:
                     out_f.write(v_content)
