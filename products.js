@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 597,
+  "total_products": 604,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -15523,6 +15523,46 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "931184ed-3304-4da7-9b50-185b7e6b05cb",
+      "category": "Manguera Bomba Vacio",
+      "image_path": "./assets/manguera-bomba-vacio-luv-dmax-2-5.webp",
+      "description": "MANGUERA BOMBA VACIO LUV DMAX 2.5",
+      "keywords": [
+        "8-97353-8300",
+        "BOMBA",
+        "DMAX",
+        "LUV",
+        "MANGUERA",
+        "VACIO"
+      ],
+      "oem": "8-97353-8300",
+      "slug": "manguera-bomba-vacio-luv-dmax-2-5",
+      "original_filename": "Manguera Bomba Vacio/931184ed-3304-4da7-9b50-185b7e6b05cb.jpg",
+      "linked_ids": [
+        693
+      ]
+    },
+    {
+      "id": "f6a5586b-4e62-4aac-8aee-9ed6e992a631",
+      "category": "Manguera Bomba Vacio",
+      "image_path": "./assets/manguera-bomba-vacio-luv-dmax-3-0.webp",
+      "description": "MANGUERA BOMBA VACIO LUV DMAX 3.0",
+      "keywords": [
+        "8-97353-8300",
+        "BOMBA",
+        "DMAX",
+        "LUV",
+        "MANGUERA",
+        "VACIO"
+      ],
+      "oem": "8-97353-8300",
+      "slug": "manguera-bomba-vacio-luv-dmax-3-0",
+      "original_filename": "Manguera Bomba Vacio/f6a5586b-4e62-4aac-8aee-9ed6e992a631.jpg",
+      "linked_ids": [
+        693
+      ]
+    },
+    {
       "category": "Manguera Calefaccion",
       "description": "MANGUERA CALEFACCION CARIBE G200",
       "id": "506f56a8-7ca1-4311-8873-d57cd671e3ff",
@@ -15653,6 +15693,50 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "f53f0f58-d7b8-4573-889b-d278092f5ebc",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3.webp",
+      "description": "MANGUERA RADIADOR INFERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3",
+      "keywords": [
+        "0820",
+        "8-94337-3000",
+        "ACM013",
+        "CARIBE",
+        "INFERIOR",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR"
+      ],
+      "oem": "8-94337-3000 / 0820 / ACM013",
+      "slug": "manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3",
+      "original_filename": "Manguera Radiador/f53f0f58-d7b8-4573-889b-d278092f5ebc.jpg",
+      "linked_ids": [
+        703
+      ]
+    },
+    {
+      "id": "d8a59eeb-d200-43f1-9566-211063795ca1",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-inferior-caribe-g200.webp",
+      "description": "MANGUERA RADIADOR INFERIOR CARIBE G200",
+      "keywords": [
+        "0818",
+        "8-94101-9690",
+        "ACM010",
+        "CARIBE",
+        "G200",
+        "INFERIOR",
+        "MANGUERA",
+        "RADIADOR"
+      ],
+      "oem": "8-94101-9690 / 0818 / ACM010",
+      "slug": "manguera-radiador-inferior-caribe-g200",
+      "original_filename": "Manguera Radiador/d8a59eeb-d200-43f1-9566-211063795ca1.jpg",
+      "linked_ids": [
+        702
+      ]
+    },
+    {
       "category": "Manguera Radiador",
       "description": "MANGUERA RADIADOR INFERIOR LUV 2.2",
       "id": "06801f30-16cd-4ea7-89c6-c8e32e0031cb",
@@ -15676,6 +15760,49 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 25
         }
+      ]
+    },
+    {
+      "id": "ea6d3d9b-61bc-4813-bb7a-70aecf9e0ef3",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3.webp",
+      "description": "MANGUERA RADIADOR SUPERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3",
+      "keywords": [
+        "23194",
+        "8-94389-4810",
+        "CARIBE",
+        "LUV",
+        "MANGUERA",
+        "MC819",
+        "RADIADOR",
+        "SUPERIOR"
+      ],
+      "oem": "8-94389-4810 / MC819 / 23194",
+      "slug": "manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3",
+      "original_filename": "Manguera Radiador/ea6d3d9b-61bc-4813-bb7a-70aecf9e0ef3.jpg",
+      "linked_ids": [
+        711
+      ]
+    },
+    {
+      "id": "524c4671-a8a0-4bf0-8c65-0645f48dad19",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-superior-caribe-g200.webp",
+      "description": "MANGUERA RADIADOR SUPERIOR CARIBE G200",
+      "keywords": [
+        "CARIBE",
+        "G200",
+        "MANGUERA",
+        "MC817",
+        "MGM817R",
+        "RADIADOR",
+        "SUPERIOR"
+      ],
+      "oem": "MGM817R / MC817",
+      "slug": "manguera-radiador-superior-caribe-g200",
+      "original_filename": "Manguera Radiador/524c4671-a8a0-4bf0-8c65-0645f48dad19.jpg",
+      "linked_ids": [
+        710
       ]
     },
     {
@@ -15784,6 +15911,27 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 30
         }
+      ]
+    },
+    {
+      "id": "2211af8d-af84-44f6-ba1e-b4013c851e0c",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-superior-luv-dmax-3-0-4jj1.webp",
+      "description": "MANGUERA RADIADOR SUPERIOR LUV DMAX 3.0 4JJ1",
+      "keywords": [
+        "4JJ1",
+        "8-97363-6041",
+        "DMAX",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR",
+        "SUPERIOR"
+      ],
+      "oem": "8-97363-6041",
+      "slug": "manguera-radiador-superior-luv-dmax-3-0-4jj1",
+      "original_filename": "Manguera Radiador/2211af8d-af84-44f6-ba1e-b4013c851e0c.jpg",
+      "linked_ids": [
+        717
       ]
     },
     {
