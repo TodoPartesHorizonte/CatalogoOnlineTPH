@@ -201,6 +201,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/manguera-bomba-vacio.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/manguera-bomba-vacio.webp</image:loc>
+      <image:title>MANGUERA BOMBA VACIO</image:title>
+    </image:image>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/manguera-bomba-vacio-luv-dmax-3-0.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/manguera-bomba-vacio-luv-dmax-3-0.webp</image:loc>
+      <image:title>MANGUERA BOMBA VACIO LUV DMAX 3.0</image:title>
+    </image:image>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/manguera-calefaccion-caribe-g200.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/manguera-calefaccion-caribe-g200.webp</image:loc>
@@ -251,10 +271,50 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3.webp</image:loc>
+      <image:title>MANGUERA RADIADOR INFERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3-2.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3-2.webp</image:loc>
+      <image:title>MANGUERA RADIADOR INFERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/manguera-radiador-inferior-luv-2-2.html</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-inferior-luv-2-2.webp</image:loc>
       <image:title>MANGUERA RADIADOR INFERIOR LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3.webp</image:loc>
+      <image:title>MANGUERA RADIADOR SUPERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/manguera-radiador-superior-caribe-g200.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-superior-caribe-g200.webp</image:loc>
+      <image:title>MANGUERA RADIADOR SUPERIOR CARIBE G200</image:title>
     </image:image>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -295,6 +355,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-superior-luv-dmax-2-5-2.webp</image:loc>
       <image:title>MANGUERA RADIADOR SUPERIOR LUV DMAX 2.5</image:title>
+    </image:image>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/manguera-radiador-superior-luv-dmax-3-0.html</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-superior-luv-dmax-3-0.webp</image:loc>
+      <image:title>MANGUERA RADIADOR SUPERIOR LUV DMAX 3.0</image:title>
     </image:image>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -925,46 +995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/valvula-de-minimo-luv-2-3.webp</image:loc>
       <image:title>VÁLVULA DE MINIMO LUV 2.3</image:title>
-    </image:image>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/valvula-pcv-caribe.html</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/valvula-pcv-caribe.webp</image:loc>
-      <image:title>VÁLVULA PCV CARIBE</image:title>
-    </image:image>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/valvula-pcv-luv-d-max.html</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/valvula-pcv-luv-d-max.webp</image:loc>
-      <image:title>VÁLVULA PCV LUV D-MAX</image:title>
-    </image:image>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/valvula-temperatura-caribe-luv-d-max-trooper-rodeo.html</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/valvula-temperatura-caribe-luv-d-max-trooper-rodeo.webp</image:loc>
-      <image:title>VALVULA TEMPERATURA CARIBE / LUV D-MAX / TROOPER / RODEO</image:title>
-    </image:image>
-    <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/varilla-aceite-luv-d-max-3-5.html</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/varilla-aceite-luv-d-max-3-5.webp</image:loc>
-      <image:title>VARILLA ACEITE LUV D-MAX 3.5</image:title>
     </image:image>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
