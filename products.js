@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 604,
+  "total_products": 619,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -15523,6 +15523,225 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "0b783314-83fb-46df-bef7-4910e8d21603",
+      "category": "Laina Ajuste",
+      "image_path": "./assets/lainas-pinon-y-corona-caribe-g200-caribe-2-3.webp",
+      "description": "LAINAS PIÑON Y CORONA CARIBE G200 / CARIBE 2.3",
+      "keywords": [
+        "9-41519-1100",
+        "AJUSTE",
+        "CARIBE",
+        "CORONA",
+        "G200",
+        "LAINA",
+        "LAINAS",
+        "PINON"
+      ],
+      "oem": "9-41519-1100",
+      "slug": "lainas-pinon-y-corona-caribe-g200-caribe-2-3",
+      "original_filename": "Laina Ajuste/0b783314-83fb-46df-bef7-4910e8d21603.jpg",
+      "linked_ids": [
+        686
+      ]
+    },
+    {
+      "id": "602dc75b-42e4-4214-b1fd-a5d003f87042",
+      "category": "Lapiz Barra Estabilizadora",
+      "image_path": "./assets/lapiz-barra-estabilizadora-c-goma-u-luv-2-3.webp",
+      "description": "LAPIZ BARRA ESTABILIZADORA C/GOMA U  LUV 2.3",
+      "keywords": [
+        "163710",
+        "5-51781-0100",
+        "BARRA",
+        "ESTABILIZADORA",
+        "GOMA",
+        "LAPIZ",
+        "LUV"
+      ],
+      "oem": "5-51781-0100 / 163710",
+      "slug": "lapiz-barra-estabilizadora-c-goma-u-luv-2-3",
+      "original_filename": "Lapiz Barra Estabilizadora/602dc75b-42e4-4214-b1fd-a5d003f87042.jpg",
+      "linked_ids": [
+        689
+      ]
+    },
+    {
+      "id": "a697e163-88bd-4eb6-9f48-cdbc6abb06ff",
+      "category": "Lapiz Barra Estabilizadora",
+      "image_path": "./assets/lapiz-barra-estabilizadora-c-goma-u-caribe-2-3.webp",
+      "description": "LAPIZ BARRA ESTABILIZADORA C/GOMA U CARIBE 2.3",
+      "keywords": [
+        "163710",
+        "5-51781-0100",
+        "BARRA",
+        "CARIBE",
+        "ESTABILIZADORA",
+        "GOMA",
+        "LAPIZ"
+      ],
+      "oem": "5-51781-0100 / 163710",
+      "slug": "lapiz-barra-estabilizadora-c-goma-u-caribe-2-3",
+      "original_filename": "Lapiz Barra Estabilizadora/a697e163-88bd-4eb6-9f48-cdbc6abb06ff.jpg",
+      "linked_ids": [
+        689
+      ]
+    },
+    {
+      "id": "e321d094-0c55-4489-a457-5bd689f2d2cc",
+      "category": "Lapiz Barra Estabilizadora",
+      "image_path": "./assets/lapiz-barra-estabilizadora-c-goma-u-caribe-g200.webp",
+      "description": "LAPIZ BARRA ESTABILIZADORA C/GOMA U CARIBE G200",
+      "keywords": [
+        "163710",
+        "5-51781-0100",
+        "BARRA",
+        "CARIBE",
+        "ESTABILIZADORA",
+        "G200",
+        "GOMA",
+        "LAPIZ"
+      ],
+      "oem": "5-51781-0100 / 163710",
+      "slug": "lapiz-barra-estabilizadora-c-goma-u-caribe-g200",
+      "original_filename": "Lapiz Barra Estabilizadora/e321d094-0c55-4489-a457-5bd689f2d2cc.jpg",
+      "linked_ids": [
+        689
+      ]
+    },
+    {
+      "id": "863ba34f-2c59-4510-ad0e-9741e9aadcd6",
+      "category": "Lapiz Barra Estabilizadora",
+      "image_path": "./assets/lapiz-barra-estabilizadora-caribe-2-3.webp",
+      "description": "LAPIZ BARRA ESTABILIZADORA CARIBE 2.3",
+      "keywords": [
+        "161701",
+        "BARRA",
+        "CARIBE",
+        "ESTABILIZADORA",
+        "LAPIZ"
+      ],
+      "oem": "161701",
+      "slug": "lapiz-barra-estabilizadora-caribe-2-3",
+      "original_filename": "Lapiz Barra Estabilizadora/863ba34f-2c59-4510-ad0e-9741e9aadcd6.jpg",
+      "linked_ids": [
+        687
+      ]
+    },
+    {
+      "id": "09c714ad-70ac-44d0-b2b6-ab99837c84d1",
+      "category": "Lapiz Barra Estabilizadora",
+      "image_path": "./assets/lapiz-barra-estabilizadora-caribe-g200.webp",
+      "description": "LAPIZ BARRA ESTABILIZADORA CARIBE G200",
+      "keywords": [
+        "161701",
+        "BARRA",
+        "CARIBE",
+        "ESTABILIZADORA",
+        "G200",
+        "LAPIZ"
+      ],
+      "oem": "161701",
+      "slug": "lapiz-barra-estabilizadora-caribe-g200",
+      "original_filename": "Lapiz Barra Estabilizadora/09c714ad-70ac-44d0-b2b6-ab99837c84d1.jpg",
+      "linked_ids": [
+        687
+      ]
+    },
+    {
+      "id": "36761296-eee3-4d8d-a5ac-0bd1988a0448",
+      "category": "Lapiz Barra Estabilizadora",
+      "image_path": "./assets/lapiz-barra-estabilizadora-luv-2-3.webp",
+      "description": "LAPIZ BARRA ESTABILIZADORA LUV 2.3",
+      "keywords": [
+        "161710",
+        "BARRA",
+        "ESTABILIZADORA",
+        "LAPIZ",
+        "LUV"
+      ],
+      "oem": "161710",
+      "slug": "lapiz-barra-estabilizadora-luv-2-3",
+      "original_filename": "Lapiz Barra Estabilizadora/36761296-eee3-4d8d-a5ac-0bd1988a0448.jpg",
+      "linked_ids": [
+        688
+      ]
+    },
+    {
+      "id": "380769e6-5fc6-4825-8264-153536edc5dd",
+      "category": "Lapiz Bomba Gasolina",
+      "image_path": "./assets/lapiz-bomba-gasolina-caribe-2-3-caribe-2-6-luv-2-3.webp",
+      "description": "LAPIZ BOMBA GASOLINA CARIBE 2.3 / CARIBE 2.6 / LUV 2.3",
+      "keywords": [
+        "8-94159-2901",
+        "BOMBA",
+        "CARIBE",
+        "GASOLINA",
+        "LAPIZ",
+        "LUV"
+      ],
+      "oem": "8-94159-2901",
+      "slug": "lapiz-bomba-gasolina-caribe-2-3-caribe-2-6-luv-2-3",
+      "original_filename": "Lapiz Bomba Gasolina/380769e6-5fc6-4825-8264-153536edc5dd.jpg",
+      "linked_ids": [
+        690
+      ]
+    },
+    {
+      "id": "83ba895e-c92a-47c3-a8e1-1b3984df4adf",
+      "category": "Locha de Arranque",
+      "image_path": "./assets/locha-arranque-caribe-luv-2-3.webp",
+      "description": "LOCHA ARRANQUE CARIBE / LUV 2.3",
+      "keywords": [
+        "82756RK",
+        "ARRANQUE",
+        "CARIBE",
+        "LOCHA",
+        "LUV"
+      ],
+      "oem": "82756RK",
+      "slug": "locha-arranque-caribe-luv-2-3",
+      "original_filename": "Locha de Arranque/83ba895e-c92a-47c3-a8e1-1b3984df4adf.jpg",
+      "linked_ids": [
+        691
+      ]
+    },
+    {
+      "id": "b36968b1-7652-4558-afd8-152ff804161d",
+      "category": "Locha Martillo",
+      "image_path": "./assets/locha-martillo.webp",
+      "description": "LOCHA MARTILLO",
+      "keywords": [
+        "8-90076-7450",
+        "LOCHA",
+        "MARTILLO"
+      ],
+      "oem": "8-90076-7450",
+      "slug": "locha-martillo",
+      "original_filename": "Locha Martillo/b36968b1-7652-4558-afd8-152ff804161d.jpg",
+      "linked_ids": [
+        692
+      ]
+    },
+    {
+      "id": "5fc3b409-08d2-4433-a874-5831d6519726",
+      "category": "Locha Martillo",
+      "image_path": "./assets/locha-martillo-luv-dmax-2-4.webp",
+      "description": "LOCHA MARTILLO LUV DMAX 2.4",
+      "keywords": [
+        "8-90076-7450",
+        "DMAX",
+        "LOCHA",
+        "LUV",
+        "MARTILLO"
+      ],
+      "oem": "8-90076-7450",
+      "slug": "locha-martillo-luv-dmax-2-4",
+      "original_filename": "Locha Martillo/5fc3b409-08d2-4433-a874-5831d6519726.jpg",
+      "linked_ids": [
+        692
+      ]
+    },
+    {
       "id": "931184ed-3304-4da7-9b50-185b7e6b05cb",
       "category": "Manguera Bomba Vacio",
       "image_path": "./assets/manguera-bomba-vacio-luv-dmax-2-5.webp",
@@ -15638,6 +15857,87 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 10
         }
+      ]
+    },
+    {
+      "id": "9e3b9249-cdd9-4c2c-bad3-6815c3626455",
+      "category": "Manguera Freno",
+      "image_path": "./assets/manguera-freno-caribe.webp",
+      "description": "MANGUERA FRENO CARIBE",
+      "keywords": [
+        "8-94113-5830",
+        "8-94222-6843",
+        "CARIBE",
+        "FRENO",
+        "MANGUERA"
+      ],
+      "oem": "8-94222-6843 / 8-94113-5830",
+      "slug": "manguera-freno-caribe",
+      "original_filename": "Manguera Freno/9e3b9249-cdd9-4c2c-bad3-6815c3626455.jpg",
+      "linked_ids": [
+        696
+      ]
+    },
+    {
+      "id": "f4be56df-8ddc-4fd5-a61d-47e0390c479e",
+      "category": "Manguera Freno",
+      "image_path": "./assets/manguera-freno-luv.webp",
+      "description": "MANGUERA FRENO LUV",
+      "keywords": [
+        "8-97134-8290",
+        "FRENO",
+        "LUV",
+        "MANGUERA"
+      ],
+      "oem": "8-97134-8290",
+      "slug": "manguera-freno-luv",
+      "original_filename": "Manguera Freno/f4be56df-8ddc-4fd5-a61d-47e0390c479e.jpg",
+      "linked_ids": [
+        697
+      ]
+    },
+    {
+      "id": "3587838b-2ce5-442f-b016-179b59143177",
+      "category": "Manguera Freno",
+      "image_path": "./assets/manguera-freno-luv-dmax-2-4.webp",
+      "description": "MANGUERA FRENO LUV DMAX 2.4",
+      "keywords": [
+        "8-97289-2092",
+        "8-97363-8040",
+        "DMAX",
+        "FRENO",
+        "LUV",
+        "MANGUERA"
+      ],
+      "oem": "8-97363-8040 / 8-97289-2092",
+      "slug": "manguera-freno-luv-dmax-2-4",
+      "original_filename": "Manguera Freno/3587838b-2ce5-442f-b016-179b59143177.jpg",
+      "linked_ids": [
+        1169,
+        698
+      ]
+    },
+    {
+      "id": "857d45fc-c123-415a-9feb-f7e503258668",
+      "category": "Manguera Freno",
+      "image_path": "./assets/manguera-freno-luv-dmax-3-5.webp",
+      "description": "MANGUERA FRENO LUV DMAX 3.5",
+      "keywords": [
+        "8-97330-4540",
+        "8-97363-8050",
+        "DMAX",
+        "FRENO",
+        "LUV",
+        "MANGUERA",
+        "MF-4126",
+        "MF-4127"
+      ],
+      "oem": "8-97363-8050 / MF-4127 / 8-97330-4540 / MF-4126",
+      "slug": "manguera-freno-luv-dmax-3-5",
+      "original_filename": "Manguera Freno/857d45fc-c123-415a-9feb-f7e503258668.jpg",
+      "linked_ids": [
+        1170,
+        699
       ]
     },
     {
