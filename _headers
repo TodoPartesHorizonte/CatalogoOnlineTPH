@@ -17,8 +17,8 @@
 
 # Páginas HTML, raíz y base de datos (dinámico)
 /*.html
-  Cache-Control: max-age=3600, must-revalidate
+  Cache-Control: max-age=900, must-revalidate
 /
-  Cache-Control: max-age=3600, must-revalidate
+  Cache-Control: max-age=900, must-revalidate
 /products.js
-  Cache-Control: max-age=3600, must-revalidate
+  Cache-Control: max-age=900, must-revalidate
