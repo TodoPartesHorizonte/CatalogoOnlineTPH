@@ -526,10 +526,94 @@ const PRODUCTS_DATA = {
       "id": "0db1c57f-083a-4626-9ccd-821d978bc9b7",
       "image_path": "./assets/anillos-para-tu-caribe.webp",
       "keywords": [
+        "6157-STD",
+        "6158-STD",
+        "6159-STD",
+        "8-94216-6410",
         "ANILLOS",
-        "CARIBE"
+        "CARIBE",
+        "SWI10123-0",
+        "SWI10144-0"
       ],
-      "slug": "anillos-para-tu-caribe"
+      "slug": "anillos-para-tu-caribe",
+      "linked_ids": [
+        28,
+        48,
+        74
+      ],
+      "variants": [
+        {
+          "codigo_oem": "8-94216-6410",
+          "brand": "NATSUKI",
+          "precio_usd": 25
+        },
+        {
+          "codigo_oem": "8-94216-6410",
+          "brand": "HASTING",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94216-6410",
+          "brand": "TP",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94216-6410",
+          "brand": "NPR",
+          "precio_usd": 50
+        },
+        {
+          "codigo_oem": "6158-STD",
+          "brand": "NATSUKI",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "6158-STD",
+          "brand": "HASTING",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "6158-STD",
+          "brand": "EMASA",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "6158-STD",
+          "brand": "TP",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "6158-STD",
+          "brand": "NPR",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "6158-STD",
+          "brand": "PC PISTON",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "6159-STD",
+          "brand": "NATSUKI",
+          "precio_usd": 25
+        },
+        {
+          "codigo_oem": "6159-STD",
+          "brand": "HASTING",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "6159-STD",
+          "brand": "TP",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "6159-STD",
+          "brand": "NPR",
+          "precio_usd": 50
+        }
+      ],
+      "oem": "8-94216-6410 / 6157-STD / 6158-STD / SWI10123-0 / 6159-STD / SWI10144-0"
     },
     {
       "category": "Anillos",
@@ -537,11 +621,49 @@ const PRODUCTS_DATA = {
       "id": "be33c2ae-bd02-45b0-b737-df9e1986dd25",
       "image_path": "./assets/anillos-para-tu-luv-d-max.webp",
       "keywords": [
+        "2C4571-STD",
+        "2M4945-STD",
+        "32674",
+        "8-97136-1350",
+        "8-97371-5330",
         "ANILLOS",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "STD"
       ],
-      "slug": "anillos-para-tu-luv-d-max"
+      "slug": "anillos-para-tu-luv-d-max",
+      "linked_ids": [
+        134,
+        144
+      ],
+      "variants": [
+        {
+          "codigo_oem": "8-97371-5330",
+          "brand": "HASTING",
+          "precio_usd": 60
+        },
+        {
+          "codigo_oem": "8-97371-5330",
+          "brand": "TP",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97136-1350",
+          "brand": "HASTING",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97136-1350",
+          "brand": "RIK",
+          "precio_usd": 50
+        },
+        {
+          "codigo_oem": "8-97136-1350",
+          "brand": "TP",
+          "precio_usd": 40
+        }
+      ],
+      "oem": "8-97371-5330 / 2C4571-STD / 8-97136-1350 / 2M4945-STD / 32674.STD"
     },
     {
       "category": "Arandela Punta de Eje",
@@ -13860,7 +13982,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "5-87810-3191",
           "brand": "KP",
-          "precio_usd": 50
+          "precio_usd": 0
         },
         {
           "codigo_oem": "5-87810-3191",
@@ -13898,7 +14020,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94312-5870",
           "brand": "KP",
-          "precio_usd": 50
+          "precio_usd": 0
         },
         {
           "codigo_oem": "8-94312-5870",
@@ -15401,10 +15523,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "506f56a8-7ca1-4311-8873-d57cd671e3ff",
       "category": "Manguera Calefaccion",
-      "image_path": "./assets/manguera-calefaccion-caribe-g200.webp",
       "description": "MANGUERA CALEFACCION CARIBE G200",
+      "id": "506f56a8-7ca1-4311-8873-d57cd671e3ff",
+      "image_path": "./assets/manguera-calefaccion-caribe-g200.webp",
       "keywords": [
         "5509",
         "8-94201-9431",
@@ -15413,18 +15535,25 @@ const PRODUCTS_DATA = {
         "G200",
         "MANGUERA"
       ],
-      "oem": "8-94201-9431 / 5509",
-      "slug": "manguera-calefaccion-caribe-g200",
-      "original_filename": "Manguera Calefaccion/506f56a8-7ca1-4311-8873-d57cd671e3ff.jpg",
       "linked_ids": [
         1201
+      ],
+      "oem": "8-94201-9431 / 5509",
+      "original_filename": "Manguera Calefaccion/506f56a8-7ca1-4311-8873-d57cd671e3ff.jpg",
+      "slug": "manguera-calefaccion-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94201-9431",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "21b2ff79-08c1-4203-af86-4d02fa9b6b57",
       "category": "Manguera Calefaccion",
-      "image_path": "./assets/manguera-calefaccion-luv-dmax-2-4.webp",
       "description": "MANGUERA CALEFACCION LUV DMAX 2.4",
+      "id": "21b2ff79-08c1-4203-af86-4d02fa9b6b57",
+      "image_path": "./assets/manguera-calefaccion-luv-dmax-2-4.webp",
       "keywords": [
         "ACM036",
         "CALEFACCION",
@@ -15432,11 +15561,18 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANGUERA"
       ],
-      "oem": "ACM036",
-      "slug": "manguera-calefaccion-luv-dmax-2-4",
-      "original_filename": "Manguera Calefaccion/21b2ff79-08c1-4203-af86-4d02fa9b6b57.jpg",
       "linked_ids": [
         694
+      ],
+      "oem": "ACM036",
+      "original_filename": "Manguera Calefaccion/21b2ff79-08c1-4203-af86-4d02fa9b6b57.jpg",
+      "slug": "manguera-calefaccion-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "ACM036",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
@@ -15491,10 +15627,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "2b9d879a-d411-46eb-a937-7bcb47055cb2",
       "category": "Manguera Llenado Gasolina",
-      "image_path": "./assets/manguera-gasolina-trooper-3-2.webp",
       "description": "MANGUERA GASOLINA TROOPER 3.2",
+      "id": "2b9d879a-d411-46eb-a937-7bcb47055cb2",
+      "image_path": "./assets/manguera-gasolina-trooper-3-2.webp",
       "keywords": [
         "8-97012-1580",
         "GASOLINA",
@@ -15502,18 +15638,25 @@ const PRODUCTS_DATA = {
         "MANGUERA",
         "TROOPER"
       ],
-      "oem": "8-97012-1580",
-      "slug": "manguera-gasolina-trooper-3-2",
-      "original_filename": "Manguera Llenado Gasolina/2b9d879a-d411-46eb-a937-7bcb47055cb2.jpg",
       "linked_ids": [
         701
+      ],
+      "oem": "8-97012-1580",
+      "original_filename": "Manguera Llenado Gasolina/2b9d879a-d411-46eb-a937-7bcb47055cb2.jpg",
+      "slug": "manguera-gasolina-trooper-3-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97012-1580",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "06801f30-16cd-4ea7-89c6-c8e32e0031cb",
       "category": "Manguera Radiador",
-      "image_path": "./assets/manguera-radiador-inferior-luv-2-2.webp",
       "description": "MANGUERA RADIADOR INFERIOR LUV 2.2",
+      "id": "06801f30-16cd-4ea7-89c6-c8e32e0031cb",
+      "image_path": "./assets/manguera-radiador-inferior-luv-2-2.webp",
       "keywords": [
         "8-97210-5920",
         "INFERIOR",
@@ -15521,11 +15664,18 @@ const PRODUCTS_DATA = {
         "MANGUERA",
         "RADIADOR"
       ],
-      "oem": "8-97210-5920",
-      "slug": "manguera-radiador-inferior-luv-2-2",
-      "original_filename": "Manguera Radiador/06801f30-16cd-4ea7-89c6-c8e32e0031cb.jpg",
       "linked_ids": [
         704
+      ],
+      "oem": "8-97210-5920",
+      "original_filename": "Manguera Radiador/06801f30-16cd-4ea7-89c6-c8e32e0031cb.jpg",
+      "slug": "manguera-radiador-inferior-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97210-5920",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
@@ -15610,10 +15760,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "390e80e4-ee43-4fcc-9111-95ac9025c87e",
       "category": "Manguera Radiador",
-      "image_path": "./assets/manguera-radiador-superior-luv-dmax-2-5-2.webp",
       "description": "MANGUERA RADIADOR SUPERIOR LUV DMAX 2.5",
+      "id": "390e80e4-ee43-4fcc-9111-95ac9025c87e",
+      "image_path": "./assets/manguera-radiador-superior-luv-dmax-2-5-2.webp",
       "keywords": [
         "8-97363-6041",
         "DMAX",
@@ -15622,18 +15772,25 @@ const PRODUCTS_DATA = {
         "RADIADOR",
         "SUPERIOR"
       ],
-      "oem": "8-97363-6041",
-      "slug": "manguera-radiador-superior-luv-dmax-2-5-2",
-      "original_filename": "Manguera Radiador/390e80e4-ee43-4fcc-9111-95ac9025c87e.jpg",
       "linked_ids": [
         717
+      ],
+      "oem": "8-97363-6041",
+      "original_filename": "Manguera Radiador/390e80e4-ee43-4fcc-9111-95ac9025c87e.jpg",
+      "slug": "manguera-radiador-superior-luv-dmax-2-5-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97363-6041",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "528342c4-47df-458b-8b4b-5a5d169d193b",
       "category": "Manguera Retorno Aceite",
-      "image_path": "./assets/manguera-retorno-enfreiamiento-aceite-luv-dmax-2-5.webp",
       "description": "MANGUERA RETORNO ENFREIAMIENTO ACEITE LUV DMAX 2.5",
+      "id": "528342c4-47df-458b-8b4b-5a5d169d193b",
+      "image_path": "./assets/manguera-retorno-enfreiamiento-aceite-luv-dmax-2-5.webp",
       "keywords": [
         "8-97213-9192",
         "ACEITE",
@@ -15644,18 +15801,25 @@ const PRODUCTS_DATA = {
         "MANGUERA",
         "RETORNO"
       ],
-      "oem": "8-97213-9192 / ACM2087",
-      "slug": "manguera-retorno-enfreiamiento-aceite-luv-dmax-2-5",
-      "original_filename": "Manguera Retorno Aceite/528342c4-47df-458b-8b4b-5a5d169d193b.jpg",
       "linked_ids": [
         718
+      ],
+      "oem": "8-97213-9192 / ACM2087",
+      "original_filename": "Manguera Retorno Aceite/528342c4-47df-458b-8b4b-5a5d169d193b.jpg",
+      "slug": "manguera-retorno-enfreiamiento-aceite-luv-dmax-2-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97213-9192",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "54825614-1983-4e25-b9a0-87418224d345",
       "category": "Manguera Retorno Aceite",
-      "image_path": "./assets/manguera-retorno-enfreiamiento-aceite-luv-dmax-3-0.webp",
       "description": "MANGUERA RETORNO ENFREIAMIENTO ACEITE LUV DMAX 3.0",
+      "id": "54825614-1983-4e25-b9a0-87418224d345",
+      "image_path": "./assets/manguera-retorno-enfreiamiento-aceite-luv-dmax-3-0.webp",
       "keywords": [
         "8-97213-9192",
         "ACEITE",
@@ -15666,11 +15830,18 @@ const PRODUCTS_DATA = {
         "MANGUERA",
         "RETORNO"
       ],
-      "oem": "8-97213-9192 / ACM2087",
-      "slug": "manguera-retorno-enfreiamiento-aceite-luv-dmax-3-0",
-      "original_filename": "Manguera Retorno Aceite/54825614-1983-4e25-b9a0-87418224d345.jpg",
       "linked_ids": [
         718
+      ],
+      "oem": "8-97213-9192 / ACM2087",
+      "original_filename": "Manguera Retorno Aceite/54825614-1983-4e25-b9a0-87418224d345.jpg",
+      "slug": "manguera-retorno-enfreiamiento-aceite-luv-dmax-3-0",
+      "variants": [
+        {
+          "codigo_oem": "8-97213-9192",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
@@ -16054,7 +16225,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97070-6200",
           "brand": "NIKHO",
-          "precio_usd": 25
+          "precio_usd": 0
         }
       ]
     },
