@@ -910,7 +910,13 @@
 
                 foldersHtml += `
                     <div class="category-card" onclick="selectFolderCategory('${cat.replace(/'/g, "\\'")}')" id="${folderId}" role="button" tabindex="0" aria-label="Ver categoría ${cat}">
-                        <div class="category-card-bg-layer" style="background: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ff6a00' fill-opacity='0.025'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;), linear-gradient(${gradAngle}deg, #0d0d10 0%, #141418 50%, rgba(255, 106, 0, 0.06) 100%)"></div>
+                        <div class="category-card-bg-layer">
+                            <svg style="position: absolute; right: -20px; bottom: -20px; width: 140px; height: 140px; color: rgba(255, 106, 0, 0.03); pointer-events: none;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41"></path>
+                                <circle cx="12" cy="12" r="7" stroke-dasharray="2 2"></circle>
+                            </svg>
+                        </div>
                         <svg class="category-card-icon" aria-hidden="true" viewBox="0 0 24 24">
                             <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
                         </svg>
@@ -1196,13 +1202,28 @@
                 }
             }, { passive: true });
 
-            // Eventos de control del Carrito
+            // Eventos de control del Carrito y comportamiento dinámico del FAB
             const fabWhatsappBtn = document.getElementById('fabWhatsapp');
             if (fabWhatsappBtn) {
                 fabWhatsappBtn.addEventListener('click', (e) => {
                     e.preventDefault();
                     toggleCart();
                 });
+                
+                // Comportamiento dinámico de píldora auto-expandible
+                fabWhatsappBtn.classList.add('expanded');
+                setTimeout(() => {
+                    fabWhatsappBtn.classList.remove('expanded');
+                }, 3500);
+
+                if (window.matchMedia('(hover: hover)').matches) {
+                    fabWhatsappBtn.addEventListener('mouseenter', () => {
+                        fabWhatsappBtn.classList.add('expanded');
+                    });
+                    fabWhatsappBtn.addEventListener('mouseleave', () => {
+                        fabWhatsappBtn.classList.remove('expanded');
+                    });
+                }
             }
 
             const cartCloseBtn = document.getElementById('cartCloseBtn');

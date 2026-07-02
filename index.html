@@ -158,32 +158,6 @@
                     <!-- Enlaces de contacto -->
                     <div id="socialLinksHeader" class="social-links-header"></div>
                 </div>
-                
-                <!-- Fila Inferior: Buscador y Selector de Vista -->
-                <div class="header-bottom-row">
-                    <div class="search-wrapper">
-                        <label for="searchInput" class="sr-only">Buscar repuesto</label>
-                        <input type="text" id="searchInput" class="search-input" placeholder="Buscar por repuesto, marca o modelo…" aria-label="Buscar por repuesto, marca o modelo" autocomplete="off">
-                        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-                        </svg>
-                    </div>
-
-                    <div class="view-selector">
-                        <button class="view-btn active" id="btnViewPhotos" title="Ver fotos de productos">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                            </svg>
-                            <span>Ver Fotos</span>
-                        </button>
-                        <button class="view-btn" id="btnViewFolders" title="Ver carpetas de categorías">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
-                            </svg>
-                            <span>Ver Carpetas</span>
-                        </button>
-                    </div>
-                </div>
             </div>
         </header>
     </div>
@@ -215,6 +189,32 @@
             <a href="./repuestos-isuzu-rodeo.html" class="vehicle-card" id="vehicle-rodeo" aria-label="Rodeo" role="button" tabindex="0">
                 <img src="./assets/rodeo_logo.webp" alt="Rodeo" class="vehicle-logo-img" width="100" height="32" loading="eager">
             </a>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE BÚSQUEDA Y VISTA -->
+    <div class="controls-wrapper">
+        <div class="search-wrapper">
+            <label for="searchInput" class="sr-only">Buscar repuesto</label>
+            <input type="text" id="searchInput" class="search-input" placeholder="Buscar por repuesto, marca o modelo…" aria-label="Buscar por repuesto, marca o modelo" autocomplete="off">
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+        </div>
+
+        <div class="view-selector">
+            <button class="view-btn active" id="btnViewPhotos" title="Ver fotos de productos">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                </svg>
+                <span>Ver Fotos</span>
+            </button>
+            <button class="view-btn" id="btnViewFolders" title="Ver carpetas de categorías">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                </svg>
+                <span>Ver Carpetas</span>
+            </button>
         </div>
     </div>
 
@@ -345,6 +345,7 @@
         <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
         </svg>
+        <span class="fab-whatsapp-text">¿Dudas con tu Repuesto?</span>
     </a>
 
     <!-- CAJÓN DEL CARRITO (SIDE DRAWER) -->
