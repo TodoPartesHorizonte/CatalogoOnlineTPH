@@ -13,10 +13,14 @@
 
 # Páginas HTML, CSS, JS, raíz y base de datos (se actualizan dinámicamente)
 /*.html
+  ! Cache-Control
   Cache-Control: max-age=900, must-revalidate
 /*.css
+  ! Cache-Control
   Cache-Control: max-age=900, must-revalidate
 /*.js
+  ! Cache-Control
   Cache-Control: max-age=900, must-revalidate
 /
+  ! Cache-Control
   Cache-Control: max-age=900, must-revalidate
