@@ -7,18 +7,16 @@
   Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
   X-XSS-Protection: 1; mode=block
 
-# Recursos estáticos (JS, CSS, imágenes)
-/*.css
-  Cache-Control: max-age=31536000, immutable
-/*.js
-  Cache-Control: max-age=31536000, immutable
+# Recursos de larga duración (imágenes y assets estáticos)
 /assets/*
   Cache-Control: max-age=31536000, immutable
 
-# Páginas HTML, raíz y base de datos (dinámico)
+# Páginas HTML, CSS, JS, raíz y base de datos (se actualizan dinámicamente)
 /*.html
   Cache-Control: max-age=900, must-revalidate
-/
+/*.css
   Cache-Control: max-age=900, must-revalidate
-/products.js
+/*.js
+  Cache-Control: max-age=900, must-revalidate
+/
   Cache-Control: max-age=900, must-revalidate
