@@ -167,13 +167,18 @@ width:100%;
 box-sizing:border-box;
 }
 
+
+
 .brand-lockup {display:flex;
 align-items:center;
 gap:16px;
 cursor:pointer;
 flex-shrink:0;
-text-decoration:none;
+text-decoration:none !important;
 color:inherit;
+}
+.brand-lockup, .brand-lockup *, .brand-lockup:hover, .brand-lockup:active, .brand-lockup:focus {
+text-decoration:none !important;
 }
 
 .logo-container {display:flex;
@@ -767,11 +772,12 @@ padding:0 20px;
 transition:opacity 0.3s ease 0.1s;
 }
 
-@media (max-width:480px) {.fab-whatsapp.expanded {max-width:56px;
+@media (max-width:768px) {
+.fab-whatsapp.expanded {max-width:56px;
 padding:0 14px;
 }
-.fab-whatsapp.expanded .fab-whatsapp-text {display:none;
-opacity:0;
+.fab-whatsapp.expanded .fab-whatsapp-text {display:none !important;
+opacity:0 !important;
 }
 }
 

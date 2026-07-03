@@ -1489,29 +1489,61 @@ def generate_pages(data):
             position: fixed;
             bottom: 24px;
             right: 24px;
-            width: 56px;
             height: 56px;
-            border-radius: 50%;
+            border-radius: 28px;
             background: var(--accent-green);
             color: #ffffff;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
             cursor: pointer;
             z-index: 90;
-            transition: var(--transition);
+            transition: max-width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.4s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
             text-decoration: none;
+            max-width: 56px;
+            padding: 0 14px;
+            box-sizing: border-box;
+            overflow: hidden;
+            white-space: nowrap;
         }}
         .fab-whatsapp:hover {{
             background: var(--accent-green-hover);
-            transform: scale(1.1) translateY(-3px);
+            transform: scale(1.05) translateY(-3px);
             box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
         }}
         .fab-whatsapp svg {{
             width: 28px;
             height: 28px;
             fill: #ffffff;
+            flex-shrink: 0;
+        }}
+        .fab-whatsapp-text {{
+            margin-left: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            display: inline-block;
+            vertical-align: middle;
+        }}
+        .fab-whatsapp.expanded {{
+            max-width: 280px;
+            padding: 0 20px;
+        }}
+        .fab-whatsapp.expanded .fab-whatsapp-text {{
+            opacity: 1;
+            transition: opacity 0.3s ease 0.1s;
+        }}
+        @media (max-width: 768px) {{
+            .fab-whatsapp.expanded {{
+                max-width: 56px;
+                padding: 0 14px;
+            }}
+            .fab-whatsapp.expanded .fab-whatsapp-text {{
+                display: none !important;
+                opacity: 0 !important;
+            }}
         }}
         .fab-cart-badge {{
             position: absolute;
@@ -2230,12 +2262,12 @@ def generate_vehicle_pages(base_url):
 
                 # 8. Agregar JavaScript de filtro predeterminado al final del body
                 control_script = f"""<!-- JAVASCRIPT DE CONTROL -->
-    <script defer src="./products.js"></script>
+    <script defer src="./products.js?v=2"></script>
     <script>window.defaultVehicleFilter = '{v["filter"]}';</script>
-    <script defer src="./app.min.js"></script>"""
+    <script defer src="./app.min.js?v=2"></script>"""
                 
-                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\n    <script defer src="./products.js"></script>\n    <script defer src="./app.min.js"></script>', control_script)
-                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\r\n    <script defer src="./products.js"></script>\r\n    <script defer src="./app.min.js"></script>', control_script)
+                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\n    <script defer src="./products.js?v=2"></script>\n    <script defer src="./app.min.js?v=2"></script>', control_script)
+                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\r\n    <script defer src="./products.js?v=2"></script>\r\n    <script defer src="./app.min.js?v=2"></script>', control_script)
 
                 with open(v_path, "w", encoding="utf-8") as out_f:
                     out_f.write(v_content)
