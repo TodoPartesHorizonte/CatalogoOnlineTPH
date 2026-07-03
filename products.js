@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 619,
+  "total_products": 620,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -15625,6 +15625,25 @@ const PRODUCTS_DATA = {
       "original_filename": "Lapiz Barra Estabilizadora/863ba34f-2c59-4510-ad0e-9741e9aadcd6.jpg",
       "linked_ids": [
         687
+      ]
+    },
+    {
+      "id": "6ae23ff7-6a35-42ab-95e2-48260e0ed41c",
+      "category": "Lapiz Barra Estabilizadora",
+      "image_path": "./assets/lapiz-barra-estabilizadora-caribe-2-6.webp",
+      "description": "LAPIZ BARRA ESTABILIZADORA CARIBE 2.6",
+      "keywords": [
+        "161710",
+        "BARRA",
+        "CARIBE",
+        "ESTABILIZADORA",
+        "LAPIZ"
+      ],
+      "oem": "161710",
+      "slug": "lapiz-barra-estabilizadora-caribe-2-6",
+      "original_filename": "Lapiz Barra Estabilizadora/6ae23ff7-6a35-42ab-95e2-48260e0ed41c.jpg",
+      "linked_ids": [
+        688
       ]
     },
     {
