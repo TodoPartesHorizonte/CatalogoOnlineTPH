@@ -285,7 +285,7 @@ def generate_pages(data):
     <title>{title_description}</title>
     <meta name="description" content="{meta_description}">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{base_url}p/{safe_filename}">
+    <link rel="canonical" href="{base_url}p/{clean_filename}">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="icon" href="../assets/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -299,7 +299,7 @@ def generate_pages(data):
     <meta property="og:site_name" content="Todo Partes Horizonte">
     <meta property="og:description" content="{meta_description}">
     <meta property="og:image" content="{image_url_seo}">
-    <meta property="og:url" content="{base_url}p/{safe_filename}">
+    <meta property="og:url" content="{base_url}p/{clean_filename}">
     <meta property="og:type" content="product">
     
     <!-- Twitter Card -->
@@ -328,7 +328,7 @@ def generate_pages(data):
         "price": "{price_bs}",
         "priceCurrency": "VES",
         "availability": "{availability}",
-        "url": "{base_url}p/{safe_filename}",
+        "url": "{base_url}p/{clean_filename}",
         "seller": {{
           "@type": "AutoPartsStore",
           "@id": "{base_url}#store",
@@ -1756,6 +1756,16 @@ def generate_pages(data):
 </body>
 </html>"""
 
+    # Clean up P_DIR from old html files to prevent orphaned pages
+    if os.path.exists(P_DIR):
+        print("[INFO] Limpiando paginas huerfanas en /p/...")
+        for filename in os.listdir(P_DIR):
+            if filename.endswith('.html'):
+                try:
+                    os.remove(os.path.join(P_DIR, filename))
+                except Exception:
+                    pass
+
     db_config, db_products = load_db_config_and_prices(products)
 
     for product in products:
@@ -2000,6 +2010,7 @@ def generate_pages(data):
             sku=sku_code,
             slug=p_slug if p_slug else p_id,
             safe_filename=safe_filename,
+            clean_filename=safe_filename.replace('.html', ''),
             description=desc,
             url_description=url_desc,
             category=cat,
@@ -2062,7 +2073,7 @@ def generate_sitemap(data):
             desc = html.escape(product.get('description', 'Repuesto'))
             
             product_urls.append({
-                "url": f"{base_url}p/{safe_filename}",
+                "url": f"{base_url}p/{safe_filename.replace('.html', '')}",
                 "image_url": image_url,
                 "title": desc
             })
@@ -2094,7 +2105,7 @@ def generate_sitemap(data):
         f.write('    <priority>1.0</priority>\n')
         f.write('  </url>\n')
         f.write('  <url>\n')
-        f.write(f'    <loc>{base_url}informacion.html</loc>\n')
+        f.write(f'    <loc>{base_url}informacion</loc>\n')
         f.write(f'    <lastmod>{today}</lastmod>\n')
         f.write('    <changefreq>weekly</changefreq>\n')
         f.write('    <priority>0.9</priority>\n')
@@ -2109,7 +2120,7 @@ def generate_sitemap(data):
         ]
         for car_page in car_pages:
             f.write('  <url>\n')
-            f.write(f'    <loc>{base_url}{car_page}</loc>\n')
+            f.write(f'    <loc>{base_url}{car_page.replace(".html", "")}</loc>\n')
             f.write(f'    <lastmod>{today}</lastmod>\n')
             f.write('    <changefreq>weekly</changefreq>\n')
             f.write('    <priority>0.9</priority>\n')
@@ -2221,7 +2232,7 @@ def generate_vehicle_pages(base_url):
                 # 3. Reemplazar Meta Canonical
                 v_content = re.sub(
                     r'<link rel="canonical" href="[^"]*"',
-                    f'<link rel="canonical" href="{base_url}{v["filename"]}"',
+                    f'<link rel="canonical" href="{base_url}{v["filename"].replace(".html", "")}"',
                     v_content
                 )
 
@@ -2238,7 +2249,7 @@ def generate_vehicle_pages(base_url):
                 )
                 v_content = re.sub(
                     r'<meta property="og:url" content="[^"]*"',
-                    f'<meta property="og:url" content="{base_url}{v["filename"]}"',
+                    f'<meta property="og:url" content="{base_url}{v["filename"].replace(".html", "")}"',
                     v_content
                 )
 
