@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 620,
+  "total_products": 628,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -16520,20 +16520,203 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "4ff2dd19-9150-4fa7-9a2e-a296dafd9a95",
       "category": "Pastillas de Freno",
-      "description": "JUEGO PASTILLAS DE FRENO CARIBE / LUVD-MAX / TROOPER / RODEO",
-      "id": "fb1cb839-9e62-4c43-b647-ac3b53e28b20",
-      "image_path": "./assets/juego-pastillas-de-freno-caribe-luvd-max-trooper-rodeo.webp",
+      "image_path": "./assets/pastillas-de-freno-delantera-caribe-2-6.webp",
+      "description": "PASTILLAS DE FRENO DELANTERA CARIBE 2.6",
       "keywords": [
+        "7253",
+        "8-97114-3000",
+        "8-97114-3001",
+        "8-97164-1830",
         "CARIBE",
+        "DELANTERA",
         "FRENO",
-        "JUEGO",
-        "LUVD-MAX",
+        "PASTILLAS"
+      ],
+      "oem": "7253 / 8-97164-1830 / 8-97114-3000 / 8-97114-3001",
+      "slug": "pastillas-de-freno-delantera-caribe-2-6",
+      "original_filename": "Pastillas de Freno/4ff2dd19-9150-4fa7-9a2e-a296dafd9a95.jpg",
+      "linked_ids": [
+        759
+      ]
+    },
+    {
+      "id": "88944344-4895-4846-b564-f5a7c808f329",
+      "category": "Pastillas de Freno",
+      "image_path": "./assets/pastillas-de-freno-delantera-caribe-84-88.webp",
+      "description": "PASTILLAS DE FRENO DELANTERA CARIBE 84/88",
+      "keywords": [
+        "7188",
+        "8-94136-6420",
+        "CARIBE",
+        "DELANTERA",
+        "FRENO",
+        "PASTILLAS"
+      ],
+      "oem": "7188 / 8-94136-6420",
+      "slug": "pastillas-de-freno-delantera-caribe-84-88",
+      "original_filename": "Pastillas de Freno/88944344-4895-4846-b564-f5a7c808f329.jpg",
+      "linked_ids": [
+        757
+      ]
+    },
+    {
+      "id": "5a80b87c-9443-45a3-96ea-61eb63d53c85",
+      "category": "Pastillas de Freno",
+      "image_path": "./assets/pastillas-de-freno-delantera-luv.webp",
+      "description": "PASTILLAS DE FRENO DELANTERA LUV",
+      "keywords": [
+        "7253",
+        "8-97114-3000",
+        "8-97114-3001",
+        "8-97164-1830",
+        "DELANTERA",
+        "FRENO",
+        "LUV",
+        "PASTILLAS"
+      ],
+      "oem": "7253 / 8-97164-1830 / 8-97114-3000 / 8-97114-3001",
+      "slug": "pastillas-de-freno-delantera-luv",
+      "original_filename": "Pastillas de Freno/5a80b87c-9443-45a3-96ea-61eb63d53c85.jpg",
+      "linked_ids": [
+        759
+      ]
+    },
+    {
+      "id": "6d4da947-f344-4bc3-8d69-a1601006dbd1",
+      "category": "Pastillas de Freno",
+      "image_path": "./assets/pastillas-de-freno-delantera-luv-3-2.webp",
+      "description": "PASTILLAS DE FRENO DELANTERA LUV 3.2",
+      "keywords": [
+        "7459",
+        "7585",
+        "8-97035-2571",
+        "8-97047-5261",
+        "8-97113-8880",
+        "DELANTERA",
+        "FRENO",
+        "LUV",
+        "PASTILLAS"
+      ],
+      "oem": "7585 / 7459 / 8-97047-5261 / 8-97113-8880 / 8-97035-2571",
+      "slug": "pastillas-de-freno-delantera-luv-3-2",
+      "original_filename": "Pastillas de Freno/6d4da947-f344-4bc3-8d69-a1601006dbd1.jpg",
+      "linked_ids": [
+        760
+      ]
+    },
+    {
+      "id": "7fc40ad9-647c-4037-be0a-e2b90f042348",
+      "category": "Pastillas de Freno",
+      "image_path": "./assets/pastillas-de-freno-delantera-trooper-3-2.webp",
+      "description": "PASTILLAS DE FRENO DELANTERA TROOPER 3.2",
+      "keywords": [
+        "7459",
+        "7585",
+        "8-97035-2571",
+        "8-97047-5261",
+        "8-97113-8880",
+        "DELANTERA",
+        "FRENO",
         "PASTILLAS",
-        "RODEO",
         "TROOPER"
       ],
-      "slug": "juego-pastillas-de-freno-caribe-luvd-max-trooper-rodeo"
+      "oem": "7585 / 7459 / 8-97047-5261 / 8-97113-8880 / 8-97035-2571",
+      "slug": "pastillas-de-freno-delantera-trooper-3-2",
+      "original_filename": "Pastillas de Freno/7fc40ad9-647c-4037-be0a-e2b90f042348.jpg",
+      "linked_ids": [
+        760
+      ]
+    },
+    {
+      "id": "ba5ce87c-6a17-417f-a5de-2e6146aaa78c",
+      "category": "Pastillas de Freno",
+      "image_path": "./assets/pastillas-de-freno-luv-3-2.webp",
+      "description": "PASTILLAS DE FRENO LUV 3.2",
+      "keywords": [
+        "7460",
+        "7586",
+        "8-97036-2660",
+        "8-97039-2690",
+        "FRENO",
+        "LUV",
+        "PASTILLAS"
+      ],
+      "oem": "7586 / 7460 / 8-97039-2690 / 8-97036-2660",
+      "slug": "pastillas-de-freno-luv-3-2",
+      "original_filename": "Pastillas de Freno/ba5ce87c-6a17-417f-a5de-2e6146aaa78c.jpg",
+      "linked_ids": [
+        765
+      ]
+    },
+    {
+      "id": "10bfa88e-1b6c-414e-a0da-3b4ab326a162",
+      "category": "Pastillas de Freno",
+      "image_path": "./assets/pastillas-de-freno-luv-dmax-05-09.webp",
+      "description": "PASTILLAS DE FRENO LUV DMAX 05/09",
+      "keywords": [
+        "7943",
+        "7943C",
+        "8-97368-2510",
+        "8-97368-2520",
+        "8-98051-1140",
+        "8-98051-1150",
+        "8-98051-1160",
+        "8-98051-1170",
+        "DMAX",
+        "FRENO",
+        "LUV",
+        "PASTILLAS"
+      ],
+      "oem": "7943 / 8-97368-2510 / 8-98051-1170 / 8-97368-2520 / 8-98051-1160 / 8-98051-1150 / 8-98051-1140 / 7943C",
+      "slug": "pastillas-de-freno-luv-dmax-05-09",
+      "original_filename": "Pastillas de Freno/10bfa88e-1b6c-414e-a0da-3b4ab326a162.jpg",
+      "linked_ids": [
+        762,
+        1197
+      ]
+    },
+    {
+      "id": "c24d6d5f-dbcb-4d10-b22d-8fec6911b7c1",
+      "category": "Pastillas de Freno",
+      "image_path": "./assets/pastillas-de-freno-trasera-caribe-89-90.webp",
+      "description": "PASTILLAS DE FRENO TRASERA CARIBE 89/90",
+      "keywords": [
+        "442",
+        "CARIBE",
+        "FRENO",
+        "PASTILLAS",
+        "TRASERA"
+      ],
+      "oem": "442",
+      "slug": "pastillas-de-freno-trasera-caribe-89-90",
+      "original_filename": "Pastillas de Freno/c24d6d5f-dbcb-4d10-b22d-8fec6911b7c1.jpg",
+      "linked_ids": [
+        767
+      ]
+    },
+    {
+      "id": "6e5a6e6c-05e1-43bf-9c7b-fccc4ca1af51",
+      "category": "Pastillas de Freno",
+      "image_path": "./assets/pastillas-de-freno-trasera-rodeo-3-2.webp",
+      "description": "PASTILLAS DE FRENO TRASERA RODEO 3.2",
+      "keywords": [
+        "7460",
+        "7586",
+        "8-97036-2660",
+        "8-97039-2690",
+        "FRENO",
+        "PASTILLAS",
+        "RODEO",
+        "TRASERA"
+      ],
+      "oem": "7586 / 7460 / 8-97039-2690 / 8-97036-2660",
+      "slug": "pastillas-de-freno-trasera-rodeo-3-2",
+      "original_filename": "Pastillas de Freno/6e5a6e6c-05e1-43bf-9c7b-fccc4ca1af51.jpg",
+      "linked_ids": [
+        765
+      ]
     },
     {
       "category": "Piston",

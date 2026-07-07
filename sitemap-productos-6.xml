@@ -621,10 +621,90 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/juego-pastillas-de-freno-caribe-luvd-max-trooper-rodeo</loc>
+    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-delantera-caribe-2-6</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/juego-pastillas-de-freno-caribe-luvd-max-trooper-rodeo.webp</image:loc>
-      <image:title>JUEGO PASTILLAS DE FRENO CARIBE / LUVD-MAX / TROOPER / RODEO</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-delantera-caribe-2-6.webp</image:loc>
+      <image:title>PASTILLAS DE FRENO DELANTERA CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-delantera-caribe-84-88</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-delantera-caribe-84-88.webp</image:loc>
+      <image:title>PASTILLAS DE FRENO DELANTERA CARIBE 84/88</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-delantera-luv</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-delantera-luv.webp</image:loc>
+      <image:title>PASTILLAS DE FRENO DELANTERA LUV</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-delantera-luv-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-delantera-luv-3-2.webp</image:loc>
+      <image:title>PASTILLAS DE FRENO DELANTERA LUV 3.2</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-delantera-trooper-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-delantera-trooper-3-2.webp</image:loc>
+      <image:title>PASTILLAS DE FRENO DELANTERA TROOPER 3.2</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-luv-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-luv-3-2.webp</image:loc>
+      <image:title>PASTILLAS DE FRENO LUV 3.2</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-luv-dmax-05-09</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-luv-dmax-05-09.webp</image:loc>
+      <image:title>PASTILLAS DE FRENO LUV DMAX 05/09</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-trasera-caribe-89-90</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-trasera-caribe-89-90.webp</image:loc>
+      <image:title>PASTILLAS DE FRENO TRASERA CARIBE 89/90</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-trasera-rodeo-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-trasera-rodeo-3-2.webp</image:loc>
+      <image:title>PASTILLAS DE FRENO TRASERA RODEO 3.2</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -915,86 +995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-2-4.webp</image:loc>
       <image:title>TREN DELANTERO LUV D-MAX 2.4</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-2-4-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-2-4-2.webp</image:loc>
-      <image:title>TREN DELANTERO LUV D-MAX 2.4</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5-2.webp</image:loc>
-      <image:title>TREN DELANTERO LUV D-MAX 3.5</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5.webp</image:loc>
-      <image:title>TREN DELANTERO LUV D-MAX 3.5</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-rodeo</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-rodeo.webp</image:loc>
-      <image:title>TREN DELANTERO RODEO</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-trooper-3-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-trooper-3-2.webp</image:loc>
-      <image:title>TREN DELANTERO TROOPER 3.2</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-trooper-3-2-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-trooper-3-2-2.webp</image:loc>
-      <image:title>TREN DELANTERO TROOPER 3.2</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tubo-calefaccion-luv-2-2-luv-d-max-2-4</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tubo-calefaccion-luv-2-2-luv-d-max-2-4.webp</image:loc>
-      <image:title>TUBO CALEFACCION LUV 2.2/ LUV D-MAX 2.4</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tubo-calefaccion-trooper-3-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tubo-calefaccion-trooper-3-2.webp</image:loc>
-      <image:title>TUBO CALEFACCION TROOPER 3.2</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
