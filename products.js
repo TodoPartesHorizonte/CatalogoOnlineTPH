@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 636,
+  "total_products": 643,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -16559,6 +16559,56 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "86250462-0f28-405b-92e7-78cc3370883d",
+      "category": "Muñon",
+      "image_path": "./assets/munon-inferior-rodeo.webp",
+      "description": "MUÑON INFERIOR RODEO",
+      "keywords": [
+        "717IZ01A800",
+        "8-94452-1021",
+        "8-94459-4651",
+        "8-94459-4652",
+        "8-97365-0200",
+        "8-97365-0210",
+        "8-98005-8740",
+        "8-98005-8750",
+        "INFERIOR",
+        "MUNON",
+        "RODEO"
+      ],
+      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
+      "slug": "munon-inferior-rodeo",
+      "original_filename": "Muñon/86250462-0f28-405b-92e7-78cc3370883d.jpg",
+      "linked_ids": [
+        740
+      ]
+    },
+    {
+      "id": "b3d098fa-ab47-4ee7-b238-2df796a4e57c",
+      "category": "Muñon",
+      "image_path": "./assets/munon-inferior-trooper.webp",
+      "description": "MUÑON INFERIOR TROOPER",
+      "keywords": [
+        "717IZ01A800",
+        "8-94452-1021",
+        "8-94459-4651",
+        "8-94459-4652",
+        "8-97365-0200",
+        "8-97365-0210",
+        "8-98005-8740",
+        "8-98005-8750",
+        "INFERIOR",
+        "MUNON",
+        "TROOPER"
+      ],
+      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
+      "slug": "munon-inferior-trooper",
+      "original_filename": "Muñon/b3d098fa-ab47-4ee7-b238-2df796a4e57c.jpg",
+      "linked_ids": [
+        740
+      ]
+    },
+    {
       "id": "36ead4ac-387e-43e2-97bd-60232a21e088",
       "category": "Muñon",
       "image_path": "./assets/munon-superior-caribe.webp",
@@ -16574,6 +16624,26 @@ const PRODUCTS_DATA = {
       "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
       "slug": "munon-superior-caribe",
       "original_filename": "Muñon/36ead4ac-387e-43e2-97bd-60232a21e088.jpg",
+      "linked_ids": [
+        744
+      ]
+    },
+    {
+      "id": "c6ff9b8e-5927-4289-8573-9997b01ac1c9",
+      "category": "Muñon",
+      "image_path": "./assets/munon-superior-luv.webp",
+      "description": "MUÑON SUPERIOR LUV",
+      "keywords": [
+        "717IZ01C700",
+        "8-94243-2340",
+        "8-94459-4534",
+        "LUV",
+        "MUNON",
+        "SUPERIOR"
+      ],
+      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
+      "slug": "munon-superior-luv",
+      "original_filename": "Muñon/c6ff9b8e-5927-4289-8573-9997b01ac1c9.jpg",
       "linked_ids": [
         744
       ]
@@ -16599,6 +16669,69 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "eaa634ca-d041-4f6b-b0c7-8aec8f3f52e7",
+      "category": "Muñon",
+      "image_path": "./assets/munon-superior-luv-dmax-2-5.webp",
+      "description": "MUÑON SUPERIOR LUV DMAX 2.5",
+      "keywords": [
+        "8-97365-0180",
+        "8-98005-8270",
+        "DMAX",
+        "LUV",
+        "MUNON",
+        "SUPERIOR"
+      ],
+      "oem": "8-97365-0180 / 8-98005-8270",
+      "slug": "munon-superior-luv-dmax-2-5",
+      "original_filename": "Muñon/eaa634ca-d041-4f6b-b0c7-8aec8f3f52e7.jpg",
+      "linked_ids": [
+        746
+      ]
+    },
+    {
+      "id": "3b606411-4add-4dc6-bc23-07f5cc6c3a39",
+      "category": "Muñon",
+      "image_path": "./assets/munon-superior-luv-dmax-3-0-4x2.webp",
+      "description": "MUÑON SUPERIOR LUV DMAX 3.0 4X2",
+      "keywords": [
+        "4X2",
+        "8-97365-0180",
+        "8-98005-8270",
+        "DMAX",
+        "LUV",
+        "MUNON",
+        "SUPERIOR"
+      ],
+      "oem": "8-97365-0180 / 8-98005-8270",
+      "slug": "munon-superior-luv-dmax-3-0-4x2",
+      "original_filename": "Muñon/3b606411-4add-4dc6-bc23-07f5cc6c3a39.jpg",
+      "linked_ids": [
+        746
+      ]
+    },
+    {
+      "id": "4648e270-b0f0-452d-9cd6-a7abd60e4a3a",
+      "category": "Muñon",
+      "image_path": "./assets/munon-superior-luv-dmax-3-0-4x4.webp",
+      "description": "MUÑON SUPERIOR LUV DMAX 3.0 4X4",
+      "keywords": [
+        "4X4",
+        "8-94374-4240",
+        "8-97365-0190",
+        "8-98005-8260",
+        "DMAX",
+        "LUV",
+        "MUNON",
+        "SUPERIOR"
+      ],
+      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
+      "slug": "munon-superior-luv-dmax-3-0-4x4",
+      "original_filename": "Muñon/4648e270-b0f0-452d-9cd6-a7abd60e4a3a.jpg",
+      "linked_ids": [
+        748
+      ]
+    },
+    {
       "id": "a3f66423-2e3d-4529-a908-1390715d9606",
       "category": "Muñon",
       "image_path": "./assets/munon-superior-luv-dmax-3-5.webp",
@@ -16617,6 +16750,26 @@ const PRODUCTS_DATA = {
       "original_filename": "Muñon/a3f66423-2e3d-4529-a908-1390715d9606.jpg",
       "linked_ids": [
         748
+      ]
+    },
+    {
+      "id": "6a3b3b08-a47c-47ce-a3e9-81d9b96140b2",
+      "category": "Muñon",
+      "image_path": "./assets/munon-superior-rodeo.webp",
+      "description": "MUÑON SUPERIOR RODEO",
+      "keywords": [
+        "717IZ01C700",
+        "8-94243-2340",
+        "8-94459-4534",
+        "MUNON",
+        "RODEO",
+        "SUPERIOR"
+      ],
+      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
+      "slug": "munon-superior-rodeo",
+      "original_filename": "Muñon/6a3b3b08-a47c-47ce-a3e9-81d9b96140b2.jpg",
+      "linked_ids": [
+        744
       ]
     },
     {

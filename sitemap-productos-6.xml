@@ -651,10 +651,40 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/munon-inferior-rodeo</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-inferior-rodeo.webp</image:loc>
+      <image:title>MUÑON INFERIOR RODEO</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-inferior-trooper</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-inferior-trooper.webp</image:loc>
+      <image:title>MUÑON INFERIOR TROOPER</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/munon-superior-caribe</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/munon-superior-caribe.webp</image:loc>
       <image:title>MUÑON SUPERIOR CARIBE</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-superior-luv</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-superior-luv.webp</image:loc>
+      <image:title>MUÑON SUPERIOR LUV</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -671,10 +701,50 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/munon-superior-luv-dmax-2-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-superior-luv-dmax-2-5.webp</image:loc>
+      <image:title>MUÑON SUPERIOR LUV DMAX 2.5</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-superior-luv-dmax-3-0-4x2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-superior-luv-dmax-3-0-4x2.webp</image:loc>
+      <image:title>MUÑON SUPERIOR LUV DMAX 3.0 4X2</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-superior-luv-dmax-3-0-4x4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-superior-luv-dmax-3-0-4x4.webp</image:loc>
+      <image:title>MUÑON SUPERIOR LUV DMAX 3.0 4X4</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/munon-superior-luv-dmax-3-5</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/munon-superior-luv-dmax-3-5.webp</image:loc>
       <image:title>MUÑON SUPERIOR LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-superior-rodeo</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-superior-rodeo.webp</image:loc>
+      <image:title>MUÑON SUPERIOR RODEO</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -925,76 +995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tapa-gasolina-luv-d-max.webp</image:loc>
       <image:title>TAPA GASOLINA LUV D-MAX</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tapa-radiador-luv-d-max-trooper</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tapa-radiador-luv-d-max-trooper.webp</image:loc>
-      <image:title>TAPA RADIADOR LUV D-MAX / TROOPER</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tapa-rin-luv-d-max</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tapa-rin-luv-d-max.webp</image:loc>
-      <image:title>TAPA RIN LUV D-MAX</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/terminal-externo-caribe-g200-2-3</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-caribe-g200-2-3.webp</image:loc>
-      <image:title>TERMINAL EXTERNO CARIBE G200/ 2.3</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/terminal-externo-luv-d-max-trooper-rodeo</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-luv-d-max-trooper-rodeo.webp</image:loc>
-      <image:title>TERMINAL EXTERNO LUV D-MAX / TROOPER / RODEO</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/terminal-interno-caribe-luv-d-max</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/terminal-interno-caribe-luv-d-max.webp</image:loc>
-      <image:title>TERMINAL INTERNO CARIBE / LUV D-MAX</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/termostato-luv-d-max-3-5</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/termostato-luv-d-max-3-5.webp</image:loc>
-      <image:title>TERMOSTATO LUV D-MAX 3.5</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-2-6-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6-2.webp</image:loc>
-      <image:title>TREN DELANTERO CARIBE 2.6</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
