@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 628,
+  "total_products": 636,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -3834,6 +3834,26 @@ const PRODUCTS_DATA = {
           "brand": "CRQ",
           "precio_usd": 0
         }
+      ]
+    },
+    {
+      "id": "01d3a668-ba17-479e-a6ad-eb8b9ce201be",
+      "category": "Bomba de Gasolina",
+      "image_path": "./assets/pila-trooper-3-2.webp",
+      "description": "PILA TROOPER 3.2",
+      "keywords": [
+        "8-97019-1861",
+        "BOMBA",
+        "E8235",
+        "GASOLINA",
+        "PILA",
+        "TROOPER"
+      ],
+      "oem": "8-97019-1861 / E8235",
+      "slug": "pila-trooper-3-2",
+      "original_filename": "Bomba de Gasolina/01d3a668-ba17-479e-a6ad-eb8b9ce201be.jpg",
+      "linked_ids": [
+        772
       ]
     },
     {
@@ -16423,10 +16443,54 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "b10ad0ca-bd3b-427d-b2b5-1da4a54b50df",
       "category": "Muñon",
-      "description": "MUÑÓN INFERIOR CARIBE G200 / 2.3",
-      "id": "ad2ac172-db0d-4c16-a05d-bcecda0a2a19",
-      "image_path": "./assets/munon-inferior-caribe-g200-2-3.webp",
+      "image_path": "./assets/munon-inferior-caribe-2-3.webp",
+      "description": "MUÑON INFERIOR CARIBE 2.3",
+      "keywords": [
+        "8-94243-2360",
+        "8-94452-1071",
+        "CARIBE",
+        "INFERIOR",
+        "MUNON"
+      ],
+      "oem": "8-94243-2360 / 8-94452-1071",
+      "slug": "munon-inferior-caribe-2-3",
+      "original_filename": "Muñon/b10ad0ca-bd3b-427d-b2b5-1da4a54b50df.jpg",
+      "linked_ids": [
+        738
+      ]
+    },
+    {
+      "id": "dde919c9-9696-4cfe-8847-d58d4f6415b9",
+      "category": "Muñon",
+      "image_path": "./assets/munon-inferior-caribe-2-6.webp",
+      "description": "MUÑON INFERIOR CARIBE 2.6",
+      "keywords": [
+        "717IZ01A800",
+        "8-94452-1021",
+        "8-94459-4651",
+        "8-94459-4652",
+        "8-97365-0200",
+        "8-97365-0210",
+        "8-98005-8740",
+        "8-98005-8750",
+        "CARIBE",
+        "INFERIOR",
+        "MUNON"
+      ],
+      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
+      "slug": "munon-inferior-caribe-2-6",
+      "original_filename": "Muñon/dde919c9-9696-4cfe-8847-d58d4f6415b9.jpg",
+      "linked_ids": [
+        740
+      ]
+    },
+    {
+      "id": "2ae77701-38fc-4c0f-910a-3c6e00f5ac17",
+      "category": "Muñon",
+      "image_path": "./assets/munon-inferior-caribe-g200.webp",
+      "description": "MUÑON INFERIOR CARIBE G200",
       "keywords": [
         "8-94243-2360",
         "8-94452-1071",
@@ -16435,88 +16499,144 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "MUNON"
       ],
-      "linked_ids": [
-        665,
-        738
-      ],
       "oem": "8-94243-2360 / 8-94452-1071",
-      "slug": "munon-inferior-caribe-g200-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94243-2360",
-          "brand": "TAIWAN",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-94243-2360",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "slug": "munon-inferior-caribe-g200",
+      "original_filename": "Muñon/2ae77701-38fc-4c0f-910a-3c6e00f5ac17.jpg",
+      "linked_ids": [
+        738
       ]
     },
     {
+      "id": "cacdbb6d-d37e-46a2-8a91-971091a5696b",
       "category": "Muñon",
-      "description": "MUÑÓN LUV D-MAX 2.4 /2.5/ 3.O 4X2",
-      "id": "c7c78e8a-6752-4a52-8058-fe82dbc4b7cd",
-      "image_path": "./assets/munon-luv-d-max-2-4-2-5-3-o-4x2.webp",
+      "image_path": "./assets/munon-inferior-luv-4x4.webp",
+      "description": "MUÑON INFERIOR LUV 4X4",
       "keywords": [
-        "4X2",
-        "8-97365-0180",
-        "8-98005-8270",
-        "D-MAX",
+        "4X4",
+        "717IZ01A800",
+        "8-94452-1021",
+        "8-94459-4651",
+        "8-94459-4652",
+        "8-97365-0200",
+        "8-97365-0210",
+        "8-98005-8740",
+        "8-98005-8750",
+        "INFERIOR",
         "LUV",
         "MUNON"
       ],
+      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
+      "slug": "munon-inferior-luv-4x4",
+      "original_filename": "Muñon/cacdbb6d-d37e-46a2-8a91-971091a5696b.jpg",
       "linked_ids": [
-        746
-      ],
-      "oem": "8-97365-0180 / 8-98005-8270",
-      "slug": "munon-luv-d-max-2-4-2-5-3-o-4x2",
-      "variants": [
-        {
-          "codigo_oem": "8-97365-0180",
-          "brand": "TAIWAN",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "8-97365-0180",
-          "brand": "JAPON",
-          "precio_usd": 45
-        }
+        740
       ]
     },
     {
+      "id": "4f75aad5-f922-4b09-b3cf-3d1513a0a8a7",
       "category": "Muñon",
-      "description": "MUÑÓN SUPERIOR LUV D-MAX 4X4 / TROOPER",
-      "id": "b9843ce5-9515-4fcd-b51f-2d1bdc0592fe",
-      "image_path": "./assets/munon-superior-luv-d-max-4x4-trooper.webp",
+      "image_path": "./assets/munon-inferior-luv-d-max.webp",
+      "description": "MUÑON INFERIOR LUV D-MAX",
       "keywords": [
-        "4X4",
+        "717IZ01A800",
+        "8-94452-1021",
+        "8-94459-4651",
+        "8-94459-4652",
+        "8-97365-0200",
+        "8-97365-0210",
+        "8-98005-8740",
+        "8-98005-8750",
+        "D-MAX",
+        "INFERIOR",
+        "LUV",
+        "MUNON"
+      ],
+      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
+      "slug": "munon-inferior-luv-d-max",
+      "original_filename": "Muñon/4f75aad5-f922-4b09-b3cf-3d1513a0a8a7.jpg",
+      "linked_ids": [
+        740
+      ]
+    },
+    {
+      "id": "36ead4ac-387e-43e2-97bd-60232a21e088",
+      "category": "Muñon",
+      "image_path": "./assets/munon-superior-caribe.webp",
+      "description": "MUÑON SUPERIOR CARIBE",
+      "keywords": [
+        "717IZ01C700",
+        "8-94243-2340",
+        "8-94459-4534",
+        "CARIBE",
+        "MUNON",
+        "SUPERIOR"
+      ],
+      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
+      "slug": "munon-superior-caribe",
+      "original_filename": "Muñon/36ead4ac-387e-43e2-97bd-60232a21e088.jpg",
+      "linked_ids": [
+        744
+      ]
+    },
+    {
+      "id": "37023555-420a-4fac-96a1-5c879f87f51a",
+      "category": "Muñon",
+      "image_path": "./assets/munon-superior-luv-dmax-2-4.webp",
+      "description": "MUÑON SUPERIOR LUV DMAX 2.4",
+      "keywords": [
+        "8-97365-0180",
+        "8-98005-8270",
+        "DMAX",
+        "LUV",
+        "MUNON",
+        "SUPERIOR"
+      ],
+      "oem": "8-97365-0180 / 8-98005-8270",
+      "slug": "munon-superior-luv-dmax-2-4",
+      "original_filename": "Muñon/37023555-420a-4fac-96a1-5c879f87f51a.jpg",
+      "linked_ids": [
+        746
+      ]
+    },
+    {
+      "id": "a3f66423-2e3d-4529-a908-1390715d9606",
+      "category": "Muñon",
+      "image_path": "./assets/munon-superior-luv-dmax-3-5.webp",
+      "description": "MUÑON SUPERIOR LUV DMAX 3.5",
+      "keywords": [
         "8-94374-4240",
         "8-97365-0190",
         "8-98005-8260",
-        "D-MAX",
+        "DMAX",
         "LUV",
+        "MUNON",
+        "SUPERIOR"
+      ],
+      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
+      "slug": "munon-superior-luv-dmax-3-5",
+      "original_filename": "Muñon/a3f66423-2e3d-4529-a908-1390715d9606.jpg",
+      "linked_ids": [
+        748
+      ]
+    },
+    {
+      "id": "d44b4290-3106-428c-92d5-90ae9fce1683",
+      "category": "Muñon",
+      "image_path": "./assets/munon-superior-trooper-3-2.webp",
+      "description": "MUÑON SUPERIOR TROOPER 3.2",
+      "keywords": [
+        "8-94374-4240",
+        "8-97365-0190",
+        "8-98005-8260",
         "MUNON",
         "SUPERIOR",
         "TROOPER"
       ],
+      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
+      "slug": "munon-superior-trooper-3-2",
+      "original_filename": "Muñon/d44b4290-3106-428c-92d5-90ae9fce1683.jpg",
       "linked_ids": [
         748
-      ],
-      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
-      "slug": "munon-superior-luv-d-max-4x4-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-97365-0190",
-          "brand": "TAIWAN",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-97365-0190",
-          "brand": "JAPON",
-          "precio_usd": 45
-        }
       ]
     },
     {
@@ -16716,6 +16836,26 @@ const PRODUCTS_DATA = {
       "original_filename": "Pastillas de Freno/6e5a6e6c-05e1-43bf-9c7b-fccc4ca1af51.jpg",
       "linked_ids": [
         765
+      ]
+    },
+    {
+      "id": "a82f98e4-f83c-47ea-a51d-67ef18a94415",
+      "category": "Patin Cadena",
+      "image_path": "./assets/patin-curvo-caribe-g200.webp",
+      "description": "PATIN CURVO CARIBE G200",
+      "keywords": [
+        "8-94213-8190",
+        "CADENA",
+        "CARIBE",
+        "CURVO",
+        "G200",
+        "PATIN"
+      ],
+      "oem": "8-94213-8190",
+      "slug": "patin-curvo-caribe-g200",
+      "original_filename": "Patin Cadena/a82f98e4-f83c-47ea-a51d-67ef18a94415.jpg",
+      "linked_ids": [
+        768
       ]
     },
     {

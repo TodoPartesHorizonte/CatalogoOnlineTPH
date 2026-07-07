@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://todoparteshorizonte.com/p/collarin-caribe-2300</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/collarin-caribe-2300.webp</image:loc>
+      <image:title>COLLARIN CARIBE 2300</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/collarin-caribe-2600</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/collarin-caribe-2600.webp</image:loc>
@@ -985,16 +995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/reservorio-aceite-direccion-luv-d-max.webp</image:loc>
       <image:title>RESERVORIO ACEITE DIRECCION LUV D-MAX</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/envase-refrigerante-luv-d-max</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/envase-refrigerante-luv-d-max.webp</image:loc>
-      <image:title>ENVASE REFRIGERANTE LUV D-MAX</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://todoparteshorizonte.com/p/envase-refrigerante-luv-d-max</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/envase-refrigerante-luv-d-max.webp</image:loc>
+      <image:title>ENVASE REFRIGERANTE LUV D-MAX</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/esparrago-rueda-delantera-luv-d-max</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/esparrago-rueda-delantera-luv-d-max.webp</image:loc>
@@ -985,16 +995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/gemelo-ballesta-caribe-luv.webp</image:loc>
       <image:title>GEMELO BALLESTA CARIBE / LUV</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/gemelo-ballesta-luv-d-max-trooper</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/gemelo-ballesta-luv-d-max-trooper.webp</image:loc>
-      <image:title>GEMELO BALLESTA LUV D-MAX / TROOPER</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>

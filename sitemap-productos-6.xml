@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://todoparteshorizonte.com/p/kit-de-clutch-luv-d-max-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/kit-de-clutch-luv-d-max-3-5.webp</image:loc>
+      <image:title>KIT DE CLUTCH LUV D-MAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/kit-de-motor-caribe-2-3</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/kit-de-motor-caribe-2-3.webp</image:loc>
@@ -591,30 +601,90 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/munon-inferior-caribe-g200-2-3</loc>
+    <loc>https://todoparteshorizonte.com/p/munon-inferior-caribe-2-3</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/munon-inferior-caribe-g200-2-3.webp</image:loc>
-      <image:title>MUÑÓN INFERIOR CARIBE G200 / 2.3</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-inferior-caribe-2-3.webp</image:loc>
+      <image:title>MUÑON INFERIOR CARIBE 2.3</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/munon-luv-d-max-2-4-2-5-3-o-4x2</loc>
+    <loc>https://todoparteshorizonte.com/p/munon-inferior-caribe-2-6</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/munon-luv-d-max-2-4-2-5-3-o-4x2.webp</image:loc>
-      <image:title>MUÑÓN LUV D-MAX 2.4 /2.5/ 3.O 4X2</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-inferior-caribe-2-6.webp</image:loc>
+      <image:title>MUÑON INFERIOR CARIBE 2.6</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/munon-superior-luv-d-max-4x4-trooper</loc>
+    <loc>https://todoparteshorizonte.com/p/munon-inferior-caribe-g200</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/munon-superior-luv-d-max-4x4-trooper.webp</image:loc>
-      <image:title>MUÑÓN SUPERIOR LUV D-MAX 4X4 / TROOPER</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-inferior-caribe-g200.webp</image:loc>
+      <image:title>MUÑON INFERIOR CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-inferior-luv-4x4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-inferior-luv-4x4.webp</image:loc>
+      <image:title>MUÑON INFERIOR LUV 4X4</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-inferior-luv-d-max</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-inferior-luv-d-max.webp</image:loc>
+      <image:title>MUÑON INFERIOR LUV D-MAX</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-superior-caribe</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-superior-caribe.webp</image:loc>
+      <image:title>MUÑON SUPERIOR CARIBE</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-superior-luv-dmax-2-4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-superior-luv-dmax-2-4.webp</image:loc>
+      <image:title>MUÑON SUPERIOR LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-superior-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-superior-luv-dmax-3-5.webp</image:loc>
+      <image:title>MUÑON SUPERIOR LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/munon-superior-trooper-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/munon-superior-trooper-3-2.webp</image:loc>
+      <image:title>MUÑON SUPERIOR TROOPER 3.2</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -705,6 +775,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-trasera-rodeo-3-2.webp</image:loc>
       <image:title>PASTILLAS DE FRENO TRASERA RODEO 3.2</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/patin-curvo-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/patin-curvo-caribe-g200.webp</image:loc>
+      <image:title>PATIN CURVO CARIBE G200</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -915,86 +995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6-2.webp</image:loc>
       <image:title>TREN DELANTERO CARIBE 2.6</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-2-6</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6.webp</image:loc>
-      <image:title>TREN DELANTERO CARIBE 2.6</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-83-88-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-83-88-2.webp</image:loc>
-      <image:title>TREN DELANTERO CARIBE 83-88</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-83-88</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-83-88.webp</image:loc>
-      <image:title>TREN DELANTERO CARIBE 83-88</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x2.webp</image:loc>
-      <image:title>TREN DELANTERO LUV 4X2</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x2-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x2-2.webp</image:loc>
-      <image:title>TREN DELANTERO LUV 4X2</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4-2.webp</image:loc>
-      <image:title>TREN DELANTERO LUV 4X4</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4.webp</image:loc>
-      <image:title>TREN DELANTERO LUV 4X4</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-2-4</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-2-4.webp</image:loc>
-      <image:title>TREN DELANTERO LUV D-MAX 2.4</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>

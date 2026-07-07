@@ -231,6 +231,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/pila-trooper-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pila-trooper-3-2.webp</image:loc>
+      <image:title>PILA TROOPER 3.2</image:title>
+    </image:image>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/bomba-de-direccion-luv-d-max-3-5</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bomba-de-direccion-luv-d-max-3-5.webp</image:loc>
@@ -985,16 +995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/collarin-caribe-2000.webp</image:loc>
       <image:title>COLLARIN CARIBE 2000</image:title>
-    </image:image>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/collarin-caribe-2300</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/collarin-caribe-2300.webp</image:loc>
-      <image:title>COLLARIN CARIBE 2300</image:title>
     </image:image>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
