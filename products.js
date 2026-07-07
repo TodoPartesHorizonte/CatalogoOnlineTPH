@@ -16127,32 +16127,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Manguera Radiador",
       "description": "MANGUERA RADIADOR SUPERIOR LUV 2.2",
-      "id": "5b1e3e01-8eda-41a8-ac4a-0f87fbaa2176",
-      "image_path": "./assets/manguera-radiador-superior-luv-2-2-2.webp",
-      "keywords": [
-        "8-97181-3900",
-        "LUV",
-        "MANGUERA",
-        "RADIADOR",
-        "SUPERIOR"
-      ],
-      "linked_ids": [
-        712
-      ],
-      "oem": "8-97181-3900",
-      "original_filename": "Manguera Radiador/5b1e3e01-8eda-41a8-ac4a-0f87fbaa2176.jpg",
-      "slug": "manguera-radiador-superior-luv-2-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97181-3900",
-          "brand": "Original",
-          "precio_usd": 25
-        }
-      ]
-    },
-    {
-      "category": "Manguera Radiador",
-      "description": "MANGUERA RADIADOR SUPERIOR LUV 2.2",
       "id": "e10ac381-5b62-4592-982e-b93556481d16",
       "image_path": "./assets/manguera-radiador-superior-luv-2-2.webp",
       "keywords": [
@@ -16168,6 +16142,32 @@ const PRODUCTS_DATA = {
       "oem": "8-97181-3900",
       "original_filename": "Manguera Radiador/e10ac381-5b62-4592-982e-b93556481d16.jpg",
       "slug": "manguera-radiador-superior-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97181-3900",
+          "brand": "Original",
+          "precio_usd": 25
+        }
+      ]
+    },
+    {
+      "category": "Manguera Radiador",
+      "description": "MANGUERA RADIADOR SUPERIOR LUV 2.2",
+      "id": "5b1e3e01-8eda-41a8-ac4a-0f87fbaa2176",
+      "image_path": "./assets/manguera-radiador-superior-luv-2-2-2.webp",
+      "keywords": [
+        "8-97181-3900",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR",
+        "SUPERIOR"
+      ],
+      "linked_ids": [
+        712
+      ],
+      "oem": "8-97181-3900",
+      "original_filename": "Manguera Radiador/5b1e3e01-8eda-41a8-ac4a-0f87fbaa2176.jpg",
+      "slug": "manguera-radiador-superior-luv-2-2-2",
       "variants": [
         {
           "codigo_oem": "8-97181-3900",
@@ -17106,18 +17106,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO CARIBE 2.6",
-      "id": "CARIBE 2.6",
-      "image_path": "./assets/tren-delantero-caribe-2-6.webp",
-      "keywords": [
-        "CARIBE",
-        "DELANTERO",
-        "TREN"
-      ],
-      "slug": "tren-delantero-caribe-2-6"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO CARIBE 2.6",
       "id": "4662265b-262d-4d56-b35e-5385c614d9a8",
       "image_path": "./assets/tren-delantero-caribe-2-6-2.webp",
       "keywords": [
@@ -17129,16 +17117,15 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Tren Delantero",
-      "description": "TREN DELANTERO CARIBE 83-88",
-      "id": "Caribe 83-88",
-      "image_path": "./assets/tren-delantero-caribe-83-88.webp",
+      "description": "TREN DELANTERO CARIBE 2.6",
+      "id": "CARIBE 2.6",
+      "image_path": "./assets/tren-delantero-caribe-2-6.webp",
       "keywords": [
-        "83-88",
         "CARIBE",
         "DELANTERO",
         "TREN"
       ],
-      "slug": "tren-delantero-caribe-83-88"
+      "slug": "tren-delantero-caribe-2-6"
     },
     {
       "category": "Tren Delantero",
@@ -17152,6 +17139,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-caribe-83-88-2"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO CARIBE 83-88",
+      "id": "Caribe 83-88",
+      "image_path": "./assets/tren-delantero-caribe-83-88.webp",
+      "keywords": [
+        "83-88",
+        "CARIBE",
+        "DELANTERO",
+        "TREN"
+      ],
+      "slug": "tren-delantero-caribe-83-88"
     },
     {
       "category": "Tren Delantero",
@@ -17182,19 +17182,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO LUV 4X4",
-      "id": "Luv 4x4",
-      "image_path": "./assets/tren-delantero-luv-4x4.webp",
-      "keywords": [
-        "4X4",
-        "DELANTERO",
-        "LUV",
-        "TREN"
-      ],
-      "slug": "tren-delantero-luv-4x4"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO LUV 4X4",
       "id": "7d137634-a97a-41dc-a5de-7fabc249a9bc",
       "image_path": "./assets/tren-delantero-luv-4x4-2.webp",
       "keywords": [
@@ -17204,6 +17191,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-luv-4x4-2"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO LUV 4X4",
+      "id": "Luv 4x4",
+      "image_path": "./assets/tren-delantero-luv-4x4.webp",
+      "keywords": [
+        "4X4",
+        "DELANTERO",
+        "LUV",
+        "TREN"
+      ],
+      "slug": "tren-delantero-luv-4x4"
     },
     {
       "category": "Tren Delantero",
@@ -17234,19 +17234,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO LUV D-MAX 3.5",
-      "id": "DMAX 3.5",
-      "image_path": "./assets/tren-delantero-luv-d-max-3-5.webp",
-      "keywords": [
-        "D-MAX",
-        "DELANTERO",
-        "LUV",
-        "TREN"
-      ],
-      "slug": "tren-delantero-luv-d-max-3-5"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO LUV D-MAX 3.5",
       "id": "ca6f2c65-9a2c-4d5d-9868-b940c475fb9c",
       "image_path": "./assets/tren-delantero-luv-d-max-3-5-2.webp",
       "keywords": [
@@ -17256,6 +17243,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-luv-d-max-3-5-2"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO LUV D-MAX 3.5",
+      "id": "DMAX 3.5",
+      "image_path": "./assets/tren-delantero-luv-d-max-3-5.webp",
+      "keywords": [
+        "D-MAX",
+        "DELANTERO",
+        "LUV",
+        "TREN"
+      ],
+      "slug": "tren-delantero-luv-d-max-3-5"
     },
     {
       "category": "Tren Delantero",
