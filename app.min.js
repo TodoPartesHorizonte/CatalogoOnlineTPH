@@ -731,8 +731,8 @@
                                                  .map(stemWord);
                 }
 
-                // Filtrar productos
-                currentFilteredProducts = productsData.filter(product => {
+                // Filtrar productos aplicando el scoring
+                const allFiltered = productsData.filter(product => {
                     // Filtro por categoría
                     const matchesCategory = activeCategory === 'ALL' || product.category === activeCategory;
                     
@@ -755,10 +755,25 @@
                     }
                 });
 
-                // Ordenar resultados por relevancia (de mayor a menor coincidencia)
+                // Dividir en Coincidencia Total vs Coincidencia Parcial
                 if (searchTerms.length > 0) {
-                    currentFilteredProducts.sort((a, b) => b._searchScore - a._searchScore);
+                    const exactMatches = allFiltered.filter(p => p._searchScore === searchTerms.length);
+                    const partialMatches = allFiltered.filter(p => p._searchScore < searchTerms.length);
+                    
+                    // Ordenar parciales por relevancia
+                    partialMatches.sort((a, b) => b._searchScore - a._searchScore);
+                    
+                    currentFilteredProducts = [...exactMatches, ...partialMatches];
+                    window._hasExactMatches = exactMatches.length > 0;
+                    window._hasSearchTerms = true;
+                    window._searchTermsLength = searchTerms.length;
+                } else {
+                    currentFilteredProducts = allFiltered;
+                    window._hasExactMatches = false;
+                    window._hasSearchTerms = false;
+                    window._searchTermsLength = 0;
                 }
+
 
 
                 // Si no hay productos, mostrar estado vacío
@@ -786,6 +801,22 @@
             // Generar HTML de las tarjetas
             let gridHtml = '';
             nextBatch.forEach((product, index) => {
+                // Insertar divisor si pasamos a coincidencia parcial
+                if (window._hasSearchTerms && product._searchScore < (window._searchTermsLength || 0)) {
+                    const hasSeparator = document.getElementById('searchSeparator') || gridHtml.includes('id="searchSeparator"');
+                    if (!hasSeparator) {
+                        if (window._hasExactMatches) {
+                            gridHtml += `
+                                <div id="searchSeparator" class="search-separator" style="grid-column: 1 / -1; margin: 24px 0 12px 0; font-size: 16px; font-weight: 700; color: var(--text-secondary); border-top: 1px solid var(--border-color); padding-top: 16px; text-transform: uppercase; letter-spacing: 0.5px;">Artículos que podrían interesarte</div>
+                            `;
+                        } else {
+                            gridHtml += `
+                                <div id="searchSeparator" class="search-separator" style="grid-column: 1 / -1; margin: 12px 0 20px 0; font-size: 15px; font-weight: 500; color: var(--text-secondary); background: rgba(255, 106, 0, 0.04); border: 1px dashed rgba(255, 106, 0, 0.25); padding: 12px 16px; border-radius: 8px; text-align: center;">No encontramos coincidencias exactas, pero estos artículos podrían interesarte:</div>
+                            `;
+                        }
+                    }
+                }
+
                 let isLcp = reset && index < 4;
                 let imgPriority = isLcp ? 'fetchpriority="high"' : 'loading="lazy"';
                 
