@@ -27,6 +27,40 @@
                        .replace(/[^a-z0-9\s]/g, ""); // Deja solo letras, números y espacios
         }
 
+        const STOPWORDS = new Set([
+            'de', 'del', 'para', 'con', 'el', 'la', 'los', 'las', 
+            'un', 'una', 'unos', 'unas', 'y', 'o', 'a', 'en', 
+            'ano', 'ano', 'anos', 'anos', 'por', 'sus', 'cada',
+            'que', 'su', 'al'
+        ]);
+
+        function stemWord(word) {
+            if (!word || word.length <= 3) return word;
+            if (word.endsWith('es')) {
+                return word.slice(0, -2);
+            }
+            if (word.endsWith('s')) {
+                return word.slice(0, -1);
+            }
+            return word;
+        }
+
+        function getProductTokens(product) {
+            if (product._tokens) return product._tokens;
+            
+            const text = [
+                product.description || '',
+                product.category || '',
+                (product.keywords || []).join(' ')
+            ].join(' ');
+            
+            const normalized = normalizeText(text);
+            const words = normalized.split(/\s+/).filter(w => w.length > 0);
+            product._tokens = words.map(stemWord);
+            return product._tokens;
+        }
+
+
         // Inicializar carrito cargándolo de sessionStorage (mantiene los datos por sesión)
         function initCart() {
             try {
@@ -688,6 +722,15 @@
         // Renderizado de Productos
         function renderProducts(reset = true) {
             if (reset) {
+                // Preparar términos de búsqueda limpios
+                let searchTerms = [];
+                if (searchQuery.trim() !== '') {
+                    const normalizedQuery = normalizeText(searchQuery);
+                    searchTerms = normalizedQuery.split(/\s+/)
+                                                 .filter(w => w.length > 0 && !STOPWORDS.has(w))
+                                                 .map(stemWord);
+                }
+
                 // Filtrar productos
                 currentFilteredProducts = productsData.filter(product => {
                     // Filtro por categoría
@@ -696,21 +739,27 @@
                     // Filtro por vehículo
                     const matchesVehicle = matchesVehicleFilter(product, activeVehicle);
 
-                    // Filtro por buscador (búsqueda multi-término)
-                    let matchesSearch = true;
-                    if (searchQuery.trim() !== '') {
-                        const normalizedQuery = normalizeText(searchQuery);
-                        const terms = normalizedQuery.split(/\s+/).filter(t => t.length > 0);
-                        matchesSearch = terms.every(term => {
-                            const inDesc = normalizeText(product.description).includes(term);
-                            const inCat = normalizeText(product.category).includes(term);
-                            const inKeywords = (product.keywords || []).some(k => normalizeText(k).includes(term));
-                            return inDesc || inCat || inKeywords;
+                    if (searchTerms.length > 0) {
+                        const tokens = getProductTokens(product);
+                        let score = 0;
+                        searchTerms.forEach(term => {
+                            if (tokens.some(t => t.includes(term))) {
+                                score++;
+                            }
                         });
+                        product._searchScore = score;
+                        return matchesCategory && matchesVehicle && score > 0;
+                    } else {
+                        product._searchScore = 0;
+                        return matchesCategory && matchesVehicle;
                     }
-                    
-                    return matchesCategory && matchesVehicle && matchesSearch;
                 });
+
+                // Ordenar resultados por relevancia (de mayor a menor coincidencia)
+                if (searchTerms.length > 0) {
+                    currentFilteredProducts.sort((a, b) => b._searchScore - a._searchScore);
+                }
+
 
                 // Si no hay productos, mostrar estado vacío
                 if (currentFilteredProducts.length === 0) {
