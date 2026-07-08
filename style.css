@@ -919,8 +919,18 @@ align-items:center;
 max-height:280px;
 }
 
-header.collapsed .header-top-row {max-height:0;
+header.collapsed .header-top-row {max-height:none;
 }
+
+header.collapsed .brand-lockup {flex-direction:row;
+gap:12px;
+align-items:center;
+text-align:left;
+}
+
+header.collapsed .brand-text {align-items:flex-start;
+}
+
 
 .brand-lockup {flex-direction:column;
 gap:8px;
