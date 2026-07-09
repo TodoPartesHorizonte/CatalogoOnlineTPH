@@ -231,6 +231,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/pila-luv-2-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pila-luv-2-2.webp</image:loc>
+      <image:title>PILA LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/pila-trooper-3-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/pila-trooper-3-2.webp</image:loc>
@@ -985,16 +995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/cocuyo-faro-delantero-luv-97-02.webp</image:loc>
       <image:title>COCUYO FARO DELANTERO LUV 97-02</image:title>
-    </image:image>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/collarin-caribe-2000</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/collarin-caribe-2000.webp</image:loc>
-      <image:title>COLLARIN CARIBE 2000</image:title>
     </image:image>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>

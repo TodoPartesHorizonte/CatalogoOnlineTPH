@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 643,
+  "total_products": 660,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -3834,6 +3834,27 @@ const PRODUCTS_DATA = {
           "brand": "CRQ",
           "precio_usd": 0
         }
+      ]
+    },
+    {
+      "id": "1f420963-1c20-450e-8883-5b544836f812",
+      "category": "Bomba de Gasolina",
+      "image_path": "./assets/pila-luv-2-2.webp",
+      "description": "PILA LUV 2.2",
+      "keywords": [
+        "133353",
+        "2068",
+        "8-97118-5120",
+        "BOMBA",
+        "GASOLINA",
+        "LUV",
+        "PILA"
+      ],
+      "oem": "8-97118-5120 / 2068 / 133353",
+      "slug": "pila-luv-2-2",
+      "original_filename": "Bomba de Gasolina/1f420963-1c20-450e-8883-5b544836f812.jpg",
+      "linked_ids": [
+        773
       ]
     },
     {
@@ -16359,6 +16380,114 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "5f16cf58-718d-4a7c-bc1b-ea765cf701cf",
+      "category": "Manilla Compuerta",
+      "image_path": "./assets/manilla-compuerta-trasera-luv-dmax.webp",
+      "description": "MANILLA COMPUERTA TRASERA LUV DMAX",
+      "keywords": [
+        "8-97235-3863",
+        "8-98079-0190",
+        "8-98079-2320",
+        "COMPUERTA",
+        "DMAX",
+        "LUV",
+        "MANILLA",
+        "TRASERA"
+      ],
+      "oem": "8-98079-0190 / 8-97235-3863 / 8-98079-2320",
+      "slug": "manilla-compuerta-trasera-luv-dmax",
+      "original_filename": "Manilla Compuerta/5f16cf58-718d-4a7c-bc1b-ea765cf701cf.jpg",
+      "linked_ids": [
+        721
+      ]
+    },
+    {
+      "id": "4621c15f-91c1-4350-8dc2-7b94fc55fc8a",
+      "category": "Manilla Externa",
+      "image_path": "./assets/manilla-externa-caribe.webp",
+      "description": "MANILLA EXTERNA CARIBE",
+      "keywords": [
+        "8-94295-4910",
+        "8-94295-4920",
+        "CARIBE",
+        "EXTERNA",
+        "MANILLA"
+      ],
+      "oem": "8-94295-4920 / 8-94295-4910",
+      "slug": "manilla-externa-caribe",
+      "original_filename": "Manilla Externa/4621c15f-91c1-4350-8dc2-7b94fc55fc8a.jpg",
+      "linked_ids": [
+        1171,
+        723
+      ]
+    },
+    {
+      "id": "39e3d5ed-eae8-42a4-97e7-b882a5711acb",
+      "category": "Manilla Externa",
+      "image_path": "./assets/manilla-externa-delantera-luv-dmax.webp",
+      "description": "MANILLA EXTERNA DELANTERA LUV DMAX",
+      "keywords": [
+        "8-97235-9591",
+        "8-97235-9751",
+        "8-97362-8950",
+        "8-97362-8960",
+        "DELANTERA",
+        "DMAX",
+        "EXTERNA",
+        "LUV",
+        "MANILLA"
+      ],
+      "oem": "8-97362-8960 / 8-97235-9591 / 8-97362-8950 / 8-97235-9751",
+      "slug": "manilla-externa-delantera-luv-dmax",
+      "original_filename": "Manilla Externa/39e3d5ed-eae8-42a4-97e7-b882a5711acb.jpg",
+      "linked_ids": [
+        724,
+        1172
+      ]
+    },
+    {
+      "id": "4a0b2f97-f34f-424f-9080-a81a0030c8e5",
+      "category": "Manilla Externa",
+      "image_path": "./assets/manilla-externa-luv.webp",
+      "description": "MANILLA EXTERNA LUV",
+      "keywords": [
+        "8-94434-9731",
+        "8-94434-9741",
+        "EXTERNA",
+        "LUV",
+        "MANILLA"
+      ],
+      "oem": "8-94434-9731 / 8-94434-9741",
+      "slug": "manilla-externa-luv",
+      "original_filename": "Manilla Externa/4a0b2f97-f34f-424f-9080-a81a0030c8e5.jpg",
+      "linked_ids": [
+        726,
+        1175
+      ]
+    },
+    {
+      "id": "8d62ad50-4cd5-4845-b33b-21633848a8e6",
+      "category": "Manilla Externa",
+      "image_path": "./assets/manilla-externa-trasera-luv-dmax.webp",
+      "description": "MANILLA EXTERNA TRASERA LUV DMAX",
+      "keywords": [
+        "8-93291-1021",
+        "8-93295-3141",
+        "DMAX",
+        "EXTERNA",
+        "LUV",
+        "MANILLA",
+        "TRASERA"
+      ],
+      "oem": "8-93295-3141 / 8-93291-1021",
+      "slug": "manilla-externa-trasera-luv-dmax",
+      "original_filename": "Manilla Externa/8d62ad50-4cd5-4845-b33b-21633848a8e6.jpg",
+      "linked_ids": [
+        1174,
+        1173
+      ]
+    },
+    {
       "category": "Manilla Interna",
       "description": "MANILLA INTERNA LUV D-MAX",
       "id": "19047b13-ac19-4444-86c6-ce1d02fcc05c",
@@ -16388,6 +16517,213 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 20
         }
+      ]
+    },
+    {
+      "id": "319adc80-77d2-4810-b439-42fd6ce6f688",
+      "category": "Martillo",
+      "image_path": "./assets/martillo-caribe-luv-2-3.webp",
+      "description": "MARTILLO CARIBE / LUV 2.3",
+      "keywords": [
+        "8-94102-4160",
+        "CARIBE",
+        "LUV",
+        "MARTILLO"
+      ],
+      "oem": "8-94102-4160",
+      "slug": "martillo-caribe-luv-2-3",
+      "original_filename": "Martillo/319adc80-77d2-4810-b439-42fd6ce6f688.jpg",
+      "linked_ids": [
+        727
+      ]
+    },
+    {
+      "id": "84a1112f-2ebb-4ad5-9dc5-46a064b79977",
+      "category": "Martillo",
+      "image_path": "./assets/martillo-luv-2-2.webp",
+      "description": "MARTILLO LUV 2.2",
+      "keywords": [
+        "8-90409-1940",
+        "8-93307-1040",
+        "LUV",
+        "MARTILLO"
+      ],
+      "oem": "8-90409-1940 / 8-93307-1040",
+      "slug": "martillo-luv-2-2",
+      "original_filename": "Martillo/84a1112f-2ebb-4ad5-9dc5-46a064b79977.jpg",
+      "linked_ids": [
+        728
+      ]
+    },
+    {
+      "id": "bd025888-0555-4b94-b849-cb9e582a9102",
+      "category": "Martillo",
+      "image_path": "./assets/martillo-luv-dmax-2-4.webp",
+      "description": "MARTILLO LUV DMAX 2.4",
+      "keywords": [
+        "8-90409-1940",
+        "8-93307-1040",
+        "DMAX",
+        "LUV",
+        "MARTILLO"
+      ],
+      "oem": "8-90409-1940 / 8-93307-1040",
+      "slug": "martillo-luv-dmax-2-4",
+      "original_filename": "Martillo/bd025888-0555-4b94-b849-cb9e582a9102.jpg",
+      "linked_ids": [
+        728
+      ]
+    },
+    {
+      "id": "72abafbc-247f-4f9e-a6ba-4a37c3b7aff3",
+      "category": "Meseta",
+      "image_path": "./assets/meseta-luv-4x2.webp",
+      "description": "MESETA LUV 4X2",
+      "keywords": [
+        "4X2",
+        "8-94459-4602",
+        "8-94459-4612",
+        "LUV",
+        "MESETA"
+      ],
+      "oem": "8-94459-4612 / 8-94459-4602",
+      "slug": "meseta-luv-4x2",
+      "original_filename": "Meseta/72abafbc-247f-4f9e-a6ba-4a37c3b7aff3.jpg",
+      "linked_ids": [
+        1176,
+        730
+      ]
+    },
+    {
+      "id": "42bd602e-3217-45e8-baed-663ba000036e",
+      "category": "Meseta",
+      "image_path": "./assets/meseta-luv-dmax-2-4.webp",
+      "description": "MESETA LUV DMAX 2.4",
+      "keywords": [
+        "8-97365-0140",
+        "8-97365-0150",
+        "8-98005-8320",
+        "8-98005-8330",
+        "DMAX",
+        "LUV",
+        "MESETA"
+      ],
+      "oem": "8-98005-8320 / 8-97365-0140 / 8-98005-8330 / 8-97365-0150",
+      "slug": "meseta-luv-dmax-2-4",
+      "original_filename": "Meseta/42bd602e-3217-45e8-baed-663ba000036e.jpg",
+      "linked_ids": [
+        731,
+        1166
+      ]
+    },
+    {
+      "id": "b38bc473-223e-40a6-9e6c-7d592fa5279f",
+      "category": "Meseta",
+      "image_path": "./assets/meseta-luv-dmax-2-5.webp",
+      "description": "MESETA LUV DMAX 2.5",
+      "keywords": [
+        "8-97365-0140",
+        "8-97365-0150",
+        "8-98005-8320",
+        "8-98005-8330",
+        "DMAX",
+        "LUV",
+        "MESETA"
+      ],
+      "oem": "8-98005-8320 / 8-97365-0140 / 8-98005-8330 / 8-97365-0150",
+      "slug": "meseta-luv-dmax-2-5",
+      "original_filename": "Meseta/b38bc473-223e-40a6-9e6c-7d592fa5279f.jpg",
+      "linked_ids": [
+        731,
+        1166
+      ]
+    },
+    {
+      "id": "49f51d9c-5ae5-4d89-a19b-79bd1802f865",
+      "category": "Meseta",
+      "image_path": "./assets/meseta-luv-dmax-3-0-4x2.webp",
+      "description": "MESETA LUV DMAX 3.0 4X2",
+      "keywords": [
+        "4X2",
+        "8-97365-0140",
+        "8-97365-0150",
+        "8-98005-8320",
+        "8-98005-8330",
+        "DMAX",
+        "LUV",
+        "MESETA"
+      ],
+      "oem": "8-98005-8320 / 8-97365-0140 / 8-98005-8330 / 8-97365-0150",
+      "slug": "meseta-luv-dmax-3-0-4x2",
+      "original_filename": "Meseta/49f51d9c-5ae5-4d89-a19b-79bd1802f865.jpg",
+      "linked_ids": [
+        731,
+        1166
+      ]
+    },
+    {
+      "id": "82fb6f49-4b24-4f17-9eac-d5bfb19b06bb",
+      "category": "Meseta",
+      "image_path": "./assets/meseta-luv-dmax-3-0-4x4.webp",
+      "description": "MESETA LUV DMAX 3.0 4X4",
+      "keywords": [
+        "4X4",
+        "8-97365-0160",
+        "8-97365-0170",
+        "8-98005-8340",
+        "8-98005-8350",
+        "DMAX",
+        "LUV",
+        "MESETA"
+      ],
+      "oem": "8-97365-0160 / 8-98005-8340 / 8-97365-0170 / 8-98005-8350",
+      "slug": "meseta-luv-dmax-3-0-4x4",
+      "original_filename": "Meseta/82fb6f49-4b24-4f17-9eac-d5bfb19b06bb.jpg",
+      "linked_ids": [
+        732,
+        1177
+      ]
+    },
+    {
+      "id": "776c5369-0502-41b3-9e2d-22e1bc87a7f3",
+      "category": "Meseta",
+      "image_path": "./assets/meseta-luv-dmax-3-5.webp",
+      "description": "MESETA LUV DMAX 3.5",
+      "keywords": [
+        "8-97365-0160",
+        "8-97365-0170",
+        "8-98005-8340",
+        "8-98005-8350",
+        "DMAX",
+        "LUV",
+        "MESETA"
+      ],
+      "oem": "8-97365-0160 / 8-98005-8340 / 8-97365-0170 / 8-98005-8350",
+      "slug": "meseta-luv-dmax-3-5",
+      "original_filename": "Meseta/776c5369-0502-41b3-9e2d-22e1bc87a7f3.jpg",
+      "linked_ids": [
+        732,
+        1177
+      ]
+    },
+    {
+      "id": "fc8650ab-ee2d-4782-b8ab-1c6f9ec9390a",
+      "category": "Mica Stop",
+      "image_path": "./assets/mica-stop-caribe.webp",
+      "description": "MICA STOP CARIBE",
+      "keywords": [
+        "8-94228-9150",
+        "8-94228-9160",
+        "CARIBE",
+        "MICA",
+        "STOP"
+      ],
+      "oem": "8-94228-9150 / 8-94228-9160",
+      "slug": "mica-stop-caribe",
+      "original_filename": "Mica Stop/fc8650ab-ee2d-4782-b8ab-1c6f9ec9390a.jpg",
+      "linked_ids": [
+        735,
+        1155
       ]
     },
     {
@@ -17009,6 +17345,26 @@ const PRODUCTS_DATA = {
       "original_filename": "Patin Cadena/a82f98e4-f83c-47ea-a51d-67ef18a94415.jpg",
       "linked_ids": [
         768
+      ]
+    },
+    {
+      "id": "fc2f6fa2-f057-4147-a128-aac201249661",
+      "category": "Patin Cadena",
+      "image_path": "./assets/patin-recto-caribe-g200.webp",
+      "description": "PATIN RECTO CARIBE G200",
+      "keywords": [
+        "8-94213-8320",
+        "CADENA",
+        "CARIBE",
+        "G200",
+        "PATIN",
+        "RECTO"
+      ],
+      "oem": "8-94213-8320",
+      "slug": "patin-recto-caribe-g200",
+      "original_filename": "Patin Cadena/fc2f6fa2-f057-4147-a128-aac201249661.jpg",
+      "linked_ids": [
+        769
       ]
     },
     {

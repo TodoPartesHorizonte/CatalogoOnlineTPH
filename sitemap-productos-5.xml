@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://todoparteshorizonte.com/p/gemelo-ballesta-caribe-luv</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/gemelo-ballesta-caribe-luv.webp</image:loc>
+      <image:title>GEMELO BALLESTA CARIBE / LUV</image:title>
+    </image:image>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/gemelo-ballesta-luv-d-max-trooper</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/gemelo-ballesta-luv-d-max-trooper.webp</image:loc>
@@ -985,16 +995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/kit-de-clutch-caribe-2600.webp</image:loc>
       <image:title>KIT DE CLUTCH CARIBE 2600</image:title>
-    </image:image>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/kit-de-clutch-luv-d-max-2-4</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/kit-de-clutch-luv-d-max-2-4.webp</image:loc>
-      <image:title>KIT DE CLUTCH LUV D-MAX 2.4</image:title>
     </image:image>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
