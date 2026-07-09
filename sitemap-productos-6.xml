@@ -961,6 +961,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-delantera-luv-dmax-10-15</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-delantera-luv-dmax-10-15.webp</image:loc>
+      <image:title>PASTILLAS DE FRENO DELANTERA LUV DMAX 10/15</image:title>
+    </image:image>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-delantera-trooper-3-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-delantera-trooper-3-2.webp</image:loc>
@@ -985,16 +995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-luv-dmax-05-09.webp</image:loc>
       <image:title>PASTILLAS DE FRENO LUV DMAX 05/09</image:title>
-    </image:image>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/pastillas-de-freno-trasera-caribe-89-90</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/pastillas-de-freno-trasera-caribe-89-90.webp</image:loc>
-      <image:title>PASTILLAS DE FRENO TRASERA CARIBE 89/90</image:title>
     </image:image>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>

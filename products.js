@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 660,
+  "total_products": 661,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -17213,6 +17213,30 @@ const PRODUCTS_DATA = {
       "original_filename": "Pastillas de Freno/6d4da947-f344-4bc3-8d69-a1601006dbd1.jpg",
       "linked_ids": [
         760
+      ]
+    },
+    {
+      "id": "2950beec-dd8e-4e59-94b0-237dc815245d",
+      "category": "Pastillas de Freno",
+      "image_path": "./assets/pastillas-de-freno-delantera-luv-dmax-10-15.webp",
+      "description": "PASTILLAS DE FRENO DELANTERA LUV DMAX 10/15",
+      "keywords": [
+        "8-98079-1040",
+        "8906",
+        "8906C",
+        "DA1691",
+        "DELANTERA",
+        "DMAX",
+        "FRENO",
+        "LUV",
+        "PASTILLAS"
+      ],
+      "oem": "8906 / DA1691 / 8-98079-1040 / 8906C",
+      "slug": "pastillas-de-freno-delantera-luv-dmax-10-15",
+      "original_filename": "Pastillas de Freno/2950beec-dd8e-4e59-94b0-237dc815245d.jpg",
+      "linked_ids": [
+        1198,
+        764
       ]
     },
     {
