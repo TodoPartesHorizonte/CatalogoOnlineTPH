@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 661,
+  "total_products": 667,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -17480,6 +17480,130 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 115
         }
+      ]
+    },
+    {
+      "id": "d2e67c62-0770-49f8-b484-edac724f9b5e",
+      "category": "Punta de Tripoide",
+      "image_path": "./assets/punta-tripoide-caribe-2-3.webp",
+      "description": "PUNTA TRIPOIDE CARIBE 2.3",
+      "keywords": [
+        "611506011",
+        "8-94124-6280",
+        "8-94124-6290",
+        "CARIBE",
+        "IZ31",
+        "PUNTA",
+        "TRIPOIDE"
+      ],
+      "oem": "8-94124-6280 / 611506011 / 8-94124-6290 / IZ31",
+      "slug": "punta-tripoide-caribe-2-3",
+      "original_filename": "Punta de Tripoide/d2e67c62-0770-49f8-b484-edac724f9b5e.jpg",
+      "linked_ids": [
+        850
+      ]
+    },
+    {
+      "id": "856113db-d6f0-43a6-bf64-44cd5848036e",
+      "category": "Punta de Tripoide",
+      "image_path": "./assets/punta-tripoide-caribe-g200.webp",
+      "description": "PUNTA TRIPOIDE CARIBE G200",
+      "keywords": [
+        "611506011",
+        "8-94124-6280",
+        "8-94124-6290",
+        "CARIBE",
+        "G200",
+        "IZ31",
+        "PUNTA",
+        "TRIPOIDE"
+      ],
+      "oem": "8-94124-6280 / 611506011 / 8-94124-6290 / IZ31",
+      "slug": "punta-tripoide-caribe-g200",
+      "original_filename": "Punta de Tripoide/856113db-d6f0-43a6-bf64-44cd5848036e.jpg",
+      "linked_ids": [
+        850
+      ]
+    },
+    {
+      "id": "c8df8ee5-37d6-4a1d-aa23-69a24022a158",
+      "category": "Punta de Tripoide",
+      "image_path": "./assets/punta-tripoide-luv-2-3.webp",
+      "description": "PUNTA TRIPOIDE LUV 2.3",
+      "keywords": [
+        "8-94312-6720",
+        "8-97131-3960",
+        "IZ32",
+        "LUV",
+        "PUNTA",
+        "TRIPOIDE"
+      ],
+      "oem": "8-97131-3960 / IZ32 / 8-94312-6720",
+      "slug": "punta-tripoide-luv-2-3",
+      "original_filename": "Punta de Tripoide/c8df8ee5-37d6-4a1d-aa23-69a24022a158.jpg",
+      "linked_ids": [
+        852
+      ]
+    },
+    {
+      "id": "f14a68dd-491e-4630-b322-ab9aa7aa7472",
+      "category": "Punta de Tripoide",
+      "image_path": "./assets/punta-tripoide-luv-dmax-3-5.webp",
+      "description": "PUNTA TRIPOIDE LUV DMAX 3.5",
+      "keywords": [
+        "8-97349-9521",
+        "8-97387-6640",
+        "810CV05A000",
+        "DMAX",
+        "LUV",
+        "PUNTA",
+        "TRIPOIDE"
+      ],
+      "oem": "8-97387-6640 / 810CV05A000 / 8-97349-9521",
+      "slug": "punta-tripoide-luv-dmax-3-5",
+      "original_filename": "Punta de Tripoide/f14a68dd-491e-4630-b322-ab9aa7aa7472.jpg",
+      "linked_ids": [
+        853
+      ]
+    },
+    {
+      "id": "ae365c93-eb47-4906-a061-1bf320b2f298",
+      "category": "Punta de Tripoide",
+      "image_path": "./assets/punta-tripoide-trooper.webp",
+      "description": "PUNTA TRIPOIDE TROOPER",
+      "keywords": [
+        "8-94312-6720",
+        "8-97131-3960",
+        "IZ32",
+        "PUNTA",
+        "TRIPOIDE",
+        "TROOPER"
+      ],
+      "oem": "8-97131-3960 / IZ32 / 8-94312-6720",
+      "slug": "punta-tripoide-trooper",
+      "original_filename": "Punta de Tripoide/ae365c93-eb47-4906-a061-1bf320b2f298.jpg",
+      "linked_ids": [
+        852
+      ]
+    },
+    {
+      "id": "63550207-a3e6-473b-8951-974c34fccbe4",
+      "category": "Punta Parachoque",
+      "image_path": "./assets/punta-parachoque-caribe.webp",
+      "description": "PUNTA PARACHOQUE  CARIBE",
+      "keywords": [
+        "8-94355-5520",
+        "8-94355-5530",
+        "CARIBE",
+        "PARACHOQUE",
+        "PUNTA"
+      ],
+      "oem": "8-94355-5520 / 8-94355-5530",
+      "slug": "punta-parachoque-caribe",
+      "original_filename": "Punta Parachoque/63550207-a3e6-473b-8951-974c34fccbe4.jpg",
+      "linked_ids": [
+        1143,
+        1144
       ]
     },
     {
