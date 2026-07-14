@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 667,
+  "total_products": 674,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -17452,6 +17452,144 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 150
         }
+      ]
+    },
+    {
+      "id": "9cc300fc-ebda-4c4b-a79b-29f822ca55c5",
+      "category": "Piston Caliper",
+      "image_path": "./assets/piston-caliper-delantero-caribe-2-6.webp",
+      "description": "PISTON CALIPER DELANTERO CARIBE 2.6",
+      "keywords": [
+        "8-94438-6890",
+        "CALIPER",
+        "CARIBE",
+        "DELANTERO",
+        "PF-7646",
+        "PISTON"
+      ],
+      "oem": "8-94438-6890 / PF-7646",
+      "slug": "piston-caliper-delantero-caribe-2-6",
+      "original_filename": "Piston Caliper/9cc300fc-ebda-4c4b-a79b-29f822ca55c5.jpg",
+      "linked_ids": [
+        831
+      ]
+    },
+    {
+      "id": "30b9471f-8f0e-41a3-ba7d-b31326c7daba",
+      "category": "Piston Caliper",
+      "image_path": "./assets/piston-caliper-delantero-caribe-84-88.webp",
+      "description": "PISTON CALIPER DELANTERO CARIBE 84/88",
+      "keywords": [
+        "8-94124-7831",
+        "CALIPER",
+        "CARIBE",
+        "DELANTERO",
+        "PF-7593",
+        "PISTON"
+      ],
+      "oem": "8-94124-7831 / PF-7593",
+      "slug": "piston-caliper-delantero-caribe-84-88",
+      "original_filename": "Piston Caliper/30b9471f-8f0e-41a3-ba7d-b31326c7daba.jpg",
+      "linked_ids": [
+        830
+      ]
+    },
+    {
+      "id": "77339eb4-6650-4a12-a21e-6cc8023bce08",
+      "category": "Piston Caliper",
+      "image_path": "./assets/piston-caliper-delantero-luv-2-3.webp",
+      "description": "PISTON CALIPER DELANTERO LUV 2.3",
+      "keywords": [
+        "8-94438-6890",
+        "CALIPER",
+        "DELANTERO",
+        "LUV",
+        "PF-7646",
+        "PISTON"
+      ],
+      "oem": "8-94438-6890 / PF-7646",
+      "slug": "piston-caliper-delantero-luv-2-3",
+      "original_filename": "Piston Caliper/77339eb4-6650-4a12-a21e-6cc8023bce08.jpg",
+      "linked_ids": [
+        831
+      ]
+    },
+    {
+      "id": "d4498a26-c12f-4463-8db2-3b14f51ca61a",
+      "category": "Piston Caliper",
+      "image_path": "./assets/piston-caliper-delantero-luv-dmax-10-15.webp",
+      "description": "PISTON CALIPER DELANTERO LUV DMAX 10/15",
+      "keywords": [
+        "8-97328-6060",
+        "CALIPER",
+        "DELANTERO",
+        "DMAX",
+        "LUV",
+        "PF-7872-N",
+        "PISTON"
+      ],
+      "oem": "8-97328-6060 / PF-7872-N",
+      "slug": "piston-caliper-delantero-luv-dmax-10-15",
+      "original_filename": "Piston Caliper/d4498a26-c12f-4463-8db2-3b14f51ca61a.jpg",
+      "linked_ids": [
+        833
+      ]
+    },
+    {
+      "id": "9b6701a7-f0a3-4e57-bcdb-22059253b47b",
+      "category": "Piston Caliper",
+      "image_path": "./assets/piston-caliper-trasero-caribe-2-6.webp",
+      "description": "PISTON CALIPER TRASERO CARIBE 2.6",
+      "keywords": [
+        "CALIPER",
+        "CARIBE",
+        "PF-7413",
+        "PISTON",
+        "TRASERO"
+      ],
+      "oem": "PF-7413",
+      "slug": "piston-caliper-trasero-caribe-2-6",
+      "original_filename": "Piston Caliper/9b6701a7-f0a3-4e57-bcdb-22059253b47b.jpg",
+      "linked_ids": [
+        836
+      ]
+    },
+    {
+      "id": "bf45679a-e39a-44dd-a72b-31937f6fe57e",
+      "category": "Piston Caliper",
+      "image_path": "./assets/piston-caliper-trasero-caribe-2-6-2.webp",
+      "description": "PISTON CALIPER TRASERO CARIBE 2.6",
+      "keywords": [
+        "CALIPER",
+        "CARIBE",
+        "PF-7411",
+        "PISTON",
+        "TRASERO"
+      ],
+      "oem": "PF-7411",
+      "slug": "piston-caliper-trasero-caribe-2-6-2",
+      "original_filename": "Piston Caliper/bf45679a-e39a-44dd-a72b-31937f6fe57e.jpg",
+      "linked_ids": [
+        834
+      ]
+    },
+    {
+      "id": "43862a1c-0d3f-4aef-838c-5d98cd573210",
+      "category": "Piston Caliper",
+      "image_path": "./assets/piston-caliper-trasero-caribe-2-6-3.webp",
+      "description": "PISTON CALIPER TRASERO CARIBE 2.6",
+      "keywords": [
+        "CALIPER",
+        "CARIBE",
+        "PF-7412",
+        "PISTON",
+        "TRASERO"
+      ],
+      "oem": "PF-7412",
+      "slug": "piston-caliper-trasero-caribe-2-6-3",
+      "original_filename": "Piston Caliper/43862a1c-0d3f-4aef-838c-5d98cd573210.jpg",
+      "linked_ids": [
+        835
       ]
     },
     {
