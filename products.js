@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 680,
+  "total_products": 685,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -18059,40 +18059,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Piston",
-      "description": "PISTON LUV DMAX 3.5",
-      "id": "65c54b41-d5b0-4599-a880-53b290a616d4",
-      "image_path": "./assets/juego-de-pistones-luv-d-max-3-5.webp",
-      "keywords": [
-        "8-97167-0930",
-        "8-97358-0400",
-        "8-97358-0410",
-        "8-97358-0420",
-        "DMAX",
-        "EPV3082STD",
-        "LUV",
-        "PISTON"
-      ],
-      "linked_ids": [
-        815,
-        820
-      ],
-      "oem": "8-97358-0400 / 8-97358-0410 / 8-97358-0420 / 8-97167-0930 / EPV3082STD",
-      "slug": "juego-de-pistones-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97358-0400",
-          "brand": "Original",
-          "precio_usd": 150
-        },
-        {
-          "codigo_oem": "8-97167-0930",
-          "brand": "Original",
-          "precio_usd": 150
-        }
-      ]
-    },
-    {
-      "category": "Piston",
       "description": "PISTON CARIBE 2.6",
       "id": "31f253f4-c2cb-46dc-945e-680a05855089",
       "image_path": "./assets/piston-caribe-2-6.webp",
@@ -18304,6 +18270,40 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "category": "Piston",
+      "description": "PISTON LUV DMAX 3.5",
+      "id": "65c54b41-d5b0-4599-a880-53b290a616d4",
+      "image_path": "./assets/juego-de-pistones-luv-d-max-3-5.webp",
+      "keywords": [
+        "8-97167-0930",
+        "8-97358-0400",
+        "8-97358-0410",
+        "8-97358-0420",
+        "DMAX",
+        "EPV3082STD",
+        "LUV",
+        "PISTON"
+      ],
+      "linked_ids": [
+        815,
+        820
+      ],
+      "oem": "8-97358-0400 / 8-97358-0410 / 8-97358-0420 / 8-97167-0930 / EPV3082STD",
+      "slug": "juego-de-pistones-luv-d-max-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97358-0400",
+          "brand": "Original",
+          "precio_usd": 150
+        },
+        {
+          "codigo_oem": "8-97167-0930",
+          "brand": "Original",
+          "precio_usd": 150
+        }
+      ]
+    },
+    {
       "category": "Piston Caliper",
       "description": "PISTON CALIPER DELANTERO CARIBE 2.6",
       "id": "9cc300fc-ebda-4c4b-a79b-29f822ca55c5",
@@ -18491,6 +18491,78 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "56aea079-4e98-4983-87a1-f67e14d7a629",
+      "category": "Planetario",
+      "image_path": "./assets/planetario-caribe-2-3.webp",
+      "description": "PLANETARIO CARIBE 2.3",
+      "keywords": [
+        "9-41561-0504",
+        "CARIBE",
+        "PLANETARIO"
+      ],
+      "oem": "9-41561-0504",
+      "slug": "planetario-caribe-2-3",
+      "original_filename": "Planetario/56aea079-4e98-4983-87a1-f67e14d7a629.jpg",
+      "linked_ids": [
+        838
+      ]
+    },
+    {
+      "id": "b0784b12-2cc0-4b80-87ed-ee3ac5054017",
+      "category": "Planetario",
+      "image_path": "./assets/planetario-caribe-g200.webp",
+      "description": "PLANETARIO CARIBE G200",
+      "keywords": [
+        "9-41561-0504",
+        "CARIBE",
+        "G200",
+        "PLANETARIO"
+      ],
+      "oem": "9-41561-0504",
+      "slug": "planetario-caribe-g200",
+      "original_filename": "Planetario/b0784b12-2cc0-4b80-87ed-ee3ac5054017.jpg",
+      "linked_ids": [
+        838
+      ]
+    },
+    {
+      "id": "053ea61e-2afb-4b9a-b481-207591e67c87",
+      "category": "Planetario",
+      "image_path": "./assets/planetario-luv-2-3.webp",
+      "description": "PLANETARIO LUV 2.3",
+      "keywords": [
+        "9-41561-0504",
+        "LUV",
+        "PLANETARIO"
+      ],
+      "oem": "9-41561-0504",
+      "slug": "planetario-luv-2-3",
+      "original_filename": "Planetario/053ea61e-2afb-4b9a-b481-207591e67c87.jpg",
+      "linked_ids": [
+        838
+      ]
+    },
+    {
+      "id": "93ea9d7f-6e2a-452a-93fe-c7e42f7be174",
+      "category": "Platino",
+      "image_path": "./assets/platino-caribe-g200.webp",
+      "description": "PLATINO CARIBE G200",
+      "keywords": [
+        "19145-14010",
+        "8-94208-4080",
+        "CARIBE",
+        "G200",
+        "PLATINO",
+        "SD-112V"
+      ],
+      "oem": "8-94208-4080 / 19145-14010 / SD-112V",
+      "slug": "platino-caribe-g200",
+      "original_filename": "Platino/93ea9d7f-6e2a-452a-93fe-c7e42f7be174.jpg",
+      "linked_ids": [
+        839
+      ]
+    },
+    {
       "category": "Plato Clutch",
       "description": "PLATO PRESION CLUTCH CARIBE 2.3",
       "id": "6a84f63c-fdf2-4a0c-8e8d-bacff41a94b6",
@@ -18587,6 +18659,30 @@ const PRODUCTS_DATA = {
           "brand": "ORIGINAL",
           "precio_usd": 125
         }
+      ]
+    },
+    {
+      "id": "c654731d-f7d0-4e02-85b3-dba80b17d918",
+      "category": "Plato Clutch",
+      "image_path": "./assets/plato-presion-clutch-luv-2-3.webp",
+      "description": "PLATO PRESION CLUTCH LUV 2.3",
+      "keywords": [
+        "8-94224-7830",
+        "8-97040-2680",
+        "8-97182-9641",
+        "CLUTCH",
+        "ISC550",
+        "LUV",
+        "N5303P",
+        "NAC603",
+        "PLATO",
+        "PRESION"
+      ],
+      "oem": "8-94224-7830 / ISC550 / N5303P / NAC603 / 8-97040-2680 / 8-97182-9641",
+      "slug": "plato-presion-clutch-luv-2-3",
+      "original_filename": "Plato Clutch/c654731d-f7d0-4e02-85b3-dba80b17d918.jpg",
+      "linked_ids": [
+        840
       ]
     },
     {

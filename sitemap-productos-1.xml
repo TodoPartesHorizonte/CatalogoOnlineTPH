@@ -6051,16 +6051,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/juego-de-pistones-luv-d-max-3-5</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/juego-de-pistones-luv-d-max-3-5.webp</image:loc>
-      <image:title>PISTON LUV DMAX 3.5</image:title>
-    </image:image>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/piston-caribe-2-6</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/piston-caribe-2-6.webp</image:loc>
@@ -6085,6 +6075,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/piston-luv-dmax-2-4.webp</image:loc>
       <image:title>PISTON LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/juego-de-pistones-luv-d-max-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/juego-de-pistones-luv-d-max-3-5.webp</image:loc>
+      <image:title>PISTON LUV DMAX 3.5</image:title>
     </image:image>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -6161,6 +6161,46 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/planetario-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/planetario-caribe-2-3.webp</image:loc>
+      <image:title>PLANETARIO CARIBE 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/planetario-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/planetario-caribe-g200.webp</image:loc>
+      <image:title>PLANETARIO CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/planetario-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/planetario-luv-2-3.webp</image:loc>
+      <image:title>PLANETARIO LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/platino-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/platino-caribe-g200.webp</image:loc>
+      <image:title>PLATINO CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/plato-presion-clutch-caribe-2-3</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/plato-presion-clutch-caribe-2-3.webp</image:loc>
@@ -6185,6 +6225,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/plato-presion-clutch-caribe-g200.webp</image:loc>
       <image:title>PLATO PRESION CLUTCH CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/plato-presion-clutch-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/plato-presion-clutch-luv-2-3.webp</image:loc>
+      <image:title>PLATO PRESION CLUTCH LUV 2.3</image:title>
     </image:image>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
