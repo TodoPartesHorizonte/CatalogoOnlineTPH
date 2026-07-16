@@ -322,6 +322,7 @@ def generate_pages(data):
         "@type": "Brand",
         "name": "{brand_schema_name}"
       }},
+      "itemCondition": "https://schema.org/NewCondition",
       {schema_compatibility_json}
       "offers": {{
         "@type": "Offer",
@@ -433,6 +434,32 @@ def generate_pages(data):
             "@type": "Answer",
             "text": "Sí, hacemos envíos a nivel nacional a través de agencias de encomienda confiables como Zoom, Tealca y MRW con cobro en destino."
           }}
+        }}
+      ]
+    }}
+    </script>
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "{base_url}"
+        }},
+        {{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{category}",
+          "item": "{base_url}index.html?categoria={category_slug}"
+        }},
+        {{
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{description}",
+          "item": "{base_url}p/{clean_filename}"
         }}
       ]
     }}
@@ -1615,7 +1642,7 @@ def generate_pages(data):
             <a href="../index.html" class="brand-lockup">
                 <img src="../assets/logo{logo_ext}" alt="Logo de TODO PARTES HORIZONTE" class="logo-image" onerror="this.onerror=null; this.src='../assets/logo.png';">
                 <div class="brand-text">
-                    <h2 class="logo-title">TODO PARTES <span>HORIZONTE</span></h2>
+                    <div class="logo-title">TODO PARTES <span>HORIZONTE</span></div>
                     <div class="logo-subtitle">Repuestos Isuzu en Caracas</div>
                 </div>
             </a>
@@ -2078,8 +2105,8 @@ def generate_sitemap(data):
                 "title": desc
             })
             
-    # Dividir en lotes de 100 URLs
-    BATCH_SIZE = 100
+    # Dividir en lotes de 1000 URLs
+    BATCH_SIZE = 1000
     batches = [product_urls[i:i + BATCH_SIZE] for i in range(0, len(product_urls), BATCH_SIZE)]
     
     # Limpiar sub-sitemaps anteriores para evitar archivos huérfanos
