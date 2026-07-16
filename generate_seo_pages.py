@@ -235,6 +235,110 @@ def generate_pages(data):
             "years": year_str
         }
 
+    def get_related_products_html(current_product, all_products, base_url):
+        import random
+        import html
+        current_id = current_product.get('id')
+        current_cat = current_product.get('category', '')
+        current_desc = current_product.get('description', '')
+        
+        # Extraer compatibilidad del producto actual
+        current_compat = extract_compatibility(current_desc)
+        current_vehicles = set(current_compat["vehicles_list"])
+        
+        # Categorizar por prioridad
+        priority_1 = [] # Misma Categoría Y Mismo Vehículo
+        priority_2 = [] # Misma Categoría
+        priority_3 = [] # Mismo Vehículo
+        priority_4 = [] # Resto
+        
+        uuid_pattern = re.compile(r'^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$')
+        
+        for p in all_products:
+            p_id = p.get('id')
+            if p_id == current_id:
+                continue
+                
+            p_slug = p.get('slug')
+            if not p_slug or uuid_pattern.match(p_slug) or p_slug == p_id:
+                continue
+                
+            p_cat = p.get('category', '')
+            p_desc = p.get('description', '')
+            p_compat = extract_compatibility(p_desc)
+            p_vehicles = set(p_compat["vehicles_list"])
+            
+            same_category = (p_cat == current_cat)
+            same_vehicle = not current_vehicles.isdisjoint(p_vehicles)
+            
+            if same_category and same_vehicle:
+                priority_1.append(p)
+            elif same_category:
+                priority_2.append(p)
+            elif same_vehicle:
+                priority_3.append(p)
+            else:
+                priority_4.append(p)
+                
+        # Barajar de forma determinista usando el ID como semilla
+        try:
+            seed_val = int(current_id)
+        except:
+            seed_val = hash(str(current_id))
+            
+        rng = random.Random(seed_val)
+        rng.shuffle(priority_1)
+        rng.shuffle(priority_2)
+        rng.shuffle(priority_3)
+        rng.shuffle(priority_4)
+        
+        candidates = (priority_1 + priority_2 + priority_3 + priority_4)[:4]
+        
+        html_cards = []
+        for p in candidates:
+            p_slug = p.get('slug')
+            p_desc = p.get('description', '')
+            p_cat = p.get('category', '')
+            p_img = p.get('image_path', '').replace('./assets', '/assets')
+            p_oem_raw = p.get('oem', '')
+            
+            p_oem = [part.strip() for part in re.split(r'[/,]', p_oem_raw) if part.strip()]
+            oem_text = p_oem[0] if p_oem else ""
+            
+            oem_badge = f'<div class="related-oem">OEM: {html.escape(oem_text)}</div>' if oem_text else ""
+            
+            # Escapar valores para HTML
+            escaped_desc = html.escape(p_desc)
+            escaped_cat = html.escape(p_cat)
+            
+            card_html = f"""
+                <a href="./{p_slug}.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="..{p_img}" alt="Repuesto {escaped_desc} original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">{escaped_cat}</span>
+                        <div class="related-title" title="{escaped_desc}">{escaped_desc}</div>
+                        {oem_badge}
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>"""
+            html_cards.append(card_html)
+            
+        return "\n".join(html_cards)
+
+    GOOGLE_REVIEWS = [
+        {"author": "Olimpo González", "body": "Gracias por sus servicios. Los recomiendo. Compré los repuestos de mi camioneta luv dmax y todo de calidad."},
+        {"author": "Ramon Villarroel", "body": "Excelente atención al cliente son lo máximo en repuestos. Todos los repuestos de mi caribe nuevos, los felicito sigan así confiando en Venezuela."},
+        {"author": "Santos Marquez Valera", "body": "Muy buena atención. Repuestos de calidad..."},
+        {"author": "Luis Rejon", "body": "Todo para mi dmax a la mano buena atención y rápida respuesta"},
+        {"author": "Wences Rodríguez", "body": "Puedo decir que hay mucha responsabilidad en el servicio y buena atención. Excelente."},
+        {"author": "José Manuel Madriz Diaz", "body": "Excelente repuestos para vehículos."}
+    ]
+
     products = data.get('products', [])
     whatsapp_encoded = data.get('whatsapp_number', '')
     whatsapp_number = decode_base64(whatsapp_encoded)
@@ -389,20 +493,20 @@ def generate_pages(data):
       }},
       "aggregateRating": {{
         "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "24"
+        "ratingValue": "4.8",
+        "reviewCount": "87"
       }},
       "review": {{
         "@type": "Review",
         "author": {{
           "@type": "Person",
-          "name": "Cliente de Todo Partes"
+          "name": "{review_author}"
         }},
         "reviewRating": {{
           "@type": "Rating",
           "ratingValue": "5"
         }},
-        "reviewBody": "Excelente atención y variedad de repuestos."
+        "reviewBody": "{review_body}"
       }}
     }}
     </script>
@@ -755,6 +859,7 @@ def generate_pages(data):
             .product-layout {{
                 grid-template-columns: 1.1fr 1.2fr;
                 gap: 48px;
+                align-items: flex-start;
             }}
         }}
 
@@ -1634,6 +1739,128 @@ def generate_pages(data):
                 transform: translateY(0);
             }}
         }}
+
+        /* Repuestos Relacionados */
+        .related-section {{
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }}
+        .related-section h3 {{
+            font-size: 20px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+            color: #ffffff;
+        }}
+        .related-grid {{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }}
+        .related-card {{
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+            text-decoration: none;
+            color: inherit;
+        }}
+        .related-card:hover {{
+            transform: translateY(-4px);
+            border-color: var(--accent-orange);
+            box-shadow: 0 8px 25px rgba(255, 106, 0, 0.1);
+        }}
+        .related-img-wrapper {{
+            position: relative;
+            width: 100%;
+            padding-top: 85%;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.02);
+        }}
+        .related-img {{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 8px;
+            box-sizing: border-box;
+            transition: var(--transition);
+        }}
+        .related-card:hover .related-img {{
+            transform: scale(1.03);
+        }}
+        .related-content {{
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex-grow: 1;
+        }}
+        .related-title {{
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 38px;
+        }}
+        .related-oem {{
+            font-family: monospace;
+            font-size: 11px;
+            color: var(--text-secondary);
+            background: rgba(255, 106, 0, 0.05);
+            padding: 2px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 106, 0, 0.15);
+            align-self: flex-start;
+        }}
+        .related-footer {{
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent-orange);
+            padding-top: 8px;
+        }}
+        @media (max-width: 1024px) {{
+            .related-grid {{
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }}
+        }}
+        @media (max-width: 768px) {{
+            .related-grid {{
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }}
+            .related-content {{
+                padding: 10px;
+            }}
+            .related-title {{
+                font-size: 11.5px;
+                height: 32px;
+            }}
+            .related-oem {{
+                font-size: 9px;
+                padding: 1px 4px;
+            }}
+            .related-footer {{
+                font-size: 10.5px;
+            }}
+        }}
     </style>
 </head>
 <body>
@@ -1680,6 +1907,12 @@ def generate_pages(data):
             <div class="details-panel">
                 <div class="category-badge">{category}</div>
                 <h1 class="product-title">{description}</h1>
+                <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
+                    <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
+                    <strong style="color: #ffffff;">4.8</strong>
+                    <span style="color: var(--text-muted);">|</span>
+                    <a href="{reviews_url}" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.2); transition: var(--transition);" onmouseover="this.style.color='var(--accent-orange)'" onmouseout="this.style.color='var(--text-secondary)'">87 valoraciones en Google</a>
+                </div>
                 {oem_html}
                 
                 <!-- Ficha de Compatibilidad -->
@@ -1750,6 +1983,14 @@ def generate_pages(data):
                     <h4 class="faq-question">¿Qué métodos de envío manejan para el interior de Venezuela?</h4>
                     <p class="faq-answer">Realizamos envíos cobro en destino a todo el país a través de agencias de encomienda confiables como Zoom, Tealca y MRW.</p>
                 </div>
+            </div>
+        </div>
+        
+        <!-- PRODUCTOS RELACIONADOS -->
+        <div class="related-section">
+            <h3>Repuestos Relacionados</h3>
+            <div class="related-grid">
+                {related_products}
             </div>
         </div>
     </div>
@@ -2032,6 +2273,26 @@ def generate_pages(data):
         # Calcular SKU optimizado para SEO (primer OEM limpio o fallback al slug)
         sku_code = oem_list_seo[0] if oem_list_seo else (p_slug if p_slug else p_id)
 
+        # Seleccionar reseña adecuada
+        desc_upper = desc.upper()
+        try:
+            seed_val = int(product.get('id', '0'))
+        except:
+            seed_val = hash(str(product.get('id', '')))
+            
+        if "CARIBE" in desc_upper:
+            selected_review = GOOGLE_REVIEWS[1]
+        elif "D-MAX" in desc_upper or "DMAX" in desc_upper:
+            selected_review = GOOGLE_REVIEWS[0] if seed_val % 2 == 0 else GOOGLE_REVIEWS[3]
+        else:
+            selected_review = GOOGLE_REVIEWS[seed_val % len(GOOGLE_REVIEWS)]
+            
+        review_author = selected_review["author"].replace('"', '\\"')
+        review_body = selected_review["body"].replace('"', '\\"')
+
+        # Obtener HTML de productos relacionados
+        related_products_html = get_related_products_html(product, products, base_url)
+
         html_content = template.format(
             id=p_id,
             sku=sku_code,
@@ -2065,7 +2326,10 @@ def generate_pages(data):
             oem_html=oem_html,
             mpn_code=mpn_code,
             price_bs=price_bs_str,
-            availability=availability_str
+            availability=availability_str,
+            related_products=related_products_html,
+            review_author=review_author,
+            review_body=review_body
         )
         
         # Guardar archivo
