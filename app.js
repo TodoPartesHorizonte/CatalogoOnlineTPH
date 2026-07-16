@@ -852,7 +852,7 @@
                 gridHtml += `
                     <div class="product-card" id="card-${product.id}">
                         <div class="card-img-wrapper" onclick="openLightbox('${product.id}')" role="button" tabindex="0" aria-label="Ver detalles del repuesto">
-                            <span class="category-badge">${product.category}</span>
+                            <span class="category-badge"><span>${product.category}</span></span>
                             <img src="${product.image_path}" alt="${product.description}" class="product-img img-lazy" ${imgPriority} width="280" height="350" onload="this.classList.add('img-loaded')">
                         </div>
                         <div class="card-content">

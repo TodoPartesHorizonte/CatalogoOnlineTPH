@@ -123,13 +123,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Santos Marquez Valera"
+          "name": "Luis Rejon"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Muy buena atención. Repuestos de calidad..."
+        "reviewBody": "Todo para mi dmax a la mano buena atención y rápida respuesta"
       }
     }
     </script>
@@ -551,6 +551,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -560,6 +564,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1499,6 +1506,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1544,7 +1556,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Kit Barra Tensora</div>
+                <div class="category-badge"><span>Kit Barra Tensora</span></div>
                 <h1 class="product-title">Kit Barra Tensora Trooper</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1644,39 +1656,9 @@
                         <img src="../assets/kit-barra-tensora-luv-2300.webp" alt="Repuesto KIT BARRA TENSORA LUV 2300 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Kit Barra Tensora</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit Barra Tensora</span></span>
                         <div class="related-title" title="KIT BARRA TENSORA LUV 2300">KIT BARRA TENSORA LUV 2300</div>
                         <div class="related-oem">OEM: 8-99443-6720</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./correa-de-tiempo-trooper-3-2-sohc.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/correa-de-tiempo-trooper-3-2-sohc.webp" alt="Repuesto CORREA DE TIEMPO TROOPER 3.2 SOHC original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Correa de Tiempo</span>
-                        <div class="related-title" title="CORREA DE TIEMPO TROOPER 3.2 SOHC">CORREA DE TIEMPO TROOPER 3.2 SOHC</div>
-                        <div class="related-oem">OEM: 8-94386-4970</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./flotante-gasolina-trooper.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/flotante-gasolina-trooper.webp" alt="Repuesto FLOTANTE GASOLINA TROOPER original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Flotante</span>
-                        <div class="related-title" title="FLOTANTE GASOLINA TROOPER">FLOTANTE GASOLINA TROOPER</div>
-                        <div class="related-oem">OEM: 8-94131-4470</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1689,9 +1671,39 @@
                         <img src="../assets/kit-de-tiempo-trooper-3-2.webp" alt="Repuesto KIT DE TIEMPO TROOPER 3.2 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Kit de Tiempo</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit de Tiempo</span></span>
                         <div class="related-title" title="KIT DE TIEMPO TROOPER 3.2">KIT DE TIEMPO TROOPER 3.2</div>
                         <div class="related-oem">OEM: TK-137</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./aspa-trooper-3-2.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/aspa-trooper-3-2.webp" alt="Repuesto ASPA TROOPER 3.2 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Aspa</span></span>
+                        <div class="related-title" title="ASPA TROOPER 3.2">ASPA TROOPER 3.2</div>
+                        <div class="related-oem">OEM: 8-97130-7570</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./estopera-cola-de-caja-trooper.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/estopera-cola-de-caja-trooper.webp" alt="Repuesto ESTOPERA COLA DE CAJA TROOPER 3.2 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Estopera Cola de Caja</span></span>
+                        <div class="related-title" title="ESTOPERA COLA DE CAJA TROOPER 3.2">ESTOPERA COLA DE CAJA TROOPER 3.2</div>
+                        <div class="related-oem">OEM: 8-97046-7053</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

@@ -552,6 +552,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -561,6 +565,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1500,6 +1507,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1545,7 +1557,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Cajetin de Direccion</div>
+                <div class="category-badge"><span>Cajetin de Direccion</span></div>
                 <h1 class="product-title">Cajetin Dirección Luv D-Max 2005/2009</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1649,7 +1661,7 @@
                         <img src="../assets/cajetin-direccion-luv-d-max-2010-2015.webp" alt="Repuesto CAJETIN DIRECCIÓN LUV D-MAX 2010/2015 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Cajetin de Direccion</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cajetin de Direccion</span></span>
                         <div class="related-title" title="CAJETIN DIRECCIÓN LUV D-MAX 2010/2015">CAJETIN DIRECCIÓN LUV D-MAX 2010/2015</div>
                         <div class="related-oem">OEM: 8-98101-7800</div>
                         <div class="related-footer">
@@ -1659,14 +1671,14 @@
                     </div>
                 </a>
 
-                <a href="./varilla-aceite-luv-d-max-3-5.html" class="related-card">
+                <a href="./pastillas-de-freno-delantera-luv-dmax-10-15.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/varilla-aceite-luv-d-max-3-5.webp" alt="Repuesto VARILLA ACEITE LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/pastillas-de-freno-delantera-luv-dmax-10-15.webp" alt="Repuesto PASTILLAS DE FRENO DELANTERA LUV DMAX 10/15 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Varilla Aceite</span>
-                        <div class="related-title" title="VARILLA ACEITE LUV D-MAX 3.5">VARILLA ACEITE LUV D-MAX 3.5</div>
-                        <div class="related-oem">OEM: 8-97326-9971</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Pastillas de Freno</span></span>
+                        <div class="related-title" title="PASTILLAS DE FRENO DELANTERA LUV DMAX 10/15">PASTILLAS DE FRENO DELANTERA LUV DMAX 10/15</div>
+                        <div class="related-oem">OEM: 8906</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1674,14 +1686,14 @@
                     </div>
                 </a>
 
-                <a href="./juego-concha-biela-luv-d-max-2-4.html" class="related-card">
+                <a href="./kit-bomba-direccion-luv-d-max-diesel-30.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/juego-concha-biela-luv-d-max-2-4.webp" alt="Repuesto CONCHA BIELA LUV DMAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-bomba-direccion-luv-d-max-diesel-30.webp" alt="Repuesto KIT BOMBA DIRECCIÓN LUV D-MAX DIESEL 3.0 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Concha de Biela</span>
-                        <div class="related-title" title="CONCHA BIELA LUV DMAX 2.4">CONCHA BIELA LUV DMAX 2.4</div>
-                        <div class="related-oem">OEM: 8-92028-8170-STD</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit Bomba Direccion</span></span>
+                        <div class="related-title" title="KIT BOMBA DIRECCIÓN LUV D-MAX DIESEL 3.0">KIT BOMBA DIRECCIÓN LUV D-MAX DIESEL 3.0</div>
+                        <div class="related-oem">OEM: 8-97184-7350</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1689,14 +1701,14 @@
                     </div>
                 </a>
 
-                <a href="./ciguenal-luv-d-max-2-4.html" class="related-card">
+                <a href="./base-motor-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/ciguenal-luv-d-max-2-4.webp" alt="Repuesto CIGUEÑAL LUV D-MAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/base-motor-luv-d-max-3-5.webp" alt="Repuesto BASE MOTOR LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Cigueñal</span>
-                        <div class="related-title" title="CIGUEÑAL LUV D-MAX 2.4">CIGUEÑAL LUV D-MAX 2.4</div>
-                        <div class="related-oem">OEM: 8-93281-9990</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Base Motor</span></span>
+                        <div class="related-title" title="BASE MOTOR LUV D-MAX 3.5">BASE MOTOR LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-98051-3310</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

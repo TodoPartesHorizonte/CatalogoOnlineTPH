@@ -551,6 +551,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -560,6 +564,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1499,6 +1506,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1544,7 +1556,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Filtro Antipolen</div>
+                <div class="category-badge"><span>Filtro Antipolen</span></div>
                 <h1 class="product-title">Filtro Antipolen Luv D-Max</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1639,14 +1651,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./gemelo-ballesta-luv-d-max-trooper.html" class="related-card">
+                <a href="./filtro-aceite-luv-d-max-3-0-diesel.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/gemelo-ballesta-luv-d-max-trooper.webp" alt="Repuesto GEMELO BALLESTA LUV D-MAX / TROOPER original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/filtro-aceite-luv-d-max-3-0-diesel.webp" alt="Repuesto FILTRO ACEITE LUV D-MAX 3.0 DIESEL original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Gemelos</span>
-                        <div class="related-title" title="GEMELO BALLESTA LUV D-MAX / TROOPER">GEMELO BALLESTA LUV D-MAX / TROOPER</div>
-                        <div class="related-oem">OEM: 8-97245-6470</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Filtro Aceite</span></span>
+                        <div class="related-title" title="FILTRO ACEITE LUV D-MAX 3.0 DIESEL">FILTRO ACEITE LUV D-MAX 3.0 DIESEL</div>
+                        <div class="related-oem">OEM: 8-94456-7412</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1654,14 +1666,14 @@
                     </div>
                 </a>
 
-                <a href="./juego-de-empacadura-luv-d-max-3-5.html" class="related-card">
+                <a href="./amortiguador-delantero-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/juego-de-empacadura-luv-d-max-3-5.webp" alt="Repuesto JUEGO DE EMPACADURA LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/amortiguador-delantero-luv-d-max-3-5.webp" alt="Repuesto AMORTIGUADOR DELANTERO LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Juego de Empacadura</span>
-                        <div class="related-title" title="JUEGO DE EMPACADURA LUV D-MAX 3.5">JUEGO DE EMPACADURA LUV D-MAX 3.5</div>
-                        <div class="related-oem">OEM: 5-87814-3231</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Amortiguador</span></span>
+                        <div class="related-title" title="AMORTIGUADOR DELANTERO LUV D-MAX 3.5">AMORTIGUADOR DELANTERO LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97372-2870</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1669,14 +1681,14 @@
                     </div>
                 </a>
 
-                <a href="./arbol-de-leva-luv-d-max-2-4.html" class="related-card">
+                <a href="./esparrago-rueda-trasera-luv-d-max.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/arbol-de-leva-luv-d-max-2-4.webp" alt="Repuesto ARBOL DE LEVA LUV D-MAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/esparrago-rueda-trasera-luv-d-max.webp" alt="Repuesto ESPARRAGO RUEDA TRASERA LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Arbol de Leva</span>
-                        <div class="related-title" title="ARBOL DE LEVA LUV D-MAX 2.4">ARBOL DE LEVA LUV D-MAX 2.4</div>
-                        <div class="related-oem">OEM: 90233484</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Esparrago</span></span>
+                        <div class="related-title" title="ESPARRAGO RUEDA TRASERA LUV D-MAX">ESPARRAGO RUEDA TRASERA LUV D-MAX</div>
+                        <div class="related-oem">OEM: 8-97213-8700</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1684,14 +1696,14 @@
                     </div>
                 </a>
 
-                <a href="./guaya-capot-luv-d-max.html" class="related-card">
+                <a href="./guaya-freno-mano-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/guaya-capot-luv-d-max.webp" alt="Repuesto GUAYA CAPOT LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/guaya-freno-mano-luv-d-max-3-5.webp" alt="Repuesto GUAYA FRENO MANO LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Guaya Capot</span>
-                        <div class="related-title" title="GUAYA CAPOT LUV D-MAX">GUAYA CAPOT LUV D-MAX</div>
-                        <div class="related-oem">OEM: 8-97334-4362</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Guaya Freno de Mano</span></span>
+                        <div class="related-title" title="GUAYA FRENO MANO LUV D-MAX 3.5">GUAYA FRENO MANO LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97363-3460</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

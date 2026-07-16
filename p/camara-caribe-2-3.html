@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Camara</div>
+                <div class="category-badge"><span>Camara</span></div>
                 <h1 class="product-title">Camara Caribe 2.3</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1647,14 +1659,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./manguera-radiador-inferior-caribe-g200.html" class="related-card">
+                <a href="./munon-inferior-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/manguera-radiador-inferior-caribe-g200.webp" alt="Repuesto MANGUERA RADIADOR INFERIOR CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/munon-inferior-caribe-2-3.webp" alt="Repuesto MUÑON INFERIOR CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Manguera Radiador</span>
-                        <div class="related-title" title="MANGUERA RADIADOR INFERIOR CARIBE G200">MANGUERA RADIADOR INFERIOR CARIBE G200</div>
-                        <div class="related-oem">OEM: 8-94101-9690</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Muñon</span></span>
+                        <div class="related-title" title="MUÑON INFERIOR CARIBE 2.3">MUÑON INFERIOR CARIBE 2.3</div>
+                        <div class="related-oem">OEM: 8-94243-2360</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1662,14 +1674,14 @@
                     </div>
                 </a>
 
-                <a href="./guardapolvo-horquilla-caribe-2-3.html" class="related-card">
+                <a href="./lapiz-barra-estabilizadora-caribe-g200.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/guardapolvo-horquilla-caribe-2-3.webp" alt="Repuesto GUARDAPOLVO HORQUILLA CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/lapiz-barra-estabilizadora-caribe-g200.webp" alt="Repuesto LAPIZ BARRA ESTABILIZADORA CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Guardapolvo Horquilla</span>
-                        <div class="related-title" title="GUARDAPOLVO HORQUILLA CARIBE 2.3">GUARDAPOLVO HORQUILLA CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 5-31131-0050</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Lapiz Barra Estabilizadora</span></span>
+                        <div class="related-title" title="LAPIZ BARRA ESTABILIZADORA CARIBE G200">LAPIZ BARRA ESTABILIZADORA CARIBE G200</div>
+                        <div class="related-oem">OEM: 161701</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1677,14 +1689,14 @@
                     </div>
                 </a>
 
-                <a href="./fan-clutch-caribe-2-3.html" class="related-card">
+                <a href="./kit-bomba-de-freno-caribe-2600.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/fan-clutch-caribe-2-3.webp" alt="Repuesto FAN CLUTCH CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-bomba-de-freno-caribe-2600.webp" alt="Repuesto KIT BOMBA DE FRENO CARIBE 2600 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Fan Clutch</span>
-                        <div class="related-title" title="FAN CLUTCH CARIBE 2.3">FAN CLUTCH CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 8-94412-0300</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit Bomba de Freno</span></span>
+                        <div class="related-title" title="KIT BOMBA DE FRENO CARIBE 2600">KIT BOMBA DE FRENO CARIBE 2600</div>
+                        <div class="related-oem">OEM: 8-94454-5630</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1692,14 +1704,14 @@
                     </div>
                 </a>
 
-                <a href="./pastillas-de-freno-delantera-caribe-2-6.html" class="related-card">
+                <a href="./juego-de-conchas-bancada-caribe-2300-2600.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/pastillas-de-freno-delantera-caribe-2-6.webp" alt="Repuesto PASTILLAS DE FRENO DELANTERA CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/juego-de-conchas-bancada-caribe-2300-2600.webp" alt="Repuesto CONCHA BANCADA CARIBE 2.3 / CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Pastillas de Freno</span>
-                        <div class="related-title" title="PASTILLAS DE FRENO DELANTERA CARIBE 2.6">PASTILLAS DE FRENO DELANTERA CARIBE 2.6</div>
-                        <div class="related-oem">OEM: 7253</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Concha de Bancada</span></span>
+                        <div class="related-title" title="CONCHA BANCADA CARIBE 2.3 / CARIBE 2.6">CONCHA BANCADA CARIBE 2.3 / CARIBE 2.6</div>
+                        <div class="related-oem">OEM: 8-94251-2631-STD</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

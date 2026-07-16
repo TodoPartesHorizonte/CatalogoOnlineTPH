@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Estopera Piñon Ataque</div>
+                <div class="category-badge"><span>Estopera Piñon Ataque</span></div>
                 <h1 class="product-title">Estopera Piñon De Ataque Trasera Caribe 2.0</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1647,14 +1659,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./estopera-pinon-de-ataque-trasera-caribe-2-3.html" class="related-card">
+                <a href="./estopera-pinon-de-ataque-caribe-2-6.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/estopera-pinon-de-ataque-trasera-caribe-2-3.webp" alt="Repuesto ESTOPERA PIÑON DE ATAQUE TRASERA CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/estopera-pinon-de-ataque-caribe-2-6.webp" alt="Repuesto ESTOPERA PIÑON DE ATAQUE CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Estopera Piñon Ataque</span>
-                        <div class="related-title" title="ESTOPERA PIÑON DE ATAQUE TRASERA CARIBE 2.3">ESTOPERA PIÑON DE ATAQUE TRASERA CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 9-09724-0030</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Estopera Piñon Ataque</span></span>
+                        <div class="related-title" title="ESTOPERA PIÑON DE ATAQUE CARIBE 2.6">ESTOPERA PIÑON DE ATAQUE CARIBE 2.6</div>
+                        <div class="related-oem">OEM: 8-94408-0840</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1662,14 +1674,14 @@
                     </div>
                 </a>
 
-                <a href="./estopera-pinon-de-ataque-caribe-2-6.html" class="related-card">
+                <a href="./estopera-pinon-de-ataque-trasera-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/estopera-pinon-de-ataque-caribe-2-6.webp" alt="Repuesto ESTOPERA PIÑON DE ATAQUE CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/estopera-pinon-de-ataque-trasera-caribe-2-3.webp" alt="Repuesto ESTOPERA PIÑON DE ATAQUE TRASERA CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Estopera Piñon Ataque</span>
-                        <div class="related-title" title="ESTOPERA PIÑON DE ATAQUE CARIBE 2.6">ESTOPERA PIÑON DE ATAQUE CARIBE 2.6</div>
-                        <div class="related-oem">OEM: 8-94408-0840</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Estopera Piñon Ataque</span></span>
+                        <div class="related-title" title="ESTOPERA PIÑON DE ATAQUE TRASERA CARIBE 2.3">ESTOPERA PIÑON DE ATAQUE TRASERA CARIBE 2.3</div>
+                        <div class="related-oem">OEM: 9-09724-0030</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1682,7 +1694,7 @@
                         <img src="../assets/estopera-pinon-de-ataque-luv-d-max.webp" alt="Repuesto ESTOPERA PIÑON DE ATAQUE LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Estopera Piñon Ataque</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Estopera Piñon Ataque</span></span>
                         <div class="related-title" title="ESTOPERA PIÑON DE ATAQUE LUV D-MAX">ESTOPERA PIÑON DE ATAQUE LUV D-MAX</div>
                         <div class="related-oem">OEM: 8-97146-8260</div>
                         <div class="related-footer">
@@ -1692,14 +1704,14 @@
                     </div>
                 </a>
 
-                <a href="./valvula-temperatura-caribe-luv-d-max-trooper-rodeo.html" class="related-card">
+                <a href="./arranque-caribe-g-200.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/valvula-temperatura-caribe-luv-d-max-trooper-rodeo.webp" alt="Repuesto VALVULA TEMPERATURA CARIBE / LUV D-MAX / TROOPER / RODEO original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/arranque-caribe-g-200.webp" alt="Repuesto ARRANQUE CARIBE G-200 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Valvula Temperatura</span>
-                        <div class="related-title" title="VALVULA TEMPERATURA CARIBE / LUV D-MAX / TROOPER / RODEO">VALVULA TEMPERATURA CARIBE / LUV D-MAX / TROOPER / RODEO</div>
-                        <div class="related-oem">OEM: 8-94247-4370</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Arranque</span></span>
+                        <div class="related-title" title="ARRANQUE CARIBE G-200">ARRANQUE CARIBE G-200</div>
+                        <div class="related-oem">OEM: 8-94234-0650</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Tapa Radiador</div>
+                <div class="category-badge"><span>Tapa Radiador</span></div>
                 <h1 class="product-title">Tapa Radiador Luv D-Max / Trooper</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1643,14 +1655,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./punta-tripoide-trooper.html" class="related-card">
+                <a href="./bujia-denso-punta-platino-luv-d-max.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/punta-tripoide-trooper.webp" alt="Repuesto PUNTA TRIPOIDE TROOPER original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/bujia-denso-punta-platino-luv-d-max.webp" alt="Repuesto BUJIA DENSO PUNTA PLATINO LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Punta de Tripoide</span>
-                        <div class="related-title" title="PUNTA TRIPOIDE TROOPER">PUNTA TRIPOIDE TROOPER</div>
-                        <div class="related-oem">OEM: 8-97131-3960</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bujia</span></span>
+                        <div class="related-title" title="BUJIA DENSO PUNTA PLATINO LUV D-MAX">BUJIA DENSO PUNTA PLATINO LUV D-MAX</div>
+                        <div class="related-oem">OEM: PK20TT</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1658,14 +1670,14 @@
                     </div>
                 </a>
 
-                <a href="./disco-de-freno-luv-d-max-2-5.html" class="related-card">
+                <a href="./locha-martillo-luv-dmax-2-4.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/disco-de-freno-luv-d-max-2-5.webp" alt="Repuesto DISCO DE FRENO LUV D-MAX 2.5 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/locha-martillo-luv-dmax-2-4.webp" alt="Repuesto LOCHA MARTILLO LUV DMAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Disco de Freno</span>
-                        <div class="related-title" title="DISCO DE FRENO LUV D-MAX 2.5">DISCO DE FRENO LUV D-MAX 2.5</div>
-                        <div class="related-oem">OEM: 8-97308-8680</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Locha Martillo</span></span>
+                        <div class="related-title" title="LOCHA MARTILLO LUV DMAX 2.4">LOCHA MARTILLO LUV DMAX 2.4</div>
+                        <div class="related-oem">OEM: 8-90076-7450</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1673,14 +1685,14 @@
                     </div>
                 </a>
 
-                <a href="./buje-ballesta-trasero-trooper.html" class="related-card">
+                <a href="./kit-bomba-direccion-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/buje-ballesta-trasero-trooper.webp" alt="Repuesto BUJE BALLESTA TRASERO TROOPER original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-bomba-direccion-luv-d-max-3-5.webp" alt="Repuesto KIT BOMBA DIRECCIÓN LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Buje Ballesta</span>
-                        <div class="related-title" title="BUJE BALLESTA TRASERO TROOPER">BUJE BALLESTA TRASERO TROOPER</div>
-                        <div class="related-oem">OEM: 8-94234-3190</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit Bomba Direccion</span></span>
+                        <div class="related-title" title="KIT BOMBA DIRECCIÓN LUV D-MAX 3.5">KIT BOMBA DIRECCIÓN LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97205-6260</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1688,14 +1700,14 @@
                     </div>
                 </a>
 
-                <a href="./barra-central-con-hueco-trooper.html" class="related-card">
+                <a href="./barra-link-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/barra-central-con-hueco-trooper.webp" alt="Repuesto BARRA CENTRAL CON HUECO TROOPER original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/barra-link-luv-d-max-3-5.webp" alt="Repuesto BARRA LINK LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Barra Central</span>
-                        <div class="related-title" title="BARRA CENTRAL CON HUECO TROOPER">BARRA CENTRAL CON HUECO TROOPER</div>
-                        <div class="related-oem">OEM: 8-94389-2222</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Barra Link</span></span>
+                        <div class="related-title" title="BARRA LINK LUV D-MAX 3.5">BARRA LINK LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97235-7861</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

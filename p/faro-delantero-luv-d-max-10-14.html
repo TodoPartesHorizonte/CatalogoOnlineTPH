@@ -552,6 +552,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -561,6 +565,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1500,6 +1507,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1545,7 +1557,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Faro Delantero</div>
+                <div class="category-badge"><span>Faro Delantero</span></div>
                 <h1 class="product-title">Faro Delantero Luv D-Max 10-14</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1649,7 +1661,7 @@
                         <img src="../assets/faro-delantero-luv-d-max-04-08.webp" alt="Repuesto FARO DELANTERO LUV D-MAX 04-08 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Faro Delantero</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Faro Delantero</span></span>
                         <div class="related-title" title="FARO DELANTERO LUV D-MAX 04-08">FARO DELANTERO LUV D-MAX 04-08</div>
                         <div class="related-oem">OEM: 8-97237-4983</div>
                         <div class="related-footer">
@@ -1664,8 +1676,23 @@
                         <img src="../assets/faro-redondo-caribe-2300.webp" alt="Repuesto FARO REDONDO CARIBE 2300 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Faro Delantero</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Faro Delantero</span></span>
                         <div class="related-title" title="FARO REDONDO CARIBE 2300">FARO REDONDO CARIBE 2300</div>
+                        <div class="related-oem">OEM: 8-94244-6830</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./faro-redondo-caribe-2000.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/faro-redondo-caribe-2000.webp" alt="Repuesto FARO REDONDO CARIBE 2000 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Faro Delantero</span></span>
+                        <div class="related-title" title="FARO REDONDO CARIBE 2000">FARO REDONDO CARIBE 2000</div>
                         <div class="related-oem">OEM: 8-94244-6830</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1679,24 +1706,9 @@
                         <img src="../assets/faro-delantero-luv-93-96.webp" alt="Repuesto FARO DELANTERO LUV 93-96 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Faro Delantero</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Faro Delantero</span></span>
                         <div class="related-title" title="FARO DELANTERO LUV 93-96">FARO DELANTERO LUV 93-96</div>
                         <div class="related-oem">OEM: 8-94434-5582</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./faro-redondo-caribe-2000.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/faro-redondo-caribe-2000.webp" alt="Repuesto FARO REDONDO CARIBE 2000 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Faro Delantero</span>
-                        <div class="related-title" title="FARO REDONDO CARIBE 2000">FARO REDONDO CARIBE 2000</div>
-                        <div class="related-oem">OEM: 8-94244-6830</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

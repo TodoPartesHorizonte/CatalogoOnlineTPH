@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Goma Tripoide</div>
+                <div class="category-badge"><span>Goma Tripoide</span></div>
                 <h1 class="product-title">Goma Tripoide Caribe 2.6</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1647,27 +1659,12 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./goma-tripoide-caribe-2-3.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/goma-tripoide-caribe-2-3.webp" alt="Repuesto GOMA TRIPOIDE CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Goma Tripoide</span>
-                        <div class="related-title" title="GOMA TRIPOIDE CARIBE 2.3">GOMA TRIPOIDE CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 5-43319-0190</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
                 <a href="./goma-tripoide-caribe-g-200.html" class="related-card">
                     <div class="related-img-wrapper">
                         <img src="../assets/goma-tripoide-caribe-g-200.webp" alt="Repuesto GOMA TRIPOIDE CARIBE G-200 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Goma Tripoide</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Goma Tripoide</span></span>
                         <div class="related-title" title="GOMA TRIPOIDE CARIBE G-200">GOMA TRIPOIDE CARIBE G-200</div>
                         <div class="related-oem">OEM: 5-43319-0190</div>
                         <div class="related-footer">
@@ -1677,13 +1674,28 @@
                     </div>
                 </a>
 
-                <a href="./goma-tripoide-rodeo.html" class="related-card">
+                <a href="./goma-tripoide-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/goma-tripoide-rodeo.webp" alt="Repuesto GOMA TRIPOIDE RODEO original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/goma-tripoide-caribe-2-3.webp" alt="Repuesto GOMA TRIPOIDE CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Goma Tripoide</span>
-                        <div class="related-title" title="GOMA TRIPOIDE RODEO">GOMA TRIPOIDE RODEO</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Goma Tripoide</span></span>
+                        <div class="related-title" title="GOMA TRIPOIDE CARIBE 2.3">GOMA TRIPOIDE CARIBE 2.3</div>
+                        <div class="related-oem">OEM: 5-43319-0190</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./goma-tripoide-luv-2-3.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/goma-tripoide-luv-2-3.webp" alt="Repuesto GOMA TRIPOIDE LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Goma Tripoide</span></span>
+                        <div class="related-title" title="GOMA TRIPOIDE LUV 2.3">GOMA TRIPOIDE LUV 2.3</div>
                         <div class="related-oem">OEM: 8-94313-1060</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1692,13 +1704,13 @@
                     </div>
                 </a>
 
-                <a href="./goma-tripoide-trooper.html" class="related-card">
+                <a href="./goma-tripoide-luv-d-max.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/goma-tripoide-trooper.webp" alt="Repuesto GOMA TRIPOIDE TROOPER original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/goma-tripoide-luv-d-max.webp" alt="Repuesto GOMA TRIPOIDE LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Goma Tripoide</span>
-                        <div class="related-title" title="GOMA TRIPOIDE TROOPER">GOMA TRIPOIDE TROOPER</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Goma Tripoide</span></span>
+                        <div class="related-title" title="GOMA TRIPOIDE LUV D-MAX">GOMA TRIPOIDE LUV D-MAX</div>
                         <div class="related-oem">OEM: 8-94313-1060</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>

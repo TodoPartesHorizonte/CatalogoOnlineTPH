@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Gemelos</div>
+                <div class="category-badge"><span>Gemelos</span></div>
                 <h1 class="product-title">Gemelo Ballesta Caribe / Luv</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1648,7 +1660,7 @@
                         <img src="../assets/gemelo-ballesta-luv-d-max-trooper.webp" alt="Repuesto GEMELO BALLESTA LUV D-MAX / TROOPER original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Gemelos</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Gemelos</span></span>
                         <div class="related-title" title="GEMELO BALLESTA LUV D-MAX / TROOPER">GEMELO BALLESTA LUV D-MAX / TROOPER</div>
                         <div class="related-oem">OEM: 8-97245-6470</div>
                         <div class="related-footer">
@@ -1658,14 +1670,14 @@
                     </div>
                 </a>
 
-                <a href="./estopera-cola-de-caja-luv-3-2.html" class="related-card">
+                <a href="./kit-de-tiempo-chevrolet-luv-2-2.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/estopera-cola-de-caja-luv-3-2.webp" alt="Repuesto ESTOPERA COLA DE CAJA LUV 3.2 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-de-tiempo-chevrolet-luv-2-2.webp" alt="Repuesto KIT DE TIEMPO LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Estopera Cola de Caja</span>
-                        <div class="related-title" title="ESTOPERA COLA DE CAJA LUV 3.2">ESTOPERA COLA DE CAJA LUV 3.2</div>
-                        <div class="related-oem">OEM: 8-97046-7053</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit de Tiempo</span></span>
+                        <div class="related-title" title="KIT DE TIEMPO LUV 2.2">KIT DE TIEMPO LUV 2.2</div>
+                        <div class="related-oem">OEM: TK-133</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1673,14 +1685,14 @@
                     </div>
                 </a>
 
-                <a href="./amortiguador-delantero-caribe-2600.html" class="related-card">
+                <a href="./patin-curvo-caribe-g200.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/amortiguador-delantero-caribe-2600.webp" alt="Repuesto AMORTIGUADOR DELANTERO CARIBE 2600 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/patin-curvo-caribe-g200.webp" alt="Repuesto PATIN CURVO CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Amortiguador</span>
-                        <div class="related-title" title="AMORTIGUADOR DELANTERO CARIBE 2600">AMORTIGUADOR DELANTERO CARIBE 2600</div>
-                        <div class="related-oem">OEM: VA-22158</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Patin Cadena</span></span>
+                        <div class="related-title" title="PATIN CURVO CARIBE G200">PATIN CURVO CARIBE G200</div>
+                        <div class="related-oem">OEM: 8-94213-8190</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1688,14 +1700,14 @@
                     </div>
                 </a>
 
-                <a href="./bomba-de-freno-caribe-2-6.html" class="related-card">
+                <a href="./cocuyo-faro-delantero-luv-97-02.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/bomba-de-freno-caribe-2-6.webp" alt="Repuesto BOMBA DE FRENO CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/cocuyo-faro-delantero-luv-97-02.webp" alt="Repuesto COCUYO FARO DELANTERO LUV 97-02 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Bomba de Freno</span>
-                        <div class="related-title" title="BOMBA DE FRENO CARIBE 2.6">BOMBA DE FRENO CARIBE 2.6</div>
-                        <div class="related-oem">OEM: 8-94332-9490</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cocuyo</span></span>
+                        <div class="related-title" title="COCUYO FARO DELANTERO LUV 97-02">COCUYO FARO DELANTERO LUV 97-02</div>
+                        <div class="related-oem">OEM: 8-94324-1040</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

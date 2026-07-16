@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Cables de Bujia</div>
+                <div class="category-badge"><span>Cables de Bujia</span></div>
                 <h1 class="product-title">Juego De Cable Luv 2300</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1652,24 +1664,9 @@
                         <img src="../assets/juego-de-cables-bujia-luv-2-2.webp" alt="Repuesto JUEGO DE CABLES BUJIA LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Cables de Bujia</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cables de Bujia</span></span>
                         <div class="related-title" title="JUEGO DE CABLES BUJIA LUV 2.2">JUEGO DE CABLES BUJIA LUV 2.2</div>
                         <div class="related-oem">OEM: 8-92066-0290</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./juego-de-cables-caribe.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/juego-de-cables-caribe.webp" alt="Repuesto JUEGO DE CABLES CARIBE original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Cables de Bujia</span>
-                        <div class="related-title" title="JUEGO DE CABLES CARIBE">JUEGO DE CABLES CARIBE</div>
-                        <div class="related-oem">OEM: 8-94433-3641</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1682,7 +1679,7 @@
                         <img src="../assets/juego-de-cables-bujia-luv-d-max-2-4.webp" alt="Repuesto JUEGO DE CABLES BUJIA LUV D-MAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Cables de Bujia</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cables de Bujia</span></span>
                         <div class="related-title" title="JUEGO DE CABLES BUJIA LUV D-MAX 2.4">JUEGO DE CABLES BUJIA LUV D-MAX 2.4</div>
                         <div class="related-oem">OEM: 8-92066-0310</div>
                         <div class="related-footer">
@@ -1692,14 +1689,29 @@
                     </div>
                 </a>
 
-                <a href="./manguera-desfogue-luv-2-2.html" class="related-card">
+                <a href="./juego-de-cables-caribe.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/manguera-desfogue-luv-2-2.webp" alt="Repuesto MANGUERA DESFOGUE LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/juego-de-cables-caribe.webp" alt="Repuesto JUEGO DE CABLES CARIBE original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Manguera Desfogue</span>
-                        <div class="related-title" title="MANGUERA DESFOGUE LUV 2.2">MANGUERA DESFOGUE LUV 2.2</div>
-                        <div class="related-oem">OEM: 4720</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cables de Bujia</span></span>
+                        <div class="related-title" title="JUEGO DE CABLES CARIBE">JUEGO DE CABLES CARIBE</div>
+                        <div class="related-oem">OEM: 8-94433-3641</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./bomba-de-aceite-luv-2-2.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/bomba-de-aceite-luv-2-2.webp" alt="Repuesto BOMBA DE ACEITE LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de aceite</span></span>
+                        <div class="related-title" title="BOMBA DE ACEITE LUV 2.2">BOMBA DE ACEITE LUV 2.2</div>
+                        <div class="related-oem">OEM: 8-90570-9250</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

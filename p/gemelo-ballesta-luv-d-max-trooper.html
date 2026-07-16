@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Gemelos</div>
+                <div class="category-badge"><span>Gemelos</span></div>
                 <h1 class="product-title">Gemelo Ballesta Luv D-Max / Trooper</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1648,7 +1660,7 @@
                         <img src="../assets/gemelo-ballesta-caribe-luv.webp" alt="Repuesto GEMELO BALLESTA CARIBE / LUV original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Gemelos</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Gemelos</span></span>
                         <div class="related-title" title="GEMELO BALLESTA CARIBE / LUV">GEMELO BALLESTA CARIBE / LUV</div>
                         <div class="related-oem">OEM: 8-94223-1672</div>
                         <div class="related-footer">
@@ -1658,14 +1670,14 @@
                     </div>
                 </a>
 
-                <a href="./juego-concha-bancada-luv-d-max-3-5.html" class="related-card">
+                <a href="./goma-tripoide-luv-d-max.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/juego-concha-bancada-luv-d-max-3-5.webp" alt="Repuesto CONCHA BANCADA LUV DMAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/goma-tripoide-luv-d-max.webp" alt="Repuesto GOMA TRIPOIDE LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Concha de Bancada</span>
-                        <div class="related-title" title="CONCHA BANCADA LUV DMAX 3.5">CONCHA BANCADA LUV DMAX 3.5</div>
-                        <div class="related-oem">OEM: 8-97179-2960-STD</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Goma Tripoide</span></span>
+                        <div class="related-title" title="GOMA TRIPOIDE LUV D-MAX">GOMA TRIPOIDE LUV D-MAX</div>
+                        <div class="related-oem">OEM: 8-94313-1060</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1673,14 +1685,14 @@
                     </div>
                 </a>
 
-                <a href="./estopera-arbol-de-leva-luv-d-max-3-5.html" class="related-card">
+                <a href="./estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/estopera-arbol-de-leva-luv-d-max-3-5.webp" alt="Repuesto ESTOPERA ARBOL DE LEVA LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-3-5.webp" alt="Repuesto ESTOPERA RUEDA / PUNTA DE EJE TRASERA EXTERNA LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Estopera Arbol de Leva</span>
-                        <div class="related-title" title="ESTOPERA ARBOL DE LEVA LUV D-MAX 3.5">ESTOPERA ARBOL DE LEVA LUV D-MAX 3.5</div>
-                        <div class="related-oem">OEM: 8-94215-2200</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Estopera Punta de Eje Trasera</span></span>
+                        <div class="related-title" title="ESTOPERA RUEDA / PUNTA DE EJE TRASERA EXTERNA LUV D-MAX 3.5">ESTOPERA RUEDA / PUNTA DE EJE TRASERA EXTERNA LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97216-7920</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1688,14 +1700,14 @@
                     </div>
                 </a>
 
-                <a href="./goma-u-barra-estabilizadora-trooper.html" class="related-card">
+                <a href="./buje-meseta-externo-trooper-3-2.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/goma-u-barra-estabilizadora-trooper.webp" alt="Repuesto GOMA U BARRA ESTABILIZADORA TROOPER original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/buje-meseta-externo-trooper-3-2.webp" alt="Repuesto BUJE MESETA EXTERNO TROOPER 3.2 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Goma U Barra Estabilizadora</span>
-                        <div class="related-title" title="GOMA U BARRA ESTABILIZADORA TROOPER">GOMA U BARRA ESTABILIZADORA TROOPER</div>
-                        <div class="related-oem">OEM: 8-97235-7840</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Meseta</span></span>
+                        <div class="related-title" title="BUJE MESETA EXTERNO TROOPER 3.2">BUJE MESETA EXTERNO TROOPER 3.2</div>
+                        <div class="related-oem">OEM: 8-94408-8411</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Wences Rodríguez"
+          "name": "Santos Marquez Valera"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Puedo decir que hay mucha responsabilidad en el servicio y buena atención. Excelente."
+        "reviewBody": "Muy buena atención. Repuestos de calidad..."
       }
     }
     </script>
@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Baquelita</div>
+                <div class="category-badge"><span>Baquelita</span></div>
                 <h1 class="product-title">Baquelita Bomba Gasolina Luv 2.3</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1647,27 +1659,12 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./baquelita-bomba-gasolina-trooper.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/baquelita-bomba-gasolina-trooper.webp" alt="Repuesto BAQUELITA BOMBA GASOLINA TROOPER original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Baquelita</span>
-                        <div class="related-title" title="BAQUELITA BOMBA GASOLINA TROOPER">BAQUELITA BOMBA GASOLINA TROOPER</div>
-                        <div class="related-oem">OEM: 8-94146-2580</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
                 <a href="./baquelita-bomba-gasolina-caribe.html" class="related-card">
                     <div class="related-img-wrapper">
                         <img src="../assets/baquelita-bomba-gasolina-caribe.webp" alt="Repuesto BAQUELITA BOMBA GASOLINA CARIBE original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Baquelita</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Baquelita</span></span>
                         <div class="related-title" title="BAQUELITA BOMBA GASOLINA CARIBE">BAQUELITA BOMBA GASOLINA CARIBE</div>
                         <div class="related-oem">OEM: 8-94146-2580</div>
                         <div class="related-footer">
@@ -1677,14 +1674,14 @@
                     </div>
                 </a>
 
-                <a href="./gemelo-ballesta-caribe-luv.html" class="related-card">
+                <a href="./baquelita-bomba-gasolina-trooper.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/gemelo-ballesta-caribe-luv.webp" alt="Repuesto GEMELO BALLESTA CARIBE / LUV original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/baquelita-bomba-gasolina-trooper.webp" alt="Repuesto BAQUELITA BOMBA GASOLINA TROOPER original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Gemelos</span>
-                        <div class="related-title" title="GEMELO BALLESTA CARIBE / LUV">GEMELO BALLESTA CARIBE / LUV</div>
-                        <div class="related-oem">OEM: 8-94223-1672</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Baquelita</span></span>
+                        <div class="related-title" title="BAQUELITA BOMBA GASOLINA TROOPER">BAQUELITA BOMBA GASOLINA TROOPER</div>
+                        <div class="related-oem">OEM: 8-94146-2580</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1692,14 +1689,29 @@
                     </div>
                 </a>
 
-                <a href="./embolo-arranque-luv-2-3.html" class="related-card">
+                <a href="./filtro-aire-luv-2-2.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/embolo-arranque-luv-2-3.webp" alt="Repuesto ÉMBOLO ARRANQUE LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/filtro-aire-luv-2-2.webp" alt="Repuesto FILTRO AIRE LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Embolo</span>
-                        <div class="related-title" title="ÉMBOLO ARRANQUE LUV 2.3">ÉMBOLO ARRANQUE LUV 2.3</div>
-                        <div class="related-oem">OEM: 053660-0440</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Filtro Aire</span></span>
+                        <div class="related-title" title="FILTRO AIRE LUV 2.2">FILTRO AIRE LUV 2.2</div>
+                        <div class="related-oem">OEM: 8-97039-0020</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./bobina-encendido-luv-2-2.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/bobina-encendido-luv-2-2.webp" alt="Repuesto BOBINA ENCENDIDO LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bobina</span></span>
+                        <div class="related-title" title="BOBINA ENCENDIDO LUV 2.2">BOBINA ENCENDIDO LUV 2.2</div>
+                        <div class="related-oem">OEM: 93363483</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

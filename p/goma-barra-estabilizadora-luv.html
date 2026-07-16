@@ -551,6 +551,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -560,6 +564,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1499,6 +1506,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1544,7 +1556,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Goma Barra Estabilizadora</div>
+                <div class="category-badge"><span>Goma Barra Estabilizadora</span></div>
                 <h1 class="product-title">Goma Barra Estabilizadora Luv</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1644,7 +1656,7 @@
                         <img src="../assets/goma-barra-estabilizadora-caribe.webp" alt="Repuesto GOMA BARRA ESTABILIZADORA CARIBE original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Goma Barra Estabilizadora</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Goma Barra Estabilizadora</span></span>
                         <div class="related-title" title="GOMA BARRA ESTABILIZADORA CARIBE">GOMA BARRA ESTABILIZADORA CARIBE</div>
                         <div class="related-oem">OEM: 5-51631-0170</div>
                         <div class="related-footer">
@@ -1654,14 +1666,14 @@
                     </div>
                 </a>
 
-                <a href="./engranaje-de-ciguenal-luv-2-3.html" class="related-card">
+                <a href="./empacadura-multiple-admision-luv-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/engranaje-de-ciguenal-luv-2-3.webp" alt="Repuesto ENGRANAJE DE CIGUEÑAL LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/empacadura-multiple-admision-luv-2-3.webp" alt="Repuesto EMPACADURA MÚLTIPLE ADMISIÓN LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Engranaje Cigueñal</span>
-                        <div class="related-title" title="ENGRANAJE DE CIGUEÑAL LUV 2.3">ENGRANAJE DE CIGUEÑAL LUV 2.3</div>
-                        <div class="related-oem">OEM: 8-94231-1651</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Multiple Admision</span></span>
+                        <div class="related-title" title="EMPACADURA MÚLTIPLE ADMISIÓN LUV 2.3">EMPACADURA MÚLTIPLE ADMISIÓN LUV 2.3</div>
+                        <div class="related-oem">OEM: 8-94146-2490</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1669,14 +1681,14 @@
                     </div>
                 </a>
 
-                <a href="./bomba-de-agua-luv-2-2.html" class="related-card">
+                <a href="./valvula-de-escape-luv-2-2.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/bomba-de-agua-luv-2-2.webp" alt="Repuesto BOMBA DE AGUA LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/valvula-de-escape-luv-2-2.webp" alt="Repuesto VÁLVULA DE ESCAPE LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Bomba de agua</span>
-                        <div class="related-title" title="BOMBA DE AGUA LUV 2.2">BOMBA DE AGUA LUV 2.2</div>
-                        <div class="related-oem">OEM: 8-92064-3910</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Valvula Admision y Escape</span></span>
+                        <div class="related-title" title="VÁLVULA DE ESCAPE LUV 2.2">VÁLVULA DE ESCAPE LUV 2.2</div>
+                        <div class="related-oem">OEM: 8-90323-7570</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1684,14 +1696,14 @@
                     </div>
                 </a>
 
-                <a href="./kit-de-tiempo-chevrolet-luv-2-2.html" class="related-card">
+                <a href="./valvula-de-minimo-luv-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/kit-de-tiempo-chevrolet-luv-2-2.webp" alt="Repuesto KIT DE TIEMPO LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/valvula-de-minimo-luv-2-3.webp" alt="Repuesto VÁLVULA DE MINIMO LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Kit de Tiempo</span>
-                        <div class="related-title" title="KIT DE TIEMPO LUV 2.2">KIT DE TIEMPO LUV 2.2</div>
-                        <div class="related-oem">OEM: TK-133</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Valvula Minimo</span></span>
+                        <div class="related-title" title="VÁLVULA DE MINIMO LUV 2.3">VÁLVULA DE MINIMO LUV 2.3</div>
+                        <div class="related-oem">OEM: 8-94312-0250</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Punta de Tripoide</div>
+                <div class="category-badge"><span>Punta de Tripoide</span></div>
                 <h1 class="product-title">Punta Tripoide Luv Dmax 3.5</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1647,13 +1659,13 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./punta-tripoide-caribe-g200.html" class="related-card">
+                <a href="./punta-tripoide-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/punta-tripoide-caribe-g200.webp" alt="Repuesto PUNTA TRIPOIDE CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/punta-tripoide-caribe-2-3.webp" alt="Repuesto PUNTA TRIPOIDE CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Punta de Tripoide</span>
-                        <div class="related-title" title="PUNTA TRIPOIDE CARIBE G200">PUNTA TRIPOIDE CARIBE G200</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Punta de Tripoide</span></span>
+                        <div class="related-title" title="PUNTA TRIPOIDE CARIBE 2.3">PUNTA TRIPOIDE CARIBE 2.3</div>
                         <div class="related-oem">OEM: 8-94124-6280</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1667,7 +1679,7 @@
                         <img src="../assets/punta-tripoide-trooper.webp" alt="Repuesto PUNTA TRIPOIDE TROOPER original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Punta de Tripoide</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Punta de Tripoide</span></span>
                         <div class="related-title" title="PUNTA TRIPOIDE TROOPER">PUNTA TRIPOIDE TROOPER</div>
                         <div class="related-oem">OEM: 8-97131-3960</div>
                         <div class="related-footer">
@@ -1677,13 +1689,13 @@
                     </div>
                 </a>
 
-                <a href="./punta-tripoide-caribe-2-3.html" class="related-card">
+                <a href="./punta-tripoide-caribe-g200.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/punta-tripoide-caribe-2-3.webp" alt="Repuesto PUNTA TRIPOIDE CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/punta-tripoide-caribe-g200.webp" alt="Repuesto PUNTA TRIPOIDE CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Punta de Tripoide</span>
-                        <div class="related-title" title="PUNTA TRIPOIDE CARIBE 2.3">PUNTA TRIPOIDE CARIBE 2.3</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Punta de Tripoide</span></span>
+                        <div class="related-title" title="PUNTA TRIPOIDE CARIBE G200">PUNTA TRIPOIDE CARIBE G200</div>
                         <div class="related-oem">OEM: 8-94124-6280</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1697,7 +1709,7 @@
                         <img src="../assets/punta-tripoide-luv-2-3.webp" alt="Repuesto PUNTA TRIPOIDE LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Punta de Tripoide</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Punta de Tripoide</span></span>
                         <div class="related-title" title="PUNTA TRIPOIDE LUV 2.3">PUNTA TRIPOIDE LUV 2.3</div>
                         <div class="related-oem">OEM: 8-97131-3960</div>
                         <div class="related-footer">

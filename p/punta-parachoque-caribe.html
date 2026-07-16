@@ -551,6 +551,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -560,6 +564,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1499,6 +1506,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1544,7 +1556,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Punta Parachoque</div>
+                <div class="category-badge"><span>Punta Parachoque</span></div>
                 <h1 class="product-title">Punta Parachoque Caribe</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1639,14 +1651,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./engranaje-bomba-aceite-caribe-2-3.html" class="related-card">
+                <a href="./buje-de-ballesta-delantero-caribe-2-6.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/engranaje-bomba-aceite-caribe-2-3.webp" alt="Repuesto ENGRANAJE BOMBA DE ACEITE CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/buje-de-ballesta-delantero-caribe-2-6.webp" alt="Repuesto BUJE DE BALLESTA DELANTERO CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Engranaje Bomba Aceite</span>
-                        <div class="related-title" title="ENGRANAJE BOMBA DE ACEITE CARIBE 2.3">ENGRANAJE BOMBA DE ACEITE CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 8-94231-1661</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Ballesta</span></span>
+                        <div class="related-title" title="BUJE DE BALLESTA DELANTERO CARIBE 2.6">BUJE DE BALLESTA DELANTERO CARIBE 2.6</div>
+                        <div class="related-oem">OEM: 8-94171-2741</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1654,14 +1666,14 @@
                     </div>
                 </a>
 
-                <a href="./goma-tripoide-caribe-2-3.html" class="related-card">
+                <a href="./filtro-aceite-caribe-2-6.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/goma-tripoide-caribe-2-3.webp" alt="Repuesto GOMA TRIPOIDE CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/filtro-aceite-caribe-2-6.webp" alt="Repuesto FILTRO ACEITE CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Goma Tripoide</span>
-                        <div class="related-title" title="GOMA TRIPOIDE CARIBE 2.3">GOMA TRIPOIDE CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 5-43319-0190</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Filtro Aceite</span></span>
+                        <div class="related-title" title="FILTRO ACEITE CARIBE 2.6">FILTRO ACEITE CARIBE 2.6</div>
+                        <div class="related-oem">OEM: 8-94456-7412</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1669,14 +1681,14 @@
                     </div>
                 </a>
 
-                <a href="./arana-caribe-2300.html" class="related-card">
+                <a href="./engranaje-de-ciguenal-caribe-2300.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/arana-caribe-2300.webp" alt="Repuesto ARAÑA CARIBE 2300 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/engranaje-de-ciguenal-caribe-2300.webp" alt="Repuesto ENGRANAJE DE CIGUEÑAL CARIBE 2300 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Araña</span>
-                        <div class="related-title" title="ARAÑA CARIBE 2300">ARAÑA CARIBE 2300</div>
-                        <div class="related-oem">OEM: 8-94243-2320</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Engranaje Cigueñal</span></span>
+                        <div class="related-title" title="ENGRANAJE DE CIGUEÑAL CARIBE 2300">ENGRANAJE DE CIGUEÑAL CARIBE 2300</div>
+                        <div class="related-oem">OEM: 8-94231-1651</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1684,14 +1696,14 @@
                     </div>
                 </a>
 
-                <a href="./guardapolvo-horquilla-caribe-2-3.html" class="related-card">
+                <a href="./estopera-punta-de-eje-tunel-trasera-interna-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/guardapolvo-horquilla-caribe-2-3.webp" alt="Repuesto GUARDAPOLVO HORQUILLA CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/estopera-punta-de-eje-tunel-trasera-interna-caribe-2-3.webp" alt="Repuesto ESTOPERA PUNTA DE EJE / TUNEL TRASERA INTERNA CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Guardapolvo Horquilla</span>
-                        <div class="related-title" title="GUARDAPOLVO HORQUILLA CARIBE 2.3">GUARDAPOLVO HORQUILLA CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 5-31131-0050</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Estopera Punta de Eje Trasera</span></span>
+                        <div class="related-title" title="ESTOPERA PUNTA DE EJE / TUNEL TRASERA INTERNA CARIBE 2.3">ESTOPERA PUNTA DE EJE / TUNEL TRASERA INTERNA CARIBE 2.3</div>
+                        <div class="related-oem">OEM: 8-94318-9100</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

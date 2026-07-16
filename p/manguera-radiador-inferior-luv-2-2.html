@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "José Manuel Madriz Diaz"
+          "name": "Santos Marquez Valera"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Excelente repuestos para vehículos."
+        "reviewBody": "Muy buena atención. Repuestos de calidad..."
       }
     }
     </script>
@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Manguera Radiador</div>
+                <div class="category-badge"><span>Manguera Radiador</span></div>
                 <h1 class="product-title">Manguera Radiador Inferior Luv 2.2</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1647,44 +1659,29 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3.webp" alt="Repuesto MANGUERA RADIADOR INFERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Manguera Radiador</span>
-                        <div class="related-title" title="MANGUERA RADIADOR INFERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3">MANGUERA RADIADOR INFERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3</div>
-                        <div class="related-oem">OEM: 8-94337-3000</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./manguera-radiador-superior-luv-2-2.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/manguera-radiador-superior-luv-2-2.webp" alt="Repuesto MANGUERA RADIADOR SUPERIOR LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Manguera Radiador</span>
-                        <div class="related-title" title="MANGUERA RADIADOR SUPERIOR LUV 2.2">MANGUERA RADIADOR SUPERIOR LUV 2.2</div>
-                        <div class="related-oem">OEM: 8-97181-3900</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
                 <a href="./manguera-radiador-superior-luv-2-2-2.html" class="related-card">
                     <div class="related-img-wrapper">
                         <img src="../assets/manguera-radiador-superior-luv-2-2-2.webp" alt="Repuesto MANGUERA RADIADOR SUPERIOR LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Manguera Radiador</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Manguera Radiador</span></span>
                         <div class="related-title" title="MANGUERA RADIADOR SUPERIOR LUV 2.2">MANGUERA RADIADOR SUPERIOR LUV 2.2</div>
                         <div class="related-oem">OEM: 8-97181-3900</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3.webp" alt="Repuesto MANGUERA RADIADOR INFERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Manguera Radiador</span></span>
+                        <div class="related-title" title="MANGUERA RADIADOR INFERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3">MANGUERA RADIADOR INFERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3</div>
+                        <div class="related-oem">OEM: 8-94337-3000</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1697,9 +1694,24 @@
                         <img src="../assets/manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3.webp" alt="Repuesto MANGUERA RADIADOR SUPERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Manguera Radiador</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Manguera Radiador</span></span>
                         <div class="related-title" title="MANGUERA RADIADOR SUPERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3">MANGUERA RADIADOR SUPERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3</div>
                         <div class="related-oem">OEM: 8-94389-4810</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./manguera-radiador-superior-luv-2-2.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/manguera-radiador-superior-luv-2-2.webp" alt="Repuesto MANGUERA RADIADOR SUPERIOR LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Manguera Radiador</span></span>
+                        <div class="related-title" title="MANGUERA RADIADOR SUPERIOR LUV 2.2">MANGUERA RADIADOR SUPERIOR LUV 2.2</div>
+                        <div class="related-oem">OEM: 8-97181-3900</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

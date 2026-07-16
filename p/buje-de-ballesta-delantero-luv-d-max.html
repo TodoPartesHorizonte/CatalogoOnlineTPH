@@ -551,6 +551,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -560,6 +564,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1499,6 +1506,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1544,7 +1556,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Buje Ballesta</div>
+                <div class="category-badge"><span>Buje Ballesta</span></div>
                 <h1 class="product-title">Buje De Ballesta Delantero Luv D-Max</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1644,8 +1656,38 @@
                         <img src="../assets/buje-ballesta-trasero-luv-dmax.webp" alt="Repuesto BUJE BALLESTA TRASERO LUV DMAX original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Buje Ballesta</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Ballesta</span></span>
                         <div class="related-title" title="BUJE BALLESTA TRASERO LUV DMAX">BUJE BALLESTA TRASERO LUV DMAX</div>
+                        <div class="related-oem">OEM: 8-94234-3190</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./buje-ballesta-trasero-trooper.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/buje-ballesta-trasero-trooper.webp" alt="Repuesto BUJE BALLESTA TRASERO TROOPER original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Ballesta</span></span>
+                        <div class="related-title" title="BUJE BALLESTA TRASERO TROOPER">BUJE BALLESTA TRASERO TROOPER</div>
+                        <div class="related-oem">OEM: 8-94234-3190</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./buje-ballesta-trasero-luv.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/buje-ballesta-trasero-luv.webp" alt="Repuesto BUJE BALLESTA TRASERO LUV original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Ballesta</span></span>
+                        <div class="related-title" title="BUJE BALLESTA TRASERO LUV">BUJE BALLESTA TRASERO LUV</div>
                         <div class="related-oem">OEM: 8-94234-3190</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1659,39 +1701,9 @@
                         <img src="../assets/buje-ballesta-trasero-rodeo.webp" alt="Repuesto BUJE BALLESTA TRASERO RODEO original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Buje Ballesta</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Ballesta</span></span>
                         <div class="related-title" title="BUJE BALLESTA TRASERO RODEO">BUJE BALLESTA TRASERO RODEO</div>
                         <div class="related-oem">OEM: 8-94234-3190</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./buje-de-ballesta-delantero-luv.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/buje-de-ballesta-delantero-luv.webp" alt="Repuesto BUJE DE BALLESTA DELANTERO LUV original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Buje Ballesta</span>
-                        <div class="related-title" title="BUJE DE BALLESTA DELANTERO LUV">BUJE DE BALLESTA DELANTERO LUV</div>
-                        <div class="related-oem">OEM: 8-94171-2741</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./buje-ballesta-delantero-caribe-2-3.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/buje-ballesta-delantero-caribe-2-3.webp" alt="Repuesto BUJE BALLESTA DELANTERO CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Buje Ballesta</span>
-                        <div class="related-title" title="BUJE BALLESTA DELANTERO CARIBE 2.3">BUJE BALLESTA DELANTERO CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 8-94223-1680</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

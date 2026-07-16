@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Espejo</div>
+                <div class="category-badge"><span>Espejo</span></div>
                 <h1 class="product-title">Espejo Retrovisor Derecho Caribe 2300</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1652,7 +1664,7 @@
                         <img src="../assets/espejo-retrovisor-derecho-caribe-2600.webp" alt="Repuesto ESPEJO RETROVISOR DERECHO CARIBE 2600 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Espejo</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Espejo</span></span>
                         <div class="related-title" title="ESPEJO RETROVISOR DERECHO CARIBE 2600">ESPEJO RETROVISOR DERECHO CARIBE 2600</div>
                         <div class="related-oem">OEM: 8-94495-2281</div>
                         <div class="related-footer">
@@ -1667,7 +1679,7 @@
                         <img src="../assets/espejo-luv-d-max-2005-2014.webp" alt="Repuesto ESPEJO LUV D-MAX 2005/2014 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Espejo</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Espejo</span></span>
                         <div class="related-title" title="ESPEJO LUV D-MAX 2005/2014">ESPEJO LUV D-MAX 2005/2014</div>
                         <div class="related-oem">OEM: 8-97357-8750</div>
                         <div class="related-footer">
@@ -1677,14 +1689,14 @@
                     </div>
                 </a>
 
-                <a href="./estopera-ciguenal-delantera-caribe-2000.html" class="related-card">
+                <a href="./bomba-de-freno-4-huecos-caribe-g-2000.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/estopera-ciguenal-delantera-caribe-2000.webp" alt="Repuesto ESTOPERA CIGUEÑAL DELANTERA CARIBE 2000 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/bomba-de-freno-4-huecos-caribe-g-2000.webp" alt="Repuesto BOMBA DE FRENO 4 HUECOS CARIBE G-2000 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Estopera Cigueñal Delantera</span>
-                        <div class="related-title" title="ESTOPERA CIGUEÑAL DELANTERA CARIBE 2000">ESTOPERA CIGUEÑAL DELANTERA CARIBE 2000</div>
-                        <div class="related-oem">OEM: 8-09924-2960</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de Freno</span></span>
+                        <div class="related-title" title="BOMBA DE FRENO 4 HUECOS CARIBE G-2000">BOMBA DE FRENO 4 HUECOS CARIBE G-2000</div>
+                        <div class="related-oem">OEM: 8-94222-6602</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1692,14 +1704,14 @@
                     </div>
                 </a>
 
-                <a href="./base-filtrode-aceite-caribe-2-6.html" class="related-card">
+                <a href="./fan-clutch-caribe-2-6.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/base-filtrode-aceite-caribe-2-6.webp" alt="Repuesto BASE FILTRODE ACEITE CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/fan-clutch-caribe-2-6.webp" alt="Repuesto FAN CLUTCH CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Base Filtro Aceite</span>
-                        <div class="related-title" title="BASE FILTRODE ACEITE CARIBE 2.6">BASE FILTRODE ACEITE CARIBE 2.6</div>
-                        <div class="related-oem">OEM: 8-94476-1270</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Fan Clutch</span></span>
+                        <div class="related-title" title="FAN CLUTCH CARIBE 2.6">FAN CLUTCH CARIBE 2.6</div>
+                        <div class="related-oem">OEM: 8-94412-0300</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

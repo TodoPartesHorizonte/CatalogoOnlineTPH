@@ -317,7 +317,7 @@ def generate_pages(data):
                         <img src="..{p_img}" alt="Repuesto {escaped_desc} original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">{escaped_cat}</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">{escaped_cat}</span></span>
                         <div class="related-title" title="{escaped_desc}">{escaped_desc}</div>
                         {oem_badge}
                         <div class="related-footer">
@@ -912,6 +912,10 @@ def generate_pages(data):
 
         .category-badge {{
             align-self: flex-start;
+            display: block;
+        }}
+        .category-badge span {{
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -921,6 +925,9 @@ def generate_pages(data):
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }}
 
         .product-title {{
@@ -1860,6 +1867,11 @@ def generate_pages(data):
             .related-footer {{
                 font-size: 10.5px;
             }}
+            .related-content .category-badge span {{
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }}
         }}
     </style>
 </head>
@@ -1905,7 +1917,7 @@ def generate_pages(data):
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">{category}</div>
+                <div class="category-badge"><span>{category}</span></div>
                 <h1 class="product-title">{description}</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>

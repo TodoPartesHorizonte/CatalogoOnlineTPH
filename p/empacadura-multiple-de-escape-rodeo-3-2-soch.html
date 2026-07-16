@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Olimpo González"
+          "name": "Wences Rodríguez"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Gracias por sus servicios. Los recomiendo. Compré los repuestos de mi camioneta luv dmax y todo de calidad."
+        "reviewBody": "Puedo decir que hay mucha responsabilidad en el servicio y buena atención. Excelente."
       }
     }
     </script>
@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Empacadura Multiple Escape</div>
+                <div class="category-badge"><span>Empacadura Multiple Escape</span></div>
                 <h1 class="product-title">Empacadura Múltiple De Escape Rodeo 3.2 Soch</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1652,23 +1664,8 @@
                         <img src="../assets/empacadura-multiple-de-escape-luv-2-3.webp" alt="Repuesto EMPACADURA MÚLTIPLE DE ESCAPE LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Empacadura Multiple Escape</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Multiple Escape</span></span>
                         <div class="related-title" title="EMPACADURA MÚLTIPLE DE ESCAPE LUV 2.3">EMPACADURA MÚLTIPLE DE ESCAPE LUV 2.3</div>
-                        <div class="related-oem">OEM: 8-94246-1090</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./empacadura-multiple-de-escape-caribe-2-6.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/empacadura-multiple-de-escape-caribe-2-6.webp" alt="Repuesto EMPACADURA MÚLTIPLE DE ESCAPE CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Empacadura Multiple Escape</span>
-                        <div class="related-title" title="EMPACADURA MÚLTIPLE DE ESCAPE CARIBE 2.6">EMPACADURA MÚLTIPLE DE ESCAPE CARIBE 2.6</div>
                         <div class="related-oem">OEM: 8-94246-1090</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1682,7 +1679,7 @@
                         <img src="../assets/empacadura-multiple-de-escape-caribe-2-3.webp" alt="Repuesto EMPACADURA MÚLTIPLE DE ESCAPE CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Empacadura Multiple Escape</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Multiple Escape</span></span>
                         <div class="related-title" title="EMPACADURA MÚLTIPLE DE ESCAPE CARIBE 2.3">EMPACADURA MÚLTIPLE DE ESCAPE CARIBE 2.3</div>
                         <div class="related-oem">OEM: 8-94246-1090</div>
                         <div class="related-footer">
@@ -1697,9 +1694,24 @@
                         <img src="../assets/empacadura-multiple-de-escape-trooper-3-2-sohc.webp" alt="Repuesto EMPACADURA MÚLTIPLE DE ESCAPE TROOPER 3.2 SOHC original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Empacadura Multiple Escape</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Multiple Escape</span></span>
                         <div class="related-title" title="EMPACADURA MÚLTIPLE DE ESCAPE TROOPER 3.2 SOHC">EMPACADURA MÚLTIPLE DE ESCAPE TROOPER 3.2 SOHC</div>
                         <div class="related-oem">OEM: 8-94323-1730</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./empacadura-multiple-de-escape-caribe-2-6.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/empacadura-multiple-de-escape-caribe-2-6.webp" alt="Repuesto EMPACADURA MÚLTIPLE DE ESCAPE CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Multiple Escape</span></span>
+                        <div class="related-title" title="EMPACADURA MÚLTIPLE DE ESCAPE CARIBE 2.6">EMPACADURA MÚLTIPLE DE ESCAPE CARIBE 2.6</div>
+                        <div class="related-oem">OEM: 8-94246-1090</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

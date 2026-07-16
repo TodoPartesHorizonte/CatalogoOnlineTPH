@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Copa Arranque</div>
+                <div class="category-badge"><span>Copa Arranque</span></div>
                 <h1 class="product-title">Copa Arranque Caribe 2600</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1652,7 +1664,7 @@
                         <img src="../assets/copa-arranque-caribe-2300.webp" alt="Repuesto COPA ARRANQUE CARIBE 2300 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Copa Arranque</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Copa Arranque</span></span>
                         <div class="related-title" title="COPA ARRANQUE CARIBE 2300">COPA ARRANQUE CARIBE 2300</div>
                         <div class="related-oem">OEM: 8-94172-3280</div>
                         <div class="related-footer">
@@ -1662,14 +1674,14 @@
                     </div>
                 </a>
 
-                <a href="./espejo-retrovisor-derecho-caribe-2300.html" class="related-card">
+                <a href="./kit-bomba-de-freno-caribe-g-2000.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/espejo-retrovisor-derecho-caribe-2300.webp" alt="Repuesto ESPEJO RETROVISOR DERECHO CARIBE 2300 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-bomba-de-freno-caribe-g-2000.webp" alt="Repuesto KIT BOMBA DE FRENO CARIBE G-2000 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Espejo</span>
-                        <div class="related-title" title="ESPEJO RETROVISOR DERECHO CARIBE 2300">ESPEJO RETROVISOR DERECHO CARIBE 2300</div>
-                        <div class="related-oem">OEM: 8-94495-2281</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit Bomba de Freno</span></span>
+                        <div class="related-title" title="KIT BOMBA DE FRENO CARIBE G-2000">KIT BOMBA DE FRENO CARIBE G-2000</div>
+                        <div class="related-oem">OEM: 8-94231-5490</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1677,14 +1689,14 @@
                     </div>
                 </a>
 
-                <a href="./amortiguador-de-direccion-caribe-g-200.html" class="related-card">
+                <a href="./bomba-de-gasolina-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/amortiguador-de-direccion-caribe-g-200.webp" alt="Repuesto AMORTIGUADOR DE DIRECCION CARIBE G-200 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/bomba-de-gasolina-caribe-2-3.webp" alt="Repuesto BOMBA DE GASOLINA CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Amortiguador Direccion</span>
-                        <div class="related-title" title="AMORTIGUADOR DE DIRECCION CARIBE G-200">AMORTIGUADOR DE DIRECCION CARIBE G-200</div>
-                        <div class="related-oem">OEM: 8-94241-4692</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de Gasolina</span></span>
+                        <div class="related-title" title="BOMBA DE GASOLINA CARIBE 2.3">BOMBA DE GASOLINA CARIBE 2.3</div>
+                        <div class="related-oem">OEM: 8-94438-5330</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1692,14 +1704,14 @@
                     </div>
                 </a>
 
-                <a href="./barra-central-sin-hueco-caribe-2-6.html" class="related-card">
+                <a href="./estopera-cola-de-caja-caribe-2-6.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/barra-central-sin-hueco-caribe-2-6.webp" alt="Repuesto BARRA CENTRAL SIN HUECO CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/estopera-cola-de-caja-caribe-2-6.webp" alt="Repuesto ESTOPERA COLA DE CAJA CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Barra Central</span>
-                        <div class="related-title" title="BARRA CENTRAL SIN HUECO CARIBE 2.6">BARRA CENTRAL SIN HUECO CARIBE 2.6</div>
-                        <div class="related-oem">OEM: 8-94419-3791</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Estopera Cola de Caja</span></span>
+                        <div class="related-title" title="ESTOPERA COLA DE CAJA CARIBE 2.6">ESTOPERA COLA DE CAJA CARIBE 2.6</div>
+                        <div class="related-oem">OEM: 8-97046-7053</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

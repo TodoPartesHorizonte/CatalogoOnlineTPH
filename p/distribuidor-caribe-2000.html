@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Distribuidor</div>
+                <div class="category-badge"><span>Distribuidor</span></div>
                 <h1 class="product-title">Distribuidor Caribe 2000</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1652,7 +1664,7 @@
                         <img src="../assets/distribuidor-luv-2300.webp" alt="Repuesto DISTRIBUIDOR LUV 2300 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Distribuidor</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Distribuidor</span></span>
                         <div class="related-title" title="DISTRIBUIDOR LUV 2300">DISTRIBUIDOR LUV 2300</div>
                         <div class="related-oem">OEM: 8-94476-1421</div>
                         <div class="related-footer">
@@ -1662,14 +1674,14 @@
                     </div>
                 </a>
 
-                <a href="./copa-arranque-caribe-2600.html" class="related-card">
+                <a href="./valvula-de-escape-caribe-2000.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/copa-arranque-caribe-2600.webp" alt="Repuesto COPA ARRANQUE CARIBE 2600 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/valvula-de-escape-caribe-2000.webp" alt="Repuesto VÁLVULA DE ESCAPE CARIBE 2000 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Copa Arranque</span>
-                        <div class="related-title" title="COPA ARRANQUE CARIBE 2600">COPA ARRANQUE CARIBE 2600</div>
-                        <div class="related-oem">OEM: 8-94172-3280</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Valvula Admision y Escape</span></span>
+                        <div class="related-title" title="VÁLVULA DE ESCAPE CARIBE 2000">VÁLVULA DE ESCAPE CARIBE 2000</div>
+                        <div class="related-oem">OEM: 8-94217-1790</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1677,14 +1689,14 @@
                     </div>
                 </a>
 
-                <a href="./bendix-de-arranque-caribe-2300.html" class="related-card">
+                <a href="./kit-arandela-y-tuerca-punta-de-eje-caribe-2-0.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/bendix-de-arranque-caribe-2300.webp" alt="Repuesto BENDIX DE ARRANQUE CARIBE 2300 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-arandela-y-tuerca-punta-de-eje-caribe-2-0.webp" alt="Repuesto KIT ARANDELA Y TUERCA PUNTA DE EJE CARIBE 2.0 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Bendix</span>
-                        <div class="related-title" title="BENDIX DE ARRANQUE CARIBE 2300">BENDIX DE ARRANQUE CARIBE 2300</div>
-                        <div class="related-oem">OEM: 8-94129-1870</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit Arandela y Tuerca Punta Eje</span></span>
+                        <div class="related-title" title="KIT ARANDELA Y TUERCA PUNTA DE EJE CARIBE 2.0">KIT ARANDELA Y TUERCA PUNTA DE EJE CARIBE 2.0</div>
+                        <div class="related-oem">OEM: KIT-1000</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1692,14 +1704,14 @@
                     </div>
                 </a>
 
-                <a href="./valvula-admision-caribe-2000.html" class="related-card">
+                <a href="./juego-de-cables-caribe.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/valvula-admision-caribe-2000.webp" alt="Repuesto VÁLVULA ADMISION CARIBE 2000 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/juego-de-cables-caribe.webp" alt="Repuesto JUEGO DE CABLES CARIBE original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Valvula Admision y Escape</span>
-                        <div class="related-title" title="VÁLVULA ADMISION CARIBE 2000">VÁLVULA ADMISION CARIBE 2000</div>
-                        <div class="related-oem">OEM: 8-94217-1780</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cables de Bujia</span></span>
+                        <div class="related-title" title="JUEGO DE CABLES CARIBE">JUEGO DE CABLES CARIBE</div>
+                        <div class="related-oem">OEM: 8-94433-3641</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

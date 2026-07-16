@@ -551,6 +551,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -560,6 +564,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1499,6 +1506,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1544,7 +1556,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Filtro Gasolina</div>
+                <div class="category-badge"><span>Filtro Gasolina</span></div>
                 <h1 class="product-title">Filtro Gasolina Luv D-Max</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1644,7 +1656,7 @@
                         <img src="../assets/filtro-gasolina-universal.webp" alt="Repuesto FILTRO GASOLINA UNIVERSAL original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Filtro Gasolina</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Filtro Gasolina</span></span>
                         <div class="related-title" title="FILTRO GASOLINA UNIVERSAL">FILTRO GASOLINA UNIVERSAL</div>
                         <div class="related-oem">OEM: 5-13200-0661</div>
                         <div class="related-footer">
@@ -1654,14 +1666,14 @@
                     </div>
                 </a>
 
-                <a href="./piston-caliper-delantero-luv-dmax-10-15.html" class="related-card">
+                <a href="./horquilla-clutch-luv-d-max-2-4.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/piston-caliper-delantero-luv-dmax-10-15.webp" alt="Repuesto PISTON CALIPER DELANTERO LUV DMAX 10/15 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/horquilla-clutch-luv-d-max-2-4.webp" alt="Repuesto HORQUILLA CLUTCH LUV D-MAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Piston Caliper</span>
-                        <div class="related-title" title="PISTON CALIPER DELANTERO LUV DMAX 10/15">PISTON CALIPER DELANTERO LUV DMAX 10/15</div>
-                        <div class="related-oem">OEM: 8-97328-6060</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Horquilla Clutch</span></span>
+                        <div class="related-title" title="HORQUILLA CLUTCH LUV D-MAX 2.4">HORQUILLA CLUTCH LUV D-MAX 2.4</div>
+                        <div class="related-oem">OEM: 8-94324-4180</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1669,14 +1681,14 @@
                     </div>
                 </a>
 
-                <a href="./guayaacelerador-luv-d-max-2-4.html" class="related-card">
+                <a href="./cajetin-direccion-luv-d-max-2010-2015.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/guayaacelerador-luv-d-max-2-4.webp" alt="Repuesto GUAYA ACELERADOR LUV D-MAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/cajetin-direccion-luv-d-max-2010-2015.webp" alt="Repuesto CAJETIN DIRECCIÓN LUV D-MAX 2010/2015 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Guaya Acelerador</span>
-                        <div class="related-title" title="GUAYA ACELERADOR LUV D-MAX 2.4">GUAYA ACELERADOR LUV D-MAX 2.4</div>
-                        <div class="related-oem">OEM: 8-97362-9490</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cajetin de Direccion</span></span>
+                        <div class="related-title" title="CAJETIN DIRECCIÓN LUV D-MAX 2010/2015">CAJETIN DIRECCIÓN LUV D-MAX 2010/2015</div>
+                        <div class="related-oem">OEM: 8-98101-7800</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1684,14 +1696,14 @@
                     </div>
                 </a>
 
-                <a href="./cajetin-direccion-luv-d-max-2005-2009.html" class="related-card">
+                <a href="./hidrovac-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/cajetin-direccion-luv-d-max-2005-2009.webp" alt="Repuesto CAJETIN DIRECCIÓN LUV D-MAX 2005/2009 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/hidrovac-luv-d-max-3-5.webp" alt="Repuesto HIDROVAC LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Cajetin de Direccion</span>
-                        <div class="related-title" title="CAJETIN DIRECCIÓN LUV D-MAX 2005/2009">CAJETIN DIRECCIÓN LUV D-MAX 2005/2009</div>
-                        <div class="related-oem">OEM: 8-97943-5190</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Hidrovac</span></span>
+                        <div class="related-title" title="HIDROVAC LUV D-MAX 3.5">HIDROVAC LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97365-5180</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

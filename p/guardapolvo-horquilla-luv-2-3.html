@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Luis Rejon"
+          "name": "José Manuel Madriz Diaz"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Todo para mi dmax a la mano buena atención y rápida respuesta"
+        "reviewBody": "Excelente repuestos para vehículos."
       }
     }
     </script>
@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Guardapolvo Horquilla</div>
+                <div class="category-badge"><span>Guardapolvo Horquilla</span></div>
                 <h1 class="product-title">Guardapolvo Horquilla Luv 2.3</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1652,8 +1664,23 @@
                         <img src="../assets/guardapolvo-horquilla-luv-2-2.webp" alt="Repuesto GUARDAPOLVO HORQUILLA LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Guardapolvo Horquilla</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Guardapolvo Horquilla</span></span>
                         <div class="related-title" title="GUARDAPOLVO HORQUILLA LUV 2.2">GUARDAPOLVO HORQUILLA LUV 2.2</div>
+                        <div class="related-oem">OEM: 8-94156-7000</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./guardapolvo-horquilla-luv-d-max-3-0-diesel.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/guardapolvo-horquilla-luv-d-max-3-0-diesel.webp" alt="Repuesto GUARDAPOLVO HORQUILLA LUV D-MAX 3.0 DIESEL original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Guardapolvo Horquilla</span></span>
+                        <div class="related-title" title="GUARDAPOLVO HORQUILLA LUV D-MAX 3.0 DIESEL">GUARDAPOLVO HORQUILLA LUV D-MAX 3.0 DIESEL</div>
                         <div class="related-oem">OEM: 8-94156-7000</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1667,24 +1694,9 @@
                         <img src="../assets/guardapolvo-horquilla-caribe-2-0.webp" alt="Repuesto GUARDAPOLVO HORQUILLA CARIBE 2.0 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Guardapolvo Horquilla</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Guardapolvo Horquilla</span></span>
                         <div class="related-title" title="GUARDAPOLVO HORQUILLA CARIBE 2.0">GUARDAPOLVO HORQUILLA CARIBE 2.0</div>
                         <div class="related-oem">OEM: 5-31131-0050</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./guardapolvo-horquilla-luv-d-max-3-0-diesel.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/guardapolvo-horquilla-luv-d-max-3-0-diesel.webp" alt="Repuesto GUARDAPOLVO HORQUILLA LUV D-MAX 3.0 DIESEL original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Guardapolvo Horquilla</span>
-                        <div class="related-title" title="GUARDAPOLVO HORQUILLA LUV D-MAX 3.0 DIESEL">GUARDAPOLVO HORQUILLA LUV D-MAX 3.0 DIESEL</div>
-                        <div class="related-oem">OEM: 8-94156-7000</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1697,7 +1709,7 @@
                         <img src="../assets/guardapolvo-horquilla-caribe-2-6.webp" alt="Repuesto GUARDAPOLVO HORQUILLA CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Guardapolvo Horquilla</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Guardapolvo Horquilla</span></span>
                         <div class="related-title" title="GUARDAPOLVO HORQUILLA CARIBE 2.6">GUARDAPOLVO HORQUILLA CARIBE 2.6</div>
                         <div class="related-oem">OEM: 8-94156-7000</div>
                         <div class="related-footer">

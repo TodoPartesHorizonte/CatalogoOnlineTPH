@@ -123,13 +123,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Ramon Villarroel"
+          "name": "Santos Marquez Valera"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Excelente atención al cliente son lo máximo en repuestos. Todos los repuestos de mi caribe nuevos, los felicito sigan así confiando en Venezuela."
+        "reviewBody": "Muy buena atención. Repuestos de calidad..."
       }
     }
     </script>
@@ -551,6 +551,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -560,6 +564,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1499,6 +1506,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1544,7 +1556,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Buje Meseta</div>
+                <div class="category-badge"><span>Buje Meseta</span></div>
                 <h1 class="product-title">Buje Meseta Luv 4x2</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1639,27 +1651,12 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./buje-meseta-externo-luv-4x4.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/buje-meseta-externo-luv-4x4.webp" alt="Repuesto BUJE MESETA EXTERNO LUV 4X4 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Buje Meseta</span>
-                        <div class="related-title" title="BUJE MESETA EXTERNO LUV 4X4">BUJE MESETA EXTERNO LUV 4X4</div>
-                        <div class="related-oem">OEM: 8-94408-8411</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
                 <a href="./buje-meseta-interno-luv-4x4.html" class="related-card">
                     <div class="related-img-wrapper">
                         <img src="../assets/buje-meseta-interno-luv-4x4.webp" alt="Repuesto BUJE MESETA INTERNO LUV 4X4 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Buje Meseta</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Meseta</span></span>
                         <div class="related-title" title="BUJE MESETA INTERNO LUV 4X4">BUJE MESETA INTERNO LUV 4X4</div>
                         <div class="related-oem">OEM: 8-94408-8420</div>
                         <div class="related-footer">
@@ -1669,13 +1666,28 @@
                     </div>
                 </a>
 
-                <a href="./buje-meseta-interno-trooper-3-2.html" class="related-card">
+                <a href="./buje-meseta-externo-luv-4x4.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/buje-meseta-interno-trooper-3-2.webp" alt="Repuesto BUJE MESETA INTERNO TROOPER 3.2 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/buje-meseta-externo-luv-4x4.webp" alt="Repuesto BUJE MESETA EXTERNO LUV 4X4 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Buje Meseta</span>
-                        <div class="related-title" title="BUJE MESETA INTERNO TROOPER 3.2">BUJE MESETA INTERNO TROOPER 3.2</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Meseta</span></span>
+                        <div class="related-title" title="BUJE MESETA EXTERNO LUV 4X4">BUJE MESETA EXTERNO LUV 4X4</div>
+                        <div class="related-oem">OEM: 8-94408-8411</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./buje-meseta-interno-luv-d-max-3-5.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/buje-meseta-interno-luv-d-max-3-5.webp" alt="Repuesto BUJE MESETA INTERNO LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Meseta</span></span>
+                        <div class="related-title" title="BUJE MESETA INTERNO LUV D-MAX 3.5">BUJE MESETA INTERNO LUV D-MAX 3.5</div>
                         <div class="related-oem">OEM: 8-94408-8420</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1684,14 +1696,14 @@
                     </div>
                 </a>
 
-                <a href="./buje-meseta-caribe-g-200.html" class="related-card">
+                <a href="./buje-meseta-externo-rodeo.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/buje-meseta-caribe-g-200.webp" alt="Repuesto BUJE MESETA CARIBE G-200 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/buje-meseta-externo-rodeo.webp" alt="Repuesto BUJE MESETA EXTERNO RODEO original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Buje Meseta</span>
-                        <div class="related-title" title="BUJE MESETA CARIBE G-200">BUJE MESETA CARIBE G-200</div>
-                        <div class="related-oem">OEM: 5-51225-0020</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Meseta</span></span>
+                        <div class="related-title" title="BUJE MESETA EXTERNO RODEO">BUJE MESETA EXTERNO RODEO</div>
+                        <div class="related-oem">OEM: 8-94408-8411</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

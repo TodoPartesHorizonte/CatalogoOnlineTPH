@@ -551,6 +551,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -560,6 +564,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1499,6 +1506,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1544,7 +1556,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Goma Barra Estabilizadora</div>
+                <div class="category-badge"><span>Goma Barra Estabilizadora</span></div>
                 <h1 class="product-title">Goma Barra Estabilizadora Caribe</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1644,24 +1656,9 @@
                         <img src="../assets/goma-barra-estabilizadora-luv.webp" alt="Repuesto GOMA BARRA ESTABILIZADORA LUV original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Goma Barra Estabilizadora</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Goma Barra Estabilizadora</span></span>
                         <div class="related-title" title="GOMA BARRA ESTABILIZADORA LUV">GOMA BARRA ESTABILIZADORA LUV</div>
                         <div class="related-oem">OEM: 5-51631-0170</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./pastillas-de-freno-trasera-caribe-89-90.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/pastillas-de-freno-trasera-caribe-89-90.webp" alt="Repuesto PASTILLAS DE FRENO TRASERA CARIBE 89/90 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Pastillas de Freno</span>
-                        <div class="related-title" title="PASTILLAS DE FRENO TRASERA CARIBE 89/90">PASTILLAS DE FRENO TRASERA CARIBE 89/90</div>
-                        <div class="related-oem">OEM: 442</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1674,7 +1671,7 @@
                         <img src="../assets/base-filtro-de-aceite-caribe-2-3.webp" alt="Repuesto BASE FILTRO DE ACEITE CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Base Filtro Aceite</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Base Filtro Aceite</span></span>
                         <div class="related-title" title="BASE FILTRO DE ACEITE CARIBE 2.3">BASE FILTRO DE ACEITE CARIBE 2.3</div>
                         <div class="related-oem">OEM: 8-94476-1270</div>
                         <div class="related-footer">
@@ -1684,14 +1681,29 @@
                     </div>
                 </a>
 
-                <a href="./juego-de-bandas-de-freno-caribe-83-88.html" class="related-card">
+                <a href="./kit-clutch-caribe-g-2000.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/juego-de-bandas-de-freno-caribe-83-88.webp" alt="Repuesto JUEGO DE BANDAS DE FRENO CARIBE 83-88 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-clutch-caribe-g-2000.webp" alt="Repuesto KIT CLUTCH CARIBE G-2000 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Bandas</span>
-                        <div class="related-title" title="JUEGO DE BANDAS DE FRENO CARIBE 83-88">JUEGO DE BANDAS DE FRENO CARIBE 83-88</div>
-                        <div class="related-oem">OEM: 8-94230-5391</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit Clutch</span></span>
+                        <div class="related-title" title="KIT CLUTCH CARIBE G-2000">KIT CLUTCH CARIBE G-2000</div>
+                        <div class="related-oem">OEM: KIS10B</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./valvula-pcv-caribe.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/valvula-pcv-caribe.webp" alt="Repuesto VÁLVULA PCV CARIBE original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Valvula PCV</span></span>
+                        <div class="related-title" title="VÁLVULA PCV CARIBE">VÁLVULA PCV CARIBE</div>
+                        <div class="related-oem">OEM: 8-94152-8590</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

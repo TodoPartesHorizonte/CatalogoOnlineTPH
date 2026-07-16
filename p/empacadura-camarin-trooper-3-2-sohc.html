@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Olimpo González"
+          "name": "Wences Rodríguez"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Gracias por sus servicios. Los recomiendo. Compré los repuestos de mi camioneta luv dmax y todo de calidad."
+        "reviewBody": "Puedo decir que hay mucha responsabilidad en el servicio y buena atención. Excelente."
       }
     }
     </script>
@@ -555,6 +555,10 @@
 
         .category-badge {
             align-self: flex-start;
+            display: block;
+        }
+        .category-badge span {
+            display: inline;
             background: rgba(255, 106, 0, 0.1);
             border: 1px solid var(--accent-orange);
             color: var(--accent-orange);
@@ -564,6 +568,9 @@
             padding: 6px 14px;
             border-radius: 20px;
             letter-spacing: 0.8px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            line-height: 1.2;
         }
 
         .product-title {
@@ -1503,6 +1510,11 @@
             .related-footer {
                 font-size: 10.5px;
             }
+            .related-content .category-badge span {
+                font-size: 8.5px !important;
+                padding: 2px 6px !important;
+                line-height: 1.1;
+            }
         }
     </style>
 </head>
@@ -1548,7 +1560,7 @@
             </div>
 
             <div class="details-panel">
-                <div class="category-badge">Empacadura Camarin</div>
+                <div class="category-badge"><span>Empacadura Camarin</span></div>
                 <h1 class="product-title">Empacadura Camarin Trooper 3.2 Sohc</h1>
                 <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
                     <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
@@ -1652,7 +1664,7 @@
                         <img src="../assets/empacadura-camarin-rodeo-3-2-soch.webp" alt="Repuesto EMPACADURA CAMARIN RODEO 3.2 SOCH original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Empacadura Camarin</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Camarin</span></span>
                         <div class="related-title" title="EMPACADURA CAMARIN RODEO 3.2 SOCH">EMPACADURA CAMARIN RODEO 3.2 SOCH</div>
                         <div class="related-oem">OEM: 8-94364-5770</div>
                         <div class="related-footer">
@@ -1667,9 +1679,24 @@
                         <img src="../assets/empacadura-camarin-luv-d-max-3-5.webp" alt="Repuesto EMPACADURA CAMARIN LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Empacadura Camarin</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Camarin</span></span>
                         <div class="related-title" title="EMPACADURA CAMARIN LUV D-MAX 3.5">EMPACADURA CAMARIN LUV D-MAX 3.5</div>
                         <div class="related-oem">OEM: 8-97254-4480</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./amortiguador-direccion-trooper.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/amortiguador-direccion-trooper.webp" alt="Repuesto AMORTIGUADOR DIRECCION TROOPER original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Amortiguador Direccion</span></span>
+                        <div class="related-title" title="AMORTIGUADOR DIRECCION TROOPER">AMORTIGUADOR DIRECCION TROOPER</div>
+                        <div class="related-oem">OEM: 8-94312-8140</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1682,24 +1709,9 @@
                         <img src="../assets/filtro-aceite-trooper-3-2.webp" alt="Repuesto FILTRO ACEITE TROOPER 3.2 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Filtro Aceite</span>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Filtro Aceite</span></span>
                         <div class="related-title" title="FILTRO ACEITE TROOPER 3.2">FILTRO ACEITE TROOPER 3.2</div>
                         <div class="related-oem">OEM: 8-94456-7412</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./pastillas-de-freno-delantera-trooper-3-2.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/pastillas-de-freno-delantera-trooper-3-2.webp" alt="Repuesto PASTILLAS DE FRENO DELANTERA TROOPER 3.2 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="font-size: 10px; padding: 2px 8px; margin-bottom: 4px; align-self: flex-start;">Pastillas de Freno</span>
-                        <div class="related-title" title="PASTILLAS DE FRENO DELANTERA TROOPER 3.2">PASTILLAS DE FRENO DELANTERA TROOPER 3.2</div>
-                        <div class="related-oem">OEM: 7585</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
