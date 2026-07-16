@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 688,
+  "total_products": 696,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -17951,6 +17951,30 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "cee06ee2-bd2f-4e9a-b501-d6dcd9b86e98",
+      "category": "Pastillas de Freno",
+      "image_path": "./assets/pastillas-de-freno-trasera-caribe-91-93.webp",
+      "description": "PASTILLAS DE FRENO TRASERA CARIBE 91-93",
+      "keywords": [
+        "7287",
+        "7328",
+        "8-94364-3670",
+        "8-94483-2210",
+        "8-97018-3570",
+        "91-93",
+        "CARIBE",
+        "FRENO",
+        "PASTILLAS",
+        "TRASERA"
+      ],
+      "oem": "7328 / 7287 / 8-94364-3670 / 8-94483-2210 / 8-97018-3570",
+      "slug": "pastillas-de-freno-trasera-caribe-91-93",
+      "original_filename": "Pastillas de Freno/cee06ee2-bd2f-4e9a-b501-d6dcd9b86e98.jpg",
+      "linked_ids": [
+        766
+      ]
+    },
+    {
       "category": "Pastillas de Freno",
       "description": "PASTILLAS DE FRENO TRASERA RODEO 3.2",
       "id": "6e5a6e6c-05e1-43bf-9c7b-fccc4ca1af51",
@@ -18491,6 +18515,126 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "232c8860-6ffe-45b0-b8db-a68d59609019",
+      "category": "Piñon Velocimetro",
+      "image_path": "./assets/pinon-velocimetro-caribe.webp",
+      "description": "PIÑON VELOCIMETRO CARIBE",
+      "keywords": [
+        "8-94473-3081",
+        "8-94473-3082",
+        "8-97238-5880",
+        "CARIBE",
+        "PINON",
+        "VELOCIMETRO"
+      ],
+      "oem": "8-94473-3081 / 8-94473-3082 / 8-97238-5880",
+      "slug": "pinon-velocimetro-caribe",
+      "original_filename": "Piñon Velocimetro/232c8860-6ffe-45b0-b8db-a68d59609019.jpg",
+      "linked_ids": [
+        774
+      ]
+    },
+    {
+      "id": "5f522fff-868a-4bfb-b8d2-6c82e38982bd",
+      "category": "Piñon Velocimetro",
+      "image_path": "./assets/pinon-velocimetro-caribe-2.webp",
+      "description": "PIÑON VELOCIMETRO CARIBE",
+      "keywords": [
+        "172701",
+        "8-94473-3071",
+        "8-94473-3072",
+        "8-97012-0852",
+        "CARIBE",
+        "PINON",
+        "VELOCIMETRO"
+      ],
+      "oem": "8-94473-3071 / 172701 / 8-97012-0852 / 8-94473-3072",
+      "slug": "pinon-velocimetro-caribe-2",
+      "original_filename": "Piñon Velocimetro/5f522fff-868a-4bfb-b8d2-6c82e38982bd.jpg",
+      "linked_ids": [
+        775
+      ]
+    },
+    {
+      "id": "46d6c898-ecb1-4230-a913-0eb3e6614390",
+      "category": "Piñon Velocimetro",
+      "image_path": "./assets/pinon-velocimetro-luv.webp",
+      "description": "PIÑON VELOCIMETRO LUV",
+      "keywords": [
+        "8-94473-3081",
+        "8-94473-3082",
+        "8-97238-5880",
+        "LUV",
+        "PINON",
+        "VELOCIMETRO"
+      ],
+      "oem": "8-94473-3081 / 8-94473-3082 / 8-97238-5880",
+      "slug": "pinon-velocimetro-luv",
+      "original_filename": "Piñon Velocimetro/46d6c898-ecb1-4230-a913-0eb3e6614390.jpg",
+      "linked_ids": [
+        774
+      ]
+    },
+    {
+      "id": "59f45151-d20c-46d4-b44c-35c7a481c852",
+      "category": "Piñon Velocimetro",
+      "image_path": "./assets/pinon-velocimetro-luv-dmax-3-5.webp",
+      "description": "PIÑON VELOCIMETRO LUV DMAX 3.5",
+      "keywords": [
+        "172701",
+        "8-94473-3071",
+        "8-94473-3072",
+        "8-97012-0852",
+        "DMAX",
+        "LUV",
+        "PINON",
+        "VELOCIMETRO"
+      ],
+      "oem": "8-94473-3071 / 172701 / 8-97012-0852 / 8-94473-3072",
+      "slug": "pinon-velocimetro-luv-dmax-3-5",
+      "original_filename": "Piñon Velocimetro/59f45151-d20c-46d4-b44c-35c7a481c852.jpg",
+      "linked_ids": [
+        775
+      ]
+    },
+    {
+      "id": "39cb1f16-7c4f-4c73-925d-9aaee1d6fb57",
+      "category": "Piñon y Corona",
+      "image_path": "./assets/pinon-y-corona-caribe-2-3.webp",
+      "description": "PIÑON Y CORONA CARIBE 2.3",
+      "keywords": [
+        "8-94225-2581",
+        "CARIBE",
+        "CORONA",
+        "PINON"
+      ],
+      "oem": "8-94225-2581",
+      "slug": "pinon-y-corona-caribe-2-3",
+      "original_filename": "Piñon y Corona/39cb1f16-7c4f-4c73-925d-9aaee1d6fb57.jpg",
+      "linked_ids": [
+        778
+      ]
+    },
+    {
+      "id": "7d35039a-e5a5-44e8-9f5f-1b029052fe40",
+      "category": "Piñon y Corona",
+      "image_path": "./assets/pinon-y-corona-caribe-g200.webp",
+      "description": "PIÑON Y CORONA CARIBE G200",
+      "keywords": [
+        "8-94225-2581",
+        "CARIBE",
+        "CORONA",
+        "G200",
+        "PINON"
+      ],
+      "oem": "8-94225-2581",
+      "slug": "pinon-y-corona-caribe-g200",
+      "original_filename": "Piñon y Corona/7d35039a-e5a5-44e8-9f5f-1b029052fe40.jpg",
+      "linked_ids": [
+        778
+      ]
+    },
+    {
       "id": "56aea079-4e98-4983-87a1-f67e14d7a629",
       "category": "Planetario",
       "image_path": "./assets/planetario-caribe-2-3.webp",
@@ -18740,6 +18884,25 @@ const PRODUCTS_DATA = {
       "original_filename": "Polea Aire Acondicionado/c9917929-2f94-478b-9bff-64f8c574dd30.jpg",
       "linked_ids": [
         844
+      ]
+    },
+    {
+      "id": "6a4e815b-1a67-4a07-98f1-2ddd59869360",
+      "category": "Polea Loca",
+      "image_path": "./assets/polea-loca-luv-dmax-3-5.webp",
+      "description": "POLEA LOCA LUV DMAX 3.5",
+      "keywords": [
+        "8-97146-8770",
+        "DMAX",
+        "LOCA",
+        "LUV",
+        "POLEA"
+      ],
+      "oem": "8-97146-8770",
+      "slug": "polea-loca-luv-dmax-3-5",
+      "original_filename": "Polea Loca/6a4e815b-1a67-4a07-98f1-2ddd59869360.jpg",
+      "linked_ids": [
+        848
       ]
     },
     {
