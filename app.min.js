@@ -359,7 +359,29 @@
         function parseURLState() {
             const urlParams = new URLSearchParams(window.location.search);
             const initVehicle = urlParams.get('vehiculo') || window.defaultVehicleFilter || 'ALL';
-            const initCategory = urlParams.get('categoria') || 'ALL';
+            const initCategoryRaw = urlParams.get('categoria') || 'ALL';
+            
+            // Helper para obtener slug
+            const getSlug = (text) => {
+                if (!text) return '';
+                return text.toString()
+                           .toLowerCase()
+                           .normalize("NFD")
+                           .replace(/[\u0300-\u036f]/g, "")
+                           .replace(/[^a-z0-9]+/g, "-")
+                           .replace(/^-+|-+$/g, "");
+            };
+            
+            // Resolver slug de categoría a su nombre real
+            let initCategory = initCategoryRaw;
+            if (initCategoryRaw && initCategoryRaw !== 'ALL' && productsData && productsData.length > 0) {
+                const targetSlug = getSlug(initCategoryRaw);
+                const foundProduct = productsData.find(p => getSlug(p.category) === targetSlug);
+                if (foundProduct) {
+                    initCategory = foundProduct.category;
+                }
+            }
+
             const initSearch = urlParams.get('buscar') || '';
             const initView = urlParams.get('vista') || 'FOLDERS';
             const initProduct = urlParams.get('producto');
