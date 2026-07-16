@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 685,
+  "total_products": 688,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -18683,6 +18683,63 @@ const PRODUCTS_DATA = {
       "original_filename": "Plato Clutch/c654731d-f7d0-4e02-85b3-dba80b17d918.jpg",
       "linked_ids": [
         840
+      ]
+    },
+    {
+      "id": "7bfda5eb-9d57-4503-af86-48158bd23667",
+      "category": "Polea Aire Acondicionado",
+      "image_path": "./assets/polea-aire-acondicionado-caribe-2-3.webp",
+      "description": "POLEA AIRE ACONDICIONADO CARIBE 2.3",
+      "keywords": [
+        "8-94160-5440",
+        "ACONDICIONADO",
+        "AIRE",
+        "CARIBE",
+        "POLEA"
+      ],
+      "oem": "8-94160-5440",
+      "slug": "polea-aire-acondicionado-caribe-2-3",
+      "original_filename": "Polea Aire Acondicionado/7bfda5eb-9d57-4503-af86-48158bd23667.jpg",
+      "linked_ids": [
+        844
+      ]
+    },
+    {
+      "id": "56d27f9f-d13d-478d-84f6-f7b1cd709f93",
+      "category": "Polea Aire Acondicionado",
+      "image_path": "./assets/polea-aire-acondicionado-caribe-2-6.webp",
+      "description": "POLEA AIRE ACONDICIONADO CARIBE 2.6",
+      "keywords": [
+        "8-94160-5440",
+        "ACONDICIONADO",
+        "AIRE",
+        "CARIBE",
+        "POLEA"
+      ],
+      "oem": "8-94160-5440",
+      "slug": "polea-aire-acondicionado-caribe-2-6",
+      "original_filename": "Polea Aire Acondicionado/56d27f9f-d13d-478d-84f6-f7b1cd709f93.jpg",
+      "linked_ids": [
+        844
+      ]
+    },
+    {
+      "id": "c9917929-2f94-478b-9bff-64f8c574dd30",
+      "category": "Polea Aire Acondicionado",
+      "image_path": "./assets/polea-aire-acondicionado-luv-2-3.webp",
+      "description": "POLEA AIRE ACONDICIONADO LUV 2.3",
+      "keywords": [
+        "8-94160-5440",
+        "ACONDICIONADO",
+        "AIRE",
+        "LUV",
+        "POLEA"
+      ],
+      "oem": "8-94160-5440",
+      "slug": "polea-aire-acondicionado-luv-2-3",
+      "original_filename": "Polea Aire Acondicionado/c9917929-2f94-478b-9bff-64f8c574dd30.jpg",
+      "linked_ids": [
+        844
       ]
     },
     {
