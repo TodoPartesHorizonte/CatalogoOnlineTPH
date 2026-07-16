@@ -6,7 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
-  "total_products": 674,
+  "total_products": 680,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5618,8 +5618,13 @@ const PRODUCTS_DATA = {
       "variants": [
         {
           "codigo_oem": "8-94159-1920",
-          "brand": "Original",
+          "brand": "NPC",
           "precio_usd": 565
+        },
+        {
+          "codigo_oem": "8-94159-1920",
+          "brand": "TSA",
+          "precio_usd": 325
         }
       ]
     },
@@ -10898,7 +10903,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94412-0300",
           "brand": "Original",
-          "precio_usd": 65
+          "precio_usd": 0
         }
       ]
     },
@@ -10924,7 +10929,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94412-0300",
           "brand": "Original",
-          "precio_usd": 65
+          "precio_usd": 0
         }
       ]
     },
@@ -10950,7 +10955,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94412-0300",
           "brand": "Original",
-          "precio_usd": 65
+          "precio_usd": 0
         }
       ]
     },
@@ -10976,7 +10981,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94412-0300",
           "brand": "Original",
-          "precio_usd": 65
+          "precio_usd": 0
         }
       ]
     },
@@ -11030,7 +11035,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94412-0300",
           "brand": "Original",
-          "precio_usd": 65
+          "precio_usd": 0
         }
       ]
     },
@@ -18030,17 +18035,14 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Piston",
-      "description": "JUEGO DE PISTONES CARIBE 2300",
+      "description": "PISTON CARIBE 2.3",
       "id": "f7a55a0a-239c-45d4-98ef-1d22375bb302",
       "image_path": "./assets/juego-de-pistones-caribe-2300.webp",
       "keywords": [
-        "2300",
         "8-97176-7430",
         "CARIBE",
         "EPV-2900R-STD-3",
-        "JUEGO",
-        "PISTON",
-        "PISTONES"
+        "PISTON"
       ],
       "linked_ids": [
         784
@@ -18057,7 +18059,7 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Piston",
-      "description": "JUEGO DE PISTONES LUV D-MAX 3.5",
+      "description": "PISTON LUV DMAX 3.5",
       "id": "65c54b41-d5b0-4599-a880-53b290a616d4",
       "image_path": "./assets/juego-de-pistones-luv-d-max-3-5.webp",
       "keywords": [
@@ -18065,12 +18067,10 @@ const PRODUCTS_DATA = {
         "8-97358-0400",
         "8-97358-0410",
         "8-97358-0420",
-        "D-MAX",
+        "DMAX",
         "EPV3082STD",
-        "JUEGO",
         "LUV",
-        "PISTON",
-        "PISTONES"
+        "PISTON"
       ],
       "linked_ids": [
         815,
@@ -18088,6 +18088,218 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97167-0930",
           "brand": "Original",
           "precio_usd": 150
+        }
+      ]
+    },
+    {
+      "category": "Piston",
+      "description": "PISTON CARIBE 2.6",
+      "id": "31f253f4-c2cb-46dc-945e-680a05855089",
+      "image_path": "./assets/piston-caribe-2-6.webp",
+      "keywords": [
+        "8-94163-1890",
+        "8-94163-1891",
+        "8-94163-1892",
+        "8-94163-1893",
+        "8-94163-1894",
+        "CARIBE",
+        "PISTON"
+      ],
+      "linked_ids": [
+        790,
+        791,
+        792,
+        793,
+        794
+      ],
+      "oem": "8-94163-1890 / 8-94163-1891 / 8-94163-1892 / 8-94163-1893 / 8-94163-1894",
+      "original_filename": "Piston/31f253f4-c2cb-46dc-945e-680a05855089.jpg",
+      "slug": "piston-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94163-1890",
+          "brand": "TIK",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94163-1890",
+          "brand": "TOTO",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94163-1891",
+          "brand": "TIK",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94163-1891",
+          "brand": "TOTO",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94163-1892",
+          "brand": "TIK",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94163-1892",
+          "brand": "TOTO",
+          "precio_usd": 195
+        },
+        {
+          "codigo_oem": "8-94163-1893",
+          "brand": "TIK",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94163-1893",
+          "brand": "TOTO",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94163-1894",
+          "brand": "TIK",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94163-1894",
+          "brand": "TOTO",
+          "precio_usd": 0
+        }
+      ]
+    },
+    {
+      "category": "Piston",
+      "description": "PISTON LUV 2.2",
+      "id": "25ceaf3f-fd8e-400e-9814-4e9c80fbe551",
+      "image_path": "./assets/piston-luv-2-2.webp",
+      "keywords": [
+        "8-92062-6330",
+        "8-92062-6331",
+        "8-92062-6332",
+        "8-92062-6333",
+        "8-92062-6334",
+        "LUV",
+        "PISTON"
+      ],
+      "linked_ids": [
+        800,
+        801,
+        802,
+        803,
+        804
+      ],
+      "oem": "8-92062-6330 / 8-92062-6331 / 8-92062-6332 / 8-92062-6333 / 8-92062-6334",
+      "original_filename": "Piston/25ceaf3f-fd8e-400e-9814-4e9c80fbe551.jpg",
+      "slug": "piston-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-92062-6330",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-92062-6331",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-92062-6332",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-92062-6333",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-92062-6334",
+          "brand": "Original",
+          "precio_usd": 150
+        }
+      ]
+    },
+    {
+      "category": "Piston",
+      "description": "PISTON LUV DMAX 2.4",
+      "id": "c49cd169-f953-44be-9199-687639943092",
+      "image_path": "./assets/piston-luv-dmax-2-4.webp",
+      "keywords": [
+        "8-93292-7740",
+        "8-93292-7741",
+        "8-93292-7742",
+        "8-93292-7743",
+        "8-93292-7744",
+        "DMAX",
+        "LUV",
+        "PISTON"
+      ],
+      "linked_ids": [
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812,
+        813,
+        814
+      ],
+      "oem": "8-93292-7740 / 8-93292-7741 / 8-93292-7742 / 8-93292-7743 / 8-93292-7744",
+      "original_filename": "Piston/c49cd169-f953-44be-9199-687639943092.jpg",
+      "slug": "piston-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "",
+          "brand": "Original",
+          "precio_usd": 100
+        },
+        {
+          "codigo_oem": "",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-93292-7740",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-93292-7741",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-93292-7742",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-93292-7743",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-93292-7744",
+          "brand": "Original",
+          "precio_usd": 0
         }
       ]
     },
@@ -18275,6 +18487,105 @@ const PRODUCTS_DATA = {
           "codigo_oem": "PF-7412",
           "brand": "Original",
           "precio_usd": 20
+        }
+      ]
+    },
+    {
+      "category": "Plato Clutch",
+      "description": "PLATO PRESION CLUTCH CARIBE 2.3",
+      "id": "6a84f63c-fdf2-4a0c-8e8d-bacff41a94b6",
+      "image_path": "./assets/plato-presion-clutch-caribe-2-3.webp",
+      "keywords": [
+        "8-94224-7830",
+        "8-97040-2680",
+        "8-97182-9641",
+        "CARIBE",
+        "CLUTCH",
+        "ISC550",
+        "N5303P",
+        "NAC603",
+        "PLATO",
+        "PRESION"
+      ],
+      "linked_ids": [
+        840
+      ],
+      "oem": "8-94224-7830 / ISC550 / N5303P / NAC603 / 8-97040-2680 / 8-97182-9641",
+      "original_filename": "Plato Clutch/6a84f63c-fdf2-4a0c-8e8d-bacff41a94b6.jpg",
+      "slug": "plato-presion-clutch-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94224-7830",
+          "brand": "PERFECTION",
+          "precio_usd": 70
+        },
+        {
+          "codigo_oem": "8-94224-7830",
+          "brand": "ORIGINAL",
+          "precio_usd": 125
+        }
+      ]
+    },
+    {
+      "category": "Plato Clutch",
+      "description": "PLATO PRESION CLUTCH CARIBE 2.6",
+      "id": "0b0232df-086c-4dbd-b454-9b4e95178227",
+      "image_path": "./assets/plato-presion-clutch-caribe-2-6.webp",
+      "keywords": [
+        "8-94462-0303",
+        "CARIBE",
+        "CLUTCH",
+        "PLATO",
+        "PRESION"
+      ],
+      "linked_ids": [
+        842
+      ],
+      "oem": "8-94462-0303",
+      "original_filename": "Plato Clutch/0b0232df-086c-4dbd-b454-9b4e95178227.jpg",
+      "slug": "plato-presion-clutch-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94462-0303",
+          "brand": "Original",
+          "precio_usd": 90
+        }
+      ]
+    },
+    {
+      "category": "Plato Clutch",
+      "description": "PLATO PRESION CLUTCH CARIBE G200",
+      "id": "1ce3ab08-5476-4ce8-8234-6788650651e9",
+      "image_path": "./assets/plato-presion-clutch-caribe-g200.webp",
+      "keywords": [
+        "8-94224-7830",
+        "8-97040-2680",
+        "8-97182-9641",
+        "CARIBE",
+        "CLUTCH",
+        "G200",
+        "ISC550",
+        "N5303P",
+        "NAC603",
+        "PLATO",
+        "PRESION"
+      ],
+      "linked_ids": [
+        840
+      ],
+      "oem": "8-94224-7830 / ISC550 / N5303P / NAC603 / 8-97040-2680 / 8-97182-9641",
+      "original_filename": "Plato Clutch/1ce3ab08-5476-4ce8-8234-6788650651e9.jpg",
+      "slug": "plato-presion-clutch-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94224-7830",
+          "brand": "PERFECTION",
+          "precio_usd": 70
+        },
+        {
+          "codigo_oem": "8-94224-7830",
+          "brand": "ORIGINAL",
+          "precio_usd": 125
         }
       ]
     },

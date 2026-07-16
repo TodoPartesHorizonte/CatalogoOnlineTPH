@@ -44,7 +44,7 @@
     <loc>https://todoparteshorizonte.com/p/juego-de-pistones-caribe-2300</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/juego-de-pistones-caribe-2300.webp</image:loc>
-      <image:title>JUEGO DE PISTONES CARIBE 2300</image:title>
+      <image:title>PISTON CARIBE 2.3</image:title>
     </image:image>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -54,7 +54,37 @@
     <loc>https://todoparteshorizonte.com/p/juego-de-pistones-luv-d-max-3-5</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/juego-de-pistones-luv-d-max-3-5.webp</image:loc>
-      <image:title>JUEGO DE PISTONES LUV D-MAX 3.5</image:title>
+      <image:title>PISTON LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/piston-caribe-2-6</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/piston-caribe-2-6.webp</image:loc>
+      <image:title>PISTON CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/piston-luv-2-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/piston-luv-2-2.webp</image:loc>
+      <image:title>PISTON LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/piston-luv-dmax-2-4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/piston-luv-dmax-2-4.webp</image:loc>
+      <image:title>PISTON LUV DMAX 2.4</image:title>
     </image:image>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -125,6 +155,36 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/piston-caliper-trasero-caribe-2-6-3.webp</image:loc>
       <image:title>PISTON CALIPER TRASERO CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/plato-presion-clutch-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/plato-presion-clutch-caribe-2-3.webp</image:loc>
+      <image:title>PLATO PRESION CLUTCH CARIBE 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/plato-presion-clutch-caribe-2-6</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/plato-presion-clutch-caribe-2-6.webp</image:loc>
+      <image:title>PLATO PRESION CLUTCH CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/plato-presion-clutch-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/plato-presion-clutch-caribe-g200.webp</image:loc>
+      <image:title>PLATO PRESION CLUTCH CARIBE G200</image:title>
     </image:image>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
