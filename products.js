@@ -449,7 +449,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94312-8140",
           "brand": "PERFECT",
-          "precio_usd": 40
+          "precio_usd": 0
         },
         {
           "codigo_oem": "8-94312-8140",
@@ -480,7 +480,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94312-8140",
           "brand": "PERFECT",
-          "precio_usd": 40
+          "precio_usd": 0
         },
         {
           "codigo_oem": "8-94312-8140",
@@ -511,7 +511,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94312-8140",
           "brand": "PERFECT",
-          "precio_usd": 40
+          "precio_usd": 0
         },
         {
           "codigo_oem": "8-94312-8140",
@@ -535,12 +535,13 @@ const PRODUCTS_DATA = {
         "SWI10123-0",
         "SWI10144-0"
       ],
-      "slug": "anillos-para-tu-caribe",
       "linked_ids": [
         28,
         48,
         74
       ],
+      "oem": "8-94216-6410 / 6157-STD / 6158-STD / SWI10123-0 / 6159-STD / SWI10144-0",
+      "slug": "anillos-para-tu-caribe",
       "variants": [
         {
           "codigo_oem": "8-94216-6410",
@@ -612,8 +613,7 @@ const PRODUCTS_DATA = {
           "brand": "NPR",
           "precio_usd": 50
         }
-      ],
-      "oem": "8-94216-6410 / 6157-STD / 6158-STD / SWI10123-0 / 6159-STD / SWI10144-0"
+      ]
     },
     {
       "category": "Anillos",
@@ -631,11 +631,12 @@ const PRODUCTS_DATA = {
         "LUV",
         "STD"
       ],
-      "slug": "anillos-para-tu-luv-d-max",
       "linked_ids": [
         134,
         144
       ],
+      "oem": "8-97371-5330 / 2C4571-STD / 8-97136-1350 / 2M4945-STD / 32674.STD",
+      "slug": "anillos-para-tu-luv-d-max",
       "variants": [
         {
           "codigo_oem": "8-97371-5330",
@@ -662,8 +663,7 @@ const PRODUCTS_DATA = {
           "brand": "TP",
           "precio_usd": 40
         }
-      ],
-      "oem": "8-97371-5330 / 2C4571-STD / 8-97136-1350 / 2M4945-STD / 32674.STD"
+      ]
     },
     {
       "category": "Arandela Punta de Eje",
@@ -782,44 +782,21 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/arana-caribe-2600.webp",
       "keywords": [
         "2600",
-        "6159-040",
         "8-94173-3460",
         "8-94173-3470",
         "811606013",
         "811606023",
         "ARANA",
-        "CARIBE",
-        "SWI10144-4"
+        "CARIBE"
       ],
       "linked_ids": [
         73,
-        78,
         165,
         1063
       ],
-      "oem": "6159-040 / SWI10144-4 / 8-94173-3470 / 811606023 / 8-94173-3460 / 811606013",
+      "oem": "8-94173-3470 / 811606023 / 8-94173-3460 / 811606013",
       "slug": "arana-caribe-2600",
       "variants": [
-        {
-          "codigo_oem": "6159-040",
-          "brand": "NATSUKI",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "6159-040",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-040",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-040",
-          "brand": "NPR",
-          "precio_usd": 50
-        },
         {
           "codigo_oem": "8-94173-3460",
           "brand": "Original",
@@ -839,44 +816,21 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/arana-luv-4x4.webp",
       "keywords": [
         "4X4",
-        "6159-040",
         "8-94173-3460",
         "8-94173-3470",
         "811606013",
         "811606023",
         "ARANA",
-        "LUV",
-        "SWI10144-4"
+        "LUV"
       ],
       "linked_ids": [
         73,
-        78,
         165,
         1063
       ],
-      "oem": "6159-040 / SWI10144-4 / 8-94173-3470 / 811606023 / 8-94173-3460 / 811606013",
+      "oem": "8-94173-3470 / 811606023 / 8-94173-3460 / 811606013",
       "slug": "arana-luv-4x4",
       "variants": [
-        {
-          "codigo_oem": "6159-040",
-          "brand": "NATSUKI",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "6159-040",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-040",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-040",
-          "brand": "NPR",
-          "precio_usd": 50
-        },
         {
           "codigo_oem": "8-94173-3460",
           "brand": "Original",
@@ -895,7 +849,6 @@ const PRODUCTS_DATA = {
       "id": "6b7db40e-1189-49d9-859b-78d1013a6140",
       "image_path": "./assets/arana-luv-d-max-2-4.webp",
       "keywords": [
-        "6159-010",
         "8-97365-0100",
         "8-97365-0110",
         "ARANA",
@@ -903,34 +856,13 @@ const PRODUCTS_DATA = {
         "LUV"
       ],
       "linked_ids": [
-        75,
         80,
         169,
         1067
       ],
-      "oem": "6159-010 / 8-97365-0110 / 8-97365-0100",
+      "oem": "8-97365-0110 / 8-97365-0100",
       "slug": "arana-luv-d-max-2-4",
       "variants": [
-        {
-          "codigo_oem": "6159-010",
-          "brand": "NATSUKI",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "6159-010",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-010",
-          "brand": "TP",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6159-010",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
         {
           "codigo_oem": "8-97365-0100",
           "brand": "Original",
@@ -949,7 +881,6 @@ const PRODUCTS_DATA = {
       "id": "b7b8c2cf-1e10-425e-89e7-069f950f5ba5",
       "image_path": "./assets/arana-luv-d-max-2-5.webp",
       "keywords": [
-        "6159-010",
         "8-97365-0100",
         "8-97365-0110",
         "ARANA",
@@ -957,34 +888,13 @@ const PRODUCTS_DATA = {
         "LUV"
       ],
       "linked_ids": [
-        75,
         80,
         169,
         1067
       ],
-      "oem": "6159-010 / 8-97365-0110 / 8-97365-0100",
+      "oem": "8-97365-0110 / 8-97365-0100",
       "slug": "arana-luv-d-max-2-5",
       "variants": [
-        {
-          "codigo_oem": "6159-010",
-          "brand": "NATSUKI",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "6159-010",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-010",
-          "brand": "TP",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6159-010",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
         {
           "codigo_oem": "8-97365-0100",
           "brand": "Original",
@@ -1004,7 +914,6 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/arana-luv-d-max-3-0.webp",
       "keywords": [
         "4X2",
-        "6159-010",
         "8-97365-0100",
         "8-97365-0110",
         "ARANA",
@@ -1012,34 +921,13 @@ const PRODUCTS_DATA = {
         "LUV"
       ],
       "linked_ids": [
-        75,
         80,
         169,
         1067
       ],
-      "oem": "6159-010 / 8-97365-0110 / 8-97365-0100",
+      "oem": "8-97365-0110 / 8-97365-0100",
       "slug": "arana-luv-d-max-3-0",
       "variants": [
-        {
-          "codigo_oem": "6159-010",
-          "brand": "NATSUKI",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "6159-010",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-010",
-          "brand": "TP",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6159-010",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
         {
           "codigo_oem": "8-97365-0100",
           "brand": "Original",
@@ -1058,7 +946,6 @@ const PRODUCTS_DATA = {
       "id": "41977e7f-e551-4143-9616-e7c6ec2d4f52",
       "image_path": "./assets/arana-luv-d-max-3-5.webp",
       "keywords": [
-        "6159-020",
         "716CV05A170",
         "716CV05A270",
         "8-97365-0120",
@@ -1068,34 +955,13 @@ const PRODUCTS_DATA = {
         "LUV"
       ],
       "linked_ids": [
-        76,
         81,
         168,
         1066
       ],
-      "oem": "6159-020 / 8-97365-0130 / 716CV05A270 / 8-97365-0120 / 716CV05A170",
+      "oem": "8-97365-0130 / 716CV05A270 / 8-97365-0120 / 716CV05A170",
       "slug": "arana-luv-d-max-3-5",
       "variants": [
-        {
-          "codigo_oem": "6159-020",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-020",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-020",
-          "brand": "TP",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6159-020",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
         {
           "codigo_oem": "8-97365-0120",
           "brand": "Original",
@@ -1532,7 +1398,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "5-87832-0900",
           "brand": "XTENDER",
-          "precio_usd": 50
+          "precio_usd": 0
         },
         {
           "codigo_oem": "5-87832-0900",
@@ -3173,7 +3039,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94445-6650",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 75
         }
       ]
     },
@@ -3705,6 +3571,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-94438-5330",
           "brand": "TOMITA CHINA",
           "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94438-5330",
+          "brand": "PRESENTACION",
+          "precio_usd": 45
         }
       ]
     },
@@ -3735,6 +3606,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-94438-5330",
           "brand": "TOMITA CHINA",
           "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94438-5330",
+          "brand": "PRESENTACION",
+          "precio_usd": 45
         }
       ]
     },
@@ -3837,10 +3713,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "1f420963-1c20-450e-8883-5b544836f812",
       "category": "Bomba de Gasolina",
-      "image_path": "./assets/pila-luv-2-2.webp",
       "description": "PILA LUV 2.2",
+      "id": "1f420963-1c20-450e-8883-5b544836f812",
+      "image_path": "./assets/pila-luv-2-2.webp",
       "keywords": [
         "133353",
         "2068",
@@ -3850,18 +3726,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "PILA"
       ],
-      "oem": "8-97118-5120 / 2068 / 133353",
-      "slug": "pila-luv-2-2",
-      "original_filename": "Bomba de Gasolina/1f420963-1c20-450e-8883-5b544836f812.jpg",
       "linked_ids": [
         773
+      ],
+      "oem": "8-97118-5120 / 2068 / 133353",
+      "original_filename": "Bomba de Gasolina/1f420963-1c20-450e-8883-5b544836f812.jpg",
+      "slug": "pila-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97118-5120",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "01d3a668-ba17-479e-a6ad-eb8b9ce201be",
       "category": "Bomba de Gasolina",
-      "image_path": "./assets/pila-trooper-3-2.webp",
       "description": "PILA TROOPER 3.2",
+      "id": "01d3a668-ba17-479e-a6ad-eb8b9ce201be",
+      "image_path": "./assets/pila-trooper-3-2.webp",
       "keywords": [
         "8-97019-1861",
         "BOMBA",
@@ -3870,11 +3753,18 @@ const PRODUCTS_DATA = {
         "PILA",
         "TROOPER"
       ],
-      "oem": "8-97019-1861 / E8235",
-      "slug": "pila-trooper-3-2",
-      "original_filename": "Bomba de Gasolina/01d3a668-ba17-479e-a6ad-eb8b9ce201be.jpg",
       "linked_ids": [
         772
+      ],
+      "oem": "8-97019-1861 / E8235",
+      "original_filename": "Bomba de Gasolina/01d3a668-ba17-479e-a6ad-eb8b9ce201be.jpg",
+      "slug": "pila-trooper-3-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97019-1861",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
@@ -5458,7 +5348,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "K20PR-U11",
           "brand": "DENSO",
-          "precio_usd": 3.5
+          "precio_usd": 3.75
         }
       ]
     },
@@ -7335,6 +7225,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97130-5600",
           "brand": "MICHELIN",
           "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-97130-5600",
+          "brand": "MITSUBA",
+          "precio_usd": 25
         }
       ]
     },
@@ -7561,7 +7456,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94229-3880",
           "brand": "PERFECTION",
-          "precio_usd": 40
+          "precio_usd": 0
         }
       ]
     },
@@ -7623,7 +7518,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94229-3880",
           "brand": "PERFECTION",
-          "precio_usd": 40
+          "precio_usd": 0
         }
       ]
     },
@@ -7653,7 +7548,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94229-3880",
           "brand": "PERFECTION",
-          "precio_usd": 40
+          "precio_usd": 0
         }
       ]
     },
@@ -7683,7 +7578,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94229-3880",
           "brand": "PERFECTION",
-          "precio_usd": 40
+          "precio_usd": 0
         }
       ]
     },
@@ -7976,7 +7871,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94476-1421",
           "brand": "Original",
-          "precio_usd": 220
+          "precio_usd": 0
         }
       ]
     },
@@ -11162,6 +11057,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97349-7610",
           "brand": "Original",
           "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97349-7610",
+          "brand": "NIKHO",
+          "precio_usd": 130
         }
       ]
     },
@@ -12129,7 +12029,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97943-1780",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 20
         }
       ]
     },
@@ -13531,7 +13431,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94297-1201",
           "brand": "Original",
-          "precio_usd": 30
+          "precio_usd": 0
         }
       ]
     },
@@ -13751,7 +13651,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97365-5180",
           "brand": "TSA",
-          "precio_usd": 115
+          "precio_usd": 0
         },
         {
           "codigo_oem": "8-97365-5180",
@@ -14107,6 +14007,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "5-87814-3231",
           "brand": "RUSHMORE",
           "precio_usd": 0
+        },
+        {
+          "codigo_oem": "5-87814-3231",
+          "brand": "NIKHO",
+          "precio_usd": 50
         },
         {
           "codigo_oem": "5-87814-3231",
@@ -15115,7 +15020,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "KIS01",
           "brand": "BWB",
-          "precio_usd": 350
+          "precio_usd": 0
         }
       ]
     },
@@ -15213,7 +15118,7 @@ const PRODUCTS_DATA = {
       "variants": [
         {
           "codigo_oem": "TK-125",
-          "brand": "CIC",
+          "brand": "Original",
           "precio_usd": 45
         }
       ]
@@ -15238,7 +15143,7 @@ const PRODUCTS_DATA = {
       "variants": [
         {
           "codigo_oem": "TK-126",
-          "brand": "CIC",
+          "brand": "Original",
           "precio_usd": 50
         }
       ]
@@ -15321,7 +15226,7 @@ const PRODUCTS_DATA = {
       "variants": [
         {
           "codigo_oem": "TK-125",
-          "brand": "CIC",
+          "brand": "Original",
           "precio_usd": 45
         }
       ]
@@ -15564,10 +15469,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "0b783314-83fb-46df-bef7-4910e8d21603",
       "category": "Laina Ajuste",
-      "image_path": "./assets/lainas-pinon-y-corona-caribe-g200-caribe-2-3.webp",
       "description": "LAINAS PIÑON Y CORONA CARIBE G200 / CARIBE 2.3",
+      "id": "0b783314-83fb-46df-bef7-4910e8d21603",
+      "image_path": "./assets/lainas-pinon-y-corona-caribe-g200-caribe-2-3.webp",
       "keywords": [
         "9-41519-1100",
         "AJUSTE",
@@ -15578,18 +15483,25 @@ const PRODUCTS_DATA = {
         "LAINAS",
         "PINON"
       ],
-      "oem": "9-41519-1100",
-      "slug": "lainas-pinon-y-corona-caribe-g200-caribe-2-3",
-      "original_filename": "Laina Ajuste/0b783314-83fb-46df-bef7-4910e8d21603.jpg",
       "linked_ids": [
         686
+      ],
+      "oem": "9-41519-1100",
+      "original_filename": "Laina Ajuste/0b783314-83fb-46df-bef7-4910e8d21603.jpg",
+      "slug": "lainas-pinon-y-corona-caribe-g200-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "9-41519-1100",
+          "brand": "Original",
+          "precio_usd": 2
+        }
       ]
     },
     {
-      "id": "602dc75b-42e4-4214-b1fd-a5d003f87042",
       "category": "Lapiz Barra Estabilizadora",
-      "image_path": "./assets/lapiz-barra-estabilizadora-c-goma-u-luv-2-3.webp",
       "description": "LAPIZ BARRA ESTABILIZADORA C/GOMA U  LUV 2.3",
+      "id": "602dc75b-42e4-4214-b1fd-a5d003f87042",
+      "image_path": "./assets/lapiz-barra-estabilizadora-c-goma-u-luv-2-3.webp",
       "keywords": [
         "163710",
         "5-51781-0100",
@@ -15599,18 +15511,25 @@ const PRODUCTS_DATA = {
         "LAPIZ",
         "LUV"
       ],
+      "linked_ids": [
+        689
+      ],
       "oem": "5-51781-0100 / 163710",
-      "slug": "lapiz-barra-estabilizadora-c-goma-u-luv-2-3",
       "original_filename": "Lapiz Barra Estabilizadora/602dc75b-42e4-4214-b1fd-a5d003f87042.jpg",
-      "linked_ids": [
-        689
+      "slug": "lapiz-barra-estabilizadora-c-goma-u-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "5-51781-0100",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "a697e163-88bd-4eb6-9f48-cdbc6abb06ff",
       "category": "Lapiz Barra Estabilizadora",
-      "image_path": "./assets/lapiz-barra-estabilizadora-c-goma-u-caribe-2-3.webp",
       "description": "LAPIZ BARRA ESTABILIZADORA C/GOMA U CARIBE 2.3",
+      "id": "a697e163-88bd-4eb6-9f48-cdbc6abb06ff",
+      "image_path": "./assets/lapiz-barra-estabilizadora-c-goma-u-caribe-2-3.webp",
       "keywords": [
         "163710",
         "5-51781-0100",
@@ -15620,18 +15539,25 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LAPIZ"
       ],
-      "oem": "5-51781-0100 / 163710",
-      "slug": "lapiz-barra-estabilizadora-c-goma-u-caribe-2-3",
-      "original_filename": "Lapiz Barra Estabilizadora/a697e163-88bd-4eb6-9f48-cdbc6abb06ff.jpg",
       "linked_ids": [
         689
+      ],
+      "oem": "5-51781-0100 / 163710",
+      "original_filename": "Lapiz Barra Estabilizadora/a697e163-88bd-4eb6-9f48-cdbc6abb06ff.jpg",
+      "slug": "lapiz-barra-estabilizadora-c-goma-u-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "5-51781-0100",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "e321d094-0c55-4489-a457-5bd689f2d2cc",
       "category": "Lapiz Barra Estabilizadora",
-      "image_path": "./assets/lapiz-barra-estabilizadora-c-goma-u-caribe-g200.webp",
       "description": "LAPIZ BARRA ESTABILIZADORA C/GOMA U CARIBE G200",
+      "id": "e321d094-0c55-4489-a457-5bd689f2d2cc",
+      "image_path": "./assets/lapiz-barra-estabilizadora-c-goma-u-caribe-g200.webp",
       "keywords": [
         "163710",
         "5-51781-0100",
@@ -15642,18 +15568,25 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LAPIZ"
       ],
-      "oem": "5-51781-0100 / 163710",
-      "slug": "lapiz-barra-estabilizadora-c-goma-u-caribe-g200",
-      "original_filename": "Lapiz Barra Estabilizadora/e321d094-0c55-4489-a457-5bd689f2d2cc.jpg",
       "linked_ids": [
         689
+      ],
+      "oem": "5-51781-0100 / 163710",
+      "original_filename": "Lapiz Barra Estabilizadora/e321d094-0c55-4489-a457-5bd689f2d2cc.jpg",
+      "slug": "lapiz-barra-estabilizadora-c-goma-u-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "5-51781-0100",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "863ba34f-2c59-4510-ad0e-9741e9aadcd6",
       "category": "Lapiz Barra Estabilizadora",
-      "image_path": "./assets/lapiz-barra-estabilizadora-caribe-2-3.webp",
       "description": "LAPIZ BARRA ESTABILIZADORA CARIBE 2.3",
+      "id": "863ba34f-2c59-4510-ad0e-9741e9aadcd6",
+      "image_path": "./assets/lapiz-barra-estabilizadora-caribe-2-3.webp",
       "keywords": [
         "161701",
         "BARRA",
@@ -15661,18 +15594,25 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "LAPIZ"
       ],
-      "oem": "161701",
-      "slug": "lapiz-barra-estabilizadora-caribe-2-3",
-      "original_filename": "Lapiz Barra Estabilizadora/863ba34f-2c59-4510-ad0e-9741e9aadcd6.jpg",
       "linked_ids": [
         687
+      ],
+      "oem": "161701",
+      "original_filename": "Lapiz Barra Estabilizadora/863ba34f-2c59-4510-ad0e-9741e9aadcd6.jpg",
+      "slug": "lapiz-barra-estabilizadora-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "161701",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "6ae23ff7-6a35-42ab-95e2-48260e0ed41c",
       "category": "Lapiz Barra Estabilizadora",
-      "image_path": "./assets/lapiz-barra-estabilizadora-caribe-2-6.webp",
       "description": "LAPIZ BARRA ESTABILIZADORA CARIBE 2.6",
+      "id": "6ae23ff7-6a35-42ab-95e2-48260e0ed41c",
+      "image_path": "./assets/lapiz-barra-estabilizadora-caribe-2-6.webp",
       "keywords": [
         "161710",
         "BARRA",
@@ -15680,18 +15620,25 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "LAPIZ"
       ],
-      "oem": "161710",
-      "slug": "lapiz-barra-estabilizadora-caribe-2-6",
-      "original_filename": "Lapiz Barra Estabilizadora/6ae23ff7-6a35-42ab-95e2-48260e0ed41c.jpg",
       "linked_ids": [
         688
+      ],
+      "oem": "161710",
+      "original_filename": "Lapiz Barra Estabilizadora/6ae23ff7-6a35-42ab-95e2-48260e0ed41c.jpg",
+      "slug": "lapiz-barra-estabilizadora-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "161710",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "09c714ad-70ac-44d0-b2b6-ab99837c84d1",
       "category": "Lapiz Barra Estabilizadora",
-      "image_path": "./assets/lapiz-barra-estabilizadora-caribe-g200.webp",
       "description": "LAPIZ BARRA ESTABILIZADORA CARIBE G200",
+      "id": "09c714ad-70ac-44d0-b2b6-ab99837c84d1",
+      "image_path": "./assets/lapiz-barra-estabilizadora-caribe-g200.webp",
       "keywords": [
         "161701",
         "BARRA",
@@ -15700,18 +15647,25 @@ const PRODUCTS_DATA = {
         "G200",
         "LAPIZ"
       ],
-      "oem": "161701",
-      "slug": "lapiz-barra-estabilizadora-caribe-g200",
-      "original_filename": "Lapiz Barra Estabilizadora/09c714ad-70ac-44d0-b2b6-ab99837c84d1.jpg",
       "linked_ids": [
         687
+      ],
+      "oem": "161701",
+      "original_filename": "Lapiz Barra Estabilizadora/09c714ad-70ac-44d0-b2b6-ab99837c84d1.jpg",
+      "slug": "lapiz-barra-estabilizadora-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "161701",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "36761296-eee3-4d8d-a5ac-0bd1988a0448",
       "category": "Lapiz Barra Estabilizadora",
-      "image_path": "./assets/lapiz-barra-estabilizadora-luv-2-3.webp",
       "description": "LAPIZ BARRA ESTABILIZADORA LUV 2.3",
+      "id": "36761296-eee3-4d8d-a5ac-0bd1988a0448",
+      "image_path": "./assets/lapiz-barra-estabilizadora-luv-2-3.webp",
       "keywords": [
         "161710",
         "BARRA",
@@ -15719,18 +15673,25 @@ const PRODUCTS_DATA = {
         "LAPIZ",
         "LUV"
       ],
-      "oem": "161710",
-      "slug": "lapiz-barra-estabilizadora-luv-2-3",
-      "original_filename": "Lapiz Barra Estabilizadora/36761296-eee3-4d8d-a5ac-0bd1988a0448.jpg",
       "linked_ids": [
         688
+      ],
+      "oem": "161710",
+      "original_filename": "Lapiz Barra Estabilizadora/36761296-eee3-4d8d-a5ac-0bd1988a0448.jpg",
+      "slug": "lapiz-barra-estabilizadora-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "161710",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "380769e6-5fc6-4825-8264-153536edc5dd",
       "category": "Lapiz Bomba Gasolina",
-      "image_path": "./assets/lapiz-bomba-gasolina-caribe-2-3-caribe-2-6-luv-2-3.webp",
       "description": "LAPIZ BOMBA GASOLINA CARIBE 2.3 / CARIBE 2.6 / LUV 2.3",
+      "id": "380769e6-5fc6-4825-8264-153536edc5dd",
+      "image_path": "./assets/lapiz-bomba-gasolina-caribe-2-3-caribe-2-6-luv-2-3.webp",
       "keywords": [
         "8-94159-2901",
         "BOMBA",
@@ -15739,18 +15700,25 @@ const PRODUCTS_DATA = {
         "LAPIZ",
         "LUV"
       ],
-      "oem": "8-94159-2901",
-      "slug": "lapiz-bomba-gasolina-caribe-2-3-caribe-2-6-luv-2-3",
-      "original_filename": "Lapiz Bomba Gasolina/380769e6-5fc6-4825-8264-153536edc5dd.jpg",
       "linked_ids": [
         690
+      ],
+      "oem": "8-94159-2901",
+      "original_filename": "Lapiz Bomba Gasolina/380769e6-5fc6-4825-8264-153536edc5dd.jpg",
+      "slug": "lapiz-bomba-gasolina-caribe-2-3-caribe-2-6-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94159-2901",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "83ba895e-c92a-47c3-a8e1-1b3984df4adf",
       "category": "Locha de Arranque",
-      "image_path": "./assets/locha-arranque-caribe-luv-2-3.webp",
       "description": "LOCHA ARRANQUE CARIBE / LUV 2.3",
+      "id": "83ba895e-c92a-47c3-a8e1-1b3984df4adf",
+      "image_path": "./assets/locha-arranque-caribe-luv-2-3.webp",
       "keywords": [
         "82756RK",
         "ARRANQUE",
@@ -15758,35 +15726,49 @@ const PRODUCTS_DATA = {
         "LOCHA",
         "LUV"
       ],
-      "oem": "82756RK",
-      "slug": "locha-arranque-caribe-luv-2-3",
-      "original_filename": "Locha de Arranque/83ba895e-c92a-47c3-a8e1-1b3984df4adf.jpg",
       "linked_ids": [
         691
+      ],
+      "oem": "82756RK",
+      "original_filename": "Locha de Arranque/83ba895e-c92a-47c3-a8e1-1b3984df4adf.jpg",
+      "slug": "locha-arranque-caribe-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "82756RK",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "b36968b1-7652-4558-afd8-152ff804161d",
       "category": "Locha Martillo",
-      "image_path": "./assets/locha-martillo.webp",
       "description": "LOCHA MARTILLO",
+      "id": "b36968b1-7652-4558-afd8-152ff804161d",
+      "image_path": "./assets/locha-martillo.webp",
       "keywords": [
         "8-90076-7450",
         "LOCHA",
         "MARTILLO"
       ],
+      "linked_ids": [
+        692
+      ],
       "oem": "8-90076-7450",
-      "slug": "locha-martillo",
       "original_filename": "Locha Martillo/b36968b1-7652-4558-afd8-152ff804161d.jpg",
-      "linked_ids": [
-        692
+      "slug": "locha-martillo",
+      "variants": [
+        {
+          "codigo_oem": "8-90076-7450",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "5fc3b409-08d2-4433-a874-5831d6519726",
       "category": "Locha Martillo",
-      "image_path": "./assets/locha-martillo-luv-dmax-2-4.webp",
       "description": "LOCHA MARTILLO LUV DMAX 2.4",
+      "id": "5fc3b409-08d2-4433-a874-5831d6519726",
+      "image_path": "./assets/locha-martillo-luv-dmax-2-4.webp",
       "keywords": [
         "8-90076-7450",
         "DMAX",
@@ -15794,18 +15776,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "MARTILLO"
       ],
-      "oem": "8-90076-7450",
-      "slug": "locha-martillo-luv-dmax-2-4",
-      "original_filename": "Locha Martillo/5fc3b409-08d2-4433-a874-5831d6519726.jpg",
       "linked_ids": [
         692
+      ],
+      "oem": "8-90076-7450",
+      "original_filename": "Locha Martillo/5fc3b409-08d2-4433-a874-5831d6519726.jpg",
+      "slug": "locha-martillo-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-90076-7450",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "931184ed-3304-4da7-9b50-185b7e6b05cb",
       "category": "Manguera Bomba Vacio",
-      "image_path": "./assets/manguera-bomba-vacio-luv-dmax-2-5.webp",
       "description": "MANGUERA BOMBA VACIO LUV DMAX 2.5",
+      "id": "931184ed-3304-4da7-9b50-185b7e6b05cb",
+      "image_path": "./assets/manguera-bomba-vacio-luv-dmax-2-5.webp",
       "keywords": [
         "8-97353-8300",
         "BOMBA",
@@ -15814,18 +15803,25 @@ const PRODUCTS_DATA = {
         "MANGUERA",
         "VACIO"
       ],
-      "oem": "8-97353-8300",
-      "slug": "manguera-bomba-vacio-luv-dmax-2-5",
-      "original_filename": "Manguera Bomba Vacio/931184ed-3304-4da7-9b50-185b7e6b05cb.jpg",
       "linked_ids": [
         693
+      ],
+      "oem": "8-97353-8300",
+      "original_filename": "Manguera Bomba Vacio/931184ed-3304-4da7-9b50-185b7e6b05cb.jpg",
+      "slug": "manguera-bomba-vacio-luv-dmax-2-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97353-8300",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "f6a5586b-4e62-4aac-8aee-9ed6e992a631",
       "category": "Manguera Bomba Vacio",
-      "image_path": "./assets/manguera-bomba-vacio-luv-dmax-3-0.webp",
       "description": "MANGUERA BOMBA VACIO LUV DMAX 3.0",
+      "id": "f6a5586b-4e62-4aac-8aee-9ed6e992a631",
+      "image_path": "./assets/manguera-bomba-vacio-luv-dmax-3-0.webp",
       "keywords": [
         "8-97353-8300",
         "BOMBA",
@@ -15834,11 +15830,18 @@ const PRODUCTS_DATA = {
         "MANGUERA",
         "VACIO"
       ],
-      "oem": "8-97353-8300",
-      "slug": "manguera-bomba-vacio-luv-dmax-3-0",
-      "original_filename": "Manguera Bomba Vacio/f6a5586b-4e62-4aac-8aee-9ed6e992a631.jpg",
       "linked_ids": [
         693
+      ],
+      "oem": "8-97353-8300",
+      "original_filename": "Manguera Bomba Vacio/f6a5586b-4e62-4aac-8aee-9ed6e992a631.jpg",
+      "slug": "manguera-bomba-vacio-luv-dmax-3-0",
+      "variants": [
+        {
+          "codigo_oem": "8-97353-8300",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
@@ -15920,10 +15923,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "9e3b9249-cdd9-4c2c-bad3-6815c3626455",
       "category": "Manguera Freno",
-      "image_path": "./assets/manguera-freno-caribe.webp",
       "description": "MANGUERA FRENO CARIBE",
+      "id": "9e3b9249-cdd9-4c2c-bad3-6815c3626455",
+      "image_path": "./assets/manguera-freno-caribe.webp",
       "keywords": [
         "8-94113-5830",
         "8-94222-6843",
@@ -15931,36 +15934,50 @@ const PRODUCTS_DATA = {
         "FRENO",
         "MANGUERA"
       ],
-      "oem": "8-94222-6843 / 8-94113-5830",
-      "slug": "manguera-freno-caribe",
-      "original_filename": "Manguera Freno/9e3b9249-cdd9-4c2c-bad3-6815c3626455.jpg",
       "linked_ids": [
         696
+      ],
+      "oem": "8-94222-6843 / 8-94113-5830",
+      "original_filename": "Manguera Freno/9e3b9249-cdd9-4c2c-bad3-6815c3626455.jpg",
+      "slug": "manguera-freno-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94222-6843",
+          "brand": "Original",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "f4be56df-8ddc-4fd5-a61d-47e0390c479e",
       "category": "Manguera Freno",
-      "image_path": "./assets/manguera-freno-luv.webp",
       "description": "MANGUERA FRENO LUV",
+      "id": "f4be56df-8ddc-4fd5-a61d-47e0390c479e",
+      "image_path": "./assets/manguera-freno-luv.webp",
       "keywords": [
         "8-97134-8290",
         "FRENO",
         "LUV",
         "MANGUERA"
       ],
-      "oem": "8-97134-8290",
-      "slug": "manguera-freno-luv",
-      "original_filename": "Manguera Freno/f4be56df-8ddc-4fd5-a61d-47e0390c479e.jpg",
       "linked_ids": [
         697
+      ],
+      "oem": "8-97134-8290",
+      "original_filename": "Manguera Freno/f4be56df-8ddc-4fd5-a61d-47e0390c479e.jpg",
+      "slug": "manguera-freno-luv",
+      "variants": [
+        {
+          "codigo_oem": "8-97134-8290",
+          "brand": "Original",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "3587838b-2ce5-442f-b016-179b59143177",
       "category": "Manguera Freno",
-      "image_path": "./assets/manguera-freno-luv-dmax-2-4.webp",
       "description": "MANGUERA FRENO LUV DMAX 2.4",
+      "id": "3587838b-2ce5-442f-b016-179b59143177",
+      "image_path": "./assets/manguera-freno-luv-dmax-2-4.webp",
       "keywords": [
         "8-97289-2092",
         "8-97363-8040",
@@ -15969,19 +15986,31 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANGUERA"
       ],
-      "oem": "8-97363-8040 / 8-97289-2092",
-      "slug": "manguera-freno-luv-dmax-2-4",
-      "original_filename": "Manguera Freno/3587838b-2ce5-442f-b016-179b59143177.jpg",
       "linked_ids": [
         1169,
         698
+      ],
+      "oem": "8-97363-8040 / 8-97289-2092",
+      "original_filename": "Manguera Freno/3587838b-2ce5-442f-b016-179b59143177.jpg",
+      "slug": "manguera-freno-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-97289-2092",
+          "brand": "Original",
+          "precio_usd": 50
+        },
+        {
+          "codigo_oem": "8-97363-8040",
+          "brand": "Original",
+          "precio_usd": 50
+        }
       ]
     },
     {
-      "id": "857d45fc-c123-415a-9feb-f7e503258668",
       "category": "Manguera Freno",
-      "image_path": "./assets/manguera-freno-luv-dmax-3-5.webp",
       "description": "MANGUERA FRENO LUV DMAX 3.5",
+      "id": "857d45fc-c123-415a-9feb-f7e503258668",
+      "image_path": "./assets/manguera-freno-luv-dmax-3-5.webp",
       "keywords": [
         "8-97330-4540",
         "8-97363-8050",
@@ -15992,12 +16021,24 @@ const PRODUCTS_DATA = {
         "MF-4126",
         "MF-4127"
       ],
-      "oem": "8-97363-8050 / MF-4127 / 8-97330-4540 / MF-4126",
-      "slug": "manguera-freno-luv-dmax-3-5",
-      "original_filename": "Manguera Freno/857d45fc-c123-415a-9feb-f7e503258668.jpg",
       "linked_ids": [
         1170,
         699
+      ],
+      "oem": "8-97363-8050 / MF-4127 / 8-97330-4540 / MF-4126",
+      "original_filename": "Manguera Freno/857d45fc-c123-415a-9feb-f7e503258668.jpg",
+      "slug": "manguera-freno-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97330-4540",
+          "brand": "Original",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-97363-8050",
+          "brand": "Original",
+          "precio_usd": 45
+        }
       ]
     },
     {
@@ -16053,10 +16094,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "f53f0f58-d7b8-4573-889b-d278092f5ebc",
       "category": "Manguera Radiador",
-      "image_path": "./assets/manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3.webp",
       "description": "MANGUERA RADIADOR INFERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3",
+      "id": "f53f0f58-d7b8-4573-889b-d278092f5ebc",
+      "image_path": "./assets/manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3.webp",
       "keywords": [
         "0820",
         "8-94337-3000",
@@ -16067,18 +16108,25 @@ const PRODUCTS_DATA = {
         "MANGUERA",
         "RADIADOR"
       ],
-      "oem": "8-94337-3000 / 0820 / ACM013",
-      "slug": "manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3",
-      "original_filename": "Manguera Radiador/f53f0f58-d7b8-4573-889b-d278092f5ebc.jpg",
       "linked_ids": [
         703
+      ],
+      "oem": "8-94337-3000 / 0820 / ACM013",
+      "original_filename": "Manguera Radiador/f53f0f58-d7b8-4573-889b-d278092f5ebc.jpg",
+      "slug": "manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94337-3000",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "d8a59eeb-d200-43f1-9566-211063795ca1",
       "category": "Manguera Radiador",
-      "image_path": "./assets/manguera-radiador-inferior-caribe-g200.webp",
       "description": "MANGUERA RADIADOR INFERIOR CARIBE G200",
+      "id": "d8a59eeb-d200-43f1-9566-211063795ca1",
+      "image_path": "./assets/manguera-radiador-inferior-caribe-g200.webp",
       "keywords": [
         "0818",
         "8-94101-9690",
@@ -16089,11 +16137,18 @@ const PRODUCTS_DATA = {
         "MANGUERA",
         "RADIADOR"
       ],
-      "oem": "8-94101-9690 / 0818 / ACM010",
-      "slug": "manguera-radiador-inferior-caribe-g200",
-      "original_filename": "Manguera Radiador/d8a59eeb-d200-43f1-9566-211063795ca1.jpg",
       "linked_ids": [
         702
+      ],
+      "oem": "8-94101-9690 / 0818 / ACM010",
+      "original_filename": "Manguera Radiador/d8a59eeb-d200-43f1-9566-211063795ca1.jpg",
+      "slug": "manguera-radiador-inferior-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94101-9690",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
@@ -16123,10 +16178,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "ea6d3d9b-61bc-4813-bb7a-70aecf9e0ef3",
       "category": "Manguera Radiador",
-      "image_path": "./assets/manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3.webp",
       "description": "MANGUERA RADIADOR SUPERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3",
+      "id": "ea6d3d9b-61bc-4813-bb7a-70aecf9e0ef3",
+      "image_path": "./assets/manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3.webp",
       "keywords": [
         "23194",
         "8-94389-4810",
@@ -16137,18 +16192,25 @@ const PRODUCTS_DATA = {
         "RADIADOR",
         "SUPERIOR"
       ],
-      "oem": "8-94389-4810 / MC819 / 23194",
-      "slug": "manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3",
-      "original_filename": "Manguera Radiador/ea6d3d9b-61bc-4813-bb7a-70aecf9e0ef3.jpg",
       "linked_ids": [
         711
+      ],
+      "oem": "8-94389-4810 / MC819 / 23194",
+      "original_filename": "Manguera Radiador/ea6d3d9b-61bc-4813-bb7a-70aecf9e0ef3.jpg",
+      "slug": "manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94389-4810",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "524c4671-a8a0-4bf0-8c65-0645f48dad19",
       "category": "Manguera Radiador",
-      "image_path": "./assets/manguera-radiador-superior-caribe-g200.webp",
       "description": "MANGUERA RADIADOR SUPERIOR CARIBE G200",
+      "id": "524c4671-a8a0-4bf0-8c65-0645f48dad19",
+      "image_path": "./assets/manguera-radiador-superior-caribe-g200.webp",
       "keywords": [
         "CARIBE",
         "G200",
@@ -16158,11 +16220,18 @@ const PRODUCTS_DATA = {
         "RADIADOR",
         "SUPERIOR"
       ],
-      "oem": "MGM817R / MC817",
-      "slug": "manguera-radiador-superior-caribe-g200",
-      "original_filename": "Manguera Radiador/524c4671-a8a0-4bf0-8c65-0645f48dad19.jpg",
       "linked_ids": [
         710
+      ],
+      "oem": "MGM817R / MC817",
+      "original_filename": "Manguera Radiador/524c4671-a8a0-4bf0-8c65-0645f48dad19.jpg",
+      "slug": "manguera-radiador-superior-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "MGM817R",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
@@ -16274,10 +16343,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "2211af8d-af84-44f6-ba1e-b4013c851e0c",
       "category": "Manguera Radiador",
-      "image_path": "./assets/manguera-radiador-superior-luv-dmax-3-0-4jj1.webp",
       "description": "MANGUERA RADIADOR SUPERIOR LUV DMAX 3.0 4JJ1",
+      "id": "2211af8d-af84-44f6-ba1e-b4013c851e0c",
+      "image_path": "./assets/manguera-radiador-superior-luv-dmax-3-0-4jj1.webp",
       "keywords": [
         "4JJ1",
         "8-97363-6041",
@@ -16287,11 +16356,18 @@ const PRODUCTS_DATA = {
         "RADIADOR",
         "SUPERIOR"
       ],
-      "oem": "8-97363-6041",
-      "slug": "manguera-radiador-superior-luv-dmax-3-0-4jj1",
-      "original_filename": "Manguera Radiador/2211af8d-af84-44f6-ba1e-b4013c851e0c.jpg",
       "linked_ids": [
         717
+      ],
+      "oem": "8-97363-6041",
+      "original_filename": "Manguera Radiador/2211af8d-af84-44f6-ba1e-b4013c851e0c.jpg",
+      "slug": "manguera-radiador-superior-luv-dmax-3-0-4jj1",
+      "variants": [
+        {
+          "codigo_oem": "8-97363-6041",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
@@ -16380,10 +16456,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "5f16cf58-718d-4a7c-bc1b-ea765cf701cf",
       "category": "Manilla Compuerta",
-      "image_path": "./assets/manilla-compuerta-trasera-luv-dmax.webp",
       "description": "MANILLA COMPUERTA TRASERA LUV DMAX",
+      "id": "5f16cf58-718d-4a7c-bc1b-ea765cf701cf",
+      "image_path": "./assets/manilla-compuerta-trasera-luv-dmax.webp",
       "keywords": [
         "8-97235-3863",
         "8-98079-0190",
@@ -16394,18 +16470,30 @@ const PRODUCTS_DATA = {
         "MANILLA",
         "TRASERA"
       ],
-      "oem": "8-98079-0190 / 8-97235-3863 / 8-98079-2320",
-      "slug": "manilla-compuerta-trasera-luv-dmax",
-      "original_filename": "Manilla Compuerta/5f16cf58-718d-4a7c-bc1b-ea765cf701cf.jpg",
       "linked_ids": [
         721
+      ],
+      "oem": "8-98079-0190 / 8-97235-3863 / 8-98079-2320",
+      "original_filename": "Manilla Compuerta/5f16cf58-718d-4a7c-bc1b-ea765cf701cf.jpg",
+      "slug": "manilla-compuerta-trasera-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "8-98079-0190",
+          "brand": "NEGRA",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "8-98079-0190",
+          "brand": "CROMADA",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "4621c15f-91c1-4350-8dc2-7b94fc55fc8a",
       "category": "Manilla Externa",
-      "image_path": "./assets/manilla-externa-caribe.webp",
       "description": "MANILLA EXTERNA CARIBE",
+      "id": "4621c15f-91c1-4350-8dc2-7b94fc55fc8a",
+      "image_path": "./assets/manilla-externa-caribe.webp",
       "keywords": [
         "8-94295-4910",
         "8-94295-4920",
@@ -16413,19 +16501,31 @@ const PRODUCTS_DATA = {
         "EXTERNA",
         "MANILLA"
       ],
-      "oem": "8-94295-4920 / 8-94295-4910",
-      "slug": "manilla-externa-caribe",
-      "original_filename": "Manilla Externa/4621c15f-91c1-4350-8dc2-7b94fc55fc8a.jpg",
       "linked_ids": [
         1171,
         723
+      ],
+      "oem": "8-94295-4920 / 8-94295-4910",
+      "original_filename": "Manilla Externa/4621c15f-91c1-4350-8dc2-7b94fc55fc8a.jpg",
+      "slug": "manilla-externa-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94295-4910",
+          "brand": "Original",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-94295-4920",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "39e3d5ed-eae8-42a4-97e7-b882a5711acb",
       "category": "Manilla Externa",
-      "image_path": "./assets/manilla-externa-delantera-luv-dmax.webp",
       "description": "MANILLA EXTERNA DELANTERA LUV DMAX",
+      "id": "39e3d5ed-eae8-42a4-97e7-b882a5711acb",
+      "image_path": "./assets/manilla-externa-delantera-luv-dmax.webp",
       "keywords": [
         "8-97235-9591",
         "8-97235-9751",
@@ -16437,19 +16537,41 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANILLA"
       ],
-      "oem": "8-97362-8960 / 8-97235-9591 / 8-97362-8950 / 8-97235-9751",
-      "slug": "manilla-externa-delantera-luv-dmax",
-      "original_filename": "Manilla Externa/39e3d5ed-eae8-42a4-97e7-b882a5711acb.jpg",
       "linked_ids": [
         724,
         1172
+      ],
+      "oem": "8-97362-8960 / 8-97235-9591 / 8-97362-8950 / 8-97235-9751",
+      "original_filename": "Manilla Externa/39e3d5ed-eae8-42a4-97e7-b882a5711acb.jpg",
+      "slug": "manilla-externa-delantera-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "8-97362-8960",
+          "brand": "CROMADA",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "8-97362-8960",
+          "brand": "NEGRA",
+          "precio_usd": 25
+        },
+        {
+          "codigo_oem": "8-97362-8950",
+          "brand": "CROMADA",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "8-97362-8950",
+          "brand": "NEGRA",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "4a0b2f97-f34f-424f-9080-a81a0030c8e5",
       "category": "Manilla Externa",
-      "image_path": "./assets/manilla-externa-luv.webp",
       "description": "MANILLA EXTERNA LUV",
+      "id": "4a0b2f97-f34f-424f-9080-a81a0030c8e5",
+      "image_path": "./assets/manilla-externa-luv.webp",
       "keywords": [
         "8-94434-9731",
         "8-94434-9741",
@@ -16457,19 +16579,31 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANILLA"
       ],
-      "oem": "8-94434-9731 / 8-94434-9741",
-      "slug": "manilla-externa-luv",
-      "original_filename": "Manilla Externa/4a0b2f97-f34f-424f-9080-a81a0030c8e5.jpg",
       "linked_ids": [
         726,
         1175
+      ],
+      "oem": "8-94434-9731 / 8-94434-9741",
+      "original_filename": "Manilla Externa/4a0b2f97-f34f-424f-9080-a81a0030c8e5.jpg",
+      "slug": "manilla-externa-luv",
+      "variants": [
+        {
+          "codigo_oem": "8-94434-9731",
+          "brand": "Original",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-94434-9741",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "8d62ad50-4cd5-4845-b33b-21633848a8e6",
       "category": "Manilla Externa",
-      "image_path": "./assets/manilla-externa-trasera-luv-dmax.webp",
       "description": "MANILLA EXTERNA TRASERA LUV DMAX",
+      "id": "8d62ad50-4cd5-4845-b33b-21633848a8e6",
+      "image_path": "./assets/manilla-externa-trasera-luv-dmax.webp",
       "keywords": [
         "8-93291-1021",
         "8-93295-3141",
@@ -16479,12 +16613,34 @@ const PRODUCTS_DATA = {
         "MANILLA",
         "TRASERA"
       ],
-      "oem": "8-93295-3141 / 8-93291-1021",
-      "slug": "manilla-externa-trasera-luv-dmax",
-      "original_filename": "Manilla Externa/8d62ad50-4cd5-4845-b33b-21633848a8e6.jpg",
       "linked_ids": [
         1174,
         1173
+      ],
+      "oem": "8-93295-3141 / 8-93291-1021",
+      "original_filename": "Manilla Externa/8d62ad50-4cd5-4845-b33b-21633848a8e6.jpg",
+      "slug": "manilla-externa-trasera-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "8-93291-1021",
+          "brand": "CROMADA",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "8-93291-1021",
+          "brand": "NEGRA",
+          "precio_usd": 25
+        },
+        {
+          "codigo_oem": "8-93295-3141",
+          "brand": "CROMADA",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "8-93295-3141",
+          "brand": "NEGRA",
+          "precio_usd": 25
+        }
       ]
     },
     {
@@ -16520,46 +16676,60 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "319adc80-77d2-4810-b439-42fd6ce6f688",
       "category": "Martillo",
-      "image_path": "./assets/martillo-caribe-luv-2-3.webp",
       "description": "MARTILLO CARIBE / LUV 2.3",
+      "id": "319adc80-77d2-4810-b439-42fd6ce6f688",
+      "image_path": "./assets/martillo-caribe-luv-2-3.webp",
       "keywords": [
         "8-94102-4160",
         "CARIBE",
         "LUV",
         "MARTILLO"
       ],
-      "oem": "8-94102-4160",
-      "slug": "martillo-caribe-luv-2-3",
-      "original_filename": "Martillo/319adc80-77d2-4810-b439-42fd6ce6f688.jpg",
       "linked_ids": [
         727
+      ],
+      "oem": "8-94102-4160",
+      "original_filename": "Martillo/319adc80-77d2-4810-b439-42fd6ce6f688.jpg",
+      "slug": "martillo-caribe-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94102-4160",
+          "brand": "NPC",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "84a1112f-2ebb-4ad5-9dc5-46a064b79977",
       "category": "Martillo",
-      "image_path": "./assets/martillo-luv-2-2.webp",
       "description": "MARTILLO LUV 2.2",
+      "id": "84a1112f-2ebb-4ad5-9dc5-46a064b79977",
+      "image_path": "./assets/martillo-luv-2-2.webp",
       "keywords": [
         "8-90409-1940",
         "8-93307-1040",
         "LUV",
         "MARTILLO"
       ],
-      "oem": "8-90409-1940 / 8-93307-1040",
-      "slug": "martillo-luv-2-2",
-      "original_filename": "Martillo/84a1112f-2ebb-4ad5-9dc5-46a064b79977.jpg",
       "linked_ids": [
         728
+      ],
+      "oem": "8-90409-1940 / 8-93307-1040",
+      "original_filename": "Martillo/84a1112f-2ebb-4ad5-9dc5-46a064b79977.jpg",
+      "slug": "martillo-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-90409-1940",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "bd025888-0555-4b94-b849-cb9e582a9102",
       "category": "Martillo",
-      "image_path": "./assets/martillo-luv-dmax-2-4.webp",
       "description": "MARTILLO LUV DMAX 2.4",
+      "id": "bd025888-0555-4b94-b849-cb9e582a9102",
+      "image_path": "./assets/martillo-luv-dmax-2-4.webp",
       "keywords": [
         "8-90409-1940",
         "8-93307-1040",
@@ -16567,18 +16737,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "MARTILLO"
       ],
-      "oem": "8-90409-1940 / 8-93307-1040",
-      "slug": "martillo-luv-dmax-2-4",
-      "original_filename": "Martillo/bd025888-0555-4b94-b849-cb9e582a9102.jpg",
       "linked_ids": [
         728
+      ],
+      "oem": "8-90409-1940 / 8-93307-1040",
+      "original_filename": "Martillo/bd025888-0555-4b94-b849-cb9e582a9102.jpg",
+      "slug": "martillo-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-90409-1940",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "72abafbc-247f-4f9e-a6ba-4a37c3b7aff3",
       "category": "Meseta",
-      "image_path": "./assets/meseta-luv-4x2.webp",
       "description": "MESETA LUV 4X2",
+      "id": "72abafbc-247f-4f9e-a6ba-4a37c3b7aff3",
+      "image_path": "./assets/meseta-luv-4x2.webp",
       "keywords": [
         "4X2",
         "8-94459-4602",
@@ -16586,19 +16763,31 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "oem": "8-94459-4612 / 8-94459-4602",
-      "slug": "meseta-luv-4x2",
-      "original_filename": "Meseta/72abafbc-247f-4f9e-a6ba-4a37c3b7aff3.jpg",
       "linked_ids": [
         1176,
         730
+      ],
+      "oem": "8-94459-4612 / 8-94459-4602",
+      "original_filename": "Meseta/72abafbc-247f-4f9e-a6ba-4a37c3b7aff3.jpg",
+      "slug": "meseta-luv-4x2",
+      "variants": [
+        {
+          "codigo_oem": "8-94459-4602",
+          "brand": "Original",
+          "precio_usd": 60
+        },
+        {
+          "codigo_oem": "8-94459-4612",
+          "brand": "Original",
+          "precio_usd": 60
+        }
       ]
     },
     {
-      "id": "42bd602e-3217-45e8-baed-663ba000036e",
       "category": "Meseta",
-      "image_path": "./assets/meseta-luv-dmax-2-4.webp",
       "description": "MESETA LUV DMAX 2.4",
+      "id": "42bd602e-3217-45e8-baed-663ba000036e",
+      "image_path": "./assets/meseta-luv-dmax-2-4.webp",
       "keywords": [
         "8-97365-0140",
         "8-97365-0150",
@@ -16608,19 +16797,31 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
+      "linked_ids": [
+        731,
+        1166
+      ],
       "oem": "8-98005-8320 / 8-97365-0140 / 8-98005-8330 / 8-97365-0150",
-      "slug": "meseta-luv-dmax-2-4",
       "original_filename": "Meseta/42bd602e-3217-45e8-baed-663ba000036e.jpg",
-      "linked_ids": [
-        731,
-        1166
+      "slug": "meseta-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-98005-8320",
+          "brand": "Original",
+          "precio_usd": 100
+        },
+        {
+          "codigo_oem": "8-98005-8330",
+          "brand": "Original",
+          "precio_usd": 100
+        }
       ]
     },
     {
-      "id": "b38bc473-223e-40a6-9e6c-7d592fa5279f",
       "category": "Meseta",
-      "image_path": "./assets/meseta-luv-dmax-2-5.webp",
       "description": "MESETA LUV DMAX 2.5",
+      "id": "b38bc473-223e-40a6-9e6c-7d592fa5279f",
+      "image_path": "./assets/meseta-luv-dmax-2-5.webp",
       "keywords": [
         "8-97365-0140",
         "8-97365-0150",
@@ -16630,19 +16831,31 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "oem": "8-98005-8320 / 8-97365-0140 / 8-98005-8330 / 8-97365-0150",
-      "slug": "meseta-luv-dmax-2-5",
-      "original_filename": "Meseta/b38bc473-223e-40a6-9e6c-7d592fa5279f.jpg",
       "linked_ids": [
         731,
         1166
+      ],
+      "oem": "8-98005-8320 / 8-97365-0140 / 8-98005-8330 / 8-97365-0150",
+      "original_filename": "Meseta/b38bc473-223e-40a6-9e6c-7d592fa5279f.jpg",
+      "slug": "meseta-luv-dmax-2-5",
+      "variants": [
+        {
+          "codigo_oem": "8-98005-8320",
+          "brand": "Original",
+          "precio_usd": 100
+        },
+        {
+          "codigo_oem": "8-98005-8330",
+          "brand": "Original",
+          "precio_usd": 100
+        }
       ]
     },
     {
-      "id": "49f51d9c-5ae5-4d89-a19b-79bd1802f865",
       "category": "Meseta",
-      "image_path": "./assets/meseta-luv-dmax-3-0-4x2.webp",
       "description": "MESETA LUV DMAX 3.0 4X2",
+      "id": "49f51d9c-5ae5-4d89-a19b-79bd1802f865",
+      "image_path": "./assets/meseta-luv-dmax-3-0-4x2.webp",
       "keywords": [
         "4X2",
         "8-97365-0140",
@@ -16653,19 +16866,31 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "oem": "8-98005-8320 / 8-97365-0140 / 8-98005-8330 / 8-97365-0150",
-      "slug": "meseta-luv-dmax-3-0-4x2",
-      "original_filename": "Meseta/49f51d9c-5ae5-4d89-a19b-79bd1802f865.jpg",
       "linked_ids": [
         731,
         1166
+      ],
+      "oem": "8-98005-8320 / 8-97365-0140 / 8-98005-8330 / 8-97365-0150",
+      "original_filename": "Meseta/49f51d9c-5ae5-4d89-a19b-79bd1802f865.jpg",
+      "slug": "meseta-luv-dmax-3-0-4x2",
+      "variants": [
+        {
+          "codigo_oem": "8-98005-8320",
+          "brand": "Original",
+          "precio_usd": 100
+        },
+        {
+          "codigo_oem": "8-98005-8330",
+          "brand": "Original",
+          "precio_usd": 100
+        }
       ]
     },
     {
-      "id": "82fb6f49-4b24-4f17-9eac-d5bfb19b06bb",
       "category": "Meseta",
-      "image_path": "./assets/meseta-luv-dmax-3-0-4x4.webp",
       "description": "MESETA LUV DMAX 3.0 4X4",
+      "id": "82fb6f49-4b24-4f17-9eac-d5bfb19b06bb",
+      "image_path": "./assets/meseta-luv-dmax-3-0-4x4.webp",
       "keywords": [
         "4X4",
         "8-97365-0160",
@@ -16676,19 +16901,41 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "oem": "8-97365-0160 / 8-98005-8340 / 8-97365-0170 / 8-98005-8350",
-      "slug": "meseta-luv-dmax-3-0-4x4",
-      "original_filename": "Meseta/82fb6f49-4b24-4f17-9eac-d5bfb19b06bb.jpg",
       "linked_ids": [
         732,
         1177
+      ],
+      "oem": "8-97365-0160 / 8-98005-8340 / 8-97365-0170 / 8-98005-8350",
+      "original_filename": "Meseta/82fb6f49-4b24-4f17-9eac-d5bfb19b06bb.jpg",
+      "slug": "meseta-luv-dmax-3-0-4x4",
+      "variants": [
+        {
+          "codigo_oem": "8-97365-0160",
+          "brand": "MASARU",
+          "precio_usd": 125
+        },
+        {
+          "codigo_oem": "8-97365-0160",
+          "brand": "FUJI",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97365-0170",
+          "brand": "MASARU",
+          "precio_usd": 125
+        },
+        {
+          "codigo_oem": "8-97365-0170",
+          "brand": "FUJI",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "776c5369-0502-41b3-9e2d-22e1bc87a7f3",
       "category": "Meseta",
-      "image_path": "./assets/meseta-luv-dmax-3-5.webp",
       "description": "MESETA LUV DMAX 3.5",
+      "id": "776c5369-0502-41b3-9e2d-22e1bc87a7f3",
+      "image_path": "./assets/meseta-luv-dmax-3-5.webp",
       "keywords": [
         "8-97365-0160",
         "8-97365-0170",
@@ -16698,19 +16945,41 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA"
       ],
-      "oem": "8-97365-0160 / 8-98005-8340 / 8-97365-0170 / 8-98005-8350",
-      "slug": "meseta-luv-dmax-3-5",
-      "original_filename": "Meseta/776c5369-0502-41b3-9e2d-22e1bc87a7f3.jpg",
       "linked_ids": [
         732,
         1177
+      ],
+      "oem": "8-97365-0160 / 8-98005-8340 / 8-97365-0170 / 8-98005-8350",
+      "original_filename": "Meseta/776c5369-0502-41b3-9e2d-22e1bc87a7f3.jpg",
+      "slug": "meseta-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97365-0160",
+          "brand": "MASARU",
+          "precio_usd": 125
+        },
+        {
+          "codigo_oem": "8-97365-0160",
+          "brand": "FUJI",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97365-0170",
+          "brand": "MASARU",
+          "precio_usd": 125
+        },
+        {
+          "codigo_oem": "8-97365-0170",
+          "brand": "FUJI",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "fc8650ab-ee2d-4782-b8ab-1c6f9ec9390a",
       "category": "Mica Stop",
-      "image_path": "./assets/mica-stop-caribe.webp",
       "description": "MICA STOP CARIBE",
+      "id": "fc8650ab-ee2d-4782-b8ab-1c6f9ec9390a",
+      "image_path": "./assets/mica-stop-caribe.webp",
       "keywords": [
         "8-94228-9150",
         "8-94228-9160",
@@ -16718,12 +16987,24 @@ const PRODUCTS_DATA = {
         "MICA",
         "STOP"
       ],
-      "oem": "8-94228-9150 / 8-94228-9160",
-      "slug": "mica-stop-caribe",
-      "original_filename": "Mica Stop/fc8650ab-ee2d-4782-b8ab-1c6f9ec9390a.jpg",
       "linked_ids": [
         735,
         1155
+      ],
+      "oem": "8-94228-9150 / 8-94228-9160",
+      "original_filename": "Mica Stop/fc8650ab-ee2d-4782-b8ab-1c6f9ec9390a.jpg",
+      "slug": "mica-stop-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94228-9150",
+          "brand": "Original",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-94228-9160",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
@@ -16779,10 +17060,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "b10ad0ca-bd3b-427d-b2b5-1da4a54b50df",
       "category": "Muñon",
-      "image_path": "./assets/munon-inferior-caribe-2-3.webp",
       "description": "MUÑON INFERIOR CARIBE 2.3",
+      "id": "b10ad0ca-bd3b-427d-b2b5-1da4a54b50df",
+      "image_path": "./assets/munon-inferior-caribe-2-3.webp",
       "keywords": [
         "8-94243-2360",
         "8-94452-1071",
@@ -16790,18 +17071,30 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "MUNON"
       ],
-      "oem": "8-94243-2360 / 8-94452-1071",
-      "slug": "munon-inferior-caribe-2-3",
-      "original_filename": "Muñon/b10ad0ca-bd3b-427d-b2b5-1da4a54b50df.jpg",
       "linked_ids": [
         738
+      ],
+      "oem": "8-94243-2360 / 8-94452-1071",
+      "original_filename": "Muñon/b10ad0ca-bd3b-427d-b2b5-1da4a54b50df.jpg",
+      "slug": "munon-inferior-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94243-2360",
+          "brand": "TAIWAN",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94243-2360",
+          "brand": "JAPON",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "dde919c9-9696-4cfe-8847-d58d4f6415b9",
       "category": "Muñon",
-      "image_path": "./assets/munon-inferior-caribe-2-6.webp",
       "description": "MUÑON INFERIOR CARIBE 2.6",
+      "id": "dde919c9-9696-4cfe-8847-d58d4f6415b9",
+      "image_path": "./assets/munon-inferior-caribe-2-6.webp",
       "keywords": [
         "717IZ01A800",
         "8-94452-1021",
@@ -16815,18 +17108,35 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "MUNON"
       ],
-      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
-      "slug": "munon-inferior-caribe-2-6",
-      "original_filename": "Muñon/dde919c9-9696-4cfe-8847-d58d4f6415b9.jpg",
       "linked_ids": [
         740
+      ],
+      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
+      "original_filename": "Muñon/dde919c9-9696-4cfe-8847-d58d4f6415b9.jpg",
+      "slug": "munon-inferior-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "TAIWAN",
+          "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "JAPON",
+          "precio_usd": 50
+        },
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "MOOG",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "2ae77701-38fc-4c0f-910a-3c6e00f5ac17",
       "category": "Muñon",
-      "image_path": "./assets/munon-inferior-caribe-g200.webp",
       "description": "MUÑON INFERIOR CARIBE G200",
+      "id": "2ae77701-38fc-4c0f-910a-3c6e00f5ac17",
+      "image_path": "./assets/munon-inferior-caribe-g200.webp",
       "keywords": [
         "8-94243-2360",
         "8-94452-1071",
@@ -16835,18 +17145,30 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "MUNON"
       ],
-      "oem": "8-94243-2360 / 8-94452-1071",
-      "slug": "munon-inferior-caribe-g200",
-      "original_filename": "Muñon/2ae77701-38fc-4c0f-910a-3c6e00f5ac17.jpg",
       "linked_ids": [
         738
+      ],
+      "oem": "8-94243-2360 / 8-94452-1071",
+      "original_filename": "Muñon/2ae77701-38fc-4c0f-910a-3c6e00f5ac17.jpg",
+      "slug": "munon-inferior-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94243-2360",
+          "brand": "TAIWAN",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94243-2360",
+          "brand": "JAPON",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "cacdbb6d-d37e-46a2-8a91-971091a5696b",
       "category": "Muñon",
-      "image_path": "./assets/munon-inferior-luv-4x4.webp",
       "description": "MUÑON INFERIOR LUV 4X4",
+      "id": "cacdbb6d-d37e-46a2-8a91-971091a5696b",
+      "image_path": "./assets/munon-inferior-luv-4x4.webp",
       "keywords": [
         "4X4",
         "717IZ01A800",
@@ -16861,18 +17183,35 @@ const PRODUCTS_DATA = {
         "LUV",
         "MUNON"
       ],
-      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
-      "slug": "munon-inferior-luv-4x4",
-      "original_filename": "Muñon/cacdbb6d-d37e-46a2-8a91-971091a5696b.jpg",
       "linked_ids": [
         740
+      ],
+      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
+      "original_filename": "Muñon/cacdbb6d-d37e-46a2-8a91-971091a5696b.jpg",
+      "slug": "munon-inferior-luv-4x4",
+      "variants": [
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "TAIWAN",
+          "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "JAPON",
+          "precio_usd": 50
+        },
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "MOOG",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "4f75aad5-f922-4b09-b3cf-3d1513a0a8a7",
       "category": "Muñon",
-      "image_path": "./assets/munon-inferior-luv-d-max.webp",
       "description": "MUÑON INFERIOR LUV D-MAX",
+      "id": "4f75aad5-f922-4b09-b3cf-3d1513a0a8a7",
+      "image_path": "./assets/munon-inferior-luv-d-max.webp",
       "keywords": [
         "717IZ01A800",
         "8-94452-1021",
@@ -16887,18 +17226,35 @@ const PRODUCTS_DATA = {
         "LUV",
         "MUNON"
       ],
-      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
-      "slug": "munon-inferior-luv-d-max",
-      "original_filename": "Muñon/4f75aad5-f922-4b09-b3cf-3d1513a0a8a7.jpg",
       "linked_ids": [
         740
+      ],
+      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
+      "original_filename": "Muñon/4f75aad5-f922-4b09-b3cf-3d1513a0a8a7.jpg",
+      "slug": "munon-inferior-luv-d-max",
+      "variants": [
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "TAIWAN",
+          "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "JAPON",
+          "precio_usd": 50
+        },
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "MOOG",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "86250462-0f28-405b-92e7-78cc3370883d",
       "category": "Muñon",
-      "image_path": "./assets/munon-inferior-rodeo.webp",
       "description": "MUÑON INFERIOR RODEO",
+      "id": "86250462-0f28-405b-92e7-78cc3370883d",
+      "image_path": "./assets/munon-inferior-rodeo.webp",
       "keywords": [
         "717IZ01A800",
         "8-94452-1021",
@@ -16912,18 +17268,35 @@ const PRODUCTS_DATA = {
         "MUNON",
         "RODEO"
       ],
-      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
-      "slug": "munon-inferior-rodeo",
-      "original_filename": "Muñon/86250462-0f28-405b-92e7-78cc3370883d.jpg",
       "linked_ids": [
         740
+      ],
+      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
+      "original_filename": "Muñon/86250462-0f28-405b-92e7-78cc3370883d.jpg",
+      "slug": "munon-inferior-rodeo",
+      "variants": [
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "TAIWAN",
+          "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "JAPON",
+          "precio_usd": 50
+        },
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "MOOG",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "b3d098fa-ab47-4ee7-b238-2df796a4e57c",
       "category": "Muñon",
-      "image_path": "./assets/munon-inferior-trooper.webp",
       "description": "MUÑON INFERIOR TROOPER",
+      "id": "b3d098fa-ab47-4ee7-b238-2df796a4e57c",
+      "image_path": "./assets/munon-inferior-trooper.webp",
       "keywords": [
         "717IZ01A800",
         "8-94452-1021",
@@ -16937,18 +17310,35 @@ const PRODUCTS_DATA = {
         "MUNON",
         "TROOPER"
       ],
-      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
-      "slug": "munon-inferior-trooper",
-      "original_filename": "Muñon/b3d098fa-ab47-4ee7-b238-2df796a4e57c.jpg",
       "linked_ids": [
         740
+      ],
+      "oem": "8-94452-1021 / 717IZ01A800 / 8-94459-4651 / 8-94459-4652 / 8-97365-0210 / 8-98005-8750 / 8-97365-0200 / 8-98005-8740",
+      "original_filename": "Muñon/b3d098fa-ab47-4ee7-b238-2df796a4e57c.jpg",
+      "slug": "munon-inferior-trooper",
+      "variants": [
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "TAIWAN",
+          "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "JAPON",
+          "precio_usd": 50
+        },
+        {
+          "codigo_oem": "8-94452-1021",
+          "brand": "MOOG",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "36ead4ac-387e-43e2-97bd-60232a21e088",
       "category": "Muñon",
-      "image_path": "./assets/munon-superior-caribe.webp",
       "description": "MUÑON SUPERIOR CARIBE",
+      "id": "36ead4ac-387e-43e2-97bd-60232a21e088",
+      "image_path": "./assets/munon-superior-caribe.webp",
       "keywords": [
         "717IZ01C700",
         "8-94243-2340",
@@ -16957,18 +17347,35 @@ const PRODUCTS_DATA = {
         "MUNON",
         "SUPERIOR"
       ],
-      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
-      "slug": "munon-superior-caribe",
-      "original_filename": "Muñon/36ead4ac-387e-43e2-97bd-60232a21e088.jpg",
       "linked_ids": [
         744
+      ],
+      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
+      "original_filename": "Muñon/36ead4ac-387e-43e2-97bd-60232a21e088.jpg",
+      "slug": "munon-superior-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94243-2340",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-94243-2340",
+          "brand": "JAPON",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94243-2340",
+          "brand": "MOOG",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "c6ff9b8e-5927-4289-8573-9997b01ac1c9",
       "category": "Muñon",
-      "image_path": "./assets/munon-superior-luv.webp",
       "description": "MUÑON SUPERIOR LUV",
+      "id": "c6ff9b8e-5927-4289-8573-9997b01ac1c9",
+      "image_path": "./assets/munon-superior-luv.webp",
       "keywords": [
         "717IZ01C700",
         "8-94243-2340",
@@ -16977,18 +17384,35 @@ const PRODUCTS_DATA = {
         "MUNON",
         "SUPERIOR"
       ],
-      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
-      "slug": "munon-superior-luv",
-      "original_filename": "Muñon/c6ff9b8e-5927-4289-8573-9997b01ac1c9.jpg",
       "linked_ids": [
         744
+      ],
+      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
+      "original_filename": "Muñon/c6ff9b8e-5927-4289-8573-9997b01ac1c9.jpg",
+      "slug": "munon-superior-luv",
+      "variants": [
+        {
+          "codigo_oem": "8-94243-2340",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-94243-2340",
+          "brand": "JAPON",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94243-2340",
+          "brand": "MOOG",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "37023555-420a-4fac-96a1-5c879f87f51a",
       "category": "Muñon",
-      "image_path": "./assets/munon-superior-luv-dmax-2-4.webp",
       "description": "MUÑON SUPERIOR LUV DMAX 2.4",
+      "id": "37023555-420a-4fac-96a1-5c879f87f51a",
+      "image_path": "./assets/munon-superior-luv-dmax-2-4.webp",
       "keywords": [
         "8-97365-0180",
         "8-98005-8270",
@@ -16997,18 +17421,30 @@ const PRODUCTS_DATA = {
         "MUNON",
         "SUPERIOR"
       ],
+      "linked_ids": [
+        746
+      ],
       "oem": "8-97365-0180 / 8-98005-8270",
-      "slug": "munon-superior-luv-dmax-2-4",
       "original_filename": "Muñon/37023555-420a-4fac-96a1-5c879f87f51a.jpg",
-      "linked_ids": [
-        746
+      "slug": "munon-superior-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-97365-0180",
+          "brand": "TAIWAN",
+          "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-97365-0180",
+          "brand": "JAPON",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "eaa634ca-d041-4f6b-b0c7-8aec8f3f52e7",
       "category": "Muñon",
-      "image_path": "./assets/munon-superior-luv-dmax-2-5.webp",
       "description": "MUÑON SUPERIOR LUV DMAX 2.5",
+      "id": "eaa634ca-d041-4f6b-b0c7-8aec8f3f52e7",
+      "image_path": "./assets/munon-superior-luv-dmax-2-5.webp",
       "keywords": [
         "8-97365-0180",
         "8-98005-8270",
@@ -17017,18 +17453,30 @@ const PRODUCTS_DATA = {
         "MUNON",
         "SUPERIOR"
       ],
-      "oem": "8-97365-0180 / 8-98005-8270",
-      "slug": "munon-superior-luv-dmax-2-5",
-      "original_filename": "Muñon/eaa634ca-d041-4f6b-b0c7-8aec8f3f52e7.jpg",
       "linked_ids": [
         746
+      ],
+      "oem": "8-97365-0180 / 8-98005-8270",
+      "original_filename": "Muñon/eaa634ca-d041-4f6b-b0c7-8aec8f3f52e7.jpg",
+      "slug": "munon-superior-luv-dmax-2-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97365-0180",
+          "brand": "TAIWAN",
+          "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-97365-0180",
+          "brand": "JAPON",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "3b606411-4add-4dc6-bc23-07f5cc6c3a39",
       "category": "Muñon",
-      "image_path": "./assets/munon-superior-luv-dmax-3-0-4x2.webp",
       "description": "MUÑON SUPERIOR LUV DMAX 3.0 4X2",
+      "id": "3b606411-4add-4dc6-bc23-07f5cc6c3a39",
+      "image_path": "./assets/munon-superior-luv-dmax-3-0-4x2.webp",
       "keywords": [
         "4X2",
         "8-97365-0180",
@@ -17038,18 +17486,30 @@ const PRODUCTS_DATA = {
         "MUNON",
         "SUPERIOR"
       ],
-      "oem": "8-97365-0180 / 8-98005-8270",
-      "slug": "munon-superior-luv-dmax-3-0-4x2",
-      "original_filename": "Muñon/3b606411-4add-4dc6-bc23-07f5cc6c3a39.jpg",
       "linked_ids": [
         746
+      ],
+      "oem": "8-97365-0180 / 8-98005-8270",
+      "original_filename": "Muñon/3b606411-4add-4dc6-bc23-07f5cc6c3a39.jpg",
+      "slug": "munon-superior-luv-dmax-3-0-4x2",
+      "variants": [
+        {
+          "codigo_oem": "8-97365-0180",
+          "brand": "TAIWAN",
+          "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-97365-0180",
+          "brand": "JAPON",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "4648e270-b0f0-452d-9cd6-a7abd60e4a3a",
       "category": "Muñon",
-      "image_path": "./assets/munon-superior-luv-dmax-3-0-4x4.webp",
       "description": "MUÑON SUPERIOR LUV DMAX 3.0 4X4",
+      "id": "4648e270-b0f0-452d-9cd6-a7abd60e4a3a",
+      "image_path": "./assets/munon-superior-luv-dmax-3-0-4x4.webp",
       "keywords": [
         "4X4",
         "8-94374-4240",
@@ -17060,18 +17520,30 @@ const PRODUCTS_DATA = {
         "MUNON",
         "SUPERIOR"
       ],
-      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
-      "slug": "munon-superior-luv-dmax-3-0-4x4",
-      "original_filename": "Muñon/4648e270-b0f0-452d-9cd6-a7abd60e4a3a.jpg",
       "linked_ids": [
         748
+      ],
+      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
+      "original_filename": "Muñon/4648e270-b0f0-452d-9cd6-a7abd60e4a3a.jpg",
+      "slug": "munon-superior-luv-dmax-3-0-4x4",
+      "variants": [
+        {
+          "codigo_oem": "8-97365-0190",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97365-0190",
+          "brand": "JAPON",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "a3f66423-2e3d-4529-a908-1390715d9606",
       "category": "Muñon",
-      "image_path": "./assets/munon-superior-luv-dmax-3-5.webp",
       "description": "MUÑON SUPERIOR LUV DMAX 3.5",
+      "id": "a3f66423-2e3d-4529-a908-1390715d9606",
+      "image_path": "./assets/munon-superior-luv-dmax-3-5.webp",
       "keywords": [
         "8-94374-4240",
         "8-97365-0190",
@@ -17081,18 +17553,30 @@ const PRODUCTS_DATA = {
         "MUNON",
         "SUPERIOR"
       ],
-      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
-      "slug": "munon-superior-luv-dmax-3-5",
-      "original_filename": "Muñon/a3f66423-2e3d-4529-a908-1390715d9606.jpg",
       "linked_ids": [
         748
+      ],
+      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
+      "original_filename": "Muñon/a3f66423-2e3d-4529-a908-1390715d9606.jpg",
+      "slug": "munon-superior-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97365-0190",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97365-0190",
+          "brand": "JAPON",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "6a3b3b08-a47c-47ce-a3e9-81d9b96140b2",
       "category": "Muñon",
-      "image_path": "./assets/munon-superior-rodeo.webp",
       "description": "MUÑON SUPERIOR RODEO",
+      "id": "6a3b3b08-a47c-47ce-a3e9-81d9b96140b2",
+      "image_path": "./assets/munon-superior-rodeo.webp",
       "keywords": [
         "717IZ01C700",
         "8-94243-2340",
@@ -17101,18 +17585,35 @@ const PRODUCTS_DATA = {
         "RODEO",
         "SUPERIOR"
       ],
-      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
-      "slug": "munon-superior-rodeo",
-      "original_filename": "Muñon/6a3b3b08-a47c-47ce-a3e9-81d9b96140b2.jpg",
       "linked_ids": [
         744
+      ],
+      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
+      "original_filename": "Muñon/6a3b3b08-a47c-47ce-a3e9-81d9b96140b2.jpg",
+      "slug": "munon-superior-rodeo",
+      "variants": [
+        {
+          "codigo_oem": "8-94243-2340",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-94243-2340",
+          "brand": "JAPON",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94243-2340",
+          "brand": "MOOG",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "d44b4290-3106-428c-92d5-90ae9fce1683",
       "category": "Muñon",
-      "image_path": "./assets/munon-superior-trooper-3-2.webp",
       "description": "MUÑON SUPERIOR TROOPER 3.2",
+      "id": "d44b4290-3106-428c-92d5-90ae9fce1683",
+      "image_path": "./assets/munon-superior-trooper-3-2.webp",
       "keywords": [
         "8-94374-4240",
         "8-97365-0190",
@@ -17121,18 +17622,30 @@ const PRODUCTS_DATA = {
         "SUPERIOR",
         "TROOPER"
       ],
-      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
-      "slug": "munon-superior-trooper-3-2",
-      "original_filename": "Muñon/d44b4290-3106-428c-92d5-90ae9fce1683.jpg",
       "linked_ids": [
         748
+      ],
+      "oem": "8-97365-0190 / 8-94374-4240 / 8-98005-8260",
+      "original_filename": "Muñon/d44b4290-3106-428c-92d5-90ae9fce1683.jpg",
+      "slug": "munon-superior-trooper-3-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97365-0190",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97365-0190",
+          "brand": "JAPON",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "4ff2dd19-9150-4fa7-9a2e-a296dafd9a95",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-delantera-caribe-2-6.webp",
       "description": "PASTILLAS DE FRENO DELANTERA CARIBE 2.6",
+      "id": "4ff2dd19-9150-4fa7-9a2e-a296dafd9a95",
+      "image_path": "./assets/pastillas-de-freno-delantera-caribe-2-6.webp",
       "keywords": [
         "7253",
         "8-97114-3000",
@@ -17143,18 +17656,25 @@ const PRODUCTS_DATA = {
         "FRENO",
         "PASTILLAS"
       ],
-      "oem": "7253 / 8-97164-1830 / 8-97114-3000 / 8-97114-3001",
-      "slug": "pastillas-de-freno-delantera-caribe-2-6",
-      "original_filename": "Pastillas de Freno/4ff2dd19-9150-4fa7-9a2e-a296dafd9a95.jpg",
       "linked_ids": [
         759
+      ],
+      "oem": "7253 / 8-97164-1830 / 8-97114-3000 / 8-97114-3001",
+      "original_filename": "Pastillas de Freno/4ff2dd19-9150-4fa7-9a2e-a296dafd9a95.jpg",
+      "slug": "pastillas-de-freno-delantera-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "7253",
+          "brand": "CBK",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "88944344-4895-4846-b564-f5a7c808f329",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-delantera-caribe-84-88.webp",
       "description": "PASTILLAS DE FRENO DELANTERA CARIBE 84/88",
+      "id": "88944344-4895-4846-b564-f5a7c808f329",
+      "image_path": "./assets/pastillas-de-freno-delantera-caribe-84-88.webp",
       "keywords": [
         "7188",
         "8-94136-6420",
@@ -17163,18 +17683,35 @@ const PRODUCTS_DATA = {
         "FRENO",
         "PASTILLAS"
       ],
-      "oem": "7188 / 8-94136-6420",
-      "slug": "pastillas-de-freno-delantera-caribe-84-88",
-      "original_filename": "Pastillas de Freno/88944344-4895-4846-b564-f5a7c808f329.jpg",
       "linked_ids": [
         757
+      ],
+      "oem": "7188 / 8-94136-6420",
+      "original_filename": "Pastillas de Freno/88944344-4895-4846-b564-f5a7c808f329.jpg",
+      "slug": "pastillas-de-freno-delantera-caribe-84-88",
+      "variants": [
+        {
+          "codigo_oem": "7188",
+          "brand": "TAIWAN",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "7188",
+          "brand": "CBK",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "7188",
+          "brand": "PGT",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "5a80b87c-9443-45a3-96ea-61eb63d53c85",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-delantera-luv.webp",
       "description": "PASTILLAS DE FRENO DELANTERA LUV",
+      "id": "5a80b87c-9443-45a3-96ea-61eb63d53c85",
+      "image_path": "./assets/pastillas-de-freno-delantera-luv.webp",
       "keywords": [
         "7253",
         "8-97114-3000",
@@ -17185,18 +17722,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "PASTILLAS"
       ],
-      "oem": "7253 / 8-97164-1830 / 8-97114-3000 / 8-97114-3001",
-      "slug": "pastillas-de-freno-delantera-luv",
-      "original_filename": "Pastillas de Freno/5a80b87c-9443-45a3-96ea-61eb63d53c85.jpg",
       "linked_ids": [
         759
+      ],
+      "oem": "7253 / 8-97164-1830 / 8-97114-3000 / 8-97114-3001",
+      "original_filename": "Pastillas de Freno/5a80b87c-9443-45a3-96ea-61eb63d53c85.jpg",
+      "slug": "pastillas-de-freno-delantera-luv",
+      "variants": [
+        {
+          "codigo_oem": "7253",
+          "brand": "CBK",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "6d4da947-f344-4bc3-8d69-a1601006dbd1",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-delantera-luv-3-2.webp",
       "description": "PASTILLAS DE FRENO DELANTERA LUV 3.2",
+      "id": "6d4da947-f344-4bc3-8d69-a1601006dbd1",
+      "image_path": "./assets/pastillas-de-freno-delantera-luv-3-2.webp",
       "keywords": [
         "7459",
         "7585",
@@ -17208,18 +17752,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "PASTILLAS"
       ],
-      "oem": "7585 / 7459 / 8-97047-5261 / 8-97113-8880 / 8-97035-2571",
-      "slug": "pastillas-de-freno-delantera-luv-3-2",
-      "original_filename": "Pastillas de Freno/6d4da947-f344-4bc3-8d69-a1601006dbd1.jpg",
       "linked_ids": [
         760
+      ],
+      "oem": "7585 / 7459 / 8-97047-5261 / 8-97113-8880 / 8-97035-2571",
+      "original_filename": "Pastillas de Freno/6d4da947-f344-4bc3-8d69-a1601006dbd1.jpg",
+      "slug": "pastillas-de-freno-delantera-luv-3-2",
+      "variants": [
+        {
+          "codigo_oem": "7585",
+          "brand": "CBK",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "2950beec-dd8e-4e59-94b0-237dc815245d",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-delantera-luv-dmax-10-15.webp",
       "description": "PASTILLAS DE FRENO DELANTERA LUV DMAX 10/15",
+      "id": "2950beec-dd8e-4e59-94b0-237dc815245d",
+      "image_path": "./assets/pastillas-de-freno-delantera-luv-dmax-10-15.webp",
       "keywords": [
         "8-98079-1040",
         "8906",
@@ -17231,19 +17782,36 @@ const PRODUCTS_DATA = {
         "LUV",
         "PASTILLAS"
       ],
-      "oem": "8906 / DA1691 / 8-98079-1040 / 8906C",
-      "slug": "pastillas-de-freno-delantera-luv-dmax-10-15",
-      "original_filename": "Pastillas de Freno/2950beec-dd8e-4e59-94b0-237dc815245d.jpg",
       "linked_ids": [
         1198,
         764
+      ],
+      "oem": "8906 / DA1691 / 8-98079-1040 / 8906C",
+      "original_filename": "Pastillas de Freno/2950beec-dd8e-4e59-94b0-237dc815245d.jpg",
+      "slug": "pastillas-de-freno-delantera-luv-dmax-10-15",
+      "variants": [
+        {
+          "codigo_oem": "8906C",
+          "brand": "PGT",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "8906",
+          "brand": "CBK",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8906",
+          "brand": "PGT",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "7fc40ad9-647c-4037-be0a-e2b90f042348",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-delantera-trooper-3-2.webp",
       "description": "PASTILLAS DE FRENO DELANTERA TROOPER 3.2",
+      "id": "7fc40ad9-647c-4037-be0a-e2b90f042348",
+      "image_path": "./assets/pastillas-de-freno-delantera-trooper-3-2.webp",
       "keywords": [
         "7459",
         "7585",
@@ -17255,18 +17823,25 @@ const PRODUCTS_DATA = {
         "PASTILLAS",
         "TROOPER"
       ],
-      "oem": "7585 / 7459 / 8-97047-5261 / 8-97113-8880 / 8-97035-2571",
-      "slug": "pastillas-de-freno-delantera-trooper-3-2",
-      "original_filename": "Pastillas de Freno/7fc40ad9-647c-4037-be0a-e2b90f042348.jpg",
       "linked_ids": [
         760
+      ],
+      "oem": "7585 / 7459 / 8-97047-5261 / 8-97113-8880 / 8-97035-2571",
+      "original_filename": "Pastillas de Freno/7fc40ad9-647c-4037-be0a-e2b90f042348.jpg",
+      "slug": "pastillas-de-freno-delantera-trooper-3-2",
+      "variants": [
+        {
+          "codigo_oem": "7585",
+          "brand": "CBK",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "ba5ce87c-6a17-417f-a5de-2e6146aaa78c",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-luv-3-2.webp",
       "description": "PASTILLAS DE FRENO LUV 3.2",
+      "id": "ba5ce87c-6a17-417f-a5de-2e6146aaa78c",
+      "image_path": "./assets/pastillas-de-freno-luv-3-2.webp",
       "keywords": [
         "7460",
         "7586",
@@ -17276,18 +17851,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "PASTILLAS"
       ],
-      "oem": "7586 / 7460 / 8-97039-2690 / 8-97036-2660",
-      "slug": "pastillas-de-freno-luv-3-2",
-      "original_filename": "Pastillas de Freno/ba5ce87c-6a17-417f-a5de-2e6146aaa78c.jpg",
       "linked_ids": [
         765
+      ],
+      "oem": "7586 / 7460 / 8-97039-2690 / 8-97036-2660",
+      "original_filename": "Pastillas de Freno/ba5ce87c-6a17-417f-a5de-2e6146aaa78c.jpg",
+      "slug": "pastillas-de-freno-luv-3-2",
+      "variants": [
+        {
+          "codigo_oem": "7586",
+          "brand": "CBK",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "10bfa88e-1b6c-414e-a0da-3b4ab326a162",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-luv-dmax-05-09.webp",
       "description": "PASTILLAS DE FRENO LUV DMAX 05/09",
+      "id": "10bfa88e-1b6c-414e-a0da-3b4ab326a162",
+      "image_path": "./assets/pastillas-de-freno-luv-dmax-05-09.webp",
       "keywords": [
         "7943",
         "7943C",
@@ -17302,19 +17884,46 @@ const PRODUCTS_DATA = {
         "LUV",
         "PASTILLAS"
       ],
-      "oem": "7943 / 8-97368-2510 / 8-98051-1170 / 8-97368-2520 / 8-98051-1160 / 8-98051-1150 / 8-98051-1140 / 7943C",
-      "slug": "pastillas-de-freno-luv-dmax-05-09",
-      "original_filename": "Pastillas de Freno/10bfa88e-1b6c-414e-a0da-3b4ab326a162.jpg",
       "linked_ids": [
         762,
         1197
+      ],
+      "oem": "7943 / 8-97368-2510 / 8-98051-1170 / 8-97368-2520 / 8-98051-1160 / 8-98051-1150 / 8-98051-1140 / 7943C",
+      "original_filename": "Pastillas de Freno/10bfa88e-1b6c-414e-a0da-3b4ab326a162.jpg",
+      "slug": "pastillas-de-freno-luv-dmax-05-09",
+      "variants": [
+        {
+          "codigo_oem": "7943C",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "7943C",
+          "brand": "PGT",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "7943",
+          "brand": "CBK",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "7943",
+          "brand": "WAGNER",
+          "precio_usd": 65
+        },
+        {
+          "codigo_oem": "7943",
+          "brand": "PGT",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "c24d6d5f-dbcb-4d10-b22d-8fec6911b7c1",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-trasera-caribe-89-90.webp",
       "description": "PASTILLAS DE FRENO TRASERA CARIBE 89/90",
+      "id": "c24d6d5f-dbcb-4d10-b22d-8fec6911b7c1",
+      "image_path": "./assets/pastillas-de-freno-trasera-caribe-89-90.webp",
       "keywords": [
         "442",
         "CARIBE",
@@ -17322,18 +17931,25 @@ const PRODUCTS_DATA = {
         "PASTILLAS",
         "TRASERA"
       ],
-      "oem": "442",
-      "slug": "pastillas-de-freno-trasera-caribe-89-90",
-      "original_filename": "Pastillas de Freno/c24d6d5f-dbcb-4d10-b22d-8fec6911b7c1.jpg",
       "linked_ids": [
         767
+      ],
+      "oem": "442",
+      "original_filename": "Pastillas de Freno/c24d6d5f-dbcb-4d10-b22d-8fec6911b7c1.jpg",
+      "slug": "pastillas-de-freno-trasera-caribe-89-90",
+      "variants": [
+        {
+          "codigo_oem": "442",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "6e5a6e6c-05e1-43bf-9c7b-fccc4ca1af51",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-trasera-rodeo-3-2.webp",
       "description": "PASTILLAS DE FRENO TRASERA RODEO 3.2",
+      "id": "6e5a6e6c-05e1-43bf-9c7b-fccc4ca1af51",
+      "image_path": "./assets/pastillas-de-freno-trasera-rodeo-3-2.webp",
       "keywords": [
         "7460",
         "7586",
@@ -17344,18 +17960,25 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TRASERA"
       ],
-      "oem": "7586 / 7460 / 8-97039-2690 / 8-97036-2660",
-      "slug": "pastillas-de-freno-trasera-rodeo-3-2",
-      "original_filename": "Pastillas de Freno/6e5a6e6c-05e1-43bf-9c7b-fccc4ca1af51.jpg",
       "linked_ids": [
         765
+      ],
+      "oem": "7586 / 7460 / 8-97039-2690 / 8-97036-2660",
+      "original_filename": "Pastillas de Freno/6e5a6e6c-05e1-43bf-9c7b-fccc4ca1af51.jpg",
+      "slug": "pastillas-de-freno-trasera-rodeo-3-2",
+      "variants": [
+        {
+          "codigo_oem": "7586",
+          "brand": "CBK",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "a82f98e4-f83c-47ea-a51d-67ef18a94415",
       "category": "Patin Cadena",
-      "image_path": "./assets/patin-curvo-caribe-g200.webp",
       "description": "PATIN CURVO CARIBE G200",
+      "id": "a82f98e4-f83c-47ea-a51d-67ef18a94415",
+      "image_path": "./assets/patin-curvo-caribe-g200.webp",
       "keywords": [
         "8-94213-8190",
         "CADENA",
@@ -17364,18 +17987,25 @@ const PRODUCTS_DATA = {
         "G200",
         "PATIN"
       ],
-      "oem": "8-94213-8190",
-      "slug": "patin-curvo-caribe-g200",
-      "original_filename": "Patin Cadena/a82f98e4-f83c-47ea-a51d-67ef18a94415.jpg",
       "linked_ids": [
         768
+      ],
+      "oem": "8-94213-8190",
+      "original_filename": "Patin Cadena/a82f98e4-f83c-47ea-a51d-67ef18a94415.jpg",
+      "slug": "patin-curvo-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94213-8190",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "fc2f6fa2-f057-4147-a128-aac201249661",
       "category": "Patin Cadena",
-      "image_path": "./assets/patin-recto-caribe-g200.webp",
       "description": "PATIN RECTO CARIBE G200",
+      "id": "fc2f6fa2-f057-4147-a128-aac201249661",
+      "image_path": "./assets/patin-recto-caribe-g200.webp",
       "keywords": [
         "8-94213-8320",
         "CADENA",
@@ -17384,11 +18014,18 @@ const PRODUCTS_DATA = {
         "PATIN",
         "RECTO"
       ],
-      "oem": "8-94213-8320",
-      "slug": "patin-recto-caribe-g200",
-      "original_filename": "Patin Cadena/fc2f6fa2-f057-4147-a128-aac201249661.jpg",
       "linked_ids": [
         769
+      ],
+      "oem": "8-94213-8320",
+      "original_filename": "Patin Cadena/fc2f6fa2-f057-4147-a128-aac201249661.jpg",
+      "slug": "patin-recto-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94213-8320",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
@@ -17455,10 +18092,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "9cc300fc-ebda-4c4b-a79b-29f822ca55c5",
       "category": "Piston Caliper",
-      "image_path": "./assets/piston-caliper-delantero-caribe-2-6.webp",
       "description": "PISTON CALIPER DELANTERO CARIBE 2.6",
+      "id": "9cc300fc-ebda-4c4b-a79b-29f822ca55c5",
+      "image_path": "./assets/piston-caliper-delantero-caribe-2-6.webp",
       "keywords": [
         "8-94438-6890",
         "CALIPER",
@@ -17467,18 +18104,25 @@ const PRODUCTS_DATA = {
         "PF-7646",
         "PISTON"
       ],
-      "oem": "8-94438-6890 / PF-7646",
-      "slug": "piston-caliper-delantero-caribe-2-6",
-      "original_filename": "Piston Caliper/9cc300fc-ebda-4c4b-a79b-29f822ca55c5.jpg",
       "linked_ids": [
         831
+      ],
+      "oem": "8-94438-6890 / PF-7646",
+      "original_filename": "Piston Caliper/9cc300fc-ebda-4c4b-a79b-29f822ca55c5.jpg",
+      "slug": "piston-caliper-delantero-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94438-6890",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "30b9471f-8f0e-41a3-ba7d-b31326c7daba",
       "category": "Piston Caliper",
-      "image_path": "./assets/piston-caliper-delantero-caribe-84-88.webp",
       "description": "PISTON CALIPER DELANTERO CARIBE 84/88",
+      "id": "30b9471f-8f0e-41a3-ba7d-b31326c7daba",
+      "image_path": "./assets/piston-caliper-delantero-caribe-84-88.webp",
       "keywords": [
         "8-94124-7831",
         "CALIPER",
@@ -17487,18 +18131,25 @@ const PRODUCTS_DATA = {
         "PF-7593",
         "PISTON"
       ],
-      "oem": "8-94124-7831 / PF-7593",
-      "slug": "piston-caliper-delantero-caribe-84-88",
-      "original_filename": "Piston Caliper/30b9471f-8f0e-41a3-ba7d-b31326c7daba.jpg",
       "linked_ids": [
         830
+      ],
+      "oem": "8-94124-7831 / PF-7593",
+      "original_filename": "Piston Caliper/30b9471f-8f0e-41a3-ba7d-b31326c7daba.jpg",
+      "slug": "piston-caliper-delantero-caribe-84-88",
+      "variants": [
+        {
+          "codigo_oem": "8-94124-7831",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "77339eb4-6650-4a12-a21e-6cc8023bce08",
       "category": "Piston Caliper",
-      "image_path": "./assets/piston-caliper-delantero-luv-2-3.webp",
       "description": "PISTON CALIPER DELANTERO LUV 2.3",
+      "id": "77339eb4-6650-4a12-a21e-6cc8023bce08",
+      "image_path": "./assets/piston-caliper-delantero-luv-2-3.webp",
       "keywords": [
         "8-94438-6890",
         "CALIPER",
@@ -17507,18 +18158,25 @@ const PRODUCTS_DATA = {
         "PF-7646",
         "PISTON"
       ],
-      "oem": "8-94438-6890 / PF-7646",
-      "slug": "piston-caliper-delantero-luv-2-3",
-      "original_filename": "Piston Caliper/77339eb4-6650-4a12-a21e-6cc8023bce08.jpg",
       "linked_ids": [
         831
+      ],
+      "oem": "8-94438-6890 / PF-7646",
+      "original_filename": "Piston Caliper/77339eb4-6650-4a12-a21e-6cc8023bce08.jpg",
+      "slug": "piston-caliper-delantero-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94438-6890",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "d4498a26-c12f-4463-8db2-3b14f51ca61a",
       "category": "Piston Caliper",
-      "image_path": "./assets/piston-caliper-delantero-luv-dmax-10-15.webp",
       "description": "PISTON CALIPER DELANTERO LUV DMAX 10/15",
+      "id": "d4498a26-c12f-4463-8db2-3b14f51ca61a",
+      "image_path": "./assets/piston-caliper-delantero-luv-dmax-10-15.webp",
       "keywords": [
         "8-97328-6060",
         "CALIPER",
@@ -17528,18 +18186,25 @@ const PRODUCTS_DATA = {
         "PF-7872-N",
         "PISTON"
       ],
-      "oem": "8-97328-6060 / PF-7872-N",
-      "slug": "piston-caliper-delantero-luv-dmax-10-15",
-      "original_filename": "Piston Caliper/d4498a26-c12f-4463-8db2-3b14f51ca61a.jpg",
       "linked_ids": [
         833
+      ],
+      "oem": "8-97328-6060 / PF-7872-N",
+      "original_filename": "Piston Caliper/d4498a26-c12f-4463-8db2-3b14f51ca61a.jpg",
+      "slug": "piston-caliper-delantero-luv-dmax-10-15",
+      "variants": [
+        {
+          "codigo_oem": "8-97328-6060",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "9b6701a7-f0a3-4e57-bcdb-22059253b47b",
       "category": "Piston Caliper",
-      "image_path": "./assets/piston-caliper-trasero-caribe-2-6.webp",
       "description": "PISTON CALIPER TRASERO CARIBE 2.6",
+      "id": "9b6701a7-f0a3-4e57-bcdb-22059253b47b",
+      "image_path": "./assets/piston-caliper-trasero-caribe-2-6.webp",
       "keywords": [
         "CALIPER",
         "CARIBE",
@@ -17547,18 +18212,25 @@ const PRODUCTS_DATA = {
         "PISTON",
         "TRASERO"
       ],
-      "oem": "PF-7413",
-      "slug": "piston-caliper-trasero-caribe-2-6",
-      "original_filename": "Piston Caliper/9b6701a7-f0a3-4e57-bcdb-22059253b47b.jpg",
       "linked_ids": [
         836
+      ],
+      "oem": "PF-7413",
+      "original_filename": "Piston Caliper/9b6701a7-f0a3-4e57-bcdb-22059253b47b.jpg",
+      "slug": "piston-caliper-trasero-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "PF-7413",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "bf45679a-e39a-44dd-a72b-31937f6fe57e",
       "category": "Piston Caliper",
-      "image_path": "./assets/piston-caliper-trasero-caribe-2-6-2.webp",
       "description": "PISTON CALIPER TRASERO CARIBE 2.6",
+      "id": "bf45679a-e39a-44dd-a72b-31937f6fe57e",
+      "image_path": "./assets/piston-caliper-trasero-caribe-2-6-2.webp",
       "keywords": [
         "CALIPER",
         "CARIBE",
@@ -17566,18 +18238,25 @@ const PRODUCTS_DATA = {
         "PISTON",
         "TRASERO"
       ],
-      "oem": "PF-7411",
-      "slug": "piston-caliper-trasero-caribe-2-6-2",
-      "original_filename": "Piston Caliper/bf45679a-e39a-44dd-a72b-31937f6fe57e.jpg",
       "linked_ids": [
         834
+      ],
+      "oem": "PF-7411",
+      "original_filename": "Piston Caliper/bf45679a-e39a-44dd-a72b-31937f6fe57e.jpg",
+      "slug": "piston-caliper-trasero-caribe-2-6-2",
+      "variants": [
+        {
+          "codigo_oem": "PF-7411",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "43862a1c-0d3f-4aef-838c-5d98cd573210",
       "category": "Piston Caliper",
-      "image_path": "./assets/piston-caliper-trasero-caribe-2-6-3.webp",
       "description": "PISTON CALIPER TRASERO CARIBE 2.6",
+      "id": "43862a1c-0d3f-4aef-838c-5d98cd573210",
+      "image_path": "./assets/piston-caliper-trasero-caribe-2-6-3.webp",
       "keywords": [
         "CALIPER",
         "CARIBE",
@@ -17585,11 +18264,18 @@ const PRODUCTS_DATA = {
         "PISTON",
         "TRASERO"
       ],
-      "oem": "PF-7412",
-      "slug": "piston-caliper-trasero-caribe-2-6-3",
-      "original_filename": "Piston Caliper/43862a1c-0d3f-4aef-838c-5d98cd573210.jpg",
       "linked_ids": [
         835
+      ],
+      "oem": "PF-7412",
+      "original_filename": "Piston Caliper/43862a1c-0d3f-4aef-838c-5d98cd573210.jpg",
+      "slug": "piston-caliper-trasero-caribe-2-6-3",
+      "variants": [
+        {
+          "codigo_oem": "PF-7412",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
@@ -17621,10 +18307,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "d2e67c62-0770-49f8-b484-edac724f9b5e",
       "category": "Punta de Tripoide",
-      "image_path": "./assets/punta-tripoide-caribe-2-3.webp",
       "description": "PUNTA TRIPOIDE CARIBE 2.3",
+      "id": "d2e67c62-0770-49f8-b484-edac724f9b5e",
+      "image_path": "./assets/punta-tripoide-caribe-2-3.webp",
       "keywords": [
         "611506011",
         "8-94124-6280",
@@ -17634,18 +18320,25 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TRIPOIDE"
       ],
-      "oem": "8-94124-6280 / 611506011 / 8-94124-6290 / IZ31",
-      "slug": "punta-tripoide-caribe-2-3",
-      "original_filename": "Punta de Tripoide/d2e67c62-0770-49f8-b484-edac724f9b5e.jpg",
       "linked_ids": [
         850
+      ],
+      "oem": "8-94124-6280 / 611506011 / 8-94124-6290 / IZ31",
+      "original_filename": "Punta de Tripoide/d2e67c62-0770-49f8-b484-edac724f9b5e.jpg",
+      "slug": "punta-tripoide-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94124-6280",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "856113db-d6f0-43a6-bf64-44cd5848036e",
       "category": "Punta de Tripoide",
-      "image_path": "./assets/punta-tripoide-caribe-g200.webp",
       "description": "PUNTA TRIPOIDE CARIBE G200",
+      "id": "856113db-d6f0-43a6-bf64-44cd5848036e",
+      "image_path": "./assets/punta-tripoide-caribe-g200.webp",
       "keywords": [
         "611506011",
         "8-94124-6280",
@@ -17656,18 +18349,25 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TRIPOIDE"
       ],
-      "oem": "8-94124-6280 / 611506011 / 8-94124-6290 / IZ31",
-      "slug": "punta-tripoide-caribe-g200",
-      "original_filename": "Punta de Tripoide/856113db-d6f0-43a6-bf64-44cd5848036e.jpg",
       "linked_ids": [
         850
+      ],
+      "oem": "8-94124-6280 / 611506011 / 8-94124-6290 / IZ31",
+      "original_filename": "Punta de Tripoide/856113db-d6f0-43a6-bf64-44cd5848036e.jpg",
+      "slug": "punta-tripoide-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94124-6280",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "c8df8ee5-37d6-4a1d-aa23-69a24022a158",
       "category": "Punta de Tripoide",
-      "image_path": "./assets/punta-tripoide-luv-2-3.webp",
       "description": "PUNTA TRIPOIDE LUV 2.3",
+      "id": "c8df8ee5-37d6-4a1d-aa23-69a24022a158",
+      "image_path": "./assets/punta-tripoide-luv-2-3.webp",
       "keywords": [
         "8-94312-6720",
         "8-97131-3960",
@@ -17676,18 +18376,25 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TRIPOIDE"
       ],
-      "oem": "8-97131-3960 / IZ32 / 8-94312-6720",
-      "slug": "punta-tripoide-luv-2-3",
-      "original_filename": "Punta de Tripoide/c8df8ee5-37d6-4a1d-aa23-69a24022a158.jpg",
       "linked_ids": [
         852
+      ],
+      "oem": "8-97131-3960 / IZ32 / 8-94312-6720",
+      "original_filename": "Punta de Tripoide/c8df8ee5-37d6-4a1d-aa23-69a24022a158.jpg",
+      "slug": "punta-tripoide-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-97131-3960",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "f14a68dd-491e-4630-b322-ab9aa7aa7472",
       "category": "Punta de Tripoide",
-      "image_path": "./assets/punta-tripoide-luv-dmax-3-5.webp",
       "description": "PUNTA TRIPOIDE LUV DMAX 3.5",
+      "id": "f14a68dd-491e-4630-b322-ab9aa7aa7472",
+      "image_path": "./assets/punta-tripoide-luv-dmax-3-5.webp",
       "keywords": [
         "8-97349-9521",
         "8-97387-6640",
@@ -17697,18 +18404,25 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "TRIPOIDE"
       ],
-      "oem": "8-97387-6640 / 810CV05A000 / 8-97349-9521",
-      "slug": "punta-tripoide-luv-dmax-3-5",
-      "original_filename": "Punta de Tripoide/f14a68dd-491e-4630-b322-ab9aa7aa7472.jpg",
       "linked_ids": [
         853
+      ],
+      "oem": "8-97387-6640 / 810CV05A000 / 8-97349-9521",
+      "original_filename": "Punta de Tripoide/f14a68dd-491e-4630-b322-ab9aa7aa7472.jpg",
+      "slug": "punta-tripoide-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97387-6640",
+          "brand": "Original",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "ae365c93-eb47-4906-a061-1bf320b2f298",
       "category": "Punta de Tripoide",
-      "image_path": "./assets/punta-tripoide-trooper.webp",
       "description": "PUNTA TRIPOIDE TROOPER",
+      "id": "ae365c93-eb47-4906-a061-1bf320b2f298",
+      "image_path": "./assets/punta-tripoide-trooper.webp",
       "keywords": [
         "8-94312-6720",
         "8-97131-3960",
@@ -17717,18 +18431,25 @@ const PRODUCTS_DATA = {
         "TRIPOIDE",
         "TROOPER"
       ],
-      "oem": "8-97131-3960 / IZ32 / 8-94312-6720",
-      "slug": "punta-tripoide-trooper",
-      "original_filename": "Punta de Tripoide/ae365c93-eb47-4906-a061-1bf320b2f298.jpg",
       "linked_ids": [
         852
+      ],
+      "oem": "8-97131-3960 / IZ32 / 8-94312-6720",
+      "original_filename": "Punta de Tripoide/ae365c93-eb47-4906-a061-1bf320b2f298.jpg",
+      "slug": "punta-tripoide-trooper",
+      "variants": [
+        {
+          "codigo_oem": "8-97131-3960",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "63550207-a3e6-473b-8951-974c34fccbe4",
       "category": "Punta Parachoque",
-      "image_path": "./assets/punta-parachoque-caribe.webp",
       "description": "PUNTA PARACHOQUE  CARIBE",
+      "id": "63550207-a3e6-473b-8951-974c34fccbe4",
+      "image_path": "./assets/punta-parachoque-caribe.webp",
       "keywords": [
         "8-94355-5520",
         "8-94355-5530",
@@ -17736,12 +18457,24 @@ const PRODUCTS_DATA = {
         "PARACHOQUE",
         "PUNTA"
       ],
-      "oem": "8-94355-5520 / 8-94355-5530",
-      "slug": "punta-parachoque-caribe",
-      "original_filename": "Punta Parachoque/63550207-a3e6-473b-8951-974c34fccbe4.jpg",
       "linked_ids": [
         1143,
         1144
+      ],
+      "oem": "8-94355-5520 / 8-94355-5530",
+      "original_filename": "Punta Parachoque/63550207-a3e6-473b-8951-974c34fccbe4.jpg",
+      "slug": "punta-parachoque-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94355-5520",
+          "brand": "Original",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-94355-5530",
+          "brand": "Original",
+          "precio_usd": 45
+        }
       ]
     },
     {
@@ -17810,7 +18543,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97070-6200",
           "brand": "NIKHO",
-          "precio_usd": 0
+          "precio_usd": 25
         }
       ]
     },
@@ -17837,7 +18570,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-10456-5410",
           "brand": "NIKHO",
-          "precio_usd": 30
+          "precio_usd": 35
         },
         {
           "codigo_oem": "8-10456-5410",
