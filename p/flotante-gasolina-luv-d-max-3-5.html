@@ -1286,7 +1286,7 @@
             max-width: 56px;
             padding: 0 14px;
             box-sizing: border-box;
-            overflow: hidden;
+            overflow: visible;
             white-space: nowrap;
         }
         .fab-whatsapp:hover {
@@ -1305,6 +1305,8 @@
             font-size: 13px;
             font-weight: 700;
             opacity: 0;
+            pointer-events: none;
+            overflow: hidden;
             transition: opacity 0.2s ease;
             display: inline-block;
             vertical-align: middle;
@@ -1315,6 +1317,7 @@
         }
         .fab-whatsapp.expanded .fab-whatsapp-text {
             opacity: 1;
+            pointer-events: auto;
             transition: opacity 0.3s ease 0.1s;
         }
         @media (max-width: 768px) {
@@ -1689,13 +1692,13 @@
                     </div>
                 </a>
 
-                <a href="./flotante-gasolina-luv.html" class="related-card">
+                <a href="./flotante-gasolina-rodeo.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/flotante-gasolina-luv.webp" alt="Repuesto FLOTANTE GASOLINA LUV original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/flotante-gasolina-rodeo.webp" alt="Repuesto FLOTANTE GASOLINA RODEO original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Flotante</span></span>
-                        <div class="related-title" title="FLOTANTE GASOLINA LUV">FLOTANTE GASOLINA LUV</div>
+                        <div class="related-title" title="FLOTANTE GASOLINA RODEO">FLOTANTE GASOLINA RODEO</div>
                         <div class="related-oem">OEM: 8-94131-4470</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>

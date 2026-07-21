@@ -749,7 +749,7 @@ text-decoration:none;
 max-width:56px;
 padding:0 14px;
 box-sizing:border-box;
-overflow:hidden;
+overflow:visible;
 white-space:nowrap;
 }
 
@@ -768,6 +768,8 @@ flex-shrink:0;
 font-size:13px;
 font-weight:700;
 opacity:0;
+pointer-events:none;
+overflow:hidden;
 transition:opacity 0.2s ease;
 display:inline-block;
 vertical-align:middle;
@@ -778,6 +780,7 @@ padding:0 20px;
 }
 
 .fab-whatsapp.expanded .fab-whatsapp-text {opacity:1;
+pointer-events:auto;
 transition:opacity 0.3s ease 0.1s;
 }
 

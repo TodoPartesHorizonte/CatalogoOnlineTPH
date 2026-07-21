@@ -123,13 +123,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Olimpo González"
+          "name": "Luis Rejon"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Gracias por sus servicios. Los recomiendo. Compré los repuestos de mi camioneta luv dmax y todo de calidad."
+        "reviewBody": "Todo para mi dmax a la mano buena atención y rápida respuesta"
       }
     }
     </script>
@@ -1282,7 +1282,7 @@
             max-width: 56px;
             padding: 0 14px;
             box-sizing: border-box;
-            overflow: hidden;
+            overflow: visible;
             white-space: nowrap;
         }
         .fab-whatsapp:hover {
@@ -1301,6 +1301,8 @@
             font-size: 13px;
             font-weight: 700;
             opacity: 0;
+            pointer-events: none;
+            overflow: hidden;
             transition: opacity 0.2s ease;
             display: inline-block;
             vertical-align: middle;
@@ -1311,6 +1313,7 @@
         }
         .fab-whatsapp.expanded .fab-whatsapp-text {
             opacity: 1;
+            pointer-events: auto;
             transition: opacity 0.3s ease 0.1s;
         }
         @media (max-width: 768px) {
@@ -1651,51 +1654,6 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./horquilla-clutch-luv-d-max-3-0.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/horquilla-clutch-luv-d-max-3-0.webp" alt="Repuesto HORQUILLA CLUTCH LUV D-MAX 3.0 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Horquilla Clutch</span></span>
-                        <div class="related-title" title="HORQUILLA CLUTCH LUV D-MAX 3.0">HORQUILLA CLUTCH LUV D-MAX 3.0</div>
-                        <div class="related-oem">OEM: 8-94324-4180</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./manguera-radiador-superior-luv-dmax-3-0-4jj1.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/manguera-radiador-superior-luv-dmax-3-0-4jj1.webp" alt="Repuesto MANGUERA RADIADOR SUPERIOR LUV DMAX 3.0 4JJ1 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Manguera Radiador</span></span>
-                        <div class="related-title" title="MANGUERA RADIADOR SUPERIOR LUV DMAX 3.0 4JJ1">MANGUERA RADIADOR SUPERIOR LUV DMAX 3.0 4JJ1</div>
-                        <div class="related-oem">OEM: 8-97363-6041</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./bomba-de-direccion-luv-d-max-3-5.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/bomba-de-direccion-luv-d-max-3-5.webp" alt="Repuesto BOMBA DE DIRECCIÓN LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba Direccion</span></span>
-                        <div class="related-title" title="BOMBA DE DIRECCIÓN LUV D-MAX 3.5">BOMBA DE DIRECCIÓN LUV D-MAX 3.5</div>
-                        <div class="related-oem">OEM: 8-97946-6960</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
                 <a href="./base-caja-luv-d-max.html" class="related-card">
                     <div class="related-img-wrapper">
                         <img src="../assets/base-caja-luv-d-max.webp" alt="Repuesto BASE CAJA LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
@@ -1704,6 +1662,51 @@
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Base Caja</span></span>
                         <div class="related-title" title="BASE CAJA LUV D-MAX">BASE CAJA LUV D-MAX</div>
                         <div class="related-oem">OEM: 8-94135-9851</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./juego-concha-biela-luv-d-max-2-4.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/juego-concha-biela-luv-d-max-2-4.webp" alt="Repuesto CONCHA BIELA LUV DMAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Concha de Biela</span></span>
+                        <div class="related-title" title="CONCHA BIELA LUV DMAX 2.4">CONCHA BIELA LUV DMAX 2.4</div>
+                        <div class="related-oem">OEM: 8-92028-8170-STD</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./hidrovac-luv-d-max-3-5.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/hidrovac-luv-d-max-3-5.webp" alt="Repuesto HIDROVAC LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Hidrovac</span></span>
+                        <div class="related-title" title="HIDROVAC LUV D-MAX 3.5">HIDROVAC LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97365-5180</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./buje-meseta-externo-luv-d-max-3-5.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/buje-meseta-externo-luv-d-max-3-5.webp" alt="Repuesto BUJE MESETA EXTERNO LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Meseta</span></span>
+                        <div class="related-title" title="BUJE MESETA EXTERNO LUV D-MAX 3.5">BUJE MESETA EXTERNO LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-94408-8411</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

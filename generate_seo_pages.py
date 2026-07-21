@@ -1643,7 +1643,7 @@ def generate_pages(data):
             max-width: 56px;
             padding: 0 14px;
             box-sizing: border-box;
-            overflow: hidden;
+            overflow: visible;
             white-space: nowrap;
         }}
         .fab-whatsapp:hover {{
@@ -1662,6 +1662,8 @@ def generate_pages(data):
             font-size: 13px;
             font-weight: 700;
             opacity: 0;
+            pointer-events: none;
+            overflow: hidden;
             transition: opacity 0.2s ease;
             display: inline-block;
             vertical-align: middle;
@@ -1672,6 +1674,7 @@ def generate_pages(data):
         }}
         .fab-whatsapp.expanded .fab-whatsapp-text {{
             opacity: 1;
+            pointer-events: auto;
             transition: opacity 0.3s ease 0.1s;
         }}
         @media (max-width: 768px) {{
