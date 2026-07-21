@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Olimpo González"
+          "name": "José Manuel Madriz Diaz"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Gracias por sus servicios. Los recomiendo. Compré los repuestos de mi camioneta luv dmax y todo de calidad."
+        "reviewBody": "Excelente repuestos para vehículos."
       }
     }
     </script>
@@ -1740,13 +1740,13 @@
                     </div>
                 </a>
 
-                <a href="./kit-de-motor-caribe-2-6.html" class="related-card">
+                <a href="./kit-de-motor-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/kit-de-motor-caribe-2-6.webp" alt="Repuesto KIT DE MOTOR CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-de-motor-luv-d-max-3-5.webp" alt="Repuesto KIT DE MOTOR LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit de Motor</span></span>
-                        <div class="related-title" title="KIT DE MOTOR CARIBE 2.6">KIT DE MOTOR CARIBE 2.6</div>
+                        <div class="related-title" title="KIT DE MOTOR LUV D-MAX 3.5">KIT DE MOTOR LUV D-MAX 3.5</div>
                         
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1755,13 +1755,13 @@
                     </div>
                 </a>
 
-                <a href="./kit-de-motor-caribe-2-3.html" class="related-card">
+                <a href="./kit-de-motor-caribe-2-6.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/kit-de-motor-caribe-2-3.webp" alt="Repuesto KIT DE MOTOR CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-de-motor-caribe-2-6.webp" alt="Repuesto KIT DE MOTOR CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit de Motor</span></span>
-                        <div class="related-title" title="KIT DE MOTOR CARIBE 2.3">KIT DE MOTOR CARIBE 2.3</div>
+                        <div class="related-title" title="KIT DE MOTOR CARIBE 2.6">KIT DE MOTOR CARIBE 2.6</div>
                         
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1799,5 +1799,70 @@
             <p>RIF: J-50180765-5 · Especialistas Isuzu</p>
         </div>
     </footer>
+    
+    <!-- Google Analytics & Meta Pixel Tracker Diferido y Reactivo -->
+    <script>
+      window.GA_ID = "G-QDYFPKJNJE";
+      window.META_PIXEL_ID = "1502067325291645";
+      var analyticsInitialized = false;
+
+      function forceInitAnalytics() {
+        if (analyticsInitialized) return;
+        analyticsInitialized = true;
+
+        if (window.GA_ID && window.GA_ID.startsWith('G-') && !document.getElementById('ga-script')) {
+          var script = document.createElement('script');
+          script.id = 'ga-script';
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
+          document.head.appendChild(script);
+
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function() { window.dataLayer.push(arguments); };
+          gtag('js', new Date());
+          gtag('config', window.GA_ID);
+        }
+
+        if (window.META_PIXEL_ID && !document.getElementById('meta-pixel-script')) {
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.id='meta-pixel-script';
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+
+          fbq('init', window.META_PIXEL_ID);
+          fbq('track', 'PageView');
+        }
+      }
+
+      function trackEvent(eventName, params = {}) {
+        forceInitAnalytics();
+        if (typeof gtag === 'function') gtag('event', eventName, params);
+        if (typeof fbq === 'function') {
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            fbq('track', 'ViewContent', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
+          } else if (eventName === 'add_to_cart' || eventName === 'agregar_al_carrito') {
+            fbq('track', 'AddToCart', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
+          } else if (eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
+            fbq('track', 'Contact');
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
+            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+          } else {
+            fbq('trackCustom', eventName, params);
+          }
+        }
+      }
+      window.trackEvent = trackEvent;
+      window.forceInitAnalytics = forceInitAnalytics;
+
+      window.addEventListener('load', function() {
+        setTimeout(forceInitAnalytics, 1500);
+      });
+    </script>
 </body>
 </html>

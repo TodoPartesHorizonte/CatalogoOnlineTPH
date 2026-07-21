@@ -57,7 +57,7 @@
     ],
       "offers": {
         "@type": "Offer",
-        "price": "4325.00",
+        "price": "15800.00",
         "priceCurrency": "VES",
         "availability": "https://schema.org/InStock",
         "url": "https://todoparteshorizonte.com/p/filtro-aceite-caribe-2-6",
@@ -1725,13 +1725,13 @@
                     </div>
                 </a>
 
-                <a href="./filtro-aceite-trooper-3-2.html" class="related-card">
+                <a href="./filtro-aceite-luv-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/filtro-aceite-trooper-3-2.webp" alt="Repuesto FILTRO ACEITE TROOPER 3.2 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/filtro-aceite-luv-2-3.webp" alt="Repuesto FILTRO ACEITE LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Filtro Aceite</span></span>
-                        <div class="related-title" title="FILTRO ACEITE TROOPER 3.2">FILTRO ACEITE TROOPER 3.2</div>
+                        <div class="related-title" title="FILTRO ACEITE LUV 2.3">FILTRO ACEITE LUV 2.3</div>
                         <div class="related-oem">OEM: 8-94456-7412</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1755,13 +1755,13 @@
                     </div>
                 </a>
 
-                <a href="./filtro-aceite-luv-d-max-3-0-diesel.html" class="related-card">
+                <a href="./filtro-aceite-trooper-3-2.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/filtro-aceite-luv-d-max-3-0-diesel.webp" alt="Repuesto FILTRO ACEITE LUV D-MAX 3.0 DIESEL original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/filtro-aceite-trooper-3-2.webp" alt="Repuesto FILTRO ACEITE TROOPER 3.2 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Filtro Aceite</span></span>
-                        <div class="related-title" title="FILTRO ACEITE LUV D-MAX 3.0 DIESEL">FILTRO ACEITE LUV D-MAX 3.0 DIESEL</div>
+                        <div class="related-title" title="FILTRO ACEITE TROOPER 3.2">FILTRO ACEITE TROOPER 3.2</div>
                         <div class="related-oem">OEM: 8-94456-7412</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1799,5 +1799,70 @@
             <p>RIF: J-50180765-5 · Especialistas Isuzu</p>
         </div>
     </footer>
+    
+    <!-- Google Analytics & Meta Pixel Tracker Diferido y Reactivo -->
+    <script>
+      window.GA_ID = "G-QDYFPKJNJE";
+      window.META_PIXEL_ID = "1502067325291645";
+      var analyticsInitialized = false;
+
+      function forceInitAnalytics() {
+        if (analyticsInitialized) return;
+        analyticsInitialized = true;
+
+        if (window.GA_ID && window.GA_ID.startsWith('G-') && !document.getElementById('ga-script')) {
+          var script = document.createElement('script');
+          script.id = 'ga-script';
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
+          document.head.appendChild(script);
+
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function() { window.dataLayer.push(arguments); };
+          gtag('js', new Date());
+          gtag('config', window.GA_ID);
+        }
+
+        if (window.META_PIXEL_ID && !document.getElementById('meta-pixel-script')) {
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.id='meta-pixel-script';
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+
+          fbq('init', window.META_PIXEL_ID);
+          fbq('track', 'PageView');
+        }
+      }
+
+      function trackEvent(eventName, params = {}) {
+        forceInitAnalytics();
+        if (typeof gtag === 'function') gtag('event', eventName, params);
+        if (typeof fbq === 'function') {
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            fbq('track', 'ViewContent', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
+          } else if (eventName === 'add_to_cart' || eventName === 'agregar_al_carrito') {
+            fbq('track', 'AddToCart', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
+          } else if (eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
+            fbq('track', 'Contact');
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
+            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+          } else {
+            fbq('trackCustom', eventName, params);
+          }
+        }
+      }
+      window.trackEvent = trackEvent;
+      window.forceInitAnalytics = forceInitAnalytics;
+
+      window.addEventListener('load', function() {
+        setTimeout(forceInitAnalytics, 1500);
+      });
+    </script>
 </body>
 </html>

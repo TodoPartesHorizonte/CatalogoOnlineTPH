@@ -2084,6 +2084,7 @@ def generate_pages(data):
             <p>RIF: J-50180765-5 · Especialistas Isuzu</p>
         </div>
     </footer>
+    {ga_script}
 </body>
 </html>"""
 
