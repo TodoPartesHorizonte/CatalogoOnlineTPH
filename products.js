@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 696,
+  "total_products": 703,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -18636,6 +18636,42 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (1)",
+      "category": "Piñon y Corona",
+      "image_path": "./assets/pinon-y-corona-luv-2-2.webp",
+      "description": "PIÑON Y CORONA LUV 2.2",
+      "keywords": [
+        "8-94225-2581",
+        "CORONA",
+        "LUV",
+        "PINON"
+      ],
+      "oem": "8-94225-2581",
+      "slug": "pinon-y-corona-luv-2-2",
+      "original_filename": "Piñon y Corona/WhatsApp Image 2026-07-21 at 11.07.08 AM (1).jpeg",
+      "linked_ids": [
+        778
+      ]
+    },
+    {
+      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM",
+      "category": "Piñon y Corona",
+      "image_path": "./assets/pinon-y-corona-luv-2-3.webp",
+      "description": "PIÑON Y CORONA LUV 2.3",
+      "keywords": [
+        "8-94225-2581",
+        "CORONA",
+        "LUV",
+        "PINON"
+      ],
+      "oem": "8-94225-2581",
+      "slug": "pinon-y-corona-luv-2-3",
+      "original_filename": "Piñon y Corona/WhatsApp Image 2026-07-21 at 11.07.08 AM.jpeg",
+      "linked_ids": [
+        778
+      ]
+    },
+    {
       "id": "56aea079-4e98-4983-87a1-f67e14d7a629",
       "category": "Planetario",
       "image_path": "./assets/planetario-caribe-2-3.webp",
@@ -19106,10 +19142,30 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (3)",
       "category": "Regulador Presion Gasolina",
-      "description": "REGULADOR DE GASOLINA LUV D-MAX 2.4",
-      "id": "4c836121-74e1-42f9-ab4c-d4ba41aaa7df",
-      "image_path": "./assets/regulador-de-gasolina-luv-d-max-2-4.webp",
+      "image_path": "./assets/regulador-presion-gasolina.webp",
+      "description": "REGULADOR PRESION GASOLINA",
+      "keywords": [
+        "8-97070-6200",
+        "8-97179-5850",
+        "8-97254-8450",
+        "GASOLINA",
+        "PRESION",
+        "REGULADOR"
+      ],
+      "oem": "8-97070-6200 / 8-97254-8450 / 8-97179-5850",
+      "slug": "regulador-presion-gasolina",
+      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM (3).jpeg",
+      "linked_ids": [
+        859
+      ]
+    },
+    {
+      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM",
+      "category": "Regulador Presion Gasolina",
+      "image_path": "./assets/regulador-presion-gasolina-luv-2-2.webp",
+      "description": "REGULADOR PRESION GASOLINA LUV 2.2",
       "keywords": [
         "17091410",
         "17103467",
@@ -19118,61 +19174,132 @@ const PRODUCTS_DATA = {
         "8-17091-4100",
         "8-17107-0100",
         "8-17112-2760",
-        "D-MAX",
         "GASOLINA",
         "LUV",
         "PRESION",
         "REGULADOR"
       ],
+      "oem": "8-17091-4100 / 8-17112-2760 / 8-17107-0100 / 17091410 / 17113271 / 17103467 / 17107478",
+      "slug": "regulador-presion-gasolina-luv-2-2",
+      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM.jpeg",
       "linked_ids": [
         857
-      ],
-      "oem": "8-17091-4100 / 8-17112-2760 / 8-17107-0100 / 17091410 / 17113271 / 17103467 / 17107478",
-      "slug": "regulador-de-gasolina-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "8-17091-4100",
-          "brand": "DS",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-17091-4100",
-          "brand": "FP",
-          "precio_usd": 0
-        }
       ]
     },
     {
+      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (1)",
       "category": "Regulador Presion Gasolina",
-      "description": "REGULADOR DE GASOLINA LUV D-MAX 3.5",
-      "id": "631207ea-7f5f-464e-b8c7-775445084f4e",
-      "image_path": "./assets/regulador-de-gasolina-luv-d-max-3-5.webp",
+      "image_path": "./assets/regulador-presion-gasolina-luv-2-2-luv-dmax-2-4.webp",
+      "description": "REGULADOR PRESION GASOLINA LUV 2.2 / LUV DMAX 2.4",
       "keywords": [
-        "8-97070-6200",
-        "8-97179-5850",
-        "8-97254-8450",
-        "D-MAX",
+        "17091410",
+        "17103467",
+        "17107478",
+        "17113271",
+        "8-17091-4100",
+        "8-17107-0100",
+        "8-17112-2760",
+        "DMAX",
         "GASOLINA",
         "LUV",
         "PRESION",
         "REGULADOR"
       ],
+      "oem": "8-17091-4100 / 8-17112-2760 / 8-17107-0100 / 17091410 / 17113271 / 17103467 / 17107478",
+      "slug": "regulador-presion-gasolina-luv-2-2-luv-dmax-2-4",
+      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM (1).jpeg",
       "linked_ids": [
-        859
+        857
+      ]
+    },
+    {
+      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (2)",
+      "category": "Resistencia Aire Acondicionado",
+      "image_path": "./assets/resistencia-soplador-aire-acondicionado-luv-dmax-3-5.webp",
+      "description": "RESISTENCIA SOPLADOR AIRE ACONDICIONADO LUV DMAX 3.5",
+      "keywords": [
+        "8-97321-2730",
+        "8-98049-3940",
+        "ACONDICIONADO",
+        "AIRE",
+        "DMAX",
+        "LUV",
+        "RESISTENCIA",
+        "SOPLADOR"
       ],
-      "oem": "8-97070-6200 / 8-97254-8450 / 8-97179-5850",
-      "slug": "regulador-de-gasolina-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97070-6200",
-          "brand": "DS",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97070-6200",
-          "brand": "NIKHO",
-          "precio_usd": 25
-        }
+      "oem": "8-98049-3940 / 8-97321-2730",
+      "slug": "resistencia-soplador-aire-acondicionado-luv-dmax-3-5",
+      "original_filename": "Resistencia Aire Acondicionado/WhatsApp Image 2026-07-21 at 11.07.09 AM (2).jpeg",
+      "linked_ids": [
+        863
+      ]
+    },
+    {
+      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (3)",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-externa-luv-4x2.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA EXTERNA LUV 4X2",
+      "keywords": [
+        "4X2",
+        "8-94242-9130",
+        "8-94361-8010",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "EXTERNA",
+        "LUV",
+        "M12649",
+        "PUNTA",
+        "ROLINERA",
+        "SET3"
+      ],
+      "oem": "SET3 / M12649 / 8-94361-8010 / 8-94242-9130",
+      "slug": "rolinera-punta-eje-delantera-externa-luv-4x2",
+      "original_filename": "Rolinera Punta de Eje Delantero/WhatsApp Image 2026-07-21 at 11.07.08 AM (3).jpeg",
+      "linked_ids": [
+        882
+      ]
+    },
+    {
+      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (4)",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-luv-dmax-2-4.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA LUV DMAX 2.4",
+      "keywords": [
+        "8-94242-9130",
+        "8-94361-8010",
+        "DELANTERA",
+        "DELANTERO",
+        "DMAX",
+        "EJE",
+        "LUV",
+        "M12649",
+        "PUNTA",
+        "ROLINERA",
+        "SET3"
+      ],
+      "oem": "SET3 / M12649 / 8-94361-8010 / 8-94242-9130",
+      "slug": "rolinera-punta-eje-delantera-luv-dmax-2-4",
+      "original_filename": "Rolinera Punta de Eje Delantero/WhatsApp Image 2026-07-21 at 11.07.08 AM (4).jpeg",
+      "linked_ids": [
+        882
+      ]
+    },
+    {
+      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (2)",
+      "category": "Rolinera Universal",
+      "image_path": "./assets/rolinera-universal-6301.webp",
+      "description": "ROLINERA UNIVERSAL 6301",
+      "keywords": [
+        "6301",
+        "ROLINERA",
+        "UNIVERSAL"
+      ],
+      "oem": "6301",
+      "slug": "rolinera-universal-6301",
+      "original_filename": "Rolinera Universal/WhatsApp Image 2026-07-21 at 11.07.08 AM (2).jpeg",
+      "linked_ids": [
+        878
       ]
     },
     {
@@ -20359,6 +20486,5 @@ const PRODUCTS_DATA = {
         }
       ]
     }
-  ],
-  "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ=="
+  ]
 };

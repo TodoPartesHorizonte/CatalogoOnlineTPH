@@ -6231,6 +6231,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/pinon-y-corona-luv-2-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pinon-y-corona-luv-2-2.webp</image:loc>
+      <image:title>PIÑON Y CORONA LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/pinon-y-corona-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pinon-y-corona-luv-2-3.webp</image:loc>
+      <image:title>PIÑON Y CORONA LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/planetario-caribe-2-3</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/planetario-caribe-2-3.webp</image:loc>
@@ -6421,20 +6441,70 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/regulador-de-gasolina-luv-d-max-2-4</loc>
+    <loc>https://todoparteshorizonte.com/p/regulador-presion-gasolina</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/regulador-de-gasolina-luv-d-max-2-4.webp</image:loc>
-      <image:title>REGULADOR DE GASOLINA LUV D-MAX 2.4</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/regulador-presion-gasolina.webp</image:loc>
+      <image:title>REGULADOR PRESION GASOLINA</image:title>
     </image:image>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/regulador-de-gasolina-luv-d-max-3-5</loc>
+    <loc>https://todoparteshorizonte.com/p/regulador-presion-gasolina-luv-2-2</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/regulador-de-gasolina-luv-d-max-3-5.webp</image:loc>
-      <image:title>REGULADOR DE GASOLINA LUV D-MAX 3.5</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/regulador-presion-gasolina-luv-2-2.webp</image:loc>
+      <image:title>REGULADOR PRESION GASOLINA LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/regulador-presion-gasolina-luv-2-2-luv-dmax-2-4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/regulador-presion-gasolina-luv-2-2-luv-dmax-2-4.webp</image:loc>
+      <image:title>REGULADOR PRESION GASOLINA LUV 2.2 / LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/resistencia-soplador-aire-acondicionado-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/resistencia-soplador-aire-acondicionado-luv-dmax-3-5.webp</image:loc>
+      <image:title>RESISTENCIA SOPLADOR AIRE ACONDICIONADO LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-punta-eje-delantera-externa-luv-4x2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-punta-eje-delantera-externa-luv-4x2.webp</image:loc>
+      <image:title>ROLINERA PUNTA EJE DELANTERA EXTERNA LUV 4X2</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-punta-eje-delantera-luv-dmax-2-4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-punta-eje-delantera-luv-dmax-2-4.webp</image:loc>
+      <image:title>ROLINERA PUNTA EJE DELANTERA LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-universal-6301</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-universal-6301.webp</image:loc>
+      <image:title>ROLINERA UNIVERSAL 6301</image:title>
     </image:image>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
