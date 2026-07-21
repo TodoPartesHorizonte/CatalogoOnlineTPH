@@ -6441,16 +6441,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/regulador-presion-gasolina</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/regulador-presion-gasolina.webp</image:loc>
-      <image:title>REGULADOR PRESION GASOLINA LUV DMAX 3.5</image:title>
-    </image:image>
-    <lastmod>2026-07-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/regulador-presion-gasolina-luv-2-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/regulador-presion-gasolina-luv-2-2.webp</image:loc>
@@ -6471,10 +6461,80 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/regulador-presion-gasolina</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/regulador-presion-gasolina.webp</image:loc>
+      <image:title>REGULADOR PRESION GASOLINA LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/resistencia-soplador-aire-acondicionado-luv-dmax-3-5</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/resistencia-soplador-aire-acondicionado-luv-dmax-3-5.webp</image:loc>
       <image:title>RESISTENCIA SOPLADOR AIRE ACONDICIONADO LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-ciguenal-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-ciguenal-caribe-2-3.webp</image:loc>
+      <image:title>ROLINERA CIGUEÑAL CARIBE 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-ciguenal-caribe-2-6</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-ciguenal-caribe-2-6.webp</image:loc>
+      <image:title>ROLINERA CIGUEÑAL CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-ciguenal-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-ciguenal-caribe-g200.webp</image:loc>
+      <image:title>ROLINERA CIGUEÑAL CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-porta-corona-caribe-2-6</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-porta-corona-caribe-2-6.webp</image:loc>
+      <image:title>ROLINERA PORTA CORONA CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-punta-de-eje-delantero-interna-luv-dmax-2-4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-punta-de-eje-delantero-interna-luv-dmax-2-4.webp</image:loc>
+      <image:title>ROLINERA PUNTA DE EJE DELANTERO INTERNA LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-punta-eje-delantera-externa-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-punta-eje-delantera-externa-caribe-g200.webp</image:loc>
+      <image:title>ROLINERA PUNTA EJE DELANTERA EXTERNA CARIBE G200</image:title>
     </image:image>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -6491,10 +6551,40 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-punta-eje-delantera-interna-luv-4x2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-punta-eje-delantera-interna-luv-4x2.webp</image:loc>
+      <image:title>ROLINERA PUNTA EJE DELANTERA INTERNA LUV 4X2</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/rolinera-punta-eje-delantera-luv-dmax-2-4</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/rolinera-punta-eje-delantera-luv-dmax-2-4.webp</image:loc>
       <image:title>ROLINERA PUNTA EJE DELANTERA LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-punta-eje-externa-delantera-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-punta-eje-externa-delantera-caribe-2-3.webp</image:loc>
+      <image:title>ROLINERA PUNTA EJE EXTERNA DELANTERA  CARIBE 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-punta-eje-trasera-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-punta-eje-trasera-luv-dmax-3-5.webp</image:loc>
+      <image:title>ROLINERA PUNTA EJE TRASERA LUV DMAX 3.5</image:title>
     </image:image>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>

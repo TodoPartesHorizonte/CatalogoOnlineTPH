@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 703,
+  "total_products": 712,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -19294,40 +19294,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Regulador Presion Gasolina",
-      "description": "REGULADOR PRESION GASOLINA LUV DMAX 3.5",
-      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (3)",
-      "image_path": "./assets/regulador-presion-gasolina.webp",
-      "keywords": [
-        "8-97070-6200",
-        "8-97179-5850",
-        "8-97254-8450",
-        "DMAX",
-        "GASOLINA",
-        "LUV",
-        "PRESION",
-        "REGULADOR"
-      ],
-      "linked_ids": [
-        859
-      ],
-      "oem": "8-97070-6200 / 8-97254-8450 / 8-97179-5850",
-      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM (3).jpeg",
-      "slug": "regulador-presion-gasolina",
-      "variants": [
-        {
-          "codigo_oem": "8-97070-6200",
-          "brand": "DS",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97070-6200",
-          "brand": "NIKHO",
-          "precio_usd": 25
-        }
-      ]
-    },
-    {
-      "category": "Regulador Presion Gasolina",
       "description": "REGULADOR PRESION GASOLINA LUV 2.2",
       "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM",
       "image_path": "./assets/regulador-presion-gasolina-luv-2-2.webp",
@@ -19402,6 +19368,40 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "category": "Regulador Presion Gasolina",
+      "description": "REGULADOR PRESION GASOLINA LUV DMAX 3.5",
+      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (3)",
+      "image_path": "./assets/regulador-presion-gasolina.webp",
+      "keywords": [
+        "8-97070-6200",
+        "8-97179-5850",
+        "8-97254-8450",
+        "DMAX",
+        "GASOLINA",
+        "LUV",
+        "PRESION",
+        "REGULADOR"
+      ],
+      "linked_ids": [
+        859
+      ],
+      "oem": "8-97070-6200 / 8-97254-8450 / 8-97179-5850",
+      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM (3).jpeg",
+      "slug": "regulador-presion-gasolina",
+      "variants": [
+        {
+          "codigo_oem": "8-97070-6200",
+          "brand": "DS",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97070-6200",
+          "brand": "NIKHO",
+          "precio_usd": 25
+        }
+      ]
+    },
+    {
       "category": "Resistencia Aire Acondicionado",
       "description": "RESISTENCIA SOPLADOR AIRE ACONDICIONADO LUV DMAX 3.5",
       "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (2)",
@@ -19428,6 +19428,132 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 40
         }
+      ]
+    },
+    {
+      "id": "c2ef78d2-56fe-4a0b-b042-b64b7b1a25ec",
+      "category": "Rolinera Cigueñal",
+      "image_path": "./assets/rolinera-ciguenal-caribe-2-3.webp",
+      "description": "ROLINERA CIGUEÑAL CARIBE 2.3",
+      "keywords": [
+        "6203",
+        "9-00090-6790",
+        "CARIBE",
+        "CIGUENAL",
+        "ROLINERA"
+      ],
+      "oem": "6203 / 9-00090-6790",
+      "slug": "rolinera-ciguenal-caribe-2-3",
+      "original_filename": "Rolinera Cigueñal/c2ef78d2-56fe-4a0b-b042-b64b7b1a25ec.jpg",
+      "linked_ids": [
+        867
+      ]
+    },
+    {
+      "id": "54e4dedc-8f1b-44d1-8428-769aeef16145",
+      "category": "Rolinera Cigueñal",
+      "image_path": "./assets/rolinera-ciguenal-caribe-2-6.webp",
+      "description": "ROLINERA CIGUEÑAL CARIBE 2.6",
+      "keywords": [
+        "6203",
+        "9-00090-6790",
+        "CARIBE",
+        "CIGUENAL",
+        "ROLINERA"
+      ],
+      "oem": "6203 / 9-00090-6790",
+      "slug": "rolinera-ciguenal-caribe-2-6",
+      "original_filename": "Rolinera Cigueñal/54e4dedc-8f1b-44d1-8428-769aeef16145.jpg",
+      "linked_ids": [
+        867
+      ]
+    },
+    {
+      "id": "96cba63b-9851-4dcf-8441-b4e79fa4c98a",
+      "category": "Rolinera Cigueñal",
+      "image_path": "./assets/rolinera-ciguenal-caribe-g200.webp",
+      "description": "ROLINERA CIGUEÑAL CARIBE G200",
+      "keywords": [
+        "6203",
+        "9-00090-6790",
+        "CARIBE",
+        "CIGUENAL",
+        "G200",
+        "ROLINERA"
+      ],
+      "oem": "6203 / 9-00090-6790",
+      "slug": "rolinera-ciguenal-caribe-g200",
+      "original_filename": "Rolinera Cigueñal/96cba63b-9851-4dcf-8441-b4e79fa4c98a.jpg",
+      "linked_ids": [
+        867
+      ]
+    },
+    {
+      "id": "720d11bc-6d03-4acd-a981-3c3aef4def26",
+      "category": "Rolinera Porta Corona",
+      "image_path": "./assets/rolinera-porta-corona-caribe-2-6.webp",
+      "description": "ROLINERA PORTA CORONA CARIBE 2.6",
+      "keywords": [
+        "30210JR",
+        "8-94435-3550",
+        "CARIBE",
+        "CORONA",
+        "PORTA",
+        "ROLINERA"
+      ],
+      "oem": "8-94435-3550 / 30210JR",
+      "slug": "rolinera-porta-corona-caribe-2-6",
+      "original_filename": "Rolinera Porta Corona/720d11bc-6d03-4acd-a981-3c3aef4def26.jpg",
+      "linked_ids": [
+        880
+      ]
+    },
+    {
+      "id": "a5884173-147e-4934-89bb-68c74124b71f",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-de-eje-delantero-interna-luv-dmax-2-4.webp",
+      "description": "ROLINERA PUNTA DE EJE DELANTERO INTERNA LUV DMAX 2.4",
+      "keywords": [
+        "8-94242-6830",
+        "DELANTERO",
+        "DMAX",
+        "EJE",
+        "INTERNA",
+        "LM48548",
+        "LUV",
+        "PUNTA",
+        "ROLINERA",
+        "SET5"
+      ],
+      "oem": "SET5 / LM48548 / 10 / 8-94242-6830",
+      "slug": "rolinera-punta-de-eje-delantero-interna-luv-dmax-2-4",
+      "original_filename": "Rolinera Punta de Eje Delantero/a5884173-147e-4934-89bb-68c74124b71f.jpg",
+      "linked_ids": [
+        883
+      ]
+    },
+    {
+      "id": "6fbb8c62-6156-456a-964d-bf69868eb42e",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-externa-caribe-g200.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA EXTERNA CARIBE G200",
+      "keywords": [
+        "32007",
+        "5-09812-0420",
+        "CARIBE",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "EXTERNA",
+        "G200",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "32007 / 5-09812-0420",
+      "slug": "rolinera-punta-eje-delantera-externa-caribe-g200",
+      "original_filename": "Rolinera Punta de Eje Delantero/6fbb8c62-6156-456a-964d-bf69868eb42e.jpg",
+      "linked_ids": [
+        884
       ]
     },
     {
@@ -19464,6 +19590,31 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "87023be8-9e24-44f7-9524-f4e793c2fe3e",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-interna-luv-4x2.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA INTERNA LUV 4X2",
+      "keywords": [
+        "4X2",
+        "8-94242-6830",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "INTERNA",
+        "LM48548",
+        "LUV",
+        "PUNTA",
+        "ROLINERA",
+        "SET5"
+      ],
+      "oem": "SET5 / LM48548 / 10 / 8-94242-6830",
+      "slug": "rolinera-punta-eje-delantera-interna-luv-4x2",
+      "original_filename": "Rolinera Punta de Eje Delantero/87023be8-9e24-44f7-9524-f4e793c2fe3e.jpg",
+      "linked_ids": [
+        883
+      ]
+    },
+    {
       "category": "Rolinera Punta de Eje Delantero",
       "description": "ROLINERA PUNTA EJE DELANTERA LUV DMAX 2.4",
       "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (4)",
@@ -19493,6 +19644,51 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 10
         }
+      ]
+    },
+    {
+      "id": "642475d8-ec83-4c7a-ac60-b34bd3e798c3",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-externa-delantera-caribe-2-3.webp",
+      "description": "ROLINERA PUNTA EJE EXTERNA DELANTERA  CARIBE 2.3",
+      "keywords": [
+        "32007",
+        "5-09812-0420",
+        "CARIBE",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "EXTERNA",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "32007 / 5-09812-0420",
+      "slug": "rolinera-punta-eje-externa-delantera-caribe-2-3",
+      "original_filename": "Rolinera Punta de Eje Delantero/642475d8-ec83-4c7a-ac60-b34bd3e798c3.jpg",
+      "linked_ids": [
+        884
+      ]
+    },
+    {
+      "id": "0ad74261-d409-43df-a19f-cf0e0ae907e9",
+      "category": "Rolinera Punta de Eje Trasera",
+      "image_path": "./assets/rolinera-punta-eje-trasera-luv-dmax-3-5.webp",
+      "description": "ROLINERA PUNTA EJE TRASERA LUV DMAX 3.5",
+      "keywords": [
+        "8-97216-7972",
+        "DAC428038",
+        "DMAX",
+        "EJE",
+        "LUV",
+        "PUNTA",
+        "ROLINERA",
+        "TRASERA"
+      ],
+      "oem": "8-97216-7972 / DAC428038",
+      "slug": "rolinera-punta-eje-trasera-luv-dmax-3-5",
+      "original_filename": "Rolinera Punta de Eje Trasera/0ad74261-d409-43df-a19f-cf0e0ae907e9.jpg",
+      "linked_ids": [
+        891
       ]
     },
     {
