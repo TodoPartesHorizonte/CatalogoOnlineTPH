@@ -6,6 +6,7 @@ const PRODUCTS_DATA = {
   "maps_url": "aHR0cHM6Ly9zaGFyZS5nb29nbGUvM2pYWjQ0Q015YlV1dDROVWI=",
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
+  "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
   "total_products": 696,
   "products": [
     {
