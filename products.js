@@ -663,6 +663,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97136-1350",
           "brand": "TP",
           "precio_usd": 40
+        },
+        {
+          "codigo_oem": "8-97136-1350",
+          "brand": "RUSHMORE",
+          "precio_usd": 60
         }
       ]
     },
@@ -3040,7 +3045,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94445-6650",
           "brand": "Original",
-          "precio_usd": 75
+          "precio_usd": 0
         }
       ]
     },
@@ -3067,7 +3072,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94459-7301",
           "brand": "Original",
-          "precio_usd": 45
+          "precio_usd": 0
         }
       ]
     },
@@ -3928,7 +3933,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97943-4080",
           "brand": "DENKO",
-          "precio_usd": 35
+          "precio_usd": 0
         }
       ]
     },
@@ -5732,7 +5737,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94136-1640",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 320
         }
       ]
     },
@@ -5755,7 +5760,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94136-1640",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 320
         }
       ]
     },
@@ -6188,8 +6193,13 @@ const PRODUCTS_DATA = {
         },
         {
           "codigo_oem": "8-94251-2631-020",
-          "brand": "Original",
+          "brand": "NATSUKI",
           "precio_usd": 20
+        },
+        {
+          "codigo_oem": "8-94251-2631-020",
+          "brand": "NB",
+          "precio_usd": 35
         },
         {
           "codigo_oem": "8-94251-2631-030",
@@ -6198,8 +6208,13 @@ const PRODUCTS_DATA = {
         },
         {
           "codigo_oem": "8-94251-2631-040",
-          "brand": "Original",
+          "brand": "PAI",
           "precio_usd": 25
+        },
+        {
+          "codigo_oem": "8-94251-2631-040",
+          "brand": "NB",
+          "precio_usd": 35
         },
         {
           "codigo_oem": "8-94251-2631-050",
@@ -6770,6 +6785,11 @@ const PRODUCTS_DATA = {
           "precio_usd": 85
         },
         {
+          "codigo_oem": "8-97179-2930-STD",
+          "brand": "NB",
+          "precio_usd": 30
+        },
+        {
           "codigo_oem": "8-97179-2930-010",
           "brand": "RUSHMORE",
           "precio_usd": 0
@@ -7230,7 +7250,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97130-5600",
           "brand": "MICHELIN",
-          "precio_usd": 20
+          "precio_usd": 0
         },
         {
           "codigo_oem": "8-97130-5600",
@@ -11306,7 +11326,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-98079-9940",
           "brand": "TYC",
-          "precio_usd": 95
+          "precio_usd": 0
         }
       ]
     },
@@ -14012,7 +14032,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "5-87814-3231",
           "brand": "RUSHMORE",
-          "precio_usd": 0
+          "precio_usd": 190
         },
         {
           "codigo_oem": "5-87814-3231",
@@ -14944,7 +14964,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "KIS27B",
           "brand": "ICHIBAN",
-          "precio_usd": 145
+          "precio_usd": 0
         }
       ]
     },
@@ -15021,7 +15041,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "KIS01",
           "brand": "DAIKIN EXEDY",
-          "precio_usd": 0
+          "precio_usd": 570
         },
         {
           "codigo_oem": "KIS01",
@@ -17952,10 +17972,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "cee06ee2-bd2f-4e9a-b501-d6dcd9b86e98",
       "category": "Pastillas de Freno",
-      "image_path": "./assets/pastillas-de-freno-trasera-caribe-91-93.webp",
       "description": "PASTILLAS DE FRENO TRASERA CARIBE 91-93",
+      "id": "cee06ee2-bd2f-4e9a-b501-d6dcd9b86e98",
+      "image_path": "./assets/pastillas-de-freno-trasera-caribe-91-93.webp",
       "keywords": [
         "7287",
         "7328",
@@ -17968,11 +17988,18 @@ const PRODUCTS_DATA = {
         "PASTILLAS",
         "TRASERA"
       ],
-      "oem": "7328 / 7287 / 8-94364-3670 / 8-94483-2210 / 8-97018-3570",
-      "slug": "pastillas-de-freno-trasera-caribe-91-93",
-      "original_filename": "Pastillas de Freno/cee06ee2-bd2f-4e9a-b501-d6dcd9b86e98.jpg",
       "linked_ids": [
         766
+      ],
+      "oem": "7328 / 7287 / 8-94364-3670 / 8-94483-2210 / 8-97018-3570",
+      "original_filename": "Pastillas de Freno/cee06ee2-bd2f-4e9a-b501-d6dcd9b86e98.jpg",
+      "slug": "pastillas-de-freno-trasera-caribe-91-93",
+      "variants": [
+        {
+          "codigo_oem": "7328",
+          "brand": "CBK",
+          "precio_usd": 30
+        }
       ]
     },
     {
@@ -18516,10 +18543,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "232c8860-6ffe-45b0-b8db-a68d59609019",
       "category": "Piñon Velocimetro",
-      "image_path": "./assets/pinon-velocimetro-caribe.webp",
       "description": "PIÑON VELOCIMETRO CARIBE",
+      "id": "232c8860-6ffe-45b0-b8db-a68d59609019",
+      "image_path": "./assets/pinon-velocimetro-caribe.webp",
       "keywords": [
         "8-94473-3081",
         "8-94473-3082",
@@ -18528,18 +18555,25 @@ const PRODUCTS_DATA = {
         "PINON",
         "VELOCIMETRO"
       ],
-      "oem": "8-94473-3081 / 8-94473-3082 / 8-97238-5880",
-      "slug": "pinon-velocimetro-caribe",
-      "original_filename": "Piñon Velocimetro/232c8860-6ffe-45b0-b8db-a68d59609019.jpg",
       "linked_ids": [
         774
+      ],
+      "oem": "8-94473-3081 / 8-94473-3082 / 8-97238-5880",
+      "original_filename": "Piñon Velocimetro/232c8860-6ffe-45b0-b8db-a68d59609019.jpg",
+      "slug": "pinon-velocimetro-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94473-3081",
+          "brand": "Original",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "5f522fff-868a-4bfb-b8d2-6c82e38982bd",
       "category": "Piñon Velocimetro",
-      "image_path": "./assets/pinon-velocimetro-caribe-2.webp",
       "description": "PIÑON VELOCIMETRO CARIBE",
+      "id": "5f522fff-868a-4bfb-b8d2-6c82e38982bd",
+      "image_path": "./assets/pinon-velocimetro-caribe-2.webp",
       "keywords": [
         "172701",
         "8-94473-3071",
@@ -18549,18 +18583,25 @@ const PRODUCTS_DATA = {
         "PINON",
         "VELOCIMETRO"
       ],
-      "oem": "8-94473-3071 / 172701 / 8-97012-0852 / 8-94473-3072",
-      "slug": "pinon-velocimetro-caribe-2",
-      "original_filename": "Piñon Velocimetro/5f522fff-868a-4bfb-b8d2-6c82e38982bd.jpg",
       "linked_ids": [
         775
+      ],
+      "oem": "8-94473-3071 / 172701 / 8-97012-0852 / 8-94473-3072",
+      "original_filename": "Piñon Velocimetro/5f522fff-868a-4bfb-b8d2-6c82e38982bd.jpg",
+      "slug": "pinon-velocimetro-caribe-2",
+      "variants": [
+        {
+          "codigo_oem": "8-94473-3071",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "46d6c898-ecb1-4230-a913-0eb3e6614390",
       "category": "Piñon Velocimetro",
-      "image_path": "./assets/pinon-velocimetro-luv.webp",
       "description": "PIÑON VELOCIMETRO LUV",
+      "id": "46d6c898-ecb1-4230-a913-0eb3e6614390",
+      "image_path": "./assets/pinon-velocimetro-luv.webp",
       "keywords": [
         "8-94473-3081",
         "8-94473-3082",
@@ -18569,18 +18610,25 @@ const PRODUCTS_DATA = {
         "PINON",
         "VELOCIMETRO"
       ],
-      "oem": "8-94473-3081 / 8-94473-3082 / 8-97238-5880",
-      "slug": "pinon-velocimetro-luv",
-      "original_filename": "Piñon Velocimetro/46d6c898-ecb1-4230-a913-0eb3e6614390.jpg",
       "linked_ids": [
         774
+      ],
+      "oem": "8-94473-3081 / 8-94473-3082 / 8-97238-5880",
+      "original_filename": "Piñon Velocimetro/46d6c898-ecb1-4230-a913-0eb3e6614390.jpg",
+      "slug": "pinon-velocimetro-luv",
+      "variants": [
+        {
+          "codigo_oem": "8-94473-3081",
+          "brand": "Original",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "59f45151-d20c-46d4-b44c-35c7a481c852",
       "category": "Piñon Velocimetro",
-      "image_path": "./assets/pinon-velocimetro-luv-dmax-3-5.webp",
       "description": "PIÑON VELOCIMETRO LUV DMAX 3.5",
+      "id": "59f45151-d20c-46d4-b44c-35c7a481c852",
+      "image_path": "./assets/pinon-velocimetro-luv-dmax-3-5.webp",
       "keywords": [
         "172701",
         "8-94473-3071",
@@ -18591,36 +18639,50 @@ const PRODUCTS_DATA = {
         "PINON",
         "VELOCIMETRO"
       ],
-      "oem": "8-94473-3071 / 172701 / 8-97012-0852 / 8-94473-3072",
-      "slug": "pinon-velocimetro-luv-dmax-3-5",
-      "original_filename": "Piñon Velocimetro/59f45151-d20c-46d4-b44c-35c7a481c852.jpg",
       "linked_ids": [
         775
+      ],
+      "oem": "8-94473-3071 / 172701 / 8-97012-0852 / 8-94473-3072",
+      "original_filename": "Piñon Velocimetro/59f45151-d20c-46d4-b44c-35c7a481c852.jpg",
+      "slug": "pinon-velocimetro-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-94473-3071",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "39cb1f16-7c4f-4c73-925d-9aaee1d6fb57",
       "category": "Piñon y Corona",
-      "image_path": "./assets/pinon-y-corona-caribe-2-3.webp",
       "description": "PIÑON Y CORONA CARIBE 2.3",
+      "id": "39cb1f16-7c4f-4c73-925d-9aaee1d6fb57",
+      "image_path": "./assets/pinon-y-corona-caribe-2-3.webp",
       "keywords": [
         "8-94225-2581",
         "CARIBE",
         "CORONA",
         "PINON"
       ],
+      "linked_ids": [
+        778
+      ],
       "oem": "8-94225-2581",
-      "slug": "pinon-y-corona-caribe-2-3",
       "original_filename": "Piñon y Corona/39cb1f16-7c4f-4c73-925d-9aaee1d6fb57.jpg",
-      "linked_ids": [
-        778
+      "slug": "pinon-y-corona-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94225-2581",
+          "brand": "Original",
+          "precio_usd": 255
+        }
       ]
     },
     {
-      "id": "7d35039a-e5a5-44e8-9f5f-1b029052fe40",
       "category": "Piñon y Corona",
-      "image_path": "./assets/pinon-y-corona-caribe-g200.webp",
       "description": "PIÑON Y CORONA CARIBE G200",
+      "id": "7d35039a-e5a5-44e8-9f5f-1b029052fe40",
+      "image_path": "./assets/pinon-y-corona-caribe-g200.webp",
       "keywords": [
         "8-94225-2581",
         "CARIBE",
@@ -18628,106 +18690,148 @@ const PRODUCTS_DATA = {
         "G200",
         "PINON"
       ],
+      "linked_ids": [
+        778
+      ],
       "oem": "8-94225-2581",
-      "slug": "pinon-y-corona-caribe-g200",
       "original_filename": "Piñon y Corona/7d35039a-e5a5-44e8-9f5f-1b029052fe40.jpg",
-      "linked_ids": [
-        778
+      "slug": "pinon-y-corona-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94225-2581",
+          "brand": "Original",
+          "precio_usd": 255
+        }
       ]
     },
     {
-      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (1)",
       "category": "Piñon y Corona",
-      "image_path": "./assets/pinon-y-corona-luv-2-2.webp",
       "description": "PIÑON Y CORONA LUV 2.2",
+      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (1)",
+      "image_path": "./assets/pinon-y-corona-luv-2-2.webp",
       "keywords": [
         "8-94225-2581",
         "CORONA",
         "LUV",
         "PINON"
       ],
+      "linked_ids": [
+        778
+      ],
       "oem": "8-94225-2581",
-      "slug": "pinon-y-corona-luv-2-2",
       "original_filename": "Piñon y Corona/WhatsApp Image 2026-07-21 at 11.07.08 AM (1).jpeg",
-      "linked_ids": [
-        778
+      "slug": "pinon-y-corona-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-94225-2581",
+          "brand": "Original",
+          "precio_usd": 255
+        }
       ]
     },
     {
-      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM",
       "category": "Piñon y Corona",
-      "image_path": "./assets/pinon-y-corona-luv-2-3.webp",
       "description": "PIÑON Y CORONA LUV 2.3",
+      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM",
+      "image_path": "./assets/pinon-y-corona-luv-2-3.webp",
       "keywords": [
         "8-94225-2581",
         "CORONA",
         "LUV",
         "PINON"
       ],
-      "oem": "8-94225-2581",
-      "slug": "pinon-y-corona-luv-2-3",
-      "original_filename": "Piñon y Corona/WhatsApp Image 2026-07-21 at 11.07.08 AM.jpeg",
       "linked_ids": [
         778
+      ],
+      "oem": "8-94225-2581",
+      "original_filename": "Piñon y Corona/WhatsApp Image 2026-07-21 at 11.07.08 AM.jpeg",
+      "slug": "pinon-y-corona-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94225-2581",
+          "brand": "Original",
+          "precio_usd": 255
+        }
       ]
     },
     {
-      "id": "56aea079-4e98-4983-87a1-f67e14d7a629",
       "category": "Planetario",
-      "image_path": "./assets/planetario-caribe-2-3.webp",
       "description": "PLANETARIO CARIBE 2.3",
+      "id": "56aea079-4e98-4983-87a1-f67e14d7a629",
+      "image_path": "./assets/planetario-caribe-2-3.webp",
       "keywords": [
         "9-41561-0504",
         "CARIBE",
         "PLANETARIO"
       ],
-      "oem": "9-41561-0504",
-      "slug": "planetario-caribe-2-3",
-      "original_filename": "Planetario/56aea079-4e98-4983-87a1-f67e14d7a629.jpg",
       "linked_ids": [
         838
+      ],
+      "oem": "9-41561-0504",
+      "original_filename": "Planetario/56aea079-4e98-4983-87a1-f67e14d7a629.jpg",
+      "slug": "planetario-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "9-41561-0504",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "b0784b12-2cc0-4b80-87ed-ee3ac5054017",
       "category": "Planetario",
-      "image_path": "./assets/planetario-caribe-g200.webp",
       "description": "PLANETARIO CARIBE G200",
+      "id": "b0784b12-2cc0-4b80-87ed-ee3ac5054017",
+      "image_path": "./assets/planetario-caribe-g200.webp",
       "keywords": [
         "9-41561-0504",
         "CARIBE",
         "G200",
         "PLANETARIO"
       ],
-      "oem": "9-41561-0504",
-      "slug": "planetario-caribe-g200",
-      "original_filename": "Planetario/b0784b12-2cc0-4b80-87ed-ee3ac5054017.jpg",
       "linked_ids": [
         838
+      ],
+      "oem": "9-41561-0504",
+      "original_filename": "Planetario/b0784b12-2cc0-4b80-87ed-ee3ac5054017.jpg",
+      "slug": "planetario-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "9-41561-0504",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "053ea61e-2afb-4b9a-b481-207591e67c87",
       "category": "Planetario",
-      "image_path": "./assets/planetario-luv-2-3.webp",
       "description": "PLANETARIO LUV 2.3",
+      "id": "053ea61e-2afb-4b9a-b481-207591e67c87",
+      "image_path": "./assets/planetario-luv-2-3.webp",
       "keywords": [
         "9-41561-0504",
         "LUV",
         "PLANETARIO"
       ],
-      "oem": "9-41561-0504",
-      "slug": "planetario-luv-2-3",
-      "original_filename": "Planetario/053ea61e-2afb-4b9a-b481-207591e67c87.jpg",
       "linked_ids": [
         838
+      ],
+      "oem": "9-41561-0504",
+      "original_filename": "Planetario/053ea61e-2afb-4b9a-b481-207591e67c87.jpg",
+      "slug": "planetario-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "9-41561-0504",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "93ea9d7f-6e2a-452a-93fe-c7e42f7be174",
       "category": "Platino",
-      "image_path": "./assets/platino-caribe-g200.webp",
       "description": "PLATINO CARIBE G200",
+      "id": "93ea9d7f-6e2a-452a-93fe-c7e42f7be174",
+      "image_path": "./assets/platino-caribe-g200.webp",
       "keywords": [
         "19145-14010",
         "8-94208-4080",
@@ -18736,11 +18840,18 @@ const PRODUCTS_DATA = {
         "PLATINO",
         "SD-112V"
       ],
-      "oem": "8-94208-4080 / 19145-14010 / SD-112V",
-      "slug": "platino-caribe-g200",
-      "original_filename": "Platino/93ea9d7f-6e2a-452a-93fe-c7e42f7be174.jpg",
       "linked_ids": [
         839
+      ],
+      "oem": "8-94208-4080 / 19145-14010 / SD-112V",
+      "original_filename": "Platino/93ea9d7f-6e2a-452a-93fe-c7e42f7be174.jpg",
+      "slug": "platino-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94208-4080",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
@@ -18843,10 +18954,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "c654731d-f7d0-4e02-85b3-dba80b17d918",
       "category": "Plato Clutch",
-      "image_path": "./assets/plato-presion-clutch-luv-2-3.webp",
       "description": "PLATO PRESION CLUTCH LUV 2.3",
+      "id": "c654731d-f7d0-4e02-85b3-dba80b17d918",
+      "image_path": "./assets/plato-presion-clutch-luv-2-3.webp",
       "keywords": [
         "8-94224-7830",
         "8-97040-2680",
@@ -18859,18 +18970,30 @@ const PRODUCTS_DATA = {
         "PLATO",
         "PRESION"
       ],
-      "oem": "8-94224-7830 / ISC550 / N5303P / NAC603 / 8-97040-2680 / 8-97182-9641",
-      "slug": "plato-presion-clutch-luv-2-3",
-      "original_filename": "Plato Clutch/c654731d-f7d0-4e02-85b3-dba80b17d918.jpg",
       "linked_ids": [
         840
+      ],
+      "oem": "8-94224-7830 / ISC550 / N5303P / NAC603 / 8-97040-2680 / 8-97182-9641",
+      "original_filename": "Plato Clutch/c654731d-f7d0-4e02-85b3-dba80b17d918.jpg",
+      "slug": "plato-presion-clutch-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94224-7830",
+          "brand": "PERFECTION",
+          "precio_usd": 70
+        },
+        {
+          "codigo_oem": "8-94224-7830",
+          "brand": "ORIGINAL",
+          "precio_usd": 125
+        }
       ]
     },
     {
-      "id": "7bfda5eb-9d57-4503-af86-48158bd23667",
       "category": "Polea Aire Acondicionado",
-      "image_path": "./assets/polea-aire-acondicionado-caribe-2-3.webp",
       "description": "POLEA AIRE ACONDICIONADO CARIBE 2.3",
+      "id": "7bfda5eb-9d57-4503-af86-48158bd23667",
+      "image_path": "./assets/polea-aire-acondicionado-caribe-2-3.webp",
       "keywords": [
         "8-94160-5440",
         "ACONDICIONADO",
@@ -18878,18 +19001,25 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "POLEA"
       ],
+      "linked_ids": [
+        844
+      ],
       "oem": "8-94160-5440",
-      "slug": "polea-aire-acondicionado-caribe-2-3",
       "original_filename": "Polea Aire Acondicionado/7bfda5eb-9d57-4503-af86-48158bd23667.jpg",
-      "linked_ids": [
-        844
+      "slug": "polea-aire-acondicionado-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94160-5440",
+          "brand": "Original",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "56d27f9f-d13d-478d-84f6-f7b1cd709f93",
       "category": "Polea Aire Acondicionado",
-      "image_path": "./assets/polea-aire-acondicionado-caribe-2-6.webp",
       "description": "POLEA AIRE ACONDICIONADO CARIBE 2.6",
+      "id": "56d27f9f-d13d-478d-84f6-f7b1cd709f93",
+      "image_path": "./assets/polea-aire-acondicionado-caribe-2-6.webp",
       "keywords": [
         "8-94160-5440",
         "ACONDICIONADO",
@@ -18897,18 +19027,25 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "POLEA"
       ],
-      "oem": "8-94160-5440",
-      "slug": "polea-aire-acondicionado-caribe-2-6",
-      "original_filename": "Polea Aire Acondicionado/56d27f9f-d13d-478d-84f6-f7b1cd709f93.jpg",
       "linked_ids": [
         844
+      ],
+      "oem": "8-94160-5440",
+      "original_filename": "Polea Aire Acondicionado/56d27f9f-d13d-478d-84f6-f7b1cd709f93.jpg",
+      "slug": "polea-aire-acondicionado-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94160-5440",
+          "brand": "Original",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "c9917929-2f94-478b-9bff-64f8c574dd30",
       "category": "Polea Aire Acondicionado",
-      "image_path": "./assets/polea-aire-acondicionado-luv-2-3.webp",
       "description": "POLEA AIRE ACONDICIONADO LUV 2.3",
+      "id": "c9917929-2f94-478b-9bff-64f8c574dd30",
+      "image_path": "./assets/polea-aire-acondicionado-luv-2-3.webp",
       "keywords": [
         "8-94160-5440",
         "ACONDICIONADO",
@@ -18916,18 +19053,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "POLEA"
       ],
-      "oem": "8-94160-5440",
-      "slug": "polea-aire-acondicionado-luv-2-3",
-      "original_filename": "Polea Aire Acondicionado/c9917929-2f94-478b-9bff-64f8c574dd30.jpg",
       "linked_ids": [
         844
+      ],
+      "oem": "8-94160-5440",
+      "original_filename": "Polea Aire Acondicionado/c9917929-2f94-478b-9bff-64f8c574dd30.jpg",
+      "slug": "polea-aire-acondicionado-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94160-5440",
+          "brand": "Original",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "6a4e815b-1a67-4a07-98f1-2ddd59869360",
       "category": "Polea Loca",
-      "image_path": "./assets/polea-loca-luv-dmax-3-5.webp",
       "description": "POLEA LOCA LUV DMAX 3.5",
+      "id": "6a4e815b-1a67-4a07-98f1-2ddd59869360",
+      "image_path": "./assets/polea-loca-luv-dmax-3-5.webp",
       "keywords": [
         "8-97146-8770",
         "DMAX",
@@ -18935,11 +19079,18 @@ const PRODUCTS_DATA = {
         "LUV",
         "POLEA"
       ],
-      "oem": "8-97146-8770",
-      "slug": "polea-loca-luv-dmax-3-5",
-      "original_filename": "Polea Loca/6a4e815b-1a67-4a07-98f1-2ddd59869360.jpg",
       "linked_ids": [
         848
+      ],
+      "oem": "8-97146-8770",
+      "original_filename": "Polea Loca/6a4e815b-1a67-4a07-98f1-2ddd59869360.jpg",
+      "slug": "polea-loca-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97146-8770",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
@@ -19142,30 +19293,44 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (3)",
       "category": "Regulador Presion Gasolina",
+      "description": "REGULADOR PRESION GASOLINA LUV DMAX 3.5",
+      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (3)",
       "image_path": "./assets/regulador-presion-gasolina.webp",
-      "description": "REGULADOR PRESION GASOLINA",
       "keywords": [
         "8-97070-6200",
         "8-97179-5850",
         "8-97254-8450",
+        "DMAX",
         "GASOLINA",
+        "LUV",
         "PRESION",
         "REGULADOR"
       ],
-      "oem": "8-97070-6200 / 8-97254-8450 / 8-97179-5850",
-      "slug": "regulador-presion-gasolina",
-      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM (3).jpeg",
       "linked_ids": [
         859
+      ],
+      "oem": "8-97070-6200 / 8-97254-8450 / 8-97179-5850",
+      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM (3).jpeg",
+      "slug": "regulador-presion-gasolina",
+      "variants": [
+        {
+          "codigo_oem": "8-97070-6200",
+          "brand": "DS",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97070-6200",
+          "brand": "NIKHO",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM",
       "category": "Regulador Presion Gasolina",
-      "image_path": "./assets/regulador-presion-gasolina-luv-2-2.webp",
       "description": "REGULADOR PRESION GASOLINA LUV 2.2",
+      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM",
+      "image_path": "./assets/regulador-presion-gasolina-luv-2-2.webp",
       "keywords": [
         "17091410",
         "17103467",
@@ -19179,18 +19344,30 @@ const PRODUCTS_DATA = {
         "PRESION",
         "REGULADOR"
       ],
-      "oem": "8-17091-4100 / 8-17112-2760 / 8-17107-0100 / 17091410 / 17113271 / 17103467 / 17107478",
-      "slug": "regulador-presion-gasolina-luv-2-2",
-      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM.jpeg",
       "linked_ids": [
         857
+      ],
+      "oem": "8-17091-4100 / 8-17112-2760 / 8-17107-0100 / 17091410 / 17113271 / 17103467 / 17107478",
+      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM.jpeg",
+      "slug": "regulador-presion-gasolina-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-17091-4100",
+          "brand": "DS",
+          "precio_usd": 40
+        },
+        {
+          "codigo_oem": "8-17091-4100",
+          "brand": "FP",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (1)",
       "category": "Regulador Presion Gasolina",
+      "description": "REGULADOR PRESION GASOLINA LUV DMAX 2.4",
+      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (1)",
       "image_path": "./assets/regulador-presion-gasolina-luv-2-2-luv-dmax-2-4.webp",
-      "description": "REGULADOR PRESION GASOLINA LUV 2.2 / LUV DMAX 2.4",
       "keywords": [
         "17091410",
         "17103467",
@@ -19205,18 +19382,30 @@ const PRODUCTS_DATA = {
         "PRESION",
         "REGULADOR"
       ],
-      "oem": "8-17091-4100 / 8-17112-2760 / 8-17107-0100 / 17091410 / 17113271 / 17103467 / 17107478",
-      "slug": "regulador-presion-gasolina-luv-2-2-luv-dmax-2-4",
-      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM (1).jpeg",
       "linked_ids": [
         857
+      ],
+      "oem": "8-17091-4100 / 8-17112-2760 / 8-17107-0100 / 17091410 / 17113271 / 17103467 / 17107478",
+      "original_filename": "Regulador Presion Gasolina/WhatsApp Image 2026-07-21 at 11.07.09 AM (1).jpeg",
+      "slug": "regulador-presion-gasolina-luv-2-2-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-17091-4100",
+          "brand": "DS",
+          "precio_usd": 40
+        },
+        {
+          "codigo_oem": "8-17091-4100",
+          "brand": "FP",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (2)",
       "category": "Resistencia Aire Acondicionado",
-      "image_path": "./assets/resistencia-soplador-aire-acondicionado-luv-dmax-3-5.webp",
       "description": "RESISTENCIA SOPLADOR AIRE ACONDICIONADO LUV DMAX 3.5",
+      "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM (2)",
+      "image_path": "./assets/resistencia-soplador-aire-acondicionado-luv-dmax-3-5.webp",
       "keywords": [
         "8-97321-2730",
         "8-98049-3940",
@@ -19227,18 +19416,25 @@ const PRODUCTS_DATA = {
         "RESISTENCIA",
         "SOPLADOR"
       ],
-      "oem": "8-98049-3940 / 8-97321-2730",
-      "slug": "resistencia-soplador-aire-acondicionado-luv-dmax-3-5",
-      "original_filename": "Resistencia Aire Acondicionado/WhatsApp Image 2026-07-21 at 11.07.09 AM (2).jpeg",
       "linked_ids": [
         863
+      ],
+      "oem": "8-98049-3940 / 8-97321-2730",
+      "original_filename": "Resistencia Aire Acondicionado/WhatsApp Image 2026-07-21 at 11.07.09 AM (2).jpeg",
+      "slug": "resistencia-soplador-aire-acondicionado-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-98049-3940",
+          "brand": "Original",
+          "precio_usd": 40
+        }
       ]
     },
     {
-      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (3)",
       "category": "Rolinera Punta de Eje Delantero",
-      "image_path": "./assets/rolinera-punta-eje-delantera-externa-luv-4x2.webp",
       "description": "ROLINERA PUNTA EJE DELANTERA EXTERNA LUV 4X2",
+      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (3)",
+      "image_path": "./assets/rolinera-punta-eje-delantera-externa-luv-4x2.webp",
       "keywords": [
         "4X2",
         "8-94242-9130",
@@ -19253,18 +19449,25 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "SET3"
       ],
-      "oem": "SET3 / M12649 / 8-94361-8010 / 8-94242-9130",
-      "slug": "rolinera-punta-eje-delantera-externa-luv-4x2",
-      "original_filename": "Rolinera Punta de Eje Delantero/WhatsApp Image 2026-07-21 at 11.07.08 AM (3).jpeg",
       "linked_ids": [
         882
+      ],
+      "oem": "SET3 / M12649 / 8-94361-8010 / 8-94242-9130",
+      "original_filename": "Rolinera Punta de Eje Delantero/WhatsApp Image 2026-07-21 at 11.07.08 AM (3).jpeg",
+      "slug": "rolinera-punta-eje-delantera-externa-luv-4x2",
+      "variants": [
+        {
+          "codigo_oem": "SET3",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (4)",
       "category": "Rolinera Punta de Eje Delantero",
-      "image_path": "./assets/rolinera-punta-eje-delantera-luv-dmax-2-4.webp",
       "description": "ROLINERA PUNTA EJE DELANTERA LUV DMAX 2.4",
+      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (4)",
+      "image_path": "./assets/rolinera-punta-eje-delantera-luv-dmax-2-4.webp",
       "keywords": [
         "8-94242-9130",
         "8-94361-8010",
@@ -19278,28 +19481,42 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "SET3"
       ],
-      "oem": "SET3 / M12649 / 8-94361-8010 / 8-94242-9130",
-      "slug": "rolinera-punta-eje-delantera-luv-dmax-2-4",
-      "original_filename": "Rolinera Punta de Eje Delantero/WhatsApp Image 2026-07-21 at 11.07.08 AM (4).jpeg",
       "linked_ids": [
         882
+      ],
+      "oem": "SET3 / M12649 / 8-94361-8010 / 8-94242-9130",
+      "original_filename": "Rolinera Punta de Eje Delantero/WhatsApp Image 2026-07-21 at 11.07.08 AM (4).jpeg",
+      "slug": "rolinera-punta-eje-delantera-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "SET3",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (2)",
       "category": "Rolinera Universal",
-      "image_path": "./assets/rolinera-universal-6301.webp",
       "description": "ROLINERA UNIVERSAL 6301",
+      "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (2)",
+      "image_path": "./assets/rolinera-universal-6301.webp",
       "keywords": [
         "6301",
         "ROLINERA",
         "UNIVERSAL"
       ],
-      "oem": "6301",
-      "slug": "rolinera-universal-6301",
-      "original_filename": "Rolinera Universal/WhatsApp Image 2026-07-21 at 11.07.08 AM (2).jpeg",
       "linked_ids": [
         878
+      ],
+      "oem": "6301",
+      "original_filename": "Rolinera Universal/WhatsApp Image 2026-07-21 at 11.07.08 AM (2).jpeg",
+      "slug": "rolinera-universal-6301",
+      "variants": [
+        {
+          "codigo_oem": "6301",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
