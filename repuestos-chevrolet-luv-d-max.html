@@ -92,34 +92,94 @@
             }
         }
 
-        // Función global de rastreo de eventos
-        function trackEvent(eventName, params = {}) {
-            if (typeof gtag === 'function') {
-                gtag('event', eventName, params);
-            }
-        }
+        let analyticsInitialized = false;
 
-        // Inicializar dependencias no críticas tras el evento de carga completa de forma diferida (TBT)
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                if (typeof PRODUCTS_DATA !== 'undefined' && PRODUCTS_DATA.google_analytics_id) {
+        function forceInitAnalytics() {
+            if (analyticsInitialized) return;
+            analyticsInitialized = true;
+
+            if (typeof PRODUCTS_DATA !== 'undefined') {
+                // 1. Google Analytics 4 (GA4)
+                if (PRODUCTS_DATA.google_analytics_id) {
                     const gaId = deobfuscate(PRODUCTS_DATA.google_analytics_id).trim();
-                    if (gaId && gaId.startsWith('G-')) {
-                        // Cargar script oficial de Google Analytics de forma asíncrona
+                    if (gaId && gaId.startsWith('G-') && !document.getElementById('ga-script')) {
                         const script = document.createElement('script');
+                        script.id = 'ga-script';
                         script.async = true;
                         script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
                         document.head.appendChild(script);
 
-                        // Inicializar dataLayer y gtag
                         window.dataLayer = window.dataLayer || [];
                         window.gtag = function() { window.dataLayer.push(arguments); };
                         gtag('js', new Date());
                         gtag('config', gaId);
-                        
-                        console.log("Google Analytics 4 inicializado de forma diferida (TBT).");
                     }
                 }
+
+                // 2. Meta Pixel (Facebook / Instagram Ads)
+                if (PRODUCTS_DATA.meta_pixel_id) {
+                    const metaId = deobfuscate(PRODUCTS_DATA.meta_pixel_id).trim();
+                    if (metaId && !document.getElementById('meta-pixel-script')) {
+                        !function(f,b,e,v,n,t,s)
+                        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                        n.queue=[];t=b.createElement(e);t.async=!0;
+                        t.id='meta-pixel-script';
+                        t.src=v;s=b.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t,s)}(window, document,'script',
+                        'https://connect.facebook.net/en_US/fbevents.js');
+
+                        fbq('init', metaId);
+                        fbq('track', 'PageView');
+                    }
+                }
+            }
+        }
+
+        // Función global de rastreo de eventos unificada (GA4 + Meta Pixel)
+        function trackEvent(eventName, params = {}) {
+            forceInitAnalytics();
+
+            // Disparo a GA4
+            if (typeof gtag === 'function') {
+                gtag('event', eventName, params);
+            }
+
+            // Disparo a Meta Pixel (fbq)
+            if (typeof fbq === 'function') {
+                if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+                    fbq('track', 'ViewContent', {
+                        content_name: params.nombre_producto || (params.items && params.items[0] ? params.items[0].item_name : ''),
+                        content_category: params.categoria || (params.items && params.items[0] ? params.items[0].item_category : ''),
+                        currency: 'USD'
+                    });
+                } else if (eventName === 'add_to_cart' || eventName === 'agregar_al_carrito') {
+                    fbq('track', 'AddToCart', {
+                        content_name: params.nombre_producto || (params.items && params.items[0] ? params.items[0].item_name : ''),
+                        content_category: params.categoria || (params.items && params.items[0] ? params.items[0].item_category : ''),
+                        currency: 'USD'
+                    });
+                } else if (eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+                    fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
+                    fbq('track', 'Contact');
+                } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
+                    fbq('track', 'Contact', { content_name: params.nombre_producto || params.origen || 'Consulta WhatsApp' });
+                } else if (eventName === 'buscar_producto' || eventName === 'search') {
+                    fbq('track', 'Search', { search_string: params.termino_busqueda || params.search_term || '' });
+                } else {
+                    fbq('trackCustom', eventName, params);
+                }
+            }
+        }
+
+        window.trackEvent = trackEvent;
+        window.forceInitAnalytics = forceInitAnalytics;
+
+        // Inicializar diferido tras 1.5s
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                forceInitAnalytics();
             }, 1500);
         });
     </script>

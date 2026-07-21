@@ -143,7 +143,16 @@
             saveCart();
             renderCart();
 
-            // Rastrear evento en GA4
+            // Rastrear evento en GA4 + Meta Pixel
+            trackEvent('add_to_cart', {
+                currency: 'USD',
+                items: [{
+                    item_id: product.id,
+                    item_name: product.description,
+                    item_category: product.category,
+                    quantity: 1
+                }]
+            });
             trackEvent('agregar_al_carrito', {
                 items: [{
                     item_id: product.id,
@@ -299,7 +308,12 @@
             });
             msg += `Quedo atento a su respuesta. ¡Muchas gracias!`;
 
-            // Rastrear checkout en Analytics
+            // Rastrear checkout en Analytics (GA4 + Meta Pixel)
+            trackEvent('generate_lead', {
+                currency: 'USD',
+                value: 0,
+                items: cart.map(i => ({ item_id: i.id, item_name: i.description, item_category: i.category, quantity: i.quantity }))
+            });
             trackEvent('enviar_pedido_whatsapp', {
                 cantidad_items: cart.length,
                 descripcion: 'El usuario envió un pedido al WhatsApp de la tienda',

@@ -353,6 +353,8 @@ def generate_pages(data):
     reviews_url = decode_base64(reviews_encoded)
     ga_encoded = data.get('google_analytics_id', '')
     ga_id = decode_base64(ga_encoded)
+    meta_encoded = data.get('meta_pixel_id', '')
+    meta_id = decode_base64(meta_encoded)
     
     base_url = get_site_base_url()
     
@@ -360,23 +362,69 @@ def generate_pages(data):
     logo_ext = ".webp"
     logo_type = "image/webp"
         
-    ga_script = ""
-    if ga_id:
-        ga_script = f"""
-    <!-- Google Analytics Diferido para TBT -->
+    ga_script = f"""
+    <!-- Google Analytics & Meta Pixel Tracker Diferido y Reactivo -->
     <script>
-      window.addEventListener('load', function() {{
-        setTimeout(function() {{
+      window.GA_ID = "{ga_id}";
+      window.META_PIXEL_ID = "{meta_id}";
+      var analyticsInitialized = false;
+
+      function forceInitAnalytics() {{
+        if (analyticsInitialized) return;
+        analyticsInitialized = true;
+
+        if (window.GA_ID && window.GA_ID.startsWith('G-') && !document.getElementById('ga-script')) {{
           var script = document.createElement('script');
+          script.id = 'ga-script';
           script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtag/js?id={ga_id}';
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
           document.head.appendChild(script);
-          
+
           window.dataLayer = window.dataLayer || [];
           window.gtag = function() {{ window.dataLayer.push(arguments); }};
           gtag('js', new Date());
-          gtag('config', '{ga_id}');
-        }}, 1500);
+          gtag('config', window.GA_ID);
+        }}
+
+        if (window.META_PIXEL_ID && !document.getElementById('meta-pixel-script')) {{
+          !function(f,b,e,v,n,t,s)
+          {{if(f.fbq)return;n=f.fbq=function(){{n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)}};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.id='meta-pixel-script';
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+
+          fbq('init', window.META_PIXEL_ID);
+          fbq('track', 'PageView');
+        }}
+      }}
+
+      function trackEvent(eventName, params = {{}}) {{
+        forceInitAnalytics();
+        if (typeof gtag === 'function') gtag('event', eventName, params);
+        if (typeof fbq === 'function') {{
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {{
+            fbq('track', 'ViewContent', {{ content_name: params.item_name || params.nombre_producto || '', currency: 'USD' }});
+          }} else if (eventName === 'add_to_cart' || eventName === 'agregar_al_carrito') {{
+            fbq('track', 'AddToCart', {{ content_name: params.item_name || params.nombre_producto || '', currency: 'USD' }});
+          }} else if (eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {{
+            fbq('track', 'Lead', {{ content_name: 'Pedido WhatsApp', currency: 'USD' }});
+            fbq('track', 'Contact');
+          }} else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {{
+            fbq('track', 'Contact', {{ content_name: params.nombre_producto || 'Consulta WhatsApp' }});
+          }} else {{
+            fbq('trackCustom', eventName, params);
+          }}
+        }}
+      }}
+      window.trackEvent = trackEvent;
+      window.forceInitAnalytics = forceInitAnalytics;
+
+      window.addEventListener('load', function() {{
+        setTimeout(forceInitAnalytics, 1500);
       }});
     </script>"""
     

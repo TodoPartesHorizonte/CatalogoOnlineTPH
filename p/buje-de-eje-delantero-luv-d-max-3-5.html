@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Luis Rejon"
+          "name": "Olimpo González"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Todo para mi dmax a la mano buena atención y rápida respuesta"
+        "reviewBody": "Gracias por sus servicios. Los recomiendo. Compré los repuestos de mi camioneta luv dmax y todo de calidad."
       }
     }
     </script>
@@ -195,20 +195,68 @@
       ]
     }
     </script>
-    <!-- Google Analytics Diferido para TBT -->
+    <!-- Google Analytics & Meta Pixel Tracker Diferido y Reactivo -->
     <script>
-      window.addEventListener('load', function() {
-        setTimeout(function() {
+      window.GA_ID = "G-QDYFPKJNJE";
+      window.META_PIXEL_ID = "";
+      var analyticsInitialized = false;
+
+      function forceInitAnalytics() {
+        if (analyticsInitialized) return;
+        analyticsInitialized = true;
+
+        if (window.GA_ID && window.GA_ID.startsWith('G-') && !document.getElementById('ga-script')) {
           var script = document.createElement('script');
+          script.id = 'ga-script';
           script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-QDYFPKJNJE';
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
           document.head.appendChild(script);
-          
+
           window.dataLayer = window.dataLayer || [];
           window.gtag = function() { window.dataLayer.push(arguments); };
           gtag('js', new Date());
-          gtag('config', 'G-QDYFPKJNJE');
-        }, 1500);
+          gtag('config', window.GA_ID);
+        }
+
+        if (window.META_PIXEL_ID && !document.getElementById('meta-pixel-script')) {
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.id='meta-pixel-script';
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+
+          fbq('init', window.META_PIXEL_ID);
+          fbq('track', 'PageView');
+        }
+      }
+
+      function trackEvent(eventName, params = {}) {
+        forceInitAnalytics();
+        if (typeof gtag === 'function') gtag('event', eventName, params);
+        if (typeof fbq === 'function') {
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            fbq('track', 'ViewContent', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
+          } else if (eventName === 'add_to_cart' || eventName === 'agregar_al_carrito') {
+            fbq('track', 'AddToCart', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
+          } else if (eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
+            fbq('track', 'Contact');
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
+            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+          } else {
+            fbq('trackCustom', eventName, params);
+          }
+        }
+      }
+      window.trackEvent = trackEvent;
+      window.forceInitAnalytics = forceInitAnalytics;
+
+      window.addEventListener('load', function() {
+        setTimeout(forceInitAnalytics, 1500);
       });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1662,14 +1710,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./empacadura-de-camara-de-amianto-luv-d-max-3-5.html" class="related-card">
+                <a href="./goma-u-cajetin-direccion-luv-d-max.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/empacadura-de-camara-de-amianto-luv-d-max-3-5.webp" alt="Repuesto EMPACADURA DE CAMARA DE AMIANTO LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/goma-u-cajetin-direccion-luv-d-max.webp" alt="Repuesto GOMA U CAJETIN DIRECCION LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Camara</span></span>
-                        <div class="related-title" title="EMPACADURA DE CAMARA DE AMIANTO LUV D-MAX 3.5">EMPACADURA DE CAMARA DE AMIANTO LUV D-MAX 3.5</div>
-                        <div class="related-oem">OEM: 8-97262-0940</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Goma U Cajetin</span></span>
+                        <div class="related-title" title="GOMA U CAJETIN DIRECCION LUV D-MAX">GOMA U CAJETIN DIRECCION LUV D-MAX</div>
+                        <div class="related-oem">OEM: 8-97304-9230</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1677,14 +1725,14 @@
                     </div>
                 </a>
 
-                <a href="./punta-tripoide-luv-dmax-3-5.html" class="related-card">
+                <a href="./conector-de-bobina-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/punta-tripoide-luv-dmax-3-5.webp" alt="Repuesto PUNTA TRIPOIDE LUV DMAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/conector-de-bobina-luv-d-max-3-5.webp" alt="Repuesto CONECTOR DE BOBINA LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Punta de Tripoide</span></span>
-                        <div class="related-title" title="PUNTA TRIPOIDE LUV DMAX 3.5">PUNTA TRIPOIDE LUV DMAX 3.5</div>
-                        <div class="related-oem">OEM: 8-97387-6640</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Conector de Bobina</span></span>
+                        <div class="related-title" title="CONECTOR DE BOBINA LUV D-MAX 3.5">CONECTOR DE BOBINA LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97136-3250B</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1692,14 +1740,14 @@
                     </div>
                 </a>
 
-                <a href="./munon-superior-luv-dmax-3-0-4x2.html" class="related-card">
+                <a href="./juego-de-empacadura-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/munon-superior-luv-dmax-3-0-4x2.webp" alt="Repuesto MUÑON SUPERIOR LUV DMAX 3.0 4X2 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/juego-de-empacadura-luv-d-max-3-5.webp" alt="Repuesto JUEGO DE EMPACADURA LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Muñon</span></span>
-                        <div class="related-title" title="MUÑON SUPERIOR LUV DMAX 3.0 4X2">MUÑON SUPERIOR LUV DMAX 3.0 4X2</div>
-                        <div class="related-oem">OEM: 8-97365-0180</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Juego de Empacadura</span></span>
+                        <div class="related-title" title="JUEGO DE EMPACADURA LUV D-MAX 3.5">JUEGO DE EMPACADURA LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 5-87814-3231</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1707,14 +1755,14 @@
                     </div>
                 </a>
 
-                <a href="./bomba-de-direccion-luv-d-max-3-5.html" class="related-card">
+                <a href="./correa-de-tiempo-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/bomba-de-direccion-luv-d-max-3-5.webp" alt="Repuesto BOMBA DE DIRECCIÓN LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/correa-de-tiempo-luv-d-max-3-5.webp" alt="Repuesto CORREA DE TIEMPO LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba Direccion</span></span>
-                        <div class="related-title" title="BOMBA DE DIRECCIÓN LUV D-MAX 3.5">BOMBA DE DIRECCIÓN LUV D-MAX 3.5</div>
-                        <div class="related-oem">OEM: 8-97946-6960</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Correa de Tiempo</span></span>
+                        <div class="related-title" title="CORREA DE TIEMPO LUV D-MAX 3.5">CORREA DE TIEMPO LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97191-0361</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

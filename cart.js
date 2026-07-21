@@ -109,7 +109,6 @@
     };
 
     window.addToCart = function(id, description, category, imagePath) {
-        // Normalizar la ruta de imagen para que sea relativa a la raíz
         let relativeImagePath = imagePath;
         if (relativeImagePath.startsWith('../')) {
             relativeImagePath = './' + relativeImagePath.substring(3);
@@ -130,6 +129,22 @@
 
         saveCart();
         renderCart();
+
+        trackAnalyticsEvent('add_to_cart', {
+            currency: 'USD',
+            items: [{
+                item_id: id,
+                item_name: description,
+                item_category: category,
+                quantity: 1
+            }]
+        });
+        trackAnalyticsEvent('agregar_al_carrito', {
+            id_producto: id,
+            nombre_producto: description,
+            categoria: category,
+            origen: 'pagina_producto_estatica'
+        });
 
         // Animar el botón
         const btn = document.getElementById('btnAddProduct');
@@ -204,7 +219,6 @@
             cart.forEach(item => {
                 totalQty += item.quantity;
                 
-                // Ajustar ruta de la imagen para que sea relativa desde /p/
                 let displayImgPath = item.image_path;
                 if (displayImgPath.startsWith('./')) {
                     displayImgPath = '../' + displayImgPath.substring(2);
@@ -256,6 +270,16 @@
             return;
         }
 
+        trackAnalyticsEvent('generate_lead', {
+            currency: 'USD',
+            value: 0,
+            items: cart.map(i => ({ item_id: i.id, item_name: i.description, item_category: i.category, quantity: i.quantity }))
+        });
+        trackAnalyticsEvent('enviar_pedido_whatsapp', {
+            origen: 'cart_drawer_static',
+            total_items: cart.reduce((acc, i) => acc + i.quantity, 0)
+        });
+
         let msg = `¡Hola TODO PARTES HORIZONTE! Vengo desde su catálogo web y me gustaría cotizar la disponibilidad y precio de los siguientes repuestos:\n\n`;
         cart.forEach((item, index) => {
             msg += `*${index + 1}.*  ${item.description}\n`;
@@ -269,10 +293,32 @@
     }
 
     function setupEventListeners() {
+        const prodHeading = document.querySelector('.product-title, h1');
+        const prodCat = document.querySelector('.product-category');
+        if (prodHeading) {
+            trackAnalyticsEvent('view_item', {
+                item_name: prodHeading.textContent.trim(),
+                item_category: prodCat ? prodCat.textContent.trim() : ''
+            });
+        }
+
+        const directWaBtn = document.querySelector('a[href*="wa.me"]');
+        if (directWaBtn) {
+            directWaBtn.addEventListener('click', () => {
+                trackAnalyticsEvent('consultar_producto_whatsapp', {
+                    origen: 'pagina_producto_estatica',
+                    nombre_producto: prodHeading ? prodHeading.textContent.trim() : ''
+                });
+            });
+        }
+
         const fab = document.getElementById('fabWhatsapp');
         if (fab) {
             fab.addEventListener('click', (e) => {
                 e.preventDefault();
+                trackAnalyticsEvent('begin_checkout', {
+                    origen: 'fab_button_static'
+                });
                 toggleCart();
             });
         }

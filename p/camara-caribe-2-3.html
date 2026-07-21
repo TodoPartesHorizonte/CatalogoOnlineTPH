@@ -195,20 +195,68 @@
       ]
     }
     </script>
-    <!-- Google Analytics Diferido para TBT -->
+    <!-- Google Analytics & Meta Pixel Tracker Diferido y Reactivo -->
     <script>
-      window.addEventListener('load', function() {
-        setTimeout(function() {
+      window.GA_ID = "G-QDYFPKJNJE";
+      window.META_PIXEL_ID = "";
+      var analyticsInitialized = false;
+
+      function forceInitAnalytics() {
+        if (analyticsInitialized) return;
+        analyticsInitialized = true;
+
+        if (window.GA_ID && window.GA_ID.startsWith('G-') && !document.getElementById('ga-script')) {
           var script = document.createElement('script');
+          script.id = 'ga-script';
           script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-QDYFPKJNJE';
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
           document.head.appendChild(script);
-          
+
           window.dataLayer = window.dataLayer || [];
           window.gtag = function() { window.dataLayer.push(arguments); };
           gtag('js', new Date());
-          gtag('config', 'G-QDYFPKJNJE');
-        }, 1500);
+          gtag('config', window.GA_ID);
+        }
+
+        if (window.META_PIXEL_ID && !document.getElementById('meta-pixel-script')) {
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.id='meta-pixel-script';
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+
+          fbq('init', window.META_PIXEL_ID);
+          fbq('track', 'PageView');
+        }
+      }
+
+      function trackEvent(eventName, params = {}) {
+        forceInitAnalytics();
+        if (typeof gtag === 'function') gtag('event', eventName, params);
+        if (typeof fbq === 'function') {
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            fbq('track', 'ViewContent', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
+          } else if (eventName === 'add_to_cart' || eventName === 'agregar_al_carrito') {
+            fbq('track', 'AddToCart', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
+          } else if (eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
+            fbq('track', 'Contact');
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
+            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+          } else {
+            fbq('trackCustom', eventName, params);
+          }
+        }
+      }
+      window.trackEvent = trackEvent;
+      window.forceInitAnalytics = forceInitAnalytics;
+
+      window.addEventListener('load', function() {
+        setTimeout(forceInitAnalytics, 1500);
       });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1662,14 +1710,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./valvula-de-minimo-caribe-2-3.html" class="related-card">
+                <a href="./goma-u-barra-estabilizadora-caribe-g-200.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/valvula-de-minimo-caribe-2-3.webp" alt="Repuesto VÁLVULA DE MINIMO CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/goma-u-barra-estabilizadora-caribe-g-200.webp" alt="Repuesto GOMA U BARRA ESTABILIZADORA CARIBE G-200 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Valvula Minimo</span></span>
-                        <div class="related-title" title="VÁLVULA DE MINIMO CARIBE 2.3">VÁLVULA DE MINIMO CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 8-94312-0250</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Goma U Barra Estabilizadora</span></span>
+                        <div class="related-title" title="GOMA U BARRA ESTABILIZADORA CARIBE G-200">GOMA U BARRA ESTABILIZADORA CARIBE G-200</div>
+                        <div class="related-oem">OEM: 8-94143-3210</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1677,14 +1725,14 @@
                     </div>
                 </a>
 
-                <a href="./pastillas-de-freno-trasera-caribe-91-93.html" class="related-card">
+                <a href="./bomba-de-clutch-caribe-2600.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/pastillas-de-freno-trasera-caribe-91-93.webp" alt="Repuesto PASTILLAS DE FRENO TRASERA CARIBE 91-93 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/bomba-de-clutch-caribe-2600.webp" alt="Repuesto BOMBA DE CLUTCH CARIBE 2600 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Pastillas de Freno</span></span>
-                        <div class="related-title" title="PASTILLAS DE FRENO TRASERA CARIBE 91-93">PASTILLAS DE FRENO TRASERA CARIBE 91-93</div>
-                        <div class="related-oem">OEM: 7328</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bombin - Bomba Clutch</span></span>
+                        <div class="related-title" title="BOMBA DE CLUTCH CARIBE 2600">BOMBA DE CLUTCH CARIBE 2600</div>
+                        <div class="related-oem">OEM: 8-94463-9321</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1692,14 +1740,14 @@
                     </div>
                 </a>
 
-                <a href="./pastillas-de-freno-delantera-caribe-2-6.html" class="related-card">
+                <a href="./kit-de-tiempo-caribe-2000.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/pastillas-de-freno-delantera-caribe-2-6.webp" alt="Repuesto PASTILLAS DE FRENO DELANTERA CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-de-tiempo-caribe-2000.webp" alt="Repuesto KIT DE TIEMPO CARIBE 2000 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Pastillas de Freno</span></span>
-                        <div class="related-title" title="PASTILLAS DE FRENO DELANTERA CARIBE 2.6">PASTILLAS DE FRENO DELANTERA CARIBE 2.6</div>
-                        <div class="related-oem">OEM: 7253</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit de Tiempo</span></span>
+                        <div class="related-title" title="KIT DE TIEMPO CARIBE 2000">KIT DE TIEMPO CARIBE 2000</div>
+                        <div class="related-oem">OEM: I403K</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1707,14 +1755,14 @@
                     </div>
                 </a>
 
-                <a href="./lainas-pinon-y-corona-caribe-g200-caribe-2-3.html" class="related-card">
+                <a href="./bomba-de-gasolina-caribe-2-6.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/lainas-pinon-y-corona-caribe-g200-caribe-2-3.webp" alt="Repuesto LAINAS PIÑON Y CORONA CARIBE G200 / CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/bomba-de-gasolina-caribe-2-6.webp" alt="Repuesto BOMBA DE GASOLINA CARIBE 2.6 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Laina Ajuste</span></span>
-                        <div class="related-title" title="LAINAS PIÑON Y CORONA CARIBE G200 / CARIBE 2.3">LAINAS PIÑON Y CORONA CARIBE G200 / CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 9-41519-1100</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de Gasolina</span></span>
+                        <div class="related-title" title="BOMBA DE GASOLINA CARIBE 2.6">BOMBA DE GASOLINA CARIBE 2.6</div>
+                        <div class="related-oem">OEM: 8-94438-5330</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>

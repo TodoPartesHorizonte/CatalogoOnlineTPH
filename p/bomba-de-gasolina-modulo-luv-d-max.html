@@ -123,13 +123,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Luis Rejon"
+          "name": "Olimpo González"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Todo para mi dmax a la mano buena atención y rápida respuesta"
+        "reviewBody": "Gracias por sus servicios. Los recomiendo. Compré los repuestos de mi camioneta luv dmax y todo de calidad."
       }
     }
     </script>
@@ -191,20 +191,68 @@
       ]
     }
     </script>
-    <!-- Google Analytics Diferido para TBT -->
+    <!-- Google Analytics & Meta Pixel Tracker Diferido y Reactivo -->
     <script>
-      window.addEventListener('load', function() {
-        setTimeout(function() {
+      window.GA_ID = "G-QDYFPKJNJE";
+      window.META_PIXEL_ID = "";
+      var analyticsInitialized = false;
+
+      function forceInitAnalytics() {
+        if (analyticsInitialized) return;
+        analyticsInitialized = true;
+
+        if (window.GA_ID && window.GA_ID.startsWith('G-') && !document.getElementById('ga-script')) {
           var script = document.createElement('script');
+          script.id = 'ga-script';
           script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-QDYFPKJNJE';
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
           document.head.appendChild(script);
-          
+
           window.dataLayer = window.dataLayer || [];
           window.gtag = function() { window.dataLayer.push(arguments); };
           gtag('js', new Date());
-          gtag('config', 'G-QDYFPKJNJE');
-        }, 1500);
+          gtag('config', window.GA_ID);
+        }
+
+        if (window.META_PIXEL_ID && !document.getElementById('meta-pixel-script')) {
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.id='meta-pixel-script';
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+
+          fbq('init', window.META_PIXEL_ID);
+          fbq('track', 'PageView');
+        }
+      }
+
+      function trackEvent(eventName, params = {}) {
+        forceInitAnalytics();
+        if (typeof gtag === 'function') gtag('event', eventName, params);
+        if (typeof fbq === 'function') {
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            fbq('track', 'ViewContent', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
+          } else if (eventName === 'add_to_cart' || eventName === 'agregar_al_carrito') {
+            fbq('track', 'AddToCart', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
+          } else if (eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
+            fbq('track', 'Contact');
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
+            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+          } else {
+            fbq('trackCustom', eventName, params);
+          }
+        }
+      }
+      window.trackEvent = trackEvent;
+      window.forceInitAnalytics = forceInitAnalytics;
+
+      window.addEventListener('load', function() {
+        setTimeout(forceInitAnalytics, 1500);
       });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1669,36 +1717,6 @@
                     </div>
                 </a>
 
-                <a href="./bomba-de-gasolina-electrica-universal-externa.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/bomba-de-gasolina-electrica-universal-externa.webp" alt="Repuesto BOMBA DE GASOLINA ELECTRICA UNIVERSAL EXTERNA original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de Gasolina</span></span>
-                        <div class="related-title" title="BOMBA DE GASOLINA ELECTRICA UNIVERSAL EXTERNA">BOMBA DE GASOLINA ELECTRICA UNIVERSAL EXTERNA</div>
-                        <div class="related-oem">OEM: E8012</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="./bomba-gasolina-caribe-2000.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/bomba-gasolina-caribe-2000.webp" alt="Repuesto BOMBA GASOLINA CARIBE 2000 original" class="related-img" loading="lazy" width="200" height="170">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de Gasolina</span></span>
-                        <div class="related-title" title="BOMBA GASOLINA CARIBE 2000">BOMBA GASOLINA CARIBE 2000</div>
-                        <div class="related-oem">OEM: 8-94238-6000</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
                 <a href="./pila-luv-2-2.html" class="related-card">
                     <div class="related-img-wrapper">
                         <img src="../assets/pila-luv-2-2.webp" alt="Repuesto PILA LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170">
@@ -1707,6 +1725,36 @@
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de Gasolina</span></span>
                         <div class="related-title" title="PILA LUV 2.2">PILA LUV 2.2</div>
                         <div class="related-oem">OEM: 8-97118-5120</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./pila-trooper-3-2.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/pila-trooper-3-2.webp" alt="Repuesto PILA TROOPER 3.2 original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de Gasolina</span></span>
+                        <div class="related-title" title="PILA TROOPER 3.2">PILA TROOPER 3.2</div>
+                        <div class="related-oem">OEM: 8-97019-1861</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./bomba-de-gasolina-electrica-universal-externa.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/bomba-de-gasolina-electrica-universal-externa.webp" alt="Repuesto BOMBA DE GASOLINA ELECTRICA UNIVERSAL EXTERNA original" class="related-img" loading="lazy" width="200" height="170">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de Gasolina</span></span>
+                        <div class="related-title" title="BOMBA DE GASOLINA ELECTRICA UNIVERSAL EXTERNA">BOMBA DE GASOLINA ELECTRICA UNIVERSAL EXTERNA</div>
+                        <div class="related-oem">OEM: E8012</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
