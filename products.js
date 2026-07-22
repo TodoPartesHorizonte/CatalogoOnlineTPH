@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 712,
+  "total_products": 713,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -19484,6 +19484,25 @@ const PRODUCTS_DATA = {
       "oem": "6203 / 9-00090-6790",
       "slug": "rolinera-ciguenal-caribe-g200",
       "original_filename": "Rolinera Cigueñal/96cba63b-9851-4dcf-8441-b4e79fa4c98a.jpg",
+      "linked_ids": [
+        867
+      ]
+    },
+    {
+      "id": "526b71a8-c011-4484-be01-88b3d48eb05b",
+      "category": "Rolinera Cigueñal",
+      "image_path": "./assets/rolinera-ciguenal-luv-2-3.webp",
+      "description": "ROLINERA CIGUEÑAL LUV 2.3",
+      "keywords": [
+        "6203",
+        "9-00090-6790",
+        "CIGUENAL",
+        "LUV",
+        "ROLINERA"
+      ],
+      "oem": "6203 / 9-00090-6790",
+      "slug": "rolinera-ciguenal-luv-2-3",
+      "original_filename": "Rolinera Cigueñal/526b71a8-c011-4484-be01-88b3d48eb05b.jpg",
       "linked_ids": [
         867
       ]
