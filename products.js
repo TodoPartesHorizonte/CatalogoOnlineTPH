@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 713,
+  "total_products": 720,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -19508,6 +19508,138 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "8b40602d-0c81-4e50-a301-3aa6ccb519fc",
+      "category": "Rolinera Collarin",
+      "image_path": "./assets/rolinera-collarin-caribe-2-6.webp",
+      "description": "ROLINERA COLLARIN CARIBE 2.6",
+      "keywords": [
+        "613012",
+        "8-94379-4990",
+        "CARIBE",
+        "COLLARIN",
+        "RCT422SA1FG",
+        "ROLINERA"
+      ],
+      "oem": "8-94379-4990 / 613012 / RCT422SA1FG",
+      "slug": "rolinera-collarin-caribe-2-6",
+      "original_filename": "Rolinera Collarin/8b40602d-0c81-4e50-a301-3aa6ccb519fc.jpg",
+      "linked_ids": [
+        870
+      ]
+    },
+    {
+      "id": "72eb2d7b-a0bd-4cdb-b3ea-79dc495f83a0",
+      "category": "Rolinera Piñon Ataque",
+      "image_path": "./assets/rolinera-pinon-ataque-grande-caribe-2-3.webp",
+      "description": "ROLINERA PIÑON ATAQUE GRANDE CARIBE 2.3",
+      "keywords": [
+        "32307JR",
+        "8-94435-3420",
+        "9-00093-6210",
+        "ATAQUE",
+        "CARIBE",
+        "GRANDE",
+        "PINON",
+        "ROLINERA",
+        "TR0708-1R"
+      ],
+      "oem": "32307JR / 8-94435-3420 / TR0708-1R / 9-00093-6210",
+      "slug": "rolinera-pinon-ataque-grande-caribe-2-3",
+      "original_filename": "Rolinera Piñon Ataque/72eb2d7b-a0bd-4cdb-b3ea-79dc495f83a0.jpg",
+      "linked_ids": [
+        875
+      ]
+    },
+    {
+      "id": "c8b7fc4f-bb7b-4990-8cdb-0ad6bcfed68f",
+      "category": "Rolinera Piñon Ataque",
+      "image_path": "./assets/rolinera-pinon-ataque-grande-caribe-g200.webp",
+      "description": "ROLINERA PIÑON ATAQUE GRANDE CARIBE G200",
+      "keywords": [
+        "32307JR",
+        "8-94435-3420",
+        "9-00093-6210",
+        "ATAQUE",
+        "CARIBE",
+        "G200",
+        "GRANDE",
+        "PINON",
+        "ROLINERA",
+        "TR0708-1R"
+      ],
+      "oem": "32307JR / 8-94435-3420 / TR0708-1R / 9-00093-6210",
+      "slug": "rolinera-pinon-ataque-grande-caribe-g200",
+      "original_filename": "Rolinera Piñon Ataque/c8b7fc4f-bb7b-4990-8cdb-0ad6bcfed68f.jpg",
+      "linked_ids": [
+        875
+      ]
+    },
+    {
+      "id": "ce39dc62-9065-4e98-ba37-131b9246bae8",
+      "category": "Rolinera Piñon Ataque",
+      "image_path": "./assets/rolinera-pinon-ataque-pequena-caribe-2-3.webp",
+      "description": "ROLINERA PIÑON ATAQUE PEQUEÑA CARIBE 2.3",
+      "keywords": [
+        "30306D",
+        "9-00093-0780",
+        "ATAQUE",
+        "CARIBE",
+        "PEQUENA",
+        "PINON",
+        "ROLINERA",
+        "TR0608A"
+      ],
+      "oem": "30306D / 9-00093-0780 / TR0608A",
+      "slug": "rolinera-pinon-ataque-pequena-caribe-2-3",
+      "original_filename": "Rolinera Piñon Ataque/ce39dc62-9065-4e98-ba37-131b9246bae8.jpg",
+      "linked_ids": [
+        876
+      ]
+    },
+    {
+      "id": "e036716d-50ba-4399-b0d1-355290b8809c",
+      "category": "Rolinera Piñon Ataque",
+      "image_path": "./assets/rolinera-pinon-ataque-pequena-caribe-g200.webp",
+      "description": "ROLINERA PIÑON ATAQUE PEQUEÑA CARIBE G200",
+      "keywords": [
+        "30306D",
+        "9-00093-0780",
+        "ATAQUE",
+        "CARIBE",
+        "G200",
+        "PEQUENA",
+        "PINON",
+        "ROLINERA",
+        "TR0608A"
+      ],
+      "oem": "30306D / 9-00093-0780 / TR0608A",
+      "slug": "rolinera-pinon-ataque-pequena-caribe-g200",
+      "original_filename": "Rolinera Piñon Ataque/e036716d-50ba-4399-b0d1-355290b8809c.jpg",
+      "linked_ids": [
+        876
+      ]
+    },
+    {
+      "id": "29d309a3-9f54-4247-aa62-5275a1c31265",
+      "category": "Rolinera Porta Corona",
+      "image_path": "./assets/rolinera-porta-corona-caribe-2-3.webp",
+      "description": "ROLINERA PORTA CORONA CARIBE 2.3",
+      "keywords": [
+        "9-00093-0740",
+        "CARIBE",
+        "CORONA",
+        "LM-501349",
+        "PORTA",
+        "ROLINERA"
+      ],
+      "oem": "LM-501349 / 10 / 9-00093-0740",
+      "slug": "rolinera-porta-corona-caribe-2-3",
+      "original_filename": "Rolinera Porta Corona/29d309a3-9f54-4247-aa62-5275a1c31265.jpg",
+      "linked_ids": [
+        879
+      ]
+    },
+    {
       "id": "720d11bc-6d03-4acd-a981-3c3aef4def26",
       "category": "Rolinera Porta Corona",
       "image_path": "./assets/rolinera-porta-corona-caribe-2-6.webp",
@@ -19525,6 +19657,27 @@ const PRODUCTS_DATA = {
       "original_filename": "Rolinera Porta Corona/720d11bc-6d03-4acd-a981-3c3aef4def26.jpg",
       "linked_ids": [
         880
+      ]
+    },
+    {
+      "id": "c0ab63b1-ca01-41a0-8262-a528cb0fa6f8",
+      "category": "Rolinera Porta Corona",
+      "image_path": "./assets/rolinera-porta-corona-caribe-g200.webp",
+      "description": "ROLINERA PORTA CORONA CARIBE G200",
+      "keywords": [
+        "9-00093-0740",
+        "CARIBE",
+        "CORONA",
+        "G200",
+        "LM-501349",
+        "PORTA",
+        "ROLINERA"
+      ],
+      "oem": "LM-501349 / 10 / 9-00093-0740",
+      "slug": "rolinera-porta-corona-caribe-g200",
+      "original_filename": "Rolinera Porta Corona/c0ab63b1-ca01-41a0-8262-a528cb0fa6f8.jpg",
+      "linked_ids": [
+        879
       ]
     },
     {
