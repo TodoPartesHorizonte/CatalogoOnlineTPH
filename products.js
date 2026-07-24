@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 720,
+  "total_products": 727,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -19431,6 +19431,84 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "75e3c4f9-3320-4961-bc8d-68a766ff3d4d",
+      "category": "Resorte de Freno",
+      "image_path": "./assets/resorte-freno-caribe-2-3.webp",
+      "description": "RESORTE FRENO CARIBE 2.3",
+      "keywords": [
+        "CARIBE",
+        "FRENO",
+        "KR-15440",
+        "RESORTE"
+      ],
+      "oem": "KR-15440",
+      "slug": "resorte-freno-caribe-2-3",
+      "original_filename": "Resorte de Freno/75e3c4f9-3320-4961-bc8d-68a766ff3d4d.jpg",
+      "linked_ids": [
+        865
+      ]
+    },
+    {
+      "id": "24dddeeb-1625-4d25-9616-c1e27ab0827a",
+      "category": "Resorte de Freno",
+      "image_path": "./assets/resorte-freno-caribe-g200.webp",
+      "description": "RESORTE FRENO CARIBE G200",
+      "keywords": [
+        "CARIBE",
+        "FRENO",
+        "G200",
+        "KR-15441",
+        "RESORTE"
+      ],
+      "oem": "KR-15441",
+      "slug": "resorte-freno-caribe-g200",
+      "original_filename": "Resorte de Freno/24dddeeb-1625-4d25-9616-c1e27ab0827a.jpg",
+      "linked_ids": [
+        864
+      ]
+    },
+    {
+      "id": "52042eee-5fcf-4fd8-890b-93bf9d8d8b38",
+      "category": "Resorte de Freno",
+      "image_path": "./assets/resorte-freno-luv-dmax-3-5.webp",
+      "description": "RESORTE FRENO LUV DMAX 3.5",
+      "keywords": [
+        "DMAX",
+        "FRENO",
+        "KR-15512",
+        "LUV",
+        "RESORTE"
+      ],
+      "oem": "KR-15512",
+      "slug": "resorte-freno-luv-dmax-3-5",
+      "original_filename": "Resorte de Freno/52042eee-5fcf-4fd8-890b-93bf9d8d8b38.jpg",
+      "linked_ids": [
+        866
+      ]
+    },
+    {
+      "id": "76cf65e0-5f59-4865-b5fa-4f541c418ff1",
+      "category": "Rolinera Aguja Punta de Eje",
+      "image_path": "./assets/rolinera-punta-eje-aguja-luv-dmax-3-5.webp",
+      "description": "ROLINERA PUNTA EJE AGUJA LUV DMAX 3.5",
+      "keywords": [
+        "8-94407-7080",
+        "AGUJA",
+        "DMAX",
+        "EJE",
+        "HK3016",
+        "LUV",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "HK3016 / 8-94407-7080",
+      "slug": "rolinera-punta-eje-aguja-luv-dmax-3-5",
+      "original_filename": "Rolinera Aguja Punta de Eje/76cf65e0-5f59-4865-b5fa-4f541c418ff1.jpg",
+      "linked_ids": [
+        881
+      ]
+    },
+    {
       "id": "c2ef78d2-56fe-4a0b-b042-b64b7b1a25ec",
       "category": "Rolinera Cigueñal",
       "image_path": "./assets/rolinera-ciguenal-caribe-2-3.webp",
@@ -19508,6 +19586,27 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "abd454e2-cecc-419b-881c-cabbcd57a101",
+      "category": "Rolinera Collarin",
+      "image_path": "./assets/rolinera-collarin-caribe-2-3.webp",
+      "description": "ROLINERA COLLARIN CARIBE 2.3",
+      "keywords": [
+        "24TK308B2",
+        "5-31321-0033",
+        "9-00095-0401",
+        "CARIBE",
+        "COLLARIN",
+        "RCT38SL1",
+        "ROLINERA"
+      ],
+      "oem": "9-00095-0401 / 24TK308B2 / RCT38SL1 / 5-31321-0033",
+      "slug": "rolinera-collarin-caribe-2-3",
+      "original_filename": "Rolinera Collarin/abd454e2-cecc-419b-881c-cabbcd57a101.jpg",
+      "linked_ids": [
+        868
+      ]
+    },
+    {
       "id": "8b40602d-0c81-4e50-a301-3aa6ccb519fc",
       "category": "Rolinera Collarin",
       "image_path": "./assets/rolinera-collarin-caribe-2-6.webp",
@@ -19525,6 +19624,47 @@ const PRODUCTS_DATA = {
       "original_filename": "Rolinera Collarin/8b40602d-0c81-4e50-a301-3aa6ccb519fc.jpg",
       "linked_ids": [
         870
+      ]
+    },
+    {
+      "id": "55bf3f72-ac90-43da-ad22-478548f8a345",
+      "category": "Rolinera Collarin",
+      "image_path": "./assets/rolinera-collarin-caribe-g200.webp",
+      "description": "ROLINERA COLLARIN CARIBE G200",
+      "keywords": [
+        "24TK308B2",
+        "5-31321-0033",
+        "9-00095-0401",
+        "CARIBE",
+        "COLLARIN",
+        "G200",
+        "RCT38SL1",
+        "ROLINERA"
+      ],
+      "oem": "9-00095-0401 / 24TK308B2 / RCT38SL1 / 5-31321-0033",
+      "slug": "rolinera-collarin-caribe-g200",
+      "original_filename": "Rolinera Collarin/55bf3f72-ac90-43da-ad22-478548f8a345.jpg",
+      "linked_ids": [
+        868
+      ]
+    },
+    {
+      "id": "1c6520d2-2be4-4831-a9b8-d3ea0c2de6f1",
+      "category": "Rolinera Collarin",
+      "image_path": "./assets/rolinera-collarin-luv-2-3.webp",
+      "description": "ROLINERA COLLARIN LUV 2.3",
+      "keywords": [
+        "48TKA3214",
+        "8-94101-2430",
+        "COLLARIN",
+        "LUV",
+        "ROLINERA"
+      ],
+      "oem": "8-94101-2430 / 48TKA3214",
+      "slug": "rolinera-collarin-luv-2-3",
+      "original_filename": "Rolinera Collarin/1c6520d2-2be4-4831-a9b8-d3ea0c2de6f1.jpg",
+      "linked_ids": [
+        873
       ]
     },
     {
