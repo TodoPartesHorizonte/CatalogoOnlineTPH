@@ -6441,6 +6441,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/radiador-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/radiador-luv-dmax-3-5.webp</image:loc>
+      <image:title>RADIADOR LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/regulador-presion-gasolina-luv-2-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/regulador-presion-gasolina-luv-2-2.webp</image:loc>
@@ -6465,6 +6475,26 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/regulador-presion-gasolina.webp</image:loc>
       <image:title>REGULADOR PRESION GASOLINA LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rejilla-central-aire-acondicionado-luv-dmax-05-09</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rejilla-central-aire-acondicionado-luv-dmax-05-09.webp</image:loc>
+      <image:title>REJILLA CENTRAL AIRE ACONDICIONADO LUV DMAX 05-09</image:title>
+    </image:image>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rejilla-lateral-aire-acondicionado-luv-dmax-05-09</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rejilla-lateral-aire-acondicionado-luv-dmax-05-09.webp</image:loc>
+      <image:title>REJILLA LATERAL AIRE ACONDICIONADO LUV DMAX 05-09</image:title>
     </image:image>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -6595,6 +6625,26 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/rolinera-collarin-luv-2-3.webp</image:loc>
       <image:title>ROLINERA COLLARIN LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-eje-de-mando-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-eje-de-mando-caribe-2-3.webp</image:loc>
+      <image:title>ROLINERA EJE DE MANDO CARIBE 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rolinera-eje-de-mando-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rolinera-eje-de-mando-caribe-g200.webp</image:loc>
+      <image:title>ROLINERA EJE DE MANDO CARIBE G200</image:title>
     </image:image>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -6745,6 +6795,46 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/rolinera-universal-6301.webp</image:loc>
       <image:title>ROLINERA UNIVERSAL 6301</image:title>
+    </image:image>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rotor-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rotor-caribe-2-3.webp</image:loc>
+      <image:title>ROTOR CARIBE 2.3</image:title>
+    </image:image>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rotor-caribe-2-6</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rotor-caribe-2-6.webp</image:loc>
+      <image:title>ROTOR CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rotor-caribe-g-200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rotor-caribe-g-200.webp</image:loc>
+      <image:title>ROTOR CARIBE G-200</image:title>
+    </image:image>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/rotor-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/rotor-luv-2-3.webp</image:loc>
+      <image:title>ROTOR LUV 2.3</image:title>
     </image:image>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>

@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 727,
+  "total_products": 736,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -19293,6 +19293,29 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "aeb28037-d816-480d-aac1-b03c2e0cd137",
+      "category": "Radiador",
+      "image_path": "./assets/radiador-luv-dmax-3-5.webp",
+      "description": "RADIADOR LUV DMAX 3.5",
+      "keywords": [
+        "8-97333-3510",
+        "8-97363-0640",
+        "8-98073-5330",
+        "8-98164-7460",
+        "8-98171-3090",
+        "DMAX",
+        "LUV",
+        "RADIADOR"
+      ],
+      "oem": "8-98073-5330 / 8-98171-3090 / 8-97363-0640 / 8-97333-3510 / 8-98164-7460",
+      "slug": "radiador-luv-dmax-3-5",
+      "original_filename": "Radiador/aeb28037-d816-480d-aac1-b03c2e0cd137.jpg",
+      "linked_ids": [
+        855,
+        856
+      ]
+    },
+    {
       "category": "Regulador Presion Gasolina",
       "description": "REGULADOR PRESION GASOLINA LUV 2.2",
       "id": "WhatsApp Image 2026-07-21 at 11.07.09 AM",
@@ -19399,6 +19422,51 @@ const PRODUCTS_DATA = {
           "brand": "NIKHO",
           "precio_usd": 25
         }
+      ]
+    },
+    {
+      "id": "a7351cc4-0a4a-4b0c-99c6-dd8986b20bbd",
+      "category": "Rejilla Aire Acondicionado",
+      "image_path": "./assets/rejilla-central-aire-acondicionado-luv-dmax-05-09.webp",
+      "description": "REJILLA CENTRAL AIRE ACONDICIONADO LUV DMAX 05-09",
+      "keywords": [
+        "05-09",
+        "5306420-P00",
+        "ACONDICIONADO",
+        "AIRE",
+        "CENTRAL",
+        "DMAX",
+        "LUV",
+        "REJILLA"
+      ],
+      "oem": "5306420-P00",
+      "slug": "rejilla-central-aire-acondicionado-luv-dmax-05-09",
+      "original_filename": "Rejilla Aire Acondicionado/a7351cc4-0a4a-4b0c-99c6-dd8986b20bbd.jpg",
+      "linked_ids": [
+        861
+      ]
+    },
+    {
+      "id": "05733e9a-4544-4ab1-885e-79f3a712df1e",
+      "category": "Rejilla Aire Acondicionado",
+      "image_path": "./assets/rejilla-lateral-aire-acondicionado-luv-dmax-05-09.webp",
+      "description": "REJILLA LATERAL AIRE ACONDICIONADO LUV DMAX 05-09",
+      "keywords": [
+        "05-09",
+        "8-97392-7900",
+        "8-97398-4210",
+        "ACONDICIONADO",
+        "AIRE",
+        "DMAX",
+        "LATERAL",
+        "LUV",
+        "REJILLA"
+      ],
+      "oem": "8-97398-4210 / 8-97392-7900",
+      "slug": "rejilla-lateral-aire-acondicionado-luv-dmax-05-09",
+      "original_filename": "Rejilla Aire Acondicionado/05733e9a-4544-4ab1-885e-79f3a712df1e.jpg",
+      "linked_ids": [
+        862
       ]
     },
     {
@@ -19665,6 +19733,49 @@ const PRODUCTS_DATA = {
       "original_filename": "Rolinera Collarin/1c6520d2-2be4-4831-a9b8-d3ea0c2de6f1.jpg",
       "linked_ids": [
         873
+      ]
+    },
+    {
+      "id": "32adb963-293f-40f1-a04b-66f59aed03d3",
+      "category": "Rolinera Eje de Mando",
+      "image_path": "./assets/rolinera-eje-de-mando-caribe-2-3.webp",
+      "description": "ROLINERA EJE DE MANDO CARIBE 2.3",
+      "keywords": [
+        "23B",
+        "8-00096-1001",
+        "CARIBE",
+        "EJE",
+        "MANDO",
+        "ROLINERA",
+        "VS22"
+      ],
+      "oem": "8-00096-1001 / VS22 / 23B",
+      "slug": "rolinera-eje-de-mando-caribe-2-3",
+      "original_filename": "Rolinera Eje de Mando/32adb963-293f-40f1-a04b-66f59aed03d3.jpg",
+      "linked_ids": [
+        1222
+      ]
+    },
+    {
+      "id": "ff7c77e6-5f83-4f38-9fa3-c316e0805aef",
+      "category": "Rolinera Eje de Mando",
+      "image_path": "./assets/rolinera-eje-de-mando-caribe-g200.webp",
+      "description": "ROLINERA EJE DE MANDO CARIBE G200",
+      "keywords": [
+        "23B",
+        "8-00096-1001",
+        "CARIBE",
+        "EJE",
+        "G200",
+        "MANDO",
+        "ROLINERA",
+        "VS22"
+      ],
+      "oem": "8-00096-1001 / VS22 / 23B",
+      "slug": "rolinera-eje-de-mando-caribe-g200",
+      "original_filename": "Rolinera Eje de Mando/ff7c77e6-5f83-4f38-9fa3-c316e0805aef.jpg",
+      "linked_ids": [
+        1222
       ]
     },
     {
@@ -20025,6 +20136,75 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 5
         }
+      ]
+    },
+    {
+      "id": "1b16ec6f-c4ca-4293-abb0-5e468edf64cf",
+      "category": "Rotor",
+      "image_path": "./assets/rotor-caribe-2-3.webp",
+      "description": "ROTOR CARIBE 2.3",
+      "keywords": [
+        "8-94221-2060",
+        "CARIBE",
+        "ROTOR"
+      ],
+      "oem": "8-94221-2060",
+      "slug": "rotor-caribe-2-3",
+      "original_filename": "Rotor/1b16ec6f-c4ca-4293-abb0-5e468edf64cf.jpg",
+      "linked_ids": [
+        892
+      ]
+    },
+    {
+      "id": "30e374de-f20c-4dbc-a5cc-f1ba7d300f43",
+      "category": "Rotor",
+      "image_path": "./assets/rotor-caribe-2-6.webp",
+      "description": "ROTOR CARIBE 2.6",
+      "keywords": [
+        "8-94221-2060",
+        "CARIBE",
+        "ROTOR"
+      ],
+      "oem": "8-94221-2060",
+      "slug": "rotor-caribe-2-6",
+      "original_filename": "Rotor/30e374de-f20c-4dbc-a5cc-f1ba7d300f43.jpg",
+      "linked_ids": [
+        892
+      ]
+    },
+    {
+      "id": "94ce36eb-25c8-4381-bfa1-cc792bdd206b",
+      "category": "Rotor",
+      "image_path": "./assets/rotor-caribe-g-200.webp",
+      "description": "ROTOR CARIBE G-200",
+      "keywords": [
+        "8-94221-2060",
+        "CARIBE",
+        "G-200",
+        "ROTOR"
+      ],
+      "oem": "8-94221-2060",
+      "slug": "rotor-caribe-g-200",
+      "original_filename": "Rotor/94ce36eb-25c8-4381-bfa1-cc792bdd206b.jpg",
+      "linked_ids": [
+        892
+      ]
+    },
+    {
+      "id": "121af540-b4ca-40a9-a259-4af3afcb699d",
+      "category": "Rotor",
+      "image_path": "./assets/rotor-luv-2-3.webp",
+      "description": "ROTOR LUV 2.3",
+      "keywords": [
+        "8-94221-2060",
+        "LUV",
+        "ROTOR"
+      ],
+      "oem": "8-94221-2060",
+      "slug": "rotor-luv-2-3",
+      "original_filename": "Rotor/121af540-b4ca-40a9-a259-4af3afcb699d.jpg",
+      "linked_ids": [
+        892
       ]
     },
     {
