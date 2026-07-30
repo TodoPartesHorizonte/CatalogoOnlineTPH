@@ -6841,20 +6841,160 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/sensor-arbol-de-leva-luv-d-max-3-5</loc>
+    <loc>https://todoparteshorizonte.com/p/sensor-abs-delantero-luv-dmax-3-5</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/sensor-arbol-de-leva-luv-d-max-3-5.webp</image:loc>
-      <image:title>SENSOR ARBOL DE LEVA LUV D-MAX 3.5</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-abs-delantero-luv-dmax-3-5.webp</image:loc>
+      <image:title>SENSOR ABS DELANTERO LUV DMAX 3.5</image:title>
     </image:image>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/sensor-tps-luv-d-max-3-5</loc>
+    <loc>https://todoparteshorizonte.com/p/sensor-arbol-de-leva-cmp-luv-dmax-3-5</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/sensor-tps-luv-d-max-3-5.webp</image:loc>
-      <image:title>SENSOR TPS LUV D-MAX 3.5</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-arbol-de-leva-cmp-luv-dmax-3-5.webp</image:loc>
+      <image:title>SENSOR ARBOL DE LEVA (CMP) LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-ciguenal-ckp-luv-2-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-ciguenal-ckp-luv-2-2.webp</image:loc>
+      <image:title>SENSOR CIGUEÑAL (CKP) LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-ciguenal-ckp-luv-dmax-2-4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-ciguenal-ckp-luv-dmax-2-4.webp</image:loc>
+      <image:title>SENSOR CIGUEÑAL (CKP) LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-ciguenal-ckp-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-ciguenal-ckp-luv-dmax-3-5.webp</image:loc>
+      <image:title>SENSOR CIGUEÑAL (CKP) LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-flujo-aire-maf-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-flujo-aire-maf-luv-dmax-3-5.webp</image:loc>
+      <image:title>SENSOR FLUJO AIRE (MAF) LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-presion-absoluta-de-aire-map-luv-dmax-2-4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-presion-absoluta-de-aire-map-luv-dmax-2-4.webp</image:loc>
+      <image:title>SENSOR PRESION ABSOLUTA DE AIRE (MAP) LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-oxigeno-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-oxigeno-luv-dmax-3-5.webp</image:loc>
+      <image:title>SENSOR OXIGENO LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-oxigeno-trooper-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-oxigeno-trooper-3-2.webp</image:loc>
+      <image:title>SENSOR OXIGENO TROOPER 3.2</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-posicion-aceleracion-tps-trooper-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-posicion-aceleracion-tps-trooper-3-2.webp</image:loc>
+      <image:title>SENSOR POSICION ACELERACION (TPS)  TROOPER 3.2</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-posicion-aceleracion-tps-luv-2-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-posicion-aceleracion-tps-luv-2-2.webp</image:loc>
+      <image:title>SENSOR POSICION ACELERACION (TPS) LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-posicion-aceleracion-tps-luv-dmax-2-4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-posicion-aceleracion-tps-luv-dmax-2-4.webp</image:loc>
+      <image:title>SENSOR POSICION ACELERACION (TPS) LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-posicion-aceleracion-tps-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-posicion-aceleracion-tps-luv-dmax-3-5.webp</image:loc>
+      <image:title>SENSOR POSICION ACELERACION (TPS) LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-velocidad-kilometraje-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-velocidad-kilometraje-luv-dmax-3-5.webp</image:loc>
+      <image:title>SENSOR VELOCIDAD / KILOMETRAJE LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/soporte-cabina-bajo-luv-dmax</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cabina-bajo-luv-dmax.webp</image:loc>
+      <image:title>SOPORTE CABINA BAJO LUV DMAX</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-caribe-2-3.webp</image:loc>
+      <image:title>SOPORTE CARDAN / CHUMACERA CARIBE  2.3</image:title>
     </image:image>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -6871,6 +7011,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-caribe-g200.webp</image:loc>
+      <image:title>SOPORTE CARDAN / CHUMACERA CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-2-3</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-2-3.webp</image:loc>
@@ -6881,10 +7031,70 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-d-max-3-5</loc>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-4x2</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-d-max-3-5.webp</image:loc>
-      <image:title>SOPORTE CARDAN / CHUMACERA LUV D-MAX 3.5</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-4x2.webp</image:loc>
+      <image:title>SOPORTE CARDAN / CHUMACERA LUV 4X2</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-4x4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-4x4.webp</image:loc>
+      <image:title>SOPORTE CARDAN / CHUMACERA LUV 4X4</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-dmax-3-0</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-dmax-3-0.webp</image:loc>
+      <image:title>SOPORTE CARDAN / CHUMACERA LUV DMAX 3.0</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-dmax-3-0-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-dmax-3-0-luv-dmax-3-5.webp</image:loc>
+      <image:title>SOPORTE CARDAN / CHUMACERA LUV DMAX 3.0 / LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-dmax-3-5.webp</image:loc>
+      <image:title>SOPORTE CARDAN / CHUMACERA LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-dmax-3-5-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-dmax-3-5-2.webp</image:loc>
+      <image:title>SOPORTE CARDAN / CHUMACERA LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-rodeo</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-rodeo.webp</image:loc>
+      <image:title>SOPORTE CARDAN / CHUMACERA RODEO</image:title>
     </image:image>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
