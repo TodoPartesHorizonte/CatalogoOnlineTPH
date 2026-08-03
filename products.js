@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 757,
+  "total_products": 780,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -11331,6 +11331,26 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "375a7382-264b-47e5-b593-d6fe298d8637",
+      "category": "Faro Delantero",
+      "image_path": "./assets/faro-luv.webp",
+      "description": "FARO LUV",
+      "keywords": [
+        "213-1123L-LD-EN",
+        "213-1123R-LD-EN",
+        "DELANTERO",
+        "FARO",
+        "LUV"
+      ],
+      "oem": "DP_213-1123R-LD-EN / DP_213-1123L-LD-EN",
+      "slug": "faro-luv",
+      "original_filename": "Faro Delantero/375a7382-264b-47e5-b593-d6fe298d8637.jpg",
+      "linked_ids": [
+        1225,
+        1226
+      ]
+    },
+    {
       "category": "Faro Delantero",
       "description": "FARO REDONDO CARIBE 2000",
       "id": "1dae3939-9b37-40c5-913d-64636a09c57c",
@@ -12939,6 +12959,26 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "628c3ba0-a2f8-4916-b7c3-da921249e25f",
+      "category": "Guardapolvo de Guardafango",
+      "image_path": "./assets/guardapolvo-guardafango-luv-2-3.webp",
+      "description": "GUARDAPOLVO GUARDAFANGO LUV 2.3",
+      "keywords": [
+        "GUARDAFANGO",
+        "GUARDAPOLVO",
+        "IZ1250101",
+        "IZ1251101",
+        "LUV"
+      ],
+      "oem": "IZ1251101 / IZ1250101",
+      "slug": "guardapolvo-guardafango-luv-2-3",
+      "original_filename": "Guardapolvo de Guardafango/628c3ba0-a2f8-4916-b7c3-da921249e25f.jpg",
+      "linked_ids": [
+        1223,
+        1224
+      ]
+    },
+    {
       "category": "Guardapolvo Horquilla",
       "description": "GUARDAPOLVO HORQUILLA CARIBE 2.0",
       "id": "f1b63952-eaff-4a20-b095-6f4b703d3c52",
@@ -13653,6 +13693,44 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 20
         }
+      ]
+    },
+    {
+      "id": "64b9717f-b8ed-40b4-bd59-ba3c08b59588",
+      "category": "Hidrovac",
+      "image_path": "./assets/hidrovac-caribe-2-6.webp",
+      "description": "HIDROVAC CARIBE 2.6",
+      "keywords": [
+        "8-94469-2460",
+        "8-97021-9411",
+        "CARIBE",
+        "HIDROVAC",
+        "SF-11001"
+      ],
+      "oem": "8-97021-9411 / 8-94469-2460 / SF-11001",
+      "slug": "hidrovac-caribe-2-6",
+      "original_filename": "Hidrovac/64b9717f-b8ed-40b4-bd59-ba3c08b59588.jpg",
+      "linked_ids": [
+        1141
+      ]
+    },
+    {
+      "id": "984c4e52-e997-4e71-b5f1-309cb7c4ce8b",
+      "category": "Hidrovac",
+      "image_path": "./assets/hidrovac-luv-2-3.webp",
+      "description": "HIDROVAC LUV 2.3",
+      "keywords": [
+        "8-94469-2460",
+        "8-97021-9411",
+        "HIDROVAC",
+        "LUV",
+        "SF-11001"
+      ],
+      "oem": "8-97021-9411 / 8-94469-2460 / SF-11001",
+      "slug": "hidrovac-luv-2-3",
+      "original_filename": "Hidrovac/984c4e52-e997-4e71-b5f1-309cb7c4ce8b.jpg",
+      "linked_ids": [
+        1141
       ]
     },
     {
@@ -20508,6 +20586,146 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "ea87a607-60e3-4b3c-971f-655ad1c4bb3d",
+      "category": "Separador de Cigueñal",
+      "image_path": "./assets/separador-de-ciguenal-axiales-caribe-2-3-luv-2-3.webp",
+      "description": "SEPARADOR DE CIGUEÑAL / AXIALES CARIBE 2.3 / LUV 2.3",
+      "keywords": [
+        "8-94481-9070",
+        "8-94481-9071",
+        "8-94481-9072",
+        "AXIALES",
+        "CARIBE",
+        "CIGUENAL",
+        "LUV",
+        "SEPARADOR"
+      ],
+      "oem": "8-94481-9070 / 8-94481-9071 / 8-94481-9072",
+      "slug": "separador-de-ciguenal-axiales-caribe-2-3-luv-2-3",
+      "original_filename": "Separador de Cigueñal/ea87a607-60e3-4b3c-971f-655ad1c4bb3d.jpg",
+      "linked_ids": [
+        909,
+        910,
+        911
+      ]
+    },
+    {
+      "id": "8f74cabd-fd90-4a10-9d8e-66785a013e51",
+      "category": "Separador de Cigueñal",
+      "image_path": "./assets/separador-de-ciguenal-axiales-caribe-2-6.webp",
+      "description": "SEPARADOR DE CIGUEÑAL / AXIALES CARIBE 2.6",
+      "keywords": [
+        "8-94481-9070",
+        "8-94481-9071",
+        "8-94481-9072",
+        "AXIALES",
+        "CARIBE",
+        "CIGUENAL",
+        "SEPARADOR"
+      ],
+      "oem": "8-94481-9070 / 8-94481-9071 / 8-94481-9072",
+      "slug": "separador-de-ciguenal-axiales-caribe-2-6",
+      "original_filename": "Separador de Cigueñal/8f74cabd-fd90-4a10-9d8e-66785a013e51.jpg",
+      "linked_ids": [
+        909,
+        910,
+        911
+      ]
+    },
+    {
+      "id": "6a7c8c69-e317-42ce-ad39-050532ab29b3",
+      "category": "Separador de Cigueñal",
+      "image_path": "./assets/separador-de-ciguenal-axiales-caribe-g200.webp",
+      "description": "SEPARADOR DE CIGUEÑAL / AXIALES CARIBE G200",
+      "keywords": [
+        "8-94481-9070",
+        "8-94481-9071",
+        "8-94481-9072",
+        "AXIALES",
+        "CARIBE",
+        "CIGUENAL",
+        "G200",
+        "SEPARADOR"
+      ],
+      "oem": "8-94481-9070 / 8-94481-9071 / 8-94481-9072",
+      "slug": "separador-de-ciguenal-axiales-caribe-g200",
+      "original_filename": "Separador de Cigueñal/6a7c8c69-e317-42ce-ad39-050532ab29b3.jpg",
+      "linked_ids": [
+        909,
+        910,
+        911
+      ]
+    },
+    {
+      "id": "9ffac906-39e9-48bc-9b9b-2eec350f6e55",
+      "category": "Separador de Cigueñal",
+      "image_path": "./assets/separador-de-ciguenal-axiales-luv-dmax-3-5.webp",
+      "description": "SEPARADOR DE CIGUEÑAL / AXIALES LUV DMAX 3.5",
+      "keywords": [
+        "8-97014-2080",
+        "8-97014-2080-025",
+        "8-97014-2080-050",
+        "8-97014-2080-075",
+        "8-97014-2080-100",
+        "AXIALES",
+        "CIGUENAL",
+        "DMAX",
+        "LUV",
+        "SEPARADOR"
+      ],
+      "oem": "8-97014-2080 / 8-97014-2080-025 / 8-97014-2080-050 / 8-97014-2080-075 / 8-97014-2080-100",
+      "slug": "separador-de-ciguenal-axiales-luv-dmax-3-5",
+      "original_filename": "Separador de Cigueñal/9ffac906-39e9-48bc-9b9b-2eec350f6e55.jpg",
+      "linked_ids": [
+        912,
+        1189,
+        1190,
+        1191,
+        1192
+      ]
+    },
+    {
+      "id": "b246e21b-79bf-4f7c-bec8-a60268fc2248",
+      "category": "Sincronico de Caja",
+      "image_path": "./assets/sincronico-caja-1era-y-2da-caribe-g200.webp",
+      "description": "SINCRONICO CAJA 1ERA Y 2DA CARIBE G200",
+      "keywords": [
+        "1ERA",
+        "2DA",
+        "8-94238-6470",
+        "CAJA",
+        "CARIBE",
+        "G200",
+        "SINCRONICO"
+      ],
+      "oem": "8-94238-6470",
+      "slug": "sincronico-caja-1era-y-2da-caribe-g200",
+      "original_filename": "Sincronico de Caja/b246e21b-79bf-4f7c-bec8-a60268fc2248.jpg",
+      "linked_ids": [
+        1209
+      ]
+    },
+    {
+      "id": "73294d53-be48-4577-8821-b3670f0ea08f",
+      "category": "Soporte Cabina",
+      "image_path": "./assets/soporte-cabina-alto-luv-dmax-3-5.webp",
+      "description": "SOPORTE CABINA ALTO LUV DMAX 3.5",
+      "keywords": [
+        "197031",
+        "ALTO",
+        "CABINA",
+        "DMAX",
+        "LUV",
+        "SOPORTE"
+      ],
+      "oem": "197031",
+      "slug": "soporte-cabina-alto-luv-dmax-3-5",
+      "original_filename": "Soporte Cabina/73294d53-be48-4577-8821-b3670f0ea08f.jpg",
+      "linked_ids": [
+        913
+      ]
+    },
+    {
       "id": "e4671dc5-59ee-4cf6-8945-fb3ca13d0ac3",
       "category": "Soporte Cabina",
       "image_path": "./assets/soporte-cabina-bajo-luv-dmax.webp",
@@ -20648,6 +20866,50 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "f97203c6-3843-47d1-98ed-9dce62fa9d6d",
+      "category": "Soporte Cardan",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-2-4.webp",
+      "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 2.4",
+      "keywords": [
+        "8-94328-8000",
+        "8-97942-8760",
+        "8-97946-2520",
+        "CARDAN",
+        "CHUMACERA",
+        "DMAX",
+        "LUV",
+        "SOPORTE"
+      ],
+      "oem": "8-97942-8760 / 8-97946-2520 / 8-94328-8000",
+      "slug": "soporte-cardan-chumacera-luv-dmax-2-4",
+      "original_filename": "Soporte Cardan/f97203c6-3843-47d1-98ed-9dce62fa9d6d.jpg",
+      "linked_ids": [
+        918
+      ]
+    },
+    {
+      "id": "858086cb-4ece-4f37-9320-234a6f31b7c5",
+      "category": "Soporte Cardan",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-2-5.webp",
+      "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 2.5",
+      "keywords": [
+        "8-94328-8000",
+        "8-97942-8760",
+        "8-97946-2520",
+        "CARDAN",
+        "CHUMACERA",
+        "DMAX",
+        "LUV",
+        "SOPORTE"
+      ],
+      "oem": "8-97942-8760 / 8-97946-2520 / 8-94328-8000",
+      "slug": "soporte-cardan-chumacera-luv-dmax-2-5",
+      "original_filename": "Soporte Cardan/858086cb-4ece-4f37-9320-234a6f31b7c5.jpg",
+      "linked_ids": [
+        918
+      ]
+    },
+    {
       "id": "cb8e44f7-923d-4f09-9719-765b78a05b37",
       "category": "Soporte Cardan",
       "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-0.webp",
@@ -20754,6 +21016,137 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "71cb5553-4d11-441c-bb52-23ec502b78ee",
+      "category": "Stop",
+      "image_path": "./assets/stop-caribe.webp",
+      "description": "STOP CARIBE",
+      "keywords": [
+        "8-94218-8442",
+        "8-94218-8444",
+        "8-94218-8445",
+        "8-94218-8452",
+        "8-94218-8455",
+        "CARIBE",
+        "STOP"
+      ],
+      "oem": "8-94218-8442 / 8-94218-8445 / 8-94218-8444 / 8-94218-8452 / 8-94218-8455",
+      "slug": "stop-caribe",
+      "original_filename": "Stop/71cb5553-4d11-441c-bb52-23ec502b78ee.jpg",
+      "linked_ids": [
+        921,
+        1148
+      ]
+    },
+    {
+      "id": "8bab9e63-8abb-4694-9916-9e9c688ef004",
+      "category": "Stop",
+      "image_path": "./assets/stop-luv-2-2.webp",
+      "description": "STOP LUV 2.2",
+      "keywords": [
+        "11-3383-A0-6B",
+        "11-3384-A0-6B",
+        "LUV",
+        "STOP"
+      ],
+      "oem": "11-3383-A0-6B / 11-3384-A0-6B",
+      "slug": "stop-luv-2-2",
+      "original_filename": "Stop/8bab9e63-8abb-4694-9916-9e9c688ef004.jpg",
+      "linked_ids": [
+        922,
+        1149
+      ]
+    },
+    {
+      "id": "97f0db85-1779-438f-8a72-eddaecc6209c",
+      "category": "Stop",
+      "image_path": "./assets/stop-luv-2-3.webp",
+      "description": "STOP LUV 2.3",
+      "keywords": [
+        "8-97114-4490",
+        "8-97114-4500",
+        "LUV",
+        "STOP"
+      ],
+      "oem": "8-97114-4490 / 8-97114-4500",
+      "slug": "stop-luv-2-3",
+      "original_filename": "Stop/97f0db85-1779-438f-8a72-eddaecc6209c.jpg",
+      "linked_ids": [
+        1150,
+        923
+      ]
+    },
+    {
+      "id": "1746764d-1508-4451-9793-de08b16107b4",
+      "category": "Stop",
+      "image_path": "./assets/stop-luv-2-3-2.webp",
+      "description": "STOP LUV 2.3",
+      "keywords": [
+        "213-1908L-2",
+        "213-1908R-2",
+        "8-94482-3580",
+        "8-94482-3590",
+        "LUV",
+        "STOP"
+      ],
+      "oem": "8-94482-3580 / 213-1908R-2 / 8-94482-3590 / 213-1908L-2",
+      "slug": "stop-luv-2-3-2",
+      "original_filename": "Stop/1746764d-1508-4451-9793-de08b16107b4.jpg",
+      "linked_ids": [
+        1219,
+        1220
+      ]
+    },
+    {
+      "id": "4172da44-5cc1-4985-aa45-6b413c64cfd6",
+      "category": "Stop",
+      "image_path": "./assets/stop-luv-dmax-05-09.webp",
+      "description": "STOP LUV DMAX 05-09",
+      "keywords": [
+        "05-09",
+        "8-97364-1140",
+        "8-97364-1150",
+        "8-97368-0940",
+        "8-97368-0950",
+        "8-98023-3590",
+        "8-98023-3600",
+        "DMAX",
+        "LUV",
+        "STOP"
+      ],
+      "oem": "8-97364-1140 / 8-97368-0940 / 8-98023-3590 / 8-97364-1150 / 8-97368-0950 / 8-98023-3600",
+      "slug": "stop-luv-dmax-05-09",
+      "original_filename": "Stop/4172da44-5cc1-4985-aa45-6b413c64cfd6.jpg",
+      "linked_ids": [
+        924,
+        925
+      ]
+    },
+    {
+      "id": "70ff1056-8bec-41e7-9f59-f0db07159a54",
+      "category": "Stop",
+      "image_path": "./assets/stop-luv-dmax-10-15.webp",
+      "description": "STOP LUV DMAX 10-15",
+      "keywords": [
+        "10-15",
+        "8-97374-6652",
+        "8-97374-6662",
+        "8-97375-6062",
+        "8-97375-6072",
+        "8-98098-5860",
+        "8-98098-5870",
+        "DMAX",
+        "LUV",
+        "STOP"
+      ],
+      "oem": "8-97375-6062 / 8-97374-6652 / 8-98098-5860 / 8-97375-6072 / 8-97374-6662 / 8-98098-5870",
+      "slug": "stop-luv-dmax-10-15",
+      "original_filename": "Stop/70ff1056-8bec-41e7-9f59-f0db07159a54.jpg",
+      "linked_ids": [
+        926,
+        1152
+      ]
+    },
+    {
       "category": "Switch Aire Acondicionado",
       "description": "SWITCH MANDO CONTROL AIRE ACONDICIONADO LUV D-MAX",
       "id": "63f9b645-6ca7-48dc-b0c1-1b74c6e983d6",
@@ -20780,6 +21173,114 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 45
         }
+      ]
+    },
+    {
+      "id": "f72a88de-deca-42a2-919e-0b657541f0fc",
+      "category": "Switch Encendido",
+      "image_path": "./assets/switch-ignicion-cilindro-encendido-caribe.webp",
+      "description": "SWITCH IGNICION / CILINDRO ENCENDIDO CARIBE",
+      "keywords": [
+        "8-94238-2340",
+        "CARIBE",
+        "CILINDRO",
+        "ENCENDIDO",
+        "IGNICION",
+        "SWITCH"
+      ],
+      "oem": "8-94238-2340",
+      "slug": "switch-ignicion-cilindro-encendido-caribe",
+      "original_filename": "Switch Encendido/f72a88de-deca-42a2-919e-0b657541f0fc.jpg",
+      "linked_ids": [
+        930
+      ]
+    },
+    {
+      "id": "ebef5b8e-33f0-4704-b396-c462843a25c3",
+      "category": "Switch Encendido",
+      "image_path": "./assets/switch-ignicion-cilindro-encendido-luv.webp",
+      "description": "SWITCH IGNICION / CILINDRO ENCENDIDO LUV",
+      "keywords": [
+        "8-97110-6570",
+        "CILINDRO",
+        "ENCENDIDO",
+        "IGNICION",
+        "LUV",
+        "SWITCH"
+      ],
+      "oem": "8-97110-6570",
+      "slug": "switch-ignicion-cilindro-encendido-luv",
+      "original_filename": "Switch Encendido/ebef5b8e-33f0-4704-b396-c462843a25c3.jpg",
+      "linked_ids": [
+        931
+      ]
+    },
+    {
+      "id": "099136d5-fb14-4b6d-b06d-ddf8486ce5d6",
+      "category": "Switch Encendido",
+      "image_path": "./assets/switch-ignicion-cilindro-encendido-luv-dmax-3-5.webp",
+      "description": "SWITCH IGNICION / CILINDRO ENCENDIDO LUV DMAX 3.5",
+      "keywords": [
+        "8-97376-4440",
+        "CILINDRO",
+        "DMAX",
+        "ENCENDIDO",
+        "IGNICION",
+        "LUV",
+        "MG02-13022",
+        "SWITCH"
+      ],
+      "oem": "8-97376-4440 / MG02-13022",
+      "slug": "switch-ignicion-cilindro-encendido-luv-dmax-3-5",
+      "original_filename": "Switch Encendido/099136d5-fb14-4b6d-b06d-ddf8486ce5d6.jpg",
+      "linked_ids": [
+        1216
+      ]
+    },
+    {
+      "id": "71257bb2-de0e-43a4-b446-a80adb53f407",
+      "category": "Switch Palanca Luces",
+      "image_path": "./assets/switch-palanca-luz-luv-2-3.webp",
+      "description": "SWITCH PALANCA LUZ LUV 2.3",
+      "keywords": [
+        "8-97111-4951",
+        "LUCES",
+        "LUV",
+        "LUZ",
+        "PALANCA",
+        "SWITCH"
+      ],
+      "oem": "8-97111-4951",
+      "slug": "switch-palanca-luz-luv-2-3",
+      "original_filename": "Switch Palanca Luces/71257bb2-de0e-43a4-b446-a80adb53f407.jpg",
+      "linked_ids": [
+        1045
+      ]
+    },
+    {
+      "id": "40432b96-ce76-427e-b869-295062063019",
+      "category": "Switch Palanca Luces",
+      "image_path": "./assets/switch-palanca-luz-luv-dmax.webp",
+      "description": "SWITCH PALANCA LUZ LUV DMAX",
+      "keywords": [
+        "8-97360-6910",
+        "8-97360-6920",
+        "8-97360-6950",
+        "8-98007-7210",
+        "8-98007-7260",
+        "8-98007-7280",
+        "DMAX",
+        "LUCES",
+        "LUV",
+        "LUZ",
+        "PALANCA",
+        "SWITCH"
+      ],
+      "oem": "8-97360-6920 / 8-97360-6910 / 8-97360-6950 / 8-98007-7210 / 8-98007-7280 / 8-98007-7260",
+      "slug": "switch-palanca-luz-luv-dmax",
+      "original_filename": "Switch Palanca Luces/40432b96-ce76-427e-b869-295062063019.jpg",
+      "linked_ids": [
+        1111
       ]
     },
     {
