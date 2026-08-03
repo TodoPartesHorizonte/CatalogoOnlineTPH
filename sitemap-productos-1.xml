@@ -6881,6 +6881,46 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-interno-rotula-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-interno-rotula-caribe-2-3.webp</image:loc>
+      <image:title>TERMINAL INTERNO / ROTULA CARIBE 2.3</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-interno-rotula-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-interno-rotula-caribe-g200.webp</image:loc>
+      <image:title>TERMINAL INTERNO / ROTULA CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-interno-rotula-luv-dmax-05-09</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-interno-rotula-luv-dmax-05-09.webp</image:loc>
+      <image:title>TERMINAL INTERNO / ROTULA LUV DMAX 05-09</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-interno-rotula-luv-dmax-10-15</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-interno-rotula-luv-dmax-10-15.webp</image:loc>
+      <image:title>TERMINAL INTERNO / ROTULA LUV DMAX 10-15</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/sensor-abs-delantero-luv-dmax-3-5</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/sensor-abs-delantero-luv-dmax-3-5.webp</image:loc>
@@ -7391,30 +7431,110 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/terminal-externo-caribe-g200-2-3</loc>
+    <loc>https://todoparteshorizonte.com/p/terminal-externo-caribe-2-3</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-caribe-g200-2-3.webp</image:loc>
-      <image:title>TERMINAL EXTERNO CARIBE G200/ 2.3</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-caribe-2-3.webp</image:loc>
+      <image:title>TERMINAL EXTERNO CARIBE 2.3</image:title>
     </image:image>
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/terminal-externo-luv-d-max-trooper-rodeo</loc>
+    <loc>https://todoparteshorizonte.com/p/terminal-externo-caribe-2-6</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-luv-d-max-trooper-rodeo.webp</image:loc>
-      <image:title>TERMINAL EXTERNO LUV D-MAX / TROOPER / RODEO</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-caribe-2-6.webp</image:loc>
+      <image:title>TERMINAL EXTERNO CARIBE 2.6</image:title>
     </image:image>
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/terminal-interno-caribe-luv-d-max</loc>
+    <loc>https://todoparteshorizonte.com/p/terminal-externo-caribe-g200</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/terminal-interno-caribe-luv-d-max.webp</image:loc>
-      <image:title>TERMINAL INTERNO CARIBE / LUV D-MAX</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-caribe-g200.webp</image:loc>
+      <image:title>TERMINAL EXTERNO CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-externo-luv</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-luv.webp</image:loc>
+      <image:title>TERMINAL EXTERNO LUV</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-externo-luv-dmax</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-luv-dmax.webp</image:loc>
+      <image:title>TERMINAL EXTERNO LUV DMAX</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-externo-rodeo</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-rodeo.webp</image:loc>
+      <image:title>TERMINAL EXTERNO RODEO</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-externo-trooper</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-externo-trooper.webp</image:loc>
+      <image:title>TERMINAL EXTERNO TROOPER</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-interno-caribe-2-6</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-interno-caribe-2-6.webp</image:loc>
+      <image:title>TERMINAL INTERNO CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-interno-luv</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-interno-luv.webp</image:loc>
+      <image:title>TERMINAL INTERNO LUV</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-interno-rodeo</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-interno-rodeo.webp</image:loc>
+      <image:title>TERMINAL INTERNO RODEO</image:title>
+    </image:image>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/terminal-interno-trooper</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/terminal-interno-trooper.webp</image:loc>
+      <image:title>TERMINAL INTERNO TROOPER</image:title>
     </image:image>
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>

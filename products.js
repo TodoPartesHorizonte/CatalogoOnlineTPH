@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 780,
+  "total_products": 792,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -20286,6 +20286,88 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "6862847b-3852-4a80-b698-348fb937be97",
+      "category": "Rotula",
+      "image_path": "./assets/terminal-interno-rotula-caribe-2-3.webp",
+      "description": "TERMINAL INTERNO / ROTULA CARIBE 2.3",
+      "keywords": [
+        "5-44350-0953",
+        "CARIBE",
+        "INTERNO",
+        "ROTULA",
+        "TERMINAL"
+      ],
+      "oem": "5-44350-0953",
+      "slug": "terminal-interno-rotula-caribe-2-3",
+      "original_filename": "Rotula/6862847b-3852-4a80-b698-348fb937be97.jpg",
+      "linked_ids": [
+        970
+      ]
+    },
+    {
+      "id": "8a4e4df1-b881-44c2-b2ab-fc161f5bf9e7",
+      "category": "Rotula",
+      "image_path": "./assets/terminal-interno-rotula-caribe-g200.webp",
+      "description": "TERMINAL INTERNO / ROTULA CARIBE G200",
+      "keywords": [
+        "5-44350-0953",
+        "CARIBE",
+        "G200",
+        "INTERNO",
+        "ROTULA",
+        "TERMINAL"
+      ],
+      "oem": "5-44350-0953",
+      "slug": "terminal-interno-rotula-caribe-g200",
+      "original_filename": "Rotula/8a4e4df1-b881-44c2-b2ab-fc161f5bf9e7.jpg",
+      "linked_ids": [
+        970
+      ]
+    },
+    {
+      "id": "86e1e540-51e2-4b59-8e7e-c72c6a795f1f",
+      "category": "Rotula",
+      "image_path": "./assets/terminal-interno-rotula-luv-dmax-05-09.webp",
+      "description": "TERMINAL INTERNO / ROTULA LUV DMAX 05-09",
+      "keywords": [
+        "05-09",
+        "8-97304-8510",
+        "DMAX",
+        "INTERNO",
+        "LUV",
+        "ROTULA",
+        "TERMINAL"
+      ],
+      "oem": "8-97304-8510",
+      "slug": "terminal-interno-rotula-luv-dmax-05-09",
+      "original_filename": "Rotula/86e1e540-51e2-4b59-8e7e-c72c6a795f1f.jpg",
+      "linked_ids": [
+        972
+      ]
+    },
+    {
+      "id": "f08ad74c-b0e4-498b-8870-3d6fee36145e",
+      "category": "Rotula",
+      "image_path": "./assets/terminal-interno-rotula-luv-dmax-10-15.webp",
+      "description": "TERMINAL INTERNO / ROTULA LUV DMAX 10-15",
+      "keywords": [
+        "10-15",
+        "718CV05B000",
+        "8-98056-5500",
+        "DMAX",
+        "INTERNO",
+        "LUV",
+        "ROTULA",
+        "TERMINAL"
+      ],
+      "oem": "8-98056-5500 / 718CV05B000",
+      "slug": "terminal-interno-rotula-luv-dmax-10-15",
+      "original_filename": "Rotula/f08ad74c-b0e4-498b-8870-3d6fee36145e.jpg",
+      "linked_ids": [
+        974
+      ]
+    },
+    {
       "id": "93a1d706-566a-4bf7-8fcf-655f7754f096",
       "category": "Sensor ABS",
       "image_path": "./assets/sensor-abs-delantero-luv-dmax-3-5.webp",
@@ -21415,41 +21497,28 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "category": "Terminal - Rotula",
-      "description": "TERMINAL EXTERNO CARIBE G200/ 2.3",
-      "id": "d121fa1c-fa0e-4f4f-a48e-88d51ff40618",
-      "image_path": "./assets/terminal-externo-caribe-g200-2-3.webp",
+      "id": "97e9c6b0-9355-4a9f-8bb4-47b25e1624a9",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-externo-caribe-2-3.webp",
+      "description": "TERMINAL EXTERNO CARIBE 2.3",
       "keywords": [
         "8-94237-3511",
         "CARIBE",
         "EXTERNO",
-        "G200",
-        "ROTULA",
         "TERMINAL"
       ],
+      "oem": "8-94237-3511",
+      "slug": "terminal-externo-caribe-2-3",
+      "original_filename": "Terminal/97e9c6b0-9355-4a9f-8bb4-47b25e1624a9.jpg",
       "linked_ids": [
         964
-      ],
-      "oem": "8-94237-3511",
-      "slug": "terminal-externo-caribe-g200-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94237-3511",
-          "brand": "TAIWAN",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-94237-3511",
-          "brand": "JAPON",
-          "precio_usd": 20
-        }
       ]
     },
     {
-      "category": "Terminal - Rotula",
-      "description": "TERMINAL EXTERNO LUV D-MAX / TROOPER / RODEO",
-      "id": "dcf3e44f-5d0c-4a6a-bbb5-d8c8456dbb3c",
-      "image_path": "./assets/terminal-externo-luv-d-max-trooper-rodeo.webp",
+      "id": "25a38450-33a2-4483-918e-314755203c84",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-externo-caribe-2-6.webp",
+      "description": "TERMINAL EXTERNO CARIBE 2.6",
       "keywords": [
         "720IZ01A100",
         "8-94459-4800",
@@ -21458,46 +21527,212 @@ const PRODUCTS_DATA = {
         "8-97304-9280",
         "8-98055-7460",
         "8-98056-5510",
-        "D-MAX",
+        "CARIBE",
         "EXTERNO",
-        "LUV",
-        "RODEO",
-        "ROTULA",
-        "TERMINAL",
-        "TROOPER"
-      ],
-      "linked_ids": [
-        966
+        "TERMINAL"
       ],
       "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
-      "slug": "terminal-externo-luv-d-max-trooper-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-97304-9280",
-          "brand": "TAIWAN",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-97304-9280",
-          "brand": "JAPON",
-          "precio_usd": 0
-        }
+      "slug": "terminal-externo-caribe-2-6",
+      "original_filename": "Terminal/25a38450-33a2-4483-918e-314755203c84.jpg",
+      "linked_ids": [
+        966
       ]
     },
     {
-      "category": "Terminal - Rotula",
-      "description": "TERMINAL INTERNO CARIBE / LUV D-MAX",
-      "id": "832d245c-95c4-4226-a065-4968e5db32fb",
-      "image_path": "./assets/terminal-interno-caribe-luv-d-max.webp",
+      "id": "b013549c-9958-426c-b53c-865003e8f3c2",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-externo-caribe-g200.webp",
+      "description": "TERMINAL EXTERNO CARIBE G200",
       "keywords": [
+        "8-94237-3511",
         "CARIBE",
-        "D-MAX",
-        "INTERNO",
-        "LUV",
-        "ROTULA",
+        "EXTERNO",
+        "G200",
         "TERMINAL"
       ],
-      "slug": "terminal-interno-caribe-luv-d-max"
+      "oem": "8-94237-3511",
+      "slug": "terminal-externo-caribe-g200",
+      "original_filename": "Terminal/b013549c-9958-426c-b53c-865003e8f3c2.jpg",
+      "linked_ids": [
+        964
+      ]
+    },
+    {
+      "id": "f97f8cb0-394c-4517-85cc-f55a3fc47457",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-externo-luv.webp",
+      "description": "TERMINAL EXTERNO LUV",
+      "keywords": [
+        "720IZ01A100",
+        "8-94459-4800",
+        "8-97020-9531",
+        "8-97304-8550",
+        "8-97304-9280",
+        "8-98055-7460",
+        "8-98056-5510",
+        "EXTERNO",
+        "LUV",
+        "TERMINAL"
+      ],
+      "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
+      "slug": "terminal-externo-luv",
+      "original_filename": "Terminal/f97f8cb0-394c-4517-85cc-f55a3fc47457.jpg",
+      "linked_ids": [
+        966
+      ]
+    },
+    {
+      "id": "7b4cd375-c1e5-462f-a673-7bf051644f10",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-externo-luv-dmax.webp",
+      "description": "TERMINAL EXTERNO LUV DMAX",
+      "keywords": [
+        "720IZ01A100",
+        "8-94459-4800",
+        "8-97020-9531",
+        "8-97304-8550",
+        "8-97304-9280",
+        "8-98055-7460",
+        "8-98056-5510",
+        "DMAX",
+        "EXTERNO",
+        "LUV",
+        "TERMINAL"
+      ],
+      "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
+      "slug": "terminal-externo-luv-dmax",
+      "original_filename": "Terminal/7b4cd375-c1e5-462f-a673-7bf051644f10.jpg",
+      "linked_ids": [
+        966
+      ]
+    },
+    {
+      "id": "734dc7bf-0479-4a53-a219-0e96191cac45",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-externo-rodeo.webp",
+      "description": "TERMINAL EXTERNO RODEO",
+      "keywords": [
+        "720IZ01A100",
+        "8-94459-4800",
+        "8-97020-9531",
+        "8-97304-8550",
+        "8-97304-9280",
+        "8-98055-7460",
+        "8-98056-5510",
+        "EXTERNO",
+        "RODEO",
+        "TERMINAL"
+      ],
+      "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
+      "slug": "terminal-externo-rodeo",
+      "original_filename": "Terminal/734dc7bf-0479-4a53-a219-0e96191cac45.jpg",
+      "linked_ids": [
+        966
+      ]
+    },
+    {
+      "id": "994504e8-67fe-4eb3-acde-6323ce45b565",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-externo-trooper.webp",
+      "description": "TERMINAL EXTERNO TROOPER",
+      "keywords": [
+        "720IZ01A100",
+        "8-94459-4800",
+        "8-97020-9531",
+        "8-97304-8550",
+        "8-97304-9280",
+        "8-98055-7460",
+        "8-98056-5510",
+        "EXTERNO",
+        "TERMINAL",
+        "TROOPER"
+      ],
+      "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
+      "slug": "terminal-externo-trooper",
+      "original_filename": "Terminal/994504e8-67fe-4eb3-acde-6323ce45b565.jpg",
+      "linked_ids": [
+        966
+      ]
+    },
+    {
+      "id": "2162742a-0f74-4fb3-af4e-7ff35bdbddb2",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-interno-caribe-2-6.webp",
+      "description": "TERMINAL INTERNO CARIBE 2.6",
+      "keywords": [
+        "720IZ01A200",
+        "8-97020-9542",
+        "CARIBE",
+        "ES-2954",
+        "INTERNO",
+        "TERMINAL"
+      ],
+      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
+      "slug": "terminal-interno-caribe-2-6",
+      "original_filename": "Terminal/2162742a-0f74-4fb3-af4e-7ff35bdbddb2.jpg",
+      "linked_ids": [
+        968
+      ]
+    },
+    {
+      "id": "7ccd7c76-6647-4be1-a2ed-a8dc0a96c3b2",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-interno-luv.webp",
+      "description": "TERMINAL INTERNO LUV",
+      "keywords": [
+        "720IZ01A200",
+        "8-97020-9542",
+        "ES-2954",
+        "INTERNO",
+        "LUV",
+        "TERMINAL"
+      ],
+      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
+      "slug": "terminal-interno-luv",
+      "original_filename": "Terminal/7ccd7c76-6647-4be1-a2ed-a8dc0a96c3b2.jpg",
+      "linked_ids": [
+        968
+      ]
+    },
+    {
+      "id": "69eb1c6d-88f2-4c72-b26f-8e8dd8c9f1a2",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-interno-rodeo.webp",
+      "description": "TERMINAL INTERNO RODEO",
+      "keywords": [
+        "720IZ01A200",
+        "8-97020-9542",
+        "ES-2954",
+        "INTERNO",
+        "RODEO",
+        "TERMINAL"
+      ],
+      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
+      "slug": "terminal-interno-rodeo",
+      "original_filename": "Terminal/69eb1c6d-88f2-4c72-b26f-8e8dd8c9f1a2.jpg",
+      "linked_ids": [
+        968
+      ]
+    },
+    {
+      "id": "3c582fdb-1a6a-4d26-a42b-7598245ddb20",
+      "category": "Terminal",
+      "image_path": "./assets/terminal-interno-trooper.webp",
+      "description": "TERMINAL INTERNO TROOPER",
+      "keywords": [
+        "720IZ01A200",
+        "8-97020-9542",
+        "ES-2954",
+        "INTERNO",
+        "TERMINAL",
+        "TROOPER"
+      ],
+      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
+      "slug": "terminal-interno-trooper",
+      "original_filename": "Terminal/3c582fdb-1a6a-4d26-a42b-7598245ddb20.jpg",
+      "linked_ids": [
+        968
+      ]
     },
     {
       "category": "Termostato",
