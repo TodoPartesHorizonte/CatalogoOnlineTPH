@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 792,
+  "total_products": 803,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -21445,6 +21445,26 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "92b0cc29-5b26-4140-ba81-4ffe0101123c",
+      "category": "Tapa Modulo Gasolina",
+      "image_path": "./assets/tapa-modulo-gasolina-luv-dmax.webp",
+      "description": "TAPA MODULO GASOLINA LUV DMAX",
+      "keywords": [
+        "DMAX",
+        "FMP-DMAX-C",
+        "GASOLINA",
+        "LUV",
+        "MODULO",
+        "TAPA"
+      ],
+      "oem": "FMP-DMAX-C",
+      "slug": "tapa-modulo-gasolina-luv-dmax",
+      "original_filename": "Tapa Modulo Gasolina/92b0cc29-5b26-4140-ba81-4ffe0101123c.jpg",
+      "linked_ids": [
+        944
+      ]
+    },
+    {
       "category": "Tapa Radiador",
       "description": "TAPA RADIADOR LUV D-MAX / TROOPER",
       "id": "6a68317a-6532-497e-9490-c4d267878628",
@@ -21494,6 +21514,205 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 10
         }
+      ]
+    },
+    {
+      "id": "ead3f990-e212-4261-823c-b08857f1fcd4",
+      "category": "Taquetes",
+      "image_path": "./assets/taquetes-luv-2-2.webp",
+      "description": "TAQUETES LUV 2.2",
+      "keywords": [
+        "5233315",
+        "8-05233-3150",
+        "LUV",
+        "TAQUETES"
+      ],
+      "oem": "8-05233-3150 / 5233315",
+      "slug": "taquetes-luv-2-2",
+      "original_filename": "Taquetes/ead3f990-e212-4261-823c-b08857f1fcd4.jpg",
+      "linked_ids": [
+        949
+      ]
+    },
+    {
+      "id": "d79420e0-42c7-4137-b0e3-ad9cb6635a66",
+      "category": "Taquetes",
+      "image_path": "./assets/taquetes-luv-dmax-2-4.webp",
+      "description": "TAQUETES LUV DMAX 2.4",
+      "keywords": [
+        "5233315",
+        "8-05233-3150",
+        "DMAX",
+        "LUV",
+        "TAQUETES"
+      ],
+      "oem": "8-05233-3150 / 5233315",
+      "slug": "taquetes-luv-dmax-2-4",
+      "original_filename": "Taquetes/d79420e0-42c7-4137-b0e3-ad9cb6635a66.jpg",
+      "linked_ids": [
+        949
+      ]
+    },
+    {
+      "id": "1481af77-364b-48c0-9e2d-c1c9dc1e7a65",
+      "category": "Taquetes",
+      "image_path": "./assets/taquetes-luv-dmax-3-5.webp",
+      "description": "TAQUETES LUV DMAX 3.5",
+      "keywords": [
+        "8-97148-2961",
+        "DMAX",
+        "LUV",
+        "TAQUETES"
+      ],
+      "oem": "8-97148-2961",
+      "slug": "taquetes-luv-dmax-3-5",
+      "original_filename": "Taquetes/1481af77-364b-48c0-9e2d-c1c9dc1e7a65.jpg",
+      "linked_ids": [
+        950
+      ]
+    },
+    {
+      "id": "f88de778-2fd2-4093-8784-1ef1d84d7682",
+      "category": "Taquetes",
+      "image_path": "./assets/taquetes-trooper-3-2.webp",
+      "description": "TAQUETES TROOPER 3.2",
+      "keywords": [
+        "24610-22010",
+        "8-97010-7270",
+        "TAQUETES",
+        "TROOPER"
+      ],
+      "oem": "8-97010-7270 / 24610-22010",
+      "slug": "taquetes-trooper-3-2",
+      "original_filename": "Taquetes/f88de778-2fd2-4093-8784-1ef1d84d7682.jpg",
+      "linked_ids": [
+        951
+      ]
+    },
+    {
+      "id": "831b90aa-a0c8-42e8-a584-955c10781f4d",
+      "category": "Tensor Correa de Tiempo",
+      "image_path": "./assets/tensor-cadena-de-tiempo-caribe-g200.webp",
+      "description": "TENSOR CADENA DE TIEMPO CARIBE G200",
+      "keywords": [
+        "8-94243-3220",
+        "CADENA",
+        "CARIBE",
+        "CORREA",
+        "G200",
+        "TENSOR",
+        "TIEMPO"
+      ],
+      "oem": "8-94243-3220",
+      "slug": "tensor-cadena-de-tiempo-caribe-g200",
+      "original_filename": "Tensor Correa de Tiempo/831b90aa-a0c8-42e8-a584-955c10781f4d.jpg",
+      "linked_ids": [
+        952
+      ]
+    },
+    {
+      "id": "4c8d0852-1376-418f-b863-0c271a806146",
+      "category": "Tensor Correa de Tiempo",
+      "image_path": "./assets/tensor-correa-de-tiempo-hidraulico-luv-dmax-3-5.webp",
+      "description": "TENSOR CORREA DE TIEMPO HIDRAULICO LUV DMAX 3.5",
+      "keywords": [
+        "8-97136-2570",
+        "8-97328-5120",
+        "CORREA",
+        "DMAX",
+        "HIDRAULICO",
+        "LUV",
+        "TENSOR",
+        "TIEMPO"
+      ],
+      "oem": "8-97328-5120 / 8-97136-2570",
+      "slug": "tensor-correa-de-tiempo-hidraulico-luv-dmax-3-5",
+      "original_filename": "Tensor Correa de Tiempo/4c8d0852-1376-418f-b863-0c271a806146.jpg",
+      "linked_ids": [
+        955
+      ]
+    },
+    {
+      "id": "819de047-1bdd-41bd-ba11-198dc4a60bd6",
+      "category": "Tensor Correa de Tiempo",
+      "image_path": "./assets/tensor-correa-de-tiempo-hidraulico-trooper-3-2.webp",
+      "description": "TENSOR CORREA DE TIEMPO HIDRAULICO TROOPER 3.2",
+      "keywords": [
+        "8-94364-8171",
+        "8-97116-0031",
+        "8-97364-8170",
+        "CORREA",
+        "HAT002-18G1",
+        "HIDRAULICO",
+        "TENSOR",
+        "TIEMPO",
+        "TROOPER"
+      ],
+      "oem": "8-94364-8171 / HAT002-18G1 / 8-97364-8170 / 8-97116-0031",
+      "slug": "tensor-correa-de-tiempo-hidraulico-trooper-3-2",
+      "original_filename": "Tensor Correa de Tiempo/819de047-1bdd-41bd-ba11-198dc4a60bd6.jpg",
+      "linked_ids": [
+        953
+      ]
+    },
+    {
+      "id": "5124836e-d647-42f7-b9ec-4ad7c0bfa3e3",
+      "category": "Tensor Correa de Tiempo",
+      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-caribe-2-3.webp",
+      "description": "TENSOR CORREA DE TIEMPO MECANICO CARIBE 2.3",
+      "keywords": [
+        "8-94215-1971",
+        "CARIBE",
+        "CORREA",
+        "MECANICO",
+        "TENSOR",
+        "TIEMPO"
+      ],
+      "oem": "8-94215-1971",
+      "slug": "tensor-correa-de-tiempo-mecanico-caribe-2-3",
+      "original_filename": "Tensor Correa de Tiempo/5124836e-d647-42f7-b9ec-4ad7c0bfa3e3.jpg",
+      "linked_ids": [
+        957
+      ]
+    },
+    {
+      "id": "47bf9c06-069b-414e-ac88-daaa4cb8bb59",
+      "category": "Tensor Correa de Tiempo",
+      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-caribe-2-6.webp",
+      "description": "TENSOR CORREA DE TIEMPO MECANICO CARIBE 2.6",
+      "keywords": [
+        "8-94472-3490",
+        "CARIBE",
+        "CORREA",
+        "MECANICO",
+        "TENSOR",
+        "TIEMPO"
+      ],
+      "oem": "8-94472-3490",
+      "slug": "tensor-correa-de-tiempo-mecanico-caribe-2-6",
+      "original_filename": "Tensor Correa de Tiempo/47bf9c06-069b-414e-ac88-daaa4cb8bb59.jpg",
+      "linked_ids": [
+        959
+      ]
+    },
+    {
+      "id": "9ed2c76d-f6b2-47a2-ba15-d673551372ed",
+      "category": "Tensor Correa de Tiempo",
+      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-luv-2-3.webp",
+      "description": "TENSOR CORREA DE TIEMPO MECANICO LUV 2.3",
+      "keywords": [
+        "8-94215-1971",
+        "CORREA",
+        "LUV",
+        "MECANICO",
+        "TENSOR",
+        "TIEMPO"
+      ],
+      "oem": "8-94215-1971",
+      "slug": "tensor-correa-de-tiempo-mecanico-luv-2-3",
+      "original_filename": "Tensor Correa de Tiempo/9ed2c76d-f6b2-47a2-ba15-d673551372ed.jpg",
+      "linked_ids": [
+        957
       ]
     },
     {
