@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 803,
+  "total_products": 814,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -21418,6 +21418,123 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "f1344439-dcf8-4ebf-ab36-8b3cf1641607",
+      "category": "Tapa Aceite",
+      "image_path": "./assets/tapa-aceite-caribe-2-6.webp",
+      "description": "TAPA ACEITE CARIBE 2.6",
+      "keywords": [
+        "8-94133-2075",
+        "8-97117-7660",
+        "ACEITE",
+        "CARIBE",
+        "TAPA"
+      ],
+      "oem": "8-94133-2075 / 8-97117-7660",
+      "slug": "tapa-aceite-caribe-2-6",
+      "original_filename": "Tapa Aceite/f1344439-dcf8-4ebf-ab36-8b3cf1641607.jpg",
+      "linked_ids": [
+        938
+      ]
+    },
+    {
+      "id": "ad79ef89-b92d-4f47-bd58-955f0b893855",
+      "category": "Tapa Aceite",
+      "image_path": "./assets/tapa-aceite-luv-dmax-3-5.webp",
+      "description": "TAPA ACEITE LUV DMAX 3.5",
+      "keywords": [
+        "8-94133-2075",
+        "8-97117-7660",
+        "ACEITE",
+        "DMAX",
+        "LUV",
+        "TAPA"
+      ],
+      "oem": "8-94133-2075 / 8-97117-7660",
+      "slug": "tapa-aceite-luv-dmax-3-5",
+      "original_filename": "Tapa Aceite/ad79ef89-b92d-4f47-bd58-955f0b893855.jpg",
+      "linked_ids": [
+        938
+      ]
+    },
+    {
+      "id": "bc4dcd02-29b7-4090-8df3-13b1ba90bbdc",
+      "category": "Tapa Aceite",
+      "image_path": "./assets/tapa-aceite-rodeo.webp",
+      "description": "TAPA ACEITE RODEO",
+      "keywords": [
+        "8-94133-2075",
+        "8-97117-7660",
+        "ACEITE",
+        "RODEO",
+        "TAPA"
+      ],
+      "oem": "8-94133-2075 / 8-97117-7660",
+      "slug": "tapa-aceite-rodeo",
+      "original_filename": "Tapa Aceite/bc4dcd02-29b7-4090-8df3-13b1ba90bbdc.jpg",
+      "linked_ids": [
+        938
+      ]
+    },
+    {
+      "id": "b82ef093-49a8-4db0-8c8a-f23933a54a47",
+      "category": "Tapa Aceite",
+      "image_path": "./assets/tapa-aceite-trooper.webp",
+      "description": "TAPA ACEITE TROOPER",
+      "keywords": [
+        "8-94133-2075",
+        "8-97117-7660",
+        "ACEITE",
+        "TAPA",
+        "TROOPER"
+      ],
+      "oem": "8-94133-2075 / 8-97117-7660",
+      "slug": "tapa-aceite-trooper",
+      "original_filename": "Tapa Aceite/b82ef093-49a8-4db0-8c8a-f23933a54a47.jpg",
+      "linked_ids": [
+        938
+      ]
+    },
+    {
+      "id": "c8bbe967-50f9-45b7-8d93-497732ca641b",
+      "category": "Tapa Distribuidor",
+      "image_path": "./assets/tapa-distribuidor-caribe-g200.webp",
+      "description": "TAPA DISTRIBUIDOR CARIBE G200",
+      "keywords": [
+        "8-94206-1390",
+        "CARIBE",
+        "DISTRIBUIDOR",
+        "G200",
+        "TAPA"
+      ],
+      "oem": "8-94206-1390",
+      "slug": "tapa-distribuidor-caribe-g200",
+      "original_filename": "Tapa Distribuidor/c8bbe967-50f9-45b7-8d93-497732ca641b.jpg",
+      "linked_ids": [
+        940
+      ]
+    },
+    {
+      "id": "7956d7d8-64a1-4b7b-98a3-33b2a7464572",
+      "category": "Tapa Envase Agua",
+      "image_path": "./assets/tapa-reservorio-de-agua-luv-dmax.webp",
+      "description": "TAPA RESERVORIO DE AGUA LUV DMAX",
+      "keywords": [
+        "8-97333-3540",
+        "AGUA",
+        "DMAX",
+        "ENVASE",
+        "LUV",
+        "RESERVORIO",
+        "TAPA"
+      ],
+      "oem": "8-97333-3540",
+      "slug": "tapa-reservorio-de-agua-luv-dmax",
+      "original_filename": "Tapa Envase Agua/7956d7d8-64a1-4b7b-98a3-33b2a7464572.jpg",
+      "linked_ids": [
+        1194
+      ]
+    },
+    {
       "category": "Tapa Gasolina",
       "description": "TAPA GASOLINA LUV D-MAX",
       "id": "e6169fe4-6e03-45ef-8da3-c0a95c5053a5",
@@ -21465,30 +21582,59 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "59d479cb-8abd-4409-bc41-f6958ea6008a",
       "category": "Tapa Radiador",
-      "description": "TAPA RADIADOR LUV D-MAX / TROOPER",
-      "id": "6a68317a-6532-497e-9490-c4d267878628",
-      "image_path": "./assets/tapa-radiador-luv-d-max-trooper.webp",
+      "image_path": "./assets/tapa-radiador-caribe.webp",
+      "description": "TAPA RADIADOR CARIBE",
+      "keywords": [
+        "8-94228-7481",
+        "CARIBE",
+        "RADIADOR",
+        "TAPA"
+      ],
+      "oem": "8-94228-7481",
+      "slug": "tapa-radiador-caribe",
+      "original_filename": "Tapa Radiador/59d479cb-8abd-4409-bc41-f6958ea6008a.jpg",
+      "linked_ids": [
+        945
+      ]
+    },
+    {
+      "id": "0fe6a3db-c848-44b8-a30f-452159059b3f",
+      "category": "Tapa Radiador",
+      "image_path": "./assets/tapa-radiador-luv-2-3.webp",
+      "description": "TAPA RADIADOR LUV 2.3",
+      "keywords": [
+        "8-94228-7481",
+        "LUV",
+        "RADIADOR",
+        "TAPA"
+      ],
+      "oem": "8-94228-7481",
+      "slug": "tapa-radiador-luv-2-3",
+      "original_filename": "Tapa Radiador/0fe6a3db-c848-44b8-a30f-452159059b3f.jpg",
+      "linked_ids": [
+        945
+      ]
+    },
+    {
+      "id": "64b44b05-f9ec-48ff-a18e-65c03b6340ab",
+      "category": "Tapa Radiador",
+      "image_path": "./assets/tapa-radiador-luv-dmax.webp",
+      "description": "TAPA RADIADOR LUV DMAX",
       "keywords": [
         "8-52477-5520",
         "8-97942-2681",
-        "D-MAX",
+        "DMAX",
         "LUV",
         "RADIADOR",
-        "TAPA",
-        "TROOPER"
-      ],
-      "linked_ids": [
-        946
+        "TAPA"
       ],
       "oem": "8-97942-2681 / 8-52477-5520",
-      "slug": "tapa-radiador-luv-d-max-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-97942-2681",
-          "brand": "Original",
-          "precio_usd": 10
-        }
+      "slug": "tapa-radiador-luv-dmax",
+      "original_filename": "Tapa Radiador/64b44b05-f9ec-48ff-a18e-65c03b6340ab.jpg",
+      "linked_ids": [
+        946
       ]
     },
     {
@@ -21514,6 +21660,64 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 10
         }
+      ]
+    },
+    {
+      "id": "e2c98286-15b6-4a26-8a5f-732346eb882d",
+      "category": "Tapavalvula",
+      "image_path": "./assets/tapavalvula-luv-2-2.webp",
+      "description": "TAPAVALVULA LUV 2.2",
+      "keywords": [
+        "8-90467-8780",
+        "8-92066-1030",
+        "8-93369-4220",
+        "LUV",
+        "TAPAVALVULA"
+      ],
+      "oem": "8-92066-1030 / 8-93369-4220 / 8-90467-8780",
+      "slug": "tapavalvula-luv-2-2",
+      "original_filename": "Tapavalvula/e2c98286-15b6-4a26-8a5f-732346eb882d.jpg",
+      "linked_ids": [
+        947
+      ]
+    },
+    {
+      "id": "dc72dcea-a578-4e93-acfd-8c3b6aa1c232",
+      "category": "Tapavalvula",
+      "image_path": "./assets/tapavalvula-luv-dmax-2-4.webp",
+      "description": "TAPAVALVULA LUV DMAX 2.4",
+      "keywords": [
+        "8-90467-8780",
+        "8-92066-1030",
+        "8-93369-4220",
+        "DMAX",
+        "LUV",
+        "TAPAVALVULA"
+      ],
+      "oem": "8-92066-1030 / 8-93369-4220 / 8-90467-8780",
+      "slug": "tapavalvula-luv-dmax-2-4",
+      "original_filename": "Tapavalvula/dc72dcea-a578-4e93-acfd-8c3b6aa1c232.jpg",
+      "linked_ids": [
+        947
+      ]
+    },
+    {
+      "id": "e19607db-5527-46cc-8865-065779e2081b",
+      "category": "Tapon Carter",
+      "image_path": "./assets/tapon-carter-luv-dmax.webp",
+      "description": "TAPON CARTER LUV DMAX",
+      "keywords": [
+        "9-09862-1560",
+        "CARTER",
+        "DMAX",
+        "LUV",
+        "TAPON"
+      ],
+      "oem": "9-09862-1560",
+      "slug": "tapon-carter-luv-dmax",
+      "original_filename": "Tapon Carter/e19607db-5527-46cc-8865-065779e2081b.jpg",
+      "linked_ids": [
+        948
       ]
     },
     {
