@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 814,
+  "total_products": 823,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -22183,6 +22183,64 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "cfd3e9f3-47c8-4718-ab98-881f9e3f8eca",
+      "category": "Tope Araña",
+      "image_path": "./assets/topes-arana-caribe.webp",
+      "description": "TOPES ARAÑA CARIBE",
+      "keywords": [
+        "8-94223-1491",
+        "ARANA",
+        "CARIBE",
+        "TOPE",
+        "TOPES"
+      ],
+      "oem": "8-94223-1491",
+      "slug": "topes-arana-caribe",
+      "original_filename": "Tope Araña/cfd3e9f3-47c8-4718-ab98-881f9e3f8eca.jpg",
+      "linked_ids": [
+        982
+      ]
+    },
+    {
+      "id": "5a04cb16-d035-4c0f-ac41-64580556af5f",
+      "category": "Tope Araña",
+      "image_path": "./assets/topes-arana-luv-2-3.webp",
+      "description": "TOPES ARAÑA LUV 2.3",
+      "keywords": [
+        "8-94259-0860",
+        "ARANA",
+        "LUV",
+        "TOPE",
+        "TOPES"
+      ],
+      "oem": "8-94259-0860",
+      "slug": "topes-arana-luv-2-3",
+      "original_filename": "Tope Araña/5a04cb16-d035-4c0f-ac41-64580556af5f.jpg",
+      "linked_ids": [
+        983
+      ]
+    },
+    {
+      "id": "992c69f5-0ca9-4993-bb4e-a0a9f75ddc86",
+      "category": "Tope Chasis",
+      "image_path": "./assets/tope-cabina-luv-2-3.webp",
+      "description": "TOPE CABINA LUV 2.3",
+      "keywords": [
+        "8-94234-8973",
+        "8-94459-4522",
+        "CABINA",
+        "CHASIS",
+        "LUV",
+        "TOPE"
+      ],
+      "oem": "8-94459-4522 / 8-94234-8973",
+      "slug": "tope-cabina-luv-2-3",
+      "original_filename": "Tope Chasis/992c69f5-0ca9-4993-bb4e-a0a9f75ddc86.jpg",
+      "linked_ids": [
+        981
+      ]
+    },
+    {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO CARIBE 2.6",
       "id": "4662265b-262d-4d56-b35e-5385c614d9a8",
@@ -22371,6 +22429,126 @@ const PRODUCTS_DATA = {
         "TROOPER"
       ],
       "slug": "tren-delantero-trooper-3-2-2"
+    },
+    {
+      "id": "69ee254f-6974-4ac7-bdd9-499b69f30951",
+      "category": "Tubo Aire",
+      "image_path": "./assets/tubo-purificador-aire-caribe-2-6.webp",
+      "description": "TUBO PURIFICADOR AIRE CARIBE 2.6",
+      "keywords": [
+        "8-94321-8420",
+        "ACP1775",
+        "AIRE",
+        "CARIBE",
+        "PURIFICADOR",
+        "TUBO"
+      ],
+      "oem": "8-94321-8420 / ACP1775",
+      "slug": "tubo-purificador-aire-caribe-2-6",
+      "original_filename": "Tubo Aire/69ee254f-6974-4ac7-bdd9-499b69f30951.jpg",
+      "linked_ids": [
+        1004
+      ]
+    },
+    {
+      "id": "25a923a5-834d-46dd-8b40-509c16ad1e02",
+      "category": "Tubo Aire",
+      "image_path": "./assets/tubo-purificador-aire-luv-2-3.webp",
+      "description": "TUBO PURIFICADOR AIRE LUV 2.3",
+      "keywords": [
+        "8-94321-8420",
+        "ACP1775",
+        "AIRE",
+        "LUV",
+        "PURIFICADOR",
+        "TUBO"
+      ],
+      "oem": "8-94321-8420 / ACP1775",
+      "slug": "tubo-purificador-aire-luv-2-3",
+      "original_filename": "Tubo Aire/25a923a5-834d-46dd-8b40-509c16ad1e02.jpg",
+      "linked_ids": [
+        1004
+      ]
+    },
+    {
+      "id": "f6884a80-bc76-4e56-aae0-0770f48bbd79",
+      "category": "Tubo Aire",
+      "image_path": "./assets/tubo-purificador-aire-luv-dmax-3-0.webp",
+      "description": "TUBO PURIFICADOR AIRE LUV DMAX 3.0",
+      "keywords": [
+        "8-98123-4830",
+        "ACP1776",
+        "AIRE",
+        "DMAX",
+        "LUV",
+        "PURIFICADOR",
+        "TUBO"
+      ],
+      "oem": "8-98123-4830 / ACP1776",
+      "slug": "tubo-purificador-aire-luv-dmax-3-0",
+      "original_filename": "Tubo Aire/f6884a80-bc76-4e56-aae0-0770f48bbd79.jpg",
+      "linked_ids": [
+        1005
+      ]
+    },
+    {
+      "id": "24b0c715-7c11-4fd6-b854-b2019b59604c",
+      "category": "Tubo de Agua",
+      "image_path": "./assets/tubo-agua-central-luv-dmax-3-5.webp",
+      "description": "TUBO AGUA CENTRAL LUV DMAX 3.5",
+      "keywords": [
+        "2079",
+        "8-92063-6530",
+        "AGUA",
+        "CENTRAL",
+        "DMAX",
+        "LUV",
+        "TUBO"
+      ],
+      "oem": "8-92063-6530 / 2079",
+      "slug": "tubo-agua-central-luv-dmax-3-5",
+      "original_filename": "Tubo de Agua/24b0c715-7c11-4fd6-b854-b2019b59604c.jpg",
+      "linked_ids": [
+        1000
+      ]
+    },
+    {
+      "id": "6f357362-d324-4242-a527-740ccc44f281",
+      "category": "Tubo de Agua",
+      "image_path": "./assets/tubo-agua-luv-dmax-2-5.webp",
+      "description": "TUBO AGUA LUV DMAX 2.5",
+      "keywords": [
+        "8-97381-6330",
+        "AGUA",
+        "DMAX",
+        "LUV",
+        "TUBO"
+      ],
+      "oem": "8-97381-6330",
+      "slug": "tubo-agua-luv-dmax-2-5",
+      "original_filename": "Tubo de Agua/6f357362-d324-4242-a527-740ccc44f281.jpg",
+      "linked_ids": [
+        995
+      ]
+    },
+    {
+      "id": "9cc770be-5d33-4e75-ae99-909bd3aa481b",
+      "category": "Tubo de Agua",
+      "image_path": "./assets/tubo-agua-luv-dmax-3-0.webp",
+      "description": "TUBO AGUA LUV DMAX 3.0",
+      "keywords": [
+        "8-97381-6330",
+        "AGUA",
+        "DMAX",
+        "LUV",
+        "TUBO"
+      ],
+      "oem": "8-97381-6330",
+      "slug": "tubo-agua-luv-dmax-3-0",
+      "original_filename": "Tubo de Agua/9cc770be-5d33-4e75-ae99-909bd3aa481b.jpg",
+      "linked_ids": [
+        995
+      ]
     },
     {
       "category": "Tubo de Agua",
