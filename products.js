@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 823,
+  "total_products": 833,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -21366,6 +21366,44 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "4287f117-1cd9-43cf-84b3-b0bd56a34648",
+      "category": "Tambor de Freno",
+      "image_path": "./assets/tambor-de-freno-luv-2-3.webp",
+      "description": "TAMBOR DE FRENO LUV 2.3",
+      "keywords": [
+        "8-94226-8291",
+        "FRENO",
+        "LUV",
+        "TAMBOR"
+      ],
+      "oem": "8-94226-8291",
+      "slug": "tambor-de-freno-luv-2-3",
+      "original_filename": "Tambor de Freno/4287f117-1cd9-43cf-84b3-b0bd56a34648.jpg",
+      "linked_ids": [
+        933
+      ]
+    },
+    {
+      "id": "c2004d22-097c-4902-9d44-42cd5f8c7a5f",
+      "category": "Tambor de Freno",
+      "image_path": "./assets/tambor-de-freno-luv-dmax-3-5.webp",
+      "description": "TAMBOR DE FRENO LUV DMAX 3.5",
+      "keywords": [
+        "8-97360-5060",
+        "8-98030-3850",
+        "DMAX",
+        "FRENO",
+        "LUV",
+        "TAMBOR"
+      ],
+      "oem": "8-97360-5060 / 8-98030-3850",
+      "slug": "tambor-de-freno-luv-dmax-3-5",
+      "original_filename": "Tambor de Freno/c2004d22-097c-4902-9d44-42cd5f8c7a5f.jpg",
+      "linked_ids": [
+        934
+      ]
+    },
+    {
       "category": "Tanque Radiador",
       "description": "TANQUE RADIADOR ENTRADA LUV D-MAX 3.5",
       "id": "17ec1405-aebc-4734-972a-2c4ef729890a",
@@ -22158,28 +22196,113 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "cf1399b7-7aa8-48b4-ad65-3ceff80af235",
       "category": "Termostato",
-      "description": "TERMOSTATO LUV D-MAX 3.5",
-      "id": "650e561b-b39b-4837-959d-0c227096c65f",
-      "image_path": "./assets/termostato-luv-d-max-3-5.webp",
+      "image_path": "./assets/termostato-luv-2-2.webp",
+      "description": "TERMOSTATO LUV 2.2",
       "keywords": [
-        "8-97362-8940",
-        "D-MAX",
+        "8-92063-6510",
         "LUV",
         "TERMOSTATO"
       ],
+      "oem": "8-92063-6510",
+      "slug": "termostato-luv-2-2",
+      "original_filename": "Termostato/cf1399b7-7aa8-48b4-ad65-3ceff80af235.jpg",
       "linked_ids": [
-        841,
-        979
+        977
+      ]
+    },
+    {
+      "id": "62c55850-2790-49c9-b9c7-5148dc3cc965",
+      "category": "Termostato",
+      "image_path": "./assets/termostato-luv-2-3.webp",
+      "description": "TERMOSTATO LUV 2.3",
+      "keywords": [
+        "8-94207-2171",
+        "8-94336-0680",
+        "8-94336-0690",
+        "LUV",
+        "TERMOSTATO"
+      ],
+      "oem": "8-94207-2171 / 8-94336-0690 / 8-94336-0680",
+      "slug": "termostato-luv-2-3",
+      "original_filename": "Termostato/62c55850-2790-49c9-b9c7-5148dc3cc965.jpg",
+      "linked_ids": [
+        975
+      ]
+    },
+    {
+      "id": "28bf5f3d-0887-4c21-95a1-62a5fb6e9106",
+      "category": "Termostato",
+      "image_path": "./assets/termostato-luv-dmax-2-4.webp",
+      "description": "TERMOSTATO LUV DMAX 2.4",
+      "keywords": [
+        "8-92063-6510",
+        "DMAX",
+        "LUV",
+        "TERMOSTATO"
+      ],
+      "oem": "8-92063-6510",
+      "slug": "termostato-luv-dmax-2-4",
+      "original_filename": "Termostato/28bf5f3d-0887-4c21-95a1-62a5fb6e9106.jpg",
+      "linked_ids": [
+        977
+      ]
+    },
+    {
+      "id": "bc4cb6fd-a44e-4603-bc9d-bf60e701c66b",
+      "category": "Termostato",
+      "image_path": "./assets/termostato-luv-dmax-2-5.webp",
+      "description": "TERMOSTATO LUV DMAX 2.5",
+      "keywords": [
+        "8-97246-9730",
+        "DMAX",
+        "LUV",
+        "TERMOSTATO",
+        "WV64IA-85"
+      ],
+      "oem": "8-97246-9730 / WV64IA-85",
+      "slug": "termostato-luv-dmax-2-5",
+      "original_filename": "Termostato/bc4cb6fd-a44e-4603-bc9d-bf60e701c66b.jpg",
+      "linked_ids": [
+        1212
+      ]
+    },
+    {
+      "id": "4141343f-d6d3-4dac-81a3-5be5ff4363d3",
+      "category": "Termostato",
+      "image_path": "./assets/termostato-luv-dmax-3-0.webp",
+      "description": "TERMOSTATO LUV DMAX 3.0",
+      "keywords": [
+        "8-97246-9730",
+        "DMAX",
+        "LUV",
+        "TERMOSTATO",
+        "WV64IA-85"
+      ],
+      "oem": "8-97246-9730 / WV64IA-85",
+      "slug": "termostato-luv-dmax-3-0",
+      "original_filename": "Termostato/4141343f-d6d3-4dac-81a3-5be5ff4363d3.jpg",
+      "linked_ids": [
+        1212
+      ]
+    },
+    {
+      "id": "da962c8a-b863-4530-b909-f95249ebd03b",
+      "category": "Termostato",
+      "image_path": "./assets/termostato-luv-dmax-3-5.webp",
+      "description": "TERMOSTATO LUV DMAX 3.5",
+      "keywords": [
+        "8-97362-8940",
+        "DMAX",
+        "LUV",
+        "TERMOSTATO"
       ],
       "oem": "8-97362-8940",
-      "slug": "termostato-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97362-8940",
-          "brand": "Original",
-          "precio_usd": 20
-        }
+      "slug": "termostato-luv-dmax-3-5",
+      "original_filename": "Termostato/da962c8a-b863-4530-b909-f95249ebd03b.jpg",
+      "linked_ids": [
+        979
       ]
     },
     {
@@ -22238,6 +22361,63 @@ const PRODUCTS_DATA = {
       "original_filename": "Tope Chasis/992c69f5-0ca9-4993-bb4e-a0a9f75ddc86.jpg",
       "linked_ids": [
         981
+      ]
+    },
+    {
+      "id": "25ede39a-5904-4827-9e8e-2007afab5eff",
+      "category": "Tornillo Barra Torsion",
+      "image_path": "./assets/tornillo-torsion-caribe-2-3.webp",
+      "description": "TORNILLO TORSION CARIBE 2.3",
+      "keywords": [
+        "8-94101-7070",
+        "BARRA",
+        "CARIBE",
+        "TORNILLO",
+        "TORSION"
+      ],
+      "oem": "8-94101-7070",
+      "slug": "tornillo-torsion-caribe-2-3",
+      "original_filename": "Tornillo Barra Torsion/25ede39a-5904-4827-9e8e-2007afab5eff.jpg",
+      "linked_ids": [
+        991
+      ]
+    },
+    {
+      "id": "71bfe7c4-1a42-4a53-bd09-a408c2e5a036",
+      "category": "Tornillo Barra Torsion",
+      "image_path": "./assets/tornillo-torsion-caribe-2-6.webp",
+      "description": "TORNILLO TORSION CARIBE 2.6",
+      "keywords": [
+        "8-97033-1272",
+        "BARRA",
+        "CARIBE",
+        "TORNILLO",
+        "TORSION"
+      ],
+      "oem": "8-97033-1272",
+      "slug": "tornillo-torsion-caribe-2-6",
+      "original_filename": "Tornillo Barra Torsion/71bfe7c4-1a42-4a53-bd09-a408c2e5a036.jpg",
+      "linked_ids": [
+        993
+      ]
+    },
+    {
+      "id": "652438e3-b9f1-43f8-82d1-7d448444e325",
+      "category": "Tornillo de Camara",
+      "image_path": "./assets/tornillo-camara-luv-dmax-3-5.webp",
+      "description": "TORNILLO CAMARA LUV DMAX 3.5",
+      "keywords": [
+        "8-97011-9982",
+        "CAMARA",
+        "DMAX",
+        "LUV",
+        "TORNILLO"
+      ],
+      "oem": "8-97011-9982",
+      "slug": "tornillo-camara-luv-dmax-3-5",
+      "original_filename": "Tornillo de Camara/652438e3-b9f1-43f8-82d1-7d448444e325.jpg",
+      "linked_ids": [
+        989
       ]
     },
     {
