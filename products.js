@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 833,
+  "total_products": 836,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -22196,6 +22196,25 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "bc8026c9-e19e-4511-952c-a8e17b3fa823",
+      "category": "Termostato",
+      "image_path": "./assets/termostato-caribe.webp",
+      "description": "TERMOSTATO CARIBE",
+      "keywords": [
+        "8-94207-2171",
+        "8-94336-0680",
+        "8-94336-0690",
+        "CARIBE",
+        "TERMOSTATO"
+      ],
+      "oem": "8-94207-2171 / 8-94336-0690 / 8-94336-0680",
+      "slug": "termostato-caribe",
+      "original_filename": "Termostato/bc8026c9-e19e-4511-952c-a8e17b3fa823.jpg",
+      "linked_ids": [
+        975
+      ]
+    },
+    {
       "id": "cf1399b7-7aa8-48b4-ad65-3ceff80af235",
       "category": "Termostato",
       "image_path": "./assets/termostato-luv-2-2.webp",
@@ -22361,6 +22380,44 @@ const PRODUCTS_DATA = {
       "original_filename": "Tope Chasis/992c69f5-0ca9-4993-bb4e-a0a9f75ddc86.jpg",
       "linked_ids": [
         981
+      ]
+    },
+    {
+      "id": "a6a0b4e2-f7ed-463b-932f-342aabc6bfa4",
+      "category": "Tope Meseta",
+      "image_path": "./assets/topes-meseta-caribe.webp",
+      "description": "TOPES MESETA CARIBE",
+      "keywords": [
+        "8-94433-6730",
+        "CARIBE",
+        "MESETA",
+        "TOPE",
+        "TOPES"
+      ],
+      "oem": "8-94433-6730",
+      "slug": "topes-meseta-caribe",
+      "original_filename": "Tope Meseta/a6a0b4e2-f7ed-463b-932f-342aabc6bfa4.jpg",
+      "linked_ids": [
+        984
+      ]
+    },
+    {
+      "id": "d5ecce4f-cb36-4cfd-8f30-11ef5a367757",
+      "category": "Tope Meseta",
+      "image_path": "./assets/topes-meseta-luv-2-3.webp",
+      "description": "TOPES MESETA LUV 2.3",
+      "keywords": [
+        "8-94433-6730",
+        "LUV",
+        "MESETA",
+        "TOPE",
+        "TOPES"
+      ],
+      "oem": "8-94433-6730",
+      "slug": "topes-meseta-luv-2-3",
+      "original_filename": "Tope Meseta/d5ecce4f-cb36-4cfd-8f30-11ef5a367757.jpg",
+      "linked_ids": [
+        984
       ]
     },
     {

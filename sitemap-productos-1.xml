@@ -7781,6 +7781,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/termostato-caribe</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/termostato-caribe.webp</image:loc>
+      <image:title>TERMOSTATO CARIBE</image:title>
+    </image:image>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/termostato-luv-2-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/termostato-luv-2-2.webp</image:loc>
@@ -7865,6 +7875,26 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tope-cabina-luv-2-3.webp</image:loc>
       <image:title>TOPE CABINA LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/topes-meseta-caribe</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/topes-meseta-caribe.webp</image:loc>
+      <image:title>TOPES MESETA CARIBE</image:title>
+    </image:image>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/topes-meseta-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/topes-meseta-luv-2-3.webp</image:loc>
+      <image:title>TOPES MESETA LUV 2.3</image:title>
     </image:image>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
