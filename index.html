@@ -222,6 +222,29 @@
         </header>
     </div>
 
+    <!-- SECCIÓN CARROUSEL DE REPUESTOS DESTACADOS -->
+    <div class="featured-carousel-section" id="featuredCarouselSection" style="display: none;">
+        <h2 class="carousel-section-title">Repuestos Destacados</h2>
+        <div class="carousel-container">
+            <button class="carousel-nav-btn prev-btn" id="carouselPrevBtn" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+            </button>
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Los items se generarán dinámicamente -->
+                </div>
+            </div>
+            <button class="carousel-nav-btn next-btn" id="carouselNextBtn" aria-label="Siguiente">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="carousel-indicators" id="carouselIndicators"></div>
+    </div>
+
     <!-- FILTRO DE VEHÍCULOS -->
     <div class="vehicle-filter-container" id="vehicleFilterContainer">
         <h2 class="vehicle-filter-title">Filtrar por Vehículo</h2>

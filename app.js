@@ -669,6 +669,9 @@
 
                 // Inicializar Carrito desde localStorage
                 initCart();
+
+                // Inicializar Carrusel de Destacados
+                initFeaturedCarousel();
             } catch (error) {
                 console.error('Error al inicializar el catálogo:', error);
                 productsGrid.innerHTML = `
@@ -677,6 +680,174 @@
                         <p style="font-size: 14px; margin-top: 8px; color: var(--text-secondary)">Asegúrate de haber ejecutado el script de sincronización local.</p>
                     </div>
                 `;
+            }
+        }
+
+        // Lógica del Carrusel de Repuestos Destacados
+        function initFeaturedCarousel() {
+            const track = document.getElementById('carouselTrack');
+            const section = document.getElementById('featuredCarouselSection');
+            if (!track || !section) return;
+
+            // Filtrar productos que tengan imagen válida
+            const validProducts = productsData.filter(p => p.image_path && !p.image_path.includes('logo.png'));
+            if (validProducts.length < 5) return;
+
+            // Seleccionar 10 productos en móvil y 15 en escritorio/tablet
+            const isMobile = window.innerWidth <= 576;
+            const targetCount = isMobile ? 10 : 15;
+            const carouselProducts = [];
+            const tempProducts = [...validProducts];
+            const maxItems = Math.min(targetCount, tempProducts.length);
+            
+            for (let i = 0; i < maxItems; i++) {
+                const randIndex = Math.floor(Math.random() * tempProducts.length);
+                carouselProducts.push(tempProducts.splice(randIndex, 1)[0]);
+            }
+
+            // Renderizar items
+            let html = '';
+            carouselProducts.forEach(p => {
+                html += `
+                    <div class="carousel-item" onclick="openLightbox('${p.id}')">
+                        <div class="carousel-item-img-wrapper">
+                            <img src="${p.image_path}" alt="${p.description}" class="carousel-item-img" loading="lazy">
+                        </div>
+                        <div class="carousel-item-info">
+                            <span class="carousel-item-category">${p.category}</span>
+                            <div class="carousel-item-title" title="${p.description}">${p.description}</div>
+                        </div>
+                    </div>
+                `;
+            });
+            track.innerHTML = html;
+            
+            // Lógica de visibilidad inteligente
+            checkCarouselVisibility();
+
+            // Navegación
+            const prevBtn = document.getElementById('carouselPrevBtn');
+            const nextBtn = document.getElementById('carouselNextBtn');
+            const indicatorsContainer = document.getElementById('carouselIndicators');
+            
+            let currentIndex = 0;
+            
+            function getItemsPerPage() {
+                const width = window.innerWidth;
+                if (width <= 576) return 2;
+                if (width <= 992) return 3;
+                return 5;
+            }
+
+            const totalItems = carouselProducts.length;
+            
+            function updateCarousel() {
+                const itemsPerPage = getItemsPerPage();
+                const maxIndex = totalItems - itemsPerPage;
+                if (currentIndex > maxIndex) currentIndex = maxIndex;
+                if (currentIndex < 0) currentIndex = 0;
+
+                const itemWidth = track.firstElementChild ? track.firstElementChild.getBoundingClientRect().width : 0;
+                const gap = parseInt(window.getComputedStyle(track).gap) || 16;
+                const offset = currentIndex * (itemWidth + gap);
+                
+                track.style.transform = `translateX(-${offset}px)`;
+                updateIndicators(itemsPerPage);
+            }
+
+            function updateIndicators(itemsPerPage) {
+                if (!indicatorsContainer) return;
+                indicatorsContainer.innerHTML = '';
+                
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                const currentPage = Math.floor(currentIndex / itemsPerPage);
+
+                for (let i = 0; i < totalPages; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = `carousel-dot ${i === currentPage ? 'active' : ''}`;
+                    dot.addEventListener('click', () => {
+                        currentIndex = i * itemsPerPage;
+                        updateCarousel();
+                    });
+                    indicatorsContainer.appendChild(dot);
+                }
+            }
+
+            prevBtn.addEventListener('click', () => {
+                const itemsPerPage = getItemsPerPage();
+                const maxIndex = totalItems - itemsPerPage;
+                
+                if (currentIndex <= 0) {
+                    currentIndex = maxIndex;
+                } else {
+                    currentIndex -= itemsPerPage;
+                    if (currentIndex < 0) {
+                        currentIndex = 0;
+                    }
+                }
+                updateCarousel();
+                resetAutoplay();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                const itemsPerPage = getItemsPerPage();
+                const maxIndex = totalItems - itemsPerPage;
+                
+                if (currentIndex >= maxIndex) {
+                    currentIndex = 0;
+                } else {
+                    currentIndex += itemsPerPage;
+                    if (currentIndex > maxIndex) {
+                        currentIndex = maxIndex;
+                    }
+                }
+                updateCarousel();
+                resetAutoplay();
+            });
+
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(updateCarousel, 100);
+            });
+
+            // Autoplay cada 4 segundos
+            let autoplayInterval = setInterval(() => {
+                const itemsPerPage = getItemsPerPage();
+                const maxIndex = totalItems - itemsPerPage;
+                currentIndex += 1;
+                if (currentIndex > maxIndex) {
+                    currentIndex = 0;
+                }
+                updateCarousel();
+            }, 4000);
+
+            function resetAutoplay() {
+                clearInterval(autoplayInterval);
+                autoplayInterval = setInterval(() => {
+                    const itemsPerPage = getItemsPerPage();
+                    const maxIndex = totalItems - itemsPerPage;
+                    currentIndex += 1;
+                    if (currentIndex > maxIndex) {
+                        currentIndex = 0;
+                    }
+                    updateCarousel();
+                }, 4000);
+            }
+
+            setTimeout(updateCarousel, 300);
+        }
+
+        // Función para ocultar el carrusel cuando hay filtros/búsqueda activa
+        function checkCarouselVisibility() {
+            const section = document.getElementById('featuredCarouselSection');
+            if (!section) return;
+            
+            const hasActiveFilter = (activeCategory && activeCategory !== 'ALL') || (searchQuery && searchQuery.trim() !== '');
+            if (hasActiveFilter) {
+                section.style.display = 'none';
+            } else {
+                section.style.display = 'block';
             }
         }
 
@@ -757,6 +928,7 @@
 
         // Renderizado de Productos
         function renderProducts(reset = true) {
+            checkCarouselVisibility();
             if (reset) {
                 // Preparar términos de búsqueda limpios
                 let searchTerms = [];
@@ -982,6 +1154,7 @@
 
         // Renderizado de Carpetas (Categorías como tarjetas visuales)
         function renderFolders() {
+            checkCarouselVisibility();
             // Filtrar productos por vehículo y buscador
             const vehicleFiltered = productsData.filter(product => {
                 const matchesVehicle = matchesVehicleFilter(product, activeVehicle);
