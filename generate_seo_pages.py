@@ -2165,14 +2165,17 @@ def generate_pages(data):
         price_bs_str = f"{max_price_bs:.2f}"
         availability_str = "https://schema.org/InStock"
         
-        # Construcción de textos optimizados para SEO sin marcas
-        # --- TÍTULO (30-60 chars) ---
+        # Construcción de textos optimizados para SEO locales y códigos OEM
+        # --- TÍTULO LOCAL + OEM (Target: <= 60 chars) ---
         title_candidates = []
         if p_oem_seo_main:
+            title_candidates.append(f"{desc} {p_oem_seo_main} | Repuestos Caracas")
             title_candidates.append(f"{desc} {p_oem_seo_main} | Repuestos")
             title_candidates.append(f"{desc} {p_oem_seo_main}")
-        title_candidates.append(f"{desc} | Repuestos")
-        title_candidates.append(desc)
+        else:
+            title_candidates.append(f"{desc} | Repuestos Caracas")
+            title_candidates.append(f"{desc} | Repuestos")
+            title_candidates.append(desc)
         
         title_description = None
         for candidate in title_candidates:
@@ -2180,9 +2183,18 @@ def generate_pages(data):
                 title_description = candidate
                 break
         
+        # Si todos los candidatos exceden 60 chars y hay OEM, truncamos la descripción para forzar el OEM
         if title_description is None:
-            title_description = desc[:56] + "..."
-            
+            if p_oem_seo_main:
+                max_desc_len = 60 - len(p_oem_seo_main) - 4  # 4 chars para " ... "
+                if max_desc_len > 10:
+                    desc_truncated = desc[:max_desc_len].strip() + "..."
+                    title_description = f"{desc_truncated} {p_oem_seo_main}"
+                else:
+                    title_description = f"{desc[:56]}..."
+            else:
+                title_description = desc[:57] + "..."
+                
         if len(title_description) < 30:
             extras = [" | Todo Partes Horizonte", " | Todo Partes", " | TPH"]
             for extra in extras:
@@ -2190,19 +2202,29 @@ def generate_pages(data):
                     title_description += extra
                     break
         
-        # --- META DESCRIPCIÓN (120-158 chars) ---
-        desc_limite = desc[:60] + "..." if len(desc) > 60 else desc
+        # --- META DESCRIPCIÓN DINÁMICA CON OEM (Target: 120-158 chars) ---
         oem_meta_part = f" Código OEM: {p_oem_seo_main}." if p_oem_seo_main else ""
-        
-        meta_base_with_oem = f"Compra {desc_limite}.{oem_meta_part} Repuestos originales en Caracas. Envíos nacionales."
-        meta_base_no_oem = f"Compra {desc_limite}. Repuestos originales en Caracas. Envíos nacionales."
+        if p_oem_seo_main:
+            # Longitud estática de la plantilla: 74 caracteres
+            max_desc_len = 158 - 74 - len(p_oem_seo_main)
+            if len(desc) > max_desc_len:
+                desc_limite = desc[:max_desc_len - 3].strip() + "..."
+            else:
+                desc_limite = desc
+            
+            meta_description = f"Compra {desc_limite}. Código OEM: {p_oem_seo_main}. Repuestos originales en Caracas. Envíos nacionales."
+        else:
+            # Longitud estática de la plantilla: 60 caracteres
+            max_desc_len = 158 - 60
+            if len(desc) > max_desc_len:
+                desc_limite = desc[:max_desc_len - 3].strip() + "..."
+            else:
+                desc_limite = desc
+            
+            meta_description = f"Compra {desc_limite}. Repuestos originales en Caracas. Envíos nacionales."
+            
         schema_description = f"Compra {desc_limite} original en Caracas.{oem_meta_part} Repuestos con envíos nacionales."
         
-        if len(meta_base_with_oem) <= 158:
-            meta_description = meta_base_with_oem
-        else:
-            meta_description = meta_base_no_oem
-            
         fillers = [
             " Especialistas en autopartes de alta calidad.",
             " Contamos con tienda física y entregas personales.",
@@ -2534,7 +2556,8 @@ def generate_vehicle_pages(base_url):
                     "desc": "Encuentra repuestos para Isuzu Caribe 442 en Venezuela. Amortiguadores, partes de motor, embrague y componentes de dirección con envíos a nivel nacional.",
                     "filter": "CARIBE",
                     "card_id": "vehicle-caribe",
-                    "h1": "Repuestos para tu Isuzu Caribe 442"
+                    "h1": "Repuestos para tu Isuzu Caribe 442",
+                    "seo_paragraph": "Disponemos de un amplio stock de repuestos para Isuzu Caribe 442 en Caracas. Encuentra componentes de motor (anillos, conchas, empacaduras), tren delantero, amortiguadores, frenos y embrague de alta calidad. Realizamos envíos rápidos a nivel nacional y entregas personales en Boleíta Sur."
                 },
                 {
                     "filename": "repuestos-chevrolet-luv.html",
@@ -2542,7 +2565,8 @@ def generate_vehicle_pages(base_url):
                     "desc": "Encuentra repuestos para Chevrolet Luv en Venezuela. Amortiguadores, partes de motor, componentes eléctricos y dirección con envíos a nivel nacional.",
                     "filter": "LUV",
                     "card_id": "vehicle-luv",
-                    "h1": "Repuestos para tu Chevrolet Luv"
+                    "h1": "Repuestos para tu Chevrolet Luv",
+                    "seo_paragraph": "Catálogo completo de repuestos originales y alternativos para Chevrolet Luv en Venezuela. Contamos con partes de motor, suspensión, frenos, filtros y componentes eléctricos. Compra con seguridad en nuestra tienda física en Caracas con envíos nacionales garantizados."
                 },
                 {
                     "filename": "repuestos-chevrolet-luv-d-max.html",
@@ -2550,7 +2574,8 @@ def generate_vehicle_pages(base_url):
                     "desc": "Encuentra repuestos para Chevrolet Luv D-Max en Venezuela. Accesorios de motor, tren delantero, filtros y suspensión con envíos a nivel nacional.",
                     "filter": "D-MAX",
                     "card_id": "vehicle-dmax",
-                    "h1": "Repuestos para tu Chevrolet Luv D-Max"
+                    "h1": "Repuestos para tu Chevrolet Luv D-Max",
+                    "seo_paragraph": "Encuentra todos los repuestos para Chevrolet Luv D-Max (motores 2.4, 2.5, 3.0, 3.5) en Caracas. Ofrecemos amortiguadores, bujes, filtros, bombas de agua, kits de tiempo y partes de embrague con disponibilidad inmediata. Envíos nacionales rápidos con Zoom, Tealca y MRW."
                 },
                 {
                     "filename": "repuestos-isuzu-rodeo.html",
@@ -2558,7 +2583,8 @@ def generate_vehicle_pages(base_url):
                     "desc": "Encuentra repuestos para Isuzu Rodeo en Venezuela. Componentes de suspensión, embrague, motor y frenos con envíos a nivel nacional.",
                     "filter": "RODEO",
                     "card_id": "vehicle-rodeo",
-                    "h1": "Repuestos para tu Isuzu Rodeo"
+                    "h1": "Repuestos para tu Isuzu Rodeo",
+                    "seo_paragraph": "Distribución de autopartes y repuestos para Isuzu Rodeo en Caracas, Venezuela. Partes de suspensión, embrague, motor y sistema de frenos de alta calidad. Escríbenos directamente por WhatsApp para consultar disponibilidad y precios al instante."
                 },
                 {
                     "filename": "repuestos-isuzu-trooper.html",
@@ -2566,7 +2592,8 @@ def generate_vehicle_pages(base_url):
                     "desc": "Encuentra repuestos para Isuzu Trooper en Venezuela. Tren delantero, bomba de agua, embrague y frenos con envíos a nivel nacional.",
                     "filter": "TROOPER",
                     "card_id": "vehicle-trooper",
-                    "h1": "Repuestos para tu Isuzu Trooper"
+                    "h1": "Repuestos para tu Isuzu Trooper",
+                    "seo_paragraph": "Especialistas en repuestos para Isuzu Trooper en Venezuela. Gran surtido de partes para motor 3.2 V6, embrague, bombas de agua, tren delantero y frenos. Ofrecemos atención al cliente personalizada y envíos a todo el país desde Caracas."
                 }
             ]
 
@@ -2615,11 +2642,11 @@ def generate_vehicle_pages(base_url):
                     v_content
                 )
 
-                # 6. Insertar H1 de SEO para el vehículo (Visible arriba del filtro)
-                # Eliminamos el texto "Filtrar por Vehículo" y ponemos el título real
+                # 6. Insertar H1 de SEO y párrafo de texto local (Visible arriba del filtro)
+                # Eliminamos el texto "Filtrar por Vehículo" y ponemos el título y párrafo real
                 v_content = v_content.replace(
                     '<h2 class="vehicle-filter-title">Filtrar por Vehículo</h2>',
-                    f'<h1 class="vehicle-filter-title" style="text-transform: uppercase;">{v["h1"]}</h1>'
+                    f'<h1 class="vehicle-filter-title" style="text-transform: uppercase;">{v["h1"]}</h1>\n        <p class="vehicle-seo-text" style="text-align: center; max-width: 800px; margin: 0 auto 24px; color: var(--text-secondary); font-size: 15px; line-height: 1.6; padding: 0 16px;">{v["seo_paragraph"]}</p>'
                 )
 
                 # 7. Cambiar filtro activo de vehículo en el selector
