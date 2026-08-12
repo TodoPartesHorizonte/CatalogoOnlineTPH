@@ -2735,7 +2735,7 @@ height:18px;
 
 @media (max-width: 576px) {
     .carousel-item {
-        flex: 0 0 calc(50% - 8px);
+        flex: 0 0 100%;
     }
     .carousel-nav-btn {
         width: 32px;

@@ -734,7 +734,7 @@
             
             function getItemsPerPage() {
                 const width = window.innerWidth;
-                if (width <= 576) return 2;
+                if (width <= 576) return 1;
                 if (width <= 992) return 3;
                 return 5;
             }
