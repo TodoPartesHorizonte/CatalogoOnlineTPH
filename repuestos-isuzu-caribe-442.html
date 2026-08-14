@@ -181,9 +181,9 @@
                 if (cfEvent) {
                     const payload = JSON.stringify({ event: cfEvent, data: cfData });
                     if (navigator.sendBeacon) {
-                        navigator.sendBeacon('/api/track-event', new Blob([payload], { type: 'application/json' }));
+                        navigator.sendBeacon('https://todoparteshorizonte.pages.dev/api/track-event', new Blob([payload], { type: 'application/json' }));
                     } else {
-                        fetch('/api/track-event', {
+                        fetch('https://todoparteshorizonte.pages.dev/api/track-event', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: payload,
