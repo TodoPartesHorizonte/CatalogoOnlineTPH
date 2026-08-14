@@ -404,6 +404,61 @@ def generate_pages(data):
 
       function trackEvent(eventName, params = {{}}) {{
         forceInitAnalytics();
+
+        // 1. Telemetría Cloudflare KV
+        try {{
+          let cfEvent = null;
+          let cfData = {{}};
+
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {{
+            cfEvent = 'product_view';
+            cfData = {{
+              product_id: params.item_id || params.id || '',
+              product_name: params.item_name || params.nombre_producto || '',
+              product_model: params.item_category || params.categoria || '',
+              product_photo: params.image_path || ''
+            }};
+          }} else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp' || eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {{
+            cfEvent = 'whatsapp_click';
+            cfData = {{
+              product_id: params.item_id || (params.items && params.items[0] ? params.items[0].item_id : ''),
+              product_name: params.nombre_producto || params.item_name || (params.items && params.items[0] ? (params.items[0].item_name || params.items[0].nombre_producto) : ''),
+              product_model: params.categoria || params.item_category || (params.items && params.items[0] ? (params.items[0].item_category || params.items[0].categoria) : '')
+            }};
+          }} else if (eventName === 'page_view') {{
+            cfEvent = 'page_view';
+            cfData = {{
+              path: window.location.pathname || '/'
+            }};
+          }}
+
+          if (cfEvent) {{
+            const payload = JSON.stringify({{ event: cfEvent, data: cfData }});
+            const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+              ? '/api/track-event'
+              : 'https://todoparteshorizonte.pages.dev/api/track-event';
+
+            try {{
+              if (typeof fetch === 'function') {{
+                fetch(targetEndpoint, {{
+                  method: 'POST',
+                  mode: 'cors',
+                  headers: {{ 'Content-Type': 'application/json' }},
+                  body: payload,
+                  keepalive: true
+                }}).catch(() => {{}});
+              }} else if (navigator.sendBeacon) {{
+                const blob = new Blob([payload], {{ type: 'application/json' }});
+                navigator.sendBeacon(targetEndpoint, blob);
+              }}
+            }} catch (e) {{
+              if (navigator.sendBeacon) {{
+                navigator.sendBeacon(targetEndpoint, payload);
+              }}
+            }}
+          }}
+        }} catch (e) {{}}
+
         if (typeof gtag === 'function') gtag('event', eventName, params);
         if (typeof fbq === 'function') {{
           if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {{
@@ -414,7 +469,7 @@ def generate_pages(data):
             fbq('track', 'Lead', {{ content_name: 'Pedido WhatsApp', currency: 'USD' }});
             fbq('track', 'Contact');
           }} else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {{
-            fbq('track', 'Contact', {{ content_name: params.nombre_producto || 'Consulta WhatsApp' }});
+            fbq('track', 'Contact', {{ content_name: params.nombre_producto || params.item_name || 'Consulta WhatsApp' }});
           }} else {{
             fbq('trackCustom', eventName, params);
           }}
@@ -433,7 +488,7 @@ def generate_pages(data):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://todoparteshorizonte.com https://www.todoparteshorizonte.com https://todoparteshorizonte.pages.dev https://*.pages.dev https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com https://www.facebook.com;">
     <title>{title_description}</title>
     <meta name="description" content="{meta_description}">
     <meta name="robots" content="index, follow">

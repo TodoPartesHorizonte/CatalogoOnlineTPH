@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://todoparteshorizonte.com https://www.todoparteshorizonte.com https://todoparteshorizonte.pages.dev https://*.pages.dev https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com https://www.facebook.com;">
     <title>Sensor Abs Delantero Luv Dmax 3.5 8972361062 | Repuestos</title>
     <meta name="description" content="Compra Sensor Abs Delantero Luv Dmax 3.5. Código OEM: 8972361062. Repuestos originales en Caracas. Envíos nacionales. Atención personalizada para tu vehículo.">
     <meta name="robots" content="index, follow">
@@ -57,7 +57,7 @@
     ],
       "offers": {
         "@type": "Offer",
-        "price": "35400.00",
+        "price": "0.00",
         "priceCurrency": "VES",
         "availability": "https://schema.org/InStock",
         "url": "https://todoparteshorizonte.com/p/sensor-abs-delantero-luv-dmax-3-5",
@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Olimpo González"
+          "name": "Luis Rejon"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Gracias por sus servicios. Los recomiendo. Compré los repuestos de mi camioneta luv dmax y todo de calidad."
+        "reviewBody": "Todo para mi dmax a la mano buena atención y rápida respuesta"
       }
     }
     </script>
@@ -236,6 +236,61 @@
 
       function trackEvent(eventName, params = {}) {
         forceInitAnalytics();
+
+        // 1. Telemetría Cloudflare KV
+        try {
+          let cfEvent = null;
+          let cfData = {};
+
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            cfEvent = 'product_view';
+            cfData = {
+              product_id: params.item_id || params.id || '',
+              product_name: params.item_name || params.nombre_producto || '',
+              product_model: params.item_category || params.categoria || '',
+              product_photo: params.image_path || ''
+            };
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp' || eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            cfEvent = 'whatsapp_click';
+            cfData = {
+              product_id: params.item_id || (params.items && params.items[0] ? params.items[0].item_id : ''),
+              product_name: params.nombre_producto || params.item_name || (params.items && params.items[0] ? (params.items[0].item_name || params.items[0].nombre_producto) : ''),
+              product_model: params.categoria || params.item_category || (params.items && params.items[0] ? (params.items[0].item_category || params.items[0].categoria) : '')
+            };
+          } else if (eventName === 'page_view') {
+            cfEvent = 'page_view';
+            cfData = {
+              path: window.location.pathname || '/'
+            };
+          }
+
+          if (cfEvent) {
+            const payload = JSON.stringify({ event: cfEvent, data: cfData });
+            const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+              ? '/api/track-event'
+              : 'https://todoparteshorizonte.pages.dev/api/track-event';
+
+            try {
+              if (typeof fetch === 'function') {
+                fetch(targetEndpoint, {
+                  method: 'POST',
+                  mode: 'cors',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: payload,
+                  keepalive: true
+                }).catch(() => {});
+              } else if (navigator.sendBeacon) {
+                const blob = new Blob([payload], { type: 'application/json' });
+                navigator.sendBeacon(targetEndpoint, blob);
+              }
+            } catch (e) {
+              if (navigator.sendBeacon) {
+                navigator.sendBeacon(targetEndpoint, payload);
+              }
+            }
+          }
+        } catch (e) {}
+
         if (typeof gtag === 'function') gtag('event', eventName, params);
         if (typeof fbq === 'function') {
           if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
@@ -246,7 +301,7 @@
             fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
             fbq('track', 'Contact');
           } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
-            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+            fbq('track', 'Contact', { content_name: params.nombre_producto || params.item_name || 'Consulta WhatsApp' });
           } else {
             fbq('trackCustom', eventName, params);
           }
@@ -1710,14 +1765,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./disco-de-freno-luv-d-max-3-0-4x4.html" class="related-card">
+                <a href="./cocuyo-parachoque-delantero-luv-d-max-05-09.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/disco-de-freno-luv-d-max-3-0-4x4.webp" alt="Repuesto DISCO DE FRENO LUV D-MAX 3.0 4X4 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/cocuyo-parachoque-delantero-luv-d-max-05-09.webp" alt="Repuesto COCUYO PARACHOQUE DELANTERO LUV D-MAX 05-09 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Disco de Freno</span></span>
-                        <div class="related-title" title="DISCO DE FRENO LUV D-MAX 3.0 4X4">DISCO DE FRENO LUV D-MAX 3.0 4X4</div>
-                        <div class="related-oem">OEM: 8-97360-6780</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Faro Antineblina</span></span>
+                        <div class="related-title" title="COCUYO PARACHOQUE DELANTERO LUV D-MAX 05-09">COCUYO PARACHOQUE DELANTERO LUV D-MAX 05-09</div>
+                        <div class="related-oem">OEM: GL-017-002</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1725,14 +1780,14 @@
                     </div>
                 </a>
 
-                <a href="./filtro-antipolen-luv-d-max.html" class="related-card">
+                <a href="./kit-de-motor-luv-d-max-2-4.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/filtro-antipolen-luv-d-max.webp" alt="Repuesto FILTRO ANTIPOLEN LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-de-motor-luv-d-max-2-4.webp" alt="Repuesto KIT DE MOTOR LUV D-MAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Filtro Antipolen</span></span>
-                        <div class="related-title" title="FILTRO ANTIPOLEN LUV D-MAX">FILTRO ANTIPOLEN LUV D-MAX</div>
-                        <div class="related-oem">OEM: 8-97356-1270</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit de Motor</span></span>
+                        <div class="related-title" title="KIT DE MOTOR LUV D-MAX 2.4">KIT DE MOTOR LUV D-MAX 2.4</div>
+                        
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1740,14 +1795,14 @@
                     </div>
                 </a>
 
-                <a href="./reservorio-aceite-direccion-luv-d-max.html" class="related-card">
+                <a href="./kit-de-clutch-luv-d-max-2-4.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/reservorio-aceite-direccion-luv-d-max.webp" alt="Repuesto RESERVORIO ACEITE DIRECCION LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/kit-de-clutch-luv-d-max-2-4.webp" alt="Repuesto KIT DE CLUTCH LUV D-MAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Envase Direccion</span></span>
-                        <div class="related-title" title="RESERVORIO ACEITE DIRECCION LUV D-MAX">RESERVORIO ACEITE DIRECCION LUV D-MAX</div>
-                        <div class="related-oem">OEM: 8-97234-3500</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit Clutch</span></span>
+                        <div class="related-title" title="KIT DE CLUTCH LUV D-MAX 2.4">KIT DE CLUTCH LUV D-MAX 2.4</div>
+                        <div class="related-oem">OEM: ISK-092B</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1755,14 +1810,14 @@
                     </div>
                 </a>
 
-                <a href="./regulador-presion-gasolina-luv-2-2-luv-dmax-2-4.html" class="related-card">
+                <a href="./tambor-de-freno-luv-dmax-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/regulador-presion-gasolina-luv-2-2-luv-dmax-2-4.webp" alt="Repuesto REGULADOR PRESION GASOLINA LUV DMAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/tambor-de-freno-luv-dmax-3-5.webp" alt="Repuesto TAMBOR DE FRENO LUV DMAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Regulador Presion Gasolina</span></span>
-                        <div class="related-title" title="REGULADOR PRESION GASOLINA LUV DMAX 2.4">REGULADOR PRESION GASOLINA LUV DMAX 2.4</div>
-                        <div class="related-oem">OEM: 8-17091-4100</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Tambor de Freno</span></span>
+                        <div class="related-title" title="TAMBOR DE FRENO LUV DMAX 3.5">TAMBOR DE FRENO LUV DMAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97360-5060</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1841,6 +1896,61 @@
 
       function trackEvent(eventName, params = {}) {
         forceInitAnalytics();
+
+        // 1. Telemetría Cloudflare KV
+        try {
+          let cfEvent = null;
+          let cfData = {};
+
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            cfEvent = 'product_view';
+            cfData = {
+              product_id: params.item_id || params.id || '',
+              product_name: params.item_name || params.nombre_producto || '',
+              product_model: params.item_category || params.categoria || '',
+              product_photo: params.image_path || ''
+            };
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp' || eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            cfEvent = 'whatsapp_click';
+            cfData = {
+              product_id: params.item_id || (params.items && params.items[0] ? params.items[0].item_id : ''),
+              product_name: params.nombre_producto || params.item_name || (params.items && params.items[0] ? (params.items[0].item_name || params.items[0].nombre_producto) : ''),
+              product_model: params.categoria || params.item_category || (params.items && params.items[0] ? (params.items[0].item_category || params.items[0].categoria) : '')
+            };
+          } else if (eventName === 'page_view') {
+            cfEvent = 'page_view';
+            cfData = {
+              path: window.location.pathname || '/'
+            };
+          }
+
+          if (cfEvent) {
+            const payload = JSON.stringify({ event: cfEvent, data: cfData });
+            const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+              ? '/api/track-event'
+              : 'https://todoparteshorizonte.pages.dev/api/track-event';
+
+            try {
+              if (typeof fetch === 'function') {
+                fetch(targetEndpoint, {
+                  method: 'POST',
+                  mode: 'cors',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: payload,
+                  keepalive: true
+                }).catch(() => {});
+              } else if (navigator.sendBeacon) {
+                const blob = new Blob([payload], { type: 'application/json' });
+                navigator.sendBeacon(targetEndpoint, blob);
+              }
+            } catch (e) {
+              if (navigator.sendBeacon) {
+                navigator.sendBeacon(targetEndpoint, payload);
+              }
+            }
+          }
+        } catch (e) {}
+
         if (typeof gtag === 'function') gtag('event', eventName, params);
         if (typeof fbq === 'function') {
           if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
@@ -1851,7 +1961,7 @@
             fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
             fbq('track', 'Contact');
           } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
-            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+            fbq('track', 'Contact', { content_name: params.nombre_producto || params.item_name || 'Consulta WhatsApp' });
           } else {
             fbq('trackCustom', eventName, params);
           }

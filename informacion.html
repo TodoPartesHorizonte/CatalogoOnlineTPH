@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com; frame-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://todoparteshorizonte.com https://www.todoparteshorizonte.com https://todoparteshorizonte.pages.dev https://*.pages.dev https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com https://www.facebook.com; frame-src 'self';">
     <title>Repuestos Isuzu y Chevrolet en Caracas | TODO PARTES HORIZONTE</title>
 
     <!-- Preservación de Enlaces Antiguos -->
@@ -137,6 +137,55 @@
 
         function trackEvent(eventName, params = {}) {
             forceInitAnalytics();
+
+            // Envío asíncrono a Cloudflare KV Telemetry (/api/track-event)
+            try {
+                let cfEvent = null;
+                let cfData = {};
+
+                if (eventName === 'contacto_whatsapp') {
+                    cfEvent = 'whatsapp_click';
+                    cfData = {
+                        product_id: '',
+                        product_name: 'Contacto General WhatsApp (Nosotros)',
+                        product_model: ''
+                    };
+                } else if (eventName === 'page_view' || eventName === 'visita_catalogo') {
+                    cfEvent = 'page_view';
+                    cfData = {
+                        path: window.location.pathname || '/informacion'
+                    };
+                }
+
+                if (cfEvent) {
+                    const payload = JSON.stringify({ event: cfEvent, data: cfData });
+                    const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+                        ? '/api/track-event'
+                        : 'https://todoparteshorizonte.pages.dev/api/track-event';
+
+                    try {
+                        if (typeof fetch === 'function') {
+                            fetch(targetEndpoint, {
+                                method: 'POST',
+                                mode: 'cors',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: payload,
+                                keepalive: true
+                            }).catch(() => {});
+                        } else if (navigator.sendBeacon) {
+                            const blob = new Blob([payload], { type: 'application/json' });
+                            navigator.sendBeacon(targetEndpoint, blob);
+                        }
+                    } catch (e) {
+                        if (navigator.sendBeacon) {
+                            navigator.sendBeacon(targetEndpoint, payload);
+                        }
+                    }
+                }
+            } catch (e) {
+                // Silencioso
+            }
+
             if (typeof gtag === 'function') {
                 gtag('event', eventName, params);
             }

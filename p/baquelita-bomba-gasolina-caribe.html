@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://todoparteshorizonte.com https://www.todoparteshorizonte.com https://todoparteshorizonte.pages.dev https://*.pages.dev https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com https://www.facebook.com;">
     <title>Baquelita Bomba Gasolina Caribe 8941462580 | Repuestos</title>
     <meta name="description" content="Compra Baquelita Bomba Gasolina Caribe. Código OEM: 8941462580. Repuestos originales en Caracas. Envíos nacionales. Atención personalizada para tu vehículo.">
     <meta name="robots" content="index, follow">
@@ -53,7 +53,7 @@
     ],
       "offers": {
         "@type": "Offer",
-        "price": "8850.00",
+        "price": "47400.00",
         "priceCurrency": "VES",
         "availability": "https://schema.org/InStock",
         "url": "https://todoparteshorizonte.com/p/baquelita-bomba-gasolina-caribe",
@@ -232,6 +232,61 @@
 
       function trackEvent(eventName, params = {}) {
         forceInitAnalytics();
+
+        // 1. Telemetría Cloudflare KV
+        try {
+          let cfEvent = null;
+          let cfData = {};
+
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            cfEvent = 'product_view';
+            cfData = {
+              product_id: params.item_id || params.id || '',
+              product_name: params.item_name || params.nombre_producto || '',
+              product_model: params.item_category || params.categoria || '',
+              product_photo: params.image_path || ''
+            };
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp' || eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            cfEvent = 'whatsapp_click';
+            cfData = {
+              product_id: params.item_id || (params.items && params.items[0] ? params.items[0].item_id : ''),
+              product_name: params.nombre_producto || params.item_name || (params.items && params.items[0] ? (params.items[0].item_name || params.items[0].nombre_producto) : ''),
+              product_model: params.categoria || params.item_category || (params.items && params.items[0] ? (params.items[0].item_category || params.items[0].categoria) : '')
+            };
+          } else if (eventName === 'page_view') {
+            cfEvent = 'page_view';
+            cfData = {
+              path: window.location.pathname || '/'
+            };
+          }
+
+          if (cfEvent) {
+            const payload = JSON.stringify({ event: cfEvent, data: cfData });
+            const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+              ? '/api/track-event'
+              : 'https://todoparteshorizonte.pages.dev/api/track-event';
+
+            try {
+              if (typeof fetch === 'function') {
+                fetch(targetEndpoint, {
+                  method: 'POST',
+                  mode: 'cors',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: payload,
+                  keepalive: true
+                }).catch(() => {});
+              } else if (navigator.sendBeacon) {
+                const blob = new Blob([payload], { type: 'application/json' });
+                navigator.sendBeacon(targetEndpoint, blob);
+              }
+            } catch (e) {
+              if (navigator.sendBeacon) {
+                navigator.sendBeacon(targetEndpoint, payload);
+              }
+            }
+          }
+        } catch (e) {}
+
         if (typeof gtag === 'function') gtag('event', eventName, params);
         if (typeof fbq === 'function') {
           if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
@@ -242,7 +297,7 @@
             fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
             fbq('track', 'Contact');
           } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
-            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+            fbq('track', 'Contact', { content_name: params.nombre_producto || params.item_name || 'Consulta WhatsApp' });
           } else {
             fbq('trackCustom', eventName, params);
           }
@@ -1732,14 +1787,14 @@
                     </div>
                 </a>
 
-                <a href="./collarin-caribe-2600.html" class="related-card">
+                <a href="./manilla-externa-caribe.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/collarin-caribe-2600.webp" alt="Repuesto COLLARIN CARIBE 2600 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/manilla-externa-caribe.webp" alt="Repuesto MANILLA EXTERNA CARIBE original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Collarin</span></span>
-                        <div class="related-title" title="COLLARIN CARIBE 2600">COLLARIN CARIBE 2600</div>
-                        <div class="related-oem">OEM: 8-94379-4990</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Manilla Externa</span></span>
+                        <div class="related-title" title="MANILLA EXTERNA CARIBE">MANILLA EXTERNA CARIBE</div>
+                        <div class="related-oem">OEM: 8-94295-4920</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1747,14 +1802,14 @@
                     </div>
                 </a>
 
-                <a href="./tapa-distribuidor-caribe-g200.html" class="related-card">
+                <a href="./damper-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/tapa-distribuidor-caribe-g200.webp" alt="Repuesto TAPA DISTRIBUIDOR CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/damper-caribe-2-3.webp" alt="Repuesto DAMPER CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Tapa Distribuidor</span></span>
-                        <div class="related-title" title="TAPA DISTRIBUIDOR CARIBE G200">TAPA DISTRIBUIDOR CARIBE G200</div>
-                        <div class="related-oem">OEM: 8-94206-1390</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Damper</span></span>
+                        <div class="related-title" title="DAMPER CARIBE 2.3">DAMPER CARIBE 2.3</div>
+                        <div class="related-oem">OEM: 8-97073-0790</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1833,6 +1888,61 @@
 
       function trackEvent(eventName, params = {}) {
         forceInitAnalytics();
+
+        // 1. Telemetría Cloudflare KV
+        try {
+          let cfEvent = null;
+          let cfData = {};
+
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            cfEvent = 'product_view';
+            cfData = {
+              product_id: params.item_id || params.id || '',
+              product_name: params.item_name || params.nombre_producto || '',
+              product_model: params.item_category || params.categoria || '',
+              product_photo: params.image_path || ''
+            };
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp' || eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            cfEvent = 'whatsapp_click';
+            cfData = {
+              product_id: params.item_id || (params.items && params.items[0] ? params.items[0].item_id : ''),
+              product_name: params.nombre_producto || params.item_name || (params.items && params.items[0] ? (params.items[0].item_name || params.items[0].nombre_producto) : ''),
+              product_model: params.categoria || params.item_category || (params.items && params.items[0] ? (params.items[0].item_category || params.items[0].categoria) : '')
+            };
+          } else if (eventName === 'page_view') {
+            cfEvent = 'page_view';
+            cfData = {
+              path: window.location.pathname || '/'
+            };
+          }
+
+          if (cfEvent) {
+            const payload = JSON.stringify({ event: cfEvent, data: cfData });
+            const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+              ? '/api/track-event'
+              : 'https://todoparteshorizonte.pages.dev/api/track-event';
+
+            try {
+              if (typeof fetch === 'function') {
+                fetch(targetEndpoint, {
+                  method: 'POST',
+                  mode: 'cors',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: payload,
+                  keepalive: true
+                }).catch(() => {});
+              } else if (navigator.sendBeacon) {
+                const blob = new Blob([payload], { type: 'application/json' });
+                navigator.sendBeacon(targetEndpoint, blob);
+              }
+            } catch (e) {
+              if (navigator.sendBeacon) {
+                navigator.sendBeacon(targetEndpoint, payload);
+              }
+            }
+          }
+        } catch (e) {}
+
         if (typeof gtag === 'function') gtag('event', eventName, params);
         if (typeof fbq === 'function') {
           if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
@@ -1843,7 +1953,7 @@
             fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
             fbq('track', 'Contact');
           } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
-            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+            fbq('track', 'Contact', { content_name: params.nombre_producto || params.item_name || 'Consulta WhatsApp' });
           } else {
             fbq('trackCustom', eventName, params);
           }

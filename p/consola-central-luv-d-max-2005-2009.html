@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://todoparteshorizonte.com https://www.todoparteshorizonte.com https://todoparteshorizonte.pages.dev https://*.pages.dev https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com https://www.facebook.com;">
     <title>Consola Central Luv D-Max 2005-2009 8973962500 | Repuestos</title>
     <meta name="description" content="Compra Consola Central Luv D-Max 2005-2009. Código OEM: 8973962500. Repuestos originales en Caracas. Envíos nacionales.">
     <meta name="robots" content="index, follow">
@@ -54,7 +54,7 @@
     ],
       "offers": {
         "@type": "Offer",
-        "price": "0.00",
+        "price": "51350.00",
         "priceCurrency": "VES",
         "availability": "https://schema.org/InStock",
         "url": "https://todoparteshorizonte.com/p/consola-central-luv-d-max-2005-2009",
@@ -233,6 +233,61 @@
 
       function trackEvent(eventName, params = {}) {
         forceInitAnalytics();
+
+        // 1. Telemetría Cloudflare KV
+        try {
+          let cfEvent = null;
+          let cfData = {};
+
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            cfEvent = 'product_view';
+            cfData = {
+              product_id: params.item_id || params.id || '',
+              product_name: params.item_name || params.nombre_producto || '',
+              product_model: params.item_category || params.categoria || '',
+              product_photo: params.image_path || ''
+            };
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp' || eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            cfEvent = 'whatsapp_click';
+            cfData = {
+              product_id: params.item_id || (params.items && params.items[0] ? params.items[0].item_id : ''),
+              product_name: params.nombre_producto || params.item_name || (params.items && params.items[0] ? (params.items[0].item_name || params.items[0].nombre_producto) : ''),
+              product_model: params.categoria || params.item_category || (params.items && params.items[0] ? (params.items[0].item_category || params.items[0].categoria) : '')
+            };
+          } else if (eventName === 'page_view') {
+            cfEvent = 'page_view';
+            cfData = {
+              path: window.location.pathname || '/'
+            };
+          }
+
+          if (cfEvent) {
+            const payload = JSON.stringify({ event: cfEvent, data: cfData });
+            const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+              ? '/api/track-event'
+              : 'https://todoparteshorizonte.pages.dev/api/track-event';
+
+            try {
+              if (typeof fetch === 'function') {
+                fetch(targetEndpoint, {
+                  method: 'POST',
+                  mode: 'cors',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: payload,
+                  keepalive: true
+                }).catch(() => {});
+              } else if (navigator.sendBeacon) {
+                const blob = new Blob([payload], { type: 'application/json' });
+                navigator.sendBeacon(targetEndpoint, blob);
+              }
+            } catch (e) {
+              if (navigator.sendBeacon) {
+                navigator.sendBeacon(targetEndpoint, payload);
+              }
+            }
+          }
+        } catch (e) {}
+
         if (typeof gtag === 'function') gtag('event', eventName, params);
         if (typeof fbq === 'function') {
           if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
@@ -243,7 +298,7 @@
             fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
             fbq('track', 'Contact');
           } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
-            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+            fbq('track', 'Contact', { content_name: params.nombre_producto || params.item_name || 'Consulta WhatsApp' });
           } else {
             fbq('trackCustom', eventName, params);
           }
@@ -1707,14 +1762,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./cadena-transfer-luv-d-max-3-0-3-5.html" class="related-card">
+                <a href="./meseta-luv-dmax-2-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/cadena-transfer-luv-d-max-3-0-3-5.webp" alt="Repuesto CADENA TRANSFER LUV D-MAX 3.0/3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/meseta-luv-dmax-2-5.webp" alt="Repuesto MESETA LUV DMAX 2.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cadena Trasnfer</span></span>
-                        <div class="related-title" title="CADENA TRANSFER LUV D-MAX 3.0/3.5">CADENA TRANSFER LUV D-MAX 3.0/3.5</div>
-                        <div class="related-oem">OEM: 8-97323-1770</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Meseta</span></span>
+                        <div class="related-title" title="MESETA LUV DMAX 2.5">MESETA LUV DMAX 2.5</div>
+                        <div class="related-oem">OEM: 8-98005-8320</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1722,14 +1777,14 @@
                     </div>
                 </a>
 
-                <a href="./taquetes-luv-dmax-3-5.html" class="related-card">
+                <a href="./barra-link-luv-d-max-2-4.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/taquetes-luv-dmax-3-5.webp" alt="Repuesto TAQUETES LUV DMAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/barra-link-luv-d-max-2-4.webp" alt="Repuesto BARRA LINK LUV D-MAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Taquetes</span></span>
-                        <div class="related-title" title="TAQUETES LUV DMAX 3.5">TAQUETES LUV DMAX 3.5</div>
-                        <div class="related-oem">OEM: 8-97148-2961</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Barra Link</span></span>
+                        <div class="related-title" title="BARRA LINK LUV D-MAX 2.4">BARRA LINK LUV D-MAX 2.4</div>
+                        <div class="related-oem">OEM: 8-94408-8402</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1737,14 +1792,14 @@
                     </div>
                 </a>
 
-                <a href="./guaya-selectorade-cambio-luv-d-max-3-5-automatico.html" class="related-card">
+                <a href="./tren-delantero-luv-d-max-2-4-2.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/guaya-selectorade-cambio-luv-d-max-3-5-automatico.webp" alt="Repuesto GUAYA SELECTORADE CAMBIO LUV D-MAX 3.5 AUTOMATICO original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/tren-delantero-luv-d-max-2-4-2.webp" alt="Repuesto TREN DELANTERO LUV D-MAX 2.4 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Guaya Selectora de Cambio</span></span>
-                        <div class="related-title" title="GUAYA SELECTORADE CAMBIO LUV D-MAX 3.5 AUTOMATICO">GUAYA SELECTORADE CAMBIO LUV D-MAX 3.5 AUTOMATICO</div>
-                        <div class="related-oem">OEM: 8-97307-4722</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Tren Delantero</span></span>
+                        <div class="related-title" title="TREN DELANTERO LUV D-MAX 2.4">TREN DELANTERO LUV D-MAX 2.4</div>
+                        
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1752,14 +1807,14 @@
                     </div>
                 </a>
 
-                <a href="./bomba-de-aceite-luv-d-max.html" class="related-card">
+                <a href="./base-fan-clutch-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/bomba-de-aceite-luv-d-max.webp" alt="Repuesto BOMBA DE ACEITE LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="../assets/base-fan-clutch-luv-d-max-3-5.webp" alt="Repuesto BASE FAN CLUTCH LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de aceite</span></span>
-                        <div class="related-title" title="BOMBA DE ACEITE LUV D-MAX">BOMBA DE ACEITE LUV D-MAX</div>
-                        <div class="related-oem">OEM: 8-97136-4630</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Base Fan Clutch</span></span>
+                        <div class="related-title" title="BASE FAN CLUTCH LUV D-MAX 3.5">BASE FAN CLUTCH LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97231-7180</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1838,6 +1893,61 @@
 
       function trackEvent(eventName, params = {}) {
         forceInitAnalytics();
+
+        // 1. Telemetría Cloudflare KV
+        try {
+          let cfEvent = null;
+          let cfData = {};
+
+          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
+            cfEvent = 'product_view';
+            cfData = {
+              product_id: params.item_id || params.id || '',
+              product_name: params.item_name || params.nombre_producto || '',
+              product_model: params.item_category || params.categoria || '',
+              product_photo: params.image_path || ''
+            };
+          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp' || eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+            cfEvent = 'whatsapp_click';
+            cfData = {
+              product_id: params.item_id || (params.items && params.items[0] ? params.items[0].item_id : ''),
+              product_name: params.nombre_producto || params.item_name || (params.items && params.items[0] ? (params.items[0].item_name || params.items[0].nombre_producto) : ''),
+              product_model: params.categoria || params.item_category || (params.items && params.items[0] ? (params.items[0].item_category || params.items[0].categoria) : '')
+            };
+          } else if (eventName === 'page_view') {
+            cfEvent = 'page_view';
+            cfData = {
+              path: window.location.pathname || '/'
+            };
+          }
+
+          if (cfEvent) {
+            const payload = JSON.stringify({ event: cfEvent, data: cfData });
+            const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+              ? '/api/track-event'
+              : 'https://todoparteshorizonte.pages.dev/api/track-event';
+
+            try {
+              if (typeof fetch === 'function') {
+                fetch(targetEndpoint, {
+                  method: 'POST',
+                  mode: 'cors',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: payload,
+                  keepalive: true
+                }).catch(() => {});
+              } else if (navigator.sendBeacon) {
+                const blob = new Blob([payload], { type: 'application/json' });
+                navigator.sendBeacon(targetEndpoint, blob);
+              }
+            } catch (e) {
+              if (navigator.sendBeacon) {
+                navigator.sendBeacon(targetEndpoint, payload);
+              }
+            }
+          }
+        } catch (e) {}
+
         if (typeof gtag === 'function') gtag('event', eventName, params);
         if (typeof fbq === 'function') {
           if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
@@ -1848,7 +1958,7 @@
             fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
             fbq('track', 'Contact');
           } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
-            fbq('track', 'Contact', { content_name: params.nombre_producto || 'Consulta WhatsApp' });
+            fbq('track', 'Contact', { content_name: params.nombre_producto || params.item_name || 'Consulta WhatsApp' });
           } else {
             fbq('trackCustom', eventName, params);
           }
