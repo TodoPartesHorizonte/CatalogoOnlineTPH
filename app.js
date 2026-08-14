@@ -1443,53 +1443,53 @@
                 }
             });
 
-            // Colapso dinámico de cabecera al hacer scroll (Totalmente estable con wrapper de altura fija y sin saltos)
+            // Colapso dinámico e inmediato de cabecera al hacer scroll (Reacciona suavemente desde 25px)
             const headerEl = document.querySelector('header');
             const wrapperEl = document.querySelector('.header-wrapper');
-            let lastWidth = window.innerWidth;
-            let heightDiff = 170; // valor por defecto seguro
+            const scrollThreshold = 25;
+            let isScrollTicking = false;
 
-            function adjustWrapperHeight() {
-                const isFixed = window.getComputedStyle(headerEl).position === 'fixed';
-                if (isFixed) {
-                    const wasCollapsed = headerEl.classList.contains('collapsed');
-                    if (wasCollapsed) headerEl.classList.remove('collapsed');
-                    
-                    const fullHeight = headerEl.offsetHeight;
-                    wrapperEl.style.height = `${fullHeight}px`;
-                    
-                    // Forzar cálculo de la altura colapsada
-                    headerEl.classList.add('collapsed');
-                    const collapsedHeight = headerEl.offsetHeight;
-                    heightDiff = fullHeight - collapsedHeight;
-                    
-                    // Restaurar el estado original anterior
-                    if (!wasCollapsed) headerEl.classList.remove('collapsed');
+            function handleHeaderScroll() {
+                if (!headerEl) return;
+                const scrollY = window.scrollY || window.pageYOffset || 0;
+                if (scrollY > scrollThreshold) {
+                    if (!headerEl.classList.contains('collapsed')) {
+                        headerEl.classList.add('collapsed');
+                    }
+                    if (wrapperEl && !wrapperEl.classList.contains('collapsed')) {
+                        wrapperEl.classList.add('collapsed');
+                    }
                 } else {
-                    wrapperEl.style.height = '';
-                    heightDiff = 0;
+                    if (headerEl.classList.contains('collapsed')) {
+                        headerEl.classList.remove('collapsed');
+                    }
+                    if (wrapperEl && wrapperEl.classList.contains('collapsed')) {
+                        wrapperEl.classList.remove('collapsed');
+                    }
                 }
             }
-            
-            // Medir y ajustar al cargar y al cambiar de tamaño horizontal (evitando bug de redimensionamiento de barra de dirección en móvil)
-            setTimeout(adjustWrapperHeight, 150);
-            
+
+            window.addEventListener('scroll', () => {
+                if (!isScrollTicking) {
+                    window.requestAnimationFrame(() => {
+                        handleHeaderScroll();
+                        isScrollTicking = false;
+                    });
+                    isScrollTicking = true;
+                }
+            }, { passive: true });
+
+            // Inicializar estado al cargar
+            setTimeout(handleHeaderScroll, 50);
+
+            let lastWidth = window.innerWidth;
             window.addEventListener('resize', () => {
                 if (window.innerWidth !== lastWidth) {
                     lastWidth = window.innerWidth;
-                    adjustWrapperHeight();
+                    handleHeaderScroll();
                     resizeFolderCardNames();
                 }
             });
-
-            window.addEventListener('scroll', () => {
-                // El colapso se activa exactamente cuando la página se ha desplazado el equivalente a la diferencia de altura, evitando huecos y saltos
-                if (window.scrollY > heightDiff) {
-                    headerEl.classList.add('collapsed');
-                } else {
-                    headerEl.classList.remove('collapsed');
-                }
-            }, { passive: true });
 
             // Eventos de control del Carrito y comportamiento dinámico del FAB
             const fabWhatsappBtn = document.getElementById('fabWhatsapp');
