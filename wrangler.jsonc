@@ -1,17 +1,18 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "catalogoonlinetph",
+  "name": "todoparteshorizonte",
   "compatibility_date": "2026-06-17",
   "observability": {
     "enabled": true
   },
+  "pages_build_output_dir": ".",
   "assets": {
     "directory": "."
   },
   "kv_namespaces": [
     {
       "binding": "STATS_KV",
-      "id": "CATALOGO_STATS_KV_ID"
+      "id": "1e094c51999e41019e3be3d28497347f"
     }
   ]
 }

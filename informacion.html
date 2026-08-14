@@ -309,6 +309,24 @@
 
     <!-- JavaScript para lógica e inicialización -->
     <script>
+        // Función para telemetría
+        function trackEvent(eventName, params = {}) {
+            try {
+                let cfEvent = 'page_view';
+                let cfData = { path: window.location.pathname || '/informacion.html' };
+                if (eventName === 'contacto_whatsapp') {
+                    cfEvent = 'whatsapp_click';
+                    cfData = { origen: 'informacion_page' };
+                }
+                const payload = JSON.stringify({ event: cfEvent, data: cfData });
+                if (navigator.sendBeacon) {
+                    navigator.sendBeacon('/api/track-event', new Blob([payload], { type: 'application/json' }));
+                } else {
+                    fetch('/api/track-event', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: payload, keepalive: true }).catch(() => {});
+                }
+            } catch(e) {}
+        }
+
         // Función para descodificar cadenas Base64
         function deobfuscate(val) {
             if (!val) return "";
@@ -317,6 +335,7 @@
 
         // Cargar datos al iniciar
         document.addEventListener('DOMContentLoaded', () => {
+            trackEvent('page_view', { path: '/informacion.html' });
             if (typeof PRODUCTS_DATA !== 'undefined') {
                 // Configurar logo personalizado si es diferente al por defecto
                 if (PRODUCTS_DATA.use_custom_logo && PRODUCTS_DATA.use_custom_logo !== './assets/logo.png') {

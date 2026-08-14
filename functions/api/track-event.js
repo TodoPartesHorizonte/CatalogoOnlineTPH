@@ -38,6 +38,7 @@ export async function onRequestPost(context) {
             page_views: 0,
             whatsapp_clicks_total: 0,
             searches_count: 0,
+            pages: {},
             products: {},
             searches: {},
             vehicle_filters: {}
@@ -50,6 +51,7 @@ export async function onRequestPost(context) {
                 statsDaily.page_views = parsed.page_views || 0;
                 statsDaily.whatsapp_clicks_total = parsed.whatsapp_clicks_total || 0;
                 statsDaily.searches_count = parsed.searches_count || 0;
+                statsDaily.pages = parsed.pages || {};
                 statsDaily.products = parsed.products || {};
                 statsDaily.searches = parsed.searches || {};
                 statsDaily.vehicle_filters = parsed.vehicle_filters || {};
@@ -59,9 +61,13 @@ export async function onRequestPost(context) {
         }
 
         switch (eventType) {
-            case "page_view":
+            case "page_view": {
                 statsDaily.page_views += 1;
+                const pagePath = String(data.path || "/").trim() || "/";
+                if (!statsDaily.pages) statsDaily.pages = {};
+                statsDaily.pages[pagePath] = (statsDaily.pages[pagePath] || 0) + 1;
                 break;
+            }
 
             case "product_view": {
                 const pId = String(data.product_id || "").trim();

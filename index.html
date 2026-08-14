@@ -173,7 +173,9 @@
                     };
                 } else if (eventName === 'page_view' || eventName === 'visita_catalogo') {
                     cfEvent = 'page_view';
-                    cfData = {};
+                    cfData = {
+                        path: window.location.pathname || '/'
+                    };
                 }
 
                 if (cfEvent) {
