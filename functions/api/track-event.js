@@ -17,7 +17,13 @@ export async function onRequestPost(context) {
     }
 
     try {
-        const body = await request.json();
+        let body = {};
+        const rawText = await request.text();
+        try {
+            body = JSON.parse(rawText);
+        } catch (e) {
+            body = {};
+        }
         const eventType = body.event;
         const data = body.data || {};
 
