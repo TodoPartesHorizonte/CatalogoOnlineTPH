@@ -1443,28 +1443,28 @@
                 }
             });
 
-            // Colapso dinámico e inmediato de cabecera al hacer scroll (Reacciona suavemente desde 25px)
+            // Colapso dinámico de cabecera con histéresis:
+            // De bajada: colapsa rápidamente (> 25px) para dar prioridad a los productos.
+            // De subida: solo se expande al llegar al tope absoluto (altura máxima, scrollY <= 5px).
             const headerEl = document.querySelector('header');
             const wrapperEl = document.querySelector('.header-wrapper');
-            const scrollThreshold = 25;
+            const collapseThreshold = 25;
+            const expandThreshold = 5;
             let isScrollTicking = false;
 
             function handleHeaderScroll() {
                 if (!headerEl) return;
                 const scrollY = window.scrollY || window.pageYOffset || 0;
-                if (scrollY > scrollThreshold) {
-                    if (!headerEl.classList.contains('collapsed')) {
+                
+                if (!headerEl.classList.contains('collapsed')) {
+                    if (scrollY > collapseThreshold) {
                         headerEl.classList.add('collapsed');
-                    }
-                    if (wrapperEl && !wrapperEl.classList.contains('collapsed')) {
-                        wrapperEl.classList.add('collapsed');
+                        if (wrapperEl) wrapperEl.classList.add('collapsed');
                     }
                 } else {
-                    if (headerEl.classList.contains('collapsed')) {
+                    if (scrollY <= expandThreshold) {
                         headerEl.classList.remove('collapsed');
-                    }
-                    if (wrapperEl && wrapperEl.classList.contains('collapsed')) {
-                        wrapperEl.classList.remove('collapsed');
+                        if (wrapperEl) wrapperEl.classList.remove('collapsed');
                     }
                 }
             }
