@@ -1385,11 +1385,20 @@
             searchInput.addEventListener('change', (e) => {
                 if (e.target.value.trim() !== '') {
                     trackEvent('buscar_producto', {
-                        search_term: e.target.value,
+                        search_term: e.target.value.trim(),
                         origen: 'catalogo_page'
                     });
-                    // Increment feedback interaction
                     incrementInteractionCount();
+                }
+            });
+
+            searchInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && e.target.value.trim().length >= 2) {
+                    clearTimeout(searchDebounceTimer);
+                    trackEvent('buscar_producto', {
+                        search_term: e.target.value.trim(),
+                        origen: 'catalogo_search_enter'
+                    });
                 }
             });
 
@@ -1404,7 +1413,7 @@
                             search_term: searchQuery.trim(),
                             origen: 'catalogo_search_typing'
                         });
-                    }, 1200);
+                    }, 400);
                 }
                 if (searchQuery.trim() !== '') {
                     const wasFolders = activeView === 'FOLDERS';
