@@ -191,7 +191,9 @@
                         }).catch(() => {});
                     }
                 }
-            } catch(e) {}
+            } catch (e) {
+                // Silencioso
+            }
 
             // Disparo a GA4
             if (typeof gtag === 'function') {
