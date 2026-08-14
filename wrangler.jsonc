@@ -6,9 +6,6 @@
     "enabled": true
   },
   "pages_build_output_dir": ".",
-  "assets": {
-    "directory": "."
-  },
   "kv_namespaces": [
     {
       "binding": "STATS_KV",
