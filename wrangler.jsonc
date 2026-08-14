@@ -1,7 +1,17 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "catalogoonlinetph",
   "compatibility_date": "2026-06-17",
+  "observability": {
+    "enabled": true
+  },
   "assets": {
     "directory": "."
-  }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "STATS_KV",
+      "id": "CATALOGO_STATS_KV_ID"
+    }
+  ]
 }

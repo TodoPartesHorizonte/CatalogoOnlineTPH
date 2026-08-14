@@ -137,9 +137,61 @@
             }
         }
 
-        // Función global de rastreo de eventos unificada (GA4 + Meta Pixel)
+        // Función global de rastreo de eventos unificada (Cloudflare KV + GA4 + Meta Pixel)
         function trackEvent(eventName, params = {}) {
             forceInitAnalytics();
+
+            // 1. Envío asíncrono a Cloudflare KV Telemetry (/api/track-event)
+            try {
+                let cfEvent = null;
+                let cfData = {};
+
+                if (eventName === 'ver_detalle_producto' || eventName === 'view_item') {
+                    cfEvent = 'product_view';
+                    cfData = {
+                        product_id: params.item_id || params.id || '',
+                        product_name: params.item_name || params.nombre_producto || '',
+                        product_model: params.item_category || params.categoria || '',
+                        product_photo: params.image_path || ''
+                    };
+                } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp' || eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
+                    cfEvent = 'whatsapp_click';
+                    cfData = {
+                        product_id: params.item_id || (params.items && params.items[0] ? params.items[0].item_id : ''),
+                        product_name: params.nombre_producto || (params.items && params.items[0] ? params.items[0].item_name : ''),
+                        product_model: params.categoria || (params.items && params.items[0] ? params.items[0].item_category : '')
+                    };
+                } else if (eventName === 'buscar_producto' || eventName === 'search') {
+                    cfEvent = 'search';
+                    cfData = {
+                        query: params.termino_busqueda || params.search_term || params.query || ''
+                    };
+                } else if (eventName === 'filtrar_vehiculo' || eventName === 'filter_vehicle') {
+                    cfEvent = 'filter_vehicle';
+                    cfData = {
+                        model_slug: params.vehicle_name || params.model_slug || ''
+                    };
+                } else if (eventName === 'page_view' || eventName === 'visita_catalogo') {
+                    cfEvent = 'page_view';
+                    cfData = {};
+                }
+
+                if (cfEvent) {
+                    const payload = JSON.stringify({ event: cfEvent, data: cfData });
+                    if (navigator.sendBeacon) {
+                        navigator.sendBeacon('/api/track-event', new Blob([payload], { type: 'application/json' }));
+                    } else {
+                        fetch('/api/track-event', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: payload,
+                            keepalive: true
+                        }).catch(() => {});
+                    }
+                }
+            } catch (e) {
+                // Silencioso
+            }
 
             // Disparo a GA4
             if (typeof gtag === 'function') {
