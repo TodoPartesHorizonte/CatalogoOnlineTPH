@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 880,
+  "total_products": 879,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5386,6 +5386,48 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
+      "category": "Bulbo Presion Aceite",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-g200.webp",
+      "description": "BULBO PRESION ACEITE CARIBE G200",
+      "keywords": [
+        "5-83151-0050",
+        "ACEITE",
+        "BULBO",
+        "CARIBE",
+        "G200",
+        "PRESION",
+        "TGO-1005"
+      ],
+      "oem": "5-83151-0050 / TGO-1005",
+      "slug": "bulbo-presion-aceite-caribe-g200-2",
+      "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
+      "linked_ids": [
+        299
+      ]
+    },
+    {
+      "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
+      "category": "Bulbo Presion Aceite",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-g200.webp",
+      "description": "BULBO PRESION ACEITE CARIBE G200",
+      "keywords": [
+        "5-83151-0050",
+        "ACEITE",
+        "BULBO",
+        "CARIBE",
+        "G200",
+        "PRESION",
+        "TGO-1005"
+      ],
+      "oem": "5-83151-0050 / TGO-1005",
+      "slug": "bulbo-presion-aceite-caribe-g200-2",
+      "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
+      "linked_ids": [
+        299
+      ]
+    },
+    {
       "category": "Cables de Bujia",
       "description": "JUEGO DE CABLE LUV 2300",
       "id": "3495e4ad-d024-468f-ba8f-4edd813ea421",
@@ -7887,33 +7929,6 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-94476-1421",
           "brand": "Original",
           "precio_usd": 0
-        }
-      ]
-    },
-    {
-      "category": "Embolo",
-      "description": "ÉMBOLO ARRANQUE CARIBE 2.3",
-      "id": "2901f591-a6df-4fdf-927e-5c293424d271",
-      "image_path": "./assets/embolo-arranque-caribe-2-3.webp",
-      "keywords": [
-        "053660-0440",
-        "053660-0441",
-        "053660-0442",
-        "1-81129-4990",
-        "ARRANQUE",
-        "CARIBE",
-        "EMBOLO"
-      ],
-      "linked_ids": [
-        437
-      ],
-      "oem": "053660-0440 / 053660-0441 / 053660-0442 / 1-81129-4990",
-      "slug": "embolo-arranque-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "053660-0440",
-          "brand": "Original",
-          "precio_usd": 20
         }
       ]
     },
@@ -16330,32 +16345,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Manguera Radiador",
       "description": "MANGUERA RADIADOR SUPERIOR LUV 2.2",
-      "id": "5b1e3e01-8eda-41a8-ac4a-0f87fbaa2176",
-      "image_path": "./assets/manguera-radiador-superior-luv-2-2-2.webp",
-      "keywords": [
-        "8-97181-3900",
-        "LUV",
-        "MANGUERA",
-        "RADIADOR",
-        "SUPERIOR"
-      ],
-      "linked_ids": [
-        712
-      ],
-      "oem": "8-97181-3900",
-      "original_filename": "Manguera Radiador/5b1e3e01-8eda-41a8-ac4a-0f87fbaa2176.jpg",
-      "slug": "manguera-radiador-superior-luv-2-2-2",
-      "variants": [
-        {
-          "codigo_oem": "8-97181-3900",
-          "brand": "Original",
-          "precio_usd": 25
-        }
-      ]
-    },
-    {
-      "category": "Manguera Radiador",
-      "description": "MANGUERA RADIADOR SUPERIOR LUV 2.2",
       "id": "e10ac381-5b62-4592-982e-b93556481d16",
       "image_path": "./assets/manguera-radiador-superior-luv-2-2.webp",
       "keywords": [
@@ -16371,6 +16360,32 @@ const PRODUCTS_DATA = {
       "oem": "8-97181-3900",
       "original_filename": "Manguera Radiador/e10ac381-5b62-4592-982e-b93556481d16.jpg",
       "slug": "manguera-radiador-superior-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97181-3900",
+          "brand": "Original",
+          "precio_usd": 25
+        }
+      ]
+    },
+    {
+      "category": "Manguera Radiador",
+      "description": "MANGUERA RADIADOR SUPERIOR LUV 2.2",
+      "id": "5b1e3e01-8eda-41a8-ac4a-0f87fbaa2176",
+      "image_path": "./assets/manguera-radiador-superior-luv-2-2-2.webp",
+      "keywords": [
+        "8-97181-3900",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR",
+        "SUPERIOR"
+      ],
+      "linked_ids": [
+        712
+      ],
+      "oem": "8-97181-3900",
+      "original_filename": "Manguera Radiador/5b1e3e01-8eda-41a8-ac4a-0f87fbaa2176.jpg",
+      "slug": "manguera-radiador-superior-luv-2-2-2",
       "variants": [
         {
           "codigo_oem": "8-97181-3900",
@@ -18534,24 +18549,24 @@ const PRODUCTS_DATA = {
     {
       "category": "Piston Caliper",
       "description": "PISTON CALIPER TRASERO CARIBE 2.6",
-      "id": "43862a1c-0d3f-4aef-838c-5d98cd573210",
-      "image_path": "./assets/piston-caliper-trasero-caribe-2-6-3.webp",
+      "id": "9b6701a7-f0a3-4e57-bcdb-22059253b47b",
+      "image_path": "./assets/piston-caliper-trasero-caribe-2-6.webp",
       "keywords": [
         "CALIPER",
         "CARIBE",
-        "PF-7412",
+        "PF-7413",
         "PISTON",
         "TRASERO"
       ],
       "linked_ids": [
-        835
+        836
       ],
-      "oem": "PF-7412",
-      "original_filename": "Piston Caliper/43862a1c-0d3f-4aef-838c-5d98cd573210.jpg",
-      "slug": "piston-caliper-trasero-caribe-2-6-3",
+      "oem": "PF-7413",
+      "original_filename": "Piston Caliper/9b6701a7-f0a3-4e57-bcdb-22059253b47b.jpg",
+      "slug": "piston-caliper-trasero-caribe-2-6",
       "variants": [
         {
-          "codigo_oem": "PF-7412",
+          "codigo_oem": "PF-7413",
           "brand": "Original",
           "precio_usd": 20
         }
@@ -18586,26 +18601,53 @@ const PRODUCTS_DATA = {
     {
       "category": "Piston Caliper",
       "description": "PISTON CALIPER TRASERO CARIBE 2.6",
-      "id": "9b6701a7-f0a3-4e57-bcdb-22059253b47b",
-      "image_path": "./assets/piston-caliper-trasero-caribe-2-6.webp",
+      "id": "43862a1c-0d3f-4aef-838c-5d98cd573210",
+      "image_path": "./assets/piston-caliper-trasero-caribe-2-6-3.webp",
       "keywords": [
         "CALIPER",
         "CARIBE",
-        "PF-7413",
+        "PF-7412",
         "PISTON",
         "TRASERO"
       ],
       "linked_ids": [
-        836
+        835
       ],
-      "oem": "PF-7413",
-      "original_filename": "Piston Caliper/9b6701a7-f0a3-4e57-bcdb-22059253b47b.jpg",
-      "slug": "piston-caliper-trasero-caribe-2-6",
+      "oem": "PF-7412",
+      "original_filename": "Piston Caliper/43862a1c-0d3f-4aef-838c-5d98cd573210.jpg",
+      "slug": "piston-caliper-trasero-caribe-2-6-3",
       "variants": [
         {
-          "codigo_oem": "PF-7413",
+          "codigo_oem": "PF-7412",
           "brand": "Original",
           "precio_usd": 20
+        }
+      ]
+    },
+    {
+      "category": "Piñon Velocimetro",
+      "description": "PIÑON VELOCIMETRO CARIBE",
+      "id": "232c8860-6ffe-45b0-b8db-a68d59609019",
+      "image_path": "./assets/pinon-velocimetro-caribe.webp",
+      "keywords": [
+        "8-94473-3081",
+        "8-94473-3082",
+        "8-97238-5880",
+        "CARIBE",
+        "PINON",
+        "VELOCIMETRO"
+      ],
+      "linked_ids": [
+        774
+      ],
+      "oem": "8-94473-3081 / 8-94473-3082 / 8-97238-5880",
+      "original_filename": "Piñon Velocimetro/232c8860-6ffe-45b0-b8db-a68d59609019.jpg",
+      "slug": "pinon-velocimetro-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94473-3081",
+          "brand": "Original",
+          "precio_usd": 0
         }
       ]
     },
@@ -18634,33 +18676,6 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-94473-3071",
           "brand": "Original",
           "precio_usd": 15
-        }
-      ]
-    },
-    {
-      "category": "Piñon Velocimetro",
-      "description": "PIÑON VELOCIMETRO CARIBE",
-      "id": "232c8860-6ffe-45b0-b8db-a68d59609019",
-      "image_path": "./assets/pinon-velocimetro-caribe.webp",
-      "keywords": [
-        "8-94473-3081",
-        "8-94473-3082",
-        "8-97238-5880",
-        "CARIBE",
-        "PINON",
-        "VELOCIMETRO"
-      ],
-      "linked_ids": [
-        774
-      ],
-      "oem": "8-94473-3081 / 8-94473-3082 / 8-97238-5880",
-      "original_filename": "Piñon Velocimetro/232c8860-6ffe-45b0-b8db-a68d59609019.jpg",
-      "slug": "pinon-velocimetro-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94473-3081",
-          "brand": "Original",
-          "precio_usd": 0
         }
       ]
     },
@@ -21023,28 +21038,6 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "b24dbcb5-f149-409d-a585-eb60b84054b0",
-      "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-5-2.webp",
-      "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 3.5",
-      "keywords": [
-        "8-97942-8770",
-        "8-97946-2530",
-        "8979428780",
-        "CARDAN",
-        "CHUMACERA",
-        "DMAX",
-        "LUV",
-        "SOPORTE"
-      ],
-      "oem": "8-97942-8770 / 8-97946-2530 / 8979428780",
-      "slug": "soporte-cardan-chumacera-luv-dmax-3-5-2",
-      "original_filename": "Soporte Cardan/b24dbcb5-f149-409d-a585-eb60b84054b0.jpg",
-      "linked_ids": [
-        920
-      ]
-    },
-    {
       "id": "60f4efe9-0359-45af-bdaa-e7289f9a5fa5",
       "category": "Soporte Cardan",
       "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-5.webp",
@@ -21062,6 +21055,28 @@ const PRODUCTS_DATA = {
       "oem": "8-97942-8770 / 8-97946-2530 / 8979428780",
       "slug": "soporte-cardan-chumacera-luv-dmax-3-5",
       "original_filename": "Soporte Cardan/60f4efe9-0359-45af-bdaa-e7289f9a5fa5.jpg",
+      "linked_ids": [
+        920
+      ]
+    },
+    {
+      "id": "b24dbcb5-f149-409d-a585-eb60b84054b0",
+      "category": "Soporte Cardan",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-5-2.webp",
+      "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 3.5",
+      "keywords": [
+        "8-97942-8770",
+        "8-97946-2530",
+        "8979428780",
+        "CARDAN",
+        "CHUMACERA",
+        "DMAX",
+        "LUV",
+        "SOPORTE"
+      ],
+      "oem": "8-97942-8770 / 8-97946-2530 / 8979428780",
+      "slug": "soporte-cardan-chumacera-luv-dmax-3-5-2",
+      "original_filename": "Soporte Cardan/b24dbcb5-f149-409d-a585-eb60b84054b0.jpg",
       "linked_ids": [
         920
       ]
@@ -21128,6 +21143,25 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "97f0db85-1779-438f-8a72-eddaecc6209c",
+      "category": "Stop",
+      "image_path": "./assets/stop-luv-2-3.webp",
+      "description": "STOP LUV 2.3",
+      "keywords": [
+        "8-97114-4490",
+        "8-97114-4500",
+        "LUV",
+        "STOP"
+      ],
+      "oem": "8-97114-4490 / 8-97114-4500",
+      "slug": "stop-luv-2-3",
+      "original_filename": "Stop/97f0db85-1779-438f-8a72-eddaecc6209c.jpg",
+      "linked_ids": [
+        1150,
+        923
+      ]
+    },
+    {
       "id": "1746764d-1508-4451-9793-de08b16107b4",
       "category": "Stop",
       "image_path": "./assets/stop-luv-2-3-2.webp",
@@ -21146,25 +21180,6 @@ const PRODUCTS_DATA = {
       "linked_ids": [
         1219,
         1220
-      ]
-    },
-    {
-      "id": "97f0db85-1779-438f-8a72-eddaecc6209c",
-      "category": "Stop",
-      "image_path": "./assets/stop-luv-2-3.webp",
-      "description": "STOP LUV 2.3",
-      "keywords": [
-        "8-97114-4490",
-        "8-97114-4500",
-        "LUV",
-        "STOP"
-      ],
-      "oem": "8-97114-4490 / 8-97114-4500",
-      "slug": "stop-luv-2-3",
-      "original_filename": "Stop/97f0db85-1779-438f-8a72-eddaecc6209c.jpg",
-      "linked_ids": [
-        1150,
-        923
       ]
     },
     {
@@ -22785,18 +22800,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO CARIBE 2.6",
-      "id": "CARIBE 2.6",
-      "image_path": "./assets/tren-delantero-caribe-2-6.webp",
-      "keywords": [
-        "CARIBE",
-        "DELANTERO",
-        "TREN"
-      ],
-      "slug": "tren-delantero-caribe-2-6"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO CARIBE 2.6",
       "id": "4662265b-262d-4d56-b35e-5385c614d9a8",
       "image_path": "./assets/tren-delantero-caribe-2-6-2.webp",
       "keywords": [
@@ -22808,16 +22811,15 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Tren Delantero",
-      "description": "TREN DELANTERO CARIBE 83-88",
-      "id": "Caribe 83-88",
-      "image_path": "./assets/tren-delantero-caribe-83-88.webp",
+      "description": "TREN DELANTERO CARIBE 2.6",
+      "id": "CARIBE 2.6",
+      "image_path": "./assets/tren-delantero-caribe-2-6.webp",
       "keywords": [
-        "83-88",
         "CARIBE",
         "DELANTERO",
         "TREN"
       ],
-      "slug": "tren-delantero-caribe-83-88"
+      "slug": "tren-delantero-caribe-2-6"
     },
     {
       "category": "Tren Delantero",
@@ -22831,6 +22833,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-caribe-83-88-2"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO CARIBE 83-88",
+      "id": "Caribe 83-88",
+      "image_path": "./assets/tren-delantero-caribe-83-88.webp",
+      "keywords": [
+        "83-88",
+        "CARIBE",
+        "DELANTERO",
+        "TREN"
+      ],
+      "slug": "tren-delantero-caribe-83-88"
     },
     {
       "category": "Tren Delantero",
@@ -22861,19 +22876,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO LUV 4X4",
-      "id": "Luv 4x4",
-      "image_path": "./assets/tren-delantero-luv-4x4.webp",
-      "keywords": [
-        "4X4",
-        "DELANTERO",
-        "LUV",
-        "TREN"
-      ],
-      "slug": "tren-delantero-luv-4x4"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO LUV 4X4",
       "id": "7d137634-a97a-41dc-a5de-7fabc249a9bc",
       "image_path": "./assets/tren-delantero-luv-4x4-2.webp",
       "keywords": [
@@ -22883,6 +22885,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-luv-4x4-2"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO LUV 4X4",
+      "id": "Luv 4x4",
+      "image_path": "./assets/tren-delantero-luv-4x4.webp",
+      "keywords": [
+        "4X4",
+        "DELANTERO",
+        "LUV",
+        "TREN"
+      ],
+      "slug": "tren-delantero-luv-4x4"
     },
     {
       "category": "Tren Delantero",
@@ -22913,19 +22928,6 @@ const PRODUCTS_DATA = {
     {
       "category": "Tren Delantero",
       "description": "TREN DELANTERO LUV D-MAX 3.5",
-      "id": "DMAX 3.5",
-      "image_path": "./assets/tren-delantero-luv-d-max-3-5.webp",
-      "keywords": [
-        "D-MAX",
-        "DELANTERO",
-        "LUV",
-        "TREN"
-      ],
-      "slug": "tren-delantero-luv-d-max-3-5"
-    },
-    {
-      "category": "Tren Delantero",
-      "description": "TREN DELANTERO LUV D-MAX 3.5",
       "id": "ca6f2c65-9a2c-4d5d-9868-b940c475fb9c",
       "image_path": "./assets/tren-delantero-luv-d-max-3-5-2.webp",
       "keywords": [
@@ -22935,6 +22937,19 @@ const PRODUCTS_DATA = {
         "TREN"
       ],
       "slug": "tren-delantero-luv-d-max-3-5-2"
+    },
+    {
+      "category": "Tren Delantero",
+      "description": "TREN DELANTERO LUV D-MAX 3.5",
+      "id": "DMAX 3.5",
+      "image_path": "./assets/tren-delantero-luv-d-max-3-5.webp",
+      "keywords": [
+        "D-MAX",
+        "DELANTERO",
+        "LUV",
+        "TREN"
+      ],
+      "slug": "tren-delantero-luv-d-max-3-5"
     },
     {
       "category": "Tren Delantero",
@@ -23702,52 +23717,6 @@ const PRODUCTS_DATA = {
       "original_filename": "Valvula Freno/cc9707f4-2b17-4b0f-8b47-24841355e76b.jpg",
       "linked_ids": [
         1022
-      ]
-    },
-    {
-      "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
-      "category": "Valvula IAC",
-      "image_path": "./assets/bulbo-presion-aceite-caribe-g200-2.webp",
-      "description": "BULBO PRESION ACEITE CARIBE G200",
-      "keywords": [
-        "5-83151-0050",
-        "ACEITE",
-        "BULBO",
-        "CARIBE",
-        "G200",
-        "IAC",
-        "PRESION",
-        "TGO-1005",
-        "VALVULA"
-      ],
-      "oem": "5-83151-0050 / TGO-1005",
-      "slug": "bulbo-presion-aceite-caribe-g200",
-      "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
-      "linked_ids": [
-        299
-      ]
-    },
-    {
-      "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
-      "category": "Valvula IAC",
-      "image_path": "./assets/bulbo-presion-aceite-caribe-g200-2.webp",
-      "description": "BULBO PRESION ACEITE CARIBE G200",
-      "keywords": [
-        "5-83151-0050",
-        "ACEITE",
-        "BULBO",
-        "CARIBE",
-        "G200",
-        "IAC",
-        "PRESION",
-        "TGO-1005",
-        "VALVULA"
-      ],
-      "oem": "5-83151-0050 / TGO-1005",
-      "slug": "bulbo-presion-aceite-caribe-g200",
-      "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
-      "linked_ids": [
-        299
       ]
     },
     {
