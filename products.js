@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 836,
+  "total_products": 882,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5394,6 +5394,46 @@ const PRODUCTS_DATA = {
           "brand": "NOVATEC",
           "precio_usd": 0
         }
+      ]
+    },
+    {
+      "id": "4e3044c7-2e1a-4858-ae56-709091e68dc8",
+      "category": "Bulbo Presion Aceite",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-2-3.webp",
+      "description": "BULBO PRESION ACEITE CARIBE 2.3",
+      "keywords": [
+        "5-83151-0050",
+        "ACEITE",
+        "BULBO",
+        "CARIBE",
+        "PRESION",
+        "TGO-1005"
+      ],
+      "oem": "5-83151-0050 / TGO-1005",
+      "slug": "bulbo-presion-aceite-caribe-2-3",
+      "original_filename": "Bulbo Presion Aceite/4e3044c7-2e1a-4858-ae56-709091e68dc8.jpg",
+      "linked_ids": [
+        299
+      ]
+    },
+    {
+      "id": "4642084b-6109-4591-a078-150e6db0baac",
+      "category": "Bulbo Presion Aceite",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-2-6.webp",
+      "description": "BULBO PRESION ACEITE CARIBE 2.6",
+      "keywords": [
+        "5-83151-0050",
+        "ACEITE",
+        "BULBO",
+        "CARIBE",
+        "PRESION",
+        "TGO-1005"
+      ],
+      "oem": "5-83151-0050 / TGO-1005",
+      "slug": "bulbo-presion-aceite-caribe-2-6",
+      "original_filename": "Bulbo Presion Aceite/4642084b-6109-4591-a078-150e6db0baac.jpg",
+      "linked_ids": [
+        299
       ]
     },
     {
@@ -21384,6 +21424,64 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "1a3d6178-bfa1-40ca-90cf-e7141f25fc80",
+      "category": "Tambor de Freno",
+      "image_path": "./assets/tambor-de-freno-luv-dmax-2-4.webp",
+      "description": "TAMBOR DE FRENO LUV DMAX 2.4",
+      "keywords": [
+        "8-97360-5050",
+        "DMAX",
+        "FRENO",
+        "LUV",
+        "TAMBOR"
+      ],
+      "oem": "8-97360-5050",
+      "slug": "tambor-de-freno-luv-dmax-2-4",
+      "original_filename": "Tambor de Freno/1a3d6178-bfa1-40ca-90cf-e7141f25fc80.jpg",
+      "linked_ids": [
+        1167
+      ]
+    },
+    {
+      "id": "23cc3a2a-6641-4193-a901-7abc090dd780",
+      "category": "Tambor de Freno",
+      "image_path": "./assets/tambor-de-freno-luv-dmax-2-5.webp",
+      "description": "TAMBOR DE FRENO LUV DMAX 2.5",
+      "keywords": [
+        "8-97360-5050",
+        "DMAX",
+        "FRENO",
+        "LUV",
+        "TAMBOR"
+      ],
+      "oem": "8-97360-5050",
+      "slug": "tambor-de-freno-luv-dmax-2-5",
+      "original_filename": "Tambor de Freno/23cc3a2a-6641-4193-a901-7abc090dd780.jpg",
+      "linked_ids": [
+        1167
+      ]
+    },
+    {
+      "id": "a23b0116-fa21-4324-9dd2-1eee83d53f90",
+      "category": "Tambor de Freno",
+      "image_path": "./assets/tambor-de-freno-luv-dmax-3-0-4x2.webp",
+      "description": "TAMBOR DE FRENO LUV DMAX 3.0 4X2",
+      "keywords": [
+        "4X2",
+        "8-97360-5050",
+        "DMAX",
+        "FRENO",
+        "LUV",
+        "TAMBOR"
+      ],
+      "oem": "8-97360-5050",
+      "slug": "tambor-de-freno-luv-dmax-3-0-4x2",
+      "original_filename": "Tambor de Freno/a23b0116-fa21-4324-9dd2-1eee83d53f90.jpg",
+      "linked_ids": [
+        1167
+      ]
+    },
+    {
       "id": "c2004d22-097c-4902-9d44-42cd5f8c7a5f",
       "category": "Tambor de Freno",
       "image_path": "./assets/tambor-de-freno-luv-dmax-3-5.webp",
@@ -21456,6 +21554,24 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "3f24e314-7b16-4215-91c2-461c44b5eda6",
+      "category": "Tapa Aceite",
+      "image_path": "./assets/tapa-aceite-caribe-2-3.webp",
+      "description": "TAPA ACEITE CARIBE 2.3",
+      "keywords": [
+        "8-94239-1510",
+        "ACEITE",
+        "CARIBE",
+        "TAPA"
+      ],
+      "oem": "8-94239-1510",
+      "slug": "tapa-aceite-caribe-2-3",
+      "original_filename": "Tapa Aceite/3f24e314-7b16-4215-91c2-461c44b5eda6.jpg",
+      "linked_ids": [
+        937
+      ]
+    },
+    {
       "id": "f1344439-dcf8-4ebf-ab36-8b3cf1641607",
       "category": "Tapa Aceite",
       "image_path": "./assets/tapa-aceite-caribe-2-6.webp",
@@ -21472,6 +21588,25 @@ const PRODUCTS_DATA = {
       "original_filename": "Tapa Aceite/f1344439-dcf8-4ebf-ab36-8b3cf1641607.jpg",
       "linked_ids": [
         938
+      ]
+    },
+    {
+      "id": "08d37f56-ed43-4d85-a877-07d49635dc19",
+      "category": "Tapa Aceite",
+      "image_path": "./assets/tapa-aceite-caribe-g200.webp",
+      "description": "TAPA ACEITE CARIBE G200",
+      "keywords": [
+        "8-94239-1510",
+        "ACEITE",
+        "CARIBE",
+        "G200",
+        "TAPA"
+      ],
+      "oem": "8-94239-1510",
+      "slug": "tapa-aceite-caribe-g200",
+      "original_filename": "Tapa Aceite/08d37f56-ed43-4d85-a877-07d49635dc19.jpg",
+      "linked_ids": [
+        937
       ]
     },
     {
@@ -21533,6 +21668,44 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "dd47c528-8ce9-4ca0-a211-d655db12e0d4",
+      "category": "Tapa Distribuidor",
+      "image_path": "./assets/tapa-distribuidor-caribe-2-3.webp",
+      "description": "TAPA DISTRIBUIDOR CARIBE 2.3",
+      "keywords": [
+        "33321-60A10",
+        "8-94129-2020",
+        "CARIBE",
+        "DISTRIBUIDOR",
+        "TAPA"
+      ],
+      "oem": "8-94129-2020 / 33321-60A10",
+      "slug": "tapa-distribuidor-caribe-2-3",
+      "original_filename": "Tapa Distribuidor/dd47c528-8ce9-4ca0-a211-d655db12e0d4.jpg",
+      "linked_ids": [
+        941
+      ]
+    },
+    {
+      "id": "ac2e55a9-80db-44b7-8211-315eb0b7c769",
+      "category": "Tapa Distribuidor",
+      "image_path": "./assets/tapa-distribuidor-caribe-2-6.webp",
+      "description": "TAPA DISTRIBUIDOR CARIBE 2.6",
+      "keywords": [
+        "33321-60A10",
+        "8-94129-2020",
+        "CARIBE",
+        "DISTRIBUIDOR",
+        "TAPA"
+      ],
+      "oem": "8-94129-2020 / 33321-60A10",
+      "slug": "tapa-distribuidor-caribe-2-6",
+      "original_filename": "Tapa Distribuidor/ac2e55a9-80db-44b7-8211-315eb0b7c769.jpg",
+      "linked_ids": [
+        941
+      ]
+    },
+    {
       "id": "c8bbe967-50f9-45b7-8d93-497732ca641b",
       "category": "Tapa Distribuidor",
       "image_path": "./assets/tapa-distribuidor-caribe-g200.webp",
@@ -21549,6 +21722,24 @@ const PRODUCTS_DATA = {
       "original_filename": "Tapa Distribuidor/c8bbe967-50f9-45b7-8d93-497732ca641b.jpg",
       "linked_ids": [
         940
+      ]
+    },
+    {
+      "id": "8e238848-6f99-4fc6-a507-945047c047a6",
+      "category": "Tapa Distribuidor",
+      "image_path": "./assets/tapa-distribuidor-luv-2-3.webp",
+      "description": "TAPA DISTRIBUIDOR LUV 2.3",
+      "keywords": [
+        "8-94321-5370",
+        "DISTRIBUIDOR",
+        "LUV",
+        "TAPA"
+      ],
+      "oem": "8-94321-5370",
+      "slug": "tapa-distribuidor-luv-2-3",
+      "original_filename": "Tapa Distribuidor/8e238848-6f99-4fc6-a507-945047c047a6.jpg",
+      "linked_ids": [
+        942
       ]
     },
     {
@@ -21701,6 +21892,46 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "b4a0fcc2-d83a-4865-a2de-8e908a8c4304",
+      "category": "Tapavalvula",
+      "image_path": "./assets/tapavalvula-caribe-2-3.webp",
+      "description": "TAPAVALVULA CARIBE 2.3",
+      "keywords": [
+        "8-94146-2462",
+        "8-94146-2463",
+        "8-94360-5311",
+        "8-94360-5320",
+        "CARIBE",
+        "TAPAVALVULA"
+      ],
+      "oem": "8-94360-5320 / 8-94360-5311 / 8-94146-2462 / 8-94146-2463",
+      "slug": "tapavalvula-caribe-2-3",
+      "original_filename": "Tapavalvula/b4a0fcc2-d83a-4865-a2de-8e908a8c4304.jpg",
+      "linked_ids": [
+        1195
+      ]
+    },
+    {
+      "id": "800ceb24-80c4-42b3-882a-2a3493e521c4",
+      "category": "Tapavalvula",
+      "image_path": "./assets/tapavalvula-caribe-2-6.webp",
+      "description": "TAPAVALVULA CARIBE 2.6",
+      "keywords": [
+        "8-94146-2462",
+        "8-94146-2463",
+        "8-94360-5311",
+        "8-94360-5320",
+        "CARIBE",
+        "TAPAVALVULA"
+      ],
+      "oem": "8-94360-5320 / 8-94360-5311 / 8-94146-2462 / 8-94146-2463",
+      "slug": "tapavalvula-caribe-2-6",
+      "original_filename": "Tapavalvula/800ceb24-80c4-42b3-882a-2a3493e521c4.jpg",
+      "linked_ids": [
+        1195
+      ]
+    },
+    {
       "id": "e2c98286-15b6-4a26-8a5f-732346eb882d",
       "category": "Tapavalvula",
       "image_path": "./assets/tapavalvula-luv-2-2.webp",
@@ -21717,6 +21948,26 @@ const PRODUCTS_DATA = {
       "original_filename": "Tapavalvula/e2c98286-15b6-4a26-8a5f-732346eb882d.jpg",
       "linked_ids": [
         947
+      ]
+    },
+    {
+      "id": "0806f2ee-9fb8-4bde-8d7f-ff98d5346f92",
+      "category": "Tapavalvula",
+      "image_path": "./assets/tapavalvula-luv-2-3.webp",
+      "description": "TAPAVALVULA LUV 2.3",
+      "keywords": [
+        "8-94146-2462",
+        "8-94146-2463",
+        "8-94360-5311",
+        "8-94360-5320",
+        "LUV",
+        "TAPAVALVULA"
+      ],
+      "oem": "8-94360-5320 / 8-94360-5311 / 8-94146-2462 / 8-94146-2463",
+      "slug": "tapavalvula-luv-2-3",
+      "original_filename": "Tapavalvula/0806f2ee-9fb8-4bde-8d7f-ff98d5346f92.jpg",
+      "linked_ids": [
+        1195
       ]
     },
     {
@@ -21938,6 +22189,27 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "c4a44d59-fb20-4c84-9f8e-9c18fc31c4cb",
+      "category": "Tensor Correa de Tiempo",
+      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-luv-2-2.webp",
+      "description": "TENSOR CORREA DE TIEMPO MECANICO LUV 2.2",
+      "keywords": [
+        "8-09158-0030",
+        "8-90530-1240",
+        "CORREA",
+        "LUV",
+        "MECANICO",
+        "TENSOR",
+        "TIEMPO"
+      ],
+      "oem": "8-90530-1240 / 8-09158-0030",
+      "slug": "tensor-correa-de-tiempo-mecanico-luv-2-2",
+      "original_filename": "Tensor Correa de Tiempo/c4a44d59-fb20-4c84-9f8e-9c18fc31c4cb.jpg",
+      "linked_ids": [
+        961
+      ]
+    },
+    {
       "id": "9ed2c76d-f6b2-47a2-ba15-d673551372ed",
       "category": "Tensor Correa de Tiempo",
       "image_path": "./assets/tensor-correa-de-tiempo-mecanico-luv-2-3.webp",
@@ -21955,6 +22227,28 @@ const PRODUCTS_DATA = {
       "original_filename": "Tensor Correa de Tiempo/9ed2c76d-f6b2-47a2-ba15-d673551372ed.jpg",
       "linked_ids": [
         957
+      ]
+    },
+    {
+      "id": "d96b554b-587f-4cdd-b0a8-011a2ab457a5",
+      "category": "Tensor Correa de Tiempo",
+      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-luv-dmax-2-4.webp",
+      "description": "TENSOR CORREA DE TIEMPO MECANICO LUV DMAX 2.4",
+      "keywords": [
+        "8-09158-0030",
+        "8-90530-1240",
+        "CORREA",
+        "DMAX",
+        "LUV",
+        "MECANICO",
+        "TENSOR",
+        "TIEMPO"
+      ],
+      "oem": "8-90530-1240 / 8-09158-0030",
+      "slug": "tensor-correa-de-tiempo-mecanico-luv-dmax-2-4",
+      "original_filename": "Tensor Correa de Tiempo/d96b554b-587f-4cdd-b0a8-011a2ab457a5.jpg",
+      "linked_ids": [
+        961
       ]
     },
     {
@@ -22421,6 +22715,45 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "f4c53e9e-73d7-4223-bfcf-f4264abf086a",
+      "category": "Tornillo Barra Central",
+      "image_path": "./assets/tornillo-barra-central-caribe-2-3.webp",
+      "description": "TORNILLO BARRA CENTRAL CARIBE 2.3",
+      "keywords": [
+        "8-94237-3651",
+        "BARRA",
+        "CARIBE",
+        "CENTRAL",
+        "TORNILLO"
+      ],
+      "oem": "8-94237-3651",
+      "slug": "tornillo-barra-central-caribe-2-3",
+      "original_filename": "Tornillo Barra Central/f4c53e9e-73d7-4223-bfcf-f4264abf086a.jpg",
+      "linked_ids": [
+        985
+      ]
+    },
+    {
+      "id": "e39d143a-4679-48d4-8c9d-38fc25eb9974",
+      "category": "Tornillo Barra Central",
+      "image_path": "./assets/tornillo-barra-central-caribe-g200.webp",
+      "description": "TORNILLO BARRA CENTRAL CARIBE G200",
+      "keywords": [
+        "8-94237-3651",
+        "BARRA",
+        "CARIBE",
+        "CENTRAL",
+        "G200",
+        "TORNILLO"
+      ],
+      "oem": "8-94237-3651",
+      "slug": "tornillo-barra-central-caribe-g200",
+      "original_filename": "Tornillo Barra Central/e39d143a-4679-48d4-8c9d-38fc25eb9974.jpg",
+      "linked_ids": [
+        985
+      ]
+    },
+    {
       "id": "25ede39a-5904-4827-9e8e-2007afab5eff",
       "category": "Tornillo Barra Torsion",
       "image_path": "./assets/tornillo-torsion-caribe-2-3.webp",
@@ -22475,6 +22808,29 @@ const PRODUCTS_DATA = {
       "original_filename": "Tornillo de Camara/652438e3-b9f1-43f8-82d1-7d448444e325.jpg",
       "linked_ids": [
         989
+      ]
+    },
+    {
+      "id": "37edd714-47db-45a6-9773-814ca5a782bc",
+      "category": "Tornillo Lubricador Cadena de Tiempo",
+      "image_path": "./assets/tornillo-con-arandela-lubricadora-caribe-g200.webp",
+      "description": "TORNILLO CON ARANDELA LUBRICADORA CARIBE G200",
+      "keywords": [
+        "8-94200-7700",
+        "ARANDELA",
+        "CADENA",
+        "CARIBE",
+        "G200",
+        "LUBRICADOR",
+        "LUBRICADORA",
+        "TIEMPO",
+        "TORNILLO"
+      ],
+      "oem": "8-94200-7700",
+      "slug": "tornillo-con-arandela-lubricadora-caribe-g200",
+      "original_filename": "Tornillo Lubricador Cadena de Tiempo/37edd714-47db-45a6-9773-814ca5a782bc.jpg",
+      "linked_ids": [
+        1211
       ]
     },
     {
@@ -22788,6 +23144,25 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "517ee0a6-ba59-4b28-ac97-9348d01d687d",
+      "category": "Tubo de Agua",
+      "image_path": "./assets/tubo-agua-pequeno-luv-2-3.webp",
+      "description": "TUBO AGUA PEQUEÑO LUV 2.3",
+      "keywords": [
+        "ACT013",
+        "AGUA",
+        "LUV",
+        "PEQUENO",
+        "TUBO"
+      ],
+      "oem": "ACT013",
+      "slug": "tubo-agua-pequeno-luv-2-3",
+      "original_filename": "Tubo de Agua/517ee0a6-ba59-4b28-ac97-9348d01d687d.jpg",
+      "linked_ids": [
+        1003
+      ]
+    },
+    {
       "category": "Tubo de Agua",
       "description": "TUBO CALEFACCION LUV 2.2/ LUV D-MAX 2.4",
       "id": "71403928-72d2-4174-a469-04391a684d9f",
@@ -22927,6 +23302,170 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 45
         }
+      ]
+    },
+    {
+      "id": "e18c4ae5-bd99-479b-b89b-7cc44bb5487a",
+      "category": "Tuerca Punta de Eje",
+      "image_path": "./assets/tuerca-punta-eje-trasera-caribe-2-3.webp",
+      "description": "TUERCA PUNTA EJE TRASERA CARIBE 2.3",
+      "keywords": [
+        "8-94177-8150",
+        "9-09843-0400",
+        "CARIBE",
+        "EJE",
+        "PUNTA",
+        "TRASERA",
+        "TUERCA"
+      ],
+      "oem": "9-09843-0400 / 8-94177-8150",
+      "slug": "tuerca-punta-eje-trasera-caribe-2-3",
+      "original_filename": "Tuerca Punta de Eje/e18c4ae5-bd99-479b-b89b-7cc44bb5487a.jpg",
+      "linked_ids": [
+        1008
+      ]
+    },
+    {
+      "id": "28823605-f9b4-49ab-b58a-380a47f1e677",
+      "category": "Tuerca Punta de Eje",
+      "image_path": "./assets/tuerca-punta-eje-trasera-caribe-2-6.webp",
+      "description": "TUERCA PUNTA EJE TRASERA CARIBE 2.6",
+      "keywords": [
+        "8-94178-2780",
+        "CARIBE",
+        "EJE",
+        "PUNTA",
+        "TRASERA",
+        "TUERCA"
+      ],
+      "oem": "8-94178-2780",
+      "slug": "tuerca-punta-eje-trasera-caribe-2-6",
+      "original_filename": "Tuerca Punta de Eje/28823605-f9b4-49ab-b58a-380a47f1e677.jpg",
+      "linked_ids": [
+        1009
+      ]
+    },
+    {
+      "id": "8506ea90-a1c2-4570-a2e7-e83244dd3e0d",
+      "category": "Tuerca Punta de Eje",
+      "image_path": "./assets/tuerca-punta-eje-trasera-caribe-g200.webp",
+      "description": "TUERCA PUNTA EJE TRASERA CARIBE G200",
+      "keywords": [
+        "8-94177-8150",
+        "9-09843-0400",
+        "CARIBE",
+        "EJE",
+        "G200",
+        "PUNTA",
+        "TRASERA",
+        "TUERCA"
+      ],
+      "oem": "9-09843-0400 / 8-94177-8150",
+      "slug": "tuerca-punta-eje-trasera-caribe-g200",
+      "original_filename": "Tuerca Punta de Eje/8506ea90-a1c2-4570-a2e7-e83244dd3e0d.jpg",
+      "linked_ids": [
+        1008
+      ]
+    },
+    {
+      "id": "f27ffcbb-29cf-492e-8dbd-7dc73199191f",
+      "category": "Tuerca Punta de Eje",
+      "image_path": "./assets/tuerca-punta-eje-trasera-luv-2-3.webp",
+      "description": "TUERCA PUNTA EJE TRASERA LUV 2.3",
+      "keywords": [
+        "8-94178-2780",
+        "EJE",
+        "LUV",
+        "PUNTA",
+        "TRASERA",
+        "TUERCA"
+      ],
+      "oem": "8-94178-2780",
+      "slug": "tuerca-punta-eje-trasera-luv-2-3",
+      "original_filename": "Tuerca Punta de Eje/f27ffcbb-29cf-492e-8dbd-7dc73199191f.jpg",
+      "linked_ids": [
+        1009
+      ]
+    },
+    {
+      "id": "fb2381a2-9e4e-4475-b1c5-3dea9258eeff",
+      "category": "Vacum Distribuidor",
+      "image_path": "./assets/vacum-distribuidor-caribe-luv-2-3.webp",
+      "description": "VACUM DISTRIBUIDOR CARIBE / LUV 2.3",
+      "keywords": [
+        "8-94321-5320",
+        "8-94413-4470",
+        "CARIBE",
+        "DISTRIBUIDOR",
+        "LUV",
+        "VACUM"
+      ],
+      "oem": "8-94321-5320 / 8-94413-4470",
+      "slug": "vacum-distribuidor-caribe-luv-2-3",
+      "original_filename": "Vacum Distribuidor/fb2381a2-9e4e-4475-b1c5-3dea9258eeff.jpg",
+      "linked_ids": [
+        1012
+      ]
+    },
+    {
+      "id": "a8268e67-f275-4d84-b031-724791d268df",
+      "category": "Vacum Distribuidor",
+      "image_path": "./assets/vacum-distribuidor-caribe-2-6.webp",
+      "description": "VACUM DISTRIBUIDOR CARIBE 2.6",
+      "keywords": [
+        "8-94321-5320",
+        "8-94413-4470",
+        "CARIBE",
+        "DISTRIBUIDOR",
+        "VACUM"
+      ],
+      "oem": "8-94321-5320 / 8-94413-4470",
+      "slug": "vacum-distribuidor-caribe-2-6",
+      "original_filename": "Vacum Distribuidor/a8268e67-f275-4d84-b031-724791d268df.jpg",
+      "linked_ids": [
+        1012
+      ]
+    },
+    {
+      "id": "c2d4c285-4c97-420c-86d8-6e30a51a6980",
+      "category": "Valvula Admision y Escape",
+      "image_path": "./assets/valvula-admision-luv-dmax-3-5.webp",
+      "description": "VALVULA ADMISION LUV DMAX 3.5",
+      "keywords": [
+        "8-97131-9610",
+        "8-97169-8070",
+        "ADMISION",
+        "DMAX",
+        "ESCAPE",
+        "LUV",
+        "VALVULA"
+      ],
+      "oem": "8-97131-9610 / 8-97169-8070",
+      "slug": "valvula-admision-luv-dmax-3-5",
+      "original_filename": "Valvula Admision y Escape/c2d4c285-4c97-420c-86d8-6e30a51a6980.jpg",
+      "linked_ids": [
+        1017
+      ]
+    },
+    {
+      "id": "9763096e-f6d0-485f-9aa6-c6048be315b4",
+      "category": "Valvula Admision y Escape",
+      "image_path": "./assets/valvula-escape-luv-dmax-3-5.webp",
+      "description": "VALVULA ESCAPE LUV DMAX 3.5",
+      "keywords": [
+        "8-97131-9620",
+        "8-97169-8080",
+        "ADMISION",
+        "DMAX",
+        "ESCAPE",
+        "LUV",
+        "VALVULA"
+      ],
+      "oem": "8-97131-9620 / 8-97169-8080",
+      "slug": "valvula-escape-luv-dmax-3-5",
+      "original_filename": "Valvula Admision y Escape/9763096e-f6d0-485f-9aa6-c6048be315b4.jpg",
+      "linked_ids": [
+        1082
       ]
     },
     {
@@ -23197,6 +23736,134 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "cc9707f4-2b17-4b0f-8b47-24841355e76b",
+      "category": "Valvula Freno",
+      "image_path": "./assets/valvula-freno-luv-dmax-3-5.webp",
+      "description": "VALVULA FRENO LUV DMAX 3.5",
+      "keywords": [
+        "8-97301-6840",
+        "8-97327-1560",
+        "DMAX",
+        "FRENO",
+        "LUV",
+        "VALVULA"
+      ],
+      "oem": "8-97301-6840 / 8-97327-1560",
+      "slug": "valvula-freno-luv-dmax-3-5",
+      "original_filename": "Valvula Freno/cc9707f4-2b17-4b0f-8b47-24841355e76b.jpg",
+      "linked_ids": [
+        1022
+      ]
+    },
+    {
+      "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
+      "category": "Valvula IAC",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-g200.webp",
+      "description": "BULBO PRESION ACEITE CARIBE G200",
+      "keywords": [
+        "5-83151-0050",
+        "ACEITE",
+        "BULBO",
+        "CARIBE",
+        "G200",
+        "IAC",
+        "PRESION",
+        "TGO-1005",
+        "VALVULA"
+      ],
+      "oem": "5-83151-0050 / TGO-1005",
+      "slug": "bulbo-presion-aceite-caribe-g200",
+      "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
+      "linked_ids": [
+        299
+      ]
+    },
+    {
+      "id": "de1c4da8-0886-49e8-9a9c-ca38edd14b45",
+      "category": "Valvula IAC",
+      "image_path": "./assets/valvula-control-de-aire-iac-luv-2-2.webp",
+      "description": "VALVULA CONTROL DE AIRE (IAC) LUV 2.2",
+      "keywords": [
+        "8-17112-6480",
+        "8-92061-8980",
+        "AIRE",
+        "CONTROL",
+        "IAC",
+        "LUV",
+        "VALVULA"
+      ],
+      "oem": "8-92061-8980 / 8-17112-6480",
+      "slug": "valvula-control-de-aire-iac-luv-2-2",
+      "original_filename": "Valvula IAC/de1c4da8-0886-49e8-9a9c-ca38edd14b45.jpg",
+      "linked_ids": [
+        1020
+      ]
+    },
+    {
+      "id": "6ede4589-ad4c-4247-8bf1-eb4d1f3ee9ec",
+      "category": "Valvula IAC",
+      "image_path": "./assets/valvula-control-de-aire-iac-luv-dmax-2-4.webp",
+      "description": "VALVULA CONTROL DE AIRE (IAC) LUV DMAX 2.4",
+      "keywords": [
+        "8-17112-6480",
+        "8-92061-8980",
+        "AIRE",
+        "CONTROL",
+        "DMAX",
+        "IAC",
+        "LUV",
+        "VALVULA"
+      ],
+      "oem": "8-92061-8980 / 8-17112-6480",
+      "slug": "valvula-control-de-aire-iac-luv-dmax-2-4",
+      "original_filename": "Valvula IAC/6ede4589-ad4c-4247-8bf1-eb4d1f3ee9ec.jpg",
+      "linked_ids": [
+        1020
+      ]
+    },
+    {
+      "id": "badf4f3f-771a-447a-8c0b-d57c64f6899b",
+      "category": "Valvula IAC",
+      "image_path": "./assets/valvula-control-de-aire-iac-luv-dmax-3-5.webp",
+      "description": "VALVULA CONTROL DE AIRE (IAC) LUV DMAX 3.5",
+      "keywords": [
+        "8-97181-7180",
+        "AIRE",
+        "CONTROL",
+        "DMAX",
+        "IAC",
+        "LUV",
+        "VALVULA"
+      ],
+      "oem": "8-97181-7180",
+      "slug": "valvula-control-de-aire-iac-luv-dmax-3-5",
+      "original_filename": "Valvula IAC/badf4f3f-771a-447a-8c0b-d57c64f6899b.jpg",
+      "linked_ids": [
+        1019
+      ]
+    },
+    {
+      "id": "2dc96f12-2f9d-4b46-91f6-ec3f28bfd448",
+      "category": "Valvula IAC",
+      "image_path": "./assets/valvula-control-de-aire-iac-trooper-3-2.webp",
+      "description": "VALVULA CONTROL DE AIRE (IAC) TROOPER 3.2",
+      "keywords": [
+        "8-17112-6480",
+        "8-92061-8980",
+        "AIRE",
+        "CONTROL",
+        "IAC",
+        "TROOPER",
+        "VALVULA"
+      ],
+      "oem": "8-92061-8980 / 8-17112-6480",
+      "slug": "valvula-control-de-aire-iac-trooper-3-2",
+      "original_filename": "Valvula IAC/2dc96f12-2f9d-4b46-91f6-ec3f28bfd448.jpg",
+      "linked_ids": [
+        1020
+      ]
+    },
+    {
       "category": "Valvula Minimo",
       "description": "VÁLVULA DE MINIMO CARIBE 2.3",
       "id": "b519d535-5428-4e3d-8b05-269f9ef5f2b2",
@@ -23319,6 +23986,172 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "b65c487c-54d3-476b-9dd5-b6482b07b887",
+      "category": "Valvula Presion Aceite",
+      "image_path": "./assets/valvula-presion-aceite-caribe.webp",
+      "description": "VALVULA PRESION ACEITE CARIBE",
+      "keywords": [
+        "8-94312-9400",
+        "8-98013-0140",
+        "9-82720-2092",
+        "ACEITE",
+        "CARIBE",
+        "PRESION",
+        "VALVULA"
+      ],
+      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
+      "slug": "valvula-presion-aceite-caribe",
+      "original_filename": "Valvula Presion Aceite/b65c487c-54d3-476b-9dd5-b6482b07b887.jpg",
+      "linked_ids": [
+        1027
+      ]
+    },
+    {
+      "id": "66ad027d-3484-4f23-9753-ddb2e9318e9c",
+      "category": "Valvula Presion Aceite",
+      "image_path": "./assets/valvula-presion-aceite-luv-2-3.webp",
+      "description": "VALVULA PRESION ACEITE LUV 2.3",
+      "keywords": [
+        "8-94312-9400",
+        "8-98013-0140",
+        "9-82720-2092",
+        "ACEITE",
+        "LUV",
+        "PRESION",
+        "VALVULA"
+      ],
+      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
+      "slug": "valvula-presion-aceite-luv-2-3",
+      "original_filename": "Valvula Presion Aceite/66ad027d-3484-4f23-9753-ddb2e9318e9c.jpg",
+      "linked_ids": [
+        1027
+      ]
+    },
+    {
+      "id": "91559b4b-25fc-4f1d-8af2-d601bdd6226d",
+      "category": "Valvula Presion Aceite",
+      "image_path": "./assets/valvula-presion-aceite-luv-dmax-3-5.webp",
+      "description": "VALVULA PRESION ACEITE LUV DMAX 3.5",
+      "keywords": [
+        "8-94312-9400",
+        "8-98013-0140",
+        "9-82720-2092",
+        "ACEITE",
+        "DMAX",
+        "LUV",
+        "PRESION",
+        "VALVULA"
+      ],
+      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
+      "slug": "valvula-presion-aceite-luv-dmax-3-5",
+      "original_filename": "Valvula Presion Aceite/91559b4b-25fc-4f1d-8af2-d601bdd6226d.jpg",
+      "linked_ids": [
+        1027
+      ]
+    },
+    {
+      "id": "af8fc77b-a73e-479e-a539-3a82f7d6d565",
+      "category": "Valvula Retroceso",
+      "image_path": "./assets/valvula-retroceso-caribe-2-3.webp",
+      "description": "VALVULA RETROCESO CARIBE 2.3",
+      "keywords": [
+        "8-94411-3661",
+        "8-94464-5660",
+        "CARIBE",
+        "KB-651",
+        "RETROCESO",
+        "VALVULA"
+      ],
+      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
+      "slug": "valvula-retroceso-caribe-2-3",
+      "original_filename": "Valvula Retroceso/af8fc77b-a73e-479e-a539-3a82f7d6d565.jpg",
+      "linked_ids": [
+        1029
+      ]
+    },
+    {
+      "id": "0acc51cc-142c-4fd5-9b17-767ce21bc42b",
+      "category": "Valvula Retroceso",
+      "image_path": "./assets/valvula-retroceso-caribe-g200.webp",
+      "description": "VALVULA RETROCESO CARIBE G200",
+      "keywords": [
+        "8-94411-3661",
+        "8-94464-5660",
+        "CARIBE",
+        "G200",
+        "KB-651",
+        "RETROCESO",
+        "VALVULA"
+      ],
+      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
+      "slug": "valvula-retroceso-caribe-g200",
+      "original_filename": "Valvula Retroceso/0acc51cc-142c-4fd5-9b17-767ce21bc42b.jpg",
+      "linked_ids": [
+        1029
+      ]
+    },
+    {
+      "id": "87e5c3a8-4ac7-4bcd-a0ae-ea150f241fff",
+      "category": "Valvula Retroceso",
+      "image_path": "./assets/valvula-retroceso-luv.webp",
+      "description": "VALVULA RETROCESO LUV",
+      "keywords": [
+        "8-94411-3661",
+        "8-94464-5660",
+        "KB-651",
+        "LUV",
+        "RETROCESO",
+        "VALVULA"
+      ],
+      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
+      "slug": "valvula-retroceso-luv",
+      "original_filename": "Valvula Retroceso/87e5c3a8-4ac7-4bcd-a0ae-ea150f241fff.jpg",
+      "linked_ids": [
+        1029
+      ]
+    },
+    {
+      "id": "0c150ec8-605d-4258-a5d9-6baf9d054272",
+      "category": "Valvula Retroceso",
+      "image_path": "./assets/valvula-retroceso-luv-dmax.webp",
+      "description": "VALVULA RETROCESO LUV DMAX",
+      "keywords": [
+        "8-94411-3661",
+        "8-94464-5660",
+        "DMAX",
+        "KB-651",
+        "LUV",
+        "RETROCESO",
+        "VALVULA"
+      ],
+      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
+      "slug": "valvula-retroceso-luv-dmax",
+      "original_filename": "Valvula Retroceso/0c150ec8-605d-4258-a5d9-6baf9d054272.jpg",
+      "linked_ids": [
+        1029
+      ]
+    },
+    {
+      "id": "09a574b1-2fb0-4efa-98ad-0ad8b8e85dbe",
+      "category": "Valvula Retroceso",
+      "image_path": "./assets/valvula-retroceso-trooper.webp",
+      "description": "VALVULA RETROCESO TROOPER",
+      "keywords": [
+        "8-94411-3661",
+        "8-94464-5660",
+        "KB-651",
+        "RETROCESO",
+        "TROOPER",
+        "VALVULA"
+      ],
+      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
+      "slug": "valvula-retroceso-trooper",
+      "original_filename": "Valvula Retroceso/09a574b1-2fb0-4efa-98ad-0ad8b8e85dbe.jpg",
+      "linked_ids": [
+        1029
+      ]
+    },
+    {
       "category": "Valvula Temperatura",
       "description": "VALVULA TEMPERATURA CARIBE / LUV D-MAX / TROOPER / RODEO",
       "id": "560341f0-7054-4bcc-bb51-64752dd42dfa",
@@ -23345,6 +24178,107 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 10
         }
+      ]
+    },
+    {
+      "id": "b14e77a9-9bee-406a-b024-0c34db7cbb4e",
+      "category": "Valvula Temperatura",
+      "image_path": "./assets/valvula-temperatura-caribe-2-3.webp",
+      "description": "VALVULA TEMPERATURA CARIBE 2.3",
+      "keywords": [
+        "8-94247-4370",
+        "8-94247-4371",
+        "83420-16020",
+        "CARIBE",
+        "TEMPERATURA",
+        "VALVULA"
+      ],
+      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
+      "slug": "valvula-temperatura-caribe-2-3",
+      "original_filename": "Valvula Temperatura/b14e77a9-9bee-406a-b024-0c34db7cbb4e.jpg",
+      "linked_ids": [
+        1031
+      ]
+    },
+    {
+      "id": "4bfbdfc6-5c72-4208-be99-c44bc34bca88",
+      "category": "Valvula Temperatura",
+      "image_path": "./assets/valvula-temperatura-caribe-2-6.webp",
+      "description": "VALVULA TEMPERATURA CARIBE 2.6",
+      "keywords": [
+        "8-94247-4370",
+        "8-94247-4371",
+        "83420-16020",
+        "CARIBE",
+        "TEMPERATURA",
+        "VALVULA"
+      ],
+      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
+      "slug": "valvula-temperatura-caribe-2-6",
+      "original_filename": "Valvula Temperatura/4bfbdfc6-5c72-4208-be99-c44bc34bca88.jpg",
+      "linked_ids": [
+        1031
+      ]
+    },
+    {
+      "id": "f8ae34d2-5d53-4168-911b-c81611c3c1a8",
+      "category": "Valvula Temperatura",
+      "image_path": "./assets/valvula-temperatura-luv-2-2.webp",
+      "description": "VALVULA TEMPERATURA LUV 2.2",
+      "keywords": [
+        "8-92063-8930",
+        "83420-20040",
+        "LUV",
+        "TEMPERATURA",
+        "VALVULA"
+      ],
+      "oem": "8-92063-8930 / 83420-20040",
+      "slug": "valvula-temperatura-luv-2-2",
+      "original_filename": "Valvula Temperatura/f8ae34d2-5d53-4168-911b-c81611c3c1a8.jpg",
+      "linked_ids": [
+        1033
+      ]
+    },
+    {
+      "id": "601b07a0-a7e8-4a9f-ac07-9f9e5880ccb2",
+      "category": "Valvula Temperatura",
+      "image_path": "./assets/valvula-temperatura-luv-dmax-2-4.webp",
+      "description": "VALVULA TEMPERATURA LUV DMAX 2.4",
+      "keywords": [
+        "8-92063-8930",
+        "83420-20040",
+        "DMAX",
+        "LUV",
+        "TEMPERATURA",
+        "VALVULA"
+      ],
+      "oem": "8-92063-8930 / 83420-20040",
+      "slug": "valvula-temperatura-luv-dmax-2-4",
+      "original_filename": "Valvula Temperatura/601b07a0-a7e8-4a9f-ac07-9f9e5880ccb2.jpg",
+      "linked_ids": [
+        1033
+      ]
+    },
+    {
+      "id": "5c0e1f4d-f095-4140-b64a-6b70dbb7811e",
+      "category": "Valvula Transfer",
+      "image_path": "./assets/valvula-transfer-inferior-luv-dmax-3-5.webp",
+      "description": "VALVULA TRANSFER INFERIOR LUV DMAX 3.5",
+      "keywords": [
+        "8-97314-2040",
+        "8-97358-6050",
+        "8-98181-8040",
+        "DMAX",
+        "INFERIOR",
+        "LUV",
+        "TRANSFER",
+        "VALVULA"
+      ],
+      "oem": "8-97314-2040 / 8-98181-8040 / 8-97358-6050",
+      "slug": "valvula-transfer-inferior-luv-dmax-3-5",
+      "original_filename": "Valvula Transfer/5c0e1f4d-f095-4140-b64a-6b70dbb7811e.jpg",
+      "linked_ids": [
+        1185
       ]
     },
     {
