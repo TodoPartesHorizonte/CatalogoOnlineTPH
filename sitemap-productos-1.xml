@@ -751,16 +751,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/base-caja-luv-d-max-3-5</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/base-caja-luv-d-max-3-5.webp</image:loc>
-      <image:title>BASE CAJA LUV D-MAX 3.5</image:title>
-    </image:image>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/base-caja-trooper-rodeo-3-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/base-caja-trooper-rodeo-3-2.webp</image:loc>
@@ -1805,26 +1795,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bulbo-presion-aceite-caribe-2-6.webp</image:loc>
       <image:title>BULBO PRESION ACEITE CARIBE 2.6</image:title>
-    </image:image>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/bulbo-presion-aceite-caribe-g200-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/bulbo-presion-aceite-caribe-g200.webp</image:loc>
-      <image:title>BULBO PRESION ACEITE CARIBE G200</image:title>
-    </image:image>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/bulbo-presion-aceite-caribe-g200-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/bulbo-presion-aceite-caribe-g200.webp</image:loc>
-      <image:title>BULBO PRESION ACEITE CARIBE G200</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -5571,9 +5541,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/manguera-radiador-superior-luv-2-2</loc>
+    <loc>https://todoparteshorizonte.com/p/manguera-radiador-superior-luv-2-2-2</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-superior-luv-2-2.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-superior-luv-2-2-2.webp</image:loc>
       <image:title>MANGUERA RADIADOR SUPERIOR LUV 2.2</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -5581,9 +5551,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/manguera-radiador-superior-luv-2-2-2</loc>
+    <loc>https://todoparteshorizonte.com/p/manguera-radiador-superior-luv-2-2</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-superior-luv-2-2-2.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-superior-luv-2-2.webp</image:loc>
       <image:title>MANGUERA RADIADOR SUPERIOR LUV 2.2</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -6211,9 +6181,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/piston-caliper-trasero-caribe-2-6</loc>
+    <loc>https://todoparteshorizonte.com/p/piston-caliper-trasero-caribe-2-6-3</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/piston-caliper-trasero-caribe-2-6.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/piston-caliper-trasero-caribe-2-6-3.webp</image:loc>
       <image:title>PISTON CALIPER TRASERO CARIBE 2.6</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -6231,20 +6201,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/piston-caliper-trasero-caribe-2-6-3</loc>
+    <loc>https://todoparteshorizonte.com/p/piston-caliper-trasero-caribe-2-6</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/piston-caliper-trasero-caribe-2-6-3.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/piston-caliper-trasero-caribe-2-6.webp</image:loc>
       <image:title>PISTON CALIPER TRASERO CARIBE 2.6</image:title>
-    </image:image>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/pinon-velocimetro-caribe</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/pinon-velocimetro-caribe.webp</image:loc>
-      <image:title>PIÑON VELOCIMETRO CARIBE</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -6254,6 +6214,16 @@
     <loc>https://todoparteshorizonte.com/p/pinon-velocimetro-caribe-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/pinon-velocimetro-caribe-2.webp</image:loc>
+      <image:title>PIÑON VELOCIMETRO CARIBE</image:title>
+    </image:image>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/pinon-velocimetro-caribe</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/pinon-velocimetro-caribe.webp</image:loc>
       <image:title>PIÑON VELOCIMETRO CARIBE</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -7261,9 +7231,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-dmax-3-5</loc>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-dmax-3-5-2</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-dmax-3-5.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-dmax-3-5-2.webp</image:loc>
       <image:title>SOPORTE CARDAN / CHUMACERA LUV DMAX 3.5</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -7271,9 +7241,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-dmax-3-5-2</loc>
+    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-dmax-3-5</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-dmax-3-5-2.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-dmax-3-5.webp</image:loc>
       <image:title>SOPORTE CARDAN / CHUMACERA LUV DMAX 3.5</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -7311,9 +7281,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/stop-luv-2-3</loc>
+    <loc>https://todoparteshorizonte.com/p/stop-luv-2-3-2</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/stop-luv-2-3.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/stop-luv-2-3-2.webp</image:loc>
       <image:title>STOP LUV 2.3</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -7321,9 +7291,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/stop-luv-2-3-2</loc>
+    <loc>https://todoparteshorizonte.com/p/stop-luv-2-3</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/stop-luv-2-3-2.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/stop-luv-2-3.webp</image:loc>
       <image:title>STOP LUV 2.3</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -8121,16 +8091,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-2-6-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6-2.webp</image:loc>
-      <image:title>TREN DELANTERO CARIBE 2.6</image:title>
-    </image:image>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-2-6</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6.webp</image:loc>
@@ -8141,10 +8101,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-83-88-2</loc>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-2-6-2</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-83-88-2.webp</image:loc>
-      <image:title>TREN DELANTERO CARIBE 83-88</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6-2.webp</image:loc>
+      <image:title>TREN DELANTERO CARIBE 2.6</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -8154,6 +8114,16 @@
     <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-83-88</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-83-88.webp</image:loc>
+      <image:title>TREN DELANTERO CARIBE 83-88</image:title>
+    </image:image>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-83-88-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-83-88-2.webp</image:loc>
       <image:title>TREN DELANTERO CARIBE 83-88</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -8181,9 +8151,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4-2</loc>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4-2.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4.webp</image:loc>
       <image:title>TREN DELANTERO LUV 4X4</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -8191,9 +8161,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4</loc>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4-2</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4-2.webp</image:loc>
       <image:title>TREN DELANTERO LUV 4X4</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -8221,9 +8191,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5-2</loc>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5-2.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5.webp</image:loc>
       <image:title>TREN DELANTERO LUV D-MAX 3.5</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -8231,9 +8201,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5</loc>
+    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5-2</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5.webp</image:loc>
+      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5-2.webp</image:loc>
       <image:title>TREN DELANTERO LUV D-MAX 3.5</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
@@ -8575,6 +8545,26 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/valvula-freno-luv-dmax-3-5.webp</image:loc>
       <image:title>VALVULA FRENO LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bulbo-presion-aceite-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bulbo-presion-aceite-caribe-g200-2.webp</image:loc>
+      <image:title>BULBO PRESION ACEITE CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bulbo-presion-aceite-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bulbo-presion-aceite-caribe-g200-2.webp</image:loc>
+      <image:title>BULBO PRESION ACEITE CARIBE G200</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
