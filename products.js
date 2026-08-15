@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 882,
+  "total_products": 881,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -1455,31 +1455,6 @@ const PRODUCTS_DATA = {
       ],
       "oem": "8-94146-2580",
       "slug": "baquelita-bomba-gasolina-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94146-2580",
-          "brand": "Original",
-          "precio_usd": 10
-        }
-      ]
-    },
-    {
-      "category": "Baquelita",
-      "description": "BAQUELITA BOMBA GASOLINA TROOPER",
-      "id": "804521d3-f69c-42fd-adff-b089ff07fc54",
-      "image_path": "./assets/baquelita-bomba-gasolina-trooper.webp",
-      "keywords": [
-        "8-94146-2580",
-        "BAQUELITA",
-        "BOMBA",
-        "GASOLINA",
-        "TROOPER"
-      ],
-      "linked_ids": [
-        184
-      ],
-      "oem": "8-94146-2580",
-      "slug": "baquelita-bomba-gasolina-trooper",
       "variants": [
         {
           "codigo_oem": "8-94146-2580",
@@ -5432,6 +5407,48 @@ const PRODUCTS_DATA = {
       "oem": "5-83151-0050 / TGO-1005",
       "slug": "bulbo-presion-aceite-caribe-2-6",
       "original_filename": "Bulbo Presion Aceite/4642084b-6109-4591-a078-150e6db0baac.jpg",
+      "linked_ids": [
+        299
+      ]
+    },
+    {
+      "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
+      "category": "Bulbo Presion Aceite",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-g200.webp",
+      "description": "BULBO PRESION ACEITE CARIBE G200",
+      "keywords": [
+        "5-83151-0050",
+        "ACEITE",
+        "BULBO",
+        "CARIBE",
+        "G200",
+        "PRESION",
+        "TGO-1005"
+      ],
+      "oem": "5-83151-0050 / TGO-1005",
+      "slug": "bulbo-presion-aceite-caribe-g200-2",
+      "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
+      "linked_ids": [
+        299
+      ]
+    },
+    {
+      "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
+      "category": "Bulbo Presion Aceite",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-g200.webp",
+      "description": "BULBO PRESION ACEITE CARIBE G200",
+      "keywords": [
+        "5-83151-0050",
+        "ACEITE",
+        "BULBO",
+        "CARIBE",
+        "G200",
+        "PRESION",
+        "TGO-1005"
+      ],
+      "oem": "5-83151-0050 / TGO-1005",
+      "slug": "bulbo-presion-aceite-caribe-g200-2",
+      "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
       "linked_ids": [
         299
       ]
@@ -23756,29 +23773,6 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
-      "category": "Valvula IAC",
-      "image_path": "./assets/bulbo-presion-aceite-caribe-g200.webp",
-      "description": "BULBO PRESION ACEITE CARIBE G200",
-      "keywords": [
-        "5-83151-0050",
-        "ACEITE",
-        "BULBO",
-        "CARIBE",
-        "G200",
-        "IAC",
-        "PRESION",
-        "TGO-1005",
-        "VALVULA"
-      ],
-      "oem": "5-83151-0050 / TGO-1005",
-      "slug": "bulbo-presion-aceite-caribe-g200",
-      "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
-      "linked_ids": [
-        299
-      ]
-    },
-    {
       "id": "de1c4da8-0886-49e8-9a9c-ca38edd14b45",
       "category": "Valvula IAC",
       "image_path": "./assets/valvula-control-de-aire-iac-luv-2-2.webp",
@@ -24149,35 +24143,6 @@ const PRODUCTS_DATA = {
       "original_filename": "Valvula Retroceso/09a574b1-2fb0-4efa-98ad-0ad8b8e85dbe.jpg",
       "linked_ids": [
         1029
-      ]
-    },
-    {
-      "category": "Valvula Temperatura",
-      "description": "VALVULA TEMPERATURA CARIBE / LUV D-MAX / TROOPER / RODEO",
-      "id": "560341f0-7054-4bcc-bb51-64752dd42dfa",
-      "image_path": "./assets/valvula-temperatura-caribe-luv-d-max-trooper-rodeo.webp",
-      "keywords": [
-        "8-94247-4370",
-        "8-94247-4371",
-        "CARIBE",
-        "D-MAX",
-        "LUV",
-        "RODEO",
-        "TEMPERATURA",
-        "TROOPER",
-        "VALVULA"
-      ],
-      "linked_ids": [
-        1031
-      ],
-      "oem": "8-94247-4370 / 8-94247-4371",
-      "slug": "valvula-temperatura-caribe-luv-d-max-trooper-rodeo",
-      "variants": [
-        {
-          "codigo_oem": "8-94247-4370",
-          "brand": "Original",
-          "precio_usd": 10
-        }
       ]
     },
     {
