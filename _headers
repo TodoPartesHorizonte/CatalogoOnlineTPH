@@ -7,12 +7,26 @@
   Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
   X-XSS-Protection: 1; mode=block
 
-# Regla global: Todo el sitio a 15 minutos
+# Regla global: HTML y páginas siempre en vivo (0 segundos de caché, instantáneo)
 /*
   ! Cache-Control
-  Cache-Control: max-age=900, must-revalidate
+  Cache-Control: public, max-age=0, must-revalidate
 
-# Recursos de larga duración (imágenes y assets estáticos)
+# Base de datos del catálogo en vivo
+/products.js
+  ! Cache-Control
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Scripts principales
+/app.js
+  ! Cache-Control
+  Cache-Control: public, max-age=0, must-revalidate
+
+/app.min.js
+  ! Cache-Control
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Recursos estáticos inmutables (fotos de repuestos, logos y fuentes)
 /assets/*
   ! Cache-Control
   Cache-Control: max-age=31536000, immutable
