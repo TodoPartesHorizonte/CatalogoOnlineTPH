@@ -5414,7 +5414,7 @@ const PRODUCTS_DATA = {
     {
       "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
       "category": "Bulbo Presion Aceite",
-      "image_path": "./assets/bulbo-presion-aceite-caribe-g200-2.webp",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-g200.webp",
       "description": "BULBO PRESION ACEITE CARIBE G200",
       "keywords": [
         "5-83151-0050",
@@ -5426,7 +5426,7 @@ const PRODUCTS_DATA = {
         "TGO-1005"
       ],
       "oem": "5-83151-0050 / TGO-1005",
-      "slug": "bulbo-presion-aceite-caribe-g200",
+      "slug": "bulbo-presion-aceite-caribe-g200-2",
       "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
       "linked_ids": [
         299
@@ -5435,7 +5435,7 @@ const PRODUCTS_DATA = {
     {
       "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
       "category": "Bulbo Presion Aceite",
-      "image_path": "./assets/bulbo-presion-aceite-caribe-g200-2.webp",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-g200.webp",
       "description": "BULBO PRESION ACEITE CARIBE G200",
       "keywords": [
         "5-83151-0050",
@@ -5447,7 +5447,7 @@ const PRODUCTS_DATA = {
         "TGO-1005"
       ],
       "oem": "5-83151-0050 / TGO-1005",
-      "slug": "bulbo-presion-aceite-caribe-g200",
+      "slug": "bulbo-presion-aceite-caribe-g200-2",
       "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
       "linked_ids": [
         299
