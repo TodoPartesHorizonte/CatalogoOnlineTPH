@@ -461,16 +461,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/baquelita-bomba-gasolina-trooper</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/baquelita-bomba-gasolina-trooper.webp</image:loc>
-      <image:title>BAQUELITA BOMBA GASOLINA TROOPER</image:title>
-    </image:image>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/barra-central-caribe-2300</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/barra-central-caribe-2300.webp</image:loc>
@@ -1815,6 +1805,26 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bulbo-presion-aceite-caribe-2-6.webp</image:loc>
       <image:title>BULBO PRESION ACEITE CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bulbo-presion-aceite-caribe-g200-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bulbo-presion-aceite-caribe-g200.webp</image:loc>
+      <image:title>BULBO PRESION ACEITE CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bulbo-presion-aceite-caribe-g200-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bulbo-presion-aceite-caribe-g200.webp</image:loc>
+      <image:title>BULBO PRESION ACEITE CARIBE G200</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -8571,16 +8581,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/bulbo-presion-aceite-caribe-g200</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/bulbo-presion-aceite-caribe-g200.webp</image:loc>
-      <image:title>BULBO PRESION ACEITE CARIBE G200</image:title>
-    </image:image>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/valvula-control-de-aire-iac-luv-2-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/valvula-control-de-aire-iac-luv-2-2.webp</image:loc>
@@ -8745,16 +8745,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/valvula-retroceso-trooper.webp</image:loc>
       <image:title>VALVULA RETROCESO TROOPER</image:title>
-    </image:image>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/valvula-temperatura-caribe-luv-d-max-trooper-rodeo</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/valvula-temperatura-caribe-luv-d-max-trooper-rodeo.webp</image:loc>
-      <image:title>VALVULA TEMPERATURA CARIBE / LUV D-MAX / TROOPER / RODEO</image:title>
     </image:image>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
