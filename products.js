@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 879,
+  "total_products": 878,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -67,20 +67,6 @@ const PRODUCTS_DATA = {
           "precio_usd": 0
         }
       ]
-    },
-    {
-      "id": "6ad42d97-4625-47ab-81ba-fd118ce0ee72",
-      "category": "Acoplador",
-      "image_path": "./assets/prueba.webp",
-      "description": "PRUEBA",
-      "keywords": [
-        "ACOPLADOR",
-        "PRUEBA"
-      ],
-      "oem": "",
-      "slug": "prueba",
-      "original_filename": "Acoplador/6ad42d97-4625-47ab-81ba-fd118ce0ee72.jpg",
-      "linked_ids": []
     },
     {
       "category": "Alternador",
