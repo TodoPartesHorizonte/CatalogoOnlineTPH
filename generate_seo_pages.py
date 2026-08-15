@@ -2710,12 +2710,12 @@ def generate_vehicle_pages(base_url):
 
                 # 8. Agregar JavaScript de filtro predeterminado al final del body
                 control_script = f"""<!-- JAVASCRIPT DE CONTROL -->
-    <script defer src="./products.js?v=2"></script>
+    <script defer src="./products.js"></script>
     <script>window.defaultVehicleFilter = '{v["filter"]}';</script>
     <script defer src="./app.min.js?v=2"></script>"""
                 
-                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\n    <script defer src="./products.js?v=2"></script>\n    <script defer src="./app.min.js?v=2"></script>', control_script)
-                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\r\n    <script defer src="./products.js?v=2"></script>\r\n    <script defer src="./app.min.js?v=2"></script>', control_script)
+                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\n    <script defer src="./products.js"></script>\n    <script defer src="./app.min.js?v=2"></script>', control_script)
+                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\r\n    <script defer src="./products.js"></script>\r\n    <script defer src="./app.min.js?v=2"></script>', control_script)
 
                 with open(v_path, "w", encoding="utf-8") as out_f:
                     out_f.write(v_content)
