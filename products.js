@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 882,
+  "total_products": 889,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -143,7 +143,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "VA-22123",
           "brand": "SHIBUMI",
-          "precio_usd": 0
+          "precio_usd": 30
         }
       ]
     },
@@ -168,7 +168,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97236-2990",
           "brand": "TAIKEN",
-          "precio_usd": 40
+          "precio_usd": 0
         },
         {
           "codigo_oem": "8-97236-2990",
@@ -293,7 +293,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "VA-45203",
           "brand": "Original",
-          "precio_usd": 30
+          "precio_usd": 0
         }
       ]
     },
@@ -378,12 +378,13 @@ const PRODUCTS_DATA = {
         "8-94241-4692",
         "AMORTIGUADOR",
         "CARIBE",
-        "DIRECCION"
+        "DIRECCION",
+        "SD1001"
       ],
       "linked_ids": [
         17
       ],
-      "oem": "8-94241-4692",
+      "oem": "8-94241-4692 / SD1001",
       "slug": "amortiguador-de-direccion-caribe-2-3",
       "variants": [
         {
@@ -408,12 +409,13 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "DIRECCION",
-        "G-200"
+        "G-200",
+        "SD1001"
       ],
       "linked_ids": [
         17
       ],
-      "oem": "8-94241-4692",
+      "oem": "8-94241-4692 / SD1001",
       "slug": "amortiguador-de-direccion-caribe-g-200",
       "variants": [
         {
@@ -438,19 +440,20 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "DIRECCION",
-        "KS0005"
+        "KS0005",
+        "SD1009"
       ],
       "linked_ids": [
         12,
         19
       ],
-      "oem": "8-94312-8140 / KS0005",
+      "oem": "8-94312-8140 / KS0005 / SD1009",
       "slug": "amortiguador-direccion-caribe-2-6",
       "variants": [
         {
           "codigo_oem": "8-94312-8140",
           "brand": "PERFECT",
-          "precio_usd": 0
+          "precio_usd": 40
         },
         {
           "codigo_oem": "8-94312-8140",
@@ -469,19 +472,20 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "DIRECCION",
         "KS0005",
-        "LUV"
+        "LUV",
+        "SD1009"
       ],
       "linked_ids": [
         12,
         19
       ],
-      "oem": "8-94312-8140 / KS0005",
+      "oem": "8-94312-8140 / KS0005 / SD1009",
       "slug": "amortiguador-direccion-luv-2-3",
       "variants": [
         {
           "codigo_oem": "8-94312-8140",
           "brand": "PERFECT",
-          "precio_usd": 0
+          "precio_usd": 40
         },
         {
           "codigo_oem": "8-94312-8140",
@@ -500,19 +504,20 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "DIRECCION",
         "KS0005",
+        "SD1009",
         "TROOPER"
       ],
       "linked_ids": [
         12,
         19
       ],
-      "oem": "8-94312-8140 / KS0005",
+      "oem": "8-94312-8140 / KS0005 / SD1009",
       "slug": "amortiguador-direccion-trooper",
       "variants": [
         {
           "codigo_oem": "8-94312-8140",
           "brand": "PERFECT",
-          "precio_usd": 0
+          "precio_usd": 40
         },
         {
           "codigo_oem": "8-94312-8140",
@@ -790,17 +795,21 @@ const PRODUCTS_DATA = {
         "2600",
         "8-94173-3460",
         "8-94173-3470",
+        "8-94323-5621",
+        "8-94323-5631",
         "811606013",
         "811606023",
         "ARANA",
-        "CARIBE"
+        "CARIBE",
+        "SH-99009",
+        "SH-99010"
       ],
       "linked_ids": [
         73,
         165,
         1063
       ],
-      "oem": "8-94173-3470 / 811606023 / 8-94173-3460 / 811606013",
+      "oem": "8-94173-3470 / 811606023 / SH-99010 / 8-94323-5631 / 8-94173-3460 / 811606013 / 8-94323-5621 / SH-99009",
       "slug": "arana-caribe-2600",
       "variants": [
         {
@@ -824,17 +833,21 @@ const PRODUCTS_DATA = {
         "4X4",
         "8-94173-3460",
         "8-94173-3470",
+        "8-94323-5621",
+        "8-94323-5631",
         "811606013",
         "811606023",
         "ARANA",
-        "LUV"
+        "LUV",
+        "SH-99009",
+        "SH-99010"
       ],
       "linked_ids": [
         73,
         165,
         1063
       ],
-      "oem": "8-94173-3470 / 811606023 / 8-94173-3460 / 811606013",
+      "oem": "8-94173-3470 / 811606023 / SH-99010 / 8-94323-5631 / 8-94173-3460 / 811606013 / 8-94323-5621 / SH-99009",
       "slug": "arana-luv-4x4",
       "variants": [
         {
@@ -1187,12 +1200,12 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94384-3141",
           "brand": "VULKO",
-          "precio_usd": 130
+          "precio_usd": 0
         },
         {
           "codigo_oem": "8-94384-3141",
           "brand": "COUNGUARD",
-          "precio_usd": 170
+          "precio_usd": 165
         }
       ]
     },
@@ -1230,6 +1243,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/aspa-fan-clutch-luv-d-max-3-5.webp",
       "keywords": [
         "8-97130-7571",
+        "8-97349-7620",
         "ASPA",
         "DMAX",
         "LUV"
@@ -1237,7 +1251,7 @@ const PRODUCTS_DATA = {
       "linked_ids": [
         181
       ],
-      "oem": "8-97130-7571",
+      "oem": "8-97130-7571 / 8-97349-7620",
       "slug": "aspa-fan-clutch-luv-d-max-3-5",
       "variants": [
         {
@@ -1249,6 +1263,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97130-7571",
           "brand": "KAIZEN",
           "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97130-7571",
+          "brand": "NIKHO",
+          "precio_usd": 45
         }
       ]
     },
@@ -1409,7 +1428,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "5-87832-0900",
           "brand": "TAKASHI",
-          "precio_usd": 0
+          "precio_usd": 30
         }
       ]
     },
@@ -1627,6 +1646,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/barra-central-luv-4x2.webp",
       "keywords": [
         "4X2",
+        "8-94389-2100",
         "8-94389-2102",
         "BARRA",
         "CENTRAL",
@@ -1636,7 +1656,7 @@ const PRODUCTS_DATA = {
         107,
         195
       ],
-      "oem": "8-94389-2102",
+      "oem": "8-94389-2102 / 8-94389-2100",
       "slug": "barra-central-luv-4x2",
       "variants": [
         {
@@ -2039,7 +2059,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94241-7670",
           "brand": "Original",
-          "precio_usd": 30
+          "precio_usd": 0
         }
       ]
     },
@@ -2065,7 +2085,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94241-7670",
           "brand": "Original",
-          "precio_usd": 30
+          "precio_usd": 0
         }
       ]
     },
@@ -2497,7 +2517,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94482-4060",
           "brand": "Original",
-          "precio_usd": 30
+          "precio_usd": 0
         }
       ]
     },
@@ -2639,7 +2659,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94482-4060",
           "brand": "Original",
-          "precio_usd": 30
+          "precio_usd": 0
         }
       ]
     },
@@ -2994,7 +3014,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94445-6650",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 55
         }
       ]
     },
@@ -3004,6 +3024,7 @@ const PRODUCTS_DATA = {
       "id": "4fee4bba-5cf5-4e2a-8336-771640ae3a0a",
       "image_path": "./assets/bomba-de-aceite-caribe-2-6.webp",
       "keywords": [
+        "8-94459-7300",
         "8-94459-7301",
         "ACEITE",
         "BOMBA",
@@ -3015,13 +3036,13 @@ const PRODUCTS_DATA = {
         152,
         232
       ],
-      "oem": "8-94459-7301 / M-173 / OP4015",
+      "oem": "8-94459-7301 / M-173 / OP4015 / 8-94459-7300",
       "slug": "bomba-de-aceite-caribe-2-6",
       "variants": [
         {
           "codigo_oem": "8-94459-7301",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 45
         }
       ]
     },
@@ -3109,7 +3130,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97136-4630",
           "brand": "TBK",
-          "precio_usd": 0
+          "precio_usd": 270
         },
         {
           "codigo_oem": "8-97136-4630",
@@ -3154,12 +3175,22 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97167-5540",
           "brand": "TAIKEN",
-          "precio_usd": 45
+          "precio_usd": 0
         },
         {
           "codigo_oem": "8-97167-5540",
           "brand": "GMB",
           "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97167-5540",
+          "brand": "AISIN",
+          "precio_usd": 85
+        },
+        {
+          "codigo_oem": "8-97167-5540",
+          "brand": "NIKHO",
+          "precio_usd": 45
         }
       ]
     },
@@ -3276,12 +3307,13 @@ const PRODUCTS_DATA = {
         "8-92064-3910",
         "AGUA",
         "BOMBA",
+        "I-62",
         "LUV"
       ],
       "linked_ids": [
         243
       ],
-      "oem": "8-92064-3910",
+      "oem": "8-92064-3910 / I-62",
       "slug": "bomba-de-agua-luv-2-2",
       "variants": [
         {
@@ -3301,12 +3333,13 @@ const PRODUCTS_DATA = {
         "AGUA",
         "BOMBA",
         "D-MAX",
+        "I-62",
         "LUV"
       ],
       "linked_ids": [
         243
       ],
-      "oem": "8-92064-3910",
+      "oem": "8-92064-3910 / I-62",
       "slug": "bomba-de-agua-luv-d-max-2-4",
       "variants": [
         {
@@ -3426,7 +3459,12 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97354-0501",
           "brand": "PGT",
-          "precio_usd": 50
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97354-0501",
+          "brand": "PERFECTION",
+          "precio_usd": 100
         }
       ]
     },
@@ -3439,6 +3477,7 @@ const PRODUCTS_DATA = {
         "2010",
         "2015",
         "8-98006-9410",
+        "8-98006-9420",
         "BASTAGO",
         "BOMBA",
         "D-MAX",
@@ -3448,7 +3487,7 @@ const PRODUCTS_DATA = {
       "linked_ids": [
         262
       ],
-      "oem": "8-98006-9410",
+      "oem": "8-98006-9410 / 8-98006-9420",
       "slug": "bomba-de-freno-luv-d-max-2010-2015-con-bastago",
       "variants": [
         {
@@ -3460,6 +3499,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-98006-9410",
           "brand": "PGT",
           "precio_usd": 60
+        },
+        {
+          "codigo_oem": "8-98006-9410",
+          "brand": "PERFECTION",
+          "precio_usd": 190
         }
       ]
     },
@@ -3470,6 +3514,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/bomba-de-gasolina-modulo-luv-d-max.webp",
       "keywords": [
         "8-97943-1830",
+        "8-97945-6040",
         "BOMBA",
         "D-MAX",
         "GASOLINA",
@@ -3479,7 +3524,7 @@ const PRODUCTS_DATA = {
       "linked_ids": [
         736
       ],
-      "oem": "8-97943-1830",
+      "oem": "8-97943-1830 / 8-97945-6040",
       "slug": "bomba-de-gasolina-modulo-luv-d-max",
       "variants": [
         {
@@ -3495,7 +3540,12 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97943-1830",
           "brand": "NOVATEC",
-          "precio_usd": 90
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97943-1830",
+          "brand": "NIKHO",
+          "precio_usd": 95
         }
       ]
     },
@@ -3531,6 +3581,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-94438-5330",
           "brand": "PRESENTACION",
           "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-94438-5330",
+          "brand": "GEN",
+          "precio_usd": 45
         }
       ]
     },
@@ -3565,6 +3620,11 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94438-5330",
           "brand": "PRESENTACION",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-94438-5330",
+          "brand": "GEN",
           "precio_usd": 45
         }
       ]
@@ -3658,7 +3718,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "25362992",
           "brand": "ANCOV",
-          "precio_usd": 0
+          "precio_usd": 25
         },
         {
           "codigo_oem": "25362992",
@@ -3845,7 +3905,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97943-4070",
           "brand": "Original",
-          "precio_usd": 35
+          "precio_usd": 40
         }
       ]
     },
@@ -3883,6 +3943,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97943-4080",
           "brand": "DENKO",
           "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97943-4080",
+          "brand": "NIKHO",
+          "precio_usd": 40
         }
       ]
     },
@@ -4428,7 +4493,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94234-3190",
           "brand": "POLIURETANO",
-          "precio_usd": 0
+          "precio_usd": 3
         }
       ]
     },
@@ -4459,7 +4524,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94234-3190",
           "brand": "POLIURETANO",
-          "precio_usd": 0
+          "precio_usd": 3
         }
       ]
     },
@@ -4491,7 +4556,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94234-3190",
           "brand": "POLIURETANO",
-          "precio_usd": 0
+          "precio_usd": 3
         }
       ]
     },
@@ -4522,7 +4587,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94234-3190",
           "brand": "POLIURETANO",
-          "precio_usd": 0
+          "precio_usd": 3
         }
       ]
     },
@@ -4553,7 +4618,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94234-3190",
           "brand": "POLIURETANO",
-          "precio_usd": 0
+          "precio_usd": 3
         }
       ]
     },
@@ -4569,12 +4634,13 @@ const PRODUCTS_DATA = {
         "BALLESTA",
         "BUJE",
         "CARIBE",
-        "DELANTERO"
+        "DELANTERO",
+        "FR-9609"
       ],
       "linked_ids": [
         279
       ],
-      "oem": "8-94171-2741 / 117025 / 8-97332-6420",
+      "oem": "8-94171-2741 / 117025 / 8-97332-6420 / FR-9609",
       "slug": "buje-de-ballesta-delantero-caribe-2-6",
       "variants": [
         {
@@ -4601,12 +4667,13 @@ const PRODUCTS_DATA = {
         "BALLESTA",
         "BUJE",
         "DELANTERO",
+        "FR-9609",
         "LUV"
       ],
       "linked_ids": [
         279
       ],
-      "oem": "8-94171-2741 / 117025 / 8-97332-6420",
+      "oem": "8-94171-2741 / 117025 / 8-97332-6420 / FR-9609",
       "slug": "buje-de-ballesta-delantero-luv",
       "variants": [
         {
@@ -4634,12 +4701,13 @@ const PRODUCTS_DATA = {
         "BUJE",
         "D-MAX",
         "DELANTERO",
+        "FR-9609",
         "LUV"
       ],
       "linked_ids": [
         279
       ],
-      "oem": "8-94171-2741 / 117025 / 8-97332-6420",
+      "oem": "8-94171-2741 / 117025 / 8-97332-6420 / FR-9609",
       "slug": "buje-de-ballesta-delantero-luv-d-max",
       "variants": [
         {
@@ -4666,12 +4734,13 @@ const PRODUCTS_DATA = {
         "BALLESTA",
         "BUJE",
         "DELANTERO",
+        "FR-9609",
         "RODEO"
       ],
       "linked_ids": [
         279
       ],
-      "oem": "8-94171-2741 / 117025 / 8-97332-6420",
+      "oem": "8-94171-2741 / 117025 / 8-97332-6420 / FR-9609",
       "slug": "buje-de-ballesta-delantero-rodeo",
       "variants": [
         {
@@ -4698,12 +4767,13 @@ const PRODUCTS_DATA = {
         "BALLESTA",
         "BUJE",
         "DELANTERO",
+        "FR-9609",
         "TROOPER"
       ],
       "linked_ids": [
         279
       ],
-      "oem": "8-94171-2741 / 117025 / 8-97332-6420",
+      "oem": "8-94171-2741 / 117025 / 8-97332-6420 / FR-9609",
       "slug": "buje-de-ballesta-delantero-trooper",
       "variants": [
         {
@@ -5139,7 +5209,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97364-1740",
           "brand": "GOMA",
-          "precio_usd": 15
+          "precio_usd": 10
         },
         {
           "codigo_oem": "8-97364-1740",
@@ -5177,7 +5247,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "9-82513-1030",
           "brand": "CHAMPION",
-          "precio_usd": 0
+          "precio_usd": 2.5
         },
         {
           "codigo_oem": "9-82513-1030",
@@ -5216,7 +5286,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "9-82513-1030",
           "brand": "CHAMPION",
-          "precio_usd": 0
+          "precio_usd": 2.5
         },
         {
           "codigo_oem": "9-82513-1030",
@@ -5336,7 +5406,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "9-82513-1030",
           "brand": "CHAMPION",
-          "precio_usd": 0
+          "precio_usd": 2.5
         },
         {
           "codigo_oem": "9-82513-1030",
@@ -5346,10 +5416,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "4e3044c7-2e1a-4858-ae56-709091e68dc8",
       "category": "Bulbo Presion Aceite",
-      "image_path": "./assets/bulbo-presion-aceite-caribe-2-3.webp",
       "description": "BULBO PRESION ACEITE CARIBE 2.3",
+      "id": "4e3044c7-2e1a-4858-ae56-709091e68dc8",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-2-3.webp",
       "keywords": [
         "5-83151-0050",
         "ACEITE",
@@ -5358,18 +5428,25 @@ const PRODUCTS_DATA = {
         "PRESION",
         "TGO-1005"
       ],
+      "linked_ids": [
+        299
+      ],
       "oem": "5-83151-0050 / TGO-1005",
-      "slug": "bulbo-presion-aceite-caribe-2-3",
       "original_filename": "Bulbo Presion Aceite/4e3044c7-2e1a-4858-ae56-709091e68dc8.jpg",
-      "linked_ids": [
-        299
+      "slug": "bulbo-presion-aceite-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "5-83151-0050",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "4642084b-6109-4591-a078-150e6db0baac",
       "category": "Bulbo Presion Aceite",
-      "image_path": "./assets/bulbo-presion-aceite-caribe-2-6.webp",
       "description": "BULBO PRESION ACEITE CARIBE 2.6",
+      "id": "4642084b-6109-4591-a078-150e6db0baac",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-2-6.webp",
       "keywords": [
         "5-83151-0050",
         "ACEITE",
@@ -5378,18 +5455,25 @@ const PRODUCTS_DATA = {
         "PRESION",
         "TGO-1005"
       ],
-      "oem": "5-83151-0050 / TGO-1005",
-      "slug": "bulbo-presion-aceite-caribe-2-6",
-      "original_filename": "Bulbo Presion Aceite/4642084b-6109-4591-a078-150e6db0baac.jpg",
       "linked_ids": [
         299
+      ],
+      "oem": "5-83151-0050 / TGO-1005",
+      "original_filename": "Bulbo Presion Aceite/4642084b-6109-4591-a078-150e6db0baac.jpg",
+      "slug": "bulbo-presion-aceite-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "5-83151-0050",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
       "category": "Bulbo Presion Aceite",
-      "image_path": "./assets/bulbo-presion-aceite-caribe-g200.webp",
       "description": "BULBO PRESION ACEITE CARIBE G200",
+      "id": "3ccb9403-96f3-4eea-b034-780c12fb9c8c",
+      "image_path": "./assets/bulbo-presion-aceite-caribe-g200.webp",
       "keywords": [
         "5-83151-0050",
         "ACEITE",
@@ -5399,11 +5483,18 @@ const PRODUCTS_DATA = {
         "PRESION",
         "TGO-1005"
       ],
-      "oem": "5-83151-0050 / TGO-1005",
-      "slug": "bulbo-presion-aceite-caribe-g200",
-      "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
       "linked_ids": [
         299
+      ],
+      "oem": "5-83151-0050 / TGO-1005",
+      "original_filename": "Valvula IAC/3ccb9403-96f3-4eea-b034-780c12fb9c8c.jpg",
+      "slug": "bulbo-presion-aceite-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "5-83151-0050",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
@@ -5480,7 +5571,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-92066-0310",
           "brand": "Original",
-          "precio_usd": 35
+          "precio_usd": 30
         }
       ]
     },
@@ -5724,7 +5815,12 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94159-2140",
           "brand": "RALLY",
-          "precio_usd": 165
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94159-2140",
+          "brand": "TSA",
+          "precio_usd": 190
         }
       ]
     },
@@ -5795,7 +5891,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-93281-9990",
           "brand": "Original",
-          "precio_usd": 700
+          "precio_usd": 0
         }
       ]
     },
@@ -7260,7 +7356,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97130-5600",
           "brand": "MICHELIN",
-          "precio_usd": 0
+          "precio_usd": 20
         },
         {
           "codigo_oem": "8-97130-5600",
@@ -7492,7 +7588,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94229-3880",
           "brand": "PERFECTION",
-          "precio_usd": 0
+          "precio_usd": 40
         }
       ]
     },
@@ -7554,7 +7650,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94229-3880",
           "brand": "PERFECTION",
-          "precio_usd": 0
+          "precio_usd": 40
         }
       ]
     },
@@ -7584,7 +7680,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94229-3880",
           "brand": "PERFECTION",
-          "precio_usd": 0
+          "precio_usd": 40
         }
       ]
     },
@@ -7614,7 +7710,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94229-3880",
           "brand": "PERFECTION",
-          "precio_usd": 0
+          "precio_usd": 40
         }
       ]
     },
@@ -7882,7 +7978,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94219-9540",
           "brand": "Original",
-          "precio_usd": 120
+          "precio_usd": 0
         }
       ]
     },
@@ -10907,7 +11003,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94412-0300",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 80
         }
       ]
     },
@@ -10933,7 +11029,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94412-0300",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 80
         }
       ]
     },
@@ -10959,7 +11055,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94412-0300",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 80
         }
       ]
     },
@@ -10985,7 +11081,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94412-0300",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 80
         }
       ]
     },
@@ -11039,7 +11135,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94412-0300",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 80
         }
       ]
     },
@@ -11314,10 +11410,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "375a7382-264b-47e5-b593-d6fe298d8637",
       "category": "Faro Delantero",
-      "image_path": "./assets/faro-luv.webp",
       "description": "FARO LUV",
+      "id": "375a7382-264b-47e5-b593-d6fe298d8637",
+      "image_path": "./assets/faro-luv.webp",
       "keywords": [
         "213-1123L-LD-EN",
         "213-1123R-LD-EN",
@@ -11325,12 +11421,24 @@ const PRODUCTS_DATA = {
         "FARO",
         "LUV"
       ],
-      "oem": "DP_213-1123R-LD-EN / DP_213-1123L-LD-EN",
-      "slug": "faro-luv",
-      "original_filename": "Faro Delantero/375a7382-264b-47e5-b593-d6fe298d8637.jpg",
       "linked_ids": [
         1225,
         1226
+      ],
+      "oem": "DP_213-1123R-LD-EN / DP_213-1123L-LD-EN",
+      "original_filename": "Faro Delantero/375a7382-264b-47e5-b593-d6fe298d8637.jpg",
+      "slug": "faro-luv",
+      "variants": [
+        {
+          "codigo_oem": "DP_213-1123R-LD-EN",
+          "brand": "Original",
+          "precio_usd": 95
+        },
+        {
+          "codigo_oem": "DP_213-1123L-LD-EN",
+          "brand": "Original",
+          "precio_usd": 95
+        }
       ]
     },
     {
@@ -11444,12 +11552,13 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "CARIBE",
         "CH3807",
-        "FILTRO"
+        "FILTRO",
+        "PH3807"
       ],
       "linked_ids": [
         531
       ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111 / PH3807",
       "slug": "filtro-aceite-caribe-2-0",
       "variants": [
         {
@@ -11471,12 +11580,13 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "CARIBE",
         "CH3807",
-        "FILTRO"
+        "FILTRO",
+        "PH3807"
       ],
       "linked_ids": [
         531
       ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111 / PH3807",
       "slug": "filtro-aceite-caribe-2-6",
       "variants": [
         {
@@ -11498,12 +11608,13 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "CH3807",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "PH3807"
       ],
       "linked_ids": [
         531
       ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111 / PH3807",
       "slug": "filtro-aceite-luv-2-3",
       "variants": [
         {
@@ -11527,12 +11638,13 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DIESEL",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "PH3807"
       ],
       "linked_ids": [
         531
       ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111 / PH3807",
       "slug": "filtro-aceite-luv-d-max-3-0-diesel",
       "variants": [
         {
@@ -11554,12 +11666,13 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "CH3807",
         "FILTRO",
+        "PH3807",
         "RODEO"
       ],
       "linked_ids": [
         531
       ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111 / PH3807",
       "slug": "filtro-aceite-rodeo-3-2",
       "variants": [
         {
@@ -11581,12 +11694,13 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "CH3807",
         "FILTRO",
+        "PH3807",
         "TROOPER"
       ],
       "linked_ids": [
         531
       ],
-      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111",
+      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111 / PH3807",
       "slug": "filtro-aceite-trooper-3-2",
       "variants": [
         {
@@ -11606,13 +11720,14 @@ const PRODUCTS_DATA = {
         "AIRE",
         "AK-8067",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "VK-8067"
       ],
       "linked_ids": [
         450,
         535
       ],
-      "oem": "8-97039-0020 / AK-8067",
+      "oem": "8-97039-0020 / AK-8067 / VK-8067",
       "slug": "filtro-aire-luv-2-2",
       "variants": [
         {
@@ -11632,13 +11747,14 @@ const PRODUCTS_DATA = {
         "AIRE",
         "AK-8067",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "VK-8067"
       ],
       "linked_ids": [
         450,
         535
       ],
-      "oem": "8-97039-0020 / AK-8067",
+      "oem": "8-97039-0020 / AK-8067 / VK-8067",
       "slug": "filtro-aire-luv-3-2",
       "variants": [
         {
@@ -11685,13 +11801,14 @@ const PRODUCTS_DATA = {
         "AIRE",
         "AK-8067",
         "FILTRO",
-        "RODEO"
+        "RODEO",
+        "VK-8067"
       ],
       "linked_ids": [
         450,
         535
       ],
-      "oem": "8-97039-0020 / AK-8067",
+      "oem": "8-97039-0020 / AK-8067 / VK-8067",
       "slug": "filtro-aire-rodeo-3-2",
       "variants": [
         {
@@ -11711,13 +11828,14 @@ const PRODUCTS_DATA = {
         "AIRE",
         "AK-8067",
         "FILTRO",
-        "TROOPER"
+        "TROOPER",
+        "VK-8067"
       ],
       "linked_ids": [
         450,
         535
       ],
-      "oem": "8-97039-0020 / AK-8067",
+      "oem": "8-97039-0020 / AK-8067 / VK-8067",
       "slug": "filtro-aire-trooper-3-2",
       "variants": [
         {
@@ -12942,10 +13060,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "628c3ba0-a2f8-4916-b7c3-da921249e25f",
       "category": "Guardapolvo de Guardafango",
-      "image_path": "./assets/guardapolvo-guardafango-luv-2-3.webp",
       "description": "GUARDAPOLVO GUARDAFANGO LUV 2.3",
+      "id": "628c3ba0-a2f8-4916-b7c3-da921249e25f",
+      "image_path": "./assets/guardapolvo-guardafango-luv-2-3.webp",
       "keywords": [
         "GUARDAFANGO",
         "GUARDAPOLVO",
@@ -12953,12 +13071,24 @@ const PRODUCTS_DATA = {
         "IZ1251101",
         "LUV"
       ],
-      "oem": "IZ1251101 / IZ1250101",
-      "slug": "guardapolvo-guardafango-luv-2-3",
-      "original_filename": "Guardapolvo de Guardafango/628c3ba0-a2f8-4916-b7c3-da921249e25f.jpg",
       "linked_ids": [
         1223,
         1224
+      ],
+      "oem": "IZ1251101 / IZ1250101",
+      "original_filename": "Guardapolvo de Guardafango/628c3ba0-a2f8-4916-b7c3-da921249e25f.jpg",
+      "slug": "guardapolvo-guardafango-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "IZ1251101",
+          "brand": "Original",
+          "precio_usd": 40
+        },
+        {
+          "codigo_oem": "IZ1250101",
+          "brand": "Original",
+          "precio_usd": 40
+        }
       ]
     },
     {
@@ -13395,7 +13525,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-98072-3680",
           "brand": "Original",
-          "precio_usd": 45
+          "precio_usd": 0
         }
       ]
     },
@@ -13490,6 +13620,8 @@ const PRODUCTS_DATA = {
       "id": "071f6f7e-1ca9-47b7-b142-ea066e59594c",
       "image_path": "./assets/guaya-freno-mano-luv-d-max-3-0-diesel-4x4.webp",
       "keywords": [
+        "11-238",
+        "11-239",
         "4X4",
         "8-97363-3460",
         "8-97368-0680",
@@ -13507,7 +13639,7 @@ const PRODUCTS_DATA = {
         591,
         598
       ],
-      "oem": "8-97363-3460 / 8-98007-0111 / 8-97368-0680 / 8-98007-0101 / 8-97368-0690",
+      "oem": "8-97363-3460 / 8-98007-0111 / 11-239 / 8-97368-0680 / 8-98007-0101 / 8-97368-0690 / 11-238",
       "slug": "guaya-freno-mano-luv-d-max-3-0-diesel-4x4",
       "variants": [
         {
@@ -13518,7 +13650,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97363-3460",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 35
         }
       ]
     },
@@ -13528,6 +13660,8 @@ const PRODUCTS_DATA = {
       "id": "2bfd3aec-de02-45df-a21e-39566e56e208",
       "image_path": "./assets/guaya-freno-mano-luv-d-max-3-5.webp",
       "keywords": [
+        "11-238",
+        "11-239",
         "8-97363-3460",
         "8-97368-0680",
         "8-97368-0690",
@@ -13543,7 +13677,7 @@ const PRODUCTS_DATA = {
         591,
         598
       ],
-      "oem": "8-97363-3460 / 8-98007-0111 / 8-97368-0680 / 8-98007-0101 / 8-97368-0690",
+      "oem": "8-97363-3460 / 8-98007-0111 / 11-239 / 8-97368-0680 / 8-98007-0101 / 8-97368-0690 / 11-238",
       "slug": "guaya-freno-mano-luv-d-max-3-5",
       "variants": [
         {
@@ -13554,7 +13688,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97363-3460",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 35
         }
       ]
     },
@@ -13679,10 +13813,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "64b9717f-b8ed-40b4-bd59-ba3c08b59588",
       "category": "Hidrovac",
-      "image_path": "./assets/hidrovac-caribe-2-6.webp",
       "description": "HIDROVAC CARIBE 2.6",
+      "id": "64b9717f-b8ed-40b4-bd59-ba3c08b59588",
+      "image_path": "./assets/hidrovac-caribe-2-6.webp",
       "keywords": [
         "8-94469-2460",
         "8-97021-9411",
@@ -13690,18 +13824,25 @@ const PRODUCTS_DATA = {
         "HIDROVAC",
         "SF-11001"
       ],
-      "oem": "8-97021-9411 / 8-94469-2460 / SF-11001",
-      "slug": "hidrovac-caribe-2-6",
-      "original_filename": "Hidrovac/64b9717f-b8ed-40b4-bd59-ba3c08b59588.jpg",
       "linked_ids": [
         1141
+      ],
+      "oem": "8-97021-9411 / 8-94469-2460 / SF-11001",
+      "original_filename": "Hidrovac/64b9717f-b8ed-40b4-bd59-ba3c08b59588.jpg",
+      "slug": "hidrovac-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-97021-9411",
+          "brand": "Original",
+          "precio_usd": 255
+        }
       ]
     },
     {
-      "id": "984c4e52-e997-4e71-b5f1-309cb7c4ce8b",
       "category": "Hidrovac",
-      "image_path": "./assets/hidrovac-luv-2-3.webp",
       "description": "HIDROVAC LUV 2.3",
+      "id": "984c4e52-e997-4e71-b5f1-309cb7c4ce8b",
+      "image_path": "./assets/hidrovac-luv-2-3.webp",
       "keywords": [
         "8-94469-2460",
         "8-97021-9411",
@@ -13709,11 +13850,18 @@ const PRODUCTS_DATA = {
         "LUV",
         "SF-11001"
       ],
-      "oem": "8-97021-9411 / 8-94469-2460 / SF-11001",
-      "slug": "hidrovac-luv-2-3",
-      "original_filename": "Hidrovac/984c4e52-e997-4e71-b5f1-309cb7c4ce8b.jpg",
       "linked_ids": [
         1141
+      ],
+      "oem": "8-97021-9411 / 8-94469-2460 / SF-11001",
+      "original_filename": "Hidrovac/984c4e52-e997-4e71-b5f1-309cb7c4ce8b.jpg",
+      "slug": "hidrovac-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-97021-9411",
+          "brand": "Original",
+          "precio_usd": 255
+        }
       ]
     },
     {
@@ -13722,6 +13870,7 @@ const PRODUCTS_DATA = {
       "id": "276d29e7-11c7-44da-b3a5-d7c6d8dad19b",
       "image_path": "./assets/hidrovac-luv-d-max-3-5.webp",
       "keywords": [
+        "8-97363-5631",
         "8-97365-5180",
         "8-97365-5190",
         "8-98006-7890",
@@ -13732,7 +13881,7 @@ const PRODUCTS_DATA = {
       "linked_ids": [
         609
       ],
-      "oem": "8-97365-5180 / 8-97365-5190 / 8-98006-7890",
+      "oem": "8-97365-5180 / 8-97365-5190 / 8-98006-7890 / 8-97363-5631",
       "slug": "hidrovac-luv-d-max-3-5",
       "variants": [
         {
@@ -13743,7 +13892,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97365-5180",
           "brand": "TOMITA",
-          "precio_usd": 0
+          "precio_usd": 100
         }
       ]
     },
@@ -14083,7 +14232,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "5-87814-3231",
           "brand": "ANCOV",
-          "precio_usd": 65
+          "precio_usd": 0
         },
         {
           "codigo_oem": "5-87814-3231",
@@ -14103,7 +14252,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "5-87814-3231",
           "brand": "NATSUKI",
-          "precio_usd": 0
+          "precio_usd": 90
         }
       ]
     },
@@ -14585,7 +14734,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97029-9450",
           "brand": "ALLPARK",
-          "precio_usd": 0
+          "precio_usd": 60
         },
         {
           "codigo_oem": "8-97029-9450",
@@ -14623,7 +14772,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97029-9450",
           "brand": "ALLPARK",
-          "precio_usd": 0
+          "precio_usd": 60
         },
         {
           "codigo_oem": "8-97029-9450",
@@ -14661,7 +14810,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97029-9450",
           "brand": "ALLPARK",
-          "precio_usd": 0
+          "precio_usd": 60
         },
         {
           "codigo_oem": "8-97029-9450",
@@ -15025,7 +15174,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "KIS27B",
           "brand": "ICHIBAN",
-          "precio_usd": 0
+          "precio_usd": 145
         }
       ]
     },
@@ -15071,18 +15220,19 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "KIS01",
         "KIT",
-        "LUV"
+        "LUV",
+        "NAK09021"
       ],
       "linked_ids": [
         663
       ],
-      "oem": "KIS01 / 95625609",
+      "oem": "KIS01 / 95625609 / NAK09021",
       "slug": "kit-de-clutch-luv-d-max-3-5",
       "variants": [
         {
           "codigo_oem": "KIS01",
           "brand": "TRIX",
-          "precio_usd": 160
+          "precio_usd": 0
         },
         {
           "codigo_oem": "KIS01",
@@ -15097,7 +15247,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "KIS01",
           "brand": "PERFECTION",
-          "precio_usd": 0
+          "precio_usd": 210
         },
         {
           "codigo_oem": "KIS01",
@@ -15231,7 +15381,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "TK-126",
           "brand": "Original",
-          "precio_usd": 50
+          "precio_usd": 55
         }
       ]
     },
@@ -15264,7 +15414,12 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "I403K",
           "brand": "CIC",
-          "precio_usd": 85
+          "precio_usd": 95
+        },
+        {
+          "codigo_oem": "I403K",
+          "brand": "OSK",
+          "precio_usd": 130
         }
       ]
     },
@@ -15289,6 +15444,11 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "TK-133",
           "brand": "CIC",
+          "precio_usd": 75
+        },
+        {
+          "codigo_oem": "TK-133",
+          "brand": "TAIKEN",
           "precio_usd": 85
         }
       ]
@@ -15340,6 +15500,11 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "TK-133",
           "brand": "CIC",
+          "precio_usd": 75
+        },
+        {
+          "codigo_oem": "TK-133",
+          "brand": "TAIKEN",
           "precio_usd": 85
         }
       ]
@@ -15377,7 +15542,12 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "TK-135",
           "brand": "MICHELIN",
-          "precio_usd": 0
+          "precio_usd": 145
+        },
+        {
+          "codigo_oem": "TK-135",
+          "brand": "CIC",
+          "precio_usd": 155
         }
       ]
     },
@@ -16187,6 +16357,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3.webp",
       "keywords": [
         "0820",
+        "19808",
         "8-94337-3000",
         "ACM013",
         "CARIBE",
@@ -16198,7 +16369,7 @@ const PRODUCTS_DATA = {
       "linked_ids": [
         703
       ],
-      "oem": "8-94337-3000 / 0820 / ACM013",
+      "oem": "8-94337-3000 / 0820 / ACM013 / 19808",
       "original_filename": "Manguera Radiador/f53f0f58-d7b8-4573-889b-d278092f5ebc.jpg",
       "slug": "manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3",
       "variants": [
@@ -16270,6 +16441,7 @@ const PRODUCTS_DATA = {
       "id": "ea6d3d9b-61bc-4813-bb7a-70aecf9e0ef3",
       "image_path": "./assets/manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3.webp",
       "keywords": [
+        "19807",
         "23194",
         "8-94389-4810",
         "CARIBE",
@@ -16282,7 +16454,7 @@ const PRODUCTS_DATA = {
       "linked_ids": [
         711
       ],
-      "oem": "8-94389-4810 / MC819 / 23194",
+      "oem": "8-94389-4810 / MC819 / 23194 / 19807",
       "original_filename": "Manguera Radiador/ea6d3d9b-61bc-4813-bb7a-70aecf9e0ef3.jpg",
       "slug": "manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3",
       "variants": [
@@ -16784,6 +16956,11 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-94102-4160",
           "brand": "NPC",
           "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94102-4160",
+          "brand": "TSA",
+          "precio_usd": 10
         }
       ]
     },
@@ -17168,7 +17345,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94243-2360",
           "brand": "TAIWAN",
-          "precio_usd": 0
+          "precio_usd": 20
         },
         {
           "codigo_oem": "8-94243-2360",
@@ -17242,7 +17419,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94243-2360",
           "brand": "TAIWAN",
-          "precio_usd": 0
+          "precio_usd": 20
         },
         {
           "codigo_oem": "8-94243-2360",
@@ -17428,6 +17605,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/munon-superior-caribe.webp",
       "keywords": [
         "717IZ01C700",
+        "8-94224-5501",
         "8-94243-2340",
         "8-94459-4534",
         "CARIBE",
@@ -17437,7 +17615,7 @@ const PRODUCTS_DATA = {
       "linked_ids": [
         744
       ],
-      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
+      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534 / 8-94224-5501",
       "original_filename": "Muñon/36ead4ac-387e-43e2-97bd-60232a21e088.jpg",
       "slug": "munon-superior-caribe",
       "variants": [
@@ -17465,6 +17643,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/munon-superior-luv.webp",
       "keywords": [
         "717IZ01C700",
+        "8-94224-5501",
         "8-94243-2340",
         "8-94459-4534",
         "LUV",
@@ -17474,7 +17653,7 @@ const PRODUCTS_DATA = {
       "linked_ids": [
         744
       ],
-      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
+      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534 / 8-94224-5501",
       "original_filename": "Muñon/c6ff9b8e-5927-4289-8573-9997b01ac1c9.jpg",
       "slug": "munon-superior-luv",
       "variants": [
@@ -17666,6 +17845,7 @@ const PRODUCTS_DATA = {
       "image_path": "./assets/munon-superior-rodeo.webp",
       "keywords": [
         "717IZ01C700",
+        "8-94224-5501",
         "8-94243-2340",
         "8-94459-4534",
         "MUNON",
@@ -17675,7 +17855,7 @@ const PRODUCTS_DATA = {
       "linked_ids": [
         744
       ],
-      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534",
+      "oem": "8-94243-2340 / 717IZ01C700 / 8-94459-4534 / 8-94224-5501",
       "original_filename": "Muñon/6a3b3b08-a47c-47ce-a3e9-81d9b96140b2.jpg",
       "slug": "munon-superior-rodeo",
       "variants": [
@@ -18378,7 +18558,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-93292-7744",
           "brand": "Original",
-          "precio_usd": 0
+          "precio_usd": 220
         }
       ]
     },
@@ -18960,13 +19140,14 @@ const PRODUCTS_DATA = {
         "8-94462-0303",
         "CARIBE",
         "CLUTCH",
+        "N5316P",
         "PLATO",
         "PRESION"
       ],
       "linked_ids": [
         842
       ],
-      "oem": "8-94462-0303",
+      "oem": "8-94462-0303 / N5316P",
       "original_filename": "Plato Clutch/0b0232df-086c-4dbd-b454-9b4e95178227.jpg",
       "slug": "plato-presion-clutch-caribe-2-6",
       "variants": [
@@ -19354,10 +19535,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "aeb28037-d816-480d-aac1-b03c2e0cd137",
       "category": "Radiador",
-      "image_path": "./assets/radiador-luv-dmax-3-5.webp",
       "description": "RADIADOR LUV DMAX 3.5",
+      "id": "aeb28037-d816-480d-aac1-b03c2e0cd137",
+      "image_path": "./assets/radiador-luv-dmax-3-5.webp",
       "keywords": [
         "8-97333-3510",
         "8-97363-0640",
@@ -19368,12 +19549,24 @@ const PRODUCTS_DATA = {
         "LUV",
         "RADIADOR"
       ],
-      "oem": "8-98073-5330 / 8-98171-3090 / 8-97363-0640 / 8-97333-3510 / 8-98164-7460",
-      "slug": "radiador-luv-dmax-3-5",
-      "original_filename": "Radiador/aeb28037-d816-480d-aac1-b03c2e0cd137.jpg",
       "linked_ids": [
         855,
         856
+      ],
+      "oem": "8-98073-5330 / 8-98171-3090 / 8-97363-0640 / 8-97333-3510 / 8-98164-7460",
+      "original_filename": "Radiador/aeb28037-d816-480d-aac1-b03c2e0cd137.jpg",
+      "slug": "radiador-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-98073-5330",
+          "brand": "Original",
+          "precio_usd": 215
+        },
+        {
+          "codigo_oem": "8-97333-3510",
+          "brand": "Original",
+          "precio_usd": 145
+        }
       ]
     },
     {
@@ -19486,10 +19679,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "a7351cc4-0a4a-4b0c-99c6-dd8986b20bbd",
       "category": "Rejilla Aire Acondicionado",
-      "image_path": "./assets/rejilla-central-aire-acondicionado-luv-dmax-05-09.webp",
       "description": "REJILLA CENTRAL AIRE ACONDICIONADO LUV DMAX 05-09",
+      "id": "a7351cc4-0a4a-4b0c-99c6-dd8986b20bbd",
+      "image_path": "./assets/rejilla-central-aire-acondicionado-luv-dmax-05-09.webp",
       "keywords": [
         "05-09",
         "5306420-P00",
@@ -19500,18 +19693,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "REJILLA"
       ],
-      "oem": "5306420-P00",
-      "slug": "rejilla-central-aire-acondicionado-luv-dmax-05-09",
-      "original_filename": "Rejilla Aire Acondicionado/a7351cc4-0a4a-4b0c-99c6-dd8986b20bbd.jpg",
       "linked_ids": [
         861
+      ],
+      "oem": "5306420-P00",
+      "original_filename": "Rejilla Aire Acondicionado/a7351cc4-0a4a-4b0c-99c6-dd8986b20bbd.jpg",
+      "slug": "rejilla-central-aire-acondicionado-luv-dmax-05-09",
+      "variants": [
+        {
+          "codigo_oem": "5306420-P00",
+          "brand": "Original",
+          "precio_usd": 80
+        }
       ]
     },
     {
-      "id": "05733e9a-4544-4ab1-885e-79f3a712df1e",
       "category": "Rejilla Aire Acondicionado",
-      "image_path": "./assets/rejilla-lateral-aire-acondicionado-luv-dmax-05-09.webp",
       "description": "REJILLA LATERAL AIRE ACONDICIONADO LUV DMAX 05-09",
+      "id": "05733e9a-4544-4ab1-885e-79f3a712df1e",
+      "image_path": "./assets/rejilla-lateral-aire-acondicionado-luv-dmax-05-09.webp",
       "keywords": [
         "05-09",
         "8-97392-7900",
@@ -19523,11 +19723,18 @@ const PRODUCTS_DATA = {
         "LUV",
         "REJILLA"
       ],
-      "oem": "8-97398-4210 / 8-97392-7900",
-      "slug": "rejilla-lateral-aire-acondicionado-luv-dmax-05-09",
-      "original_filename": "Rejilla Aire Acondicionado/05733e9a-4544-4ab1-885e-79f3a712df1e.jpg",
       "linked_ids": [
         862
+      ],
+      "oem": "8-97398-4210 / 8-97392-7900",
+      "original_filename": "Rejilla Aire Acondicionado/05733e9a-4544-4ab1-885e-79f3a712df1e.jpg",
+      "slug": "rejilla-lateral-aire-acondicionado-luv-dmax-05-09",
+      "variants": [
+        {
+          "codigo_oem": "8-97398-4210",
+          "brand": "Original",
+          "precio_usd": 65
+        }
       ]
     },
     {
@@ -19560,28 +19767,35 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "75e3c4f9-3320-4961-bc8d-68a766ff3d4d",
       "category": "Resorte de Freno",
-      "image_path": "./assets/resorte-freno-caribe-2-3.webp",
       "description": "RESORTE FRENO CARIBE 2.3",
+      "id": "75e3c4f9-3320-4961-bc8d-68a766ff3d4d",
+      "image_path": "./assets/resorte-freno-caribe-2-3.webp",
       "keywords": [
         "CARIBE",
         "FRENO",
         "KR-15440",
         "RESORTE"
       ],
-      "oem": "KR-15440",
-      "slug": "resorte-freno-caribe-2-3",
-      "original_filename": "Resorte de Freno/75e3c4f9-3320-4961-bc8d-68a766ff3d4d.jpg",
       "linked_ids": [
         865
+      ],
+      "oem": "KR-15440",
+      "original_filename": "Resorte de Freno/75e3c4f9-3320-4961-bc8d-68a766ff3d4d.jpg",
+      "slug": "resorte-freno-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "KR-15440",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "24dddeeb-1625-4d25-9616-c1e27ab0827a",
       "category": "Resorte de Freno",
-      "image_path": "./assets/resorte-freno-caribe-g200.webp",
       "description": "RESORTE FRENO CARIBE G200",
+      "id": "24dddeeb-1625-4d25-9616-c1e27ab0827a",
+      "image_path": "./assets/resorte-freno-caribe-g200.webp",
       "keywords": [
         "CARIBE",
         "FRENO",
@@ -19589,18 +19803,25 @@ const PRODUCTS_DATA = {
         "KR-15441",
         "RESORTE"
       ],
-      "oem": "KR-15441",
-      "slug": "resorte-freno-caribe-g200",
-      "original_filename": "Resorte de Freno/24dddeeb-1625-4d25-9616-c1e27ab0827a.jpg",
       "linked_ids": [
         864
+      ],
+      "oem": "KR-15441",
+      "original_filename": "Resorte de Freno/24dddeeb-1625-4d25-9616-c1e27ab0827a.jpg",
+      "slug": "resorte-freno-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "KR-15441",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "52042eee-5fcf-4fd8-890b-93bf9d8d8b38",
       "category": "Resorte de Freno",
-      "image_path": "./assets/resorte-freno-luv-dmax-3-5.webp",
       "description": "RESORTE FRENO LUV DMAX 3.5",
+      "id": "52042eee-5fcf-4fd8-890b-93bf9d8d8b38",
+      "image_path": "./assets/resorte-freno-luv-dmax-3-5.webp",
       "keywords": [
         "DMAX",
         "FRENO",
@@ -19608,18 +19829,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "RESORTE"
       ],
-      "oem": "KR-15512",
-      "slug": "resorte-freno-luv-dmax-3-5",
-      "original_filename": "Resorte de Freno/52042eee-5fcf-4fd8-890b-93bf9d8d8b38.jpg",
       "linked_ids": [
         866
+      ],
+      "oem": "KR-15512",
+      "original_filename": "Resorte de Freno/52042eee-5fcf-4fd8-890b-93bf9d8d8b38.jpg",
+      "slug": "resorte-freno-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "KR-15512",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "76cf65e0-5f59-4865-b5fa-4f541c418ff1",
       "category": "Rolinera Aguja Punta de Eje",
-      "image_path": "./assets/rolinera-punta-eje-aguja-luv-dmax-3-5.webp",
       "description": "ROLINERA PUNTA EJE AGUJA LUV DMAX 3.5",
+      "id": "76cf65e0-5f59-4865-b5fa-4f541c418ff1",
+      "image_path": "./assets/rolinera-punta-eje-aguja-luv-dmax-3-5.webp",
       "keywords": [
         "8-94407-7080",
         "AGUJA",
@@ -19630,18 +19858,25 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "ROLINERA"
       ],
-      "oem": "HK3016 / 8-94407-7080",
-      "slug": "rolinera-punta-eje-aguja-luv-dmax-3-5",
-      "original_filename": "Rolinera Aguja Punta de Eje/76cf65e0-5f59-4865-b5fa-4f541c418ff1.jpg",
       "linked_ids": [
         881
+      ],
+      "oem": "HK3016 / 8-94407-7080",
+      "original_filename": "Rolinera Aguja Punta de Eje/76cf65e0-5f59-4865-b5fa-4f541c418ff1.jpg",
+      "slug": "rolinera-punta-eje-aguja-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "HK3016",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "c2ef78d2-56fe-4a0b-b042-b64b7b1a25ec",
       "category": "Rolinera Cigueñal",
-      "image_path": "./assets/rolinera-ciguenal-caribe-2-3.webp",
       "description": "ROLINERA CIGUEÑAL CARIBE 2.3",
+      "id": "c2ef78d2-56fe-4a0b-b042-b64b7b1a25ec",
+      "image_path": "./assets/rolinera-ciguenal-caribe-2-3.webp",
       "keywords": [
         "6203",
         "9-00090-6790",
@@ -19649,18 +19884,25 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ROLINERA"
       ],
+      "linked_ids": [
+        867
+      ],
       "oem": "6203 / 9-00090-6790",
-      "slug": "rolinera-ciguenal-caribe-2-3",
       "original_filename": "Rolinera Cigueñal/c2ef78d2-56fe-4a0b-b042-b64b7b1a25ec.jpg",
-      "linked_ids": [
-        867
+      "slug": "rolinera-ciguenal-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "6203",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "54e4dedc-8f1b-44d1-8428-769aeef16145",
       "category": "Rolinera Cigueñal",
-      "image_path": "./assets/rolinera-ciguenal-caribe-2-6.webp",
       "description": "ROLINERA CIGUEÑAL CARIBE 2.6",
+      "id": "54e4dedc-8f1b-44d1-8428-769aeef16145",
+      "image_path": "./assets/rolinera-ciguenal-caribe-2-6.webp",
       "keywords": [
         "6203",
         "9-00090-6790",
@@ -19668,18 +19910,25 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ROLINERA"
       ],
-      "oem": "6203 / 9-00090-6790",
-      "slug": "rolinera-ciguenal-caribe-2-6",
-      "original_filename": "Rolinera Cigueñal/54e4dedc-8f1b-44d1-8428-769aeef16145.jpg",
       "linked_ids": [
         867
+      ],
+      "oem": "6203 / 9-00090-6790",
+      "original_filename": "Rolinera Cigueñal/54e4dedc-8f1b-44d1-8428-769aeef16145.jpg",
+      "slug": "rolinera-ciguenal-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "6203",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "96cba63b-9851-4dcf-8441-b4e79fa4c98a",
       "category": "Rolinera Cigueñal",
-      "image_path": "./assets/rolinera-ciguenal-caribe-g200.webp",
       "description": "ROLINERA CIGUEÑAL CARIBE G200",
+      "id": "96cba63b-9851-4dcf-8441-b4e79fa4c98a",
+      "image_path": "./assets/rolinera-ciguenal-caribe-g200.webp",
       "keywords": [
         "6203",
         "9-00090-6790",
@@ -19688,18 +19937,25 @@ const PRODUCTS_DATA = {
         "G200",
         "ROLINERA"
       ],
-      "oem": "6203 / 9-00090-6790",
-      "slug": "rolinera-ciguenal-caribe-g200",
-      "original_filename": "Rolinera Cigueñal/96cba63b-9851-4dcf-8441-b4e79fa4c98a.jpg",
       "linked_ids": [
         867
+      ],
+      "oem": "6203 / 9-00090-6790",
+      "original_filename": "Rolinera Cigueñal/96cba63b-9851-4dcf-8441-b4e79fa4c98a.jpg",
+      "slug": "rolinera-ciguenal-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "6203",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "526b71a8-c011-4484-be01-88b3d48eb05b",
       "category": "Rolinera Cigueñal",
-      "image_path": "./assets/rolinera-ciguenal-luv-2-3.webp",
       "description": "ROLINERA CIGUEÑAL LUV 2.3",
+      "id": "526b71a8-c011-4484-be01-88b3d48eb05b",
+      "image_path": "./assets/rolinera-ciguenal-luv-2-3.webp",
       "keywords": [
         "6203",
         "9-00090-6790",
@@ -19707,18 +19963,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "ROLINERA"
       ],
-      "oem": "6203 / 9-00090-6790",
-      "slug": "rolinera-ciguenal-luv-2-3",
-      "original_filename": "Rolinera Cigueñal/526b71a8-c011-4484-be01-88b3d48eb05b.jpg",
       "linked_ids": [
         867
+      ],
+      "oem": "6203 / 9-00090-6790",
+      "original_filename": "Rolinera Cigueñal/526b71a8-c011-4484-be01-88b3d48eb05b.jpg",
+      "slug": "rolinera-ciguenal-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "6203",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "abd454e2-cecc-419b-881c-cabbcd57a101",
       "category": "Rolinera Collarin",
-      "image_path": "./assets/rolinera-collarin-caribe-2-3.webp",
       "description": "ROLINERA COLLARIN CARIBE 2.3",
+      "id": "abd454e2-cecc-419b-881c-cabbcd57a101",
+      "image_path": "./assets/rolinera-collarin-caribe-2-3.webp",
       "keywords": [
         "24TK308B2",
         "5-31321-0033",
@@ -19728,18 +19991,25 @@ const PRODUCTS_DATA = {
         "RCT38SL1",
         "ROLINERA"
       ],
-      "oem": "9-00095-0401 / 24TK308B2 / RCT38SL1 / 5-31321-0033",
-      "slug": "rolinera-collarin-caribe-2-3",
-      "original_filename": "Rolinera Collarin/abd454e2-cecc-419b-881c-cabbcd57a101.jpg",
       "linked_ids": [
         868
+      ],
+      "oem": "9-00095-0401 / 24TK308B2 / RCT38SL1 / 5-31321-0033",
+      "original_filename": "Rolinera Collarin/abd454e2-cecc-419b-881c-cabbcd57a101.jpg",
+      "slug": "rolinera-collarin-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "9-00095-0401",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "8b40602d-0c81-4e50-a301-3aa6ccb519fc",
       "category": "Rolinera Collarin",
-      "image_path": "./assets/rolinera-collarin-caribe-2-6.webp",
       "description": "ROLINERA COLLARIN CARIBE 2.6",
+      "id": "8b40602d-0c81-4e50-a301-3aa6ccb519fc",
+      "image_path": "./assets/rolinera-collarin-caribe-2-6.webp",
       "keywords": [
         "613012",
         "8-94379-4990",
@@ -19748,18 +20018,35 @@ const PRODUCTS_DATA = {
         "RCT422SA1FG",
         "ROLINERA"
       ],
-      "oem": "8-94379-4990 / 613012 / RCT422SA1FG",
-      "slug": "rolinera-collarin-caribe-2-6",
-      "original_filename": "Rolinera Collarin/8b40602d-0c81-4e50-a301-3aa6ccb519fc.jpg",
       "linked_ids": [
         870
+      ],
+      "oem": "8-94379-4990 / 613012 / RCT422SA1FG",
+      "original_filename": "Rolinera Collarin/8b40602d-0c81-4e50-a301-3aa6ccb519fc.jpg",
+      "slug": "rolinera-collarin-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94379-4990",
+          "brand": "PERFECTION",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "8-94379-4990",
+          "brand": "ICHIBAN",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94379-4990",
+          "brand": "KOYO",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "55bf3f72-ac90-43da-ad22-478548f8a345",
       "category": "Rolinera Collarin",
-      "image_path": "./assets/rolinera-collarin-caribe-g200.webp",
       "description": "ROLINERA COLLARIN CARIBE G200",
+      "id": "55bf3f72-ac90-43da-ad22-478548f8a345",
+      "image_path": "./assets/rolinera-collarin-caribe-g200.webp",
       "keywords": [
         "24TK308B2",
         "5-31321-0033",
@@ -19770,18 +20057,25 @@ const PRODUCTS_DATA = {
         "RCT38SL1",
         "ROLINERA"
       ],
-      "oem": "9-00095-0401 / 24TK308B2 / RCT38SL1 / 5-31321-0033",
-      "slug": "rolinera-collarin-caribe-g200",
-      "original_filename": "Rolinera Collarin/55bf3f72-ac90-43da-ad22-478548f8a345.jpg",
       "linked_ids": [
         868
+      ],
+      "oem": "9-00095-0401 / 24TK308B2 / RCT38SL1 / 5-31321-0033",
+      "original_filename": "Rolinera Collarin/55bf3f72-ac90-43da-ad22-478548f8a345.jpg",
+      "slug": "rolinera-collarin-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "9-00095-0401",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "1c6520d2-2be4-4831-a9b8-d3ea0c2de6f1",
       "category": "Rolinera Collarin",
-      "image_path": "./assets/rolinera-collarin-luv-2-3.webp",
       "description": "ROLINERA COLLARIN LUV 2.3",
+      "id": "1c6520d2-2be4-4831-a9b8-d3ea0c2de6f1",
+      "image_path": "./assets/rolinera-collarin-luv-2-3.webp",
       "keywords": [
         "48TKA3214",
         "8-94101-2430",
@@ -19789,18 +20083,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "ROLINERA"
       ],
-      "oem": "8-94101-2430 / 48TKA3214",
-      "slug": "rolinera-collarin-luv-2-3",
-      "original_filename": "Rolinera Collarin/1c6520d2-2be4-4831-a9b8-d3ea0c2de6f1.jpg",
       "linked_ids": [
         873
+      ],
+      "oem": "8-94101-2430 / 48TKA3214",
+      "original_filename": "Rolinera Collarin/1c6520d2-2be4-4831-a9b8-d3ea0c2de6f1.jpg",
+      "slug": "rolinera-collarin-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94101-2430",
+          "brand": "TRIX",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "32adb963-293f-40f1-a04b-66f59aed03d3",
       "category": "Rolinera Eje de Mando",
-      "image_path": "./assets/rolinera-eje-de-mando-caribe-2-3.webp",
       "description": "ROLINERA EJE DE MANDO CARIBE 2.3",
+      "id": "32adb963-293f-40f1-a04b-66f59aed03d3",
+      "image_path": "./assets/rolinera-eje-de-mando-caribe-2-3.webp",
       "keywords": [
         "23B",
         "8-00096-1001",
@@ -19810,18 +20111,25 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "VS22"
       ],
+      "linked_ids": [
+        1222
+      ],
       "oem": "8-00096-1001 / VS22 / 23B",
-      "slug": "rolinera-eje-de-mando-caribe-2-3",
       "original_filename": "Rolinera Eje de Mando/32adb963-293f-40f1-a04b-66f59aed03d3.jpg",
-      "linked_ids": [
-        1222
+      "slug": "rolinera-eje-de-mando-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-00096-1001",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "ff7c77e6-5f83-4f38-9fa3-c316e0805aef",
       "category": "Rolinera Eje de Mando",
-      "image_path": "./assets/rolinera-eje-de-mando-caribe-g200.webp",
       "description": "ROLINERA EJE DE MANDO CARIBE G200",
+      "id": "ff7c77e6-5f83-4f38-9fa3-c316e0805aef",
+      "image_path": "./assets/rolinera-eje-de-mando-caribe-g200.webp",
       "keywords": [
         "23B",
         "8-00096-1001",
@@ -19832,18 +20140,25 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "VS22"
       ],
-      "oem": "8-00096-1001 / VS22 / 23B",
-      "slug": "rolinera-eje-de-mando-caribe-g200",
-      "original_filename": "Rolinera Eje de Mando/ff7c77e6-5f83-4f38-9fa3-c316e0805aef.jpg",
       "linked_ids": [
         1222
+      ],
+      "oem": "8-00096-1001 / VS22 / 23B",
+      "original_filename": "Rolinera Eje de Mando/ff7c77e6-5f83-4f38-9fa3-c316e0805aef.jpg",
+      "slug": "rolinera-eje-de-mando-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-00096-1001",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "72eb2d7b-a0bd-4cdb-b3ea-79dc495f83a0",
       "category": "Rolinera Piñon Ataque",
-      "image_path": "./assets/rolinera-pinon-ataque-grande-caribe-2-3.webp",
       "description": "ROLINERA PIÑON ATAQUE GRANDE CARIBE 2.3",
+      "id": "72eb2d7b-a0bd-4cdb-b3ea-79dc495f83a0",
+      "image_path": "./assets/rolinera-pinon-ataque-grande-caribe-2-3.webp",
       "keywords": [
         "32307JR",
         "8-94435-3420",
@@ -19855,18 +20170,25 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "TR0708-1R"
       ],
+      "linked_ids": [
+        875
+      ],
       "oem": "32307JR / 8-94435-3420 / TR0708-1R / 9-00093-6210",
-      "slug": "rolinera-pinon-ataque-grande-caribe-2-3",
       "original_filename": "Rolinera Piñon Ataque/72eb2d7b-a0bd-4cdb-b3ea-79dc495f83a0.jpg",
-      "linked_ids": [
-        875
+      "slug": "rolinera-pinon-ataque-grande-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "32307JR",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "c8b7fc4f-bb7b-4990-8cdb-0ad6bcfed68f",
       "category": "Rolinera Piñon Ataque",
-      "image_path": "./assets/rolinera-pinon-ataque-grande-caribe-g200.webp",
       "description": "ROLINERA PIÑON ATAQUE GRANDE CARIBE G200",
+      "id": "c8b7fc4f-bb7b-4990-8cdb-0ad6bcfed68f",
+      "image_path": "./assets/rolinera-pinon-ataque-grande-caribe-g200.webp",
       "keywords": [
         "32307JR",
         "8-94435-3420",
@@ -19879,18 +20201,25 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "TR0708-1R"
       ],
-      "oem": "32307JR / 8-94435-3420 / TR0708-1R / 9-00093-6210",
-      "slug": "rolinera-pinon-ataque-grande-caribe-g200",
-      "original_filename": "Rolinera Piñon Ataque/c8b7fc4f-bb7b-4990-8cdb-0ad6bcfed68f.jpg",
       "linked_ids": [
         875
+      ],
+      "oem": "32307JR / 8-94435-3420 / TR0708-1R / 9-00093-6210",
+      "original_filename": "Rolinera Piñon Ataque/c8b7fc4f-bb7b-4990-8cdb-0ad6bcfed68f.jpg",
+      "slug": "rolinera-pinon-ataque-grande-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "32307JR",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "ce39dc62-9065-4e98-ba37-131b9246bae8",
       "category": "Rolinera Piñon Ataque",
-      "image_path": "./assets/rolinera-pinon-ataque-pequena-caribe-2-3.webp",
       "description": "ROLINERA PIÑON ATAQUE PEQUEÑA CARIBE 2.3",
+      "id": "ce39dc62-9065-4e98-ba37-131b9246bae8",
+      "image_path": "./assets/rolinera-pinon-ataque-pequena-caribe-2-3.webp",
       "keywords": [
         "30306D",
         "9-00093-0780",
@@ -19901,18 +20230,25 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "TR0608A"
       ],
-      "oem": "30306D / 9-00093-0780 / TR0608A",
-      "slug": "rolinera-pinon-ataque-pequena-caribe-2-3",
-      "original_filename": "Rolinera Piñon Ataque/ce39dc62-9065-4e98-ba37-131b9246bae8.jpg",
       "linked_ids": [
         876
+      ],
+      "oem": "30306D / 9-00093-0780 / TR0608A",
+      "original_filename": "Rolinera Piñon Ataque/ce39dc62-9065-4e98-ba37-131b9246bae8.jpg",
+      "slug": "rolinera-pinon-ataque-pequena-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "30306D",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "e036716d-50ba-4399-b0d1-355290b8809c",
       "category": "Rolinera Piñon Ataque",
-      "image_path": "./assets/rolinera-pinon-ataque-pequena-caribe-g200.webp",
       "description": "ROLINERA PIÑON ATAQUE PEQUEÑA CARIBE G200",
+      "id": "e036716d-50ba-4399-b0d1-355290b8809c",
+      "image_path": "./assets/rolinera-pinon-ataque-pequena-caribe-g200.webp",
       "keywords": [
         "30306D",
         "9-00093-0780",
@@ -19924,18 +20260,25 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "TR0608A"
       ],
-      "oem": "30306D / 9-00093-0780 / TR0608A",
-      "slug": "rolinera-pinon-ataque-pequena-caribe-g200",
-      "original_filename": "Rolinera Piñon Ataque/e036716d-50ba-4399-b0d1-355290b8809c.jpg",
       "linked_ids": [
         876
+      ],
+      "oem": "30306D / 9-00093-0780 / TR0608A",
+      "original_filename": "Rolinera Piñon Ataque/e036716d-50ba-4399-b0d1-355290b8809c.jpg",
+      "slug": "rolinera-pinon-ataque-pequena-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "30306D",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "29d309a3-9f54-4247-aa62-5275a1c31265",
       "category": "Rolinera Porta Corona",
-      "image_path": "./assets/rolinera-porta-corona-caribe-2-3.webp",
       "description": "ROLINERA PORTA CORONA CARIBE 2.3",
+      "id": "29d309a3-9f54-4247-aa62-5275a1c31265",
+      "image_path": "./assets/rolinera-porta-corona-caribe-2-3.webp",
       "keywords": [
         "9-00093-0740",
         "CARIBE",
@@ -19944,18 +20287,25 @@ const PRODUCTS_DATA = {
         "PORTA",
         "ROLINERA"
       ],
-      "oem": "LM-501349 / 10 / 9-00093-0740",
-      "slug": "rolinera-porta-corona-caribe-2-3",
-      "original_filename": "Rolinera Porta Corona/29d309a3-9f54-4247-aa62-5275a1c31265.jpg",
       "linked_ids": [
         879
+      ],
+      "oem": "LM-501349 / 10 / 9-00093-0740",
+      "original_filename": "Rolinera Porta Corona/29d309a3-9f54-4247-aa62-5275a1c31265.jpg",
+      "slug": "rolinera-porta-corona-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "LM-501349/10",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "720d11bc-6d03-4acd-a981-3c3aef4def26",
       "category": "Rolinera Porta Corona",
-      "image_path": "./assets/rolinera-porta-corona-caribe-2-6.webp",
       "description": "ROLINERA PORTA CORONA CARIBE 2.6",
+      "id": "720d11bc-6d03-4acd-a981-3c3aef4def26",
+      "image_path": "./assets/rolinera-porta-corona-caribe-2-6.webp",
       "keywords": [
         "30210JR",
         "8-94435-3550",
@@ -19964,18 +20314,25 @@ const PRODUCTS_DATA = {
         "PORTA",
         "ROLINERA"
       ],
-      "oem": "8-94435-3550 / 30210JR",
-      "slug": "rolinera-porta-corona-caribe-2-6",
-      "original_filename": "Rolinera Porta Corona/720d11bc-6d03-4acd-a981-3c3aef4def26.jpg",
       "linked_ids": [
         880
+      ],
+      "oem": "8-94435-3550 / 30210JR",
+      "original_filename": "Rolinera Porta Corona/720d11bc-6d03-4acd-a981-3c3aef4def26.jpg",
+      "slug": "rolinera-porta-corona-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94435-3550",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "c0ab63b1-ca01-41a0-8262-a528cb0fa6f8",
       "category": "Rolinera Porta Corona",
-      "image_path": "./assets/rolinera-porta-corona-caribe-g200.webp",
       "description": "ROLINERA PORTA CORONA CARIBE G200",
+      "id": "c0ab63b1-ca01-41a0-8262-a528cb0fa6f8",
+      "image_path": "./assets/rolinera-porta-corona-caribe-g200.webp",
       "keywords": [
         "9-00093-0740",
         "CARIBE",
@@ -19985,18 +20342,25 @@ const PRODUCTS_DATA = {
         "PORTA",
         "ROLINERA"
       ],
-      "oem": "LM-501349 / 10 / 9-00093-0740",
-      "slug": "rolinera-porta-corona-caribe-g200",
-      "original_filename": "Rolinera Porta Corona/c0ab63b1-ca01-41a0-8262-a528cb0fa6f8.jpg",
       "linked_ids": [
         879
+      ],
+      "oem": "LM-501349 / 10 / 9-00093-0740",
+      "original_filename": "Rolinera Porta Corona/c0ab63b1-ca01-41a0-8262-a528cb0fa6f8.jpg",
+      "slug": "rolinera-porta-corona-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "LM-501349/10",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "a5884173-147e-4934-89bb-68c74124b71f",
       "category": "Rolinera Punta de Eje Delantero",
-      "image_path": "./assets/rolinera-punta-de-eje-delantero-interna-luv-dmax-2-4.webp",
       "description": "ROLINERA PUNTA DE EJE DELANTERO INTERNA LUV DMAX 2.4",
+      "id": "a5884173-147e-4934-89bb-68c74124b71f",
+      "image_path": "./assets/rolinera-punta-de-eje-delantero-interna-luv-dmax-2-4.webp",
       "keywords": [
         "8-94242-6830",
         "DELANTERO",
@@ -20009,18 +20373,25 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "SET5"
       ],
-      "oem": "SET5 / LM48548 / 10 / 8-94242-6830",
-      "slug": "rolinera-punta-de-eje-delantero-interna-luv-dmax-2-4",
-      "original_filename": "Rolinera Punta de Eje Delantero/a5884173-147e-4934-89bb-68c74124b71f.jpg",
       "linked_ids": [
         883
+      ],
+      "oem": "SET5 / LM48548 / 10 / 8-94242-6830",
+      "original_filename": "Rolinera Punta de Eje Delantero/a5884173-147e-4934-89bb-68c74124b71f.jpg",
+      "slug": "rolinera-punta-de-eje-delantero-interna-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "SET5",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "6fbb8c62-6156-456a-964d-bf69868eb42e",
       "category": "Rolinera Punta de Eje Delantero",
-      "image_path": "./assets/rolinera-punta-eje-delantera-externa-caribe-g200.webp",
       "description": "ROLINERA PUNTA EJE DELANTERA EXTERNA CARIBE G200",
+      "id": "6fbb8c62-6156-456a-964d-bf69868eb42e",
+      "image_path": "./assets/rolinera-punta-eje-delantera-externa-caribe-g200.webp",
       "keywords": [
         "32007",
         "5-09812-0420",
@@ -20033,11 +20404,18 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "ROLINERA"
       ],
-      "oem": "32007 / 5-09812-0420",
-      "slug": "rolinera-punta-eje-delantera-externa-caribe-g200",
-      "original_filename": "Rolinera Punta de Eje Delantero/6fbb8c62-6156-456a-964d-bf69868eb42e.jpg",
       "linked_ids": [
         884
+      ],
+      "oem": "32007 / 5-09812-0420",
+      "original_filename": "Rolinera Punta de Eje Delantero/6fbb8c62-6156-456a-964d-bf69868eb42e.jpg",
+      "slug": "rolinera-punta-eje-delantera-externa-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "32007",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
@@ -20074,10 +20452,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "87023be8-9e24-44f7-9524-f4e793c2fe3e",
       "category": "Rolinera Punta de Eje Delantero",
-      "image_path": "./assets/rolinera-punta-eje-delantera-interna-luv-4x2.webp",
       "description": "ROLINERA PUNTA EJE DELANTERA INTERNA LUV 4X2",
+      "id": "87023be8-9e24-44f7-9524-f4e793c2fe3e",
+      "image_path": "./assets/rolinera-punta-eje-delantera-interna-luv-4x2.webp",
       "keywords": [
         "4X2",
         "8-94242-6830",
@@ -20091,11 +20469,18 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "SET5"
       ],
-      "oem": "SET5 / LM48548 / 10 / 8-94242-6830",
-      "slug": "rolinera-punta-eje-delantera-interna-luv-4x2",
-      "original_filename": "Rolinera Punta de Eje Delantero/87023be8-9e24-44f7-9524-f4e793c2fe3e.jpg",
       "linked_ids": [
         883
+      ],
+      "oem": "SET5 / LM48548 / 10 / 8-94242-6830",
+      "original_filename": "Rolinera Punta de Eje Delantero/87023be8-9e24-44f7-9524-f4e793c2fe3e.jpg",
+      "slug": "rolinera-punta-eje-delantera-interna-luv-4x2",
+      "variants": [
+        {
+          "codigo_oem": "SET5",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
@@ -20131,10 +20516,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "642475d8-ec83-4c7a-ac60-b34bd3e798c3",
       "category": "Rolinera Punta de Eje Delantero",
-      "image_path": "./assets/rolinera-punta-eje-externa-delantera-caribe-2-3.webp",
       "description": "ROLINERA PUNTA EJE EXTERNA DELANTERA  CARIBE 2.3",
+      "id": "642475d8-ec83-4c7a-ac60-b34bd3e798c3",
+      "image_path": "./assets/rolinera-punta-eje-externa-delantera-caribe-2-3.webp",
       "keywords": [
         "32007",
         "5-09812-0420",
@@ -20146,18 +20531,25 @@ const PRODUCTS_DATA = {
         "PUNTA",
         "ROLINERA"
       ],
-      "oem": "32007 / 5-09812-0420",
-      "slug": "rolinera-punta-eje-externa-delantera-caribe-2-3",
-      "original_filename": "Rolinera Punta de Eje Delantero/642475d8-ec83-4c7a-ac60-b34bd3e798c3.jpg",
       "linked_ids": [
         884
+      ],
+      "oem": "32007 / 5-09812-0420",
+      "original_filename": "Rolinera Punta de Eje Delantero/642475d8-ec83-4c7a-ac60-b34bd3e798c3.jpg",
+      "slug": "rolinera-punta-eje-externa-delantera-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "32007",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "0ad74261-d409-43df-a19f-cf0e0ae907e9",
       "category": "Rolinera Punta de Eje Trasera",
-      "image_path": "./assets/rolinera-punta-eje-trasera-luv-dmax-3-5.webp",
       "description": "ROLINERA PUNTA EJE TRASERA LUV DMAX 3.5",
+      "id": "0ad74261-d409-43df-a19f-cf0e0ae907e9",
+      "image_path": "./assets/rolinera-punta-eje-trasera-luv-dmax-3-5.webp",
       "keywords": [
         "8-97216-7972",
         "DAC428038",
@@ -20168,11 +20560,18 @@ const PRODUCTS_DATA = {
         "ROLINERA",
         "TRASERA"
       ],
-      "oem": "8-97216-7972 / DAC428038",
-      "slug": "rolinera-punta-eje-trasera-luv-dmax-3-5",
-      "original_filename": "Rolinera Punta de Eje Trasera/0ad74261-d409-43df-a19f-cf0e0ae907e9.jpg",
       "linked_ids": [
         891
+      ],
+      "oem": "8-97216-7972 / DAC428038",
+      "original_filename": "Rolinera Punta de Eje Trasera/0ad74261-d409-43df-a19f-cf0e0ae907e9.jpg",
+      "slug": "rolinera-punta-eje-trasera-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97216-7972",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
@@ -20200,79 +20599,107 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "1b16ec6f-c4ca-4293-abb0-5e468edf64cf",
       "category": "Rotor",
-      "image_path": "./assets/rotor-caribe-2-3.webp",
       "description": "ROTOR CARIBE 2.3",
+      "id": "1b16ec6f-c4ca-4293-abb0-5e468edf64cf",
+      "image_path": "./assets/rotor-caribe-2-3.webp",
       "keywords": [
         "8-94221-2060",
         "CARIBE",
         "ROTOR"
       ],
+      "linked_ids": [
+        892
+      ],
       "oem": "8-94221-2060",
-      "slug": "rotor-caribe-2-3",
       "original_filename": "Rotor/1b16ec6f-c4ca-4293-abb0-5e468edf64cf.jpg",
-      "linked_ids": [
-        892
+      "slug": "rotor-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94221-2060",
+          "brand": "CENTURY",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "30e374de-f20c-4dbc-a5cc-f1ba7d300f43",
       "category": "Rotor",
-      "image_path": "./assets/rotor-caribe-2-6.webp",
       "description": "ROTOR CARIBE 2.6",
+      "id": "30e374de-f20c-4dbc-a5cc-f1ba7d300f43",
+      "image_path": "./assets/rotor-caribe-2-6.webp",
       "keywords": [
         "8-94221-2060",
         "CARIBE",
         "ROTOR"
       ],
-      "oem": "8-94221-2060",
-      "slug": "rotor-caribe-2-6",
-      "original_filename": "Rotor/30e374de-f20c-4dbc-a5cc-f1ba7d300f43.jpg",
       "linked_ids": [
         892
+      ],
+      "oem": "8-94221-2060",
+      "original_filename": "Rotor/30e374de-f20c-4dbc-a5cc-f1ba7d300f43.jpg",
+      "slug": "rotor-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94221-2060",
+          "brand": "CENTURY",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "94ce36eb-25c8-4381-bfa1-cc792bdd206b",
       "category": "Rotor",
-      "image_path": "./assets/rotor-caribe-g-200.webp",
       "description": "ROTOR CARIBE G-200",
+      "id": "94ce36eb-25c8-4381-bfa1-cc792bdd206b",
+      "image_path": "./assets/rotor-caribe-g-200.webp",
       "keywords": [
         "8-94221-2060",
         "CARIBE",
         "G-200",
         "ROTOR"
       ],
-      "oem": "8-94221-2060",
-      "slug": "rotor-caribe-g-200",
-      "original_filename": "Rotor/94ce36eb-25c8-4381-bfa1-cc792bdd206b.jpg",
       "linked_ids": [
         892
+      ],
+      "oem": "8-94221-2060",
+      "original_filename": "Rotor/94ce36eb-25c8-4381-bfa1-cc792bdd206b.jpg",
+      "slug": "rotor-caribe-g-200",
+      "variants": [
+        {
+          "codigo_oem": "8-94221-2060",
+          "brand": "CENTURY",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "121af540-b4ca-40a9-a259-4af3afcb699d",
       "category": "Rotor",
-      "image_path": "./assets/rotor-luv-2-3.webp",
       "description": "ROTOR LUV 2.3",
+      "id": "121af540-b4ca-40a9-a259-4af3afcb699d",
+      "image_path": "./assets/rotor-luv-2-3.webp",
       "keywords": [
         "8-94221-2060",
         "LUV",
         "ROTOR"
       ],
-      "oem": "8-94221-2060",
-      "slug": "rotor-luv-2-3",
-      "original_filename": "Rotor/121af540-b4ca-40a9-a259-4af3afcb699d.jpg",
       "linked_ids": [
         892
+      ],
+      "oem": "8-94221-2060",
+      "original_filename": "Rotor/121af540-b4ca-40a9-a259-4af3afcb699d.jpg",
+      "slug": "rotor-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94221-2060",
+          "brand": "CENTURY",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "6862847b-3852-4a80-b698-348fb937be97",
       "category": "Rotula",
-      "image_path": "./assets/terminal-interno-rotula-caribe-2-3.webp",
       "description": "TERMINAL INTERNO / ROTULA CARIBE 2.3",
+      "id": "6862847b-3852-4a80-b698-348fb937be97",
+      "image_path": "./assets/terminal-interno-rotula-caribe-2-3.webp",
       "keywords": [
         "5-44350-0953",
         "CARIBE",
@@ -20280,18 +20707,30 @@ const PRODUCTS_DATA = {
         "ROTULA",
         "TERMINAL"
       ],
-      "oem": "5-44350-0953",
-      "slug": "terminal-interno-rotula-caribe-2-3",
-      "original_filename": "Rotula/6862847b-3852-4a80-b698-348fb937be97.jpg",
       "linked_ids": [
         970
+      ],
+      "oem": "5-44350-0953",
+      "original_filename": "Rotula/6862847b-3852-4a80-b698-348fb937be97.jpg",
+      "slug": "terminal-interno-rotula-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "5-44350-0953",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "5-44350-0953",
+          "brand": "JAPON",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "8a4e4df1-b881-44c2-b2ab-fc161f5bf9e7",
       "category": "Rotula",
-      "image_path": "./assets/terminal-interno-rotula-caribe-g200.webp",
       "description": "TERMINAL INTERNO / ROTULA CARIBE G200",
+      "id": "8a4e4df1-b881-44c2-b2ab-fc161f5bf9e7",
+      "image_path": "./assets/terminal-interno-rotula-caribe-g200.webp",
       "keywords": [
         "5-44350-0953",
         "CARIBE",
@@ -20300,18 +20739,30 @@ const PRODUCTS_DATA = {
         "ROTULA",
         "TERMINAL"
       ],
-      "oem": "5-44350-0953",
-      "slug": "terminal-interno-rotula-caribe-g200",
-      "original_filename": "Rotula/8a4e4df1-b881-44c2-b2ab-fc161f5bf9e7.jpg",
       "linked_ids": [
         970
+      ],
+      "oem": "5-44350-0953",
+      "original_filename": "Rotula/8a4e4df1-b881-44c2-b2ab-fc161f5bf9e7.jpg",
+      "slug": "terminal-interno-rotula-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "5-44350-0953",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "5-44350-0953",
+          "brand": "JAPON",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "86e1e540-51e2-4b59-8e7e-c72c6a795f1f",
       "category": "Rotula",
-      "image_path": "./assets/terminal-interno-rotula-luv-dmax-05-09.webp",
       "description": "TERMINAL INTERNO / ROTULA LUV DMAX 05-09",
+      "id": "86e1e540-51e2-4b59-8e7e-c72c6a795f1f",
+      "image_path": "./assets/terminal-interno-rotula-luv-dmax-05-09.webp",
       "keywords": [
         "05-09",
         "8-97304-8510",
@@ -20321,18 +20772,30 @@ const PRODUCTS_DATA = {
         "ROTULA",
         "TERMINAL"
       ],
-      "oem": "8-97304-8510",
-      "slug": "terminal-interno-rotula-luv-dmax-05-09",
-      "original_filename": "Rotula/86e1e540-51e2-4b59-8e7e-c72c6a795f1f.jpg",
       "linked_ids": [
         972
+      ],
+      "oem": "8-97304-8510",
+      "original_filename": "Rotula/86e1e540-51e2-4b59-8e7e-c72c6a795f1f.jpg",
+      "slug": "terminal-interno-rotula-luv-dmax-05-09",
+      "variants": [
+        {
+          "codigo_oem": "8-97304-8510",
+          "brand": "TAIWAN",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-97304-8510",
+          "brand": "JAPON",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "f08ad74c-b0e4-498b-8870-3d6fee36145e",
       "category": "Rotula",
-      "image_path": "./assets/terminal-interno-rotula-luv-dmax-10-15.webp",
       "description": "TERMINAL INTERNO / ROTULA LUV DMAX 10-15",
+      "id": "f08ad74c-b0e4-498b-8870-3d6fee36145e",
+      "image_path": "./assets/terminal-interno-rotula-luv-dmax-10-15.webp",
       "keywords": [
         "10-15",
         "718CV05B000",
@@ -20343,18 +20806,30 @@ const PRODUCTS_DATA = {
         "ROTULA",
         "TERMINAL"
       ],
-      "oem": "8-98056-5500 / 718CV05B000",
-      "slug": "terminal-interno-rotula-luv-dmax-10-15",
-      "original_filename": "Rotula/f08ad74c-b0e4-498b-8870-3d6fee36145e.jpg",
       "linked_ids": [
         974
+      ],
+      "oem": "8-98056-5500 / 718CV05B000",
+      "original_filename": "Rotula/f08ad74c-b0e4-498b-8870-3d6fee36145e.jpg",
+      "slug": "terminal-interno-rotula-luv-dmax-10-15",
+      "variants": [
+        {
+          "codigo_oem": "8-98056-5500",
+          "brand": "TAIWAN",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-98056-5500",
+          "brand": "JAPON",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "93a1d706-566a-4bf7-8fcf-655f7754f096",
       "category": "Sensor ABS",
-      "image_path": "./assets/sensor-abs-delantero-luv-dmax-3-5.webp",
       "description": "SENSOR ABS DELANTERO LUV DMAX 3.5",
+      "id": "93a1d706-566a-4bf7-8fcf-655f7754f096",
+      "image_path": "./assets/sensor-abs-delantero-luv-dmax-3-5.webp",
       "keywords": [
         "8-97236-1042",
         "8-97236-1062",
@@ -20364,19 +20839,31 @@ const PRODUCTS_DATA = {
         "LUV",
         "SENSOR"
       ],
-      "oem": "8-97236-1062 / 8-97236-1042",
-      "slug": "sensor-abs-delantero-luv-dmax-3-5",
-      "original_filename": "Sensor ABS/93a1d706-566a-4bf7-8fcf-655f7754f096.jpg",
       "linked_ids": [
         1162,
         1161
+      ],
+      "oem": "8-97236-1062 / 8-97236-1042",
+      "original_filename": "Sensor ABS/93a1d706-566a-4bf7-8fcf-655f7754f096.jpg",
+      "slug": "sensor-abs-delantero-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97236-1042",
+          "brand": "NIKHO",
+          "precio_usd": 40
+        },
+        {
+          "codigo_oem": "8-97236-1062",
+          "brand": "NIKHO",
+          "precio_usd": 40
+        }
       ]
     },
     {
-      "id": "13e96282-5197-42e0-87bb-9003ac0011c0",
       "category": "Sensor Arbol de Leva",
-      "image_path": "./assets/sensor-arbol-de-leva-cmp-luv-dmax-3-5.webp",
       "description": "SENSOR ARBOL DE LEVA (CMP) LUV DMAX 3.5",
+      "id": "13e96282-5197-42e0-87bb-9003ac0011c0",
+      "image_path": "./assets/sensor-arbol-de-leva-cmp-luv-dmax-3-5.webp",
       "keywords": [
         "8-10456-5410",
         "ARBOL",
@@ -20387,18 +20874,30 @@ const PRODUCTS_DATA = {
         "LUV",
         "SENSOR"
       ],
-      "oem": "8-10456-5410 / GS9541",
-      "slug": "sensor-arbol-de-leva-cmp-luv-dmax-3-5",
-      "original_filename": "Sensor Arbol de Leva/13e96282-5197-42e0-87bb-9003ac0011c0.jpg",
       "linked_ids": [
         895
+      ],
+      "oem": "8-10456-5410 / GS9541",
+      "original_filename": "Sensor Arbol de Leva/13e96282-5197-42e0-87bb-9003ac0011c0.jpg",
+      "slug": "sensor-arbol-de-leva-cmp-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-10456-5410",
+          "brand": "NIKHO",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "8-10456-5410",
+          "brand": "GAUSS",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "6b682930-86af-4223-b152-10acd9f24f26",
       "category": "Sensor Cigueñal",
-      "image_path": "./assets/sensor-ciguenal-ckp-luv-2-2.webp",
       "description": "SENSOR CIGUEÑAL (CKP) LUV 2.2",
+      "id": "6b682930-86af-4223-b152-10acd9f24f26",
+      "image_path": "./assets/sensor-ciguenal-ckp-luv-2-2.webp",
       "keywords": [
         "8-10456-5150",
         "8-10456-5970",
@@ -20408,18 +20907,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SENSOR"
       ],
-      "oem": "8-10456-5150 / 8-10456-5970 / 8-96418-3820",
-      "slug": "sensor-ciguenal-ckp-luv-2-2",
-      "original_filename": "Sensor Cigueñal/6b682930-86af-4223-b152-10acd9f24f26.jpg",
       "linked_ids": [
         896
+      ],
+      "oem": "8-10456-5150 / 8-10456-5970 / 8-96418-3820",
+      "original_filename": "Sensor Cigueñal/6b682930-86af-4223-b152-10acd9f24f26.jpg",
+      "slug": "sensor-ciguenal-ckp-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-10456-5150",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "6aeb91a3-3a1d-4834-bf1a-5c104dea2c98",
       "category": "Sensor Cigueñal",
-      "image_path": "./assets/sensor-ciguenal-ckp-luv-dmax-2-4.webp",
       "description": "SENSOR CIGUEÑAL (CKP) LUV DMAX 2.4",
+      "id": "6aeb91a3-3a1d-4834-bf1a-5c104dea2c98",
+      "image_path": "./assets/sensor-ciguenal-ckp-luv-dmax-2-4.webp",
       "keywords": [
         "8-10456-5150",
         "8-10456-5970",
@@ -20430,18 +20936,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SENSOR"
       ],
-      "oem": "8-10456-5150 / 8-10456-5970 / 8-96418-3820",
-      "slug": "sensor-ciguenal-ckp-luv-dmax-2-4",
-      "original_filename": "Sensor Cigueñal/6aeb91a3-3a1d-4834-bf1a-5c104dea2c98.jpg",
       "linked_ids": [
         896
+      ],
+      "oem": "8-10456-5150 / 8-10456-5970 / 8-96418-3820",
+      "original_filename": "Sensor Cigueñal/6aeb91a3-3a1d-4834-bf1a-5c104dea2c98.jpg",
+      "slug": "sensor-ciguenal-ckp-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-10456-5150",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "ba25cffa-b2b1-4d8f-a8fd-cea350ce1eac",
       "category": "Sensor Cigueñal",
-      "image_path": "./assets/sensor-ciguenal-ckp-luv-dmax-3-5.webp",
       "description": "SENSOR CIGUEÑAL (CKP) LUV DMAX 3.5",
+      "id": "ba25cffa-b2b1-4d8f-a8fd-cea350ce1eac",
+      "image_path": "./assets/sensor-ciguenal-ckp-luv-dmax-3-5.webp",
       "keywords": [
         "8-97258-5230",
         "CIGUENAL",
@@ -20450,18 +20963,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SENSOR"
       ],
-      "oem": "8-97258-5230",
-      "slug": "sensor-ciguenal-ckp-luv-dmax-3-5",
-      "original_filename": "Sensor Cigueñal/ba25cffa-b2b1-4d8f-a8fd-cea350ce1eac.jpg",
       "linked_ids": [
         897
+      ],
+      "oem": "8-97258-5230",
+      "original_filename": "Sensor Cigueñal/ba25cffa-b2b1-4d8f-a8fd-cea350ce1eac.jpg",
+      "slug": "sensor-ciguenal-ckp-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97258-5230",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "027bab95-e11e-41f6-9971-a1b75004e45b",
       "category": "Sensor MAF",
-      "image_path": "./assets/sensor-flujo-aire-maf-luv-dmax-3-5.webp",
       "description": "SENSOR FLUJO AIRE (MAF) LUV DMAX 3.5",
+      "id": "027bab95-e11e-41f6-9971-a1b75004e45b",
+      "image_path": "./assets/sensor-flujo-aire-maf-luv-dmax-3-5.webp",
       "keywords": [
         "8-97312-3950",
         "AIRE",
@@ -20471,18 +20991,30 @@ const PRODUCTS_DATA = {
         "MAF",
         "SENSOR"
       ],
-      "oem": "8-97312-3950",
-      "slug": "sensor-flujo-aire-maf-luv-dmax-3-5",
-      "original_filename": "Sensor MAF/027bab95-e11e-41f6-9971-a1b75004e45b.jpg",
       "linked_ids": [
         898
+      ],
+      "oem": "8-97312-3950",
+      "original_filename": "Sensor MAF/027bab95-e11e-41f6-9971-a1b75004e45b.jpg",
+      "slug": "sensor-flujo-aire-maf-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97312-3950",
+          "brand": "ANCOV",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97312-3950",
+          "brand": "NIKHO",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "abe5cfea-4fad-44ff-aac5-379b15ae0800",
       "category": "Sensor MAP",
-      "image_path": "./assets/sensor-presion-absoluta-de-aire-map-luv-dmax-2-4.webp",
       "description": "SENSOR PRESION ABSOLUTA DE AIRE (MAP) LUV DMAX 2.4",
+      "id": "abe5cfea-4fad-44ff-aac5-379b15ae0800",
+      "image_path": "./assets/sensor-presion-absoluta-de-aire-map-luv-dmax-2-4.webp",
       "keywords": [
         "8-16212-4600",
         "ABSOLUTA",
@@ -20493,18 +21025,25 @@ const PRODUCTS_DATA = {
         "PRESION",
         "SENSOR"
       ],
-      "oem": "8-16212-4600",
-      "slug": "sensor-presion-absoluta-de-aire-map-luv-dmax-2-4",
-      "original_filename": "Sensor MAP/abe5cfea-4fad-44ff-aac5-379b15ae0800.jpg",
       "linked_ids": [
         905
+      ],
+      "oem": "8-16212-4600",
+      "original_filename": "Sensor MAP/abe5cfea-4fad-44ff-aac5-379b15ae0800.jpg",
+      "slug": "sensor-presion-absoluta-de-aire-map-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-16212-4600",
+          "brand": "TSA",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "fd26efc0-e743-44f6-8914-7b9da80eaf63",
       "category": "Sensor Oxigeno",
-      "image_path": "./assets/sensor-oxigeno-luv-dmax-3-5.webp",
       "description": "SENSOR OXIGENO LUV DMAX 3.5",
+      "id": "fd26efc0-e743-44f6-8914-7b9da80eaf63",
+      "image_path": "./assets/sensor-oxigeno-luv-dmax-3-5.webp",
       "keywords": [
         "8-97024-2560",
         "8-97062-2930",
@@ -20514,18 +21053,25 @@ const PRODUCTS_DATA = {
         "OXIGENO",
         "SENSOR"
       ],
-      "oem": "8-97287-3520 / 8-97024-2560 / 8-97062-2930",
-      "slug": "sensor-oxigeno-luv-dmax-3-5",
-      "original_filename": "Sensor Oxigeno/fd26efc0-e743-44f6-8914-7b9da80eaf63.jpg",
       "linked_ids": [
         900
+      ],
+      "oem": "8-97287-3520 / 8-97024-2560 / 8-97062-2930",
+      "original_filename": "Sensor Oxigeno/fd26efc0-e743-44f6-8914-7b9da80eaf63.jpg",
+      "slug": "sensor-oxigeno-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97287-3520",
+          "brand": "Original",
+          "precio_usd": 40
+        }
       ]
     },
     {
-      "id": "ef8fc31f-6621-4497-982a-d0bfdff1202b",
       "category": "Sensor Oxigeno",
-      "image_path": "./assets/sensor-oxigeno-trooper-3-2.webp",
       "description": "SENSOR OXIGENO TROOPER 3.2",
+      "id": "ef8fc31f-6621-4497-982a-d0bfdff1202b",
+      "image_path": "./assets/sensor-oxigeno-trooper-3-2.webp",
       "keywords": [
         "8-97024-2560",
         "8-97062-2930",
@@ -20534,18 +21080,25 @@ const PRODUCTS_DATA = {
         "SENSOR",
         "TROOPER"
       ],
-      "oem": "8-97287-3520 / 8-97024-2560 / 8-97062-2930",
-      "slug": "sensor-oxigeno-trooper-3-2",
-      "original_filename": "Sensor Oxigeno/ef8fc31f-6621-4497-982a-d0bfdff1202b.jpg",
       "linked_ids": [
         900
+      ],
+      "oem": "8-97287-3520 / 8-97024-2560 / 8-97062-2930",
+      "original_filename": "Sensor Oxigeno/ef8fc31f-6621-4497-982a-d0bfdff1202b.jpg",
+      "slug": "sensor-oxigeno-trooper-3-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97287-3520",
+          "brand": "Original",
+          "precio_usd": 40
+        }
       ]
     },
     {
-      "id": "8fd5e542-3426-40e0-bbc8-4441dab46d86",
       "category": "Sensor TPS",
-      "image_path": "./assets/sensor-posicion-aceleracion-tps-trooper-3-2.webp",
       "description": "SENSOR POSICION ACELERACION (TPS)  TROOPER 3.2",
+      "id": "8fd5e542-3426-40e0-bbc8-4441dab46d86",
+      "image_path": "./assets/sensor-posicion-aceleracion-tps-trooper-3-2.webp",
       "keywords": [
         "8-17087-6550",
         "8-17106-6800",
@@ -20556,18 +21109,25 @@ const PRODUCTS_DATA = {
         "TPS",
         "TROOPER"
       ],
-      "oem": "8-17106-6810 / 8-17087-6550 / 8-17106-6800",
-      "slug": "sensor-posicion-aceleracion-tps-trooper-3-2",
-      "original_filename": "Sensor TPS/8fd5e542-3426-40e0-bbc8-4441dab46d86.jpg",
       "linked_ids": [
         901
+      ],
+      "oem": "8-17106-6810 / 8-17087-6550 / 8-17106-6800",
+      "original_filename": "Sensor TPS/8fd5e542-3426-40e0-bbc8-4441dab46d86.jpg",
+      "slug": "sensor-posicion-aceleracion-tps-trooper-3-2",
+      "variants": [
+        {
+          "codigo_oem": "8-17106-6810",
+          "brand": "Original",
+          "precio_usd": 40
+        }
       ]
     },
     {
-      "id": "37fdfe69-0fa5-4036-81b4-7d28766e7f66",
       "category": "Sensor TPS",
-      "image_path": "./assets/sensor-posicion-aceleracion-tps-luv-2-2.webp",
       "description": "SENSOR POSICION ACELERACION (TPS) LUV 2.2",
+      "id": "37fdfe69-0fa5-4036-81b4-7d28766e7f66",
+      "image_path": "./assets/sensor-posicion-aceleracion-tps-luv-2-2.webp",
       "keywords": [
         "8-17087-6550",
         "8-17106-6800",
@@ -20578,18 +21138,25 @@ const PRODUCTS_DATA = {
         "SENSOR",
         "TPS"
       ],
-      "oem": "8-17106-6810 / 8-17087-6550 / 8-17106-6800",
-      "slug": "sensor-posicion-aceleracion-tps-luv-2-2",
-      "original_filename": "Sensor TPS/37fdfe69-0fa5-4036-81b4-7d28766e7f66.jpg",
       "linked_ids": [
         901
+      ],
+      "oem": "8-17106-6810 / 8-17087-6550 / 8-17106-6800",
+      "original_filename": "Sensor TPS/37fdfe69-0fa5-4036-81b4-7d28766e7f66.jpg",
+      "slug": "sensor-posicion-aceleracion-tps-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-17106-6810",
+          "brand": "Original",
+          "precio_usd": 40
+        }
       ]
     },
     {
-      "id": "323933d4-ccb4-4108-b1b9-bc181c9ee23b",
       "category": "Sensor TPS",
-      "image_path": "./assets/sensor-posicion-aceleracion-tps-luv-dmax-2-4.webp",
       "description": "SENSOR POSICION ACELERACION (TPS) LUV DMAX 2.4",
+      "id": "323933d4-ccb4-4108-b1b9-bc181c9ee23b",
+      "image_path": "./assets/sensor-posicion-aceleracion-tps-luv-dmax-2-4.webp",
       "keywords": [
         "8-17087-6550",
         "8-17106-6800",
@@ -20601,18 +21168,25 @@ const PRODUCTS_DATA = {
         "SENSOR",
         "TPS"
       ],
-      "oem": "8-17106-6810 / 8-17087-6550 / 8-17106-6800",
-      "slug": "sensor-posicion-aceleracion-tps-luv-dmax-2-4",
-      "original_filename": "Sensor TPS/323933d4-ccb4-4108-b1b9-bc181c9ee23b.jpg",
       "linked_ids": [
         901
+      ],
+      "oem": "8-17106-6810 / 8-17087-6550 / 8-17106-6800",
+      "original_filename": "Sensor TPS/323933d4-ccb4-4108-b1b9-bc181c9ee23b.jpg",
+      "slug": "sensor-posicion-aceleracion-tps-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-17106-6810",
+          "brand": "Original",
+          "precio_usd": 40
+        }
       ]
     },
     {
-      "id": "250c9065-f1b9-44d7-ba05-d650b36199f1",
       "category": "Sensor TPS",
-      "image_path": "./assets/sensor-posicion-aceleracion-tps-luv-dmax-3-5.webp",
       "description": "SENSOR POSICION ACELERACION (TPS) LUV DMAX 3.5",
+      "id": "250c9065-f1b9-44d7-ba05-d650b36199f1",
+      "image_path": "./assets/sensor-posicion-aceleracion-tps-luv-dmax-3-5.webp",
       "keywords": [
         "8-97181-7170",
         "ACELERACION",
@@ -20622,18 +21196,25 @@ const PRODUCTS_DATA = {
         "SENSOR",
         "TPS"
       ],
-      "oem": "8-97181-7170",
-      "slug": "sensor-posicion-aceleracion-tps-luv-dmax-3-5",
-      "original_filename": "Sensor TPS/250c9065-f1b9-44d7-ba05-d650b36199f1.jpg",
       "linked_ids": [
         903
+      ],
+      "oem": "8-97181-7170",
+      "original_filename": "Sensor TPS/250c9065-f1b9-44d7-ba05-d650b36199f1.jpg",
+      "slug": "sensor-posicion-aceleracion-tps-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97181-7170",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "ac2eec5e-523b-4b87-82c6-0d86e78a6bc4",
       "category": "Sensor Velocidad - Kilometraje",
-      "image_path": "./assets/sensor-velocidad-kilometraje-luv-dmax-3-5.webp",
       "description": "SENSOR VELOCIDAD / KILOMETRAJE LUV DMAX 3.5",
+      "id": "ac2eec5e-523b-4b87-82c6-0d86e78a6bc4",
+      "image_path": "./assets/sensor-velocidad-kilometraje-luv-dmax-3-5.webp",
       "keywords": [
         "8-97129-7040",
         "8-97377-9200",
@@ -20643,18 +21224,25 @@ const PRODUCTS_DATA = {
         "SENSOR",
         "VELOCIDAD"
       ],
-      "oem": "8-97129-7040 / 8-97377-9200",
-      "slug": "sensor-velocidad-kilometraje-luv-dmax-3-5",
-      "original_filename": "Sensor Velocidad - Kilometraje/ac2eec5e-523b-4b87-82c6-0d86e78a6bc4.jpg",
       "linked_ids": [
         908
+      ],
+      "oem": "8-97129-7040 / 8-97377-9200",
+      "original_filename": "Sensor Velocidad - Kilometraje/ac2eec5e-523b-4b87-82c6-0d86e78a6bc4.jpg",
+      "slug": "sensor-velocidad-kilometraje-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97129-7040",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "ea87a607-60e3-4b3c-971f-655ad1c4bb3d",
       "category": "Separador de Cigueñal",
-      "image_path": "./assets/separador-de-ciguenal-axiales-caribe-2-3-luv-2-3.webp",
       "description": "SEPARADOR DE CIGUEÑAL / AXIALES CARIBE 2.3 / LUV 2.3",
+      "id": "ea87a607-60e3-4b3c-971f-655ad1c4bb3d",
+      "image_path": "./assets/separador-de-ciguenal-axiales-caribe-2-3-luv-2-3.webp",
       "keywords": [
         "8-94481-9070",
         "8-94481-9071",
@@ -20665,20 +21253,37 @@ const PRODUCTS_DATA = {
         "LUV",
         "SEPARADOR"
       ],
-      "oem": "8-94481-9070 / 8-94481-9071 / 8-94481-9072",
-      "slug": "separador-de-ciguenal-axiales-caribe-2-3-luv-2-3",
-      "original_filename": "Separador de Cigueñal/ea87a607-60e3-4b3c-971f-655ad1c4bb3d.jpg",
       "linked_ids": [
         909,
         910,
         911
+      ],
+      "oem": "8-94481-9070 / 8-94481-9071 / 8-94481-9072",
+      "original_filename": "Separador de Cigueñal/ea87a607-60e3-4b3c-971f-655ad1c4bb3d.jpg",
+      "slug": "separador-de-ciguenal-axiales-caribe-2-3-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94481-9070",
+          "brand": "Original",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94481-9071",
+          "brand": "Original",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94481-9072",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "8f74cabd-fd90-4a10-9d8e-66785a013e51",
       "category": "Separador de Cigueñal",
-      "image_path": "./assets/separador-de-ciguenal-axiales-caribe-2-6.webp",
       "description": "SEPARADOR DE CIGUEÑAL / AXIALES CARIBE 2.6",
+      "id": "8f74cabd-fd90-4a10-9d8e-66785a013e51",
+      "image_path": "./assets/separador-de-ciguenal-axiales-caribe-2-6.webp",
       "keywords": [
         "8-94481-9070",
         "8-94481-9071",
@@ -20688,20 +21293,37 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "SEPARADOR"
       ],
-      "oem": "8-94481-9070 / 8-94481-9071 / 8-94481-9072",
-      "slug": "separador-de-ciguenal-axiales-caribe-2-6",
-      "original_filename": "Separador de Cigueñal/8f74cabd-fd90-4a10-9d8e-66785a013e51.jpg",
       "linked_ids": [
         909,
         910,
         911
+      ],
+      "oem": "8-94481-9070 / 8-94481-9071 / 8-94481-9072",
+      "original_filename": "Separador de Cigueñal/8f74cabd-fd90-4a10-9d8e-66785a013e51.jpg",
+      "slug": "separador-de-ciguenal-axiales-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94481-9070",
+          "brand": "Original",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94481-9071",
+          "brand": "Original",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94481-9072",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "6a7c8c69-e317-42ce-ad39-050532ab29b3",
       "category": "Separador de Cigueñal",
-      "image_path": "./assets/separador-de-ciguenal-axiales-caribe-g200.webp",
       "description": "SEPARADOR DE CIGUEÑAL / AXIALES CARIBE G200",
+      "id": "6a7c8c69-e317-42ce-ad39-050532ab29b3",
+      "image_path": "./assets/separador-de-ciguenal-axiales-caribe-g200.webp",
       "keywords": [
         "8-94481-9070",
         "8-94481-9071",
@@ -20712,20 +21334,37 @@ const PRODUCTS_DATA = {
         "G200",
         "SEPARADOR"
       ],
-      "oem": "8-94481-9070 / 8-94481-9071 / 8-94481-9072",
-      "slug": "separador-de-ciguenal-axiales-caribe-g200",
-      "original_filename": "Separador de Cigueñal/6a7c8c69-e317-42ce-ad39-050532ab29b3.jpg",
       "linked_ids": [
         909,
         910,
         911
+      ],
+      "oem": "8-94481-9070 / 8-94481-9071 / 8-94481-9072",
+      "original_filename": "Separador de Cigueñal/6a7c8c69-e317-42ce-ad39-050532ab29b3.jpg",
+      "slug": "separador-de-ciguenal-axiales-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94481-9070",
+          "brand": "Original",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94481-9071",
+          "brand": "Original",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94481-9072",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "9ffac906-39e9-48bc-9b9b-2eec350f6e55",
       "category": "Separador de Cigueñal",
-      "image_path": "./assets/separador-de-ciguenal-axiales-luv-dmax-3-5.webp",
       "description": "SEPARADOR DE CIGUEÑAL / AXIALES LUV DMAX 3.5",
+      "id": "9ffac906-39e9-48bc-9b9b-2eec350f6e55",
+      "image_path": "./assets/separador-de-ciguenal-axiales-luv-dmax-3-5.webp",
       "keywords": [
         "8-97014-2080",
         "8-97014-2080-025",
@@ -20738,22 +21377,49 @@ const PRODUCTS_DATA = {
         "LUV",
         "SEPARADOR"
       ],
-      "oem": "8-97014-2080 / 8-97014-2080-025 / 8-97014-2080-050 / 8-97014-2080-075 / 8-97014-2080-100",
-      "slug": "separador-de-ciguenal-axiales-luv-dmax-3-5",
-      "original_filename": "Separador de Cigueñal/9ffac906-39e9-48bc-9b9b-2eec350f6e55.jpg",
       "linked_ids": [
         912,
         1189,
         1190,
         1191,
         1192
+      ],
+      "oem": "8-97014-2080 / 8-97014-2080-025 / 8-97014-2080-050 / 8-97014-2080-075 / 8-97014-2080-100",
+      "original_filename": "Separador de Cigueñal/9ffac906-39e9-48bc-9b9b-2eec350f6e55.jpg",
+      "slug": "separador-de-ciguenal-axiales-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97014-2080",
+          "brand": "Original",
+          "precio_usd": 5
+        },
+        {
+          "codigo_oem": "8-97014-2080-025",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97014-2080-050",
+          "brand": "Original",
+          "precio_usd": 5
+        },
+        {
+          "codigo_oem": "8-97014-2080-075",
+          "brand": "Original",
+          "precio_usd": 5
+        },
+        {
+          "codigo_oem": "8-97014-2080-100",
+          "brand": "Original",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "b246e21b-79bf-4f7c-bec8-a60268fc2248",
       "category": "Sincronico de Caja",
-      "image_path": "./assets/sincronico-caja-1era-y-2da-caribe-g200.webp",
       "description": "SINCRONICO CAJA 1ERA Y 2DA CARIBE G200",
+      "id": "b246e21b-79bf-4f7c-bec8-a60268fc2248",
+      "image_path": "./assets/sincronico-caja-1era-y-2da-caribe-g200.webp",
       "keywords": [
         "1ERA",
         "2DA",
@@ -20763,18 +21429,25 @@ const PRODUCTS_DATA = {
         "G200",
         "SINCRONICO"
       ],
-      "oem": "8-94238-6470",
-      "slug": "sincronico-caja-1era-y-2da-caribe-g200",
-      "original_filename": "Sincronico de Caja/b246e21b-79bf-4f7c-bec8-a60268fc2248.jpg",
       "linked_ids": [
         1209
+      ],
+      "oem": "8-94238-6470",
+      "original_filename": "Sincronico de Caja/b246e21b-79bf-4f7c-bec8-a60268fc2248.jpg",
+      "slug": "sincronico-caja-1era-y-2da-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94238-6470",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "73294d53-be48-4577-8821-b3670f0ea08f",
       "category": "Soporte Cabina",
-      "image_path": "./assets/soporte-cabina-alto-luv-dmax-3-5.webp",
       "description": "SOPORTE CABINA ALTO LUV DMAX 3.5",
+      "id": "73294d53-be48-4577-8821-b3670f0ea08f",
+      "image_path": "./assets/soporte-cabina-alto-luv-dmax-3-5.webp",
       "keywords": [
         "197031",
         "ALTO",
@@ -20783,18 +21456,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "oem": "197031",
-      "slug": "soporte-cabina-alto-luv-dmax-3-5",
-      "original_filename": "Soporte Cabina/73294d53-be48-4577-8821-b3670f0ea08f.jpg",
       "linked_ids": [
         913
+      ],
+      "oem": "197031",
+      "original_filename": "Soporte Cabina/73294d53-be48-4577-8821-b3670f0ea08f.jpg",
+      "slug": "soporte-cabina-alto-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "197031",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "e4671dc5-59ee-4cf6-8945-fb3ca13d0ac3",
       "category": "Soporte Cabina",
-      "image_path": "./assets/soporte-cabina-bajo-luv-dmax.webp",
       "description": "SOPORTE CABINA BAJO LUV DMAX",
+      "id": "e4671dc5-59ee-4cf6-8945-fb3ca13d0ac3",
+      "image_path": "./assets/soporte-cabina-bajo-luv-dmax.webp",
       "keywords": [
         "197032",
         "BAJO",
@@ -20803,18 +21483,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "oem": "197032",
-      "slug": "soporte-cabina-bajo-luv-dmax",
-      "original_filename": "Soporte Cabina/e4671dc5-59ee-4cf6-8945-fb3ca13d0ac3.jpg",
       "linked_ids": [
         1109
+      ],
+      "oem": "197032",
+      "original_filename": "Soporte Cabina/e4671dc5-59ee-4cf6-8945-fb3ca13d0ac3.jpg",
+      "slug": "soporte-cabina-bajo-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "197032",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "797d7d9c-92e0-4a8d-add1-2d79fbf29393",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-caribe-2-3.webp",
       "description": "SOPORTE CARDAN / CHUMACERA CARIBE  2.3",
+      "id": "797d7d9c-92e0-4a8d-add1-2d79fbf29393",
+      "image_path": "./assets/soporte-cardan-chumacera-caribe-2-3.webp",
       "keywords": [
         "8-94222-9720",
         "CARDAN",
@@ -20822,18 +21509,25 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "SOPORTE"
       ],
-      "oem": "8-94222-9720",
-      "slug": "soporte-cardan-chumacera-caribe-2-3",
-      "original_filename": "Soporte Cardan/797d7d9c-92e0-4a8d-add1-2d79fbf29393.jpg",
       "linked_ids": [
         914
+      ],
+      "oem": "8-94222-9720",
+      "original_filename": "Soporte Cardan/797d7d9c-92e0-4a8d-add1-2d79fbf29393.jpg",
+      "slug": "soporte-cardan-chumacera-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94222-9720",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "bb0f2e88-4c5f-43eb-a46a-84266768ac40",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-caribe-2-6.webp",
       "description": "SOPORTE CARDAN / CHUMACERA CARIBE 2.6",
+      "id": "bb0f2e88-4c5f-43eb-a46a-84266768ac40",
+      "image_path": "./assets/soporte-cardan-chumacera-caribe-2-6.webp",
       "keywords": [
         "8-94328-7990",
         "8-94386-8540",
@@ -20842,18 +21536,25 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "SOPORTE"
       ],
-      "oem": "8-94328-7990 / 8-94386-8540",
-      "slug": "soporte-cardan-chumacera-caribe-2-6",
-      "original_filename": "Soporte Cardan/bb0f2e88-4c5f-43eb-a46a-84266768ac40.jpg",
       "linked_ids": [
         915
+      ],
+      "oem": "8-94328-7990 / 8-94386-8540",
+      "original_filename": "Soporte Cardan/bb0f2e88-4c5f-43eb-a46a-84266768ac40.jpg",
+      "slug": "soporte-cardan-chumacera-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94328-7990",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "1a5ca1e3-f872-41bb-a156-096e05cc4aa0",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-caribe-g200.webp",
       "description": "SOPORTE CARDAN / CHUMACERA CARIBE G200",
+      "id": "1a5ca1e3-f872-41bb-a156-096e05cc4aa0",
+      "image_path": "./assets/soporte-cardan-chumacera-caribe-g200.webp",
       "keywords": [
         "8-94222-9720",
         "CARDAN",
@@ -20862,18 +21563,25 @@ const PRODUCTS_DATA = {
         "G200",
         "SOPORTE"
       ],
-      "oem": "8-94222-9720",
-      "slug": "soporte-cardan-chumacera-caribe-g200",
-      "original_filename": "Soporte Cardan/1a5ca1e3-f872-41bb-a156-096e05cc4aa0.jpg",
       "linked_ids": [
         914
+      ],
+      "oem": "8-94222-9720",
+      "original_filename": "Soporte Cardan/1a5ca1e3-f872-41bb-a156-096e05cc4aa0.jpg",
+      "slug": "soporte-cardan-chumacera-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94222-9720",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "6d397378-5d58-4138-971c-eeb5656124c3",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-luv-2-3.webp",
       "description": "SOPORTE CARDAN / CHUMACERA LUV 2.3",
+      "id": "6d397378-5d58-4138-971c-eeb5656124c3",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-2-3.webp",
       "keywords": [
         "8-94328-7990",
         "8-94386-8540",
@@ -20882,18 +21590,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "oem": "8-94328-7990 / 8-94386-8540",
-      "slug": "soporte-cardan-chumacera-luv-2-3",
-      "original_filename": "Soporte Cardan/6d397378-5d58-4138-971c-eeb5656124c3.jpg",
       "linked_ids": [
         915
+      ],
+      "oem": "8-94328-7990 / 8-94386-8540",
+      "original_filename": "Soporte Cardan/6d397378-5d58-4138-971c-eeb5656124c3.jpg",
+      "slug": "soporte-cardan-chumacera-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94328-7990",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "ade76eda-75e3-4c6e-9899-5e8d21c45c30",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-luv-4x2.webp",
       "description": "SOPORTE CARDAN / CHUMACERA LUV 4X2",
+      "id": "ade76eda-75e3-4c6e-9899-5e8d21c45c30",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-4x2.webp",
       "keywords": [
         "197014",
         "4X2",
@@ -20902,18 +21617,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "oem": "197014",
-      "slug": "soporte-cardan-chumacera-luv-4x2",
-      "original_filename": "Soporte Cardan/ade76eda-75e3-4c6e-9899-5e8d21c45c30.jpg",
       "linked_ids": [
         916
+      ],
+      "oem": "197014",
+      "original_filename": "Soporte Cardan/ade76eda-75e3-4c6e-9899-5e8d21c45c30.jpg",
+      "slug": "soporte-cardan-chumacera-luv-4x2",
+      "variants": [
+        {
+          "codigo_oem": "197014",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "ab7dda2b-69ec-4097-a94e-de453a7b97b9",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-luv-4x4.webp",
       "description": "SOPORTE CARDAN / CHUMACERA LUV 4X4",
+      "id": "ab7dda2b-69ec-4097-a94e-de453a7b97b9",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-4x4.webp",
       "keywords": [
         "4X4",
         "8-94328-7990",
@@ -20923,18 +21645,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "oem": "8-94328-7990 / 8-94386-8540",
-      "slug": "soporte-cardan-chumacera-luv-4x4",
-      "original_filename": "Soporte Cardan/ab7dda2b-69ec-4097-a94e-de453a7b97b9.jpg",
       "linked_ids": [
         915
+      ],
+      "oem": "8-94328-7990 / 8-94386-8540",
+      "original_filename": "Soporte Cardan/ab7dda2b-69ec-4097-a94e-de453a7b97b9.jpg",
+      "slug": "soporte-cardan-chumacera-luv-4x4",
+      "variants": [
+        {
+          "codigo_oem": "8-94328-7990",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "f97203c6-3843-47d1-98ed-9dce62fa9d6d",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-2-4.webp",
       "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 2.4",
+      "id": "f97203c6-3843-47d1-98ed-9dce62fa9d6d",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-2-4.webp",
       "keywords": [
         "8-94328-8000",
         "8-97942-8760",
@@ -20945,18 +21674,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
+      "linked_ids": [
+        918
+      ],
       "oem": "8-97942-8760 / 8-97946-2520 / 8-94328-8000",
-      "slug": "soporte-cardan-chumacera-luv-dmax-2-4",
       "original_filename": "Soporte Cardan/f97203c6-3843-47d1-98ed-9dce62fa9d6d.jpg",
-      "linked_ids": [
-        918
+      "slug": "soporte-cardan-chumacera-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-97942-8760",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "858086cb-4ece-4f37-9320-234a6f31b7c5",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-2-5.webp",
       "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 2.5",
+      "id": "858086cb-4ece-4f37-9320-234a6f31b7c5",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-2-5.webp",
       "keywords": [
         "8-94328-8000",
         "8-97942-8760",
@@ -20967,18 +21703,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "oem": "8-97942-8760 / 8-97946-2520 / 8-94328-8000",
-      "slug": "soporte-cardan-chumacera-luv-dmax-2-5",
-      "original_filename": "Soporte Cardan/858086cb-4ece-4f37-9320-234a6f31b7c5.jpg",
       "linked_ids": [
         918
+      ],
+      "oem": "8-97942-8760 / 8-97946-2520 / 8-94328-8000",
+      "original_filename": "Soporte Cardan/858086cb-4ece-4f37-9320-234a6f31b7c5.jpg",
+      "slug": "soporte-cardan-chumacera-luv-dmax-2-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97942-8760",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "cb8e44f7-923d-4f09-9719-765b78a05b37",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-0.webp",
       "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 3.0",
+      "id": "cb8e44f7-923d-4f09-9719-765b78a05b37",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-0.webp",
       "keywords": [
         "8-97942-8770",
         "8-97946-2530",
@@ -20989,18 +21732,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "oem": "8-97942-8770 / 8-97946-2530 / 8979428780",
-      "slug": "soporte-cardan-chumacera-luv-dmax-3-0",
-      "original_filename": "Soporte Cardan/cb8e44f7-923d-4f09-9719-765b78a05b37.jpg",
       "linked_ids": [
         920
+      ],
+      "oem": "8-97942-8770 / 8-97946-2530 / 8979428780",
+      "original_filename": "Soporte Cardan/cb8e44f7-923d-4f09-9719-765b78a05b37.jpg",
+      "slug": "soporte-cardan-chumacera-luv-dmax-3-0",
+      "variants": [
+        {
+          "codigo_oem": "8-97942-8770",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "ebe6514d-fb8d-49dd-baf6-d24ffd9643f2",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-0-luv-dmax-3-5.webp",
       "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 3.0 / LUV DMAX 3.5",
+      "id": "ebe6514d-fb8d-49dd-baf6-d24ffd9643f2",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-0-luv-dmax-3-5.webp",
       "keywords": [
         "197028",
         "CARDAN",
@@ -21009,18 +21759,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "oem": "197028",
-      "slug": "soporte-cardan-chumacera-luv-dmax-3-0-luv-dmax-3-5",
-      "original_filename": "Soporte Cardan/ebe6514d-fb8d-49dd-baf6-d24ffd9643f2.jpg",
       "linked_ids": [
         919
+      ],
+      "oem": "197028",
+      "original_filename": "Soporte Cardan/ebe6514d-fb8d-49dd-baf6-d24ffd9643f2.jpg",
+      "slug": "soporte-cardan-chumacera-luv-dmax-3-0-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "197028",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
+      "category": "Soporte Cardan",
+      "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 3.5",
       "id": "60f4efe9-0359-45af-bdaa-e7289f9a5fa5",
-      "category": "Soporte Cardan",
       "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-5.webp",
-      "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 3.5",
       "keywords": [
         "8-97942-8770",
         "8-97946-2530",
@@ -21031,18 +21788,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
+      "linked_ids": [
+        920
+      ],
       "oem": "8-97942-8770 / 8-97946-2530 / 8979428780",
-      "slug": "soporte-cardan-chumacera-luv-dmax-3-5",
       "original_filename": "Soporte Cardan/60f4efe9-0359-45af-bdaa-e7289f9a5fa5.jpg",
-      "linked_ids": [
-        920
+      "slug": "soporte-cardan-chumacera-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97942-8770",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "b24dbcb5-f149-409d-a585-eb60b84054b0",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-5-2.webp",
       "description": "SOPORTE CARDAN / CHUMACERA LUV DMAX 3.5",
+      "id": "b24dbcb5-f149-409d-a585-eb60b84054b0",
+      "image_path": "./assets/soporte-cardan-chumacera-luv-dmax-3-5-2.webp",
       "keywords": [
         "8-97942-8770",
         "8-97946-2530",
@@ -21053,18 +21817,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SOPORTE"
       ],
-      "oem": "8-97942-8770 / 8-97946-2530 / 8979428780",
-      "slug": "soporte-cardan-chumacera-luv-dmax-3-5-2",
-      "original_filename": "Soporte Cardan/b24dbcb5-f149-409d-a585-eb60b84054b0.jpg",
       "linked_ids": [
         920
+      ],
+      "oem": "8-97942-8770 / 8-97946-2530 / 8979428780",
+      "original_filename": "Soporte Cardan/b24dbcb5-f149-409d-a585-eb60b84054b0.jpg",
+      "slug": "soporte-cardan-chumacera-luv-dmax-3-5-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97942-8770",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "6a50d66f-925e-429b-b9ab-a9df93e0e94c",
       "category": "Soporte Cardan",
-      "image_path": "./assets/soporte-cardan-chumacera-rodeo.webp",
       "description": "SOPORTE CARDAN / CHUMACERA RODEO",
+      "id": "6a50d66f-925e-429b-b9ab-a9df93e0e94c",
+      "image_path": "./assets/soporte-cardan-chumacera-rodeo.webp",
       "keywords": [
         "8-94328-7990",
         "8-94386-8540",
@@ -21073,18 +21844,25 @@ const PRODUCTS_DATA = {
         "RODEO",
         "SOPORTE"
       ],
-      "oem": "8-94328-7990 / 8-94386-8540",
-      "slug": "soporte-cardan-chumacera-rodeo",
-      "original_filename": "Soporte Cardan/6a50d66f-925e-429b-b9ab-a9df93e0e94c.jpg",
       "linked_ids": [
         915
+      ],
+      "oem": "8-94328-7990 / 8-94386-8540",
+      "original_filename": "Soporte Cardan/6a50d66f-925e-429b-b9ab-a9df93e0e94c.jpg",
+      "slug": "soporte-cardan-chumacera-rodeo",
+      "variants": [
+        {
+          "codigo_oem": "8-94328-7990",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "71cb5553-4d11-441c-bb52-23ec502b78ee",
       "category": "Stop",
-      "image_path": "./assets/stop-caribe.webp",
       "description": "STOP CARIBE",
+      "id": "71cb5553-4d11-441c-bb52-23ec502b78ee",
+      "image_path": "./assets/stop-caribe.webp",
       "keywords": [
         "8-94218-8442",
         "8-94218-8444",
@@ -21094,57 +21872,93 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "STOP"
       ],
-      "oem": "8-94218-8442 / 8-94218-8445 / 8-94218-8444 / 8-94218-8452 / 8-94218-8455",
-      "slug": "stop-caribe",
-      "original_filename": "Stop/71cb5553-4d11-441c-bb52-23ec502b78ee.jpg",
       "linked_ids": [
         921,
         1148
+      ],
+      "oem": "8-94218-8442 / 8-94218-8445 / 8-94218-8444 / 8-94218-8452 / 8-94218-8455",
+      "original_filename": "Stop/71cb5553-4d11-441c-bb52-23ec502b78ee.jpg",
+      "slug": "stop-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94218-8442",
+          "brand": "Original",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "8-94218-8452",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "8bab9e63-8abb-4694-9916-9e9c688ef004",
       "category": "Stop",
-      "image_path": "./assets/stop-luv-2-2.webp",
       "description": "STOP LUV 2.2",
+      "id": "8bab9e63-8abb-4694-9916-9e9c688ef004",
+      "image_path": "./assets/stop-luv-2-2.webp",
       "keywords": [
         "11-3383-A0-6B",
         "11-3384-A0-6B",
         "LUV",
         "STOP"
       ],
-      "oem": "11-3383-A0-6B / 11-3384-A0-6B",
-      "slug": "stop-luv-2-2",
-      "original_filename": "Stop/8bab9e63-8abb-4694-9916-9e9c688ef004.jpg",
       "linked_ids": [
         922,
         1149
+      ],
+      "oem": "11-3383-A0-6B / 11-3384-A0-6B",
+      "original_filename": "Stop/8bab9e63-8abb-4694-9916-9e9c688ef004.jpg",
+      "slug": "stop-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "11-3383-A0-6B",
+          "brand": "Original",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "11-3384-A0-6B",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "97f0db85-1779-438f-8a72-eddaecc6209c",
       "category": "Stop",
-      "image_path": "./assets/stop-luv-2-3.webp",
       "description": "STOP LUV 2.3",
+      "id": "97f0db85-1779-438f-8a72-eddaecc6209c",
+      "image_path": "./assets/stop-luv-2-3.webp",
       "keywords": [
         "8-97114-4490",
         "8-97114-4500",
         "LUV",
         "STOP"
       ],
-      "oem": "8-97114-4490 / 8-97114-4500",
-      "slug": "stop-luv-2-3",
-      "original_filename": "Stop/97f0db85-1779-438f-8a72-eddaecc6209c.jpg",
       "linked_ids": [
         1150,
         923
+      ],
+      "oem": "8-97114-4490 / 8-97114-4500",
+      "original_filename": "Stop/97f0db85-1779-438f-8a72-eddaecc6209c.jpg",
+      "slug": "stop-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-97114-4490",
+          "brand": "Original",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "8-97114-4500",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "1746764d-1508-4451-9793-de08b16107b4",
       "category": "Stop",
-      "image_path": "./assets/stop-luv-2-3-2.webp",
       "description": "STOP LUV 2.3",
+      "id": "1746764d-1508-4451-9793-de08b16107b4",
+      "image_path": "./assets/stop-luv-2-3-2.webp",
       "keywords": [
         "213-1908L-2",
         "213-1908R-2",
@@ -21153,19 +21967,31 @@ const PRODUCTS_DATA = {
         "LUV",
         "STOP"
       ],
-      "oem": "8-94482-3580 / 213-1908R-2 / 8-94482-3590 / 213-1908L-2",
-      "slug": "stop-luv-2-3-2",
-      "original_filename": "Stop/1746764d-1508-4451-9793-de08b16107b4.jpg",
       "linked_ids": [
         1219,
         1220
+      ],
+      "oem": "8-94482-3580 / 213-1908R-2 / 8-94482-3590 / 213-1908L-2",
+      "original_filename": "Stop/1746764d-1508-4451-9793-de08b16107b4.jpg",
+      "slug": "stop-luv-2-3-2",
+      "variants": [
+        {
+          "codigo_oem": "8-94482-3580",
+          "brand": "Original",
+          "precio_usd": 50
+        },
+        {
+          "codigo_oem": "8-94482-3590",
+          "brand": "Original",
+          "precio_usd": 50
+        }
       ]
     },
     {
-      "id": "4172da44-5cc1-4985-aa45-6b413c64cfd6",
       "category": "Stop",
-      "image_path": "./assets/stop-luv-dmax-05-09.webp",
       "description": "STOP LUV DMAX 05-09",
+      "id": "4172da44-5cc1-4985-aa45-6b413c64cfd6",
+      "image_path": "./assets/stop-luv-dmax-05-09.webp",
       "keywords": [
         "05-09",
         "8-97364-1140",
@@ -21178,19 +22004,41 @@ const PRODUCTS_DATA = {
         "LUV",
         "STOP"
       ],
-      "oem": "8-97364-1140 / 8-97368-0940 / 8-98023-3590 / 8-97364-1150 / 8-97368-0950 / 8-98023-3600",
-      "slug": "stop-luv-dmax-05-09",
-      "original_filename": "Stop/4172da44-5cc1-4985-aa45-6b413c64cfd6.jpg",
       "linked_ids": [
         924,
         925
+      ],
+      "oem": "8-97364-1140 / 8-97368-0940 / 8-98023-3590 / 8-97364-1150 / 8-97368-0950 / 8-98023-3600",
+      "original_filename": "Stop/4172da44-5cc1-4985-aa45-6b413c64cfd6.jpg",
+      "slug": "stop-luv-dmax-05-09",
+      "variants": [
+        {
+          "codigo_oem": "8-97364-1140",
+          "brand": "DENKO",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "8-97364-1140",
+          "brand": "TYC",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-97364-1150",
+          "brand": "TYC",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-97364-1150",
+          "brand": "DENKO",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "70ff1056-8bec-41e7-9f59-f0db07159a54",
       "category": "Stop",
-      "image_path": "./assets/stop-luv-dmax-10-15.webp",
       "description": "STOP LUV DMAX 10-15",
+      "id": "70ff1056-8bec-41e7-9f59-f0db07159a54",
+      "image_path": "./assets/stop-luv-dmax-10-15.webp",
       "keywords": [
         "10-15",
         "8-97374-6652",
@@ -21203,12 +22051,44 @@ const PRODUCTS_DATA = {
         "LUV",
         "STOP"
       ],
-      "oem": "8-97375-6062 / 8-97374-6652 / 8-98098-5860 / 8-97375-6072 / 8-97374-6662 / 8-98098-5870",
-      "slug": "stop-luv-dmax-10-15",
-      "original_filename": "Stop/70ff1056-8bec-41e7-9f59-f0db07159a54.jpg",
       "linked_ids": [
         926,
         1152
+      ],
+      "oem": "8-97375-6062 / 8-97374-6652 / 8-98098-5860 / 8-97375-6072 / 8-97374-6662 / 8-98098-5870",
+      "original_filename": "Stop/70ff1056-8bec-41e7-9f59-f0db07159a54.jpg",
+      "slug": "stop-luv-dmax-10-15",
+      "variants": [
+        {
+          "codigo_oem": "8-97375-6062",
+          "brand": "DENKO",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "8-97375-6062",
+          "brand": "TYC",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97375-6062",
+          "brand": "YOSAI",
+          "precio_usd": 30
+        },
+        {
+          "codigo_oem": "8-97375-6072",
+          "brand": "DENKO",
+          "precio_usd": 35
+        },
+        {
+          "codigo_oem": "8-97375-6072",
+          "brand": "TYC",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-97375-6072",
+          "brand": "YOSAI",
+          "precio_usd": 30
+        }
       ]
     },
     {
@@ -21241,10 +22121,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "f72a88de-deca-42a2-919e-0b657541f0fc",
       "category": "Switch Encendido",
-      "image_path": "./assets/switch-ignicion-cilindro-encendido-caribe.webp",
       "description": "SWITCH IGNICION / CILINDRO ENCENDIDO CARIBE",
+      "id": "f72a88de-deca-42a2-919e-0b657541f0fc",
+      "image_path": "./assets/switch-ignicion-cilindro-encendido-caribe.webp",
       "keywords": [
         "8-94238-2340",
         "CARIBE",
@@ -21253,18 +22133,25 @@ const PRODUCTS_DATA = {
         "IGNICION",
         "SWITCH"
       ],
-      "oem": "8-94238-2340",
-      "slug": "switch-ignicion-cilindro-encendido-caribe",
-      "original_filename": "Switch Encendido/f72a88de-deca-42a2-919e-0b657541f0fc.jpg",
       "linked_ids": [
         930
+      ],
+      "oem": "8-94238-2340",
+      "original_filename": "Switch Encendido/f72a88de-deca-42a2-919e-0b657541f0fc.jpg",
+      "slug": "switch-ignicion-cilindro-encendido-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94238-2340",
+          "brand": "Original",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "ebef5b8e-33f0-4704-b396-c462843a25c3",
       "category": "Switch Encendido",
-      "image_path": "./assets/switch-ignicion-cilindro-encendido-luv.webp",
       "description": "SWITCH IGNICION / CILINDRO ENCENDIDO LUV",
+      "id": "ebef5b8e-33f0-4704-b396-c462843a25c3",
+      "image_path": "./assets/switch-ignicion-cilindro-encendido-luv.webp",
       "keywords": [
         "8-97110-6570",
         "CILINDRO",
@@ -21273,18 +22160,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "SWITCH"
       ],
-      "oem": "8-97110-6570",
-      "slug": "switch-ignicion-cilindro-encendido-luv",
-      "original_filename": "Switch Encendido/ebef5b8e-33f0-4704-b396-c462843a25c3.jpg",
       "linked_ids": [
         931
+      ],
+      "oem": "8-97110-6570",
+      "original_filename": "Switch Encendido/ebef5b8e-33f0-4704-b396-c462843a25c3.jpg",
+      "slug": "switch-ignicion-cilindro-encendido-luv",
+      "variants": [
+        {
+          "codigo_oem": "8-97110-6570",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "099136d5-fb14-4b6d-b06d-ddf8486ce5d6",
       "category": "Switch Encendido",
-      "image_path": "./assets/switch-ignicion-cilindro-encendido-luv-dmax-3-5.webp",
       "description": "SWITCH IGNICION / CILINDRO ENCENDIDO LUV DMAX 3.5",
+      "id": "099136d5-fb14-4b6d-b06d-ddf8486ce5d6",
+      "image_path": "./assets/switch-ignicion-cilindro-encendido-luv-dmax-3-5.webp",
       "keywords": [
         "8-97376-4440",
         "CILINDRO",
@@ -21295,18 +22189,25 @@ const PRODUCTS_DATA = {
         "MG02-13022",
         "SWITCH"
       ],
-      "oem": "8-97376-4440 / MG02-13022",
-      "slug": "switch-ignicion-cilindro-encendido-luv-dmax-3-5",
-      "original_filename": "Switch Encendido/099136d5-fb14-4b6d-b06d-ddf8486ce5d6.jpg",
       "linked_ids": [
         1216
+      ],
+      "oem": "8-97376-4440 / MG02-13022",
+      "original_filename": "Switch Encendido/099136d5-fb14-4b6d-b06d-ddf8486ce5d6.jpg",
+      "slug": "switch-ignicion-cilindro-encendido-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97376-4440",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "71257bb2-de0e-43a4-b446-a80adb53f407",
       "category": "Switch Palanca Luces",
-      "image_path": "./assets/switch-palanca-luz-luv-2-3.webp",
       "description": "SWITCH PALANCA LUZ LUV 2.3",
+      "id": "71257bb2-de0e-43a4-b446-a80adb53f407",
+      "image_path": "./assets/switch-palanca-luz-luv-2-3.webp",
       "keywords": [
         "8-97111-4951",
         "LUCES",
@@ -21315,18 +22216,25 @@ const PRODUCTS_DATA = {
         "PALANCA",
         "SWITCH"
       ],
-      "oem": "8-97111-4951",
-      "slug": "switch-palanca-luz-luv-2-3",
-      "original_filename": "Switch Palanca Luces/71257bb2-de0e-43a4-b446-a80adb53f407.jpg",
       "linked_ids": [
         1045
+      ],
+      "oem": "8-97111-4951",
+      "original_filename": "Switch Palanca Luces/71257bb2-de0e-43a4-b446-a80adb53f407.jpg",
+      "slug": "switch-palanca-luz-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-97111-4951",
+          "brand": "Original",
+          "precio_usd": 40
+        }
       ]
     },
     {
-      "id": "40432b96-ce76-427e-b869-295062063019",
       "category": "Switch Palanca Luces",
-      "image_path": "./assets/switch-palanca-luz-luv-dmax.webp",
       "description": "SWITCH PALANCA LUZ LUV DMAX",
+      "id": "40432b96-ce76-427e-b869-295062063019",
+      "image_path": "./assets/switch-palanca-luz-luv-dmax.webp",
       "keywords": [
         "8-97360-6910",
         "8-97360-6920",
@@ -21341,36 +22249,50 @@ const PRODUCTS_DATA = {
         "PALANCA",
         "SWITCH"
       ],
-      "oem": "8-97360-6920 / 8-97360-6910 / 8-97360-6950 / 8-98007-7210 / 8-98007-7280 / 8-98007-7260",
-      "slug": "switch-palanca-luz-luv-dmax",
-      "original_filename": "Switch Palanca Luces/40432b96-ce76-427e-b869-295062063019.jpg",
       "linked_ids": [
         1111
+      ],
+      "oem": "8-97360-6920 / 8-97360-6910 / 8-97360-6950 / 8-98007-7210 / 8-98007-7280 / 8-98007-7260",
+      "original_filename": "Switch Palanca Luces/40432b96-ce76-427e-b869-295062063019.jpg",
+      "slug": "switch-palanca-luz-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "8-97360-6920",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "4287f117-1cd9-43cf-84b3-b0bd56a34648",
       "category": "Tambor de Freno",
-      "image_path": "./assets/tambor-de-freno-luv-2-3.webp",
       "description": "TAMBOR DE FRENO LUV 2.3",
+      "id": "4287f117-1cd9-43cf-84b3-b0bd56a34648",
+      "image_path": "./assets/tambor-de-freno-luv-2-3.webp",
       "keywords": [
         "8-94226-8291",
         "FRENO",
         "LUV",
         "TAMBOR"
       ],
-      "oem": "8-94226-8291",
-      "slug": "tambor-de-freno-luv-2-3",
-      "original_filename": "Tambor de Freno/4287f117-1cd9-43cf-84b3-b0bd56a34648.jpg",
       "linked_ids": [
         933
+      ],
+      "oem": "8-94226-8291",
+      "original_filename": "Tambor de Freno/4287f117-1cd9-43cf-84b3-b0bd56a34648.jpg",
+      "slug": "tambor-de-freno-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94226-8291",
+          "brand": "Original",
+          "precio_usd": 65
+        }
       ]
     },
     {
-      "id": "1a3d6178-bfa1-40ca-90cf-e7141f25fc80",
       "category": "Tambor de Freno",
-      "image_path": "./assets/tambor-de-freno-luv-dmax-2-4.webp",
       "description": "TAMBOR DE FRENO LUV DMAX 2.4",
+      "id": "1a3d6178-bfa1-40ca-90cf-e7141f25fc80",
+      "image_path": "./assets/tambor-de-freno-luv-dmax-2-4.webp",
       "keywords": [
         "8-97360-5050",
         "DMAX",
@@ -21378,18 +22300,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAMBOR"
       ],
+      "linked_ids": [
+        1167
+      ],
       "oem": "8-97360-5050",
-      "slug": "tambor-de-freno-luv-dmax-2-4",
       "original_filename": "Tambor de Freno/1a3d6178-bfa1-40ca-90cf-e7141f25fc80.jpg",
-      "linked_ids": [
-        1167
+      "slug": "tambor-de-freno-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-97360-5050",
+          "brand": "Original",
+          "precio_usd": 85
+        }
       ]
     },
     {
-      "id": "23cc3a2a-6641-4193-a901-7abc090dd780",
       "category": "Tambor de Freno",
-      "image_path": "./assets/tambor-de-freno-luv-dmax-2-5.webp",
       "description": "TAMBOR DE FRENO LUV DMAX 2.5",
+      "id": "23cc3a2a-6641-4193-a901-7abc090dd780",
+      "image_path": "./assets/tambor-de-freno-luv-dmax-2-5.webp",
       "keywords": [
         "8-97360-5050",
         "DMAX",
@@ -21397,18 +22326,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAMBOR"
       ],
-      "oem": "8-97360-5050",
-      "slug": "tambor-de-freno-luv-dmax-2-5",
-      "original_filename": "Tambor de Freno/23cc3a2a-6641-4193-a901-7abc090dd780.jpg",
       "linked_ids": [
         1167
+      ],
+      "oem": "8-97360-5050",
+      "original_filename": "Tambor de Freno/23cc3a2a-6641-4193-a901-7abc090dd780.jpg",
+      "slug": "tambor-de-freno-luv-dmax-2-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97360-5050",
+          "brand": "Original",
+          "precio_usd": 85
+        }
       ]
     },
     {
-      "id": "a23b0116-fa21-4324-9dd2-1eee83d53f90",
       "category": "Tambor de Freno",
-      "image_path": "./assets/tambor-de-freno-luv-dmax-3-0-4x2.webp",
       "description": "TAMBOR DE FRENO LUV DMAX 3.0 4X2",
+      "id": "a23b0116-fa21-4324-9dd2-1eee83d53f90",
+      "image_path": "./assets/tambor-de-freno-luv-dmax-3-0-4x2.webp",
       "keywords": [
         "4X2",
         "8-97360-5050",
@@ -21417,18 +22353,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAMBOR"
       ],
-      "oem": "8-97360-5050",
-      "slug": "tambor-de-freno-luv-dmax-3-0-4x2",
-      "original_filename": "Tambor de Freno/a23b0116-fa21-4324-9dd2-1eee83d53f90.jpg",
       "linked_ids": [
         1167
+      ],
+      "oem": "8-97360-5050",
+      "original_filename": "Tambor de Freno/a23b0116-fa21-4324-9dd2-1eee83d53f90.jpg",
+      "slug": "tambor-de-freno-luv-dmax-3-0-4x2",
+      "variants": [
+        {
+          "codigo_oem": "8-97360-5050",
+          "brand": "Original",
+          "precio_usd": 85
+        }
       ]
     },
     {
-      "id": "c2004d22-097c-4902-9d44-42cd5f8c7a5f",
       "category": "Tambor de Freno",
-      "image_path": "./assets/tambor-de-freno-luv-dmax-3-5.webp",
       "description": "TAMBOR DE FRENO LUV DMAX 3.5",
+      "id": "c2004d22-097c-4902-9d44-42cd5f8c7a5f",
+      "image_path": "./assets/tambor-de-freno-luv-dmax-3-5.webp",
       "keywords": [
         "8-97360-5060",
         "8-98030-3850",
@@ -21437,11 +22380,18 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAMBOR"
       ],
-      "oem": "8-97360-5060 / 8-98030-3850",
-      "slug": "tambor-de-freno-luv-dmax-3-5",
-      "original_filename": "Tambor de Freno/c2004d22-097c-4902-9d44-42cd5f8c7a5f.jpg",
       "linked_ids": [
         934
+      ],
+      "oem": "8-97360-5060 / 8-98030-3850",
+      "original_filename": "Tambor de Freno/c2004d22-097c-4902-9d44-42cd5f8c7a5f.jpg",
+      "slug": "tambor-de-freno-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97360-5060",
+          "brand": "Original",
+          "precio_usd": 85
+        }
       ]
     },
     {
@@ -21497,28 +22447,35 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "3f24e314-7b16-4215-91c2-461c44b5eda6",
       "category": "Tapa Aceite",
-      "image_path": "./assets/tapa-aceite-caribe-2-3.webp",
       "description": "TAPA ACEITE CARIBE 2.3",
+      "id": "3f24e314-7b16-4215-91c2-461c44b5eda6",
+      "image_path": "./assets/tapa-aceite-caribe-2-3.webp",
       "keywords": [
         "8-94239-1510",
         "ACEITE",
         "CARIBE",
         "TAPA"
       ],
-      "oem": "8-94239-1510",
-      "slug": "tapa-aceite-caribe-2-3",
-      "original_filename": "Tapa Aceite/3f24e314-7b16-4215-91c2-461c44b5eda6.jpg",
       "linked_ids": [
         937
+      ],
+      "oem": "8-94239-1510",
+      "original_filename": "Tapa Aceite/3f24e314-7b16-4215-91c2-461c44b5eda6.jpg",
+      "slug": "tapa-aceite-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94239-1510",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "f1344439-dcf8-4ebf-ab36-8b3cf1641607",
       "category": "Tapa Aceite",
-      "image_path": "./assets/tapa-aceite-caribe-2-6.webp",
       "description": "TAPA ACEITE CARIBE 2.6",
+      "id": "f1344439-dcf8-4ebf-ab36-8b3cf1641607",
+      "image_path": "./assets/tapa-aceite-caribe-2-6.webp",
       "keywords": [
         "8-94133-2075",
         "8-97117-7660",
@@ -21526,18 +22483,30 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "TAPA"
       ],
-      "oem": "8-94133-2075 / 8-97117-7660",
-      "slug": "tapa-aceite-caribe-2-6",
-      "original_filename": "Tapa Aceite/f1344439-dcf8-4ebf-ab36-8b3cf1641607.jpg",
       "linked_ids": [
         938
+      ],
+      "oem": "8-94133-2075 / 8-97117-7660",
+      "original_filename": "Tapa Aceite/f1344439-dcf8-4ebf-ab36-8b3cf1641607.jpg",
+      "slug": "tapa-aceite-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94133-2075",
+          "brand": "PRESENTACION",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94133-2075",
+          "brand": "JFP",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "08d37f56-ed43-4d85-a877-07d49635dc19",
       "category": "Tapa Aceite",
-      "image_path": "./assets/tapa-aceite-caribe-g200.webp",
       "description": "TAPA ACEITE CARIBE G200",
+      "id": "08d37f56-ed43-4d85-a877-07d49635dc19",
+      "image_path": "./assets/tapa-aceite-caribe-g200.webp",
       "keywords": [
         "8-94239-1510",
         "ACEITE",
@@ -21545,18 +22514,25 @@ const PRODUCTS_DATA = {
         "G200",
         "TAPA"
       ],
-      "oem": "8-94239-1510",
-      "slug": "tapa-aceite-caribe-g200",
-      "original_filename": "Tapa Aceite/08d37f56-ed43-4d85-a877-07d49635dc19.jpg",
       "linked_ids": [
         937
+      ],
+      "oem": "8-94239-1510",
+      "original_filename": "Tapa Aceite/08d37f56-ed43-4d85-a877-07d49635dc19.jpg",
+      "slug": "tapa-aceite-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94239-1510",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "ad79ef89-b92d-4f47-bd58-955f0b893855",
       "category": "Tapa Aceite",
-      "image_path": "./assets/tapa-aceite-luv-dmax-3-5.webp",
       "description": "TAPA ACEITE LUV DMAX 3.5",
+      "id": "ad79ef89-b92d-4f47-bd58-955f0b893855",
+      "image_path": "./assets/tapa-aceite-luv-dmax-3-5.webp",
       "keywords": [
         "8-94133-2075",
         "8-97117-7660",
@@ -21565,18 +22541,30 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPA"
       ],
-      "oem": "8-94133-2075 / 8-97117-7660",
-      "slug": "tapa-aceite-luv-dmax-3-5",
-      "original_filename": "Tapa Aceite/ad79ef89-b92d-4f47-bd58-955f0b893855.jpg",
       "linked_ids": [
         938
+      ],
+      "oem": "8-94133-2075 / 8-97117-7660",
+      "original_filename": "Tapa Aceite/ad79ef89-b92d-4f47-bd58-955f0b893855.jpg",
+      "slug": "tapa-aceite-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-94133-2075",
+          "brand": "PRESENTACION",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94133-2075",
+          "brand": "JFP",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "bc4dcd02-29b7-4090-8df3-13b1ba90bbdc",
       "category": "Tapa Aceite",
-      "image_path": "./assets/tapa-aceite-rodeo.webp",
       "description": "TAPA ACEITE RODEO",
+      "id": "bc4dcd02-29b7-4090-8df3-13b1ba90bbdc",
+      "image_path": "./assets/tapa-aceite-rodeo.webp",
       "keywords": [
         "8-94133-2075",
         "8-97117-7660",
@@ -21584,18 +22572,30 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TAPA"
       ],
-      "oem": "8-94133-2075 / 8-97117-7660",
-      "slug": "tapa-aceite-rodeo",
-      "original_filename": "Tapa Aceite/bc4dcd02-29b7-4090-8df3-13b1ba90bbdc.jpg",
       "linked_ids": [
         938
+      ],
+      "oem": "8-94133-2075 / 8-97117-7660",
+      "original_filename": "Tapa Aceite/bc4dcd02-29b7-4090-8df3-13b1ba90bbdc.jpg",
+      "slug": "tapa-aceite-rodeo",
+      "variants": [
+        {
+          "codigo_oem": "8-94133-2075",
+          "brand": "PRESENTACION",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94133-2075",
+          "brand": "JFP",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "b82ef093-49a8-4db0-8c8a-f23933a54a47",
       "category": "Tapa Aceite",
-      "image_path": "./assets/tapa-aceite-trooper.webp",
       "description": "TAPA ACEITE TROOPER",
+      "id": "b82ef093-49a8-4db0-8c8a-f23933a54a47",
+      "image_path": "./assets/tapa-aceite-trooper.webp",
       "keywords": [
         "8-94133-2075",
         "8-97117-7660",
@@ -21603,18 +22603,30 @@ const PRODUCTS_DATA = {
         "TAPA",
         "TROOPER"
       ],
-      "oem": "8-94133-2075 / 8-97117-7660",
-      "slug": "tapa-aceite-trooper",
-      "original_filename": "Tapa Aceite/b82ef093-49a8-4db0-8c8a-f23933a54a47.jpg",
       "linked_ids": [
         938
+      ],
+      "oem": "8-94133-2075 / 8-97117-7660",
+      "original_filename": "Tapa Aceite/b82ef093-49a8-4db0-8c8a-f23933a54a47.jpg",
+      "slug": "tapa-aceite-trooper",
+      "variants": [
+        {
+          "codigo_oem": "8-94133-2075",
+          "brand": "PRESENTACION",
+          "precio_usd": 10
+        },
+        {
+          "codigo_oem": "8-94133-2075",
+          "brand": "JFP",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "dd47c528-8ce9-4ca0-a211-d655db12e0d4",
       "category": "Tapa Distribuidor",
-      "image_path": "./assets/tapa-distribuidor-caribe-2-3.webp",
       "description": "TAPA DISTRIBUIDOR CARIBE 2.3",
+      "id": "dd47c528-8ce9-4ca0-a211-d655db12e0d4",
+      "image_path": "./assets/tapa-distribuidor-caribe-2-3.webp",
       "keywords": [
         "33321-60A10",
         "8-94129-2020",
@@ -21622,18 +22634,25 @@ const PRODUCTS_DATA = {
         "DISTRIBUIDOR",
         "TAPA"
       ],
+      "linked_ids": [
+        941
+      ],
       "oem": "8-94129-2020 / 33321-60A10",
-      "slug": "tapa-distribuidor-caribe-2-3",
       "original_filename": "Tapa Distribuidor/dd47c528-8ce9-4ca0-a211-d655db12e0d4.jpg",
-      "linked_ids": [
-        941
+      "slug": "tapa-distribuidor-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94129-2020",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "ac2e55a9-80db-44b7-8211-315eb0b7c769",
       "category": "Tapa Distribuidor",
-      "image_path": "./assets/tapa-distribuidor-caribe-2-6.webp",
       "description": "TAPA DISTRIBUIDOR CARIBE 2.6",
+      "id": "ac2e55a9-80db-44b7-8211-315eb0b7c769",
+      "image_path": "./assets/tapa-distribuidor-caribe-2-6.webp",
       "keywords": [
         "33321-60A10",
         "8-94129-2020",
@@ -21641,18 +22660,25 @@ const PRODUCTS_DATA = {
         "DISTRIBUIDOR",
         "TAPA"
       ],
-      "oem": "8-94129-2020 / 33321-60A10",
-      "slug": "tapa-distribuidor-caribe-2-6",
-      "original_filename": "Tapa Distribuidor/ac2e55a9-80db-44b7-8211-315eb0b7c769.jpg",
       "linked_ids": [
         941
+      ],
+      "oem": "8-94129-2020 / 33321-60A10",
+      "original_filename": "Tapa Distribuidor/ac2e55a9-80db-44b7-8211-315eb0b7c769.jpg",
+      "slug": "tapa-distribuidor-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94129-2020",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "c8bbe967-50f9-45b7-8d93-497732ca641b",
       "category": "Tapa Distribuidor",
-      "image_path": "./assets/tapa-distribuidor-caribe-g200.webp",
       "description": "TAPA DISTRIBUIDOR CARIBE G200",
+      "id": "c8bbe967-50f9-45b7-8d93-497732ca641b",
+      "image_path": "./assets/tapa-distribuidor-caribe-g200.webp",
       "keywords": [
         "8-94206-1390",
         "CARIBE",
@@ -21660,36 +22686,55 @@ const PRODUCTS_DATA = {
         "G200",
         "TAPA"
       ],
-      "oem": "8-94206-1390",
-      "slug": "tapa-distribuidor-caribe-g200",
-      "original_filename": "Tapa Distribuidor/c8bbe967-50f9-45b7-8d93-497732ca641b.jpg",
       "linked_ids": [
         940
+      ],
+      "oem": "8-94206-1390",
+      "original_filename": "Tapa Distribuidor/c8bbe967-50f9-45b7-8d93-497732ca641b.jpg",
+      "slug": "tapa-distribuidor-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94206-1390",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "8e238848-6f99-4fc6-a507-945047c047a6",
       "category": "Tapa Distribuidor",
-      "image_path": "./assets/tapa-distribuidor-luv-2-3.webp",
       "description": "TAPA DISTRIBUIDOR LUV 2.3",
+      "id": "8e238848-6f99-4fc6-a507-945047c047a6",
+      "image_path": "./assets/tapa-distribuidor-luv-2-3.webp",
       "keywords": [
         "8-94321-5370",
         "DISTRIBUIDOR",
         "LUV",
         "TAPA"
       ],
-      "oem": "8-94321-5370",
-      "slug": "tapa-distribuidor-luv-2-3",
-      "original_filename": "Tapa Distribuidor/8e238848-6f99-4fc6-a507-945047c047a6.jpg",
       "linked_ids": [
         942
+      ],
+      "oem": "8-94321-5370",
+      "original_filename": "Tapa Distribuidor/8e238848-6f99-4fc6-a507-945047c047a6.jpg",
+      "slug": "tapa-distribuidor-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94321-5370",
+          "brand": "Original",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94321-5370",
+          "brand": "YEC",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "7956d7d8-64a1-4b7b-98a3-33b2a7464572",
       "category": "Tapa Envase Agua",
-      "image_path": "./assets/tapa-reservorio-de-agua-luv-dmax.webp",
       "description": "TAPA RESERVORIO DE AGUA LUV DMAX",
+      "id": "7956d7d8-64a1-4b7b-98a3-33b2a7464572",
+      "image_path": "./assets/tapa-reservorio-de-agua-luv-dmax.webp",
       "keywords": [
         "8-97333-3540",
         "AGUA",
@@ -21699,11 +22744,18 @@ const PRODUCTS_DATA = {
         "RESERVORIO",
         "TAPA"
       ],
-      "oem": "8-97333-3540",
-      "slug": "tapa-reservorio-de-agua-luv-dmax",
-      "original_filename": "Tapa Envase Agua/7956d7d8-64a1-4b7b-98a3-33b2a7464572.jpg",
       "linked_ids": [
         1194
+      ],
+      "oem": "8-97333-3540",
+      "original_filename": "Tapa Envase Agua/7956d7d8-64a1-4b7b-98a3-33b2a7464572.jpg",
+      "slug": "tapa-reservorio-de-agua-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "8-97333-3540",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
@@ -21734,10 +22786,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "92b0cc29-5b26-4140-ba81-4ffe0101123c",
       "category": "Tapa Modulo Gasolina",
-      "image_path": "./assets/tapa-modulo-gasolina-luv-dmax.webp",
       "description": "TAPA MODULO GASOLINA LUV DMAX",
+      "id": "92b0cc29-5b26-4140-ba81-4ffe0101123c",
+      "image_path": "./assets/tapa-modulo-gasolina-luv-dmax.webp",
       "keywords": [
         "DMAX",
         "FMP-DMAX-C",
@@ -21746,54 +22798,75 @@ const PRODUCTS_DATA = {
         "MODULO",
         "TAPA"
       ],
-      "oem": "FMP-DMAX-C",
-      "slug": "tapa-modulo-gasolina-luv-dmax",
-      "original_filename": "Tapa Modulo Gasolina/92b0cc29-5b26-4140-ba81-4ffe0101123c.jpg",
       "linked_ids": [
         944
+      ],
+      "oem": "FMP-DMAX-C",
+      "original_filename": "Tapa Modulo Gasolina/92b0cc29-5b26-4140-ba81-4ffe0101123c.jpg",
+      "slug": "tapa-modulo-gasolina-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "FMP-DMAX-C",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "59d479cb-8abd-4409-bc41-f6958ea6008a",
       "category": "Tapa Radiador",
-      "image_path": "./assets/tapa-radiador-caribe.webp",
       "description": "TAPA RADIADOR CARIBE",
+      "id": "59d479cb-8abd-4409-bc41-f6958ea6008a",
+      "image_path": "./assets/tapa-radiador-caribe.webp",
       "keywords": [
         "8-94228-7481",
         "CARIBE",
         "RADIADOR",
         "TAPA"
       ],
-      "oem": "8-94228-7481",
-      "slug": "tapa-radiador-caribe",
-      "original_filename": "Tapa Radiador/59d479cb-8abd-4409-bc41-f6958ea6008a.jpg",
       "linked_ids": [
         945
+      ],
+      "oem": "8-94228-7481",
+      "original_filename": "Tapa Radiador/59d479cb-8abd-4409-bc41-f6958ea6008a.jpg",
+      "slug": "tapa-radiador-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94228-7481",
+          "brand": "ONE4CARS",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "0fe6a3db-c848-44b8-a30f-452159059b3f",
       "category": "Tapa Radiador",
-      "image_path": "./assets/tapa-radiador-luv-2-3.webp",
       "description": "TAPA RADIADOR LUV 2.3",
+      "id": "0fe6a3db-c848-44b8-a30f-452159059b3f",
+      "image_path": "./assets/tapa-radiador-luv-2-3.webp",
       "keywords": [
         "8-94228-7481",
         "LUV",
         "RADIADOR",
         "TAPA"
       ],
-      "oem": "8-94228-7481",
-      "slug": "tapa-radiador-luv-2-3",
-      "original_filename": "Tapa Radiador/0fe6a3db-c848-44b8-a30f-452159059b3f.jpg",
       "linked_ids": [
         945
+      ],
+      "oem": "8-94228-7481",
+      "original_filename": "Tapa Radiador/0fe6a3db-c848-44b8-a30f-452159059b3f.jpg",
+      "slug": "tapa-radiador-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94228-7481",
+          "brand": "ONE4CARS",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "64b44b05-f9ec-48ff-a18e-65c03b6340ab",
       "category": "Tapa Radiador",
-      "image_path": "./assets/tapa-radiador-luv-dmax.webp",
       "description": "TAPA RADIADOR LUV DMAX",
+      "id": "64b44b05-f9ec-48ff-a18e-65c03b6340ab",
+      "image_path": "./assets/tapa-radiador-luv-dmax.webp",
       "keywords": [
         "8-52477-5520",
         "8-97942-2681",
@@ -21802,11 +22875,18 @@ const PRODUCTS_DATA = {
         "RADIADOR",
         "TAPA"
       ],
-      "oem": "8-97942-2681 / 8-52477-5520",
-      "slug": "tapa-radiador-luv-dmax",
-      "original_filename": "Tapa Radiador/64b44b05-f9ec-48ff-a18e-65c03b6340ab.jpg",
       "linked_ids": [
         946
+      ],
+      "oem": "8-97942-2681 / 8-52477-5520",
+      "original_filename": "Tapa Radiador/64b44b05-f9ec-48ff-a18e-65c03b6340ab.jpg",
+      "slug": "tapa-radiador-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "8-97942-2681",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
@@ -21835,10 +22915,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "b4a0fcc2-d83a-4865-a2de-8e908a8c4304",
       "category": "Tapavalvula",
-      "image_path": "./assets/tapavalvula-caribe-2-3.webp",
       "description": "TAPAVALVULA CARIBE 2.3",
+      "id": "b4a0fcc2-d83a-4865-a2de-8e908a8c4304",
+      "image_path": "./assets/tapavalvula-caribe-2-3.webp",
       "keywords": [
         "8-94146-2462",
         "8-94146-2463",
@@ -21847,18 +22927,25 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "TAPAVALVULA"
       ],
+      "linked_ids": [
+        1195
+      ],
       "oem": "8-94360-5320 / 8-94360-5311 / 8-94146-2462 / 8-94146-2463",
-      "slug": "tapavalvula-caribe-2-3",
       "original_filename": "Tapavalvula/b4a0fcc2-d83a-4865-a2de-8e908a8c4304.jpg",
-      "linked_ids": [
-        1195
+      "slug": "tapavalvula-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94360-5320",
+          "brand": "Original",
+          "precio_usd": 160
+        }
       ]
     },
     {
-      "id": "800ceb24-80c4-42b3-882a-2a3493e521c4",
       "category": "Tapavalvula",
-      "image_path": "./assets/tapavalvula-caribe-2-6.webp",
       "description": "TAPAVALVULA CARIBE 2.6",
+      "id": "800ceb24-80c4-42b3-882a-2a3493e521c4",
+      "image_path": "./assets/tapavalvula-caribe-2-6.webp",
       "keywords": [
         "8-94146-2462",
         "8-94146-2463",
@@ -21867,18 +22954,25 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "TAPAVALVULA"
       ],
-      "oem": "8-94360-5320 / 8-94360-5311 / 8-94146-2462 / 8-94146-2463",
-      "slug": "tapavalvula-caribe-2-6",
-      "original_filename": "Tapavalvula/800ceb24-80c4-42b3-882a-2a3493e521c4.jpg",
       "linked_ids": [
         1195
+      ],
+      "oem": "8-94360-5320 / 8-94360-5311 / 8-94146-2462 / 8-94146-2463",
+      "original_filename": "Tapavalvula/800ceb24-80c4-42b3-882a-2a3493e521c4.jpg",
+      "slug": "tapavalvula-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94360-5320",
+          "brand": "Original",
+          "precio_usd": 160
+        }
       ]
     },
     {
-      "id": "e2c98286-15b6-4a26-8a5f-732346eb882d",
       "category": "Tapavalvula",
-      "image_path": "./assets/tapavalvula-luv-2-2.webp",
       "description": "TAPAVALVULA LUV 2.2",
+      "id": "e2c98286-15b6-4a26-8a5f-732346eb882d",
+      "image_path": "./assets/tapavalvula-luv-2-2.webp",
       "keywords": [
         "8-90467-8780",
         "8-92066-1030",
@@ -21886,18 +22980,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPAVALVULA"
       ],
-      "oem": "8-92066-1030 / 8-93369-4220 / 8-90467-8780",
-      "slug": "tapavalvula-luv-2-2",
-      "original_filename": "Tapavalvula/e2c98286-15b6-4a26-8a5f-732346eb882d.jpg",
       "linked_ids": [
         947
+      ],
+      "oem": "8-92066-1030 / 8-93369-4220 / 8-90467-8780",
+      "original_filename": "Tapavalvula/e2c98286-15b6-4a26-8a5f-732346eb882d.jpg",
+      "slug": "tapavalvula-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-92066-1030",
+          "brand": "Original",
+          "precio_usd": 95
+        }
       ]
     },
     {
-      "id": "0806f2ee-9fb8-4bde-8d7f-ff98d5346f92",
       "category": "Tapavalvula",
-      "image_path": "./assets/tapavalvula-luv-2-3.webp",
       "description": "TAPAVALVULA LUV 2.3",
+      "id": "0806f2ee-9fb8-4bde-8d7f-ff98d5346f92",
+      "image_path": "./assets/tapavalvula-luv-2-3.webp",
       "keywords": [
         "8-94146-2462",
         "8-94146-2463",
@@ -21906,18 +23007,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPAVALVULA"
       ],
-      "oem": "8-94360-5320 / 8-94360-5311 / 8-94146-2462 / 8-94146-2463",
-      "slug": "tapavalvula-luv-2-3",
-      "original_filename": "Tapavalvula/0806f2ee-9fb8-4bde-8d7f-ff98d5346f92.jpg",
       "linked_ids": [
         1195
+      ],
+      "oem": "8-94360-5320 / 8-94360-5311 / 8-94146-2462 / 8-94146-2463",
+      "original_filename": "Tapavalvula/0806f2ee-9fb8-4bde-8d7f-ff98d5346f92.jpg",
+      "slug": "tapavalvula-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94360-5320",
+          "brand": "Original",
+          "precio_usd": 160
+        }
       ]
     },
     {
-      "id": "dc72dcea-a578-4e93-acfd-8c3b6aa1c232",
       "category": "Tapavalvula",
-      "image_path": "./assets/tapavalvula-luv-dmax-2-4.webp",
       "description": "TAPAVALVULA LUV DMAX 2.4",
+      "id": "dc72dcea-a578-4e93-acfd-8c3b6aa1c232",
+      "image_path": "./assets/tapavalvula-luv-dmax-2-4.webp",
       "keywords": [
         "8-90467-8780",
         "8-92066-1030",
@@ -21926,18 +23034,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPAVALVULA"
       ],
-      "oem": "8-92066-1030 / 8-93369-4220 / 8-90467-8780",
-      "slug": "tapavalvula-luv-dmax-2-4",
-      "original_filename": "Tapavalvula/dc72dcea-a578-4e93-acfd-8c3b6aa1c232.jpg",
       "linked_ids": [
         947
+      ],
+      "oem": "8-92066-1030 / 8-93369-4220 / 8-90467-8780",
+      "original_filename": "Tapavalvula/dc72dcea-a578-4e93-acfd-8c3b6aa1c232.jpg",
+      "slug": "tapavalvula-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-92066-1030",
+          "brand": "Original",
+          "precio_usd": 95
+        }
       ]
     },
     {
-      "id": "e19607db-5527-46cc-8865-065779e2081b",
       "category": "Tapon Carter",
-      "image_path": "./assets/tapon-carter-luv-dmax.webp",
       "description": "TAPON CARTER LUV DMAX",
+      "id": "e19607db-5527-46cc-8865-065779e2081b",
+      "image_path": "./assets/tapon-carter-luv-dmax.webp",
       "keywords": [
         "9-09862-1560",
         "CARTER",
@@ -21945,36 +23060,50 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPON"
       ],
-      "oem": "9-09862-1560",
-      "slug": "tapon-carter-luv-dmax",
-      "original_filename": "Tapon Carter/e19607db-5527-46cc-8865-065779e2081b.jpg",
       "linked_ids": [
         948
+      ],
+      "oem": "9-09862-1560",
+      "original_filename": "Tapon Carter/e19607db-5527-46cc-8865-065779e2081b.jpg",
+      "slug": "tapon-carter-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "9-09862-1560",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "ead3f990-e212-4261-823c-b08857f1fcd4",
       "category": "Taquetes",
-      "image_path": "./assets/taquetes-luv-2-2.webp",
       "description": "TAQUETES LUV 2.2",
+      "id": "ead3f990-e212-4261-823c-b08857f1fcd4",
+      "image_path": "./assets/taquetes-luv-2-2.webp",
       "keywords": [
         "5233315",
         "8-05233-3150",
         "LUV",
         "TAQUETES"
       ],
-      "oem": "8-05233-3150 / 5233315",
-      "slug": "taquetes-luv-2-2",
-      "original_filename": "Taquetes/ead3f990-e212-4261-823c-b08857f1fcd4.jpg",
       "linked_ids": [
         949
+      ],
+      "oem": "8-05233-3150 / 5233315",
+      "original_filename": "Taquetes/ead3f990-e212-4261-823c-b08857f1fcd4.jpg",
+      "slug": "taquetes-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-05233-3150",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "d79420e0-42c7-4137-b0e3-ad9cb6635a66",
       "category": "Taquetes",
-      "image_path": "./assets/taquetes-luv-dmax-2-4.webp",
       "description": "TAQUETES LUV DMAX 2.4",
+      "id": "d79420e0-42c7-4137-b0e3-ad9cb6635a66",
+      "image_path": "./assets/taquetes-luv-dmax-2-4.webp",
       "keywords": [
         "5233315",
         "8-05233-3150",
@@ -21982,54 +23111,75 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAQUETES"
       ],
-      "oem": "8-05233-3150 / 5233315",
-      "slug": "taquetes-luv-dmax-2-4",
-      "original_filename": "Taquetes/d79420e0-42c7-4137-b0e3-ad9cb6635a66.jpg",
       "linked_ids": [
         949
+      ],
+      "oem": "8-05233-3150 / 5233315",
+      "original_filename": "Taquetes/d79420e0-42c7-4137-b0e3-ad9cb6635a66.jpg",
+      "slug": "taquetes-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-05233-3150",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "1481af77-364b-48c0-9e2d-c1c9dc1e7a65",
       "category": "Taquetes",
-      "image_path": "./assets/taquetes-luv-dmax-3-5.webp",
       "description": "TAQUETES LUV DMAX 3.5",
+      "id": "1481af77-364b-48c0-9e2d-c1c9dc1e7a65",
+      "image_path": "./assets/taquetes-luv-dmax-3-5.webp",
       "keywords": [
         "8-97148-2961",
         "DMAX",
         "LUV",
         "TAQUETES"
       ],
-      "oem": "8-97148-2961",
-      "slug": "taquetes-luv-dmax-3-5",
-      "original_filename": "Taquetes/1481af77-364b-48c0-9e2d-c1c9dc1e7a65.jpg",
       "linked_ids": [
         950
+      ],
+      "oem": "8-97148-2961",
+      "original_filename": "Taquetes/1481af77-364b-48c0-9e2d-c1c9dc1e7a65.jpg",
+      "slug": "taquetes-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97148-2961",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "f88de778-2fd2-4093-8784-1ef1d84d7682",
       "category": "Taquetes",
-      "image_path": "./assets/taquetes-trooper-3-2.webp",
       "description": "TAQUETES TROOPER 3.2",
+      "id": "f88de778-2fd2-4093-8784-1ef1d84d7682",
+      "image_path": "./assets/taquetes-trooper-3-2.webp",
       "keywords": [
         "24610-22010",
         "8-97010-7270",
         "TAQUETES",
         "TROOPER"
       ],
-      "oem": "8-97010-7270 / 24610-22010",
-      "slug": "taquetes-trooper-3-2",
-      "original_filename": "Taquetes/f88de778-2fd2-4093-8784-1ef1d84d7682.jpg",
       "linked_ids": [
         951
+      ],
+      "oem": "8-97010-7270 / 24610-22010",
+      "original_filename": "Taquetes/f88de778-2fd2-4093-8784-1ef1d84d7682.jpg",
+      "slug": "taquetes-trooper-3-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97010-7270",
+          "brand": "Original",
+          "precio_usd": 40
+        }
       ]
     },
     {
-      "id": "831b90aa-a0c8-42e8-a584-955c10781f4d",
       "category": "Tensor Correa de Tiempo",
-      "image_path": "./assets/tensor-cadena-de-tiempo-caribe-g200.webp",
       "description": "TENSOR CADENA DE TIEMPO CARIBE G200",
+      "id": "831b90aa-a0c8-42e8-a584-955c10781f4d",
+      "image_path": "./assets/tensor-cadena-de-tiempo-caribe-g200.webp",
       "keywords": [
         "8-94243-3220",
         "CADENA",
@@ -22039,18 +23189,25 @@ const PRODUCTS_DATA = {
         "TENSOR",
         "TIEMPO"
       ],
-      "oem": "8-94243-3220",
-      "slug": "tensor-cadena-de-tiempo-caribe-g200",
-      "original_filename": "Tensor Correa de Tiempo/831b90aa-a0c8-42e8-a584-955c10781f4d.jpg",
       "linked_ids": [
         952
+      ],
+      "oem": "8-94243-3220",
+      "original_filename": "Tensor Correa de Tiempo/831b90aa-a0c8-42e8-a584-955c10781f4d.jpg",
+      "slug": "tensor-cadena-de-tiempo-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94243-3220",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "4c8d0852-1376-418f-b863-0c271a806146",
       "category": "Tensor Correa de Tiempo",
-      "image_path": "./assets/tensor-correa-de-tiempo-hidraulico-luv-dmax-3-5.webp",
       "description": "TENSOR CORREA DE TIEMPO HIDRAULICO LUV DMAX 3.5",
+      "id": "4c8d0852-1376-418f-b863-0c271a806146",
+      "image_path": "./assets/tensor-correa-de-tiempo-hidraulico-luv-dmax-3-5.webp",
       "keywords": [
         "8-97136-2570",
         "8-97328-5120",
@@ -22061,18 +23218,30 @@ const PRODUCTS_DATA = {
         "TENSOR",
         "TIEMPO"
       ],
-      "oem": "8-97328-5120 / 8-97136-2570",
-      "slug": "tensor-correa-de-tiempo-hidraulico-luv-dmax-3-5",
-      "original_filename": "Tensor Correa de Tiempo/4c8d0852-1376-418f-b863-0c271a806146.jpg",
       "linked_ids": [
         955
+      ],
+      "oem": "8-97328-5120 / 8-97136-2570",
+      "original_filename": "Tensor Correa de Tiempo/4c8d0852-1376-418f-b863-0c271a806146.jpg",
+      "slug": "tensor-correa-de-tiempo-hidraulico-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97328-5120",
+          "brand": "MICHELIN",
+          "precio_usd": 60
+        },
+        {
+          "codigo_oem": "8-97328-5120",
+          "brand": "NTN",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "819de047-1bdd-41bd-ba11-198dc4a60bd6",
       "category": "Tensor Correa de Tiempo",
-      "image_path": "./assets/tensor-correa-de-tiempo-hidraulico-trooper-3-2.webp",
       "description": "TENSOR CORREA DE TIEMPO HIDRAULICO TROOPER 3.2",
+      "id": "819de047-1bdd-41bd-ba11-198dc4a60bd6",
+      "image_path": "./assets/tensor-correa-de-tiempo-hidraulico-trooper-3-2.webp",
       "keywords": [
         "8-94364-8171",
         "8-97116-0031",
@@ -22084,18 +23253,30 @@ const PRODUCTS_DATA = {
         "TIEMPO",
         "TROOPER"
       ],
-      "oem": "8-94364-8171 / HAT002-18G1 / 8-97364-8170 / 8-97116-0031",
-      "slug": "tensor-correa-de-tiempo-hidraulico-trooper-3-2",
-      "original_filename": "Tensor Correa de Tiempo/819de047-1bdd-41bd-ba11-198dc4a60bd6.jpg",
       "linked_ids": [
         953
+      ],
+      "oem": "8-94364-8171 / HAT002-18G1 / 8-97364-8170 / 8-97116-0031",
+      "original_filename": "Tensor Correa de Tiempo/819de047-1bdd-41bd-ba11-198dc4a60bd6.jpg",
+      "slug": "tensor-correa-de-tiempo-hidraulico-trooper-3-2",
+      "variants": [
+        {
+          "codigo_oem": "8-94364-8171",
+          "brand": "NTN",
+          "precio_usd": 110
+        },
+        {
+          "codigo_oem": "8-94364-8171",
+          "brand": "JOMO",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "5124836e-d647-42f7-b9ec-4ad7c0bfa3e3",
       "category": "Tensor Correa de Tiempo",
-      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-caribe-2-3.webp",
       "description": "TENSOR CORREA DE TIEMPO MECANICO CARIBE 2.3",
+      "id": "5124836e-d647-42f7-b9ec-4ad7c0bfa3e3",
+      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-caribe-2-3.webp",
       "keywords": [
         "8-94215-1971",
         "CARIBE",
@@ -22104,18 +23285,25 @@ const PRODUCTS_DATA = {
         "TENSOR",
         "TIEMPO"
       ],
-      "oem": "8-94215-1971",
-      "slug": "tensor-correa-de-tiempo-mecanico-caribe-2-3",
-      "original_filename": "Tensor Correa de Tiempo/5124836e-d647-42f7-b9ec-4ad7c0bfa3e3.jpg",
       "linked_ids": [
         957
+      ],
+      "oem": "8-94215-1971",
+      "original_filename": "Tensor Correa de Tiempo/5124836e-d647-42f7-b9ec-4ad7c0bfa3e3.jpg",
+      "slug": "tensor-correa-de-tiempo-mecanico-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94215-1971",
+          "brand": "VELOCITY",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "47bf9c06-069b-414e-ac88-daaa4cb8bb59",
       "category": "Tensor Correa de Tiempo",
-      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-caribe-2-6.webp",
       "description": "TENSOR CORREA DE TIEMPO MECANICO CARIBE 2.6",
+      "id": "47bf9c06-069b-414e-ac88-daaa4cb8bb59",
+      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-caribe-2-6.webp",
       "keywords": [
         "8-94472-3490",
         "CARIBE",
@@ -22124,18 +23312,30 @@ const PRODUCTS_DATA = {
         "TENSOR",
         "TIEMPO"
       ],
-      "oem": "8-94472-3490",
-      "slug": "tensor-correa-de-tiempo-mecanico-caribe-2-6",
-      "original_filename": "Tensor Correa de Tiempo/47bf9c06-069b-414e-ac88-daaa4cb8bb59.jpg",
       "linked_ids": [
         959
+      ],
+      "oem": "8-94472-3490",
+      "original_filename": "Tensor Correa de Tiempo/47bf9c06-069b-414e-ac88-daaa4cb8bb59.jpg",
+      "slug": "tensor-correa-de-tiempo-mecanico-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94472-3490",
+          "brand": "NSK",
+          "precio_usd": 0
+        },
+        {
+          "codigo_oem": "8-94472-3490",
+          "brand": "ICHIBAN",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "c4a44d59-fb20-4c84-9f8e-9c18fc31c4cb",
       "category": "Tensor Correa de Tiempo",
-      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-luv-2-2.webp",
       "description": "TENSOR CORREA DE TIEMPO MECANICO LUV 2.2",
+      "id": "c4a44d59-fb20-4c84-9f8e-9c18fc31c4cb",
+      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-luv-2-2.webp",
       "keywords": [
         "8-09158-0030",
         "8-90530-1240",
@@ -22145,18 +23345,25 @@ const PRODUCTS_DATA = {
         "TENSOR",
         "TIEMPO"
       ],
-      "oem": "8-90530-1240 / 8-09158-0030",
-      "slug": "tensor-correa-de-tiempo-mecanico-luv-2-2",
-      "original_filename": "Tensor Correa de Tiempo/c4a44d59-fb20-4c84-9f8e-9c18fc31c4cb.jpg",
       "linked_ids": [
         961
+      ],
+      "oem": "8-90530-1240 / 8-09158-0030",
+      "original_filename": "Tensor Correa de Tiempo/c4a44d59-fb20-4c84-9f8e-9c18fc31c4cb.jpg",
+      "slug": "tensor-correa-de-tiempo-mecanico-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-90530-1240",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "9ed2c76d-f6b2-47a2-ba15-d673551372ed",
       "category": "Tensor Correa de Tiempo",
-      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-luv-2-3.webp",
       "description": "TENSOR CORREA DE TIEMPO MECANICO LUV 2.3",
+      "id": "9ed2c76d-f6b2-47a2-ba15-d673551372ed",
+      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-luv-2-3.webp",
       "keywords": [
         "8-94215-1971",
         "CORREA",
@@ -22165,18 +23372,25 @@ const PRODUCTS_DATA = {
         "TENSOR",
         "TIEMPO"
       ],
-      "oem": "8-94215-1971",
-      "slug": "tensor-correa-de-tiempo-mecanico-luv-2-3",
-      "original_filename": "Tensor Correa de Tiempo/9ed2c76d-f6b2-47a2-ba15-d673551372ed.jpg",
       "linked_ids": [
         957
+      ],
+      "oem": "8-94215-1971",
+      "original_filename": "Tensor Correa de Tiempo/9ed2c76d-f6b2-47a2-ba15-d673551372ed.jpg",
+      "slug": "tensor-correa-de-tiempo-mecanico-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94215-1971",
+          "brand": "VELOCITY",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "d96b554b-587f-4cdd-b0a8-011a2ab457a5",
       "category": "Tensor Correa de Tiempo",
-      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-luv-dmax-2-4.webp",
       "description": "TENSOR CORREA DE TIEMPO MECANICO LUV DMAX 2.4",
+      "id": "d96b554b-587f-4cdd-b0a8-011a2ab457a5",
+      "image_path": "./assets/tensor-correa-de-tiempo-mecanico-luv-dmax-2-4.webp",
       "keywords": [
         "8-09158-0030",
         "8-90530-1240",
@@ -22187,36 +23401,55 @@ const PRODUCTS_DATA = {
         "TENSOR",
         "TIEMPO"
       ],
-      "oem": "8-90530-1240 / 8-09158-0030",
-      "slug": "tensor-correa-de-tiempo-mecanico-luv-dmax-2-4",
-      "original_filename": "Tensor Correa de Tiempo/d96b554b-587f-4cdd-b0a8-011a2ab457a5.jpg",
       "linked_ids": [
         961
+      ],
+      "oem": "8-90530-1240 / 8-09158-0030",
+      "original_filename": "Tensor Correa de Tiempo/d96b554b-587f-4cdd-b0a8-011a2ab457a5.jpg",
+      "slug": "tensor-correa-de-tiempo-mecanico-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-90530-1240",
+          "brand": "Original",
+          "precio_usd": 35
+        }
       ]
     },
     {
-      "id": "97e9c6b0-9355-4a9f-8bb4-47b25e1624a9",
       "category": "Terminal",
-      "image_path": "./assets/terminal-externo-caribe-2-3.webp",
       "description": "TERMINAL EXTERNO CARIBE 2.3",
+      "id": "97e9c6b0-9355-4a9f-8bb4-47b25e1624a9",
+      "image_path": "./assets/terminal-externo-caribe-2-3.webp",
       "keywords": [
         "8-94237-3511",
         "CARIBE",
         "EXTERNO",
         "TERMINAL"
       ],
-      "oem": "8-94237-3511",
-      "slug": "terminal-externo-caribe-2-3",
-      "original_filename": "Terminal/97e9c6b0-9355-4a9f-8bb4-47b25e1624a9.jpg",
       "linked_ids": [
         964
+      ],
+      "oem": "8-94237-3511",
+      "original_filename": "Terminal/97e9c6b0-9355-4a9f-8bb4-47b25e1624a9.jpg",
+      "slug": "terminal-externo-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94237-3511",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-94237-3511",
+          "brand": "JAPON",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "25a38450-33a2-4483-918e-314755203c84",
       "category": "Terminal",
-      "image_path": "./assets/terminal-externo-caribe-2-6.webp",
       "description": "TERMINAL EXTERNO CARIBE 2.6",
+      "id": "25a38450-33a2-4483-918e-314755203c84",
+      "image_path": "./assets/terminal-externo-caribe-2-6.webp",
       "keywords": [
         "720IZ01A100",
         "8-94459-4800",
@@ -22229,18 +23462,30 @@ const PRODUCTS_DATA = {
         "EXTERNO",
         "TERMINAL"
       ],
-      "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
-      "slug": "terminal-externo-caribe-2-6",
-      "original_filename": "Terminal/25a38450-33a2-4483-918e-314755203c84.jpg",
       "linked_ids": [
         966
+      ],
+      "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
+      "original_filename": "Terminal/25a38450-33a2-4483-918e-314755203c84.jpg",
+      "slug": "terminal-externo-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-97304-9280",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97304-9280",
+          "brand": "JAPON",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "b013549c-9958-426c-b53c-865003e8f3c2",
       "category": "Terminal",
-      "image_path": "./assets/terminal-externo-caribe-g200.webp",
       "description": "TERMINAL EXTERNO CARIBE G200",
+      "id": "b013549c-9958-426c-b53c-865003e8f3c2",
+      "image_path": "./assets/terminal-externo-caribe-g200.webp",
       "keywords": [
         "8-94237-3511",
         "CARIBE",
@@ -22248,18 +23493,30 @@ const PRODUCTS_DATA = {
         "G200",
         "TERMINAL"
       ],
-      "oem": "8-94237-3511",
-      "slug": "terminal-externo-caribe-g200",
-      "original_filename": "Terminal/b013549c-9958-426c-b53c-865003e8f3c2.jpg",
       "linked_ids": [
         964
+      ],
+      "oem": "8-94237-3511",
+      "original_filename": "Terminal/b013549c-9958-426c-b53c-865003e8f3c2.jpg",
+      "slug": "terminal-externo-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94237-3511",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-94237-3511",
+          "brand": "JAPON",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "f97f8cb0-394c-4517-85cc-f55a3fc47457",
       "category": "Terminal",
-      "image_path": "./assets/terminal-externo-luv.webp",
       "description": "TERMINAL EXTERNO LUV",
+      "id": "f97f8cb0-394c-4517-85cc-f55a3fc47457",
+      "image_path": "./assets/terminal-externo-luv.webp",
       "keywords": [
         "720IZ01A100",
         "8-94459-4800",
@@ -22272,18 +23529,30 @@ const PRODUCTS_DATA = {
         "LUV",
         "TERMINAL"
       ],
+      "linked_ids": [
+        966
+      ],
       "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
-      "slug": "terminal-externo-luv",
       "original_filename": "Terminal/f97f8cb0-394c-4517-85cc-f55a3fc47457.jpg",
-      "linked_ids": [
-        966
+      "slug": "terminal-externo-luv",
+      "variants": [
+        {
+          "codigo_oem": "8-97304-9280",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97304-9280",
+          "brand": "JAPON",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "7b4cd375-c1e5-462f-a673-7bf051644f10",
       "category": "Terminal",
-      "image_path": "./assets/terminal-externo-luv-dmax.webp",
       "description": "TERMINAL EXTERNO LUV DMAX",
+      "id": "7b4cd375-c1e5-462f-a673-7bf051644f10",
+      "image_path": "./assets/terminal-externo-luv-dmax.webp",
       "keywords": [
         "720IZ01A100",
         "8-94459-4800",
@@ -22297,18 +23566,30 @@ const PRODUCTS_DATA = {
         "LUV",
         "TERMINAL"
       ],
+      "linked_ids": [
+        966
+      ],
       "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
-      "slug": "terminal-externo-luv-dmax",
       "original_filename": "Terminal/7b4cd375-c1e5-462f-a673-7bf051644f10.jpg",
-      "linked_ids": [
-        966
+      "slug": "terminal-externo-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "8-97304-9280",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97304-9280",
+          "brand": "JAPON",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "734dc7bf-0479-4a53-a219-0e96191cac45",
       "category": "Terminal",
-      "image_path": "./assets/terminal-externo-rodeo.webp",
       "description": "TERMINAL EXTERNO RODEO",
+      "id": "734dc7bf-0479-4a53-a219-0e96191cac45",
+      "image_path": "./assets/terminal-externo-rodeo.webp",
       "keywords": [
         "720IZ01A100",
         "8-94459-4800",
@@ -22321,18 +23602,30 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TERMINAL"
       ],
+      "linked_ids": [
+        966
+      ],
       "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
-      "slug": "terminal-externo-rodeo",
       "original_filename": "Terminal/734dc7bf-0479-4a53-a219-0e96191cac45.jpg",
-      "linked_ids": [
-        966
+      "slug": "terminal-externo-rodeo",
+      "variants": [
+        {
+          "codigo_oem": "8-97304-9280",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97304-9280",
+          "brand": "JAPON",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "994504e8-67fe-4eb3-acde-6323ce45b565",
       "category": "Terminal",
-      "image_path": "./assets/terminal-externo-trooper.webp",
       "description": "TERMINAL EXTERNO TROOPER",
+      "id": "994504e8-67fe-4eb3-acde-6323ce45b565",
+      "image_path": "./assets/terminal-externo-trooper.webp",
       "keywords": [
         "720IZ01A100",
         "8-94459-4800",
@@ -22345,18 +23638,30 @@ const PRODUCTS_DATA = {
         "TERMINAL",
         "TROOPER"
       ],
-      "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
-      "slug": "terminal-externo-trooper",
-      "original_filename": "Terminal/994504e8-67fe-4eb3-acde-6323ce45b565.jpg",
       "linked_ids": [
         966
+      ],
+      "oem": "8-97304-9280 / 720IZ01A100 / 8-94459-4800 / 8-97020-9531 / 8-97304-8550 / 8-98055-7460 / 8-98056-5510",
+      "original_filename": "Terminal/994504e8-67fe-4eb3-acde-6323ce45b565.jpg",
+      "slug": "terminal-externo-trooper",
+      "variants": [
+        {
+          "codigo_oem": "8-97304-9280",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97304-9280",
+          "brand": "JAPON",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "2162742a-0f74-4fb3-af4e-7ff35bdbddb2",
       "category": "Terminal",
-      "image_path": "./assets/terminal-interno-caribe-2-6.webp",
       "description": "TERMINAL INTERNO CARIBE 2.6",
+      "id": "2162742a-0f74-4fb3-af4e-7ff35bdbddb2",
+      "image_path": "./assets/terminal-interno-caribe-2-6.webp",
       "keywords": [
         "720IZ01A200",
         "8-97020-9542",
@@ -22365,18 +23670,30 @@ const PRODUCTS_DATA = {
         "INTERNO",
         "TERMINAL"
       ],
-      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
-      "slug": "terminal-interno-caribe-2-6",
-      "original_filename": "Terminal/2162742a-0f74-4fb3-af4e-7ff35bdbddb2.jpg",
       "linked_ids": [
         968
+      ],
+      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
+      "original_filename": "Terminal/2162742a-0f74-4fb3-af4e-7ff35bdbddb2.jpg",
+      "slug": "terminal-interno-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-97020-9542",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97020-9542",
+          "brand": "JAPON",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "7ccd7c76-6647-4be1-a2ed-a8dc0a96c3b2",
       "category": "Terminal",
-      "image_path": "./assets/terminal-interno-luv.webp",
       "description": "TERMINAL INTERNO LUV",
+      "id": "7ccd7c76-6647-4be1-a2ed-a8dc0a96c3b2",
+      "image_path": "./assets/terminal-interno-luv.webp",
       "keywords": [
         "720IZ01A200",
         "8-97020-9542",
@@ -22385,18 +23702,30 @@ const PRODUCTS_DATA = {
         "LUV",
         "TERMINAL"
       ],
-      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
-      "slug": "terminal-interno-luv",
-      "original_filename": "Terminal/7ccd7c76-6647-4be1-a2ed-a8dc0a96c3b2.jpg",
       "linked_ids": [
         968
+      ],
+      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
+      "original_filename": "Terminal/7ccd7c76-6647-4be1-a2ed-a8dc0a96c3b2.jpg",
+      "slug": "terminal-interno-luv",
+      "variants": [
+        {
+          "codigo_oem": "8-97020-9542",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97020-9542",
+          "brand": "JAPON",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "69eb1c6d-88f2-4c72-b26f-8e8dd8c9f1a2",
       "category": "Terminal",
-      "image_path": "./assets/terminal-interno-rodeo.webp",
       "description": "TERMINAL INTERNO RODEO",
+      "id": "69eb1c6d-88f2-4c72-b26f-8e8dd8c9f1a2",
+      "image_path": "./assets/terminal-interno-rodeo.webp",
       "keywords": [
         "720IZ01A200",
         "8-97020-9542",
@@ -22405,18 +23734,30 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TERMINAL"
       ],
-      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
-      "slug": "terminal-interno-rodeo",
-      "original_filename": "Terminal/69eb1c6d-88f2-4c72-b26f-8e8dd8c9f1a2.jpg",
       "linked_ids": [
         968
+      ],
+      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
+      "original_filename": "Terminal/69eb1c6d-88f2-4c72-b26f-8e8dd8c9f1a2.jpg",
+      "slug": "terminal-interno-rodeo",
+      "variants": [
+        {
+          "codigo_oem": "8-97020-9542",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97020-9542",
+          "brand": "JAPON",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "3c582fdb-1a6a-4d26-a42b-7598245ddb20",
       "category": "Terminal",
-      "image_path": "./assets/terminal-interno-trooper.webp",
       "description": "TERMINAL INTERNO TROOPER",
+      "id": "3c582fdb-1a6a-4d26-a42b-7598245ddb20",
+      "image_path": "./assets/terminal-interno-trooper.webp",
       "keywords": [
         "720IZ01A200",
         "8-97020-9542",
@@ -22425,18 +23766,30 @@ const PRODUCTS_DATA = {
         "TERMINAL",
         "TROOPER"
       ],
-      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
-      "slug": "terminal-interno-trooper",
-      "original_filename": "Terminal/3c582fdb-1a6a-4d26-a42b-7598245ddb20.jpg",
       "linked_ids": [
         968
+      ],
+      "oem": "8-97020-9542 / 720IZ01A200 / ES-2954",
+      "original_filename": "Terminal/3c582fdb-1a6a-4d26-a42b-7598245ddb20.jpg",
+      "slug": "terminal-interno-trooper",
+      "variants": [
+        {
+          "codigo_oem": "8-97020-9542",
+          "brand": "TAIWAN",
+          "precio_usd": 15
+        },
+        {
+          "codigo_oem": "8-97020-9542",
+          "brand": "JAPON",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "bc8026c9-e19e-4511-952c-a8e17b3fa823",
       "category": "Termostato",
-      "image_path": "./assets/termostato-caribe.webp",
       "description": "TERMOSTATO CARIBE",
+      "id": "bc8026c9-e19e-4511-952c-a8e17b3fa823",
+      "image_path": "./assets/termostato-caribe.webp",
       "keywords": [
         "8-94207-2171",
         "8-94336-0680",
@@ -22444,35 +23797,49 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "TERMOSTATO"
       ],
-      "oem": "8-94207-2171 / 8-94336-0690 / 8-94336-0680",
-      "slug": "termostato-caribe",
-      "original_filename": "Termostato/bc8026c9-e19e-4511-952c-a8e17b3fa823.jpg",
       "linked_ids": [
         975
+      ],
+      "oem": "8-94207-2171 / 8-94336-0690 / 8-94336-0680",
+      "original_filename": "Termostato/bc8026c9-e19e-4511-952c-a8e17b3fa823.jpg",
+      "slug": "termostato-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94207-2171",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "cf1399b7-7aa8-48b4-ad65-3ceff80af235",
       "category": "Termostato",
-      "image_path": "./assets/termostato-luv-2-2.webp",
       "description": "TERMOSTATO LUV 2.2",
+      "id": "cf1399b7-7aa8-48b4-ad65-3ceff80af235",
+      "image_path": "./assets/termostato-luv-2-2.webp",
       "keywords": [
-        "8-92063-6510",
+        "8-97361-7700",
         "LUV",
         "TERMOSTATO"
       ],
-      "oem": "8-92063-6510",
-      "slug": "termostato-luv-2-2",
-      "original_filename": "Termostato/cf1399b7-7aa8-48b4-ad65-3ceff80af235.jpg",
       "linked_ids": [
         977
+      ],
+      "oem": "8-97361-7700",
+      "original_filename": "Termostato/cf1399b7-7aa8-48b4-ad65-3ceff80af235.jpg",
+      "slug": "termostato-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-97361-7700",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "62c55850-2790-49c9-b9c7-5148dc3cc965",
       "category": "Termostato",
-      "image_path": "./assets/termostato-luv-2-3.webp",
       "description": "TERMOSTATO LUV 2.3",
+      "id": "62c55850-2790-49c9-b9c7-5148dc3cc965",
+      "image_path": "./assets/termostato-luv-2-3.webp",
       "keywords": [
         "8-94207-2171",
         "8-94336-0680",
@@ -22480,36 +23847,50 @@ const PRODUCTS_DATA = {
         "LUV",
         "TERMOSTATO"
       ],
-      "oem": "8-94207-2171 / 8-94336-0690 / 8-94336-0680",
-      "slug": "termostato-luv-2-3",
-      "original_filename": "Termostato/62c55850-2790-49c9-b9c7-5148dc3cc965.jpg",
       "linked_ids": [
         975
+      ],
+      "oem": "8-94207-2171 / 8-94336-0690 / 8-94336-0680",
+      "original_filename": "Termostato/62c55850-2790-49c9-b9c7-5148dc3cc965.jpg",
+      "slug": "termostato-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94207-2171",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "28bf5f3d-0887-4c21-95a1-62a5fb6e9106",
       "category": "Termostato",
-      "image_path": "./assets/termostato-luv-dmax-2-4.webp",
       "description": "TERMOSTATO LUV DMAX 2.4",
+      "id": "28bf5f3d-0887-4c21-95a1-62a5fb6e9106",
+      "image_path": "./assets/termostato-luv-dmax-2-4.webp",
       "keywords": [
-        "8-92063-6510",
+        "8-97361-7700",
         "DMAX",
         "LUV",
         "TERMOSTATO"
       ],
-      "oem": "8-92063-6510",
-      "slug": "termostato-luv-dmax-2-4",
-      "original_filename": "Termostato/28bf5f3d-0887-4c21-95a1-62a5fb6e9106.jpg",
       "linked_ids": [
         977
+      ],
+      "oem": "8-97361-7700",
+      "original_filename": "Termostato/28bf5f3d-0887-4c21-95a1-62a5fb6e9106.jpg",
+      "slug": "termostato-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-97361-7700",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "bc4cb6fd-a44e-4603-bc9d-bf60e701c66b",
       "category": "Termostato",
-      "image_path": "./assets/termostato-luv-dmax-2-5.webp",
       "description": "TERMOSTATO LUV DMAX 2.5",
+      "id": "bc4cb6fd-a44e-4603-bc9d-bf60e701c66b",
+      "image_path": "./assets/termostato-luv-dmax-2-5.webp",
       "keywords": [
         "8-97246-9730",
         "DMAX",
@@ -22517,18 +23898,25 @@ const PRODUCTS_DATA = {
         "TERMOSTATO",
         "WV64IA-85"
       ],
+      "linked_ids": [
+        1212
+      ],
       "oem": "8-97246-9730 / WV64IA-85",
-      "slug": "termostato-luv-dmax-2-5",
       "original_filename": "Termostato/bc4cb6fd-a44e-4603-bc9d-bf60e701c66b.jpg",
-      "linked_ids": [
-        1212
+      "slug": "termostato-luv-dmax-2-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97246-9730",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "4141343f-d6d3-4dac-81a3-5be5ff4363d3",
       "category": "Termostato",
-      "image_path": "./assets/termostato-luv-dmax-3-0.webp",
       "description": "TERMOSTATO LUV DMAX 3.0",
+      "id": "4141343f-d6d3-4dac-81a3-5be5ff4363d3",
+      "image_path": "./assets/termostato-luv-dmax-3-0.webp",
       "keywords": [
         "8-97246-9730",
         "DMAX",
@@ -22536,36 +23924,50 @@ const PRODUCTS_DATA = {
         "TERMOSTATO",
         "WV64IA-85"
       ],
-      "oem": "8-97246-9730 / WV64IA-85",
-      "slug": "termostato-luv-dmax-3-0",
-      "original_filename": "Termostato/4141343f-d6d3-4dac-81a3-5be5ff4363d3.jpg",
       "linked_ids": [
         1212
+      ],
+      "oem": "8-97246-9730 / WV64IA-85",
+      "original_filename": "Termostato/4141343f-d6d3-4dac-81a3-5be5ff4363d3.jpg",
+      "slug": "termostato-luv-dmax-3-0",
+      "variants": [
+        {
+          "codigo_oem": "8-97246-9730",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "da962c8a-b863-4530-b909-f95249ebd03b",
       "category": "Termostato",
-      "image_path": "./assets/termostato-luv-dmax-3-5.webp",
       "description": "TERMOSTATO LUV DMAX 3.5",
+      "id": "da962c8a-b863-4530-b909-f95249ebd03b",
+      "image_path": "./assets/termostato-luv-dmax-3-5.webp",
       "keywords": [
         "8-97362-8940",
         "DMAX",
         "LUV",
         "TERMOSTATO"
       ],
-      "oem": "8-97362-8940",
-      "slug": "termostato-luv-dmax-3-5",
-      "original_filename": "Termostato/da962c8a-b863-4530-b909-f95249ebd03b.jpg",
       "linked_ids": [
         979
+      ],
+      "oem": "8-97362-8940",
+      "original_filename": "Termostato/da962c8a-b863-4530-b909-f95249ebd03b.jpg",
+      "slug": "termostato-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97362-8940",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "cfd3e9f3-47c8-4718-ab98-881f9e3f8eca",
       "category": "Tope Araña",
-      "image_path": "./assets/topes-arana-caribe.webp",
       "description": "TOPES ARAÑA CARIBE",
+      "id": "cfd3e9f3-47c8-4718-ab98-881f9e3f8eca",
+      "image_path": "./assets/topes-arana-caribe.webp",
       "keywords": [
         "8-94223-1491",
         "ARANA",
@@ -22573,18 +23975,25 @@ const PRODUCTS_DATA = {
         "TOPE",
         "TOPES"
       ],
-      "oem": "8-94223-1491",
-      "slug": "topes-arana-caribe",
-      "original_filename": "Tope Araña/cfd3e9f3-47c8-4718-ab98-881f9e3f8eca.jpg",
       "linked_ids": [
         982
+      ],
+      "oem": "8-94223-1491",
+      "original_filename": "Tope Araña/cfd3e9f3-47c8-4718-ab98-881f9e3f8eca.jpg",
+      "slug": "topes-arana-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94223-1491",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "5a04cb16-d035-4c0f-ac41-64580556af5f",
       "category": "Tope Araña",
-      "image_path": "./assets/topes-arana-luv-2-3.webp",
       "description": "TOPES ARAÑA LUV 2.3",
+      "id": "5a04cb16-d035-4c0f-ac41-64580556af5f",
+      "image_path": "./assets/topes-arana-luv-2-3.webp",
       "keywords": [
         "8-94259-0860",
         "ARANA",
@@ -22592,18 +24001,25 @@ const PRODUCTS_DATA = {
         "TOPE",
         "TOPES"
       ],
-      "oem": "8-94259-0860",
-      "slug": "topes-arana-luv-2-3",
-      "original_filename": "Tope Araña/5a04cb16-d035-4c0f-ac41-64580556af5f.jpg",
       "linked_ids": [
         983
+      ],
+      "oem": "8-94259-0860",
+      "original_filename": "Tope Araña/5a04cb16-d035-4c0f-ac41-64580556af5f.jpg",
+      "slug": "topes-arana-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94259-0860",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "992c69f5-0ca9-4993-bb4e-a0a9f75ddc86",
       "category": "Tope Chasis",
-      "image_path": "./assets/tope-cabina-luv-2-3.webp",
       "description": "TOPE CABINA LUV 2.3",
+      "id": "992c69f5-0ca9-4993-bb4e-a0a9f75ddc86",
+      "image_path": "./assets/tope-cabina-luv-2-3.webp",
       "keywords": [
         "8-94234-8973",
         "8-94459-4522",
@@ -22612,18 +24028,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TOPE"
       ],
-      "oem": "8-94459-4522 / 8-94234-8973",
-      "slug": "tope-cabina-luv-2-3",
-      "original_filename": "Tope Chasis/992c69f5-0ca9-4993-bb4e-a0a9f75ddc86.jpg",
       "linked_ids": [
         981
+      ],
+      "oem": "8-94459-4522 / 8-94234-8973",
+      "original_filename": "Tope Chasis/992c69f5-0ca9-4993-bb4e-a0a9f75ddc86.jpg",
+      "slug": "tope-cabina-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94459-4522",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "a6a0b4e2-f7ed-463b-932f-342aabc6bfa4",
       "category": "Tope Meseta",
-      "image_path": "./assets/topes-meseta-caribe.webp",
       "description": "TOPES MESETA CARIBE",
+      "id": "a6a0b4e2-f7ed-463b-932f-342aabc6bfa4",
+      "image_path": "./assets/topes-meseta-caribe.webp",
       "keywords": [
         "8-94433-6730",
         "CARIBE",
@@ -22631,18 +24054,25 @@ const PRODUCTS_DATA = {
         "TOPE",
         "TOPES"
       ],
-      "oem": "8-94433-6730",
-      "slug": "topes-meseta-caribe",
-      "original_filename": "Tope Meseta/a6a0b4e2-f7ed-463b-932f-342aabc6bfa4.jpg",
       "linked_ids": [
         984
+      ],
+      "oem": "8-94433-6730",
+      "original_filename": "Tope Meseta/a6a0b4e2-f7ed-463b-932f-342aabc6bfa4.jpg",
+      "slug": "topes-meseta-caribe",
+      "variants": [
+        {
+          "codigo_oem": "8-94433-6730",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "d5ecce4f-cb36-4cfd-8f30-11ef5a367757",
       "category": "Tope Meseta",
-      "image_path": "./assets/topes-meseta-luv-2-3.webp",
       "description": "TOPES MESETA LUV 2.3",
+      "id": "d5ecce4f-cb36-4cfd-8f30-11ef5a367757",
+      "image_path": "./assets/topes-meseta-luv-2-3.webp",
       "keywords": [
         "8-94433-6730",
         "LUV",
@@ -22650,18 +24080,25 @@ const PRODUCTS_DATA = {
         "TOPE",
         "TOPES"
       ],
-      "oem": "8-94433-6730",
-      "slug": "topes-meseta-luv-2-3",
-      "original_filename": "Tope Meseta/d5ecce4f-cb36-4cfd-8f30-11ef5a367757.jpg",
       "linked_ids": [
         984
+      ],
+      "oem": "8-94433-6730",
+      "original_filename": "Tope Meseta/d5ecce4f-cb36-4cfd-8f30-11ef5a367757.jpg",
+      "slug": "topes-meseta-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94433-6730",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "f4c53e9e-73d7-4223-bfcf-f4264abf086a",
       "category": "Tornillo Barra Central",
-      "image_path": "./assets/tornillo-barra-central-caribe-2-3.webp",
       "description": "TORNILLO BARRA CENTRAL CARIBE 2.3",
+      "id": "f4c53e9e-73d7-4223-bfcf-f4264abf086a",
+      "image_path": "./assets/tornillo-barra-central-caribe-2-3.webp",
       "keywords": [
         "8-94237-3651",
         "BARRA",
@@ -22669,18 +24106,25 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "TORNILLO"
       ],
-      "oem": "8-94237-3651",
-      "slug": "tornillo-barra-central-caribe-2-3",
-      "original_filename": "Tornillo Barra Central/f4c53e9e-73d7-4223-bfcf-f4264abf086a.jpg",
       "linked_ids": [
         985
+      ],
+      "oem": "8-94237-3651",
+      "original_filename": "Tornillo Barra Central/f4c53e9e-73d7-4223-bfcf-f4264abf086a.jpg",
+      "slug": "tornillo-barra-central-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94237-3651",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "e39d143a-4679-48d4-8c9d-38fc25eb9974",
       "category": "Tornillo Barra Central",
-      "image_path": "./assets/tornillo-barra-central-caribe-g200.webp",
       "description": "TORNILLO BARRA CENTRAL CARIBE G200",
+      "id": "e39d143a-4679-48d4-8c9d-38fc25eb9974",
+      "image_path": "./assets/tornillo-barra-central-caribe-g200.webp",
       "keywords": [
         "8-94237-3651",
         "BARRA",
@@ -22689,18 +24133,25 @@ const PRODUCTS_DATA = {
         "G200",
         "TORNILLO"
       ],
-      "oem": "8-94237-3651",
-      "slug": "tornillo-barra-central-caribe-g200",
-      "original_filename": "Tornillo Barra Central/e39d143a-4679-48d4-8c9d-38fc25eb9974.jpg",
       "linked_ids": [
         985
+      ],
+      "oem": "8-94237-3651",
+      "original_filename": "Tornillo Barra Central/e39d143a-4679-48d4-8c9d-38fc25eb9974.jpg",
+      "slug": "tornillo-barra-central-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94237-3651",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "25ede39a-5904-4827-9e8e-2007afab5eff",
       "category": "Tornillo Barra Torsion",
-      "image_path": "./assets/tornillo-torsion-caribe-2-3.webp",
       "description": "TORNILLO TORSION CARIBE 2.3",
+      "id": "25ede39a-5904-4827-9e8e-2007afab5eff",
+      "image_path": "./assets/tornillo-torsion-caribe-2-3.webp",
       "keywords": [
         "8-94101-7070",
         "BARRA",
@@ -22708,18 +24159,25 @@ const PRODUCTS_DATA = {
         "TORNILLO",
         "TORSION"
       ],
-      "oem": "8-94101-7070",
-      "slug": "tornillo-torsion-caribe-2-3",
-      "original_filename": "Tornillo Barra Torsion/25ede39a-5904-4827-9e8e-2007afab5eff.jpg",
       "linked_ids": [
         991
+      ],
+      "oem": "8-94101-7070",
+      "original_filename": "Tornillo Barra Torsion/25ede39a-5904-4827-9e8e-2007afab5eff.jpg",
+      "slug": "tornillo-torsion-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94101-7070",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "71bfe7c4-1a42-4a53-bd09-a408c2e5a036",
       "category": "Tornillo Barra Torsion",
-      "image_path": "./assets/tornillo-torsion-caribe-2-6.webp",
       "description": "TORNILLO TORSION CARIBE 2.6",
+      "id": "71bfe7c4-1a42-4a53-bd09-a408c2e5a036",
+      "image_path": "./assets/tornillo-torsion-caribe-2-6.webp",
       "keywords": [
         "8-97033-1272",
         "BARRA",
@@ -22727,18 +24185,25 @@ const PRODUCTS_DATA = {
         "TORNILLO",
         "TORSION"
       ],
-      "oem": "8-97033-1272",
-      "slug": "tornillo-torsion-caribe-2-6",
-      "original_filename": "Tornillo Barra Torsion/71bfe7c4-1a42-4a53-bd09-a408c2e5a036.jpg",
       "linked_ids": [
         993
+      ],
+      "oem": "8-97033-1272",
+      "original_filename": "Tornillo Barra Torsion/71bfe7c4-1a42-4a53-bd09-a408c2e5a036.jpg",
+      "slug": "tornillo-torsion-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-97033-1272",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
-      "id": "652438e3-b9f1-43f8-82d1-7d448444e325",
       "category": "Tornillo de Camara",
-      "image_path": "./assets/tornillo-camara-luv-dmax-3-5.webp",
       "description": "TORNILLO CAMARA LUV DMAX 3.5",
+      "id": "652438e3-b9f1-43f8-82d1-7d448444e325",
+      "image_path": "./assets/tornillo-camara-luv-dmax-3-5.webp",
       "keywords": [
         "8-97011-9982",
         "CAMARA",
@@ -22746,18 +24211,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TORNILLO"
       ],
-      "oem": "8-97011-9982",
-      "slug": "tornillo-camara-luv-dmax-3-5",
-      "original_filename": "Tornillo de Camara/652438e3-b9f1-43f8-82d1-7d448444e325.jpg",
       "linked_ids": [
         989
+      ],
+      "oem": "8-97011-9982",
+      "original_filename": "Tornillo de Camara/652438e3-b9f1-43f8-82d1-7d448444e325.jpg",
+      "slug": "tornillo-camara-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97011-9982",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "37edd714-47db-45a6-9773-814ca5a782bc",
       "category": "Tornillo Lubricador Cadena de Tiempo",
-      "image_path": "./assets/tornillo-con-arandela-lubricadora-caribe-g200.webp",
       "description": "TORNILLO CON ARANDELA LUBRICADORA CARIBE G200",
+      "id": "37edd714-47db-45a6-9773-814ca5a782bc",
+      "image_path": "./assets/tornillo-con-arandela-lubricadora-caribe-g200.webp",
       "keywords": [
         "8-94200-7700",
         "ARANDELA",
@@ -22769,11 +24241,18 @@ const PRODUCTS_DATA = {
         "TIEMPO",
         "TORNILLO"
       ],
-      "oem": "8-94200-7700",
-      "slug": "tornillo-con-arandela-lubricadora-caribe-g200",
-      "original_filename": "Tornillo Lubricador Cadena de Tiempo/37edd714-47db-45a6-9773-814ca5a782bc.jpg",
       "linked_ids": [
         1211
+      ],
+      "oem": "8-94200-7700",
+      "original_filename": "Tornillo Lubricador Cadena de Tiempo/37edd714-47db-45a6-9773-814ca5a782bc.jpg",
+      "slug": "tornillo-con-arandela-lubricadora-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94200-7700",
+          "brand": "Original",
+          "precio_usd": 30
+        }
       ]
     },
     {
@@ -22967,10 +24446,10 @@ const PRODUCTS_DATA = {
       "slug": "tren-delantero-trooper-3-2-2"
     },
     {
-      "id": "69ee254f-6974-4ac7-bdd9-499b69f30951",
       "category": "Tubo Aire",
-      "image_path": "./assets/tubo-purificador-aire-caribe-2-6.webp",
       "description": "TUBO PURIFICADOR AIRE CARIBE 2.6",
+      "id": "69ee254f-6974-4ac7-bdd9-499b69f30951",
+      "image_path": "./assets/tubo-purificador-aire-caribe-2-6.webp",
       "keywords": [
         "8-94321-8420",
         "ACP1775",
@@ -22979,18 +24458,25 @@ const PRODUCTS_DATA = {
         "PURIFICADOR",
         "TUBO"
       ],
-      "oem": "8-94321-8420 / ACP1775",
-      "slug": "tubo-purificador-aire-caribe-2-6",
-      "original_filename": "Tubo Aire/69ee254f-6974-4ac7-bdd9-499b69f30951.jpg",
       "linked_ids": [
         1004
+      ],
+      "oem": "8-94321-8420 / ACP1775",
+      "original_filename": "Tubo Aire/69ee254f-6974-4ac7-bdd9-499b69f30951.jpg",
+      "slug": "tubo-purificador-aire-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94321-8420",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "25a923a5-834d-46dd-8b40-509c16ad1e02",
       "category": "Tubo Aire",
-      "image_path": "./assets/tubo-purificador-aire-luv-2-3.webp",
       "description": "TUBO PURIFICADOR AIRE LUV 2.3",
+      "id": "25a923a5-834d-46dd-8b40-509c16ad1e02",
+      "image_path": "./assets/tubo-purificador-aire-luv-2-3.webp",
       "keywords": [
         "8-94321-8420",
         "ACP1775",
@@ -22999,18 +24485,25 @@ const PRODUCTS_DATA = {
         "PURIFICADOR",
         "TUBO"
       ],
-      "oem": "8-94321-8420 / ACP1775",
-      "slug": "tubo-purificador-aire-luv-2-3",
-      "original_filename": "Tubo Aire/25a923a5-834d-46dd-8b40-509c16ad1e02.jpg",
       "linked_ids": [
         1004
+      ],
+      "oem": "8-94321-8420 / ACP1775",
+      "original_filename": "Tubo Aire/25a923a5-834d-46dd-8b40-509c16ad1e02.jpg",
+      "slug": "tubo-purificador-aire-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94321-8420",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "f6884a80-bc76-4e56-aae0-0770f48bbd79",
       "category": "Tubo Aire",
-      "image_path": "./assets/tubo-purificador-aire-luv-dmax-3-0.webp",
       "description": "TUBO PURIFICADOR AIRE LUV DMAX 3.0",
+      "id": "f6884a80-bc76-4e56-aae0-0770f48bbd79",
+      "image_path": "./assets/tubo-purificador-aire-luv-dmax-3-0.webp",
       "keywords": [
         "8-98123-4830",
         "ACP1776",
@@ -23020,18 +24513,25 @@ const PRODUCTS_DATA = {
         "PURIFICADOR",
         "TUBO"
       ],
-      "oem": "8-98123-4830 / ACP1776",
-      "slug": "tubo-purificador-aire-luv-dmax-3-0",
-      "original_filename": "Tubo Aire/f6884a80-bc76-4e56-aae0-0770f48bbd79.jpg",
       "linked_ids": [
         1005
+      ],
+      "oem": "8-98123-4830 / ACP1776",
+      "original_filename": "Tubo Aire/f6884a80-bc76-4e56-aae0-0770f48bbd79.jpg",
+      "slug": "tubo-purificador-aire-luv-dmax-3-0",
+      "variants": [
+        {
+          "codigo_oem": "8-98123-4830",
+          "brand": "Original",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "24b0c715-7c11-4fd6-b854-b2019b59604c",
       "category": "Tubo de Agua",
-      "image_path": "./assets/tubo-agua-central-luv-dmax-3-5.webp",
       "description": "TUBO AGUA CENTRAL LUV DMAX 3.5",
+      "id": "24b0c715-7c11-4fd6-b854-b2019b59604c",
+      "image_path": "./assets/tubo-agua-central-luv-dmax-3-5.webp",
       "keywords": [
         "2079",
         "8-92063-6530",
@@ -23041,18 +24541,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
-      "oem": "8-92063-6530 / 2079",
-      "slug": "tubo-agua-central-luv-dmax-3-5",
-      "original_filename": "Tubo de Agua/24b0c715-7c11-4fd6-b854-b2019b59604c.jpg",
       "linked_ids": [
         1000
+      ],
+      "oem": "8-92063-6530 / 2079",
+      "original_filename": "Tubo de Agua/24b0c715-7c11-4fd6-b854-b2019b59604c.jpg",
+      "slug": "tubo-agua-central-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-92063-6530",
+          "brand": "Original",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "6f357362-d324-4242-a527-740ccc44f281",
       "category": "Tubo de Agua",
-      "image_path": "./assets/tubo-agua-luv-dmax-2-5.webp",
       "description": "TUBO AGUA LUV DMAX 2.5",
+      "id": "6f357362-d324-4242-a527-740ccc44f281",
+      "image_path": "./assets/tubo-agua-luv-dmax-2-5.webp",
       "keywords": [
         "8-97381-6330",
         "AGUA",
@@ -23060,18 +24567,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
+      "linked_ids": [
+        995
+      ],
       "oem": "8-97381-6330",
-      "slug": "tubo-agua-luv-dmax-2-5",
       "original_filename": "Tubo de Agua/6f357362-d324-4242-a527-740ccc44f281.jpg",
-      "linked_ids": [
-        995
+      "slug": "tubo-agua-luv-dmax-2-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97381-6330",
+          "brand": "Original",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "9cc770be-5d33-4e75-ae99-909bd3aa481b",
       "category": "Tubo de Agua",
-      "image_path": "./assets/tubo-agua-luv-dmax-3-0.webp",
       "description": "TUBO AGUA LUV DMAX 3.0",
+      "id": "9cc770be-5d33-4e75-ae99-909bd3aa481b",
+      "image_path": "./assets/tubo-agua-luv-dmax-3-0.webp",
       "keywords": [
         "8-97381-6330",
         "AGUA",
@@ -23079,18 +24593,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "TUBO"
       ],
-      "oem": "8-97381-6330",
-      "slug": "tubo-agua-luv-dmax-3-0",
-      "original_filename": "Tubo de Agua/9cc770be-5d33-4e75-ae99-909bd3aa481b.jpg",
       "linked_ids": [
         995
+      ],
+      "oem": "8-97381-6330",
+      "original_filename": "Tubo de Agua/9cc770be-5d33-4e75-ae99-909bd3aa481b.jpg",
+      "slug": "tubo-agua-luv-dmax-3-0",
+      "variants": [
+        {
+          "codigo_oem": "8-97381-6330",
+          "brand": "Original",
+          "precio_usd": 45
+        }
       ]
     },
     {
-      "id": "517ee0a6-ba59-4b28-ac97-9348d01d687d",
       "category": "Tubo de Agua",
-      "image_path": "./assets/tubo-agua-pequeno-luv-2-3.webp",
       "description": "TUBO AGUA PEQUEÑO LUV 2.3",
+      "id": "517ee0a6-ba59-4b28-ac97-9348d01d687d",
+      "image_path": "./assets/tubo-agua-pequeno-luv-2-3.webp",
       "keywords": [
         "ACT013",
         "AGUA",
@@ -23098,11 +24619,18 @@ const PRODUCTS_DATA = {
         "PEQUENO",
         "TUBO"
       ],
-      "oem": "ACT013",
-      "slug": "tubo-agua-pequeno-luv-2-3",
-      "original_filename": "Tubo de Agua/517ee0a6-ba59-4b28-ac97-9348d01d687d.jpg",
       "linked_ids": [
         1003
+      ],
+      "oem": "ACT013",
+      "original_filename": "Tubo de Agua/517ee0a6-ba59-4b28-ac97-9348d01d687d.jpg",
+      "slug": "tubo-agua-pequeno-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "ACT013",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
@@ -23248,10 +24776,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "e18c4ae5-bd99-479b-b89b-7cc44bb5487a",
       "category": "Tuerca Punta de Eje",
-      "image_path": "./assets/tuerca-punta-eje-trasera-caribe-2-3.webp",
       "description": "TUERCA PUNTA EJE TRASERA CARIBE 2.3",
+      "id": "e18c4ae5-bd99-479b-b89b-7cc44bb5487a",
+      "image_path": "./assets/tuerca-punta-eje-trasera-caribe-2-3.webp",
       "keywords": [
         "8-94177-8150",
         "9-09843-0400",
@@ -23261,18 +24789,25 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TUERCA"
       ],
-      "oem": "9-09843-0400 / 8-94177-8150",
-      "slug": "tuerca-punta-eje-trasera-caribe-2-3",
-      "original_filename": "Tuerca Punta de Eje/e18c4ae5-bd99-479b-b89b-7cc44bb5487a.jpg",
       "linked_ids": [
         1008
+      ],
+      "oem": "9-09843-0400 / 8-94177-8150",
+      "original_filename": "Tuerca Punta de Eje/e18c4ae5-bd99-479b-b89b-7cc44bb5487a.jpg",
+      "slug": "tuerca-punta-eje-trasera-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "9-09843-0400",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "28823605-f9b4-49ab-b58a-380a47f1e677",
       "category": "Tuerca Punta de Eje",
-      "image_path": "./assets/tuerca-punta-eje-trasera-caribe-2-6.webp",
       "description": "TUERCA PUNTA EJE TRASERA CARIBE 2.6",
+      "id": "28823605-f9b4-49ab-b58a-380a47f1e677",
+      "image_path": "./assets/tuerca-punta-eje-trasera-caribe-2-6.webp",
       "keywords": [
         "8-94178-2780",
         "CARIBE",
@@ -23281,18 +24816,25 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TUERCA"
       ],
-      "oem": "8-94178-2780",
-      "slug": "tuerca-punta-eje-trasera-caribe-2-6",
-      "original_filename": "Tuerca Punta de Eje/28823605-f9b4-49ab-b58a-380a47f1e677.jpg",
       "linked_ids": [
         1009
+      ],
+      "oem": "8-94178-2780",
+      "original_filename": "Tuerca Punta de Eje/28823605-f9b4-49ab-b58a-380a47f1e677.jpg",
+      "slug": "tuerca-punta-eje-trasera-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94178-2780",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "8506ea90-a1c2-4570-a2e7-e83244dd3e0d",
       "category": "Tuerca Punta de Eje",
-      "image_path": "./assets/tuerca-punta-eje-trasera-caribe-g200.webp",
       "description": "TUERCA PUNTA EJE TRASERA CARIBE G200",
+      "id": "8506ea90-a1c2-4570-a2e7-e83244dd3e0d",
+      "image_path": "./assets/tuerca-punta-eje-trasera-caribe-g200.webp",
       "keywords": [
         "8-94177-8150",
         "9-09843-0400",
@@ -23303,18 +24845,25 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TUERCA"
       ],
-      "oem": "9-09843-0400 / 8-94177-8150",
-      "slug": "tuerca-punta-eje-trasera-caribe-g200",
-      "original_filename": "Tuerca Punta de Eje/8506ea90-a1c2-4570-a2e7-e83244dd3e0d.jpg",
       "linked_ids": [
         1008
+      ],
+      "oem": "9-09843-0400 / 8-94177-8150",
+      "original_filename": "Tuerca Punta de Eje/8506ea90-a1c2-4570-a2e7-e83244dd3e0d.jpg",
+      "slug": "tuerca-punta-eje-trasera-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "9-09843-0400",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "f27ffcbb-29cf-492e-8dbd-7dc73199191f",
       "category": "Tuerca Punta de Eje",
-      "image_path": "./assets/tuerca-punta-eje-trasera-luv-2-3.webp",
       "description": "TUERCA PUNTA EJE TRASERA LUV 2.3",
+      "id": "f27ffcbb-29cf-492e-8dbd-7dc73199191f",
+      "image_path": "./assets/tuerca-punta-eje-trasera-luv-2-3.webp",
       "keywords": [
         "8-94178-2780",
         "EJE",
@@ -23323,18 +24872,111 @@ const PRODUCTS_DATA = {
         "TRASERA",
         "TUERCA"
       ],
-      "oem": "8-94178-2780",
-      "slug": "tuerca-punta-eje-trasera-luv-2-3",
-      "original_filename": "Tuerca Punta de Eje/f27ffcbb-29cf-492e-8dbd-7dc73199191f.jpg",
       "linked_ids": [
         1009
+      ],
+      "oem": "8-94178-2780",
+      "original_filename": "Tuerca Punta de Eje/f27ffcbb-29cf-492e-8dbd-7dc73199191f.jpg",
+      "slug": "tuerca-punta-eje-trasera-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94178-2780",
+          "brand": "Original",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "fb2381a2-9e4e-4475-b1c5-3dea9258eeff",
+      "id": "41c42e49-d2ec-438b-9c2c-3f7f3aff8308",
+      "category": "Union Terminal",
+      "image_path": "./assets/union-terminal-caribe-2-6.webp",
+      "description": "UNION TERMINAL CARIBE 2.6",
+      "keywords": [
+        "8-94419-4072",
+        "CARIBE",
+        "TERMINAL",
+        "UNION"
+      ],
+      "oem": "8-94419-4072",
+      "slug": "union-terminal-caribe-2-6",
+      "original_filename": "Union Terminal/41c42e49-d2ec-438b-9c2c-3f7f3aff8308.jpg",
+      "linked_ids": [
+        1010
+      ]
+    },
+    {
+      "id": "0b8d41bd-7378-4c01-80f4-761296fcdfca",
+      "category": "Union Terminal",
+      "image_path": "./assets/union-terminal-luv.webp",
+      "description": "UNION TERMINAL LUV",
+      "keywords": [
+        "8-94419-4000",
+        "LUV",
+        "TERMINAL",
+        "UNION"
+      ],
+      "oem": "8-94419-4000",
+      "slug": "union-terminal-luv",
+      "original_filename": "Union Terminal/0b8d41bd-7378-4c01-80f4-761296fcdfca.jpg",
+      "linked_ids": [
+        1011
+      ]
+    },
+    {
+      "category": "Union Terminal",
+      "description": "UNION TERMINAL RODEO",
+      "id": "cba1beab-5edd-4969-aec8-7f0339be681d",
+      "image_path": "./assets/union-terminal-rodeo.webp",
+      "keywords": [
+        "8-94419-4000",
+        "RODEO",
+        "TERMINAL",
+        "UNION"
+      ],
+      "linked_ids": [
+        1011
+      ],
+      "oem": "8-94419-4000",
+      "original_filename": "Union Terminal/cba1beab-5edd-4969-aec8-7f0339be681d.jpg",
+      "slug": "union-terminal-rodeo",
+      "variants": [
+        {
+          "codigo_oem": "8-94419-4000",
+          "brand": "Original",
+          "precio_usd": 25
+        }
+      ]
+    },
+    {
+      "category": "Union Terminal",
+      "description": "UNION TERMINAL TROOPER",
+      "id": "f2fba6a6-cf8e-4b7b-9ee7-caca5e8417d6",
+      "image_path": "./assets/union-terminaltrooper.webp",
+      "keywords": [
+        "8-94419-4000",
+        "TERMINAL",
+        "TROOPER",
+        "UNION"
+      ],
+      "linked_ids": [
+        1011
+      ],
+      "oem": "8-94419-4000",
+      "original_filename": "Union Terminal/f2fba6a6-cf8e-4b7b-9ee7-caca5e8417d6.jpg",
+      "slug": "union-terminaltrooper",
+      "variants": [
+        {
+          "codigo_oem": "8-94419-4000",
+          "brand": "Original",
+          "precio_usd": 25
+        }
+      ]
+    },
+    {
       "category": "Vacum Distribuidor",
-      "image_path": "./assets/vacum-distribuidor-caribe-luv-2-3.webp",
       "description": "VACUM DISTRIBUIDOR CARIBE / LUV 2.3",
+      "id": "fb2381a2-9e4e-4475-b1c5-3dea9258eeff",
+      "image_path": "./assets/vacum-distribuidor-caribe-luv-2-3.webp",
       "keywords": [
         "8-94321-5320",
         "8-94413-4470",
@@ -23343,18 +24985,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "VACUM"
       ],
-      "oem": "8-94321-5320 / 8-94413-4470",
-      "slug": "vacum-distribuidor-caribe-luv-2-3",
-      "original_filename": "Vacum Distribuidor/fb2381a2-9e4e-4475-b1c5-3dea9258eeff.jpg",
       "linked_ids": [
         1012
+      ],
+      "oem": "8-94321-5320 / 8-94413-4470",
+      "original_filename": "Vacum Distribuidor/fb2381a2-9e4e-4475-b1c5-3dea9258eeff.jpg",
+      "slug": "vacum-distribuidor-caribe-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94321-5320",
+          "brand": "Original",
+          "precio_usd": 55
+        }
       ]
     },
     {
-      "id": "a8268e67-f275-4d84-b031-724791d268df",
       "category": "Vacum Distribuidor",
-      "image_path": "./assets/vacum-distribuidor-caribe-2-6.webp",
       "description": "VACUM DISTRIBUIDOR CARIBE 2.6",
+      "id": "a8268e67-f275-4d84-b031-724791d268df",
+      "image_path": "./assets/vacum-distribuidor-caribe-2-6.webp",
       "keywords": [
         "8-94321-5320",
         "8-94413-4470",
@@ -23362,18 +25011,25 @@ const PRODUCTS_DATA = {
         "DISTRIBUIDOR",
         "VACUM"
       ],
-      "oem": "8-94321-5320 / 8-94413-4470",
-      "slug": "vacum-distribuidor-caribe-2-6",
-      "original_filename": "Vacum Distribuidor/a8268e67-f275-4d84-b031-724791d268df.jpg",
       "linked_ids": [
         1012
+      ],
+      "oem": "8-94321-5320 / 8-94413-4470",
+      "original_filename": "Vacum Distribuidor/a8268e67-f275-4d84-b031-724791d268df.jpg",
+      "slug": "vacum-distribuidor-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94321-5320",
+          "brand": "Original",
+          "precio_usd": 55
+        }
       ]
     },
     {
-      "id": "c2d4c285-4c97-420c-86d8-6e30a51a6980",
       "category": "Valvula Admision y Escape",
-      "image_path": "./assets/valvula-admision-luv-dmax-3-5.webp",
       "description": "VALVULA ADMISION LUV DMAX 3.5",
+      "id": "c2d4c285-4c97-420c-86d8-6e30a51a6980",
+      "image_path": "./assets/valvula-admision-luv-dmax-3-5.webp",
       "keywords": [
         "8-97131-9610",
         "8-97169-8070",
@@ -23383,18 +25039,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "oem": "8-97131-9610 / 8-97169-8070",
-      "slug": "valvula-admision-luv-dmax-3-5",
-      "original_filename": "Valvula Admision y Escape/c2d4c285-4c97-420c-86d8-6e30a51a6980.jpg",
       "linked_ids": [
         1017
+      ],
+      "oem": "8-97131-9610 / 8-97169-8070",
+      "original_filename": "Valvula Admision y Escape/c2d4c285-4c97-420c-86d8-6e30a51a6980.jpg",
+      "slug": "valvula-admision-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97131-9610",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "9763096e-f6d0-485f-9aa6-c6048be315b4",
       "category": "Valvula Admision y Escape",
-      "image_path": "./assets/valvula-escape-luv-dmax-3-5.webp",
       "description": "VALVULA ESCAPE LUV DMAX 3.5",
+      "id": "9763096e-f6d0-485f-9aa6-c6048be315b4",
+      "image_path": "./assets/valvula-escape-luv-dmax-3-5.webp",
       "keywords": [
         "8-97131-9620",
         "8-97169-8080",
@@ -23404,11 +25067,18 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "oem": "8-97131-9620 / 8-97169-8080",
-      "slug": "valvula-escape-luv-dmax-3-5",
-      "original_filename": "Valvula Admision y Escape/9763096e-f6d0-485f-9aa6-c6048be315b4.jpg",
       "linked_ids": [
         1082
+      ],
+      "oem": "8-97131-9620 / 8-97169-8080",
+      "original_filename": "Valvula Admision y Escape/9763096e-f6d0-485f-9aa6-c6048be315b4.jpg",
+      "slug": "valvula-escape-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97131-9620",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
@@ -23679,10 +25349,32 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "cc9707f4-2b17-4b0f-8b47-24841355e76b",
+      "id": "5a2829dd-c1b6-4f0d-9851-f71a64b044cd",
+      "category": "Valvula EGR",
+      "image_path": "./assets/valvula-desfogue-de-gases-egr-luv-dmax-2-4.webp",
+      "description": "VALVULA DESFOGUE DE GASES (EGR) LUV DMAX 2.4",
+      "keywords": [
+        "8-01997-2100",
+        "96334843",
+        "DESFOGUE",
+        "DMAX",
+        "EGR",
+        "GASES",
+        "LUV",
+        "VALVULA"
+      ],
+      "oem": "8-01997-2100 / 96334843",
+      "slug": "valvula-desfogue-de-gases-egr-luv-dmax-2-4",
+      "original_filename": "Valvula EGR/5a2829dd-c1b6-4f0d-9851-f71a64b044cd.jpg",
+      "linked_ids": [
+        1202
+      ]
+    },
+    {
       "category": "Valvula Freno",
-      "image_path": "./assets/valvula-freno-luv-dmax-3-5.webp",
       "description": "VALVULA FRENO LUV DMAX 3.5",
+      "id": "cc9707f4-2b17-4b0f-8b47-24841355e76b",
+      "image_path": "./assets/valvula-freno-luv-dmax-3-5.webp",
       "keywords": [
         "8-97301-6840",
         "8-97327-1560",
@@ -23691,18 +25383,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "oem": "8-97301-6840 / 8-97327-1560",
-      "slug": "valvula-freno-luv-dmax-3-5",
-      "original_filename": "Valvula Freno/cc9707f4-2b17-4b0f-8b47-24841355e76b.jpg",
       "linked_ids": [
         1022
+      ],
+      "oem": "8-97301-6840 / 8-97327-1560",
+      "original_filename": "Valvula Freno/cc9707f4-2b17-4b0f-8b47-24841355e76b.jpg",
+      "slug": "valvula-freno-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97301-6840",
+          "brand": "Original",
+          "precio_usd": 15
+        }
       ]
     },
     {
-      "id": "de1c4da8-0886-49e8-9a9c-ca38edd14b45",
       "category": "Valvula IAC",
-      "image_path": "./assets/valvula-control-de-aire-iac-luv-2-2.webp",
       "description": "VALVULA CONTROL DE AIRE (IAC) LUV 2.2",
+      "id": "de1c4da8-0886-49e8-9a9c-ca38edd14b45",
+      "image_path": "./assets/valvula-control-de-aire-iac-luv-2-2.webp",
       "keywords": [
         "8-17112-6480",
         "8-92061-8980",
@@ -23712,18 +25411,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "oem": "8-92061-8980 / 8-17112-6480",
-      "slug": "valvula-control-de-aire-iac-luv-2-2",
-      "original_filename": "Valvula IAC/de1c4da8-0886-49e8-9a9c-ca38edd14b45.jpg",
       "linked_ids": [
         1020
+      ],
+      "oem": "8-92061-8980 / 8-17112-6480",
+      "original_filename": "Valvula IAC/de1c4da8-0886-49e8-9a9c-ca38edd14b45.jpg",
+      "slug": "valvula-control-de-aire-iac-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-92061-8980",
+          "brand": "Original",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "6ede4589-ad4c-4247-8bf1-eb4d1f3ee9ec",
       "category": "Valvula IAC",
-      "image_path": "./assets/valvula-control-de-aire-iac-luv-dmax-2-4.webp",
       "description": "VALVULA CONTROL DE AIRE (IAC) LUV DMAX 2.4",
+      "id": "6ede4589-ad4c-4247-8bf1-eb4d1f3ee9ec",
+      "image_path": "./assets/valvula-control-de-aire-iac-luv-dmax-2-4.webp",
       "keywords": [
         "8-17112-6480",
         "8-92061-8980",
@@ -23734,18 +25440,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "oem": "8-92061-8980 / 8-17112-6480",
-      "slug": "valvula-control-de-aire-iac-luv-dmax-2-4",
-      "original_filename": "Valvula IAC/6ede4589-ad4c-4247-8bf1-eb4d1f3ee9ec.jpg",
       "linked_ids": [
         1020
+      ],
+      "oem": "8-92061-8980 / 8-17112-6480",
+      "original_filename": "Valvula IAC/6ede4589-ad4c-4247-8bf1-eb4d1f3ee9ec.jpg",
+      "slug": "valvula-control-de-aire-iac-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-92061-8980",
+          "brand": "Original",
+          "precio_usd": 0
+        }
       ]
     },
     {
-      "id": "badf4f3f-771a-447a-8c0b-d57c64f6899b",
       "category": "Valvula IAC",
-      "image_path": "./assets/valvula-control-de-aire-iac-luv-dmax-3-5.webp",
       "description": "VALVULA CONTROL DE AIRE (IAC) LUV DMAX 3.5",
+      "id": "badf4f3f-771a-447a-8c0b-d57c64f6899b",
+      "image_path": "./assets/valvula-control-de-aire-iac-luv-dmax-3-5.webp",
       "keywords": [
         "8-97181-7180",
         "AIRE",
@@ -23755,18 +25468,25 @@ const PRODUCTS_DATA = {
         "LUV",
         "VALVULA"
       ],
-      "oem": "8-97181-7180",
-      "slug": "valvula-control-de-aire-iac-luv-dmax-3-5",
-      "original_filename": "Valvula IAC/badf4f3f-771a-447a-8c0b-d57c64f6899b.jpg",
       "linked_ids": [
         1019
+      ],
+      "oem": "8-97181-7180",
+      "original_filename": "Valvula IAC/badf4f3f-771a-447a-8c0b-d57c64f6899b.jpg",
+      "slug": "valvula-control-de-aire-iac-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97181-7180",
+          "brand": "Original",
+          "precio_usd": 25
+        }
       ]
     },
     {
-      "id": "2dc96f12-2f9d-4b46-91f6-ec3f28bfd448",
       "category": "Valvula IAC",
-      "image_path": "./assets/valvula-control-de-aire-iac-trooper-3-2.webp",
       "description": "VALVULA CONTROL DE AIRE (IAC) TROOPER 3.2",
+      "id": "2dc96f12-2f9d-4b46-91f6-ec3f28bfd448",
+      "image_path": "./assets/valvula-control-de-aire-iac-trooper-3-2.webp",
       "keywords": [
         "8-17112-6480",
         "8-92061-8980",
@@ -23776,11 +25496,18 @@ const PRODUCTS_DATA = {
         "TROOPER",
         "VALVULA"
       ],
-      "oem": "8-92061-8980 / 8-17112-6480",
-      "slug": "valvula-control-de-aire-iac-trooper-3-2",
-      "original_filename": "Valvula IAC/2dc96f12-2f9d-4b46-91f6-ec3f28bfd448.jpg",
       "linked_ids": [
         1020
+      ],
+      "oem": "8-92061-8980 / 8-17112-6480",
+      "original_filename": "Valvula IAC/2dc96f12-2f9d-4b46-91f6-ec3f28bfd448.jpg",
+      "slug": "valvula-control-de-aire-iac-trooper-3-2",
+      "variants": [
+        {
+          "codigo_oem": "8-92061-8980",
+          "brand": "Original",
+          "precio_usd": 0
+        }
       ]
     },
     {
@@ -23803,7 +25530,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94312-0250",
           "brand": "Original",
-          "precio_usd": 30
+          "precio_usd": 45
         }
       ]
     },
@@ -23827,7 +25554,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94312-0250",
           "brand": "Original",
-          "precio_usd": 30
+          "precio_usd": 45
         }
       ]
     },
@@ -23851,7 +25578,33 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94312-0250",
           "brand": "Original",
-          "precio_usd": 30
+          "precio_usd": 45
+        }
+      ]
+    },
+    {
+      "category": "Valvula PCV",
+      "description": "VALVULA PCV LUV 2.3",
+      "id": "01dc0316-2ad8-40c8-9cf1-0a7f901c7bcd",
+      "image_path": "./assets/valvula-pcv-luv-2-3.webp",
+      "keywords": [
+        "8-94152-8590",
+        "8-94331-2090",
+        "LUV",
+        "PCV",
+        "VALVULA"
+      ],
+      "linked_ids": [
+        1024
+      ],
+      "oem": "8-94152-8590 / 8-94331-2090",
+      "original_filename": "Valvula PCV/01dc0316-2ad8-40c8-9cf1-0a7f901c7bcd.jpg",
+      "slug": "valvula-pcv-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94152-8590",
+          "brand": "Original",
+          "precio_usd": 10
         }
       ]
     },
@@ -23906,10 +25659,10 @@ const PRODUCTS_DATA = {
       ]
     },
     {
-      "id": "b65c487c-54d3-476b-9dd5-b6482b07b887",
       "category": "Valvula Presion Aceite",
-      "image_path": "./assets/valvula-presion-aceite-caribe.webp",
       "description": "VALVULA PRESION ACEITE CARIBE",
+      "id": "b65c487c-54d3-476b-9dd5-b6482b07b887",
+      "image_path": "./assets/valvula-presion-aceite-caribe.webp",
       "keywords": [
         "8-94312-9400",
         "8-98013-0140",
@@ -23919,18 +25672,25 @@ const PRODUCTS_DATA = {
         "PRESION",
         "VALVULA"
       ],
-      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
-      "slug": "valvula-presion-aceite-caribe",
-      "original_filename": "Valvula Presion Aceite/b65c487c-54d3-476b-9dd5-b6482b07b887.jpg",
       "linked_ids": [
         1027
+      ],
+      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
+      "original_filename": "Valvula Presion Aceite/b65c487c-54d3-476b-9dd5-b6482b07b887.jpg",
+      "slug": "valvula-presion-aceite-caribe",
+      "variants": [
+        {
+          "codigo_oem": "9-82720-2092",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "66ad027d-3484-4f23-9753-ddb2e9318e9c",
       "category": "Valvula Presion Aceite",
-      "image_path": "./assets/valvula-presion-aceite-luv-2-3.webp",
       "description": "VALVULA PRESION ACEITE LUV 2.3",
+      "id": "66ad027d-3484-4f23-9753-ddb2e9318e9c",
+      "image_path": "./assets/valvula-presion-aceite-luv-2-3.webp",
       "keywords": [
         "8-94312-9400",
         "8-98013-0140",
@@ -23940,18 +25700,25 @@ const PRODUCTS_DATA = {
         "PRESION",
         "VALVULA"
       ],
-      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
-      "slug": "valvula-presion-aceite-luv-2-3",
-      "original_filename": "Valvula Presion Aceite/66ad027d-3484-4f23-9753-ddb2e9318e9c.jpg",
       "linked_ids": [
         1027
+      ],
+      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
+      "original_filename": "Valvula Presion Aceite/66ad027d-3484-4f23-9753-ddb2e9318e9c.jpg",
+      "slug": "valvula-presion-aceite-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "9-82720-2092",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "91559b4b-25fc-4f1d-8af2-d601bdd6226d",
       "category": "Valvula Presion Aceite",
-      "image_path": "./assets/valvula-presion-aceite-luv-dmax-3-5.webp",
       "description": "VALVULA PRESION ACEITE LUV DMAX 3.5",
+      "id": "91559b4b-25fc-4f1d-8af2-d601bdd6226d",
+      "image_path": "./assets/valvula-presion-aceite-luv-dmax-3-5.webp",
       "keywords": [
         "8-94312-9400",
         "8-98013-0140",
@@ -23962,18 +25729,25 @@ const PRODUCTS_DATA = {
         "PRESION",
         "VALVULA"
       ],
-      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
-      "slug": "valvula-presion-aceite-luv-dmax-3-5",
-      "original_filename": "Valvula Presion Aceite/91559b4b-25fc-4f1d-8af2-d601bdd6226d.jpg",
       "linked_ids": [
         1027
+      ],
+      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
+      "original_filename": "Valvula Presion Aceite/91559b4b-25fc-4f1d-8af2-d601bdd6226d.jpg",
+      "slug": "valvula-presion-aceite-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "9-82720-2092",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "af8fc77b-a73e-479e-a539-3a82f7d6d565",
       "category": "Valvula Retroceso",
-      "image_path": "./assets/valvula-retroceso-caribe-2-3.webp",
       "description": "VALVULA RETROCESO CARIBE 2.3",
+      "id": "af8fc77b-a73e-479e-a539-3a82f7d6d565",
+      "image_path": "./assets/valvula-retroceso-caribe-2-3.webp",
       "keywords": [
         "8-94411-3661",
         "8-94464-5660",
@@ -23982,18 +25756,30 @@ const PRODUCTS_DATA = {
         "RETROCESO",
         "VALVULA"
       ],
-      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
-      "slug": "valvula-retroceso-caribe-2-3",
-      "original_filename": "Valvula Retroceso/af8fc77b-a73e-479e-a539-3a82f7d6d565.jpg",
       "linked_ids": [
         1029
+      ],
+      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
+      "original_filename": "Valvula Retroceso/af8fc77b-a73e-479e-a539-3a82f7d6d565.jpg",
+      "slug": "valvula-retroceso-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94411-3661",
+          "brand": "WMC",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-94411-3661",
+          "brand": "GEN",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "0acc51cc-142c-4fd5-9b17-767ce21bc42b",
       "category": "Valvula Retroceso",
-      "image_path": "./assets/valvula-retroceso-caribe-g200.webp",
       "description": "VALVULA RETROCESO CARIBE G200",
+      "id": "0acc51cc-142c-4fd5-9b17-767ce21bc42b",
+      "image_path": "./assets/valvula-retroceso-caribe-g200.webp",
       "keywords": [
         "8-94411-3661",
         "8-94464-5660",
@@ -24003,18 +25789,30 @@ const PRODUCTS_DATA = {
         "RETROCESO",
         "VALVULA"
       ],
-      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
-      "slug": "valvula-retroceso-caribe-g200",
-      "original_filename": "Valvula Retroceso/0acc51cc-142c-4fd5-9b17-767ce21bc42b.jpg",
       "linked_ids": [
         1029
+      ],
+      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
+      "original_filename": "Valvula Retroceso/0acc51cc-142c-4fd5-9b17-767ce21bc42b.jpg",
+      "slug": "valvula-retroceso-caribe-g200",
+      "variants": [
+        {
+          "codigo_oem": "8-94411-3661",
+          "brand": "WMC",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-94411-3661",
+          "brand": "GEN",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "87e5c3a8-4ac7-4bcd-a0ae-ea150f241fff",
       "category": "Valvula Retroceso",
-      "image_path": "./assets/valvula-retroceso-luv.webp",
       "description": "VALVULA RETROCESO LUV",
+      "id": "87e5c3a8-4ac7-4bcd-a0ae-ea150f241fff",
+      "image_path": "./assets/valvula-retroceso-luv.webp",
       "keywords": [
         "8-94411-3661",
         "8-94464-5660",
@@ -24023,18 +25821,30 @@ const PRODUCTS_DATA = {
         "RETROCESO",
         "VALVULA"
       ],
-      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
-      "slug": "valvula-retroceso-luv",
-      "original_filename": "Valvula Retroceso/87e5c3a8-4ac7-4bcd-a0ae-ea150f241fff.jpg",
       "linked_ids": [
         1029
+      ],
+      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
+      "original_filename": "Valvula Retroceso/87e5c3a8-4ac7-4bcd-a0ae-ea150f241fff.jpg",
+      "slug": "valvula-retroceso-luv",
+      "variants": [
+        {
+          "codigo_oem": "8-94411-3661",
+          "brand": "WMC",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-94411-3661",
+          "brand": "GEN",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "0c150ec8-605d-4258-a5d9-6baf9d054272",
       "category": "Valvula Retroceso",
-      "image_path": "./assets/valvula-retroceso-luv-dmax.webp",
       "description": "VALVULA RETROCESO LUV DMAX",
+      "id": "0c150ec8-605d-4258-a5d9-6baf9d054272",
+      "image_path": "./assets/valvula-retroceso-luv-dmax.webp",
       "keywords": [
         "8-94411-3661",
         "8-94464-5660",
@@ -24044,18 +25854,30 @@ const PRODUCTS_DATA = {
         "RETROCESO",
         "VALVULA"
       ],
-      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
-      "slug": "valvula-retroceso-luv-dmax",
-      "original_filename": "Valvula Retroceso/0c150ec8-605d-4258-a5d9-6baf9d054272.jpg",
       "linked_ids": [
         1029
+      ],
+      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
+      "original_filename": "Valvula Retroceso/0c150ec8-605d-4258-a5d9-6baf9d054272.jpg",
+      "slug": "valvula-retroceso-luv-dmax",
+      "variants": [
+        {
+          "codigo_oem": "8-94411-3661",
+          "brand": "WMC",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-94411-3661",
+          "brand": "GEN",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "09a574b1-2fb0-4efa-98ad-0ad8b8e85dbe",
       "category": "Valvula Retroceso",
-      "image_path": "./assets/valvula-retroceso-trooper.webp",
       "description": "VALVULA RETROCESO TROOPER",
+      "id": "09a574b1-2fb0-4efa-98ad-0ad8b8e85dbe",
+      "image_path": "./assets/valvula-retroceso-trooper.webp",
       "keywords": [
         "8-94411-3661",
         "8-94464-5660",
@@ -24064,18 +25886,30 @@ const PRODUCTS_DATA = {
         "TROOPER",
         "VALVULA"
       ],
-      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
-      "slug": "valvula-retroceso-trooper",
-      "original_filename": "Valvula Retroceso/09a574b1-2fb0-4efa-98ad-0ad8b8e85dbe.jpg",
       "linked_ids": [
         1029
+      ],
+      "oem": "8-94411-3661 / KB-651 / 8-94464-5660",
+      "original_filename": "Valvula Retroceso/09a574b1-2fb0-4efa-98ad-0ad8b8e85dbe.jpg",
+      "slug": "valvula-retroceso-trooper",
+      "variants": [
+        {
+          "codigo_oem": "8-94411-3661",
+          "brand": "WMC",
+          "precio_usd": 45
+        },
+        {
+          "codigo_oem": "8-94411-3661",
+          "brand": "GEN",
+          "precio_usd": 20
+        }
       ]
     },
     {
-      "id": "69f2f809-ac06-46e6-9349-994305e04a56",
       "category": "Valvula Temperatura",
-      "image_path": "./assets/valvula-presion-aceite-trooper.webp",
       "description": "VALVULA PRESION ACEITE TROOPER",
+      "id": "69f2f809-ac06-46e6-9349-994305e04a56",
+      "image_path": "./assets/valvula-presion-aceite-trooper.webp",
       "keywords": [
         "8-94312-9400",
         "8-98013-0140",
@@ -24086,18 +25920,25 @@ const PRODUCTS_DATA = {
         "TROOPER",
         "VALVULA"
       ],
-      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
-      "slug": "valvula-presion-aceite-trooper",
-      "original_filename": "Valvula Temperatura/69f2f809-ac06-46e6-9349-994305e04a56.jpg",
       "linked_ids": [
         1027
+      ],
+      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
+      "original_filename": "Valvula Temperatura/69f2f809-ac06-46e6-9349-994305e04a56.jpg",
+      "slug": "valvula-presion-aceite-trooper",
+      "variants": [
+        {
+          "codigo_oem": "9-82720-2092",
+          "brand": "Original",
+          "precio_usd": 5
+        }
       ]
     },
     {
-      "id": "b14e77a9-9bee-406a-b024-0c34db7cbb4e",
       "category": "Valvula Temperatura",
-      "image_path": "./assets/valvula-temperatura-caribe-2-3.webp",
       "description": "VALVULA TEMPERATURA CARIBE 2.3",
+      "id": "b14e77a9-9bee-406a-b024-0c34db7cbb4e",
+      "image_path": "./assets/valvula-temperatura-caribe-2-3.webp",
       "keywords": [
         "8-94247-4370",
         "8-94247-4371",
@@ -24106,18 +25947,25 @@ const PRODUCTS_DATA = {
         "TEMPERATURA",
         "VALVULA"
       ],
+      "linked_ids": [
+        1031
+      ],
       "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
-      "slug": "valvula-temperatura-caribe-2-3",
       "original_filename": "Valvula Temperatura/b14e77a9-9bee-406a-b024-0c34db7cbb4e.jpg",
-      "linked_ids": [
-        1031
+      "slug": "valvula-temperatura-caribe-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94247-4370",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "4bfbdfc6-5c72-4208-be99-c44bc34bca88",
       "category": "Valvula Temperatura",
-      "image_path": "./assets/valvula-temperatura-caribe-2-6.webp",
       "description": "VALVULA TEMPERATURA CARIBE 2.6",
+      "id": "4bfbdfc6-5c72-4208-be99-c44bc34bca88",
+      "image_path": "./assets/valvula-temperatura-caribe-2-6.webp",
       "keywords": [
         "8-94247-4370",
         "8-94247-4371",
@@ -24126,18 +25974,25 @@ const PRODUCTS_DATA = {
         "TEMPERATURA",
         "VALVULA"
       ],
+      "linked_ids": [
+        1031
+      ],
       "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
-      "slug": "valvula-temperatura-caribe-2-6",
       "original_filename": "Valvula Temperatura/4bfbdfc6-5c72-4208-be99-c44bc34bca88.jpg",
-      "linked_ids": [
-        1031
+      "slug": "valvula-temperatura-caribe-2-6",
+      "variants": [
+        {
+          "codigo_oem": "8-94247-4370",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "f8ae34d2-5d53-4168-911b-c81611c3c1a8",
       "category": "Valvula Temperatura",
-      "image_path": "./assets/valvula-temperatura-luv-2-2.webp",
       "description": "VALVULA TEMPERATURA LUV 2.2",
+      "id": "f8ae34d2-5d53-4168-911b-c81611c3c1a8",
+      "image_path": "./assets/valvula-temperatura-luv-2-2.webp",
       "keywords": [
         "8-92063-8930",
         "83420-20040",
@@ -24145,18 +26000,25 @@ const PRODUCTS_DATA = {
         "TEMPERATURA",
         "VALVULA"
       ],
+      "linked_ids": [
+        1033
+      ],
       "oem": "8-92063-8930 / 83420-20040",
-      "slug": "valvula-temperatura-luv-2-2",
       "original_filename": "Valvula Temperatura/f8ae34d2-5d53-4168-911b-c81611c3c1a8.jpg",
-      "linked_ids": [
-        1033
+      "slug": "valvula-temperatura-luv-2-2",
+      "variants": [
+        {
+          "codigo_oem": "8-92063-8930",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "2b3a81b2-1540-47c6-8c37-0a5dfedf1be5",
       "category": "Valvula Temperatura",
-      "image_path": "./assets/valvula-temperatura-luv-2-3.webp",
       "description": "VALVULA TEMPERATURA LUV 2.3",
+      "id": "2b3a81b2-1540-47c6-8c37-0a5dfedf1be5",
+      "image_path": "./assets/valvula-temperatura-luv-2-3.webp",
       "keywords": [
         "8-94247-4370",
         "8-94247-4371",
@@ -24165,18 +26027,25 @@ const PRODUCTS_DATA = {
         "TEMPERATURA",
         "VALVULA"
       ],
-      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
-      "slug": "valvula-temperatura-luv-2-3",
-      "original_filename": "Valvula Temperatura/2b3a81b2-1540-47c6-8c37-0a5dfedf1be5.jpg",
       "linked_ids": [
         1031
+      ],
+      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
+      "original_filename": "Valvula Temperatura/2b3a81b2-1540-47c6-8c37-0a5dfedf1be5.jpg",
+      "slug": "valvula-temperatura-luv-2-3",
+      "variants": [
+        {
+          "codigo_oem": "8-94247-4370",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "601b07a0-a7e8-4a9f-ac07-9f9e5880ccb2",
       "category": "Valvula Temperatura",
-      "image_path": "./assets/valvula-temperatura-luv-dmax-2-4.webp",
       "description": "VALVULA TEMPERATURA LUV DMAX 2.4",
+      "id": "601b07a0-a7e8-4a9f-ac07-9f9e5880ccb2",
+      "image_path": "./assets/valvula-temperatura-luv-dmax-2-4.webp",
       "keywords": [
         "8-92063-8930",
         "83420-20040",
@@ -24185,18 +26054,25 @@ const PRODUCTS_DATA = {
         "TEMPERATURA",
         "VALVULA"
       ],
-      "oem": "8-92063-8930 / 83420-20040",
-      "slug": "valvula-temperatura-luv-dmax-2-4",
-      "original_filename": "Valvula Temperatura/601b07a0-a7e8-4a9f-ac07-9f9e5880ccb2.jpg",
       "linked_ids": [
         1033
+      ],
+      "oem": "8-92063-8930 / 83420-20040",
+      "original_filename": "Valvula Temperatura/601b07a0-a7e8-4a9f-ac07-9f9e5880ccb2.jpg",
+      "slug": "valvula-temperatura-luv-dmax-2-4",
+      "variants": [
+        {
+          "codigo_oem": "8-92063-8930",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "002481dd-9306-4588-9978-c4de312be684",
       "category": "Valvula Temperatura",
-      "image_path": "./assets/valvula-temperatura-luv-dmax-3-5.webp",
       "description": "VALVULA TEMPERATURA LUV DMAX 3.5",
+      "id": "002481dd-9306-4588-9978-c4de312be684",
+      "image_path": "./assets/valvula-temperatura-luv-dmax-3-5.webp",
       "keywords": [
         "8-94247-4370",
         "8-94247-4371",
@@ -24206,18 +26082,52 @@ const PRODUCTS_DATA = {
         "TEMPERATURA",
         "VALVULA"
       ],
-      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
-      "slug": "valvula-temperatura-luv-dmax-3-5",
-      "original_filename": "Valvula Temperatura/002481dd-9306-4588-9978-c4de312be684.jpg",
       "linked_ids": [
         1031
+      ],
+      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
+      "original_filename": "Valvula Temperatura/002481dd-9306-4588-9978-c4de312be684.jpg",
+      "slug": "valvula-temperatura-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-94247-4370",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "9ea89b05-4a2f-45d3-abe2-d5ea3affa11e",
       "category": "Valvula Temperatura",
-      "image_path": "./assets/valvula-temperatura-rodeo.webp",
+      "description": "VALVULA TEMPERATURA LUV DMAX 3.5",
+      "id": "5fe86d53-f5dd-437f-b5b1-f5afbe591e53",
+      "image_path": "./assets/valvula-temperatura-luv-dmax-3-5-2.webp",
+      "keywords": [
+        "8-12146-3120",
+        "8-15326-3860",
+        "DMAX",
+        "LUV",
+        "TEMPERATURA",
+        "VALVULA"
+      ],
+      "linked_ids": [
+        1032
+      ],
+      "oem": "8-15326-3860 / 8-12146-3120",
+      "original_filename": "Valvula Temperatura/5fe86d53-f5dd-437f-b5b1-f5afbe591e53.jpg",
+      "slug": "valvula-temperatura-luv-dmax-3-5-2",
+      "variants": [
+        {
+          "codigo_oem": "8-15326-3860",
+          "brand": "Original",
+          "precio_usd": 10
+        }
+      ]
+    },
+    {
+      "category": "Valvula Temperatura",
       "description": "VALVULA TEMPERATURA RODEO",
+      "id": "9ea89b05-4a2f-45d3-abe2-d5ea3affa11e",
+      "image_path": "./assets/valvula-temperatura-rodeo.webp",
       "keywords": [
         "8-94247-4370",
         "8-94247-4371",
@@ -24226,18 +26136,25 @@ const PRODUCTS_DATA = {
         "TEMPERATURA",
         "VALVULA"
       ],
-      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
-      "slug": "valvula-temperatura-rodeo",
-      "original_filename": "Valvula Temperatura/9ea89b05-4a2f-45d3-abe2-d5ea3affa11e.jpg",
       "linked_ids": [
         1031
+      ],
+      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
+      "original_filename": "Valvula Temperatura/9ea89b05-4a2f-45d3-abe2-d5ea3affa11e.jpg",
+      "slug": "valvula-temperatura-rodeo",
+      "variants": [
+        {
+          "codigo_oem": "8-94247-4370",
+          "brand": "Original",
+          "precio_usd": 10
+        }
       ]
     },
     {
-      "id": "5c0e1f4d-f095-4140-b64a-6b70dbb7811e",
       "category": "Valvula Transfer",
-      "image_path": "./assets/valvula-transfer-inferior-luv-dmax-3-5.webp",
       "description": "VALVULA TRANSFER INFERIOR LUV DMAX 3.5",
+      "id": "5c0e1f4d-f095-4140-b64a-6b70dbb7811e",
+      "image_path": "./assets/valvula-transfer-inferior-luv-dmax-3-5.webp",
       "keywords": [
         "8-97314-2040",
         "8-97358-6050",
@@ -24248,11 +26165,18 @@ const PRODUCTS_DATA = {
         "TRANSFER",
         "VALVULA"
       ],
-      "oem": "8-97314-2040 / 8-98181-8040 / 8-97358-6050",
-      "slug": "valvula-transfer-inferior-luv-dmax-3-5",
-      "original_filename": "Valvula Transfer/5c0e1f4d-f095-4140-b64a-6b70dbb7811e.jpg",
       "linked_ids": [
         1185
+      ],
+      "oem": "8-97314-2040 / 8-98181-8040 / 8-97358-6050",
+      "original_filename": "Valvula Transfer/5c0e1f4d-f095-4140-b64a-6b70dbb7811e.jpg",
+      "slug": "valvula-transfer-inferior-luv-dmax-3-5",
+      "variants": [
+        {
+          "codigo_oem": "8-97314-2040",
+          "brand": "Original",
+          "precio_usd": 40
+        }
       ]
     },
     {
@@ -24278,7 +26202,7 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-97326-9971",
           "brand": "Original",
-          "precio_usd": 20
+          "precio_usd": 0
         }
       ]
     }
