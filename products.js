@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 900,
+  "total_products": 899,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -70,26 +70,6 @@ const PRODUCTS_DATA = {
       "oem": "8-97113-4461 / 8-97062-0180",
       "slug": "acoplador-manual-luv-2-3",
       "original_filename": "Acoplador/02361323-290e-4393-b901-a28575781f51.jpg",
-      "linked_ids": [
-        3
-      ]
-    },
-    {
-      "id": "b5b75517-8d4e-46a7-ab7a-6674a48056d0",
-      "category": "Acoplador",
-      "image_path": "./assets/acoplador-manual-luv-dmax-3-5.webp",
-      "description": "ACOPLADOR MANUAL LUV DMAX 3.5",
-      "keywords": [
-        "8-97062-0180",
-        "8-97113-4461",
-        "ACOPLADOR",
-        "DMAX",
-        "LUV",
-        "MANUAL"
-      ],
-      "oem": "8-97113-4461 / 8-97062-0180",
-      "slug": "acoplador-manual-luv-dmax-3-5",
-      "original_filename": "Acoplador/b5b75517-8d4e-46a7-ab7a-6674a48056d0.jpg",
       "linked_ids": [
         3
       ]

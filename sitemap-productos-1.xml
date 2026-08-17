@@ -31,16 +31,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/acoplador-manual-luv-dmax-3-5</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/acoplador-manual-luv-dmax-3-5.webp</image:loc>
-      <image:title>ACOPLADOR MANUAL LUV DMAX 3.5</image:title>
-    </image:image>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/acoplador-manual-rodeo-3-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/acoplador-manual-rodeo-3-2.webp</image:loc>
@@ -8991,6 +8981,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/varilla-aceite-luv-d-max-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/varilla-aceite-luv-d-max-3-5.webp</image:loc>
+      <image:title>VARILLA ACEITE LUV D-MAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
+
     <loc>https://todoparteshorizonte.com/p/varilla-aceite-luv-d-max-3-5</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/varilla-aceite-luv-d-max-3-5.webp</image:loc>
