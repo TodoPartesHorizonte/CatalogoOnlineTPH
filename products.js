@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 889,
+  "total_products": 900,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -37,35 +37,99 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "296ed099-ff22-4ada-953a-9123bf0cd029",
       "category": "Acoplador",
-      "description": "ACOPLADOR MANUAL LUV D-MAX / TROOPER",
-      "id": "ba51f6b8-18a5-48c0-905d-d6dfddfbc14e",
-      "image_path": "./assets/acoplador-manual-luv-d-max-trooper.webp",
+      "image_path": "./assets/acoplador-manual-caribe-2-6.webp",
+      "description": "ACOPLADOR MANUAL CARIBE 2.6",
       "keywords": [
         "8-97062-0180",
         "8-97113-4461",
         "ACOPLADOR",
-        "D-MAX",
+        "CARIBE",
+        "MANUAL"
+      ],
+      "oem": "8-97113-4461 / 8-97062-0180",
+      "slug": "acoplador-manual-caribe-2-6",
+      "original_filename": "Acoplador/296ed099-ff22-4ada-953a-9123bf0cd029.jpg",
+      "linked_ids": [
+        3
+      ]
+    },
+    {
+      "id": "02361323-290e-4393-b901-a28575781f51",
+      "category": "Acoplador",
+      "image_path": "./assets/acoplador-manual-luv-2-3.webp",
+      "description": "ACOPLADOR MANUAL LUV 2.3",
+      "keywords": [
+        "8-97062-0180",
+        "8-97113-4461",
+        "ACOPLADOR",
         "LUV",
+        "MANUAL"
+      ],
+      "oem": "8-97113-4461 / 8-97062-0180",
+      "slug": "acoplador-manual-luv-2-3",
+      "original_filename": "Acoplador/02361323-290e-4393-b901-a28575781f51.jpg",
+      "linked_ids": [
+        3
+      ]
+    },
+    {
+      "id": "b5b75517-8d4e-46a7-ab7a-6674a48056d0",
+      "category": "Acoplador",
+      "image_path": "./assets/acoplador-manual-luv-dmax-3-5.webp",
+      "description": "ACOPLADOR MANUAL LUV DMAX 3.5",
+      "keywords": [
+        "8-97062-0180",
+        "8-97113-4461",
+        "ACOPLADOR",
+        "DMAX",
+        "LUV",
+        "MANUAL"
+      ],
+      "oem": "8-97113-4461 / 8-97062-0180",
+      "slug": "acoplador-manual-luv-dmax-3-5",
+      "original_filename": "Acoplador/b5b75517-8d4e-46a7-ab7a-6674a48056d0.jpg",
+      "linked_ids": [
+        3
+      ]
+    },
+    {
+      "id": "0081f88c-c247-49f6-a128-4c61d6939e82",
+      "category": "Acoplador",
+      "image_path": "./assets/acoplador-manual-rodeo-3-2.webp",
+      "description": "ACOPLADOR MANUAL RODEO 3.2",
+      "keywords": [
+        "8-97062-0180",
+        "8-97113-4461",
+        "ACOPLADOR",
+        "MANUAL",
+        "RODEO"
+      ],
+      "oem": "8-97113-4461 / 8-97062-0180",
+      "slug": "acoplador-manual-rodeo-3-2",
+      "original_filename": "Acoplador/0081f88c-c247-49f6-a128-4c61d6939e82.jpg",
+      "linked_ids": [
+        3
+      ]
+    },
+    {
+      "id": "ebe5288f-ee36-4d23-aab9-48356096451f",
+      "category": "Acoplador",
+      "image_path": "./assets/acoplador-manual-trooper-3-2.webp",
+      "description": "ACOPLADOR MANUAL TROOPER 3.2",
+      "keywords": [
+        "8-97062-0180",
+        "8-97113-4461",
+        "ACOPLADOR",
         "MANUAL",
         "TROOPER"
       ],
+      "oem": "8-97113-4461 / 8-97062-0180",
+      "slug": "acoplador-manual-trooper-3-2",
+      "original_filename": "Acoplador/ebe5288f-ee36-4d23-aab9-48356096451f.jpg",
       "linked_ids": [
         3
-      ],
-      "oem": "8-97113-4461 / 8-97062-0180",
-      "slug": "acoplador-manual-luv-d-max-trooper",
-      "variants": [
-        {
-          "codigo_oem": "8-97113-4461",
-          "brand": "AISIN",
-          "precio_usd": 300
-        },
-        {
-          "codigo_oem": "8-97113-4461",
-          "brand": "JOMO",
-          "precio_usd": 0
-        }
       ]
     },
     {
@@ -266,6 +330,45 @@ const PRODUCTS_DATA = {
           "brand": "TAIKEN",
           "precio_usd": 30
         }
+      ]
+    },
+    {
+      "id": "2f370713-5300-49ef-8535-8792f54ce3a4",
+      "category": "Amortiguador",
+      "image_path": "./assets/amortiguador-delantero-luv-dmax-2-5.webp",
+      "description": "AMORTIGUADOR DELANTERO LUV DMAX 2.5",
+      "keywords": [
+        "8-97236-2990",
+        "AMORTIGUADOR",
+        "DELANTERO",
+        "DMAX",
+        "LUV"
+      ],
+      "oem": "8-97236-2990",
+      "slug": "amortiguador-delantero-luv-dmax-2-5",
+      "original_filename": "Amortiguador/2f370713-5300-49ef-8535-8792f54ce3a4.jpg",
+      "linked_ids": [
+        11
+      ]
+    },
+    {
+      "id": "9726500f-fa50-4d36-a3c7-669dae702451",
+      "category": "Amortiguador",
+      "image_path": "./assets/amortiguador-delantero-luv-dmax-3-0-4x2.webp",
+      "description": "AMORTIGUADOR DELANTERO LUV DMAX 3.0 4X2",
+      "keywords": [
+        "4X2",
+        "8-97236-2990",
+        "AMORTIGUADOR",
+        "DELANTERO",
+        "DMAX",
+        "LUV"
+      ],
+      "oem": "8-97236-2990",
+      "slug": "amortiguador-delantero-luv-dmax-3-0-4x2",
+      "original_filename": "Amortiguador/9726500f-fa50-4d36-a3c7-669dae702451.jpg",
+      "linked_ids": [
+        11
       ]
     },
     {
@@ -527,153 +630,237 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "b6e0ad6e-bf1e-48a9-a978-62dfdf68b9a2",
       "category": "Anillos",
-      "description": "ANILLOS PARA TU CARIBE",
-      "id": "0db1c57f-083a-4626-9ccd-821d978bc9b7",
-      "image_path": "./assets/anillos-para-tu-caribe.webp",
+      "image_path": "./assets/anillos-caribe-2-3.webp",
+      "description": "ANILLOS CARIBE 2.3",
       "keywords": [
-        "6157-STD",
+        "6158-010",
+        "6158-020",
+        "6158-030",
+        "6158-040",
+        "6158-060",
         "6158-STD",
-        "6159-STD",
-        "8-94216-6410",
         "ANILLOS",
         "CARIBE",
         "SWI10123-0",
-        "SWI10144-0"
+        "SWI10123-2",
+        "SWI10123-3",
+        "SWI10123-4"
       ],
+      "oem": "6158-STD / SWI10123-0 / 6158-010 / 6158-020 / SWI10123-2 / 6158-030 / SWI10123-3 / 6158-040 / SWI10123-4 / 6158-060",
+      "slug": "anillos-caribe-2-3",
+      "original_filename": "Anillos/b6e0ad6e-bf1e-48a9-a978-62dfdf68b9a2.jpg",
       "linked_ids": [
-        28,
         48,
-        74
-      ],
-      "oem": "8-94216-6410 / 6157-STD / 6158-STD / SWI10123-0 / 6159-STD / SWI10144-0",
-      "slug": "anillos-para-tu-caribe",
-      "variants": [
-        {
-          "codigo_oem": "8-94216-6410",
-          "brand": "NATSUKI",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94216-6410",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94216-6410",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94216-6410",
-          "brand": "NPR",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "6158-STD",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-STD",
-          "brand": "HASTING",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "6158-STD",
-          "brand": "EMASA",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "6158-STD",
-          "brand": "TP",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6158-STD",
-          "brand": "NPR",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6158-STD",
-          "brand": "PC PISTON",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "6159-STD",
-          "brand": "NATSUKI",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "6159-STD",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-STD",
-          "brand": "TP",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6159-STD",
-          "brand": "NPR",
-          "precio_usd": 50
-        }
+        49,
+        50,
+        51,
+        52,
+        53
       ]
     },
     {
+      "id": "029f6320-3105-47e0-9d81-cf5f79e86c3b",
       "category": "Anillos",
-      "description": "ANILLOS PARA TU LUV D-MAX",
-      "id": "be33c2ae-bd02-45b0-b737-df9e1986dd25",
-      "image_path": "./assets/anillos-para-tu-luv-d-max.webp",
+      "image_path": "./assets/anillos-caribe-2-6.webp",
+      "description": "ANILLOS CARIBE 2.6",
       "keywords": [
+        "6159-010",
+        "6159-020",
+        "6159-030",
+        "6159-040",
+        "6159-060",
+        "6159-STD",
+        "ANILLOS",
+        "CARIBE",
+        "SWI10144-0",
+        "SWI10144-3",
+        "SWI10144-4"
+      ],
+      "oem": "6159-STD / SWI10144-0 / 6159-010 / 6159-020 / 6159-030 / SWI10144-3 / 6159-040 / SWI10144-4 / 6159-060",
+      "slug": "anillos-caribe-2-6",
+      "original_filename": "Anillos/029f6320-3105-47e0-9d81-cf5f79e86c3b.jpg",
+      "linked_ids": [
+        74,
+        75,
+        76,
+        77,
+        78,
+        1215
+      ]
+    },
+    {
+      "id": "410767fa-a201-4b13-aa61-a90047306b3c",
+      "category": "Anillos",
+      "image_path": "./assets/anillos-caribe-g200.webp",
+      "description": "ANILLOS CARIBE G200",
+      "keywords": [
+        "6157-010",
+        "6157-020",
+        "6157-030",
+        "6157-040",
+        "6157-STD",
+        "8-94216-6410",
+        "ANILLOS",
+        "CARIBE",
+        "G200"
+      ],
+      "oem": "8-94216-6410 / 6157-STD / 6157-010 / 6157-020 / 6157-030 / 6157-040",
+      "slug": "anillos-caribe-g200",
+      "original_filename": "Anillos/410767fa-a201-4b13-aa61-a90047306b3c.jpg",
+      "linked_ids": [
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "id": "f5cbc4fb-fac1-4de3-bfdd-c25179fd844e",
+      "category": "Anillos",
+      "image_path": "./assets/anillos-luv-2-2.webp",
+      "description": "ANILLOS LUV 2.2",
+      "keywords": [
+        "41470-010",
+        "41470-020",
+        "41470-030",
+        "41470-040",
+        "41470-STD",
+        "ANILLOS",
+        "LUV"
+      ],
+      "oem": "41470-STD / 41470-010 / 41470-020 / 41470-030 / 41470-040",
+      "slug": "anillos-luv-2-2",
+      "original_filename": "Anillos/f5cbc4fb-fac1-4de3-bfdd-c25179fd844e.jpg",
+      "linked_ids": [
+        94,
+        95,
+        96,
+        97,
+        98
+      ]
+    },
+    {
+      "id": "0342fd75-8be8-4b0f-820c-24ed20227450",
+      "category": "Anillos",
+      "image_path": "./assets/anillos-luv-2-3.webp",
+      "description": "ANILLOS LUV 2.3",
+      "keywords": [
+        "6158-010",
+        "6158-020",
+        "6158-030",
+        "6158-040",
+        "6158-060",
+        "6158-STD",
+        "ANILLOS",
+        "LUV",
+        "SWI10123-0",
+        "SWI10123-2",
+        "SWI10123-3",
+        "SWI10123-4"
+      ],
+      "oem": "6158-STD / SWI10123-0 / 6158-010 / 6158-020 / SWI10123-2 / 6158-030 / SWI10123-3 / 6158-040 / SWI10123-4 / 6158-060",
+      "slug": "anillos-luv-2-3",
+      "original_filename": "Anillos/0342fd75-8be8-4b0f-820c-24ed20227450.jpg",
+      "linked_ids": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "id": "f5d44bfe-45f1-4319-bf70-0be2c50df005",
+      "category": "Anillos",
+      "image_path": "./assets/anillos-luv-dmax-2-4.webp",
+      "description": "ANILLOS LUV DMAX 2.4",
+      "keywords": [
+        "2C4171-010",
+        "2C4171-020",
+        "2C4171-030",
+        "2C4171-040",
+        "2C4171-STD",
+        "2C5158-010",
+        "2C5158-020",
+        "2C5158-030",
+        "2C5158-040",
+        "2C5158-STD",
+        "93359241-010",
+        "93359241-020",
+        "93359241-030",
+        "93359241-040",
+        "93359241-STD",
+        "ANILLOS",
+        "DMAX",
+        "LUV"
+      ],
+      "oem": "2C5158-STD / 2C5158-010 / 2C5158-020 / 2C5158-030 / 2C5158-040 / 93359241-STD / 2C4171-STD / 93359241-010 / 2C4171-010 / 93359241-020 / 2C4171-020 / 93359241-030 / 2C4171-030 / 93359241-040 / 2C4171-040",
+      "slug": "anillos-luv-dmax-2-4",
+      "original_filename": "Anillos/f5d44bfe-45f1-4319-bf70-0be2c50df005.jpg",
+      "linked_ids": [
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118
+      ]
+    },
+    {
+      "id": "d906452c-af09-4b3e-85ae-534713f53711",
+      "category": "Anillos",
+      "image_path": "./assets/anillos-luv-dmax-3-5.webp",
+      "description": "ANILLOS LUV DMAX 3.5",
+      "keywords": [
+        "2C4571-010",
+        "2C4571-020",
+        "2C4571-030",
+        "2C4571-040",
         "2C4571-STD",
+        "2M4945-010",
+        "2M4945-020",
+        "2M4945-030",
+        "2M4945-040",
         "2M4945-STD",
         "32674",
+        "32674-020",
         "8-97136-1350",
+        "8-97136-1351",
+        "8-97136-1352",
+        "8-97136-1353",
+        "8-97136-1354",
         "8-97371-5330",
+        "8-97371-5531",
+        "8-97371-5532",
+        "8-97371-5533",
+        "8-97371-5534",
         "ANILLOS",
-        "D-MAX",
+        "DMAX",
         "LUV",
         "STD"
       ],
+      "oem": "8-97371-5330 / 2C4571-STD / 8-97371-5531 / 2C4571-010 / 8-97371-5532 / 2C4571-020 / 8-97371-5533 / 2C4571-030 / 8-97371-5534 / 2C4571-040 / 8-97136-1350 / 2M4945-STD / 32674.STD / 8-97136-1351 / 2M4945-010 / 8-97136-1352 / 2M4945-020 / 32674-020 / 8-97136-1353 / 2M4945-030 / 8-97136-1354 / 2M4945-040",
+      "slug": "anillos-luv-dmax-3-5",
+      "original_filename": "Anillos/d906452c-af09-4b3e-85ae-534713f53711.jpg",
       "linked_ids": [
         134,
-        144
-      ],
-      "oem": "8-97371-5330 / 2C4571-STD / 8-97136-1350 / 2M4945-STD / 32674.STD",
-      "slug": "anillos-para-tu-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-97371-5330",
-          "brand": "HASTING",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-97371-5330",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97136-1350",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97136-1350",
-          "brand": "RIK",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "8-97136-1350",
-          "brand": "TP",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-97136-1350",
-          "brand": "RUSHMORE",
-          "precio_usd": 60
-        }
+        135,
+        136,
+        137,
+        138,
+        144,
+        145,
+        146,
+        147,
+        148
       ]
     },
     {
