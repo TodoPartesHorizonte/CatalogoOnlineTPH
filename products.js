@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 878,
+  "total_products": 882,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -24072,6 +24072,28 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "69f2f809-ac06-46e6-9349-994305e04a56",
+      "category": "Valvula Temperatura",
+      "image_path": "./assets/valvula-presion-aceite-trooper.webp",
+      "description": "VALVULA PRESION ACEITE TROOPER",
+      "keywords": [
+        "8-94312-9400",
+        "8-98013-0140",
+        "9-82720-2092",
+        "ACEITE",
+        "PRESION",
+        "TEMPERATURA",
+        "TROOPER",
+        "VALVULA"
+      ],
+      "oem": "9-82720-2092 / 8-98013-0140 / 8-94312-9400",
+      "slug": "valvula-presion-aceite-trooper",
+      "original_filename": "Valvula Temperatura/69f2f809-ac06-46e6-9349-994305e04a56.jpg",
+      "linked_ids": [
+        1027
+      ]
+    },
+    {
       "id": "b14e77a9-9bee-406a-b024-0c34db7cbb4e",
       "category": "Valvula Temperatura",
       "image_path": "./assets/valvula-temperatura-caribe-2-3.webp",
@@ -24131,6 +24153,26 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "2b3a81b2-1540-47c6-8c37-0a5dfedf1be5",
+      "category": "Valvula Temperatura",
+      "image_path": "./assets/valvula-temperatura-luv-2-3.webp",
+      "description": "VALVULA TEMPERATURA LUV 2.3",
+      "keywords": [
+        "8-94247-4370",
+        "8-94247-4371",
+        "83420-16020",
+        "LUV",
+        "TEMPERATURA",
+        "VALVULA"
+      ],
+      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
+      "slug": "valvula-temperatura-luv-2-3",
+      "original_filename": "Valvula Temperatura/2b3a81b2-1540-47c6-8c37-0a5dfedf1be5.jpg",
+      "linked_ids": [
+        1031
+      ]
+    },
+    {
       "id": "601b07a0-a7e8-4a9f-ac07-9f9e5880ccb2",
       "category": "Valvula Temperatura",
       "image_path": "./assets/valvula-temperatura-luv-dmax-2-4.webp",
@@ -24148,6 +24190,47 @@ const PRODUCTS_DATA = {
       "original_filename": "Valvula Temperatura/601b07a0-a7e8-4a9f-ac07-9f9e5880ccb2.jpg",
       "linked_ids": [
         1033
+      ]
+    },
+    {
+      "id": "002481dd-9306-4588-9978-c4de312be684",
+      "category": "Valvula Temperatura",
+      "image_path": "./assets/valvula-temperatura-luv-dmax-3-5.webp",
+      "description": "VALVULA TEMPERATURA LUV DMAX 3.5",
+      "keywords": [
+        "8-94247-4370",
+        "8-94247-4371",
+        "83420-16020",
+        "DMAX",
+        "LUV",
+        "TEMPERATURA",
+        "VALVULA"
+      ],
+      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
+      "slug": "valvula-temperatura-luv-dmax-3-5",
+      "original_filename": "Valvula Temperatura/002481dd-9306-4588-9978-c4de312be684.jpg",
+      "linked_ids": [
+        1031
+      ]
+    },
+    {
+      "id": "9ea89b05-4a2f-45d3-abe2-d5ea3affa11e",
+      "category": "Valvula Temperatura",
+      "image_path": "./assets/valvula-temperatura-rodeo.webp",
+      "description": "VALVULA TEMPERATURA RODEO",
+      "keywords": [
+        "8-94247-4370",
+        "8-94247-4371",
+        "83420-16020",
+        "RODEO",
+        "TEMPERATURA",
+        "VALVULA"
+      ],
+      "oem": "8-94247-4370 / 8-94247-4371 / 83420-16020",
+      "slug": "valvula-temperatura-rodeo",
+      "original_filename": "Valvula Temperatura/9ea89b05-4a2f-45d3-abe2-d5ea3affa11e.jpg",
+      "linked_ids": [
+        1031
       ]
     },
     {

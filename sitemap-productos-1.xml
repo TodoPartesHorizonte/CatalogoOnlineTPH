@@ -8721,6 +8721,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-presion-aceite-trooper</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-presion-aceite-trooper.webp</image:loc>
+      <image:title>VALVULA PRESION ACEITE TROOPER</image:title>
+    </image:image>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/valvula-temperatura-caribe-2-3</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/valvula-temperatura-caribe-2-3.webp</image:loc>
@@ -8751,10 +8761,40 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-temperatura-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-temperatura-luv-2-3.webp</image:loc>
+      <image:title>VALVULA TEMPERATURA LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/valvula-temperatura-luv-dmax-2-4</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/valvula-temperatura-luv-dmax-2-4.webp</image:loc>
       <image:title>VALVULA TEMPERATURA LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-temperatura-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-temperatura-luv-dmax-3-5.webp</image:loc>
+      <image:title>VALVULA TEMPERATURA LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-temperatura-rodeo</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-temperatura-rodeo.webp</image:loc>
+      <image:title>VALVULA TEMPERATURA RODEO</image:title>
     </image:image>
     <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
