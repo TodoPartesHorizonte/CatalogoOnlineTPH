@@ -311,7 +311,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1780,13 +1801,13 @@
                     </div>
                 </a>
 
-                <a href="./tambor-de-freno-luv-dmax-2-4.html" class="related-card">
+                <a href="./tambor-de-freno-luv-dmax-2-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/tambor-de-freno-luv-dmax-2-4.webp" alt="Repuesto TAMBOR DE FRENO LUV DMAX 2.4 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/tambor-de-freno-luv-dmax-2-5.webp" alt="Repuesto TAMBOR DE FRENO LUV DMAX 2.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Tambor de Freno</span></span>
-                        <div class="related-title" title="TAMBOR DE FRENO LUV DMAX 2.4">TAMBOR DE FRENO LUV DMAX 2.4</div>
+                        <div class="related-title" title="TAMBOR DE FRENO LUV DMAX 2.5">TAMBOR DE FRENO LUV DMAX 2.5</div>
                         <div class="related-oem">OEM: 8-97360-5050</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1795,13 +1816,13 @@
                     </div>
                 </a>
 
-                <a href="./tambor-de-freno-luv-dmax-2-5.html" class="related-card">
+                <a href="./tambor-de-freno-luv-dmax-2-4.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/tambor-de-freno-luv-dmax-2-5.webp" alt="Repuesto TAMBOR DE FRENO LUV DMAX 2.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/tambor-de-freno-luv-dmax-2-4.webp" alt="Repuesto TAMBOR DE FRENO LUV DMAX 2.4 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Tambor de Freno</span></span>
-                        <div class="related-title" title="TAMBOR DE FRENO LUV DMAX 2.5">TAMBOR DE FRENO LUV DMAX 2.5</div>
+                        <div class="related-title" title="TAMBOR DE FRENO LUV DMAX 2.4">TAMBOR DE FRENO LUV DMAX 2.4</div>
                         <div class="related-oem">OEM: 8-97360-5050</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1971,7 +1992,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
 </body>

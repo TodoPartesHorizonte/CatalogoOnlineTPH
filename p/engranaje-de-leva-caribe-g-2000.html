@@ -311,7 +311,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1765,14 +1786,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./valvula-admision-caribe-2300.html" class="related-card">
+                <a href="./estopera-arbol-de-leva-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/valvula-admision-caribe-2300.webp" alt="Repuesto VÁLVULA ADMISION CARIBE 2300 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/estopera-arbol-de-leva-caribe-2-3.webp" alt="Repuesto ESTOPERA ARBOL DE LEVA CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Valvula Admision y Escape</span></span>
-                        <div class="related-title" title="VÁLVULA ADMISION CARIBE 2300">VÁLVULA ADMISION CARIBE 2300</div>
-                        <div class="related-oem">OEM: 8-94153-9690</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Estopera Arbol de Leva</span></span>
+                        <div class="related-title" title="ESTOPERA ARBOL DE LEVA CARIBE 2.3">ESTOPERA ARBOL DE LEVA CARIBE 2.3</div>
+                        <div class="related-oem">OEM: 8-94215-2200</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1780,14 +1801,14 @@
                     </div>
                 </a>
 
-                <a href="./empacadura-de-camara-caribe-2-3-2.html" class="related-card">
+                <a href="./guaya-de-clutch-caribe.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/empacadura-de-camara-caribe-2-3-2.webp" alt="Repuesto EMPACADURA DE CAMARA CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/guaya-de-clutch-caribe.webp" alt="Repuesto GUAYA DE CLUTCH CARIBE original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Camara</span></span>
-                        <div class="related-title" title="EMPACADURA DE CAMARA CARIBE 2.3">EMPACADURA DE CAMARA CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 8-94146-2441</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Guaya Clutch</span></span>
+                        <div class="related-title" title="GUAYA DE CLUTCH CARIBE">GUAYA DE CLUTCH CARIBE</div>
+                        <div class="related-oem">OEM: 8-94181-2322</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1795,14 +1816,14 @@
                     </div>
                 </a>
 
-                <a href="./arranque-caribe-2-3-2-6.html" class="related-card">
+                <a href="./soporte-cardan-chumacera-caribe-g200.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/arranque-caribe-2-3-2-6.webp" alt="Repuesto ARRANQUE CARIBE 2.3/2.6 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/soporte-cardan-chumacera-caribe-g200.webp" alt="Repuesto SOPORTE CARDAN / CHUMACERA CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Arranque</span></span>
-                        <div class="related-title" title="ARRANQUE CARIBE 2.3/2.6">ARRANQUE CARIBE 2.3/2.6</div>
-                        <div class="related-oem">OEM: 8-94156-6710</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Soporte Cardan</span></span>
+                        <div class="related-title" title="SOPORTE CARDAN / CHUMACERA CARIBE G200">SOPORTE CARDAN / CHUMACERA CARIBE G200</div>
+                        <div class="related-oem">OEM: 8-94222-9720</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1810,14 +1831,14 @@
                     </div>
                 </a>
 
-                <a href="./base-caja-caribe-2600.html" class="related-card">
+                <a href="./lapiz-barra-estabilizadora-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/base-caja-caribe-2600.webp" alt="Repuesto BASE CAJA CARIBE 2600 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/lapiz-barra-estabilizadora-caribe-2-3.webp" alt="Repuesto LAPIZ BARRA ESTABILIZADORA CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Base Caja</span></span>
-                        <div class="related-title" title="BASE CAJA CARIBE 2600">BASE CAJA CARIBE 2600</div>
-                        <div class="related-oem">OEM: 8-94458-3832</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Lapiz Barra Estabilizadora</span></span>
+                        <div class="related-title" title="LAPIZ BARRA ESTABILIZADORA CARIBE 2.3">LAPIZ BARRA ESTABILIZADORA CARIBE 2.3</div>
+                        <div class="related-oem">OEM: 161701</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1971,7 +1992,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
 </body>

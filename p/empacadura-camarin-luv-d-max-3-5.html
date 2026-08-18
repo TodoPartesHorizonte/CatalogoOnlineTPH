@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Luis Rejon"
+          "name": "Olimpo González"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Todo para mi dmax a la mano buena atención y rápida respuesta"
+        "reviewBody": "Gracias por sus servicios. Los recomiendo. Compré los repuestos de mi camioneta luv dmax y todo de calidad."
       }
     }
     </script>
@@ -311,7 +311,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1765,21 +1786,6 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./empacadura-camarin-rodeo-3-2-soch.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/empacadura-camarin-rodeo-3-2-soch.webp" alt="Repuesto EMPACADURA CAMARIN RODEO 3.2 SOCH original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Camarin</span></span>
-                        <div class="related-title" title="EMPACADURA CAMARIN RODEO 3.2 SOCH">EMPACADURA CAMARIN RODEO 3.2 SOCH</div>
-                        <div class="related-oem">OEM: 8-94364-5770</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
                 <a href="./empacadura-camarin-trooper-3-2-sohc.html" class="related-card">
                     <div class="related-img-wrapper">
                         <img src="../assets/empacadura-camarin-trooper-3-2-sohc.webp" alt="Repuesto EMPACADURA CAMARIN TROOPER 3.2 SOHC original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
@@ -1795,14 +1801,14 @@
                     </div>
                 </a>
 
-                <a href="./correa-unica-luv-d-max-3-5.html" class="related-card">
+                <a href="./empacadura-camarin-rodeo-3-2-soch.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/correa-unica-luv-d-max-3-5.webp" alt="Repuesto CORREA UNICA LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/empacadura-camarin-rodeo-3-2-soch.webp" alt="Repuesto EMPACADURA CAMARIN RODEO 3.2 SOCH original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Correa Unica</span></span>
-                        <div class="related-title" title="CORREA UNICA LUV D-MAX 3.5">CORREA UNICA LUV D-MAX 3.5</div>
-                        <div class="related-oem">OEM: 8-97130-5600</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Camarin</span></span>
+                        <div class="related-title" title="EMPACADURA CAMARIN RODEO 3.2 SOCH">EMPACADURA CAMARIN RODEO 3.2 SOCH</div>
+                        <div class="related-oem">OEM: 8-94364-5770</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1810,14 +1816,29 @@
                     </div>
                 </a>
 
-                <a href="./kit-de-clutch-luv-d-max-2-4.html" class="related-card">
+                <a href="./guayaacelerador-luv-d-max-4x225.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/kit-de-clutch-luv-d-max-2-4.webp" alt="Repuesto KIT DE CLUTCH LUV D-MAX 2.4 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/guayaacelerador-luv-d-max-4x225.webp" alt="Repuesto GUAYA ACELERADOR LUV D-MAX 2.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Kit Clutch</span></span>
-                        <div class="related-title" title="KIT DE CLUTCH LUV D-MAX 2.4">KIT DE CLUTCH LUV D-MAX 2.4</div>
-                        <div class="related-oem">OEM: ISK-092B</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Guaya Acelerador</span></span>
+                        <div class="related-title" title="GUAYA ACELERADOR LUV D-MAX 2.5">GUAYA ACELERADOR LUV D-MAX 2.5</div>
+                        <div class="related-oem">OEM: 8-97369-0080</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./bobina-luv-d-max-3-5.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/bobina-luv-d-max-3-5.webp" alt="Repuesto BOBINA LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bobina</span></span>
+                        <div class="related-title" title="BOBINA LUV D-MAX 3.5">BOBINA LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97136-3250</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1971,7 +1992,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
 </body>

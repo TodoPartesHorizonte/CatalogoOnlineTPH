@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Wences Rodríguez"
+          "name": "Luis Rejon"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Puedo decir que hay mucha responsabilidad en el servicio y buena atención. Excelente."
+        "reviewBody": "Todo para mi dmax a la mano buena atención y rápida respuesta"
       }
     }
     </script>
@@ -311,7 +311,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1780,14 +1801,14 @@
                     </div>
                 </a>
 
-                <a href="./correa-de-tiempo-caribe-2-3-luv-2-3.html" class="related-card">
+                <a href="./buje-meseta-luv-4x2.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/correa-de-tiempo-caribe-2-3-luv-2-3.webp" alt="Repuesto CORREA DE TIEMPO CARIBE 2.3/ LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/buje-meseta-luv-4x2.webp" alt="Repuesto BUJE MESETA LUV 4X2 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Correa de Tiempo</span></span>
-                        <div class="related-title" title="CORREA DE TIEMPO CARIBE 2.3/ LUV 2.3">CORREA DE TIEMPO CARIBE 2.3/ LUV 2.3</div>
-                        <div class="related-oem">OEM: 8-97041-7840</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Buje Meseta</span></span>
+                        <div class="related-title" title="BUJE MESETA LUV 4X2">BUJE MESETA LUV 4X2</div>
+                        <div class="related-oem">OEM: 8-94136-9030</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1795,14 +1816,14 @@
                     </div>
                 </a>
 
-                <a href="./cocuyo-faro-delantero-luv-97-02.html" class="related-card">
+                <a href="./valvula-presion-aceite-luv-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/cocuyo-faro-delantero-luv-97-02.webp" alt="Repuesto COCUYO FARO DELANTERO LUV 97-02 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/valvula-presion-aceite-luv-2-3.webp" alt="Repuesto VALVULA PRESION ACEITE LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cocuyo</span></span>
-                        <div class="related-title" title="COCUYO FARO DELANTERO LUV 97-02">COCUYO FARO DELANTERO LUV 97-02</div>
-                        <div class="related-oem">OEM: 8-94324-1040</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Valvula Presion Aceite</span></span>
+                        <div class="related-title" title="VALVULA PRESION ACEITE LUV 2.3">VALVULA PRESION ACEITE LUV 2.3</div>
+                        <div class="related-oem">OEM: 9-82720-2092</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1810,14 +1831,14 @@
                     </div>
                 </a>
 
-                <a href="./locha-arranque-caribe-luv-2-3.html" class="related-card">
+                <a href="./empacadura-multiple-de-escape-luv-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/locha-arranque-caribe-luv-2-3.webp" alt="Repuesto LOCHA ARRANQUE CARIBE / LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/empacadura-multiple-de-escape-luv-2-3.webp" alt="Repuesto EMPACADURA MÚLTIPLE DE ESCAPE LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Locha de Arranque</span></span>
-                        <div class="related-title" title="LOCHA ARRANQUE CARIBE / LUV 2.3">LOCHA ARRANQUE CARIBE / LUV 2.3</div>
-                        <div class="related-oem">OEM: 82756RK</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Multiple Escape</span></span>
+                        <div class="related-title" title="EMPACADURA MÚLTIPLE DE ESCAPE LUV 2.3">EMPACADURA MÚLTIPLE DE ESCAPE LUV 2.3</div>
+                        <div class="related-oem">OEM: 8-94246-1090</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1971,7 +1992,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
 </body>

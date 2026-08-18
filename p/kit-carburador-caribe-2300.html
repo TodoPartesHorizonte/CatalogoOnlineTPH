@@ -311,7 +311,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1780,14 +1801,14 @@
                     </div>
                 </a>
 
-                <a href="./rolinera-porta-corona-caribe-2-3.html" class="related-card">
+                <a href="./pinon-y-corona-caribe-g200.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/rolinera-porta-corona-caribe-2-3.webp" alt="Repuesto ROLINERA PORTA CORONA CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/pinon-y-corona-caribe-g200.webp" alt="Repuesto PIÑON Y CORONA CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Rolinera Porta Corona</span></span>
-                        <div class="related-title" title="ROLINERA PORTA CORONA CARIBE 2.3">ROLINERA PORTA CORONA CARIBE 2.3</div>
-                        <div class="related-oem">OEM: LM-501349</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Piñon y Corona</span></span>
+                        <div class="related-title" title="PIÑON Y CORONA CARIBE G200">PIÑON Y CORONA CARIBE G200</div>
+                        <div class="related-oem">OEM: 8-94225-2581</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1795,14 +1816,14 @@
                     </div>
                 </a>
 
-                <a href="./modulo-con-bobina-caribe.html" class="related-card">
+                <a href="./copa-arranque-caribe-2600.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/modulo-con-bobina-caribe.webp" alt="Repuesto MODULO CON BOBINA CAPTADORA CARIBE original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/copa-arranque-caribe-2600.webp" alt="Repuesto COPA ARRANQUE CARIBE 2600 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Modulo Con Bobina</span></span>
-                        <div class="related-title" title="MODULO CON BOBINA CAPTADORA CARIBE">MODULO CON BOBINA CAPTADORA CARIBE</div>
-                        <div class="related-oem">OEM: 33100-85750</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Copa Arranque</span></span>
+                        <div class="related-title" title="COPA ARRANQUE CARIBE 2600">COPA ARRANQUE CARIBE 2600</div>
+                        <div class="related-oem">OEM: 8-94172-3280</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1810,14 +1831,14 @@
                     </div>
                 </a>
 
-                <a href="./manguera-calefaccion-caribe-g200.html" class="related-card">
+                <a href="./correa-de-tiempo-caribe-2-3-luv-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/manguera-calefaccion-caribe-g200.webp" alt="Repuesto MANGUERA CALEFACCION CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/correa-de-tiempo-caribe-2-3-luv-2-3.webp" alt="Repuesto CORREA DE TIEMPO CARIBE 2.3/ LUV 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Manguera Calefaccion</span></span>
-                        <div class="related-title" title="MANGUERA CALEFACCION CARIBE G200">MANGUERA CALEFACCION CARIBE G200</div>
-                        <div class="related-oem">OEM: 8-94201-9431</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Correa de Tiempo</span></span>
+                        <div class="related-title" title="CORREA DE TIEMPO CARIBE 2.3/ LUV 2.3">CORREA DE TIEMPO CARIBE 2.3/ LUV 2.3</div>
+                        <div class="related-oem">OEM: 8-97041-7840</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1971,7 +1992,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
 </body>

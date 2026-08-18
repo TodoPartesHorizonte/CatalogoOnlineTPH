@@ -311,7 +311,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1765,14 +1786,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./bomba-de-agua-caribe-2600.html" class="related-card">
+                <a href="./base-motor-caribe-g-2000.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/bomba-de-agua-caribe-2600.webp" alt="Repuesto BOMBA DE AGUA CARIBE 2600 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/base-motor-caribe-g-2000.webp" alt="Repuesto BASE MOTOR CARIBE G-2000 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba de agua</span></span>
-                        <div class="related-title" title="BOMBA DE AGUA CARIBE 2600">BOMBA DE AGUA CARIBE 2600</div>
-                        <div class="related-oem">OEM: 8-97081-6230</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Base Motor</span></span>
+                        <div class="related-title" title="BASE MOTOR CARIBE G-2000">BASE MOTOR CARIBE G-2000</div>
+                        <div class="related-oem">OEM: 8-94414-3930</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1780,14 +1801,14 @@
                     </div>
                 </a>
 
-                <a href="./tapa-aceite-caribe-g200.html" class="related-card">
+                <a href="./distribuidor-caribe-2000.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/tapa-aceite-caribe-g200.webp" alt="Repuesto TAPA ACEITE CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/distribuidor-caribe-2000.webp" alt="Repuesto DISTRIBUIDOR CARIBE 2000 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Tapa Aceite</span></span>
-                        <div class="related-title" title="TAPA ACEITE CARIBE G200">TAPA ACEITE CARIBE G200</div>
-                        <div class="related-oem">OEM: 8-94239-1510</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Distribuidor</span></span>
+                        <div class="related-title" title="DISTRIBUIDOR CARIBE 2000">DISTRIBUIDOR CARIBE 2000</div>
+                        <div class="related-oem">OEM: 8-94219-9540</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1795,14 +1816,14 @@
                     </div>
                 </a>
 
-                <a href="./sincronico-caja-1era-y-2da-caribe-g200.html" class="related-card">
+                <a href="./anillos-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/sincronico-caja-1era-y-2da-caribe-g200.webp" alt="Repuesto SINCRONICO CAJA 1ERA Y 2DA CARIBE G200 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/anillos-caribe-2-3.webp" alt="Repuesto ANILLOS CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Sincronico de Caja</span></span>
-                        <div class="related-title" title="SINCRONICO CAJA 1ERA Y 2DA CARIBE G200">SINCRONICO CAJA 1ERA Y 2DA CARIBE G200</div>
-                        <div class="related-oem">OEM: 8-94238-6470</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Anillos</span></span>
+                        <div class="related-title" title="ANILLOS CARIBE 2.3">ANILLOS CARIBE 2.3</div>
+                        <div class="related-oem">OEM: 6158-STD</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1810,14 +1831,14 @@
                     </div>
                 </a>
 
-                <a href="./plato-presion-clutch-caribe-2-3.html" class="related-card">
+                <a href="./cruceta-caribe-grande.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/plato-presion-clutch-caribe-2-3.webp" alt="Repuesto PLATO PRESION CLUTCH CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/cruceta-caribe-grande.webp" alt="Repuesto CRUCETA CARIBE GRANDE original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Plato Clutch</span></span>
-                        <div class="related-title" title="PLATO PRESION CLUTCH CARIBE 2.3">PLATO PRESION CLUTCH CARIBE 2.3</div>
-                        <div class="related-oem">OEM: 8-94224-7830</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cruceta</span></span>
+                        <div class="related-title" title="CRUCETA CARIBE GRANDE">CRUCETA CARIBE GRANDE</div>
+                        <div class="related-oem">OEM: GUIS-52</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1971,7 +1992,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
 </body>

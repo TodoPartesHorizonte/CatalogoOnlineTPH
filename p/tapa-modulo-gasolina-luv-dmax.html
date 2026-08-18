@@ -123,13 +123,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Olimpo González"
+          "name": "Luis Rejon"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Gracias por sus servicios. Los recomiendo. Compré los repuestos de mi camioneta luv dmax y todo de calidad."
+        "reviewBody": "Todo para mi dmax a la mano buena atención y rápida respuesta"
       }
     }
     </script>
@@ -307,7 +307,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1757,14 +1778,14 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./base-motor-luv-d-max-3-5.html" class="related-card">
+                <a href="./bujia-denso-punta-iridio-luv-d-max.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/base-motor-luv-d-max-3-5.webp" alt="Repuesto BASE MOTOR LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/bujia-denso-punta-iridio-luv-d-max.webp" alt="Repuesto BUJIA DENSO PUNTA IRIDIO LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Base Motor</span></span>
-                        <div class="related-title" title="BASE MOTOR LUV D-MAX 3.5">BASE MOTOR LUV D-MAX 3.5</div>
-                        <div class="related-oem">OEM: 8-98051-3310</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bujia</span></span>
+                        <div class="related-title" title="BUJIA DENSO PUNTA IRIDIO LUV D-MAX">BUJIA DENSO PUNTA IRIDIO LUV D-MAX</div>
+                        <div class="related-oem">OEM: IK20TT</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1772,14 +1793,14 @@
                     </div>
                 </a>
 
-                <a href="./fan-clutch-luv-d-max-3-5.html" class="related-card">
+                <a href="./luces-placa-trasera-luv-d-max.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/fan-clutch-luv-d-max-3-5.webp" alt="Repuesto FAN CLUTCH LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/luces-placa-trasera-luv-d-max.webp" alt="Repuesto LUCES PLACA TRASERA LUV D-MAX original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Fan Clutch</span></span>
-                        <div class="related-title" title="FAN CLUTCH LUV D-MAX 3.5">FAN CLUTCH LUV D-MAX 3.5</div>
-                        <div class="related-oem">OEM: 8-97349-7610</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Faro Placa</span></span>
+                        <div class="related-title" title="LUCES PLACA TRASERA LUV D-MAX">LUCES PLACA TRASERA LUV D-MAX</div>
+                        <div class="related-oem">OEM: 8-97236-6901</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1787,14 +1808,14 @@
                     </div>
                 </a>
 
-                <a href="./cajetin-direccion-luv-d-max-2010-2015.html" class="related-card">
+                <a href="./cruceta-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/cajetin-direccion-luv-d-max-2010-2015.webp" alt="Repuesto CAJETIN DIRECCIÓN LUV D-MAX 2010/2015 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/cruceta-luv-d-max-3-5.webp" alt="Repuesto CRUCETA LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cajetin de Direccion</span></span>
-                        <div class="related-title" title="CAJETIN DIRECCIÓN LUV D-MAX 2010/2015">CAJETIN DIRECCIÓN LUV D-MAX 2010/2015</div>
-                        <div class="related-oem">OEM: 8-98101-7800</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Cruceta</span></span>
+                        <div class="related-title" title="CRUCETA LUV D-MAX 3.5">CRUCETA LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: TIS-174</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1802,14 +1823,14 @@
                     </div>
                 </a>
 
-                <a href="./bomba-de-direccion-luv-d-max-3-5.html" class="related-card">
+                <a href="./soporte-cardan-chumacera-luv-dmax-2-4.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/bomba-de-direccion-luv-d-max-3-5.webp" alt="Repuesto BOMBA DE DIRECCIÓN LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/soporte-cardan-chumacera-luv-dmax-2-4.webp" alt="Repuesto SOPORTE CARDAN / CHUMACERA LUV DMAX 2.4 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bomba Direccion</span></span>
-                        <div class="related-title" title="BOMBA DE DIRECCIÓN LUV D-MAX 3.5">BOMBA DE DIRECCIÓN LUV D-MAX 3.5</div>
-                        <div class="related-oem">OEM: 8-97946-6960</div>
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Soporte Cardan</span></span>
+                        <div class="related-title" title="SOPORTE CARDAN / CHUMACERA LUV DMAX 2.4">SOPORTE CARDAN / CHUMACERA LUV DMAX 2.4</div>
+                        <div class="related-oem">OEM: 8-97942-8760</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1963,7 +1984,28 @@
       window.forceInitAnalytics = forceInitAnalytics;
 
       window.addEventListener('load', function() {
-        setTimeout(forceInitAnalytics, 1500);
+        setTimeout(function() {
+          forceInitAnalytics();
+          trackEvent('page_view', { path: window.location.pathname });
+          
+          var titleEl = document.querySelector('h1.product-title');
+          var catBadge = document.querySelector('.category-badge span');
+          var prodImg = document.querySelector('.product-img');
+          
+          var pName = titleEl ? titleEl.innerText.trim() : '';
+          var pCat = catBadge ? catBadge.innerText.trim() : '';
+          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+          var pId = window.location.pathname.split('/').pop().replace('.html', '');
+          
+          if (pId) {
+            trackEvent('view_item', {
+              item_id: pId,
+              item_name: pName,
+              item_category: pCat,
+              image_path: pPhoto
+            });
+          }
+        }, 800);
       });
     </script>
 </body>
