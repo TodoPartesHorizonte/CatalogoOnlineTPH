@@ -77,7 +77,7 @@ const PRODUCTS_DATA = {
     {
       "id": "WhatsApp Image 2026-08-17 at 5.10.30 PM",
       "category": "Acoplador",
-      "image_path": "./assets/acoplador-manual-luv-dmax-3-5.webp",
+      "image_path": "./assets/acoplador-manual-luv-dmax-3-5.webp?v=1",
       "description": "ACOPLADOR MANUAL LUV DMAX 3.5",
       "keywords": [
         "8-97062-0180",

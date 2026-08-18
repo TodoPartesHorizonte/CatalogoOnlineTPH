@@ -216,7 +216,7 @@
                     totalQty += item.quantity;
                     html += `
                         <div class="cart-item" id="cart-item-${item.id}">
-                            <img src="${item.image_path}" alt="${item.description}" class="cart-item-img" width="60" height="60" loading="lazy">
+                            <img src="${item.image_path}" alt="${item.description}" class="cart-item-img" width="60" height="60" loading="lazy" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                             <div class="cart-item-info">
                                 <span class="cart-item-category">${item.category}</span>
                                 <div class="cart-item-title" title="${item.description}">${item.description}</div>
@@ -479,6 +479,13 @@
             // Increment feedback interaction
             incrementInteractionCount();
 
+            lightboxImg.dataset.retried = '';
+            lightboxImg.onerror = function() {
+                if (!this.dataset.retried) {
+                    this.dataset.retried = '1';
+                    this.src = this.src.split('?')[0] + '?v=' + Date.now();
+                }
+            };
             lightboxImg.src = product.image_path;
             lightboxImg.alt = product.description;
             lightboxImg.style.cursor = 'pointer';
@@ -726,7 +733,7 @@
                 html += `
                     <div class="carousel-item" onclick="openLightbox('${p.id}')">
                         <div class="carousel-item-img-wrapper">
-                            <img src="${p.image_path}" alt="${p.description}" class="carousel-item-img" loading="lazy">
+                            <img src="${p.image_path}" alt="${p.description}" class="carousel-item-img" loading="lazy" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                         </div>
                         <div class="carousel-item-info">
                             <span class="carousel-item-category">${p.category}</span>
@@ -1054,7 +1061,7 @@
                     <div class="product-card" id="card-${product.id}">
                         <div class="card-img-wrapper" onclick="openLightbox('${product.id}')" role="button" tabindex="0" aria-label="Ver detalles del repuesto">
                             <span class="category-badge"><span>${product.category}</span></span>
-                            <img src="${product.image_path}" alt="${product.description}" class="product-img img-lazy" ${imgPriority} width="280" height="350" onload="this.classList.add('img-loaded')">
+                            <img src="${product.image_path}" alt="${product.description}" class="product-img img-lazy" ${imgPriority} width="280" height="350" onload="this.classList.add('img-loaded')" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                         </div>
                         <div class="card-content">
                             <div class="product-desc" title="${product.description}">${product.description}</div>

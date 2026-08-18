@@ -228,7 +228,7 @@
 
                 html += `
                     <div class="cart-item" id="cart-item-${item.id}">
-                        <img src="${displayImgPath}" alt="${item.description}" class="cart-item-img" width="60" height="60" loading="lazy">
+                        <img src="${displayImgPath}" alt="${item.description}" class="cart-item-img" width="60" height="60" loading="lazy" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                         <div class="cart-item-info">
                             <span class="cart-item-category">${item.category}</span>
                             <div class="cart-item-title" title="${item.description}">${item.description}</div>

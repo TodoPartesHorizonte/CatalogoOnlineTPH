@@ -314,7 +314,7 @@ def generate_pages(data):
             card_html = f"""
                 <a href="./{p_slug}.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="..{p_img}" alt="Repuesto {escaped_desc} original" class="related-img" loading="lazy" width="200" height="170">
+                        <img src="..{p_img}" alt="Repuesto {escaped_desc} original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){{this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}}">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">{escaped_cat}</span></span>
@@ -2019,7 +2019,7 @@ def generate_pages(data):
 
         <div class="product-layout">
             <div class="image-card">
-                <img src="..{image_path}" alt="{image_alt}" class="product-img">
+                <img src="..{image_path}" alt="{image_alt}" class="product-img" onerror="if(!this.dataset.retried){{this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}}">
             </div>
 
             <div class="details-panel">
