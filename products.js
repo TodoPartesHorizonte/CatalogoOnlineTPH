@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 900,
+  "total_products": 907,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -77,7 +77,7 @@ const PRODUCTS_DATA = {
     {
       "id": "WhatsApp Image 2026-08-17 at 5.10.30 PM",
       "category": "Acoplador",
-      "image_path": "./assets/acoplador-manual-luv-dmax-3-5.webp?v=1",
+      "image_path": "./assets/acoplador-manual-luv-dmax-3-5.webp",
       "description": "ACOPLADOR MANUAL LUV DMAX 3.5",
       "keywords": [
         "8-97062-0180",
@@ -1397,6 +1397,40 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "ec2c304e-c843-4822-b73e-db0b718bc63a",
+      "category": "Arranque",
+      "image_path": "./assets/arranque-rodeo-3-2.webp",
+      "description": "ARRANQUE RODEO 3.2",
+      "keywords": [
+        "8-94384-3141",
+        "ARRANQUE",
+        "RODEO"
+      ],
+      "oem": "8-94384-3141",
+      "slug": "arranque-rodeo-3-2",
+      "original_filename": "Arranque/ec2c304e-c843-4822-b73e-db0b718bc63a.jpg",
+      "linked_ids": [
+        178
+      ]
+    },
+    {
+      "id": "56c1faad-8931-4de3-85c9-880401bc152c",
+      "category": "Arranque",
+      "image_path": "./assets/arranque-trooper-3-2.webp",
+      "description": "ARRANQUE TROOPER 3.2",
+      "keywords": [
+        "8-94384-3141",
+        "ARRANQUE",
+        "TROOPER"
+      ],
+      "oem": "8-94384-3141",
+      "slug": "arranque-trooper-3-2",
+      "original_filename": "Arranque/56c1faad-8931-4de3-85c9-880401bc152c.jpg",
+      "linked_ids": [
+        178
+      ]
+    },
+    {
       "category": "Aspa",
       "description": "ASPA DE FAN CLUTCH CARIBE",
       "id": "0627db9f-cc08-4f04-8adc-54b11027f803",
@@ -1421,6 +1455,43 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 20
         }
+      ]
+    },
+    {
+      "id": "8c7ffdd2-590b-4fe0-8f15-c05e9159960c",
+      "category": "Aspa",
+      "image_path": "./assets/aspa-luv.webp",
+      "description": "ASPA LUV",
+      "keywords": [
+        "16361-38010",
+        "8-94158-7641",
+        "ASPA",
+        "LUV"
+      ],
+      "oem": "8-94158-7641 / 16361-38010",
+      "slug": "aspa-luv",
+      "original_filename": "Aspa/8c7ffdd2-590b-4fe0-8f15-c05e9159960c.jpg",
+      "linked_ids": [
+        180
+      ]
+    },
+    {
+      "id": "edcd304d-cf4b-4d12-9c0c-af5d9917e14f",
+      "category": "Aspa",
+      "image_path": "./assets/aspa-luv-dmax-2-4.webp",
+      "description": "ASPA LUV DMAX 2.4",
+      "keywords": [
+        "16361-38010",
+        "8-94158-7641",
+        "ASPA",
+        "DMAX",
+        "LUV"
+      ],
+      "oem": "8-94158-7641 / 16361-38010",
+      "slug": "aspa-luv-dmax-2-4",
+      "original_filename": "Aspa/edcd304d-cf4b-4d12-9c0c-af5d9917e14f.jpg",
+      "linked_ids": [
+        180
       ]
     },
     {
@@ -1505,6 +1576,64 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "63a923f8-13ee-446e-a52a-7a5edd17079c",
+      "category": "Bandas",
+      "image_path": "./assets/bandas-de-freno-luv-dmax-2-4.webp",
+      "description": "BANDAS DE FRENO LUV DMAX 2.4",
+      "keywords": [
+        "5-87832-0910",
+        "BANDAS",
+        "DMAX",
+        "FRENO",
+        "LUV"
+      ],
+      "oem": "5-87832-0910",
+      "slug": "bandas-de-freno-luv-dmax-2-4",
+      "original_filename": "Bandas/63a923f8-13ee-446e-a52a-7a5edd17079c.jpg",
+      "linked_ids": [
+        189
+      ]
+    },
+    {
+      "id": "1dfafc06-bf64-4a02-a3c9-bec9fbb39767",
+      "category": "Bandas",
+      "image_path": "./assets/bandas-de-freno-luv-dmax-2-5.webp",
+      "description": "BANDAS DE FRENO LUV DMAX 2.5",
+      "keywords": [
+        "5-87832-0910",
+        "BANDAS",
+        "DMAX",
+        "FRENO",
+        "LUV"
+      ],
+      "oem": "5-87832-0910",
+      "slug": "bandas-de-freno-luv-dmax-2-5",
+      "original_filename": "Bandas/1dfafc06-bf64-4a02-a3c9-bec9fbb39767.jpg",
+      "linked_ids": [
+        189
+      ]
+    },
+    {
+      "id": "99488450-29b6-4cc2-8f51-2cc7f4623f78",
+      "category": "Bandas",
+      "image_path": "./assets/bandas-de-freno-luv-dmax-3-0-4x2.webp",
+      "description": "BANDAS DE FRENO LUV DMAX 3.0 4X2",
+      "keywords": [
+        "4X2",
+        "5-87832-0910",
+        "BANDAS",
+        "DMAX",
+        "FRENO",
+        "LUV"
+      ],
+      "oem": "5-87832-0910",
+      "slug": "bandas-de-freno-luv-dmax-3-0-4x2",
+      "original_filename": "Bandas/99488450-29b6-4cc2-8f51-2cc7f4623f78.jpg",
+      "linked_ids": [
+        189
+      ]
+    },
+    {
       "category": "Bandas",
       "description": "JUEGO DE BANDAS DE FRENO CARIBE 83-88",
       "id": "f546720e-f021-4c7a-9a0a-59755de2132a",
@@ -1556,33 +1685,6 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-94479-7070",
           "brand": "TAKASHI",
           "precio_usd": 25
-        }
-      ]
-    },
-    {
-      "category": "Bandas",
-      "description": "JUEGO DE BANDAS DE FRENO LUV D-MAX 2.4",
-      "id": "3b16da16-0575-464d-8a72-1ba5762ac377",
-      "image_path": "./assets/juego-de-bandas-de-freno-luv-d-max-2-4.webp",
-      "keywords": [
-        "5-87832-0910",
-        "BANDAS",
-        "D-MAX",
-        "FRENO",
-        "JUEGO",
-        "LUV"
-      ],
-      "linked_ids": [
-        102,
-        189
-      ],
-      "oem": "5-87832-0910",
-      "slug": "juego-de-bandas-de-freno-luv-d-max-2-4",
-      "variants": [
-        {
-          "codigo_oem": "5-87832-0910",
-          "brand": "Original",
-          "precio_usd": 35
         }
       ]
     },
@@ -1971,6 +2073,61 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "4132841f-a1e3-4dc1-b404-f0561ff56e35",
+      "category": "Barra Link",
+      "image_path": "./assets/barra-link-lapiz-barra-estabilizadora-luv-dmax-3-0-4x4.webp",
+      "description": "BARRA LINK / LAPIZ BARRA ESTABILIZADORA LUV DMAX 3.0 4X4",
+      "keywords": [
+        "4X4",
+        "703CV05A001",
+        "703CV05A002",
+        "8-97235-7861",
+        "8-97235-7871",
+        "8-97944-5680",
+        "8-97944-5690",
+        "BARRA",
+        "DMAX",
+        "ESTABILIZADORA",
+        "LAPIZ",
+        "LINK",
+        "LUV"
+      ],
+      "oem": "8-97235-7861 / 703CV05A001 / 8-97944-5680 / 8-97235-7871 / 703CV05A002 / 8-97944-5690",
+      "slug": "barra-link-lapiz-barra-estabilizadora-luv-dmax-3-0-4x4",
+      "original_filename": "Barra Link/4132841f-a1e3-4dc1-b404-f0561ff56e35.jpg",
+      "linked_ids": [
+        196,
+        1070
+      ]
+    },
+    {
+      "id": "d868c8ff-01ee-4261-b616-fdc5e0e2f44d",
+      "category": "Barra Link",
+      "image_path": "./assets/barra-link-lapiz-barra-estabilizadora-luv-dmax-3-5.webp",
+      "description": "BARRA LINK / LAPIZ BARRA ESTABILIZADORA LUV DMAX 3.5",
+      "keywords": [
+        "703CV05A001",
+        "703CV05A002",
+        "8-97235-7861",
+        "8-97235-7871",
+        "8-97944-5680",
+        "8-97944-5690",
+        "BARRA",
+        "DMAX",
+        "ESTABILIZADORA",
+        "LAPIZ",
+        "LINK",
+        "LUV"
+      ],
+      "oem": "8-97235-7861 / 703CV05A001 / 8-97944-5680 / 8-97235-7871 / 703CV05A002 / 8-97944-5690",
+      "slug": "barra-link-lapiz-barra-estabilizadora-luv-dmax-3-5",
+      "original_filename": "Barra Link/d868c8ff-01ee-4261-b616-fdc5e0e2f44d.jpg",
+      "linked_ids": [
+        196,
+        1070
+      ]
+    },
+    {
       "category": "Barra Link",
       "description": "BARRA LINK DELANTERA TROOPER 3.2",
       "id": "a0c0b88a-fa46-4e21-a77a-b1ba01c8af58",
@@ -2090,52 +2247,6 @@ const PRODUCTS_DATA = {
         {
           "codigo_oem": "8-94408-8402",
           "brand": "555 JAPON",
-          "precio_usd": 25
-        }
-      ]
-    },
-    {
-      "category": "Barra Link",
-      "description": "BARRA LINK LUV D-MAX 3.5",
-      "id": "829ed8a1-530e-422f-acff-75ba0f681f96",
-      "image_path": "./assets/barra-link-luv-d-max-3-5.webp",
-      "keywords": [
-        "703CV05A001",
-        "703CV05A002",
-        "8-97235-7861",
-        "8-97235-7871",
-        "8-97944-5680",
-        "8-97944-5690",
-        "BARRA",
-        "D-MAX",
-        "LINK",
-        "LUV"
-      ],
-      "linked_ids": [
-        196,
-        1070
-      ],
-      "oem": "8-97235-7861 / 703CV05A001 / 8-97944-5680 / 8-97235-7871 / 703CV05A002 / 8-97944-5690",
-      "slug": "barra-link-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97235-7861",
-          "brand": "JAPON",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-97235-7861",
-          "brand": "TAIWAN",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-97235-7871",
-          "brand": "TAIWAN",
-          "precio_usd": 15
-        },
-        {
-          "codigo_oem": "8-97235-7871",
-          "brand": "JAPON",
           "precio_usd": 25
         }
       ]
@@ -2435,37 +2546,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Base Caja",
-      "description": "BASE CAJA LUV D-MAX",
-      "id": "a416083a-34d7-45ab-9d87-160cfc5d827b",
-      "image_path": "./assets/base-caja-luv-d-max.webp",
-      "keywords": [
-        "197029",
-        "197030",
-        "8-94135-9851",
-        "8-94229-3002",
-        "8-94434-2081",
-        "8-98073-0630",
-        "BASE",
-        "CAJA",
-        "D-MAX",
-        "LUV"
-      ],
-      "linked_ids": [
-        121,
-        204
-      ],
-      "oem": "8-94135-9851 / 8-94434-2081 / 8-98073-0630 / 197029 / 197030 / 8-94229-3002",
-      "slug": "base-caja-luv-d-max",
-      "variants": [
-        {
-          "codigo_oem": "8-94135-9851",
-          "brand": "Original",
-          "precio_usd": 35
-        }
-      ]
-    },
-    {
-      "category": "Base Caja",
       "description": "BASE CAJA LUV D-MAX 2.4",
       "id": "b4dddf03-1c60-453e-9ff2-b7b525b6e3bb",
       "image_path": "./assets/base-caja-luv-d-max-2-4.webp",
@@ -2488,6 +2568,30 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 35
         }
+      ]
+    },
+    {
+      "id": "0c3892f5-7e55-4209-9de8-07db48392d34",
+      "category": "Base Caja",
+      "image_path": "./assets/base-caja-luv-dmax-3-5.webp",
+      "description": "BASE CAJA LUV DMAX 3.5",
+      "keywords": [
+        "197029",
+        "197030",
+        "8-94135-9851",
+        "8-94229-3002",
+        "8-94434-2081",
+        "8-98073-0630",
+        "BASE",
+        "CAJA",
+        "DMAX",
+        "LUV"
+      ],
+      "oem": "8-94135-9851 / 8-94434-2081 / 8-98073-0630 / 197029 / 197030 / 8-94229-3002",
+      "slug": "base-caja-luv-dmax-3-5",
+      "original_filename": "Base Caja/0c3892f5-7e55-4209-9de8-07db48392d34.jpg",
+      "linked_ids": [
+        204
       ]
     },
     {
