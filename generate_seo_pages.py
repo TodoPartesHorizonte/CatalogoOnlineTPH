@@ -339,7 +339,11 @@ def generate_pages(data):
         {"author": "José Manuel Madriz Diaz", "body": "Excelente repuestos para vehículos."}
     ]
 
-    products = data.get('products', [])
+    products = data.get('products', []) if isinstance(data, dict) else []
+    if not products:
+        print("⚠️ Advertencia: Lista de productos vacía. No se modificará la carpeta /p/ ni se eliminarán páginas estáticas.")
+        return
+
     whatsapp_encoded = data.get('whatsapp_number', '')
     whatsapp_number = decode_base64(whatsapp_encoded)
     
@@ -2164,15 +2168,30 @@ def generate_pages(data):
 </body>
 </html>"""
 
-    # Clean up P_DIR from old html files to prevent orphaned pages
-    if os.path.exists(P_DIR):
-        print("[INFO] Limpiando paginas huerfanas en /p/...")
+    # Limpieza diferencial de páginas verdaderamente huérfanas en /p/ (nunca borrar todo de golpe)
+    if os.path.exists(P_DIR) and len(products) > 0:
+        valid_html_filenames = set()
+        for p in products:
+            p_id = escape_html(p.get('id', ''))
+            p_slug = escape_html(p.get('slug', ''))
+            if p_slug:
+                valid_html_filenames.add(f"{p_slug}.html")
+            elif p_id:
+                s_name = p_id.replace(' ', '%20') + '.html'
+                if '%' not in s_name and ' ' in p_id:
+                    s_name = p_id.replace(' ', '_') + '.html'
+                valid_html_filenames.add(s_name)
+                
+        orphan_count = 0
         for filename in os.listdir(P_DIR):
-            if filename.endswith('.html'):
+            if filename.endswith('.html') and filename not in valid_html_filenames:
                 try:
                     os.remove(os.path.join(P_DIR, filename))
+                    orphan_count += 1
                 except Exception:
                     pass
+        if orphan_count > 0:
+            print(f"[INFO] Se eliminaron {orphan_count} páginas huérfanas en /p/")
 
     db_config, db_products = load_db_config_and_prices(products)
 

@@ -1,3 +1,5 @@
 .wrangler/
 .assetsignore
 __pycache__/
+*.bak
+*.tmp
