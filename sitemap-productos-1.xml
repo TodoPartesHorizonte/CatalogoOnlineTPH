@@ -1211,10 +1211,20 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/bomba-de-agua-al-luv-d-max-3-5</loc>
+    <loc>https://todoparteshorizonte.com/p/bomba-agua-caribe-g200</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/bomba-de-agua-al-luv-d-max-3-5.webp</image:loc>
-      <image:title>BOMBA DE AGUA AL LUV D-MAX 3.5</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/bomba-agua-caribe-g200.webp</image:loc>
+      <image:title>BOMBA AGUA CARIBE G200</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bomba-agua-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bomba-agua-luv-dmax-3-5.webp</image:loc>
+      <image:title>BOMBA AGUA LUV DMAX 3.5</image:title>
     </image:image>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -1301,16 +1311,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/bomba-de-freno-caribe-2-6</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/bomba-de-freno-caribe-2-6.webp</image:loc>
-      <image:title>BOMBA DE FRENO CARIBE 2.6</image:title>
-    </image:image>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/bomba-de-freno-luv-d-max-2005-2009</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bomba-de-freno-luv-d-max-2005-2009.webp</image:loc>
@@ -1325,6 +1325,26 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bomba-de-freno-luv-d-max-2010-2015-con-bastago.webp</image:loc>
       <image:title>BOMBA DE FRENO LUV D-MAX 2010/2015 CON BASTAGO</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bomba-freno-caribe-2-6</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bomba-freno-caribe-2-6.webp</image:loc>
+      <image:title>BOMBA FRENO CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bomba-freno-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bomba-freno-luv-2-3.webp</image:loc>
+      <image:title>BOMBA FRENO LUV 2.3</image:title>
     </image:image>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -1421,6 +1441,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/bomba-clutch-luv-2-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bomba-clutch-luv-2-2.webp</image:loc>
+      <image:title>BOMBA CLUTCH LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bomba-clutch-rodeo</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bomba-clutch-rodeo.webp</image:loc>
+      <image:title>BOMBA CLUTCH RODEO</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bomba-clutch-trooper-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bomba-clutch-trooper-3-2.webp</image:loc>
+      <image:title>BOMBA CLUTCH TROOPER 3.2</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/bomba-de-clutch-caribe-2600</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bomba-de-clutch-caribe-2600.webp</image:loc>
@@ -1455,6 +1505,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bomba-de-clutch-luv-d-max-3-5.webp</image:loc>
       <image:title>BOMBA DE CLUTCH LUV D-MAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bombin-clutch-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bombin-clutch-luv-2-3.webp</image:loc>
+      <image:title>BOMBIN CLUTCH LUV 2.3</image:title>
     </image:image>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -1761,6 +1821,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/buje-eje-delantero-trooper-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/buje-eje-delantero-trooper-3-2.webp</image:loc>
+      <image:title>BUJE EJE DELANTERO TROOPER 3.2</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/buje-meseta-caribe-2-3</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/buje-meseta-caribe-2-3.webp</image:loc>
@@ -1951,6 +2021,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/bujia-luv-dmax-2-4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bujia-luv-dmax-2-4.webp</image:loc>
+      <image:title>BUJIA LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bujia-trooper-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bujia-trooper-3-2.webp</image:loc>
+      <image:title>BUJIA TROOPER 3.2</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/bujia-denso-caribe</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bujia-denso-caribe.webp</image:loc>
@@ -2081,6 +2171,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/camara-caribe-2-6</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/camara-caribe-2-6.webp</image:loc>
+      <image:title>CAMARA CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/camara-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/camara-luv-2-3.webp</image:loc>
+      <image:title>CAMARA LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/carbonera-caribe</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/carbonera-caribe.webp</image:loc>
@@ -2101,10 +2211,20 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/carburador-caribe-2-3-luv-2-3</loc>
+    <loc>https://todoparteshorizonte.com/p/carburador-caribe-2-3</loc>
     <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/carburador-caribe-2-3-luv-2-3.webp</image:loc>
-      <image:title>CARBURADOR CARIBE 2.3 / LUV 2.3</image:title>
+      <image:loc>https://todoparteshorizonte.com/assets/carburador-caribe-2-3.webp</image:loc>
+      <image:title>CARBURADOR CARIBE 2.3</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/carburador-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/carburador-luv-2-3.webp</image:loc>
+      <image:title>CARBURADOR LUV 2.3</image:title>
     </image:image>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>

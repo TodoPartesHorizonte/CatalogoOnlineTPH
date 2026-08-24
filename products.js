@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 907,
+  "total_products": 919,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -3436,53 +3436,41 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "4f712896-4ea7-4748-870f-8212c91228a6",
       "category": "Bomba de agua",
-      "description": "BOMBA DE AGUA AL LUV D-MAX 3.5",
-      "id": "bb93e024-a20d-4b1e-bca7-ff033fcd07d3",
-      "image_path": "./assets/bomba-de-agua-al-luv-d-max-3-5.webp",
+      "image_path": "./assets/bomba-agua-caribe-g200.webp",
+      "description": "BOMBA AGUA CARIBE G200",
+      "keywords": [
+        "8-94224-8940",
+        "AGUA",
+        "BOMBA",
+        "CARIBE",
+        "G200"
+      ],
+      "oem": "8-94224-8940",
+      "slug": "bomba-agua-caribe-g200",
+      "original_filename": "Bomba de agua/4f712896-4ea7-4748-870f-8212c91228a6.jpg",
+      "linked_ids": [
+        240
+      ]
+    },
+    {
+      "id": "f6a19832-b226-41f0-b69c-c48678a955bd",
+      "category": "Bomba de agua",
+      "image_path": "./assets/bomba-agua-luv-dmax-3-5.webp",
+      "description": "BOMBA AGUA LUV DMAX 3.5",
       "keywords": [
         "8-97167-5540",
         "AGUA",
         "BOMBA",
-        "D-MAX",
+        "DMAX",
         "LUV"
       ],
+      "oem": "8-97167-5540",
+      "slug": "bomba-agua-luv-dmax-3-5",
+      "original_filename": "Bomba de agua/f6a19832-b226-41f0-b69c-c48678a955bd.jpg",
       "linked_ids": [
         245
-      ],
-      "oem": "8-97167-5540",
-      "slug": "bomba-de-agua-al-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "CHINA",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "TAIKEN",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "GMB",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "AISIN",
-          "precio_usd": 85
-        },
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "NIKHO",
-          "precio_usd": 45
-        }
       ]
     },
     {
@@ -3698,31 +3686,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Bomba de Freno",
-      "description": "BOMBA DE FRENO CARIBE 2.6",
-      "id": "f2beb1db-decd-4b85-8250-ffcbae6d9378",
-      "image_path": "./assets/bomba-de-freno-caribe-2-6.webp",
-      "keywords": [
-        "8-94332-9490",
-        "8-97038-2500",
-        "BOMBA",
-        "CARIBE",
-        "FRENO"
-      ],
-      "linked_ids": [
-        260
-      ],
-      "oem": "8-94332-9490 / 8-97038-2500",
-      "slug": "bomba-de-freno-caribe-2-6",
-      "variants": [
-        {
-          "codigo_oem": "8-94332-9490",
-          "brand": "PERFECTION",
-          "precio_usd": 75
-        }
-      ]
-    },
-    {
-      "category": "Bomba de Freno",
       "description": "BOMBA DE FRENO LUV D-MAX 2005/2009",
       "id": "9454ab55-2193-4945-84db-4c86c8bd49e8",
       "image_path": "./assets/bomba-de-freno-luv-d-max-2005-2009.webp",
@@ -3796,6 +3759,44 @@ const PRODUCTS_DATA = {
           "brand": "PERFECTION",
           "precio_usd": 190
         }
+      ]
+    },
+    {
+      "id": "03d598c8-739e-4a8b-a637-2a05138fd4f8",
+      "category": "Bomba de Freno",
+      "image_path": "./assets/bomba-freno-caribe-2-6.webp",
+      "description": "BOMBA FRENO CARIBE 2.6",
+      "keywords": [
+        "8-94332-9490",
+        "8-97038-2500",
+        "BOMBA",
+        "CARIBE",
+        "FRENO"
+      ],
+      "oem": "8-94332-9490 / 8-97038-2500",
+      "slug": "bomba-freno-caribe-2-6",
+      "original_filename": "Bomba de Freno/03d598c8-739e-4a8b-a637-2a05138fd4f8.jpg",
+      "linked_ids": [
+        260
+      ]
+    },
+    {
+      "id": "853deb8b-7ae7-4cc6-9efa-f7d78169e44c",
+      "category": "Bomba de Freno",
+      "image_path": "./assets/bomba-freno-luv-2-3.webp",
+      "description": "BOMBA FRENO LUV 2.3",
+      "keywords": [
+        "8-94332-9490",
+        "8-97038-2500",
+        "BOMBA",
+        "FRENO",
+        "LUV"
+      ],
+      "oem": "8-94332-9490 / 8-97038-2500",
+      "slug": "bomba-freno-luv-2-3",
+      "original_filename": "Bomba de Freno/853deb8b-7ae7-4cc6-9efa-f7d78169e44c.jpg",
+      "linked_ids": [
+        260
       ]
     },
     {
@@ -4111,6 +4112,72 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "0498b725-5062-4f00-87af-8bc524dbfaca",
+      "category": "Bombin - Bomba Clutch",
+      "image_path": "./assets/bomba-clutch-luv-2-2.webp",
+      "description": "BOMBA CLUTCH LUV 2.2",
+      "keywords": [
+        "8-97022-6142",
+        "8-97024-9402",
+        "8-97136-4450",
+        "8-97201-0070",
+        "BOMBA",
+        "BOMBIN",
+        "CLUTCH",
+        "LUV"
+      ],
+      "oem": "8-97024-9402 / 8-97136-4450 / 8-97022-6142 / 8-97201-0070",
+      "slug": "bomba-clutch-luv-2-2",
+      "original_filename": "Bombin - Bomba Clutch/0498b725-5062-4f00-87af-8bc524dbfaca.jpg",
+      "linked_ids": [
+        252
+      ]
+    },
+    {
+      "id": "eb082b67-c08c-40dd-afef-a9741d84a02f",
+      "category": "Bombin - Bomba Clutch",
+      "image_path": "./assets/bomba-clutch-rodeo.webp",
+      "description": "BOMBA CLUTCH RODEO",
+      "keywords": [
+        "8-97022-6142",
+        "8-97024-9402",
+        "8-97136-4450",
+        "8-97201-0070",
+        "BOMBA",
+        "BOMBIN",
+        "CLUTCH",
+        "RODEO"
+      ],
+      "oem": "8-97024-9402 / 8-97136-4450 / 8-97022-6142 / 8-97201-0070",
+      "slug": "bomba-clutch-rodeo",
+      "original_filename": "Bombin - Bomba Clutch/eb082b67-c08c-40dd-afef-a9741d84a02f.jpg",
+      "linked_ids": [
+        252
+      ]
+    },
+    {
+      "id": "999acfda-ca7e-4f44-929f-62738b406231",
+      "category": "Bombin - Bomba Clutch",
+      "image_path": "./assets/bomba-clutch-trooper-3-2.webp",
+      "description": "BOMBA CLUTCH TROOPER 3.2",
+      "keywords": [
+        "8-97022-6142",
+        "8-97024-9402",
+        "8-97136-4450",
+        "8-97201-0070",
+        "BOMBA",
+        "BOMBIN",
+        "CLUTCH",
+        "TROOPER"
+      ],
+      "oem": "8-97024-9402 / 8-97136-4450 / 8-97022-6142 / 8-97201-0070",
+      "slug": "bomba-clutch-trooper-3-2",
+      "original_filename": "Bombin - Bomba Clutch/999acfda-ca7e-4f44-929f-62738b406231.jpg",
+      "linked_ids": [
+        252
+      ]
+    },
+    {
       "category": "Bombin - Bomba Clutch",
       "description": "BOMBA DE CLUTCH CARIBE 2600",
       "id": "2eecd82d-8e21-4c2f-949b-6436d8d9f385",
@@ -4240,6 +4307,27 @@ const PRODUCTS_DATA = {
           "brand": "NIKHO",
           "precio_usd": 40
         }
+      ]
+    },
+    {
+      "id": "ba0bd450-a1ac-4d05-98c4-9b2377914c31",
+      "category": "Bombin - Bomba Clutch",
+      "image_path": "./assets/bombin-clutch-luv-2-3.webp",
+      "description": "BOMBIN CLUTCH LUV 2.3",
+      "keywords": [
+        "8-94389-1920",
+        "8-94460-2100",
+        "8-97039-7060",
+        "BOMBA",
+        "BOMBIN",
+        "CLUTCH",
+        "LUV"
+      ],
+      "oem": "8-94389-1920 / 8-97039-7060 / 8-94460-2100",
+      "slug": "bombin-clutch-luv-2-3",
+      "original_filename": "Bombin - Bomba Clutch/ba0bd450-a1ac-4d05-98c4-9b2377914c31.jpg",
+      "linked_ids": [
+        266
       ]
     },
     {
@@ -5135,6 +5223,28 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "abfbd6f8-4ec9-4cd3-8646-1f7d13c0dcb7",
+      "category": "Buje Eje Delantero",
+      "image_path": "./assets/buje-eje-delantero-trooper-3-2.webp",
+      "description": "BUJE EJE DELANTERO TROOPER 3.2",
+      "keywords": [
+        "117026",
+        "117027",
+        "8-97364-3190",
+        "8-97364-3230",
+        "BUJE",
+        "DELANTERO",
+        "EJE",
+        "TROOPER"
+      ],
+      "oem": "8-97364-3190 / 8-97364-3230 / 117026 / 117027",
+      "slug": "buje-eje-delantero-trooper-3-2",
+      "original_filename": "Buje Eje Delantero/abfbd6f8-4ec9-4cd3-8646-1f7d13c0dcb7.jpg",
+      "linked_ids": [
+        284
+      ]
+    },
+    {
       "category": "Buje Meseta",
       "description": "BUJE MESETA CARIBE 2.3",
       "id": "890a0e77-2564-45dd-ac94-5cc1b188a01b",
@@ -5669,6 +5779,51 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "d32f41d3-99fb-4dbf-9be6-e7b090ca9498",
+      "category": "Bujia",
+      "image_path": "./assets/bujia-luv-dmax-2-4.webp",
+      "description": "BUJIA LUV DMAX 2.4",
+      "keywords": [
+        "3121",
+        "4504",
+        "4702",
+        "8-97125-9690",
+        "BUJIA",
+        "DMAX",
+        "IK20TT",
+        "K20PR-U11",
+        "LUV",
+        "PK20TT"
+      ],
+      "oem": "K20PR-U11 / 8-97125-9690; 3121 / PK20TT / 4504 / IK20TT / 4702",
+      "slug": "bujia-luv-dmax-2-4",
+      "original_filename": "Bujia/d32f41d3-99fb-4dbf-9be6-e7b090ca9498.jpg",
+      "linked_ids": [
+        297,
+        295,
+        296
+      ]
+    },
+    {
+      "id": "a31b7424-8944-4f7d-b454-66d62364008c",
+      "category": "Bujia",
+      "image_path": "./assets/bujia-trooper-3-2.webp",
+      "description": "BUJIA TROOPER 3.2",
+      "keywords": [
+        "3130",
+        "8-97170-2680",
+        "BUJIA",
+        "K16PR-U11",
+        "TROOPER"
+      ],
+      "oem": "K16PR-U11 / 8-97170-2680; 3130",
+      "slug": "bujia-trooper-3-2",
+      "original_filename": "Bujia/a31b7424-8944-4f7d-b454-66d62364008c.jpg",
+      "linked_ids": [
+        298
+      ]
+    },
+    {
       "category": "Bujia",
       "description": "BUJÍA DENSO CARIBE",
       "id": "f2b7bd0d-ffa9-45d6-ad7d-9a03fd953ac5",
@@ -5999,31 +6154,54 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "57520096-522a-47eb-87be-ffddb07f6aea",
       "category": "Camara",
-      "description": "CAMARA CARIBE 2.3",
-      "id": "afd3f08e-df23-4f3f-bfda-424e60f0aa8a",
       "image_path": "./assets/camara-caribe-2-3.webp",
+      "description": "CAMARA CARIBE 2.3",
       "keywords": [
         "8-94159-1920",
         "CAMARA",
         "CARIBE"
       ],
-      "linked_ids": [
-        313
-      ],
       "oem": "8-94159-1920",
       "slug": "camara-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94159-1920",
-          "brand": "NPC",
-          "precio_usd": 565
-        },
-        {
-          "codigo_oem": "8-94159-1920",
-          "brand": "TSA",
-          "precio_usd": 325
-        }
+      "original_filename": "Camara/57520096-522a-47eb-87be-ffddb07f6aea.jpg",
+      "linked_ids": [
+        313
+      ]
+    },
+    {
+      "id": "d172e9ce-d7ea-4787-a5b7-cbf946718d96",
+      "category": "Camara",
+      "image_path": "./assets/camara-caribe-2-6.webp",
+      "description": "CAMARA CARIBE 2.6",
+      "keywords": [
+        "8-94454-5990",
+        "CAMARA",
+        "CARIBE"
+      ],
+      "oem": "8-94454-5990",
+      "slug": "camara-caribe-2-6",
+      "original_filename": "Camara/d172e9ce-d7ea-4787-a5b7-cbf946718d96.jpg",
+      "linked_ids": [
+        1184
+      ]
+    },
+    {
+      "id": "c587110b-012e-4805-8b40-920bb3c77008",
+      "category": "Camara",
+      "image_path": "./assets/camara-luv-2-3.webp",
+      "description": "CAMARA LUV 2.3",
+      "keywords": [
+        "8-94159-1920",
+        "CAMARA",
+        "LUV"
+      ],
+      "oem": "8-94159-1920",
+      "slug": "camara-luv-2-3",
+      "original_filename": "Camara/c587110b-012e-4805-8b40-920bb3c77008.jpg",
+      "linked_ids": [
+        313
       ]
     },
     {
@@ -6080,39 +6258,41 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "f5844f2d-23ca-435c-bc12-84b7923b806e",
       "category": "Carburador",
-      "description": "CARBURADOR CARIBE 2.3 / LUV 2.3",
-      "id": "a090e99b-b986-459e-af66-1a513f8fb2f6",
-      "image_path": "./assets/carburador-caribe-2-3-luv-2-3.webp",
+      "image_path": "./assets/carburador-caribe-2-3.webp",
+      "description": "CARBURADOR CARIBE 2.3",
       "keywords": [
         "8-94159-2140",
         "8-94337-6320",
         "CARBURADOR",
         "CARIBE",
+        "NK5630"
+      ],
+      "oem": "8-94159-2140 / NK5630 / 8-94337-6320",
+      "slug": "carburador-caribe-2-3",
+      "original_filename": "Carburador/f5844f2d-23ca-435c-bc12-84b7923b806e.jpg",
+      "linked_ids": [
+        321
+      ]
+    },
+    {
+      "id": "592da8ed-7e73-4a6b-aa6b-6de2f886e180",
+      "category": "Carburador",
+      "image_path": "./assets/carburador-luv-2-3.webp",
+      "description": "CARBURADOR LUV 2.3",
+      "keywords": [
+        "8-94159-2140",
+        "8-94337-6320",
+        "CARBURADOR",
         "LUV",
         "NK5630"
       ],
+      "oem": "8-94159-2140 / NK5630 / 8-94337-6320",
+      "slug": "carburador-luv-2-3",
+      "original_filename": "Carburador/592da8ed-7e73-4a6b-aa6b-6de2f886e180.jpg",
       "linked_ids": [
         321
-      ],
-      "oem": "8-94159-2140 / NK5630 / 8-94337-6320",
-      "slug": "carburador-caribe-2-3-luv-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94159-2140",
-          "brand": "TOMITA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94159-2140",
-          "brand": "RALLY",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94159-2140",
-          "brand": "TSA",
-          "precio_usd": 190
-        }
       ]
     },
     {
