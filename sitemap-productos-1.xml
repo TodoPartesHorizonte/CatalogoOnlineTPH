@@ -1361,16 +1361,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/bomba-de-gasolina-caribe-2-3</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/bomba-de-gasolina-caribe-2-3.webp</image:loc>
-      <image:title>BOMBA DE GASOLINA CARIBE 2.3</image:title>
-    </image:image>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/bomba-de-gasolina-caribe-2-6</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bomba-de-gasolina-caribe-2-6.webp</image:loc>
@@ -1391,10 +1381,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/bomba-gasolina-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bomba-gasolina-caribe-2-3.webp</image:loc>
+      <image:title>BOMBA GASOLINA CARIBE 2.3</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/bomba-gasolina-caribe-2000</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bomba-gasolina-caribe-2000.webp</image:loc>
       <image:title>BOMBA GASOLINA CARIBE 2000</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bomba-gasolina-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bomba-gasolina-luv-2-3.webp</image:loc>
+      <image:title>BOMBA GASOLINA LUV 2.3</image:title>
     </image:image>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -2005,6 +2015,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/bujia-denso-punta-platino-luv-d-max.webp</image:loc>
       <image:title>BUJIA DENSO PUNTA PLATINO LUV D-MAX</image:title>
+    </image:image>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/bujia-luv-2-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/bujia-luv-2-2.webp</image:loc>
+      <image:title>BUJIA LUV 2.2</image:title>
     </image:image>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>

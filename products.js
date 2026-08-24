@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 919,
+  "total_products": 921,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -3843,46 +3843,6 @@ const PRODUCTS_DATA = {
     },
     {
       "category": "Bomba de Gasolina",
-      "description": "BOMBA DE GASOLINA CARIBE 2.3",
-      "id": "70cb8a8f-b7ec-4536-b6b0-c99ee9993fbc",
-      "image_path": "./assets/bomba-de-gasolina-caribe-2-3.webp",
-      "keywords": [
-        "8-94146-2570",
-        "8-94438-5330",
-        "BOMBA",
-        "CARIBE",
-        "GASOLINA"
-      ],
-      "linked_ids": [
-        264
-      ],
-      "oem": "8-94438-5330 / 8-94146-2570",
-      "slug": "bomba-de-gasolina-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "JAPON",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "TOMITA CHINA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "PRESENTACION",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "GEN",
-          "precio_usd": 45
-        }
-      ]
-    },
-    {
-      "category": "Bomba de Gasolina",
       "description": "BOMBA DE GASOLINA CARIBE 2.6",
       "id": "5b872bfa-f1a6-432b-8915-bc352961ba83",
       "image_path": "./assets/bomba-de-gasolina-caribe-2-6.webp",
@@ -3948,6 +3908,25 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "b4e474d3-47da-4fef-b18e-9dede21eddc1",
+      "category": "Bomba de Gasolina",
+      "image_path": "./assets/bomba-gasolina-caribe-2-3.webp",
+      "description": "BOMBA GASOLINA CARIBE 2.3",
+      "keywords": [
+        "8-94146-2570",
+        "8-94438-5330",
+        "BOMBA",
+        "CARIBE",
+        "GASOLINA"
+      ],
+      "oem": "8-94438-5330 / 8-94146-2570",
+      "slug": "bomba-gasolina-caribe-2-3",
+      "original_filename": "Bomba de Gasolina/b4e474d3-47da-4fef-b18e-9dede21eddc1.jpg",
+      "linked_ids": [
+        264
+      ]
+    },
+    {
       "category": "Bomba de Gasolina",
       "description": "BOMBA GASOLINA CARIBE 2000",
       "id": "cf1dd59c-7c46-46f4-8c1b-a2f693728080",
@@ -3972,6 +3951,25 @@ const PRODUCTS_DATA = {
           "brand": "DAEWHA",
           "precio_usd": 45
         }
+      ]
+    },
+    {
+      "id": "9f5ddccb-1756-40fd-85bb-edb572aa2cdf",
+      "category": "Bomba de Gasolina",
+      "image_path": "./assets/bomba-gasolina-luv-2-3.webp",
+      "description": "BOMBA GASOLINA LUV 2.3",
+      "keywords": [
+        "8-94146-2570",
+        "8-94438-5330",
+        "BOMBA",
+        "GASOLINA",
+        "LUV"
+      ],
+      "oem": "8-94438-5330 / 8-94146-2570",
+      "slug": "bomba-gasolina-luv-2-3",
+      "original_filename": "Bomba de Gasolina/9f5ddccb-1756-40fd-85bb-edb572aa2cdf.jpg",
+      "linked_ids": [
+        264
       ]
     },
     {
@@ -5750,6 +5748,25 @@ const PRODUCTS_DATA = {
           "brand": "DENSO",
           "precio_usd": 10
         }
+      ]
+    },
+    {
+      "id": "f8014051-5d08-4cf3-9d29-fc8e6ca0c771",
+      "category": "Bujia",
+      "image_path": "./assets/bujia-luv-2-2.webp",
+      "description": "BUJIA LUV 2.2",
+      "keywords": [
+        "3121",
+        "8-97125-9690",
+        "BUJIA",
+        "K20PR-U11",
+        "LUV"
+      ],
+      "oem": "K20PR-U11 / 8-97125-9690; 3121",
+      "slug": "bujia-luv-2-2",
+      "original_filename": "Bujia/f8014051-5d08-4cf3-9d29-fc8e6ca0c771.jpg",
+      "linked_ids": [
+        295
       ]
     },
     {
