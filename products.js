@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 921,
+  "total_products": 936,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -6336,6 +6336,25 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "WhatsApp Image 2026-08-26 at 2.15.10 PM (1)",
+      "category": "Cigueñal",
+      "image_path": "./assets/ciguenal-caribe-2-6.webp",
+      "description": "CIGUEÑAL CARIBE 2.6",
+      "keywords": [
+        "8-94163-1880",
+        "8-94163-1881",
+        "8-97107-9201",
+        "CARIBE",
+        "CIGUENAL"
+      ],
+      "oem": "8-94163-1881 / 8-97107-9201 / 8-94163-1880",
+      "slug": "ciguenal-caribe-2-6",
+      "original_filename": "Cigueñal/WhatsApp Image 2026-08-26 at 2.15.10 PM (1).jpeg",
+      "linked_ids": [
+        326
+      ]
+    },
+    {
       "category": "Cigueñal",
       "description": "CIGUEÑAL LUV 2.3",
       "id": "fa4d3973-453c-412f-9cb7-d31200c3dda9",
@@ -6413,6 +6432,51 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "ca15cdd8-bf37-4291-a7f0-58cefb2dcf01",
+      "category": "Cilindro de Freno",
+      "image_path": "./assets/cilindro-freno-caribe-g200.webp",
+      "description": "CILINDRO FRENO CARIBE G200",
+      "keywords": [
+        "8-94230-5411",
+        "8-94230-5413",
+        "8-94230-5415",
+        "8-97127-6160",
+        "8-97309-9540",
+        "CARIBE",
+        "CILINDRO",
+        "FRENO",
+        "G200"
+      ],
+      "oem": "8-94230-5411 / 8-94230-5413 / 8-94230-5415 / 8-97127-6160 / 8-97309-9540",
+      "slug": "cilindro-freno-caribe-g200",
+      "original_filename": "Cilindro de Freno/ca15cdd8-bf37-4291-a7f0-58cefb2dcf01.jpg",
+      "linked_ids": [
+        330
+      ]
+    },
+    {
+      "id": "1ced5182-643e-4c0a-933a-e375ff38ff2f",
+      "category": "Cilindro de Freno",
+      "image_path": "./assets/cilindro-freno-luv-2-3.webp",
+      "description": "CILINDRO FRENO LUV 2.3",
+      "keywords": [
+        "8-94230-5411",
+        "8-94230-5413",
+        "8-94230-5415",
+        "8-97127-6160",
+        "8-97309-9540",
+        "CILINDRO",
+        "FRENO",
+        "LUV"
+      ],
+      "oem": "8-94230-5411 / 8-94230-5413 / 8-94230-5415 / 8-97127-6160 / 8-97309-9540",
+      "slug": "cilindro-freno-luv-2-3",
+      "original_filename": "Cilindro de Freno/1ced5182-643e-4c0a-933a-e375ff38ff2f.jpg",
+      "linked_ids": [
+        330
+      ]
+    },
+    {
       "category": "Cilindro de Freno",
       "description": "CILINDRO FRENO LUV D-MAX 2.4",
       "id": "899ce35f-62ed-43e7-85bb-9548a995021b",
@@ -6460,6 +6524,65 @@ const PRODUCTS_DATA = {
           "brand": "PERFECTION",
           "precio_usd": 30
         }
+      ]
+    },
+    {
+      "id": "6b0e7be6-1d56-47b2-9cd0-cbc9c6fad47e",
+      "category": "Cilindro de Freno",
+      "image_path": "./assets/cilindro-freno-luv-dmax-2-5.webp",
+      "description": "CILINDRO FRENO LUV DMAX 2.5",
+      "keywords": [
+        "8-97301-4780",
+        "CILINDRO",
+        "DMAX",
+        "FRENO",
+        "LUV"
+      ],
+      "oem": "8-97301-4780",
+      "slug": "cilindro-freno-luv-dmax-2-5",
+      "original_filename": "Cilindro de Freno/6b0e7be6-1d56-47b2-9cd0-cbc9c6fad47e.jpg",
+      "linked_ids": [
+        331
+      ]
+    },
+    {
+      "id": "3cb42ad7-b5c7-4784-95d7-439a9c90170b",
+      "category": "Cilindro de Freno",
+      "image_path": "./assets/cilindro-freno-luv-dmax-3-0-4x2.webp",
+      "description": "CILINDRO FRENO LUV DMAX 3.0 4X2",
+      "keywords": [
+        "4X2",
+        "8-97301-4780",
+        "CILINDRO",
+        "DMAX",
+        "FRENO",
+        "LUV"
+      ],
+      "oem": "8-97301-4780",
+      "slug": "cilindro-freno-luv-dmax-3-0-4x2",
+      "original_filename": "Cilindro de Freno/3cb42ad7-b5c7-4784-95d7-439a9c90170b.jpg",
+      "linked_ids": [
+        331
+      ]
+    },
+    {
+      "id": "08499c73-d891-4931-a5eb-b1d0c8d817c5",
+      "category": "Cilindro de Freno",
+      "image_path": "./assets/cilindro-freno-luv-dmax-3-0-4x4.webp",
+      "description": "CILINDRO FRENO LUV DMAX 3.0 4X4",
+      "keywords": [
+        "4X4",
+        "8-97319-3000",
+        "CILINDRO",
+        "DMAX",
+        "FRENO",
+        "LUV"
+      ],
+      "oem": "8-97319-3000",
+      "slug": "cilindro-freno-luv-dmax-3-0-4x4",
+      "original_filename": "Cilindro de Freno/08499c73-d891-4931-a5eb-b1d0c8d817c5.jpg",
+      "linked_ids": [
+        332
       ]
     },
     {
@@ -7657,6 +7780,28 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "WhatsApp Image 2026-08-26 at 2.15.08 PM (1)",
+      "category": "Copa Arranque",
+      "image_path": "./assets/copa-arranque-luv-2-3.webp",
+      "description": "COPA ARRANQUE LUV 2.3",
+      "keywords": [
+        "6878",
+        "8-94167-4350",
+        "8-94172-3280",
+        "ARRANQUE",
+        "COP-12051",
+        "COPA",
+        "LUV",
+        "VK-CTN-16"
+      ],
+      "oem": "8-94172-3280 / 8-94167-4350 / 6878 / VK-CTN-16 / COP-12051",
+      "slug": "copa-arranque-luv-2-3",
+      "original_filename": "Copa Arranque/WhatsApp Image 2026-08-26 at 2.15.08 PM (1).jpeg",
+      "linked_ids": [
+        401
+      ]
+    },
+    {
       "category": "Correa de Tiempo",
       "description": "CORREA DE TIEMPO CARIBE 2.3/ LUV 2.3",
       "id": "c933718c-fb2c-4083-bf00-060254ce44c8",
@@ -7908,6 +8053,26 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "WhatsApp Image 2026-08-26 at 2.15.07 PM (1)",
+      "category": "Cruceta",
+      "image_path": "./assets/cruceta-luv.webp",
+      "description": "CRUCETA LUV",
+      "keywords": [
+        "383",
+        "8-94238-9300",
+        "8-94332-6830",
+        "CRUCETA",
+        "GUIS-52",
+        "LUV"
+      ],
+      "oem": "GUIS-52 / 383 / 8-94332-6830 / 8-94238-9300",
+      "slug": "cruceta-luv",
+      "original_filename": "Cruceta/WhatsApp Image 2026-08-26 at 2.15.07 PM (1).jpeg",
+      "linked_ids": [
+        413
+      ]
+    },
+    {
       "category": "Cruceta",
       "description": "CRUCETA LUV D-MAX 3.5",
       "id": "26579172-ff17-48f6-833e-2c6165a67f66",
@@ -7929,6 +8094,46 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 20
         }
+      ]
+    },
+    {
+      "id": "WhatsApp Image 2026-08-26 at 2.15.07 PM (3)",
+      "category": "Cruceta",
+      "image_path": "./assets/cruceta-rodeo.webp",
+      "description": "CRUCETA RODEO",
+      "keywords": [
+        "383",
+        "8-94238-9300",
+        "8-94332-6830",
+        "CRUCETA",
+        "GUIS-52",
+        "RODEO"
+      ],
+      "oem": "GUIS-52 / 383 / 8-94332-6830 / 8-94238-9300",
+      "slug": "cruceta-rodeo",
+      "original_filename": "Cruceta/WhatsApp Image 2026-08-26 at 2.15.07 PM (3).jpeg",
+      "linked_ids": [
+        413
+      ]
+    },
+    {
+      "id": "WhatsApp Image 2026-08-26 at 2.15.07 PM (2)",
+      "category": "Cruceta",
+      "image_path": "./assets/cruceta-trooper.webp",
+      "description": "CRUCETA TROOPER",
+      "keywords": [
+        "383",
+        "8-94238-9300",
+        "8-94332-6830",
+        "CRUCETA",
+        "GUIS-52",
+        "TROOPER"
+      ],
+      "oem": "GUIS-52 / 383 / 8-94332-6830 / 8-94238-9300",
+      "slug": "cruceta-trooper",
+      "original_filename": "Cruceta/WhatsApp Image 2026-08-26 at 2.15.07 PM (2).jpeg",
+      "linked_ids": [
+        413
       ]
     },
     {
@@ -8237,6 +8442,27 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "WhatsApp Image 2026-08-26 at 2.15.10 PM",
+      "category": "Disco de Clutch",
+      "image_path": "./assets/disco-clutch-luv-dmax-2-4.webp",
+      "description": "DISCO CLUTCH LUV DMAX 2.4",
+      "keywords": [
+        "8-97036-0620",
+        "8-97941-5270",
+        "CLUTCH",
+        "DISCO",
+        "DMAX",
+        "LUV",
+        "N2316"
+      ],
+      "oem": "8-97036-0620 / 8-97941-5270 / N2316",
+      "slug": "disco-clutch-luv-dmax-2-4",
+      "original_filename": "Disco de Clutch/WhatsApp Image 2026-08-26 at 2.15.10 PM.jpeg",
+      "linked_ids": [
+        423
+      ]
+    },
+    {
       "category": "Disco de Clutch",
       "description": "DISCO CLUTCH RODEO 3.2",
       "id": "WhatsApp Image 2026-02-09 at 1.17.21 PM (1)",
@@ -8496,6 +8722,27 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "WhatsApp Image 2026-08-26 at 2.15.08 PM (2)",
+      "category": "Embolo",
+      "image_path": "./assets/embolo-arranque-caribe.webp",
+      "description": "EMBOLO ARRANQUE CARIBE",
+      "keywords": [
+        "053660-0440",
+        "053660-0441",
+        "053660-0442",
+        "1-81129-4990",
+        "ARRANQUE",
+        "CARIBE",
+        "EMBOLO"
+      ],
+      "oem": "053660-0440 / 053660-0441 / 053660-0442 / 1-81129-4990",
+      "slug": "embolo-arranque-caribe",
+      "original_filename": "Embolo/WhatsApp Image 2026-08-26 at 2.15.08 PM (2).jpeg",
+      "linked_ids": [
+        437
+      ]
+    },
+    {
       "category": "Embolo",
       "description": "ÉMBOLO ARRANQUE LUV 2.3",
       "id": "eb8a2335-e679-4b02-9a68-366dcfc5b320",
@@ -8624,6 +8871,25 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 5
         }
+      ]
+    },
+    {
+      "id": "WhatsApp Image 2026-08-26 at 2.15.09 PM",
+      "category": "Empacadura Camara",
+      "image_path": "./assets/empacadura-camara-luv-2-3.webp",
+      "description": "EMPACADURA CAMARA LUV 2.3",
+      "keywords": [
+        "8-94146-2441",
+        "8-94324-0530",
+        "CAMARA",
+        "EMPACADURA",
+        "LUV"
+      ],
+      "oem": "8-94146-2441 / 8-94324-0530",
+      "slug": "empacadura-camara-luv-2-3",
+      "original_filename": "Empacadura Camara/WhatsApp Image 2026-08-26 at 2.15.09 PM.jpeg",
+      "linked_ids": [
+        442
       ]
     },
     {
@@ -10909,6 +11175,26 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "WhatsApp Image 2026-08-26 at 2.15.07 PM",
+      "category": "Estopera Piñon Ataque",
+      "image_path": "./assets/estopera-pinon-ataque-luv-dmax-3-5.webp",
+      "description": "ESTOPERA PIÑON ATAQUE LUV DMAX 3.5",
+      "keywords": [
+        "8-94408-0840",
+        "ATAQUE",
+        "DMAX",
+        "ESTOPERA",
+        "LUV",
+        "PINON"
+      ],
+      "oem": "8-94408-0840",
+      "slug": "estopera-pinon-ataque-luv-dmax-3-5",
+      "original_filename": "Estopera Piñon Ataque/WhatsApp Image 2026-08-26 at 2.15.07 PM.jpeg",
+      "linked_ids": [
+        505
+      ]
+    },
+    {
       "category": "Estopera Piñon Ataque",
       "description": "ESTOPERA PIÑON DE ATAQUE CARIBE 2.6",
       "id": "d0c53343-cd56-4787-8637-e3dd4545c206",
@@ -11656,6 +11942,26 @@ const PRODUCTS_DATA = {
           "brand": "NIKHO",
           "precio_usd": 130
         }
+      ]
+    },
+    {
+      "id": "4bae8825-eb8e-42e7-80fc-bd54de9a27db",
+      "category": "Fan Clutch",
+      "image_path": "./assets/fan-clutch-luv-dmax-2-5.webp",
+      "description": "FAN CLUTCH LUV DMAX 2.5",
+      "keywords": [
+        "8-94311-2520",
+        "8-94412-0300",
+        "CLUTCH",
+        "DMAX",
+        "FAN",
+        "LUV"
+      ],
+      "oem": "8-94412-0300 / 8-94311-2520",
+      "slug": "fan-clutch-luv-dmax-2-5",
+      "original_filename": "Fan Clutch/4bae8825-eb8e-42e7-80fc-bd54de9a27db.jpg",
+      "linked_ids": [
+        517
       ]
     },
     {
