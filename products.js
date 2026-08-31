@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 936,
+  "total_products": 942,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -6654,6 +6654,46 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "a9f00000-0a43-4c9f-912d-bc258f2a6aa8",
+      "category": "Cocuyo Guardafango",
+      "image_path": "./assets/cocuyo-cruce-guardafango-luv.webp",
+      "description": "COCUYO CRUCE GUARDAFANGO LUV",
+      "keywords": [
+        "213-1408N-X",
+        "COCUYO",
+        "CRUCE",
+        "GUARDAFANGO",
+        "LUV"
+      ],
+      "oem": "213-1408N-X",
+      "slug": "cocuyo-cruce-guardafango-luv",
+      "original_filename": "Cocuyo Guardafango/a9f00000-0a43-4c9f-912d-bc258f2a6aa8.jpg",
+      "linked_ids": [
+        1221
+      ]
+    },
+    {
+      "id": "49882a35-ccc4-48a0-9f83-1b6d34db4080",
+      "category": "Cocuyo Guardafango",
+      "image_path": "./assets/cocuyo-cruce-guardafango-luv-dmax-05-09.webp",
+      "description": "COCUYO CRUCE GUARDAFANGO LUV DMAX 05-09",
+      "keywords": [
+        "05-09",
+        "213-1410PXA-VCU",
+        "COCUYO",
+        "CRUCE",
+        "DMAX",
+        "GUARDAFANGO",
+        "LUV"
+      ],
+      "oem": "213-1410PXA-VCU",
+      "slug": "cocuyo-cruce-guardafango-luv-dmax-05-09",
+      "original_filename": "Cocuyo Guardafango/49882a35-ccc4-48a0-9f83-1b6d34db4080.jpg",
+      "linked_ids": [
+        1200
+      ]
+    },
+    {
       "category": "Collarin",
       "description": "COLLARIN CARIBE 2000",
       "id": "1fd4a679-e0c4-4b5d-946c-5420763cd725",
@@ -12363,6 +12403,28 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "c939c773-2b9f-42f1-b840-3d4cb029d1cb",
+      "category": "Filtro Aceite",
+      "image_path": "./assets/filtro-aceite-caribe-2-3.webp",
+      "description": "FILTRO ACEITE CARIBE 2.3",
+      "keywords": [
+        "26300-35504",
+        "8-94430-4111",
+        "8-94456-7412",
+        "ACEITE",
+        "CARIBE",
+        "CH3807",
+        "FILTRO",
+        "PH3807"
+      ],
+      "oem": "8-94456-7412 / CH3807 / 26300-35504 / 8-94430-4111 / PH3807",
+      "slug": "filtro-aceite-caribe-2-3",
+      "original_filename": "Filtro Aceite/c939c773-2b9f-42f1-b840-3d4cb029d1cb.jpg",
+      "linked_ids": [
+        531
+      ]
+    },
+    {
       "category": "Filtro Aceite",
       "description": "FILTRO ACEITE CARIBE 2.6",
       "id": "404ab3cc-87ec-4444-8ab8-597d078e8067",
@@ -12505,6 +12567,25 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "1b35b384-122c-4580-b3ca-7c26a9780e9b",
+      "category": "Filtro Aire",
+      "image_path": "./assets/filtro-aire-caribe.webp",
+      "description": "FILTRO AIRE CARIBE",
+      "keywords": [
+        "8-94137-9420",
+        "8-94148-9800",
+        "AIRE",
+        "CARIBE",
+        "FILTRO"
+      ],
+      "oem": "8-94148-9800 / 8-94137-9420",
+      "slug": "filtro-aire-caribe",
+      "original_filename": "Filtro Aire/1b35b384-122c-4580-b3ca-7c26a9780e9b.jpg",
+      "linked_ids": [
+        534
+      ]
+    },
+    {
       "category": "Filtro Aire",
       "description": "FILTRO AIRE LUV 2.2",
       "id": "c84c675d-f3ca-4de5-8d5d-dc3bd8b50a14",
@@ -12529,6 +12610,25 @@ const PRODUCTS_DATA = {
           "brand": "A1",
           "precio_usd": 10
         }
+      ]
+    },
+    {
+      "id": "56dbc5ab-e74f-41e9-b8eb-7adbe8b28d01",
+      "category": "Filtro Aire",
+      "image_path": "./assets/filtro-aire-luv-2-3.webp",
+      "description": "FILTRO AIRE LUV 2.3",
+      "keywords": [
+        "8-94137-9420",
+        "8-94148-9800",
+        "AIRE",
+        "FILTRO",
+        "LUV"
+      ],
+      "oem": "8-94148-9800 / 8-94137-9420",
+      "slug": "filtro-aire-luv-2-3",
+      "original_filename": "Filtro Aire/56dbc5ab-e74f-41e9-b8eb-7adbe8b28d01.jpg",
+      "linked_ids": [
+        534
       ]
     },
     {
@@ -12583,6 +12683,26 @@ const PRODUCTS_DATA = {
           "brand": "SIFT",
           "precio_usd": 10
         }
+      ]
+    },
+    {
+      "id": "312d23a8-4e96-404e-aa31-a5061b84be00",
+      "category": "Filtro Aire",
+      "image_path": "./assets/filtro-aire-luv-dmax-3-0.webp",
+      "description": "FILTRO AIRE LUV DMAX 3.0",
+      "keywords": [
+        "8-97941-6550",
+        "8-97944-5700",
+        "AIRE",
+        "DMAX",
+        "FILTRO",
+        "LUV"
+      ],
+      "oem": "8-97944-5700 / 8-97941-6550",
+      "slug": "filtro-aire-luv-dmax-3-0",
+      "original_filename": "Filtro Aire/312d23a8-4e96-404e-aa31-a5061b84be00.jpg",
+      "linked_ids": [
+        537
       ]
     },
     {
