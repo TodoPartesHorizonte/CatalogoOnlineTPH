@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 942,
+  "total_products": 954,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -13792,6 +13792,62 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "bb76683d-f4ff-49e1-9eae-35a2db8a1783",
+      "category": "Gomas de Valvula",
+      "image_path": "./assets/gomas-valvula-luv-2-2.webp",
+      "description": "GOMAS VALVULA LUV 2.2",
+      "keywords": [
+        "8-90215-2960",
+        "GOMAS",
+        "LUV",
+        "VALVULA"
+      ],
+      "oem": "8-90215-2960",
+      "slug": "gomas-valvula-luv-2-2",
+      "original_filename": "Gomas de Valvula/bb76683d-f4ff-49e1-9eae-35a2db8a1783.jpg",
+      "linked_ids": [
+        570
+      ]
+    },
+    {
+      "id": "8b751c9c-820a-462d-bc5b-3b26eb22fce7",
+      "category": "Gomas de Valvula",
+      "image_path": "./assets/gomas-valvula-luv-2-2-2.webp",
+      "description": "GOMAS VALVULA LUV 2.2",
+      "keywords": [
+        "8-90215-2960",
+        "GOMAS",
+        "LUV",
+        "VALVULA"
+      ],
+      "oem": "8-90215-2960",
+      "slug": "gomas-valvula-luv-2-2-2",
+      "original_filename": "Gomas de Valvula/8b751c9c-820a-462d-bc5b-3b26eb22fce7.jpg",
+      "linked_ids": [
+        570
+      ]
+    },
+    {
+      "id": "32f06fbc-898e-4059-8368-3c4c32c3987d",
+      "category": "Gomas de Valvula",
+      "image_path": "./assets/gomas-valvula-luv-2-3.webp",
+      "description": "GOMAS VALVULA LUV 2.3",
+      "keywords": [
+        "8-94208-5220",
+        "8-94338-9210",
+        "8-97033-6730",
+        "GOMAS",
+        "LUV",
+        "VALVULA"
+      ],
+      "oem": "8-94208-5220 / 8-97033-6730 / 8-94338-9210",
+      "slug": "gomas-valvula-luv-2-3",
+      "original_filename": "Gomas de Valvula/32f06fbc-898e-4059-8368-3c4c32c3987d.jpg",
+      "linked_ids": [
+        569
+      ]
+    },
+    {
       "category": "Gomas de Valvula",
       "description": "JUEGO GOMA VALVULA LUV D-MAX 3.5",
       "id": "a9e92255-f0ba-4ecf-9a4e-2e9ae774817c",
@@ -14635,6 +14691,50 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "ca965b9b-7e9e-4567-9659-f7ff33caca93",
+      "category": "Guaya Velocimetro - Kilometraje",
+      "image_path": "./assets/guaya-kilometraje-velocimetro-luv-2-3.webp",
+      "description": "GUAYA KILOMETRAJE / VELOCIMETRO LUV 2.3",
+      "keywords": [
+        "11-142",
+        "8-94159-1530",
+        "8-94224-2401",
+        "9-83111-5770",
+        "GUAYA",
+        "KILOMETRAJE",
+        "LUV",
+        "VELOCIMETRO"
+      ],
+      "oem": "8-94159-1530 / 8-94224-2401 / 11-142 / 9-83111-5770",
+      "slug": "guaya-kilometraje-velocimetro-luv-2-3",
+      "original_filename": "Guaya Velocimetro - Kilometraje/ca965b9b-7e9e-4567-9659-f7ff33caca93.jpg",
+      "linked_ids": [
+        605
+      ]
+    },
+    {
+      "id": "80518319-b8fe-44d3-8a45-e7e38b1080de",
+      "category": "Guaya Velocimetro - Kilometraje",
+      "image_path": "./assets/guaya-kilometraje-velocimetro-rodeo.webp",
+      "description": "GUAYA KILOMETRAJE / VELOCIMETRO RODEO",
+      "keywords": [
+        "11-142",
+        "8-94159-1530",
+        "8-94224-2401",
+        "9-83111-5770",
+        "GUAYA",
+        "KILOMETRAJE",
+        "RODEO",
+        "VELOCIMETRO"
+      ],
+      "oem": "8-94159-1530 / 8-94224-2401 / 11-142 / 9-83111-5770",
+      "slug": "guaya-kilometraje-velocimetro-rodeo",
+      "original_filename": "Guaya Velocimetro - Kilometraje/80518319-b8fe-44d3-8a45-e7e38b1080de.jpg",
+      "linked_ids": [
+        605
+      ]
+    },
+    {
       "category": "Guaya Velocimetro - Kilometraje",
       "description": "GUAYA VELOCIMETRO CARIBE 83-88",
       "id": "d145da97-b176-4b40-83ed-25446f7a1629",
@@ -15053,121 +15153,219 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "8d8654c9-c18d-4bdc-a191-fc0f6e208ab6",
       "category": "Juego de Empacadura",
-      "description": "JUEGO DE EMPACADURA CARIBE 2.3",
-      "id": "28f12c6c-ed00-419e-9320-2d461209d113",
-      "image_path": "./assets/juego-de-empacadura-caribe-2-3.webp",
+      "image_path": "./assets/juego-empacadura-motor-caribe-2-3.webp",
+      "description": "JUEGO EMPACADURA MOTOR CARIBE 2.3",
       "keywords": [
         "5-87810-3191",
         "8-87810-3192",
         "CARIBE",
         "EMPACADURA",
-        "JUEGO"
-      ],
-      "linked_ids": [
-        618
+        "JUEGO",
+        "MOTOR"
       ],
       "oem": "5-87810-3191 / 8-87810-3192",
-      "slug": "juego-de-empacadura-caribe-2-3",
-      "variants": [
-        {
-          "codigo_oem": "5-87810-3191",
-          "brand": "KP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87810-3191",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87810-3191",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        }
+      "slug": "juego-empacadura-motor-caribe-2-3",
+      "original_filename": "Juego de Empacadura/8d8654c9-c18d-4bdc-a191-fc0f6e208ab6.jpg",
+      "linked_ids": [
+        618
       ]
     },
     {
+      "id": "0781c6a3-5cb8-4104-8ec7-6b01f98dfd4c",
       "category": "Juego de Empacadura",
-      "description": "JUEGO DE EMPACADURA CARIBE 2600",
-      "id": "81adf477-3712-4627-a4ff-c339d816ee50",
-      "image_path": "./assets/juego-de-empacadura-caribe-2600.webp",
+      "image_path": "./assets/juego-empacadura-motor-caribe-2-6.webp",
+      "description": "JUEGO EMPACADURA MOTOR CARIBE 2.6",
       "keywords": [
-        "2600",
         "5-87811-9440",
         "8-94312-5870",
         "8-94335-8390",
         "CARIBE",
         "EMPACADURA",
         "JUEGO",
+        "MOTOR",
         "RFS812"
       ],
+      "oem": "8-94312-5870 / 5-87811-9440 / 8-94335-8390 / RFS812",
+      "slug": "juego-empacadura-motor-caribe-2-6",
+      "original_filename": "Juego de Empacadura/0781c6a3-5cb8-4104-8ec7-6b01f98dfd4c.jpg",
       "linked_ids": [
         621
-      ],
-      "oem": "8-94312-5870 / 5-87811-9440 / 8-94335-8390 / RFS812",
-      "slug": "juego-de-empacadura-caribe-2600",
-      "variants": [
-        {
-          "codigo_oem": "8-94312-5870",
-          "brand": "KP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94312-5870",
-          "brand": "RUSHMORE",
-          "precio_usd": 90
-        }
       ]
     },
     {
+      "id": "6f8c099c-e7c2-4b06-87c6-78c27076e08d",
       "category": "Juego de Empacadura",
-      "description": "JUEGO DE EMPACADURA LUV D-MAX 3.5",
-      "id": "6b8b3abd-63fb-43c6-a6d7-7ab0de5cc014",
-      "image_path": "./assets/juego-de-empacadura-luv-d-max-3-5.webp",
+      "image_path": "./assets/juego-empacadura-motor-caribe-g200.webp",
+      "description": "JUEGO EMPACADURA MOTOR CARIBE G200",
+      "keywords": [
+        "8-94248-8282",
+        "CARIBE",
+        "EMPACADURA",
+        "G200",
+        "JUEGO",
+        "MOTOR"
+      ],
+      "oem": "8-94248-8282",
+      "slug": "juego-empacadura-motor-caribe-g200",
+      "original_filename": "Juego de Empacadura/6f8c099c-e7c2-4b06-87c6-78c27076e08d.jpg",
+      "linked_ids": [
+        617
+      ]
+    },
+    {
+      "id": "d275b8f5-11ff-48f5-838a-1f821f6c33a8",
+      "category": "Juego de Empacadura",
+      "image_path": "./assets/juego-empacadura-motor-luv-2-2.webp",
+      "description": "JUEGO EMPACADURA MOTOR LUV 2.2",
+      "keywords": [
+        "8-92061-9710",
+        "EMPACADURA",
+        "JUEGO",
+        "LUV",
+        "MOTOR",
+        "RFS3064-A"
+      ],
+      "oem": "8-92061-9710 / RFS3064-A",
+      "slug": "juego-empacadura-motor-luv-2-2",
+      "original_filename": "Juego de Empacadura/d275b8f5-11ff-48f5-838a-1f821f6c33a8.jpg",
+      "linked_ids": [
+        623
+      ]
+    },
+    {
+      "id": "8b9c0245-5664-42db-8660-2de4461cd9bf",
+      "category": "Juego de Empacadura",
+      "image_path": "./assets/juego-empacadura-motor-luv-2-3.webp",
+      "description": "JUEGO EMPACADURA MOTOR LUV 2.3",
+      "keywords": [
+        "5-87810-3191",
+        "8-87810-3192",
+        "EMPACADURA",
+        "JUEGO",
+        "LUV",
+        "MOTOR"
+      ],
+      "oem": "5-87810-3191 / 8-87810-3192",
+      "slug": "juego-empacadura-motor-luv-2-3",
+      "original_filename": "Juego de Empacadura/8b9c0245-5664-42db-8660-2de4461cd9bf.jpg",
+      "linked_ids": [
+        618
+      ]
+    },
+    {
+      "id": "2a6f44e5-bfd3-4278-ac3b-f7a23960f7a2",
+      "category": "Juego de Empacadura",
+      "image_path": "./assets/juego-empacadura-motor-luv-dmax-2-4.webp",
+      "description": "JUEGO EMPACADURA MOTOR LUV DMAX 2.4",
+      "keywords": [
+        "8-92061-9710",
+        "DMAX",
+        "EMPACADURA",
+        "JUEGO",
+        "LUV",
+        "MOTOR",
+        "RFS3064-A"
+      ],
+      "oem": "8-92061-9710 / RFS3064-A",
+      "slug": "juego-empacadura-motor-luv-dmax-2-4",
+      "original_filename": "Juego de Empacadura/2a6f44e5-bfd3-4278-ac3b-f7a23960f7a2.jpg",
+      "linked_ids": [
+        623
+      ]
+    },
+    {
+      "id": "be4ebb54-87e0-495f-8f61-b70adcb7b6a8",
+      "category": "Juego de Empacadura",
+      "image_path": "./assets/juego-empacadura-motor-luv-dmax-3-5.webp",
+      "description": "JUEGO EMPACADURA MOTOR LUV DMAX 3.5",
       "keywords": [
         "5-87813-0530",
         "5-87813-6180",
         "5-87813-7552",
         "5-87814-3231",
-        "D-MAX",
+        "DMAX",
         "EMPACADURA",
         "JUEGO",
         "LUV",
+        "MOTOR",
         "RFS3082-A"
       ],
+      "oem": "5-87814-3231 / 5-87813-0530 / 5-87813-6180 / 5-87813-7552 / RFS3082-A",
+      "slug": "juego-empacadura-motor-luv-dmax-3-5",
+      "original_filename": "Juego de Empacadura/be4ebb54-87e0-495f-8f61-b70adcb7b6a8.jpg",
       "linked_ids": [
-        625,
-        1107
+        625
+      ]
+    },
+    {
+      "id": "e52098e4-0538-4788-888b-23acf1e5dd78",
+      "category": "Juego de Empacadura",
+      "image_path": "./assets/juego-empacadura-motor-rodeo-3-2-doch.webp",
+      "description": "JUEGO EMPACADURA MOTOR RODEO 3.2 DOCH",
+      "keywords": [
+        "5-87813-0530",
+        "5-87813-6180",
+        "5-87813-7552",
+        "5-87814-3231",
+        "DOCH",
+        "EMPACADURA",
+        "JUEGO",
+        "MOTOR",
+        "RFS3082-A",
+        "RODEO"
       ],
       "oem": "5-87814-3231 / 5-87813-0530 / 5-87813-6180 / 5-87813-7552 / RFS3082-A",
-      "slug": "juego-de-empacadura-luv-d-max-3-5",
-      "variants": [
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "ANCOV",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "RUSHMORE",
-          "precio_usd": 190
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "NIKHO",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "NATSUKI",
-          "precio_usd": 90
-        }
+      "slug": "juego-empacadura-motor-rodeo-3-2-doch",
+      "original_filename": "Juego de Empacadura/e52098e4-0538-4788-888b-23acf1e5dd78.jpg",
+      "linked_ids": [
+        625
+      ]
+    },
+    {
+      "id": "a0e2e1bd-bb12-4a59-9a28-870203e771b6",
+      "category": "Juego de Empacadura",
+      "image_path": "./assets/juego-empacadura-motor-rodeo-3-2-soch.webp",
+      "description": "JUEGO EMPACADURA MOTOR RODEO 3.2 SOCH",
+      "keywords": [
+        "5-87810-9771",
+        "5-87811-8382",
+        "5-87812-6320",
+        "5-87812-7190",
+        "EMPACADURA",
+        "JUEGO",
+        "MOTOR",
+        "RODEO",
+        "SOCH"
+      ],
+      "oem": "5-87812-7190 / 5-87812-6320 / 5-87811-8382 / 5-87810-9771",
+      "slug": "juego-empacadura-motor-rodeo-3-2-soch",
+      "original_filename": "Juego de Empacadura/a0e2e1bd-bb12-4a59-9a28-870203e771b6.jpg",
+      "linked_ids": [
+        628
+      ]
+    },
+    {
+      "id": "51042686-45c5-469c-b7f8-ded1899e6a63",
+      "category": "Juego de Empacadura",
+      "image_path": "./assets/juego-empacadura-motor-trooper-3-2.webp",
+      "description": "JUEGO EMPACADURA MOTOR TROOPER 3.2",
+      "keywords": [
+        "5-87810-9771",
+        "5-87811-8382",
+        "5-87812-6320",
+        "5-87812-7190",
+        "EMPACADURA",
+        "JUEGO",
+        "MOTOR",
+        "TROOPER"
+      ],
+      "oem": "5-87812-7190 / 5-87812-6320 / 5-87811-8382 / 5-87810-9771",
+      "slug": "juego-empacadura-motor-trooper-3-2",
+      "original_filename": "Juego de Empacadura/51042686-45c5-469c-b7f8-ded1899e6a63.jpg",
+      "linked_ids": [
+        628
       ]
     },
     {
