@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 954,
+  "total_products": 961,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -17084,6 +17084,25 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "af686992-ac49-4b3d-952c-972d726f0784",
+      "category": "Lapiz Bomba Gasolina",
+      "image_path": "./assets/lapiz-bomba-gasolina-luv-2-3.webp",
+      "description": "LAPIZ BOMBA GASOLINA LUV 2.3",
+      "keywords": [
+        "8-94159-2901",
+        "BOMBA",
+        "GASOLINA",
+        "LAPIZ",
+        "LUV"
+      ],
+      "oem": "8-94159-2901",
+      "slug": "lapiz-bomba-gasolina-luv-2-3",
+      "original_filename": "Lapiz Bomba Gasolina/af686992-ac49-4b3d-952c-972d726f0784.jpg",
+      "linked_ids": [
+        690
+      ]
+    },
+    {
       "category": "Locha de Arranque",
       "description": "LOCHA ARRANQUE CARIBE / LUV 2.3",
       "id": "83ba895e-c92a-47c3-a8e1-1b3984df4adf",
@@ -17107,6 +17126,24 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 5
         }
+      ]
+    },
+    {
+      "id": "4da081cf-f4c8-4d52-959a-96805b139ca0",
+      "category": "Locha de Arranque",
+      "image_path": "./assets/locha-arranque-luv-2-3.webp",
+      "description": "LOCHA ARRANQUE LUV 2.3",
+      "keywords": [
+        "82756RK",
+        "ARRANQUE",
+        "LOCHA",
+        "LUV"
+      ],
+      "oem": "82756RK",
+      "slug": "locha-arranque-luv-2-3",
+      "original_filename": "Locha de Arranque/4da081cf-f4c8-4d52-959a-96805b139ca0.jpg",
+      "linked_ids": [
+        691
       ]
     },
     {
@@ -17548,6 +17585,26 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "315b005a-b846-4037-9f06-bb6a1850f867",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-inferior-luv-dmax-3-5.webp",
+      "description": "MANGUERA RADIADOR INFERIOR LUV DMAX 3.5",
+      "keywords": [
+        "8-97248-4301",
+        "DMAX",
+        "INFERIOR",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR"
+      ],
+      "oem": "8-97248-4301",
+      "slug": "manguera-radiador-inferior-luv-dmax-3-5",
+      "original_filename": "Manguera Radiador/315b005a-b846-4037-9f06-bb6a1850f867.jpg",
+      "linked_ids": [
+        706
+      ]
+    },
+    {
       "category": "Manguera Radiador",
       "description": "MANGUERA RADIADOR SUPERIOR CARIBE 2.3 / CARIBE 2.6 / LUV 2.3",
       "id": "ea6d3d9b-61bc-4813-bb7a-70aecf9e0ef3",
@@ -17739,6 +17796,26 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 30
         }
+      ]
+    },
+    {
+      "id": "cd50d1d7-e887-496e-a364-355a40a7bae2",
+      "category": "Manguera Radiador",
+      "image_path": "./assets/manguera-radiador-superior-luv-dmax-3-5.webp",
+      "description": "MANGUERA RADIADOR SUPERIOR LUV DMAX 3.5",
+      "keywords": [
+        "8-97248-4271",
+        "DMAX",
+        "LUV",
+        "MANGUERA",
+        "RADIADOR",
+        "SUPERIOR"
+      ],
+      "oem": "8-97248-4271",
+      "slug": "manguera-radiador-superior-luv-dmax-3-5",
+      "original_filename": "Manguera Radiador/cd50d1d7-e887-496e-a364-355a40a7bae2.jpg",
+      "linked_ids": [
+        714
       ]
     },
     {
@@ -18099,6 +18176,23 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 5
         }
+      ]
+    },
+    {
+      "id": "ec4cc38e-8595-4fc4-923c-935f5885d158",
+      "category": "Martillo",
+      "image_path": "./assets/martillo-luv-2-3.webp",
+      "description": "MARTILLO LUV 2.3",
+      "keywords": [
+        "8-94102-4160",
+        "LUV",
+        "MARTILLO"
+      ],
+      "oem": "8-94102-4160",
+      "slug": "martillo-luv-2-3",
+      "original_filename": "Martillo/ec4cc38e-8595-4fc4-923c-935f5885d158.jpg",
+      "linked_ids": [
+        727
       ]
     },
     {
@@ -18538,6 +18632,27 @@ const PRODUCTS_DATA = {
           "brand": "JAPON",
           "precio_usd": 0
         }
+      ]
+    },
+    {
+      "id": "fb967ada-6e2b-401a-a4cf-1441218f2917",
+      "category": "Muñon",
+      "image_path": "./assets/munon-inferior-luv-4x2.webp",
+      "description": "MUÑON INFERIOR LUV 4X2",
+      "keywords": [
+        "104153",
+        "4X2",
+        "8-94459-4641",
+        "8-94459-4643",
+        "INFERIOR",
+        "LUV",
+        "MUNON"
+      ],
+      "oem": "8-94459-4641 / 104153 / 8-94459-4643",
+      "slug": "munon-inferior-luv-4x2",
+      "original_filename": "Muñon/fb967ada-6e2b-401a-a4cf-1441218f2917.jpg",
+      "linked_ids": [
+        742
       ]
     },
     {
@@ -19537,6 +19652,39 @@ const PRODUCTS_DATA = {
           "brand": "TOTO",
           "precio_usd": 0
         }
+      ]
+    },
+    {
+      "id": "4f5e6476-479f-47bc-82d8-4ca9599b33cf",
+      "category": "Piston",
+      "image_path": "./assets/piston-caribe-g200.webp",
+      "description": "PISTON CARIBE G200",
+      "keywords": [
+        "8-94213-8310",
+        "8-94213-8311",
+        "8-94213-8312",
+        "8-94213-8313",
+        "8-94213-8314",
+        "8-94217-8400",
+        "8-94217-8403",
+        "8-94217-8900",
+        "8-94237-4691",
+        "8-94247-9060",
+        "8-94247-9070",
+        "CARIBE",
+        "EPV-2900R-025",
+        "G200",
+        "PISTON"
+      ],
+      "oem": "8-94213-8310 / 8-94237-4691 / 8-94213-8311 / EPV-2900R-025 / 8-94213-8312 / 8-94217-8400 / 8-94247-9060 / 8-94213-8313 / 8-94217-8403 / 8-94213-8314 / 8-94217-8900 / 8-94247-9070",
+      "slug": "piston-caribe-g200",
+      "original_filename": "Piston/4f5e6476-479f-47bc-82d8-4ca9599b33cf.jpg",
+      "linked_ids": [
+        779,
+        780,
+        781,
+        782,
+        783
       ]
     },
     {
