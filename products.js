@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 961,
+  "total_products": 962,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -23880,6 +23880,27 @@ const PRODUCTS_DATA = {
           "brand": "JFP",
           "precio_usd": 15
         }
+      ]
+    },
+    {
+      "id": "b7a67322-98f3-4f12-9470-b6c3fb8021f5",
+      "category": "Tapa Correa de Tiempo",
+      "image_path": "./assets/tapa-correa-inferior-luv-dmax-3-5.webp",
+      "description": "TAPA CORREA INFERIOR LUV DMAX 3.5",
+      "keywords": [
+        "8-97131-8723",
+        "CORREA",
+        "DMAX",
+        "INFERIOR",
+        "LUV",
+        "TAPA",
+        "TIEMPO"
+      ],
+      "oem": "8-97131-8723",
+      "slug": "tapa-correa-inferior-luv-dmax-3-5",
+      "original_filename": "Tapa Correa de Tiempo/b7a67322-98f3-4f12-9470-b6c3fb8021f5.jpg",
+      "linked_ids": [
+        1234
       ]
     },
     {
