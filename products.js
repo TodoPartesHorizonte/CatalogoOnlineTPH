@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 962,
+  "total_products": 963,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -5958,6 +5958,26 @@ const PRODUCTS_DATA = {
           "brand": "Original",
           "precio_usd": 35
         }
+      ]
+    },
+    {
+      "id": "e450f3f7-4185-485a-b127-f0178ae0caea",
+      "category": "Cable Espiral Airbag",
+      "image_path": "./assets/cable-espiral-airbag-luv-dmax-3-5-luv-dmax-2-4-luv-dmax-2-5-luv-dmax-3-0.webp",
+      "description": "CABLE ESPIRAL AIRBAG LUV DMAX 3.5 / LUV DMAX 2.4 / LUV DMAX 2.5 / LUV DMAX 3.0",
+      "keywords": [
+        "8-98014-7660",
+        "AIRBAG",
+        "CABLE",
+        "DMAX",
+        "ESPIRAL",
+        "LUV"
+      ],
+      "oem": "8-98014-7660",
+      "slug": "cable-espiral-airbag-luv-dmax-3-5-luv-dmax-2-4-luv-dmax-2-5-luv-dmax-3-0",
+      "original_filename": "Cable Espiral Airbag/e450f3f7-4185-485a-b127-f0178ae0caea.jpg",
+      "linked_ids": [
+        1235
       ]
     },
     {
