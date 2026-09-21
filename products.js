@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 963,
+  "total_products": 967,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -14661,6 +14661,91 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-94223-1672",
           "precio_usd": 40
         }
+      ]
+    },
+    {
+      "id": "89cbb966-799e-481d-bc6f-fbeadae8fdad",
+      "category": "Gemelos",
+      "image_path": "./assets/gemelo-ballesta-doble-accion-caribe-2-6.webp",
+      "description": "GEMELO BALLESTA DOBLE ACCION CARIBE 2.6",
+      "keywords": [
+        "ACCION",
+        "BALLESTA",
+        "BDF-006",
+        "CARIBE",
+        "DOBLE",
+        "GEMELO",
+        "GEMELOS"
+      ],
+      "oem": "BDF-006",
+      "slug": "gemelo-ballesta-doble-accion-caribe-2-6",
+      "original_filename": "Gemelos/89cbb966-799e-481d-bc6f-fbeadae8fdad.jpg",
+      "linked_ids": [
+        1236
+      ]
+    },
+    {
+      "id": "b274bbdb-4b6f-4e9e-a550-4082de7d410f",
+      "category": "Gemelos",
+      "image_path": "./assets/gemelo-ballesta-doble-accion-luv.webp",
+      "description": "GEMELO BALLESTA DOBLE ACCION LUV",
+      "keywords": [
+        "ACCION",
+        "BALLESTA",
+        "BDF-006",
+        "DOBLE",
+        "GEMELO",
+        "GEMELOS",
+        "LUV"
+      ],
+      "oem": "BDF-006",
+      "slug": "gemelo-ballesta-doble-accion-luv",
+      "original_filename": "Gemelos/b274bbdb-4b6f-4e9e-a550-4082de7d410f.jpg",
+      "linked_ids": [
+        1236
+      ]
+    },
+    {
+      "id": "831f4e18-faec-41be-ad0a-8595105dc523",
+      "category": "Gemelos",
+      "image_path": "./assets/gemelo-ballesta-doble-accion-luv-dmax.webp",
+      "description": "GEMELO BALLESTA DOBLE ACCION LUV DMAX",
+      "keywords": [
+        "ACCION",
+        "BALLESTA",
+        "BDF-006",
+        "DMAX",
+        "DOBLE",
+        "GEMELO",
+        "GEMELOS",
+        "LUV"
+      ],
+      "oem": "BDF-006",
+      "slug": "gemelo-ballesta-doble-accion-luv-dmax",
+      "original_filename": "Gemelos/831f4e18-faec-41be-ad0a-8595105dc523.jpg",
+      "linked_ids": [
+        1236
+      ]
+    },
+    {
+      "id": "89785f6b-4f6e-4dd9-a691-728caf205dfe",
+      "category": "Gemelos",
+      "image_path": "./assets/gemelo-ballesta-doble-accion-trooper-3-2.webp",
+      "description": "GEMELO BALLESTA DOBLE ACCION TROOPER 3.2",
+      "keywords": [
+        "ACCION",
+        "BALLESTA",
+        "BDF-006",
+        "DOBLE",
+        "GEMELO",
+        "GEMELOS",
+        "TROOPER"
+      ],
+      "oem": "BDF-006",
+      "slug": "gemelo-ballesta-doble-accion-trooper-3-2",
+      "original_filename": "Gemelos/89785f6b-4f6e-4dd9-a691-728caf205dfe.jpg",
+      "linked_ids": [
+        1236
       ]
     },
     {
