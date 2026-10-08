@@ -30,3 +30,8 @@
 /assets/*
   ! Cache-Control
   Cache-Control: max-age=31536000, immutable
+
+/ml/*
+  ! Cache-Control
+  Cache-Control: max-age=31536000, immutable
+
