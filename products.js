@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 981,
+  "total_products": 985,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -22979,6 +22979,49 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "74653844-2618-46b2-b594-9b36f7f51d6c",
+      "category": "Rolinera Aguja Punta de Eje",
+      "image_path": "./assets/rolinera-punta-eje-aguja-caribe-2-6.webp",
+      "description": "ROLINERA PUNTA EJE AGUJA CARIBE 2.6",
+      "keywords": [
+        "8-94407-7080",
+        "AGUJA",
+        "CARIBE",
+        "EJE",
+        "HK3016",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "HK3016 / 8-94407-7080",
+      "slug": "rolinera-punta-eje-aguja-caribe-2-6",
+      "original_filename": "Rolinera Aguja Punta de Eje/74653844-2618-46b2-b594-9b36f7f51d6c.jpg",
+      "linked_ids": [
+        881
+      ]
+    },
+    {
+      "id": "d9198cfb-b233-484b-863f-87bcf6ca8c02",
+      "category": "Rolinera Aguja Punta de Eje",
+      "image_path": "./assets/rolinera-punta-eje-aguja-luv-4x4.webp",
+      "description": "ROLINERA PUNTA EJE AGUJA LUV 4X4",
+      "keywords": [
+        "4X4",
+        "8-94407-7080",
+        "AGUJA",
+        "EJE",
+        "HK3016",
+        "LUV",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "HK3016 / 8-94407-7080",
+      "slug": "rolinera-punta-eje-aguja-luv-4x4",
+      "original_filename": "Rolinera Aguja Punta de Eje/d9198cfb-b233-484b-863f-87bcf6ca8c02.jpg",
+      "linked_ids": [
+        881
+      ]
+    },
+    {
       "category": "Rolinera Aguja Punta de Eje",
       "description": "ROLINERA PUNTA EJE AGUJA LUV DMAX 3.5",
       "id": "76cf65e0-5f59-4865-b5fa-4f541c418ff1",
@@ -23005,6 +23048,48 @@ const PRODUCTS_DATA = {
           "codigo_oem": "HK3016",
           "precio_usd": 5
         }
+      ]
+    },
+    {
+      "id": "48e6b112-bdf4-4b8c-ae89-9066643a0edf",
+      "category": "Rolinera Aguja Punta de Eje",
+      "image_path": "./assets/rolinera-punta-eje-aguja-rodeo-3-2.webp",
+      "description": "ROLINERA PUNTA EJE AGUJA RODEO 3.2",
+      "keywords": [
+        "8-94407-7080",
+        "AGUJA",
+        "EJE",
+        "HK3016",
+        "PUNTA",
+        "RODEO",
+        "ROLINERA"
+      ],
+      "oem": "HK3016 / 8-94407-7080",
+      "slug": "rolinera-punta-eje-aguja-rodeo-3-2",
+      "original_filename": "Rolinera Aguja Punta de Eje/48e6b112-bdf4-4b8c-ae89-9066643a0edf.jpg",
+      "linked_ids": [
+        881
+      ]
+    },
+    {
+      "id": "57335116-286a-46bf-88c9-04b22db6e5c9",
+      "category": "Rolinera Aguja Punta de Eje",
+      "image_path": "./assets/rolinera-punta-eje-aguja-trooper-3-2.webp",
+      "description": "ROLINERA PUNTA EJE AGUJA TROOPER 3.2",
+      "keywords": [
+        "8-94407-7080",
+        "AGUJA",
+        "EJE",
+        "HK3016",
+        "PUNTA",
+        "ROLINERA",
+        "TROOPER"
+      ],
+      "oem": "HK3016 / 8-94407-7080",
+      "slug": "rolinera-punta-eje-aguja-trooper-3-2",
+      "original_filename": "Rolinera Aguja Punta de Eje/57335116-286a-46bf-88c9-04b22db6e5c9.jpg",
+      "linked_ids": [
+        881
       ]
     },
     {
