@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 967,
+  "total_products": 981,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -22789,6 +22789,31 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "edda5ed1-0d97-4815-952a-3b740ef8159d",
+      "category": "Regulador Presion Gasolina",
+      "image_path": "./assets/regulador-presion-gasolina-trooper-3-2.webp",
+      "description": "REGULADOR PRESION GASOLINA TROOPER 3.2",
+      "keywords": [
+        "17091410",
+        "17103467",
+        "17107478",
+        "17113271",
+        "8-17091-4100",
+        "8-17107-0100",
+        "8-17112-2760",
+        "GASOLINA",
+        "PRESION",
+        "REGULADOR",
+        "TROOPER"
+      ],
+      "oem": "8-17091-4100 / 8-17112-2760 / 8-17107-0100 / 17091410 / 17113271 / 17103467 / 17107478",
+      "slug": "regulador-presion-gasolina-trooper-3-2",
+      "original_filename": "Regulador Presion Gasolina/edda5ed1-0d97-4815-952a-3b740ef8159d.jpg",
+      "linked_ids": [
+        857
+      ]
+    },
+    {
       "category": "Rejilla Aire Acondicionado",
       "description": "REJILLA CENTRAL AIRE ACONDICIONADO LUV DMAX 05-09",
       "id": "a7351cc4-0a4a-4b0c-99c6-dd8986b20bbd",
@@ -23499,6 +23524,52 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "c19e8032-2cd4-4e5b-81fe-e4b8caf66684",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-caribe-2-6.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA CARIBE 2.6",
+      "keywords": [
+        "32008",
+        "8-94227-0410",
+        "8-97118-3060",
+        "CARIBE",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "32008 / 8-94227-0410 / 8-97118-3060",
+      "slug": "rolinera-punta-eje-delantera-caribe-2-6",
+      "original_filename": "Rolinera Punta de Eje Delantero/c19e8032-2cd4-4e5b-81fe-e4b8caf66684.jpg",
+      "linked_ids": [
+        885
+      ]
+    },
+    {
+      "id": "06e343d9-40cc-44d9-bab5-fb4c81855c30",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-caribe-2-6-2.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA CARIBE 2.6",
+      "keywords": [
+        "32009",
+        "8-94258-8190",
+        "8-97118-3070",
+        "CARIBE",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "32009 / 8-94258-8190 / 8-97118-3070",
+      "slug": "rolinera-punta-eje-delantera-caribe-2-6-2",
+      "original_filename": "Rolinera Punta de Eje Delantero/06e343d9-40cc-44d9-bab5-fb4c81855c30.jpg",
+      "linked_ids": [
+        887
+      ]
+    },
+    {
       "category": "Rolinera Punta de Eje Delantero",
       "description": "ROLINERA PUNTA EJE DELANTERA EXTERNA CARIBE G200",
       "id": "6fbb8c62-6156-456a-964d-bf69868eb42e",
@@ -23595,6 +23666,54 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "78be7953-fd35-44d5-bee8-14a67e43ab96",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-luv-4x4.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA LUV 4X4",
+      "keywords": [
+        "32008",
+        "4X4",
+        "8-94227-0410",
+        "8-97118-3060",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "LUV",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "32008 / 8-94227-0410 / 8-97118-3060",
+      "slug": "rolinera-punta-eje-delantera-luv-4x4",
+      "original_filename": "Rolinera Punta de Eje Delantero/78be7953-fd35-44d5-bee8-14a67e43ab96.jpg",
+      "linked_ids": [
+        885
+      ]
+    },
+    {
+      "id": "b548dacf-22d3-4c47-9305-92885bcd1366",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-luv-4x4-2.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA LUV 4X4",
+      "keywords": [
+        "32009",
+        "4X4",
+        "8-94258-8190",
+        "8-97118-3070",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "LUV",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "32009 / 8-94258-8190 / 8-97118-3070",
+      "slug": "rolinera-punta-eje-delantera-luv-4x4-2",
+      "original_filename": "Rolinera Punta de Eje Delantero/b548dacf-22d3-4c47-9305-92885bcd1366.jpg",
+      "linked_ids": [
+        887
+      ]
+    },
+    {
       "category": "Rolinera Punta de Eje Delantero",
       "description": "ROLINERA PUNTA EJE DELANTERA LUV DMAX 2.4",
       "id": "WhatsApp Image 2026-07-21 at 11.07.08 AM (4)",
@@ -23627,6 +23746,146 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "58b98549-cc9b-46e8-bf20-9cd264d2edd2",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-luv-dmax-3-5.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA LUV DMAX 3.5",
+      "keywords": [
+        "32008",
+        "8-94227-0410",
+        "8-97118-3060",
+        "DELANTERA",
+        "DELANTERO",
+        "DMAX",
+        "EJE",
+        "LUV",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "32008 / 8-94227-0410 / 8-97118-3060",
+      "slug": "rolinera-punta-eje-delantera-luv-dmax-3-5",
+      "original_filename": "Rolinera Punta de Eje Delantero/58b98549-cc9b-46e8-bf20-9cd264d2edd2.jpg",
+      "linked_ids": [
+        885
+      ]
+    },
+    {
+      "id": "eb4882fc-a8ff-4c7a-987d-3d06ecc1b5a0",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-luv-dmax-3-5-2.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA LUV DMAX 3.5",
+      "keywords": [
+        "32009",
+        "8-94258-8190",
+        "8-97118-3070",
+        "DELANTERA",
+        "DELANTERO",
+        "DMAX",
+        "EJE",
+        "LUV",
+        "PUNTA",
+        "ROLINERA"
+      ],
+      "oem": "32009 / 8-94258-8190 / 8-97118-3070",
+      "slug": "rolinera-punta-eje-delantera-luv-dmax-3-5-2",
+      "original_filename": "Rolinera Punta de Eje Delantero/eb4882fc-a8ff-4c7a-987d-3d06ecc1b5a0.jpg",
+      "linked_ids": [
+        887
+      ]
+    },
+    {
+      "id": "cf8fe4d7-4cd8-4f1e-966f-d1182bded00f",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-rodeo.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA RODEO",
+      "keywords": [
+        "32008",
+        "8-94227-0410",
+        "8-97118-3060",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "PUNTA",
+        "RODEO",
+        "ROLINERA"
+      ],
+      "oem": "32008 / 8-94227-0410 / 8-97118-3060",
+      "slug": "rolinera-punta-eje-delantera-rodeo",
+      "original_filename": "Rolinera Punta de Eje Delantero/cf8fe4d7-4cd8-4f1e-966f-d1182bded00f.jpg",
+      "linked_ids": [
+        885
+      ]
+    },
+    {
+      "id": "29972602-40bd-4961-86f3-d8031f6f1e3a",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-rodeo-2.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA RODEO",
+      "keywords": [
+        "32009",
+        "8-94258-8190",
+        "8-97118-3070",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "PUNTA",
+        "RODEO",
+        "ROLINERA"
+      ],
+      "oem": "32009 / 8-94258-8190 / 8-97118-3070",
+      "slug": "rolinera-punta-eje-delantera-rodeo-2",
+      "original_filename": "Rolinera Punta de Eje Delantero/29972602-40bd-4961-86f3-d8031f6f1e3a.jpg",
+      "linked_ids": [
+        887
+      ]
+    },
+    {
+      "id": "2b65491f-0333-4d46-993f-65e7af41ae58",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-trooper.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA TROOPER",
+      "keywords": [
+        "32008",
+        "8-94227-0410",
+        "8-97118-3060",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "PUNTA",
+        "ROLINERA",
+        "TROOPER"
+      ],
+      "oem": "32008 / 8-94227-0410 / 8-97118-3060",
+      "slug": "rolinera-punta-eje-delantera-trooper",
+      "original_filename": "Rolinera Punta de Eje Delantero/2b65491f-0333-4d46-993f-65e7af41ae58.jpg",
+      "linked_ids": [
+        885
+      ]
+    },
+    {
+      "id": "48aff926-8941-44f5-b467-608db2916969",
+      "category": "Rolinera Punta de Eje Delantero",
+      "image_path": "./assets/rolinera-punta-eje-delantera-trooper-2.webp",
+      "description": "ROLINERA PUNTA EJE DELANTERA TROOPER",
+      "keywords": [
+        "32009",
+        "8-94258-8190",
+        "8-97118-3070",
+        "DELANTERA",
+        "DELANTERO",
+        "EJE",
+        "PUNTA",
+        "ROLINERA",
+        "TROOPER"
+      ],
+      "oem": "32009 / 8-94258-8190 / 8-97118-3070",
+      "slug": "rolinera-punta-eje-delantera-trooper-2",
+      "original_filename": "Rolinera Punta de Eje Delantero/48aff926-8941-44f5-b467-608db2916969.jpg",
+      "linked_ids": [
+        887
+      ]
+    },
+    {
       "category": "Rolinera Punta de Eje Delantero",
       "description": "ROLINERA PUNTA EJE EXTERNA DELANTERA  CARIBE 2.3",
       "id": "642475d8-ec83-4c7a-ac60-b34bd3e798c3",
@@ -23654,6 +23913,70 @@ const PRODUCTS_DATA = {
           "codigo_oem": "32007",
           "precio_usd": 10
         }
+      ]
+    },
+    {
+      "id": "c5d96221-c41b-4c66-91cb-92f4ed52c87e",
+      "category": "Rolinera Punta de Eje Trasera",
+      "image_path": "./assets/rolinera-punta-eje-trasera-caribe-2-3.webp",
+      "description": "ROLINERA PUNTA EJE TRASERA CARIBE 2.3",
+      "keywords": [
+        "30208",
+        "9-00093-6272",
+        "CARIBE",
+        "EJE",
+        "PUNTA",
+        "ROLINERA",
+        "TRASERA"
+      ],
+      "oem": "30208 / 9-00093-6272",
+      "slug": "rolinera-punta-eje-trasera-caribe-2-3",
+      "original_filename": "Rolinera Punta de Eje Trasera/c5d96221-c41b-4c66-91cb-92f4ed52c87e.jpg",
+      "linked_ids": [
+        889
+      ]
+    },
+    {
+      "id": "d206dabf-2644-45fb-b1d4-5addc2619d68",
+      "category": "Rolinera Punta de Eje Trasera",
+      "image_path": "./assets/rolinera-punta-eje-trasera-caribe-g200.webp",
+      "description": "ROLINERA PUNTA EJE TRASERA CARIBE G200",
+      "keywords": [
+        "30208",
+        "9-00093-6272",
+        "CARIBE",
+        "EJE",
+        "G200",
+        "PUNTA",
+        "ROLINERA",
+        "TRASERA"
+      ],
+      "oem": "30208 / 9-00093-6272",
+      "slug": "rolinera-punta-eje-trasera-caribe-g200",
+      "original_filename": "Rolinera Punta de Eje Trasera/d206dabf-2644-45fb-b1d4-5addc2619d68.jpg",
+      "linked_ids": [
+        889
+      ]
+    },
+    {
+      "id": "02c49e9b-8659-469d-8520-389b6a61fb8c",
+      "category": "Rolinera Punta de Eje Trasera",
+      "image_path": "./assets/rolinera-punta-eje-trasera-luv-2-3.webp",
+      "description": "ROLINERA PUNTA EJE TRASERA LUV 2.3",
+      "keywords": [
+        "30208",
+        "9-00093-6272",
+        "EJE",
+        "LUV",
+        "PUNTA",
+        "ROLINERA",
+        "TRASERA"
+      ],
+      "oem": "30208 / 9-00093-6272",
+      "slug": "rolinera-punta-eje-trasera-luv-2-3",
+      "original_filename": "Rolinera Punta de Eje Trasera/02c49e9b-8659-469d-8520-389b6a61fb8c.jpg",
+      "linked_ids": [
+        889
       ]
     },
     {
