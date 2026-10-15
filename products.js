@@ -7,7 +7,7 @@ const PRODUCTS_DATA = {
   "reviews_url": "aHR0cHM6Ly9nLnBhZ2Uvci9DWE1wa05fSV8wamlFQk0vcmV2aWV3",
   "google_analytics_id": "Ry1RRFlGUEtKTkpF",
   "meta_pixel_id": "MTUwMjA2NzMyNTI5MTY0NQ==",
-  "total_products": 985,
+  "total_products": 995,
   "products": [
     {
       "category": "Abrazadera Barra Estabilizadora",
@@ -24559,6 +24559,49 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "ff834063-780a-4a0a-9b1c-ea8a4ae6051e",
+      "category": "Sensor Oxigeno",
+      "image_path": "./assets/sensor-oxigeno-luv-2-2.webp",
+      "description": "SENSOR OXIGENO LUV 2.2",
+      "keywords": [
+        "8-25312-2000",
+        "8-25327-9850",
+        "8-97187-6070",
+        "8-97224-0110",
+        "LUV",
+        "OXIGENO",
+        "SENSOR"
+      ],
+      "oem": "8-25327-9850 / 8-25312-2000 / 8-97187-6070 / 8-97224-0110",
+      "slug": "sensor-oxigeno-luv-2-2",
+      "original_filename": "Sensor Oxigeno/ff834063-780a-4a0a-9b1c-ea8a4ae6051e.jpg",
+      "linked_ids": [
+        899
+      ]
+    },
+    {
+      "id": "55b1079b-a4e0-45ff-9848-7eaa312ca610",
+      "category": "Sensor Oxigeno",
+      "image_path": "./assets/sensor-oxigeno-luv-dmax-2-4.webp",
+      "description": "SENSOR OXIGENO LUV DMAX 2.4",
+      "keywords": [
+        "8-25312-2000",
+        "8-25327-9850",
+        "8-97187-6070",
+        "8-97224-0110",
+        "DMAX",
+        "LUV",
+        "OXIGENO",
+        "SENSOR"
+      ],
+      "oem": "8-25327-9850 / 8-25312-2000 / 8-97187-6070 / 8-97224-0110",
+      "slug": "sensor-oxigeno-luv-dmax-2-4",
+      "original_filename": "Sensor Oxigeno/55b1079b-a4e0-45ff-9848-7eaa312ca610.jpg",
+      "linked_ids": [
+        899
+      ]
+    },
+    {
       "category": "Sensor Oxigeno",
       "description": "SENSOR OXIGENO LUV DMAX 3.5",
       "id": "fd26efc0-e743-44f6-8914-7b9da80eaf63",
@@ -24702,6 +24745,27 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "f63a535b-7569-470e-b1a7-1f24f3d71255",
+      "category": "Sensor TPS",
+      "image_path": "./assets/sensor-posicion-aceleracion-tps-luv-dmax-3-0.webp",
+      "description": "SENSOR POSICION ACELERACION (TPS) LUV DMAX 3.0",
+      "keywords": [
+        "8-97163-1640",
+        "ACELERACION",
+        "DMAX",
+        "LUV",
+        "POSICION",
+        "SENSOR",
+        "TPS"
+      ],
+      "oem": "8-97163-1640",
+      "slug": "sensor-posicion-aceleracion-tps-luv-dmax-3-0",
+      "original_filename": "Sensor TPS/f63a535b-7569-470e-b1a7-1f24f3d71255.jpg",
+      "linked_ids": [
+        902
+      ]
+    },
+    {
       "category": "Sensor TPS",
       "description": "SENSOR POSICION ACELERACION (TPS) LUV DMAX 3.5",
       "id": "250c9065-f1b9-44d7-ba05-d650b36199f1",
@@ -24730,6 +24794,26 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "ff71d750-236a-4591-970d-81ae591e185a",
+      "category": "Sensor Velocidad - Kilometraje",
+      "image_path": "./assets/sensor-velocidad-kilometraje-luv-2-2.webp",
+      "description": "SENSOR VELOCIDAD / KILOMETRAJE LUV 2.2",
+      "keywords": [
+        "8-97129-7270",
+        "8-97365-7430",
+        "KILOMETRAJE",
+        "LUV",
+        "SENSOR",
+        "VELOCIDAD"
+      ],
+      "oem": "8-97129-7270 / 8-97365-7430",
+      "slug": "sensor-velocidad-kilometraje-luv-2-2",
+      "original_filename": "Sensor Velocidad - Kilometraje/ff71d750-236a-4591-970d-81ae591e185a.jpg",
+      "linked_ids": [
+        906
+      ]
+    },
+    {
       "category": "Sensor Velocidad - Kilometraje",
       "description": "SENSOR VELOCIDAD / KILOMETRAJE LUV DMAX 3.5",
       "id": "ac2eec5e-523b-4b87-82c6-0d86e78a6bc4",
@@ -24755,6 +24839,26 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97129-7040",
           "precio_usd": 25
         }
+      ]
+    },
+    {
+      "id": "d4831288-d13f-4acd-acda-b3288264879c",
+      "category": "Sensor Velocidad - Kilometraje",
+      "image_path": "./assets/sensor-velocidad-kilometraje-trooper-3-2.webp",
+      "description": "SENSOR VELOCIDAD / KILOMETRAJE TROOPER 3.2",
+      "keywords": [
+        "8-97129-7270",
+        "8-97365-7430",
+        "KILOMETRAJE",
+        "SENSOR",
+        "TROOPER",
+        "VELOCIDAD"
+      ],
+      "oem": "8-97129-7270 / 8-97365-7430",
+      "slug": "sensor-velocidad-kilometraje-trooper-3-2",
+      "original_filename": "Sensor Velocidad - Kilometraje/d4831288-d13f-4acd-acda-b3288264879c.jpg",
+      "linked_ids": [
+        906
       ]
     },
     {
@@ -24932,6 +25036,33 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-97014-2080-100",
           "precio_usd": 0
         }
+      ]
+    },
+    {
+      "id": "41eb5a08-7138-4233-8d17-1c094bc04bb0",
+      "category": "Separador de Cigueñal",
+      "image_path": "./assets/separador-de-ciguenal-axiales-trooper-3-2.webp",
+      "description": "SEPARADOR DE CIGUEÑAL / AXIALES TROOPER 3.2",
+      "keywords": [
+        "8-97014-2080",
+        "8-97014-2080-025",
+        "8-97014-2080-050",
+        "8-97014-2080-075",
+        "8-97014-2080-100",
+        "AXIALES",
+        "CIGUENAL",
+        "SEPARADOR",
+        "TROOPER"
+      ],
+      "oem": "8-97014-2080 / 8-97014-2080-025 / 8-97014-2080-050 / 8-97014-2080-075 / 8-97014-2080-100",
+      "slug": "separador-de-ciguenal-axiales-trooper-3-2",
+      "original_filename": "Separador de Cigueñal/41eb5a08-7138-4233-8d17-1c094bc04bb0.jpg",
+      "linked_ids": [
+        912,
+        1189,
+        1190,
+        1191,
+        1192
       ]
     },
     {
@@ -25887,6 +26018,27 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "d50389f2-9eb8-42f3-8e72-4afbc64f84ce",
+      "category": "Tambor de Freno",
+      "image_path": "./assets/tambor-de-freno-luv-dmax-3-0-4x4.webp",
+      "description": "TAMBOR DE FRENO LUV DMAX 3.0 4X4",
+      "keywords": [
+        "4X4",
+        "8-97360-5060",
+        "8-98030-3850",
+        "DMAX",
+        "FRENO",
+        "LUV",
+        "TAMBOR"
+      ],
+      "oem": "8-97360-5060 / 8-98030-3850",
+      "slug": "tambor-de-freno-luv-dmax-3-0-4x4",
+      "original_filename": "Tambor de Freno/d50389f2-9eb8-42f3-8e72-4afbc64f84ce.jpg",
+      "linked_ids": [
+        934
+      ]
+    },
+    {
       "category": "Tambor de Freno",
       "description": "TAMBOR DE FRENO LUV DMAX 3.5",
       "id": "c2004d22-097c-4902-9d44-42cd5f8c7a5f",
@@ -26817,6 +26969,27 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-94364-8171",
           "precio_usd": 0
         }
+      ]
+    },
+    {
+      "id": "321a7b8b-0738-48fc-921b-9ea891a64b28",
+      "category": "Tensor Correa de Tiempo",
+      "image_path": "./assets/tensor-correa-de-tiempo-luv-dmax-3-5.webp",
+      "description": "TENSOR CORREA DE TIEMPO LUV DMAX 3.5",
+      "keywords": [
+        "8-94364-8161",
+        "8-97136-2561",
+        "CORREA",
+        "DMAX",
+        "LUV",
+        "TENSOR",
+        "TIEMPO"
+      ],
+      "oem": "8-97136-2561 / 8-94364-8161",
+      "slug": "tensor-correa-de-tiempo-luv-dmax-3-5",
+      "original_filename": "Tensor Correa de Tiempo/321a7b8b-0738-48fc-921b-9ea891a64b28.jpg",
+      "linked_ids": [
+        962
       ]
     },
     {
@@ -28587,6 +28760,25 @@ const PRODUCTS_DATA = {
       ]
     },
     {
+      "id": "ac251c17-9995-4604-9dfa-bcda24576af2",
+      "category": "Vacum Distribuidor",
+      "image_path": "./assets/vacum-distribuidor-luv-2-3.webp",
+      "description": "VACUM DISTRIBUIDOR LUV 2.3",
+      "keywords": [
+        "8-94321-5320",
+        "8-94413-4470",
+        "DISTRIBUIDOR",
+        "LUV",
+        "VACUM"
+      ],
+      "oem": "8-94321-5320 / 8-94413-4470",
+      "slug": "vacum-distribuidor-luv-2-3",
+      "original_filename": "Vacum Distribuidor/ac251c17-9995-4604-9dfa-bcda24576af2.jpg",
+      "linked_ids": [
+        1012
+      ]
+    },
+    {
       "category": "Valvula Admision y Escape",
       "description": "VALVULA ADMISION LUV DMAX 3.5",
       "id": "c2d4c285-4c97-420c-86d8-6e30a51a6980",
@@ -29554,6 +29746,25 @@ const PRODUCTS_DATA = {
           "codigo_oem": "8-94247-4370",
           "precio_usd": 10
         }
+      ]
+    },
+    {
+      "id": "ec9f67b5-1ca0-4023-aa30-b0e48ad4cda3",
+      "category": "Valvula Temperatura",
+      "image_path": "./assets/valvula-temperatura-caribe-g200.webp",
+      "description": "VALVULA TEMPERATURA CARIBE G200",
+      "keywords": [
+        "8-94235-6910",
+        "CARIBE",
+        "G200",
+        "TEMPERATURA",
+        "VALVULA"
+      ],
+      "oem": "8-94235-6910",
+      "slug": "valvula-temperatura-caribe-g200",
+      "original_filename": "Valvula Temperatura/ec9f67b5-1ca0-4023-aa30-b0e48ad4cda3.jpg",
+      "linked_ids": [
+        1030
       ]
     },
     {

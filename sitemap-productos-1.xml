@@ -7941,6 +7941,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-oxigeno-luv-2-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-oxigeno-luv-2-2.webp</image:loc>
+      <image:title>SENSOR OXIGENO LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-oxigeno-luv-dmax-2-4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-oxigeno-luv-dmax-2-4.webp</image:loc>
+      <image:title>SENSOR OXIGENO LUV DMAX 2.4</image:title>
+    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/sensor-oxigeno-luv-dmax-3-5</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/sensor-oxigeno-luv-dmax-3-5.webp</image:loc>
@@ -7991,6 +8011,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-posicion-aceleracion-tps-luv-dmax-3-0</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-posicion-aceleracion-tps-luv-dmax-3-0.webp</image:loc>
+      <image:title>SENSOR POSICION ACELERACION (TPS) LUV DMAX 3.0</image:title>
+    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/sensor-posicion-aceleracion-tps-luv-dmax-3-5</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/sensor-posicion-aceleracion-tps-luv-dmax-3-5.webp</image:loc>
@@ -8001,10 +8031,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-velocidad-kilometraje-luv-2-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-velocidad-kilometraje-luv-2-2.webp</image:loc>
+      <image:title>SENSOR VELOCIDAD / KILOMETRAJE LUV 2.2</image:title>
+    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/sensor-velocidad-kilometraje-luv-dmax-3-5</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/sensor-velocidad-kilometraje-luv-dmax-3-5.webp</image:loc>
       <image:title>SENSOR VELOCIDAD / KILOMETRAJE LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/sensor-velocidad-kilometraje-trooper-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/sensor-velocidad-kilometraje-trooper-3-2.webp</image:loc>
+      <image:title>SENSOR VELOCIDAD / KILOMETRAJE TROOPER 3.2</image:title>
     </image:image>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -8045,6 +8095,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/separador-de-ciguenal-axiales-luv-dmax-3-5.webp</image:loc>
       <image:title>SEPARADOR DE CIGUEÑAL / AXIALES LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/separador-de-ciguenal-axiales-trooper-3-2</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/separador-de-ciguenal-axiales-trooper-3-2.webp</image:loc>
+      <image:title>SEPARADOR DE CIGUEÑAL / AXIALES TROOPER 3.2</image:title>
     </image:image>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -8365,6 +8425,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tambor-de-freno-luv-dmax-3-0-4x2.webp</image:loc>
       <image:title>TAMBOR DE FRENO LUV DMAX 3.0 4X2</image:title>
+    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/tambor-de-freno-luv-dmax-3-0-4x4</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/tambor-de-freno-luv-dmax-3-0-4x4.webp</image:loc>
+      <image:title>TAMBOR DE FRENO LUV DMAX 3.0 4X4</image:title>
     </image:image>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -8705,6 +8775,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tensor-correa-de-tiempo-hidraulico-trooper-3-2.webp</image:loc>
       <image:title>TENSOR CORREA DE TIEMPO HIDRAULICO TROOPER 3.2</image:title>
+    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/tensor-correa-de-tiempo-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/tensor-correa-de-tiempo-luv-dmax-3-5.webp</image:loc>
+      <image:title>TENSOR CORREA DE TIEMPO LUV DMAX 3.5</image:title>
     </image:image>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -9421,6 +9501,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/vacum-distribuidor-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/vacum-distribuidor-luv-2-3.webp</image:loc>
+      <image:title>VACUM DISTRIBUIDOR LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/valvula-admision-luv-dmax-3-5</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/valvula-admision-luv-dmax-3-5.webp</image:loc>
@@ -9765,6 +9855,16 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/valvula-temperatura-caribe-2-6.webp</image:loc>
       <image:title>VALVULA TEMPERATURA CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-temperatura-caribe-g200</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-temperatura-caribe-g200.webp</image:loc>
+      <image:title>VALVULA TEMPERATURA CARIBE G200</image:title>
     </image:image>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
