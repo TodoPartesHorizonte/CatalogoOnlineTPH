@@ -253,8 +253,8 @@
     
     <!-- INICIO PRECARGA -->
     <!-- FIN PRECARGA -->
-    <link rel="preload" href="./style.min.css?v=3" as="style">
-    <link rel="stylesheet" href="./style.min.css?v=3">
+    <link rel="preload" href="./style.min.css?v=4" as="style">
+    <link rel="stylesheet" href="./style.min.css?v=4">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -442,6 +442,15 @@
                     </button>
                 </div>
                 <h2 class="lightbox-desc" id="lightboxDesc">ABRAZADERA BARRA ESTABILIZADORA</h2>
+                <div id="lightboxOem" class="lightbox-oem" style="font-family: monospace; font-size: 12px; color: var(--accent-orange); margin-bottom: 8px; display: none;"></div>
+                <div id="lightboxPriceBox" class="lightbox-price-box" style="display: none;">
+                    <div>
+                        <div style="font-size: 10px; text-transform: uppercase; color: var(--text-secondary); font-weight: 700; letter-spacing: 0.5px; margin-bottom: 2px;">Precio</div>
+                        <div class="lightbox-price-val" id="lightboxPriceVal">Bs. 0,00</div>
+                    </div>
+                    <span class="lightbox-stock-badge lightbox-stock-in" id="lightboxStockBadge">Disponible</span>
+                </div>
+                <div id="lightboxVariantsContainer"></div>
                 <div class="card-actions lightbox-actions" style="margin-top: 10px;">
                     <a href="" target="_blank" class="lightbox-action-btn" id="lightboxActionBtn">
                         <svg viewBox="0 0 24 24" style="width: 16px; height: 16px;" aria-hidden="true">
@@ -1346,17 +1355,23 @@
         <a href="./p/sensor-ciguenal-ckp-luv-dmax-3-5.html">SENSOR CIGUEÑAL (CKP) LUV DMAX 3.5</a>
         <a href="./p/sensor-flujo-aire-maf-luv-dmax-3-5.html">SENSOR FLUJO AIRE (MAF) LUV DMAX 3.5</a>
         <a href="./p/sensor-presion-absoluta-de-aire-map-luv-dmax-2-4.html">SENSOR PRESION ABSOLUTA DE AIRE (MAP) LUV DMAX 2.4</a>
+        <a href="./p/sensor-oxigeno-luv-2-2.html">SENSOR OXIGENO LUV 2.2</a>
+        <a href="./p/sensor-oxigeno-luv-dmax-2-4.html">SENSOR OXIGENO LUV DMAX 2.4</a>
         <a href="./p/sensor-oxigeno-luv-dmax-3-5.html">SENSOR OXIGENO LUV DMAX 3.5</a>
         <a href="./p/sensor-oxigeno-trooper-3-2.html">SENSOR OXIGENO TROOPER 3.2</a>
         <a href="./p/sensor-posicion-aceleracion-tps-trooper-3-2.html">SENSOR POSICION ACELERACION (TPS)  TROOPER 3.2</a>
         <a href="./p/sensor-posicion-aceleracion-tps-luv-2-2.html">SENSOR POSICION ACELERACION (TPS) LUV 2.2</a>
         <a href="./p/sensor-posicion-aceleracion-tps-luv-dmax-2-4.html">SENSOR POSICION ACELERACION (TPS) LUV DMAX 2.4</a>
+        <a href="./p/sensor-posicion-aceleracion-tps-luv-dmax-3-0.html">SENSOR POSICION ACELERACION (TPS) LUV DMAX 3.0</a>
         <a href="./p/sensor-posicion-aceleracion-tps-luv-dmax-3-5.html">SENSOR POSICION ACELERACION (TPS) LUV DMAX 3.5</a>
+        <a href="./p/sensor-velocidad-kilometraje-luv-2-2.html">SENSOR VELOCIDAD / KILOMETRAJE LUV 2.2</a>
         <a href="./p/sensor-velocidad-kilometraje-luv-dmax-3-5.html">SENSOR VELOCIDAD / KILOMETRAJE LUV DMAX 3.5</a>
+        <a href="./p/sensor-velocidad-kilometraje-trooper-3-2.html">SENSOR VELOCIDAD / KILOMETRAJE TROOPER 3.2</a>
         <a href="./p/separador-de-ciguenal-axiales-caribe-2-3-luv-2-3.html">SEPARADOR DE CIGUEÑAL / AXIALES CARIBE 2.3 / LUV 2.3</a>
         <a href="./p/separador-de-ciguenal-axiales-caribe-2-6.html">SEPARADOR DE CIGUEÑAL / AXIALES CARIBE 2.6</a>
         <a href="./p/separador-de-ciguenal-axiales-caribe-g200.html">SEPARADOR DE CIGUEÑAL / AXIALES CARIBE G200</a>
         <a href="./p/separador-de-ciguenal-axiales-luv-dmax-3-5.html">SEPARADOR DE CIGUEÑAL / AXIALES LUV DMAX 3.5</a>
+        <a href="./p/separador-de-ciguenal-axiales-trooper-3-2.html">SEPARADOR DE CIGUEÑAL / AXIALES TROOPER 3.2</a>
         <a href="./p/sincronico-caja-1era-y-2da-caribe-g200.html">SINCRONICO CAJA 1ERA Y 2DA CARIBE G200</a>
         <a href="./p/soporte-cabina-alto-luv-dmax-3-5.html">SOPORTE CABINA ALTO LUV DMAX 3.5</a>
         <a href="./p/soporte-cabina-bajo-luv-dmax.html">SOPORTE CABINA BAJO LUV DMAX</a>
@@ -1389,6 +1404,7 @@
         <a href="./p/tambor-de-freno-luv-dmax-2-4.html">TAMBOR DE FRENO LUV DMAX 2.4</a>
         <a href="./p/tambor-de-freno-luv-dmax-2-5.html">TAMBOR DE FRENO LUV DMAX 2.5</a>
         <a href="./p/tambor-de-freno-luv-dmax-3-0-4x2.html">TAMBOR DE FRENO LUV DMAX 3.0 4X2</a>
+        <a href="./p/tambor-de-freno-luv-dmax-3-0-4x4.html">TAMBOR DE FRENO LUV DMAX 3.0 4X4</a>
         <a href="./p/tambor-de-freno-luv-dmax-3-5.html">TAMBOR DE FRENO LUV DMAX 3.5</a>
         <a href="./p/tanque-radiador-entrada-luv-d-max-3-5.html">TANQUE RADIADOR ENTRADA LUV D-MAX 3.5</a>
         <a href="./p/tanque-radiador-salida-luv-d-max.html">TANQUE RADIADOR SALIDA LUV D-MAX</a>
@@ -1423,6 +1439,7 @@
         <a href="./p/tensor-cadena-de-tiempo-caribe-g200.html">TENSOR CADENA DE TIEMPO CARIBE G200</a>
         <a href="./p/tensor-correa-de-tiempo-hidraulico-luv-dmax-3-5.html">TENSOR CORREA DE TIEMPO HIDRAULICO LUV DMAX 3.5</a>
         <a href="./p/tensor-correa-de-tiempo-hidraulico-trooper-3-2.html">TENSOR CORREA DE TIEMPO HIDRAULICO TROOPER 3.2</a>
+        <a href="./p/tensor-correa-de-tiempo-luv-dmax-3-5.html">TENSOR CORREA DE TIEMPO LUV DMAX 3.5</a>
         <a href="./p/tensor-correa-de-tiempo-mecanico-caribe-2-3.html">TENSOR CORREA DE TIEMPO MECANICO CARIBE 2.3</a>
         <a href="./p/tensor-correa-de-tiempo-mecanico-caribe-2-6.html">TENSOR CORREA DE TIEMPO MECANICO CARIBE 2.6</a>
         <a href="./p/tensor-correa-de-tiempo-mecanico-luv-2-2.html">TENSOR CORREA DE TIEMPO MECANICO LUV 2.2</a>
@@ -1494,6 +1511,7 @@
         <a href="./p/union-terminaltrooper.html">UNION TERMINAL TROOPER</a>
         <a href="./p/vacum-distribuidor-caribe-luv-2-3.html">VACUM DISTRIBUIDOR CARIBE / LUV 2.3</a>
         <a href="./p/vacum-distribuidor-caribe-2-6.html">VACUM DISTRIBUIDOR CARIBE 2.6</a>
+        <a href="./p/vacum-distribuidor-luv-2-3.html">VACUM DISTRIBUIDOR LUV 2.3</a>
         <a href="./p/valvula-admision-luv-dmax-3-5.html">VALVULA ADMISION LUV DMAX 3.5</a>
         <a href="./p/valvula-escape-luv-dmax-3-5.html">VALVULA ESCAPE LUV DMAX 3.5</a>
         <a href="./p/valvula-admision-caribe-2000.html">VÁLVULA ADMISION CARIBE 2000</a>
@@ -1529,6 +1547,7 @@
         <a href="./p/valvula-presion-aceite-trooper.html">VALVULA PRESION ACEITE TROOPER</a>
         <a href="./p/valvula-temperatura-caribe-2-3.html">VALVULA TEMPERATURA CARIBE 2.3</a>
         <a href="./p/valvula-temperatura-caribe-2-6.html">VALVULA TEMPERATURA CARIBE 2.6</a>
+        <a href="./p/valvula-temperatura-caribe-g200.html">VALVULA TEMPERATURA CARIBE G200</a>
         <a href="./p/valvula-temperatura-luv-2-2.html">VALVULA TEMPERATURA LUV 2.2</a>
         <a href="./p/valvula-temperatura-luv-2-3.html">VALVULA TEMPERATURA LUV 2.3</a>
         <a href="./p/valvula-temperatura-luv-dmax-2-4.html">VALVULA TEMPERATURA LUV DMAX 2.4</a>
@@ -1553,7 +1572,7 @@
     <!-- JAVASCRIPT DE CONTROL -->
     <script defer src="./products.js"></script>
     <script>window.defaultVehicleFilter = 'CARIBE';</script>
-    <script defer src="./app.min.js?v=6"></script>
+    <script defer src="./app.min.js?v=9"></script>
 </body>
 
 </html>

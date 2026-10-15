@@ -130,22 +130,16 @@ def load_db_config_and_prices(products):
     conn.close()
     return config, product_db_data
 
-def calculate_price_bs(base_price_usd, config):
-    mode = config.get('modo_precio', 'USDT')
-    bcv = config.get('tasa_bcv', 1.0) or 1.0
-    usdt = config.get('tasa_usdt', 1.0) or 1.0
-    increment = config.get('porcentaje_incremento', 0.0) or 0.0
+def calculate_price_bs(base_price_usd, config, tc=None):
+    rate = float(tc) if (tc and float(tc) > 0) else float(config.get('tasa_usdt', 1.0) or 1.0)
     base = float(base_price_usd or 0.0)
-    
-    if mode == 'INCREMENTO':
-        final_usd = round(base * (1.0 + (increment / 100.0)), 2)
-        price_bs = round(final_usd * bcv, 2)
-    elif mode == 'ESTANDAR':
-        price_bs = round(base * bcv, 2)
-    else:
-        price_bs = round(base * usdt, 2)
-        
-    return price_bs
+    return round(base * rate, 2)
+
+def format_bs(amount):
+    if amount is None or amount <= 0:
+        return ""
+    formatted = f"{float(amount):,.2f}"
+    return f"Bs. {formatted.replace(',', 'X').replace('.', ',').replace('X', '.')}"
 
 def generate_pages(data):
     def to_title_case(text):
@@ -344,6 +338,7 @@ def generate_pages(data):
         print("⚠️ Advertencia: Lista de productos vacía. No se modificará la carpeta /p/ ni se eliminarán páginas estáticas.")
         return
 
+    data_tc = data.get('tc') if isinstance(data, dict) else None
     whatsapp_encoded = data.get('whatsapp_number', '')
     whatsapp_number = decode_base64(whatsapp_encoded)
     
@@ -2068,9 +2063,10 @@ def generate_pages(data):
                 {description_card}
 
                 <div class="cta-card">
-                    <a href="https://wa.me/{whatsapp_number}?text=Hola,%20quisiera%20consultar%20disponibilidad%20y%20precio%20del%20repuesto:%20{url_description}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                    {price_box_html}
+                    <a href="https://wa.me/{whatsapp_number}?text={wa_consult_msg}" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        Consultar Disponibilidad
+                        <span>Consultar Disponibilidad</span>
                     </a>
                     <button class="btn btn-secondary btn-add" id="btnAddProduct" onclick="addToCart('{id}', '{description}', '{category}', '.{image_path}')">
                         <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor; margin-right: 8px;"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
@@ -2233,32 +2229,55 @@ def generate_pages(data):
         # Usar únicamente el primer código OEM (el principal) para los límites rígidos de Título y Meta Descripción
         p_oem_seo_main = oem_list_seo[0] if oem_list_seo else ""
         
-        # Consultar variantes del repuesto en la BD para calcular precios en Bs.
-        linked_ids = product.get('linked_ids', [])
+        # Consultar variantes del repuesto para calcular precios en Bs. y verificar stock
         variant_prices_bs = []
         medidas = []
         has_stock = False
-        
-        for lid in linked_ids:
-            lid_key = int(lid) if str(lid).isdigit() else lid
-            db_vars = db_products.get(lid_key, [])
-            for db_var in db_vars:
-                precio_usd = db_var.get('precio_venta_usd') or 0.0
-                price_bs = calculate_price_bs(precio_usd, db_config)
-                variant_prices_bs.append(price_bs)
-                
-                existencia = db_var.get('existencia') or 0.0
-                if existencia > 0:
+
+        direct_variants = product.get('variants', [])
+        if direct_variants:
+            for v in direct_variants:
+                p_usd = float(v.get('precio_usd') or v.get('precio_venta_usd') or 0.0)
+                if p_usd > 0:
+                    variant_prices_bs.append(calculate_price_bs(p_usd, db_config, tc=data_tc))
+                stock_val = v.get('stock') if v.get('stock') is not None else v.get('existencia')
+                if stock_val is not None and float(stock_val) > 0:
                     has_stock = True
+                m = v.get('medida')
+                if m and str(m).strip():
+                    medidas.append(str(m).strip())
+        else:
+            linked_ids = product.get('linked_ids', [])
+            for lid in linked_ids:
+                lid_key = int(lid) if str(lid).isdigit() else lid
+                db_vars = db_products.get(lid_key, [])
+                for db_var in db_vars:
+                    precio_usd = db_var.get('precio_venta_usd') or 0.0
+                    price_bs = calculate_price_bs(precio_usd, db_config, tc=data_tc)
+                    variant_prices_bs.append(price_bs)
                     
-                medida = db_var.get('medida_variante')
-                if medida and str(medida).strip():
-                    medidas.append(str(medida).strip())
-                    
-        # Seleccionar el precio máximo en Bs.
+                    existencia = db_var.get('existencia') or 0.0
+                    if existencia > 0:
+                        has_stock = True
+                        
+                    medida = db_var.get('medida_variante')
+                    if medida and str(medida).strip():
+                        medidas.append(str(medida).strip())
+                        
+        is_out_of_stock = product.get('is_out_of_stock') or not has_stock
         max_price_bs = max(variant_prices_bs) if variant_prices_bs else 0.0
         price_bs_str = f"{max_price_bs:.2f}"
-        availability_str = "https://schema.org/InStock"
+        availability_str = "https://schema.org/OutOfStock" if is_out_of_stock else "https://schema.org/InStock"
+
+        if is_out_of_stock:
+            price_box_html = '<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: rgba(255, 77, 79, 0.06); border: 1px solid rgba(255, 77, 79, 0.25); border-radius: 12px;"><span style="color: #ff4d4f; font-weight: 700; font-size: 14px; text-transform: uppercase;">Estado</span><span style="background: rgba(255, 77, 79, 0.15); color: #ff4d4f; border: 1px solid rgba(255, 77, 79, 0.35); padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase;">Agotado</span></div>'
+            wa_consult_msg = urllib.parse.quote(f"¡Hola! Me interesa consultar por el repuesto: *{desc}*. Veo que figura agotado en su página web, ¿tienen fecha estimada de llegada o algún equivalente?\nEnlace: {base_url}p/{safe_filename.replace('.html', '')}")
+        else:
+            formatted_price = format_bs(max_price_bs)
+            price_label = "Precio en Bolívares" if len(variant_prices_bs) <= 1 else "Precio desde (en Bolívares)"
+            price_display = formatted_price if formatted_price else "Consultar"
+            price_box_html = f'<div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: rgba(255, 106, 0, 0.05); border: 1px solid rgba(255, 106, 0, 0.2); border-radius: 12px;"><div><div style="font-size: 10px; text-transform: uppercase; color: var(--text-secondary); font-weight: 700; letter-spacing: 0.5px;">{price_label}</div><div style="font-size: 20px; font-weight: 800; color: #fff;">{price_display}</div></div><span style="background: rgba(37, 211, 102, 0.15); color: #25d366; border: 1px solid rgba(37, 211, 102, 0.4); padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase;">Disponible</span></div>'
+            wa_consult_msg = urllib.parse.quote(f"¡Hola! Me interesa consultar por el repuesto: *{desc}*. Precio: {price_display}. ¿Tienen disponibilidad inmediata?\nEnlace: {base_url}p/{safe_filename.replace('.html', '')}")
         
         # Construcción de textos optimizados para SEO locales y códigos OEM
         # --- TÍTULO LOCAL + OEM (Target: <= 60 chars) ---
@@ -2508,6 +2527,8 @@ def generate_pages(data):
             mpn_code=mpn_code,
             price_bs=price_bs_str,
             availability=availability_str,
+            price_box_html=price_box_html,
+            wa_consult_msg=wa_consult_msg,
             related_products=related_products_html,
             review_author=review_author,
             review_body=review_body

@@ -60,8 +60,97 @@
             return product._tokens;
         }
 
+        // --- FUNCIONES DE PRECIOS EN BOLÍVARES Y FORMATEO ---
+        function formatBs(amount) {
+            if (amount == null || isNaN(amount)) return "Bs. 0,00";
+            return "Bs. " + Number(amount).toLocaleString("es-VE", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+        }
 
-        // Inicializar carrito cargándolo de sessionStorage (mantiene los datos por sesión)
+        function getTC() {
+            if (typeof PRODUCTS_DATA !== 'undefined' && PRODUCTS_DATA && PRODUCTS_DATA.tc) {
+                return Number(PRODUCTS_DATA.tc);
+            }
+            if (typeof window !== 'undefined' && window.PRODUCTS_DATA && window.PRODUCTS_DATA.tc) {
+                return Number(window.PRODUCTS_DATA.tc);
+            }
+            return 1.0;
+        }
+
+        function calculatePriceBs(precioUsd, tcOverride) {
+            const rate = tcOverride || getTC();
+            return Math.round((Number(precioUsd || 0) * rate) * 100) / 100;
+        }
+
+        function sortMedidas(medidas) {
+            function parseMedida(m) {
+                if (!m) return { isStd: false, num: Infinity, raw: '' };
+                const raw = String(m).trim();
+                const upper = raw.toUpperCase();
+                
+                // STD / STANDARD / ESTANDAR siempre de primero
+                if (upper === 'STD' || upper === 'STANDARD' || upper === 'ESTANDAR' || upper === 'ESTÁNDAR' || upper.startsWith('STD')) {
+                    return { isStd: true, num: -1, raw };
+                }
+
+                // Extraer valor numérico inicial (e.g. "010" -> 10, "020" -> 20, "0.25" -> 0.25, "14MM" -> 14)
+                const match = upper.match(/^([0-9]+(?:[.,][0-9]+)?)/);
+                if (match) {
+                    const num = parseFloat(match[1].replace(',', '.'));
+                    return { isStd: false, num: isNaN(num) ? Infinity : num, raw };
+                }
+
+                return { isStd: false, num: Infinity, raw };
+            }
+
+            return [...medidas].sort((a, b) => {
+                const itemA = parseMedida(a);
+                const itemB = parseMedida(b);
+
+                if (itemA.isStd && !itemB.isStd) return -1;
+                if (!itemA.isStd && itemB.isStd) return 1;
+
+                if (itemA.num !== itemB.num) {
+                    return itemA.num - itemB.num;
+                }
+
+                return itemA.raw.localeCompare(itemB.raw, undefined, { numeric: true, sensitivity: 'base' });
+            });
+        }
+
+        function getProductPriceInfo(product) {
+            const tc = getTC();
+            const variants = product.variants || [];
+            const isOutOfStock = product.is_out_of_stock || (product.total_stock !== undefined && product.total_stock <= 0);
+
+            if (isOutOfStock || (variants.length > 0 && variants.every(v => v.stock !== undefined && v.stock <= 0))) {
+                return { isAgotado: true, priceText: "Agotado", minPriceBs: 0, hasMultiple: false };
+            }
+
+            const availableVariants = variants.filter(v => v.stock === undefined || v.stock > 0);
+            const validVariants = availableVariants.length > 0 ? availableVariants : variants;
+            const pricesBs = validVariants.map(v => calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc)).filter(p => p > 0);
+
+            if (pricesBs.length === 0) {
+                return { isAgotado: false, priceText: "", minPriceBs: 0, hasMultiple: false };
+            }
+
+            const minPrice = Math.min(...pricesBs);
+            const maxPrice = Math.max(...pricesBs);
+            const hasMultiple = (maxPrice - minPrice) > 0.01;
+
+            return {
+                isAgotado: false,
+                priceText: hasMultiple ? `Desde ${formatBs(minPrice)}` : formatBs(minPrice),
+                minPriceBs: minPrice,
+                hasMultiple: hasMultiple,
+                availableVariants: availableVariants
+            };
+        }
+
+        // Inicializar carrito cargándolo de localStorage
         function initCart() {
             try {
                 const storedCart = localStorage.getItem('tph_cart') || sessionStorage.getItem('tph_cart');
@@ -69,7 +158,7 @@
                     cart = JSON.parse(storedCart);
                 }
             } catch (e) {
-                console.error("Error al cargar el carrito de sessionStorage:", e);
+                console.error("Error al cargar el carrito:", e);
                 cart = [];
             }
             renderCart();
@@ -80,7 +169,7 @@
             try {
                 localStorage.setItem('tph_cart', JSON.stringify(cart));
             } catch (e) {
-                console.error("Error al guardar el carrito en sessionStorage:", e);
+                console.error("Error al guardar el carrito:", e);
             }
         }
 
@@ -90,7 +179,7 @@
                 cart = [];
                 saveCart();
                 renderCart();
-                toggleCart(false); // Cierra el cajón al vaciar
+                toggleCart(false);
             }
         };
 
@@ -105,12 +194,11 @@
             if (isOpen) {
                 drawer.classList.add('active');
                 overlay.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Evita scroll de fondo
+                document.body.style.overflow = 'hidden';
             } else {
                 drawer.classList.remove('active');
                 overlay.classList.remove('active');
                 
-                // Restaurar el scroll del cuerpo solo si el lightbox tampoco está abierto
                 const lightboxEl = document.getElementById('lightbox');
                 const isLightboxActive = lightboxEl && lightboxEl.classList.contains('active');
                 if (!isLightboxActive) {
@@ -119,23 +207,37 @@
             }
         }
 
-        // Agregar producto al carrito
-        function addToCart(productId) {
+        // Agregar producto al carrito (soporta variantes de marca y medida con precio en Bs)
+        function addToCart(productId, selectedVariant) {
             const product = productsData.find(p => p.id === productId);
             if (!product) return;
 
-            // Increment feedback interaction
             incrementInteractionCount();
+            const tc = getTC();
 
-            const existingItem = cart.find(item => item.id === productId);
+            const variant = selectedVariant || (product.variants && product.variants.length > 0 ? (product.variants.find(v => v.stock === undefined || v.stock > 0) || product.variants[0]) : null);
+            const brand = variant ? (variant.marca || variant.brand || null) : null;
+            const medida = variant ? (variant.medida || null) : null;
+            const priceBs = variant && (variant.precio_usd || variant.precio_venta_usd) ? calculatePriceBs(variant.precio_usd || variant.precio_venta_usd, tc) : 0;
+            const cartItemId = `${product.id}_${brand || ''}_${medida || ''}`;
+
+            const existingItem = cart.find(item => item.cartItemId === cartItemId || (!item.cartItemId && item.id === productId));
             if (existingItem) {
                 existingItem.quantity += 1;
+                existingItem.cartItemId = cartItemId;
+                if (!existingItem.brand && brand) existingItem.brand = brand;
+                if (!existingItem.medida && medida) existingItem.medida = medida;
+                if (!existingItem.price_bs && priceBs) existingItem.price_bs = priceBs;
             } else {
                 cart.push({
+                    cartItemId: cartItemId,
                     id: product.id,
                     description: product.description,
                     category: product.category,
                     image_path: product.image_path,
+                    brand: brand,
+                    medida: medida,
+                    price_bs: priceBs,
                     quantity: 1
                 });
             }
@@ -145,11 +247,14 @@
 
             // Rastrear evento en GA4 + Meta Pixel
             trackEvent('add_to_cart', {
-                currency: 'USD',
+                currency: 'VES',
+                value: priceBs,
                 items: [{
                     item_id: product.id,
                     item_name: product.description,
                     item_category: product.category,
+                    item_variant: brand || '',
+                    price: priceBs,
                     quantity: 1
                 }]
             });
@@ -158,32 +263,32 @@
                     item_id: product.id,
                     item_name: product.description,
                     item_category: product.category,
+                    item_variant: brand || '',
                     quantity: 1
                 }],
                 descripcion: 'Se agregó un producto al carrito de compras',
                 origen: 'catalogo_page'
             });
 
-            // Animación visual del botón que corresponda
             animateAddToCartBtn(productId);
             animateFabBadge();
         }
 
         // Quitar un producto del carrito
-        function removeFromCart(productId) {
-            cart = cart.filter(item => item.id !== productId);
+        function removeFromCart(cartItemId) {
+            cart = cart.filter(item => (item.cartItemId || item.id) !== cartItemId);
             saveCart();
             renderCart();
         }
 
         // Modificar cantidad (+1 o -1)
-        function updateCartQty(productId, delta) {
-            const item = cart.find(item => item.id === productId);
+        function updateCartQty(cartItemId, delta) {
+            const item = cart.find(item => (item.cartItemId || item.id) === cartItemId);
             if (!item) return;
 
             item.quantity += delta;
             if (item.quantity <= 0) {
-                removeFromCart(productId);
+                removeFromCart(cartItemId);
             } else {
                 saveCart();
                 renderCart();
@@ -199,6 +304,7 @@
             if (!container || !totalItemsEl || !badgeEl) return;
 
             let totalQty = 0;
+            let totalBs = 0;
 
             if (cart.length === 0) {
                 container.innerHTML = `
@@ -213,20 +319,32 @@
             } else {
                 let html = '';
                 cart.forEach(item => {
+                    const cId = item.cartItemId || item.id;
                     totalQty += item.quantity;
+                    const itemSubtotalBs = (item.price_bs || 0) * item.quantity;
+                    totalBs += itemSubtotalBs;
+
+                    const variantDetails = [];
+                    if (item.brand) variantDetails.push(`Marca: <strong>${item.brand}</strong>`);
+                    if (item.medida) variantDetails.push(`Medida: <strong>${item.medida}</strong>`);
+                    const variantStr = variantDetails.length > 0 ? `<div style="font-size: 11px; color: var(--text-secondary); margin-top: 2px;">${variantDetails.join(' · ')}</div>` : '';
+                    const priceStr = item.price_bs ? `<div style="font-size: 12px; font-weight: 800; color: var(--text-primary); margin-top: 4px;">${formatBs(itemSubtotalBs)}</div>` : '';
+
                     html += `
-                        <div class="cart-item" id="cart-item-${item.id}">
+                        <div class="cart-item" id="cart-item-${cId}">
                             <img src="${item.image_path}" alt="${item.description}" class="cart-item-img" width="60" height="60" loading="lazy" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                             <div class="cart-item-info">
                                 <span class="cart-item-category">${item.category}</span>
                                 <div class="cart-item-title" title="${item.description}">${item.description}</div>
-                                <div class="cart-item-controls">
-                                    <button class="cart-qty-btn" onclick="updateCartQty('${item.id}', -1)" aria-label="Disminuir cantidad">-</button>
+                                ${variantStr}
+                                ${priceStr}
+                                <div class="cart-item-controls" style="margin-top: 6px;">
+                                    <button class="cart-qty-btn" onclick="updateCartQty('${cId}', -1)" aria-label="Disminuir cantidad">-</button>
                                     <span class="cart-item-qty">${item.quantity}</span>
-                                    <button class="cart-qty-btn" onclick="updateCartQty('${item.id}', 1)" aria-label="Incrementar cantidad">+</button>
+                                    <button class="cart-qty-btn" onclick="updateCartQty('${cId}', 1)" aria-label="Incrementar cantidad">+</button>
                                 </div>
                             </div>
-                            <button class="cart-item-remove" onclick="removeFromCart('${item.id}')" aria-label="Eliminar repuesto">
+                            <button class="cart-item-remove" onclick="removeFromCart('${cId}')" aria-label="Eliminar repuesto">
                                 <svg aria-hidden="true" viewBox="0 0 24 24">
                                     <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
                                 </svg>
@@ -234,10 +352,19 @@
                         </div>
                     `;
                 });
+
+                if (totalBs > 0) {
+                    html += `
+                        <div style="padding: 14px; background: rgba(255, 106, 0, 0.08); border: 1px solid rgba(255, 106, 0, 0.2); border-radius: 10px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 13px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase;">Total Estimado:</span>
+                            <span style="font-size: 18px; font-weight: 800; color: #ffffff; font-family: 'Outfit', sans-serif;">${formatBs(totalBs)}</span>
+                        </div>
+                    `;
+                }
+
                 container.innerHTML = html;
             }
 
-            // Mostrar/ocultar botón de vaciar
             const clearBtn = document.getElementById('cartClearBtn');
             if (clearBtn) {
                 clearBtn.style.display = cart.length === 0 ? 'none' : 'block';
@@ -255,7 +382,6 @@
 
         // Animar el botón de agregar
         function animateAddToCartBtn(productId) {
-            // Buscar tanto en tarjetas del catálogo como en el lightbox modal
             const btns = [
                 document.getElementById(`btn-add-${productId}`),
                 document.getElementById('lightboxAddBtn')
@@ -301,21 +427,35 @@
                 return;
             }
 
-            let msg = `¡Hola TODO PARTES HORIZONTE! Vengo desde su catálogo web y me gustaría cotizar la disponibilidad y precio de los siguientes repuestos:\n\n`;
+            let totalBs = 0;
+            let msg = `¡Hola TODO PARTES HORIZONTE! Vengo desde su catálogo web y me gustaría cotizar/pedir los siguientes repuestos:\n\n`;
             cart.forEach((item, index) => {
-                msg += `*${index + 1}.*  ${item.description}\n`;
-                msg += `    *Cantidad:* ${item.quantity} pc(s) | *Categoría:* _${item.category}_\n\n`;
-            });
-            msg += `Quedo atento a su respuesta. ¡Muchas gracias!`;
+                const subtotalBs = (item.price_bs || 0) * item.quantity;
+                totalBs += subtotalBs;
 
-            // Rastrear checkout en Analytics (GA4 + Meta Pixel)
+                const details = [];
+                if (item.brand) details.push(`Marca: ${item.brand}`);
+                if (item.medida) details.push(`Medida: ${item.medida}`);
+                const detailText = details.length > 0 ? ` (${details.join(' | ')})` : '';
+                const priceText = item.price_bs ? ` | Precio: ${formatBs(subtotalBs)}` : '';
+
+                msg += `*${index + 1}.* ${item.description}${detailText}\n`;
+                msg += `    *Cantidad:* ${item.quantity} pc(s) | *Categoría:* _${item.category}_${priceText}\n\n`;
+            });
+
+            if (totalBs > 0) {
+                msg += `*Monto Total Estimado:* ${formatBs(totalBs)}\n\n`;
+            }
+            msg += `Quedo atento a su respuesta para concretar la compra. ¡Muchas gracias!`;
+
             trackEvent('generate_lead', {
-                currency: 'USD',
-                value: 0,
+                currency: 'VES',
+                value: totalBs,
                 items: cart.map(i => ({ item_id: i.id, item_name: i.description, item_category: i.category, quantity: i.quantity }))
             });
             trackEvent('enviar_pedido_whatsapp', {
                 cantidad_items: cart.length,
+                monto_total: totalBs,
                 descripcion: 'El usuario envió un pedido al WhatsApp de la tienda',
                 origen: 'catalogo_page'
             });
@@ -506,11 +646,185 @@
                 descMeta.setAttribute('content', `Consigue ${product.description} en TODO PARTES HORIZONTE. Repuesto de categoría ${product.category}. Consulta disponibilidad por WhatsApp.`);
             }
             
-            const cardUrl = `${window.location.origin}${window.location.pathname}?producto=${product.slug || productId}`;
-            const waMsg = encodeURIComponent(
-                `¡Hola! Estoy interesado en el repuesto: *${product.description}* (Categoría: *${product.category}*).\n¿Tienen disponibilidad y precio?\nEnlace: ${cardUrl}`
-            );
-            lightboxActionBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMsg}`;
+            // Referencias a elementos del Lightbox
+            const lightboxOem = document.getElementById('lightboxOem');
+            const lightboxPriceBox = document.getElementById('lightboxPriceBox');
+            const lightboxPriceVal = document.getElementById('lightboxPriceVal');
+            const lightboxStockBadge = document.getElementById('lightboxStockBadge');
+            const lightboxVariantsContainer = document.getElementById('lightboxVariantsContainer');
+
+            if (lightboxOem) {
+                if (product.oem) {
+                    lightboxOem.innerText = `OEM: ${product.oem}`;
+                    lightboxOem.style.display = 'block';
+                } else {
+                    lightboxOem.style.display = 'none';
+                }
+            }
+
+            const tc = getTC();
+            const variants = product.variants || [];
+            let selectedVariant = null;
+
+            // Medidas distintas si existen, ordenadas estrictamente (STD primero, luego numérico creciente)
+            const distinctMedidas = sortMedidas([...new Set(variants.map(v => v.medida).filter(m => m && m.trim() !== ''))]);
+            
+            // Preferir la primera medida que tenga stock disponible; si ninguna tiene, la primera ordenada
+            let activeMedida = null;
+            if (distinctMedidas.length > 0) {
+                const measureWithStock = distinctMedidas.find(m => {
+                    return variants.some(v => v.medida === m && (v.stock === undefined || v.stock > 0));
+                });
+                activeMedida = measureWithStock || distinctMedidas[0];
+            }
+
+            function renderLightboxVariants() {
+                if (!lightboxVariantsContainer) return;
+                lightboxVariantsContainer.innerHTML = '';
+
+                // Filtrar por medida si aplica
+                const measurePool = activeMedida ? variants.filter(v => v.medida === activeMedida) : variants;
+
+                // Filtrar ÚNICAMENTE las marcas con stock disponible (> 0 o sin definir)
+                const availablePool = measurePool.filter(v => v.stock === undefined || v.stock > 0);
+
+                // Seleccionar primer variante disponible
+                if (!selectedVariant || !availablePool.some(v => v.id === selectedVariant.id)) {
+                    selectedVariant = availablePool.length > 0 ? availablePool[0] : null;
+                }
+
+                let containerHtml = '';
+
+                // Si hay múltiples medidas, renderizar selector de píldoras
+                if (distinctMedidas.length > 1) {
+                    containerHtml += `
+                        <div class="lightbox-measure-section">
+                            <span class="lightbox-section-label">Medida / Especificación:</span>
+                            <div class="lightbox-measure-pills">
+                                ${distinctMedidas.map(m => `
+                                    <button type="button" class="measure-pill ${m === activeMedida ? 'active' : ''}" data-medida="${m}">
+                                        ${m}
+                                    </button>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // Si hay marcas con stock disponible (> 1 opción), renderizar lista de opciones disponibles
+                // Si solo queda 1 marca disponible de varias, la mostramos seleccionada sin marcas agotadas
+                if (availablePool.length > 1) {
+                    containerHtml += `
+                        <div class="lightbox-brand-section" style="margin-top: 12px;">
+                            <span class="lightbox-section-label">Marcas disponibles:</span>
+                            <div class="lightbox-brand-list">
+                                ${availablePool.map(v => {
+                                    const isSel = selectedVariant && selectedVariant.id === v.id;
+                                    const vPriceBs = calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc);
+                                    const displayPrice = vPriceBs > 0 ? formatBs(vPriceBs) : 'Consultar';
+                                    const brandName = v.marca || v.brand || 'Estándar';
+                                    return `
+                                        <div class="lightbox-brand-item ${isSel ? 'selected' : ''}" data-variant-id="${v.id}" role="button" tabindex="0">
+                                            <div class="lightbox-brand-name">${brandName}</div>
+                                            <div class="lightbox-brand-price">${displayPrice}</div>
+                                        </div>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+                    `;
+                } else if (availablePool.length === 1 && (variants.length > 1 || distinctMedidas.length > 0)) {
+                    const v = availablePool[0];
+                    const vPriceBs = calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc);
+                    const brandName = v.marca || v.brand || 'Estándar';
+                    containerHtml += `
+                        <div class="lightbox-brand-section" style="margin-top: 12px;">
+                            <span class="lightbox-section-label">Marca disponible:</span>
+                            <div class="lightbox-brand-list">
+                                <div class="lightbox-brand-item selected" data-variant-id="${v.id}" style="cursor: default;">
+                                    <div class="lightbox-brand-name">${brandName}</div>
+                                    <div class="lightbox-brand-price">${formatBs(vPriceBs)}</div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                lightboxVariantsContainer.innerHTML = containerHtml;
+
+                // Event listeners para píldoras de medida
+                lightboxVariantsContainer.querySelectorAll('.measure-pill').forEach(pill => {
+                    pill.onclick = (e) => {
+                        e.stopPropagation();
+                        activeMedida = pill.getAttribute('data-medida');
+                        selectedVariant = null;
+                        renderLightboxVariants();
+                        updateLightboxState();
+                    };
+                });
+
+                // Event listeners para marcas
+                lightboxVariantsContainer.querySelectorAll('.lightbox-brand-item').forEach(item => {
+                    item.onclick = (e) => {
+                        e.stopPropagation();
+                        const vId = item.getAttribute('data-variant-id');
+                        const found = availablePool.find(v => String(v.id) === String(vId));
+                        if (found) {
+                            selectedVariant = found;
+                            lightboxVariantsContainer.querySelectorAll('.lightbox-brand-item').forEach(b => b.classList.remove('selected'));
+                            item.classList.add('selected');
+                            updateLightboxState();
+                        }
+                    };
+                });
+            }
+
+            function updateLightboxState() {
+                const measurePool = activeMedida ? variants.filter(v => v.medida === activeMedida) : variants;
+                const availablePool = measurePool.filter(v => v.stock === undefined || v.stock > 0);
+                const isOutOfStock = product.is_out_of_stock || (measurePool.length > 0 && availablePool.length === 0) || (variants.length === 0 && product.total_stock !== undefined && product.total_stock <= 0);
+
+                if (lightboxPriceBox && lightboxPriceVal && lightboxStockBadge) {
+                    lightboxPriceBox.style.display = 'flex';
+                    if (isOutOfStock) {
+                        lightboxPriceVal.innerText = 'Agotado';
+                        lightboxPriceVal.style.color = '#ff4d4f';
+                        lightboxStockBadge.innerText = 'Agotado';
+                        lightboxStockBadge.className = 'lightbox-stock-badge lightbox-stock-out';
+                    } else {
+                        const targetPriceUsd = selectedVariant ? (selectedVariant.precio_usd || selectedVariant.precio_venta_usd) : (product.min_price_usd || 0);
+                        const priceBs = calculatePriceBs(targetPriceUsd, tc);
+                        lightboxPriceVal.innerText = priceBs > 0 ? formatBs(priceBs) : 'Consultar';
+                        lightboxPriceVal.style.color = 'var(--text-primary)';
+                        lightboxStockBadge.innerText = 'Disponible';
+                        lightboxStockBadge.className = 'lightbox-stock-badge lightbox-stock-in';
+                    }
+                }
+
+                // Generar mensaje de WhatsApp
+                const cardUrl = `${window.location.origin}${window.location.pathname}?producto=${product.slug || productId}`;
+                const brandPart = selectedVariant && (selectedVariant.marca || selectedVariant.brand) ? `Marca: *${selectedVariant.marca || selectedVariant.brand}*` : '';
+                const medidaPart = selectedVariant && selectedVariant.medida ? `Medida: *${selectedVariant.medida}*` : '';
+                const variantDetails = [brandPart, medidaPart].filter(Boolean).join(', ');
+                const variantText = variantDetails ? ` (${variantDetails})` : '';
+
+                let waMsgText = '';
+                if (isOutOfStock) {
+                    waMsgText = `¡Hola! Me interesa consultar por el repuesto: *${product.description}* (Categoría: *${product.category}*)${variantText}.\nVeo que figura agotado, ¿tienen fecha estimada de llegada o algún equivalente?\nEnlace: ${cardUrl}`;
+                } else {
+                    const targetPriceUsd = selectedVariant ? (selectedVariant.precio_usd || selectedVariant.precio_venta_usd) : 0;
+                    const priceBs = calculatePriceBs(targetPriceUsd, tc);
+                    const priceFormatted = priceBs > 0 ? `\nPrecio: *${formatBs(priceBs)}*` : '';
+                    waMsgText = `¡Hola! Estoy interesado en el repuesto: *${product.description}* (Categoría: *${product.category}*)${variantText}.${priceFormatted}\n¿Tienen disponibilidad?\nEnlace: ${cardUrl}`;
+                }
+
+                lightboxActionBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMsgText)}`;
+                window.currentSelectedVariant = selectedVariant;
+            }
+
+            renderLightboxVariants();
+            updateLightboxState();
+
             lightboxActionBtn.onclick = () => {
                 trackEvent('consultar_producto_whatsapp', {
                     item_id: product.id,
@@ -533,7 +847,7 @@
             const lightboxAddBtn = document.getElementById('lightboxAddBtn');
             if (lightboxAddBtn) {
                 lightboxAddBtn.onclick = () => {
-                    addToCart(productId);
+                    addToCart(productId, window.currentSelectedVariant);
                 };
             }
 
@@ -652,6 +966,7 @@
                     throw new Error('PRODUCTS_DATA no está definido.');
                 }
                 const data = PRODUCTS_DATA;
+                window.PRODUCTS_DATA = PRODUCTS_DATA;
                 
                 // Actualizar configuración
                 productsData = data.products || [];
@@ -1050,22 +1365,41 @@
                 let isLcp = reset && index < 4;
                 let imgPriority = isLcp ? 'fetchpriority="high"' : 'loading="lazy"';
                 
+                const priceInfo = getProductPriceInfo(product);
+
                 // Prefila el mensaje de consulta de WhatsApp
                 const cardUrl = `${window.location.origin}${window.location.pathname}?producto=${product.slug || product.id}`;
-                const waMsg = encodeURIComponent(
-                    `¡Hola! Estoy interesado en el repuesto: *${product.description}* (Categoría: *${product.category}*).\n¿Tienen disponibilidad y precio?\nEnlace: ${cardUrl}`
-                );
+                let waMsgText = '';
+                if (priceInfo.isAgotado) {
+                    waMsgText = `¡Hola! Me interesa consultar por el repuesto: *${product.description}* (Categoría: *${product.category}*).\nVeo que figura agotado, ¿tienen fecha estimada de llegada o algún equivalente?\nEnlace: ${cardUrl}`;
+                } else if (priceInfo.priceText) {
+                    waMsgText = `¡Hola! Estoy interesado en el repuesto: *${product.description}* (Categoría: *${product.category}*).\nPrecio: ${priceInfo.priceText}\n¿Tienen disponibilidad?\nEnlace: ${cardUrl}`;
+                } else {
+                    waMsgText = `¡Hola! Estoy interesado en el repuesto: *${product.description}* (Categoría: *${product.category}*).\n¿Tienen disponibilidad y precio?\nEnlace: ${cardUrl}`;
+                }
+                const waMsg = encodeURIComponent(waMsgText);
                 const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMsg}`;
+
+                let priceRowHtml = '';
+                if (priceInfo.isAgotado) {
+                    priceRowHtml = `<div class="card-price-row"><span class="badge-agotado">Agotado</span></div>`;
+                } else if (priceInfo.priceText) {
+                    priceRowHtml = `<div class="card-price-row"><span class="card-price-val">${priceInfo.priceText}</span></div>`;
+                }
+
+                const photoBadgeHtml = priceInfo.isAgotado ? `<span class="photo-badge-agotado">Agotado</span>` : '';
 
                 gridHtml += `
                     <div class="product-card" id="card-${product.id}">
                         <div class="card-img-wrapper" onclick="openLightbox('${product.id}')" role="button" tabindex="0" aria-label="Ver detalles del repuesto">
                             <span class="category-badge"><span>${product.category}</span></span>
+                            ${photoBadgeHtml}
                             <img src="${product.image_path}" alt="${product.description}" class="product-img img-lazy" ${imgPriority} width="280" height="350" onload="this.classList.add('img-loaded')" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                         </div>
                         <div class="card-content">
                             <div class="product-desc" title="${product.description}">${product.description}</div>
                             ${product.oem ? `<div class="product-oem" style="font-family: monospace; font-size: 11px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -4px;">OEM: ${product.oem.split('/')[0].trim()}</div>` : ''}
+                            ${priceRowHtml}
                             <div class="card-actions">
                                 <a href="${whatsappLink}" target="_blank" class="card-btn" id="btn-wa-${product.id}" onclick="trackEvent('consultar_producto_whatsapp', { item_id: '${product.id}', nombre_producto: '${product.description.replace(/'/g, "\\'")}', categoria: '${product.category}', origen: 'tarjeta_grid' })" aria-label="Consultar repuesto por WhatsApp">
                                     <svg aria-hidden="true" viewBox="0 0 24 24">
