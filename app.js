@@ -123,18 +123,27 @@
         function getProductPriceInfo(product) {
             const tc = getTC();
             const variants = product.variants || [];
-            const isOutOfStock = product.is_out_of_stock || (product.total_stock !== undefined && product.total_stock <= 0);
+            
+            // Variantes disponibles: precio > 0 y stock > 0 (si está definido)
+            const availableVariants = variants.filter(v => {
+                const p = Number(v.precio_usd || v.precio_venta_usd || 0);
+                const s = v.stock !== undefined ? Number(v.stock) : 1;
+                return p > 0 && s > 0;
+            });
 
-            if (isOutOfStock || (variants.length > 0 && variants.every(v => v.stock !== undefined && v.stock <= 0))) {
+            const isOutOfStock = product.is_out_of_stock || 
+                                (product.total_stock !== undefined && product.total_stock <= 0) ||
+                                (variants.length > 0 && availableVariants.length === 0);
+
+            if (isOutOfStock) {
                 return { isAgotado: true, priceText: "Agotado", minPriceBs: 0, hasMultiple: false };
             }
 
-            const availableVariants = variants.filter(v => v.stock === undefined || v.stock > 0);
             const validVariants = availableVariants.length > 0 ? availableVariants : variants;
             const pricesBs = validVariants.map(v => calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc)).filter(p => p > 0);
 
             if (pricesBs.length === 0) {
-                return { isAgotado: false, priceText: "", minPriceBs: 0, hasMultiple: false };
+                return { isAgotado: true, priceText: "Agotado", minPriceBs: 0, hasMultiple: false };
             }
 
             const minPrice = Math.min(...pricesBs);
@@ -666,14 +675,29 @@
             const variants = product.variants || [];
             let selectedVariant = null;
 
+            // Función para resolver la medida de la variante (si no está explícita, inferirla del codigo_oem)
+            function getVariantMedida(v) {
+                if (v.medida && String(v.medida).trim()) return String(v.medida).trim();
+                const code = (v.codigo_oem || '').trim().toUpperCase();
+                const m = code.match(/[-/ ](STD|STANDARD|0[1-9][0-9]|0\.[0-9]+|[0-9]{2,3}\s*MM)$/i);
+                if (m) {
+                    return m[1].toUpperCase();
+                }
+                const hasOversize = variants.some(other => /[-/ ]0[1-9][0-9]$/i.test((other.codigo_oem || '').trim()));
+                if (hasOversize) {
+                    return 'STD';
+                }
+                return '';
+            }
+
             // Medidas distintas si existen, ordenadas estrictamente (STD primero, luego numérico creciente)
-            const distinctMedidas = sortMedidas([...new Set(variants.map(v => v.medida).filter(m => m && m.trim() !== ''))]);
+            const distinctMedidas = sortMedidas([...new Set(variants.map(v => getVariantMedida(v)).filter(m => m && m.trim() !== ''))]);
             
-            // Preferir la primera medida que tenga stock disponible; si ninguna tiene, la primera ordenada
+            // Preferir la primera medida que tenga precio y stock disponible; si ninguna tiene, la primera ordenada
             let activeMedida = null;
             if (distinctMedidas.length > 0) {
                 const measureWithStock = distinctMedidas.find(m => {
-                    return variants.some(v => v.medida === m && (v.stock === undefined || v.stock > 0));
+                    return variants.some(v => getVariantMedida(v) === m && Number(v.precio_usd || v.precio_venta_usd || 0) > 0 && (v.stock === undefined || Number(v.stock) > 0));
                 });
                 activeMedida = measureWithStock || distinctMedidas[0];
             }
@@ -683,13 +707,17 @@
                 lightboxVariantsContainer.innerHTML = '';
 
                 // Filtrar por medida si aplica
-                const measurePool = activeMedida ? variants.filter(v => v.medida === activeMedida) : variants;
+                const measurePool = (activeMedida && distinctMedidas.length > 0) ? variants.filter(v => getVariantMedida(v) === activeMedida) : variants;
 
-                // Filtrar ÚNICAMENTE las marcas con stock disponible (> 0 o sin definir)
-                const availablePool = measurePool.filter(v => v.stock === undefined || v.stock > 0);
+                // Filtrar ÚNICAMENTE las marcas con precio disponible (> 0) y stock disponible (> 0 si definido)
+                const availablePool = measurePool.filter(v => {
+                    const p = Number(v.precio_usd || v.precio_venta_usd || 0);
+                    const s = v.stock !== undefined ? Number(v.stock) : 1;
+                    return p > 0 && s > 0;
+                });
 
                 // Seleccionar primer variante disponible
-                if (!selectedVariant || !availablePool.some(v => v.id === selectedVariant.id)) {
+                if (!selectedVariant || !availablePool.some(v => (v.id && selectedVariant.id && v.id === selectedVariant.id) || v === selectedVariant)) {
                     selectedVariant = availablePool.length > 0 ? availablePool[0] : null;
                 }
 
@@ -718,13 +746,14 @@
                         <div class="lightbox-brand-section" style="margin-top: 12px;">
                             <span class="lightbox-section-label">Marcas disponibles:</span>
                             <div class="lightbox-brand-list">
-                                ${availablePool.map(v => {
-                                    const isSel = selectedVariant && selectedVariant.id === v.id;
+                                ${availablePool.map((v, idx) => {
+                                    const isSel = selectedVariant && (v === selectedVariant || (v.id && selectedVariant.id && v.id === selectedVariant.id));
                                     const vPriceBs = calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc);
                                     const displayPrice = vPriceBs > 0 ? formatBs(vPriceBs) : 'Consultar';
                                     const brandName = v.marca || v.brand || 'Estándar';
+                                    const vKey = String(v.id || idx);
                                     return `
-                                        <div class="lightbox-brand-item ${isSel ? 'selected' : ''}" data-variant-id="${v.id}" role="button" tabindex="0">
+                                        <div class="lightbox-brand-item ${isSel ? 'selected' : ''}" data-variant-key="${vKey}" role="button" tabindex="0">
                                             <div class="lightbox-brand-name">${brandName}</div>
                                             <div class="lightbox-brand-price">${displayPrice}</div>
                                         </div>
@@ -741,7 +770,7 @@
                         <div class="lightbox-brand-section" style="margin-top: 12px;">
                             <span class="lightbox-section-label">Marca disponible:</span>
                             <div class="lightbox-brand-list">
-                                <div class="lightbox-brand-item selected" data-variant-id="${v.id}" style="cursor: default;">
+                                <div class="lightbox-brand-item selected" style="cursor: default;">
                                     <div class="lightbox-brand-name">${brandName}</div>
                                     <div class="lightbox-brand-price">${formatBs(vPriceBs)}</div>
                                 </div>
@@ -764,13 +793,11 @@
                 });
 
                 // Event listeners para marcas
-                lightboxVariantsContainer.querySelectorAll('.lightbox-brand-item').forEach(item => {
+                lightboxVariantsContainer.querySelectorAll('.lightbox-brand-item').forEach((item, idx) => {
                     item.onclick = (e) => {
                         e.stopPropagation();
-                        const vId = item.getAttribute('data-variant-id');
-                        const found = availablePool.find(v => String(v.id) === String(vId));
-                        if (found) {
-                            selectedVariant = found;
+                        if (availablePool[idx]) {
+                            selectedVariant = availablePool[idx];
                             lightboxVariantsContainer.querySelectorAll('.lightbox-brand-item').forEach(b => b.classList.remove('selected'));
                             item.classList.add('selected');
                             updateLightboxState();
@@ -780,9 +807,16 @@
             }
 
             function updateLightboxState() {
-                const measurePool = activeMedida ? variants.filter(v => v.medida === activeMedida) : variants;
-                const availablePool = measurePool.filter(v => v.stock === undefined || v.stock > 0);
-                const isOutOfStock = product.is_out_of_stock || (measurePool.length > 0 && availablePool.length === 0) || (variants.length === 0 && product.total_stock !== undefined && product.total_stock <= 0);
+                const measurePool = (activeMedida && distinctMedidas.length > 0) ? variants.filter(v => getVariantMedida(v) === activeMedida) : variants;
+                const availablePool = measurePool.filter(v => {
+                    const p = Number(v.precio_usd || v.precio_venta_usd || 0);
+                    const s = v.stock !== undefined ? Number(v.stock) : 1;
+                    return p > 0 && s > 0;
+                });
+                const isOutOfStock = product.is_out_of_stock || 
+                                    (product.total_stock !== undefined && product.total_stock <= 0) ||
+                                    (measurePool.length > 0 && availablePool.length === 0) || 
+                                    (variants.length > 0 && availablePool.length === 0);
 
                 if (lightboxPriceBox && lightboxPriceVal && lightboxStockBadge) {
                     lightboxPriceBox.style.display = 'flex';
