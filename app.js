@@ -64,7 +64,7 @@
         // Inicializar carrito cargándolo de sessionStorage (mantiene los datos por sesión)
         function initCart() {
             try {
-                const storedCart = sessionStorage.getItem('tph_cart');
+                const storedCart = localStorage.getItem('tph_cart') || sessionStorage.getItem('tph_cart');
                 if (storedCart) {
                     cart = JSON.parse(storedCart);
                 }
@@ -78,7 +78,7 @@
         // Guardar estado del carrito
         function saveCart() {
             try {
-                sessionStorage.setItem('tph_cart', JSON.stringify(cart));
+                localStorage.setItem('tph_cart', JSON.stringify(cart));
             } catch (e) {
                 console.error("Error al guardar el carrito en sessionStorage:", e);
             }

@@ -2748,14 +2748,16 @@ def generate_vehicle_pages(base_url):
                 v_content = v_content.replace('class="vehicle-card active" id="vehicle-all"', 'class="vehicle-card" id="vehicle-all"')
                 v_content = v_content.replace(f'class="vehicle-card" id="{v["card_id"]}"', f'class="vehicle-card active" id="{v["card_id"]}"')
 
-                # 8. Agregar JavaScript de filtro predeterminado al final del body
-                control_script = f"""<!-- JAVASCRIPT DE CONTROL -->
-    <script defer src="./products.js"></script>
-    <script>window.defaultVehicleFilter = '{v["filter"]}';</script>
-    <script defer src="./app.min.js?v=2"></script>"""
-                
-                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\n    <script defer src="./products.js"></script>\n    <script defer src="./app.min.js?v=2"></script>', control_script)
-                v_content = v_content.replace('<!-- JAVASCRIPT DE CONTROL -->\r\n    <script defer src="./products.js"></script>\r\n    <script defer src="./app.min.js?v=2"></script>', control_script)
+                # 8. Agregar JavaScript de filtro predeterminado (antes de app.min.js, con cualquier ?v=N)
+                filter_tag = f"<script>window.defaultVehicleFilter = '{v['filter']}';</script>"
+                v_content, n_subs = re.subn(
+                    r'(<script defer src="\./products\.js"></script>\s*)(<script defer src="\./app\.min\.js[^"]*"></script>)',
+                    lambda m: m.group(1) + filter_tag + "\n    " + m.group(2),
+                    v_content,
+                    count=1
+                )
+                if n_subs == 0:
+                    print(f"   [WARN] No se pudo inyectar el filtro de vehiculo en {v['filename']}")
 
                 with open(v_path, "w", encoding="utf-8") as out_f:
                     out_f.write(v_content)

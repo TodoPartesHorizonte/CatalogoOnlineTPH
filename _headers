@@ -7,24 +7,40 @@
   Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
   X-XSS-Protection: 1; mode=block
 
-# Regla global: HTML y páginas siempre en vivo (0 segundos de caché, instantáneo)
+# Regla global: HTML y páginas siempre en vivo (0 segundos de caché, revalidación continua)
 /*
   ! Cache-Control
   Cache-Control: public, max-age=0, must-revalidate
 
-# Base de datos del catálogo en vivo
+# Base de datos del catálogo en vivo (5 minutos de caché con revalidación en segundo plano)
 /products.js
   ! Cache-Control
-  Cache-Control: public, max-age=0, must-revalidate
+  Cache-Control: public, max-age=300, stale-while-revalidate=86400
 
-# Scripts principales
-/app.js
-  ! Cache-Control
-  Cache-Control: public, max-age=0, must-revalidate
-
+# Scripts y estilos versionados (Caché de 24h, se invalida automáticamente con query ?v=N)
 /app.min.js
   ! Cache-Control
-  Cache-Control: public, max-age=0, must-revalidate
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/app.js
+  ! Cache-Control
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/cart.js
+  ! Cache-Control
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/style.min.css
+  ! Cache-Control
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/style.css
+  ! Cache-Control
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/informacion.css
+  ! Cache-Control
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 
 # Recursos estáticos inmutables (fotos de repuestos, logos y fuentes)
 /assets/*
