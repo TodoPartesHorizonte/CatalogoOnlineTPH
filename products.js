@@ -787,7 +787,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 2
+          "stock": 1
         },
         {
           "id_variante": 18,
@@ -801,7 +801,7 @@ const PRODUCTS_DATA = {
           "stock": 4
         }
       ],
-      "total_stock": 6,
+      "total_stock": 5,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -835,7 +835,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 2
+          "stock": 1
         },
         {
           "id_variante": 18,
@@ -849,7 +849,7 @@ const PRODUCTS_DATA = {
           "stock": 4
         }
       ],
-      "total_stock": 6,
+      "total_stock": 5,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -1089,7 +1089,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 30.0,
-          "stock": 4
+          "stock": 3
         },
         {
           "id_variante": 54,
@@ -1103,7 +1103,7 @@ const PRODUCTS_DATA = {
           "stock": 4
         }
       ],
-      "total_stock": 21,
+      "total_stock": 20,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -1150,7 +1150,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 30.0,
-          "stock": 4
+          "stock": 3
         },
         {
           "id_variante": 81,
@@ -1241,7 +1241,7 @@ const PRODUCTS_DATA = {
           "stock": 1
         }
       ],
-      "total_stock": 23,
+      "total_stock": 22,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -1532,7 +1532,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 30.0,
-          "stock": 4
+          "stock": 3
         },
         {
           "id_variante": 54,
@@ -1546,7 +1546,7 @@ const PRODUCTS_DATA = {
           "stock": 4
         }
       ],
-      "total_stock": 21,
+      "total_stock": 20,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -2108,7 +2108,7 @@ const PRODUCTS_DATA = {
           "lado": "Derecho",
           "tipo": null,
           "precio_usd": 60.0,
-          "stock": 10
+          "stock": 9
         },
         {
           "id_variante": 182,
@@ -2122,7 +2122,7 @@ const PRODUCTS_DATA = {
           "stock": 8
         }
       ],
-      "total_stock": 18,
+      "total_stock": 17,
       "is_out_of_stock": false,
       "min_price_usd": 60.0
     },
@@ -2162,7 +2162,7 @@ const PRODUCTS_DATA = {
           "lado": "Derecho",
           "tipo": null,
           "precio_usd": 60.0,
-          "stock": 10
+          "stock": 9
         },
         {
           "id_variante": 182,
@@ -2176,7 +2176,7 @@ const PRODUCTS_DATA = {
           "stock": 8
         }
       ],
-      "total_stock": 18,
+      "total_stock": 17,
       "is_out_of_stock": false,
       "min_price_usd": 60.0
     },
@@ -4482,10 +4482,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 2
+          "stock": 1
         }
       ],
-      "total_stock": 2,
+      "total_stock": 1,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -5288,10 +5288,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 2
+          "stock": 4
         }
       ],
-      "total_stock": 2,
+      "total_stock": 4,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -5338,10 +5338,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 2
+          "stock": 4
         }
       ],
-      "total_stock": 3,
+      "total_stock": 5,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -5355,6 +5355,7 @@ const PRODUCTS_DATA = {
         "BOBINA",
         "ENCENDIDO",
         "LUV",
+        "ENZO",
         "TAIKEN"
       ],
       "linked_ids": [
@@ -5363,6 +5364,17 @@ const PRODUCTS_DATA = {
       "oem": "93363483",
       "slug": "bobina-encendido-luv-2-2",
       "variants": [
+        {
+          "id_variante": 1386,
+          "id_repuesto": 226,
+          "brand": "ENZO",
+          "codigo_oem": "93363483",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
+        },
         {
           "id_variante": 1235,
           "id_repuesto": 226,
@@ -5375,7 +5387,7 @@ const PRODUCTS_DATA = {
           "stock": 1
         }
       ],
-      "total_stock": 1,
+      "total_stock": 3,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -5456,7 +5468,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 2
+          "stock": 1
         },
         {
           "id_variante": 1375,
@@ -5467,10 +5479,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 1
+          "stock": 0
         }
       ],
-      "total_stock": 33,
+      "total_stock": 31,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -5797,7 +5809,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 100.0,
-          "stock": 3
+          "stock": 2
         },
         {
           "id_variante": 1330,
@@ -5811,7 +5823,7 @@ const PRODUCTS_DATA = {
           "stock": 5
         }
       ],
-      "total_stock": 17,
+      "total_stock": 16,
       "is_out_of_stock": false,
       "min_price_usd": 40.0
     },
@@ -6936,10 +6948,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 30.0,
-          "stock": 10
+          "stock": 9
         }
       ],
-      "total_stock": 10,
+      "total_stock": 9,
       "is_out_of_stock": false,
       "min_price_usd": 30.0
     },
@@ -9026,7 +9038,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 2.5,
-          "stock": 64
+          "stock": 160
         },
         {
           "id_variante": 314,
@@ -9040,7 +9052,7 @@ const PRODUCTS_DATA = {
           "stock": 100
         }
       ],
-      "total_stock": 164,
+      "total_stock": 260,
       "is_out_of_stock": false,
       "min_price_usd": 2.5
     },
@@ -9076,7 +9088,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 2.5,
-          "stock": 64
+          "stock": 160
         },
         {
           "id_variante": 314,
@@ -9090,7 +9102,7 @@ const PRODUCTS_DATA = {
           "stock": 100
         }
       ],
-      "total_stock": 164,
+      "total_stock": 260,
       "is_out_of_stock": false,
       "min_price_usd": 2.5
     },
@@ -9161,10 +9173,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 32
+          "stock": 26
         }
       ],
-      "total_stock": 32,
+      "total_stock": 26,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -9298,10 +9310,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 32
+          "stock": 26
         }
       ],
-      "total_stock": 230,
+      "total_stock": 224,
       "is_out_of_stock": false,
       "min_price_usd": 3.75
     },
@@ -9372,7 +9384,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 2.5,
-          "stock": 64
+          "stock": 160
         },
         {
           "id_variante": 314,
@@ -9386,7 +9398,7 @@ const PRODUCTS_DATA = {
           "stock": 100
         }
       ],
-      "total_stock": 164,
+      "total_stock": 260,
       "is_out_of_stock": false,
       "min_price_usd": 2.5
     },
@@ -11151,7 +11163,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 10
+          "stock": 9
         },
         {
           "id_variante": 1345,
@@ -11198,7 +11210,7 @@ const PRODUCTS_DATA = {
           "stock": 6
         }
       ],
-      "total_stock": 127,
+      "total_stock": 126,
       "is_out_of_stock": false,
       "min_price_usd": 20.0
     },
@@ -11735,7 +11747,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 62
+          "stock": 61
         },
         {
           "id_variante": 400,
@@ -11771,7 +11783,7 @@ const PRODUCTS_DATA = {
           "stock": 1
         }
       ],
-      "total_stock": 148,
+      "total_stock": 147,
       "is_out_of_stock": false,
       "min_price_usd": 20.0
     },
@@ -12381,10 +12393,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 25.0,
-          "stock": 3
+          "stock": 5
         }
       ],
-      "total_stock": 3,
+      "total_stock": 5,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -12420,10 +12432,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 25.0,
-          "stock": 3
+          "stock": 5
         }
       ],
-      "total_stock": 3,
+      "total_stock": 5,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -12459,10 +12471,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 25.0,
-          "stock": 3
+          "stock": 5
         }
       ],
-      "total_stock": 3,
+      "total_stock": 5,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -12821,10 +12833,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 65
+          "stock": 85
         }
       ],
-      "total_stock": 65,
+      "total_stock": 85,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -14041,10 +14053,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 195
+          "stock": 194
         }
       ],
-      "total_stock": 195,
+      "total_stock": 194,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -14146,10 +14158,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 195
+          "stock": 194
         }
       ],
-      "total_stock": 195,
+      "total_stock": 194,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -15834,10 +15846,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 97
+          "stock": 96
         }
       ],
-      "total_stock": 327,
+      "total_stock": 326,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -15896,10 +15908,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 97
+          "stock": 96
         }
       ],
-      "total_stock": 327,
+      "total_stock": 326,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -15958,10 +15970,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 97
+          "stock": 96
         }
       ],
-      "total_stock": 327,
+      "total_stock": 326,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16021,10 +16033,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 97
+          "stock": 96
         }
       ],
-      "total_stock": 327,
+      "total_stock": 326,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16083,10 +16095,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 97
+          "stock": 96
         }
       ],
-      "total_stock": 327,
+      "total_stock": 326,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16145,10 +16157,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 97
+          "stock": 96
         }
       ],
-      "total_stock": 327,
+      "total_stock": 326,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16330,10 +16342,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 65
+          "stock": 64
         }
       ],
-      "total_stock": 65,
+      "total_stock": 64,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16368,10 +16380,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 65
+          "stock": 64
         }
       ],
-      "total_stock": 65,
+      "total_stock": 64,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16444,10 +16456,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 65
+          "stock": 64
         }
       ],
-      "total_stock": 65,
+      "total_stock": 64,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16554,10 +16566,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 50
+          "stock": 49
         }
       ],
-      "total_stock": 268,
+      "total_stock": 267,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -16616,10 +16628,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 50
+          "stock": 49
         }
       ],
-      "total_stock": 268,
+      "total_stock": 267,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -16750,10 +16762,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 50
+          "stock": 49
         }
       ],
-      "total_stock": 268,
+      "total_stock": 267,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -16813,10 +16825,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 50
+          "stock": 49
         }
       ],
-      "total_stock": 268,
+      "total_stock": 267,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -16875,10 +16887,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 50
+          "stock": 49
         }
       ],
-      "total_stock": 268,
+      "total_stock": 267,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -16937,10 +16949,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 50
+          "stock": 49
         }
       ],
-      "total_stock": 268,
+      "total_stock": 267,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -18852,10 +18864,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 33
+          "stock": 46
         }
       ],
-      "total_stock": 33,
+      "total_stock": 46,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -18891,10 +18903,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 33
+          "stock": 46
         }
       ],
-      "total_stock": 33,
+      "total_stock": 46,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -18929,10 +18941,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 33
+          "stock": 46
         }
       ],
-      "total_stock": 33,
+      "total_stock": 46,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -18967,10 +18979,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 33
+          "stock": 46
         }
       ],
-      "total_stock": 33,
+      "total_stock": 46,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -19007,10 +19019,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 33
+          "stock": 46
         }
       ],
-      "total_stock": 33,
+      "total_stock": 46,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -19045,10 +19057,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 33
+          "stock": 46
         }
       ],
-      "total_stock": 33,
+      "total_stock": 46,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -19083,10 +19095,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 33
+          "stock": 46
         }
       ],
-      "total_stock": 33,
+      "total_stock": 46,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -19138,7 +19150,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV",
         "VK-8067",
-        "A1"
+        "A1",
+        "WIX"
       ],
       "linked_ids": [
         450,
@@ -19157,9 +19170,20 @@ const PRODUCTS_DATA = {
           "tipo": null,
           "precio_usd": 10.0,
           "stock": 1
+        },
+        {
+          "id_variante": 1385,
+          "id_repuesto": 535,
+          "brand": "WIX",
+          "codigo_oem": "8-97039-0020",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 2
         }
       ],
-      "total_stock": 1,
+      "total_stock": 3,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -19211,7 +19235,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "LUV",
         "VK-8067",
-        "A1"
+        "A1",
+        "WIX"
       ],
       "linked_ids": [
         450,
@@ -19230,9 +19255,20 @@ const PRODUCTS_DATA = {
           "tipo": null,
           "precio_usd": 10.0,
           "stock": 1
+        },
+        {
+          "id_variante": 1385,
+          "id_repuesto": 535,
+          "brand": "WIX",
+          "codigo_oem": "8-97039-0020",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 2
         }
       ],
-      "total_stock": 1,
+      "total_stock": 3,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -19322,7 +19358,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "RODEO",
         "VK-8067",
-        "A1"
+        "A1",
+        "WIX"
       ],
       "linked_ids": [
         450,
@@ -19341,9 +19378,20 @@ const PRODUCTS_DATA = {
           "tipo": null,
           "precio_usd": 10.0,
           "stock": 1
+        },
+        {
+          "id_variante": 1385,
+          "id_repuesto": 535,
+          "brand": "WIX",
+          "codigo_oem": "8-97039-0020",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 2
         }
       ],
-      "total_stock": 1,
+      "total_stock": 3,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -19359,7 +19407,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "TROOPER",
         "VK-8067",
-        "A1"
+        "A1",
+        "WIX"
       ],
       "linked_ids": [
         450,
@@ -19378,9 +19427,20 @@ const PRODUCTS_DATA = {
           "tipo": null,
           "precio_usd": 10.0,
           "stock": 1
+        },
+        {
+          "id_variante": 1385,
+          "id_repuesto": 535,
+          "brand": "WIX",
+          "codigo_oem": "8-97039-0020",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 2
         }
       ],
-      "total_stock": 1,
+      "total_stock": 3,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -20221,10 +20281,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 2.5,
-          "stock": 15
+          "stock": 11
         }
       ],
-      "total_stock": 15,
+      "total_stock": 11,
       "is_out_of_stock": false,
       "min_price_usd": 2.5
     },
@@ -28485,10 +28545,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 30.0,
-          "stock": 8
+          "stock": 7
         }
       ],
-      "total_stock": 8,
+      "total_stock": 7,
       "is_out_of_stock": false,
       "min_price_usd": 30.0
     },
@@ -33387,8 +33447,7 @@ const PRODUCTS_DATA = {
         "LUV",
         "MAF",
         "SENSOR",
-        "ANCOV",
-        "NIKHO"
+        "PORTER"
       ],
       "linked_ids": [
         898
@@ -33398,31 +33457,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-flujo-aire-maf-luv-dmax-3-5",
       "variants": [
         {
-          "id_variante": 929,
+          "id_variante": 1384,
           "id_repuesto": 898,
-          "brand": "ANCOV",
+          "brand": "PORTER",
           "codigo_oem": "8-97312-3950",
           "medida": null,
           "lado": null,
           "tipo": null,
-          "precio_usd": 0.0,
-          "stock": 0
-        },
-        {
-          "id_variante": 1201,
-          "id_repuesto": 898,
-          "brand": "NIKHO",
-          "codigo_oem": "8-97312-3950",
-          "medida": null,
-          "lado": null,
-          "tipo": null,
-          "precio_usd": 0.0,
-          "stock": 0
+          "precio_usd": 80.0,
+          "stock": 2
         }
       ],
-      "total_stock": 0,
-      "is_out_of_stock": true,
-      "min_price_usd": 0.0
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 80.0
     },
     {
       "category": "Sensor MAP",
@@ -34394,13 +34442,13 @@ const PRODUCTS_DATA = {
           "medida": null,
           "lado": null,
           "tipo": null,
-          "precio_usd": 0.0,
-          "stock": 0
+          "precio_usd": 35.0,
+          "stock": 6
         }
       ],
-      "total_stock": 0,
-      "is_out_of_stock": true,
-      "min_price_usd": 0.0
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -34432,10 +34480,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 11
+          "stock": 10
         }
       ],
-      "total_stock": 11,
+      "total_stock": 10,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -34468,13 +34516,13 @@ const PRODUCTS_DATA = {
           "medida": null,
           "lado": null,
           "tipo": null,
-          "precio_usd": 0.0,
-          "stock": 0
+          "precio_usd": 35.0,
+          "stock": 6
         }
       ],
-      "total_stock": 0,
-      "is_out_of_stock": true,
-      "min_price_usd": 0.0
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -34506,10 +34554,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 11
+          "stock": 10
         }
       ],
-      "total_stock": 11,
+      "total_stock": 10,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -34581,10 +34629,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 11
+          "stock": 10
         }
       ],
-      "total_stock": 11,
+      "total_stock": 10,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -34850,10 +34898,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 11
+          "stock": 10
         }
       ],
-      "total_stock": 11,
+      "total_stock": 10,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -41074,5 +41122,5 @@ const PRODUCTS_DATA = {
     }
   ],
   "tc": 1010.0,
-  "fecha_tasa": "2026-10-16 11:26:11"
+  "fecha_tasa": "2026-10-16 15:53:28"
 };
