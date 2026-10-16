@@ -2919,22 +2919,25 @@ height:18px;
     align-items: center;
     border-right: 1px solid rgba(255, 255, 255, 0.05);
     position: relative;
+    box-sizing: border-box;
 }
 
 .media-preview-box {
     width: 100%;
+    flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    padding: 10px 0;
+    position: static;
+    padding: 28px 0 16px 0;
+    min-height: 290px;
+    box-sizing: border-box;
 }
 
 .status-badge {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 18px;
+    left: 20px;
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -2947,7 +2950,7 @@ height:18px;
     color: var(--accent-green);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    z-index: 2;
+    z-index: 5;
 }
 
 .status-badge.status-out {
@@ -2965,14 +2968,16 @@ height:18px;
 }
 
 .modal-media-col .lightbox-img {
-    max-width: 100%;
-    max-height: 270px;
+    max-width: 90%;
+    max-height: 290px;
     width: auto;
     height: auto;
     object-fit: contain;
     border-radius: 12px;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.45));
     transition: transform 0.3s ease;
+    display: block;
+    margin: auto;
 }
 
 .modal-media-col .lightbox-img:hover {
@@ -2984,10 +2989,11 @@ height:18px;
     gap: 12px;
     font-size: 11px;
     color: var(--text-secondary);
-    padding-top: 10px;
+    padding-top: 14px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     width: 100%;
     justify-content: center;
+    margin-top: auto;
 }
 
 /* COLUMNA DERECHA: INFORMACIÓN Y ACCIONES */
@@ -3408,13 +3414,24 @@ height:18px;
     }
 
     .modal-media-col {
-        padding: 16px;
+        padding: 14px;
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
+    .media-preview-box {
+        min-height: auto;
+        padding: 16px 0 6px 0;
+    }
+
     .modal-media-col .lightbox-img {
-        max-height: 170px;
+        max-height: 175px;
+        max-width: 88%;
+    }
+
+    .status-badge {
+        top: 12px;
+        left: 14px;
     }
 
     .media-trust-chips {

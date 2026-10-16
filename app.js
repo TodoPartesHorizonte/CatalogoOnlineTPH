@@ -887,8 +887,8 @@
                         lightboxPriceVal.innerText = 'Agotado';
                         lightboxPriceVal.style.color = '#ff4d4f';
                         if (lightboxCurrencySymbol) lightboxCurrencySymbol.style.display = 'none';
-                        lightboxStockBadge.innerText = 'Agotado';
-                        lightboxStockBadge.style.color = '#ef4444';
+                        // Ocultar badge secundario cuando está agotado para evitar duplicar 'Agotado'
+                        lightboxStockBadge.style.display = 'none';
                         if (lightboxStockStatusPill) {
                             lightboxStockStatusPill.className = 'status-badge status-out';
                         }
@@ -908,7 +908,8 @@
                             if (lightboxCurrencySymbol) lightboxCurrencySymbol.style.display = 'none';
                         }
                         lightboxPriceVal.style.color = '#ffffff';
-                        lightboxStockBadge.innerText = '✓ Entrega inmediata en tienda física (Boleíta Sur)';
+                        lightboxStockBadge.innerText = '✓ Disponible en tienda física (Boleíta Sur)';
+                        lightboxStockBadge.style.display = 'inline-flex';
                         lightboxStockBadge.style.color = '#25d366';
                         if (lightboxStockStatusPill) {
                             lightboxStockStatusPill.className = 'status-badge';
