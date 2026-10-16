@@ -889,10 +889,8 @@
                         if (lightboxCurrencySymbol) lightboxCurrencySymbol.style.display = 'none';
                         lightboxStockBadge.innerText = 'Agotado';
                         lightboxStockBadge.style.color = '#ef4444';
-                        lightboxStockBadge.style.borderColor = 'rgba(239, 68, 68, 0.3)';
-                        lightboxStockBadge.style.background = 'rgba(239, 68, 68, 0.1)';
                         if (lightboxStockStatusPill) {
-                            lightboxStockStatusPill.className = 'status-pill status-out';
+                            lightboxStockStatusPill.className = 'status-badge status-out';
                         }
                         if (lightboxStockPillText) {
                             lightboxStockPillText.innerText = 'Agotado';
@@ -910,15 +908,13 @@
                             if (lightboxCurrencySymbol) lightboxCurrencySymbol.style.display = 'none';
                         }
                         lightboxPriceVal.style.color = '#ffffff';
-                        lightboxStockBadge.innerText = 'Entrega Inmediata';
-                        lightboxStockBadge.style.color = '#ff9d5c';
-                        lightboxStockBadge.style.borderColor = 'rgba(255, 106, 0, 0.22)';
-                        lightboxStockBadge.style.background = 'rgba(255, 106, 0, 0.1)';
+                        lightboxStockBadge.innerText = '✓ Entrega inmediata en tienda física (Boleíta Sur)';
+                        lightboxStockBadge.style.color = '#25d366';
                         if (lightboxStockStatusPill) {
-                            lightboxStockStatusPill.className = 'status-pill';
+                            lightboxStockStatusPill.className = 'status-badge';
                         }
                         if (lightboxStockPillText) {
-                            lightboxStockPillText.innerText = 'Pieza Disponible';
+                            lightboxStockPillText.innerText = 'En Stock';
                         }
                     }
                 }

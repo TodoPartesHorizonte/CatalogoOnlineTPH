@@ -253,8 +253,8 @@
     
     <!-- INICIO PRECARGA -->
     <!-- FIN PRECARGA -->
-    <link rel="preload" href="./style.min.css?v=5" as="style">
-    <link rel="stylesheet" href="./style.min.css?v=5">
+    <link rel="preload" href="./style.min.css?v=6" as="style">
+    <link rel="stylesheet" href="./style.min.css?v=6">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -426,110 +426,69 @@
 
     <!-- VISUALIZADOR LIGHTBOX (MODAL) -->
     <div class="lightbox" id="lightbox">
-        <div class="modal-shell">
-            <button class="btn-close-modal" id="lightboxClose" aria-label="Cerrar modal" title="Cerrar modal">&times;</button>
-            <div class="modal-core">
-                <!-- LEFT: SHOWCASE -->
-                <div class="showcase-column">
-                    <div class="showcase-badge-row">
-                        <div class="status-pill" id="lightboxStockStatusPill">
-                            <span class="status-dot-pulse"></span>
+        <div class="modal-card" id="lightboxModalCard">
+            <button class="modal-close-btn" id="lightboxClose" aria-label="Cerrar modal" title="Cerrar modal">&times;</button>
+            <div class="modal-grid">
+                <!-- COLUMNA IZQUIERDA: FOTO Y BADGES -->
+                <div class="modal-media-col">
+                    <div class="media-preview-box">
+                        <span class="status-badge" id="lightboxStockStatusPill">
+                            <span class="status-dot"></span>
                             <span id="lightboxStockPillText">Pieza Disponible</span>
-                        </div>
-                    </div>
-
-                    <div class="img-hero-box">
+                        </span>
                         <img src="" alt="" class="lightbox-img" id="lightboxImg" width="400" height="400" loading="eager">
                     </div>
-
-                    <div class="showcase-footer-trust">
-                        <div class="trust-micro-item">
-                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                            <span>Tienda Física en Caracas</span>
-                        </div>
-                        <div class="trust-micro-item">
-                            <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-2 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
-                            <span>Envíos a Todo el País</span>
-                        </div>
+                    <div class="media-trust-chips">
+                        <span>📍 Tienda en Caracas</span>
+                        <span>🚚 Envíos Nacionales</span>
                     </div>
                 </div>
 
-                <!-- RIGHT: DETAILS & ACTIONS -->
-                <div class="details-column">
-                    <!-- TOP META: CATEGORY + SHARE -->
-                    <div class="top-meta-bar">
-                        <div class="category-eyebrow">
-                            <span class="category-eyebrow-dot"></span>
-                            <span id="lightboxBadge">Categoría</span>
-                        </div>
-
-                        <button class="btn-share-nested" id="lightboxShareBtn" title="Copiar enlace para compartir">
-                            <span class="icon-circle">
-                                <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
-                            </span>
+                <!-- COLUMNA DERECHA: DETALLES Y ACCIONES -->
+                <div class="modal-info-col">
+                    <div class="meta-row">
+                        <span class="category-tag" id="lightboxBadge">Categoría</span>
+                        <button class="btn-share-subtle" id="lightboxShareBtn" title="Copiar enlace para compartir">
+                            <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
                             <span id="lightboxShareText">Compartir</span>
                         </button>
                     </div>
 
-                    <!-- TITLE BLOCK -->
-                    <div class="title-block">
-                        <h2 class="product-main-title" id="lightboxDesc">ABRAZADERA BARRA ESTABILIZADORA</h2>
-                    </div>
+                    <h2 class="product-title" id="lightboxDesc">ABRAZADERA BARRA ESTABILIZADORA</h2>
 
-                    <!-- OEM INTERACTIVE BLOCK -->
-                    <div class="oem-interactive-container" id="lightboxOemContainer" style="display: none;">
-                        <div class="oem-header-row">
-                            <span class="oem-label-text">Códigos de Parte / OEM Compatibles</span>
-                            <span style="font-size: 10px; color: var(--text-muted);">Clic para copiar</span>
-                        </div>
+                    <div class="oem-row" id="lightboxOemContainer" style="display: none;">
+                        <span class="oem-label-text">OEM:</span>
                         <div class="oem-chips-list" id="lightboxOemChips"></div>
                     </div>
 
-                    <!-- PRICE HERO CARD -->
-                    <div class="price-hero-card" id="lightboxPriceBox">
-                        <div class="price-top-row">
-                            <span class="price-label-eyebrow">Precio de Mostrador</span>
-                            <span class="price-tag-badge" id="lightboxStockBadge">Disponible</span>
+                    <div class="price-section" id="lightboxPriceBox">
+                        <div class="price-display">
+                            <span class="price-curr" id="lightboxCurrencySymbol">Bs.</span>
+                            <span class="price-amount" id="lightboxPriceVal">0,00</span>
                         </div>
-                        <div class="price-value-container">
-                            <span class="price-currency-symbol" id="lightboxCurrencySymbol">Bs.</span>
-                            <span class="price-value-bold" id="lightboxPriceVal">0,00</span>
-                        </div>
-                        <div class="price-footnote">
-                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                            <span>Precios actualizados para entrega en Boleíta Sur o despacho nacional</span>
+                        <div class="stock-delivery-tag" id="lightboxStockBadge">
+                            ✓ Entrega inmediata en tienda física (Boleíta Sur)
                         </div>
                     </div>
 
-                    <!-- VARIANTS CONTAINER (Medidas y Marcas) -->
-                    <div id="lightboxVariantsContainer"></div>
+                    <div class="variants-section" id="lightboxVariantsContainer"></div>
 
-                    <!-- ACTIONS CTA -->
-                    <div class="actions-cta-container">
-                        <a href="" target="_blank" class="btn-cta-whatsapp" id="lightboxActionBtn">
-                            <span>Consultar y Apartar por WhatsApp</span>
-                            <span class="btn-inner-circle">
-                                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                            </span>
+                    <div class="cta-actions-row">
+                        <a href="" target="_blank" class="btn-whatsapp-direct" id="lightboxActionBtn">
+                            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            <span>Consultar por WhatsApp</span>
                         </a>
-
-                        <button class="btn-cta-cart" id="lightboxAddBtn">
-                            <span>Añadir a Pedido</span>
-                            <span class="btn-inner-circle">
-                                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                            </span>
+                        <button class="btn-cart-secondary" id="lightboxAddBtn">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            <span>Añadir al Pedido</span>
                         </button>
                     </div>
 
-                    <!-- STORE LOCATION FOOTER STRIP -->
-                    <div class="store-notice-strip">
-                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                        <span>Disponible en tienda física: <strong>Boleíta Sur, Caracas</strong>. Lun-Vie: 9am-5pm.</span>
+                    <div class="store-footer-text">
+                        📍 Disponible en tienda: <strong>Boleíta Sur, Caracas</strong>. Lun-Vie: 9am-5pm.
                     </div>
-
                 </div>
             </div>
-        </div>
         </div>
     </div>
 
@@ -1611,7 +1570,7 @@
     <!-- JAVASCRIPT DE CONTROL -->
     <script defer src="./products.js"></script>
     <script>window.defaultVehicleFilter = 'LUV';</script>
-    <script defer src="./app.min.js?v=10"></script>
+    <script defer src="./app.min.js?v=11"></script>
 </body>
 
 </html>
