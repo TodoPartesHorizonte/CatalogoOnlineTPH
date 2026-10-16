@@ -7062,7 +7062,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 40.0,
-          "stock": 6
+          "stock": 5
         },
         {
           "id_variante": 1331,
@@ -7076,7 +7076,7 @@ const PRODUCTS_DATA = {
           "stock": 2
         }
       ],
-      "total_stock": 8,
+      "total_stock": 7,
       "is_out_of_stock": false,
       "min_price_usd": 40.0
     },
@@ -41122,5 +41122,5 @@ const PRODUCTS_DATA = {
     }
   ],
   "tc": 1010.0,
-  "fecha_tasa": "2026-10-16 15:53:28"
+  "fecha_tasa": "2026-10-16 16:51:09"
 };
