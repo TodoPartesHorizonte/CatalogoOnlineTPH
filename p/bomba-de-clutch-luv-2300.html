@@ -127,13 +127,13 @@
         "@type": "Review",
         "author": {
           "@type": "Person",
-          "name": "Luis Rejon"
+          "name": "Wences Rodríguez"
         },
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Todo para mi dmax a la mano buena atención y rápida respuesta"
+        "reviewBody": "Puedo decir que hay mucha responsabilidad en el servicio y buena atención. Excelente."
       }
     }
     </script>
@@ -1643,6 +1643,161 @@
                 line-height: 1.1;
             }
         }
+
+        /* ===== PÁGINA DE PRODUCTO (pp-*) ===== */
+        .pp-container { max-width: 1120px; margin: 0 auto; padding: 0 20px 56px; }
+        .pp-card {
+            display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+            background: #12141a; border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 20px; overflow: hidden; margin-top: 6px;
+            box-shadow: 0 24px 60px -30px rgba(0,0,0,0.8);
+        }
+        .pp-media {
+            position: relative; background: #0b0d11; padding: 24px;
+            border-right: 1px solid rgba(255,255,255,0.06);
+            display: flex; flex-direction: column;
+        }
+        .pp-stage { flex: 1; display: flex; align-items: center; justify-content: center; padding: 34px 0 18px; min-height: 380px; }
+        .pp-img {
+            max-width: 88%; max-height: 480px; width: auto; height: auto; object-fit: contain;
+            border-radius: 14px; filter: drop-shadow(0 16px 30px rgba(0,0,0,0.5));
+        }
+        .pp-badge {
+            position: absolute; top: 18px; left: 20px; z-index: 5;
+            display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px;
+            font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
+            background: rgba(37,211,102,0.12); border: 1px solid rgba(37,211,102,0.25); color: #25d366;
+        }
+        .pp-badge.out { background: rgba(239,68,68,0.12); border-color: rgba(239,68,68,0.25); color: #ef4444; }
+        .pp-badge i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 6px currentColor; }
+        .pp-trust {
+            display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; padding-top: 14px;
+            border-top: 1px solid rgba(255,255,255,0.05); font-size: 12px; color: var(--text-secondary);
+        }
+        .pp-trust span { display: inline-flex; align-items: center; gap: 6px; }
+        .pp-trust svg { width: 14px; height: 14px; fill: var(--accent-orange); }
+        .pp-info { padding: 30px 34px 28px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+        .pp-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+        .pp-cat { font-size: 11.5px; font-weight: 700; letter-spacing: 0.9px; text-transform: uppercase; color: var(--accent-orange); }
+        .pp-share {
+            display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09); color: var(--text-secondary);
+            border-radius: 8px; padding: 5px 10px; font-size: 11.5px; transition: var(--transition);
+        }
+        .pp-share svg { width: 13px; height: 13px; fill: currentColor; }
+        .pp-share:hover { border-color: var(--accent-orange); color: #fff; }
+        .pp-title { font-size: 32px; font-weight: 900; line-height: 1.15; letter-spacing: -0.4px; color: #fff; }
+        .pp-rating { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13.5px; color: var(--text-secondary); }
+        .pp-stars { display: inline-flex; gap: 2px; }
+        .pp-stars svg { width: 15px; height: 15px; fill: #ff9800; }
+        .pp-rating strong { color: #fff; }
+        .pp-rating a { color: var(--text-secondary); text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.2); }
+        .pp-rating a:hover { color: var(--accent-orange); }
+        .pp-label { font-size: 11px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; color: var(--text-secondary); }
+        .pp-oem { display: flex; flex-direction: column; gap: 8px; }
+        .pp-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+        .pp-chip {
+            display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
+            font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; color: #cbd5e1;
+            background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 7px; padding: 4px 9px; transition: var(--transition);
+        }
+        .pp-chip svg { width: 11px; height: 11px; fill: currentColor; opacity: 0.6; }
+        .pp-chip:hover { border-color: var(--accent-orange); color: #fff; background: rgba(255,106,0,0.08); }
+        .pp-price { display: flex; flex-direction: column; gap: 6px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .pp-price-row { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+        .pp-from { font-size: 12px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; }
+        .pp-cur { font-size: 24px; font-weight: 800; color: var(--accent-orange); }
+        .pp-amount { font-size: 42px; font-weight: 900; color: #fff; line-height: 1; letter-spacing: -0.8px; }
+        .pp-amount.out { color: #ff4d4f; font-size: 38px; }
+        .pp-stock { display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 600; color: #25d366; }
+        .pp-stock svg { width: 15px; height: 15px; fill: currentColor; flex-shrink: 0; }
+        .pp-specs { display: flex; flex-direction: column; gap: 9px; }
+        .pp-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+        .pp-pill {
+            min-width: 54px; height: 38px; padding: 0 14px; display: inline-flex; align-items: center; justify-content: center;
+            border-radius: 9px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
+            font-weight: 800; font-size: 13.5px; color: #e5e7eb;
+        }
+        .pp-actions { display: flex; gap: 10px; margin-top: 4px; }
+        .pp-btn {
+            height: 50px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+            font-size: 15px; font-weight: 800; cursor: pointer; text-decoration: none; border: 1px solid transparent; transition: var(--transition);
+        }
+        .pp-btn svg { width: 19px; height: 19px; fill: currentColor; flex-shrink: 0; }
+        .pp-btn-wa { flex: 1.4; background: #25d366; color: #06240f; box-shadow: 0 10px 26px -10px rgba(37,211,102,0.7); }
+        .pp-btn-wa:hover { background: #2fe477; transform: translateY(-1px); }
+        .pp-btn-add { flex: 1; background: rgba(255,106,0,0.08); color: #ffa24d; border-color: rgba(255,106,0,0.35); }
+        .pp-btn-add:hover { background: rgba(255,106,0,0.16); color: #fff; transform: translateY(-1px); }
+        .pp-section { margin-top: 22px; background: #12141a; border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 22px 24px; }
+        .pp-h2 { font-size: 15px; font-weight: 800; letter-spacing: 0.7px; text-transform: uppercase; color: #fff; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+        .pp-h2::before { content: ""; width: 3px; height: 16px; border-radius: 2px; background: var(--accent-orange); }
+        .pp-kv { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+        .pp-kv:last-child { margin-bottom: 0; }
+        .pp-kv .pp-label { min-width: 78px; }
+        .pp-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .pp-tag { padding: 5px 12px; border-radius: 8px; font-size: 13px; font-weight: 600; background: rgba(255,106,0,0.08); border: 1px solid rgba(255,106,0,0.25); color: #ffb070; }
+        .pp-tag.eng { background: rgba(37,211,102,0.08); border-color: rgba(37,211,102,0.25); color: #5be38f; }
+        .pp-tag.yr { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.12); color: #e5e7eb; }
+        .pp-desc p { font-size: 14.5px; line-height: 1.7; color: var(--text-secondary); }
+        .pp-desc strong { color: #e5e7eb; }
+        .pp-strip { margin-top: 22px; display: grid; grid-template-columns: repeat(3, 1fr); background: #12141a; border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; overflow: hidden; }
+        .pp-strip-item { display: flex; gap: 12px; align-items: flex-start; padding: 18px 20px; border-right: 1px solid rgba(255,255,255,0.06); }
+        .pp-strip-item:last-child { border-right: 0; }
+        .pp-strip-item svg { width: 20px; height: 20px; fill: var(--accent-orange); flex-shrink: 0; margin-top: 2px; }
+        .pp-strip-item strong { display: block; color: #fff; font-size: 13.5px; margin-bottom: 3px; }
+        .pp-strip-item span { font-size: 12.5px; line-height: 1.5; color: var(--text-secondary); }
+        .pp-faq details { border-top: 1px solid rgba(255,255,255,0.06); }
+        .pp-faq details:first-of-type { border-top: 0; }
+        .pp-faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px 0; font-size: 14.5px; font-weight: 700; color: #fff; }
+        .pp-faq summary::-webkit-details-marker { display: none; }
+        .pp-faq summary svg { width: 18px; height: 18px; fill: var(--text-secondary); transition: transform 0.25s ease; flex-shrink: 0; }
+        .pp-faq details[open] summary svg { transform: rotate(180deg); fill: var(--accent-orange); }
+        .pp-faq p { padding: 0 0 16px; font-size: 13.5px; line-height: 1.65; color: var(--text-secondary); }
+        .pp-footer-bottom { text-align: center; padding: 16px 20px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 12px; color: var(--text-muted); }
+
+        @media (max-width: 900px) {
+            .pp-card { grid-template-columns: 1fr; }
+            .pp-media { border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.06); padding: 14px 14px 12px; }
+            .pp-stage { min-height: 0; padding: 30px 0 10px; }
+            .pp-img { max-height: 260px; max-width: 78%; }
+            .pp-trust { display: none; }
+            .pp-info { padding: 18px 18px 22px; gap: 14px; }
+            .pp-title { font-size: 24px; }
+            .pp-amount { font-size: 34px; }
+            .pp-cur { font-size: 20px; }
+            .pp-oem .pp-chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 -18px; padding: 0 18px 2px; }
+            .pp-oem .pp-chips::-webkit-scrollbar { display: none; }
+            .pp-chip { flex-shrink: 0; }
+            .pp-pill { flex: 1; min-width: 50px; height: 40px; padding: 0 8px; }
+            .pp-section { padding: 18px 16px; }
+            .pp-strip { grid-template-columns: 1fr; }
+            .pp-strip-item { border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+            .pp-strip-item:last-child { border-bottom: 0; }
+            .pp-actions {
+                position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; margin: 0;
+                padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+                background: rgba(11,13,17,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+                border-top: 1px solid rgba(255,255,255,0.08);
+            }
+            .pp-btn { height: 48px; }
+            .pp-btn-wa { flex: 1; }
+            .pp-btn-add { flex: 0 0 52px; padding: 0; }
+            .pp-btn-add .pp-btn-label { display: none; }
+            body { padding-bottom: 86px; }
+            .fab-whatsapp { bottom: 96px !important; }
+        }
+        @media (max-width: 640px) {
+            header .header-container { flex-direction: row !important; justify-content: space-between !important; align-items: center !important; padding: 10px 14px !important; gap: 8px !important; }
+            header .brand-lockup { flex-direction: row !important; text-align: left !important; gap: 8px !important; }
+            header .logo-image { width: 34px !important; height: 34px !important; }
+            header .logo-title { font-size: 13px !important; }
+            header .logo-subtitle { display: none !important; }
+            header .social-links { gap: 6px !important; }
+            header .social-btn { width: 30px !important; height: 30px !important; }
+            .pp-container { padding: 0 12px 40px; }
+        }
+
     </style>
 </head>
 <body>
@@ -1672,7 +1827,7 @@
         </div>
     </header>
 
-    <div class="container">
+    <main class="pp-container">
         <nav aria-label="Breadcrumb">
             <ul class="breadcrumbs">
                 <li><a href="../index.html">Inicio</a></li>
@@ -1681,107 +1836,82 @@
             </ul>
         </nav>
 
-        <div class="product-layout">
-            <div class="image-card">
-                <img src="../assets/bomba-de-clutch-luv-2300.webp" alt="Fotografía de repuesto Bomba De Clutch Luv 2300 original - Todo Partes Horizonte" class="product-img" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+        <section class="pp-card" aria-label="Detalle del repuesto">
+            <div class="pp-media">
+                <span class="pp-badge"><i></i>En stock</span>
+                <div class="pp-stage">
+                    <img src="../assets/bomba-de-clutch-luv-2300.webp" alt="Fotografía de repuesto Bomba De Clutch Luv 2300 original - Todo Partes Horizonte" class="pp-img" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                </div>
+                <div class="pp-trust">
+                    <span><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Tienda en Caracas</span>
+                    <span><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>Envíos Nacionales</span>
+                </div>
             </div>
 
-            <div class="details-panel">
-                <div class="category-badge"><span>Bombin - Bomba Clutch</span></div>
-                <h1 class="product-title">Bomba De Clutch Luv 2300</h1>
-                <div class="product-rating" style="display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--text-secondary); margin-top: -8px; margin-bottom: 12px;">
-                    <span style="color: #ff9800; font-size: 14px;">⭐⭐⭐⭐⭐</span>
-                    <strong style="color: #ffffff;">4.8</strong>
-                    <span style="color: var(--text-muted);">|</span>
-                    <a href="https://g.page/r/CXMpkN_I_0jiEBM/review" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.2); transition: var(--transition);" onmouseover="this.style.color='var(--accent-orange)'" onmouseout="this.style.color='var(--text-secondary)'">87 valoraciones en Google</a>
+            <div class="pp-info">
+                <div class="pp-meta">
+                    <span class="pp-cat">Bombin - Bomba Clutch</span>
+                    <button type="button" class="pp-share" id="ppShareBtn" title="Copiar enlace para compartir"><svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg><span>Compartir</span></button>
                 </div>
-                <div class="product-oem" style="font-family: monospace; font-size: 13px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 8px 12px; border-radius: 6px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: stretch; margin-top: -8px; margin-bottom: 8px; font-weight: 600; line-height: 1.5; display: flex; flex-direction: column; gap: 4px;"><div>OEM Principal: 8-97024-9402</div><details class="oem-details" style="width: 100%; margin-top: 4px;"><summary style="cursor: pointer; color: #ff6a00; font-weight: 700; outline: none; list-style: none; user-select: none; transition: opacity 0.2s;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">+ Ver alternativos (3)</summary><div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(255, 106, 0, 0.15);"><div style="font-family: monospace; font-size: 12px; color: var(--text-secondary); padding: 4px 8px; background: rgba(255,255,255,0.02); border-radius: 4px; border: 1px solid rgba(255,255,255,0.05); text-align: center; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">8-97136-4450</div><div style="font-family: monospace; font-size: 12px; color: var(--text-secondary); padding: 4px 8px; background: rgba(255,255,255,0.02); border-radius: 4px; border: 1px solid rgba(255,255,255,0.05); text-align: center; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">8-97022-6142</div><div style="font-family: monospace; font-size: 12px; color: var(--text-secondary); padding: 4px 8px; background: rgba(255,255,255,0.02); border-radius: 4px; border: 1px solid rgba(255,255,255,0.05); text-align: center; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">8-97201-0070</div></div></details></div>
+                <h1 class="pp-title">Bomba De Clutch Luv 2300</h1>
+                <div class="pp-rating">
+                    <span class="pp-stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
+                    <strong>4.8</strong>
+                    <span>|</span>
+                    <a href="https://g.page/r/CXMpkN_I_0jiEBM/review" target="_blank" rel="noopener noreferrer">87 valoraciones en Google</a>
+                </div>
+                <div class="pp-oem"><span class="pp-label">OEM</span><div class="pp-chips"><button type="button" class="pp-chip" data-oem="8-97024-9402" title="Clic para copiar código OEM">8-97024-9402<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button><button type="button" class="pp-chip" data-oem="8-97136-4450" title="Clic para copiar código OEM">8-97136-4450<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button><button type="button" class="pp-chip" data-oem="8-97022-6142" title="Clic para copiar código OEM">8-97022-6142<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button><button type="button" class="pp-chip" data-oem="8-97201-0070" title="Clic para copiar código OEM">8-97201-0070<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button></div></div>
+                <div class="pp-price"><div class="pp-price-row"><span class="pp-cur">Bs.</span><span class="pp-amount">35.350,00</span></div><div class="pp-stock"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Disponible en tienda física (Boleíta Sur)</span></div></div>
                 
-                <!-- Ficha de Compatibilidad -->
-                <div class="compatibility-card">
-                    <h3>Compatibilidad Garantizada</h3>
-                                        <div class="comp-item">
-                        <span class="comp-label">Vehículo:</span>
-                        <div class="comp-tags"><span class="tag-capsule vehicle-tag">Chevrolet Luv</span></div>
-                    </div>
-                    <div class="comp-item">
-                        <span class="comp-label">Motor:</span>
-                        <span class="tag-capsule engine-tag">Motor 2.3L (2300 cc)</span>
-                    </div>
-                </div>
-
-                <!-- Ficha Técnica (Medidas) -->
-                
-
-                <!-- Descripción del Producto -->
-                <div class="description-card">
-                    <h3>Descripción del Producto</h3>
-                    <p>El repuesto <strong>Bomba De Clutch Luv 2300</strong> está diseñado y fabricado bajo los estándares de rendimiento y acople original para asegurar la durabilidad y correcto funcionamiento de tu vehículo. Esta pieza pertenece a la categoría de <strong>Bombin - Bomba Clutch</strong>. Número de parte OEM: <strong>8-97024-9402 / 8-97136-4450 / 8-97022-6142 / 8-97201-0070</strong>. Puedes retirar este producto personalmente en nuestra sede física ubicada en Boleíta Sur, Caracas, o solicitar un envío nacional a través de agencias de encomienda confiables como Zoom, Tealca o MRW con cobro en destino.</p>
-                </div>
-
-                <div class="cta-card">
-                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: rgba(255, 106, 0, 0.05); border: 1px solid rgba(255, 106, 0, 0.2); border-radius: 12px;"><div><div style="font-size: 10px; text-transform: uppercase; color: var(--text-secondary); font-weight: 700; letter-spacing: 0.5px;">Precio en Bolívares</div><div style="font-size: 20px; font-weight: 800; color: #fff;">Bs. 35.350,00</div></div><span style="background: rgba(37, 211, 102, 0.15); color: #25d366; border: 1px solid rgba(37, 211, 102, 0.4); padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase;">Disponible</span></div>
-                    <a href="https://wa.me/584242116375?text=%C2%A1Hola%21%20Me%20interesa%20consultar%20por%20el%20repuesto%3A%20%2ABomba%20De%20Clutch%20Luv%202300%2A.%20Precio%3A%20Bs.%2035.350%2C00.%20%C2%BFTienen%20disponibilidad%20inmediata%3F%0AEnlace%3A%20https%3A//todoparteshorizonte.com/p/bomba-de-clutch-luv-2300" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                <div class="pp-actions">
+                    <a href="https://wa.me/584242116375?text=%C2%A1Hola%21%20Me%20interesa%20consultar%20por%20el%20repuesto%3A%20%2ABomba%20De%20Clutch%20Luv%202300%2A.%20Precio%3A%20Bs.%2035.350%2C00.%20%C2%BFTienen%20disponibilidad%20inmediata%3F%0AEnlace%3A%20https%3A//todoparteshorizonte.com/p/bomba-de-clutch-luv-2300" class="pp-btn pp-btn-wa" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        <span>Consultar Disponibilidad</span>
+                        <span>Consultar por WhatsApp</span>
                     </a>
-                    <button class="btn btn-secondary btn-add" id="btnAddProduct" onclick="addToCart('482c3255-6901-4c87-8488-7467322839cc', 'Bomba De Clutch Luv 2300', 'Bombin - Bomba Clutch', './assets/bomba-de-clutch-luv-2300.webp')">
-                        <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor; margin-right: 8px;"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                        Añadir a la lista de pedido
+                    <button type="button" class="pp-btn pp-btn-add" id="btnAddProduct" aria-label="Añadir a la lista de pedido" onclick="addToCart('482c3255-6901-4c87-8488-7467322839cc', 'Bomba De Clutch Luv 2300', 'Bombin - Bomba Clutch', './assets/bomba-de-clutch-luv-2300.webp')">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        <span class="pp-btn-label">Añadir al Pedido</span>
                     </button>
-                    <a href="../index.html" class="btn-back-catalog">
-                        Volver al Catálogo Completo
-                    </a>
                 </div>
-
             </div>
-        </div>
+        </section>
 
-        <div class="business-info">
-            <h3>Información de Venta</h3>
-            <div class="info-item">
+        <section class="pp-section"><h2 class="pp-h2">Compatibilidad</h2><div class="pp-kv"><span class="pp-label">Vehículo</span><div class="pp-tags"><span class="pp-tag">Chevrolet Luv</span></div></div><div class="pp-kv"><span class="pp-label">Motor</span><div class="pp-tags"><span class="pp-tag eng">Motor 2.3L (2300 cc)</span></div></div></section>
+
+        <section class="pp-section pp-desc"><h2 class="pp-h2">Descripción del producto</h2><p>El repuesto <strong>Bomba De Clutch Luv 2300</strong> está diseñado y fabricado bajo los estándares de rendimiento y acople original para asegurar la durabilidad y correcto funcionamiento de tu vehículo. Esta pieza pertenece a la categoría de <strong>Bombin - Bomba Clutch</strong>. Número de parte OEM: <strong>8-97024-9402 / 8-97136-4450 / 8-97022-6142 / 8-97201-0070</strong>. Puedes retirar este producto personalmente en nuestra sede física ubicada en Boleíta Sur, Caracas, o solicitar un envío nacional a través de agencias de encomienda confiables como Zoom, Tealca o MRW con cobro en destino.</p></section>
+
+        <div class="pp-strip">
+            <div class="pp-strip-item">
                 <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                <div>
-                    <strong>Ubicación</strong><br>
-                    Av. Principal de Boleíta Sur, Caracas, Venezuela.
-                </div>
+                <div><strong>Ubicación</strong><span>Av. Principal de Boleíta Sur, Caracas, Venezuela.</span></div>
             </div>
-            <div class="info-item">
+            <div class="pp-strip-item">
                 <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
-                <div>
-                    <strong>Horario de Atención</strong><br>
-                    Lunes a Viernes: 9:00 AM - 5:00 PM<br>
-                    Sábados: 9:00 AM - 1:00 PM
-                </div>
+                <div><strong>Horario de Atención</strong><span>Lunes a Viernes: 9:00 AM - 5:00 PM<br>Sábados: 9:00 AM - 1:00 PM</span></div>
             </div>
-            <div class="info-item">
-                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                <div>
-                    <strong>Contacto Directo</strong><br>
-                    Atención al cliente personalizada y asesoría técnica vía WhatsApp.
-                </div>
+            <div class="pp-strip-item">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <div><strong>Contacto Directo</strong><span>Atención personalizada y asesoría técnica vía WhatsApp.</span></div>
             </div>
         </div>
 
         <!-- PREGUNTAS FRECUENTES -->
-        <div class="faq-section">
-            <h3>Preguntas Frecuentes sobre Bomba De Clutch Luv 2300</h3>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4 class="faq-question">¿Tienen disponibilidad del repuesto Bomba De Clutch Luv 2300?</h4>
-                    <p class="faq-answer">Sí, contamos con stock de este repuesto en Caracas. Te sugerimos confirmar disponibilidad exacta de forma rápida haciendo clic en el botón de WhatsApp.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 class="faq-question">¿Dónde puedo retirar la pieza?</h4>
-                    <p class="faq-answer">Puedes retirar tu pedido personalmente en nuestra oficina comercial en Boleíta Sur, Caracas. También realizamos envíos a nivel nacional.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 class="faq-question">¿Qué métodos de envío manejan para el interior de Venezuela?</h4>
-                    <p class="faq-answer">Realizamos envíos cobro en destino a todo el país a través de agencias de encomienda confiables como Zoom, Tealca y MRW.</p>
-                </div>
-            </div>
-        </div>
-        
+        <section class="pp-section pp-faq">
+            <h2 class="pp-h2">Preguntas frecuentes</h2>
+            <details>
+                <summary>¿Tienen disponibilidad del repuesto Bomba De Clutch Luv 2300?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
+                <p>Sí, contamos con stock de este repuesto en Caracas. Te sugerimos confirmar disponibilidad exacta de forma rápida haciendo clic en el botón de WhatsApp.</p>
+            </details>
+            <details>
+                <summary>¿Dónde puedo retirar la pieza?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
+                <p>Puedes retirar tu pedido personalmente en nuestra oficina comercial en Boleíta Sur, Caracas. También realizamos envíos a nivel nacional.</p>
+            </details>
+            <details>
+                <summary>¿Qué métodos de envío manejan para el interior de Venezuela?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
+                <p>Realizamos envíos cobro en destino a todo el país a través de agencias de encomienda confiables como Zoom, Tealca y MRW.</p>
+            </details>
+        </section>
+
         <!-- PRODUCTOS RELACIONADOS -->
         <div class="related-section">
             <h3>Repuestos Relacionados</h3>
@@ -1832,14 +1962,14 @@
                     </div>
                 </a>
 
-                <a href="./bombin-luv-d-max-2-4.html" class="related-card">
+                <a href="./bombin-clutch-luv-d-max-3-5.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/bombin-luv-d-max-2-4.webp" alt="Repuesto BOMBIN CLUTCH LUV DMAX 2.4 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/bombin-clutch-luv-d-max-3-5.webp" alt="Repuesto BOMBIN CLUTCH LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Bombin - Bomba Clutch</span></span>
-                        <div class="related-title" title="BOMBIN CLUTCH LUV DMAX 2.4">BOMBIN CLUTCH LUV DMAX 2.4</div>
-                        <div class="related-oem">OEM: 8-97942-3220</div>
+                        <div class="related-title" title="BOMBIN CLUTCH LUV D-MAX 3.5">BOMBIN CLUTCH LUV D-MAX 3.5</div>
+                        <div class="related-oem">OEM: 8-97941-5190</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1848,7 +1978,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer>
         <div class="footer-content">
@@ -1873,8 +2003,7 @@
                 </p>
             </div>
         </div>
-            <p>RIF: J-50180765-5 · Especialistas Isuzu</p>
-        </div>
+        <div class="pp-footer-bottom"><p>RIF: J-50180765-5 · Especialistas Isuzu</p></div>
     </footer>
     
     <!-- Google Analytics & Meta Pixel Tracker Diferido y Reactivo -->
@@ -2017,5 +2146,30 @@
         }, 800);
       });
     </script>
+    <script>
+(function () {
+    document.querySelectorAll('.pp-chip[data-oem]').forEach(function (chip) {
+        chip.addEventListener('click', function () {
+            var code = chip.getAttribute('data-oem'), orig = chip.innerHTML;
+            if (!navigator.clipboard) { return; }
+            navigator.clipboard.writeText(code).then(function () {
+                chip.innerHTML = code + ' <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>';
+                chip.style.color = '#25d366';
+                setTimeout(function () { chip.innerHTML = orig; chip.style.color = ''; }, 1500);
+            });
+        });
+    });
+    var sh = document.getElementById('ppShareBtn');
+    if (sh && navigator.clipboard) {
+        sh.addEventListener('click', function () {
+            var t = sh.querySelector('span'), o = t.textContent;
+            navigator.clipboard.writeText(location.href.split('?')[0]).then(function () {
+                t.textContent = '¡Copiado!';
+                setTimeout(function () { t.textContent = o; }, 1800);
+            });
+        });
+    }
+})();
+</script>
 </body>
 </html>
