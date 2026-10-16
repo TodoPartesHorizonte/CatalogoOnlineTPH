@@ -3430,58 +3430,153 @@ height:18px;
    ========================================================================== */
 @media (max-width: 768px) {
     .lightbox {
-        padding: 14px 10px;
+        padding: 12px 10px;
         align-items: center;
+        justify-content: center;
     }
 
     .modal-card {
-        width: 95%;
-        max-width: 440px;
-        max-height: 92vh;
-        border-radius: 18px;
+        width: 100%;
+        max-width: 430px;
+        max-height: 90vh;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+    }
+
+    .modal-close-btn {
+        top: 10px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        background: rgba(15, 17, 22, 0.85);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        z-index: 30;
     }
 
     .modal-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         min-height: auto;
+        width: 100%;
     }
 
+    /* Columna foto en móvil */
     .modal-media-col {
-        padding: 14px;
+        padding: 12px 14px 10px 14px;
+        background: #0b0d11;
         border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        flex-shrink: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .media-preview-box {
         min-height: auto;
-        padding: 16px 0 6px 0;
+        padding: 8px 0 4px 0;
+        width: 100%;
     }
 
     .modal-media-col .lightbox-img {
-        max-height: 175px;
-        max-width: 88%;
+        max-height: 150px;
+        max-width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     }
 
     .status-badge {
-        top: 12px;
-        left: 14px;
+        top: 10px;
+        left: 12px;
+        font-size: 10px;
+        padding: 3px 8px;
+        gap: 5px;
+    }
+
+    .status-dot {
+        width: 6px;
+        height: 6px;
     }
 
     .media-trust-chips {
         display: none;
     }
 
+    /* Columna info en móvil: fluye naturalmente en el scroll del modal completo */
     .modal-info-col {
-        padding: 16px;
+        padding: 14px 16px 24px 16px;
         gap: 12px;
-        max-height: calc(92vh - 200px);
+        max-height: none;
+        overflow-y: visible;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .meta-row {
         padding-right: 28px;
+        align-items: center;
+    }
+
+    .category-tag {
+        font-size: 10.5px;
+    }
+
+    .btn-share-subtle {
+        padding: 3px 7px;
+        font-size: 10.5px;
     }
 
     .product-title {
+        font-size: 17.5px;
+        line-height: 1.25;
+        font-weight: 800;
+    }
+
+    /* Chips OEM en móvil: fila horizontal swipeable limpia */
+    .oem-row {
+        gap: 6px;
+        align-items: center;
+        margin-top: -2px;
+    }
+
+    .oem-label-text {
+        font-size: 10px;
+    }
+
+    .oem-chips-list {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 6px;
+        padding: 2px 0 4px 0;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .oem-chips-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .oem-chip {
+        flex-shrink: 0;
+        font-size: 10.5px;
+        padding: 3px 7px;
+    }
+
+    /* Precio en móvil */
+    .price-section {
+        padding: 8px 0;
+        gap: 3px;
+    }
+
+    .price-curr {
         font-size: 18px;
     }
 
@@ -3489,30 +3584,114 @@ height:18px;
         font-size: 26px;
     }
 
+    .stock-delivery-tag {
+        font-size: 11px;
+        gap: 5px;
+    }
+
+    .stock-delivery-tag .badge-icon {
+        width: 13px;
+        height: 13px;
+    }
+
+    /* Títulos de sección compactos */
+    .section-header-title {
+        font-size: 10.5px;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .section-header-title .count-badge {
+        font-size: 9.5px;
+        white-space: nowrap;
+    }
+
+    /* Píldoras de medida en móvil */
     .measures-grid-pills {
+        display: flex;
+        flex-wrap: wrap;
         gap: 6px;
     }
 
     .pill-measure {
-        min-width: 48px;
+        flex: 1;
+        min-width: 50px;
         height: 38px;
-        padding: 0 12px;
+        padding: 0 8px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         font-size: 13px;
+        font-weight: 800;
+        border-radius: 8px;
     }
 
+    /* Cards de marcas en móvil */
+    .brands-grid-cards {
+        gap: 6px;
+    }
+
+    .brand-option-card {
+        padding: 8px 12px;
+        border-radius: 8px;
+        min-height: 44px;
+    }
+
+    .brand-name-bold {
+        font-size: 12.5px;
+    }
+
+    .brand-stock-indicator {
+        font-size: 10px;
+    }
+
+    .brand-card-price {
+        font-size: 13px;
+    }
+
+    /* Acciones CTA en móvil */
     .cta-actions-row, .actions-cta-container {
+        display: flex;
         flex-direction: column;
         gap: 8px;
         width: 100%;
+        margin-top: 4px;
     }
 
-    .btn-whatsapp-direct, .btn-cta-whatsapp,
+    .btn-whatsapp-direct, .btn-cta-whatsapp {
+        width: 100%;
+        height: 46px;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
     .btn-cart-secondary, .btn-cta-cart {
         width: 100%;
-        height: 44px;
-        padding: 0;
+        height: 42px;
+        font-size: 13px;
+        font-weight: 700;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    /* Store footer en móvil */
+    .store-footer-text, .store-notice-strip {
+        font-size: 10.5px;
+        padding: 4px 0 8px 0;
+        line-height: 1.35;
+        gap: 5px;
+    }
+
+    .store-footer-icon {
+        width: 11px;
+        height: 11px;
     }
 }

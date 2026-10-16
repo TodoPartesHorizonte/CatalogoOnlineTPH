@@ -756,8 +756,8 @@
                     containerHtml += `
                         <div class="variant-section-block">
                             <div class="section-header-title">
-                                <span>Medida / Especificación del Motor:</span>
-                                <span class="count-badge">${distinctMedidas.length} opciones disponibles</span>
+                                <span>Medida del Motor:</span>
+                                <span class="count-badge">${distinctMedidas.length} opciones</span>
                             </div>
                             <div class="measures-grid-pills">
                                 ${distinctMedidas.map(m => `
@@ -775,7 +775,7 @@
                     containerHtml += `
                         <div class="variant-section-block" style="margin-top: 4px;">
                             <div class="section-header-title">
-                                <span>Marcas en Stock con esta medida:</span>
+                                <span>Marcas Disponibles:</span>
                                 <span style="font-size: 10px; color: var(--text-muted);">Selecciona tu preferencia</span>
                             </div>
                             <div class="brands-grid-cards">
