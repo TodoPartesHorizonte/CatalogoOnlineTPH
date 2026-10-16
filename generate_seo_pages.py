@@ -2990,7 +2990,7 @@ def generate_vehicle_pages(base_url):
                 # 8. Agregar JavaScript de filtro predeterminado (antes de app.min.js, con cualquier ?v=N)
                 filter_tag = f"<script>window.defaultVehicleFilter = '{v['filter']}';</script>"
                 v_content, n_subs = re.subn(
-                    r'(<script defer src="\./products\.js"></script>\s*)(<script defer src="\./app\.min\.js[^"]*"></script>)',
+                    r'(<script defer src="\./products\.js(?:\?v=[^"]*)?"></script>\s*)(<script defer src="\./app\.min\.js[^"]*"></script>)',
                     lambda m: m.group(1) + filter_tag + "\n    " + m.group(2),
                     v_content,
                     count=1
