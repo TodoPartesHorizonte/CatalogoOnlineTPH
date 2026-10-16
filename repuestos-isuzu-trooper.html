@@ -253,8 +253,8 @@
     
     <!-- INICIO PRECARGA -->
     <!-- FIN PRECARGA -->
-    <link rel="preload" href="./style.min.css?v=7" as="style">
-    <link rel="stylesheet" href="./style.min.css?v=7">
+    <link rel="preload" href="./style.min.css?v=8" as="style">
+    <link rel="stylesheet" href="./style.min.css?v=8">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -439,8 +439,14 @@
                         <img src="" alt="" class="lightbox-img" id="lightboxImg" width="400" height="400" loading="eager">
                     </div>
                     <div class="media-trust-chips">
-                        <span>📍 Tienda en Caracas</span>
-                        <span>🚚 Envíos Nacionales</span>
+                        <span class="trust-chip-item">
+                            <svg viewBox="0 0 24 24" class="chip-icon"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5-1.12 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            <span>Tienda en Caracas</span>
+                        </span>
+                        <span class="trust-chip-item">
+                            <svg viewBox="0 0 24 24" class="chip-icon"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                            <span>Envíos Nacionales</span>
+                        </span>
                     </div>
                 </div>
 
@@ -467,7 +473,8 @@
                             <span class="price-amount" id="lightboxPriceVal">0,00</span>
                         </div>
                         <div class="stock-delivery-tag" id="lightboxStockBadge">
-                            ✓ Disponible en tienda física (Boleíta Sur)
+                            <svg viewBox="0 0 24 24" class="badge-icon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span>Disponible en tienda física (Boleíta Sur)</span>
                         </div>
                     </div>
 
@@ -485,7 +492,8 @@
                     </div>
 
                     <div class="store-footer-text">
-                        📍 Disponible en tienda: <strong>Boleíta Sur, Caracas</strong>. Lun-Vie: 9am-5pm.
+                        <svg viewBox="0 0 24 24" class="store-footer-icon"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>Disponible en tienda: <strong>Boleíta Sur, Caracas</strong> · Lun-Vie: 9am-5pm</span>
                     </div>
                 </div>
             </div>
@@ -1570,7 +1578,7 @@
     <!-- JAVASCRIPT DE CONTROL -->
     <script defer src="./products.js"></script>
     <script>window.defaultVehicleFilter = 'TROOPER';</script>
-    <script defer src="./app.min.js?v=12"></script>
+    <script defer src="./app.min.js?v=13"></script>
 </body>
 
 </html>

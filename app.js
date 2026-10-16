@@ -685,7 +685,7 @@
                                 const code = chip.getAttribute('data-oem');
                                 navigator.clipboard.writeText(code).then(() => {
                                     const orig = chip.innerHTML;
-                                    chip.innerHTML = `${code} <span style="color:var(--accent-green)">✓</span>`;
+                                    chip.innerHTML = `${code} <svg viewBox="0 0 24 24" style="width:11px;height:11px;fill:var(--accent-green);vertical-align:middle;margin-left:3px;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`;
                                     setTimeout(() => { chip.innerHTML = orig; }, 1500);
                                 });
                             };
@@ -908,7 +908,7 @@
                             if (lightboxCurrencySymbol) lightboxCurrencySymbol.style.display = 'none';
                         }
                         lightboxPriceVal.style.color = '#ffffff';
-                        lightboxStockBadge.innerText = '✓ Disponible en tienda física (Boleíta Sur)';
+                        lightboxStockBadge.innerHTML = '<svg viewBox="0 0 24 24" class="badge-icon"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> <span>Disponible en tienda física (Boleíta Sur)</span>';
                         lightboxStockBadge.style.display = 'inline-flex';
                         lightboxStockBadge.style.color = '#25d366';
                         if (lightboxStockStatusPill) {
