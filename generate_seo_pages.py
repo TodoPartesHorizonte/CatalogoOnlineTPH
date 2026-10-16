@@ -2425,11 +2425,12 @@ def generate_pages(data):
         if direct_variants:
             for v in direct_variants:
                 p_usd = float(v.get('precio_usd') or v.get('precio_venta_usd') or 0.0)
-                if p_usd > 0:
-                    variant_prices_bs.append(calculate_price_bs(p_usd, db_config, tc=data_tc))
                 stock_val = v.get('stock') if v.get('stock') is not None else v.get('existencia')
-                if stock_val is not None and float(stock_val) > 0:
+                v_stock = float(stock_val) if stock_val is not None else 0.0
+                if v_stock > 0:
                     has_stock = True
+                    if p_usd > 0:
+                        variant_prices_bs.append(calculate_price_bs(p_usd, db_config, tc=data_tc))
                 m = v.get('medida')
                 if m and str(m).strip():
                     medidas.append(str(m).strip())
@@ -2439,19 +2440,18 @@ def generate_pages(data):
                 lid_key = int(lid) if str(lid).isdigit() else lid
                 db_vars = db_products.get(lid_key, [])
                 for db_var in db_vars:
-                    precio_usd = db_var.get('precio_venta_usd') or 0.0
-                    price_bs = calculate_price_bs(precio_usd, db_config, tc=data_tc)
-                    variant_prices_bs.append(price_bs)
-                    
-                    existencia = db_var.get('existencia') or 0.0
+                    existencia = float(db_var.get('existencia') or 0.0)
+                    precio_usd = float(db_var.get('precio_venta_usd') or 0.0)
                     if existencia > 0:
                         has_stock = True
-                        
+                        if precio_usd > 0:
+                            variant_prices_bs.append(calculate_price_bs(precio_usd, db_config, tc=data_tc))
                     medida = db_var.get('medida_variante')
                     if medida and str(medida).strip():
                         medidas.append(str(medida).strip())
                         
-        is_out_of_stock = product.get('is_out_of_stock') or not has_stock
+        total_stock = product.get('total_stock')
+        is_out_of_stock = bool(product.get('is_out_of_stock') or not has_stock or (total_stock is not None and total_stock <= 0) or len(variant_prices_bs) == 0)
         max_price_bs = max(variant_prices_bs) if variant_prices_bs else 0.0
         price_bs_str = f"{max_price_bs:.2f}"
         availability_str = "https://schema.org/OutOfStock" if is_out_of_stock else "https://schema.org/InStock"

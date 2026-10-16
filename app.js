@@ -124,23 +124,23 @@
             const tc = getTC();
             const variants = product.variants || [];
             
-            // Variantes disponibles: precio > 0 y stock > 0 (si está definido)
+            // Variantes disponibles: precio > 0 y stock > 0
             const availableVariants = variants.filter(v => {
                 const p = Number(v.precio_usd || v.precio_venta_usd || 0);
-                const s = v.stock !== undefined ? Number(v.stock) : 1;
+                const s = (v.stock !== undefined && v.stock !== null) ? Number(v.stock) : 0;
                 return p > 0 && s > 0;
             });
 
             const isOutOfStock = product.is_out_of_stock || 
-                                (product.total_stock !== undefined && product.total_stock <= 0) ||
-                                (variants.length > 0 && availableVariants.length === 0);
+                                (product.total_stock !== undefined && product.total_stock !== null && product.total_stock <= 0) ||
+                                (variants.length === 0) ||
+                                (availableVariants.length === 0);
 
             if (isOutOfStock) {
                 return { isAgotado: true, priceText: "Agotado", minPriceBs: 0, hasMultiple: false };
             }
 
-            const validVariants = availableVariants.length > 0 ? availableVariants : variants;
-            const pricesBs = validVariants.map(v => calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc)).filter(p => p > 0);
+            const pricesBs = availableVariants.map(v => calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc)).filter(p => p > 0);
 
             if (pricesBs.length === 0) {
                 return { isAgotado: true, priceText: "Agotado", minPriceBs: 0, hasMultiple: false };
@@ -725,7 +725,7 @@
             let activeMedida = null;
             if (distinctMedidas.length > 0) {
                 const measureWithStock = distinctMedidas.find(m => {
-                    return variants.some(v => getVariantMedida(v) === m && Number(v.precio_usd || v.precio_venta_usd || 0) > 0 && (v.stock === undefined || Number(v.stock) > 0));
+                    return variants.some(v => getVariantMedida(v) === m && Number(v.precio_usd || v.precio_venta_usd || 0) > 0 && (v.stock !== undefined && v.stock !== null && Number(v.stock) > 0));
                 });
                 activeMedida = measureWithStock || distinctMedidas[0];
             }
@@ -737,10 +737,10 @@
                 // Filtrar por medida si aplica
                 const measurePool = (activeMedida && distinctMedidas.length > 0) ? variants.filter(v => getVariantMedida(v) === activeMedida) : variants;
 
-                // Filtrar ÚNICAMENTE las marcas con precio disponible (> 0) y stock disponible (> 0 si definido)
+                // Filtrar ÚNICAMENTE las marcas con precio disponible (> 0) y stock disponible (> 0)
                 const availablePool = measurePool.filter(v => {
                     const p = Number(v.precio_usd || v.precio_venta_usd || 0);
-                    const s = v.stock !== undefined ? Number(v.stock) : 1;
+                    const s = (v.stock !== undefined && v.stock !== null) ? Number(v.stock) : 0;
                     return p > 0 && s > 0;
                 });
 
@@ -873,13 +873,13 @@
                 const measurePool = (activeMedida && distinctMedidas.length > 0) ? variants.filter(v => getVariantMedida(v) === activeMedida) : variants;
                 const availablePool = measurePool.filter(v => {
                     const p = Number(v.precio_usd || v.precio_venta_usd || 0);
-                    const s = v.stock !== undefined ? Number(v.stock) : 1;
+                    const s = (v.stock !== undefined && v.stock !== null) ? Number(v.stock) : 0;
                     return p > 0 && s > 0;
                 });
                 const isOutOfStock = product.is_out_of_stock || 
-                                    (product.total_stock !== undefined && product.total_stock <= 0) ||
-                                    (measurePool.length > 0 && availablePool.length === 0) || 
-                                    (variants.length > 0 && availablePool.length === 0);
+                                    (product.total_stock !== undefined && product.total_stock !== null && product.total_stock <= 0) ||
+                                    (variants.length === 0) ||
+                                    (availablePool.length === 0);
 
                 if (lightboxPriceBox && lightboxPriceVal && lightboxStockBadge) {
                     lightboxPriceBox.style.display = 'flex';
@@ -896,7 +896,7 @@
                             lightboxStockPillText.innerText = 'Agotado';
                         }
                     } else {
-                        const targetPriceUsd = selectedVariant ? (selectedVariant.precio_usd || selectedVariant.precio_venta_usd) : (product.min_price_usd || 0);
+                        const targetPriceUsd = selectedVariant ? (selectedVariant.precio_usd || selectedVariant.precio_venta_usd) : 0;
                         const priceBs = calculatePriceBs(targetPriceUsd, tc);
                         if (priceBs > 0) {
                             const formatted = formatBs(priceBs);
