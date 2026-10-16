@@ -656,18 +656,46 @@
             }
             
             // Referencias a elementos del Lightbox
-            const lightboxOem = document.getElementById('lightboxOem');
+            const lightboxOemContainer = document.getElementById('lightboxOemContainer');
+            const lightboxOemChips = document.getElementById('lightboxOemChips');
             const lightboxPriceBox = document.getElementById('lightboxPriceBox');
             const lightboxPriceVal = document.getElementById('lightboxPriceVal');
             const lightboxStockBadge = document.getElementById('lightboxStockBadge');
+            const lightboxStockStatusPill = document.getElementById('lightboxStockStatusPill');
+            const lightboxStockPillText = document.getElementById('lightboxStockPillText');
+            const lightboxCurrencySymbol = document.getElementById('lightboxCurrencySymbol');
             const lightboxVariantsContainer = document.getElementById('lightboxVariantsContainer');
 
-            if (lightboxOem) {
-                if (product.oem) {
-                    lightboxOem.innerText = `OEM: ${product.oem}`;
-                    lightboxOem.style.display = 'block';
+            // Renderizar chips OEM interactivos con 1-click copy
+            if (lightboxOemContainer && lightboxOemChips) {
+                if (product.oem && String(product.oem).trim()) {
+                    const rawOems = String(product.oem).split(/[\/,;]/).map(s => s.trim()).filter(s => s.length > 0);
+                    const uniqueOems = [...new Set(rawOems)];
+                    if (uniqueOems.length > 0) {
+                        lightboxOemChips.innerHTML = uniqueOems.map(code => `
+                            <span class="oem-chip" data-oem="${code}" title="Clic para copiar código OEM">
+                                ${code}
+                                <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                            </span>
+                        `).join('');
+
+                        lightboxOemChips.querySelectorAll('.oem-chip').forEach(chip => {
+                            chip.onclick = (e) => {
+                                e.stopPropagation();
+                                const code = chip.getAttribute('data-oem');
+                                navigator.clipboard.writeText(code).then(() => {
+                                    const orig = chip.innerHTML;
+                                    chip.innerHTML = `${code} <span style="color:var(--accent-green)">✓</span>`;
+                                    setTimeout(() => { chip.innerHTML = orig; }, 1500);
+                                });
+                            };
+                        });
+                        lightboxOemContainer.style.display = 'flex';
+                    } else {
+                        lightboxOemContainer.style.display = 'none';
+                    }
                 } else {
-                    lightboxOem.style.display = 'none';
+                    lightboxOemContainer.style.display = 'none';
                 }
             }
 
@@ -726,11 +754,14 @@
                 // Si hay múltiples medidas, renderizar selector de píldoras
                 if (distinctMedidas.length > 1) {
                     containerHtml += `
-                        <div class="lightbox-measure-section">
-                            <span class="lightbox-section-label">Medida / Especificación:</span>
-                            <div class="lightbox-measure-pills">
+                        <div class="variant-section-block">
+                            <div class="section-header-title">
+                                <span>Medida / Especificación del Motor:</span>
+                                <span class="count-badge">${distinctMedidas.length} opciones disponibles</span>
+                            </div>
+                            <div class="measures-grid-pills">
                                 ${distinctMedidas.map(m => `
-                                    <button type="button" class="measure-pill ${m === activeMedida ? 'active' : ''}" data-medida="${m}">
+                                    <button type="button" class="pill-measure ${m === activeMedida ? 'active' : ''}" data-medida="${m}">
                                         ${m}
                                     </button>
                                 `).join('')}
@@ -739,23 +770,38 @@
                     `;
                 }
 
-                // Si hay marcas con stock disponible (> 1 opción), renderizar lista de opciones disponibles
-                // Si solo queda 1 marca disponible de varias, la mostramos seleccionada sin marcas agotadas
+                // Si hay marcas con stock disponible (> 1 opción), renderizar lista de opciones disponibles en cards luxury
                 if (availablePool.length > 1) {
                     containerHtml += `
-                        <div class="lightbox-brand-section" style="margin-top: 12px;">
-                            <span class="lightbox-section-label">Marcas disponibles:</span>
-                            <div class="lightbox-brand-list">
+                        <div class="variant-section-block" style="margin-top: 4px;">
+                            <div class="section-header-title">
+                                <span>Marcas en Stock con esta medida:</span>
+                                <span style="font-size: 10px; color: var(--text-muted);">Selecciona tu preferencia</span>
+                            </div>
+                            <div class="brands-grid-cards">
                                 ${availablePool.map((v, idx) => {
                                     const isSel = selectedVariant && (v === selectedVariant || (v.id && selectedVariant.id && v.id === selectedVariant.id));
                                     const vPriceBs = calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc);
                                     const displayPrice = vPriceBs > 0 ? formatBs(vPriceBs) : 'Consultar';
                                     const brandName = v.marca || v.brand || 'Estándar';
-                                    const vKey = String(v.id || idx);
+                                    const stockQty = v.stock !== undefined ? Number(v.stock) : null;
+                                    const stockText = stockQty !== null && stockQty > 0 ? `Stock verificado (${stockQty} disp.)` : 'Stock verificado en tienda';
                                     return `
-                                        <div class="lightbox-brand-item ${isSel ? 'selected' : ''}" data-variant-key="${vKey}" role="button" tabindex="0">
-                                            <div class="lightbox-brand-name">${brandName}</div>
-                                            <div class="lightbox-brand-price">${displayPrice}</div>
+                                        <div class="brand-option-card ${isSel ? 'selected' : ''}" data-variant-index="${idx}" role="button" tabindex="0">
+                                            <div class="brand-card-left">
+                                                <div class="custom-radio">
+                                                    <div class="custom-radio-inner"></div>
+                                                </div>
+                                                <div class="brand-info-wrap">
+                                                    <div class="brand-title-row">
+                                                        <span class="brand-name-bold">${brandName}</span>
+                                                    </div>
+                                                    <div class="brand-stock-indicator">${stockText}</div>
+                                                </div>
+                                            </div>
+                                            <div class="brand-card-right">
+                                                <div class="brand-card-price">${displayPrice}</div>
+                                            </div>
                                         </div>
                                     `;
                                 }).join('')}
@@ -766,13 +812,29 @@
                     const v = availablePool[0];
                     const vPriceBs = calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc);
                     const brandName = v.marca || v.brand || 'Estándar';
+                    const stockQty = v.stock !== undefined ? Number(v.stock) : null;
+                    const stockText = stockQty !== null && stockQty > 0 ? `Stock verificado (${stockQty} disp.)` : 'Stock verificado en tienda';
                     containerHtml += `
-                        <div class="lightbox-brand-section" style="margin-top: 12px;">
-                            <span class="lightbox-section-label">Marca disponible:</span>
-                            <div class="lightbox-brand-list">
-                                <div class="lightbox-brand-item selected" style="cursor: default;">
-                                    <div class="lightbox-brand-name">${brandName}</div>
-                                    <div class="lightbox-brand-price">${formatBs(vPriceBs)}</div>
+                        <div class="variant-section-block" style="margin-top: 4px;">
+                            <div class="section-header-title">
+                                <span>Marca Disponible:</span>
+                            </div>
+                            <div class="brands-grid-cards">
+                                <div class="brand-option-card selected" style="cursor: default;">
+                                    <div class="brand-card-left">
+                                        <div class="custom-radio">
+                                            <div class="custom-radio-inner"></div>
+                                        </div>
+                                        <div class="brand-info-wrap">
+                                            <div class="brand-title-row">
+                                                <span class="brand-name-bold">${brandName}</span>
+                                            </div>
+                                            <div class="brand-stock-indicator">${stockText}</div>
+                                        </div>
+                                    </div>
+                                    <div class="brand-card-right">
+                                        <div class="brand-card-price">${formatBs(vPriceBs)}</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -782,7 +844,7 @@
                 lightboxVariantsContainer.innerHTML = containerHtml;
 
                 // Event listeners para píldoras de medida
-                lightboxVariantsContainer.querySelectorAll('.measure-pill').forEach(pill => {
+                lightboxVariantsContainer.querySelectorAll('.pill-measure').forEach(pill => {
                     pill.onclick = (e) => {
                         e.stopPropagation();
                         activeMedida = pill.getAttribute('data-medida');
@@ -793,13 +855,14 @@
                 });
 
                 // Event listeners para marcas
-                lightboxVariantsContainer.querySelectorAll('.lightbox-brand-item').forEach((item, idx) => {
-                    item.onclick = (e) => {
+                lightboxVariantsContainer.querySelectorAll('.brand-option-card').forEach(card => {
+                    card.onclick = (e) => {
                         e.stopPropagation();
-                        if (availablePool[idx]) {
+                        const idx = parseInt(card.getAttribute('data-variant-index'), 10);
+                        if (!isNaN(idx) && availablePool[idx]) {
                             selectedVariant = availablePool[idx];
-                            lightboxVariantsContainer.querySelectorAll('.lightbox-brand-item').forEach(b => b.classList.remove('selected'));
-                            item.classList.add('selected');
+                            lightboxVariantsContainer.querySelectorAll('.brand-option-card').forEach(b => b.classList.remove('selected'));
+                            card.classList.add('selected');
                             updateLightboxState();
                         }
                     };
@@ -823,15 +886,40 @@
                     if (isOutOfStock) {
                         lightboxPriceVal.innerText = 'Agotado';
                         lightboxPriceVal.style.color = '#ff4d4f';
+                        if (lightboxCurrencySymbol) lightboxCurrencySymbol.style.display = 'none';
                         lightboxStockBadge.innerText = 'Agotado';
-                        lightboxStockBadge.className = 'lightbox-stock-badge lightbox-stock-out';
+                        lightboxStockBadge.style.color = '#ef4444';
+                        lightboxStockBadge.style.borderColor = 'rgba(239, 68, 68, 0.3)';
+                        lightboxStockBadge.style.background = 'rgba(239, 68, 68, 0.1)';
+                        if (lightboxStockStatusPill) {
+                            lightboxStockStatusPill.className = 'status-pill status-out';
+                        }
+                        if (lightboxStockPillText) {
+                            lightboxStockPillText.innerText = 'Agotado';
+                        }
                     } else {
                         const targetPriceUsd = selectedVariant ? (selectedVariant.precio_usd || selectedVariant.precio_venta_usd) : (product.min_price_usd || 0);
                         const priceBs = calculatePriceBs(targetPriceUsd, tc);
-                        lightboxPriceVal.innerText = priceBs > 0 ? formatBs(priceBs) : 'Consultar';
-                        lightboxPriceVal.style.color = 'var(--text-primary)';
-                        lightboxStockBadge.innerText = 'Disponible';
-                        lightboxStockBadge.className = 'lightbox-stock-badge lightbox-stock-in';
+                        if (priceBs > 0) {
+                            const formatted = formatBs(priceBs);
+                            const cleanNum = formatted.replace(/^Bs\.\s*/, '');
+                            lightboxPriceVal.innerText = cleanNum;
+                            if (lightboxCurrencySymbol) lightboxCurrencySymbol.style.display = 'inline';
+                        } else {
+                            lightboxPriceVal.innerText = 'Consultar';
+                            if (lightboxCurrencySymbol) lightboxCurrencySymbol.style.display = 'none';
+                        }
+                        lightboxPriceVal.style.color = '#ffffff';
+                        lightboxStockBadge.innerText = 'Entrega Inmediata';
+                        lightboxStockBadge.style.color = '#ff9d5c';
+                        lightboxStockBadge.style.borderColor = 'rgba(255, 106, 0, 0.22)';
+                        lightboxStockBadge.style.background = 'rgba(255, 106, 0, 0.1)';
+                        if (lightboxStockStatusPill) {
+                            lightboxStockStatusPill.className = 'status-pill';
+                        }
+                        if (lightboxStockPillText) {
+                            lightboxStockPillText.innerText = 'Pieza Disponible';
+                        }
                     }
                 }
 
@@ -899,9 +987,9 @@
                         lightboxShareBtn.style.borderColor = 'var(--accent-orange)';
                         setTimeout(() => {
                             lightboxShareText.innerText = originalText;
-                            lightboxShareBtn.style.color = 'var(--text-primary)';
-                            lightboxShareBtn.style.background = 'transparent';
-                            lightboxShareBtn.style.borderColor = 'var(--surface-border)';
+                            lightboxShareBtn.style.color = 'var(--text-secondary)';
+                            lightboxShareBtn.style.background = 'rgba(255, 255, 255, 0.03)';
+                            lightboxShareBtn.style.borderColor = 'rgba(255, 255, 255, 0.08)';
                         }, 2000);
                     }).catch(err => {
                         console.error('Error al copiar enlace: ', err);
