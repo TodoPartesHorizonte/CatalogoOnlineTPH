@@ -21,7 +21,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "DMAX",
         "ESTABILIZADORA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1
@@ -30,11 +31,20 @@ const PRODUCTS_DATA = {
       "slug": "abrazadera-barra-estabilizadora-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1,
+          "id_repuesto": 1,
+          "brand": "Genérica",
           "codigo_oem": "8-97235-7800",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 13,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Acoplador",
@@ -46,7 +56,9 @@ const PRODUCTS_DATA = {
         "8-97113-4461",
         "ACOPLADOR",
         "CARIBE",
-        "MANUAL"
+        "MANUAL",
+        "AISIN",
+        "JOMO"
       ],
       "linked_ids": [
         3
@@ -56,16 +68,31 @@ const PRODUCTS_DATA = {
       "slug": "acoplador-manual-caribe-2-6",
       "variants": [
         {
-          "codigo_oem": "8-97113-4461",
+          "id_variante": 3,
+          "id_repuesto": 3,
           "brand": "AISIN",
-          "precio_usd": 0
+          "codigo_oem": "8-97113-4461",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "codigo_oem": "8-97113-4461",
+          "id_variante": 4,
+          "id_repuesto": 3,
           "brand": "JOMO",
-          "precio_usd": 0
+          "codigo_oem": "8-97113-4461",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Acoplador",
@@ -77,7 +104,9 @@ const PRODUCTS_DATA = {
         "8-97113-4461",
         "ACOPLADOR",
         "LUV",
-        "MANUAL"
+        "MANUAL",
+        "AISIN",
+        "JOMO"
       ],
       "linked_ids": [
         3
@@ -87,16 +116,31 @@ const PRODUCTS_DATA = {
       "slug": "acoplador-manual-luv-2-3",
       "variants": [
         {
-          "codigo_oem": "8-97113-4461",
+          "id_variante": 3,
+          "id_repuesto": 3,
           "brand": "AISIN",
-          "precio_usd": 0
+          "codigo_oem": "8-97113-4461",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "codigo_oem": "8-97113-4461",
+          "id_variante": 4,
+          "id_repuesto": 3,
           "brand": "JOMO",
-          "precio_usd": 0
+          "codigo_oem": "8-97113-4461",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Acoplador",
@@ -109,7 +153,9 @@ const PRODUCTS_DATA = {
         "ACOPLADOR",
         "DMAX",
         "LUV",
-        "MANUAL"
+        "MANUAL",
+        "AISIN",
+        "JOMO"
       ],
       "linked_ids": [
         3
@@ -119,16 +165,31 @@ const PRODUCTS_DATA = {
       "slug": "acoplador-manual-luv-dmax-3-5",
       "variants": [
         {
-          "codigo_oem": "8-97113-4461",
+          "id_variante": 3,
+          "id_repuesto": 3,
           "brand": "AISIN",
-          "precio_usd": 0
+          "codigo_oem": "8-97113-4461",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "codigo_oem": "8-97113-4461",
+          "id_variante": 4,
+          "id_repuesto": 3,
           "brand": "JOMO",
-          "precio_usd": 0
+          "codigo_oem": "8-97113-4461",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Acoplador",
@@ -140,7 +201,9 @@ const PRODUCTS_DATA = {
         "8-97113-4461",
         "ACOPLADOR",
         "MANUAL",
-        "RODEO"
+        "RODEO",
+        "AISIN",
+        "JOMO"
       ],
       "linked_ids": [
         3
@@ -150,16 +213,31 @@ const PRODUCTS_DATA = {
       "slug": "acoplador-manual-rodeo-3-2",
       "variants": [
         {
-          "codigo_oem": "8-97113-4461",
+          "id_variante": 3,
+          "id_repuesto": 3,
           "brand": "AISIN",
-          "precio_usd": 0
+          "codigo_oem": "8-97113-4461",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "codigo_oem": "8-97113-4461",
+          "id_variante": 4,
+          "id_repuesto": 3,
           "brand": "JOMO",
-          "precio_usd": 0
+          "codigo_oem": "8-97113-4461",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Acoplador",
@@ -171,7 +249,9 @@ const PRODUCTS_DATA = {
         "8-97113-4461",
         "ACOPLADOR",
         "MANUAL",
-        "TROOPER"
+        "TROOPER",
+        "AISIN",
+        "JOMO"
       ],
       "linked_ids": [
         3
@@ -181,16 +261,31 @@ const PRODUCTS_DATA = {
       "slug": "acoplador-manual-trooper-3-2",
       "variants": [
         {
-          "codigo_oem": "8-97113-4461",
+          "id_variante": 3,
+          "id_repuesto": 3,
           "brand": "AISIN",
-          "precio_usd": 0
+          "codigo_oem": "8-97113-4461",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "codigo_oem": "8-97113-4461",
+          "id_variante": 4,
+          "id_repuesto": 3,
           "brand": "JOMO",
-          "precio_usd": 0
+          "codigo_oem": "8-97113-4461",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Alternador",
@@ -201,7 +296,8 @@ const PRODUCTS_DATA = {
         "8-97210-3730",
         "ALTERNADOR",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "COUNGUARD"
       ],
       "linked_ids": [
         6
@@ -210,11 +306,20 @@ const PRODUCTS_DATA = {
       "slug": "alternador-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 6,
+          "id_repuesto": 6,
           "brand": "COUNGUARD",
           "codigo_oem": "8-97210-3730",
-          "precio_usd": 190
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 190.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 190.0
     },
     {
       "category": "Amortiguador",
@@ -229,7 +334,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "E2794P",
-        "VA-22158"
+        "VA-22158",
+        "TOKIKO"
       ],
       "linked_ids": [
         8
@@ -238,11 +344,20 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-delantero-caribe-2600",
       "variants": [
         {
+          "id_variante": 8,
+          "id_repuesto": 8,
           "brand": "TOKIKO",
           "codigo_oem": "VA-22158",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Amortiguador",
@@ -256,7 +371,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "G200",
-        "VA-22123"
+        "VA-22123",
+        "SHIBUMI"
       ],
       "linked_ids": [
         7
@@ -265,11 +381,20 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-delantero-caribe-2000-2300",
       "variants": [
         {
+          "id_variante": 7,
+          "id_repuesto": 7,
           "brand": "SHIBUMI",
           "codigo_oem": "VA-22123",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Amortiguador",
@@ -281,7 +406,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "D-MAX",
         "DELANTERO",
-        "LUV"
+        "LUV",
+        "KAIZEN"
       ],
       "linked_ids": [
         11
@@ -290,21 +416,20 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-delantero-luv-d-max-2-4",
       "variants": [
         {
-          "codigo_oem": "8-97236-2990",
-          "brand": "TAIKEN",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97236-2990",
-          "brand": "MASARU",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97236-2990",
+          "id_variante": 1353,
+          "id_repuesto": 11,
           "brand": "KAIZEN",
-          "precio_usd": 30
+          "codigo_oem": "8-97236-2990",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Amortiguador",
@@ -317,7 +442,10 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "D-MAX",
         "DELANTERO",
-        "LUV"
+        "LUV",
+        "KAIZEN",
+        "KYB",
+        "TAIKEN"
       ],
       "linked_ids": [
         13
@@ -326,31 +454,42 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-delantero-luv-d-max-3-0-4x4",
       "variants": [
         {
-          "brand": "CIC",
+          "id_variante": 1352,
+          "id_repuesto": 13,
+          "brand": "KAIZEN",
           "codigo_oem": "8-97372-2870",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
-          "brand": "MASARU",
-          "codigo_oem": "8-97372-2870",
-          "precio_usd": 0
-        },
-        {
-          "brand": "GREKIS",
-          "codigo_oem": "8-97372-2870",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 16,
+          "id_repuesto": 13,
           "brand": "KYB",
           "codigo_oem": "8-97372-2870",
-          "precio_usd": 90
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 90.0,
+          "stock": 2
         },
         {
+          "id_variante": 1233,
+          "id_repuesto": 13,
           "brand": "TAIKEN",
           "codigo_oem": "8-97372-2870",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Amortiguador",
@@ -362,7 +501,10 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "D-MAX",
         "DELANTERO",
-        "LUV"
+        "LUV",
+        "KAIZEN",
+        "KYB",
+        "TAIKEN"
       ],
       "linked_ids": [
         13
@@ -371,31 +513,42 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-delantero-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "CIC",
+          "id_variante": 1352,
+          "id_repuesto": 13,
+          "brand": "KAIZEN",
           "codigo_oem": "8-97372-2870",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
-          "brand": "MASARU",
-          "codigo_oem": "8-97372-2870",
-          "precio_usd": 0
-        },
-        {
-          "brand": "GREKIS",
-          "codigo_oem": "8-97372-2870",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 16,
+          "id_repuesto": 13,
           "brand": "KYB",
           "codigo_oem": "8-97372-2870",
-          "precio_usd": 90
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 90.0,
+          "stock": 2
         },
         {
+          "id_variante": 1233,
+          "id_repuesto": 13,
           "brand": "TAIKEN",
           "codigo_oem": "8-97372-2870",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Amortiguador",
@@ -407,7 +560,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "DELANTERO",
         "DMAX",
-        "LUV"
+        "LUV",
+        "KAIZEN"
       ],
       "linked_ids": [
         11
@@ -417,21 +571,20 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-delantero-luv-dmax-2-5",
       "variants": [
         {
-          "codigo_oem": "8-97236-2990",
-          "brand": "TAIKEN",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97236-2990",
-          "brand": "MASARU",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97236-2990",
+          "id_variante": 1353,
+          "id_repuesto": 11,
           "brand": "KAIZEN",
-          "precio_usd": 30
+          "codigo_oem": "8-97236-2990",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Amortiguador",
@@ -444,7 +597,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "DELANTERO",
         "DMAX",
-        "LUV"
+        "LUV",
+        "KAIZEN"
       ],
       "linked_ids": [
         11
@@ -454,21 +608,20 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-delantero-luv-dmax-3-0-4x2",
       "variants": [
         {
-          "codigo_oem": "8-97236-2990",
-          "brand": "TAIKEN",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97236-2990",
-          "brand": "MASARU",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97236-2990",
+          "id_variante": 1353,
+          "id_repuesto": 11,
           "brand": "KAIZEN",
-          "precio_usd": 30
+          "codigo_oem": "8-97236-2990",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Amortiguador",
@@ -483,7 +636,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "TRASERO",
-        "VA-45203"
+        "VA-45203",
+        "GENÉRICA"
       ],
       "linked_ids": [
         15,
@@ -493,11 +647,20 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-trasero-caribe-2000-2300",
       "variants": [
         {
+          "id_variante": 21,
+          "id_repuesto": 21,
+          "brand": "Genérica",
           "codigo_oem": "VA-45203",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Amortiguador",
@@ -510,7 +673,10 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "D-MAX",
         "LUV",
-        "TRASERO"
+        "TRASERO",
+        "KAIZEN",
+        "MASARU",
+        "TAIKEN"
       ],
       "linked_ids": [
         24
@@ -519,31 +685,42 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-trasero-luv-d-max",
       "variants": [
         {
-          "brand": "KYB",
-          "codigo_oem": "8-97368-5990",
-          "precio_usd": 0
-        },
-        {
-          "brand": "MASARU",
-          "codigo_oem": "8-97368-5990",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 27,
+          "id_repuesto": 24,
           "brand": "KAIZEN",
           "codigo_oem": "8-97368-5990",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 4
         },
         {
-          "brand": "GREKIS",
+          "id_variante": 26,
+          "id_repuesto": 24,
+          "brand": "MASARU",
           "codigo_oem": "8-97368-5990",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 10
         },
         {
+          "id_variante": 1234,
+          "id_repuesto": 24,
           "brand": "TAIKEN",
           "codigo_oem": "8-97368-5990",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 15,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Amortiguador",
@@ -556,7 +733,8 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "TRASEROS",
-        "VA-22159"
+        "VA-22159",
+        "GENÉRICA"
       ],
       "linked_ids": [
         22
@@ -565,11 +743,20 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-trasero-caribe-2600",
       "variants": [
         {
+          "id_variante": 22,
+          "id_repuesto": 22,
+          "brand": "Genérica",
           "codigo_oem": "VA-22159",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Amortiguador Direccion",
@@ -581,7 +768,9 @@ const PRODUCTS_DATA = {
         "AMORTIGUADOR",
         "CARIBE",
         "DIRECCION",
-        "SD1001"
+        "SD1001",
+        "SHIBUMI",
+        "TOKIKO"
       ],
       "linked_ids": [
         17
@@ -590,16 +779,31 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-de-direccion-caribe-2-3",
       "variants": [
         {
+          "id_variante": 17,
+          "id_repuesto": 17,
           "brand": "SHIBUMI",
           "codigo_oem": "8-94241-4692",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         },
         {
+          "id_variante": 18,
+          "id_repuesto": 17,
           "brand": "TOKIKO",
           "codigo_oem": "8-94241-4692",
-          "precio_usd": 110
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 110.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Amortiguador Direccion",
@@ -612,7 +816,9 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DIRECCION",
         "G-200",
-        "SD1001"
+        "SD1001",
+        "SHIBUMI",
+        "TOKIKO"
       ],
       "linked_ids": [
         17
@@ -621,16 +827,31 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-de-direccion-caribe-g-200",
       "variants": [
         {
+          "id_variante": 17,
+          "id_repuesto": 17,
           "brand": "SHIBUMI",
           "codigo_oem": "8-94241-4692",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         },
         {
+          "id_variante": 18,
+          "id_repuesto": 17,
           "brand": "TOKIKO",
           "codigo_oem": "8-94241-4692",
-          "precio_usd": 110
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 110.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Amortiguador Direccion",
@@ -643,7 +864,9 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DIRECCION",
         "KS0005",
-        "SD1009"
+        "SD1009",
+        "PERFECT",
+        "TOKIKO"
       ],
       "linked_ids": [
         12,
@@ -653,16 +876,31 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-direccion-caribe-2-6",
       "variants": [
         {
+          "id_variante": 19,
+          "id_repuesto": 19,
           "brand": "PERFECT",
           "codigo_oem": "8-94312-8140",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 3
         },
         {
+          "id_variante": 20,
+          "id_repuesto": 19,
           "brand": "TOKIKO",
           "codigo_oem": "8-94312-8140",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Amortiguador Direccion",
@@ -675,7 +913,9 @@ const PRODUCTS_DATA = {
         "DIRECCION",
         "KS0005",
         "LUV",
-        "SD1009"
+        "SD1009",
+        "PERFECT",
+        "TOKIKO"
       ],
       "linked_ids": [
         12,
@@ -685,16 +925,31 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-direccion-luv-2-3",
       "variants": [
         {
+          "id_variante": 19,
+          "id_repuesto": 19,
           "brand": "PERFECT",
           "codigo_oem": "8-94312-8140",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 3
         },
         {
+          "id_variante": 20,
+          "id_repuesto": 19,
           "brand": "TOKIKO",
           "codigo_oem": "8-94312-8140",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Amortiguador Direccion",
@@ -707,7 +962,9 @@ const PRODUCTS_DATA = {
         "DIRECCION",
         "KS0005",
         "SD1009",
-        "TROOPER"
+        "TROOPER",
+        "PERFECT",
+        "TOKIKO"
       ],
       "linked_ids": [
         12,
@@ -717,16 +974,31 @@ const PRODUCTS_DATA = {
       "slug": "amortiguador-direccion-trooper",
       "variants": [
         {
+          "id_variante": 19,
+          "id_repuesto": 19,
           "brand": "PERFECT",
           "codigo_oem": "8-94312-8140",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 3
         },
         {
+          "id_variante": 20,
+          "id_repuesto": 19,
           "brand": "TOKIKO",
           "codigo_oem": "8-94312-8140",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Anillos",
@@ -746,7 +1018,11 @@ const PRODUCTS_DATA = {
         "SWI10123-0",
         "SWI10123-2",
         "SWI10123-3",
-        "SWI10123-4"
+        "SWI10123-4",
+        "EMASA",
+        "NPR",
+        "HASTING",
+        "NATSUKI"
       ],
       "linked_ids": [
         48,
@@ -761,161 +1037,75 @@ const PRODUCTS_DATA = {
       "slug": "anillos-caribe-2-3",
       "variants": [
         {
-          "codigo_oem": "6158-STD",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-STD",
-          "brand": "HASTING",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "6158-STD",
+          "id_variante": 65,
+          "id_repuesto": 48,
           "brand": "EMASA",
-          "precio_usd": 35
-        },
-        {
           "codigo_oem": "6158-STD",
-          "brand": "TP",
-          "precio_usd": 45
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 3
         },
         {
+          "id_variante": 75,
+          "id_repuesto": 48,
+          "brand": "NPR",
           "codigo_oem": "6158-STD",
-          "brand": "NPR",
-          "precio_usd": 45
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 5
         },
         {
-          "codigo_oem": "6158-STD",
-          "brand": "PC PISTON",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "6158-010",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-010",
+          "id_variante": 57,
+          "id_repuesto": 50,
           "brand": "HASTING",
-          "precio_usd": 0
+          "codigo_oem": "6158-020",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 3
         },
         {
-          "codigo_oem": "6158-010",
+          "id_variante": 68,
+          "id_repuesto": 51,
           "brand": "EMASA",
-          "precio_usd": 0
+          "codigo_oem": "6158-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "6158-010",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-010",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-010",
-          "brand": "RIK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-020",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-020",
+          "id_variante": 59,
+          "id_repuesto": 52,
           "brand": "HASTING",
-          "precio_usd": 0
+          "codigo_oem": "6158-040",
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         },
         {
-          "codigo_oem": "6158-020",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-020",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-020",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-020",
-          "brand": "PC PISTON",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "6158-020",
-          "brand": "RIK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-030",
+          "id_variante": 54,
+          "id_repuesto": 53,
           "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-030",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-030",
-          "brand": "EMASA",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "6158-030",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-030",
-          "brand": "NPR",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6158-030",
-          "brand": "PC PISTON",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-040",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-040",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-040",
-          "brand": "EMASA",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "6158-040",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-040",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
-        {
           "codigo_oem": "6158-060",
-          "brand": "NATSUKI",
-          "precio_usd": 25
+          "medida": "0.60",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 21,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Anillos",
@@ -933,7 +1123,11 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "SWI10144-0",
         "SWI10144-3",
-        "SWI10144-4"
+        "SWI10144-4",
+        "NATSUKI",
+        "TP",
+        "RIK",
+        "HASTING"
       ],
       "linked_ids": [
         74,
@@ -948,126 +1142,108 @@ const PRODUCTS_DATA = {
       "slug": "anillos-caribe-2-6",
       "variants": [
         {
-          "codigo_oem": "6159-STD",
+          "id_variante": 80,
+          "id_repuesto": 74,
           "brand": "NATSUKI",
-          "precio_usd": 25
-        },
-        {
           "codigo_oem": "6159-STD",
-          "brand": "HASTING",
-          "precio_usd": 0
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         },
         {
-          "codigo_oem": "6159-STD",
-          "brand": "TP",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6159-STD",
-          "brand": "NPR",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "6159-010",
+          "id_variante": 81,
+          "id_repuesto": 75,
           "brand": "NATSUKI",
-          "precio_usd": 30
+          "codigo_oem": "6159-010",
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 5
         },
         {
-          "codigo_oem": "6159-010",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-010",
+          "id_variante": 91,
+          "id_repuesto": 75,
           "brand": "TP",
-          "precio_usd": 45
-        },
-        {
           "codigo_oem": "6159-010",
-          "brand": "NPR",
-          "precio_usd": 0
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 4
         },
         {
-          "codigo_oem": "6159-020",
+          "id_variante": 82,
+          "id_repuesto": 76,
           "brand": "NATSUKI",
-          "precio_usd": 25
+          "codigo_oem": "6159-020",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         },
         {
-          "codigo_oem": "6159-020",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-020",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-020",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-020",
+          "id_variante": 1346,
+          "id_repuesto": 76,
           "brand": "RIK",
-          "precio_usd": 40
+          "codigo_oem": "6159-020",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 0
         },
         {
-          "codigo_oem": "6159-030",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-030",
+          "id_variante": 88,
+          "id_repuesto": 77,
           "brand": "HASTING",
-          "precio_usd": 30
+          "codigo_oem": "6159-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "6159-030",
-          "brand": "TP",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6159-030",
-          "brand": "NPR",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "6159-030",
+          "id_variante": 1347,
+          "id_repuesto": 77,
           "brand": "RIK",
-          "precio_usd": 40
+          "codigo_oem": "6159-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 1
         },
         {
-          "codigo_oem": "6159-040",
+          "id_variante": 84,
+          "id_repuesto": 78,
           "brand": "NATSUKI",
-          "precio_usd": 25
+          "codigo_oem": "6159-040",
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 3
         },
         {
-          "codigo_oem": "6159-040",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-040",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6159-040",
-          "brand": "NPR",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "6159-040",
+          "id_variante": 1300,
+          "id_repuesto": 1215,
           "brand": "RIK",
-          "precio_usd": 40
-        },
-        {
           "codigo_oem": "6159-060",
-          "brand": "RIK",
-          "precio_usd": 40
+          "medida": "0.60",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 23,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Anillos",
@@ -1083,7 +1259,8 @@ const PRODUCTS_DATA = {
         "8-94216-6410",
         "ANILLOS",
         "CARIBE",
-        "G200"
+        "G200",
+        "NATSUKI"
       ],
       "linked_ids": [
         28,
@@ -1097,106 +1274,53 @@ const PRODUCTS_DATA = {
       "slug": "anillos-caribe-g200",
       "variants": [
         {
+          "id_variante": 29,
+          "id_repuesto": 28,
+          "brand": "NATSUKI",
           "codigo_oem": "8-94216-6410",
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
+        },
+        {
+          "id_variante": 31,
+          "id_repuesto": 30,
           "brand": "NATSUKI",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "8-94216-6410",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94216-6410",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94216-6410",
-          "brand": "NPR",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "6157-010",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6157-010",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6157-010",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6157-010",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
-        {
           "codigo_oem": "6157-020",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 1
+        },
+        {
+          "id_variante": 32,
+          "id_repuesto": 31,
           "brand": "NATSUKI",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "6157-020",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6157-020",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6157-020",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
-        {
           "codigo_oem": "6157-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
+        },
+        {
+          "id_variante": 33,
+          "id_repuesto": 32,
           "brand": "NATSUKI",
-          "precio_usd": 25
-        },
-        {
-          "codigo_oem": "6157-030",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6157-030",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6157-030",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
-        {
           "codigo_oem": "6157-040",
-          "brand": "NATSUKI",
-          "precio_usd": 20
-        },
-        {
-          "codigo_oem": "6157-040",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6157-040",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6157-040",
-          "brand": "NPR",
-          "precio_usd": 0
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Anillos",
@@ -1210,7 +1334,10 @@ const PRODUCTS_DATA = {
         "41470-040",
         "41470-STD",
         "ANILLOS",
-        "LUV"
+        "LUV",
+        "EMASA",
+        "HASTING",
+        "RUSHMORE"
       ],
       "linked_ids": [
         94,
@@ -1224,81 +1351,97 @@ const PRODUCTS_DATA = {
       "slug": "anillos-luv-2-2",
       "variants": [
         {
+          "id_variante": 100,
+          "id_repuesto": 94,
+          "brand": "EMASA",
           "codigo_oem": "41470-STD",
-          "brand": "EMASA",
-          "precio_usd": 45
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 0
         },
         {
+          "id_variante": 105,
+          "id_repuesto": 94,
+          "brand": "HASTING",
           "codigo_oem": "41470-STD",
-          "brand": "HASTING",
-          "precio_usd": 30
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "41470-STD",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "41470-010",
+          "id_variante": 102,
+          "id_repuesto": 96,
           "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "41470-010",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "41470-010",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        },
-        {
           "codigo_oem": "41470-020",
-          "brand": "EMASA",
-          "precio_usd": 25
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         },
         {
+          "id_variante": 107,
+          "id_repuesto": 96,
+          "brand": "HASTING",
           "codigo_oem": "41470-020",
-          "brand": "HASTING",
-          "precio_usd": 30
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         },
         {
-          "codigo_oem": "41470-020",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "41470-030",
+          "id_variante": 103,
+          "id_repuesto": 97,
           "brand": "EMASA",
-          "precio_usd": 45
-        },
-        {
           "codigo_oem": "41470-030",
-          "brand": "HASTING",
-          "precio_usd": 30
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 1
         },
         {
+          "id_variante": 108,
+          "id_repuesto": 97,
+          "brand": "HASTING",
           "codigo_oem": "41470-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
+        },
+        {
+          "id_variante": 113,
+          "id_repuesto": 97,
           "brand": "RUSHMORE",
-          "precio_usd": 45
+          "codigo_oem": "41470-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 1
         },
         {
-          "codigo_oem": "41470-040",
-          "brand": "EMASA",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "41470-040",
+          "id_variante": 109,
+          "id_repuesto": 98,
           "brand": "HASTING",
-          "precio_usd": 30
-        },
-        {
           "codigo_oem": "41470-040",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Anillos",
@@ -1318,7 +1461,11 @@ const PRODUCTS_DATA = {
         "SWI10123-0",
         "SWI10123-2",
         "SWI10123-3",
-        "SWI10123-4"
+        "SWI10123-4",
+        "EMASA",
+        "NPR",
+        "HASTING",
+        "NATSUKI"
       ],
       "linked_ids": [
         48,
@@ -1333,161 +1480,75 @@ const PRODUCTS_DATA = {
       "slug": "anillos-luv-2-3",
       "variants": [
         {
-          "codigo_oem": "6158-STD",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-STD",
-          "brand": "HASTING",
-          "precio_usd": 30
-        },
-        {
-          "codigo_oem": "6158-STD",
+          "id_variante": 65,
+          "id_repuesto": 48,
           "brand": "EMASA",
-          "precio_usd": 35
-        },
-        {
           "codigo_oem": "6158-STD",
-          "brand": "TP",
-          "precio_usd": 45
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 3
         },
         {
+          "id_variante": 75,
+          "id_repuesto": 48,
+          "brand": "NPR",
           "codigo_oem": "6158-STD",
-          "brand": "NPR",
-          "precio_usd": 45
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 5
         },
         {
-          "codigo_oem": "6158-STD",
-          "brand": "PC PISTON",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "6158-010",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-010",
+          "id_variante": 57,
+          "id_repuesto": 50,
           "brand": "HASTING",
-          "precio_usd": 0
+          "codigo_oem": "6158-020",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 3
         },
         {
-          "codigo_oem": "6158-010",
+          "id_variante": 68,
+          "id_repuesto": 51,
           "brand": "EMASA",
-          "precio_usd": 0
+          "codigo_oem": "6158-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "6158-010",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-010",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-010",
-          "brand": "RIK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-020",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-020",
+          "id_variante": 59,
+          "id_repuesto": 52,
           "brand": "HASTING",
-          "precio_usd": 0
+          "codigo_oem": "6158-040",
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         },
         {
-          "codigo_oem": "6158-020",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-020",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-020",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-020",
-          "brand": "PC PISTON",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "6158-020",
-          "brand": "RIK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-030",
+          "id_variante": 54,
+          "id_repuesto": 53,
           "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-030",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-030",
-          "brand": "EMASA",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "6158-030",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-030",
-          "brand": "NPR",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "6158-030",
-          "brand": "PC PISTON",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-040",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-040",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-040",
-          "brand": "EMASA",
-          "precio_usd": 35
-        },
-        {
-          "codigo_oem": "6158-040",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "6158-040",
-          "brand": "NPR",
-          "precio_usd": 0
-        },
-        {
           "codigo_oem": "6158-060",
-          "brand": "NATSUKI",
-          "precio_usd": 25
+          "medida": "0.60",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 21,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Anillos",
@@ -1512,7 +1573,12 @@ const PRODUCTS_DATA = {
         "93359241-STD",
         "ANILLOS",
         "DMAX",
-        "LUV"
+        "LUV",
+        "HASTING",
+        "KAIZEN",
+        "RIK",
+        "RUSHMORE",
+        "NPC"
       ],
       "linked_ids": [
         109,
@@ -1531,136 +1597,152 @@ const PRODUCTS_DATA = {
       "slug": "anillos-luv-dmax-2-4",
       "variants": [
         {
+          "id_variante": 115,
+          "id_repuesto": 109,
+          "brand": "HASTING",
           "codigo_oem": "2C5158-STD",
-          "brand": "HASTING",
-          "precio_usd": 40
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 40.0,
+          "stock": 0
         },
         {
-          "codigo_oem": "2C5158-010",
-          "brand": "HASTING",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "2C5158-020",
-          "brand": "HASTING",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "2C5158-030",
-          "brand": "HASTING",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "2C5158-040",
-          "brand": "HASTING",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "93359241-STD",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "93359241-STD",
-          "brand": "RIK",
-          "precio_usd": 55
-        },
-        {
-          "codigo_oem": "93359241-STD",
-          "brand": "NPC",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "93359241-STD",
+          "id_variante": 135,
+          "id_repuesto": 114,
           "brand": "KAIZEN",
-          "precio_usd": 40
+          "codigo_oem": "93359241-STD",
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 40.0,
+          "stock": 1
         },
         {
+          "id_variante": 125,
+          "id_repuesto": 114,
+          "brand": "RIK",
           "codigo_oem": "93359241-STD",
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 55.0,
+          "stock": 1
+        },
+        {
+          "id_variante": 1074,
+          "id_repuesto": 114,
           "brand": "RUSHMORE",
-          "precio_usd": 50
+          "codigo_oem": "93359241-STD",
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 50.0,
+          "stock": 1
         },
         {
-          "codigo_oem": "93359241-010",
+          "id_variante": 116,
+          "id_repuesto": 110,
           "brand": "HASTING",
-          "precio_usd": 0
+          "codigo_oem": "2C5158-010",
+          "medida": "0.10",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
+          "id_variante": 131,
+          "id_repuesto": 115,
+          "brand": "NPC",
           "codigo_oem": "93359241-010",
-          "brand": "RIK",
-          "precio_usd": 0
+          "medida": "0.10",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 55.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "93359241-010",
-          "brand": "NPC",
-          "precio_usd": 55
-        },
-        {
-          "codigo_oem": "93359241-010",
+          "id_variante": 137,
+          "id_repuesto": 116,
           "brand": "KAIZEN",
-          "precio_usd": 0
+          "codigo_oem": "93359241-020",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 40.0,
+          "stock": 1
         },
         {
+          "id_variante": 1372,
+          "id_repuesto": 116,
+          "brand": "RUSHMORE",
           "codigo_oem": "93359241-020",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 50.0,
+          "stock": 1
+        },
+        {
+          "id_variante": 118,
+          "id_repuesto": 112,
           "brand": "HASTING",
-          "precio_usd": 0
+          "codigo_oem": "2C5158-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "93359241-020",
-          "brand": "RIK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "93359241-020",
-          "brand": "NPC",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "93359241-020",
-          "brand": "KAIZEN",
-          "precio_usd": 40
-        },
-        {
-          "codigo_oem": "93359241-030",
+          "id_variante": 123,
+          "id_repuesto": 117,
           "brand": "HASTING",
-          "precio_usd": 40
+          "codigo_oem": "93359241-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 40.0,
+          "stock": 1
         },
         {
-          "codigo_oem": "93359241-030",
-          "brand": "RIK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "93359241-030",
-          "brand": "NPC",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "93359241-030",
+          "id_variante": 138,
+          "id_repuesto": 117,
           "brand": "KAIZEN",
-          "precio_usd": 40
+          "codigo_oem": "93359241-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 40.0,
+          "stock": 3
         },
         {
-          "codigo_oem": "93359241-040",
+          "id_variante": 119,
+          "id_repuesto": 113,
           "brand": "HASTING",
-          "precio_usd": 40
+          "codigo_oem": "2C5158-040",
+          "medida": "0.40",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
+          "id_variante": 124,
+          "id_repuesto": 118,
+          "brand": "HASTING",
           "codigo_oem": "93359241-040",
-          "brand": "RIK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "93359241-040",
-          "brand": "NPC",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "93359241-040",
-          "brand": "KAIZEN",
-          "precio_usd": 0
+          "medida": "0.40",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 40.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Anillos",
@@ -1693,7 +1775,10 @@ const PRODUCTS_DATA = {
         "ANILLOS",
         "DMAX",
         "LUV",
-        "STD"
+        "STD",
+        "HASTING",
+        "RUSHMORE",
+        "RIK"
       ],
       "linked_ids": [
         134,
@@ -1712,136 +1797,130 @@ const PRODUCTS_DATA = {
       "slug": "anillos-luv-dmax-3-5",
       "variants": [
         {
+          "id_variante": 140,
+          "id_repuesto": 134,
+          "brand": "HASTING",
           "codigo_oem": "8-97371-5330",
-          "brand": "HASTING",
-          "precio_usd": 60
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 60.0,
+          "stock": 1
         },
         {
+          "id_variante": 1373,
+          "id_repuesto": 134,
+          "brand": "RUSHMORE",
           "codigo_oem": "8-97371-5330",
-          "brand": "TP",
-          "precio_usd": 0
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 50.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "8-97371-5531",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97371-5531",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97371-5532",
-          "brand": "HASTING",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-97371-5532",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97371-5532",
-          "brand": "RUSHMORE",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-97371-5533",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97371-5533",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97371-5533",
-          "brand": "RUSHMORE",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-97371-5534",
-          "brand": "HASTING",
-          "precio_usd": 60
-        },
-        {
-          "codigo_oem": "8-97371-5534",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97136-1350",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97136-1350",
+          "id_variante": 155,
+          "id_repuesto": 144,
           "brand": "RIK",
-          "precio_usd": 50
-        },
-        {
           "codigo_oem": "8-97136-1350",
-          "brand": "TP",
-          "precio_usd": 40
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Grueso / Grueso",
+          "precio_usd": 50.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "8-97136-1350",
-          "brand": "RUSHMORE",
-          "precio_usd": 60
-        },
-        {
+          "id_variante": 156,
+          "id_repuesto": 145,
+          "brand": "RIK",
           "codigo_oem": "8-97136-1351",
-          "brand": "HASTING",
-          "precio_usd": 0
+          "medida": "0.10",
+          "lado": null,
+          "tipo": "Grueso / Grueso",
+          "precio_usd": 50.0,
+          "stock": 1
         },
         {
-          "codigo_oem": "8-97136-1351",
-          "brand": "RIK",
-          "precio_usd": 50
-        },
-        {
-          "codigo_oem": "8-97136-1352",
-          "brand": "HASTING",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97136-1352",
-          "brand": "RIK",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97136-1352",
-          "brand": "TP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97136-1352",
+          "id_variante": 1241,
+          "id_repuesto": 136,
           "brand": "RUSHMORE",
-          "precio_usd": 60
+          "codigo_oem": "8-97371-5532",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 50.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "8-97136-1353",
+          "id_variante": 152,
+          "id_repuesto": 146,
           "brand": "HASTING",
-          "precio_usd": 60
+          "codigo_oem": "8-97136-1352",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": "Grueso / Grueso",
+          "precio_usd": 65.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "8-97136-1353",
-          "brand": "RIK",
-          "precio_usd": 50
+          "id_variante": 1238,
+          "id_repuesto": 137,
+          "brand": "RUSHMORE",
+          "codigo_oem": "8-97371-5533",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 60.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "8-97136-1354",
+          "id_variante": 153,
+          "id_repuesto": 147,
           "brand": "HASTING",
-          "precio_usd": 60
+          "codigo_oem": "8-97136-1353",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": "Grueso / Grueso",
+          "precio_usd": 60.0,
+          "stock": 3
         },
         {
-          "codigo_oem": "8-97136-1354",
+          "id_variante": 158,
+          "id_repuesto": 147,
           "brand": "RIK",
-          "precio_usd": 0
+          "codigo_oem": "8-97136-1353",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": "Grueso / Grueso",
+          "precio_usd": 50.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 144,
+          "id_repuesto": 138,
+          "brand": "HASTING",
+          "codigo_oem": "8-97371-5534",
+          "medida": "0.40",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 60.0,
+          "stock": 3
+        },
+        {
+          "id_variante": 154,
+          "id_repuesto": 148,
+          "brand": "HASTING",
+          "codigo_oem": "8-97136-1354",
+          "medida": "0.40",
+          "lado": null,
+          "tipo": "Grueso / Grueso",
+          "precio_usd": 65.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Arandela Punta de Eje",
@@ -1855,7 +1934,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "EJE",
-        "PUNTA"
+        "PUNTA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         70,
@@ -1865,11 +1945,20 @@ const PRODUCTS_DATA = {
       "slug": "arandela-punta-de-eje-delantero-caribe-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 179,
+          "id_repuesto": 163,
+          "brand": "Genérica",
           "codigo_oem": "5-09532-0022",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Arandela Punta de Eje",
@@ -1883,7 +1972,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "EJE",
-        "PUNTA"
+        "PUNTA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         70,
@@ -1893,11 +1983,20 @@ const PRODUCTS_DATA = {
       "slug": "arandela-punta-de-eje-delantero-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 179,
+          "id_repuesto": 163,
+          "brand": "Genérica",
           "codigo_oem": "5-09532-0022",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Araña",
@@ -1910,7 +2009,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "CARIBE",
         "SH-99003",
-        "SH-99004"
+        "SH-99004",
+        "GENÉRICA"
       ],
       "linked_ids": [
         72,
@@ -1920,11 +2020,20 @@ const PRODUCTS_DATA = {
       "slug": "arana-caribe-2000",
       "variants": [
         {
+          "id_variante": 1094,
+          "id_repuesto": 1062,
+          "brand": "Genérica",
           "codigo_oem": "8-94243-2320",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Araña",
@@ -1937,7 +2046,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "CARIBE",
         "SH-99003",
-        "SH-99004"
+        "SH-99004",
+        "GENÉRICA"
       ],
       "linked_ids": [
         72,
@@ -1947,11 +2057,20 @@ const PRODUCTS_DATA = {
       "slug": "arana-caribe-2300",
       "variants": [
         {
+          "id_variante": 1094,
+          "id_repuesto": 1062,
+          "brand": "Genérica",
           "codigo_oem": "8-94243-2320",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Araña",
@@ -1969,7 +2088,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "CARIBE",
         "SH-99009",
-        "SH-99010"
+        "SH-99010",
+        "GENÉRICA"
       ],
       "linked_ids": [
         73,
@@ -1980,16 +2100,31 @@ const PRODUCTS_DATA = {
       "slug": "arana-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1095,
+          "id_repuesto": 1063,
+          "brand": "Genérica",
           "codigo_oem": "8-94173-3460",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 10
         },
         {
-          "brand": "Original",
+          "id_variante": 182,
+          "id_repuesto": 165,
+          "brand": "Genérica",
           "codigo_oem": "8-94173-3470",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Araña",
@@ -2007,7 +2142,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "LUV",
         "SH-99009",
-        "SH-99010"
+        "SH-99010",
+        "GENÉRICA"
       ],
       "linked_ids": [
         73,
@@ -2018,16 +2154,31 @@ const PRODUCTS_DATA = {
       "slug": "arana-luv-4x4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1095,
+          "id_repuesto": 1063,
+          "brand": "Genérica",
           "codigo_oem": "8-94173-3460",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 10
         },
         {
-          "brand": "Original",
+          "id_variante": 182,
+          "id_repuesto": 165,
+          "brand": "Genérica",
           "codigo_oem": "8-94173-3470",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Araña",
@@ -2039,7 +2190,8 @@ const PRODUCTS_DATA = {
         "8-97365-0110",
         "ARANA",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         80,
@@ -2050,16 +2202,31 @@ const PRODUCTS_DATA = {
       "slug": "arana-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1099,
+          "id_repuesto": 1067,
+          "brand": "Genérica",
           "codigo_oem": "8-97365-0100",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 5
         },
         {
-          "brand": "Original",
+          "id_variante": 186,
+          "id_repuesto": 169,
+          "brand": "Genérica",
           "codigo_oem": "8-97365-0110",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Araña",
@@ -2071,7 +2238,8 @@ const PRODUCTS_DATA = {
         "8-97365-0110",
         "ARANA",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         80,
@@ -2082,16 +2250,31 @@ const PRODUCTS_DATA = {
       "slug": "arana-luv-d-max-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1099,
+          "id_repuesto": 1067,
+          "brand": "Genérica",
           "codigo_oem": "8-97365-0100",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 5
         },
         {
-          "brand": "Original",
+          "id_variante": 186,
+          "id_repuesto": 169,
+          "brand": "Genérica",
           "codigo_oem": "8-97365-0110",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Araña",
@@ -2104,7 +2287,8 @@ const PRODUCTS_DATA = {
         "8-97365-0110",
         "ARANA",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         80,
@@ -2115,16 +2299,31 @@ const PRODUCTS_DATA = {
       "slug": "arana-luv-d-max-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1099,
+          "id_repuesto": 1067,
+          "brand": "Genérica",
           "codigo_oem": "8-97365-0100",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 5
         },
         {
-          "brand": "Original",
+          "id_variante": 186,
+          "id_repuesto": 169,
+          "brand": "Genérica",
           "codigo_oem": "8-97365-0110",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Araña",
@@ -2136,29 +2335,70 @@ const PRODUCTS_DATA = {
         "716CV05A270",
         "8-97365-0120",
         "8-97365-0130",
+        "8-98005-8380",
+        "8-98005-8390",
         "ARANA",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "FUJI",
+        "MASARU"
       ],
       "linked_ids": [
         81,
         168,
         1066
       ],
-      "oem": "8-97365-0130 / 716CV05A270 / 8-97365-0120 / 716CV05A170",
+      "oem": "8-97365-0130 / 716CV05A270 / 8-97365-0120 / 716CV05A170 / 8-98005-8390 / 8-98005-8380",
       "slug": "arana-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1370,
+          "id_repuesto": 1066,
+          "brand": "FUJI",
           "codigo_oem": "8-97365-0120",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 110.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 1098,
+          "id_repuesto": 1066,
+          "brand": "MASARU",
+          "codigo_oem": "8-97365-0120",
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 10
+        },
+        {
+          "id_variante": 1371,
+          "id_repuesto": 168,
+          "brand": "FUJI",
           "codigo_oem": "8-97365-0130",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 110.0,
+          "stock": 2
+        },
+        {
+          "id_variante": 185,
+          "id_repuesto": 168,
+          "brand": "MASARU",
+          "codigo_oem": "8-97365-0130",
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Arbol de Leva",
@@ -2171,7 +2411,8 @@ const PRODUCTS_DATA = {
         "8-94136-7841",
         "ARBOL",
         "CARIBE",
-        "LEVA"
+        "LEVA",
+        "NATSUKI"
       ],
       "linked_ids": [
         83,
@@ -2181,16 +2422,20 @@ const PRODUCTS_DATA = {
       "slug": "arbol-de-leva-caribe-2300-2600",
       "variants": [
         {
+          "id_variante": 188,
+          "id_repuesto": 171,
           "brand": "NATSUKI",
           "codigo_oem": "8-94136-7841",
-          "precio_usd": 0
-        },
-        {
-          "brand": "POWER SEALED",
-          "codigo_oem": "8-94136-7841",
-          "precio_usd": 110
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 80.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 80.0
     },
     {
       "category": "Arbol de Leva",
@@ -2202,7 +2447,8 @@ const PRODUCTS_DATA = {
         "ARBOL",
         "CARIBE",
         "G-2000",
-        "LEVA"
+        "LEVA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         84,
@@ -2212,11 +2458,20 @@ const PRODUCTS_DATA = {
       "slug": "arbol-de-leva-caribe-g-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 187,
+          "id_repuesto": 170,
+          "brand": "Genérica",
           "codigo_oem": "8-94203-0840",
-          "precio_usd": 70
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 70.0
     },
     {
       "category": "Arbol de Leva",
@@ -2228,7 +2483,8 @@ const PRODUCTS_DATA = {
         "93205394",
         "ARBOL",
         "LEVA",
-        "LUV"
+        "LUV",
+        "SINTAI"
       ],
       "linked_ids": [
         85,
@@ -2238,11 +2494,20 @@ const PRODUCTS_DATA = {
       "slug": "arbol-de-leva-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 189,
+          "id_repuesto": 172,
+          "brand": "SINTAI",
           "codigo_oem": "90233484",
-          "precio_usd": 130
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Arbol de Leva",
@@ -2255,7 +2520,8 @@ const PRODUCTS_DATA = {
         "ARBOL",
         "D-MAX",
         "LEVA",
-        "LUV"
+        "LUV",
+        "SINTAI"
       ],
       "linked_ids": [
         85,
@@ -2265,11 +2531,20 @@ const PRODUCTS_DATA = {
       "slug": "arbol-de-leva-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 189,
+          "id_repuesto": 172,
+          "brand": "SINTAI",
           "codigo_oem": "90233484",
-          "precio_usd": 130
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Arranque",
@@ -2279,7 +2554,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94156-6710",
         "ARRANQUE",
-        "CARIBE"
+        "CARIBE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         89,
@@ -2289,11 +2565,20 @@ const PRODUCTS_DATA = {
       "slug": "arranque-caribe-2-3-2-6",
       "variants": [
         {
+          "id_variante": 193,
+          "id_repuesto": 176,
+          "brand": "Genérica",
           "codigo_oem": "8-94156-6710",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Arranque",
@@ -2306,7 +2591,8 @@ const PRODUCTS_DATA = {
         "8-94234-0650",
         "ARRANQUE",
         "CARIBE",
-        "G-200"
+        "G-200",
+        "GENÉRICA"
       ],
       "linked_ids": [
         90,
@@ -2316,11 +2602,20 @@ const PRODUCTS_DATA = {
       "slug": "arranque-caribe-g-200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 192,
+          "id_repuesto": 175,
+          "brand": "Genérica",
           "codigo_oem": "8-94234-0650",
-          "precio_usd": 125
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Arranque",
@@ -2330,7 +2625,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94156-6710",
         "ARRANQUE",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         89,
@@ -2340,11 +2636,20 @@ const PRODUCTS_DATA = {
       "slug": "arranque-luv-2-3",
       "variants": [
         {
+          "id_variante": 193,
+          "id_repuesto": 176,
+          "brand": "Genérica",
           "codigo_oem": "8-94156-6710",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Arranque",
@@ -2355,7 +2660,9 @@ const PRODUCTS_DATA = {
         "8-94384-3141",
         "ARRANQUE",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "COUNGUARD",
+        "VULKO"
       ],
       "linked_ids": [
         92,
@@ -2365,16 +2672,31 @@ const PRODUCTS_DATA = {
       "slug": "arranque-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "VULKO",
-          "codigo_oem": "8-94384-3141",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 196,
+          "id_repuesto": 178,
           "brand": "COUNGUARD",
           "codigo_oem": "8-94384-3141",
-          "precio_usd": 165
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 195,
+          "id_repuesto": 178,
+          "brand": "VULKO",
+          "codigo_oem": "8-94384-3141",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Arranque",
@@ -2384,7 +2706,9 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94384-3141",
         "ARRANQUE",
-        "RODEO"
+        "RODEO",
+        "COUNGUARD",
+        "VULKO"
       ],
       "linked_ids": [
         178
@@ -2394,16 +2718,31 @@ const PRODUCTS_DATA = {
       "slug": "arranque-rodeo-3-2",
       "variants": [
         {
+          "id_variante": 196,
+          "id_repuesto": 178,
+          "brand": "COUNGUARD",
           "codigo_oem": "8-94384-3141",
-          "brand": "VULKO",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
+          "id_variante": 195,
+          "id_repuesto": 178,
+          "brand": "VULKO",
           "codigo_oem": "8-94384-3141",
-          "brand": "COUNGUARD",
-          "precio_usd": 165
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Arranque",
@@ -2413,7 +2752,9 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94384-3141",
         "ARRANQUE",
-        "TROOPER"
+        "TROOPER",
+        "COUNGUARD",
+        "VULKO"
       ],
       "linked_ids": [
         178
@@ -2423,16 +2764,31 @@ const PRODUCTS_DATA = {
       "slug": "arranque-trooper-3-2",
       "variants": [
         {
+          "id_variante": 196,
+          "id_repuesto": 178,
+          "brand": "COUNGUARD",
           "codigo_oem": "8-94384-3141",
-          "brand": "VULKO",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
+          "id_variante": 195,
+          "id_repuesto": 178,
+          "brand": "VULKO",
           "codigo_oem": "8-94384-3141",
-          "brand": "COUNGUARD",
-          "precio_usd": 165
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Aspa",
@@ -2445,7 +2801,8 @@ const PRODUCTS_DATA = {
         "ASPA",
         "CARIBE",
         "CLUTCH",
-        "FAN"
+        "FAN",
+        "GENÉRICA"
       ],
       "linked_ids": [
         93,
@@ -2455,11 +2812,20 @@ const PRODUCTS_DATA = {
       "slug": "aspa-de-fan-clutch-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 197,
+          "id_repuesto": 180,
+          "brand": "Genérica",
           "codigo_oem": "8-94158-7641",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Aspa",
@@ -2470,7 +2836,8 @@ const PRODUCTS_DATA = {
         "16361-38010",
         "8-94158-7641",
         "ASPA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         180
@@ -2480,11 +2847,20 @@ const PRODUCTS_DATA = {
       "slug": "aspa-luv",
       "variants": [
         {
+          "id_variante": 197,
+          "id_repuesto": 180,
+          "brand": "Genérica",
           "codigo_oem": "8-94158-7641",
-          "brand": "Original",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Aspa",
@@ -2496,7 +2872,8 @@ const PRODUCTS_DATA = {
         "8-94158-7641",
         "ASPA",
         "DMAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         180
@@ -2506,11 +2883,20 @@ const PRODUCTS_DATA = {
       "slug": "aspa-luv-dmax-2-4",
       "variants": [
         {
+          "id_variante": 197,
+          "id_repuesto": 180,
+          "brand": "Genérica",
           "codigo_oem": "8-94158-7641",
-          "brand": "Original",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Aspa",
@@ -2522,7 +2908,8 @@ const PRODUCTS_DATA = {
         "8-97349-7620",
         "ASPA",
         "DMAX",
-        "LUV"
+        "LUV",
+        "NIKHO"
       ],
       "linked_ids": [
         181
@@ -2531,21 +2918,20 @@ const PRODUCTS_DATA = {
       "slug": "aspa-fan-clutch-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-97130-7571",
-          "precio_usd": 50
-        },
-        {
-          "brand": "KAIZEN",
-          "codigo_oem": "8-97130-7571",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1329,
+          "id_repuesto": 181,
           "brand": "NIKHO",
           "codigo_oem": "8-97130-7571",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Aspa",
@@ -2555,7 +2941,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-97130-7570",
         "ASPA",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         183
@@ -2564,11 +2951,20 @@ const PRODUCTS_DATA = {
       "slug": "aspa-rodeo-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 200,
+          "id_repuesto": 183,
+          "brand": "Genérica",
           "codigo_oem": "8-97130-7570",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Aspa",
@@ -2578,7 +2974,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-97130-7570",
         "ASPA",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         183
@@ -2587,11 +2984,20 @@ const PRODUCTS_DATA = {
       "slug": "aspa-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 200,
+          "id_repuesto": 183,
+          "brand": "Genérica",
           "codigo_oem": "8-97130-7570",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Bandas",
@@ -2603,7 +3009,8 @@ const PRODUCTS_DATA = {
         "BANDAS",
         "DMAX",
         "FRENO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         189
@@ -2613,11 +3020,20 @@ const PRODUCTS_DATA = {
       "slug": "bandas-de-freno-luv-dmax-2-4",
       "variants": [
         {
+          "id_variante": 206,
+          "id_repuesto": 189,
+          "brand": "Genérica",
           "codigo_oem": "5-87832-0910",
-          "brand": "Original",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bandas",
@@ -2629,7 +3045,8 @@ const PRODUCTS_DATA = {
         "BANDAS",
         "DMAX",
         "FRENO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         189
@@ -2639,11 +3056,20 @@ const PRODUCTS_DATA = {
       "slug": "bandas-de-freno-luv-dmax-2-5",
       "variants": [
         {
+          "id_variante": 206,
+          "id_repuesto": 189,
+          "brand": "Genérica",
           "codigo_oem": "5-87832-0910",
-          "brand": "Original",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bandas",
@@ -2656,7 +3082,8 @@ const PRODUCTS_DATA = {
         "BANDAS",
         "DMAX",
         "FRENO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         189
@@ -2666,11 +3093,20 @@ const PRODUCTS_DATA = {
       "slug": "bandas-de-freno-luv-dmax-3-0-4x2",
       "variants": [
         {
+          "id_variante": 206,
+          "id_repuesto": 189,
+          "brand": "Genérica",
           "codigo_oem": "5-87832-0910",
-          "brand": "Original",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bandas",
@@ -2683,7 +3119,8 @@ const PRODUCTS_DATA = {
         "BANDAS",
         "CARIBE",
         "FRENO",
-        "JUEGO"
+        "JUEGO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         100,
@@ -2693,11 +3130,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-bandas-de-freno-caribe-83-88",
       "variants": [
         {
+          "id_variante": 204,
+          "id_repuesto": 187,
+          "brand": "Genérica",
           "codigo_oem": "8-94230-5391",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Bandas",
@@ -2711,7 +3157,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "JUEGO",
         "K4452",
-        "LUV"
+        "LUV",
+        "TAKASHI"
       ],
       "linked_ids": [
         101,
@@ -2721,11 +3168,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-bandas-de-freno-luv-2300",
       "variants": [
         {
+          "id_variante": 205,
+          "id_repuesto": 188,
           "brand": "TAKASHI",
           "codigo_oem": "8-94479-7070",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Bandas",
@@ -2739,7 +3195,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "JUEGO",
         "K4467",
-        "LUV"
+        "LUV",
+        "TAKASHI"
       ],
       "linked_ids": [
         103,
@@ -2749,16 +3206,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-bandas-de-freno-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "XTENDER",
-          "codigo_oem": "5-87832-0900",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 208,
+          "id_repuesto": 190,
           "brand": "TAKASHI",
           "codigo_oem": "5-87832-0900",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Baquelita",
@@ -2770,7 +3231,8 @@ const PRODUCTS_DATA = {
         "BAQUELITA",
         "BOMBA",
         "CARIBE",
-        "GASOLINA"
+        "GASOLINA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         184
@@ -2779,11 +3241,20 @@ const PRODUCTS_DATA = {
       "slug": "baquelita-bomba-gasolina-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 201,
+          "id_repuesto": 184,
+          "brand": "Genérica",
           "codigo_oem": "8-94146-2580",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Baquelita",
@@ -2795,7 +3266,8 @@ const PRODUCTS_DATA = {
         "BAQUELITA",
         "BOMBA",
         "GASOLINA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         184
@@ -2804,11 +3276,20 @@ const PRODUCTS_DATA = {
       "slug": "baquelita-bomba-gasolina-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 201,
+          "id_repuesto": 184,
+          "brand": "Genérica",
           "codigo_oem": "8-94146-2580",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Barra Central",
@@ -2820,7 +3301,8 @@ const PRODUCTS_DATA = {
         "8-94241-4670",
         "BARRA",
         "CARIBE",
-        "CENTRAL"
+        "CENTRAL",
+        "SHIBUMI"
       ],
       "linked_ids": [
         106,
@@ -2830,11 +3312,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-caribe-2300",
       "variants": [
         {
+          "id_variante": 209,
+          "id_repuesto": 192,
           "brand": "SHIBUMI",
           "codigo_oem": "8-94241-4670",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 55.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 55.0
     },
     {
       "category": "Barra Central",
@@ -2846,7 +3337,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CARIBE",
         "CENTRAL",
-        "G-2000"
+        "G-2000",
+        "SHIBUMI"
       ],
       "linked_ids": [
         106,
@@ -2856,11 +3348,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-caribe-g-2000",
       "variants": [
         {
+          "id_variante": 209,
+          "id_repuesto": 192,
           "brand": "SHIBUMI",
           "codigo_oem": "8-94241-4670",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 55.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 55.0
     },
     {
       "category": "Barra Central",
@@ -2872,7 +3373,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CARIBE",
         "CENTRAL",
-        "HUECO"
+        "HUECO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         104,
@@ -2882,11 +3384,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-con-hueco-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 210,
+          "id_repuesto": 193,
+          "brand": "Genérica",
           "codigo_oem": "8-94389-2222",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Barra Central",
@@ -2899,7 +3410,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CENTRAL",
         "HUECO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         104,
@@ -2909,11 +3421,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-con-hueco-luv-4x4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 210,
+          "id_repuesto": 193,
+          "brand": "Genérica",
           "codigo_oem": "8-94389-2222",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Barra Central",
@@ -2925,7 +3446,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CENTRAL",
         "HUECO",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         104,
@@ -2935,11 +3457,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-con-hueco-rodeo",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 210,
+          "id_repuesto": 193,
+          "brand": "Genérica",
           "codigo_oem": "8-94389-2222",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Barra Central",
@@ -2951,7 +3482,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CENTRAL",
         "HUECO",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         104,
@@ -2961,11 +3493,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-con-hueco-trooper",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 210,
+          "id_repuesto": 193,
+          "brand": "Genérica",
           "codigo_oem": "8-94389-2222",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Barra Central",
@@ -2978,7 +3519,8 @@ const PRODUCTS_DATA = {
         "8-94389-2102",
         "BARRA",
         "CENTRAL",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         107,
@@ -2988,11 +3530,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-luv-4x2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 212,
+          "id_repuesto": 195,
+          "brand": "Genérica",
           "codigo_oem": "8-94389-2102",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Barra Central",
@@ -3007,7 +3558,8 @@ const PRODUCTS_DATA = {
         "DS-1163",
         "HUECO",
         "SC-5335",
-        "SIN"
+        "SIN",
+        "GENÉRICA"
       ],
       "linked_ids": [
         105,
@@ -3017,11 +3569,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-sin-hueco-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 211,
+          "id_repuesto": 194,
+          "brand": "Genérica",
           "codigo_oem": "8-94419-3791",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Barra Central",
@@ -3037,7 +3598,8 @@ const PRODUCTS_DATA = {
         "HUECO",
         "LUV",
         "SC-5335",
-        "SIN"
+        "SIN",
+        "GENÉRICA"
       ],
       "linked_ids": [
         105,
@@ -3047,11 +3609,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-sin-hueco-luv-4x4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 211,
+          "id_repuesto": 194,
+          "brand": "Genérica",
           "codigo_oem": "8-94419-3791",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Barra Central",
@@ -3066,7 +3637,8 @@ const PRODUCTS_DATA = {
         "HUECO",
         "RODEO",
         "SC-5335",
-        "SIN"
+        "SIN",
+        "GENÉRICA"
       ],
       "linked_ids": [
         105,
@@ -3076,11 +3648,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-sin-hueco-rodeo",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 211,
+          "id_repuesto": 194,
+          "brand": "Genérica",
           "codigo_oem": "8-94419-3791",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Barra Central",
@@ -3095,7 +3676,8 @@ const PRODUCTS_DATA = {
         "HUECO",
         "SC-5335",
         "SIN",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         105,
@@ -3105,11 +3687,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-central-sin-hueco-trooper",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 211,
+          "id_repuesto": 194,
+          "brand": "Genérica",
           "codigo_oem": "8-94419-3791",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Barra Link",
@@ -3129,7 +3720,9 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "LAPIZ",
         "LINK",
-        "LUV"
+        "LUV",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         196,
@@ -3140,26 +3733,53 @@ const PRODUCTS_DATA = {
       "slug": "barra-link-lapiz-barra-estabilizadora-luv-dmax-3-0-4x4",
       "variants": [
         {
-          "codigo_oem": "8-97235-7861",
+          "id_variante": 214,
+          "id_repuesto": 196,
           "brand": "JAPON",
-          "precio_usd": 25
-        },
-        {
           "codigo_oem": "8-97235-7861",
-          "brand": "TAIWAN",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 15
         },
         {
-          "codigo_oem": "8-97235-7871",
+          "id_variante": 1102,
+          "id_repuesto": 196,
           "brand": "TAIWAN",
-          "precio_usd": 15
+          "codigo_oem": "8-97235-7861",
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         },
         {
-          "codigo_oem": "8-97235-7871",
+          "id_variante": 1104,
+          "id_repuesto": 1070,
           "brand": "JAPON",
-          "precio_usd": 25
+          "codigo_oem": "8-97235-7871",
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 14
+        },
+        {
+          "id_variante": 1103,
+          "id_repuesto": 1070,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97235-7871",
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 49,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Barra Link",
@@ -3178,7 +3798,9 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "LAPIZ",
         "LINK",
-        "LUV"
+        "LUV",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         196,
@@ -3189,26 +3811,53 @@ const PRODUCTS_DATA = {
       "slug": "barra-link-lapiz-barra-estabilizadora-luv-dmax-3-5",
       "variants": [
         {
-          "codigo_oem": "8-97235-7861",
+          "id_variante": 214,
+          "id_repuesto": 196,
           "brand": "JAPON",
-          "precio_usd": 25
-        },
-        {
           "codigo_oem": "8-97235-7861",
-          "brand": "TAIWAN",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 15
         },
         {
-          "codigo_oem": "8-97235-7871",
+          "id_variante": 1102,
+          "id_repuesto": 196,
           "brand": "TAIWAN",
-          "precio_usd": 15
+          "codigo_oem": "8-97235-7861",
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         },
         {
-          "codigo_oem": "8-97235-7871",
+          "id_variante": 1104,
+          "id_repuesto": 1070,
           "brand": "JAPON",
-          "precio_usd": 25
+          "codigo_oem": "8-97235-7871",
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 14
+        },
+        {
+          "id_variante": 1103,
+          "id_repuesto": 1070,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97235-7871",
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 49,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Barra Link",
@@ -3220,7 +3869,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "DELANTERA",
         "LINK",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         198
@@ -3229,11 +3879,20 @@ const PRODUCTS_DATA = {
       "slug": "barra-link-delantera-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 216,
+          "id_repuesto": 198,
+          "brand": "Genérica",
           "codigo_oem": "8-97018-2272",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Barra Link",
@@ -3246,7 +3905,9 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LINK",
         "LUV",
-        "SL-5360"
+        "SL-5360",
+        "555 JAPON",
+        "MASARU"
       ],
       "linked_ids": [
         108,
@@ -3257,16 +3918,31 @@ const PRODUCTS_DATA = {
       "slug": "barra-link-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "MASARU",
-          "codigo_oem": "8-94408-8402",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1101,
+          "id_repuesto": 197,
           "brand": "555 JAPON",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
+        },
+        {
+          "id_variante": 215,
+          "id_repuesto": 197,
+          "brand": "MASARU",
+          "codigo_oem": "8-94408-8402",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Barra Link",
@@ -3279,7 +3955,9 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LINK",
         "LUV",
-        "SL-5360"
+        "SL-5360",
+        "555 JAPON",
+        "MASARU"
       ],
       "linked_ids": [
         108,
@@ -3290,16 +3968,31 @@ const PRODUCTS_DATA = {
       "slug": "barra-link-luv-d-max-2-5",
       "variants": [
         {
-          "brand": "MASARU",
-          "codigo_oem": "8-94408-8402",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1101,
+          "id_repuesto": 197,
           "brand": "555 JAPON",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
+        },
+        {
+          "id_variante": 215,
+          "id_repuesto": 197,
+          "brand": "MASARU",
+          "codigo_oem": "8-94408-8402",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Barra Link",
@@ -3312,7 +4005,9 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LINK",
         "LUV",
-        "SL-5360"
+        "SL-5360",
+        "555 JAPON",
+        "MASARU"
       ],
       "linked_ids": [
         108,
@@ -3323,16 +4018,31 @@ const PRODUCTS_DATA = {
       "slug": "barra-link-luv-d-max-3-0",
       "variants": [
         {
-          "brand": "MASARU",
-          "codigo_oem": "8-94408-8402",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1101,
+          "id_repuesto": 197,
           "brand": "555 JAPON",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
+        },
+        {
+          "id_variante": 215,
+          "id_repuesto": 197,
+          "brand": "MASARU",
+          "codigo_oem": "8-94408-8402",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Barra Tensora",
@@ -3345,7 +4055,8 @@ const PRODUCTS_DATA = {
         "8-94473-1924",
         "BARRA",
         "LUV",
-        "TENSORA"
+        "TENSORA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         200,
@@ -3355,16 +4066,31 @@ const PRODUCTS_DATA = {
       "slug": "barra-tensora-luv-4x2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 218,
+          "id_repuesto": 200,
+          "brand": "Genérica",
           "codigo_oem": "8-94473-1914",
-          "precio_usd": 45
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 1111,
+          "id_repuesto": 1077,
+          "brand": "Genérica",
           "codigo_oem": "8-94473-1924",
-          "precio_usd": 45
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Base Amortiguador",
@@ -3377,7 +4103,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "D-MAX",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         201
@@ -3386,11 +4113,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-amortiguador-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 219,
+          "id_repuesto": 201,
+          "brand": "Genérica",
           "codigo_oem": "8-97236-3000",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Base Brazo Loco",
@@ -3403,7 +4139,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "BRAZO",
         "CARIBE",
-        "LOCO"
+        "LOCO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         203
@@ -3412,11 +4149,20 @@ const PRODUCTS_DATA = {
       "slug": "base-brazo-loco-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 221,
+          "id_repuesto": 203,
+          "brand": "Genérica",
           "codigo_oem": "8-97028-9720",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Base Brazo Loco",
@@ -3429,7 +4175,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "BRAZO",
         "CARIBE",
-        "LOCO"
+        "LOCO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         202
@@ -3438,11 +4185,20 @@ const PRODUCTS_DATA = {
       "slug": "base-brazo-loco-caribe-2000",
       "variants": [
         {
+          "id_variante": 220,
+          "id_repuesto": 202,
+          "brand": "Genérica",
           "codigo_oem": "8-94241-7670",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Base Brazo Loco",
@@ -3455,7 +4211,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "BRAZO",
         "CARIBE",
-        "LOCO"
+        "LOCO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         202
@@ -3464,11 +4221,20 @@ const PRODUCTS_DATA = {
       "slug": "base-brazo-loco-caribe-2300",
       "variants": [
         {
+          "id_variante": 220,
+          "id_repuesto": 202,
+          "brand": "Genérica",
           "codigo_oem": "8-94241-7670",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Base Brazo Loco",
@@ -3481,7 +4247,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "BRAZO",
         "LOCO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         203
@@ -3490,11 +4257,20 @@ const PRODUCTS_DATA = {
       "slug": "base-brazo-loco-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 221,
+          "id_repuesto": 203,
+          "brand": "Genérica",
           "codigo_oem": "8-97028-9720",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Base Brazo Loco",
@@ -3507,7 +4283,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "BRAZO",
         "LOCO",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         203
@@ -3516,11 +4293,20 @@ const PRODUCTS_DATA = {
       "slug": "base-brazo-loco-rodeo",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 221,
+          "id_repuesto": 203,
+          "brand": "Genérica",
           "codigo_oem": "8-97028-9720",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Base Brazo Loco",
@@ -3533,7 +4319,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "BRAZO",
         "LOCO",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         203
@@ -3542,11 +4329,20 @@ const PRODUCTS_DATA = {
       "slug": "base-brazo-loco-trooper",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 221,
+          "id_repuesto": 203,
+          "brand": "Genérica",
           "codigo_oem": "8-97028-9720",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Base Caja",
@@ -3558,7 +4354,8 @@ const PRODUCTS_DATA = {
         "8-94441-5100",
         "BASE",
         "CAJA",
-        "CARIBE"
+        "CARIBE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         119,
@@ -3568,11 +4365,20 @@ const PRODUCTS_DATA = {
       "slug": "base-caja-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 223,
+          "id_repuesto": 205,
+          "brand": "Genérica",
           "codigo_oem": "8-94441-5100",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Base Caja",
@@ -3584,7 +4390,8 @@ const PRODUCTS_DATA = {
         "8-94458-3832",
         "BASE",
         "CAJA",
-        "CARIBE"
+        "CARIBE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         120,
@@ -3594,11 +4401,20 @@ const PRODUCTS_DATA = {
       "slug": "base-caja-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 224,
+          "id_repuesto": 206,
+          "brand": "Genérica",
           "codigo_oem": "8-94458-3832",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Base Caja",
@@ -3611,7 +4427,8 @@ const PRODUCTS_DATA = {
         "8-94441-5100",
         "BASE",
         "CAJA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         119,
@@ -3621,11 +4438,20 @@ const PRODUCTS_DATA = {
       "slug": "base-caja-luv-4x4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 223,
+          "id_repuesto": 205,
+          "brand": "Genérica",
           "codigo_oem": "8-94441-5100",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Base Caja",
@@ -3637,7 +4463,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CAJA",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         122,
@@ -3647,11 +4474,20 @@ const PRODUCTS_DATA = {
       "slug": "base-caja-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 225,
+          "id_repuesto": 207,
+          "brand": "Genérica",
           "codigo_oem": "197037",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Base Caja",
@@ -3668,7 +4504,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CAJA",
         "DMAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         204
@@ -3678,11 +4515,20 @@ const PRODUCTS_DATA = {
       "slug": "base-caja-luv-dmax-3-5",
       "variants": [
         {
+          "id_variante": 222,
+          "id_repuesto": 204,
+          "brand": "Genérica",
           "codigo_oem": "8-94135-9851",
-          "brand": "Original",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Base Caja",
@@ -3694,7 +4540,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CAJA",
         "RODEO",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         124,
@@ -3704,11 +4551,20 @@ const PRODUCTS_DATA = {
       "slug": "base-caja-trooper-rodeo-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 226,
+          "id_repuesto": 208,
+          "brand": "Genérica",
           "codigo_oem": "8-94386-4861",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 55.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 55.0
     },
     {
       "category": "Base Caja",
@@ -3719,7 +4575,8 @@ const PRODUCTS_DATA = {
         "8-94386-4861",
         "BASE",
         "CAJA",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         124,
@@ -3729,11 +4586,20 @@ const PRODUCTS_DATA = {
       "slug": "base-caja-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 226,
+          "id_repuesto": 208,
+          "brand": "Genérica",
           "codigo_oem": "8-94386-4861",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 55.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 55.0
     },
     {
       "category": "Base Casilla",
@@ -3744,7 +4610,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CARIBE",
         "CASILLA",
-        "GU-224"
+        "GU-224",
+        "GENÉRICA"
       ],
       "linked_ids": [
         125,
@@ -3754,11 +4621,20 @@ const PRODUCTS_DATA = {
       "slug": "base-casilla-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 228,
+          "id_repuesto": 210,
+          "brand": "Genérica",
           "codigo_oem": "GU-224",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Base Fan Clutch",
@@ -3771,7 +4647,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "FAN",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         129,
@@ -3781,11 +4658,20 @@ const PRODUCTS_DATA = {
       "slug": "base-fan-clutch-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 232,
+          "id_repuesto": 214,
+          "brand": "Genérica",
           "codigo_oem": "8-97231-7180",
-          "precio_usd": 90
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Base Filtro Aceite",
@@ -3797,7 +4683,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BASE",
         "CARIBE",
-        "FILTRO"
+        "FILTRO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         130,
@@ -3807,11 +4694,20 @@ const PRODUCTS_DATA = {
       "slug": "base-filtro-de-aceite-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 233,
+          "id_repuesto": 215,
+          "brand": "Genérica",
           "codigo_oem": "8-94476-1270",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Base Filtro Aceite",
@@ -3823,7 +4719,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BASE",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         130,
@@ -3833,11 +4730,20 @@ const PRODUCTS_DATA = {
       "slug": "base-filtro-de-aceite-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 233,
+          "id_repuesto": 215,
+          "brand": "Genérica",
           "codigo_oem": "8-94476-1270",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Base Filtro Aceite",
@@ -3850,7 +4756,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CARIBE",
         "FILTRO",
-        "FILTRODE"
+        "FILTRODE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         130,
@@ -3860,11 +4767,20 @@ const PRODUCTS_DATA = {
       "slug": "base-filtrode-aceite-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 233,
+          "id_repuesto": 215,
+          "brand": "Genérica",
           "codigo_oem": "8-94476-1270",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Base Motor",
@@ -3879,7 +4795,8 @@ const PRODUCTS_DATA = {
         "8-94482-4060",
         "BASE",
         "CARIBE",
-        "MOTOR"
+        "MOTOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         132,
@@ -3891,16 +4808,31 @@ const PRODUCTS_DATA = {
       "slug": "base-motor-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 235,
+          "id_repuesto": 217,
+          "brand": "Genérica",
           "codigo_oem": "8-94482-4050",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 1087,
+          "id_repuesto": 1056,
+          "brand": "Genérica",
           "codigo_oem": "8-94482-4060",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Base Motor",
@@ -3915,7 +4847,8 @@ const PRODUCTS_DATA = {
         "8-94414-3940",
         "BASE",
         "CARIBE",
-        "MOTOR"
+        "MOTOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         133,
@@ -3927,16 +4860,31 @@ const PRODUCTS_DATA = {
       "slug": "base-motor-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 234,
+          "id_repuesto": 216,
+          "brand": "Genérica",
           "codigo_oem": "8-94414-3930",
-          "precio_usd": 25
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 19
         },
         {
-          "brand": "Original",
+          "id_variante": 1086,
+          "id_repuesto": 1055,
+          "brand": "Genérica",
           "codigo_oem": "8-94414-3940",
-          "precio_usd": 25
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 19
         }
-      ]
+      ],
+      "total_stock": 38,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Base Motor",
@@ -3951,7 +4899,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "CARIBE",
         "G-2000",
-        "MOTOR"
+        "MOTOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         133,
@@ -3963,16 +4912,31 @@ const PRODUCTS_DATA = {
       "slug": "base-motor-caribe-g-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 234,
+          "id_repuesto": 216,
+          "brand": "Genérica",
           "codigo_oem": "8-94414-3930",
-          "precio_usd": 25
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 19
         },
         {
-          "brand": "Original",
+          "id_variante": 1086,
+          "id_repuesto": 1055,
+          "brand": "Genérica",
           "codigo_oem": "8-94414-3940",
-          "precio_usd": 25
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 19
         }
-      ]
+      ],
+      "total_stock": 38,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Base Motor",
@@ -3986,7 +4950,8 @@ const PRODUCTS_DATA = {
         "8-97216-7551",
         "BASE",
         "LUV",
-        "MOTOR"
+        "MOTOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         141,
@@ -3997,16 +4962,31 @@ const PRODUCTS_DATA = {
       "slug": "base-motor-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 236,
+          "id_repuesto": 218,
+          "brand": "Genérica",
           "codigo_oem": "8-97216-7541",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 1088,
+          "id_repuesto": 1057,
+          "brand": "Genérica",
           "codigo_oem": "8-97216-7551",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Base Motor",
@@ -4021,7 +5001,8 @@ const PRODUCTS_DATA = {
         "8-94482-4060",
         "BASE",
         "LUV",
-        "MOTOR"
+        "MOTOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         132,
@@ -4033,16 +5014,31 @@ const PRODUCTS_DATA = {
       "slug": "base-motor-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 235,
+          "id_repuesto": 217,
+          "brand": "Genérica",
           "codigo_oem": "8-94482-4050",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 1087,
+          "id_repuesto": 1056,
+          "brand": "Genérica",
           "codigo_oem": "8-94482-4060",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Base Motor",
@@ -4055,7 +5051,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "D-MAX",
         "LUV",
-        "MOTOR"
+        "MOTOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         142,
@@ -4066,16 +5063,31 @@ const PRODUCTS_DATA = {
       "slug": "base-motor-luv-d-max-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 238,
+          "id_repuesto": 220,
+          "brand": "Genérica",
           "codigo_oem": "197020",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 7
         },
         {
-          "brand": "Original",
+          "id_variante": 1089,
+          "id_repuesto": 1058,
+          "brand": "Genérica",
           "codigo_oem": "197021",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Base Motor",
@@ -4091,7 +5103,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DIESEL",
         "LUV",
-        "MOTOR"
+        "MOTOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         143,
@@ -4102,16 +5115,31 @@ const PRODUCTS_DATA = {
       "slug": "base-motor-luv-d-max-3-0-diesel",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 239,
+          "id_repuesto": 221,
+          "brand": "Genérica",
           "codigo_oem": "8-97363-5430",
-          "precio_usd": 40
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 1090,
+          "id_repuesto": 1059,
+          "brand": "Genérica",
           "codigo_oem": "8-97367-2730",
-          "precio_usd": 40
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Base Motor",
@@ -4126,7 +5154,8 @@ const PRODUCTS_DATA = {
         "BASE",
         "D-MAX",
         "LUV",
-        "MOTOR"
+        "MOTOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         222,
@@ -4136,16 +5165,31 @@ const PRODUCTS_DATA = {
       "slug": "base-motor-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 240,
+          "id_repuesto": 222,
+          "brand": "Genérica",
           "codigo_oem": "8-98051-3310",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 10
         },
         {
-          "brand": "Original",
+          "id_variante": 1091,
+          "id_repuesto": 1060,
+          "brand": "Genérica",
           "codigo_oem": "8-98051-3320",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Bendix",
@@ -4156,7 +5200,8 @@ const PRODUCTS_DATA = {
         "93170383",
         "ARRANQUE",
         "BENDIX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         225
@@ -4165,11 +5210,20 @@ const PRODUCTS_DATA = {
       "slug": "bendix-arranque-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 243,
+          "id_repuesto": 225,
+          "brand": "Genérica",
           "codigo_oem": "93170383",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bendix",
@@ -4181,7 +5235,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "BENDIX",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         225
@@ -4190,11 +5245,20 @@ const PRODUCTS_DATA = {
       "slug": "bendix-arranque-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 243,
+          "id_repuesto": 225,
+          "brand": "Genérica",
           "codigo_oem": "93170383",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bendix",
@@ -4206,7 +5270,8 @@ const PRODUCTS_DATA = {
         "8-94129-1870",
         "ARRANQUE",
         "BENDIX",
-        "CARIBE"
+        "CARIBE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         224
@@ -4215,11 +5280,20 @@ const PRODUCTS_DATA = {
       "slug": "bendix-de-arranque-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 242,
+          "id_repuesto": 224,
+          "brand": "Genérica",
           "codigo_oem": "8-94129-1870",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bendix",
@@ -4233,7 +5307,9 @@ const PRODUCTS_DATA = {
         "8-97136-1351",
         "ARRANQUE",
         "BENDIX",
-        "CARIBE"
+        "CARIBE",
+        "RIK",
+        "GENÉRICA"
       ],
       "linked_ids": [
         145,
@@ -4243,21 +5319,31 @@ const PRODUCTS_DATA = {
       "slug": "bendix-de-arranque-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
-          "codigo_oem": "8-94129-1870",
-          "precio_usd": 35
-        },
-        {
-          "brand": "HASTING",
-          "codigo_oem": "8-97136-1351",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 156,
+          "id_repuesto": 145,
           "brand": "RIK",
           "codigo_oem": "8-97136-1351",
-          "precio_usd": 50
+          "medida": "0.10",
+          "lado": null,
+          "tipo": "Grueso / Grueso",
+          "precio_usd": 50.0,
+          "stock": 1
+        },
+        {
+          "id_variante": 242,
+          "id_repuesto": 224,
+          "brand": "Genérica",
+          "codigo_oem": "8-94129-1870",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bobina",
@@ -4268,7 +5354,8 @@ const PRODUCTS_DATA = {
         "93363483",
         "BOBINA",
         "ENCENDIDO",
-        "LUV"
+        "LUV",
+        "TAIKEN"
       ],
       "linked_ids": [
         226
@@ -4277,16 +5364,20 @@ const PRODUCTS_DATA = {
       "slug": "bobina-encendido-luv-2-2",
       "variants": [
         {
-          "brand": "YUKKAZO",
-          "codigo_oem": "93363483",
-          "precio_usd": 60
-        },
-        {
+          "id_variante": 1235,
+          "id_repuesto": 226,
           "brand": "TAIKEN",
           "codigo_oem": "93363483",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bobina",
@@ -4298,7 +5389,8 @@ const PRODUCTS_DATA = {
         "BOBINA",
         "ISUZU",
         "RODEO",
-        "TROOPER"
+        "TROOPER",
+        "YUKKAZO"
       ],
       "linked_ids": [
         149,
@@ -4308,11 +5400,20 @@ const PRODUCTS_DATA = {
       "slug": "bobina-isuzu-rodeo-trooper",
       "variants": [
         {
+          "id_variante": 247,
+          "id_repuesto": 228,
           "brand": "YUKKAZO",
           "codigo_oem": "12AY090027N",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Bobina",
@@ -4324,7 +5425,10 @@ const PRODUCTS_DATA = {
         "8-97136-3250",
         "BOBINA",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "ARCIERETECH",
+        "MAX POWER",
+        "TAIKEN"
       ],
       "linked_ids": [
         227
@@ -4333,16 +5437,42 @@ const PRODUCTS_DATA = {
       "slug": "bobina-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 246,
+          "id_repuesto": 227,
           "brand": "ARCIERETECH",
           "codigo_oem": "8-97136-3250",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 30
         },
         {
+          "id_variante": 1081,
+          "id_repuesto": 227,
           "brand": "MAX POWER",
           "codigo_oem": "8-97136-3250",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
+        },
+        {
+          "id_variante": 1375,
+          "id_repuesto": 227,
+          "brand": "TAIKEN",
+          "codigo_oem": "8-97136-3250",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 33,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Bobina",
@@ -4354,7 +5484,8 @@ const PRODUCTS_DATA = {
         "MC-2000",
         "RESISTENCIA",
         "SECA",
-        "UNIVERSAL"
+        "UNIVERSAL",
+        "TANIKEN"
       ],
       "linked_ids": [
         150,
@@ -4364,11 +5495,20 @@ const PRODUCTS_DATA = {
       "slug": "bobina-seca-con-resistencia-universal",
       "variants": [
         {
+          "id_variante": 248,
+          "id_repuesto": 229,
           "brand": "TANIKEN",
           "codigo_oem": "MC-2000",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 18
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Bomba de aceite",
@@ -4383,7 +5523,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "M-154",
         "OP4005",
-        "RM154"
+        "RM154",
+        "SHINOBU"
       ],
       "linked_ids": [
         151,
@@ -4393,11 +5534,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-aceite-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1344,
+          "id_repuesto": 231,
+          "brand": "SHINOBU",
           "codigo_oem": "8-94445-6650",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Bomba de aceite",
@@ -4411,7 +5561,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "M-173",
-        "OP4015"
+        "OP4015",
+        "GENÉRICA"
       ],
       "linked_ids": [
         152,
@@ -4421,11 +5572,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-aceite-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 251,
+          "id_repuesto": 232,
+          "brand": "Genérica",
           "codigo_oem": "8-94459-7301",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Bomba de aceite",
@@ -4438,7 +5598,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BOMBA",
         "CARIBE",
-        "OP1019"
+        "OP1019",
+        "CIC"
       ],
       "linked_ids": [
         153,
@@ -4448,11 +5609,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-aceite-caribe-2000",
       "variants": [
         {
+          "id_variante": 249,
+          "id_repuesto": 230,
           "brand": "CIC",
           "codigo_oem": "8-94215-6370",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Bomba de aceite",
@@ -4464,7 +5634,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BOMBA",
         "LUV",
-        "OP1013"
+        "OP1013",
+        "CIC"
       ],
       "linked_ids": [
         233
@@ -4473,11 +5644,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-aceite-luv-2-2",
       "variants": [
         {
+          "id_variante": 252,
+          "id_repuesto": 233,
           "brand": "CIC",
           "codigo_oem": "8-90570-9250",
-          "precio_usd": 105
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 105.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 105.0
     },
     {
       "category": "Bomba de aceite",
@@ -4490,7 +5670,10 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "D-MAX",
         "DK191494",
-        "LUV"
+        "LUV",
+        "AMERICAN PARTS",
+        "DENKO",
+        "TBK"
       ],
       "linked_ids": [
         235
@@ -4499,31 +5682,42 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-aceite-luv-d-max",
       "variants": [
         {
-          "brand": "ANCOV",
+          "id_variante": 1339,
+          "id_repuesto": 235,
+          "brand": "AMERICAN PARTS",
           "codigo_oem": "8-97136-4630",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 110.0,
+          "stock": 1
         },
         {
-          "brand": "CIC",
-          "codigo_oem": "8-97136-4630",
-          "precio_usd": 0
-        },
-        {
-          "brand": "TBK",
-          "codigo_oem": "8-97136-4630",
-          "precio_usd": 270
-        },
-        {
+          "id_variante": 1157,
+          "id_repuesto": 235,
           "brand": "DENKO",
           "codigo_oem": "8-97136-4630",
-          "precio_usd": 100
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 3
         },
         {
-          "brand": "RUSHMORE",
+          "id_variante": 257,
+          "id_repuesto": 235,
+          "brand": "TBK",
           "codigo_oem": "8-97136-4630",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 270.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 100.0
     },
     {
       "category": "Bomba de agua",
@@ -4535,7 +5729,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "BOMBA",
         "CARIBE",
-        "G200"
+        "G200",
+        "GENÉRICA"
       ],
       "linked_ids": [
         240
@@ -4545,11 +5740,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-agua-caribe-g200",
       "variants": [
         {
+          "id_variante": 262,
+          "id_repuesto": 240,
+          "brand": "Genérica",
           "codigo_oem": "8-94224-8940",
-          "brand": "Original",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bomba de agua",
@@ -4561,7 +5765,10 @@ const PRODUCTS_DATA = {
         "AGUA",
         "BOMBA",
         "DMAX",
-        "LUV"
+        "LUV",
+        "CHINA",
+        "GMB",
+        "NIKHO"
       ],
       "linked_ids": [
         245
@@ -4571,36 +5778,42 @@ const PRODUCTS_DATA = {
       "slug": "bomba-agua-luv-dmax-3-5",
       "variants": [
         {
-          "codigo_oem": "8-97167-5540",
+          "id_variante": 267,
+          "id_repuesto": 245,
           "brand": "CHINA",
-          "precio_usd": 40
+          "codigo_oem": "8-97167-5540",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 9
         },
         {
-          "codigo_oem": "8-97167-5540",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97167-5540",
-          "brand": "TAIKEN",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97167-5540",
+          "id_variante": 270,
+          "id_repuesto": 245,
           "brand": "GMB",
-          "precio_usd": 100
+          "codigo_oem": "8-97167-5540",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 3
         },
         {
-          "codigo_oem": "8-97167-5540",
-          "brand": "AISIN",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-97167-5540",
+          "id_variante": 1330,
+          "id_repuesto": 245,
           "brand": "NIKHO",
-          "precio_usd": 45
+          "codigo_oem": "8-97167-5540",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 17,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Bomba de agua",
@@ -4614,7 +5827,8 @@ const PRODUCTS_DATA = {
         "AW-9105",
         "BOMBA",
         "CARIBE",
-        "GWIS-22A"
+        "GWIS-22A",
+        "GENÉRICA"
       ],
       "linked_ids": [
         241
@@ -4623,11 +5837,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-agua-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 263,
+          "id_repuesto": 241,
+          "brand": "Genérica",
           "codigo_oem": "8-94146-3260",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bomba de agua",
@@ -4641,7 +5864,9 @@ const PRODUCTS_DATA = {
         "8-97081-6230",
         "AGUA",
         "BOMBA",
-        "CARIBE"
+        "CARIBE",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         242
@@ -4650,11 +5875,31 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-agua-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1359,
+          "id_repuesto": 242,
+          "brand": "JAPON",
           "codigo_oem": "8-97081-6230",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 1
+        },
+        {
+          "id_variante": 264,
+          "id_repuesto": 242,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97081-6230",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bomba de agua",
@@ -4666,7 +5911,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "BOMBA",
         "IZUSU",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         249
@@ -4675,11 +5921,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-agua-izusu-rodeo-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 271,
+          "id_repuesto": 249,
+          "brand": "Genérica",
           "codigo_oem": "8-97061-2800",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Bomba de agua",
@@ -4691,7 +5946,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "BOMBA",
         "IZUSU",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         249
@@ -4700,11 +5956,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-agua-izusu-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 271,
+          "id_repuesto": 249,
+          "brand": "Genérica",
           "codigo_oem": "8-97061-2800",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Bomba de agua",
@@ -4716,7 +5981,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "BOMBA",
         "I-62",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         243
@@ -4725,11 +5991,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-agua-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 265,
+          "id_repuesto": 243,
+          "brand": "Genérica",
           "codigo_oem": "8-92064-3910",
-          "precio_usd": 65
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 65.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 65.0
     },
     {
       "category": "Bomba de agua",
@@ -4742,7 +6017,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "D-MAX",
         "I-62",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         243
@@ -4751,11 +6027,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-agua-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 265,
+          "id_repuesto": 243,
+          "brand": "Genérica",
           "codigo_oem": "8-92064-3910",
-          "precio_usd": 65
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 65.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 65.0
     },
     {
       "category": "Bomba de Freno",
@@ -4769,7 +6054,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FRENO",
         "G-2000",
-        "HUECOS"
+        "HUECOS",
+        "GENÉRICA"
       ],
       "linked_ids": [
         257
@@ -4778,11 +6064,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-freno-4-huecos-caribe-g-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 279,
+          "id_repuesto": 257,
+          "brand": "Genérica",
           "codigo_oem": "8-94222-6602",
-          "precio_usd": 105
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 105.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 105.0
     },
     {
       "category": "Bomba de Freno",
@@ -4793,7 +6088,8 @@ const PRODUCTS_DATA = {
         "8-94112-6251",
         "BOMBA",
         "CARIBE",
-        "FRENO"
+        "FRENO",
+        "PERFECTION"
       ],
       "linked_ids": [
         258
@@ -4802,16 +6098,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-freno-caribe-2-3",
       "variants": [
         {
+          "id_variante": 280,
+          "id_repuesto": 258,
           "brand": "PERFECTION",
           "codigo_oem": "8-94112-6251",
-          "precio_usd": 70
-        },
-        {
-          "brand": "MISAWA",
-          "codigo_oem": "8-94112-6251",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 70.0
     },
     {
       "category": "Bomba de Freno",
@@ -4826,7 +6126,9 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "D-MAX",
         "FRENO",
-        "LUV"
+        "LUV",
+        "KAIZEN",
+        "PERFECTION"
       ],
       "linked_ids": [
         261
@@ -4835,21 +6137,31 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-freno-luv-d-max-2005-2009",
       "variants": [
         {
+          "id_variante": 283,
+          "id_repuesto": 261,
           "brand": "KAIZEN",
           "codigo_oem": "8-97354-0501",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
-          "brand": "PGT",
-          "codigo_oem": "8-97354-0501",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1319,
+          "id_repuesto": 261,
           "brand": "PERFECTION",
           "codigo_oem": "8-97354-0501",
-          "precio_usd": 100
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Bomba de Freno",
@@ -4865,7 +6177,9 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "D-MAX",
         "FRENO",
-        "LUV"
+        "LUV",
+        "KAIZEN",
+        "PERFECTION"
       ],
       "linked_ids": [
         262
@@ -4874,21 +6188,31 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-freno-luv-d-max-2010-2015-con-bastago",
       "variants": [
         {
+          "id_variante": 284,
+          "id_repuesto": 262,
           "brand": "KAIZEN",
           "codigo_oem": "8-98006-9410",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 1
         },
         {
-          "brand": "PGT",
-          "codigo_oem": "8-98006-9410",
-          "precio_usd": 60
-        },
-        {
+          "id_variante": 1320,
+          "id_repuesto": 262,
           "brand": "PERFECTION",
           "codigo_oem": "8-98006-9410",
-          "precio_usd": 190
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 190.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 70.0
     },
     {
       "category": "Bomba de Freno",
@@ -4900,7 +6224,8 @@ const PRODUCTS_DATA = {
         "8-97038-2500",
         "BOMBA",
         "CARIBE",
-        "FRENO"
+        "FRENO",
+        "PERFECTION"
       ],
       "linked_ids": [
         260
@@ -4910,11 +6235,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-freno-caribe-2-6",
       "variants": [
         {
-          "codigo_oem": "8-94332-9490",
+          "id_variante": 282,
+          "id_repuesto": 260,
           "brand": "PERFECTION",
-          "precio_usd": 75
+          "codigo_oem": "8-94332-9490",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 75.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 13,
+      "is_out_of_stock": false,
+      "min_price_usd": 75.0
     },
     {
       "category": "Bomba de Freno",
@@ -4926,7 +6260,8 @@ const PRODUCTS_DATA = {
         "8-97038-2500",
         "BOMBA",
         "FRENO",
-        "LUV"
+        "LUV",
+        "PERFECTION"
       ],
       "linked_ids": [
         260
@@ -4936,11 +6271,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-freno-luv-2-3",
       "variants": [
         {
-          "codigo_oem": "8-94332-9490",
+          "id_variante": 282,
+          "id_repuesto": 260,
           "brand": "PERFECTION",
-          "precio_usd": 75
+          "codigo_oem": "8-94332-9490",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 75.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 13,
+      "is_out_of_stock": false,
+      "min_price_usd": 75.0
     },
     {
       "category": "Bomba de Gasolina",
@@ -4954,7 +6298,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "GASOLINA",
         "LUV",
-        "MODULO"
+        "MODULO",
+        "NIKHO"
       ],
       "linked_ids": [
         736
@@ -4963,26 +6308,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-gasolina-modulo-luv-d-max",
       "variants": [
         {
-          "brand": "ASSTY",
-          "codigo_oem": "8-97943-1830",
-          "precio_usd": 0
-        },
-        {
-          "brand": "JEMAX",
-          "codigo_oem": "8-97943-1830",
-          "precio_usd": 0
-        },
-        {
-          "brand": "NOVATEC",
-          "codigo_oem": "8-97943-1830",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1332,
+          "id_repuesto": 736,
           "brand": "NIKHO",
           "codigo_oem": "8-97943-1830",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 95.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 95.0
     },
     {
       "category": "Bomba de Gasolina",
@@ -4994,7 +6333,11 @@ const PRODUCTS_DATA = {
         "8-94438-5330",
         "BOMBA",
         "CARIBE",
-        "GASOLINA"
+        "GASOLINA",
+        "GEN",
+        "JAPON",
+        "PRESENTACION",
+        "TOMITA CHINA"
       ],
       "linked_ids": [
         264
@@ -5003,26 +6346,53 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-gasolina-caribe-2-6",
       "variants": [
         {
-          "brand": "JAPON",
-          "codigo_oem": "8-94438-5330",
-          "precio_usd": 0
-        },
-        {
-          "brand": "TOMITA CHINA",
-          "codigo_oem": "8-94438-5330",
-          "precio_usd": 0
-        },
-        {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94438-5330",
-          "precio_usd": 45
-        },
-        {
+          "id_variante": 1325,
+          "id_repuesto": 264,
           "brand": "GEN",
           "codigo_oem": "8-94438-5330",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 286,
+          "id_repuesto": 264,
+          "brand": "JAPON",
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 1292,
+          "id_repuesto": 264,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 1093,
+          "id_repuesto": 264,
+          "brand": "TOMITA CHINA",
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Bomba de Gasolina",
@@ -5035,7 +6405,8 @@ const PRODUCTS_DATA = {
         "ELECTRICA",
         "EXTERNA",
         "GASOLINA",
-        "UNIVERSAL"
+        "UNIVERSAL",
+        "ONE4CARS"
       ],
       "linked_ids": [
         265
@@ -5044,11 +6415,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-gasolina-electrica-universal-externa",
       "variants": [
         {
+          "id_variante": 287,
+          "id_repuesto": 265,
           "brand": "ONE4CARS",
           "codigo_oem": "E8012",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Bomba de Gasolina",
@@ -5060,7 +6440,11 @@ const PRODUCTS_DATA = {
         "8-94438-5330",
         "BOMBA",
         "CARIBE",
-        "GASOLINA"
+        "GASOLINA",
+        "GEN",
+        "JAPON",
+        "PRESENTACION",
+        "TOMITA CHINA"
       ],
       "linked_ids": [
         264
@@ -5070,26 +6454,53 @@ const PRODUCTS_DATA = {
       "slug": "bomba-gasolina-caribe-2-3",
       "variants": [
         {
-          "codigo_oem": "8-94438-5330",
-          "brand": "JAPON",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "TOMITA CHINA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "PRESENTACION",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "8-94438-5330",
+          "id_variante": 1325,
+          "id_repuesto": 264,
           "brand": "GEN",
-          "precio_usd": 45
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 286,
+          "id_repuesto": 264,
+          "brand": "JAPON",
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 1292,
+          "id_repuesto": 264,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 1093,
+          "id_repuesto": 264,
+          "brand": "TOMITA CHINA",
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Bomba de Gasolina",
@@ -5102,7 +6513,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "DW-491",
-        "GASOLINA"
+        "GASOLINA",
+        "DAEWHA"
       ],
       "linked_ids": [
         179,
@@ -5112,11 +6524,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-gasolina-caribe-2000",
       "variants": [
         {
+          "id_variante": 285,
+          "id_repuesto": 263,
           "brand": "DAEWHA",
           "codigo_oem": "8-94238-6000",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Bomba de Gasolina",
@@ -5128,7 +6549,11 @@ const PRODUCTS_DATA = {
         "8-94438-5330",
         "BOMBA",
         "GASOLINA",
-        "LUV"
+        "LUV",
+        "GEN",
+        "JAPON",
+        "PRESENTACION",
+        "TOMITA CHINA"
       ],
       "linked_ids": [
         264
@@ -5138,26 +6563,53 @@ const PRODUCTS_DATA = {
       "slug": "bomba-gasolina-luv-2-3",
       "variants": [
         {
-          "codigo_oem": "8-94438-5330",
-          "brand": "JAPON",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "TOMITA CHINA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94438-5330",
-          "brand": "PRESENTACION",
-          "precio_usd": 45
-        },
-        {
-          "codigo_oem": "8-94438-5330",
+          "id_variante": 1325,
+          "id_repuesto": 264,
           "brand": "GEN",
-          "precio_usd": 45
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 286,
+          "id_repuesto": 264,
+          "brand": "JAPON",
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 1292,
+          "id_repuesto": 264,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 1093,
+          "id_repuesto": 264,
+          "brand": "TOMITA CHINA",
+          "codigo_oem": "8-94438-5330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Bomba de Gasolina",
@@ -5174,7 +6626,9 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV",
         "PILA",
-        "YGGE38261"
+        "YGGE38261",
+        "ANCOV",
+        "NOVATECH"
       ],
       "linked_ids": [
         770
@@ -5183,26 +6637,31 @@ const PRODUCTS_DATA = {
       "slug": "pila-bomba-de-gasolina-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "NOVATECH",
-          "codigo_oem": "25362992",
-          "precio_usd": 25
-        },
-        {
-          "brand": "YUKKAZO",
-          "codigo_oem": "25362992",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1077,
+          "id_repuesto": 770,
           "brand": "ANCOV",
           "codigo_oem": "25362992",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         },
         {
-          "brand": "CRQ",
+          "id_variante": 801,
+          "id_repuesto": 770,
+          "brand": "NOVATECH",
           "codigo_oem": "25362992",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Bomba de Gasolina",
@@ -5216,7 +6675,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "GASOLINA",
         "LUV",
-        "PILA"
+        "PILA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         773
@@ -5226,11 +6686,20 @@ const PRODUCTS_DATA = {
       "slug": "pila-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 804,
+          "id_repuesto": 773,
+          "brand": "Genérica",
           "codigo_oem": "8-97118-5120",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Bomba de Gasolina",
@@ -5243,7 +6712,8 @@ const PRODUCTS_DATA = {
         "E8235",
         "GASOLINA",
         "PILA",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         772
@@ -5253,11 +6723,20 @@ const PRODUCTS_DATA = {
       "slug": "pila-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 803,
+          "id_repuesto": 772,
+          "brand": "Genérica",
           "codigo_oem": "8-97019-1861",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bomba Direccion",
@@ -5271,7 +6750,9 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DIRECCION",
         "DK125390",
-        "LUV"
+        "LUV",
+        "KAIZEN",
+        "STEER"
       ],
       "linked_ids": [
         256
@@ -5280,21 +6761,31 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-direccion-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 278,
+          "id_repuesto": 256,
           "brand": "KAIZEN",
           "codigo_oem": "8-97946-6960",
-          "precio_usd": 150
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 150.0,
+          "stock": 4
         },
         {
+          "id_variante": 1149,
+          "id_repuesto": 256,
           "brand": "STEER",
           "codigo_oem": "8-97946-6960",
-          "precio_usd": 200
-        },
-        {
-          "brand": "DENKO",
-          "codigo_oem": "8-97946-6960",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 200.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 150.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5309,7 +6800,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "BOMBIN",
         "CLUTCH",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         252
@@ -5319,11 +6811,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-clutch-luv-2-2",
       "variants": [
         {
+          "id_variante": 274,
+          "id_repuesto": 252,
+          "brand": "Genérica",
           "codigo_oem": "8-97024-9402",
-          "brand": "Original",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5338,7 +6839,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "BOMBIN",
         "CLUTCH",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         252
@@ -5348,11 +6850,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-clutch-rodeo",
       "variants": [
         {
+          "id_variante": 274,
+          "id_repuesto": 252,
+          "brand": "Genérica",
           "codigo_oem": "8-97024-9402",
-          "brand": "Original",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5367,7 +6878,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "BOMBIN",
         "CLUTCH",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         252
@@ -5377,11 +6889,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-clutch-trooper-3-2",
       "variants": [
         {
+          "id_variante": 274,
+          "id_repuesto": 252,
+          "brand": "Genérica",
           "codigo_oem": "8-97024-9402",
-          "brand": "Original",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5397,7 +6918,8 @@ const PRODUCTS_DATA = {
         "BOMBIN",
         "CARIBE",
         "CLUTCH",
-        "FM-6211"
+        "FM-6211",
+        "PERFECTION"
       ],
       "linked_ids": [
         251
@@ -5406,16 +6928,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-clutch-caribe-2600",
       "variants": [
         {
-          "brand": "TAIWAN",
+          "id_variante": 273,
+          "id_repuesto": 251,
+          "brand": "PERFECTION",
           "codigo_oem": "8-94463-9321",
-          "precio_usd": 30
-        },
-        {
-          "brand": "FIC",
-          "codigo_oem": "8-94463-9321",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5431,7 +6957,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "BOMBIN",
         "CLUTCH",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         252
@@ -5440,11 +6967,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-clutch-luv-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 274,
+          "id_repuesto": 252,
+          "brand": "Genérica",
           "codigo_oem": "8-97024-9402",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5458,7 +6994,8 @@ const PRODUCTS_DATA = {
         "BOMBIN",
         "CLUTCH",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         253
@@ -5467,11 +7004,20 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-clutch-luv-d-max-2-4-2-5-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 275,
+          "id_repuesto": 253,
+          "brand": "Genérica",
           "codigo_oem": "8-97943-4070",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5485,7 +7031,9 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "DK125604",
-        "LUV"
+        "LUV",
+        "KAIZEN",
+        "NIKHO"
       ],
       "linked_ids": [
         254
@@ -5494,26 +7042,31 @@ const PRODUCTS_DATA = {
       "slug": "bomba-de-clutch-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "MISAWA",
+          "id_variante": 1355,
+          "id_repuesto": 254,
+          "brand": "KAIZEN",
           "codigo_oem": "8-97943-4080",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 6
         },
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "8-97943-4080",
-          "precio_usd": 90
-        },
-        {
-          "brand": "DENKO",
-          "codigo_oem": "8-97943-4080",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1331,
+          "id_repuesto": 254,
           "brand": "NIKHO",
           "codigo_oem": "8-97943-4080",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5527,7 +7080,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "BOMBIN",
         "CLUTCH",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         266
@@ -5537,11 +7091,20 @@ const PRODUCTS_DATA = {
       "slug": "bombin-clutch-luv-2-3",
       "variants": [
         {
+          "id_variante": 288,
+          "id_repuesto": 266,
+          "brand": "Genérica",
           "codigo_oem": "8-94389-1920",
-          "brand": "Original",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5555,7 +7118,9 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "LUV",
-        "PF3100"
+        "PF3100",
+        "KAIZEN",
+        "PERFECTION"
       ],
       "linked_ids": [
         270
@@ -5564,11 +7129,31 @@ const PRODUCTS_DATA = {
       "slug": "bombin-clutch-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1354,
+          "id_repuesto": 270,
+          "brand": "KAIZEN",
           "codigo_oem": "8-97941-5190",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
+        },
+        {
+          "id_variante": 292,
+          "id_repuesto": 270,
+          "brand": "PERFECTION",
+          "codigo_oem": "8-97941-5190",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5581,7 +7166,8 @@ const PRODUCTS_DATA = {
         "BOMBIN",
         "CLUTCH",
         "DMAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         268
@@ -5590,11 +7176,20 @@ const PRODUCTS_DATA = {
       "slug": "bombin-luv-d-max-2-4",
       "variants": [
         {
+          "id_variante": 290,
+          "id_repuesto": 268,
+          "brand": "Genérica",
           "codigo_oem": "8-97942-3220",
-          "brand": "Original",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5607,7 +7202,9 @@ const PRODUCTS_DATA = {
         "BOMBIN",
         "CLUTCH",
         "PF3100",
-        "TROOPER"
+        "TROOPER",
+        "KAIZEN",
+        "PERFECTION"
       ],
       "linked_ids": [
         270
@@ -5616,11 +7213,31 @@ const PRODUCTS_DATA = {
       "slug": "bombin-clutch-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1354,
+          "id_repuesto": 270,
+          "brand": "KAIZEN",
           "codigo_oem": "8-97941-5190",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
+        },
+        {
+          "id_variante": 292,
+          "id_repuesto": 270,
+          "brand": "PERFECTION",
+          "codigo_oem": "8-97941-5190",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5635,7 +7252,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "BOMBIN",
         "CARIBE",
-        "CLUTCH"
+        "CLUTCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         266
@@ -5644,11 +7262,20 @@ const PRODUCTS_DATA = {
       "slug": "bombin-de-clutch-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 288,
+          "id_repuesto": 266,
+          "brand": "Genérica",
           "codigo_oem": "8-94389-1920",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Bombin - Bomba Clutch",
@@ -5660,7 +7287,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "BOMBIN",
         "CLUTCH",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         182,
@@ -5670,11 +7298,20 @@ const PRODUCTS_DATA = {
       "slug": "bombin-de-clutch-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 289,
+          "id_repuesto": 267,
+          "brand": "Genérica",
           "codigo_oem": "8-97184-9930",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Brazo de Biela",
@@ -5686,7 +7323,8 @@ const PRODUCTS_DATA = {
         "8-92068-1550",
         "BIELA",
         "BRAZO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1142
@@ -5695,11 +7333,20 @@ const PRODUCTS_DATA = {
       "slug": "brazo-de-biela-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1180,
+          "id_repuesto": 1142,
+          "brand": "Genérica",
           "codigo_oem": "8-92068-1550",
-          "precio_usd": 65
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 65.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 65.0
     },
     {
       "category": "Brazo de Biela",
@@ -5711,7 +7358,8 @@ const PRODUCTS_DATA = {
         "BIELA",
         "BRAZO",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1182
@@ -5720,11 +7368,20 @@ const PRODUCTS_DATA = {
       "slug": "brazo-de-biela-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1231,
+          "id_repuesto": 1182,
+          "brand": "Genérica",
           "codigo_oem": "8-90530-1690",
-          "precio_usd": 65
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 65.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 65.0
     },
     {
       "category": "Brazo de Biela",
@@ -5736,7 +7393,8 @@ const PRODUCTS_DATA = {
         "BIELA",
         "BRAZO",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1093
@@ -5745,11 +7403,20 @@ const PRODUCTS_DATA = {
       "slug": "brazo-de-biela-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1129,
+          "id_repuesto": 1093,
+          "brand": "Genérica",
           "codigo_oem": "8-97351-1590",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Buje Araña",
@@ -5760,7 +7427,8 @@ const PRODUCTS_DATA = {
         "8-94226-5572",
         "ARANA",
         "BUJE",
-        "CARIBE"
+        "CARIBE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         273
@@ -5769,11 +7437,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-arana-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 295,
+          "id_repuesto": 273,
+          "brand": "Genérica",
           "codigo_oem": "8-94226-5572",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Buje Araña",
@@ -5788,7 +7465,9 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "CARIBE",
-        "FR-9740"
+        "FR-9740",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         108,
@@ -5799,16 +7478,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-arana-caribe-2-6",
       "variants": [
         {
+          "id_variante": 296,
+          "id_repuesto": 274,
           "brand": "GOMA",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 122
         },
         {
+          "id_variante": 297,
+          "id_repuesto": 274,
           "brand": "POLIURETANO",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 52
         }
-      ]
+      ],
+      "total_stock": 174,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Buje Araña",
@@ -5820,7 +7514,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "CARIBE",
-        "G-200"
+        "G-200",
+        "GENÉRICA"
       ],
       "linked_ids": [
         273
@@ -5829,11 +7524,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-arana-caribe-g-200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 295,
+          "id_repuesto": 273,
+          "brand": "Genérica",
           "codigo_oem": "8-94226-5572",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Buje Araña",
@@ -5848,7 +7552,9 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "FR-9740",
-        "LUV"
+        "LUV",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         108,
@@ -5859,16 +7565,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-arana-luv",
       "variants": [
         {
+          "id_variante": 296,
+          "id_repuesto": 274,
           "brand": "GOMA",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 122
         },
         {
+          "id_variante": 297,
+          "id_repuesto": 274,
           "brand": "POLIURETANO",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 52
         }
-      ]
+      ],
+      "total_stock": 174,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Buje Araña",
@@ -5881,7 +7602,9 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         276
@@ -5890,16 +7613,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-arana-luv-d-max-2-4",
       "variants": [
         {
+          "id_variante": 298,
+          "id_repuesto": 276,
           "brand": "GOMA",
           "codigo_oem": "8-97364-1730",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 36
         },
         {
+          "id_variante": 299,
+          "id_repuesto": 276,
           "brand": "POLIURETANO",
           "codigo_oem": "8-97364-1730",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 44,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Araña",
@@ -5915,7 +7653,9 @@ const PRODUCTS_DATA = {
         "BUJE",
         "D-MAX",
         "FR-9740",
-        "LUV"
+        "LUV",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         108,
@@ -5926,16 +7666,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-arana-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 296,
+          "id_repuesto": 274,
           "brand": "GOMA",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 122
         },
         {
+          "id_variante": 297,
+          "id_repuesto": 274,
           "brand": "POLIURETANO",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 52
         }
-      ]
+      ],
+      "total_stock": 174,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Buje Araña",
@@ -5950,7 +7705,9 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "FR-9740",
-        "RODEO"
+        "RODEO",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         108,
@@ -5961,16 +7718,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-arana-rodeo",
       "variants": [
         {
+          "id_variante": 296,
+          "id_repuesto": 274,
           "brand": "GOMA",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 122
         },
         {
+          "id_variante": 297,
+          "id_repuesto": 274,
           "brand": "POLIURETANO",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 52
         }
-      ]
+      ],
+      "total_stock": 174,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Buje Araña",
@@ -5985,7 +7757,9 @@ const PRODUCTS_DATA = {
         "ARANA",
         "BUJE",
         "FR-9740",
-        "TROOPER"
+        "TROOPER",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         108,
@@ -5996,16 +7770,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-arana-trooper-3-2",
       "variants": [
         {
+          "id_variante": 296,
+          "id_repuesto": 274,
           "brand": "GOMA",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 122
         },
         {
+          "id_variante": 297,
+          "id_repuesto": 274,
           "brand": "POLIURETANO",
           "codigo_oem": "8-94408-8402",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 52
         }
-      ]
+      ],
+      "total_stock": 174,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Buje Ballesta",
@@ -6017,7 +7806,8 @@ const PRODUCTS_DATA = {
         "BALLESTA",
         "BUJE",
         "CARIBE",
-        "DELANTERO"
+        "DELANTERO",
+        "GOMA"
       ],
       "linked_ids": [
         278
@@ -6026,11 +7816,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-ballesta-delantero-caribe-2-3",
       "variants": [
         {
+          "id_variante": 300,
+          "id_repuesto": 278,
           "brand": "GOMA",
           "codigo_oem": "8-94223-1680",
-          "precio_usd": 3
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 3.0
     },
     {
       "category": "Buje Ballesta",
@@ -6043,7 +7842,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "DELANTERO",
-        "G-2000"
+        "G-2000",
+        "GOMA"
       ],
       "linked_ids": [
         278
@@ -6052,11 +7852,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-ballesta-delantero-caribe-g-2000",
       "variants": [
         {
+          "id_variante": 300,
+          "id_repuesto": 278,
           "brand": "GOMA",
           "codigo_oem": "8-94223-1680",
-          "precio_usd": 3
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 3.0
     },
     {
       "category": "Buje Ballesta",
@@ -6069,7 +7878,9 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "FR-9304",
-        "TRASERO"
+        "TRASERO",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         281
@@ -6078,16 +7889,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-ballesta-trasero-caribe",
       "variants": [
         {
+          "id_variante": 303,
+          "id_repuesto": 281,
           "brand": "GOMA",
           "codigo_oem": "8-94234-3190",
-          "precio_usd": 2
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.0,
+          "stock": 400
         },
         {
+          "id_variante": 304,
+          "id_repuesto": 281,
           "brand": "POLIURETANO",
           "codigo_oem": "8-94234-3190",
-          "precio_usd": 3
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 440,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.0
     },
     {
       "category": "Buje Ballesta",
@@ -6100,7 +7926,9 @@ const PRODUCTS_DATA = {
         "BUJE",
         "FR-9304",
         "LUV",
-        "TRASERO"
+        "TRASERO",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         281
@@ -6109,16 +7937,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-ballesta-trasero-luv",
       "variants": [
         {
+          "id_variante": 303,
+          "id_repuesto": 281,
           "brand": "GOMA",
           "codigo_oem": "8-94234-3190",
-          "precio_usd": 2
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.0,
+          "stock": 400
         },
         {
+          "id_variante": 304,
+          "id_repuesto": 281,
           "brand": "POLIURETANO",
           "codigo_oem": "8-94234-3190",
-          "precio_usd": 3
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 440,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.0
     },
     {
       "category": "Buje Ballesta",
@@ -6132,7 +7975,9 @@ const PRODUCTS_DATA = {
         "DMAX",
         "FR-9304",
         "LUV",
-        "TRASERO"
+        "TRASERO",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         281
@@ -6141,16 +7986,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-ballesta-trasero-luv-dmax",
       "variants": [
         {
+          "id_variante": 303,
+          "id_repuesto": 281,
           "brand": "GOMA",
           "codigo_oem": "8-94234-3190",
-          "precio_usd": 2
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.0,
+          "stock": 400
         },
         {
+          "id_variante": 304,
+          "id_repuesto": 281,
           "brand": "POLIURETANO",
           "codigo_oem": "8-94234-3190",
-          "precio_usd": 3
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 440,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.0
     },
     {
       "category": "Buje Ballesta",
@@ -6163,7 +8023,9 @@ const PRODUCTS_DATA = {
         "BUJE",
         "FR-9304",
         "RODEO",
-        "TRASERO"
+        "TRASERO",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         281
@@ -6172,16 +8034,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-ballesta-trasero-rodeo",
       "variants": [
         {
+          "id_variante": 303,
+          "id_repuesto": 281,
           "brand": "GOMA",
           "codigo_oem": "8-94234-3190",
-          "precio_usd": 2
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.0,
+          "stock": 400
         },
         {
+          "id_variante": 304,
+          "id_repuesto": 281,
           "brand": "POLIURETANO",
           "codigo_oem": "8-94234-3190",
-          "precio_usd": 3
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 440,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.0
     },
     {
       "category": "Buje Ballesta",
@@ -6194,7 +8071,9 @@ const PRODUCTS_DATA = {
         "BUJE",
         "FR-9304",
         "TRASERO",
-        "TROOPER"
+        "TROOPER",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         281
@@ -6203,16 +8082,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-ballesta-trasero-trooper",
       "variants": [
         {
+          "id_variante": 303,
+          "id_repuesto": 281,
           "brand": "GOMA",
           "codigo_oem": "8-94234-3190",
-          "precio_usd": 2
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.0,
+          "stock": 400
         },
         {
+          "id_variante": 304,
+          "id_repuesto": 281,
           "brand": "POLIURETANO",
           "codigo_oem": "8-94234-3190",
-          "precio_usd": 3
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 440,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.0
     },
     {
       "category": "Buje Ballesta",
@@ -6227,7 +8121,9 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "DELANTERO",
-        "FR-9609"
+        "FR-9609",
+        "METAL/GOMA",
+        "METAL/POLIURETANO"
       ],
       "linked_ids": [
         279
@@ -6236,16 +8132,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-ballesta-delantero-caribe-2-6",
       "variants": [
         {
+          "id_variante": 301,
+          "id_repuesto": 279,
           "brand": "METAL/GOMA",
           "codigo_oem": "8-94171-2741",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 18
         },
         {
+          "id_variante": 302,
+          "id_repuesto": 279,
           "brand": "METAL/POLIURETANO",
           "codigo_oem": "8-94171-2741",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Ballesta",
@@ -6260,7 +8171,9 @@ const PRODUCTS_DATA = {
         "BUJE",
         "DELANTERO",
         "FR-9609",
-        "LUV"
+        "LUV",
+        "METAL/GOMA",
+        "METAL/POLIURETANO"
       ],
       "linked_ids": [
         279
@@ -6269,16 +8182,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-ballesta-delantero-luv",
       "variants": [
         {
+          "id_variante": 301,
+          "id_repuesto": 279,
           "brand": "METAL/GOMA",
           "codigo_oem": "8-94171-2741",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 18
         },
         {
+          "id_variante": 302,
+          "id_repuesto": 279,
           "brand": "METAL/POLIURETANO",
           "codigo_oem": "8-94171-2741",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Ballesta",
@@ -6294,7 +8222,9 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERO",
         "FR-9609",
-        "LUV"
+        "LUV",
+        "METAL/GOMA",
+        "METAL/POLIURETANO"
       ],
       "linked_ids": [
         279
@@ -6303,16 +8233,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-ballesta-delantero-luv-d-max",
       "variants": [
         {
+          "id_variante": 301,
+          "id_repuesto": 279,
           "brand": "METAL/GOMA",
           "codigo_oem": "8-94171-2741",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 18
         },
         {
+          "id_variante": 302,
+          "id_repuesto": 279,
           "brand": "METAL/POLIURETANO",
           "codigo_oem": "8-94171-2741",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Ballesta",
@@ -6327,7 +8272,9 @@ const PRODUCTS_DATA = {
         "BUJE",
         "DELANTERO",
         "FR-9609",
-        "RODEO"
+        "RODEO",
+        "METAL/GOMA",
+        "METAL/POLIURETANO"
       ],
       "linked_ids": [
         279
@@ -6336,16 +8283,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-ballesta-delantero-rodeo",
       "variants": [
         {
+          "id_variante": 301,
+          "id_repuesto": 279,
           "brand": "METAL/GOMA",
           "codigo_oem": "8-94171-2741",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 18
         },
         {
+          "id_variante": 302,
+          "id_repuesto": 279,
           "brand": "METAL/POLIURETANO",
           "codigo_oem": "8-94171-2741",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Ballesta",
@@ -6360,7 +8322,9 @@ const PRODUCTS_DATA = {
         "BUJE",
         "DELANTERO",
         "FR-9609",
-        "TROOPER"
+        "TROOPER",
+        "METAL/GOMA",
+        "METAL/POLIURETANO"
       ],
       "linked_ids": [
         279
@@ -6369,16 +8333,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-ballesta-delantero-trooper",
       "variants": [
         {
+          "id_variante": 301,
+          "id_repuesto": 279,
           "brand": "METAL/GOMA",
           "codigo_oem": "8-94171-2741",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 18
         },
         {
+          "id_variante": 302,
+          "id_repuesto": 279,
           "brand": "METAL/POLIURETANO",
           "codigo_oem": "8-94171-2741",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Cajetin Direccion",
@@ -6391,7 +8370,8 @@ const PRODUCTS_DATA = {
         "CAJETIN",
         "DIRECCION",
         "DMAX",
-        "LUV"
+        "LUV",
+        "SKR"
       ],
       "linked_ids": [
         1054
@@ -6400,11 +8380,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-cajetin-direccion-luv-d-max",
       "variants": [
         {
-          "codigo_oem": "8-97234-4403",
+          "id_variante": 1085,
+          "id_repuesto": 1054,
           "brand": "SKR",
-          "precio_usd": 0
+          "codigo_oem": "8-97234-4403",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Buje Eje Delantero",
@@ -6420,7 +8409,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERO",
         "EJE",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         284
@@ -6429,11 +8419,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-de-eje-delantero-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 306,
+          "id_repuesto": 284,
+          "brand": "Genérica",
           "codigo_oem": "8-97364-3190",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Buje Eje Delantero",
@@ -6448,7 +8447,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "DELANTERO",
         "EJE",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         284
@@ -6458,11 +8458,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-eje-delantero-trooper-3-2",
       "variants": [
         {
+          "id_variante": 306,
+          "id_repuesto": 284,
+          "brand": "Genérica",
           "codigo_oem": "8-97364-3190",
-          "brand": "Original",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Buje Meseta",
@@ -6473,7 +8482,8 @@ const PRODUCTS_DATA = {
         "5-51225-0020",
         "BUJE",
         "CARIBE",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         285
@@ -6482,11 +8492,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 307,
+          "id_repuesto": 285,
+          "brand": "Genérica",
           "codigo_oem": "5-51225-0020",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 29
         }
-      ]
+      ],
+      "total_stock": 29,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Meseta",
@@ -6498,7 +8517,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "G-200",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         285
@@ -6507,11 +8527,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-caribe-g-200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 307,
+          "id_repuesto": 285,
+          "brand": "Genérica",
           "codigo_oem": "5-51225-0020",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 29
         }
-      ]
+      ],
+      "total_stock": 29,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Meseta",
@@ -6525,7 +8554,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "EXTERNO",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         289
@@ -6534,11 +8564,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-externo-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 311,
+          "id_repuesto": 289,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-8411",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Meseta",
@@ -6553,7 +8592,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "EXTERNO",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         289
@@ -6562,11 +8602,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-externo-luv-4x4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 311,
+          "id_repuesto": 289,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-8411",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Meseta",
@@ -6581,7 +8630,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "EXTERNO",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         289
@@ -6590,11 +8640,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-externo-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 311,
+          "id_repuesto": 289,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-8411",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Meseta",
@@ -6608,7 +8667,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "EXTERNO",
         "MESETA",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         289
@@ -6617,11 +8677,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-externo-rodeo",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 311,
+          "id_repuesto": 289,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-8411",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Meseta",
@@ -6635,7 +8704,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "EXTERNO",
         "MESETA",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         289
@@ -6644,11 +8714,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-externo-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 311,
+          "id_repuesto": 289,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-8411",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Meseta",
@@ -6661,7 +8740,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "CARIBE",
         "INTERNO",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         290
@@ -6670,11 +8750,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-interno-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 312,
+          "id_repuesto": 290,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-8420",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Buje Meseta",
@@ -6688,7 +8777,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "INTERNO",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         290
@@ -6697,11 +8787,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-interno-luv-4x4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 312,
+          "id_repuesto": 290,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-8420",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Buje Meseta",
@@ -6715,7 +8814,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "INTERNO",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         290
@@ -6724,11 +8824,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-interno-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 312,
+          "id_repuesto": 290,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-8420",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Buje Meseta",
@@ -6741,7 +8850,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "INTERNO",
         "MESETA",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         290
@@ -6750,11 +8860,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-interno-rodeo",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 312,
+          "id_repuesto": 290,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-8420",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Buje Meseta",
@@ -6767,7 +8886,8 @@ const PRODUCTS_DATA = {
         "BUJE",
         "INTERNO",
         "MESETA",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         290
@@ -6776,11 +8896,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-interno-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 312,
+          "id_repuesto": 290,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-8420",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Buje Meseta",
@@ -6793,7 +8922,8 @@ const PRODUCTS_DATA = {
         "8-94136-9030",
         "BUJE",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         286
@@ -6802,11 +8932,20 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-luv-4x2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 308,
+          "id_repuesto": 286,
+          "brand": "Genérica",
           "codigo_oem": "8-94136-9030",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Buje Meseta",
@@ -6819,7 +8958,9 @@ const PRODUCTS_DATA = {
         "BUJE",
         "D-MAX",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         287
@@ -6828,16 +8969,31 @@ const PRODUCTS_DATA = {
       "slug": "buje-meseta-luv-d-max-2-4",
       "variants": [
         {
+          "id_variante": 309,
+          "id_repuesto": 287,
           "brand": "GOMA",
           "codigo_oem": "8-97364-1740",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 14
         },
         {
+          "id_variante": 310,
+          "id_repuesto": 287,
           "brand": "POLIURETANO",
           "codigo_oem": "8-97364-1740",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Bujia",
@@ -6852,7 +9008,8 @@ const PRODUCTS_DATA = {
         "CHAMPION",
         "F6RTC-11",
         "N9YC",
-        "W20EP-U"
+        "W20EP-U",
+        "DENSO"
       ],
       "linked_ids": [
         292
@@ -6861,21 +9018,31 @@ const PRODUCTS_DATA = {
       "slug": "bujia-champion-caribe",
       "variants": [
         {
-          "brand": "DENSO",
-          "codigo_oem": "9-82513-1030",
-          "precio_usd": 3.75
-        },
-        {
+          "id_variante": 315,
+          "id_repuesto": 292,
           "brand": "CHAMPION",
           "codigo_oem": "9-82513-1030",
-          "precio_usd": 2.5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.5,
+          "stock": 64
         },
         {
-          "brand": "NOVATEC",
+          "id_variante": 314,
+          "id_repuesto": 292,
+          "brand": "DENSO",
           "codigo_oem": "9-82513-1030",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.75,
+          "stock": 100
         }
-      ]
+      ],
+      "total_stock": 164,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.5
     },
     {
       "category": "Bujia",
@@ -6891,7 +9058,8 @@ const PRODUCTS_DATA = {
         "F6RTC-11",
         "LUV",
         "N9YC",
-        "W20EP-U"
+        "W20EP-U",
+        "DENSO"
       ],
       "linked_ids": [
         292
@@ -6900,21 +9068,31 @@ const PRODUCTS_DATA = {
       "slug": "bujia-champion-luv-2300",
       "variants": [
         {
-          "brand": "DENSO",
-          "codigo_oem": "9-82513-1030",
-          "precio_usd": 3.75
-        },
-        {
+          "id_variante": 315,
+          "id_repuesto": 292,
           "brand": "CHAMPION",
           "codigo_oem": "9-82513-1030",
-          "precio_usd": 2.5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.5,
+          "stock": 64
         },
         {
-          "brand": "NOVATEC",
+          "id_variante": 314,
+          "id_repuesto": 292,
+          "brand": "DENSO",
           "codigo_oem": "9-82513-1030",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.75,
+          "stock": 100
         }
-      ]
+      ],
+      "total_stock": 164,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.5
     },
     {
       "category": "Bujia",
@@ -6938,11 +9116,20 @@ const PRODUCTS_DATA = {
       "slug": "bujia-denso-punta-iridio-luv-d-max",
       "variants": [
         {
+          "id_variante": 319,
+          "id_repuesto": 297,
           "brand": "DENSO",
           "codigo_oem": "IK20TT",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Bujia",
@@ -6966,11 +9153,20 @@ const PRODUCTS_DATA = {
       "slug": "bujia-denso-punta-platino-luv-d-max",
       "variants": [
         {
+          "id_variante": 318,
+          "id_repuesto": 296,
           "brand": "DENSO",
           "codigo_oem": "PK20TT",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 32
         }
-      ]
+      ],
+      "total_stock": 32,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Bujia",
@@ -6982,21 +9178,31 @@ const PRODUCTS_DATA = {
         "8-97125-9690",
         "BUJIA",
         "K20PR-U11",
-        "LUV"
+        "LUV",
+        "DENSO"
       ],
       "linked_ids": [
         295
       ],
-      "oem": "K20PR-U11 / 8-97125-9690; 3121",
+      "oem": "K20PR-U11 / 8-97125-9690 / 3121",
       "original_filename": "Bujia/f8014051-5d08-4cf3-9d29-fc8e6ca0c771.jpg",
       "slug": "bujia-luv-2-2",
       "variants": [
         {
-          "codigo_oem": "K20PR-U11",
+          "id_variante": 317,
+          "id_repuesto": 295,
           "brand": "DENSO",
-          "precio_usd": 3.75
+          "codigo_oem": "K20PR-U11",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.75,
+          "stock": 186
         }
-      ]
+      ],
+      "total_stock": 186,
+      "is_out_of_stock": false,
+      "min_price_usd": 3.75
     },
     {
       "category": "Bujia",
@@ -7009,20 +9215,30 @@ const PRODUCTS_DATA = {
         "BUJIA",
         "D-MAX",
         "K20PR-U11",
-        "LUV"
+        "LUV",
+        "DENSO"
       ],
       "linked_ids": [
         295
       ],
-      "oem": "K20PR-U11 / 8-97125-9690; 3121",
+      "oem": "K20PR-U11 / 8-97125-9690 / 3121",
       "slug": "bujia-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 317,
+          "id_repuesto": 295,
           "brand": "DENSO",
           "codigo_oem": "K20PR-U11",
-          "precio_usd": 3.75
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.75,
+          "stock": 186
         }
-      ]
+      ],
+      "total_stock": 186,
+      "is_out_of_stock": false,
+      "min_price_usd": 3.75
     },
     {
       "category": "Bujia",
@@ -7039,33 +9255,55 @@ const PRODUCTS_DATA = {
         "IK20TT",
         "K20PR-U11",
         "LUV",
-        "PK20TT"
+        "PK20TT",
+        "DENSO"
       ],
       "linked_ids": [
         297,
         295,
         296
       ],
-      "oem": "K20PR-U11 / 8-97125-9690; 3121 / PK20TT / 4504 / IK20TT / 4702",
+      "oem": "K20PR-U11 / 8-97125-9690 / 3121 / PK20TT / 4504 / IK20TT / 4702",
       "original_filename": "Bujia/d32f41d3-99fb-4dbf-9be6-e7b090ca9498.jpg",
       "slug": "bujia-luv-dmax-2-4",
       "variants": [
         {
+          "id_variante": 319,
+          "id_repuesto": 297,
+          "brand": "DENSO",
           "codigo_oem": "IK20TT",
-          "brand": "DENSO",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 12
         },
         {
+          "id_variante": 317,
+          "id_repuesto": 295,
+          "brand": "DENSO",
           "codigo_oem": "K20PR-U11",
-          "brand": "DENSO",
-          "precio_usd": 3.75
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.75,
+          "stock": 186
         },
         {
-          "codigo_oem": "PK20TT",
+          "id_variante": 318,
+          "id_repuesto": 296,
           "brand": "DENSO",
-          "precio_usd": 10
+          "codigo_oem": "PK20TT",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 32
         }
-      ]
+      ],
+      "total_stock": 230,
+      "is_out_of_stock": false,
+      "min_price_usd": 3.75
     },
     {
       "category": "Bujia",
@@ -7077,21 +9315,31 @@ const PRODUCTS_DATA = {
         "8-97170-2680",
         "BUJIA",
         "K16PR-U11",
-        "TROOPER"
+        "TROOPER",
+        "DENSO"
       ],
       "linked_ids": [
         298
       ],
-      "oem": "K16PR-U11 / 8-97170-2680; 3130",
+      "oem": "K16PR-U11 / 8-97170-2680 / 3130",
       "original_filename": "Bujia/a31b7424-8944-4f7d-b454-66d62364008c.jpg",
       "slug": "bujia-trooper-3-2",
       "variants": [
         {
-          "codigo_oem": "K16PR-U11",
+          "id_variante": 323,
+          "id_repuesto": 298,
           "brand": "DENSO",
-          "precio_usd": 3.35
+          "codigo_oem": "K16PR-U11",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.35,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 3.35
     },
     {
       "category": "Bujia",
@@ -7106,7 +9354,8 @@ const PRODUCTS_DATA = {
         "DENSO",
         "F6RTC-11",
         "N9YC",
-        "W20EP-U"
+        "W20EP-U",
+        "CHAMPION"
       ],
       "linked_ids": [
         292
@@ -7115,21 +9364,31 @@ const PRODUCTS_DATA = {
       "slug": "bujia-denso-caribe",
       "variants": [
         {
-          "brand": "DENSO",
-          "codigo_oem": "9-82513-1030",
-          "precio_usd": 3.75
-        },
-        {
+          "id_variante": 315,
+          "id_repuesto": 292,
           "brand": "CHAMPION",
           "codigo_oem": "9-82513-1030",
-          "precio_usd": 2.5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.5,
+          "stock": 64
         },
         {
-          "brand": "NOVATEC",
+          "id_variante": 314,
+          "id_repuesto": 292,
+          "brand": "DENSO",
           "codigo_oem": "9-82513-1030",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 3.75,
+          "stock": 100
         }
-      ]
+      ],
+      "total_stock": 164,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.5
     },
     {
       "category": "Bulbo Presion Aceite",
@@ -7142,7 +9401,8 @@ const PRODUCTS_DATA = {
         "BULBO",
         "CARIBE",
         "PRESION",
-        "TGO-1005"
+        "TGO-1005",
+        "GENÉRICA"
       ],
       "linked_ids": [
         299
@@ -7152,11 +9412,20 @@ const PRODUCTS_DATA = {
       "slug": "bulbo-presion-aceite-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 324,
+          "id_repuesto": 299,
+          "brand": "Genérica",
           "codigo_oem": "5-83151-0050",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bulbo Presion Aceite",
@@ -7169,7 +9438,8 @@ const PRODUCTS_DATA = {
         "BULBO",
         "CARIBE",
         "PRESION",
-        "TGO-1005"
+        "TGO-1005",
+        "GENÉRICA"
       ],
       "linked_ids": [
         299
@@ -7179,11 +9449,20 @@ const PRODUCTS_DATA = {
       "slug": "bulbo-presion-aceite-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 324,
+          "id_repuesto": 299,
+          "brand": "Genérica",
           "codigo_oem": "5-83151-0050",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Bulbo Presion Aceite",
@@ -7197,7 +9476,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G200",
         "PRESION",
-        "TGO-1005"
+        "TGO-1005",
+        "GENÉRICA"
       ],
       "linked_ids": [
         299
@@ -7207,11 +9487,20 @@ const PRODUCTS_DATA = {
       "slug": "bulbo-presion-aceite-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 324,
+          "id_repuesto": 299,
+          "brand": "Genérica",
           "codigo_oem": "5-83151-0050",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Cable Espiral Airbag",
@@ -7225,7 +9514,8 @@ const PRODUCTS_DATA = {
         "CINTA",
         "DMAX",
         "ESPIRAL",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1235
@@ -7235,11 +9525,20 @@ const PRODUCTS_DATA = {
       "slug": "cable-espiral-airbag-luv-dmax-3-5-luv-dmax-2-4-luv-dmax-2-5-luv-dmax-3-0",
       "variants": [
         {
+          "id_variante": 1362,
+          "id_repuesto": 1235,
+          "brand": "Genérica",
           "codigo_oem": "8-98014-7660",
-          "brand": "Original",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Cables de Bujia",
@@ -7253,7 +9552,9 @@ const PRODUCTS_DATA = {
         "CABLE",
         "CABLES",
         "JUEGO",
-        "LUV"
+        "LUV",
+        "EAGLE POWER",
+        "TOPONE"
       ],
       "linked_ids": [
         300
@@ -7262,11 +9563,31 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-cable-luv-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 325,
+          "id_repuesto": 300,
+          "brand": "EAGLE POWER",
           "codigo_oem": "8-94433-3641",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 14
+        },
+        {
+          "id_variante": 1379,
+          "id_repuesto": 300,
+          "brand": "TOPONE",
+          "codigo_oem": "8-94433-3641",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 23,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Cables de Bujia",
@@ -7278,7 +9599,8 @@ const PRODUCTS_DATA = {
         "BUJIA",
         "CABLES",
         "JUEGO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         301
@@ -7287,11 +9609,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-cables-bujia-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 326,
+          "id_repuesto": 301,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-0290",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Cables de Bujia",
@@ -7304,7 +9635,8 @@ const PRODUCTS_DATA = {
         "CABLES",
         "D-MAX",
         "JUEGO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         302
@@ -7313,11 +9645,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-cables-bujia-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 327,
+          "id_repuesto": 302,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-0310",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Cables de Bujia",
@@ -7329,7 +9670,9 @@ const PRODUCTS_DATA = {
         "BUJIA",
         "CABLES",
         "CARIBE",
-        "JUEGO"
+        "JUEGO",
+        "EAGLE POWER",
+        "TOPONE"
       ],
       "linked_ids": [
         300
@@ -7338,11 +9681,31 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-cables-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 325,
+          "id_repuesto": 300,
+          "brand": "EAGLE POWER",
           "codigo_oem": "8-94433-3641",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 14
+        },
+        {
+          "id_variante": 1379,
+          "id_repuesto": 300,
+          "brand": "TOPONE",
+          "codigo_oem": "8-94433-3641",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 23,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Cadena Tiempo",
@@ -7354,7 +9717,8 @@ const PRODUCTS_DATA = {
         "CADENA",
         "CARIBE",
         "G-200",
-        "TIEMPO"
+        "TIEMPO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         305
@@ -7363,11 +9727,20 @@ const PRODUCTS_DATA = {
       "slug": "cadena-de-tiempo-caribe-g-200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 330,
+          "id_repuesto": 305,
+          "brand": "Genérica",
           "codigo_oem": "8-94213-8170",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Cadena Trasnfer",
@@ -7380,7 +9753,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "TRANSFER",
-        "TRASNFER"
+        "TRASNFER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         306
@@ -7389,11 +9763,20 @@ const PRODUCTS_DATA = {
       "slug": "cadena-transfer-luv-d-max-3-0-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 331,
+          "id_repuesto": 306,
+          "brand": "Genérica",
           "codigo_oem": "8-97323-1770",
-          "precio_usd": 165
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 165.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 165.0
     },
     {
       "category": "Cajetin de Direccion",
@@ -7408,7 +9791,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DIRECCION",
         "KC0005",
-        "LUV"
+        "LUV",
+        "KAIZEN"
       ],
       "linked_ids": [
         309
@@ -7417,11 +9801,20 @@ const PRODUCTS_DATA = {
       "slug": "cajetin-direccion-luv-d-max-2005-2009",
       "variants": [
         {
+          "id_variante": 334,
+          "id_repuesto": 309,
           "brand": "KAIZEN",
           "codigo_oem": "8-97943-5190",
-          "precio_usd": 260
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Cajetin de Direccion",
@@ -7436,7 +9829,8 @@ const PRODUCTS_DATA = {
         "CAJETIN",
         "D-MAX",
         "DIRECCION",
-        "LUV"
+        "LUV",
+        "TOMITA"
       ],
       "linked_ids": [
         310
@@ -7445,11 +9839,20 @@ const PRODUCTS_DATA = {
       "slug": "cajetin-direccion-luv-d-max-2010-2015",
       "variants": [
         {
+          "id_variante": 335,
+          "id_repuesto": 310,
           "brand": "TOMITA",
           "codigo_oem": "8-98101-7800",
-          "precio_usd": 315
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 315.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 315.0
     },
     {
       "category": "Camara",
@@ -7459,7 +9862,9 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94159-1920",
         "CAMARA",
-        "CARIBE"
+        "CARIBE",
+        "NPC",
+        "TSA"
       ],
       "linked_ids": [
         313
@@ -7469,16 +9874,31 @@ const PRODUCTS_DATA = {
       "slug": "camara-caribe-2-3",
       "variants": [
         {
-          "codigo_oem": "8-94159-1920",
+          "id_variante": 338,
+          "id_repuesto": 313,
           "brand": "NPC",
-          "precio_usd": 565
+          "codigo_oem": "8-94159-1920",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "codigo_oem": "8-94159-1920",
+          "id_variante": 1295,
+          "id_repuesto": 313,
           "brand": "TSA",
-          "precio_usd": 325
+          "codigo_oem": "8-94159-1920",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Camara",
@@ -7488,7 +9908,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94454-5990",
         "CAMARA",
-        "CARIBE"
+        "CARIBE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1184
@@ -7498,11 +9919,20 @@ const PRODUCTS_DATA = {
       "slug": "camara-caribe-2-6",
       "variants": [
         {
+          "id_variante": 1236,
+          "id_repuesto": 1184,
+          "brand": "Genérica",
           "codigo_oem": "8-94454-5990",
-          "brand": "Original",
-          "precio_usd": 470
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Camara",
@@ -7512,7 +9942,9 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94159-1920",
         "CAMARA",
-        "LUV"
+        "LUV",
+        "NPC",
+        "TSA"
       ],
       "linked_ids": [
         313
@@ -7522,16 +9954,31 @@ const PRODUCTS_DATA = {
       "slug": "camara-luv-2-3",
       "variants": [
         {
-          "codigo_oem": "8-94159-1920",
+          "id_variante": 338,
+          "id_repuesto": 313,
           "brand": "NPC",
-          "precio_usd": 565
+          "codigo_oem": "8-94159-1920",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "codigo_oem": "8-94159-1920",
+          "id_variante": 1295,
+          "id_repuesto": 313,
           "brand": "TSA",
-          "precio_usd": 325
+          "codigo_oem": "8-94159-1920",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Carbonera Arranque",
@@ -7545,7 +9992,8 @@ const PRODUCTS_DATA = {
         "8-97041-4240",
         "ARRANQUE",
         "CARBONERA",
-        "CARIBE"
+        "CARIBE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         319
@@ -7554,11 +10002,20 @@ const PRODUCTS_DATA = {
       "slug": "carbonera-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 344,
+          "id_repuesto": 319,
+          "brand": "Genérica",
           "codigo_oem": "5-81118-0220",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Carbones de Arranque",
@@ -7571,7 +10028,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "CARBON",
         "CARBONES",
-        "CARIBE"
+        "CARIBE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         320
@@ -7580,11 +10038,20 @@ const PRODUCTS_DATA = {
       "slug": "carbon-de-arranque-caribe-2300",
       "variants": [
         {
+          "id_variante": 345,
+          "id_repuesto": 320,
+          "brand": "Genérica",
           "codigo_oem": "68-8203",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Carburador",
@@ -7596,7 +10063,10 @@ const PRODUCTS_DATA = {
         "8-94337-6320",
         "CARBURADOR",
         "CARIBE",
-        "NK5630"
+        "NK5630",
+        "RALLY",
+        "TOMITA",
+        "TSA"
       ],
       "linked_ids": [
         321
@@ -7606,21 +10076,42 @@ const PRODUCTS_DATA = {
       "slug": "carburador-caribe-2-3",
       "variants": [
         {
-          "codigo_oem": "8-94159-2140",
-          "brand": "TOMITA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94159-2140",
+          "id_variante": 1246,
+          "id_repuesto": 321,
           "brand": "RALLY",
-          "precio_usd": 0
+          "codigo_oem": "8-94159-2140",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
+          "id_variante": 346,
+          "id_repuesto": 321,
+          "brand": "TOMITA",
           "codigo_oem": "8-94159-2140",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 1324,
+          "id_repuesto": 321,
           "brand": "TSA",
-          "precio_usd": 0
+          "codigo_oem": "8-94159-2140",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Carburador",
@@ -7632,7 +10123,10 @@ const PRODUCTS_DATA = {
         "8-94337-6320",
         "CARBURADOR",
         "LUV",
-        "NK5630"
+        "NK5630",
+        "RALLY",
+        "TOMITA",
+        "TSA"
       ],
       "linked_ids": [
         321
@@ -7642,21 +10136,42 @@ const PRODUCTS_DATA = {
       "slug": "carburador-luv-2-3",
       "variants": [
         {
-          "codigo_oem": "8-94159-2140",
-          "brand": "TOMITA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94159-2140",
+          "id_variante": 1246,
+          "id_repuesto": 321,
           "brand": "RALLY",
-          "precio_usd": 0
+          "codigo_oem": "8-94159-2140",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
+          "id_variante": 346,
+          "id_repuesto": 321,
+          "brand": "TOMITA",
           "codigo_oem": "8-94159-2140",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 1324,
+          "id_repuesto": 321,
           "brand": "TSA",
-          "precio_usd": 0
+          "codigo_oem": "8-94159-2140",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Cigueñal",
@@ -7666,7 +10181,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94136-1640",
         "CARIBE",
-        "CIGUENAL"
+        "CIGUENAL",
+        "GENÉRICA"
       ],
       "linked_ids": [
         325
@@ -7675,11 +10191,20 @@ const PRODUCTS_DATA = {
       "slug": "ciguenal-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 350,
+          "id_repuesto": 325,
+          "brand": "Genérica",
           "codigo_oem": "8-94136-1640",
-          "precio_usd": 320
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 395.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 395.0
     },
     {
       "category": "Cigueñal",
@@ -7691,7 +10216,8 @@ const PRODUCTS_DATA = {
         "8-94163-1881",
         "8-97107-9201",
         "CARIBE",
-        "CIGUENAL"
+        "CIGUENAL",
+        "DM"
       ],
       "linked_ids": [
         326
@@ -7701,16 +10227,20 @@ const PRODUCTS_DATA = {
       "slug": "ciguenal-caribe-2-6",
       "variants": [
         {
-          "codigo_oem": "8-94163-1881",
+          "id_variante": 351,
+          "id_repuesto": 326,
           "brand": "DM",
-          "precio_usd": 470
-        },
-        {
           "codigo_oem": "8-94163-1881",
-          "brand": "TSA",
-          "precio_usd": 200
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 470.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 470.0
     },
     {
       "category": "Cigueñal",
@@ -7720,7 +10250,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94136-1640",
         "CIGUENAL",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         325
@@ -7729,11 +10260,20 @@ const PRODUCTS_DATA = {
       "slug": "ciguenal-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 350,
+          "id_repuesto": 325,
+          "brand": "Genérica",
           "codigo_oem": "8-94136-1640",
-          "precio_usd": 320
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 395.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 395.0
     },
     {
       "category": "Cigueñal",
@@ -7744,7 +10284,8 @@ const PRODUCTS_DATA = {
         "8-93281-9990",
         "CIGUENAL",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         247,
@@ -7754,11 +10295,20 @@ const PRODUCTS_DATA = {
       "slug": "ciguenal-luv-d-max-2-4",
       "variants": [
         {
+          "id_variante": 353,
+          "id_repuesto": 328,
+          "brand": "Genérica",
           "codigo_oem": "8-93281-9990",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Cilindro de Freno",
@@ -7774,7 +10324,8 @@ const PRODUCTS_DATA = {
         "8-97309-9540",
         "CARIBE",
         "CILINDRO",
-        "FRENO"
+        "FRENO",
+        "PERFECTION"
       ],
       "linked_ids": [
         330
@@ -7783,11 +10334,20 @@ const PRODUCTS_DATA = {
       "slug": "cilindro-freno-caribe-2300",
       "variants": [
         {
+          "id_variante": 355,
+          "id_repuesto": 330,
           "brand": "PERFECTION",
           "codigo_oem": "8-94230-5411",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 39
         }
-      ]
+      ],
+      "total_stock": 39,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Cilindro de Freno",
@@ -7803,7 +10363,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CILINDRO",
         "FRENO",
-        "G200"
+        "G200",
+        "PERFECTION"
       ],
       "linked_ids": [
         330
@@ -7813,11 +10374,20 @@ const PRODUCTS_DATA = {
       "slug": "cilindro-freno-caribe-g200",
       "variants": [
         {
-          "codigo_oem": "8-94230-5411",
+          "id_variante": 355,
+          "id_repuesto": 330,
           "brand": "PERFECTION",
-          "precio_usd": 20
+          "codigo_oem": "8-94230-5411",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 39
         }
-      ]
+      ],
+      "total_stock": 39,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Cilindro de Freno",
@@ -7832,7 +10402,8 @@ const PRODUCTS_DATA = {
         "8-97309-9540",
         "CILINDRO",
         "FRENO",
-        "LUV"
+        "LUV",
+        "PERFECTION"
       ],
       "linked_ids": [
         330
@@ -7842,11 +10413,20 @@ const PRODUCTS_DATA = {
       "slug": "cilindro-freno-luv-2-3",
       "variants": [
         {
-          "codigo_oem": "8-94230-5411",
+          "id_variante": 355,
+          "id_repuesto": 330,
           "brand": "PERFECTION",
-          "precio_usd": 20
+          "codigo_oem": "8-94230-5411",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 39
         }
-      ]
+      ],
+      "total_stock": 39,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Cilindro de Freno",
@@ -7858,7 +10438,8 @@ const PRODUCTS_DATA = {
         "CILINDRO",
         "D-MAX",
         "FRENO",
-        "LUV"
+        "LUV",
+        "JT"
       ],
       "linked_ids": [
         331
@@ -7867,11 +10448,20 @@ const PRODUCTS_DATA = {
       "slug": "cilindro-freno-luv-d-max-2-4",
       "variants": [
         {
+          "id_variante": 356,
+          "id_repuesto": 331,
           "brand": "JT",
           "codigo_oem": "8-97301-4780",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Cilindro de Freno",
@@ -7883,7 +10473,8 @@ const PRODUCTS_DATA = {
         "CILINDRO",
         "D-MAX",
         "FRENO",
-        "LUV"
+        "LUV",
+        "PERFECTION"
       ],
       "linked_ids": [
         332
@@ -7892,11 +10483,20 @@ const PRODUCTS_DATA = {
       "slug": "cilindro-freno-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 357,
+          "id_repuesto": 332,
           "brand": "PERFECTION",
           "codigo_oem": "8-97319-3000",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Cilindro de Freno",
@@ -7908,7 +10508,8 @@ const PRODUCTS_DATA = {
         "CILINDRO",
         "DMAX",
         "FRENO",
-        "LUV"
+        "LUV",
+        "JT"
       ],
       "linked_ids": [
         331
@@ -7918,11 +10519,20 @@ const PRODUCTS_DATA = {
       "slug": "cilindro-freno-luv-dmax-2-5",
       "variants": [
         {
-          "codigo_oem": "8-97301-4780",
+          "id_variante": 356,
+          "id_repuesto": 331,
           "brand": "JT",
-          "precio_usd": 25
+          "codigo_oem": "8-97301-4780",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Cilindro de Freno",
@@ -7935,7 +10545,8 @@ const PRODUCTS_DATA = {
         "CILINDRO",
         "DMAX",
         "FRENO",
-        "LUV"
+        "LUV",
+        "JT"
       ],
       "linked_ids": [
         331
@@ -7945,11 +10556,20 @@ const PRODUCTS_DATA = {
       "slug": "cilindro-freno-luv-dmax-3-0-4x2",
       "variants": [
         {
-          "codigo_oem": "8-97301-4780",
+          "id_variante": 356,
+          "id_repuesto": 331,
           "brand": "JT",
-          "precio_usd": 25
+          "codigo_oem": "8-97301-4780",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Cilindro de Freno",
@@ -7962,7 +10582,8 @@ const PRODUCTS_DATA = {
         "CILINDRO",
         "DMAX",
         "FRENO",
-        "LUV"
+        "LUV",
+        "PERFECTION"
       ],
       "linked_ids": [
         332
@@ -7972,11 +10593,20 @@ const PRODUCTS_DATA = {
       "slug": "cilindro-freno-luv-dmax-3-0-4x4",
       "variants": [
         {
-          "codigo_oem": "8-97319-3000",
+          "id_variante": 357,
+          "id_repuesto": 332,
           "brand": "PERFECTION",
-          "precio_usd": 30
+          "codigo_oem": "8-97319-3000",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Cocuyo",
@@ -7991,7 +10621,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COCUYO",
         "CUADRADO",
-        "FARO"
+        "FARO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         333,
@@ -8001,16 +10632,31 @@ const PRODUCTS_DATA = {
       "slug": "cocuyo-caribe-faro-cuadrado",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 358,
+          "id_repuesto": 333,
+          "brand": "Genérica",
           "codigo_oem": "8-94424-0431",
-          "precio_usd": 25
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 20
         },
         {
-          "brand": "Original",
+          "id_variante": 1138,
+          "id_repuesto": 1102,
+          "brand": "Genérica",
           "codigo_oem": "8-94424-0441",
-          "precio_usd": 25
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Cocuyo",
@@ -8024,7 +10670,8 @@ const PRODUCTS_DATA = {
         "COCUYO",
         "DELANTERO",
         "FARO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         259,
@@ -8035,16 +10682,20 @@ const PRODUCTS_DATA = {
       "slug": "cocuyo-faro-delantero-luv-97-02",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 360,
+          "id_repuesto": 335,
+          "brand": "Genérica",
           "codigo_oem": "8-94324-1040",
-          "precio_usd": 35
-        },
-        {
-          "brand": "Original",
-          "codigo_oem": "8-94324-1050",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Cocuyo Guardafango",
@@ -8056,7 +10707,8 @@ const PRODUCTS_DATA = {
         "COCUYO",
         "CRUCE",
         "GUARDAFANGO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1221
@@ -8066,11 +10718,20 @@ const PRODUCTS_DATA = {
       "slug": "cocuyo-cruce-guardafango-luv",
       "variants": [
         {
+          "id_variante": 1309,
+          "id_repuesto": 1221,
+          "brand": "Genérica",
           "codigo_oem": "213-1408N-X",
-          "brand": "Original",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Cocuyo Guardafango",
@@ -8084,7 +10745,8 @@ const PRODUCTS_DATA = {
         "CRUCE",
         "DMAX",
         "GUARDAFANGO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1200
@@ -8094,11 +10756,20 @@ const PRODUCTS_DATA = {
       "slug": "cocuyo-cruce-guardafango-luv-dmax-05-09",
       "variants": [
         {
+          "id_variante": 1276,
+          "id_repuesto": 1200,
+          "brand": "Genérica",
           "codigo_oem": "213-1410PXA-VCU",
-          "brand": "Original",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Collarin",
@@ -8110,7 +10781,8 @@ const PRODUCTS_DATA = {
         "5-31321-0033",
         "CARIBE",
         "COLLARIN",
-        "N2100H"
+        "N2100H",
+        "GENÉRICA"
       ],
       "linked_ids": [
         127,
@@ -8120,11 +10792,20 @@ const PRODUCTS_DATA = {
       "slug": "collarin-caribe-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 362,
+          "id_repuesto": 337,
+          "brand": "Genérica",
           "codigo_oem": "5-31321-0033",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 29
         }
-      ]
+      ],
+      "total_stock": 29,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Collarin",
@@ -8136,7 +10817,8 @@ const PRODUCTS_DATA = {
         "5-31321-0033",
         "CARIBE",
         "COLLARIN",
-        "N2100H"
+        "N2100H",
+        "GENÉRICA"
       ],
       "linked_ids": [
         127,
@@ -8146,11 +10828,20 @@ const PRODUCTS_DATA = {
       "slug": "collarin-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 362,
+          "id_repuesto": 337,
+          "brand": "Genérica",
           "codigo_oem": "5-31321-0033",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 29
         }
-      ]
+      ],
+      "total_stock": 29,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Collarin",
@@ -8163,7 +10854,8 @@ const PRODUCTS_DATA = {
         "8-94379-4990",
         "CARIBE",
         "COLLARIN",
-        "RCT422SA1FG"
+        "RCT422SA1FG",
+        "PERFECTION"
       ],
       "linked_ids": [
         870
@@ -8172,21 +10864,20 @@ const PRODUCTS_DATA = {
       "slug": "collarin-caribe-2600",
       "variants": [
         {
+          "id_variante": 901,
+          "id_repuesto": 870,
           "brand": "PERFECTION",
           "codigo_oem": "8-94379-4990",
-          "precio_usd": 30
-        },
-        {
-          "brand": "ICHIBAN",
-          "codigo_oem": "8-94379-4990",
-          "precio_usd": 0
-        },
-        {
-          "brand": "KOYO",
-          "codigo_oem": "8-94379-4990",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Collarin",
@@ -8197,7 +10888,8 @@ const PRODUCTS_DATA = {
         "48TKB3204RI",
         "8-97209-1970",
         "COLLARIN",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         338
@@ -8206,11 +10898,20 @@ const PRODUCTS_DATA = {
       "slug": "collarin-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 363,
+          "id_repuesto": 338,
+          "brand": "Genérica",
           "codigo_oem": "8-97209-1970",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Collarin",
@@ -8222,7 +10923,8 @@ const PRODUCTS_DATA = {
         "8-97209-1970",
         "COLLARIN",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         338
@@ -8231,11 +10933,20 @@ const PRODUCTS_DATA = {
       "slug": "collarin-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 363,
+          "id_repuesto": 338,
+          "brand": "Genérica",
           "codigo_oem": "8-97209-1970",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Collarin",
@@ -8246,7 +10957,8 @@ const PRODUCTS_DATA = {
         "8-94377-4171",
         "COLLARIN",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         340
@@ -8255,11 +10967,20 @@ const PRODUCTS_DATA = {
       "slug": "collarin-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 365,
+          "id_repuesto": 340,
+          "brand": "Genérica",
           "codigo_oem": "8-94377-4171",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Collarin",
@@ -8269,7 +10990,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94377-4171",
         "COLLARIN",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         340
@@ -8278,11 +11000,20 @@ const PRODUCTS_DATA = {
       "slug": "collarin-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 365,
+          "id_repuesto": 340,
+          "brand": "Genérica",
           "codigo_oem": "8-94377-4171",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Collarin",
@@ -8295,14 +11026,31 @@ const PRODUCTS_DATA = {
         "8-94101-2430",
         "COLLARIN",
         "LUV",
-        "ROLINERA"
+        "RCT37SA1",
+        "ROLINERA",
+        "ICHIBAN"
       ],
       "linked_ids": [
-        741
+        873
       ],
-      "oem": "8-94101-2430 / 48TKA3214",
+      "oem": "8-94101-2430 / 48TKA3214 / RCT37SA1",
       "slug": "rolinera-collarin-luv-2300",
-      "variants": []
+      "variants": [
+        {
+          "id_variante": 1360,
+          "id_repuesto": 873,
+          "brand": "ICHIBAN",
+          "codigo_oem": "8-94101-2430",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 6
+        }
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Concha de Bancada",
@@ -8331,7 +11079,12 @@ const PRODUCTS_DATA = {
         "8-97063-2450",
         "BANCADA",
         "CARIBE",
-        "CONCHA"
+        "CONCHA",
+        "GENÉRICA",
+        "NATSUKI",
+        "EMASA",
+        "NB",
+        "PAI"
       ],
       "linked_ids": [
         348,
@@ -8346,51 +11099,108 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-conchas-bancada-caribe-2300-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 373,
+          "id_repuesto": 348,
+          "brand": "Genérica",
           "codigo_oem": "8-94251-2631-STD",
-          "precio_usd": 25
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         },
         {
-          "brand": "Original",
+          "id_variante": 374,
+          "id_repuesto": 349,
+          "brand": "Genérica",
           "codigo_oem": "8-94251-2631-010",
-          "precio_usd": 25
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 29
         },
         {
+          "id_variante": 375,
+          "id_repuesto": 350,
           "brand": "NATSUKI",
           "codigo_oem": "8-94251-2631-020",
-          "precio_usd": 20
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 33
         },
         {
-          "brand": "NB",
-          "codigo_oem": "8-94251-2631-020",
-          "precio_usd": 35
-        },
-        {
-          "brand": "Original",
+          "id_variante": 1349,
+          "id_repuesto": 351,
+          "brand": "EMASA",
           "codigo_oem": "8-94251-2631-030",
-          "precio_usd": 25
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 5
         },
         {
+          "id_variante": 1374,
+          "id_repuesto": 351,
+          "brand": "NATSUKI",
+          "codigo_oem": "8-94251-2631-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 10
+        },
+        {
+          "id_variante": 1345,
+          "id_repuesto": 351,
+          "brand": "NB",
+          "codigo_oem": "8-94251-2631-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
+        },
+        {
+          "id_variante": 376,
+          "id_repuesto": 351,
+          "brand": "PAI",
+          "codigo_oem": "8-94251-2631-030",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 15
+        },
+        {
+          "id_variante": 377,
+          "id_repuesto": 352,
           "brand": "PAI",
           "codigo_oem": "8-94251-2631-040",
-          "precio_usd": 25
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 23
         },
         {
-          "brand": "NB",
-          "codigo_oem": "8-94251-2631-040",
-          "precio_usd": 35
-        },
-        {
-          "brand": "Original",
+          "id_variante": 378,
+          "id_repuesto": 353,
+          "brand": "Genérica",
           "codigo_oem": "8-94251-2631-050",
-          "precio_usd": 30
-        },
-        {
-          "brand": "Original",
-          "codigo_oem": "8-94251-2631-060",
-          "precio_usd": 0
+          "medida": "0.50",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 127,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Concha de Bancada",
@@ -8415,7 +11225,8 @@ const PRODUCTS_DATA = {
         "BANCADA",
         "CARIBE",
         "CONCHA",
-        "G200"
+        "G200",
+        "GENÉRICA"
       ],
       "linked_ids": [
         341,
@@ -8430,41 +11241,86 @@ const PRODUCTS_DATA = {
       "slug": "juego-concha-bancada-caribe-g-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 366,
+          "id_repuesto": 341,
+          "brand": "Genérica",
           "codigo_oem": "8-94215-6410-STD",
-          "precio_usd": 30
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 367,
+          "id_repuesto": 342,
+          "brand": "Genérica",
           "codigo_oem": "8-94215-6410-010",
-          "precio_usd": 30
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 368,
+          "id_repuesto": 343,
+          "brand": "Genérica",
           "codigo_oem": "8-94215-6410-020",
-          "precio_usd": 25
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 369,
+          "id_repuesto": 344,
+          "brand": "Genérica",
           "codigo_oem": "8-94215-6410-030",
-          "precio_usd": 25
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 370,
+          "id_repuesto": 345,
+          "brand": "Genérica",
           "codigo_oem": "8-94215-6410-040",
-          "precio_usd": 0
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 371,
+          "id_repuesto": 346,
+          "brand": "Genérica",
           "codigo_oem": "8-94215-6410-050",
-          "precio_usd": 35
+          "medida": "0.50",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         },
         {
-          "brand": "Original",
+          "id_variante": 372,
+          "id_repuesto": 347,
+          "brand": "Genérica",
           "codigo_oem": "8-94215-6410-060",
-          "precio_usd": 35
+          "medida": "0.60",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 13,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Concha de Bancada",
@@ -8486,7 +11342,9 @@ const PRODUCTS_DATA = {
         "8-92066-6330-STD",
         "BANCADA",
         "CONCHA",
-        "LUV"
+        "LUV",
+        "GENÉRICA",
+        "NB"
       ],
       "linked_ids": [
         355,
@@ -8500,41 +11358,86 @@ const PRODUCTS_DATA = {
       "slug": "juego-concha-bancada-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 380,
+          "id_repuesto": 355,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-STD",
-          "precio_usd": 40
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 381,
+          "id_repuesto": 356,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-010",
-          "precio_usd": 40
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 5
         },
         {
+          "id_variante": 1274,
+          "id_repuesto": 356,
           "brand": "NB",
           "codigo_oem": "8-92066-6330-010",
-          "precio_usd": 50
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 382,
+          "id_repuesto": 357,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-020",
-          "precio_usd": 40
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 3
         },
         {
-          "brand": "Original",
+          "id_variante": 383,
+          "id_repuesto": 358,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-030",
-          "precio_usd": 40
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 384,
+          "id_repuesto": 359,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-040",
-          "precio_usd": 40
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 385,
+          "id_repuesto": 360,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-050",
-          "precio_usd": 0
+          "medida": "0.50",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 17,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Concha de Bancada",
@@ -8557,7 +11460,9 @@ const PRODUCTS_DATA = {
         "BANCADA",
         "CONCHA",
         "DMAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA",
+        "NB"
       ],
       "linked_ids": [
         355,
@@ -8571,41 +11476,86 @@ const PRODUCTS_DATA = {
       "slug": "juego-concha-bancada-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 380,
+          "id_repuesto": 355,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-STD",
-          "precio_usd": 40
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 381,
+          "id_repuesto": 356,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-010",
-          "precio_usd": 40
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 5
         },
         {
+          "id_variante": 1274,
+          "id_repuesto": 356,
           "brand": "NB",
           "codigo_oem": "8-92066-6330-010",
-          "precio_usd": 50
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 382,
+          "id_repuesto": 357,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-020",
-          "precio_usd": 40
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 3
         },
         {
-          "brand": "Original",
+          "id_variante": 383,
+          "id_repuesto": 358,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-030",
-          "precio_usd": 40
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 384,
+          "id_repuesto": 359,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-040",
-          "precio_usd": 40
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 385,
+          "id_repuesto": 360,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-6330-050",
-          "precio_usd": 0
+          "medida": "0.50",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 17,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Concha de Bancada",
@@ -8629,7 +11579,8 @@ const PRODUCTS_DATA = {
         "BANCADA",
         "CONCHA",
         "DMAX",
-        "LUV"
+        "LUV",
+        "RUSHMORE"
       ],
       "linked_ids": [
         361,
@@ -8642,56 +11593,64 @@ const PRODUCTS_DATA = {
       "slug": "juego-concha-bancada-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 386,
+          "id_repuesto": 361,
           "brand": "RUSHMORE",
           "codigo_oem": "8-97179-2960-STD",
-          "precio_usd": 40
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 3
         },
         {
-          "brand": "NDC",
-          "codigo_oem": "8-97179-2960-STD",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 387,
+          "id_repuesto": 362,
           "brand": "RUSHMORE",
           "codigo_oem": "8-97179-2960-010",
-          "precio_usd": 40
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 3
         },
         {
-          "brand": "NDC",
-          "codigo_oem": "8-97179-2960-010",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 388,
+          "id_repuesto": 363,
           "brand": "RUSHMORE",
           "codigo_oem": "8-97179-2960-020",
-          "precio_usd": 40
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
-          "brand": "NDC",
-          "codigo_oem": "8-97179-2960-020",
-          "precio_usd": 70
-        },
-        {
+          "id_variante": 389,
+          "id_repuesto": 364,
           "brand": "RUSHMORE",
           "codigo_oem": "8-97179-2960-030",
-          "precio_usd": 40
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
-          "brand": "NDC",
-          "codigo_oem": "8-97179-2960-030",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 390,
+          "id_repuesto": 365,
           "brand": "RUSHMORE",
           "codigo_oem": "8-97179-2960-040",
-          "precio_usd": 40
-        },
-        {
-          "brand": "NDC",
-          "codigo_oem": "8-97179-2960-040",
-          "precio_usd": 70
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Concha de Biela",
@@ -8719,7 +11678,8 @@ const PRODUCTS_DATA = {
         "BIELA",
         "CARIBE",
         "CONCHA",
-        "G200"
+        "G200",
+        "GENÉRICA"
       ],
       "linked_ids": [
         371,
@@ -8734,41 +11694,86 @@ const PRODUCTS_DATA = {
       "slug": "concha-biela-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 396,
+          "id_repuesto": 371,
+          "brand": "Genérica",
           "codigo_oem": "8-94251-2660-STD",
-          "precio_usd": 20
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 7
         },
         {
-          "brand": "Original",
+          "id_variante": 397,
+          "id_repuesto": 372,
+          "brand": "Genérica",
           "codigo_oem": "8-94251-2660-010",
-          "precio_usd": 20
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 29
         },
         {
-          "brand": "Original",
+          "id_variante": 398,
+          "id_repuesto": 373,
+          "brand": "Genérica",
           "codigo_oem": "8-94251-2660-020",
-          "precio_usd": 20
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 38
         },
         {
-          "brand": "Original",
+          "id_variante": 399,
+          "id_repuesto": 374,
+          "brand": "Genérica",
           "codigo_oem": "8-94251-2660-030",
-          "precio_usd": 20
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 62
         },
         {
-          "brand": "Original",
+          "id_variante": 400,
+          "id_repuesto": 375,
+          "brand": "Genérica",
           "codigo_oem": "8-94251-2660-040",
-          "precio_usd": 25
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 9
         },
         {
-          "brand": "Original",
+          "id_variante": 401,
+          "id_repuesto": 376,
+          "brand": "Genérica",
           "codigo_oem": "8-94251-2660-050",
-          "precio_usd": 30
+          "medida": "0.50",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 402,
+          "id_repuesto": 377,
+          "brand": "Genérica",
           "codigo_oem": "8-94251-2660-060",
-          "precio_usd": 30
+          "medida": "0.60",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 148,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Concha de Biela",
@@ -8792,7 +11797,8 @@ const PRODUCTS_DATA = {
         "8-92028-8190",
         "BIELA",
         "CONCHA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         378,
@@ -8806,36 +11812,75 @@ const PRODUCTS_DATA = {
       "slug": "juego-concha-biela-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 403,
+          "id_repuesto": 378,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-STD",
-          "precio_usd": 25
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         },
         {
-          "brand": "Original",
+          "id_variante": 404,
+          "id_repuesto": 379,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-010",
-          "precio_usd": 25
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 405,
+          "id_repuesto": 380,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-020",
-          "precio_usd": 25
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         },
         {
-          "brand": "Original",
+          "id_variante": 406,
+          "id_repuesto": 381,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-030",
-          "precio_usd": 25
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 407,
+          "id_repuesto": 382,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-040",
-          "precio_usd": 25
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         },
         {
-          "brand": "Original",
+          "id_variante": 408,
+          "id_repuesto": 383,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-050",
-          "precio_usd": 25
+          "medida": "0.50",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 15,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Concha de Biela",
@@ -8860,7 +11905,8 @@ const PRODUCTS_DATA = {
         "BIELA",
         "CONCHA",
         "DMAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         378,
@@ -8874,36 +11920,75 @@ const PRODUCTS_DATA = {
       "slug": "juego-concha-biela-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 403,
+          "id_repuesto": 378,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-STD",
-          "precio_usd": 25
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         },
         {
-          "brand": "Original",
+          "id_variante": 404,
+          "id_repuesto": 379,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-010",
-          "precio_usd": 25
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 405,
+          "id_repuesto": 380,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-020",
-          "precio_usd": 25
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         },
         {
-          "brand": "Original",
+          "id_variante": 406,
+          "id_repuesto": 381,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-030",
-          "precio_usd": 25
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 407,
+          "id_repuesto": 382,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-040",
-          "precio_usd": 25
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         },
         {
-          "brand": "Original",
+          "id_variante": 408,
+          "id_repuesto": 383,
+          "brand": "Genérica",
           "codigo_oem": "8-92028-8170-050",
-          "precio_usd": 25
+          "medida": "0.50",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 15,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Concha de Biela",
@@ -8926,7 +12011,10 @@ const PRODUCTS_DATA = {
         "BIELA",
         "CONCHA",
         "DMAX",
-        "LUV"
+        "LUV",
+        "NB",
+        "NDC",
+        "RUSHMORE"
       ],
       "linked_ids": [
         384,
@@ -8939,71 +12027,97 @@ const PRODUCTS_DATA = {
       "slug": "juego-concha-biela-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "RUSHMORE",
-          "codigo_oem": "8-97179-2930-STD",
-          "precio_usd": 35
-        },
-        {
-          "brand": "NDC",
-          "codigo_oem": "8-97179-2930-STD",
-          "precio_usd": 85
-        },
-        {
+          "id_variante": 1303,
+          "id_repuesto": 384,
           "brand": "NB",
           "codigo_oem": "8-97179-2930-STD",
-          "precio_usd": 30
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
-          "brand": "RUSHMORE",
-          "codigo_oem": "8-97179-2930-010",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 414,
+          "id_repuesto": 384,
           "brand": "NDC",
-          "codigo_oem": "8-97179-2930-010",
-          "precio_usd": 0
+          "codigo_oem": "8-97179-2930-STD",
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 1
         },
         {
+          "id_variante": 409,
+          "id_repuesto": 384,
+          "brand": "RUSHMORE",
+          "codigo_oem": "8-97179-2930-STD",
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 1
+        },
+        {
+          "id_variante": 1272,
+          "id_repuesto": 385,
           "brand": "NB",
           "codigo_oem": "8-97179-2930-010",
-          "precio_usd": 30
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
-          "brand": "RUSHMORE",
-          "codigo_oem": "8-97179-2930-020",
-          "precio_usd": 35
-        },
-        {
-          "brand": "NDC",
-          "codigo_oem": "8-97179-2930-020",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1273,
+          "id_repuesto": 386,
           "brand": "NB",
           "codigo_oem": "8-97179-2930-020",
-          "precio_usd": 30
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         },
         {
+          "id_variante": 411,
+          "id_repuesto": 386,
+          "brand": "RUSHMORE",
+          "codigo_oem": "8-97179-2930-020",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 412,
+          "id_repuesto": 387,
           "brand": "RUSHMORE",
           "codigo_oem": "8-97179-2930-030",
-          "precio_usd": 35
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 3
         },
         {
-          "brand": "NDC",
-          "codigo_oem": "8-97179-2930-030",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 413,
+          "id_repuesto": 388,
           "brand": "RUSHMORE",
           "codigo_oem": "8-97179-2930-040",
-          "precio_usd": 35
-        },
-        {
-          "brand": "NDC",
-          "codigo_oem": "8-97179-2930-040",
-          "precio_usd": 85
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Condensador",
@@ -9016,7 +12130,8 @@ const PRODUCTS_DATA = {
         "CND-204",
         "CONDENSADOR",
         "G-200",
-        "SC-158"
+        "SC-158",
+        "GENÉRICA"
       ],
       "linked_ids": [
         394
@@ -9025,11 +12140,20 @@ const PRODUCTS_DATA = {
       "slug": "condensador-caribe-g-200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 419,
+          "id_repuesto": 394,
+          "brand": "Genérica",
           "codigo_oem": "8-94208-4180",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 25
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Conector de Bobina",
@@ -9042,7 +12166,8 @@ const PRODUCTS_DATA = {
         "BOBINA",
         "CONECTOR",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "YUKAZO"
       ],
       "linked_ids": [
         322
@@ -9051,11 +12176,20 @@ const PRODUCTS_DATA = {
       "slug": "conector-de-bobina-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 347,
+          "id_repuesto": 322,
           "brand": "YUKAZO",
           "codigo_oem": "8-97136-3250B",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 55.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 55.0
     },
     {
       "category": "Conmutador Encendido",
@@ -9066,7 +12200,8 @@ const PRODUCTS_DATA = {
         "8-94222-6130",
         "CARIBE",
         "CONMUTADOR",
-        "ENCENDIDO"
+        "ENCENDIDO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         398
@@ -9075,11 +12210,20 @@ const PRODUCTS_DATA = {
       "slug": "conmutador-encendido-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 425,
+          "id_repuesto": 398,
+          "brand": "Genérica",
           "codigo_oem": "8-94222-6130",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Conmutador Encendido",
@@ -9092,7 +12236,9 @@ const PRODUCTS_DATA = {
         "CONMUTADOR",
         "D-MAX",
         "ENCENDIDO",
-        "LUV"
+        "LUV",
+        "GEN",
+        "NIKHO"
       ],
       "linked_ids": [
         399
@@ -9101,16 +12247,31 @@ const PRODUCTS_DATA = {
       "slug": "conmutador-encendido-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 426,
+          "id_repuesto": 399,
           "brand": "GEN",
           "codigo_oem": "8-97350-0720",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
+          "id_variante": 1243,
+          "id_repuesto": 399,
           "brand": "NIKHO",
           "codigo_oem": "8-97350-0720",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Consola Central",
@@ -9123,7 +12284,8 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "CONSOLA",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         314,
@@ -9133,11 +12295,20 @@ const PRODUCTS_DATA = {
       "slug": "consola-central-luv-d-max-2005-2009",
       "variants": [
         {
+          "id_variante": 427,
+          "id_repuesto": 400,
+          "brand": "Genérica",
           "codigo_oem": "8-97396-2500",
-          "brand": "Original",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 95.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 95.0
     },
     {
       "category": "Control Aire Acondicionado",
@@ -9153,7 +12324,8 @@ const PRODUCTS_DATA = {
         "AIRE",
         "CONTROL",
         "D-MAX",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1089
@@ -9162,11 +12334,20 @@ const PRODUCTS_DATA = {
       "slug": "control-aire-acondicionado-luv-d-max-2005-2009",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1125,
+          "id_repuesto": 1089,
+          "brand": "Genérica",
           "codigo_oem": "8-98038-1190",
-          "precio_usd": 235
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 235.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 235.0
     },
     {
       "category": "Copa Arranque",
@@ -9182,7 +12363,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COP-12051",
         "COPA",
-        "VK-CTN-16"
+        "VK-CTN-16",
+        "GENÉRICA"
       ],
       "linked_ids": [
         401
@@ -9191,11 +12373,20 @@ const PRODUCTS_DATA = {
       "slug": "copa-arranque-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 428,
+          "id_repuesto": 401,
+          "brand": "Genérica",
           "codigo_oem": "8-94172-3280",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Copa Arranque",
@@ -9211,7 +12402,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COP-12051",
         "COPA",
-        "VK-CTN-16"
+        "VK-CTN-16",
+        "GENÉRICA"
       ],
       "linked_ids": [
         401
@@ -9220,11 +12412,20 @@ const PRODUCTS_DATA = {
       "slug": "copa-arranque-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 428,
+          "id_repuesto": 401,
+          "brand": "Genérica",
           "codigo_oem": "8-94172-3280",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Copa Arranque",
@@ -9239,7 +12440,8 @@ const PRODUCTS_DATA = {
         "COP-12051",
         "COPA",
         "LUV",
-        "VK-CTN-16"
+        "VK-CTN-16",
+        "GENÉRICA"
       ],
       "linked_ids": [
         401
@@ -9249,11 +12451,20 @@ const PRODUCTS_DATA = {
       "slug": "copa-arranque-luv-2-3",
       "variants": [
         {
+          "id_variante": 428,
+          "id_repuesto": 401,
+          "brand": "Genérica",
           "codigo_oem": "8-94172-3280",
-          "brand": "Original",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Correa de Tiempo",
@@ -9266,7 +12477,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CORREA",
         "LUV",
-        "TIEMPO"
+        "TIEMPO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         402
@@ -9275,11 +12487,20 @@ const PRODUCTS_DATA = {
       "slug": "correa-de-tiempo-caribe-2-3-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 429,
+          "id_repuesto": 402,
+          "brand": "Genérica",
           "codigo_oem": "8-97041-7840",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Correa de Tiempo",
@@ -9291,7 +12512,8 @@ const PRODUCTS_DATA = {
         "8-97042-2680",
         "CARIBE",
         "CORREA",
-        "TIEMPO"
+        "TIEMPO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         403
@@ -9300,11 +12522,20 @@ const PRODUCTS_DATA = {
       "slug": "correa-de-tiempo-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 430,
+          "id_repuesto": 403,
+          "brand": "Genérica",
           "codigo_oem": "8-97042-2680",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Correa de Tiempo",
@@ -9318,7 +12549,8 @@ const PRODUCTS_DATA = {
         "8-92065-9770",
         "CORREA",
         "LUV",
-        "TIEMPO"
+        "TIEMPO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         404
@@ -9327,11 +12559,20 @@ const PRODUCTS_DATA = {
       "slug": "correa-de-tiempo-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 431,
+          "id_repuesto": 404,
+          "brand": "Genérica",
           "codigo_oem": "8-92062-5210",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Correa de Tiempo",
@@ -9346,7 +12587,8 @@ const PRODUCTS_DATA = {
         "CORREA",
         "D-MAX",
         "LUV",
-        "TIEMPO"
+        "TIEMPO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         404
@@ -9355,11 +12597,20 @@ const PRODUCTS_DATA = {
       "slug": "correa-de-tiempo-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 431,
+          "id_repuesto": 404,
+          "brand": "Genérica",
           "codigo_oem": "8-92062-5210",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Correa de Tiempo",
@@ -9371,7 +12622,9 @@ const PRODUCTS_DATA = {
         "CORREA",
         "D-MAX",
         "LUV",
-        "TIEMPO"
+        "TIEMPO",
+        "BANDO",
+        "MICHELIN"
       ],
       "linked_ids": [
         405
@@ -9380,16 +12633,31 @@ const PRODUCTS_DATA = {
       "slug": "correa-de-tiempo-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 432,
+          "id_repuesto": 405,
           "brand": "BANDO",
           "codigo_oem": "8-97191-0361",
-          "precio_usd": 65
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 65.0,
+          "stock": 8
         },
         {
+          "id_variante": 433,
+          "id_repuesto": 405,
           "brand": "MICHELIN",
           "codigo_oem": "8-97191-0361",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 95.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 65.0
     },
     {
       "category": "Correa de Tiempo",
@@ -9401,7 +12669,8 @@ const PRODUCTS_DATA = {
         "CORREA",
         "SOHC",
         "TIEMPO",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         408
@@ -9410,11 +12679,20 @@ const PRODUCTS_DATA = {
       "slug": "correa-de-tiempo-trooper-3-2-sohc",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 435,
+          "id_repuesto": 408,
+          "brand": "Genérica",
           "codigo_oem": "8-94386-4970",
-          "precio_usd": 70
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 70.0
     },
     {
       "category": "Correa Unica",
@@ -9427,7 +12705,10 @@ const PRODUCTS_DATA = {
         "CORREA",
         "D-MAX",
         "LUV",
-        "UNICA"
+        "UNICA",
+        "BANDO",
+        "MICHELIN",
+        "MITSUBA"
       ],
       "linked_ids": [
         409
@@ -9436,21 +12717,42 @@ const PRODUCTS_DATA = {
       "slug": "correa-unica-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 436,
+          "id_repuesto": 409,
           "brand": "BANDO",
           "codigo_oem": "8-97130-5600",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
+          "id_variante": 437,
+          "id_repuesto": 409,
           "brand": "MICHELIN",
           "codigo_oem": "8-97130-5600",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
+          "id_variante": 1291,
+          "id_repuesto": 409,
           "brand": "MITSUBA",
           "codigo_oem": "8-97130-5600",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Cruceta",
@@ -9464,7 +12766,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CRUCETA",
         "GRANDE",
-        "GUIS-52"
+        "GUIS-52",
+        "TRIX"
       ],
       "linked_ids": [
         413
@@ -9473,11 +12776,20 @@ const PRODUCTS_DATA = {
       "slug": "cruceta-caribe-grande",
       "variants": [
         {
+          "id_variante": 440,
+          "id_repuesto": 413,
           "brand": "TRIX",
           "codigo_oem": "GUIS-52",
-          "precio_usd": 15
+          "medida": "Dado: 29mm / Largo: 78mm",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Cruceta",
@@ -9491,7 +12803,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CRUCETA",
         "GU-500",
-        "PEQUENA"
+        "PEQUENA",
+        "TRIX"
       ],
       "linked_ids": [
         412
@@ -9500,11 +12813,20 @@ const PRODUCTS_DATA = {
       "slug": "cruceta-caribe-pequena",
       "variants": [
         {
+          "id_variante": 439,
+          "id_repuesto": 412,
           "brand": "TRIX",
           "codigo_oem": "GU-500",
-          "precio_usd": 10
+          "medida": "Dado: 23.5mm / Largo: 62mm",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 65
         }
-      ]
+      ],
+      "total_stock": 65,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Cruceta",
@@ -9517,7 +12839,8 @@ const PRODUCTS_DATA = {
         "8-94332-6830",
         "CRUCETA",
         "GUIS-52",
-        "LUV"
+        "LUV",
+        "TRIX"
       ],
       "linked_ids": [
         413
@@ -9527,11 +12850,20 @@ const PRODUCTS_DATA = {
       "slug": "cruceta-luv",
       "variants": [
         {
-          "codigo_oem": "GUIS-52",
+          "id_variante": 440,
+          "id_repuesto": 413,
           "brand": "TRIX",
-          "precio_usd": 15
+          "codigo_oem": "GUIS-52",
+          "medida": "Dado: 29mm / Largo: 78mm",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Cruceta",
@@ -9542,7 +12874,8 @@ const PRODUCTS_DATA = {
         "CRUCETA",
         "D-MAX",
         "LUV",
-        "TIS-174"
+        "TIS-174",
+        "GENÉRICA"
       ],
       "linked_ids": [
         414
@@ -9551,11 +12884,20 @@ const PRODUCTS_DATA = {
       "slug": "cruceta-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 441,
+          "id_repuesto": 414,
+          "brand": "Genérica",
           "codigo_oem": "TIS-174",
-          "precio_usd": 20
+          "medida": "Dado: 29mm / Largo: 96mm",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Cruceta",
@@ -9568,7 +12910,8 @@ const PRODUCTS_DATA = {
         "8-94332-6830",
         "CRUCETA",
         "GUIS-52",
-        "RODEO"
+        "RODEO",
+        "TRIX"
       ],
       "linked_ids": [
         413
@@ -9578,11 +12921,20 @@ const PRODUCTS_DATA = {
       "slug": "cruceta-rodeo",
       "variants": [
         {
-          "codigo_oem": "GUIS-52",
+          "id_variante": 440,
+          "id_repuesto": 413,
           "brand": "TRIX",
-          "precio_usd": 15
+          "codigo_oem": "GUIS-52",
+          "medida": "Dado: 29mm / Largo: 78mm",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Cruceta",
@@ -9595,7 +12947,8 @@ const PRODUCTS_DATA = {
         "8-94332-6830",
         "CRUCETA",
         "GUIS-52",
-        "TROOPER"
+        "TROOPER",
+        "TRIX"
       ],
       "linked_ids": [
         413
@@ -9605,11 +12958,20 @@ const PRODUCTS_DATA = {
       "slug": "cruceta-trooper",
       "variants": [
         {
-          "codigo_oem": "GUIS-52",
+          "id_variante": 440,
+          "id_repuesto": 413,
           "brand": "TRIX",
-          "precio_usd": 15
+          "codigo_oem": "GUIS-52",
+          "medida": "Dado: 29mm / Largo: 78mm",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Cruceta",
@@ -9619,7 +12981,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "369",
         "CRUCETA",
-        "UNIVERSAL"
+        "UNIVERSAL",
+        "ONE4CARS"
       ],
       "linked_ids": [
         415
@@ -9628,11 +12991,20 @@ const PRODUCTS_DATA = {
       "slug": "cruceta-universal-369",
       "variants": [
         {
+          "id_variante": 442,
+          "id_repuesto": 415,
           "brand": "ONE4CARS",
           "codigo_oem": "369",
-          "precio_usd": 15
+          "medida": "Dado: 27mm / Largo: 83mm",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Damper",
@@ -9643,7 +13015,8 @@ const PRODUCTS_DATA = {
         "8-94165-5151",
         "8-97073-0790",
         "CARIBE",
-        "DAMPER"
+        "DAMPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         417
@@ -9652,11 +13025,20 @@ const PRODUCTS_DATA = {
       "slug": "damper-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 444,
+          "id_repuesto": 417,
+          "brand": "Genérica",
           "codigo_oem": "8-97073-0790",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 36
         }
-      ]
+      ],
+      "total_stock": 36,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Damper",
@@ -9667,7 +13049,8 @@ const PRODUCTS_DATA = {
         "8-94165-5151",
         "8-97073-0790",
         "DAMPER",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         417
@@ -9676,11 +13059,20 @@ const PRODUCTS_DATA = {
       "slug": "damper-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 444,
+          "id_repuesto": 417,
+          "brand": "Genérica",
           "codigo_oem": "8-97073-0790",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 36
         }
-      ]
+      ],
+      "total_stock": 36,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Damper",
@@ -9691,7 +13083,8 @@ const PRODUCTS_DATA = {
         "8-97350-5481",
         "D-MAX",
         "DAMPER",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         419
@@ -9700,11 +13093,20 @@ const PRODUCTS_DATA = {
       "slug": "damper-luv-d-max-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 446,
+          "id_repuesto": 419,
+          "brand": "Genérica",
           "codigo_oem": "8-97350-5481",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Damper",
@@ -9715,7 +13117,8 @@ const PRODUCTS_DATA = {
         "8-97350-5481",
         "D-MAX",
         "DAMPER",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         419
@@ -9724,11 +13127,20 @@ const PRODUCTS_DATA = {
       "slug": "damper-luv-d-max-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 446,
+          "id_repuesto": 419,
+          "brand": "Genérica",
           "codigo_oem": "8-97350-5481",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Disco de Clutch",
@@ -9745,7 +13157,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "DISCO",
         "IS-10",
-        "N2303"
+        "N2303",
+        "PERFECTION"
       ],
       "linked_ids": [
         422
@@ -9754,11 +13167,20 @@ const PRODUCTS_DATA = {
       "slug": "disco-clutch-caribe-2-3",
       "variants": [
         {
+          "id_variante": 449,
+          "id_repuesto": 422,
           "brand": "PERFECTION",
           "codigo_oem": "8-94229-3880",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Disco de Clutch",
@@ -9771,7 +13193,9 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "DISCO",
-        "N2316"
+        "N2316",
+        "DAIKIN",
+        "PERFECTION"
       ],
       "linked_ids": [
         423
@@ -9780,16 +13204,31 @@ const PRODUCTS_DATA = {
       "slug": "disco-clutch-caribe-2-6",
       "variants": [
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "8-97036-0620",
-          "precio_usd": 50
-        },
-        {
+          "id_variante": 451,
+          "id_repuesto": 423,
           "brand": "DAIKIN",
           "codigo_oem": "8-97036-0620",
-          "precio_usd": 120
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 120.0,
+          "stock": 4
+        },
+        {
+          "id_variante": 450,
+          "id_repuesto": 423,
+          "brand": "PERFECTION",
+          "codigo_oem": "8-97036-0620",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Disco de Clutch",
@@ -9807,7 +13246,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "G-200",
         "IS-10",
-        "N2303"
+        "N2303",
+        "PERFECTION"
       ],
       "linked_ids": [
         422
@@ -9816,11 +13256,20 @@ const PRODUCTS_DATA = {
       "slug": "disco-clutch-caribe-g-200",
       "variants": [
         {
+          "id_variante": 449,
+          "id_repuesto": 422,
           "brand": "PERFECTION",
           "codigo_oem": "8-94229-3880",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Disco de Clutch",
@@ -9837,7 +13286,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "IS-10",
         "LUV",
-        "N2303"
+        "N2303",
+        "PERFECTION"
       ],
       "linked_ids": [
         422
@@ -9846,11 +13296,20 @@ const PRODUCTS_DATA = {
       "slug": "disco-clutch-luv-2-2",
       "variants": [
         {
+          "id_variante": 449,
+          "id_repuesto": 422,
           "brand": "PERFECTION",
           "codigo_oem": "8-94229-3880",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Disco de Clutch",
@@ -9867,7 +13326,8 @@ const PRODUCTS_DATA = {
         "DISCO",
         "IS-10",
         "LUV",
-        "N2303"
+        "N2303",
+        "PERFECTION"
       ],
       "linked_ids": [
         422
@@ -9876,11 +13336,20 @@ const PRODUCTS_DATA = {
       "slug": "disco-clutch-luv-2-3",
       "variants": [
         {
+          "id_variante": 449,
+          "id_repuesto": 422,
           "brand": "PERFECTION",
           "codigo_oem": "8-94229-3880",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Disco de Clutch",
@@ -9896,7 +13365,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "DISCO",
-        "LUV"
+        "LUV",
+        "DAIKIN"
       ],
       "linked_ids": [
         425
@@ -9905,16 +13375,20 @@ const PRODUCTS_DATA = {
       "slug": "disco-clutch-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "8-97941-5290",
-          "precio_usd": 75
-        },
-        {
+          "id_variante": 453,
+          "id_repuesto": 425,
           "brand": "DAIKIN",
           "codigo_oem": "8-97941-5290",
-          "precio_usd": 245
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 245.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 245.0
     },
     {
       "category": "Disco de Clutch",
@@ -9928,7 +13402,9 @@ const PRODUCTS_DATA = {
         "DISCO",
         "DMAX",
         "LUV",
-        "N2316"
+        "N2316",
+        "DAIKIN",
+        "PERFECTION"
       ],
       "linked_ids": [
         423
@@ -9938,16 +13414,31 @@ const PRODUCTS_DATA = {
       "slug": "disco-clutch-luv-dmax-2-4",
       "variants": [
         {
+          "id_variante": 451,
+          "id_repuesto": 423,
+          "brand": "DAIKIN",
           "codigo_oem": "8-97036-0620",
-          "brand": "PERFECTION",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 120.0,
+          "stock": 4
         },
         {
+          "id_variante": 450,
+          "id_repuesto": 423,
+          "brand": "PERFECTION",
           "codigo_oem": "8-97036-0620",
-          "brand": "DAIKIN",
-          "precio_usd": 120
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Disco de Clutch",
@@ -9962,7 +13453,8 @@ const PRODUCTS_DATA = {
         "8-97941-5290",
         "CLUTCH",
         "DISCO",
-        "RODEO"
+        "RODEO",
+        "DAIKIN"
       ],
       "linked_ids": [
         425
@@ -9971,16 +13463,20 @@ const PRODUCTS_DATA = {
       "slug": "disco-clutch-rodeo-3-2",
       "variants": [
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "8-97941-5290",
-          "precio_usd": 75
-        },
-        {
+          "id_variante": 453,
+          "id_repuesto": 425,
           "brand": "DAIKIN",
           "codigo_oem": "8-97941-5290",
-          "precio_usd": 245
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 245.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 245.0
     },
     {
       "category": "Disco de Clutch",
@@ -9995,7 +13491,8 @@ const PRODUCTS_DATA = {
         "8-97941-5290",
         "CLUTCH",
         "DISCO",
-        "TROOPER"
+        "TROOPER",
+        "DAIKIN"
       ],
       "linked_ids": [
         425
@@ -10004,16 +13501,20 @@ const PRODUCTS_DATA = {
       "slug": "disco-clutch-trooper-3-2",
       "variants": [
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "8-97941-5290",
-          "precio_usd": 75
-        },
-        {
+          "id_variante": 453,
+          "id_repuesto": 425,
           "brand": "DAIKIN",
           "codigo_oem": "8-97941-5290",
-          "precio_usd": 245
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 245.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 245.0
     },
     {
       "category": "Disco de Freno",
@@ -10026,7 +13527,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DISCO",
         "FRENO",
-        "LUV"
+        "LUV",
+        "TAKASHI"
       ],
       "linked_ids": [
         433
@@ -10035,11 +13537,20 @@ const PRODUCTS_DATA = {
       "slug": "disco-de-freno-luv-d-max-2-4",
       "variants": [
         {
+          "id_variante": 460,
+          "id_repuesto": 433,
           "brand": "TAKASHI",
           "codigo_oem": "8-97308-8680",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Disco de Freno",
@@ -10052,7 +13563,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DISCO",
         "FRENO",
-        "LUV"
+        "LUV",
+        "TAKASHI"
       ],
       "linked_ids": [
         433
@@ -10061,11 +13573,20 @@ const PRODUCTS_DATA = {
       "slug": "disco-de-freno-luv-d-max-2-5",
       "variants": [
         {
+          "id_variante": 460,
+          "id_repuesto": 433,
           "brand": "TAKASHI",
           "codigo_oem": "8-97308-8680",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Disco de Freno",
@@ -10079,7 +13600,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DISCO",
         "FRENO",
-        "LUV"
+        "LUV",
+        "TAKASHI"
       ],
       "linked_ids": [
         433
@@ -10088,11 +13610,20 @@ const PRODUCTS_DATA = {
       "slug": "disco-de-freno-luv-d-max-3-0-4x2",
       "variants": [
         {
+          "id_variante": 460,
+          "id_repuesto": 433,
           "brand": "TAKASHI",
           "codigo_oem": "8-97308-8680",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Disco de Freno",
@@ -10107,7 +13638,9 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DISCO",
         "FRENO",
-        "LUV"
+        "LUV",
+        "HIPERFREIOS",
+        "PGT"
       ],
       "linked_ids": [
         432
@@ -10116,16 +13649,31 @@ const PRODUCTS_DATA = {
       "slug": "disco-de-freno-luv-d-max-3-0-4x4",
       "variants": [
         {
+          "id_variante": 459,
+          "id_repuesto": 432,
           "brand": "HIPERFREIOS",
           "codigo_oem": "8-97360-6780",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 95.0,
+          "stock": 5
         },
         {
+          "id_variante": 1271,
+          "id_repuesto": 432,
           "brand": "PGT",
           "codigo_oem": "8-97360-6780",
-          "precio_usd": 80
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 80.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 80.0
     },
     {
       "category": "Disco de Freno",
@@ -10139,7 +13687,9 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DISCO",
         "FRENO",
-        "LUV"
+        "LUV",
+        "HIPERFREIOS",
+        "PGT"
       ],
       "linked_ids": [
         432
@@ -10148,16 +13698,31 @@ const PRODUCTS_DATA = {
       "slug": "disco-de-freno-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 459,
+          "id_repuesto": 432,
           "brand": "HIPERFREIOS",
           "codigo_oem": "8-97360-6780",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 95.0,
+          "stock": 5
         },
         {
+          "id_variante": 1271,
+          "id_repuesto": 432,
           "brand": "PGT",
           "codigo_oem": "8-97360-6780",
-          "precio_usd": 80
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 80.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 80.0
     },
     {
       "category": "Distribuidor",
@@ -10168,7 +13733,8 @@ const PRODUCTS_DATA = {
         "2000",
         "8-94219-9540",
         "CARIBE",
-        "DISTRIBUIDOR"
+        "DISTRIBUIDOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         434
@@ -10177,11 +13743,20 @@ const PRODUCTS_DATA = {
       "slug": "distribuidor-caribe-2000",
       "variants": [
         {
+          "id_variante": 461,
+          "id_repuesto": 434,
+          "brand": "Genérica",
           "codigo_oem": "8-94219-9540",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Distribuidor",
@@ -10193,7 +13768,8 @@ const PRODUCTS_DATA = {
         "8-94476-1421",
         "8-97129-7480",
         "DISTRIBUIDOR",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         436
@@ -10202,11 +13778,20 @@ const PRODUCTS_DATA = {
       "slug": "distribuidor-luv-2300",
       "variants": [
         {
+          "id_variante": 463,
+          "id_repuesto": 436,
+          "brand": "Genérica",
           "codigo_oem": "8-94476-1421",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Embolo",
@@ -10220,7 +13805,8 @@ const PRODUCTS_DATA = {
         "1-81129-4990",
         "ARRANQUE",
         "CARIBE",
-        "EMBOLO"
+        "EMBOLO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         437
@@ -10230,11 +13816,20 @@ const PRODUCTS_DATA = {
       "slug": "embolo-arranque-caribe",
       "variants": [
         {
+          "id_variante": 464,
+          "id_repuesto": 437,
+          "brand": "Genérica",
           "codigo_oem": "053660-0440",
-          "brand": "Original",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Embolo",
@@ -10248,7 +13843,8 @@ const PRODUCTS_DATA = {
         "1-81129-4990",
         "ARRANQUE",
         "EMBOLO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         437
@@ -10257,11 +13853,20 @@ const PRODUCTS_DATA = {
       "slug": "embolo-arranque-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 464,
+          "id_repuesto": 437,
+          "brand": "Genérica",
           "codigo_oem": "053660-0440",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Empacadura Bajante",
@@ -10274,7 +13879,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CONICA",
         "EMPACADURA",
-        "LA-8194-1"
+        "LA-8194-1",
+        "GENÉRICA"
       ],
       "linked_ids": [
         439
@@ -10283,11 +13889,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-bajante-conica-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 466,
+          "id_repuesto": 439,
+          "brand": "Genérica",
           "codigo_oem": "9-22116-0210",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 25
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Bajante",
@@ -10300,7 +13915,8 @@ const PRODUCTS_DATA = {
         "CONICA",
         "EMPACADURA",
         "LA-8194-1",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         439
@@ -10309,11 +13925,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-bajante-conica-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 466,
+          "id_repuesto": 439,
+          "brand": "Genérica",
           "codigo_oem": "9-22116-0210",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 25
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Bajante",
@@ -10326,7 +13951,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA",
         "LA-8624-1",
-        "PLANA"
+        "PLANA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         438
@@ -10335,11 +13961,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-bajante-plana-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 465,
+          "id_repuesto": 438,
+          "brand": "Genérica",
           "codigo_oem": "8-97069-2870",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 33
         }
-      ]
+      ],
+      "total_stock": 33,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Empacadura Bajante",
@@ -10352,7 +13987,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "LA-8624-1",
         "LUV",
-        "PLANA"
+        "PLANA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         438
@@ -10361,11 +13997,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-bajante-plana-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 465,
+          "id_repuesto": 438,
+          "brand": "Genérica",
           "codigo_oem": "8-97069-2870",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 33
         }
-      ]
+      ],
+      "total_stock": 33,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Empacadura Camara",
@@ -10377,7 +14022,8 @@ const PRODUCTS_DATA = {
         "8-94324-0530",
         "CAMARA",
         "EMPACADURA",
-        "LUV"
+        "LUV",
+        "AMER.PRTS"
       ],
       "linked_ids": [
         442
@@ -10387,16 +14033,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-camara-luv-2-3",
       "variants": [
         {
-          "codigo_oem": "8-94146-2441",
+          "id_variante": 469,
+          "id_repuesto": 442,
           "brand": "AMER.PRTS",
-          "precio_usd": 10
-        },
-        {
           "codigo_oem": "8-94146-2441",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 195
         }
-      ]
+      ],
+      "total_stock": 195,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Camara",
@@ -10408,7 +14058,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "EMPACADURA",
         "RODEO",
-        "SOCH"
+        "SOCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         451
@@ -10417,11 +14068,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-camara-rodeo-3-2-soch",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 478,
+          "id_repuesto": 451,
+          "brand": "Genérica",
           "codigo_oem": "8-97019-3611",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Empacadura Camara",
@@ -10433,7 +14093,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "EMPACADURA",
         "SOHC",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         451
@@ -10442,11 +14103,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-camara-trooper-3-2-sohc",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 478,
+          "id_repuesto": 451,
+          "brand": "Genérica",
           "codigo_oem": "8-97019-3611",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Empacadura Camara",
@@ -10458,7 +14128,8 @@ const PRODUCTS_DATA = {
         "8-94324-0530",
         "CAMARA",
         "CARIBE",
-        "EMPACADURA"
+        "EMPACADURA",
+        "AMER.PRTS"
       ],
       "linked_ids": [
         442
@@ -10467,16 +14138,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-de-camara-caribe-2-3-2",
       "variants": [
         {
+          "id_variante": 469,
+          "id_repuesto": 442,
           "brand": "AMER.PRTS",
           "codigo_oem": "8-94146-2441",
-          "precio_usd": 10
-        },
-        {
-          "brand": "RUSHMORE",
-          "codigo_oem": "8-94146-2441",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 195
         }
-      ]
+      ],
+      "total_stock": 195,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Camara",
@@ -10487,7 +14162,8 @@ const PRODUCTS_DATA = {
         "8-94174-2790",
         "CAMARA",
         "CARIBE",
-        "EMPACADURA"
+        "EMPACADURA",
+        "AMER.PRTS"
       ],
       "linked_ids": [
         444
@@ -10496,16 +14172,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-de-camara-caribe-2-6",
       "variants": [
         {
+          "id_variante": 471,
+          "id_repuesto": 444,
           "brand": "AMER.PRTS",
           "codigo_oem": "8-94174-2790",
-          "precio_usd": 10
-        },
-        {
-          "brand": "RUSHMORE",
-          "codigo_oem": "8-94174-2790",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 196
         }
-      ]
+      ],
+      "total_stock": 196,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Camara",
@@ -10517,7 +14197,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "CARIBE",
         "EMPACADURA",
-        "G-200"
+        "G-200",
+        "GENÉRICA"
       ],
       "linked_ids": [
         441
@@ -10526,11 +14207,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-de-camara-caribe-g-200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 468,
+          "id_repuesto": 441,
+          "brand": "Genérica",
           "codigo_oem": "8-94213-8091",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Camara",
@@ -10546,7 +14236,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "D-MAX",
         "EMPACADURA",
-        "LUV"
+        "LUV",
+        "NIKHO"
       ],
       "linked_ids": [
         447
@@ -10555,21 +14246,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-de-camara-de-amianto-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-97262-0940",
-          "precio_usd": 0
-        },
-        {
-          "brand": "KP",
-          "codigo_oem": "8-97262-0940",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1242,
+          "id_repuesto": 447,
           "brand": "NIKHO",
           "codigo_oem": "8-97262-0940",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 15
         }
-      ]
+      ],
+      "total_stock": 15,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Camara",
@@ -10581,7 +14271,8 @@ const PRODUCTS_DATA = {
         "8-93282-6650",
         "CAMARA",
         "EMPACADURA",
-        "LUV"
+        "LUV",
+        "RUSHMORE"
       ],
       "linked_ids": [
         446
@@ -10590,11 +14281,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-de-camara-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 473,
+          "id_repuesto": 446,
+          "brand": "RUSHMORE",
           "codigo_oem": "8-92062-3300",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Empacadura Camara",
@@ -10607,7 +14307,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "D-MAX",
         "EMPACADURA",
-        "LUV"
+        "LUV",
+        "RUSHMORE"
       ],
       "linked_ids": [
         446
@@ -10616,11 +14317,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-de-camara-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 473,
+          "id_repuesto": 446,
+          "brand": "RUSHMORE",
           "codigo_oem": "8-92062-3300",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Empacadura Camara",
@@ -10634,7 +14344,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "EMPACADURA",
         "LUV",
-        "METALICA"
+        "METALICA",
+        "RINTOCA"
       ],
       "linked_ids": [
         449
@@ -10643,16 +14354,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-de-camara-metalica-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 476,
+          "id_repuesto": 449,
           "brand": "RINTOCA",
           "codigo_oem": "8-97262-0940",
-          "precio_usd": 30
-        },
-        {
-          "brand": "RUSHMORE",
-          "codigo_oem": "8-97262-0940",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Empacadura Camarin",
@@ -10665,7 +14380,8 @@ const PRODUCTS_DATA = {
         "CAMARIN",
         "D-MAX",
         "EMPACADURA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         452
@@ -10674,11 +14390,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-camarin-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 479,
+          "id_repuesto": 452,
+          "brand": "Genérica",
           "codigo_oem": "8-97254-4480",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Empacadura Camarin",
@@ -10690,7 +14415,8 @@ const PRODUCTS_DATA = {
         "CAMARIN",
         "EMPACADURA",
         "RODEO",
-        "SOCH"
+        "SOCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         368,
@@ -10700,11 +14426,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-camarin-rodeo-3-2-soch",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1148,
+          "id_repuesto": 1112,
+          "brand": "Genérica",
           "codigo_oem": "8-94364-5770",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Empacadura Camarin",
@@ -10716,7 +14451,8 @@ const PRODUCTS_DATA = {
         "CAMARIN",
         "EMPACADURA",
         "SOHC",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         368,
@@ -10726,11 +14462,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-camarin-trooper-3-2-sohc",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1148,
+          "id_repuesto": 1112,
+          "brand": "Genérica",
           "codigo_oem": "8-94364-5770",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Empacadura Carter",
@@ -10742,20 +14487,31 @@ const PRODUCTS_DATA = {
         "8-94235-2881",
         "CARTER",
         "EMPACADURA",
-        "LUV"
+        "LUV",
+        "RCA810",
+        "GENÉRICA"
       ],
       "linked_ids": [
         454
       ],
-      "oem": "8-94235-2881",
+      "oem": "8-94235-2881 / RCA810",
       "slug": "empacadura-carter-luv-2-3-4x2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 481,
+          "id_repuesto": 454,
+          "brand": "Genérica",
           "codigo_oem": "8-94235-2881",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Carter",
@@ -10769,7 +14525,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "JUEGO",
         "OS-209",
-        "OS-32045"
+        "OS-32045",
+        "FRACO"
       ],
       "linked_ids": [
         655
@@ -10778,11 +14535,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-carter-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 686,
+          "id_repuesto": 655,
+          "brand": "FRACO",
           "codigo_oem": "OS-209",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Carter",
@@ -10796,7 +14562,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "JUEGO",
         "OS-209",
-        "OS-32045"
+        "OS-32045",
+        "FRACO"
       ],
       "linked_ids": [
         655
@@ -10805,11 +14572,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-carter-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 686,
+          "id_repuesto": 655,
+          "brand": "FRACO",
           "codigo_oem": "OS-209",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Carter",
@@ -10823,7 +14599,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV",
         "OS-209",
-        "OS-32045"
+        "OS-32045",
+        "FRACO"
       ],
       "linked_ids": [
         655
@@ -10832,11 +14609,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-carter-luv-23ax4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 686,
+          "id_repuesto": 655,
+          "brand": "FRACO",
           "codigo_oem": "OS-209",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -10849,7 +14635,8 @@ const PRODUCTS_DATA = {
         "ADMISION",
         "CARIBE",
         "EMPACADURA",
-        "MULTIPLE"
+        "MULTIPLE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         459
@@ -10858,11 +14645,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-multiple-admision-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 486,
+          "id_repuesto": 459,
+          "brand": "Genérica",
           "codigo_oem": "8-94146-2490",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 34
         }
-      ]
+      ],
+      "total_stock": 34,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -10875,7 +14671,8 @@ const PRODUCTS_DATA = {
         "ADMISION",
         "CARIBE",
         "EMPACADURA",
-        "MULTIPLE"
+        "MULTIPLE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         459
@@ -10884,11 +14681,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-multiple-admision-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 486,
+          "id_repuesto": 459,
+          "brand": "Genérica",
           "codigo_oem": "8-94146-2490",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 34
         }
-      ]
+      ],
+      "total_stock": 34,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -10901,7 +14707,8 @@ const PRODUCTS_DATA = {
         "ADMISION",
         "EMPACADURA",
         "LUV",
-        "MULTIPLE"
+        "MULTIPLE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         459
@@ -10910,11 +14717,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-multiple-admision-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 486,
+          "id_repuesto": 459,
+          "brand": "Genérica",
           "codigo_oem": "8-94146-2490",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 34
         }
-      ]
+      ],
+      "total_stock": 34,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -10928,7 +14744,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "MULTIPLE",
         "RODEO",
-        "SOCH"
+        "SOCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         368,
@@ -10938,11 +14755,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-multiple-de-admision-rodeo-3-2-soch",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 488,
+          "id_repuesto": 461,
+          "brand": "Genérica",
           "codigo_oem": "8-94364-5770",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Empacadura Multiple Admision",
@@ -10956,7 +14782,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "MULTIPLE",
         "SOHC",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         368,
@@ -10966,11 +14793,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-multiple-de-admision-trooper-3-2-sohc",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 488,
+          "id_repuesto": 461,
+          "brand": "Genérica",
           "codigo_oem": "8-94364-5770",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -10983,7 +14819,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA",
         "ESCAPE",
-        "MULTIPLE"
+        "MULTIPLE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         369,
@@ -10993,11 +14830,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-multiple-de-escape-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 490,
+          "id_repuesto": 463,
+          "brand": "Genérica",
           "codigo_oem": "8-94246-1090",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 23
         }
-      ]
+      ],
+      "total_stock": 23,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -11010,7 +14856,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA",
         "ESCAPE",
-        "MULTIPLE"
+        "MULTIPLE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         369,
@@ -11020,11 +14867,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-multiple-de-escape-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 490,
+          "id_repuesto": 463,
+          "brand": "Genérica",
           "codigo_oem": "8-94246-1090",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 23
         }
-      ]
+      ],
+      "total_stock": 23,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -11037,7 +14893,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "ESCAPE",
         "LUV",
-        "MULTIPLE"
+        "MULTIPLE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         369,
@@ -11047,11 +14904,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-multiple-de-escape-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 490,
+          "id_repuesto": 463,
+          "brand": "Genérica",
           "codigo_oem": "8-94246-1090",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 23
         }
-      ]
+      ],
+      "total_stock": 23,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -11065,7 +14931,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "MULTIPLE",
         "RODEO",
-        "SOCH"
+        "SOCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         465
@@ -11074,11 +14941,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-multiple-de-escape-rodeo-3-2-soch",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 492,
+          "id_repuesto": 465,
+          "brand": "Genérica",
           "codigo_oem": "8-94323-1730",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Empacadura Multiple Escape",
@@ -11092,7 +14968,8 @@ const PRODUCTS_DATA = {
         "ESCAPE",
         "MULTIPLE",
         "SOHC",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         465
@@ -11101,11 +14978,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-multiple-de-escape-trooper-3-2-sohc",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 492,
+          "id_repuesto": 465,
+          "brand": "Genérica",
           "codigo_oem": "8-94323-1730",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -11119,7 +15005,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "TAPA",
         "TAPAVALVULA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         467
@@ -11128,11 +15015,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-tapa-valvula-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 494,
+          "id_repuesto": 467,
+          "brand": "Genérica",
           "codigo_oem": "8-94214-9850",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -11146,7 +15042,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "TAPA",
         "TAPAVALVULA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         467
@@ -11155,11 +15052,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-tapa-valvula-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 494,
+          "id_repuesto": 467,
+          "brand": "Genérica",
           "codigo_oem": "8-94214-9850",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -11172,7 +15078,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPA",
         "TAPAVALVULA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         468
@@ -11181,11 +15088,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-tapa-valvula-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 495,
+          "id_repuesto": 468,
+          "brand": "Genérica",
           "codigo_oem": "8-90467-6610",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -11198,7 +15114,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPA",
         "TAPAVALVULA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         467
@@ -11207,11 +15124,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-tapa-valvula-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 494,
+          "id_repuesto": 467,
+          "brand": "Genérica",
           "codigo_oem": "8-94214-9850",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 37
         }
-      ]
+      ],
+      "total_stock": 37,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -11225,7 +15151,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPA",
         "TAPAVALVULA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         468
@@ -11234,11 +15161,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-tapa-valvula-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 495,
+          "id_repuesto": 468,
+          "brand": "Genérica",
           "codigo_oem": "8-90467-6610",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -11252,7 +15188,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TAPA",
         "TAPAVALVULA",
-        "VALVULA"
+        "VALVULA",
+        "AMERICAN PARTS"
       ],
       "linked_ids": [
         469
@@ -11261,21 +15198,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-tapa-valvula-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-97172-3940",
-          "precio_usd": 0
-        },
-        {
-          "brand": "RUSHMORE",
-          "codigo_oem": "8-97172-3940",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1075,
+          "id_repuesto": 469,
           "brand": "AMERICAN PARTS",
           "codigo_oem": "8-97172-3940",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 77
         }
-      ]
+      ],
+      "total_stock": 77,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Empacadura Tapavalvula",
@@ -11289,7 +15225,8 @@ const PRODUCTS_DATA = {
         "SOCH",
         "TAPA",
         "TAPAVALVULA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         471
@@ -11298,11 +15235,20 @@ const PRODUCTS_DATA = {
       "slug": "empacadura-tapa-valvula-rodeo-3-2-soch",
       "variants": [
         {
+          "id_variante": 498,
+          "id_repuesto": 471,
+          "brand": "Genérica",
           "codigo_oem": "8-97048-7202",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Engranaje Bomba Aceite",
@@ -11315,7 +15261,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BOMBA",
         "CARIBE",
-        "ENGRANAJE"
+        "ENGRANAJE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         472
@@ -11324,11 +15271,20 @@ const PRODUCTS_DATA = {
       "slug": "engranaje-bomba-aceite-caribe-2-3",
       "variants": [
         {
+          "id_variante": 499,
+          "id_repuesto": 472,
+          "brand": "Genérica",
           "codigo_oem": "8-94231-1661",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Engranaje Bomba Aceite",
@@ -11341,7 +15297,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BOMBA",
         "ENGRANAJE",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         472
@@ -11350,11 +15307,20 @@ const PRODUCTS_DATA = {
       "slug": "engranaje-bomba-aceite-luv-2-3",
       "variants": [
         {
+          "id_variante": 499,
+          "id_repuesto": 472,
+          "brand": "Genérica",
           "codigo_oem": "8-94231-1661",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Engranaje Cigueñal",
@@ -11366,7 +15332,8 @@ const PRODUCTS_DATA = {
         "8-94213-8150",
         "CARIBE",
         "CIGUENAL",
-        "ENGRANAJE"
+        "ENGRANAJE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         473
@@ -11375,11 +15342,20 @@ const PRODUCTS_DATA = {
       "slug": "engranaje-de-ciguenal-caribe-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 500,
+          "id_repuesto": 473,
+          "brand": "Genérica",
           "codigo_oem": "8-94213-8150",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Engranaje Cigueñal",
@@ -11391,7 +15367,8 @@ const PRODUCTS_DATA = {
         "8-94231-1651",
         "CARIBE",
         "CIGUENAL",
-        "ENGRANAJE"
+        "ENGRANAJE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         474
@@ -11400,11 +15377,20 @@ const PRODUCTS_DATA = {
       "slug": "engranaje-de-ciguenal-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 501,
+          "id_repuesto": 474,
+          "brand": "Genérica",
           "codigo_oem": "8-94231-1651",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Engranaje Cigueñal",
@@ -11415,7 +15401,8 @@ const PRODUCTS_DATA = {
         "8-94231-1651",
         "CIGUENAL",
         "ENGRANAJE",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         474
@@ -11424,11 +15411,20 @@ const PRODUCTS_DATA = {
       "slug": "engranaje-de-ciguenal-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 501,
+          "id_repuesto": 474,
+          "brand": "Genérica",
           "codigo_oem": "8-94231-1651",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Engranaje Leva",
@@ -11441,7 +15437,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ENGRANAJE",
         "G-2000",
-        "LEVA"
+        "LEVA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         477
@@ -11450,11 +15447,20 @@ const PRODUCTS_DATA = {
       "slug": "engranaje-de-leva-caribe-g-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 504,
+          "id_repuesto": 477,
+          "brand": "Genérica",
           "codigo_oem": "8-94213-8160",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Envase Direccion",
@@ -11468,7 +15474,8 @@ const PRODUCTS_DATA = {
         "DIRECCION",
         "ENVASE",
         "LUV",
-        "RESERVORIO"
+        "RESERVORIO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         481
@@ -11477,11 +15484,20 @@ const PRODUCTS_DATA = {
       "slug": "reservorio-aceite-direccion-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 508,
+          "id_repuesto": 481,
+          "brand": "Genérica",
           "codigo_oem": "8-97234-3500",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Envase Refrigerante",
@@ -11493,7 +15509,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ENVASE",
         "LUV",
-        "REFRIGERANTE"
+        "REFRIGERANTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         478
@@ -11502,11 +15519,20 @@ const PRODUCTS_DATA = {
       "slug": "envase-refrigerante-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 505,
+          "id_repuesto": 478,
+          "brand": "Genérica",
           "codigo_oem": "8-97941-5013",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 14
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Esparrago",
@@ -11519,7 +15545,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "ESPARRAGO",
         "LUV",
-        "RUEDA"
+        "RUEDA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         391,
@@ -11529,11 +15556,20 @@ const PRODUCTS_DATA = {
       "slug": "esparrago-rueda-delantera-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 511,
+          "id_repuesto": 484,
+          "brand": "Genérica",
           "codigo_oem": "8-97213-8710",
-          "precio_usd": 2
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.0
     },
     {
       "category": "Esparrago",
@@ -11546,7 +15582,8 @@ const PRODUCTS_DATA = {
         "ESPARRAGO",
         "LUV",
         "RUEDA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         392,
@@ -11556,11 +15593,20 @@ const PRODUCTS_DATA = {
       "slug": "esparrago-rueda-trasera-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1084,
+          "id_repuesto": 1053,
+          "brand": "Genérica",
           "codigo_oem": "8-97213-8700",
-          "precio_usd": 2
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.0
     },
     {
       "category": "Espejo",
@@ -11574,7 +15620,8 @@ const PRODUCTS_DATA = {
         "8-97357-8750",
         "D-MAX",
         "ESPEJO",
-        "LUV"
+        "LUV",
+        "TYC"
       ],
       "linked_ids": [
         486,
@@ -11584,26 +15631,31 @@ const PRODUCTS_DATA = {
       "slug": "espejo-luv-d-max-2005-2014",
       "variants": [
         {
-          "brand": "YOSAI",
-          "codigo_oem": "8-97357-8750",
-          "precio_usd": 35
-        },
-        {
+          "id_variante": 516,
+          "id_repuesto": 486,
           "brand": "TYC",
           "codigo_oem": "8-97357-8750",
-          "precio_usd": 70
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 4
         },
         {
-          "brand": "YOSAI",
-          "codigo_oem": "8-97357-8740",
-          "precio_usd": 35
-        },
-        {
+          "id_variante": 1154,
+          "id_repuesto": 1115,
           "brand": "TYC",
           "codigo_oem": "8-97357-8740",
-          "precio_usd": 70
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 70.0
     },
     {
       "category": "Espejo",
@@ -11616,7 +15668,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DERECHO",
         "ESPEJO",
-        "RETROVISOR"
+        "RETROVISOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         393,
@@ -11626,11 +15679,20 @@ const PRODUCTS_DATA = {
       "slug": "espejo-retrovisor-derecho-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1150,
+          "id_repuesto": 1114,
+          "brand": "Genérica",
           "codigo_oem": "8-94495-2281",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Espejo",
@@ -11643,7 +15705,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DERECHO",
         "ESPEJO",
-        "RETROVISOR"
+        "RETROVISOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         393,
@@ -11653,11 +15716,20 @@ const PRODUCTS_DATA = {
       "slug": "espejo-retrovisor-derecho-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1150,
+          "id_repuesto": 1114,
+          "brand": "Genérica",
           "codigo_oem": "8-94495-2281",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Espejo Luna",
@@ -11670,7 +15742,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ESPEJO",
         "LUNA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         488,
@@ -11680,16 +15753,31 @@ const PRODUCTS_DATA = {
       "slug": "luna-espejo-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 517,
+          "id_repuesto": 488,
+          "brand": "Genérica",
           "codigo_oem": "8-97349-9820",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 6
         },
         {
-          "brand": "Original",
+          "id_variante": 1155,
+          "id_repuesto": 1117,
+          "brand": "Genérica",
           "codigo_oem": "8-97349-9810",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -11704,7 +15792,10 @@ const PRODUCTS_DATA = {
         "ARBOL",
         "CARIBE",
         "ESTOPERA",
-        "LEVA"
+        "LEVA",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         489
@@ -11713,21 +15804,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-arbol-de-leva-caribe-2-3",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 5
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1071,
+          "id_repuesto": 489,
           "brand": "FELPRO",
           "codigo_oem": "8-94215-2200",
-          "precio_usd": 15
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 33
+        },
+        {
+          "id_variante": 518,
+          "id_repuesto": 489,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 519,
+          "id_repuesto": 489,
+          "brand": "SABO",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 97
         }
-      ]
+      ],
+      "total_stock": 327,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -11742,7 +15854,10 @@ const PRODUCTS_DATA = {
         "ARBOL",
         "CARIBE",
         "ESTOPERA",
-        "LEVA"
+        "LEVA",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         489
@@ -11751,21 +15866,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-arbol-de-leva-caribe-2-6",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 5
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1071,
+          "id_repuesto": 489,
           "brand": "FELPRO",
           "codigo_oem": "8-94215-2200",
-          "precio_usd": 15
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 33
+        },
+        {
+          "id_variante": 518,
+          "id_repuesto": 489,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 519,
+          "id_repuesto": 489,
+          "brand": "SABO",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 97
         }
-      ]
+      ],
+      "total_stock": 327,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -11780,7 +15916,10 @@ const PRODUCTS_DATA = {
         "ARBOL",
         "ESTOPERA",
         "LEVA",
-        "LUV"
+        "LUV",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         489
@@ -11789,21 +15928,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-arbol-de-leva-luv-2-3",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 5
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1071,
+          "id_repuesto": 489,
           "brand": "FELPRO",
           "codigo_oem": "8-94215-2200",
-          "precio_usd": 15
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 33
+        },
+        {
+          "id_variante": 518,
+          "id_repuesto": 489,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 519,
+          "id_repuesto": 489,
+          "brand": "SABO",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 97
         }
-      ]
+      ],
+      "total_stock": 327,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -11819,7 +15979,10 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ESTOPERA",
         "LEVA",
-        "LUV"
+        "LUV",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         489
@@ -11828,21 +15991,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-arbol-de-leva-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 5
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1071,
+          "id_repuesto": 489,
           "brand": "FELPRO",
           "codigo_oem": "8-94215-2200",
-          "precio_usd": 15
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 33
+        },
+        {
+          "id_variante": 518,
+          "id_repuesto": 489,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 519,
+          "id_repuesto": 489,
+          "brand": "SABO",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 97
         }
-      ]
+      ],
+      "total_stock": 327,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -11857,7 +16041,10 @@ const PRODUCTS_DATA = {
         "ARBOL",
         "ESTOPERA",
         "LEVA",
-        "RODEO"
+        "RODEO",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         489
@@ -11866,21 +16053,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-arbol-de-leva-rodeo",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 5
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1071,
+          "id_repuesto": 489,
           "brand": "FELPRO",
           "codigo_oem": "8-94215-2200",
-          "precio_usd": 15
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 33
+        },
+        {
+          "id_variante": 518,
+          "id_repuesto": 489,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 519,
+          "id_repuesto": 489,
+          "brand": "SABO",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 97
         }
-      ]
+      ],
+      "total_stock": 327,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Arbol de Leva",
@@ -11895,7 +16103,10 @@ const PRODUCTS_DATA = {
         "ARBOL",
         "ESTOPERA",
         "LEVA",
-        "TROOPER"
+        "TROOPER",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         489
@@ -11904,21 +16115,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-arbol-de-leva-trooper",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 5
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94215-2200",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1071,
+          "id_repuesto": 489,
           "brand": "FELPRO",
           "codigo_oem": "8-94215-2200",
-          "precio_usd": 15
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 33
+        },
+        {
+          "id_variante": 518,
+          "id_repuesto": 489,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 519,
+          "id_repuesto": 489,
+          "brand": "SABO",
+          "codigo_oem": "8-94215-2200",
+          "medida": "30*45*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 97
         }
-      ]
+      ],
+      "total_stock": 327,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Bomba de Aceite",
@@ -11931,7 +16163,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BOMBA",
         "CARIBE",
-        "ESTOPERA"
+        "ESTOPERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         492
@@ -11940,11 +16173,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-bomba-de-aceite-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 521,
+          "id_repuesto": 492,
+          "brand": "Genérica",
           "codigo_oem": "8-94369-5160",
-          "precio_usd": 5
+          "medida": "24X40X8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 127
         }
-      ]
+      ],
+      "total_stock": 127,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Bomba de Aceite",
@@ -11957,7 +16199,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "BOMBA",
         "ESTOPERA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         492
@@ -11966,11 +16209,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-bomba-de-aceite-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 521,
+          "id_repuesto": 492,
+          "brand": "Genérica",
           "codigo_oem": "8-94369-5160",
-          "precio_usd": 5
+          "medida": "24X40X8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 127
         }
-      ]
+      ],
+      "total_stock": 127,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -11984,7 +16236,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "DELANTERA",
         "ESTOPERA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         495
@@ -11993,11 +16246,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-bomba-aceite-ciguenal-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 524,
+          "id_repuesto": 495,
+          "brand": "Genérica",
           "codigo_oem": "8-90183-5720",
-          "precio_usd": 5
+          "medida": "31*50*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -12012,7 +16274,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERA",
         "ESTOPERA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         495
@@ -12021,11 +16284,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-bomba-aceite-ciguenal-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 524,
+          "id_repuesto": 495,
+          "brand": "Genérica",
           "codigo_oem": "8-90183-5720",
-          "precio_usd": 5
+          "medida": "31*50*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -12040,7 +16312,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "DELANTERA",
         "ESTOPERA",
-        "I3615"
+        "I3615",
+        "GENÉRICA"
       ],
       "linked_ids": [
         494
@@ -12049,11 +16322,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-delantera-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 523,
+          "id_repuesto": 494,
+          "brand": "Genérica",
           "codigo_oem": "8-94214-9120",
-          "precio_usd": 5
+          "medida": "40*56*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 65
         }
-      ]
+      ],
+      "total_stock": 65,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -12068,7 +16350,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "DELANTERA",
         "ESTOPERA",
-        "I3615"
+        "I3615",
+        "GENÉRICA"
       ],
       "linked_ids": [
         494
@@ -12077,11 +16360,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-delantera-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 523,
+          "id_repuesto": 494,
+          "brand": "Genérica",
           "codigo_oem": "8-94214-9120",
-          "precio_usd": 5
+          "medida": "40*56*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 65
         }
-      ]
+      ],
+      "total_stock": 65,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -12096,7 +16388,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CIGUENAL",
         "DELANTERA",
-        "ESTOPERA"
+        "ESTOPERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         493
@@ -12105,11 +16398,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-delantera-caribe-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 522,
+          "id_repuesto": 493,
+          "brand": "Genérica",
           "codigo_oem": "8-09924-2960",
-          "precio_usd": 5
+          "medida": "50*68*9",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -12124,7 +16426,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "ESTOPERA",
         "I3615",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         494
@@ -12133,11 +16436,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-delantera-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 523,
+          "id_repuesto": 494,
+          "brand": "Genérica",
           "codigo_oem": "8-94214-9120",
-          "precio_usd": 5
+          "medida": "40*56*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 65
         }
-      ]
+      ],
+      "total_stock": 65,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cigueñal Delantera",
@@ -12150,7 +16462,9 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERA",
         "ESTOPERA",
-        "LUV"
+        "LUV",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         496
@@ -12159,16 +16473,31 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-delantera-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 525,
+          "id_repuesto": 496,
           "brand": "PRESENTACION",
           "codigo_oem": "8-97023-3730",
-          "precio_usd": 5
+          "medida": "42*55*7",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 99
         },
         {
+          "id_variante": 1123,
+          "id_repuesto": 496,
           "brand": "SABO",
           "codigo_oem": "8-97023-3730",
-          "precio_usd": 10
+          "medida": "42*55*7",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 29
         }
-      ]
+      ],
+      "total_stock": 128,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -12182,7 +16511,10 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CIGUENAL",
         "ESTOPERA",
-        "TRASERA"
+        "TRASERA",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         406,
@@ -12192,21 +16524,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-trasera-caribe-2-3",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 10
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1069,
+          "id_repuesto": 498,
           "brand": "FELPRO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 25
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 21
+        },
+        {
+          "id_variante": 527,
+          "id_repuesto": 498,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 528,
+          "id_repuesto": 498,
+          "brand": "SABO",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 268,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -12220,7 +16573,10 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CIGUENAL",
         "ESTOPERA",
-        "TRASERA"
+        "TRASERA",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         406,
@@ -12230,21 +16586,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-trasera-caribe-2-6",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 10
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1069,
+          "id_repuesto": 498,
           "brand": "FELPRO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 25
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 21
+        },
+        {
+          "id_variante": 527,
+          "id_repuesto": 498,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 528,
+          "id_repuesto": 498,
+          "brand": "SABO",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 268,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -12257,7 +16634,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CIGUENAL",
         "ESTOPERA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         497
@@ -12266,11 +16644,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-trasera-caribe-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 526,
+          "id_repuesto": 497,
+          "brand": "Genérica",
           "codigo_oem": "9-09924-4490",
-          "precio_usd": 10
+          "medida": "82*105*13",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -12283,7 +16670,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ESTOPERA",
         "LUV",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         500
@@ -12292,11 +16680,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-trasera-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 529,
+          "id_repuesto": 500,
+          "brand": "Genérica",
           "codigo_oem": "8-90354-3780",
-          "precio_usd": 10
+          "medida": "90*104*11",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -12310,7 +16707,10 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ESTOPERA",
         "LUV",
-        "TRASERA"
+        "TRASERA",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         406,
@@ -12320,21 +16720,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-trasera-luv-2-3",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 10
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1069,
+          "id_repuesto": 498,
           "brand": "FELPRO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 25
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 21
+        },
+        {
+          "id_variante": 527,
+          "id_repuesto": 498,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 528,
+          "id_repuesto": 498,
+          "brand": "SABO",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 268,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -12349,7 +16770,10 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ESTOPERA",
         "LUV",
-        "TRASERA"
+        "TRASERA",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         406,
@@ -12359,21 +16783,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-trasera-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 10
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1069,
+          "id_repuesto": 498,
           "brand": "FELPRO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 25
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 21
+        },
+        {
+          "id_variante": 527,
+          "id_repuesto": 498,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 528,
+          "id_repuesto": 498,
+          "brand": "SABO",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 268,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -12387,7 +16832,10 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ESTOPERA",
         "RODEO",
-        "TRASERA"
+        "TRASERA",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         406,
@@ -12397,21 +16845,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-trasera-rodeo",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 10
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1069,
+          "id_repuesto": 498,
           "brand": "FELPRO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 25
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 21
+        },
+        {
+          "id_variante": 527,
+          "id_repuesto": 498,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 528,
+          "id_repuesto": 498,
+          "brand": "SABO",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 268,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Cigueñal Trasera",
@@ -12425,7 +16894,10 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "ESTOPERA",
         "TRASERA",
-        "TROOPER"
+        "TROOPER",
+        "FELPRO",
+        "PRESENTACION",
+        "SABO"
       ],
       "linked_ids": [
         406,
@@ -12435,21 +16907,42 @@ const PRODUCTS_DATA = {
       "slug": "estopera-ciguenal-trasera-trooper",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 10
-        },
-        {
-          "brand": "SABO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1069,
+          "id_repuesto": 498,
           "brand": "FELPRO",
-          "codigo_oem": "8-94391-2330",
-          "precio_usd": 25
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 21
+        },
+        {
+          "id_variante": 527,
+          "id_repuesto": 498,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 197
+        },
+        {
+          "id_variante": 528,
+          "id_repuesto": 498,
+          "brand": "SABO",
+          "codigo_oem": "8-94381-2330",
+          "medida": "95*118*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 268,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Cola de Caja",
@@ -12464,7 +16957,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "CARIBE",
         "COLA",
-        "ESTOPERA"
+        "ESTOPERA",
+        "TAIWAN"
       ],
       "linked_ids": [
         501
@@ -12473,16 +16967,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-cola-de-caja-caribe-2-3",
       "variants": [
         {
+          "id_variante": 530,
+          "id_repuesto": 501,
           "brand": "TAIWAN",
           "codigo_oem": "8-97046-7053",
-          "precio_usd": 5
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97046-7053",
-          "precio_usd": 0
+          "medida": "38*49*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 39
         }
-      ]
+      ],
+      "total_stock": 39,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cola de Caja",
@@ -12497,7 +16995,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "CARIBE",
         "COLA",
-        "ESTOPERA"
+        "ESTOPERA",
+        "TAIWAN"
       ],
       "linked_ids": [
         501
@@ -12506,16 +17005,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-cola-de-caja-caribe-2-6",
       "variants": [
         {
+          "id_variante": 530,
+          "id_repuesto": 501,
           "brand": "TAIWAN",
           "codigo_oem": "8-97046-7053",
-          "precio_usd": 5
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97046-7053",
-          "precio_usd": 0
+          "medida": "38*49*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 39
         }
-      ]
+      ],
+      "total_stock": 39,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cola de Caja",
@@ -12530,7 +17033,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "COLA",
         "ESTOPERA",
-        "LUV"
+        "LUV",
+        "TAIWAN"
       ],
       "linked_ids": [
         501
@@ -12539,16 +17043,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-cola-de-caja-luv-2-3",
       "variants": [
         {
+          "id_variante": 530,
+          "id_repuesto": 501,
           "brand": "TAIWAN",
           "codigo_oem": "8-97046-7053",
-          "precio_usd": 5
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97046-7053",
-          "precio_usd": 0
+          "medida": "38*49*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 39
         }
-      ]
+      ],
+      "total_stock": 39,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cola de Caja",
@@ -12563,7 +17071,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "COLA",
         "ESTOPERA",
-        "LUV"
+        "LUV",
+        "TAIWAN"
       ],
       "linked_ids": [
         501
@@ -12572,16 +17081,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-cola-de-caja-luv-3-2",
       "variants": [
         {
+          "id_variante": 530,
+          "id_repuesto": 501,
           "brand": "TAIWAN",
           "codigo_oem": "8-97046-7053",
-          "precio_usd": 5
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97046-7053",
-          "precio_usd": 0
+          "medida": "38*49*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 39
         }
-      ]
+      ],
+      "total_stock": 39,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cola de Caja",
@@ -12597,7 +17110,8 @@ const PRODUCTS_DATA = {
         "COLA",
         "D-MAX",
         "ESTOPERA",
-        "LUV"
+        "LUV",
+        "TAIWAN"
       ],
       "linked_ids": [
         501
@@ -12606,16 +17120,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-cola-de-caja-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 530,
+          "id_repuesto": 501,
           "brand": "TAIWAN",
           "codigo_oem": "8-97046-7053",
-          "precio_usd": 5
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97046-7053",
-          "precio_usd": 0
+          "medida": "38*49*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 39
         }
-      ]
+      ],
+      "total_stock": 39,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cola de Caja",
@@ -12630,7 +17148,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "COLA",
         "ESTOPERA",
-        "RODEO"
+        "RODEO",
+        "TAIWAN"
       ],
       "linked_ids": [
         501
@@ -12639,16 +17158,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-cola-de-caja-rodeo",
       "variants": [
         {
+          "id_variante": 530,
+          "id_repuesto": 501,
           "brand": "TAIWAN",
           "codigo_oem": "8-97046-7053",
-          "precio_usd": 5
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97046-7053",
-          "precio_usd": 0
+          "medida": "38*49*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 39
         }
-      ]
+      ],
+      "total_stock": 39,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Cola de Caja",
@@ -12663,7 +17186,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "COLA",
         "ESTOPERA",
-        "TROOPER"
+        "TROOPER",
+        "TAIWAN"
       ],
       "linked_ids": [
         501
@@ -12672,16 +17196,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-cola-de-caja-trooper",
       "variants": [
         {
+          "id_variante": 530,
+          "id_repuesto": 501,
           "brand": "TAIWAN",
           "codigo_oem": "8-97046-7053",
-          "precio_usd": 5
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97046-7053",
-          "precio_usd": 0
+          "medida": "38*49*8",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 39
         }
-      ]
+      ],
+      "total_stock": 39,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -12694,7 +17222,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "ESTOPERA",
         "LUV",
-        "PINON"
+        "PINON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         505
@@ -12704,11 +17233,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-pinon-ataque-luv-dmax-3-5",
       "variants": [
         {
+          "id_variante": 534,
+          "id_repuesto": 505,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-0840",
-          "brand": "Original",
-          "precio_usd": 10
+          "medida": "45*78*11",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -12720,7 +17258,8 @@ const PRODUCTS_DATA = {
         "ATAQUE",
         "CARIBE",
         "ESTOPERA",
-        "PINON"
+        "PINON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         505
@@ -12729,11 +17268,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-pinon-de-ataque-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 534,
+          "id_repuesto": 505,
+          "brand": "Genérica",
           "codigo_oem": "8-94408-0840",
-          "precio_usd": 10
+          "medida": "45*78*11",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -12746,7 +17294,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ESTOPERA",
         "LUV",
-        "PINON"
+        "PINON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         506
@@ -12755,11 +17304,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-pinon-de-ataque-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 535,
+          "id_repuesto": 506,
+          "brand": "Genérica",
           "codigo_oem": "8-97146-8260",
-          "precio_usd": 10
+          "medida": "40*74*11*18",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -12773,7 +17331,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTOPERA",
         "PINON",
-        "TRASERA"
+        "TRASERA",
+        "TAIWAN"
       ],
       "linked_ids": [
         503
@@ -12782,16 +17341,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-pinon-de-ataque-trasera-caribe-2-0",
       "variants": [
         {
-          "brand": "TAIWAN ",
+          "id_variante": 532,
+          "id_repuesto": 503,
+          "brand": "TAIWAN",
           "codigo_oem": "9-09724-0030",
-          "precio_usd": 5
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "9-09724-0030",
-          "precio_usd": 0
+          "medida": "40*74*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 28
         }
-      ]
+      ],
+      "total_stock": 28,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Piñon Ataque",
@@ -12805,7 +17368,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTOPERA",
         "PINON",
-        "TRASERA"
+        "TRASERA",
+        "TAIWAN"
       ],
       "linked_ids": [
         503
@@ -12814,16 +17378,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-pinon-de-ataque-trasera-caribe-2-3",
       "variants": [
         {
-          "brand": "TAIWAN ",
+          "id_variante": 532,
+          "id_repuesto": 503,
+          "brand": "TAIWAN",
           "codigo_oem": "9-09724-0030",
-          "precio_usd": 5
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "9-09724-0030",
-          "precio_usd": 0
+          "medida": "40*74*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 28
         }
-      ]
+      ],
+      "total_stock": 28,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -12837,7 +17405,8 @@ const PRODUCTS_DATA = {
         "EJE",
         "ESTOPERA",
         "PUNTA",
-        "RUEDA"
+        "RUEDA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         507
@@ -12846,11 +17415,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-rueda-punta-de-eje-delantera-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 536,
+          "id_repuesto": 507,
+          "brand": "Genérica",
           "codigo_oem": "8-94227-0481",
-          "precio_usd": 5
+          "medida": "54*70*9",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -12866,7 +17444,8 @@ const PRODUCTS_DATA = {
         "EJE",
         "ESTOPERA",
         "PUNTA",
-        "RUEDA"
+        "RUEDA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         508
@@ -12875,11 +17454,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-rueda-punta-de-eje-delantera-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 537,
+          "id_repuesto": 508,
+          "brand": "Genérica",
           "codigo_oem": "8-94407-7110",
-          "precio_usd": 5
+          "medida": "59*75*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 193
         }
-      ]
+      ],
+      "total_stock": 193,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -12894,7 +17482,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "G200",
         "PUNTA",
-        "RUEDA"
+        "RUEDA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         507
@@ -12903,11 +17492,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-rueda-punta-de-eje-delantera-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 536,
+          "id_repuesto": 507,
+          "brand": "Genérica",
           "codigo_oem": "8-94227-0481",
-          "precio_usd": 5
+          "medida": "54*70*9",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -12923,7 +17521,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "PUNTA",
-        "RUEDA"
+        "RUEDA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         508
@@ -12932,11 +17531,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-rueda-punta-de-eje-delantera-luv-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 537,
+          "id_repuesto": 508,
+          "brand": "Genérica",
           "codigo_oem": "8-94407-7110",
-          "precio_usd": 5
+          "medida": "59*75*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 193
         }
-      ]
+      ],
+      "total_stock": 193,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -12951,7 +17559,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "PUNTA",
-        "RUEDA"
+        "RUEDA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         509
@@ -12960,11 +17569,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-rueda-punta-de-eje-delantera-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 538,
+          "id_repuesto": 509,
+          "brand": "Genérica",
           "codigo_oem": "8-94433-7180",
-          "precio_usd": 5
+          "medida": "50*67*9",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Punta de Eje Delantera",
@@ -12981,7 +17599,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "PUNTA",
-        "RUEDA"
+        "RUEDA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         508
@@ -12990,11 +17609,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-rueda-punta-de-eje-delantera-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 537,
+          "id_repuesto": 508,
+          "brand": "Genérica",
           "codigo_oem": "8-94407-7110",
-          "precio_usd": 5
+          "medida": "59*75*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 193
         }
-      ]
+      ],
+      "total_stock": 193,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -13010,7 +17638,8 @@ const PRODUCTS_DATA = {
         "INTERNA",
         "PUNTA",
         "TRASERA",
-        "TUNEL"
+        "TUNEL",
+        "GENÉRICA"
       ],
       "linked_ids": [
         511
@@ -13019,11 +17648,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 540,
+          "id_repuesto": 511,
+          "brand": "Genérica",
           "codigo_oem": "8-94318-9100",
-          "precio_usd": 5
+          "medida": "34*55*9.5",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 82
         }
-      ]
+      ],
+      "total_stock": 82,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -13039,7 +17677,8 @@ const PRODUCTS_DATA = {
         "INTERNA",
         "PUNTA",
         "TRASERA",
-        "TUNEL"
+        "TUNEL",
+        "GENÉRICA"
       ],
       "linked_ids": [
         511
@@ -13048,11 +17687,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 540,
+          "id_repuesto": 511,
+          "brand": "Genérica",
           "codigo_oem": "8-94318-9100",
-          "precio_usd": 5
+          "medida": "34*55*9.5",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 82
         }
-      ]
+      ],
+      "total_stock": 82,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -13067,7 +17715,8 @@ const PRODUCTS_DATA = {
         "INTERNA",
         "PUNTA",
         "TRASERA",
-        "TUNEL"
+        "TUNEL",
+        "GENÉRICA"
       ],
       "linked_ids": [
         512
@@ -13076,11 +17725,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-punta-de-eje-tunel-trasera-interna-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 541,
+          "id_repuesto": 512,
+          "brand": "Genérica",
           "codigo_oem": "8-94178-2770",
-          "precio_usd": 5
+          "medida": "51*72*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 45
         }
-      ]
+      ],
+      "total_stock": 45,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -13094,7 +17752,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "PUNTA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         514
@@ -13103,11 +17762,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-punta-de-eje-trasera-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 543,
+          "id_repuesto": 514,
+          "brand": "Genérica",
           "codigo_oem": "8-97323-2970",
-          "precio_usd": 10
+          "medida": "39.5*60*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -13121,7 +17789,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "PUNTA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         514
@@ -13130,11 +17799,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-punta-de-eje-trasera-luv-d-max-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 543,
+          "id_repuesto": 514,
+          "brand": "Genérica",
           "codigo_oem": "8-97323-2970",
-          "precio_usd": 10
+          "medida": "39.5*60*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -13148,7 +17826,8 @@ const PRODUCTS_DATA = {
         "ESTOPERA",
         "LUV",
         "PUNTA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         514
@@ -13157,11 +17836,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-punta-de-eje-trasera-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 543,
+          "id_repuesto": 514,
+          "brand": "Genérica",
           "codigo_oem": "8-97323-2970",
-          "precio_usd": 10
+          "medida": "39.5*60*10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -13177,7 +17865,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "RUEDA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         513
@@ -13186,11 +17875,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 542,
+          "id_repuesto": 513,
+          "brand": "Genérica",
           "codigo_oem": "8-97216-7920",
-          "precio_usd": 10
+          "medida": "52*76*11",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Punta de Eje Trasera",
@@ -13206,7 +17904,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "RUEDA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         513
@@ -13215,11 +17914,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-rueda-punta-de-eje-trasera-externa-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 542,
+          "id_repuesto": 513,
+          "brand": "Genérica",
           "codigo_oem": "8-97216-7920",
-          "precio_usd": 10
+          "medida": "52*76*11",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Estopera Yoke",
@@ -13231,7 +17939,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTOPERA",
         "TRANSFER",
-        "YOKE"
+        "YOKE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1199
@@ -13240,11 +17949,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-yoke-transfer-caribe-2-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1275,
+          "id_repuesto": 1199,
+          "brand": "Genérica",
           "codigo_oem": "5-09625-0590",
-          "precio_usd": 5
+          "medida": "40*62*12",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 50,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Estopera Yoke",
@@ -13256,7 +17974,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTOPERA",
         "TRANSFER",
-        "YOKE"
+        "YOKE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1199
@@ -13265,11 +17984,20 @@ const PRODUCTS_DATA = {
       "slug": "estopera-yoke-transfer-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1275,
+          "id_repuesto": 1199,
+          "brand": "Genérica",
           "codigo_oem": "5-09625-0590",
-          "precio_usd": 5
+          "medida": "40*62*12",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 50,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Fan Clutch",
@@ -13281,7 +18009,8 @@ const PRODUCTS_DATA = {
         "8-94412-0300",
         "CARIBE",
         "CLUTCH",
-        "FAN"
+        "FAN",
+        "KAIZEN"
       ],
       "linked_ids": [
         426,
@@ -13291,11 +18020,20 @@ const PRODUCTS_DATA = {
       "slug": "fan-clutch-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1356,
+          "id_repuesto": 517,
+          "brand": "KAIZEN",
           "codigo_oem": "8-94412-0300",
-          "precio_usd": 80
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Fan Clutch",
@@ -13307,7 +18045,8 @@ const PRODUCTS_DATA = {
         "8-94412-0300",
         "CARIBE",
         "CLUTCH",
-        "FAN"
+        "FAN",
+        "KAIZEN"
       ],
       "linked_ids": [
         426,
@@ -13317,11 +18056,20 @@ const PRODUCTS_DATA = {
       "slug": "fan-clutch-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1356,
+          "id_repuesto": 517,
+          "brand": "KAIZEN",
           "codigo_oem": "8-94412-0300",
-          "precio_usd": 80
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Fan Clutch",
@@ -13333,7 +18081,8 @@ const PRODUCTS_DATA = {
         "8-94412-0300",
         "CLUTCH",
         "FAN",
-        "LUV"
+        "LUV",
+        "KAIZEN"
       ],
       "linked_ids": [
         426,
@@ -13343,11 +18092,20 @@ const PRODUCTS_DATA = {
       "slug": "fan-clutch-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1356,
+          "id_repuesto": 517,
+          "brand": "KAIZEN",
           "codigo_oem": "8-94412-0300",
-          "precio_usd": 80
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Fan Clutch",
@@ -13359,7 +18117,8 @@ const PRODUCTS_DATA = {
         "8-94412-0300",
         "CLUTCH",
         "FAN",
-        "LUV"
+        "LUV",
+        "KAIZEN"
       ],
       "linked_ids": [
         426,
@@ -13369,11 +18128,20 @@ const PRODUCTS_DATA = {
       "slug": "fan-clutch-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1356,
+          "id_repuesto": 517,
+          "brand": "KAIZEN",
           "codigo_oem": "8-94412-0300",
-          "precio_usd": 80
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Fan Clutch",
@@ -13387,7 +18155,8 @@ const PRODUCTS_DATA = {
         "8-97135-1670",
         "CLUTCH",
         "FAN",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         520
@@ -13396,11 +18165,20 @@ const PRODUCTS_DATA = {
       "slug": "fan-clutch-luv-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 549,
+          "id_repuesto": 520,
+          "brand": "Genérica",
           "codigo_oem": "8-97018-9181",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Fan Clutch",
@@ -13413,7 +18191,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "FAN",
-        "LUV"
+        "LUV",
+        "KAIZEN"
       ],
       "linked_ids": [
         426,
@@ -13423,11 +18202,20 @@ const PRODUCTS_DATA = {
       "slug": "fan-clutch-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1356,
+          "id_repuesto": 517,
+          "brand": "KAIZEN",
           "codigo_oem": "8-94412-0300",
-          "precio_usd": 80
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Fan Clutch",
@@ -13440,7 +18228,9 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "FAN",
-        "LUV"
+        "LUV",
+        "KAIZEN",
+        "NIKHO"
       ],
       "linked_ids": [
         519
@@ -13449,16 +18239,31 @@ const PRODUCTS_DATA = {
       "slug": "fan-clutch-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 548,
+          "id_repuesto": 519,
+          "brand": "KAIZEN",
           "codigo_oem": "8-97349-7610",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 110.0,
+          "stock": 0
         },
         {
+          "id_variante": 1293,
+          "id_repuesto": 519,
           "brand": "NIKHO",
           "codigo_oem": "8-97349-7610",
-          "precio_usd": 130
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 130.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 130.0
     },
     {
       "category": "Fan Clutch",
@@ -13471,7 +18276,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "DMAX",
         "FAN",
-        "LUV"
+        "LUV",
+        "KAIZEN"
       ],
       "linked_ids": [
         517
@@ -13481,16 +18287,20 @@ const PRODUCTS_DATA = {
       "slug": "fan-clutch-luv-dmax-2-5",
       "variants": [
         {
-          "codigo_oem": "8-94412-0300",
-          "brand": "NPW",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94412-0300",
+          "id_variante": 1356,
+          "id_repuesto": 517,
           "brand": "KAIZEN",
-          "precio_usd": 60
+          "codigo_oem": "8-94412-0300",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Fan Clutch",
@@ -13504,7 +18314,8 @@ const PRODUCTS_DATA = {
         "8-97135-1670",
         "CLUTCH",
         "FAN",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         520
@@ -13513,11 +18324,20 @@ const PRODUCTS_DATA = {
       "slug": "fan-clutch-rodeo-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 549,
+          "id_repuesto": 520,
+          "brand": "Genérica",
           "codigo_oem": "8-97018-9181",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Fan Clutch",
@@ -13531,7 +18351,8 @@ const PRODUCTS_DATA = {
         "8-97135-1670",
         "CLUTCH",
         "FAN",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         520
@@ -13540,11 +18361,20 @@ const PRODUCTS_DATA = {
       "slug": "fan-clutch-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 549,
+          "id_repuesto": 520,
+          "brand": "Genérica",
           "codigo_oem": "8-97018-9181",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Faro Antineblina",
@@ -13560,7 +18390,8 @@ const PRODUCTS_DATA = {
         "FARO",
         "GL-017-002",
         "LUV",
-        "PARACHOQUE"
+        "PARACHOQUE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         528
@@ -13569,11 +18400,20 @@ const PRODUCTS_DATA = {
       "slug": "cocuyo-parachoque-delantero-luv-d-max-05-09",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 557,
+          "id_repuesto": 528,
+          "brand": "Genérica",
           "codigo_oem": "GL-017-002",
-          "precio_usd": 65
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Faro Antineblina",
@@ -13589,7 +18429,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FARO",
         "LUV",
-        "NEBLINA"
+        "NEBLINA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         529
@@ -13598,11 +18439,20 @@ const PRODUCTS_DATA = {
       "slug": "faro-neblina-luv-d-max-10-14",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 558,
+          "id_repuesto": 529,
+          "brand": "Genérica",
           "codigo_oem": "8-97374-6611",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Faro Delantero",
@@ -13615,7 +18465,8 @@ const PRODUCTS_DATA = {
         "93-96",
         "DELANTERO",
         "FARO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         523,
@@ -13625,16 +18476,31 @@ const PRODUCTS_DATA = {
       "slug": "faro-delantero-luv-93-96",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1163,
+          "id_repuesto": 1125,
+          "brand": "Genérica",
           "codigo_oem": "8-94434-5572",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 55.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 552,
+          "id_repuesto": 523,
+          "brand": "Genérica",
           "codigo_oem": "8-94434-5582",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 55.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 55.0
     },
     {
       "category": "Faro Delantero",
@@ -13654,7 +18520,9 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERO",
         "FARO",
-        "LUV"
+        "LUV",
+        "DENKO",
+        "TYC"
       ],
       "linked_ids": [
         443,
@@ -13665,26 +18533,53 @@ const PRODUCTS_DATA = {
       "slug": "faro-delantero-luv-d-max-04-08",
       "variants": [
         {
+          "id_variante": 1164,
+          "id_repuesto": 1126,
           "brand": "DENKO",
           "codigo_oem": "8-97237-4973",
-          "precio_usd": 85
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         },
         {
+          "id_variante": 1165,
+          "id_repuesto": 1126,
           "brand": "TYC",
           "codigo_oem": "8-97237-4973",
-          "precio_usd": 85
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         },
         {
+          "id_variante": 553,
+          "id_repuesto": 524,
           "brand": "DENKO",
           "codigo_oem": "8-97237-4983",
-          "precio_usd": 85
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         },
         {
+          "id_variante": 554,
+          "id_repuesto": 524,
           "brand": "TYC",
           "codigo_oem": "8-97237-4983",
-          "precio_usd": 85
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Faro Delantero",
@@ -13700,7 +18595,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DELANTERO",
         "FARO",
-        "LUV"
+        "LUV",
+        "TYC"
       ],
       "linked_ids": [
         526,
@@ -13710,26 +18606,31 @@ const PRODUCTS_DATA = {
       "slug": "faro-delantero-luv-d-max-10-14",
       "variants": [
         {
-          "brand": "YOSAI",
-          "codigo_oem": "8-98079-9930",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1167,
+          "id_repuesto": 1128,
           "brand": "TYC",
           "codigo_oem": "8-98079-9930",
-          "precio_usd": 95
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 105.0,
+          "stock": 3
         },
         {
-          "brand": "YOSAI",
-          "codigo_oem": "8-98079-9940",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 556,
+          "id_repuesto": 526,
           "brand": "TYC",
           "codigo_oem": "8-98079-9940",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 105.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 105.0
     },
     {
       "category": "Faro Delantero",
@@ -13741,7 +18642,8 @@ const PRODUCTS_DATA = {
         "213-1123R-LD-EN",
         "DELANTERO",
         "FARO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1225,
@@ -13752,16 +18654,31 @@ const PRODUCTS_DATA = {
       "slug": "faro-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1315,
+          "id_repuesto": 1225,
+          "brand": "Genérica",
           "codigo_oem": "DP_213-1123R-LD-EN",
-          "precio_usd": 95
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "brand": "Original",
+          "id_variante": 1316,
+          "id_repuesto": 1226,
+          "brand": "Genérica",
           "codigo_oem": "DP_213-1123L-LD-EN",
-          "precio_usd": 95
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Faro Delantero",
@@ -13777,7 +18694,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "FARO",
-        "REDONDO"
+        "REDONDO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         522,
@@ -13787,16 +18705,31 @@ const PRODUCTS_DATA = {
       "slug": "faro-redondo-caribe-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1162,
+          "id_repuesto": 1124,
+          "brand": "Genérica",
           "codigo_oem": "8-94244-6820",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 5
         },
         {
-          "brand": "Original",
+          "id_variante": 551,
+          "id_repuesto": 522,
+          "brand": "Genérica",
           "codigo_oem": "8-94244-6830",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Faro Delantero",
@@ -13812,7 +18745,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "FARO",
-        "REDONDO"
+        "REDONDO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         522,
@@ -13822,16 +18756,31 @@ const PRODUCTS_DATA = {
       "slug": "faro-redondo-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1162,
+          "id_repuesto": 1124,
+          "brand": "Genérica",
           "codigo_oem": "8-94244-6820",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 5
         },
         {
-          "brand": "Original",
+          "id_variante": 551,
+          "id_repuesto": 522,
+          "brand": "Genérica",
           "codigo_oem": "8-94244-6830",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Faro Placa",
@@ -13846,7 +18795,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PLACA",
         "TRASERA",
-        "V-03412301"
+        "V-03412301",
+        "GENÉRICA"
       ],
       "linked_ids": [
         445,
@@ -13856,11 +18806,20 @@ const PRODUCTS_DATA = {
       "slug": "luces-placa-trasera-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 559,
+          "id_repuesto": 530,
+          "brand": "Genérica",
           "codigo_oem": "8-97236-6901",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 13,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Filtro Aceite",
@@ -13875,7 +18834,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CH3807",
         "FILTRO",
-        "PH3807"
+        "PH3807",
+        "GENÉRICA"
       ],
       "linked_ids": [
         531
@@ -13884,11 +18844,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aceite-caribe-2-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 560,
+          "id_repuesto": 531,
+          "brand": "Genérica",
           "codigo_oem": "8-94456-7412",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 33
         }
-      ]
+      ],
+      "total_stock": 33,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Filtro Aceite",
@@ -13903,7 +18872,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CH3807",
         "FILTRO",
-        "PH3807"
+        "PH3807",
+        "GENÉRICA"
       ],
       "linked_ids": [
         531
@@ -13913,11 +18883,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aceite-caribe-2-3",
       "variants": [
         {
+          "id_variante": 560,
+          "id_repuesto": 531,
+          "brand": "Genérica",
           "codigo_oem": "8-94456-7412",
-          "brand": "Original",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 33
         }
-      ]
+      ],
+      "total_stock": 33,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Filtro Aceite",
@@ -13932,7 +18911,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CH3807",
         "FILTRO",
-        "PH3807"
+        "PH3807",
+        "GENÉRICA"
       ],
       "linked_ids": [
         531
@@ -13941,11 +18921,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aceite-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 560,
+          "id_repuesto": 531,
+          "brand": "Genérica",
           "codigo_oem": "8-94456-7412",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 33
         }
-      ]
+      ],
+      "total_stock": 33,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Filtro Aceite",
@@ -13960,7 +18949,8 @@ const PRODUCTS_DATA = {
         "CH3807",
         "FILTRO",
         "LUV",
-        "PH3807"
+        "PH3807",
+        "GENÉRICA"
       ],
       "linked_ids": [
         531
@@ -13969,11 +18959,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aceite-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 560,
+          "id_repuesto": 531,
+          "brand": "Genérica",
           "codigo_oem": "8-94456-7412",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 33
         }
-      ]
+      ],
+      "total_stock": 33,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Filtro Aceite",
@@ -13990,7 +18989,8 @@ const PRODUCTS_DATA = {
         "DIESEL",
         "FILTRO",
         "LUV",
-        "PH3807"
+        "PH3807",
+        "GENÉRICA"
       ],
       "linked_ids": [
         531
@@ -13999,11 +18999,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aceite-luv-d-max-3-0-diesel",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 560,
+          "id_repuesto": 531,
+          "brand": "Genérica",
           "codigo_oem": "8-94456-7412",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 33
         }
-      ]
+      ],
+      "total_stock": 33,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Filtro Aceite",
@@ -14018,7 +19027,8 @@ const PRODUCTS_DATA = {
         "CH3807",
         "FILTRO",
         "PH3807",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         531
@@ -14027,11 +19037,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aceite-rodeo-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 560,
+          "id_repuesto": 531,
+          "brand": "Genérica",
           "codigo_oem": "8-94456-7412",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 33
         }
-      ]
+      ],
+      "total_stock": 33,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Filtro Aceite",
@@ -14046,7 +19065,8 @@ const PRODUCTS_DATA = {
         "CH3807",
         "FILTRO",
         "PH3807",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         531
@@ -14055,11 +19075,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aceite-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 560,
+          "id_repuesto": 531,
+          "brand": "Genérica",
           "codigo_oem": "8-94456-7412",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 33
         }
-      ]
+      ],
+      "total_stock": 33,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Filtro Aire",
@@ -14071,7 +19100,8 @@ const PRODUCTS_DATA = {
         "8-94148-9800",
         "AIRE",
         "CARIBE",
-        "FILTRO"
+        "FILTRO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         534
@@ -14081,11 +19111,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aire-caribe",
       "variants": [
         {
+          "id_variante": 563,
+          "id_repuesto": 534,
+          "brand": "Genérica",
           "codigo_oem": "8-94148-9800",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Filtro Aire",
@@ -14098,7 +19137,8 @@ const PRODUCTS_DATA = {
         "AK-8067",
         "FILTRO",
         "LUV",
-        "VK-8067"
+        "VK-8067",
+        "A1"
       ],
       "linked_ids": [
         450,
@@ -14108,11 +19148,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aire-luv-2-2",
       "variants": [
         {
+          "id_variante": 564,
+          "id_repuesto": 535,
           "brand": "A1",
           "codigo_oem": "8-97039-0020",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Filtro Aire",
@@ -14124,7 +19173,8 @@ const PRODUCTS_DATA = {
         "8-94148-9800",
         "AIRE",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         534
@@ -14134,11 +19184,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aire-luv-2-3",
       "variants": [
         {
+          "id_variante": 563,
+          "id_repuesto": 534,
+          "brand": "Genérica",
           "codigo_oem": "8-94148-9800",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Filtro Aire",
@@ -14151,7 +19210,8 @@ const PRODUCTS_DATA = {
         "AK-8067",
         "FILTRO",
         "LUV",
-        "VK-8067"
+        "VK-8067",
+        "A1"
       ],
       "linked_ids": [
         450,
@@ -14161,11 +19221,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aire-luv-3-2",
       "variants": [
         {
+          "id_variante": 564,
+          "id_repuesto": 535,
           "brand": "A1",
           "codigo_oem": "8-97039-0020",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Filtro Aire",
@@ -14179,7 +19248,8 @@ const PRODUCTS_DATA = {
         "AIRE",
         "D-MAX",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "SIFT"
       ],
       "linked_ids": [
         536
@@ -14188,11 +19258,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aire-luv-d-max",
       "variants": [
         {
+          "id_variante": 565,
+          "id_repuesto": 536,
           "brand": "SIFT",
           "codigo_oem": "8-97251-9430",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Filtro Aire",
@@ -14205,7 +19284,8 @@ const PRODUCTS_DATA = {
         "AIRE",
         "DMAX",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         537
@@ -14215,11 +19295,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aire-luv-dmax-3-0",
       "variants": [
         {
+          "id_variante": 566,
+          "id_repuesto": 537,
+          "brand": "Genérica",
           "codigo_oem": "8-97944-5700",
-          "brand": "Original",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Filtro Aire",
@@ -14232,7 +19321,8 @@ const PRODUCTS_DATA = {
         "AK-8067",
         "FILTRO",
         "RODEO",
-        "VK-8067"
+        "VK-8067",
+        "A1"
       ],
       "linked_ids": [
         450,
@@ -14242,11 +19332,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aire-rodeo-3-2",
       "variants": [
         {
+          "id_variante": 564,
+          "id_repuesto": 535,
           "brand": "A1",
           "codigo_oem": "8-97039-0020",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Filtro Aire",
@@ -14259,7 +19358,8 @@ const PRODUCTS_DATA = {
         "AK-8067",
         "FILTRO",
         "TROOPER",
-        "VK-8067"
+        "VK-8067",
+        "A1"
       ],
       "linked_ids": [
         450,
@@ -14269,11 +19369,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-aire-trooper-3-2",
       "variants": [
         {
+          "id_variante": 564,
+          "id_repuesto": 535,
           "brand": "A1",
           "codigo_oem": "8-97039-0020",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Filtro Antipolen",
@@ -14286,7 +19395,8 @@ const PRODUCTS_DATA = {
         "ANTIPOLEN",
         "D-MAX",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         538
@@ -14295,11 +19405,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-antipolen-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 567,
+          "id_repuesto": 538,
+          "brand": "Genérica",
           "codigo_oem": "8-97356-1270",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Filtro Caja",
@@ -14314,7 +19433,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "D-MAX",
         "FILTRO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         539
@@ -14323,11 +19443,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-caja-automatica-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 568,
+          "id_repuesto": 539,
+          "brand": "Genérica",
           "codigo_oem": "8-97207-1430",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Filtro Gasolina",
@@ -14341,7 +19470,8 @@ const PRODUCTS_DATA = {
         "FILTRO",
         "GASOLINA",
         "LUV",
-        "MF-619"
+        "MF-619",
+        "SIFT"
       ],
       "linked_ids": [
         542
@@ -14350,11 +19480,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-gasolina-luv-d-max",
       "variants": [
         {
+          "id_variante": 571,
+          "id_repuesto": 542,
           "brand": "SIFT",
           "codigo_oem": "96335719",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Filtro Gasolina",
@@ -14365,7 +19504,8 @@ const PRODUCTS_DATA = {
         "5-13200-0661",
         "FILTRO",
         "GASOLINA",
-        "UNIVERSAL"
+        "UNIVERSAL",
+        "GENÉRICA"
       ],
       "linked_ids": [
         540
@@ -14374,11 +19514,20 @@ const PRODUCTS_DATA = {
       "slug": "filtro-gasolina-universal",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 569,
+          "id_repuesto": 540,
+          "brand": "Genérica",
           "codigo_oem": "5-13200-0661",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 48
         }
-      ]
+      ],
+      "total_stock": 48,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Flauta",
@@ -14390,7 +19539,8 @@ const PRODUCTS_DATA = {
         "8-94200-7022",
         "ADMISION",
         "CARIBE",
-        "FLAUTA"
+        "FLAUTA",
+        "TSA"
       ],
       "linked_ids": [
         544
@@ -14399,11 +19549,20 @@ const PRODUCTS_DATA = {
       "slug": "flauta-de-admision-caribe",
       "variants": [
         {
-          "brand": "NPC",
+          "id_variante": 1361,
+          "id_repuesto": 544,
+          "brand": "TSA",
           "codigo_oem": "8-94200-7022",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Flauta",
@@ -14415,7 +19574,8 @@ const PRODUCTS_DATA = {
         "8-94200-7032",
         "CARIBE",
         "ESCAPE",
-        "FLAUTA"
+        "FLAUTA",
+        "TSA"
       ],
       "linked_ids": [
         1051
@@ -14424,11 +19584,20 @@ const PRODUCTS_DATA = {
       "slug": "flauta-de-escape-caribe",
       "variants": [
         {
-          "brand": "NPC",
+          "id_variante": 1357,
+          "id_repuesto": 1051,
+          "brand": "TSA",
           "codigo_oem": "8-94200-7032",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Flotante",
@@ -14441,7 +19610,8 @@ const PRODUCTS_DATA = {
         "8-94407-4240",
         "CARIBE",
         "FLOTANTE",
-        "GASOLINA"
+        "GASOLINA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         546
@@ -14450,11 +19620,20 @@ const PRODUCTS_DATA = {
       "slug": "flotante-gasolina-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 575,
+          "id_repuesto": 546,
+          "brand": "Genérica",
           "codigo_oem": "8-94131-4470",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Flotante",
@@ -14467,7 +19646,8 @@ const PRODUCTS_DATA = {
         "8-94407-4240",
         "FLOTANTE",
         "GASOLINA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         546
@@ -14476,11 +19656,20 @@ const PRODUCTS_DATA = {
       "slug": "flotante-gasolina-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 575,
+          "id_repuesto": 546,
+          "brand": "Genérica",
           "codigo_oem": "8-94131-4470",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Flotante",
@@ -14492,7 +19681,8 @@ const PRODUCTS_DATA = {
         "EM2154",
         "FLOTANTE",
         "GASOLINA",
-        "LUV"
+        "LUV",
+        "CLIPSE"
       ],
       "linked_ids": [
         548
@@ -14501,11 +19691,20 @@ const PRODUCTS_DATA = {
       "slug": "flotante-gasolina-luv-d-max-2-4",
       "variants": [
         {
+          "id_variante": 577,
+          "id_repuesto": 548,
           "brand": "CLIPSE",
           "codigo_oem": "EM2154",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 16
         }
-      ]
+      ],
+      "total_stock": 16,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Flotante",
@@ -14517,7 +19716,8 @@ const PRODUCTS_DATA = {
         "EM2154",
         "FLOTANTE",
         "GASOLINA",
-        "LUV"
+        "LUV",
+        "CLIPSE"
       ],
       "linked_ids": [
         548
@@ -14526,11 +19726,20 @@ const PRODUCTS_DATA = {
       "slug": "flotante-gasolina-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 577,
+          "id_repuesto": 548,
           "brand": "CLIPSE",
           "codigo_oem": "EM2154",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 16
         }
-      ]
+      ],
+      "total_stock": 16,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Flotante",
@@ -14543,7 +19752,8 @@ const PRODUCTS_DATA = {
         "8-94407-4240",
         "FLOTANTE",
         "GASOLINA",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         546
@@ -14552,11 +19762,20 @@ const PRODUCTS_DATA = {
       "slug": "flotante-gasolina-rodeo",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 575,
+          "id_repuesto": 546,
+          "brand": "Genérica",
           "codigo_oem": "8-94131-4470",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Flotante",
@@ -14569,7 +19788,8 @@ const PRODUCTS_DATA = {
         "8-94407-4240",
         "FLOTANTE",
         "GASOLINA",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         546
@@ -14578,11 +19798,20 @@ const PRODUCTS_DATA = {
       "slug": "flotante-gasolina-trooper",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 575,
+          "id_repuesto": 546,
+          "brand": "Genérica",
           "codigo_oem": "8-94131-4470",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Flotante",
@@ -14595,7 +19824,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FLOTANTE",
         "GRANDE",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         547
@@ -14604,11 +19834,20 @@ const PRODUCTS_DATA = {
       "slug": "flotante-luv-d-max-grande",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 576,
+          "id_repuesto": 547,
+          "brand": "Genérica",
           "codigo_oem": "8-97943-1780",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Gato",
@@ -14621,7 +19860,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "GATO",
         "LUV",
-        "TIPO"
+        "TIPO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1094
@@ -14630,11 +19870,20 @@ const PRODUCTS_DATA = {
       "slug": "gato-tipo-botella-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1130,
+          "id_repuesto": 1094,
+          "brand": "Genérica",
           "codigo_oem": "8-97217-7881",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Gemelos",
@@ -14648,7 +19897,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GEMELO",
         "GEMELOS",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         550
@@ -14657,11 +19907,20 @@ const PRODUCTS_DATA = {
       "slug": "gemelo-ballesta-caribe-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 579,
+          "id_repuesto": 550,
+          "brand": "Genérica",
           "codigo_oem": "8-94223-1672",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "id": "89cbb966-799e-481d-bc6f-fbeadae8fdad",
@@ -14675,14 +19934,31 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DOBLE",
         "GEMELO",
-        "GEMELOS"
+        "GEMELOS",
+        "GENÉRICA"
       ],
       "oem": "BDF-006",
       "slug": "gemelo-ballesta-doble-accion-caribe-2-6",
       "original_filename": "Gemelos/89cbb966-799e-481d-bc6f-fbeadae8fdad.jpg",
       "linked_ids": [
         1236
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 1368,
+          "id_repuesto": 1236,
+          "brand": "Genérica",
+          "codigo_oem": "BDF-006",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 330.0,
+          "stock": 1
+        }
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 330.0
     },
     {
       "id": "b274bbdb-4b6f-4e9e-a550-4082de7d410f",
@@ -14696,14 +19972,31 @@ const PRODUCTS_DATA = {
         "DOBLE",
         "GEMELO",
         "GEMELOS",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "oem": "BDF-006",
       "slug": "gemelo-ballesta-doble-accion-luv",
       "original_filename": "Gemelos/b274bbdb-4b6f-4e9e-a550-4082de7d410f.jpg",
       "linked_ids": [
         1236
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 1368,
+          "id_repuesto": 1236,
+          "brand": "Genérica",
+          "codigo_oem": "BDF-006",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 330.0,
+          "stock": 1
+        }
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 330.0
     },
     {
       "id": "831f4e18-faec-41be-ad0a-8595105dc523",
@@ -14718,14 +20011,31 @@ const PRODUCTS_DATA = {
         "DOBLE",
         "GEMELO",
         "GEMELOS",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "oem": "BDF-006",
       "slug": "gemelo-ballesta-doble-accion-luv-dmax",
       "original_filename": "Gemelos/831f4e18-faec-41be-ad0a-8595105dc523.jpg",
       "linked_ids": [
         1236
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 1368,
+          "id_repuesto": 1236,
+          "brand": "Genérica",
+          "codigo_oem": "BDF-006",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 330.0,
+          "stock": 1
+        }
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 330.0
     },
     {
       "id": "89785f6b-4f6e-4dd9-a691-728caf205dfe",
@@ -14739,14 +20049,31 @@ const PRODUCTS_DATA = {
         "DOBLE",
         "GEMELO",
         "GEMELOS",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "oem": "BDF-006",
       "slug": "gemelo-ballesta-doble-accion-trooper-3-2",
       "original_filename": "Gemelos/89785f6b-4f6e-4dd9-a691-728caf205dfe.jpg",
       "linked_ids": [
         1236
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 1368,
+          "id_repuesto": 1236,
+          "brand": "Genérica",
+          "codigo_oem": "BDF-006",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 330.0,
+          "stock": 1
+        }
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 330.0
     },
     {
       "category": "Gemelos",
@@ -14763,7 +20090,8 @@ const PRODUCTS_DATA = {
         "GEMELO",
         "GEMELOS",
         "LUV",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         470,
@@ -14773,11 +20101,20 @@ const PRODUCTS_DATA = {
       "slug": "gemelo-ballesta-luv-d-max-trooper",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 580,
+          "id_repuesto": 551,
+          "brand": "Genérica",
           "codigo_oem": "8-97245-6470",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Goma Barra Estabilizadora",
@@ -14792,7 +20129,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTABILIZADORA",
         "FR-9632",
-        "GOMA"
+        "GOMA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         554
@@ -14801,11 +20139,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-barra-estabilizadora-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 583,
+          "id_repuesto": 554,
+          "brand": "Genérica",
           "codigo_oem": "5-51631-0170",
-          "precio_usd": 2
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.0
     },
     {
       "category": "Goma Barra Estabilizadora",
@@ -14820,7 +20167,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "FR-9632",
         "GOMA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         554
@@ -14829,11 +20177,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-barra-estabilizadora-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 583,
+          "id_repuesto": 554,
+          "brand": "Genérica",
           "codigo_oem": "5-51631-0170",
-          "precio_usd": 2
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.0
     },
     {
       "category": "Goma Barra Tensora",
@@ -14846,7 +20203,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CARIBE",
         "GOMA",
-        "TENSORA"
+        "TENSORA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         562
@@ -14855,11 +20213,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-barra-tensora-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 592,
+          "id_repuesto": 562,
+          "brand": "Genérica",
           "codigo_oem": "9-51631-6191",
-          "precio_usd": 2.5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.5,
+          "stock": 15
         }
-      ]
+      ],
+      "total_stock": 15,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.5
     },
     {
       "category": "Goma Barra Tensora",
@@ -14872,7 +20239,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "GOMA",
         "LUV",
-        "TENSORA"
+        "TENSORA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         563
@@ -14881,11 +20249,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-barra-tensora-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 593,
+          "id_repuesto": 563,
+          "brand": "Genérica",
           "codigo_oem": "8-94433-6720",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 13,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma Soporte Amortiguador",
@@ -14900,7 +20277,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV",
         "SILENCIADOR",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         561
@@ -14909,11 +20287,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-soporte-silenciador-3-huecos-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 591,
+          "id_repuesto": 561,
+          "brand": "Genérica",
           "codigo_oem": "8-97289-1690",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma Tripoide",
@@ -14925,7 +20312,8 @@ const PRODUCTS_DATA = {
         "8-94124-6330",
         "CARIBE",
         "GOMA",
-        "TRIPOIDE"
+        "TRIPOIDE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         564
@@ -14934,11 +20322,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-tripoide-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 594,
+          "id_repuesto": 564,
+          "brand": "Genérica",
           "codigo_oem": "5-43319-0190",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma Tripoide",
@@ -14956,7 +20353,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GOMA",
         "M-005N",
-        "TRIPOIDE"
+        "TRIPOIDE",
+        "NITRILO"
       ],
       "linked_ids": [
         565
@@ -14965,16 +20363,31 @@ const PRODUCTS_DATA = {
       "slug": "goma-tripoide-caribe-2-6",
       "variants": [
         {
+          "id_variante": 595,
+          "id_repuesto": 565,
           "brand": "GOMA",
           "codigo_oem": "8-94313-1060",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 36
         },
         {
+          "id_variante": 1146,
+          "id_repuesto": 565,
           "brand": "NITRILO",
           "codigo_oem": "8-94313-1060",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 49,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma Tripoide",
@@ -14987,7 +20400,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G-200",
         "GOMA",
-        "TRIPOIDE"
+        "TRIPOIDE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         564
@@ -14996,11 +20410,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-tripoide-caribe-g-200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 594,
+          "id_repuesto": 564,
+          "brand": "Genérica",
           "codigo_oem": "5-43319-0190",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma Tripoide",
@@ -15018,7 +20441,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV",
         "M-005N",
-        "TRIPOIDE"
+        "TRIPOIDE",
+        "NITRILO"
       ],
       "linked_ids": [
         565
@@ -15027,16 +20451,31 @@ const PRODUCTS_DATA = {
       "slug": "goma-tripoide-luv-2-3",
       "variants": [
         {
+          "id_variante": 595,
+          "id_repuesto": 565,
           "brand": "GOMA",
           "codigo_oem": "8-94313-1060",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 36
         },
         {
+          "id_variante": 1146,
+          "id_repuesto": 565,
           "brand": "NITRILO",
           "codigo_oem": "8-94313-1060",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 49,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma Tripoide",
@@ -15055,7 +20494,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "LUV",
         "M-005N",
-        "TRIPOIDE"
+        "TRIPOIDE",
+        "NITRILO"
       ],
       "linked_ids": [
         565
@@ -15064,16 +20504,31 @@ const PRODUCTS_DATA = {
       "slug": "goma-tripoide-luv-d-max",
       "variants": [
         {
+          "id_variante": 595,
+          "id_repuesto": 565,
           "brand": "GOMA",
           "codigo_oem": "8-94313-1060",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 36
         },
         {
+          "id_variante": 1146,
+          "id_repuesto": 565,
           "brand": "NITRILO",
           "codigo_oem": "8-94313-1060",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 49,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma Tripoide",
@@ -15091,7 +20546,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "M-005N",
         "RODEO",
-        "TRIPOIDE"
+        "TRIPOIDE",
+        "NITRILO"
       ],
       "linked_ids": [
         565
@@ -15100,16 +20556,31 @@ const PRODUCTS_DATA = {
       "slug": "goma-tripoide-rodeo",
       "variants": [
         {
+          "id_variante": 595,
+          "id_repuesto": 565,
           "brand": "GOMA",
           "codigo_oem": "8-94313-1060",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 36
         },
         {
+          "id_variante": 1146,
+          "id_repuesto": 565,
           "brand": "NITRILO",
           "codigo_oem": "8-94313-1060",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 49,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma Tripoide",
@@ -15127,7 +20598,8 @@ const PRODUCTS_DATA = {
         "GOMA",
         "M-005N",
         "TRIPOIDE",
-        "TROOPER"
+        "TROOPER",
+        "NITRILO"
       ],
       "linked_ids": [
         565
@@ -15136,16 +20608,31 @@ const PRODUCTS_DATA = {
       "slug": "goma-tripoide-trooper",
       "variants": [
         {
+          "id_variante": 595,
+          "id_repuesto": 565,
           "brand": "GOMA",
           "codigo_oem": "8-94313-1060",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 36
         },
         {
+          "id_variante": 1146,
+          "id_repuesto": 565,
           "brand": "NITRILO",
           "codigo_oem": "8-94313-1060",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 49,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -15163,7 +20650,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTABILIZADORA",
         "FR-9640",
-        "GOMA"
+        "GOMA",
+        "POLIURETANO"
       ],
       "linked_ids": [
         567
@@ -15172,16 +20660,31 @@ const PRODUCTS_DATA = {
       "slug": "goma-u-barra-estabilizadora-caribe-2-6",
       "variants": [
         {
+          "id_variante": 597,
+          "id_repuesto": 567,
           "brand": "GOMA",
           "codigo_oem": "8-97235-7840",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 21
         },
         {
+          "id_variante": 598,
+          "id_repuesto": 567,
           "brand": "POLIURETANO",
           "codigo_oem": "8-97235-7840",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 43,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -15195,7 +20698,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CARIBE",
         "ESTABILIZADORA",
-        "GOMA"
+        "GOMA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         566
@@ -15204,11 +20708,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-u-barra-estabilizadora-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 596,
+          "id_repuesto": 566,
+          "brand": "Genérica",
           "codigo_oem": "8-94143-3210",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -15223,7 +20736,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTABILIZADORA",
         "G-200",
-        "GOMA"
+        "GOMA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         566
@@ -15232,11 +20746,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-u-barra-estabilizadora-caribe-g-200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 596,
+          "id_repuesto": 566,
+          "brand": "Genérica",
           "codigo_oem": "8-94143-3210",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -15250,7 +20773,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "ESTABILIZADORA",
         "GOMA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         566
@@ -15259,11 +20783,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-u-barra-estabilizadora-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 596,
+          "id_repuesto": 566,
+          "brand": "Genérica",
           "codigo_oem": "8-94143-3210",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -15277,7 +20810,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "ESTABILIZADORA",
         "GOMA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         566
@@ -15286,11 +20820,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-u-barra-estabilizadora-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 596,
+          "id_repuesto": 566,
+          "brand": "Genérica",
           "codigo_oem": "8-94143-3210",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -15309,7 +20852,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "FR-9640",
         "GOMA",
-        "LUV"
+        "LUV",
+        "POLIURETANO"
       ],
       "linked_ids": [
         567
@@ -15318,16 +20862,31 @@ const PRODUCTS_DATA = {
       "slug": "goma-u-barra-estabilizadora-luv-d-max",
       "variants": [
         {
+          "id_variante": 597,
+          "id_repuesto": 567,
           "brand": "GOMA",
           "codigo_oem": "8-97235-7840",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 21
         },
         {
+          "id_variante": 598,
+          "id_repuesto": 567,
           "brand": "POLIURETANO",
           "codigo_oem": "8-97235-7840",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 43,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma U Barra Estabilizadora",
@@ -15345,7 +20904,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "FR-9640",
         "GOMA",
-        "TROOPER"
+        "TROOPER",
+        "POLIURETANO"
       ],
       "linked_ids": [
         567
@@ -15354,16 +20914,31 @@ const PRODUCTS_DATA = {
       "slug": "goma-u-barra-estabilizadora-trooper",
       "variants": [
         {
+          "id_variante": 597,
+          "id_repuesto": 567,
           "brand": "GOMA",
           "codigo_oem": "8-97235-7840",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 21
         },
         {
+          "id_variante": 598,
+          "id_repuesto": 567,
           "brand": "POLIURETANO",
           "codigo_oem": "8-97235-7840",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 43,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Goma U Cajetin",
@@ -15377,7 +20952,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DIRECCION",
         "GOMA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         555
@@ -15386,11 +20962,20 @@ const PRODUCTS_DATA = {
       "slug": "goma-u-cajetin-direccion-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 584,
+          "id_repuesto": 555,
+          "brand": "Genérica",
           "codigo_oem": "8-97304-9230",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Gomas de Valvula",
@@ -15401,7 +20986,8 @@ const PRODUCTS_DATA = {
         "8-90215-2960",
         "GOMAS",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         570
@@ -15411,11 +20997,20 @@ const PRODUCTS_DATA = {
       "slug": "gomas-valvula-luv-2-2",
       "variants": [
         {
+          "id_variante": 600,
+          "id_repuesto": 570,
+          "brand": "Genérica",
           "codigo_oem": "8-90215-2960",
-          "brand": "Original",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Gomas de Valvula",
@@ -15426,7 +21021,8 @@ const PRODUCTS_DATA = {
         "8-90215-2960",
         "GOMAS",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         570
@@ -15436,11 +21032,20 @@ const PRODUCTS_DATA = {
       "slug": "gomas-valvula-luv-2-2-2",
       "variants": [
         {
+          "id_variante": 600,
+          "id_repuesto": 570,
+          "brand": "Genérica",
           "codigo_oem": "8-90215-2960",
-          "brand": "Original",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Gomas de Valvula",
@@ -15453,7 +21058,8 @@ const PRODUCTS_DATA = {
         "8-97033-6730",
         "GOMAS",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         569
@@ -15463,11 +21069,20 @@ const PRODUCTS_DATA = {
       "slug": "gomas-valvula-luv-2-3",
       "variants": [
         {
+          "id_variante": 599,
+          "id_repuesto": 569,
+          "brand": "Genérica",
           "codigo_oem": "8-94208-5220",
-          "brand": "Original",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Gomas de Valvula",
@@ -15483,14 +21098,42 @@ const PRODUCTS_DATA = {
         "GOMAS",
         "JUEGO",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "FELPRO",
+        "NIKHO"
       ],
       "linked_ids": [
-        487
+        571
       ],
       "oem": "8-97146-7330 / 8-97332-3590 / 8-94324-1581",
       "slug": "juego-goma-valvula-luv-d-max-3-5",
-      "variants": []
+      "variants": [
+        {
+          "id_variante": 1376,
+          "id_repuesto": 571,
+          "brand": "FELPRO",
+          "codigo_oem": "8-97146-7330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 4
+        },
+        {
+          "id_variante": 601,
+          "id_repuesto": 571,
+          "brand": "NIKHO",
+          "codigo_oem": "8-97146-7330",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
+        }
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Gomas de Valvula",
@@ -15506,7 +21149,8 @@ const PRODUCTS_DATA = {
         "GOMAS",
         "JUEGO",
         "VALVULA",
-        "VALVULAS"
+        "VALVULAS",
+        "GENÉRICA"
       ],
       "linked_ids": [
         569
@@ -15515,11 +21159,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-goma-valvulas-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 599,
+          "id_repuesto": 569,
+          "brand": "Genérica",
           "codigo_oem": "8-94208-5220",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Graduador de Freno",
@@ -15533,7 +21186,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FRENO",
         "GRADUADOR",
-        "KG-240618"
+        "KG-240618",
+        "GENÉRICA"
       ],
       "linked_ids": [
         572
@@ -15542,11 +21196,20 @@ const PRODUCTS_DATA = {
       "slug": "graduador-de-freno-caribe-83-88",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 602,
+          "id_repuesto": 572,
+          "brand": "Genérica",
           "codigo_oem": "8-94232-3530",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Graduador de Freno",
@@ -15559,7 +21222,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "FRENO",
         "GRADUADOR",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         573,
@@ -15569,16 +21233,20 @@ const PRODUCTS_DATA = {
       "slug": "graduador-de-freno-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1170,
+          "id_repuesto": 1132,
+          "brand": "Genérica",
           "codigo_oem": "8-97301-4940",
-          "precio_usd": 20
-        },
-        {
-          "brand": "Original",
-          "codigo_oem": "8-97301-4950",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Graduador de Freno",
@@ -15595,7 +21263,8 @@ const PRODUCTS_DATA = {
         "GRADUADOR",
         "KG-61014",
         "KG-61015",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         490,
@@ -15606,16 +21275,31 @@ const PRODUCTS_DATA = {
       "slug": "graduadorde-freno-mano-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1171,
+          "id_repuesto": 1133,
+          "brand": "Genérica",
           "codigo_oem": "8-98007-9790",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 1172,
+          "id_repuesto": 1134,
+          "brand": "Genérica",
           "codigo_oem": "8-98007-9800",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Guardapolvo de Guardafango",
@@ -15630,7 +21314,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "GUARDAFANGO",
         "GUARDAPOLVO",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         576,
@@ -15640,16 +21325,31 @@ const PRODUCTS_DATA = {
       "slug": "guardapolvo-de-guardafango-delantero-luv-d-max-10-14",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1174,
+          "id_repuesto": 1136,
+          "brand": "Genérica",
           "codigo_oem": "8-98007-1343",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         },
         {
-          "brand": "Original",
+          "id_variante": 607,
+          "id_repuesto": 576,
+          "brand": "Genérica",
           "codigo_oem": "8-98007-1333",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Guardapolvo de Guardafango",
@@ -15661,7 +21361,8 @@ const PRODUCTS_DATA = {
         "GUARDAPOLVO",
         "IZ1250101",
         "IZ1251101",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1223,
@@ -15672,16 +21373,31 @@ const PRODUCTS_DATA = {
       "slug": "guardapolvo-guardafango-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1313,
+          "id_repuesto": 1223,
+          "brand": "Genérica",
           "codigo_oem": "IZ1251101",
-          "precio_usd": 40
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 1314,
+          "id_repuesto": 1224,
+          "brand": "Genérica",
           "codigo_oem": "IZ1250101",
-          "precio_usd": 40
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -15693,7 +21409,8 @@ const PRODUCTS_DATA = {
         "ALG4104",
         "CARIBE",
         "GUARDAPOLVO",
-        "HORQUILLA"
+        "HORQUILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         556
@@ -15702,11 +21419,20 @@ const PRODUCTS_DATA = {
       "slug": "guardapolvo-horquilla-caribe-2-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 585,
+          "id_repuesto": 556,
+          "brand": "Genérica",
           "codigo_oem": "5-31131-0050",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -15718,7 +21444,8 @@ const PRODUCTS_DATA = {
         "ALG4104",
         "CARIBE",
         "GUARDAPOLVO",
-        "HORQUILLA"
+        "HORQUILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         556
@@ -15727,11 +21454,20 @@ const PRODUCTS_DATA = {
       "slug": "guardapolvo-horquilla-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 585,
+          "id_repuesto": 556,
+          "brand": "Genérica",
           "codigo_oem": "5-31131-0050",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -15743,7 +21479,8 @@ const PRODUCTS_DATA = {
         "ALG4105",
         "CARIBE",
         "GUARDAPOLVO",
-        "HORQUILLA"
+        "HORQUILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         557
@@ -15752,11 +21489,20 @@ const PRODUCTS_DATA = {
       "slug": "guardapolvo-horquilla-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 586,
+          "id_repuesto": 557,
+          "brand": "Genérica",
           "codigo_oem": "8-94156-7000",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -15768,7 +21514,8 @@ const PRODUCTS_DATA = {
         "ALG4105",
         "GUARDAPOLVO",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         557
@@ -15777,11 +21524,20 @@ const PRODUCTS_DATA = {
       "slug": "guardapolvo-horquilla-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 586,
+          "id_repuesto": 557,
+          "brand": "Genérica",
           "codigo_oem": "8-94156-7000",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -15793,7 +21549,8 @@ const PRODUCTS_DATA = {
         "ALG4105",
         "GUARDAPOLVO",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         557
@@ -15802,11 +21559,20 @@ const PRODUCTS_DATA = {
       "slug": "guardapolvo-horquilla-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 586,
+          "id_repuesto": 557,
+          "brand": "Genérica",
           "codigo_oem": "8-94156-7000",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -15819,7 +21585,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "GUARDAPOLVO",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         557
@@ -15828,11 +21595,20 @@ const PRODUCTS_DATA = {
       "slug": "guardapolvo-horquilla-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 586,
+          "id_repuesto": 557,
+          "brand": "Genérica",
           "codigo_oem": "8-94156-7000",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -15846,7 +21622,8 @@ const PRODUCTS_DATA = {
         "DIESEL",
         "GUARDAPOLVO",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         557
@@ -15855,11 +21632,20 @@ const PRODUCTS_DATA = {
       "slug": "guardapolvo-horquilla-luv-d-max-2-5-diesel",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 586,
+          "id_repuesto": 557,
+          "brand": "Genérica",
           "codigo_oem": "8-94156-7000",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Guardapolvo Horquilla",
@@ -15873,7 +21659,8 @@ const PRODUCTS_DATA = {
         "DIESEL",
         "GUARDAPOLVO",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         557
@@ -15882,11 +21669,20 @@ const PRODUCTS_DATA = {
       "slug": "guardapolvo-horquilla-luv-d-max-3-0-diesel",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 586,
+          "id_repuesto": 557,
+          "brand": "Genérica",
           "codigo_oem": "8-94156-7000",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Guaya Acelerador",
@@ -15900,7 +21696,8 @@ const PRODUCTS_DATA = {
         "8-94495-0191",
         "ACELERADOR",
         "CARIBE",
-        "GUAYA"
+        "GUAYA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         499,
@@ -15910,11 +21707,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-acelerador-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 610,
+          "id_repuesto": 579,
+          "brand": "Genérica",
           "codigo_oem": "8-94495-0191",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Guaya Acelerador",
@@ -15925,7 +21731,8 @@ const PRODUCTS_DATA = {
         "8-94499-9592",
         "ACELERADOR",
         "CARIBE",
-        "GUAYA"
+        "GUAYA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         580
@@ -15934,11 +21741,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-acelerador-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 611,
+          "id_repuesto": 580,
+          "brand": "Genérica",
           "codigo_oem": "8-94499-9592",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Guaya Acelerador",
@@ -15952,7 +21768,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G-2000",
         "GUAYA",
-        "LARGA"
+        "LARGA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         578
@@ -15961,11 +21778,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-acelerador-larga-caribe-g-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 609,
+          "id_repuesto": 578,
+          "brand": "Genérica",
           "codigo_oem": "8-94222-5532",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Guaya Acelerador",
@@ -15979,7 +21805,8 @@ const PRODUCTS_DATA = {
         "8-94495-0191",
         "ACELERADOR",
         "GUAYA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         499,
@@ -15989,11 +21816,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-acelerador-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 610,
+          "id_repuesto": 579,
+          "brand": "Genérica",
           "codigo_oem": "8-94495-0191",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Guaya Acelerador",
@@ -16005,7 +21841,8 @@ const PRODUCTS_DATA = {
         "ACELERADOR",
         "D-MAX",
         "GUAYA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         502,
@@ -16015,11 +21852,20 @@ const PRODUCTS_DATA = {
       "slug": "guayaacelerador-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 612,
+          "id_repuesto": 581,
+          "brand": "Genérica",
           "codigo_oem": "8-97362-9490",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Guaya Acelerador",
@@ -16031,7 +21877,8 @@ const PRODUCTS_DATA = {
         "ACELERADOR",
         "D-MAX",
         "GUAYA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         582
@@ -16040,11 +21887,20 @@ const PRODUCTS_DATA = {
       "slug": "guayaacelerador-luv-d-max-4x225",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 613,
+          "id_repuesto": 582,
+          "brand": "Genérica",
           "codigo_oem": "8-97369-0080",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Guaya Acelerador",
@@ -16056,7 +21912,8 @@ const PRODUCTS_DATA = {
         "ACELERADOR",
         "D-MAX",
         "GUAYA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         584
@@ -16065,11 +21922,20 @@ const PRODUCTS_DATA = {
       "slug": "guayaacelerador-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 615,
+          "id_repuesto": 584,
+          "brand": "Genérica",
           "codigo_oem": "8-97315-9651",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 42
         }
-      ]
+      ],
+      "total_stock": 42,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Guaya Capot",
@@ -16080,7 +21946,8 @@ const PRODUCTS_DATA = {
         "8-94217-6814",
         "CAPOT",
         "CARIBE",
-        "GUAYA"
+        "GUAYA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         585
@@ -16089,11 +21956,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-capot-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 616,
+          "id_repuesto": 585,
+          "brand": "Genérica",
           "codigo_oem": "8-94217-6814",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Guaya Capot",
@@ -16106,7 +21982,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "GUAYA",
         "LUV",
-        "MANILLA"
+        "MANILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         588
@@ -16115,11 +21992,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-capot-con-manilla-luv-d-max",
       "variants": [
         {
+          "id_variante": 619,
+          "id_repuesto": 588,
+          "brand": "Genérica",
           "codigo_oem": "8-98072-3680",
-          "brand": "Original",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Guaya Capot",
@@ -16132,7 +22018,8 @@ const PRODUCTS_DATA = {
         "942225661",
         "CAPOT",
         "GUAYA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         586
@@ -16141,11 +22028,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-capot-luv-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 617,
+          "id_repuesto": 586,
+          "brand": "Genérica",
           "codigo_oem": "8-97106-1310",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Guaya Capot",
@@ -16157,7 +22053,8 @@ const PRODUCTS_DATA = {
         "CAPOT",
         "D-MAX",
         "GUAYA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         587
@@ -16166,11 +22063,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-capot-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 618,
+          "id_repuesto": 587,
+          "brand": "Genérica",
           "codigo_oem": "8-97334-4362",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Guaya Clutch",
@@ -16185,7 +22091,8 @@ const PRODUCTS_DATA = {
         "8-94297-1201",
         "CARIBE",
         "CLUTCH",
-        "GUAYA"
+        "GUAYA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         589,
@@ -16195,16 +22102,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-de-clutch-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 620,
+          "id_repuesto": 589,
+          "brand": "Genérica",
           "codigo_oem": "8-94181-2322",
-          "precio_usd": 30
-        },
-        {
-          "brand": "Original",
-          "codigo_oem": "8-94297-1201",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 17
         }
-      ]
+      ],
+      "total_stock": 17,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Guaya Freno de Mano",
@@ -16225,7 +22136,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "GUAYA",
         "LUV",
-        "MANO"
+        "MANO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         591,
@@ -16235,16 +22147,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-freno-mano-luv-d-max-3-0-diesel-4x4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 629,
+          "id_repuesto": 598,
+          "brand": "Genérica",
           "codigo_oem": "8-97368-0680",
-          "precio_usd": 35
-        },
-        {
-          "brand": "Original",
-          "codigo_oem": "8-97363-3460",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Guaya Freno de Mano",
@@ -16263,7 +22179,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "GUAYA",
         "LUV",
-        "MANO"
+        "MANO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         591,
@@ -16273,16 +22190,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-freno-mano-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 629,
+          "id_repuesto": 598,
+          "brand": "Genérica",
           "codigo_oem": "8-97368-0680",
-          "precio_usd": 35
-        },
-        {
-          "brand": "Original",
-          "codigo_oem": "8-97363-3460",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Guaya Selectora de Cambio",
@@ -16297,7 +22218,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "LUV",
         "SELECTORA",
-        "SELECTORADE"
+        "SELECTORADE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         606
@@ -16306,11 +22228,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-selectorade-cambio-luv-d-max-3-5-automatico",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 637,
+          "id_repuesto": 606,
+          "brand": "Genérica",
           "codigo_oem": "8-97307-4722",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Guaya Velocimetro - Kilometraje",
@@ -16325,7 +22256,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "KILOMETRAJE",
         "LUV",
-        "VELOCIMETRO"
+        "VELOCIMETRO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         605
@@ -16335,11 +22267,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-kilometraje-velocimetro-luv-2-3",
       "variants": [
         {
+          "id_variante": 636,
+          "id_repuesto": 605,
+          "brand": "Genérica",
           "codigo_oem": "8-94159-1530",
-          "brand": "Original",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Guaya Velocimetro - Kilometraje",
@@ -16354,7 +22295,8 @@ const PRODUCTS_DATA = {
         "GUAYA",
         "KILOMETRAJE",
         "RODEO",
-        "VELOCIMETRO"
+        "VELOCIMETRO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         605
@@ -16364,11 +22306,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-kilometraje-velocimetro-rodeo",
       "variants": [
         {
+          "id_variante": 636,
+          "id_repuesto": 605,
+          "brand": "Genérica",
           "codigo_oem": "8-94159-1530",
-          "brand": "Original",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Guaya Velocimetro - Kilometraje",
@@ -16384,7 +22335,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GUAYA",
         "KILOMETRAJE",
-        "VELOCIMETRO"
+        "VELOCIMETRO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         605
@@ -16393,11 +22345,20 @@ const PRODUCTS_DATA = {
       "slug": "guaya-velocimetro-caribe-83-88",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 636,
+          "id_repuesto": 605,
+          "brand": "Genérica",
           "codigo_oem": "8-94159-1530",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Guia de Valvula",
@@ -16410,7 +22371,8 @@ const PRODUCTS_DATA = {
         "8-94206-7630",
         "CARIBE",
         "GUIA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         607,
@@ -16420,16 +22382,31 @@ const PRODUCTS_DATA = {
       "slug": "guia-de-valvula-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 638,
+          "id_repuesto": 607,
+          "brand": "Genérica",
           "codigo_oem": "8-94206-7620",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 22
         },
         {
-          "brand": "Original",
+          "id_variante": 1177,
+          "id_repuesto": 1139,
+          "brand": "Genérica",
           "codigo_oem": "8-94206-7630",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 23
         }
-      ]
+      ],
+      "total_stock": 45,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Guia de Valvula",
@@ -16441,7 +22418,8 @@ const PRODUCTS_DATA = {
         "8-94206-7630",
         "GUIA",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         607,
@@ -16451,16 +22429,31 @@ const PRODUCTS_DATA = {
       "slug": "guia-de-valvula-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 638,
+          "id_repuesto": 607,
+          "brand": "Genérica",
           "codigo_oem": "8-94206-7620",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 22
         },
         {
-          "brand": "Original",
+          "id_variante": 1177,
+          "id_repuesto": 1139,
+          "brand": "Genérica",
           "codigo_oem": "8-94206-7630",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 23
         }
-      ]
+      ],
+      "total_stock": 45,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Hidrovac",
@@ -16472,7 +22465,8 @@ const PRODUCTS_DATA = {
         "8-97021-9411",
         "CARIBE",
         "HIDROVAC",
-        "SF-11001"
+        "SF-11001",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1141
@@ -16482,11 +22476,20 @@ const PRODUCTS_DATA = {
       "slug": "hidrovac-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1179,
+          "id_repuesto": 1141,
+          "brand": "Genérica",
           "codigo_oem": "8-97021-9411",
-          "precio_usd": 255
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Hidrovac",
@@ -16498,7 +22501,8 @@ const PRODUCTS_DATA = {
         "8-97021-9411",
         "HIDROVAC",
         "LUV",
-        "SF-11001"
+        "SF-11001",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1141
@@ -16508,11 +22512,20 @@ const PRODUCTS_DATA = {
       "slug": "hidrovac-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1179,
+          "id_repuesto": 1141,
+          "brand": "Genérica",
           "codigo_oem": "8-97021-9411",
-          "precio_usd": 255
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Hidrovac",
@@ -16526,7 +22539,8 @@ const PRODUCTS_DATA = {
         "8-98006-7890",
         "D-MAX",
         "HIDROVAC",
-        "LUV"
+        "LUV",
+        "TSA"
       ],
       "linked_ids": [
         609
@@ -16535,16 +22549,20 @@ const PRODUCTS_DATA = {
       "slug": "hidrovac-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 640,
+          "id_repuesto": 609,
           "brand": "TSA",
           "codigo_oem": "8-97365-5180",
-          "precio_usd": 0
-        },
-        {
-          "brand": "TOMITA",
-          "codigo_oem": "8-97365-5180",
-          "precio_usd": 100
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Horquilla Clutch",
@@ -16559,7 +22577,8 @@ const PRODUCTS_DATA = {
         "8-97365-6540",
         "CARIBE",
         "CLUTCH",
-        "HORQUILLA"
+        "HORQUILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         614
@@ -16568,11 +22587,20 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 645,
+          "id_repuesto": 614,
+          "brand": "Genérica",
           "codigo_oem": "8-94324-4180",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Horquilla Clutch",
@@ -16587,7 +22615,8 @@ const PRODUCTS_DATA = {
         "8-97365-6540",
         "CLUTCH",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         614
@@ -16596,11 +22625,20 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 645,
+          "id_repuesto": 614,
+          "brand": "Genérica",
           "codigo_oem": "8-94324-4180",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Horquilla Clutch",
@@ -16615,7 +22653,8 @@ const PRODUCTS_DATA = {
         "8-97365-6540",
         "CLUTCH",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         614
@@ -16624,11 +22663,20 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 645,
+          "id_repuesto": 614,
+          "brand": "Genérica",
           "codigo_oem": "8-94324-4180",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Horquilla Clutch",
@@ -16644,7 +22692,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         614
@@ -16653,11 +22702,20 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 645,
+          "id_repuesto": 614,
+          "brand": "Genérica",
           "codigo_oem": "8-94324-4180",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Horquilla Clutch",
@@ -16673,7 +22731,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         614
@@ -16682,11 +22741,20 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-luv-d-max-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 645,
+          "id_repuesto": 614,
+          "brand": "Genérica",
           "codigo_oem": "8-94324-4180",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Horquilla Clutch",
@@ -16702,7 +22770,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "HORQUILLA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         614
@@ -16711,11 +22780,20 @@ const PRODUCTS_DATA = {
       "slug": "horquilla-clutch-luv-d-max-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 645,
+          "id_repuesto": 614,
+          "brand": "Genérica",
           "codigo_oem": "8-94324-4180",
-          "precio_usd": 50
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Inyector",
@@ -16725,7 +22803,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-17125-0970",
         "INYECTOR",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         615
@@ -16734,11 +22813,20 @@ const PRODUCTS_DATA = {
       "slug": "inyector-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 646,
+          "id_repuesto": 615,
+          "brand": "Genérica",
           "codigo_oem": "8-17125-0970",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Inyector",
@@ -16749,7 +22837,8 @@ const PRODUCTS_DATA = {
         "8-17125-0970",
         "D-MAX",
         "INYECTOR",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         615
@@ -16758,11 +22847,20 @@ const PRODUCTS_DATA = {
       "slug": "inyector-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 646,
+          "id_repuesto": 615,
+          "brand": "Genérica",
           "codigo_oem": "8-17125-0970",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Inyector",
@@ -16773,7 +22871,8 @@ const PRODUCTS_DATA = {
         "8-97318-6200",
         "D-MAX",
         "INYECTOR",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         616
@@ -16782,11 +22881,20 @@ const PRODUCTS_DATA = {
       "slug": "inyector-combustible-luv-d-max-3507-14",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 647,
+          "id_repuesto": 616,
+          "brand": "Genérica",
           "codigo_oem": "8-97318-6200",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Juego de Empacadura",
@@ -16799,7 +22907,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EMPACADURA",
         "JUEGO",
-        "MOTOR"
+        "MOTOR",
+        "AJUSA"
       ],
       "linked_ids": [
         618
@@ -16809,21 +22918,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-motor-caribe-2-3",
       "variants": [
         {
+          "id_variante": 1383,
+          "id_repuesto": 618,
+          "brand": "AJUSA",
           "codigo_oem": "5-87810-3191",
-          "brand": "KP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87810-3191",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87810-3191",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 90.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Juego de Empacadura",
@@ -16838,7 +22946,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "JUEGO",
         "MOTOR",
-        "RFS812"
+        "RFS812",
+        "RUSHMORE"
       ],
       "linked_ids": [
         621
@@ -16848,16 +22957,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-motor-caribe-2-6",
       "variants": [
         {
-          "codigo_oem": "8-94312-5870",
-          "brand": "KP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94312-5870",
+          "id_variante": 653,
+          "id_repuesto": 621,
           "brand": "RUSHMORE",
-          "precio_usd": 0
+          "codigo_oem": "8-94312-5870",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 90.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 90.0
     },
     {
       "category": "Juego de Empacadura",
@@ -16870,7 +22983,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "G200",
         "JUEGO",
-        "MOTOR"
+        "MOTOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         617
@@ -16880,11 +22994,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-motor-caribe-g200",
       "variants": [
         {
+          "id_variante": 648,
+          "id_repuesto": 617,
+          "brand": "Genérica",
           "codigo_oem": "8-94248-8282",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Juego de Empacadura",
@@ -16897,7 +23020,9 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV",
         "MOTOR",
-        "RFS3064-A"
+        "RFS3064-A",
+        "RUSHMORE",
+        "SABO"
       ],
       "linked_ids": [
         623
@@ -16907,16 +23032,31 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-motor-luv-2-2",
       "variants": [
         {
-          "codigo_oem": "8-92061-9710",
+          "id_variante": 654,
+          "id_repuesto": 623,
           "brand": "RUSHMORE",
-          "precio_usd": 150
+          "codigo_oem": "8-92061-9710",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 150.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "8-92061-9710",
+          "id_variante": 655,
+          "id_repuesto": 623,
           "brand": "SABO",
-          "precio_usd": 100
+          "codigo_oem": "8-92061-9710",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 100.0
     },
     {
       "category": "Juego de Empacadura",
@@ -16929,7 +23069,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "JUEGO",
         "LUV",
-        "MOTOR"
+        "MOTOR",
+        "AJUSA"
       ],
       "linked_ids": [
         618
@@ -16939,21 +23080,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-motor-luv-2-3",
       "variants": [
         {
+          "id_variante": 1383,
+          "id_repuesto": 618,
+          "brand": "AJUSA",
           "codigo_oem": "5-87810-3191",
-          "brand": "KP",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87810-3191",
-          "brand": "NATSUKI",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87810-3191",
-          "brand": "RUSHMORE",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 90.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Juego de Empacadura",
@@ -16967,7 +23107,9 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV",
         "MOTOR",
-        "RFS3064-A"
+        "RFS3064-A",
+        "RUSHMORE",
+        "SABO"
       ],
       "linked_ids": [
         623
@@ -16977,16 +23119,31 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-motor-luv-dmax-2-4",
       "variants": [
         {
-          "codigo_oem": "8-92061-9710",
+          "id_variante": 654,
+          "id_repuesto": 623,
           "brand": "RUSHMORE",
-          "precio_usd": 150
+          "codigo_oem": "8-92061-9710",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 150.0,
+          "stock": 2
         },
         {
-          "codigo_oem": "8-92061-9710",
+          "id_variante": 655,
+          "id_repuesto": 623,
           "brand": "SABO",
-          "precio_usd": 100
+          "codigo_oem": "8-92061-9710",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 100.0
     },
     {
       "category": "Juego de Empacadura",
@@ -17003,7 +23160,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "LUV",
         "MOTOR",
-        "RFS3082-A"
+        "RFS3082-A",
+        "NIKHO"
       ],
       "linked_ids": [
         625
@@ -17013,26 +23171,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-motor-luv-dmax-3-5",
       "variants": [
         {
-          "codigo_oem": "5-87814-3231",
-          "brand": "ANCOV",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "RUSHMORE",
-          "precio_usd": 190
-        },
-        {
-          "codigo_oem": "5-87814-3231",
+          "id_variante": 1294,
+          "id_repuesto": 625,
           "brand": "NIKHO",
-          "precio_usd": 50
+          "codigo_oem": "5-87814-3231",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Juego de Empacadura",
@@ -17049,7 +23201,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "MOTOR",
         "RFS3082-A",
-        "RODEO"
+        "RODEO",
+        "NIKHO"
       ],
       "linked_ids": [
         625
@@ -17059,26 +23212,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-motor-rodeo-3-2-doch",
       "variants": [
         {
-          "codigo_oem": "5-87814-3231",
-          "brand": "ANCOV",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "EMASA",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "5-87814-3231",
-          "brand": "RUSHMORE",
-          "precio_usd": 190
-        },
-        {
-          "codigo_oem": "5-87814-3231",
+          "id_variante": 1294,
+          "id_repuesto": 625,
           "brand": "NIKHO",
-          "precio_usd": 50
+          "codigo_oem": "5-87814-3231",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Juego de Empacadura",
@@ -17094,7 +23241,8 @@ const PRODUCTS_DATA = {
         "JUEGO",
         "MOTOR",
         "RODEO",
-        "SOCH"
+        "SOCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         628
@@ -17104,11 +23252,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-motor-rodeo-3-2-soch",
       "variants": [
         {
+          "id_variante": 659,
+          "id_repuesto": 628,
+          "brand": "Genérica",
           "codigo_oem": "5-87812-7190",
-          "brand": "Original",
-          "precio_usd": 120
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 120.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 120.0
     },
     {
       "category": "Juego de Empacadura",
@@ -17123,7 +23280,8 @@ const PRODUCTS_DATA = {
         "EMPACADURA",
         "JUEGO",
         "MOTOR",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         628
@@ -17133,11 +23291,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-empacadura-motor-trooper-3-2",
       "variants": [
         {
+          "id_variante": 659,
+          "id_repuesto": 628,
+          "brand": "Genérica",
           "codigo_oem": "5-87812-7190",
-          "brand": "Original",
-          "precio_usd": 120
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 120.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 120.0
     },
     {
       "category": "Kit Arandela y Tuerca Punta Eje",
@@ -17151,7 +23318,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "KIT-1000",
         "PUNTA",
-        "TUERCA"
+        "TUERCA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         683
@@ -17160,11 +23328,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-arandela-y-tuerca-punta-de-eje-caribe-2-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 714,
+          "id_repuesto": 683,
+          "brand": "Genérica",
           "codigo_oem": "KIT-1000",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Kit Arandela y Tuerca Punta Eje",
@@ -17178,7 +23355,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "KIT-1000",
         "PUNTA",
-        "TUERCA"
+        "TUERCA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         683
@@ -17187,11 +23365,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-arandela-y-tuerca-punta-de-eje-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 714,
+          "id_repuesto": 683,
+          "brand": "Genérica",
           "codigo_oem": "KIT-1000",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Kit Arandela y Tuerca Punta Eje",
@@ -17206,7 +23393,8 @@ const PRODUCTS_DATA = {
         "KIT-1001",
         "PUNTA",
         "PUNTADE",
-        "TUERCA"
+        "TUERCA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         684
@@ -17215,11 +23403,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-arandela-y-tuerca-puntade-eje-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 715,
+          "id_repuesto": 684,
+          "brand": "Genérica",
           "codigo_oem": "KIT-1001",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Kit Barra Tensora",
@@ -17233,7 +23430,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "KIT",
         "LUV",
-        "TENSORA"
+        "TENSORA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         630
@@ -17242,11 +23440,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-barra-tensora-luv-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 661,
+          "id_repuesto": 630,
+          "brand": "Genérica",
           "codigo_oem": "8-99443-6720",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Kit Barra Tensora",
@@ -17259,7 +23466,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "KIT",
         "TENSORA",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         630
@@ -17268,11 +23476,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-barra-tensora-trooper",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 661,
+          "id_repuesto": 630,
+          "brand": "Genérica",
           "codigo_oem": "8-99443-6720",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Kit Bomba Clutch",
@@ -17286,7 +23503,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "G-2600",
-        "KIT"
+        "KIT",
+        "GENÉRICA"
       ],
       "linked_ids": [
         631
@@ -17295,11 +23513,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-bomba-clutch-caribe-g-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 662,
+          "id_repuesto": 631,
+          "brand": "Genérica",
           "codigo_oem": "5-87830-8250",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Kit Bomba de Freno",
@@ -17315,7 +23542,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "FRENO",
-        "KIT"
+        "KIT",
+        "GENÉRICA"
       ],
       "linked_ids": [
         638
@@ -17324,11 +23552,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-de-freno-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 669,
+          "id_repuesto": 638,
+          "brand": "Genérica",
           "codigo_oem": "8-94136-6720",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Kit Bomba de Freno",
@@ -17343,7 +23580,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "FRENO",
-        "KIT"
+        "KIT",
+        "GENÉRICA"
       ],
       "linked_ids": [
         639
@@ -17352,11 +23590,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-de-freno-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 670,
+          "id_repuesto": 639,
+          "brand": "Genérica",
           "codigo_oem": "8-94454-5630",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Kit Bomba de Freno",
@@ -17369,7 +23616,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FRENO",
         "G-2000",
-        "KIT"
+        "KIT",
+        "GENÉRICA"
       ],
       "linked_ids": [
         637
@@ -17378,11 +23626,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-de-freno-caribe-g-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 668,
+          "id_repuesto": 637,
+          "brand": "Genérica",
           "codigo_oem": "8-94231-5490",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Kit Bomba de Freno",
@@ -17396,7 +23653,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "FRENO",
         "KIT",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         639
@@ -17405,11 +23663,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-de-freno-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 670,
+          "id_repuesto": 639,
+          "brand": "Genérica",
           "codigo_oem": "8-94454-5630",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Kit Bomba Direccion",
@@ -17421,7 +23688,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "CARIBE",
         "DIRECCION",
-        "KIT"
+        "KIT",
+        "GENÉRICA"
       ],
       "linked_ids": [
         633
@@ -17430,11 +23698,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-direccion-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 664,
+          "id_repuesto": 633,
+          "brand": "Genérica",
           "codigo_oem": "8-94311-9831",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Kit Bomba Direccion",
@@ -17446,7 +23723,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "DIRECCION",
         "KIT",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         633
@@ -17455,11 +23733,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-direccion-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 664,
+          "id_repuesto": 633,
+          "brand": "Genérica",
           "codigo_oem": "8-94311-9831",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Kit Bomba Direccion",
@@ -17472,7 +23759,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DIRECCION",
         "KIT",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         636
@@ -17481,11 +23769,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-direccion-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 667,
+          "id_repuesto": 636,
+          "brand": "Genérica",
           "codigo_oem": "8-97205-6260",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Kit Bomba Direccion",
@@ -17499,7 +23796,8 @@ const PRODUCTS_DATA = {
         "DIESEL",
         "DIRECCION",
         "KIT",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         635
@@ -17508,11 +23806,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-direccion-luv-d-max-diesel-30",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 666,
+          "id_repuesto": 635,
+          "brand": "Genérica",
           "codigo_oem": "8-97184-7350",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Kit Bomba Direccion",
@@ -17525,7 +23832,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "DIRECCION",
         "KIT",
-        "RODEO"
+        "RODEO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         634
@@ -17534,11 +23842,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-direccion-rodeo-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 665,
+          "id_repuesto": 634,
+          "brand": "Genérica",
           "codigo_oem": "8-97081-8670",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Kit Bomba Direccion",
@@ -17551,7 +23868,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "DIRECCION",
         "KIT",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         634
@@ -17560,11 +23878,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bomba-direccion-trooper32",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 665,
+          "id_repuesto": 634,
+          "brand": "Genérica",
           "codigo_oem": "8-97081-8670",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Kit Bombin Clutch",
@@ -17578,7 +23905,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "D-MAX",
         "KIT",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         641
@@ -17587,11 +23915,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-bombin-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 672,
+          "id_repuesto": 641,
+          "brand": "Genérica",
           "codigo_oem": "5-87832-0670",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Kit Cajetin",
@@ -17606,7 +23943,9 @@ const PRODUCTS_DATA = {
         "8-97132-7000",
         "CAJETIN",
         "CARIBE",
-        "KIT"
+        "KIT",
+        "ALLPARK",
+        "TRANSRTEC"
       ],
       "linked_ids": [
         642
@@ -17615,21 +23954,31 @@ const PRODUCTS_DATA = {
       "slug": "kit-ajetin-caribe-2000",
       "variants": [
         {
+          "id_variante": 673,
+          "id_repuesto": 642,
           "brand": "ALLPARK",
           "codigo_oem": "8-97029-9450",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 6
         },
         {
+          "id_variante": 674,
+          "id_repuesto": 642,
           "brand": "TRANSRTEC",
           "codigo_oem": "8-97029-9450",
-          "precio_usd": 100
-        },
-        {
-          "brand": "TEZUKA",
-          "codigo_oem": "8-97029-9450",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Kit Cajetin",
@@ -17644,7 +23993,9 @@ const PRODUCTS_DATA = {
         "8-97132-7000",
         "CAJETIN",
         "CARIBE",
-        "KIT"
+        "KIT",
+        "ALLPARK",
+        "TRANSRTEC"
       ],
       "linked_ids": [
         642
@@ -17653,21 +24004,31 @@ const PRODUCTS_DATA = {
       "slug": "kit-ajetin-caribe-2300",
       "variants": [
         {
+          "id_variante": 673,
+          "id_repuesto": 642,
           "brand": "ALLPARK",
           "codigo_oem": "8-97029-9450",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 6
         },
         {
+          "id_variante": 674,
+          "id_repuesto": 642,
           "brand": "TRANSRTEC",
           "codigo_oem": "8-97029-9450",
-          "precio_usd": 100
-        },
-        {
-          "brand": "TEZUKA",
-          "codigo_oem": "8-97029-9450",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Kit Cajetin",
@@ -17682,7 +24043,9 @@ const PRODUCTS_DATA = {
         "8-97132-7000",
         "CAJETIN",
         "CARIBE",
-        "KIT"
+        "KIT",
+        "ALLPARK",
+        "TRANSRTEC"
       ],
       "linked_ids": [
         642
@@ -17691,21 +24054,31 @@ const PRODUCTS_DATA = {
       "slug": "kit-ajetin-caribe-2600",
       "variants": [
         {
+          "id_variante": 673,
+          "id_repuesto": 642,
           "brand": "ALLPARK",
           "codigo_oem": "8-97029-9450",
-          "precio_usd": 60
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 6
         },
         {
+          "id_variante": 674,
+          "id_repuesto": 642,
           "brand": "TRANSRTEC",
           "codigo_oem": "8-97029-9450",
-          "precio_usd": 100
-        },
-        {
-          "brand": "TEZUKA",
-          "codigo_oem": "8-97029-9450",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Kit Cajetin",
@@ -17719,14 +24092,42 @@ const PRODUCTS_DATA = {
         "CAJETIN",
         "D-MAX",
         "KIT",
-        "LUV"
+        "LUV",
+        "ALLPARK",
+        "TRANSTEC"
       ],
       "linked_ids": [
-        568
+        646
       ],
       "oem": "71004876 / 01-8221",
       "slug": "kit-ajetin-luv-d-max-05-09",
-      "variants": []
+      "variants": [
+        {
+          "id_variante": 1382,
+          "id_repuesto": 646,
+          "brand": "ALLPARK",
+          "codigo_oem": "71004876",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
+        },
+        {
+          "id_variante": 677,
+          "id_repuesto": 646,
+          "brand": "TRANSTEC",
+          "codigo_oem": "71004876",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 3
+        }
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Kit Cajetin",
@@ -17738,7 +24139,8 @@ const PRODUCTS_DATA = {
         "CAJETIN",
         "DMAX",
         "KIT",
-        "LUV"
+        "LUV",
+        "ALLPARK"
       ],
       "linked_ids": [
         645
@@ -17747,11 +24149,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-cajetin-luv-d-max-2010-2014",
       "variants": [
         {
+          "id_variante": 676,
+          "id_repuesto": 645,
           "brand": "ALLPARK",
           "codigo_oem": "",
-          "precio_usd": 75
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 75.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 75.0
     },
     {
       "category": "Kit Caliper",
@@ -17764,7 +24175,8 @@ const PRODUCTS_DATA = {
         "CALIPER",
         "CARIBE",
         "DELANTERO",
-        "KIT"
+        "KIT",
+        "GENÉRICA"
       ],
       "linked_ids": [
         647
@@ -17773,11 +24185,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-aliper-delantero-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 678,
+          "id_repuesto": 647,
+          "brand": "Genérica",
           "codigo_oem": "8-94136-6430",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Kit Caliper",
@@ -17792,7 +24213,8 @@ const PRODUCTS_DATA = {
         "CALIPER",
         "CARIBE",
         "DELANTERO",
-        "KIT"
+        "KIT",
+        "GENÉRICA"
       ],
       "linked_ids": [
         648
@@ -17801,11 +24223,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-aliper-delantero-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 679,
+          "id_repuesto": 648,
+          "brand": "Genérica",
           "codigo_oem": "8-94461-2500",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Kit Caliper",
@@ -17819,7 +24250,8 @@ const PRODUCTS_DATA = {
         "CALIPER",
         "DELANTERO",
         "KIT",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         648
@@ -17828,11 +24260,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-caliper-delantero-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 679,
+          "id_repuesto": 648,
+          "brand": "Genérica",
           "codigo_oem": "8-94461-2500",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Kit Camarin",
@@ -17844,7 +24285,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "KIT",
         "LUV",
-        "RMA3082"
+        "RMA3082",
+        "RUSHMORE"
       ],
       "linked_ids": [
         651
@@ -17853,11 +24295,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-camarin-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 682,
+          "id_repuesto": 651,
+          "brand": "RUSHMORE",
           "codigo_oem": "RMA3082",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Kit Carburador",
@@ -17870,7 +24321,8 @@ const PRODUCTS_DATA = {
         "8688",
         "CARBURADOR",
         "CARIBE",
-        "KIT"
+        "KIT",
+        "GENÉRICA"
       ],
       "linked_ids": [
         653
@@ -17879,11 +24331,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-carburador-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 684,
+          "id_repuesto": 653,
+          "brand": "Genérica",
           "codigo_oem": "8-94402-9090",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 136
         }
-      ]
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Kit Carburador",
@@ -17895,7 +24356,8 @@ const PRODUCTS_DATA = {
         "CARBURADOR",
         "CARIBE",
         "G-200",
-        "KIT"
+        "KIT",
+        "GENÉRICA"
       ],
       "linked_ids": [
         652
@@ -17904,11 +24366,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-carburador-caribe-g-200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 683,
+          "id_repuesto": 652,
+          "brand": "Genérica",
           "codigo_oem": "8-94204-4290",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Kit Clutch",
@@ -17919,7 +24390,9 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "KIS10B",
-        "KIT"
+        "KIT",
+        "BM",
+        "PERFECTION"
       ],
       "linked_ids": [
         656
@@ -17928,21 +24401,31 @@ const PRODUCTS_DATA = {
       "slug": "kit-clutch-caribe-2-3",
       "variants": [
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "KIS10B",
-          "precio_usd": 140
-        },
-        {
-          "brand": "TRIX",
-          "codigo_oem": "KIS10B",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1208,
+          "id_repuesto": 656,
           "brand": "BM",
           "codigo_oem": "KIS10B",
-          "precio_usd": 120
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 120.0,
+          "stock": 3
+        },
+        {
+          "id_variante": 687,
+          "id_repuesto": 656,
+          "brand": "PERFECTION",
+          "codigo_oem": "KIS10B",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 140.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 120.0
     },
     {
       "category": "Kit Clutch",
@@ -17954,7 +24437,9 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "G-2000",
         "KIS10B",
-        "KIT"
+        "KIT",
+        "BM",
+        "PERFECTION"
       ],
       "linked_ids": [
         656
@@ -17963,21 +24448,31 @@ const PRODUCTS_DATA = {
       "slug": "kit-clutch-caribe-g-2000",
       "variants": [
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "KIS10B",
-          "precio_usd": 140
-        },
-        {
-          "brand": "TRIX",
-          "codigo_oem": "KIS10B",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1208,
+          "id_repuesto": 656,
           "brand": "BM",
           "codigo_oem": "KIS10B",
-          "precio_usd": 120
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 120.0,
+          "stock": 3
+        },
+        {
+          "id_variante": 687,
+          "id_repuesto": 656,
+          "brand": "PERFECTION",
+          "codigo_oem": "KIS10B",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 140.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 120.0
     },
     {
       "category": "Kit Clutch",
@@ -17988,7 +24483,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "KIS10BI",
         "KIT",
-        "LUV"
+        "LUV",
+        "TRIX"
       ],
       "linked_ids": [
         660
@@ -17997,11 +24493,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-clutch-luv-2-3",
       "variants": [
         {
+          "id_variante": 691,
+          "id_repuesto": 660,
           "brand": "TRIX",
           "codigo_oem": "KIS10BI",
-          "precio_usd": 120
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 120.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 120.0
     },
     {
       "category": "Kit Clutch",
@@ -18016,7 +24521,8 @@ const PRODUCTS_DATA = {
         "ISK-003",
         "ISK-093",
         "KIT",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         669
@@ -18025,11 +24531,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-clutch-luv-d-max-3-0-diesel",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 700,
+          "id_repuesto": 669,
+          "brand": "Genérica",
           "codigo_oem": "5-87610-2191",
-          "precio_usd": 310
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 310.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 310.0
     },
     {
       "category": "Kit Clutch",
@@ -18041,7 +24556,9 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CLUTCH",
         "KIS27B",
-        "KIT"
+        "KIT",
+        "ICHIBAN",
+        "PERFECTION"
       ],
       "linked_ids": [
         658
@@ -18050,16 +24567,31 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-clutch-caribe-2600",
       "variants": [
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "KIS27B",
-          "precio_usd": 175
-        },
-        {
+          "id_variante": 690,
+          "id_repuesto": 658,
           "brand": "ICHIBAN",
           "codigo_oem": "KIS27B",
-          "precio_usd": 145
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 145.0,
+          "stock": 1
+        },
+        {
+          "id_variante": 689,
+          "id_repuesto": 658,
+          "brand": "PERFECTION",
+          "codigo_oem": "KIS27B",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 175.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 145.0
     },
     {
       "category": "Kit Clutch",
@@ -18072,7 +24604,9 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ISK-092B",
         "KIT",
-        "LUV"
+        "LUV",
+        "BM",
+        "VALEO"
       ],
       "linked_ids": [
         662
@@ -18081,16 +24615,31 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-clutch-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "VALEO",
+          "id_variante": 1380,
+          "id_repuesto": 662,
+          "brand": "BM",
           "codigo_oem": "ISK-092B",
-          "precio_usd": 405
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 145.0,
+          "stock": 1
         },
         {
-          "brand": "PERFECTION",
+          "id_variante": 693,
+          "id_repuesto": 662,
+          "brand": "VALEO",
           "codigo_oem": "ISK-092B",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 405.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 145.0
     },
     {
       "category": "Kit Clutch",
@@ -18104,7 +24653,9 @@ const PRODUCTS_DATA = {
         "KIS01",
         "KIT",
         "LUV",
-        "NAK09021"
+        "NAK09021",
+        "BM",
+        "DAIKIN EXEDY"
       ],
       "linked_ids": [
         663
@@ -18113,36 +24664,31 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-clutch-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "TRIX",
+          "id_variante": 1381,
+          "id_repuesto": 663,
+          "brand": "BM",
           "codigo_oem": "KIS01",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 250.0,
+          "stock": 3
         },
         {
-          "brand": "ANCOV",
-          "codigo_oem": "KIS01",
-          "precio_usd": 0
-        },
-        {
-          "brand": "EMASA",
-          "codigo_oem": "KIS01",
-          "precio_usd": 0
-        },
-        {
-          "brand": "PERFECTION",
-          "codigo_oem": "KIS01",
-          "precio_usd": 210
-        },
-        {
+          "id_variante": 698,
+          "id_repuesto": 663,
           "brand": "DAIKIN EXEDY",
           "codigo_oem": "KIS01",
-          "precio_usd": 570
-        },
-        {
-          "brand": "BWB",
-          "codigo_oem": "KIS01",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 570.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 250.0
     },
     {
       "category": "Kit de Motor",
@@ -18154,7 +24700,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "MOTOR"
       ],
-      "slug": "kit-de-motor-caribe-2-3"
+      "slug": "kit-de-motor-caribe-2-3",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Kit de Motor",
@@ -18166,7 +24716,11 @@ const PRODUCTS_DATA = {
         "KIT",
         "MOTOR"
       ],
-      "slug": "kit-de-motor-caribe-2-6"
+      "slug": "kit-de-motor-caribe-2-6",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Kit de Motor",
@@ -18178,7 +24732,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "MOTOR"
       ],
-      "slug": "kit-de-motor-luv-2-2"
+      "slug": "kit-de-motor-luv-2-2",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Kit de Motor",
@@ -18190,7 +24748,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "MOTOR"
       ],
-      "slug": "kit-de-motor-luv-2-3"
+      "slug": "kit-de-motor-luv-2-3",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Kit de Motor",
@@ -18203,7 +24765,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "MOTOR"
       ],
-      "slug": "kit-de-motor-luv-d-max-2-4"
+      "slug": "kit-de-motor-luv-d-max-2-4",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Kit de Motor",
@@ -18216,7 +24782,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "MOTOR"
       ],
-      "slug": "kit-de-motor-luv-d-max-3-5"
+      "slug": "kit-de-motor-luv-d-max-3-5",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Kit de Tiempo",
@@ -18228,7 +24798,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "TIEMPO",
         "TK-125",
-        "TKTB122"
+        "TKTB122",
+        "GENÉRICA"
       ],
       "linked_ids": [
         676
@@ -18237,11 +24808,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-tiempo-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 707,
+          "id_repuesto": 676,
+          "brand": "Genérica",
           "codigo_oem": "TK-125",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Kit de Tiempo",
@@ -18253,7 +24833,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "TIEMPO",
         "TK-126",
-        "TKTB147"
+        "TKTB147",
+        "GENÉRICA"
       ],
       "linked_ids": [
         677
@@ -18262,11 +24843,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-tiempo-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 708,
+          "id_repuesto": 677,
+          "brand": "Genérica",
           "codigo_oem": "TK-126",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 55.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 55.0
     },
     {
       "category": "Kit de Tiempo",
@@ -18281,7 +24871,9 @@ const PRODUCTS_DATA = {
         "I403B",
         "I403K",
         "KIT",
-        "TIEMPO"
+        "TIEMPO",
+        "CIC",
+        "OSK"
       ],
       "linked_ids": [
         674
@@ -18290,21 +24882,31 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-tiempo-caribe-2000",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "I403K",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 706,
+          "id_repuesto": 674,
           "brand": "CIC",
           "codigo_oem": "I403K",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 95.0,
+          "stock": 2
         },
         {
+          "id_variante": 1311,
+          "id_repuesto": 674,
           "brand": "OSK",
           "codigo_oem": "I403K",
-          "precio_usd": 130
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 130.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 95.0
     },
     {
       "category": "Kit de Tiempo",
@@ -18316,7 +24918,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TIEMPO",
         "TK-133",
-        "TKB133"
+        "TKB133",
+        "TAIKEN"
       ],
       "linked_ids": [
         678
@@ -18325,16 +24928,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-tiempo-chevrolet-luv-2-2",
       "variants": [
         {
-          "brand": "CIC",
-          "codigo_oem": "TK-133",
-          "precio_usd": 75
-        },
-        {
+          "id_variante": 1317,
+          "id_repuesto": 678,
           "brand": "TAIKEN",
           "codigo_oem": "TK-133",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Kit de Tiempo",
@@ -18346,7 +24953,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TIEMPO",
         "TK-125",
-        "TKTB122"
+        "TKTB122",
+        "GENÉRICA"
       ],
       "linked_ids": [
         676
@@ -18355,11 +24963,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-tiempo-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 707,
+          "id_repuesto": 676,
+          "brand": "Genérica",
           "codigo_oem": "TK-125",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Kit de Tiempo",
@@ -18372,7 +24989,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "TIEMPO",
         "TK-133",
-        "TKB133"
+        "TKB133",
+        "TAIKEN"
       ],
       "linked_ids": [
         678
@@ -18381,16 +24999,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-tiempo-chevrolet-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "CIC",
-          "codigo_oem": "TK-133",
-          "precio_usd": 75
-        },
-        {
+          "id_variante": 1317,
+          "id_repuesto": 678,
           "brand": "TAIKEN",
           "codigo_oem": "TK-133",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Kit de Tiempo",
@@ -18404,7 +25026,9 @@ const PRODUCTS_DATA = {
         "TCK303",
         "TIEMPO",
         "TK-135",
-        "TKB135"
+        "TKB135",
+        "CIC",
+        "MICHELIN"
       ],
       "linked_ids": [
         679
@@ -18413,26 +25037,31 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-tiempo-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "TAIKEN",
-          "codigo_oem": "TK-135",
-          "precio_usd": 175
-        },
-        {
-          "brand": "EMASA",
-          "codigo_oem": "TK-135",
-          "precio_usd": 0
-        },
-        {
-          "brand": "MICHELIN",
-          "codigo_oem": "TK-135",
-          "precio_usd": 145
-        },
-        {
+          "id_variante": 1333,
+          "id_repuesto": 679,
           "brand": "CIC",
           "codigo_oem": "TK-135",
-          "precio_usd": 155
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 155.0,
+          "stock": 1
+        },
+        {
+          "id_variante": 1068,
+          "id_repuesto": 679,
+          "brand": "MICHELIN",
+          "codigo_oem": "TK-135",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 145.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 145.0
     },
     {
       "category": "Kit de Tiempo",
@@ -18443,7 +25072,8 @@ const PRODUCTS_DATA = {
         "76061",
         "KIT",
         "RODEO",
-        "TIEMPO"
+        "TIEMPO",
+        "CIC"
       ],
       "linked_ids": [
         682
@@ -18452,11 +25082,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-tiempo-rodeo-31",
       "variants": [
         {
+          "id_variante": 713,
+          "id_repuesto": 682,
           "brand": "CIC",
           "codigo_oem": "76061",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 95.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 95.0
     },
     {
       "category": "Kit de Tiempo",
@@ -18467,7 +25106,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "RODEO",
         "TIEMPO",
-        "TK-137"
+        "TK-137",
+        "CIC"
       ],
       "linked_ids": [
         681
@@ -18476,11 +25116,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-tiempo-rodeo-3-2",
       "variants": [
         {
+          "id_variante": 712,
+          "id_repuesto": 681,
           "brand": "CIC",
           "codigo_oem": "TK-137",
-          "precio_usd": 120
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 120.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 120.0
     },
     {
       "category": "Kit de Tiempo",
@@ -18491,7 +25140,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "TIEMPO",
         "TK-137",
-        "TROOPER"
+        "TROOPER",
+        "CIC"
       ],
       "linked_ids": [
         681
@@ -18500,11 +25150,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-de-tiempo-trooper-3-2",
       "variants": [
         {
+          "id_variante": 712,
+          "id_repuesto": 681,
           "brand": "CIC",
           "codigo_oem": "TK-137",
-          "precio_usd": 120
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 120.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 120.0
     },
     {
       "category": "Kit Locha Arranque",
@@ -18516,7 +25175,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "KIT",
         "LOCHA",
-        "M-1530"
+        "M-1530",
+        "GENÉRICA"
       ],
       "linked_ids": [
         672
@@ -18525,11 +25185,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-locha-arranque-caribe-fohniio0-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-aronlyno-oono-suvc",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 703,
+          "id_repuesto": 672,
+          "brand": "Genérica",
           "codigo_oem": "M-1530",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Kit Locha Arranque",
@@ -18541,7 +25210,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "LOCHA",
         "LUV",
-        "M-1530"
+        "M-1530",
+        "GENÉRICA"
       ],
       "linked_ids": [
         672
@@ -18550,11 +25220,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-locha-arranque-luv-toaloo-automatico-toyoi-guoclokodaa-aahancues-tipc-osgr-2neas-oinos-alphi-gio-ghand-rnoniynso-n-suvc",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 703,
+          "id_repuesto": 672,
+          "brand": "Genérica",
           "codigo_oem": "M-1530",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Kit Satelite y Planetario",
@@ -18567,7 +25246,8 @@ const PRODUCTS_DATA = {
         "KIT",
         "PLANETARIO",
         "SATELITE",
-        "SP3151M"
+        "SP3151M",
+        "GENÉRICA"
       ],
       "linked_ids": [
         685
@@ -18576,11 +25256,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-satelite-y-planetario-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 716,
+          "id_repuesto": 685,
+          "brand": "Genérica",
           "codigo_oem": "0200SD-06027",
-          "precio_usd": 105
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 90.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 90.0
     },
     {
       "category": "Kit Satelite y Planetario",
@@ -18593,7 +25282,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PLANETARIO",
         "SATELITE",
-        "SP3151M"
+        "SP3151M",
+        "GENÉRICA"
       ],
       "linked_ids": [
         685
@@ -18602,11 +25292,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-satelite-y-planetario-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 716,
+          "id_repuesto": 685,
+          "brand": "Genérica",
           "codigo_oem": "0200SD-06027",
-          "precio_usd": 105
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 90.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 90.0
     },
     {
       "category": "Laina Ajuste",
@@ -18621,7 +25320,8 @@ const PRODUCTS_DATA = {
         "G200",
         "LAINA",
         "LAINAS",
-        "PINON"
+        "PINON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         686
@@ -18631,11 +25331,20 @@ const PRODUCTS_DATA = {
       "slug": "lainas-pinon-y-corona-caribe-g200-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 717,
+          "id_repuesto": 686,
+          "brand": "Genérica",
           "codigo_oem": "9-41519-1100",
-          "precio_usd": 2
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 2.0,
+          "stock": 54
         }
-      ]
+      ],
+      "total_stock": 54,
+      "is_out_of_stock": false,
+      "min_price_usd": 2.0
     },
     {
       "category": "Lapiz Barra Estabilizadora",
@@ -18649,7 +25358,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "GOMA",
         "LAPIZ",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         689
@@ -18659,11 +25369,20 @@ const PRODUCTS_DATA = {
       "slug": "lapiz-barra-estabilizadora-c-goma-u-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 720,
+          "id_repuesto": 689,
+          "brand": "Genérica",
           "codigo_oem": "5-51781-0100",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 14
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Lapiz Barra Estabilizadora",
@@ -18677,7 +25396,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTABILIZADORA",
         "GOMA",
-        "LAPIZ"
+        "LAPIZ",
+        "GENÉRICA"
       ],
       "linked_ids": [
         689
@@ -18687,11 +25407,20 @@ const PRODUCTS_DATA = {
       "slug": "lapiz-barra-estabilizadora-c-goma-u-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 720,
+          "id_repuesto": 689,
+          "brand": "Genérica",
           "codigo_oem": "5-51781-0100",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 14
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Lapiz Barra Estabilizadora",
@@ -18706,7 +25435,8 @@ const PRODUCTS_DATA = {
         "ESTABILIZADORA",
         "G200",
         "GOMA",
-        "LAPIZ"
+        "LAPIZ",
+        "GENÉRICA"
       ],
       "linked_ids": [
         689
@@ -18716,11 +25446,20 @@ const PRODUCTS_DATA = {
       "slug": "lapiz-barra-estabilizadora-c-goma-u-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 720,
+          "id_repuesto": 689,
+          "brand": "Genérica",
           "codigo_oem": "5-51781-0100",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 14
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Lapiz Barra Estabilizadora",
@@ -18732,7 +25471,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CARIBE",
         "ESTABILIZADORA",
-        "LAPIZ"
+        "LAPIZ",
+        "GENÉRICA"
       ],
       "linked_ids": [
         687
@@ -18742,11 +25482,20 @@ const PRODUCTS_DATA = {
       "slug": "lapiz-barra-estabilizadora-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 718,
+          "id_repuesto": 687,
+          "brand": "Genérica",
           "codigo_oem": "161701",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 15
         }
-      ]
+      ],
+      "total_stock": 15,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Lapiz Barra Estabilizadora",
@@ -18758,7 +25507,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CARIBE",
         "ESTABILIZADORA",
-        "LAPIZ"
+        "LAPIZ",
+        "GENÉRICA"
       ],
       "linked_ids": [
         688
@@ -18768,11 +25518,20 @@ const PRODUCTS_DATA = {
       "slug": "lapiz-barra-estabilizadora-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 719,
+          "id_repuesto": 688,
+          "brand": "Genérica",
           "codigo_oem": "161710",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Lapiz Barra Estabilizadora",
@@ -18785,7 +25544,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESTABILIZADORA",
         "G200",
-        "LAPIZ"
+        "LAPIZ",
+        "GENÉRICA"
       ],
       "linked_ids": [
         687
@@ -18795,11 +25555,20 @@ const PRODUCTS_DATA = {
       "slug": "lapiz-barra-estabilizadora-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 718,
+          "id_repuesto": 687,
+          "brand": "Genérica",
           "codigo_oem": "161701",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 15
         }
-      ]
+      ],
+      "total_stock": 15,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Lapiz Barra Estabilizadora",
@@ -18811,7 +25580,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "ESTABILIZADORA",
         "LAPIZ",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         688
@@ -18821,11 +25591,20 @@ const PRODUCTS_DATA = {
       "slug": "lapiz-barra-estabilizadora-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 719,
+          "id_repuesto": 688,
+          "brand": "Genérica",
           "codigo_oem": "161710",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Lapiz Bomba Gasolina",
@@ -18838,7 +25617,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "GASOLINA",
         "LAPIZ",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         690
@@ -18848,11 +25628,20 @@ const PRODUCTS_DATA = {
       "slug": "lapiz-bomba-gasolina-caribe-2-3-caribe-2-6-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 721,
+          "id_repuesto": 690,
+          "brand": "Genérica",
           "codigo_oem": "8-94159-2901",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Lapiz Bomba Gasolina",
@@ -18864,7 +25653,8 @@ const PRODUCTS_DATA = {
         "BOMBA",
         "GASOLINA",
         "LAPIZ",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         690
@@ -18874,11 +25664,20 @@ const PRODUCTS_DATA = {
       "slug": "lapiz-bomba-gasolina-luv-2-3",
       "variants": [
         {
+          "id_variante": 721,
+          "id_repuesto": 690,
+          "brand": "Genérica",
           "codigo_oem": "8-94159-2901",
-          "brand": "Original",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Locha de Arranque",
@@ -18890,7 +25689,8 @@ const PRODUCTS_DATA = {
         "ARRANQUE",
         "CARIBE",
         "LOCHA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         691
@@ -18900,11 +25700,20 @@ const PRODUCTS_DATA = {
       "slug": "locha-arranque-caribe-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 722,
+          "id_repuesto": 691,
+          "brand": "Genérica",
           "codigo_oem": "82756RK",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Locha de Arranque",
@@ -18915,7 +25724,8 @@ const PRODUCTS_DATA = {
         "82756RK",
         "ARRANQUE",
         "LOCHA",
-        "LUV"
+        "LUV",
+        "GENÉRICA"
       ],
       "linked_ids": [
         691
@@ -18925,11 +25735,20 @@ const PRODUCTS_DATA = {
       "slug": "locha-arranque-luv-2-3",
       "variants": [
         {
+          "id_variante": 722,
+          "id_repuesto": 691,
+          "brand": "Genérica",
           "codigo_oem": "82756RK",
-          "brand": "Original",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Locha Martillo",
@@ -18939,7 +25758,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-90076-7450",
         "LOCHA",
-        "MARTILLO"
+        "MARTILLO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         692
@@ -18949,11 +25769,20 @@ const PRODUCTS_DATA = {
       "slug": "locha-martillo",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 723,
+          "id_repuesto": 692,
+          "brand": "Genérica",
           "codigo_oem": "8-90076-7450",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Locha Martillo",
@@ -18965,7 +25794,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LOCHA",
         "LUV",
-        "MARTILLO"
+        "MARTILLO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         692
@@ -18975,11 +25805,20 @@ const PRODUCTS_DATA = {
       "slug": "locha-martillo-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 723,
+          "id_repuesto": 692,
+          "brand": "Genérica",
           "codigo_oem": "8-90076-7450",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Manguera Bomba Vacio",
@@ -18992,7 +25831,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "MANGUERA",
-        "VACIO"
+        "VACIO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         693
@@ -19002,11 +25842,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-bomba-vacio-luv-dmax-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 724,
+          "id_repuesto": 693,
+          "brand": "Genérica",
           "codigo_oem": "8-97353-8300",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Manguera Bomba Vacio",
@@ -19019,7 +25868,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "MANGUERA",
-        "VACIO"
+        "VACIO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         693
@@ -19029,11 +25879,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-bomba-vacio-luv-dmax-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 724,
+          "id_repuesto": 693,
+          "brand": "Genérica",
           "codigo_oem": "8-97353-8300",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Manguera Calefaccion",
@@ -19046,7 +25905,8 @@ const PRODUCTS_DATA = {
         "CALEFACCION",
         "CARIBE",
         "G200",
-        "MANGUERA"
+        "MANGUERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1201
@@ -19056,11 +25916,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-calefaccion-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1277,
+          "id_repuesto": 1201,
+          "brand": "Genérica",
           "codigo_oem": "8-94201-9431",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Manguera Calefaccion",
@@ -19072,7 +25941,8 @@ const PRODUCTS_DATA = {
         "CALEFACCION",
         "DMAX",
         "LUV",
-        "MANGUERA"
+        "MANGUERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         694
@@ -19082,11 +25952,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-calefaccion-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 725,
+          "id_repuesto": 694,
+          "brand": "Genérica",
           "codigo_oem": "ACM036",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Manguera Desfogue",
@@ -19097,7 +25976,8 @@ const PRODUCTS_DATA = {
         "4720",
         "DESFOGUE",
         "LUV",
-        "MANGUERA"
+        "MANGUERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         695
@@ -19107,11 +25987,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-desfogue-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 726,
+          "id_repuesto": 695,
+          "brand": "Genérica",
           "codigo_oem": "4720",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Manguera Freno",
@@ -19123,7 +26012,8 @@ const PRODUCTS_DATA = {
         "8-94222-6843",
         "CARIBE",
         "FRENO",
-        "MANGUERA"
+        "MANGUERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         696
@@ -19133,11 +26023,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-freno-caribe",
       "variants": [
         {
+          "id_variante": 727,
+          "id_repuesto": 696,
+          "brand": "Genérica",
           "codigo_oem": "8-94222-6843",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Manguera Freno",
@@ -19148,7 +26047,8 @@ const PRODUCTS_DATA = {
         "8-97134-8290",
         "FRENO",
         "LUV",
-        "MANGUERA"
+        "MANGUERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         697
@@ -19158,11 +26058,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-freno-luv",
       "variants": [
         {
+          "id_variante": 728,
+          "id_repuesto": 697,
+          "brand": "Genérica",
           "codigo_oem": "8-97134-8290",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Manguera Freno",
@@ -19175,7 +26084,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "FRENO",
         "LUV",
-        "MANGUERA"
+        "MANGUERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1169,
@@ -19186,16 +26096,31 @@ const PRODUCTS_DATA = {
       "slug": "manguera-freno-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1209,
+          "id_repuesto": 1169,
+          "brand": "Genérica",
           "codigo_oem": "8-97289-2092",
-          "precio_usd": 50
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 729,
+          "id_repuesto": 698,
+          "brand": "Genérica",
           "codigo_oem": "8-97363-8040",
-          "precio_usd": 50
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Manguera Freno",
@@ -19210,7 +26135,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANGUERA",
         "MF-4126",
-        "MF-4127"
+        "MF-4127",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1170,
@@ -19221,16 +26147,31 @@ const PRODUCTS_DATA = {
       "slug": "manguera-freno-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1210,
+          "id_repuesto": 1170,
+          "brand": "Genérica",
           "codigo_oem": "8-97330-4540",
-          "precio_usd": 45
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 3
         },
         {
-          "brand": "Original",
+          "id_variante": 730,
+          "id_repuesto": 699,
+          "brand": "Genérica",
           "codigo_oem": "8-97363-8050",
-          "precio_usd": 45
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Manguera Llenado Gasolina",
@@ -19242,7 +26183,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LLENADO",
         "LUV",
-        "MANGUERA"
+        "MANGUERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         700
@@ -19252,11 +26194,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-gasolina-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 731,
+          "id_repuesto": 700,
+          "brand": "Genérica",
           "codigo_oem": "8-97132-2271",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Manguera Llenado Gasolina",
@@ -19268,7 +26219,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LLENADO",
         "MANGUERA",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         701
@@ -19278,11 +26230,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-gasolina-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 732,
+          "id_repuesto": 701,
+          "brand": "Genérica",
           "codigo_oem": "8-97012-1580",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Manguera Radiador",
@@ -19298,7 +26259,8 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "LUV",
         "MANGUERA",
-        "RADIADOR"
+        "RADIADOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         703
@@ -19308,11 +26270,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-inferior-caribe-2-3-caribe-2-6-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 734,
+          "id_repuesto": 703,
+          "brand": "Genérica",
           "codigo_oem": "8-94337-3000",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Manguera Radiador",
@@ -19327,7 +26298,8 @@ const PRODUCTS_DATA = {
         "G200",
         "INFERIOR",
         "MANGUERA",
-        "RADIADOR"
+        "RADIADOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         702
@@ -19337,11 +26309,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-inferior-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 733,
+          "id_repuesto": 702,
+          "brand": "Genérica",
           "codigo_oem": "8-94101-9690",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Manguera Radiador",
@@ -19353,7 +26334,8 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "LUV",
         "MANGUERA",
-        "RADIADOR"
+        "RADIADOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         704
@@ -19363,11 +26345,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-inferior-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 735,
+          "id_repuesto": 704,
+          "brand": "Genérica",
           "codigo_oem": "8-97210-5920",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Manguera Radiador",
@@ -19380,7 +26371,8 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "LUV",
         "MANGUERA",
-        "RADIADOR"
+        "RADIADOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         706
@@ -19390,11 +26382,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-inferior-luv-dmax-3-5",
       "variants": [
         {
+          "id_variante": 737,
+          "id_repuesto": 706,
+          "brand": "Genérica",
           "codigo_oem": "8-97248-4301",
-          "brand": "Original",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Manguera Radiador",
@@ -19410,7 +26411,8 @@ const PRODUCTS_DATA = {
         "MANGUERA",
         "MC819",
         "RADIADOR",
-        "SUPERIOR"
+        "SUPERIOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         711
@@ -19420,11 +26422,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-superior-caribe-2-3-caribe-2-6-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 742,
+          "id_repuesto": 711,
+          "brand": "Genérica",
           "codigo_oem": "8-94389-4810",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Manguera Radiador",
@@ -19438,7 +26449,8 @@ const PRODUCTS_DATA = {
         "MC817",
         "MGM817R",
         "RADIADOR",
-        "SUPERIOR"
+        "SUPERIOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         710
@@ -19448,11 +26460,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-superior-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 741,
+          "id_repuesto": 710,
+          "brand": "Genérica",
           "codigo_oem": "MGM817R",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 21
         }
-      ]
+      ],
+      "total_stock": 21,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Manguera Radiador",
@@ -19464,7 +26485,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANGUERA",
         "RADIADOR",
-        "SUPERIOR"
+        "SUPERIOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         712
@@ -19474,11 +26496,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-superior-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 743,
+          "id_repuesto": 712,
+          "brand": "Genérica",
           "codigo_oem": "8-97181-3900",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Manguera Radiador",
@@ -19490,7 +26521,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANGUERA",
         "RADIADOR",
-        "SUPERIOR"
+        "SUPERIOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         712
@@ -19500,11 +26532,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-superior-luv-2-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 743,
+          "id_repuesto": 712,
+          "brand": "Genérica",
           "codigo_oem": "8-97181-3900",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Manguera Radiador",
@@ -19519,7 +26560,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANGUERA",
         "RADIADOR",
-        "SUPERIOR"
+        "SUPERIOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         716
@@ -19529,11 +26571,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-superior-luv-dmax-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 747,
+          "id_repuesto": 716,
+          "brand": "Genérica",
           "codigo_oem": "8-98003-9960",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Manguera Radiador",
@@ -19546,7 +26597,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANGUERA",
         "RADIADOR",
-        "SUPERIOR"
+        "SUPERIOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         717
@@ -19556,11 +26608,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-superior-luv-dmax-2-5-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 748,
+          "id_repuesto": 717,
+          "brand": "Genérica",
           "codigo_oem": "8-97363-6041",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Manguera Radiador",
@@ -19574,7 +26635,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANGUERA",
         "RADIADOR",
-        "SUPERIOR"
+        "SUPERIOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         717
@@ -19584,11 +26646,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-superior-luv-dmax-3-0-4jj1",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 748,
+          "id_repuesto": 717,
+          "brand": "Genérica",
           "codigo_oem": "8-97363-6041",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Manguera Radiador",
@@ -19601,7 +26672,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MANGUERA",
         "RADIADOR",
-        "SUPERIOR"
+        "SUPERIOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         714
@@ -19611,11 +26683,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-radiador-superior-luv-dmax-3-5",
       "variants": [
         {
+          "id_variante": 745,
+          "id_repuesto": 714,
+          "brand": "Genérica",
           "codigo_oem": "8-97248-4271",
-          "brand": "Original",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Manguera Retorno Aceite",
@@ -19630,7 +26711,8 @@ const PRODUCTS_DATA = {
         "ENFREIAMIENTO",
         "LUV",
         "MANGUERA",
-        "RETORNO"
+        "RETORNO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         718
@@ -19640,11 +26722,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-retorno-enfreiamiento-aceite-luv-dmax-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 749,
+          "id_repuesto": 718,
+          "brand": "Genérica",
           "codigo_oem": "8-97213-9192",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Manguera Retorno Aceite",
@@ -19659,7 +26750,8 @@ const PRODUCTS_DATA = {
         "ENFREIAMIENTO",
         "LUV",
         "MANGUERA",
-        "RETORNO"
+        "RETORNO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         718
@@ -19669,11 +26761,20 @@ const PRODUCTS_DATA = {
       "slug": "manguera-retorno-enfreiamiento-aceite-luv-dmax-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 749,
+          "id_repuesto": 718,
+          "brand": "Genérica",
           "codigo_oem": "8-97213-9192",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Manilla Capot",
@@ -19687,7 +26788,8 @@ const PRODUCTS_DATA = {
         "CAPOT",
         "D-MAX",
         "LUV",
-        "MANILLA"
+        "MANILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         720
@@ -19696,11 +26798,20 @@ const PRODUCTS_DATA = {
       "slug": "manilla-capot-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 751,
+          "id_repuesto": 720,
+          "brand": "Genérica",
           "codigo_oem": "8-97397-8480",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Manilla Compuerta",
@@ -19715,7 +26826,9 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "MANILLA",
-        "TRASERA"
+        "TRASERA",
+        "CROMADA",
+        "NEGRA"
       ],
       "linked_ids": [
         721
@@ -19725,16 +26838,31 @@ const PRODUCTS_DATA = {
       "slug": "manilla-compuerta-trasera-luv-dmax",
       "variants": [
         {
-          "brand": "NEGRA",
-          "codigo_oem": "8-98079-0190",
-          "precio_usd": 30
-        },
-        {
+          "id_variante": 1212,
+          "id_repuesto": 721,
           "brand": "CROMADA",
           "codigo_oem": "8-98079-0190",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 5
+        },
+        {
+          "id_variante": 752,
+          "id_repuesto": 721,
+          "brand": "NEGRA",
+          "codigo_oem": "8-98079-0190",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Manilla Externa",
@@ -19746,7 +26874,8 @@ const PRODUCTS_DATA = {
         "8-94295-4920",
         "CARIBE",
         "EXTERNA",
-        "MANILLA"
+        "MANILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1171,
@@ -19757,16 +26886,31 @@ const PRODUCTS_DATA = {
       "slug": "manilla-externa-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1211,
+          "id_repuesto": 1171,
+          "brand": "Genérica",
           "codigo_oem": "8-94295-4910",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 20
         },
         {
-          "brand": "Original",
+          "id_variante": 754,
+          "id_repuesto": 723,
+          "brand": "Genérica",
           "codigo_oem": "8-94295-4920",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Manilla Externa",
@@ -19782,7 +26926,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "EXTERNA",
         "LUV",
-        "MANILLA"
+        "MANILLA",
+        "CROMADA"
       ],
       "linked_ids": [
         724,
@@ -19793,26 +26938,31 @@ const PRODUCTS_DATA = {
       "slug": "manilla-externa-delantera-luv-dmax",
       "variants": [
         {
+          "id_variante": 1213,
+          "id_repuesto": 724,
           "brand": "CROMADA",
           "codigo_oem": "8-97362-8960",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         },
         {
-          "brand": "NEGRA",
-          "codigo_oem": "8-97362-8960",
-          "precio_usd": 25
-        },
-        {
+          "id_variante": 1214,
+          "id_repuesto": 1172,
           "brand": "CROMADA",
           "codigo_oem": "8-97362-8950",
-          "precio_usd": 30
-        },
-        {
-          "brand": "NEGRA",
-          "codigo_oem": "8-97362-8950",
-          "precio_usd": 25
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Manilla Externa",
@@ -19824,7 +26974,8 @@ const PRODUCTS_DATA = {
         "8-94434-9741",
         "EXTERNA",
         "LUV",
-        "MANILLA"
+        "MANILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         726,
@@ -19835,16 +26986,31 @@ const PRODUCTS_DATA = {
       "slug": "manilla-externa-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 757,
+          "id_repuesto": 726,
+          "brand": "Genérica",
           "codigo_oem": "8-94434-9731",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 10
         },
         {
-          "brand": "Original",
+          "id_variante": 1221,
+          "id_repuesto": 1175,
+          "brand": "Genérica",
           "codigo_oem": "8-94434-9741",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 15,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Manilla Externa",
@@ -19858,7 +27024,9 @@ const PRODUCTS_DATA = {
         "EXTERNA",
         "LUV",
         "MANILLA",
-        "TRASERA"
+        "TRASERA",
+        "CROMADA",
+        "NEGRA"
       ],
       "linked_ids": [
         1174,
@@ -19869,26 +27037,53 @@ const PRODUCTS_DATA = {
       "slug": "manilla-externa-trasera-luv-dmax",
       "variants": [
         {
+          "id_variante": 1216,
+          "id_repuesto": 1174,
           "brand": "CROMADA",
           "codigo_oem": "8-93291-1021",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         },
         {
+          "id_variante": 1218,
+          "id_repuesto": 1174,
           "brand": "NEGRA",
           "codigo_oem": "8-93291-1021",
-          "precio_usd": 25
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         },
         {
+          "id_variante": 1215,
+          "id_repuesto": 1173,
           "brand": "CROMADA",
           "codigo_oem": "8-93295-3141",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         },
         {
+          "id_variante": 1220,
+          "id_repuesto": 1173,
           "brand": "NEGRA",
           "codigo_oem": "8-93295-3141",
-          "precio_usd": 25
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Manilla Interna",
@@ -19901,7 +27096,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "INTERNA",
         "LUV",
-        "MANILLA"
+        "MANILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1187,
@@ -19911,16 +27107,31 @@ const PRODUCTS_DATA = {
       "slug": "manilla-interna-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1250,
+          "id_repuesto": 1187,
+          "brand": "Genérica",
           "codigo_oem": "8-97293-9971",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 4
         },
         {
-          "brand": "Original",
+          "id_variante": 1251,
+          "id_repuesto": 1188,
+          "brand": "Genérica",
           "codigo_oem": "8-97293-9981",
-          "precio_usd": 20
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Martillo",
@@ -19931,7 +27142,9 @@ const PRODUCTS_DATA = {
         "8-94102-4160",
         "CARIBE",
         "LUV",
-        "MARTILLO"
+        "MARTILLO",
+        "NPC",
+        "TSA"
       ],
       "linked_ids": [
         727
@@ -19941,16 +27154,31 @@ const PRODUCTS_DATA = {
       "slug": "martillo-caribe-luv-2-3",
       "variants": [
         {
+          "id_variante": 758,
+          "id_repuesto": 727,
           "brand": "NPC",
           "codigo_oem": "8-94102-4160",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 49
         },
         {
+          "id_variante": 1321,
+          "id_repuesto": 727,
           "brand": "TSA",
           "codigo_oem": "8-94102-4160",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 61,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Martillo",
@@ -19961,7 +27189,8 @@ const PRODUCTS_DATA = {
         "8-90409-1940",
         "8-93307-1040",
         "LUV",
-        "MARTILLO"
+        "MARTILLO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         728
@@ -19971,11 +27200,20 @@ const PRODUCTS_DATA = {
       "slug": "martillo-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 759,
+          "id_repuesto": 728,
+          "brand": "Genérica",
           "codigo_oem": "8-90409-1940",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 50,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Martillo",
@@ -19985,7 +27223,9 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94102-4160",
         "LUV",
-        "MARTILLO"
+        "MARTILLO",
+        "NPC",
+        "TSA"
       ],
       "linked_ids": [
         727
@@ -19995,16 +27235,31 @@ const PRODUCTS_DATA = {
       "slug": "martillo-luv-2-3",
       "variants": [
         {
-          "codigo_oem": "8-94102-4160",
+          "id_variante": 758,
+          "id_repuesto": 727,
           "brand": "NPC",
-          "precio_usd": 10
+          "codigo_oem": "8-94102-4160",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 49
         },
         {
-          "codigo_oem": "8-94102-4160",
+          "id_variante": 1321,
+          "id_repuesto": 727,
           "brand": "TSA",
-          "precio_usd": 10
+          "codigo_oem": "8-94102-4160",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 61,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Martillo",
@@ -20016,7 +27271,8 @@ const PRODUCTS_DATA = {
         "8-93307-1040",
         "DMAX",
         "LUV",
-        "MARTILLO"
+        "MARTILLO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         728
@@ -20026,11 +27282,20 @@ const PRODUCTS_DATA = {
       "slug": "martillo-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 759,
+          "id_repuesto": 728,
+          "brand": "Genérica",
           "codigo_oem": "8-90409-1940",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 50,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Meseta",
@@ -20042,7 +27307,8 @@ const PRODUCTS_DATA = {
         "8-94459-4602",
         "8-94459-4612",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1176,
@@ -20053,16 +27319,31 @@ const PRODUCTS_DATA = {
       "slug": "meseta-luv-4x2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1222,
+          "id_repuesto": 1176,
+          "brand": "Genérica",
           "codigo_oem": "8-94459-4602",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 4
         },
         {
-          "brand": "Original",
+          "id_variante": 761,
+          "id_repuesto": 730,
+          "brand": "Genérica",
           "codigo_oem": "8-94459-4612",
-          "precio_usd": 60
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Meseta",
@@ -20076,7 +27357,8 @@ const PRODUCTS_DATA = {
         "8-98005-8330",
         "DMAX",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         731,
@@ -20087,16 +27369,31 @@ const PRODUCTS_DATA = {
       "slug": "meseta-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 762,
+          "id_repuesto": 731,
+          "brand": "Genérica",
           "codigo_oem": "8-98005-8320",
-          "precio_usd": 100
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 1204,
+          "id_repuesto": 1166,
+          "brand": "Genérica",
           "codigo_oem": "8-98005-8330",
-          "precio_usd": 100
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 100.0
     },
     {
       "category": "Meseta",
@@ -20110,7 +27407,8 @@ const PRODUCTS_DATA = {
         "8-98005-8330",
         "DMAX",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         731,
@@ -20121,16 +27419,31 @@ const PRODUCTS_DATA = {
       "slug": "meseta-luv-dmax-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 762,
+          "id_repuesto": 731,
+          "brand": "Genérica",
           "codigo_oem": "8-98005-8320",
-          "precio_usd": 100
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 1204,
+          "id_repuesto": 1166,
+          "brand": "Genérica",
           "codigo_oem": "8-98005-8330",
-          "precio_usd": 100
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 100.0
     },
     {
       "category": "Meseta",
@@ -20145,7 +27458,8 @@ const PRODUCTS_DATA = {
         "8-98005-8330",
         "DMAX",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         731,
@@ -20156,16 +27470,31 @@ const PRODUCTS_DATA = {
       "slug": "meseta-luv-dmax-3-0-4x2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 762,
+          "id_repuesto": 731,
+          "brand": "Genérica",
           "codigo_oem": "8-98005-8320",
-          "precio_usd": 100
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 1204,
+          "id_repuesto": 1166,
+          "brand": "Genérica",
           "codigo_oem": "8-98005-8330",
-          "precio_usd": 100
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 100.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 100.0
     },
     {
       "category": "Meseta",
@@ -20180,7 +27509,8 @@ const PRODUCTS_DATA = {
         "8-98005-8350",
         "DMAX",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "MASARU"
       ],
       "linked_ids": [
         732,
@@ -20191,26 +27521,31 @@ const PRODUCTS_DATA = {
       "slug": "meseta-luv-dmax-3-0-4x4",
       "variants": [
         {
+          "id_variante": 763,
+          "id_repuesto": 732,
           "brand": "MASARU",
           "codigo_oem": "8-97365-0160",
-          "precio_usd": 125
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 125.0,
+          "stock": 2
         },
         {
-          "brand": "FUJI",
-          "codigo_oem": "8-97365-0160",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1223,
+          "id_repuesto": 1177,
           "brand": "MASARU",
           "codigo_oem": "8-97365-0170",
-          "precio_usd": 125
-        },
-        {
-          "brand": "FUJI",
-          "codigo_oem": "8-97365-0170",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 125.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 125.0
     },
     {
       "category": "Meseta",
@@ -20224,7 +27559,8 @@ const PRODUCTS_DATA = {
         "8-98005-8350",
         "DMAX",
         "LUV",
-        "MESETA"
+        "MESETA",
+        "MASARU"
       ],
       "linked_ids": [
         732,
@@ -20235,26 +27571,31 @@ const PRODUCTS_DATA = {
       "slug": "meseta-luv-dmax-3-5",
       "variants": [
         {
+          "id_variante": 763,
+          "id_repuesto": 732,
           "brand": "MASARU",
           "codigo_oem": "8-97365-0160",
-          "precio_usd": 125
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 125.0,
+          "stock": 2
         },
         {
-          "brand": "FUJI",
-          "codigo_oem": "8-97365-0160",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1223,
+          "id_repuesto": 1177,
           "brand": "MASARU",
           "codigo_oem": "8-97365-0170",
-          "precio_usd": 125
-        },
-        {
-          "brand": "FUJI",
-          "codigo_oem": "8-97365-0170",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 125.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 125.0
     },
     {
       "category": "Mica Stop",
@@ -20266,7 +27607,8 @@ const PRODUCTS_DATA = {
         "8-94228-9160",
         "CARIBE",
         "MICA",
-        "STOP"
+        "STOP",
+        "GENÉRICA"
       ],
       "linked_ids": [
         735,
@@ -20277,16 +27619,31 @@ const PRODUCTS_DATA = {
       "slug": "mica-stop-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 766,
+          "id_repuesto": 735,
+          "brand": "Genérica",
           "codigo_oem": "8-94228-9150",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 33
         },
         {
-          "brand": "Original",
+          "id_variante": 1193,
+          "id_repuesto": 1155,
+          "brand": "Genérica",
           "codigo_oem": "8-94228-9160",
-          "precio_usd": 15
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 18
         }
-      ]
+      ],
+      "total_stock": 51,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Modulo Con Bobina",
@@ -20299,7 +27656,8 @@ const PRODUCTS_DATA = {
         "BOBINA",
         "CAPTADORA",
         "CARIBE",
-        "MODULO"
+        "MODULO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         737
@@ -20308,11 +27666,20 @@ const PRODUCTS_DATA = {
       "slug": "modulo-con-bobina-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 768,
+          "id_repuesto": 737,
+          "brand": "Genérica",
           "codigo_oem": "33100-85750",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Modulo Con Bobina",
@@ -20325,7 +27692,8 @@ const PRODUCTS_DATA = {
         "BOBINA",
         "CAPTADORA",
         "LUV",
-        "MODULO"
+        "MODULO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         737
@@ -20334,11 +27702,20 @@ const PRODUCTS_DATA = {
       "slug": "modulo-con-bobina-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 768,
+          "id_repuesto": 737,
+          "brand": "Genérica",
           "codigo_oem": "33100-85750",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Muñon",
@@ -20350,7 +27727,8 @@ const PRODUCTS_DATA = {
         "8-94452-1071",
         "CARIBE",
         "INFERIOR",
-        "MUNON"
+        "MUNON",
+        "TAIWAN"
       ],
       "linked_ids": [
         738
@@ -20360,16 +27738,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-inferior-caribe-2-3",
       "variants": [
         {
+          "id_variante": 769,
+          "id_repuesto": 738,
           "brand": "TAIWAN",
           "codigo_oem": "8-94243-2360",
-          "precio_usd": 20
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-94243-2360",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Muñon",
@@ -20387,7 +27769,8 @@ const PRODUCTS_DATA = {
         "8-98005-8750",
         "CARIBE",
         "INFERIOR",
-        "MUNON"
+        "MUNON",
+        "TAIWAN"
       ],
       "linked_ids": [
         740
@@ -20397,21 +27780,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-inferior-caribe-2-6",
       "variants": [
         {
+          "id_variante": 771,
+          "id_repuesto": 740,
           "brand": "TAIWAN",
           "codigo_oem": "8-94452-1021",
-          "precio_usd": 20
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-94452-1021",
-          "precio_usd": 50
-        },
-        {
-          "brand": "MOOG",
-          "codigo_oem": "8-94452-1021",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 19
         }
-      ]
+      ],
+      "total_stock": 19,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Muñon",
@@ -20424,7 +27806,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G200",
         "INFERIOR",
-        "MUNON"
+        "MUNON",
+        "TAIWAN"
       ],
       "linked_ids": [
         738
@@ -20434,16 +27817,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-inferior-caribe-g200",
       "variants": [
         {
+          "id_variante": 769,
+          "id_repuesto": 738,
           "brand": "TAIWAN",
           "codigo_oem": "8-94243-2360",
-          "precio_usd": 20
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-94243-2360",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Muñon",
@@ -20457,7 +27844,8 @@ const PRODUCTS_DATA = {
         "8-94459-4643",
         "INFERIOR",
         "LUV",
-        "MUNON"
+        "MUNON",
+        "TAIWAN"
       ],
       "linked_ids": [
         742
@@ -20467,16 +27855,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-inferior-luv-4x2",
       "variants": [
         {
-          "codigo_oem": "8-94459-4641",
+          "id_variante": 773,
+          "id_repuesto": 742,
           "brand": "TAIWAN",
-          "precio_usd": 25
-        },
-        {
           "codigo_oem": "8-94459-4641",
-          "brand": "JAPON",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Muñon",
@@ -20495,7 +27887,8 @@ const PRODUCTS_DATA = {
         "8-98005-8750",
         "INFERIOR",
         "LUV",
-        "MUNON"
+        "MUNON",
+        "TAIWAN"
       ],
       "linked_ids": [
         740
@@ -20505,21 +27898,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-inferior-luv-4x4",
       "variants": [
         {
+          "id_variante": 771,
+          "id_repuesto": 740,
           "brand": "TAIWAN",
           "codigo_oem": "8-94452-1021",
-          "precio_usd": 20
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-94452-1021",
-          "precio_usd": 50
-        },
-        {
-          "brand": "MOOG",
-          "codigo_oem": "8-94452-1021",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 19
         }
-      ]
+      ],
+      "total_stock": 19,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Muñon",
@@ -20538,7 +27930,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "INFERIOR",
         "LUV",
-        "MUNON"
+        "MUNON",
+        "TAIWAN"
       ],
       "linked_ids": [
         740
@@ -20548,21 +27941,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-inferior-luv-d-max",
       "variants": [
         {
+          "id_variante": 771,
+          "id_repuesto": 740,
           "brand": "TAIWAN",
           "codigo_oem": "8-94452-1021",
-          "precio_usd": 20
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-94452-1021",
-          "precio_usd": 50
-        },
-        {
-          "brand": "MOOG",
-          "codigo_oem": "8-94452-1021",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 19
         }
-      ]
+      ],
+      "total_stock": 19,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Muñon",
@@ -20580,7 +27972,8 @@ const PRODUCTS_DATA = {
         "8-98005-8750",
         "INFERIOR",
         "MUNON",
-        "RODEO"
+        "RODEO",
+        "TAIWAN"
       ],
       "linked_ids": [
         740
@@ -20590,21 +27983,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-inferior-rodeo",
       "variants": [
         {
+          "id_variante": 771,
+          "id_repuesto": 740,
           "brand": "TAIWAN",
           "codigo_oem": "8-94452-1021",
-          "precio_usd": 20
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-94452-1021",
-          "precio_usd": 50
-        },
-        {
-          "brand": "MOOG",
-          "codigo_oem": "8-94452-1021",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 19
         }
-      ]
+      ],
+      "total_stock": 19,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Muñon",
@@ -20622,7 +28014,8 @@ const PRODUCTS_DATA = {
         "8-98005-8750",
         "INFERIOR",
         "MUNON",
-        "TROOPER"
+        "TROOPER",
+        "TAIWAN"
       ],
       "linked_ids": [
         740
@@ -20632,21 +28025,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-inferior-trooper",
       "variants": [
         {
+          "id_variante": 771,
+          "id_repuesto": 740,
           "brand": "TAIWAN",
           "codigo_oem": "8-94452-1021",
-          "precio_usd": 20
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-94452-1021",
-          "precio_usd": 50
-        },
-        {
-          "brand": "MOOG",
-          "codigo_oem": "8-94452-1021",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 19
         }
-      ]
+      ],
+      "total_stock": 19,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Muñon",
@@ -20660,7 +28052,8 @@ const PRODUCTS_DATA = {
         "8-94459-4534",
         "CARIBE",
         "MUNON",
-        "SUPERIOR"
+        "SUPERIOR",
+        "TAIWAN"
       ],
       "linked_ids": [
         744
@@ -20670,21 +28063,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-superior-caribe",
       "variants": [
         {
+          "id_variante": 775,
+          "id_repuesto": 744,
           "brand": "TAIWAN",
           "codigo_oem": "8-94243-2340",
-          "precio_usd": 15
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-94243-2340",
-          "precio_usd": 0
-        },
-        {
-          "brand": "MOOG",
-          "codigo_oem": "8-94243-2340",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Muñon",
@@ -20698,7 +28090,8 @@ const PRODUCTS_DATA = {
         "8-94459-4534",
         "LUV",
         "MUNON",
-        "SUPERIOR"
+        "SUPERIOR",
+        "TAIWAN"
       ],
       "linked_ids": [
         744
@@ -20708,21 +28101,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-superior-luv",
       "variants": [
         {
+          "id_variante": 775,
+          "id_repuesto": 744,
           "brand": "TAIWAN",
           "codigo_oem": "8-94243-2340",
-          "precio_usd": 15
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-94243-2340",
-          "precio_usd": 0
-        },
-        {
-          "brand": "MOOG",
-          "codigo_oem": "8-94243-2340",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Muñon",
@@ -20735,7 +28127,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "MUNON",
-        "SUPERIOR"
+        "SUPERIOR",
+        "TAIWAN"
       ],
       "linked_ids": [
         746
@@ -20745,16 +28138,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-superior-luv-dmax-2-4",
       "variants": [
         {
+          "id_variante": 777,
+          "id_repuesto": 746,
           "brand": "TAIWAN",
           "codigo_oem": "8-97365-0180",
-          "precio_usd": 20
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97365-0180",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 14
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Muñon",
@@ -20767,7 +28164,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "MUNON",
-        "SUPERIOR"
+        "SUPERIOR",
+        "TAIWAN"
       ],
       "linked_ids": [
         746
@@ -20777,16 +28175,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-superior-luv-dmax-2-5",
       "variants": [
         {
+          "id_variante": 777,
+          "id_repuesto": 746,
           "brand": "TAIWAN",
           "codigo_oem": "8-97365-0180",
-          "precio_usd": 20
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97365-0180",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 14
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Muñon",
@@ -20800,7 +28202,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "MUNON",
-        "SUPERIOR"
+        "SUPERIOR",
+        "TAIWAN"
       ],
       "linked_ids": [
         746
@@ -20810,16 +28213,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-superior-luv-dmax-3-0-4x2",
       "variants": [
         {
+          "id_variante": 777,
+          "id_repuesto": 746,
           "brand": "TAIWAN",
           "codigo_oem": "8-97365-0180",
-          "precio_usd": 20
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97365-0180",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 14
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Muñon",
@@ -20834,7 +28241,9 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "MUNON",
-        "SUPERIOR"
+        "SUPERIOR",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         748
@@ -20844,16 +28253,31 @@ const PRODUCTS_DATA = {
       "slug": "munon-superior-luv-dmax-3-0-4x4",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-97365-0190",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 780,
+          "id_repuesto": 748,
           "brand": "JAPON",
           "codigo_oem": "8-97365-0190",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 20
+        },
+        {
+          "id_variante": 779,
+          "id_repuesto": 748,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97365-0190",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Muñon",
@@ -20867,7 +28291,9 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "MUNON",
-        "SUPERIOR"
+        "SUPERIOR",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         748
@@ -20877,16 +28303,31 @@ const PRODUCTS_DATA = {
       "slug": "munon-superior-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-97365-0190",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 780,
+          "id_repuesto": 748,
           "brand": "JAPON",
           "codigo_oem": "8-97365-0190",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 20
+        },
+        {
+          "id_variante": 779,
+          "id_repuesto": 748,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97365-0190",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Muñon",
@@ -20900,7 +28341,8 @@ const PRODUCTS_DATA = {
         "8-94459-4534",
         "MUNON",
         "RODEO",
-        "SUPERIOR"
+        "SUPERIOR",
+        "TAIWAN"
       ],
       "linked_ids": [
         744
@@ -20910,21 +28352,20 @@ const PRODUCTS_DATA = {
       "slug": "munon-superior-rodeo",
       "variants": [
         {
+          "id_variante": 775,
+          "id_repuesto": 744,
           "brand": "TAIWAN",
           "codigo_oem": "8-94243-2340",
-          "precio_usd": 15
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-94243-2340",
-          "precio_usd": 0
-        },
-        {
-          "brand": "MOOG",
-          "codigo_oem": "8-94243-2340",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Muñon",
@@ -20937,7 +28378,9 @@ const PRODUCTS_DATA = {
         "8-98005-8260",
         "MUNON",
         "SUPERIOR",
-        "TROOPER"
+        "TROOPER",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         748
@@ -20947,16 +28390,31 @@ const PRODUCTS_DATA = {
       "slug": "munon-superior-trooper-3-2",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-97365-0190",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 780,
+          "id_repuesto": 748,
           "brand": "JAPON",
           "codigo_oem": "8-97365-0190",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 20
+        },
+        {
+          "id_variante": 779,
+          "id_repuesto": 748,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97365-0190",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Pastillas de Freno",
@@ -20971,7 +28429,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERA",
         "FRENO",
-        "PASTILLAS"
+        "PASTILLAS",
+        "CBK"
       ],
       "linked_ids": [
         759
@@ -20981,11 +28440,20 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-delantera-caribe-2-6",
       "variants": [
         {
+          "id_variante": 790,
+          "id_repuesto": 759,
           "brand": "CBK",
           "codigo_oem": "7253",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 23
         }
-      ]
+      ],
+      "total_stock": 23,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Pastillas de Freno",
@@ -20998,7 +28466,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERA",
         "FRENO",
-        "PASTILLAS"
+        "PASTILLAS",
+        "CBK"
       ],
       "linked_ids": [
         757
@@ -21008,21 +28477,20 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-delantera-caribe-84-88",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "7188",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 789,
+          "id_repuesto": 757,
           "brand": "CBK",
           "codigo_oem": "7188",
-          "precio_usd": 30
-        },
-        {
-          "brand": "PGT",
-          "codigo_oem": "7188",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Pastillas de Freno",
@@ -21037,7 +28505,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "FRENO",
         "LUV",
-        "PASTILLAS"
+        "PASTILLAS",
+        "CBK"
       ],
       "linked_ids": [
         759
@@ -21047,11 +28516,20 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-delantera-luv",
       "variants": [
         {
+          "id_variante": 790,
+          "id_repuesto": 759,
           "brand": "CBK",
           "codigo_oem": "7253",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 23
         }
-      ]
+      ],
+      "total_stock": 23,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Pastillas de Freno",
@@ -21067,7 +28545,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "FRENO",
         "LUV",
-        "PASTILLAS"
+        "PASTILLAS",
+        "CBK"
       ],
       "linked_ids": [
         760
@@ -21077,11 +28556,20 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-delantera-luv-3-2",
       "variants": [
         {
+          "id_variante": 791,
+          "id_repuesto": 760,
           "brand": "CBK",
           "codigo_oem": "7585",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Pastillas de Freno",
@@ -21097,7 +28585,9 @@ const PRODUCTS_DATA = {
         "DMAX",
         "FRENO",
         "LUV",
-        "PASTILLAS"
+        "PASTILLAS",
+        "CBK",
+        "PGT"
       ],
       "linked_ids": [
         1198,
@@ -21108,21 +28598,42 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-delantera-luv-dmax-10-15",
       "variants": [
         {
-          "brand": "PGT",
-          "codigo_oem": "8906C",
-          "precio_usd": 35
-        },
-        {
+          "id_variante": 795,
+          "id_repuesto": 764,
           "brand": "CBK",
           "codigo_oem": "8906",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 6
         },
         {
+          "id_variante": 1270,
+          "id_repuesto": 1198,
+          "brand": "PGT",
+          "codigo_oem": "8906C",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 4
+        },
+        {
+          "id_variante": 1268,
+          "id_repuesto": 764,
           "brand": "PGT",
           "codigo_oem": "8906",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 13,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Pastillas de Freno",
@@ -21138,7 +28649,8 @@ const PRODUCTS_DATA = {
         "DELANTERA",
         "FRENO",
         "PASTILLAS",
-        "TROOPER"
+        "TROOPER",
+        "CBK"
       ],
       "linked_ids": [
         760
@@ -21148,11 +28660,20 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-delantera-trooper-3-2",
       "variants": [
         {
+          "id_variante": 791,
+          "id_repuesto": 760,
           "brand": "CBK",
           "codigo_oem": "7585",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Pastillas de Freno",
@@ -21166,7 +28687,8 @@ const PRODUCTS_DATA = {
         "8-97039-2690",
         "FRENO",
         "LUV",
-        "PASTILLAS"
+        "PASTILLAS",
+        "CBK"
       ],
       "linked_ids": [
         765
@@ -21176,11 +28698,20 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-luv-3-2",
       "variants": [
         {
+          "id_variante": 796,
+          "id_repuesto": 765,
           "brand": "CBK",
           "codigo_oem": "7586",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Pastillas de Freno",
@@ -21199,7 +28730,10 @@ const PRODUCTS_DATA = {
         "DMAX",
         "FRENO",
         "LUV",
-        "PASTILLAS"
+        "PASTILLAS",
+        "CBK",
+        "PGT",
+        "WAGNER"
       ],
       "linked_ids": [
         762,
@@ -21210,31 +28744,53 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-luv-dmax-05-09",
       "variants": [
         {
-          "brand": "Original",
-          "codigo_oem": "7943C",
-          "precio_usd": 0
-        },
-        {
-          "brand": "PGT",
-          "codigo_oem": "7943C",
-          "precio_usd": 35
-        },
-        {
+          "id_variante": 793,
+          "id_repuesto": 762,
           "brand": "CBK",
           "codigo_oem": "7943",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 6
         },
         {
-          "brand": "WAGNER",
-          "codigo_oem": "7943",
-          "precio_usd": 65
-        },
-        {
+          "id_variante": 1265,
+          "id_repuesto": 762,
           "brand": "PGT",
           "codigo_oem": "7943",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 9
+        },
+        {
+          "id_variante": 1267,
+          "id_repuesto": 1197,
+          "brand": "PGT",
+          "codigo_oem": "7943C",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 4
+        },
+        {
+          "id_variante": 1073,
+          "id_repuesto": 762,
+          "brand": "WAGNER",
+          "codigo_oem": "7943",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 65.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Pastillas de Freno",
@@ -21246,7 +28802,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FRENO",
         "PASTILLAS",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         767
@@ -21256,11 +28813,20 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-trasera-caribe-89-90",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 798,
+          "id_repuesto": 767,
+          "brand": "Genérica",
           "codigo_oem": "442",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Pastillas de Freno",
@@ -21277,7 +28843,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FRENO",
         "PASTILLAS",
-        "TRASERA"
+        "TRASERA",
+        "CBK"
       ],
       "linked_ids": [
         766
@@ -21287,11 +28854,20 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-trasera-caribe-91-93",
       "variants": [
         {
+          "id_variante": 797,
+          "id_repuesto": 766,
           "brand": "CBK",
           "codigo_oem": "7328",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Pastillas de Freno",
@@ -21306,7 +28882,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "PASTILLAS",
         "RODEO",
-        "TRASERA"
+        "TRASERA",
+        "CBK"
       ],
       "linked_ids": [
         765
@@ -21316,11 +28893,20 @@ const PRODUCTS_DATA = {
       "slug": "pastillas-de-freno-trasera-rodeo-3-2",
       "variants": [
         {
+          "id_variante": 796,
+          "id_repuesto": 765,
           "brand": "CBK",
           "codigo_oem": "7586",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Patin Cadena",
@@ -21333,7 +28919,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CURVO",
         "G200",
-        "PATIN"
+        "PATIN",
+        "GENÉRICA"
       ],
       "linked_ids": [
         768
@@ -21343,11 +28930,20 @@ const PRODUCTS_DATA = {
       "slug": "patin-curvo-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 799,
+          "id_repuesto": 768,
+          "brand": "Genérica",
           "codigo_oem": "8-94213-8190",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Patin Cadena",
@@ -21360,7 +28956,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G200",
         "PATIN",
-        "RECTO"
+        "RECTO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         769
@@ -21370,11 +28967,20 @@ const PRODUCTS_DATA = {
       "slug": "patin-recto-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 800,
+          "id_repuesto": 769,
+          "brand": "Genérica",
           "codigo_oem": "8-94213-8320",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Piston",
@@ -21385,7 +28991,8 @@ const PRODUCTS_DATA = {
         "8-97176-7430",
         "CARIBE",
         "EPV-2900R-STD-3",
-        "PISTON"
+        "PISTON",
+        "PC PISTON"
       ],
       "linked_ids": [
         784
@@ -21394,11 +29001,20 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-pistones-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 815,
+          "id_repuesto": 784,
+          "brand": "PC PISTON",
           "codigo_oem": "8-97176-7430",
-          "precio_usd": 165
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 165.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 165.0
     },
     {
       "category": "Piston",
@@ -21412,7 +29028,8 @@ const PRODUCTS_DATA = {
         "8-94163-1893",
         "8-94163-1894",
         "CARIBE",
-        "PISTON"
+        "PISTON",
+        "TIK"
       ],
       "linked_ids": [
         790,
@@ -21426,56 +29043,42 @@ const PRODUCTS_DATA = {
       "slug": "piston-caribe-2-6",
       "variants": [
         {
-          "brand": "TIK",
-          "codigo_oem": "8-94163-1890",
-          "precio_usd": 0
-        },
-        {
-          "brand": "TOTO",
-          "codigo_oem": "8-94163-1890",
-          "precio_usd": 0
-        },
-        {
-          "brand": "TIK",
-          "codigo_oem": "8-94163-1891",
-          "precio_usd": 0
-        },
-        {
-          "brand": "TOTO",
-          "codigo_oem": "8-94163-1891",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 823,
+          "id_repuesto": 792,
           "brand": "TIK",
           "codigo_oem": "8-94163-1892",
-          "precio_usd": 0
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 190.0,
+          "stock": 1
         },
         {
-          "brand": "TOTO",
-          "codigo_oem": "8-94163-1892",
-          "precio_usd": 195
-        },
-        {
+          "id_variante": 824,
+          "id_repuesto": 793,
           "brand": "TIK",
           "codigo_oem": "8-94163-1893",
-          "precio_usd": 0
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 190.0,
+          "stock": 1
         },
         {
-          "brand": "TOTO",
-          "codigo_oem": "8-94163-1893",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 825,
+          "id_repuesto": 794,
           "brand": "TIK",
           "codigo_oem": "8-94163-1894",
-          "precio_usd": 0
-        },
-        {
-          "brand": "TOTO",
-          "codigo_oem": "8-94163-1894",
-          "precio_usd": 0
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 190.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 190.0
     },
     {
       "category": "Piston",
@@ -21497,7 +29100,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EPV-2900R-025",
         "G200",
-        "PISTON"
+        "PISTON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         779,
@@ -21511,31 +29115,31 @@ const PRODUCTS_DATA = {
       "slug": "piston-caribe-g200",
       "variants": [
         {
-          "codigo_oem": "8-94213-8310",
-          "brand": "Original",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94213-8311",
-          "brand": "Original",
-          "precio_usd": 0
-        },
-        {
-          "codigo_oem": "8-94213-8312",
-          "brand": "Original",
-          "precio_usd": 175
-        },
-        {
+          "id_variante": 813,
+          "id_repuesto": 782,
+          "brand": "Genérica",
           "codigo_oem": "8-94213-8313",
-          "brand": "Original",
-          "precio_usd": 70
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 4
         },
         {
+          "id_variante": 814,
+          "id_repuesto": 783,
+          "brand": "Genérica",
           "codigo_oem": "8-94213-8314",
-          "brand": "Original",
-          "precio_usd": 70
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 70.0
     },
     {
       "category": "Piston",
@@ -21549,7 +29153,8 @@ const PRODUCTS_DATA = {
         "8-92062-6333",
         "8-92062-6334",
         "LUV",
-        "PISTON"
+        "PISTON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         800,
@@ -21563,31 +29168,64 @@ const PRODUCTS_DATA = {
       "slug": "piston-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 831,
+          "id_repuesto": 800,
+          "brand": "Genérica",
           "codigo_oem": "8-92062-6330",
-          "precio_usd": 0
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "brand": "Original",
+          "id_variante": 832,
+          "id_repuesto": 801,
+          "brand": "Genérica",
           "codigo_oem": "8-92062-6331",
-          "precio_usd": 0
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "brand": "Original",
+          "id_variante": 833,
+          "id_repuesto": 802,
+          "brand": "Genérica",
           "codigo_oem": "8-92062-6332",
-          "precio_usd": 0
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "brand": "Original",
+          "id_variante": 834,
+          "id_repuesto": 803,
+          "brand": "Genérica",
           "codigo_oem": "8-92062-6333",
-          "precio_usd": 0
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "brand": "Original",
+          "id_variante": 835,
+          "id_repuesto": 804,
+          "brand": "Genérica",
           "codigo_oem": "8-92062-6334",
-          "precio_usd": 150
+          "medida": "0.40",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Piston",
@@ -21602,7 +29240,11 @@ const PRODUCTS_DATA = {
         "8-93292-7744",
         "DMAX",
         "LUV",
-        "PISTON"
+        "PISTON",
+        "GENÉRICA",
+        "SLY",
+        "KAIZEN",
+        "TIK"
       ],
       "linked_ids": [
         805,
@@ -21621,56 +29263,75 @@ const PRODUCTS_DATA = {
       "slug": "piston-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 836,
+          "id_repuesto": 805,
+          "brand": "Genérica",
           "codigo_oem": "",
-          "precio_usd": 100
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 100.0,
+          "stock": 3
         },
         {
-          "brand": "Original",
-          "codigo_oem": "",
-          "precio_usd": 0
-        },
-        {
-          "brand": "Original",
-          "codigo_oem": "",
-          "precio_usd": 0
-        },
-        {
-          "brand": "Original",
-          "codigo_oem": "",
-          "precio_usd": 0
-        },
-        {
-          "brand": "Original",
-          "codigo_oem": "",
-          "precio_usd": 0
-        },
-        {
-          "brand": "Original",
+          "id_variante": 1366,
+          "id_repuesto": 810,
+          "brand": "SLY",
           "codigo_oem": "8-93292-7740",
-          "precio_usd": 0
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 190.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
-          "codigo_oem": "8-93292-7741",
-          "precio_usd": 0
+          "id_variante": 838,
+          "id_repuesto": 807,
+          "brand": "KAIZEN",
+          "codigo_oem": "",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 100.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 1367,
+          "id_repuesto": 812,
+          "brand": "SLY",
           "codigo_oem": "8-93292-7742",
-          "precio_usd": 0
+          "medida": "0.20",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 190.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 844,
+          "id_repuesto": 813,
+          "brand": "SLY",
           "codigo_oem": "8-93292-7743",
-          "precio_usd": 0
+          "medida": "0.30",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 190.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 845,
+          "id_repuesto": 814,
+          "brand": "TIK",
           "codigo_oem": "8-93292-7744",
-          "precio_usd": 220
+          "medida": "0.40",
+          "lado": null,
+          "tipo": "Fino / Grueso",
+          "precio_usd": 190.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 100.0
     },
     {
       "category": "Piston",
@@ -21685,7 +29346,10 @@ const PRODUCTS_DATA = {
         "DMAX",
         "EPV3082STD",
         "LUV",
-        "PISTON"
+        "PISTON",
+        "GENÉRICA",
+        "AMERICAN PARTS",
+        "NATSUKI"
       ],
       "linked_ids": [
         815,
@@ -21695,16 +29359,42 @@ const PRODUCTS_DATA = {
       "slug": "juego-de-pistones-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 846,
+          "id_repuesto": 815,
+          "brand": "Genérica",
           "codigo_oem": "8-97358-0400",
-          "precio_usd": 150
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Fino / Fino",
+          "precio_usd": 150.0,
+          "stock": 10
         },
         {
-          "brand": "Original",
+          "id_variante": 1340,
+          "id_repuesto": 820,
+          "brand": "AMERICAN PARTS",
           "codigo_oem": "8-97167-0930",
-          "precio_usd": 150
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Grueso / Grueso",
+          "precio_usd": 140.0,
+          "stock": 1
+        },
+        {
+          "id_variante": 851,
+          "id_repuesto": 820,
+          "brand": "NATSUKI",
+          "codigo_oem": "8-97167-0930",
+          "medida": "STD",
+          "lado": null,
+          "tipo": "Grueso / Grueso",
+          "precio_usd": 150.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 13,
+      "is_out_of_stock": false,
+      "min_price_usd": 140.0
     },
     {
       "category": "Piston Caliper",
@@ -21717,7 +29407,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "PF-7646",
-        "PISTON"
+        "PISTON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         831
@@ -21727,11 +29418,20 @@ const PRODUCTS_DATA = {
       "slug": "piston-caliper-delantero-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 862,
+          "id_repuesto": 831,
+          "brand": "Genérica",
           "codigo_oem": "8-94438-6890",
-          "precio_usd": 25
+          "medida": "60MM",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Piston Caliper",
@@ -21744,7 +29444,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DELANTERO",
         "PF-7593",
-        "PISTON"
+        "PISTON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         830
@@ -21754,11 +29455,20 @@ const PRODUCTS_DATA = {
       "slug": "piston-caliper-delantero-caribe-84-88",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 861,
+          "id_repuesto": 830,
+          "brand": "Genérica",
           "codigo_oem": "8-94124-7831",
-          "precio_usd": 20
+          "medida": "57X54MM",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Piston Caliper",
@@ -21771,7 +29481,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "LUV",
         "PF-7646",
-        "PISTON"
+        "PISTON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         831
@@ -21781,11 +29492,20 @@ const PRODUCTS_DATA = {
       "slug": "piston-caliper-delantero-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 862,
+          "id_repuesto": 831,
+          "brand": "Genérica",
           "codigo_oem": "8-94438-6890",
-          "precio_usd": 25
+          "medida": "60MM",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Piston Caliper",
@@ -21799,7 +29519,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "PF-7872-N",
-        "PISTON"
+        "PISTON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         833
@@ -21809,11 +29530,20 @@ const PRODUCTS_DATA = {
       "slug": "piston-caliper-delantero-luv-dmax-10-15",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 864,
+          "id_repuesto": 833,
+          "brand": "Genérica",
           "codigo_oem": "8-97328-6060",
-          "precio_usd": 15
+          "medida": "42.5X53.5MM",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Piston Caliper",
@@ -21825,7 +29555,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "PF-7413",
         "PISTON",
-        "TRASERO"
+        "TRASERO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         836
@@ -21835,11 +29566,20 @@ const PRODUCTS_DATA = {
       "slug": "piston-caliper-trasero-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 867,
+          "id_repuesto": 836,
+          "brand": "Genérica",
           "codigo_oem": "PF-7413",
-          "precio_usd": 20
+          "medida": "54MM",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Piston Caliper",
@@ -21851,7 +29591,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "PF-7411",
         "PISTON",
-        "TRASERO"
+        "TRASERO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         834
@@ -21861,11 +29602,20 @@ const PRODUCTS_DATA = {
       "slug": "piston-caliper-trasero-caribe-2-6-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 865,
+          "id_repuesto": 834,
+          "brand": "Genérica",
           "codigo_oem": "PF-7411",
-          "precio_usd": 20
+          "medida": "41MM",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Piston Caliper",
@@ -21877,7 +29627,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "PF-7412",
         "PISTON",
-        "TRASERO"
+        "TRASERO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         835
@@ -21887,11 +29638,20 @@ const PRODUCTS_DATA = {
       "slug": "piston-caliper-trasero-caribe-2-6-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 866,
+          "id_repuesto": 835,
+          "brand": "Genérica",
           "codigo_oem": "PF-7412",
-          "precio_usd": 20
+          "medida": "41MM",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Piñon Velocimetro",
@@ -21904,7 +29664,8 @@ const PRODUCTS_DATA = {
         "8-97238-5880",
         "CARIBE",
         "PINON",
-        "VELOCIMETRO"
+        "VELOCIMETRO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         774
@@ -21914,11 +29675,20 @@ const PRODUCTS_DATA = {
       "slug": "pinon-velocimetro-caribe",
       "variants": [
         {
+          "id_variante": 805,
+          "id_repuesto": 774,
+          "brand": "Genérica",
           "codigo_oem": "8-94473-3081",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Piñon Velocimetro",
@@ -21932,7 +29702,8 @@ const PRODUCTS_DATA = {
         "8-97012-0852",
         "CARIBE",
         "PINON",
-        "VELOCIMETRO"
+        "VELOCIMETRO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         775
@@ -21942,11 +29713,20 @@ const PRODUCTS_DATA = {
       "slug": "pinon-velocimetro-caribe-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 806,
+          "id_repuesto": 775,
+          "brand": "Genérica",
           "codigo_oem": "8-94473-3071",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Piñon Velocimetro",
@@ -21959,7 +29739,8 @@ const PRODUCTS_DATA = {
         "8-97238-5880",
         "LUV",
         "PINON",
-        "VELOCIMETRO"
+        "VELOCIMETRO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         774
@@ -21969,11 +29750,20 @@ const PRODUCTS_DATA = {
       "slug": "pinon-velocimetro-luv",
       "variants": [
         {
+          "id_variante": 805,
+          "id_repuesto": 774,
+          "brand": "Genérica",
           "codigo_oem": "8-94473-3081",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Piñon Velocimetro",
@@ -21988,7 +29778,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "PINON",
-        "VELOCIMETRO"
+        "VELOCIMETRO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         775
@@ -21998,11 +29789,20 @@ const PRODUCTS_DATA = {
       "slug": "pinon-velocimetro-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 806,
+          "id_repuesto": 775,
+          "brand": "Genérica",
           "codigo_oem": "8-94473-3071",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Piñon y Corona",
@@ -22013,7 +29813,8 @@ const PRODUCTS_DATA = {
         "8-94225-2581",
         "CARIBE",
         "CORONA",
-        "PINON"
+        "PINON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         778
@@ -22023,11 +29824,20 @@ const PRODUCTS_DATA = {
       "slug": "pinon-y-corona-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 809,
+          "id_repuesto": 778,
+          "brand": "Genérica",
           "codigo_oem": "8-94225-2581",
-          "precio_usd": 255
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 255.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 255.0
     },
     {
       "category": "Piñon y Corona",
@@ -22039,7 +29849,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CORONA",
         "G200",
-        "PINON"
+        "PINON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         778
@@ -22049,11 +29860,20 @@ const PRODUCTS_DATA = {
       "slug": "pinon-y-corona-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 809,
+          "id_repuesto": 778,
+          "brand": "Genérica",
           "codigo_oem": "8-94225-2581",
-          "precio_usd": 255
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 255.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 255.0
     },
     {
       "category": "Piñon y Corona",
@@ -22064,7 +29884,8 @@ const PRODUCTS_DATA = {
         "8-94225-2581",
         "CORONA",
         "LUV",
-        "PINON"
+        "PINON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         778
@@ -22074,11 +29895,20 @@ const PRODUCTS_DATA = {
       "slug": "pinon-y-corona-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 809,
+          "id_repuesto": 778,
+          "brand": "Genérica",
           "codigo_oem": "8-94225-2581",
-          "precio_usd": 255
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 255.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 255.0
     },
     {
       "category": "Piñon y Corona",
@@ -22089,7 +29919,8 @@ const PRODUCTS_DATA = {
         "8-94225-2581",
         "CORONA",
         "LUV",
-        "PINON"
+        "PINON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         778
@@ -22099,11 +29930,20 @@ const PRODUCTS_DATA = {
       "slug": "pinon-y-corona-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 809,
+          "id_repuesto": 778,
+          "brand": "Genérica",
           "codigo_oem": "8-94225-2581",
-          "precio_usd": 255
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 255.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 255.0
     },
     {
       "category": "Planetario",
@@ -22113,7 +29953,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "9-41561-0504",
         "CARIBE",
-        "PLANETARIO"
+        "PLANETARIO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         838
@@ -22123,11 +29964,20 @@ const PRODUCTS_DATA = {
       "slug": "planetario-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 869,
+          "id_repuesto": 838,
+          "brand": "Genérica",
           "codigo_oem": "9-41561-0504",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Planetario",
@@ -22138,7 +29988,8 @@ const PRODUCTS_DATA = {
         "9-41561-0504",
         "CARIBE",
         "G200",
-        "PLANETARIO"
+        "PLANETARIO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         838
@@ -22148,11 +29999,20 @@ const PRODUCTS_DATA = {
       "slug": "planetario-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 869,
+          "id_repuesto": 838,
+          "brand": "Genérica",
           "codigo_oem": "9-41561-0504",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Planetario",
@@ -22162,7 +30022,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "9-41561-0504",
         "LUV",
-        "PLANETARIO"
+        "PLANETARIO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         838
@@ -22172,11 +30033,20 @@ const PRODUCTS_DATA = {
       "slug": "planetario-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 869,
+          "id_repuesto": 838,
+          "brand": "Genérica",
           "codigo_oem": "9-41561-0504",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Platino",
@@ -22189,7 +30059,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G200",
         "PLATINO",
-        "SD-112V"
+        "SD-112V",
+        "GENÉRICA"
       ],
       "linked_ids": [
         839
@@ -22199,11 +30070,20 @@ const PRODUCTS_DATA = {
       "slug": "platino-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 870,
+          "id_repuesto": 839,
+          "brand": "Genérica",
           "codigo_oem": "8-94208-4080",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Plato Clutch",
@@ -22220,7 +30100,9 @@ const PRODUCTS_DATA = {
         "N5303P",
         "NAC603",
         "PLATO",
-        "PRESION"
+        "PRESION",
+        "ORIGINAL",
+        "PERFECTION"
       ],
       "linked_ids": [
         840
@@ -22230,16 +30112,31 @@ const PRODUCTS_DATA = {
       "slug": "plato-presion-clutch-caribe-2-3",
       "variants": [
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "8-94224-7830",
-          "precio_usd": 70
-        },
-        {
+          "id_variante": 872,
+          "id_repuesto": 840,
           "brand": "ORIGINAL",
           "codigo_oem": "8-94224-7830",
-          "precio_usd": 125
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 125.0,
+          "stock": 11
+        },
+        {
+          "id_variante": 871,
+          "id_repuesto": 840,
+          "brand": "PERFECTION",
+          "codigo_oem": "8-94224-7830",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 16,
+      "is_out_of_stock": false,
+      "min_price_usd": 70.0
     },
     {
       "category": "Plato Clutch",
@@ -22252,7 +30149,8 @@ const PRODUCTS_DATA = {
         "CLUTCH",
         "N5316P",
         "PLATO",
-        "PRESION"
+        "PRESION",
+        "GENÉRICA"
       ],
       "linked_ids": [
         842
@@ -22262,11 +30160,20 @@ const PRODUCTS_DATA = {
       "slug": "plato-presion-clutch-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 873,
+          "id_repuesto": 842,
+          "brand": "Genérica",
           "codigo_oem": "8-94462-0303",
-          "precio_usd": 90
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 90.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 90.0
     },
     {
       "category": "Plato Clutch",
@@ -22284,7 +30191,9 @@ const PRODUCTS_DATA = {
         "N5303P",
         "NAC603",
         "PLATO",
-        "PRESION"
+        "PRESION",
+        "ORIGINAL",
+        "PERFECTION"
       ],
       "linked_ids": [
         840
@@ -22294,16 +30203,31 @@ const PRODUCTS_DATA = {
       "slug": "plato-presion-clutch-caribe-g200",
       "variants": [
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "8-94224-7830",
-          "precio_usd": 70
-        },
-        {
+          "id_variante": 872,
+          "id_repuesto": 840,
           "brand": "ORIGINAL",
           "codigo_oem": "8-94224-7830",
-          "precio_usd": 125
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 125.0,
+          "stock": 11
+        },
+        {
+          "id_variante": 871,
+          "id_repuesto": 840,
+          "brand": "PERFECTION",
+          "codigo_oem": "8-94224-7830",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 16,
+      "is_out_of_stock": false,
+      "min_price_usd": 70.0
     },
     {
       "category": "Plato Clutch",
@@ -22320,7 +30244,9 @@ const PRODUCTS_DATA = {
         "N5303P",
         "NAC603",
         "PLATO",
-        "PRESION"
+        "PRESION",
+        "ORIGINAL",
+        "PERFECTION"
       ],
       "linked_ids": [
         840
@@ -22330,16 +30256,31 @@ const PRODUCTS_DATA = {
       "slug": "plato-presion-clutch-luv-2-3",
       "variants": [
         {
-          "brand": "PERFECTION",
-          "codigo_oem": "8-94224-7830",
-          "precio_usd": 70
-        },
-        {
+          "id_variante": 872,
+          "id_repuesto": 840,
           "brand": "ORIGINAL",
           "codigo_oem": "8-94224-7830",
-          "precio_usd": 125
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 125.0,
+          "stock": 11
+        },
+        {
+          "id_variante": 871,
+          "id_repuesto": 840,
+          "brand": "PERFECTION",
+          "codigo_oem": "8-94224-7830",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 70.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 16,
+      "is_out_of_stock": false,
+      "min_price_usd": 70.0
     },
     {
       "category": "Polea Aire Acondicionado",
@@ -22351,7 +30292,8 @@ const PRODUCTS_DATA = {
         "ACONDICIONADO",
         "AIRE",
         "CARIBE",
-        "POLEA"
+        "POLEA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         844
@@ -22361,11 +30303,20 @@ const PRODUCTS_DATA = {
       "slug": "polea-aire-acondicionado-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 875,
+          "id_repuesto": 844,
+          "brand": "Genérica",
           "codigo_oem": "8-94160-5440",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Polea Aire Acondicionado",
@@ -22377,7 +30328,8 @@ const PRODUCTS_DATA = {
         "ACONDICIONADO",
         "AIRE",
         "CARIBE",
-        "POLEA"
+        "POLEA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         844
@@ -22387,11 +30339,20 @@ const PRODUCTS_DATA = {
       "slug": "polea-aire-acondicionado-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 875,
+          "id_repuesto": 844,
+          "brand": "Genérica",
           "codigo_oem": "8-94160-5440",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Polea Aire Acondicionado",
@@ -22403,7 +30364,8 @@ const PRODUCTS_DATA = {
         "ACONDICIONADO",
         "AIRE",
         "LUV",
-        "POLEA"
+        "POLEA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         844
@@ -22413,11 +30375,20 @@ const PRODUCTS_DATA = {
       "slug": "polea-aire-acondicionado-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 875,
+          "id_repuesto": 844,
+          "brand": "Genérica",
           "codigo_oem": "8-94160-5440",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Polea Loca",
@@ -22429,7 +30400,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LOCA",
         "LUV",
-        "POLEA"
+        "POLEA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         848
@@ -22439,11 +30411,20 @@ const PRODUCTS_DATA = {
       "slug": "polea-loca-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 879,
+          "id_repuesto": 848,
+          "brand": "Genérica",
           "codigo_oem": "8-97146-8770",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Posapies Parachoque Trasero",
@@ -22458,7 +30439,8 @@ const PRODUCTS_DATA = {
         "PARACHOQUE",
         "POSAPIE",
         "POSAPIES",
-        "TRASERO"
+        "TRASERO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1193
@@ -22467,11 +30449,20 @@ const PRODUCTS_DATA = {
       "slug": "kit-posapie-parachoque-trasero-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1258,
+          "id_repuesto": 1193,
+          "brand": "Genérica",
           "codigo_oem": "8-97357-9240",
-          "precio_usd": 115
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 115.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 115.0
     },
     {
       "category": "Punta de Tripoide",
@@ -22485,7 +30476,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "IZ31",
         "PUNTA",
-        "TRIPOIDE"
+        "TRIPOIDE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         850
@@ -22495,11 +30487,20 @@ const PRODUCTS_DATA = {
       "slug": "punta-tripoide-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 881,
+          "id_repuesto": 850,
+          "brand": "Genérica",
           "codigo_oem": "8-94124-6280",
-          "precio_usd": 30
+          "medida": "24X23X48",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Punta de Tripoide",
@@ -22514,7 +30515,8 @@ const PRODUCTS_DATA = {
         "G200",
         "IZ31",
         "PUNTA",
-        "TRIPOIDE"
+        "TRIPOIDE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         850
@@ -22524,11 +30526,20 @@ const PRODUCTS_DATA = {
       "slug": "punta-tripoide-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 881,
+          "id_repuesto": 850,
+          "brand": "Genérica",
           "codigo_oem": "8-94124-6280",
-          "precio_usd": 30
+          "medida": "24X23X48",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Punta de Tripoide",
@@ -22541,7 +30552,8 @@ const PRODUCTS_DATA = {
         "IZ32",
         "LUV",
         "PUNTA",
-        "TRIPOIDE"
+        "TRIPOIDE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         852
@@ -22551,11 +30563,20 @@ const PRODUCTS_DATA = {
       "slug": "punta-tripoide-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 883,
+          "id_repuesto": 852,
+          "brand": "Genérica",
           "codigo_oem": "8-97131-3960",
-          "precio_usd": 30
+          "medida": "17x23x53",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Punta de Tripoide",
@@ -22569,7 +30590,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "PUNTA",
-        "TRIPOIDE"
+        "TRIPOIDE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         853
@@ -22579,11 +30601,20 @@ const PRODUCTS_DATA = {
       "slug": "punta-tripoide-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 884,
+          "id_repuesto": 853,
+          "brand": "Genérica",
           "codigo_oem": "8-97387-6640",
-          "precio_usd": 45
+          "medida": "17x33x53",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Punta de Tripoide",
@@ -22596,7 +30627,8 @@ const PRODUCTS_DATA = {
         "IZ32",
         "PUNTA",
         "TRIPOIDE",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         852
@@ -22606,11 +30638,20 @@ const PRODUCTS_DATA = {
       "slug": "punta-tripoide-trooper",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 883,
+          "id_repuesto": 852,
+          "brand": "Genérica",
           "codigo_oem": "8-97131-3960",
-          "precio_usd": 30
+          "medida": "17x23x53",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Punta Parachoque",
@@ -22622,7 +30663,8 @@ const PRODUCTS_DATA = {
         "8-94355-5530",
         "CARIBE",
         "PARACHOQUE",
-        "PUNTA"
+        "PUNTA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1143,
@@ -22633,16 +30675,20 @@ const PRODUCTS_DATA = {
       "slug": "punta-parachoque-caribe",
       "variants": [
         {
-          "brand": "Original",
-          "codigo_oem": "8-94355-5520",
-          "precio_usd": 45
-        },
-        {
-          "brand": "Original",
+          "id_variante": 1182,
+          "id_repuesto": 1144,
+          "brand": "Genérica",
           "codigo_oem": "8-94355-5530",
-          "precio_usd": 45
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Radiador",
@@ -22657,7 +30703,8 @@ const PRODUCTS_DATA = {
         "8-98171-3090",
         "DMAX",
         "LUV",
-        "RADIADOR"
+        "RADIADOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         855,
@@ -22668,16 +30715,31 @@ const PRODUCTS_DATA = {
       "slug": "radiador-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 886,
+          "id_repuesto": 855,
+          "brand": "Genérica",
           "codigo_oem": "8-98073-5330",
-          "precio_usd": 215
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 215.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 887,
+          "id_repuesto": 856,
+          "brand": "Genérica",
           "codigo_oem": "8-97333-3510",
-          "precio_usd": 145
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 170.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 170.0
     },
     {
       "category": "Regulador Presion Gasolina",
@@ -22695,7 +30757,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV",
         "PRESION",
-        "REGULADOR"
+        "REGULADOR",
+        "DS"
       ],
       "linked_ids": [
         857
@@ -22705,16 +30768,20 @@ const PRODUCTS_DATA = {
       "slug": "regulador-presion-gasolina-luv-2-2",
       "variants": [
         {
+          "id_variante": 888,
+          "id_repuesto": 857,
           "brand": "DS",
           "codigo_oem": "8-17091-4100",
-          "precio_usd": 40
-        },
-        {
-          "brand": "FP",
-          "codigo_oem": "8-17091-4100",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Regulador Presion Gasolina",
@@ -22733,7 +30800,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV",
         "PRESION",
-        "REGULADOR"
+        "REGULADOR",
+        "DS"
       ],
       "linked_ids": [
         857
@@ -22743,16 +30811,20 @@ const PRODUCTS_DATA = {
       "slug": "regulador-presion-gasolina-luv-2-2-luv-dmax-2-4",
       "variants": [
         {
+          "id_variante": 888,
+          "id_repuesto": 857,
           "brand": "DS",
           "codigo_oem": "8-17091-4100",
-          "precio_usd": 40
-        },
-        {
-          "brand": "FP",
-          "codigo_oem": "8-17091-4100",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Regulador Presion Gasolina",
@@ -22767,7 +30839,9 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV",
         "PRESION",
-        "REGULADOR"
+        "REGULADOR",
+        "DS",
+        "NIKHO"
       ],
       "linked_ids": [
         859
@@ -22777,16 +30851,31 @@ const PRODUCTS_DATA = {
       "slug": "regulador-presion-gasolina",
       "variants": [
         {
+          "id_variante": 890,
+          "id_repuesto": 859,
           "brand": "DS",
           "codigo_oem": "8-97070-6200",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         },
         {
+          "id_variante": 891,
+          "id_repuesto": 859,
           "brand": "NIKHO",
           "codigo_oem": "8-97070-6200",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "id": "edda5ed1-0d97-4815-952a-3b740ef8159d",
@@ -22804,14 +30893,31 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "PRESION",
         "REGULADOR",
-        "TROOPER"
+        "TROOPER",
+        "DS"
       ],
       "oem": "8-17091-4100 / 8-17112-2760 / 8-17107-0100 / 17091410 / 17113271 / 17103467 / 17107478",
       "slug": "regulador-presion-gasolina-trooper-3-2",
       "original_filename": "Regulador Presion Gasolina/edda5ed1-0d97-4815-952a-3b740ef8159d.jpg",
       "linked_ids": [
         857
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 888,
+          "id_repuesto": 857,
+          "brand": "DS",
+          "codigo_oem": "8-17091-4100",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 5
+        }
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Rejilla Aire Acondicionado",
@@ -22826,7 +30932,8 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "DMAX",
         "LUV",
-        "REJILLA"
+        "REJILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         861
@@ -22836,11 +30943,20 @@ const PRODUCTS_DATA = {
       "slug": "rejilla-central-aire-acondicionado-luv-dmax-05-09",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 892,
+          "id_repuesto": 861,
+          "brand": "Genérica",
           "codigo_oem": "5306420-P00",
-          "precio_usd": 80
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 80.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 80.0
     },
     {
       "category": "Rejilla Aire Acondicionado",
@@ -22856,7 +30972,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LATERAL",
         "LUV",
-        "REJILLA"
+        "REJILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         862
@@ -22866,11 +30983,20 @@ const PRODUCTS_DATA = {
       "slug": "rejilla-lateral-aire-acondicionado-luv-dmax-05-09",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 893,
+          "id_repuesto": 862,
+          "brand": "Genérica",
           "codigo_oem": "8-97398-4210",
-          "precio_usd": 65
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 65.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 65.0
     },
     {
       "category": "Resistencia Aire Acondicionado",
@@ -22885,7 +31011,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "RESISTENCIA",
-        "SOPLADOR"
+        "SOPLADOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         863
@@ -22895,11 +31022,20 @@ const PRODUCTS_DATA = {
       "slug": "resistencia-soplador-aire-acondicionado-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 894,
+          "id_repuesto": 863,
+          "brand": "Genérica",
           "codigo_oem": "8-98049-3940",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Resorte de Freno",
@@ -22910,7 +31046,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "FRENO",
         "KR-15440",
-        "RESORTE"
+        "RESORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         865
@@ -22920,11 +31057,20 @@ const PRODUCTS_DATA = {
       "slug": "resorte-freno-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 896,
+          "id_repuesto": 865,
+          "brand": "Genérica",
           "codigo_oem": "KR-15440",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Resorte de Freno",
@@ -22936,7 +31082,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "G200",
         "KR-15441",
-        "RESORTE"
+        "RESORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         864
@@ -22946,11 +31093,20 @@ const PRODUCTS_DATA = {
       "slug": "resorte-freno-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 895,
+          "id_repuesto": 864,
+          "brand": "Genérica",
           "codigo_oem": "KR-15441",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Resorte de Freno",
@@ -22962,7 +31118,8 @@ const PRODUCTS_DATA = {
         "FRENO",
         "KR-15512",
         "LUV",
-        "RESORTE"
+        "RESORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         866
@@ -22972,11 +31129,20 @@ const PRODUCTS_DATA = {
       "slug": "resorte-freno-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 897,
+          "id_repuesto": 866,
+          "brand": "Genérica",
           "codigo_oem": "KR-15512",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "id": "74653844-2618-46b2-b594-9b36f7f51d6c",
@@ -22990,14 +31156,31 @@ const PRODUCTS_DATA = {
         "EJE",
         "HK3016",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "oem": "HK3016 / 8-94407-7080",
       "slug": "rolinera-punta-eje-aguja-caribe-2-6",
       "original_filename": "Rolinera Aguja Punta de Eje/74653844-2618-46b2-b594-9b36f7f51d6c.jpg",
       "linked_ids": [
         881
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 912,
+          "id_repuesto": 881,
+          "brand": "Genérica",
+          "codigo_oem": "HK3016",
+          "medida": "30x37x16",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 16
+        }
+      ],
+      "total_stock": 16,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "id": "d9198cfb-b233-484b-863f-87bcf6ca8c02",
@@ -23012,14 +31195,31 @@ const PRODUCTS_DATA = {
         "HK3016",
         "LUV",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "oem": "HK3016 / 8-94407-7080",
       "slug": "rolinera-punta-eje-aguja-luv-4x4",
       "original_filename": "Rolinera Aguja Punta de Eje/d9198cfb-b233-484b-863f-87bcf6ca8c02.jpg",
       "linked_ids": [
         881
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 912,
+          "id_repuesto": 881,
+          "brand": "Genérica",
+          "codigo_oem": "HK3016",
+          "medida": "30x37x16",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 16
+        }
+      ],
+      "total_stock": 16,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rolinera Aguja Punta de Eje",
@@ -23034,7 +31234,8 @@ const PRODUCTS_DATA = {
         "HK3016",
         "LUV",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         881
@@ -23044,11 +31245,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-punta-eje-aguja-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 912,
+          "id_repuesto": 881,
+          "brand": "Genérica",
           "codigo_oem": "HK3016",
-          "precio_usd": 5
+          "medida": "30x37x16",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 16
         }
-      ]
+      ],
+      "total_stock": 16,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "id": "48e6b112-bdf4-4b8c-ae89-9066643a0edf",
@@ -23062,14 +31272,31 @@ const PRODUCTS_DATA = {
         "HK3016",
         "PUNTA",
         "RODEO",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "oem": "HK3016 / 8-94407-7080",
       "slug": "rolinera-punta-eje-aguja-rodeo-3-2",
       "original_filename": "Rolinera Aguja Punta de Eje/48e6b112-bdf4-4b8c-ae89-9066643a0edf.jpg",
       "linked_ids": [
         881
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 912,
+          "id_repuesto": 881,
+          "brand": "Genérica",
+          "codigo_oem": "HK3016",
+          "medida": "30x37x16",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 16
+        }
+      ],
+      "total_stock": 16,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "id": "57335116-286a-46bf-88c9-04b22db6e5c9",
@@ -23083,14 +31310,31 @@ const PRODUCTS_DATA = {
         "HK3016",
         "PUNTA",
         "ROLINERA",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "oem": "HK3016 / 8-94407-7080",
       "slug": "rolinera-punta-eje-aguja-trooper-3-2",
       "original_filename": "Rolinera Aguja Punta de Eje/57335116-286a-46bf-88c9-04b22db6e5c9.jpg",
       "linked_ids": [
         881
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 912,
+          "id_repuesto": 881,
+          "brand": "Genérica",
+          "codigo_oem": "HK3016",
+          "medida": "30x37x16",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 16
+        }
+      ],
+      "total_stock": 16,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rolinera Cigueñal",
@@ -23102,7 +31346,8 @@ const PRODUCTS_DATA = {
         "9-00090-6790",
         "CARIBE",
         "CIGUENAL",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         867
@@ -23112,11 +31357,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-ciguenal-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 898,
+          "id_repuesto": 867,
+          "brand": "Genérica",
           "codigo_oem": "6203",
-          "precio_usd": 5
+          "medida": "17x40x12",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 18
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rolinera Cigueñal",
@@ -23128,7 +31382,8 @@ const PRODUCTS_DATA = {
         "9-00090-6790",
         "CARIBE",
         "CIGUENAL",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         867
@@ -23138,11 +31393,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-ciguenal-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 898,
+          "id_repuesto": 867,
+          "brand": "Genérica",
           "codigo_oem": "6203",
-          "precio_usd": 5
+          "medida": "17x40x12",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 18
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rolinera Cigueñal",
@@ -23155,7 +31419,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CIGUENAL",
         "G200",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         867
@@ -23165,11 +31430,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-ciguenal-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 898,
+          "id_repuesto": 867,
+          "brand": "Genérica",
           "codigo_oem": "6203",
-          "precio_usd": 5
+          "medida": "17x40x12",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 18
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rolinera Cigueñal",
@@ -23181,7 +31455,8 @@ const PRODUCTS_DATA = {
         "9-00090-6790",
         "CIGUENAL",
         "LUV",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         867
@@ -23191,11 +31466,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-ciguenal-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 898,
+          "id_repuesto": 867,
+          "brand": "Genérica",
           "codigo_oem": "6203",
-          "precio_usd": 5
+          "medida": "17x40x12",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 18
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rolinera Collarin",
@@ -23209,7 +31493,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COLLARIN",
         "RCT38SL1",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         868
@@ -23219,11 +31504,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-collarin-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 899,
+          "id_repuesto": 868,
+          "brand": "Genérica",
           "codigo_oem": "9-00095-0401",
-          "precio_usd": 15
+          "medida": "38x67x16.5",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rolinera Collarin",
@@ -23236,7 +31530,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "COLLARIN",
         "RCT422SA1FG",
-        "ROLINERA"
+        "ROLINERA",
+        "PERFECTION"
       ],
       "linked_ids": [
         870
@@ -23246,21 +31541,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-collarin-caribe-2-6",
       "variants": [
         {
+          "id_variante": 901,
+          "id_repuesto": 870,
           "brand": "PERFECTION",
           "codigo_oem": "8-94379-4990",
-          "precio_usd": 30
-        },
-        {
-          "brand": "ICHIBAN",
-          "codigo_oem": "8-94379-4990",
-          "precio_usd": 0
-        },
-        {
-          "brand": "KOYO",
-          "codigo_oem": "8-94379-4990",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Rolinera Collarin",
@@ -23275,7 +31569,8 @@ const PRODUCTS_DATA = {
         "COLLARIN",
         "G200",
         "RCT38SL1",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         868
@@ -23285,11 +31580,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-collarin-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 899,
+          "id_repuesto": 868,
+          "brand": "Genérica",
           "codigo_oem": "9-00095-0401",
-          "precio_usd": 15
+          "medida": "38x67x16.5",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rolinera Collarin",
@@ -23302,7 +31606,8 @@ const PRODUCTS_DATA = {
         "COLLARIN",
         "LUV",
         "RCT37SA1",
-        "ROLINERA"
+        "ROLINERA",
+        "ICHIBAN"
       ],
       "linked_ids": [
         873
@@ -23312,11 +31617,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-collarin-luv-2-3",
       "variants": [
         {
-          "brand": "TRIX",
+          "id_variante": 1360,
+          "id_repuesto": 873,
+          "brand": "ICHIBAN",
           "codigo_oem": "8-94101-2430",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Rolinera Eje de Mando",
@@ -23330,7 +31644,8 @@ const PRODUCTS_DATA = {
         "EJE",
         "MANDO",
         "ROLINERA",
-        "VS22"
+        "VS22",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1222
@@ -23340,11 +31655,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-eje-de-mando-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1310,
+          "id_repuesto": 1222,
+          "brand": "Genérica",
           "codigo_oem": "8-00096-1001",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rolinera Eje de Mando",
@@ -23359,7 +31683,8 @@ const PRODUCTS_DATA = {
         "G200",
         "MANDO",
         "ROLINERA",
-        "VS22"
+        "VS22",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1222
@@ -23369,11 +31694,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-eje-de-mando-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1310,
+          "id_repuesto": 1222,
+          "brand": "Genérica",
           "codigo_oem": "8-00096-1001",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 20,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rolinera Piñon Ataque",
@@ -23389,7 +31723,8 @@ const PRODUCTS_DATA = {
         "GRANDE",
         "PINON",
         "ROLINERA",
-        "TR0708-1R"
+        "TR0708-1R",
+        "GENÉRICA"
       ],
       "linked_ids": [
         875
@@ -23399,11 +31734,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-pinon-ataque-grande-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 906,
+          "id_repuesto": 875,
+          "brand": "Genérica",
           "codigo_oem": "32307JR",
-          "precio_usd": 20
+          "medida": "35x80x30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Rolinera Piñon Ataque",
@@ -23420,7 +31764,8 @@ const PRODUCTS_DATA = {
         "GRANDE",
         "PINON",
         "ROLINERA",
-        "TR0708-1R"
+        "TR0708-1R",
+        "GENÉRICA"
       ],
       "linked_ids": [
         875
@@ -23430,11 +31775,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-pinon-ataque-grande-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 906,
+          "id_repuesto": 875,
+          "brand": "Genérica",
           "codigo_oem": "32307JR",
-          "precio_usd": 20
+          "medida": "35x80x30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Rolinera Piñon Ataque",
@@ -23449,7 +31803,8 @@ const PRODUCTS_DATA = {
         "PEQUENA",
         "PINON",
         "ROLINERA",
-        "TR0608A"
+        "TR0608A",
+        "GENÉRICA"
       ],
       "linked_ids": [
         876
@@ -23459,11 +31814,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-pinon-ataque-pequena-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 907,
+          "id_repuesto": 876,
+          "brand": "Genérica",
           "codigo_oem": "30306D",
-          "precio_usd": 15
+          "medida": "30x72x20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rolinera Piñon Ataque",
@@ -23479,7 +31843,8 @@ const PRODUCTS_DATA = {
         "PEQUENA",
         "PINON",
         "ROLINERA",
-        "TR0608A"
+        "TR0608A",
+        "GENÉRICA"
       ],
       "linked_ids": [
         876
@@ -23489,11 +31854,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-pinon-ataque-pequena-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 907,
+          "id_repuesto": 876,
+          "brand": "Genérica",
           "codigo_oem": "30306D",
-          "precio_usd": 15
+          "medida": "30x72x20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 9
         }
-      ]
+      ],
+      "total_stock": 9,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rolinera Porta Corona",
@@ -23506,21 +31880,32 @@ const PRODUCTS_DATA = {
         "CORONA",
         "LM-501349",
         "PORTA",
-        "ROLINERA"
+        "ROLINERA",
+        "SET45",
+        "GENÉRICA"
       ],
       "linked_ids": [
         879
       ],
-      "oem": "LM-501349 / 10 / 9-00093-0740",
+      "oem": "LM-501349 / 10 / 9-00093-0740 / SET45",
       "original_filename": "Rolinera Porta Corona/29d309a3-9f54-4247-aa62-5275a1c31265.jpg",
       "slug": "rolinera-porta-corona-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 910,
+          "id_repuesto": 879,
+          "brand": "Genérica",
           "codigo_oem": "LM-501349/10",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rolinera Porta Corona",
@@ -23533,7 +31918,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CORONA",
         "PORTA",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         880
@@ -23543,11 +31929,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-porta-corona-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 911,
+          "id_repuesto": 880,
+          "brand": "Genérica",
           "codigo_oem": "8-94435-3550",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rolinera Porta Corona",
@@ -23561,21 +31956,32 @@ const PRODUCTS_DATA = {
         "G200",
         "LM-501349",
         "PORTA",
-        "ROLINERA"
+        "ROLINERA",
+        "SET45",
+        "GENÉRICA"
       ],
       "linked_ids": [
         879
       ],
-      "oem": "LM-501349 / 10 / 9-00093-0740",
+      "oem": "LM-501349 / 10 / 9-00093-0740 / SET45",
       "original_filename": "Rolinera Porta Corona/c0ab63b1-ca01-41a0-8262-a528cb0fa6f8.jpg",
       "slug": "rolinera-porta-corona-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 910,
+          "id_repuesto": 879,
+          "brand": "Genérica",
           "codigo_oem": "LM-501349/10",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rolinera Punta de Eje Delantero",
@@ -23592,7 +31998,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "ROLINERA",
-        "SET5"
+        "SET5",
+        "GENÉRICA"
       ],
       "linked_ids": [
         883
@@ -23602,11 +32009,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-punta-de-eje-delantero-interna-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 914,
+          "id_repuesto": 883,
+          "brand": "Genérica",
           "codigo_oem": "SET5",
-          "precio_usd": 10
+          "medida": "34.93X65.09X18.03",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "c19e8032-2cd4-4e5b-81fe-e4b8caf66684",
@@ -23622,14 +32038,31 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "EJE",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "TAIWAN"
       ],
       "oem": "32008 / 8-94227-0410 / 8-97118-3060",
       "slug": "rolinera-punta-eje-delantera-caribe-2-6",
       "original_filename": "Rolinera Punta de Eje Delantero/c19e8032-2cd4-4e5b-81fe-e4b8caf66684.jpg",
       "linked_ids": [
         885
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 916,
+          "id_repuesto": 885,
+          "brand": "TAIWAN",
+          "codigo_oem": "32008",
+          "medida": "40X72X19",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 136
+        }
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "06e343d9-40cc-44d9-bab5-fb4c81855c30",
@@ -23645,14 +32078,31 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "EJE",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "TAIWAN"
       ],
       "oem": "32009 / 8-94258-8190 / 8-97118-3070",
       "slug": "rolinera-punta-eje-delantera-caribe-2-6-2",
       "original_filename": "Rolinera Punta de Eje Delantero/06e343d9-40cc-44d9-bab5-fb4c81855c30.jpg",
       "linked_ids": [
         887
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 918,
+          "id_repuesto": 887,
+          "brand": "TAIWAN",
+          "codigo_oem": "32009",
+          "medida": "45X75X20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 136
+        }
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Rolinera Punta de Eje Delantero",
@@ -23669,7 +32119,8 @@ const PRODUCTS_DATA = {
         "EXTERNA",
         "G200",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         884
@@ -23679,11 +32130,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-punta-eje-delantera-externa-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 915,
+          "id_repuesto": 884,
+          "brand": "Genérica",
           "codigo_oem": "32007",
-          "precio_usd": 10
+          "medida": "35X62X18",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Rolinera Punta de Eje Delantero",
@@ -23702,7 +32162,8 @@ const PRODUCTS_DATA = {
         "M12649",
         "PUNTA",
         "ROLINERA",
-        "SET3"
+        "SET3",
+        "GENÉRICA"
       ],
       "linked_ids": [
         882
@@ -23712,11 +32173,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-punta-eje-delantera-externa-luv-4x2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 913,
+          "id_repuesto": 882,
+          "brand": "Genérica",
           "codigo_oem": "SET3",
-          "precio_usd": 10
+          "medida": "21.53X50.01X17.53",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Rolinera Punta de Eje Delantero",
@@ -23734,7 +32204,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "ROLINERA",
-        "SET5"
+        "SET5",
+        "GENÉRICA"
       ],
       "linked_ids": [
         883
@@ -23744,11 +32215,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-punta-eje-delantera-interna-luv-4x2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 914,
+          "id_repuesto": 883,
+          "brand": "Genérica",
           "codigo_oem": "SET5",
-          "precio_usd": 10
+          "medida": "34.93X65.09X18.03",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "78be7953-fd35-44d5-bee8-14a67e43ab96",
@@ -23765,14 +32245,31 @@ const PRODUCTS_DATA = {
         "EJE",
         "LUV",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "TAIWAN"
       ],
       "oem": "32008 / 8-94227-0410 / 8-97118-3060",
       "slug": "rolinera-punta-eje-delantera-luv-4x4",
       "original_filename": "Rolinera Punta de Eje Delantero/78be7953-fd35-44d5-bee8-14a67e43ab96.jpg",
       "linked_ids": [
         885
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 916,
+          "id_repuesto": 885,
+          "brand": "TAIWAN",
+          "codigo_oem": "32008",
+          "medida": "40X72X19",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 136
+        }
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "b548dacf-22d3-4c47-9305-92885bcd1366",
@@ -23789,14 +32286,31 @@ const PRODUCTS_DATA = {
         "EJE",
         "LUV",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "TAIWAN"
       ],
       "oem": "32009 / 8-94258-8190 / 8-97118-3070",
       "slug": "rolinera-punta-eje-delantera-luv-4x4-2",
       "original_filename": "Rolinera Punta de Eje Delantero/b548dacf-22d3-4c47-9305-92885bcd1366.jpg",
       "linked_ids": [
         887
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 918,
+          "id_repuesto": 887,
+          "brand": "TAIWAN",
+          "codigo_oem": "32009",
+          "medida": "45X75X20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 136
+        }
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Rolinera Punta de Eje Delantero",
@@ -23814,7 +32328,8 @@ const PRODUCTS_DATA = {
         "M12649",
         "PUNTA",
         "ROLINERA",
-        "SET3"
+        "SET3",
+        "GENÉRICA"
       ],
       "linked_ids": [
         882
@@ -23824,11 +32339,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-punta-eje-delantera-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 913,
+          "id_repuesto": 882,
+          "brand": "Genérica",
           "codigo_oem": "SET3",
-          "precio_usd": 10
+          "medida": "21.53X50.01X17.53",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "58b98549-cc9b-46e8-bf20-9cd264d2edd2",
@@ -23845,14 +32369,31 @@ const PRODUCTS_DATA = {
         "EJE",
         "LUV",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "TAIWAN"
       ],
       "oem": "32008 / 8-94227-0410 / 8-97118-3060",
       "slug": "rolinera-punta-eje-delantera-luv-dmax-3-5",
       "original_filename": "Rolinera Punta de Eje Delantero/58b98549-cc9b-46e8-bf20-9cd264d2edd2.jpg",
       "linked_ids": [
         885
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 916,
+          "id_repuesto": 885,
+          "brand": "TAIWAN",
+          "codigo_oem": "32008",
+          "medida": "40X72X19",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 136
+        }
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "eb4882fc-a8ff-4c7a-987d-3d06ecc1b5a0",
@@ -23869,14 +32410,31 @@ const PRODUCTS_DATA = {
         "EJE",
         "LUV",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "TAIWAN"
       ],
       "oem": "32009 / 8-94258-8190 / 8-97118-3070",
       "slug": "rolinera-punta-eje-delantera-luv-dmax-3-5-2",
       "original_filename": "Rolinera Punta de Eje Delantero/eb4882fc-a8ff-4c7a-987d-3d06ecc1b5a0.jpg",
       "linked_ids": [
         887
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 918,
+          "id_repuesto": 887,
+          "brand": "TAIWAN",
+          "codigo_oem": "32009",
+          "medida": "45X75X20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 136
+        }
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "cf8fe4d7-4cd8-4f1e-966f-d1182bded00f",
@@ -23892,14 +32450,31 @@ const PRODUCTS_DATA = {
         "EJE",
         "PUNTA",
         "RODEO",
-        "ROLINERA"
+        "ROLINERA",
+        "TAIWAN"
       ],
       "oem": "32008 / 8-94227-0410 / 8-97118-3060",
       "slug": "rolinera-punta-eje-delantera-rodeo",
       "original_filename": "Rolinera Punta de Eje Delantero/cf8fe4d7-4cd8-4f1e-966f-d1182bded00f.jpg",
       "linked_ids": [
         885
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 916,
+          "id_repuesto": 885,
+          "brand": "TAIWAN",
+          "codigo_oem": "32008",
+          "medida": "40X72X19",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 136
+        }
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "29972602-40bd-4961-86f3-d8031f6f1e3a",
@@ -23915,14 +32490,31 @@ const PRODUCTS_DATA = {
         "EJE",
         "PUNTA",
         "RODEO",
-        "ROLINERA"
+        "ROLINERA",
+        "TAIWAN"
       ],
       "oem": "32009 / 8-94258-8190 / 8-97118-3070",
       "slug": "rolinera-punta-eje-delantera-rodeo-2",
       "original_filename": "Rolinera Punta de Eje Delantero/29972602-40bd-4961-86f3-d8031f6f1e3a.jpg",
       "linked_ids": [
         887
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 918,
+          "id_repuesto": 887,
+          "brand": "TAIWAN",
+          "codigo_oem": "32009",
+          "medida": "45X75X20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 136
+        }
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "2b65491f-0333-4d46-993f-65e7af41ae58",
@@ -23938,14 +32530,31 @@ const PRODUCTS_DATA = {
         "EJE",
         "PUNTA",
         "ROLINERA",
-        "TROOPER"
+        "TROOPER",
+        "TAIWAN"
       ],
       "oem": "32008 / 8-94227-0410 / 8-97118-3060",
       "slug": "rolinera-punta-eje-delantera-trooper",
       "original_filename": "Rolinera Punta de Eje Delantero/2b65491f-0333-4d46-993f-65e7af41ae58.jpg",
       "linked_ids": [
         885
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 916,
+          "id_repuesto": 885,
+          "brand": "TAIWAN",
+          "codigo_oem": "32008",
+          "medida": "40X72X19",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 136
+        }
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "48aff926-8941-44f5-b467-608db2916969",
@@ -23961,14 +32570,31 @@ const PRODUCTS_DATA = {
         "EJE",
         "PUNTA",
         "ROLINERA",
-        "TROOPER"
+        "TROOPER",
+        "TAIWAN"
       ],
       "oem": "32009 / 8-94258-8190 / 8-97118-3070",
       "slug": "rolinera-punta-eje-delantera-trooper-2",
       "original_filename": "Rolinera Punta de Eje Delantero/48aff926-8941-44f5-b467-608db2916969.jpg",
       "linked_ids": [
         887
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 918,
+          "id_repuesto": 887,
+          "brand": "TAIWAN",
+          "codigo_oem": "32009",
+          "medida": "45X75X20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 136
+        }
+      ],
+      "total_stock": 136,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Rolinera Punta de Eje Delantero",
@@ -23984,7 +32610,8 @@ const PRODUCTS_DATA = {
         "EJE",
         "EXTERNA",
         "PUNTA",
-        "ROLINERA"
+        "ROLINERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         884
@@ -23994,11 +32621,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-punta-eje-externa-delantera-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 915,
+          "id_repuesto": 884,
+          "brand": "Genérica",
           "codigo_oem": "32007",
-          "precio_usd": 10
+          "medida": "35X62X18",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "c5d96221-c41b-4c66-91cb-92f4ed52c87e",
@@ -24012,14 +32648,31 @@ const PRODUCTS_DATA = {
         "EJE",
         "PUNTA",
         "ROLINERA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "oem": "30208 / 9-00093-6272",
       "slug": "rolinera-punta-eje-trasera-caribe-2-3",
       "original_filename": "Rolinera Punta de Eje Trasera/c5d96221-c41b-4c66-91cb-92f4ed52c87e.jpg",
       "linked_ids": [
         889
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 920,
+          "id_repuesto": 889,
+          "brand": "Genérica",
+          "codigo_oem": "30208",
+          "medida": "40X80X19.75",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 29
+        }
+      ],
+      "total_stock": 29,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "id": "d206dabf-2644-45fb-b1d4-5addc2619d68",
@@ -24034,14 +32687,31 @@ const PRODUCTS_DATA = {
         "G200",
         "PUNTA",
         "ROLINERA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "oem": "30208 / 9-00093-6272",
       "slug": "rolinera-punta-eje-trasera-caribe-g200",
       "original_filename": "Rolinera Punta de Eje Trasera/d206dabf-2644-45fb-b1d4-5addc2619d68.jpg",
       "linked_ids": [
         889
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 920,
+          "id_repuesto": 889,
+          "brand": "Genérica",
+          "codigo_oem": "30208",
+          "medida": "40X80X19.75",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 29
+        }
+      ],
+      "total_stock": 29,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "id": "02c49e9b-8659-469d-8520-389b6a61fb8c",
@@ -24055,14 +32725,31 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "ROLINERA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "oem": "30208 / 9-00093-6272",
       "slug": "rolinera-punta-eje-trasera-luv-2-3",
       "original_filename": "Rolinera Punta de Eje Trasera/02c49e9b-8659-469d-8520-389b6a61fb8c.jpg",
       "linked_ids": [
         889
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 920,
+          "id_repuesto": 889,
+          "brand": "Genérica",
+          "codigo_oem": "30208",
+          "medida": "40X80X19.75",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 29
+        }
+      ],
+      "total_stock": 29,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rolinera Punta de Eje Trasera",
@@ -24077,7 +32764,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "ROLINERA",
-        "TRASERA"
+        "TRASERA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         891
@@ -24087,11 +32775,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-punta-eje-trasera-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 922,
+          "id_repuesto": 891,
+          "brand": "Genérica",
           "codigo_oem": "8-97216-7972",
-          "precio_usd": 35
+          "medida": "42X80X38",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Rolinera Universal",
@@ -24101,7 +32798,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "6301",
         "ROLINERA",
-        "UNIVERSAL"
+        "UNIVERSAL",
+        "GENÉRICA"
       ],
       "linked_ids": [
         878
@@ -24111,11 +32809,20 @@ const PRODUCTS_DATA = {
       "slug": "rolinera-universal-6301",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 909,
+          "id_repuesto": 878,
+          "brand": "Genérica",
           "codigo_oem": "6301",
-          "precio_usd": 5
+          "medida": "12x37x12",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rotor",
@@ -24125,7 +32832,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94221-2060",
         "CARIBE",
-        "ROTOR"
+        "ROTOR",
+        "CENTURY"
       ],
       "linked_ids": [
         892
@@ -24135,11 +32843,20 @@ const PRODUCTS_DATA = {
       "slug": "rotor-caribe-2-3",
       "variants": [
         {
+          "id_variante": 923,
+          "id_repuesto": 892,
           "brand": "CENTURY",
           "codigo_oem": "8-94221-2060",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 51
         }
-      ]
+      ],
+      "total_stock": 51,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rotor",
@@ -24149,7 +32866,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94221-2060",
         "CARIBE",
-        "ROTOR"
+        "ROTOR",
+        "CENTURY"
       ],
       "linked_ids": [
         892
@@ -24159,11 +32877,20 @@ const PRODUCTS_DATA = {
       "slug": "rotor-caribe-2-6",
       "variants": [
         {
+          "id_variante": 923,
+          "id_repuesto": 892,
           "brand": "CENTURY",
           "codigo_oem": "8-94221-2060",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 51
         }
-      ]
+      ],
+      "total_stock": 51,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rotor",
@@ -24174,7 +32901,8 @@ const PRODUCTS_DATA = {
         "8-94221-2060",
         "CARIBE",
         "G-200",
-        "ROTOR"
+        "ROTOR",
+        "CENTURY"
       ],
       "linked_ids": [
         892
@@ -24184,11 +32912,20 @@ const PRODUCTS_DATA = {
       "slug": "rotor-caribe-g-200",
       "variants": [
         {
+          "id_variante": 923,
+          "id_repuesto": 892,
           "brand": "CENTURY",
           "codigo_oem": "8-94221-2060",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 51
         }
-      ]
+      ],
+      "total_stock": 51,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rotor",
@@ -24198,7 +32935,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-94221-2060",
         "LUV",
-        "ROTOR"
+        "ROTOR",
+        "CENTURY"
       ],
       "linked_ids": [
         892
@@ -24208,11 +32946,20 @@ const PRODUCTS_DATA = {
       "slug": "rotor-luv-2-3",
       "variants": [
         {
+          "id_variante": 923,
+          "id_repuesto": 892,
           "brand": "CENTURY",
           "codigo_oem": "8-94221-2060",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 51
         }
-      ]
+      ],
+      "total_stock": 51,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Rotula",
@@ -24224,7 +32971,9 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "INTERNO",
         "ROTULA",
-        "TERMINAL"
+        "TERMINAL",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         970
@@ -24234,16 +32983,31 @@ const PRODUCTS_DATA = {
       "slug": "terminal-interno-rotula-caribe-2-3",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "5-44350-0953",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1002,
+          "id_repuesto": 970,
           "brand": "JAPON",
           "codigo_oem": "5-44350-0953",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 123
+        },
+        {
+          "id_variante": 1001,
+          "id_repuesto": 970,
+          "brand": "TAIWAN",
+          "codigo_oem": "5-44350-0953",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 123,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Rotula",
@@ -24256,7 +33020,9 @@ const PRODUCTS_DATA = {
         "G200",
         "INTERNO",
         "ROTULA",
-        "TERMINAL"
+        "TERMINAL",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         970
@@ -24266,16 +33032,31 @@ const PRODUCTS_DATA = {
       "slug": "terminal-interno-rotula-caribe-g200",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "5-44350-0953",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1002,
+          "id_repuesto": 970,
           "brand": "JAPON",
           "codigo_oem": "5-44350-0953",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 123
+        },
+        {
+          "id_variante": 1001,
+          "id_repuesto": 970,
+          "brand": "TAIWAN",
+          "codigo_oem": "5-44350-0953",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 123,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Rotula",
@@ -24289,7 +33070,9 @@ const PRODUCTS_DATA = {
         "INTERNO",
         "LUV",
         "ROTULA",
-        "TERMINAL"
+        "TERMINAL",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         972
@@ -24299,16 +33082,31 @@ const PRODUCTS_DATA = {
       "slug": "terminal-interno-rotula-luv-dmax-05-09",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-97304-8510",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1004,
+          "id_repuesto": 972,
           "brand": "JAPON",
           "codigo_oem": "8-97304-8510",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 14
+        },
+        {
+          "id_variante": 1003,
+          "id_repuesto": 972,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97304-8510",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 18
         }
-      ]
+      ],
+      "total_stock": 32,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Rotula",
@@ -24323,7 +33121,9 @@ const PRODUCTS_DATA = {
         "INTERNO",
         "LUV",
         "ROTULA",
-        "TERMINAL"
+        "TERMINAL",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         974
@@ -24333,16 +33133,31 @@ const PRODUCTS_DATA = {
       "slug": "terminal-interno-rotula-luv-dmax-10-15",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-98056-5500",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1327,
+          "id_repuesto": 974,
           "brand": "JAPON",
           "codigo_oem": "8-98056-5500",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
+        },
+        {
+          "id_variante": 1005,
+          "id_repuesto": 974,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-98056-5500",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Sensor ABS",
@@ -24356,7 +33171,8 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "DMAX",
         "LUV",
-        "SENSOR"
+        "SENSOR",
+        "NIKHO"
       ],
       "linked_ids": [
         1162,
@@ -24367,16 +33183,31 @@ const PRODUCTS_DATA = {
       "slug": "sensor-abs-delantero-luv-dmax-3-5",
       "variants": [
         {
+          "id_variante": 1200,
+          "id_repuesto": 1162,
           "brand": "NIKHO",
           "codigo_oem": "8-97236-1042",
-          "precio_usd": 40
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 4
         },
         {
+          "id_variante": 1199,
+          "id_repuesto": 1161,
           "brand": "NIKHO",
           "codigo_oem": "8-97236-1062",
-          "precio_usd": 40
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Sensor Arbol de Leva",
@@ -24391,7 +33222,9 @@ const PRODUCTS_DATA = {
         "GS9541",
         "LEVA",
         "LUV",
-        "SENSOR"
+        "SENSOR",
+        "GAUSS",
+        "NIKHO"
       ],
       "linked_ids": [
         895
@@ -24401,16 +33234,31 @@ const PRODUCTS_DATA = {
       "slug": "sensor-arbol-de-leva-cmp-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "NIKHO",
-          "codigo_oem": "8-10456-5410",
-          "precio_usd": 35
-        },
-        {
+          "id_variante": 1131,
+          "id_repuesto": 895,
           "brand": "GAUSS",
           "codigo_oem": "8-10456-5410",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 926,
+          "id_repuesto": 895,
+          "brand": "NIKHO",
+          "codigo_oem": "8-10456-5410",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Sensor Cigueñal",
@@ -24424,7 +33272,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "CKP",
         "LUV",
-        "SENSOR"
+        "SENSOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         896
@@ -24434,11 +33283,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-ciguenal-ckp-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 927,
+          "id_repuesto": 896,
+          "brand": "Genérica",
           "codigo_oem": "8-10456-5150",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Sensor Cigueñal",
@@ -24453,7 +33311,8 @@ const PRODUCTS_DATA = {
         "CKP",
         "DMAX",
         "LUV",
-        "SENSOR"
+        "SENSOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         896
@@ -24463,11 +33322,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-ciguenal-ckp-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 927,
+          "id_repuesto": 896,
+          "brand": "Genérica",
           "codigo_oem": "8-10456-5150",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Sensor Cigueñal",
@@ -24480,7 +33348,8 @@ const PRODUCTS_DATA = {
         "CKP",
         "DMAX",
         "LUV",
-        "SENSOR"
+        "SENSOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         897
@@ -24490,11 +33359,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-ciguenal-ckp-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 928,
+          "id_repuesto": 897,
+          "brand": "Genérica",
           "codigo_oem": "8-97258-5230",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Sensor MAF",
@@ -24508,7 +33386,9 @@ const PRODUCTS_DATA = {
         "FLUJO",
         "LUV",
         "MAF",
-        "SENSOR"
+        "SENSOR",
+        "ANCOV",
+        "NIKHO"
       ],
       "linked_ids": [
         898
@@ -24518,16 +33398,31 @@ const PRODUCTS_DATA = {
       "slug": "sensor-flujo-aire-maf-luv-dmax-3-5",
       "variants": [
         {
-          "codigo_oem": "8-97312-3950",
+          "id_variante": 929,
+          "id_repuesto": 898,
           "brand": "ANCOV",
-          "precio_usd": 0
+          "codigo_oem": "8-97312-3950",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "codigo_oem": "8-97312-3950",
+          "id_variante": 1201,
+          "id_repuesto": 898,
           "brand": "NIKHO",
-          "precio_usd": 0
+          "codigo_oem": "8-97312-3950",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Sensor MAP",
@@ -24542,7 +33437,9 @@ const PRODUCTS_DATA = {
         "LUV",
         "MAP",
         "PRESION",
-        "SENSOR"
+        "SENSOR",
+        "NIKHO",
+        "TSA"
       ],
       "linked_ids": [
         905
@@ -24552,11 +33449,31 @@ const PRODUCTS_DATA = {
       "slug": "sensor-presion-absoluta-de-aire-map-luv-dmax-2-4",
       "variants": [
         {
+          "id_variante": 1351,
+          "id_repuesto": 905,
+          "brand": "NIKHO",
+          "codigo_oem": "8-16212-4600",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 3
+        },
+        {
+          "id_variante": 936,
+          "id_repuesto": 905,
           "brand": "TSA",
           "codigo_oem": "8-16212-4600",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "ff834063-780a-4a0a-9b1c-ea8a4ae6051e",
@@ -24570,14 +33487,31 @@ const PRODUCTS_DATA = {
         "8-97224-0110",
         "LUV",
         "OXIGENO",
-        "SENSOR"
+        "SENSOR",
+        "GENÉRICA"
       ],
       "oem": "8-25327-9850 / 8-25312-2000 / 8-97187-6070 / 8-97224-0110",
       "slug": "sensor-oxigeno-luv-2-2",
       "original_filename": "Sensor Oxigeno/ff834063-780a-4a0a-9b1c-ea8a4ae6051e.jpg",
       "linked_ids": [
         899
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 930,
+          "id_repuesto": 899,
+          "brand": "Genérica",
+          "codigo_oem": "8-25327-9850",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        }
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "id": "55b1079b-a4e0-45ff-9848-7eaa312ca610",
@@ -24592,14 +33526,31 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "OXIGENO",
-        "SENSOR"
+        "SENSOR",
+        "GENÉRICA"
       ],
       "oem": "8-25327-9850 / 8-25312-2000 / 8-97187-6070 / 8-97224-0110",
       "slug": "sensor-oxigeno-luv-dmax-2-4",
       "original_filename": "Sensor Oxigeno/55b1079b-a4e0-45ff-9848-7eaa312ca610.jpg",
       "linked_ids": [
         899
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 930,
+          "id_repuesto": 899,
+          "brand": "Genérica",
+          "codigo_oem": "8-25327-9850",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        }
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Sensor Oxigeno",
@@ -24613,7 +33564,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "OXIGENO",
-        "SENSOR"
+        "SENSOR",
+        "NIKHO"
       ],
       "linked_ids": [
         900
@@ -24623,11 +33575,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-oxigeno-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 931,
+          "id_repuesto": 900,
+          "brand": "NIKHO",
           "codigo_oem": "8-97287-3520",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Sensor Oxigeno",
@@ -24640,7 +33601,8 @@ const PRODUCTS_DATA = {
         "8-97287-3520",
         "OXIGENO",
         "SENSOR",
-        "TROOPER"
+        "TROOPER",
+        "NIKHO"
       ],
       "linked_ids": [
         900
@@ -24650,11 +33612,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-oxigeno-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 931,
+          "id_repuesto": 900,
+          "brand": "NIKHO",
           "codigo_oem": "8-97287-3520",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Sensor TPS",
@@ -24669,7 +33640,8 @@ const PRODUCTS_DATA = {
         "POSICION",
         "SENSOR",
         "TPS",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         901
@@ -24679,11 +33651,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-posicion-aceleracion-tps-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 932,
+          "id_repuesto": 901,
+          "brand": "Genérica",
           "codigo_oem": "8-17106-6810",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Sensor TPS",
@@ -24698,7 +33679,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "POSICION",
         "SENSOR",
-        "TPS"
+        "TPS",
+        "GENÉRICA"
       ],
       "linked_ids": [
         901
@@ -24708,11 +33690,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-posicion-aceleracion-tps-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 932,
+          "id_repuesto": 901,
+          "brand": "Genérica",
           "codigo_oem": "8-17106-6810",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Sensor TPS",
@@ -24728,7 +33719,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "POSICION",
         "SENSOR",
-        "TPS"
+        "TPS",
+        "GENÉRICA"
       ],
       "linked_ids": [
         901
@@ -24738,11 +33730,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-posicion-aceleracion-tps-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 932,
+          "id_repuesto": 901,
+          "brand": "Genérica",
           "codigo_oem": "8-17106-6810",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "id": "f63a535b-7569-470e-b1a7-1f24f3d71255",
@@ -24756,14 +33757,31 @@ const PRODUCTS_DATA = {
         "LUV",
         "POSICION",
         "SENSOR",
-        "TPS"
+        "TPS",
+        "GENÉRICA"
       ],
       "oem": "8-97163-1640",
       "slug": "sensor-posicion-aceleracion-tps-luv-dmax-3-0",
       "original_filename": "Sensor TPS/f63a535b-7569-470e-b1a7-1f24f3d71255.jpg",
       "linked_ids": [
         902
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 933,
+          "id_repuesto": 902,
+          "brand": "Genérica",
+          "codigo_oem": "8-97163-1640",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        }
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Sensor TPS",
@@ -24777,7 +33795,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "POSICION",
         "SENSOR",
-        "TPS"
+        "TPS",
+        "GENÉRICA"
       ],
       "linked_ids": [
         903
@@ -24787,11 +33806,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-posicion-aceleracion-tps-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 934,
+          "id_repuesto": 903,
+          "brand": "Genérica",
           "codigo_oem": "8-97181-7170",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "id": "ff71d750-236a-4591-970d-81ae591e185a",
@@ -24804,14 +33832,31 @@ const PRODUCTS_DATA = {
         "KILOMETRAJE",
         "LUV",
         "SENSOR",
-        "VELOCIDAD"
+        "VELOCIDAD",
+        "GENÉRICA"
       ],
       "oem": "8-97129-7270 / 8-97365-7430",
       "slug": "sensor-velocidad-kilometraje-luv-2-2",
       "original_filename": "Sensor Velocidad - Kilometraje/ff71d750-236a-4591-970d-81ae591e185a.jpg",
       "linked_ids": [
         906
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 937,
+          "id_repuesto": 906,
+          "brand": "Genérica",
+          "codigo_oem": "8-97129-7270",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        }
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Sensor Velocidad - Kilometraje",
@@ -24825,7 +33870,8 @@ const PRODUCTS_DATA = {
         "KILOMETRAJE",
         "LUV",
         "SENSOR",
-        "VELOCIDAD"
+        "VELOCIDAD",
+        "GENÉRICA"
       ],
       "linked_ids": [
         908
@@ -24835,11 +33881,20 @@ const PRODUCTS_DATA = {
       "slug": "sensor-velocidad-kilometraje-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 939,
+          "id_repuesto": 908,
+          "brand": "Genérica",
           "codigo_oem": "8-97129-7040",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "id": "d4831288-d13f-4acd-acda-b3288264879c",
@@ -24852,14 +33907,31 @@ const PRODUCTS_DATA = {
         "KILOMETRAJE",
         "SENSOR",
         "TROOPER",
-        "VELOCIDAD"
+        "VELOCIDAD",
+        "GENÉRICA"
       ],
       "oem": "8-97129-7270 / 8-97365-7430",
       "slug": "sensor-velocidad-kilometraje-trooper-3-2",
       "original_filename": "Sensor Velocidad - Kilometraje/d4831288-d13f-4acd-acda-b3288264879c.jpg",
       "linked_ids": [
         906
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 937,
+          "id_repuesto": 906,
+          "brand": "Genérica",
+          "codigo_oem": "8-97129-7270",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        }
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Separador de Cigueñal",
@@ -24874,7 +33946,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CIGUENAL",
         "LUV",
-        "SEPARADOR"
+        "SEPARADOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         909,
@@ -24886,21 +33959,42 @@ const PRODUCTS_DATA = {
       "slug": "separador-de-ciguenal-axiales-caribe-2-3-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 940,
+          "id_repuesto": 909,
+          "brand": "Genérica",
           "codigo_oem": "8-94481-9070",
-          "precio_usd": 10
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 39
         },
         {
-          "brand": "Original",
+          "id_variante": 941,
+          "id_repuesto": 910,
+          "brand": "Genérica",
           "codigo_oem": "8-94481-9071",
-          "precio_usd": 10
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 30
         },
         {
-          "brand": "Original",
+          "id_variante": 942,
+          "id_repuesto": 911,
+          "brand": "Genérica",
           "codigo_oem": "8-94481-9072",
-          "precio_usd": 10
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 28
         }
-      ]
+      ],
+      "total_stock": 97,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Separador de Cigueñal",
@@ -24914,7 +34008,8 @@ const PRODUCTS_DATA = {
         "AXIALES",
         "CARIBE",
         "CIGUENAL",
-        "SEPARADOR"
+        "SEPARADOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         909,
@@ -24926,21 +34021,42 @@ const PRODUCTS_DATA = {
       "slug": "separador-de-ciguenal-axiales-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 940,
+          "id_repuesto": 909,
+          "brand": "Genérica",
           "codigo_oem": "8-94481-9070",
-          "precio_usd": 10
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 39
         },
         {
-          "brand": "Original",
+          "id_variante": 941,
+          "id_repuesto": 910,
+          "brand": "Genérica",
           "codigo_oem": "8-94481-9071",
-          "precio_usd": 10
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 30
         },
         {
-          "brand": "Original",
+          "id_variante": 942,
+          "id_repuesto": 911,
+          "brand": "Genérica",
           "codigo_oem": "8-94481-9072",
-          "precio_usd": 10
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 28
         }
-      ]
+      ],
+      "total_stock": 97,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Separador de Cigueñal",
@@ -24955,7 +34071,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CIGUENAL",
         "G200",
-        "SEPARADOR"
+        "SEPARADOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         909,
@@ -24967,21 +34084,42 @@ const PRODUCTS_DATA = {
       "slug": "separador-de-ciguenal-axiales-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 940,
+          "id_repuesto": 909,
+          "brand": "Genérica",
           "codigo_oem": "8-94481-9070",
-          "precio_usd": 10
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 39
         },
         {
-          "brand": "Original",
+          "id_variante": 941,
+          "id_repuesto": 910,
+          "brand": "Genérica",
           "codigo_oem": "8-94481-9071",
-          "precio_usd": 10
+          "medida": "0.10",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 30
         },
         {
-          "brand": "Original",
+          "id_variante": 942,
+          "id_repuesto": 911,
+          "brand": "Genérica",
           "codigo_oem": "8-94481-9072",
-          "precio_usd": 10
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 28
         }
-      ]
+      ],
+      "total_stock": 97,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Separador de Cigueñal",
@@ -24998,7 +34136,8 @@ const PRODUCTS_DATA = {
         "CIGUENAL",
         "DMAX",
         "LUV",
-        "SEPARADOR"
+        "SEPARADOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         912,
@@ -25012,31 +34151,42 @@ const PRODUCTS_DATA = {
       "slug": "separador-de-ciguenal-axiales-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 943,
+          "id_repuesto": 912,
+          "brand": "Genérica",
           "codigo_oem": "8-97014-2080",
-          "precio_usd": 5
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 4
         },
         {
-          "brand": "Original",
-          "codigo_oem": "8-97014-2080-025",
-          "precio_usd": 0
-        },
-        {
-          "brand": "Original",
+          "id_variante": 1253,
+          "id_repuesto": 1190,
+          "brand": "Genérica",
           "codigo_oem": "8-97014-2080-050",
-          "precio_usd": 5
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 8
         },
         {
-          "brand": "Original",
+          "id_variante": 1254,
+          "id_repuesto": 1191,
+          "brand": "Genérica",
           "codigo_oem": "8-97014-2080-075",
-          "precio_usd": 5
-        },
-        {
-          "brand": "Original",
-          "codigo_oem": "8-97014-2080-100",
-          "precio_usd": 0
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 19,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "id": "41eb5a08-7138-4233-8d17-1c094bc04bb0",
@@ -25052,7 +34202,8 @@ const PRODUCTS_DATA = {
         "AXIALES",
         "CIGUENAL",
         "SEPARADOR",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "oem": "8-97014-2080 / 8-97014-2080-025 / 8-97014-2080-050 / 8-97014-2080-075 / 8-97014-2080-100",
       "slug": "separador-de-ciguenal-axiales-trooper-3-2",
@@ -25063,7 +34214,45 @@ const PRODUCTS_DATA = {
         1190,
         1191,
         1192
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 943,
+          "id_repuesto": 912,
+          "brand": "Genérica",
+          "codigo_oem": "8-97014-2080",
+          "medida": "STD",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 4
+        },
+        {
+          "id_variante": 1253,
+          "id_repuesto": 1190,
+          "brand": "Genérica",
+          "codigo_oem": "8-97014-2080-050",
+          "medida": "0.20",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 8
+        },
+        {
+          "id_variante": 1254,
+          "id_repuesto": 1191,
+          "brand": "Genérica",
+          "codigo_oem": "8-97014-2080-075",
+          "medida": "0.30",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 7
+        }
+      ],
+      "total_stock": 19,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Sincronico de Caja",
@@ -25077,7 +34266,8 @@ const PRODUCTS_DATA = {
         "CAJA",
         "CARIBE",
         "G200",
-        "SINCRONICO"
+        "SINCRONICO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1209
@@ -25087,11 +34277,20 @@ const PRODUCTS_DATA = {
       "slug": "sincronico-caja-1era-y-2da-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1285,
+          "id_repuesto": 1209,
+          "brand": "Genérica",
           "codigo_oem": "8-94238-6470",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Soporte Cabina",
@@ -25104,7 +34303,8 @@ const PRODUCTS_DATA = {
         "CABINA",
         "DMAX",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         913
@@ -25114,11 +34314,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cabina-alto-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 944,
+          "id_repuesto": 913,
+          "brand": "Genérica",
           "codigo_oem": "197031",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Soporte Cabina",
@@ -25131,7 +34340,8 @@ const PRODUCTS_DATA = {
         "CABINA",
         "DMAX",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1109
@@ -25141,11 +34351,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cabina-bajo-luv-dmax",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1145,
+          "id_repuesto": 1109,
+          "brand": "Genérica",
           "codigo_oem": "197032",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Soporte Cardan",
@@ -25157,7 +34376,8 @@ const PRODUCTS_DATA = {
         "CARDAN",
         "CARIBE",
         "CHUMACERA",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         914
@@ -25167,11 +34387,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 945,
+          "id_repuesto": 914,
+          "brand": "Genérica",
           "codigo_oem": "8-94222-9720",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Soporte Cardan",
@@ -25184,7 +34413,8 @@ const PRODUCTS_DATA = {
         "CARDAN",
         "CARIBE",
         "CHUMACERA",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         915
@@ -25194,11 +34424,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 946,
+          "id_repuesto": 915,
+          "brand": "Genérica",
           "codigo_oem": "8-94328-7990",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -25211,7 +34450,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CHUMACERA",
         "G200",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         914
@@ -25221,11 +34461,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 945,
+          "id_repuesto": 914,
+          "brand": "Genérica",
           "codigo_oem": "8-94222-9720",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Soporte Cardan",
@@ -25238,7 +34487,8 @@ const PRODUCTS_DATA = {
         "CARDAN",
         "CHUMACERA",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         915
@@ -25248,11 +34498,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 946,
+          "id_repuesto": 915,
+          "brand": "Genérica",
           "codigo_oem": "8-94328-7990",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -25265,7 +34524,8 @@ const PRODUCTS_DATA = {
         "CARDAN",
         "CHUMACERA",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         916
@@ -25275,11 +34535,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-luv-4x2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 947,
+          "id_repuesto": 916,
+          "brand": "Genérica",
           "codigo_oem": "197014",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -25293,7 +34562,8 @@ const PRODUCTS_DATA = {
         "CARDAN",
         "CHUMACERA",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         915
@@ -25303,11 +34573,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-luv-4x4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 946,
+          "id_repuesto": 915,
+          "brand": "Genérica",
           "codigo_oem": "8-94328-7990",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -25322,7 +34601,8 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "DMAX",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         918
@@ -25332,11 +34612,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 949,
+          "id_repuesto": 918,
+          "brand": "Genérica",
           "codigo_oem": "8-97942-8760",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -25351,7 +34640,8 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "DMAX",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         918
@@ -25361,11 +34651,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-luv-dmax-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 949,
+          "id_repuesto": 918,
+          "brand": "Genérica",
           "codigo_oem": "8-97942-8760",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -25380,7 +34679,8 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "DMAX",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         920
@@ -25390,11 +34690,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-luv-dmax-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 951,
+          "id_repuesto": 920,
+          "brand": "Genérica",
           "codigo_oem": "8-97942-8770",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -25407,7 +34716,8 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "DMAX",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         919
@@ -25417,11 +34727,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-luv-dmax-3-0-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 950,
+          "id_repuesto": 919,
+          "brand": "Genérica",
           "codigo_oem": "197028",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -25436,7 +34755,8 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "DMAX",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         920
@@ -25446,11 +34766,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 951,
+          "id_repuesto": 920,
+          "brand": "Genérica",
           "codigo_oem": "8-97942-8770",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -25465,7 +34794,8 @@ const PRODUCTS_DATA = {
         "CHUMACERA",
         "DMAX",
         "LUV",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         920
@@ -25475,11 +34805,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-luv-dmax-3-5-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 951,
+          "id_repuesto": 920,
+          "brand": "Genérica",
           "codigo_oem": "8-97942-8770",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Soporte Cardan",
@@ -25492,7 +34831,8 @@ const PRODUCTS_DATA = {
         "CARDAN",
         "CHUMACERA",
         "RODEO",
-        "SOPORTE"
+        "SOPORTE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         915
@@ -25502,11 +34842,20 @@ const PRODUCTS_DATA = {
       "slug": "soporte-cardan-chumacera-rodeo",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 946,
+          "id_repuesto": 915,
+          "brand": "Genérica",
           "codigo_oem": "8-94328-7990",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Stop",
@@ -25520,7 +34869,8 @@ const PRODUCTS_DATA = {
         "8-94218-8452",
         "8-94218-8455",
         "CARIBE",
-        "STOP"
+        "STOP",
+        "GENÉRICA"
       ],
       "linked_ids": [
         921,
@@ -25531,16 +34881,31 @@ const PRODUCTS_DATA = {
       "slug": "stop-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 952,
+          "id_repuesto": 921,
+          "brand": "Genérica",
           "codigo_oem": "8-94218-8442",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 20
         },
         {
-          "brand": "Original",
+          "id_variante": 1186,
+          "id_repuesto": 1148,
+          "brand": "Genérica",
           "codigo_oem": "8-94218-8452",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 20
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Stop",
@@ -25551,7 +34916,8 @@ const PRODUCTS_DATA = {
         "11-3383-A0-6B",
         "11-3384-A0-6B",
         "LUV",
-        "STOP"
+        "STOP",
+        "GENÉRICA"
       ],
       "linked_ids": [
         922,
@@ -25562,16 +34928,31 @@ const PRODUCTS_DATA = {
       "slug": "stop-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 953,
+          "id_repuesto": 922,
+          "brand": "Genérica",
           "codigo_oem": "11-3383-A0-6B",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         },
         {
-          "brand": "Original",
+          "id_variante": 1187,
+          "id_repuesto": 1149,
+          "brand": "Genérica",
           "codigo_oem": "11-3384-A0-6B",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Stop",
@@ -25582,7 +34963,8 @@ const PRODUCTS_DATA = {
         "8-97114-4490",
         "8-97114-4500",
         "LUV",
-        "STOP"
+        "STOP",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1150,
@@ -25593,16 +34975,31 @@ const PRODUCTS_DATA = {
       "slug": "stop-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 954,
+          "id_repuesto": 923,
+          "brand": "Genérica",
           "codigo_oem": "8-97114-4490",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "brand": "Original",
+          "id_variante": 1188,
+          "id_repuesto": 1150,
+          "brand": "Genérica",
           "codigo_oem": "8-97114-4500",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Stop",
@@ -25615,7 +35012,8 @@ const PRODUCTS_DATA = {
         "8-94482-3580",
         "8-94482-3590",
         "LUV",
-        "STOP"
+        "STOP",
+        "LUCID"
       ],
       "linked_ids": [
         1219,
@@ -25626,16 +35024,31 @@ const PRODUCTS_DATA = {
       "slug": "stop-luv-2-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1307,
+          "id_repuesto": 1219,
+          "brand": "LUCID",
           "codigo_oem": "8-94482-3580",
-          "precio_usd": 50
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 1
         },
         {
-          "brand": "Original",
+          "id_variante": 1308,
+          "id_repuesto": 1220,
+          "brand": "LUCID",
           "codigo_oem": "8-94482-3590",
-          "precio_usd": 50
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 50.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 50.0
     },
     {
       "category": "Stop",
@@ -25652,7 +35065,9 @@ const PRODUCTS_DATA = {
         "8-98023-3600",
         "DMAX",
         "LUV",
-        "STOP"
+        "STOP",
+        "DENKO",
+        "TYC"
       ],
       "linked_ids": [
         924,
@@ -25663,26 +35078,42 @@ const PRODUCTS_DATA = {
       "slug": "stop-luv-dmax-05-09",
       "variants": [
         {
+          "id_variante": 955,
+          "id_repuesto": 924,
           "brand": "DENKO",
           "codigo_oem": "8-97364-1140",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         },
         {
+          "id_variante": 1185,
+          "id_repuesto": 924,
           "brand": "TYC",
           "codigo_oem": "8-97364-1140",
-          "precio_usd": 45
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         },
         {
-          "brand": "TYC",
-          "codigo_oem": "8-97364-1150",
-          "precio_usd": 45
-        },
-        {
+          "id_variante": 1189,
+          "id_repuesto": 925,
           "brand": "DENKO",
           "codigo_oem": "8-97364-1150",
-          "precio_usd": 35
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 35.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 35.0
     },
     {
       "category": "Stop",
@@ -25699,7 +35130,9 @@ const PRODUCTS_DATA = {
         "8-98098-5870",
         "DMAX",
         "LUV",
-        "STOP"
+        "STOP",
+        "TYC",
+        "YOSAI"
       ],
       "linked_ids": [
         926,
@@ -25710,36 +35143,42 @@ const PRODUCTS_DATA = {
       "slug": "stop-luv-dmax-10-15",
       "variants": [
         {
-          "brand": "DENKO",
-          "codigo_oem": "8-97375-6062",
-          "precio_usd": 35
-        },
-        {
+          "id_variante": 958,
+          "id_repuesto": 926,
           "brand": "TYC",
           "codigo_oem": "8-97375-6062",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         },
         {
+          "id_variante": 1256,
+          "id_repuesto": 926,
           "brand": "YOSAI",
           "codigo_oem": "8-97375-6062",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         },
         {
-          "brand": "DENKO",
-          "codigo_oem": "8-97375-6072",
-          "precio_usd": 35
-        },
-        {
-          "brand": "TYC",
-          "codigo_oem": "8-97375-6072",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 1257,
+          "id_repuesto": 1152,
           "brand": "YOSAI",
           "codigo_oem": "8-97375-6072",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Switch Aire Acondicionado",
@@ -25755,7 +35194,8 @@ const PRODUCTS_DATA = {
         "HS422",
         "LUV",
         "MANDO",
-        "SWITCH"
+        "SWITCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         932
@@ -25764,11 +35204,20 @@ const PRODUCTS_DATA = {
       "slug": "switch-mando-control-aire-acondicionado-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 963,
+          "id_repuesto": 932,
+          "brand": "Genérica",
           "codigo_oem": "HS420",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 80.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 80.0
     },
     {
       "category": "Switch Encendido",
@@ -25781,7 +35230,8 @@ const PRODUCTS_DATA = {
         "CILINDRO",
         "ENCENDIDO",
         "IGNICION",
-        "SWITCH"
+        "SWITCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         930
@@ -25791,11 +35241,20 @@ const PRODUCTS_DATA = {
       "slug": "switch-ignicion-cilindro-encendido-caribe",
       "variants": [
         {
+          "id_variante": 961,
+          "id_repuesto": 930,
+          "brand": "Genérica",
           "codigo_oem": "8-94238-2340",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Switch Encendido",
@@ -25808,7 +35267,8 @@ const PRODUCTS_DATA = {
         "ENCENDIDO",
         "IGNICION",
         "LUV",
-        "SWITCH"
+        "SWITCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         931
@@ -25818,11 +35278,20 @@ const PRODUCTS_DATA = {
       "slug": "switch-ignicion-cilindro-encendido-luv",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 962,
+          "id_repuesto": 931,
+          "brand": "Genérica",
           "codigo_oem": "8-97110-6570",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Switch Encendido",
@@ -25837,7 +35306,8 @@ const PRODUCTS_DATA = {
         "IGNICION",
         "LUV",
         "MG02-13022",
-        "SWITCH"
+        "SWITCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1216
@@ -25847,11 +35317,20 @@ const PRODUCTS_DATA = {
       "slug": "switch-ignicion-cilindro-encendido-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1304,
+          "id_repuesto": 1216,
+          "brand": "Genérica",
           "codigo_oem": "8-97376-4440",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Switch Palanca Luces",
@@ -25864,7 +35343,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "LUZ",
         "PALANCA",
-        "SWITCH"
+        "SWITCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1045
@@ -25874,11 +35354,20 @@ const PRODUCTS_DATA = {
       "slug": "switch-palanca-luz-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1076,
+          "id_repuesto": 1045,
+          "brand": "Genérica",
           "codigo_oem": "8-97111-4951",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Switch Palanca Luces",
@@ -25897,7 +35386,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "LUZ",
         "PALANCA",
-        "SWITCH"
+        "SWITCH",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1111
@@ -25907,11 +35397,20 @@ const PRODUCTS_DATA = {
       "slug": "switch-palanca-luz-luv-dmax",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1147,
+          "id_repuesto": 1111,
+          "brand": "Genérica",
           "codigo_oem": "8-97360-6920",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Tambor de Freno",
@@ -25922,7 +35421,8 @@ const PRODUCTS_DATA = {
         "8-94226-8291",
         "FRENO",
         "LUV",
-        "TAMBOR"
+        "TAMBOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         933
@@ -25932,11 +35432,20 @@ const PRODUCTS_DATA = {
       "slug": "tambor-de-freno-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 964,
+          "id_repuesto": 933,
+          "brand": "Genérica",
           "codigo_oem": "8-94226-8291",
-          "precio_usd": 65
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 65.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 65.0
     },
     {
       "category": "Tambor de Freno",
@@ -25948,7 +35457,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "FRENO",
         "LUV",
-        "TAMBOR"
+        "TAMBOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1167
@@ -25958,11 +35468,20 @@ const PRODUCTS_DATA = {
       "slug": "tambor-de-freno-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1205,
+          "id_repuesto": 1167,
+          "brand": "Genérica",
           "codigo_oem": "8-97360-5050",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Tambor de Freno",
@@ -25974,7 +35493,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "FRENO",
         "LUV",
-        "TAMBOR"
+        "TAMBOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1167
@@ -25984,11 +35504,20 @@ const PRODUCTS_DATA = {
       "slug": "tambor-de-freno-luv-dmax-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1205,
+          "id_repuesto": 1167,
+          "brand": "Genérica",
           "codigo_oem": "8-97360-5050",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Tambor de Freno",
@@ -26001,7 +35530,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "FRENO",
         "LUV",
-        "TAMBOR"
+        "TAMBOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1167
@@ -26011,11 +35541,20 @@ const PRODUCTS_DATA = {
       "slug": "tambor-de-freno-luv-dmax-3-0-4x2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1205,
+          "id_repuesto": 1167,
+          "brand": "Genérica",
           "codigo_oem": "8-97360-5050",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "id": "d50389f2-9eb8-42f3-8e72-4afbc64f84ce",
@@ -26029,14 +35568,31 @@ const PRODUCTS_DATA = {
         "DMAX",
         "FRENO",
         "LUV",
-        "TAMBOR"
+        "TAMBOR",
+        "GENÉRICA"
       ],
       "oem": "8-97360-5060 / 8-98030-3850",
       "slug": "tambor-de-freno-luv-dmax-3-0-4x4",
       "original_filename": "Tambor de Freno/d50389f2-9eb8-42f3-8e72-4afbc64f84ce.jpg",
       "linked_ids": [
         934
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 965,
+          "id_repuesto": 934,
+          "brand": "Genérica",
+          "codigo_oem": "8-97360-5060",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 6
+        }
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Tambor de Freno",
@@ -26049,7 +35605,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "FRENO",
         "LUV",
-        "TAMBOR"
+        "TAMBOR",
+        "GENÉRICA"
       ],
       "linked_ids": [
         934
@@ -26059,11 +35616,20 @@ const PRODUCTS_DATA = {
       "slug": "tambor-de-freno-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 965,
+          "id_repuesto": 934,
+          "brand": "Genérica",
           "codigo_oem": "8-97360-5060",
-          "precio_usd": 85
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 85.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 85.0
     },
     {
       "category": "Tanque Radiador",
@@ -26076,7 +35642,8 @@ const PRODUCTS_DATA = {
         "GM-9937",
         "LUV",
         "RADIADOR",
-        "TANQUE"
+        "TANQUE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         936
@@ -26085,11 +35652,20 @@ const PRODUCTS_DATA = {
       "slug": "tanque-radiador-entrada-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 967,
+          "id_repuesto": 936,
+          "brand": "Genérica",
           "codigo_oem": "GM-9937",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 15
         }
-      ]
+      ],
+      "total_stock": 15,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Tanque Radiador",
@@ -26102,7 +35678,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "RADIADOR",
         "SALIDA",
-        "TANQUE"
+        "TANQUE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         935
@@ -26111,11 +35688,20 @@ const PRODUCTS_DATA = {
       "slug": "tanque-radiador-salida-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 966,
+          "id_repuesto": 935,
+          "brand": "Genérica",
           "codigo_oem": "GM-7871",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 15
         }
-      ]
+      ],
+      "total_stock": 15,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Tapa Aceite",
@@ -26126,7 +35712,8 @@ const PRODUCTS_DATA = {
         "8-94239-1510",
         "ACEITE",
         "CARIBE",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         937
@@ -26136,11 +35723,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-aceite-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 968,
+          "id_repuesto": 937,
+          "brand": "Genérica",
           "codigo_oem": "8-94239-1510",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tapa Aceite",
@@ -26152,7 +35748,9 @@ const PRODUCTS_DATA = {
         "8-97117-7660",
         "ACEITE",
         "CARIBE",
-        "TAPA"
+        "TAPA",
+        "JFP",
+        "PRESENTACION"
       ],
       "linked_ids": [
         938
@@ -26162,16 +35760,31 @@ const PRODUCTS_DATA = {
       "slug": "tapa-aceite-caribe-2-6",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94133-2075",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1105,
+          "id_repuesto": 938,
           "brand": "JFP",
           "codigo_oem": "8-94133-2075",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 8
+        },
+        {
+          "id_variante": 969,
+          "id_repuesto": 938,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94133-2075",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 48,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tapa Aceite",
@@ -26183,7 +35796,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "CARIBE",
         "G200",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         937
@@ -26193,11 +35807,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-aceite-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 968,
+          "id_repuesto": 937,
+          "brand": "Genérica",
           "codigo_oem": "8-94239-1510",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tapa Aceite",
@@ -26210,7 +35833,9 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "DMAX",
         "LUV",
-        "TAPA"
+        "TAPA",
+        "JFP",
+        "PRESENTACION"
       ],
       "linked_ids": [
         938
@@ -26220,16 +35845,31 @@ const PRODUCTS_DATA = {
       "slug": "tapa-aceite-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94133-2075",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1105,
+          "id_repuesto": 938,
           "brand": "JFP",
           "codigo_oem": "8-94133-2075",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 8
+        },
+        {
+          "id_variante": 969,
+          "id_repuesto": 938,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94133-2075",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 48,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tapa Aceite",
@@ -26241,7 +35881,9 @@ const PRODUCTS_DATA = {
         "8-97117-7660",
         "ACEITE",
         "RODEO",
-        "TAPA"
+        "TAPA",
+        "JFP",
+        "PRESENTACION"
       ],
       "linked_ids": [
         938
@@ -26251,16 +35893,31 @@ const PRODUCTS_DATA = {
       "slug": "tapa-aceite-rodeo",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94133-2075",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1105,
+          "id_repuesto": 938,
           "brand": "JFP",
           "codigo_oem": "8-94133-2075",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 8
+        },
+        {
+          "id_variante": 969,
+          "id_repuesto": 938,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94133-2075",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 48,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tapa Aceite",
@@ -26272,7 +35929,9 @@ const PRODUCTS_DATA = {
         "8-97117-7660",
         "ACEITE",
         "TAPA",
-        "TROOPER"
+        "TROOPER",
+        "JFP",
+        "PRESENTACION"
       ],
       "linked_ids": [
         938
@@ -26282,16 +35941,31 @@ const PRODUCTS_DATA = {
       "slug": "tapa-aceite-trooper",
       "variants": [
         {
-          "brand": "PRESENTACION",
-          "codigo_oem": "8-94133-2075",
-          "precio_usd": 10
-        },
-        {
+          "id_variante": 1105,
+          "id_repuesto": 938,
           "brand": "JFP",
           "codigo_oem": "8-94133-2075",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 8
+        },
+        {
+          "id_variante": 969,
+          "id_repuesto": 938,
+          "brand": "PRESENTACION",
+          "codigo_oem": "8-94133-2075",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 48,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tapa Correa de Tiempo",
@@ -26305,7 +35979,8 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "LUV",
         "TAPA",
-        "TIEMPO"
+        "TIEMPO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1234
@@ -26315,11 +35990,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-correa-inferior-luv-dmax-3-5",
       "variants": [
         {
+          "id_variante": 1358,
+          "id_repuesto": 1234,
+          "brand": "Genérica",
           "codigo_oem": "8-97131-8723",
-          "brand": "Original",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Tapa Distribuidor",
@@ -26331,7 +36015,8 @@ const PRODUCTS_DATA = {
         "8-94129-2020",
         "CARIBE",
         "DISTRIBUIDOR",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         941
@@ -26341,11 +36026,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-distribuidor-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 972,
+          "id_repuesto": 941,
+          "brand": "Genérica",
           "codigo_oem": "8-94129-2020",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 18
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tapa Distribuidor",
@@ -26357,7 +36051,8 @@ const PRODUCTS_DATA = {
         "8-94129-2020",
         "CARIBE",
         "DISTRIBUIDOR",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         941
@@ -26367,11 +36062,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-distribuidor-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 972,
+          "id_repuesto": 941,
+          "brand": "Genérica",
           "codigo_oem": "8-94129-2020",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 18
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tapa Distribuidor",
@@ -26383,7 +36087,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DISTRIBUIDOR",
         "G200",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         940
@@ -26393,11 +36098,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-distribuidor-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 971,
+          "id_repuesto": 940,
+          "brand": "Genérica",
           "codigo_oem": "8-94206-1390",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 51
         }
-      ]
+      ],
+      "total_stock": 51,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tapa Distribuidor",
@@ -26408,7 +36122,9 @@ const PRODUCTS_DATA = {
         "8-94321-5370",
         "DISTRIBUIDOR",
         "LUV",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA",
+        "YEC"
       ],
       "linked_ids": [
         942
@@ -26418,16 +36134,31 @@ const PRODUCTS_DATA = {
       "slug": "tapa-distribuidor-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 973,
+          "id_repuesto": 942,
+          "brand": "Genérica",
           "codigo_oem": "8-94321-5370",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
+          "id_variante": 1328,
+          "id_repuesto": 942,
           "brand": "YEC",
           "codigo_oem": "8-94321-5370",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tapa Envase Agua",
@@ -26441,7 +36172,8 @@ const PRODUCTS_DATA = {
         "ENVASE",
         "LUV",
         "RESERVORIO",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1194
@@ -26451,11 +36183,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-reservorio-de-agua-luv-dmax",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1259,
+          "id_repuesto": 1194,
+          "brand": "Genérica",
           "codigo_oem": "8-97333-3540",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 43
         }
-      ]
+      ],
+      "total_stock": 43,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tapa Gasolina",
@@ -26469,7 +36210,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "GASOLINA",
         "LUV",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         943
@@ -26478,11 +36220,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-gasolina-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 974,
+          "id_repuesto": 943,
+          "brand": "Genérica",
           "codigo_oem": "8-22660-0030",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 30
         }
-      ]
+      ],
+      "total_stock": 30,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Tapa Modulo Gasolina",
@@ -26495,7 +36246,8 @@ const PRODUCTS_DATA = {
         "GASOLINA",
         "LUV",
         "MODULO",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         944
@@ -26505,11 +36257,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-modulo-gasolina-luv-dmax",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 975,
+          "id_repuesto": 944,
+          "brand": "Genérica",
           "codigo_oem": "FMP-DMAX-C",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Tapa Radiador",
@@ -26520,7 +36281,8 @@ const PRODUCTS_DATA = {
         "8-94228-7481",
         "CARIBE",
         "RADIADOR",
-        "TAPA"
+        "TAPA",
+        "ONE4CARS"
       ],
       "linked_ids": [
         945
@@ -26530,11 +36292,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-radiador-caribe",
       "variants": [
         {
+          "id_variante": 976,
+          "id_repuesto": 945,
           "brand": "ONE4CARS",
           "codigo_oem": "8-94228-7481",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tapa Radiador",
@@ -26545,7 +36316,8 @@ const PRODUCTS_DATA = {
         "8-94228-7481",
         "LUV",
         "RADIADOR",
-        "TAPA"
+        "TAPA",
+        "ONE4CARS"
       ],
       "linked_ids": [
         945
@@ -26555,11 +36327,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-radiador-luv-2-3",
       "variants": [
         {
+          "id_variante": 976,
+          "id_repuesto": 945,
           "brand": "ONE4CARS",
           "codigo_oem": "8-94228-7481",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tapa Radiador",
@@ -26572,7 +36353,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "RADIADOR",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         946
@@ -26582,11 +36364,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-radiador-luv-dmax",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 977,
+          "id_repuesto": 946,
+          "brand": "Genérica",
           "codigo_oem": "8-97942-2681",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 23
         }
-      ]
+      ],
+      "total_stock": 23,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tapa Rin",
@@ -26598,7 +36389,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "RIN",
-        "TAPA"
+        "TAPA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         939
@@ -26607,11 +36399,20 @@ const PRODUCTS_DATA = {
       "slug": "tapa-rin-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 970,
+          "id_repuesto": 939,
+          "brand": "Genérica",
           "codigo_oem": "8-97302-0011",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tapavalvula",
@@ -26624,7 +36425,8 @@ const PRODUCTS_DATA = {
         "8-94360-5311",
         "8-94360-5320",
         "CARIBE",
-        "TAPAVALVULA"
+        "TAPAVALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1195
@@ -26634,11 +36436,20 @@ const PRODUCTS_DATA = {
       "slug": "tapavalvula-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1260,
+          "id_repuesto": 1195,
+          "brand": "Genérica",
           "codigo_oem": "8-94360-5320",
-          "precio_usd": 160
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 160.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 160.0
     },
     {
       "category": "Tapavalvula",
@@ -26651,7 +36462,8 @@ const PRODUCTS_DATA = {
         "8-94360-5311",
         "8-94360-5320",
         "CARIBE",
-        "TAPAVALVULA"
+        "TAPAVALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1195
@@ -26661,11 +36473,20 @@ const PRODUCTS_DATA = {
       "slug": "tapavalvula-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1260,
+          "id_repuesto": 1195,
+          "brand": "Genérica",
           "codigo_oem": "8-94360-5320",
-          "precio_usd": 160
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 160.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 160.0
     },
     {
       "category": "Tapavalvula",
@@ -26677,7 +36498,8 @@ const PRODUCTS_DATA = {
         "8-92066-1030",
         "8-93369-4220",
         "LUV",
-        "TAPAVALVULA"
+        "TAPAVALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         947
@@ -26687,11 +36509,20 @@ const PRODUCTS_DATA = {
       "slug": "tapavalvula-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 978,
+          "id_repuesto": 947,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-1030",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 95.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 95.0
     },
     {
       "category": "Tapavalvula",
@@ -26704,7 +36535,8 @@ const PRODUCTS_DATA = {
         "8-94360-5311",
         "8-94360-5320",
         "LUV",
-        "TAPAVALVULA"
+        "TAPAVALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1195
@@ -26714,11 +36546,20 @@ const PRODUCTS_DATA = {
       "slug": "tapavalvula-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1260,
+          "id_repuesto": 1195,
+          "brand": "Genérica",
           "codigo_oem": "8-94360-5320",
-          "precio_usd": 160
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 160.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 160.0
     },
     {
       "category": "Tapavalvula",
@@ -26731,7 +36572,8 @@ const PRODUCTS_DATA = {
         "8-93369-4220",
         "DMAX",
         "LUV",
-        "TAPAVALVULA"
+        "TAPAVALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         947
@@ -26741,11 +36583,20 @@ const PRODUCTS_DATA = {
       "slug": "tapavalvula-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 978,
+          "id_repuesto": 947,
+          "brand": "Genérica",
           "codigo_oem": "8-92066-1030",
-          "precio_usd": 95
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 95.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 95.0
     },
     {
       "category": "Tapon Carter",
@@ -26757,7 +36608,8 @@ const PRODUCTS_DATA = {
         "CARTER",
         "DMAX",
         "LUV",
-        "TAPON"
+        "TAPON",
+        "GENÉRICA"
       ],
       "linked_ids": [
         948
@@ -26767,11 +36619,20 @@ const PRODUCTS_DATA = {
       "slug": "tapon-carter-luv-dmax",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 979,
+          "id_repuesto": 948,
+          "brand": "Genérica",
           "codigo_oem": "9-09862-1560",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Taquetes",
@@ -26782,7 +36643,8 @@ const PRODUCTS_DATA = {
         "5233315",
         "8-05233-3150",
         "LUV",
-        "TAQUETES"
+        "TAQUETES",
+        "GENÉRICA"
       ],
       "linked_ids": [
         949
@@ -26792,11 +36654,20 @@ const PRODUCTS_DATA = {
       "slug": "taquetes-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 980,
+          "id_repuesto": 949,
+          "brand": "Genérica",
           "codigo_oem": "8-05233-3150",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Taquetes",
@@ -26808,7 +36679,8 @@ const PRODUCTS_DATA = {
         "8-05233-3150",
         "DMAX",
         "LUV",
-        "TAQUETES"
+        "TAQUETES",
+        "GENÉRICA"
       ],
       "linked_ids": [
         949
@@ -26818,11 +36690,20 @@ const PRODUCTS_DATA = {
       "slug": "taquetes-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 980,
+          "id_repuesto": 949,
+          "brand": "Genérica",
           "codigo_oem": "8-05233-3150",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 8
         }
-      ]
+      ],
+      "total_stock": 8,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Taquetes",
@@ -26833,7 +36714,8 @@ const PRODUCTS_DATA = {
         "8-97148-2961",
         "DMAX",
         "LUV",
-        "TAQUETES"
+        "TAQUETES",
+        "GENÉRICA"
       ],
       "linked_ids": [
         950
@@ -26843,11 +36725,20 @@ const PRODUCTS_DATA = {
       "slug": "taquetes-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 981,
+          "id_repuesto": 950,
+          "brand": "Genérica",
           "codigo_oem": "8-97148-2961",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Taquetes",
@@ -26858,7 +36749,8 @@ const PRODUCTS_DATA = {
         "24610-22010",
         "8-97010-7270",
         "TAQUETES",
-        "TROOPER"
+        "TROOPER",
+        "GENÉRICA"
       ],
       "linked_ids": [
         951
@@ -26868,11 +36760,20 @@ const PRODUCTS_DATA = {
       "slug": "taquetes-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 982,
+          "id_repuesto": 951,
+          "brand": "Genérica",
           "codigo_oem": "8-97010-7270",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Tensor Correa de Tiempo",
@@ -26886,7 +36787,8 @@ const PRODUCTS_DATA = {
         "CORREA",
         "G200",
         "TENSOR",
-        "TIEMPO"
+        "TIEMPO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         952
@@ -26896,11 +36798,20 @@ const PRODUCTS_DATA = {
       "slug": "tensor-cadena-de-tiempo-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 983,
+          "id_repuesto": 952,
+          "brand": "Genérica",
           "codigo_oem": "8-94243-3220",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Tensor Correa de Tiempo",
@@ -26915,7 +36826,8 @@ const PRODUCTS_DATA = {
         "HIDRAULICO",
         "LUV",
         "TENSOR",
-        "TIEMPO"
+        "TIEMPO",
+        "MICHELIN"
       ],
       "linked_ids": [
         955
@@ -26925,16 +36837,20 @@ const PRODUCTS_DATA = {
       "slug": "tensor-correa-de-tiempo-hidraulico-luv-dmax-3-5",
       "variants": [
         {
+          "id_variante": 986,
+          "id_repuesto": 955,
           "brand": "MICHELIN",
           "codigo_oem": "8-97328-5120",
-          "precio_usd": 60
-        },
-        {
-          "brand": "NTN",
-          "codigo_oem": "8-97328-5120",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 60.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Tensor Correa de Tiempo",
@@ -26950,7 +36866,8 @@ const PRODUCTS_DATA = {
         "HIDRAULICO",
         "TENSOR",
         "TIEMPO",
-        "TROOPER"
+        "TROOPER",
+        "NTN"
       ],
       "linked_ids": [
         953
@@ -26960,16 +36877,20 @@ const PRODUCTS_DATA = {
       "slug": "tensor-correa-de-tiempo-hidraulico-trooper-3-2",
       "variants": [
         {
+          "id_variante": 984,
+          "id_repuesto": 953,
           "brand": "NTN",
           "codigo_oem": "8-94364-8171",
-          "precio_usd": 110
-        },
-        {
-          "brand": "JOMO",
-          "codigo_oem": "8-94364-8171",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 110.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 110.0
     },
     {
       "id": "321a7b8b-0738-48fc-921b-9ea891a64b28",
@@ -26983,14 +36904,31 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "TENSOR",
-        "TIEMPO"
+        "TIEMPO",
+        "GENÉRICA"
       ],
       "oem": "8-97136-2561 / 8-94364-8161",
       "slug": "tensor-correa-de-tiempo-luv-dmax-3-5",
       "original_filename": "Tensor Correa de Tiempo/321a7b8b-0738-48fc-921b-9ea891a64b28.jpg",
       "linked_ids": [
         962
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 993,
+          "id_repuesto": 962,
+          "brand": "Genérica",
+          "codigo_oem": "8-97136-2561",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 2
+        }
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Tensor Correa de Tiempo",
@@ -27003,7 +36941,8 @@ const PRODUCTS_DATA = {
         "CORREA",
         "MECANICO",
         "TENSOR",
-        "TIEMPO"
+        "TIEMPO",
+        "VELOCITY"
       ],
       "linked_ids": [
         957
@@ -27013,11 +36952,20 @@ const PRODUCTS_DATA = {
       "slug": "tensor-correa-de-tiempo-mecanico-caribe-2-3",
       "variants": [
         {
+          "id_variante": 988,
+          "id_repuesto": 957,
           "brand": "VELOCITY",
           "codigo_oem": "8-94215-1971",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Tensor Correa de Tiempo",
@@ -27030,7 +36978,9 @@ const PRODUCTS_DATA = {
         "CORREA",
         "MECANICO",
         "TENSOR",
-        "TIEMPO"
+        "TIEMPO",
+        "ICHIBAN",
+        "NSK"
       ],
       "linked_ids": [
         959
@@ -27040,16 +36990,31 @@ const PRODUCTS_DATA = {
       "slug": "tensor-correa-de-tiempo-mecanico-caribe-2-6",
       "variants": [
         {
-          "brand": "NSK",
-          "codigo_oem": "8-94472-3490",
-          "precio_usd": 0
-        },
-        {
+          "id_variante": 991,
+          "id_repuesto": 959,
           "brand": "ICHIBAN",
           "codigo_oem": "8-94472-3490",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        },
+        {
+          "id_variante": 990,
+          "id_repuesto": 959,
+          "brand": "NSK",
+          "codigo_oem": "8-94472-3490",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tensor Correa de Tiempo",
@@ -27063,7 +37028,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MECANICO",
         "TENSOR",
-        "TIEMPO"
+        "TIEMPO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         961
@@ -27073,11 +37039,20 @@ const PRODUCTS_DATA = {
       "slug": "tensor-correa-de-tiempo-mecanico-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 992,
+          "id_repuesto": 961,
+          "brand": "Genérica",
           "codigo_oem": "8-90530-1240",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tensor Correa de Tiempo",
@@ -27090,7 +37065,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MECANICO",
         "TENSOR",
-        "TIEMPO"
+        "TIEMPO",
+        "VELOCITY"
       ],
       "linked_ids": [
         957
@@ -27100,11 +37076,20 @@ const PRODUCTS_DATA = {
       "slug": "tensor-correa-de-tiempo-mecanico-luv-2-3",
       "variants": [
         {
+          "id_variante": 988,
+          "id_repuesto": 957,
           "brand": "VELOCITY",
           "codigo_oem": "8-94215-1971",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Tensor Correa de Tiempo",
@@ -27119,7 +37104,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MECANICO",
         "TENSOR",
-        "TIEMPO"
+        "TIEMPO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         961
@@ -27129,11 +37115,20 @@ const PRODUCTS_DATA = {
       "slug": "tensor-correa-de-tiempo-mecanico-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 992,
+          "id_repuesto": 961,
+          "brand": "Genérica",
           "codigo_oem": "8-90530-1240",
-          "precio_usd": 35
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Terminal",
@@ -27144,7 +37139,9 @@ const PRODUCTS_DATA = {
         "8-94237-3511",
         "CARIBE",
         "EXTERNO",
-        "TERMINAL"
+        "TERMINAL",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         964
@@ -27154,16 +37151,31 @@ const PRODUCTS_DATA = {
       "slug": "terminal-externo-caribe-2-3",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-94237-3511",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 996,
+          "id_repuesto": 964,
           "brand": "JAPON",
           "codigo_oem": "8-94237-3511",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 28
+        },
+        {
+          "id_variante": 995,
+          "id_repuesto": 964,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-94237-3511",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 44
         }
-      ]
+      ],
+      "total_stock": 72,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Terminal",
@@ -27180,7 +37192,8 @@ const PRODUCTS_DATA = {
         "8-98056-5510",
         "CARIBE",
         "EXTERNO",
-        "TERMINAL"
+        "TERMINAL",
+        "TAIWAN"
       ],
       "linked_ids": [
         966
@@ -27190,16 +37203,20 @@ const PRODUCTS_DATA = {
       "slug": "terminal-externo-caribe-2-6",
       "variants": [
         {
+          "id_variante": 997,
+          "id_repuesto": 966,
           "brand": "TAIWAN",
           "codigo_oem": "8-97304-9280",
-          "precio_usd": 15
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97304-9280",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 55
         }
-      ]
+      ],
+      "total_stock": 55,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Terminal",
@@ -27211,7 +37228,9 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EXTERNO",
         "G200",
-        "TERMINAL"
+        "TERMINAL",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         964
@@ -27221,16 +37240,31 @@ const PRODUCTS_DATA = {
       "slug": "terminal-externo-caribe-g200",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-94237-3511",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 996,
+          "id_repuesto": 964,
           "brand": "JAPON",
           "codigo_oem": "8-94237-3511",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 28
+        },
+        {
+          "id_variante": 995,
+          "id_repuesto": 964,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-94237-3511",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 44
         }
-      ]
+      ],
+      "total_stock": 72,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Terminal",
@@ -27247,7 +37281,8 @@ const PRODUCTS_DATA = {
         "8-98056-5510",
         "EXTERNO",
         "LUV",
-        "TERMINAL"
+        "TERMINAL",
+        "TAIWAN"
       ],
       "linked_ids": [
         966
@@ -27257,16 +37292,20 @@ const PRODUCTS_DATA = {
       "slug": "terminal-externo-luv",
       "variants": [
         {
+          "id_variante": 997,
+          "id_repuesto": 966,
           "brand": "TAIWAN",
           "codigo_oem": "8-97304-9280",
-          "precio_usd": 15
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97304-9280",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 55
         }
-      ]
+      ],
+      "total_stock": 55,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Terminal",
@@ -27284,7 +37323,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "EXTERNO",
         "LUV",
-        "TERMINAL"
+        "TERMINAL",
+        "TAIWAN"
       ],
       "linked_ids": [
         966
@@ -27294,16 +37334,20 @@ const PRODUCTS_DATA = {
       "slug": "terminal-externo-luv-dmax",
       "variants": [
         {
+          "id_variante": 997,
+          "id_repuesto": 966,
           "brand": "TAIWAN",
           "codigo_oem": "8-97304-9280",
-          "precio_usd": 15
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97304-9280",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 55
         }
-      ]
+      ],
+      "total_stock": 55,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Terminal",
@@ -27320,7 +37364,8 @@ const PRODUCTS_DATA = {
         "8-98056-5510",
         "EXTERNO",
         "RODEO",
-        "TERMINAL"
+        "TERMINAL",
+        "TAIWAN"
       ],
       "linked_ids": [
         966
@@ -27330,16 +37375,20 @@ const PRODUCTS_DATA = {
       "slug": "terminal-externo-rodeo",
       "variants": [
         {
+          "id_variante": 997,
+          "id_repuesto": 966,
           "brand": "TAIWAN",
           "codigo_oem": "8-97304-9280",
-          "precio_usd": 15
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97304-9280",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 55
         }
-      ]
+      ],
+      "total_stock": 55,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Terminal",
@@ -27356,7 +37405,8 @@ const PRODUCTS_DATA = {
         "8-98056-5510",
         "EXTERNO",
         "TERMINAL",
-        "TROOPER"
+        "TROOPER",
+        "TAIWAN"
       ],
       "linked_ids": [
         966
@@ -27366,16 +37416,20 @@ const PRODUCTS_DATA = {
       "slug": "terminal-externo-trooper",
       "variants": [
         {
+          "id_variante": 997,
+          "id_repuesto": 966,
           "brand": "TAIWAN",
           "codigo_oem": "8-97304-9280",
-          "precio_usd": 15
-        },
-        {
-          "brand": "JAPON",
-          "codigo_oem": "8-97304-9280",
-          "precio_usd": 0
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 55
         }
-      ]
+      ],
+      "total_stock": 55,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Terminal",
@@ -27388,7 +37442,9 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ES-2954",
         "INTERNO",
-        "TERMINAL"
+        "TERMINAL",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         968
@@ -27398,16 +37454,31 @@ const PRODUCTS_DATA = {
       "slug": "terminal-interno-caribe-2-6",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-97020-9542",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1000,
+          "id_repuesto": 968,
           "brand": "JAPON",
           "codigo_oem": "8-97020-9542",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 15
+        },
+        {
+          "id_variante": 999,
+          "id_repuesto": 968,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97020-9542",
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 26
         }
-      ]
+      ],
+      "total_stock": 41,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Terminal",
@@ -27420,7 +37491,9 @@ const PRODUCTS_DATA = {
         "ES-2954",
         "INTERNO",
         "LUV",
-        "TERMINAL"
+        "TERMINAL",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         968
@@ -27430,16 +37503,31 @@ const PRODUCTS_DATA = {
       "slug": "terminal-interno-luv",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-97020-9542",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1000,
+          "id_repuesto": 968,
           "brand": "JAPON",
           "codigo_oem": "8-97020-9542",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 15
+        },
+        {
+          "id_variante": 999,
+          "id_repuesto": 968,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97020-9542",
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 26
         }
-      ]
+      ],
+      "total_stock": 41,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Terminal",
@@ -27452,7 +37540,9 @@ const PRODUCTS_DATA = {
         "ES-2954",
         "INTERNO",
         "RODEO",
-        "TERMINAL"
+        "TERMINAL",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         968
@@ -27462,16 +37552,31 @@ const PRODUCTS_DATA = {
       "slug": "terminal-interno-rodeo",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-97020-9542",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1000,
+          "id_repuesto": 968,
           "brand": "JAPON",
           "codigo_oem": "8-97020-9542",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 15
+        },
+        {
+          "id_variante": 999,
+          "id_repuesto": 968,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97020-9542",
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 26
         }
-      ]
+      ],
+      "total_stock": 41,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Terminal",
@@ -27484,7 +37589,9 @@ const PRODUCTS_DATA = {
         "ES-2954",
         "INTERNO",
         "TERMINAL",
-        "TROOPER"
+        "TROOPER",
+        "JAPON",
+        "TAIWAN"
       ],
       "linked_ids": [
         968
@@ -27494,16 +37601,31 @@ const PRODUCTS_DATA = {
       "slug": "terminal-interno-trooper",
       "variants": [
         {
-          "brand": "TAIWAN",
-          "codigo_oem": "8-97020-9542",
-          "precio_usd": 15
-        },
-        {
+          "id_variante": 1000,
+          "id_repuesto": 968,
           "brand": "JAPON",
           "codigo_oem": "8-97020-9542",
-          "precio_usd": 30
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 15
+        },
+        {
+          "id_variante": 999,
+          "id_repuesto": 968,
+          "brand": "TAIWAN",
+          "codigo_oem": "8-97020-9542",
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 26
         }
-      ]
+      ],
+      "total_stock": 41,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Termostato",
@@ -27515,7 +37637,8 @@ const PRODUCTS_DATA = {
         "8-94336-0680",
         "8-94336-0690",
         "CARIBE",
-        "TERMOSTATO"
+        "TERMOSTATO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         975
@@ -27525,11 +37648,20 @@ const PRODUCTS_DATA = {
       "slug": "termostato-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1006,
+          "id_repuesto": 975,
+          "brand": "Genérica",
           "codigo_oem": "8-94207-2171",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 13,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Termostato",
@@ -27539,7 +37671,8 @@ const PRODUCTS_DATA = {
       "keywords": [
         "8-97361-7700",
         "LUV",
-        "TERMOSTATO"
+        "TERMOSTATO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         977
@@ -27549,11 +37682,20 @@ const PRODUCTS_DATA = {
       "slug": "termostato-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1008,
+          "id_repuesto": 977,
+          "brand": "Genérica",
           "codigo_oem": "8-97361-7700",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Termostato",
@@ -27565,7 +37707,8 @@ const PRODUCTS_DATA = {
         "8-94336-0680",
         "8-94336-0690",
         "LUV",
-        "TERMOSTATO"
+        "TERMOSTATO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         975
@@ -27575,11 +37718,20 @@ const PRODUCTS_DATA = {
       "slug": "termostato-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1006,
+          "id_repuesto": 975,
+          "brand": "Genérica",
           "codigo_oem": "8-94207-2171",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 13
         }
-      ]
+      ],
+      "total_stock": 13,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Termostato",
@@ -27590,7 +37742,8 @@ const PRODUCTS_DATA = {
         "8-97361-7700",
         "DMAX",
         "LUV",
-        "TERMOSTATO"
+        "TERMOSTATO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         977
@@ -27600,11 +37753,20 @@ const PRODUCTS_DATA = {
       "slug": "termostato-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1008,
+          "id_repuesto": 977,
+          "brand": "Genérica",
           "codigo_oem": "8-97361-7700",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Termostato",
@@ -27616,7 +37778,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "TERMOSTATO",
-        "WV64IA-85"
+        "WV64IA-85",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1212
@@ -27626,11 +37789,20 @@ const PRODUCTS_DATA = {
       "slug": "termostato-luv-dmax-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1288,
+          "id_repuesto": 1212,
+          "brand": "Genérica",
           "codigo_oem": "8-97246-9730",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Termostato",
@@ -27642,7 +37814,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "TERMOSTATO",
-        "WV64IA-85"
+        "WV64IA-85",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1212
@@ -27652,11 +37825,20 @@ const PRODUCTS_DATA = {
       "slug": "termostato-luv-dmax-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1288,
+          "id_repuesto": 1212,
+          "brand": "Genérica",
           "codigo_oem": "8-97246-9730",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Termostato",
@@ -27667,7 +37849,8 @@ const PRODUCTS_DATA = {
         "8-97362-8940",
         "DMAX",
         "LUV",
-        "TERMOSTATO"
+        "TERMOSTATO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         979
@@ -27677,11 +37860,20 @@ const PRODUCTS_DATA = {
       "slug": "termostato-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1010,
+          "id_repuesto": 979,
+          "brand": "Genérica",
           "codigo_oem": "8-97362-8940",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tope Araña",
@@ -27693,7 +37885,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "CARIBE",
         "TOPE",
-        "TOPES"
+        "TOPES",
+        "GENÉRICA"
       ],
       "linked_ids": [
         982
@@ -27703,11 +37896,20 @@ const PRODUCTS_DATA = {
       "slug": "topes-arana-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1013,
+          "id_repuesto": 982,
+          "brand": "Genérica",
           "codigo_oem": "8-94223-1491",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tope Araña",
@@ -27719,7 +37921,8 @@ const PRODUCTS_DATA = {
         "ARANA",
         "LUV",
         "TOPE",
-        "TOPES"
+        "TOPES",
+        "GENÉRICA"
       ],
       "linked_ids": [
         983
@@ -27729,11 +37932,20 @@ const PRODUCTS_DATA = {
       "slug": "topes-arana-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1014,
+          "id_repuesto": 983,
+          "brand": "Genérica",
           "codigo_oem": "8-94259-0860",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tope Chasis",
@@ -27746,7 +37958,8 @@ const PRODUCTS_DATA = {
         "CABINA",
         "CHASIS",
         "LUV",
-        "TOPE"
+        "TOPE",
+        "GENÉRICA"
       ],
       "linked_ids": [
         981
@@ -27756,11 +37969,20 @@ const PRODUCTS_DATA = {
       "slug": "tope-cabina-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1012,
+          "id_repuesto": 981,
+          "brand": "Genérica",
           "codigo_oem": "8-94459-4522",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Tope Meseta",
@@ -27772,7 +37994,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "MESETA",
         "TOPE",
-        "TOPES"
+        "TOPES",
+        "GENÉRICA"
       ],
       "linked_ids": [
         984
@@ -27782,11 +38005,20 @@ const PRODUCTS_DATA = {
       "slug": "topes-meseta-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1015,
+          "id_repuesto": 984,
+          "brand": "Genérica",
           "codigo_oem": "8-94433-6730",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Tope Meseta",
@@ -27798,7 +38030,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "MESETA",
         "TOPE",
-        "TOPES"
+        "TOPES",
+        "GENÉRICA"
       ],
       "linked_ids": [
         984
@@ -27808,11 +38041,20 @@ const PRODUCTS_DATA = {
       "slug": "topes-meseta-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1015,
+          "id_repuesto": 984,
+          "brand": "Genérica",
           "codigo_oem": "8-94433-6730",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Tornillo Barra Central",
@@ -27824,7 +38066,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CARIBE",
         "CENTRAL",
-        "TORNILLO"
+        "TORNILLO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         985
@@ -27834,11 +38077,20 @@ const PRODUCTS_DATA = {
       "slug": "tornillo-barra-central-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1016,
+          "id_repuesto": 985,
+          "brand": "Genérica",
           "codigo_oem": "8-94237-3651",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tornillo Barra Central",
@@ -27851,7 +38103,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "CENTRAL",
         "G200",
-        "TORNILLO"
+        "TORNILLO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         985
@@ -27861,11 +38114,20 @@ const PRODUCTS_DATA = {
       "slug": "tornillo-barra-central-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1016,
+          "id_repuesto": 985,
+          "brand": "Genérica",
           "codigo_oem": "8-94237-3651",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tornillo Barra Torsion",
@@ -27877,7 +38139,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CARIBE",
         "TORNILLO",
-        "TORSION"
+        "TORSION",
+        "GENÉRICA"
       ],
       "linked_ids": [
         991
@@ -27887,11 +38150,20 @@ const PRODUCTS_DATA = {
       "slug": "tornillo-torsion-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1022,
+          "id_repuesto": 991,
+          "brand": "Genérica",
           "codigo_oem": "8-94101-7070",
-          "precio_usd": 30
+          "medida": "M14x130mm",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tornillo Barra Torsion",
@@ -27903,7 +38175,8 @@ const PRODUCTS_DATA = {
         "BARRA",
         "CARIBE",
         "TORNILLO",
-        "TORSION"
+        "TORSION",
+        "GENÉRICA"
       ],
       "linked_ids": [
         993
@@ -27913,11 +38186,20 @@ const PRODUCTS_DATA = {
       "slug": "tornillo-torsion-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1024,
+          "id_repuesto": 993,
+          "brand": "Genérica",
           "codigo_oem": "8-97033-1272",
-          "precio_usd": 30
+          "medida": "M18x148mm",
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 10
         }
-      ]
+      ],
+      "total_stock": 10,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Tornillo de Camara",
@@ -27929,7 +38211,8 @@ const PRODUCTS_DATA = {
         "CAMARA",
         "DMAX",
         "LUV",
-        "TORNILLO"
+        "TORNILLO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         989
@@ -27939,11 +38222,20 @@ const PRODUCTS_DATA = {
       "slug": "tornillo-camara-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1020,
+          "id_repuesto": 989,
+          "brand": "Genérica",
           "codigo_oem": "8-97011-9982",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 48
         }
-      ]
+      ],
+      "total_stock": 48,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Tornillo Lubricador Cadena de Tiempo",
@@ -27959,7 +38251,8 @@ const PRODUCTS_DATA = {
         "LUBRICADOR",
         "LUBRICADORA",
         "TIEMPO",
-        "TORNILLO"
+        "TORNILLO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1211
@@ -27969,11 +38262,20 @@ const PRODUCTS_DATA = {
       "slug": "tornillo-con-arandela-lubricadora-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1287,
+          "id_repuesto": 1211,
+          "brand": "Genérica",
           "codigo_oem": "8-94200-7700",
-          "precio_usd": 30
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 30.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 30.0
     },
     {
       "category": "Tren Delantero",
@@ -27985,7 +38287,11 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "TREN"
       ],
-      "slug": "tren-delantero-caribe-2-6-2"
+      "slug": "tren-delantero-caribe-2-6-2",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -27997,7 +38303,11 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "TREN"
       ],
-      "slug": "tren-delantero-caribe-2-6"
+      "slug": "tren-delantero-caribe-2-6",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28010,7 +38320,11 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "TREN"
       ],
-      "slug": "tren-delantero-caribe-83-88-2"
+      "slug": "tren-delantero-caribe-83-88-2",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28023,7 +38337,11 @@ const PRODUCTS_DATA = {
         "DELANTERO",
         "TREN"
       ],
-      "slug": "tren-delantero-caribe-83-88"
+      "slug": "tren-delantero-caribe-83-88",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28036,7 +38354,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TREN"
       ],
-      "slug": "tren-delantero-luv-4x2"
+      "slug": "tren-delantero-luv-4x2",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28049,7 +38371,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TREN"
       ],
-      "slug": "tren-delantero-luv-4x2-2"
+      "slug": "tren-delantero-luv-4x2-2",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28062,7 +38388,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TREN"
       ],
-      "slug": "tren-delantero-luv-4x4-2"
+      "slug": "tren-delantero-luv-4x4-2",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28075,7 +38405,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TREN"
       ],
-      "slug": "tren-delantero-luv-4x4"
+      "slug": "tren-delantero-luv-4x4",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28088,7 +38422,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TREN"
       ],
-      "slug": "tren-delantero-luv-d-max-2-4"
+      "slug": "tren-delantero-luv-d-max-2-4",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28101,7 +38439,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TREN"
       ],
-      "slug": "tren-delantero-luv-d-max-2-4-2"
+      "slug": "tren-delantero-luv-d-max-2-4-2",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28114,7 +38456,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TREN"
       ],
-      "slug": "tren-delantero-luv-d-max-3-5-2"
+      "slug": "tren-delantero-luv-d-max-3-5-2",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28127,7 +38473,11 @@ const PRODUCTS_DATA = {
         "LUV",
         "TREN"
       ],
-      "slug": "tren-delantero-luv-d-max-3-5"
+      "slug": "tren-delantero-luv-d-max-3-5",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28139,7 +38489,11 @@ const PRODUCTS_DATA = {
         "RODEO",
         "TREN"
       ],
-      "slug": "tren-delantero-rodeo"
+      "slug": "tren-delantero-rodeo",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28151,7 +38505,11 @@ const PRODUCTS_DATA = {
         "TREN",
         "TROOPER"
       ],
-      "slug": "tren-delantero-trooper-3-2"
+      "slug": "tren-delantero-trooper-3-2",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tren Delantero",
@@ -28163,7 +38521,11 @@ const PRODUCTS_DATA = {
         "TREN",
         "TROOPER"
       ],
-      "slug": "tren-delantero-trooper-3-2-2"
+      "slug": "tren-delantero-trooper-3-2-2",
+      "variants": [],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tubo Aire",
@@ -28176,7 +38538,8 @@ const PRODUCTS_DATA = {
         "AIRE",
         "CARIBE",
         "PURIFICADOR",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1004
@@ -28186,11 +38549,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-purificador-aire-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1035,
+          "id_repuesto": 1004,
+          "brand": "Genérica",
           "codigo_oem": "8-94321-8420",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Tubo Aire",
@@ -28203,7 +38575,8 @@ const PRODUCTS_DATA = {
         "AIRE",
         "LUV",
         "PURIFICADOR",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1004
@@ -28213,11 +38586,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-purificador-aire-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1035,
+          "id_repuesto": 1004,
+          "brand": "Genérica",
           "codigo_oem": "8-94321-8420",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Tubo Aire",
@@ -28231,7 +38613,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "PURIFICADOR",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1005
@@ -28241,11 +38624,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-purificador-aire-luv-dmax-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1036,
+          "id_repuesto": 1005,
+          "brand": "Genérica",
           "codigo_oem": "8-98123-4830",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Tubo de Agua",
@@ -28259,7 +38651,8 @@ const PRODUCTS_DATA = {
         "CENTRAL",
         "DMAX",
         "LUV",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1000
@@ -28269,11 +38662,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-agua-central-luv-dmax-3-5",
       "variants": [
         {
+          "id_variante": 1031,
+          "id_repuesto": 1000,
+          "brand": "Genérica",
           "codigo_oem": "8-92063-6530",
-          "brand": "Original",
-          "precio_usd": 65
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 65.0,
+          "stock": 5
         }
-      ]
+      ],
+      "total_stock": 5,
+      "is_out_of_stock": false,
+      "min_price_usd": 65.0
     },
     {
       "category": "Tubo de Agua",
@@ -28285,7 +38687,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "DMAX",
         "LUV",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         995
@@ -28295,11 +38698,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-agua-luv-dmax-2-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1026,
+          "id_repuesto": 995,
+          "brand": "Genérica",
           "codigo_oem": "8-97381-6330",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Tubo de Agua",
@@ -28311,7 +38723,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "DMAX",
         "LUV",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         995
@@ -28321,11 +38734,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-agua-luv-dmax-3-0",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1026,
+          "id_repuesto": 995,
+          "brand": "Genérica",
           "codigo_oem": "8-97381-6330",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Tubo de Agua",
@@ -28337,7 +38759,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "LUV",
         "PEQUENO",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1003
@@ -28347,11 +38770,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-agua-pequeno-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1034,
+          "id_repuesto": 1003,
+          "brand": "Genérica",
           "codigo_oem": "ACT013",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Tubo de Agua",
@@ -28365,7 +38797,8 @@ const PRODUCTS_DATA = {
         "CALEFACCION",
         "D-MAX",
         "LUV",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         996
@@ -28374,11 +38807,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-calefaccion-luv-2-2-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1027,
+          "id_repuesto": 996,
+          "brand": "Genérica",
           "codigo_oem": "8-92063-6530",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 2,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Tubo de Agua",
@@ -28391,7 +38833,8 @@ const PRODUCTS_DATA = {
         "AGUA",
         "CALEFACCION",
         "TROOPER",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         997
@@ -28400,11 +38843,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-calefaccion-trooper-3-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1028,
+          "id_repuesto": 997,
+          "brand": "Genérica",
           "codigo_oem": "8-97075-4671",
-          "precio_usd": 90
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tubo de Agua",
@@ -28419,7 +38871,8 @@ const PRODUCTS_DATA = {
         "CALEFACCION",
         "CARIBE",
         "LUV",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         998,
@@ -28429,16 +38882,31 @@ const PRODUCTS_DATA = {
       "slug": "tubo-calefaccion-caribe-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1029,
+          "id_repuesto": 998,
+          "brand": "Genérica",
           "codigo_oem": "8-94136-7562",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         },
         {
-          "brand": "Original",
+          "id_variante": 1030,
+          "id_repuesto": 999,
+          "brand": "Genérica",
           "codigo_oem": "8-94474-0783",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Tubo de Agua",
@@ -28452,7 +38920,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "DERECHO",
         "LUV",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1001
@@ -28461,11 +38930,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-de-agua-derecho-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1032,
+          "id_repuesto": 1001,
+          "brand": "Genérica",
           "codigo_oem": "8-97321-3320",
-          "precio_usd": 45
+          "medida": null,
+          "lado": "Derecho",
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Tubo de Agua",
@@ -28480,7 +38958,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "IZQUIERDO",
         "LUV",
-        "TUBO"
+        "TUBO",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1002
@@ -28489,11 +38968,20 @@ const PRODUCTS_DATA = {
       "slug": "tubo-de-agua-izquierdo-luv-d-max-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1033,
+          "id_repuesto": 1002,
+          "brand": "Genérica",
           "codigo_oem": "8-97321-3331",
-          "precio_usd": 45
+          "medida": null,
+          "lado": "Izquierdo",
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 3
         }
-      ]
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Tuerca Punta de Eje",
@@ -28507,7 +38995,8 @@ const PRODUCTS_DATA = {
         "EJE",
         "PUNTA",
         "TRASERA",
-        "TUERCA"
+        "TUERCA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1008
@@ -28517,11 +39006,20 @@ const PRODUCTS_DATA = {
       "slug": "tuerca-punta-eje-trasera-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1039,
+          "id_repuesto": 1008,
+          "brand": "Genérica",
           "codigo_oem": "9-09843-0400",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Tuerca Punta de Eje",
@@ -28534,7 +39032,8 @@ const PRODUCTS_DATA = {
         "EJE",
         "PUNTA",
         "TRASERA",
-        "TUERCA"
+        "TUERCA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1009
@@ -28544,11 +39043,20 @@ const PRODUCTS_DATA = {
       "slug": "tuerca-punta-eje-trasera-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1040,
+          "id_repuesto": 1009,
+          "brand": "Genérica",
           "codigo_oem": "8-94178-2780",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Tuerca Punta de Eje",
@@ -28563,7 +39071,8 @@ const PRODUCTS_DATA = {
         "G200",
         "PUNTA",
         "TRASERA",
-        "TUERCA"
+        "TUERCA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1008
@@ -28573,11 +39082,20 @@ const PRODUCTS_DATA = {
       "slug": "tuerca-punta-eje-trasera-caribe-g200",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1039,
+          "id_repuesto": 1008,
+          "brand": "Genérica",
           "codigo_oem": "9-09843-0400",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 24
         }
-      ]
+      ],
+      "total_stock": 24,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Tuerca Punta de Eje",
@@ -28590,7 +39108,8 @@ const PRODUCTS_DATA = {
         "LUV",
         "PUNTA",
         "TRASERA",
-        "TUERCA"
+        "TUERCA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1009
@@ -28600,11 +39119,20 @@ const PRODUCTS_DATA = {
       "slug": "tuerca-punta-eje-trasera-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1040,
+          "id_repuesto": 1009,
+          "brand": "Genérica",
           "codigo_oem": "8-94178-2780",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 40
         }
-      ]
+      ],
+      "total_stock": 40,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Union Terminal",
@@ -28615,7 +39143,8 @@ const PRODUCTS_DATA = {
         "8-94419-4072",
         "CARIBE",
         "TERMINAL",
-        "UNION"
+        "UNION",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1010
@@ -28625,11 +39154,20 @@ const PRODUCTS_DATA = {
       "slug": "union-terminal-caribe-2-6",
       "variants": [
         {
+          "id_variante": 1041,
+          "id_repuesto": 1010,
+          "brand": "Genérica",
           "codigo_oem": "8-94419-4072",
-          "brand": "Original",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 30
         }
-      ]
+      ],
+      "total_stock": 30,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Union Terminal",
@@ -28640,7 +39178,8 @@ const PRODUCTS_DATA = {
         "8-94419-4000",
         "LUV",
         "TERMINAL",
-        "UNION"
+        "UNION",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1011
@@ -28650,11 +39189,20 @@ const PRODUCTS_DATA = {
       "slug": "union-terminal-luv",
       "variants": [
         {
+          "id_variante": 1042,
+          "id_repuesto": 1011,
+          "brand": "Genérica",
           "codigo_oem": "8-94419-4000",
-          "brand": "Original",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Union Terminal",
@@ -28665,7 +39213,8 @@ const PRODUCTS_DATA = {
         "8-94419-4000",
         "RODEO",
         "TERMINAL",
-        "UNION"
+        "UNION",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1011
@@ -28675,11 +39224,20 @@ const PRODUCTS_DATA = {
       "slug": "union-terminal-rodeo",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1042,
+          "id_repuesto": 1011,
+          "brand": "Genérica",
           "codigo_oem": "8-94419-4000",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Union Terminal",
@@ -28690,7 +39248,8 @@ const PRODUCTS_DATA = {
         "8-94419-4000",
         "TERMINAL",
         "TROOPER",
-        "UNION"
+        "UNION",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1011
@@ -28700,11 +39259,20 @@ const PRODUCTS_DATA = {
       "slug": "union-terminaltrooper",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1042,
+          "id_repuesto": 1011,
+          "brand": "Genérica",
           "codigo_oem": "8-94419-4000",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Vacum Distribuidor",
@@ -28717,7 +39285,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "DISTRIBUIDOR",
         "LUV",
-        "VACUM"
+        "VACUM",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1012
@@ -28727,11 +39296,20 @@ const PRODUCTS_DATA = {
       "slug": "vacum-distribuidor-caribe-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1043,
+          "id_repuesto": 1012,
+          "brand": "Genérica",
           "codigo_oem": "8-94321-5320",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Vacum Distribuidor",
@@ -28743,7 +39321,8 @@ const PRODUCTS_DATA = {
         "8-94413-4470",
         "CARIBE",
         "DISTRIBUIDOR",
-        "VACUM"
+        "VACUM",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1012
@@ -28753,11 +39332,20 @@ const PRODUCTS_DATA = {
       "slug": "vacum-distribuidor-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1043,
+          "id_repuesto": 1012,
+          "brand": "Genérica",
           "codigo_oem": "8-94321-5320",
-          "precio_usd": 55
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "id": "ac251c17-9995-4604-9dfa-bcda24576af2",
@@ -28769,14 +39357,31 @@ const PRODUCTS_DATA = {
         "8-94413-4470",
         "DISTRIBUIDOR",
         "LUV",
-        "VACUM"
+        "VACUM",
+        "GENÉRICA"
       ],
       "oem": "8-94321-5320 / 8-94413-4470",
       "slug": "vacum-distribuidor-luv-2-3",
       "original_filename": "Vacum Distribuidor/ac251c17-9995-4604-9dfa-bcda24576af2.jpg",
       "linked_ids": [
         1012
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 1043,
+          "id_repuesto": 1012,
+          "brand": "Genérica",
+          "codigo_oem": "8-94321-5320",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
+        }
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -28790,7 +39395,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "ESCAPE",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1017
@@ -28800,11 +39406,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-admision-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1048,
+          "id_repuesto": 1017,
+          "brand": "Genérica",
           "codigo_oem": "8-97131-9610",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -28818,7 +39433,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "ESCAPE",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1082
@@ -28828,11 +39444,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-escape-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1116,
+          "id_repuesto": 1082,
+          "brand": "Genérica",
           "codigo_oem": "8-97131-9620",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 12
         }
-      ]
+      ],
+      "total_stock": 12,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -28845,7 +39470,8 @@ const PRODUCTS_DATA = {
         "ADMISION",
         "CARIBE",
         "ESCAPE",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1013
@@ -28854,11 +39480,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-admision-caribe-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1044,
+          "id_repuesto": 1013,
+          "brand": "Genérica",
           "codigo_oem": "8-94217-1780",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 18
         }
-      ]
+      ],
+      "total_stock": 18,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -28872,7 +39507,8 @@ const PRODUCTS_DATA = {
         "ADMISION",
         "CARIBE",
         "ESCAPE",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1014
@@ -28881,11 +39517,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-admision-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1045,
+          "id_repuesto": 1014,
+          "brand": "Genérica",
           "codigo_oem": "8-94153-9690",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -28898,7 +39543,8 @@ const PRODUCTS_DATA = {
         "ADMISION",
         "ESCAPE",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1016
@@ -28907,11 +39553,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-admision-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1047,
+          "id_repuesto": 1016,
+          "brand": "Genérica",
           "codigo_oem": "8-90220-1210",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 26
         }
-      ]
+      ],
+      "total_stock": 26,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -28925,7 +39580,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ESCAPE",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1016
@@ -28934,11 +39590,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-admision-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1047,
+          "id_repuesto": 1016,
+          "brand": "Genérica",
           "codigo_oem": "8-90220-1210",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 26
         }
-      ]
+      ],
+      "total_stock": 26,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -28952,7 +39617,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "ESCAPE",
         "IIS-0197",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1015
@@ -28961,11 +39627,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-admision-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1046,
+          "id_repuesto": 1015,
+          "brand": "Genérica",
           "codigo_oem": "8-94174-2221",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 50
         }
-      ]
+      ],
+      "total_stock": 50,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -28978,7 +39653,8 @@ const PRODUCTS_DATA = {
         "ADMISION",
         "CARIBE",
         "ESCAPE",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1078
@@ -28987,11 +39663,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-de-escape-caribe-2000",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1112,
+          "id_repuesto": 1078,
+          "brand": "Genérica",
           "codigo_oem": "8-94217-1790",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 7
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -29005,7 +39690,8 @@ const PRODUCTS_DATA = {
         "ADMISION",
         "CARIBE",
         "ESCAPE",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1079
@@ -29014,11 +39700,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-de-escape-caribe-2300",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1113,
+          "id_repuesto": 1079,
+          "brand": "Genérica",
           "codigo_oem": "8-94136-7270",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -29033,7 +39728,8 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "EIS-5197",
         "ESCAPE",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1080
@@ -29042,11 +39738,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-de-escape-caribe-2600",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1114,
+          "id_repuesto": 1080,
+          "brand": "Genérica",
           "codigo_oem": "8-97110-2560",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 48
         }
-      ]
+      ],
+      "total_stock": 48,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -29059,7 +39764,8 @@ const PRODUCTS_DATA = {
         "ADMISION",
         "ESCAPE",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1081
@@ -29068,11 +39774,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-de-escape-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1115,
+          "id_repuesto": 1081,
+          "brand": "Genérica",
           "codigo_oem": "8-90323-7570",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 14
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Admision y Escape",
@@ -29086,7 +39801,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "ESCAPE",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1081
@@ -29095,11 +39811,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-de-escape-luv-d-max-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1115,
+          "id_repuesto": 1081,
+          "brand": "Genérica",
           "codigo_oem": "8-90323-7570",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 14
         }
-      ]
+      ],
+      "total_stock": 14,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula EGR",
@@ -29114,7 +39839,8 @@ const PRODUCTS_DATA = {
         "EGR",
         "GASES",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GDK"
       ],
       "linked_ids": [
         1202
@@ -29124,11 +39850,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-desfogue-de-gases-egr-luv-dmax-2-4",
       "variants": [
         {
-          "codigo_oem": "8-01997-2100",
+          "id_variante": 1278,
+          "id_repuesto": 1202,
           "brand": "GDK",
-          "precio_usd": 25
+          "codigo_oem": "8-01997-2100",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Valvula Freno",
@@ -29141,7 +39876,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "FRENO",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1022
@@ -29151,11 +39887,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-freno-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1053,
+          "id_repuesto": 1022,
+          "brand": "Genérica",
           "codigo_oem": "8-97301-6840",
-          "precio_usd": 15
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 15.0,
+          "stock": 1
         }
-      ]
+      ],
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 15.0
     },
     {
       "category": "Valvula IAC",
@@ -29169,7 +39914,8 @@ const PRODUCTS_DATA = {
         "CONTROL",
         "IAC",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1020
@@ -29179,11 +39925,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-control-de-aire-iac-luv-2-2",
       "variants": [
         {
+          "id_variante": 1051,
+          "id_repuesto": 1020,
+          "brand": "Genérica",
           "codigo_oem": "8-92061-8980",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Valvula IAC",
@@ -29198,7 +39953,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "IAC",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1020
@@ -29208,11 +39964,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-control-de-aire-iac-luv-dmax-2-4",
       "variants": [
         {
+          "id_variante": 1051,
+          "id_repuesto": 1020,
+          "brand": "Genérica",
           "codigo_oem": "8-92061-8980",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Valvula IAC",
@@ -29226,7 +39991,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "IAC",
         "LUV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1019
@@ -29236,11 +40002,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-control-de-aire-iac-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1050,
+          "id_repuesto": 1019,
+          "brand": "Genérica",
           "codigo_oem": "8-97181-7180",
-          "precio_usd": 25
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 25.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 25.0
     },
     {
       "category": "Valvula IAC",
@@ -29254,7 +40029,8 @@ const PRODUCTS_DATA = {
         "CONTROL",
         "IAC",
         "TROOPER",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1020
@@ -29264,11 +40040,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-control-de-aire-iac-trooper-3-2",
       "variants": [
         {
+          "id_variante": 1051,
+          "id_repuesto": 1020,
+          "brand": "Genérica",
           "codigo_oem": "8-92061-8980",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Valvula Minimo",
@@ -29279,7 +40064,8 @@ const PRODUCTS_DATA = {
         "8-94312-0250",
         "CARIBE",
         "MINIMO",
-        "VALVULA"
+        "VALVULA",
+        "ORIGINAL"
       ],
       "linked_ids": [
         1091
@@ -29288,11 +40074,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-de-minimo-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1127,
+          "id_repuesto": 1091,
+          "brand": "ORIGINAL",
           "codigo_oem": "8-94312-0250",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 45
         }
-      ]
+      ],
+      "total_stock": 45,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Valvula Minimo",
@@ -29303,7 +40098,8 @@ const PRODUCTS_DATA = {
         "8-94312-0250",
         "CARIBE",
         "MINIMO",
-        "VALVULA"
+        "VALVULA",
+        "ORIGINAL"
       ],
       "linked_ids": [
         1091
@@ -29312,11 +40108,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-de-minimo-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1127,
+          "id_repuesto": 1091,
+          "brand": "ORIGINAL",
           "codigo_oem": "8-94312-0250",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 45
         }
-      ]
+      ],
+      "total_stock": 45,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Valvula Minimo",
@@ -29327,7 +40132,8 @@ const PRODUCTS_DATA = {
         "8-94312-0250",
         "LUV",
         "MINIMO",
-        "VALVULA"
+        "VALVULA",
+        "ORIGINAL"
       ],
       "linked_ids": [
         1091
@@ -29336,11 +40142,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-de-minimo-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1127,
+          "id_repuesto": 1091,
+          "brand": "ORIGINAL",
           "codigo_oem": "8-94312-0250",
-          "precio_usd": 45
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 45
         }
-      ]
+      ],
+      "total_stock": 45,
+      "is_out_of_stock": false,
+      "min_price_usd": 45.0
     },
     {
       "category": "Valvula PCV",
@@ -29352,7 +40167,8 @@ const PRODUCTS_DATA = {
         "8-94331-2090",
         "LUV",
         "PCV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1024
@@ -29362,11 +40178,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-pcv-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1055,
+          "id_repuesto": 1024,
+          "brand": "Genérica",
           "codigo_oem": "8-94152-8590",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 38
         }
-      ]
+      ],
+      "total_stock": 38,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula PCV",
@@ -29378,7 +40203,8 @@ const PRODUCTS_DATA = {
         "8-94331-2090",
         "CARIBE",
         "PCV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1024
@@ -29387,11 +40213,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-pcv-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1055,
+          "id_repuesto": 1024,
+          "brand": "Genérica",
           "codigo_oem": "8-94152-8590",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 38
         }
-      ]
+      ],
+      "total_stock": 38,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula PCV",
@@ -29403,7 +40238,8 @@ const PRODUCTS_DATA = {
         "D-MAX",
         "LUV",
         "PCV",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1026
@@ -29412,11 +40248,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-pcv-luv-d-max",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1057,
+          "id_repuesto": 1026,
+          "brand": "Genérica",
           "codigo_oem": "8-97118-8600",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 22
         }
-      ]
+      ],
+      "total_stock": 22,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Presion Aceite",
@@ -29430,7 +40275,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "CARIBE",
         "PRESION",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1027
@@ -29440,11 +40286,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-presion-aceite-caribe",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1058,
+          "id_repuesto": 1027,
+          "brand": "Genérica",
           "codigo_oem": "9-82720-2092",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 25
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Valvula Presion Aceite",
@@ -29458,7 +40313,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "LUV",
         "PRESION",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1027
@@ -29468,11 +40324,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-presion-aceite-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1058,
+          "id_repuesto": 1027,
+          "brand": "Genérica",
           "codigo_oem": "9-82720-2092",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 25
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Valvula Presion Aceite",
@@ -29487,7 +40352,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "PRESION",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1027
@@ -29497,11 +40363,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-presion-aceite-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1058,
+          "id_repuesto": 1027,
+          "brand": "Genérica",
           "codigo_oem": "9-82720-2092",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 25
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Valvula Retroceso",
@@ -29514,7 +40389,9 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "KB-651",
         "RETROCESO",
-        "VALVULA"
+        "VALVULA",
+        "GEN",
+        "WMC"
       ],
       "linked_ids": [
         1029
@@ -29524,16 +40401,31 @@ const PRODUCTS_DATA = {
       "slug": "valvula-retroceso-caribe-2-3",
       "variants": [
         {
-          "brand": "WMC",
-          "codigo_oem": "8-94411-3661",
-          "precio_usd": 45
-        },
-        {
+          "id_variante": 1323,
+          "id_repuesto": 1029,
           "brand": "GEN",
           "codigo_oem": "8-94411-3661",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
+        },
+        {
+          "id_variante": 1060,
+          "id_repuesto": 1029,
+          "brand": "WMC",
+          "codigo_oem": "8-94411-3661",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Valvula Retroceso",
@@ -29547,7 +40439,9 @@ const PRODUCTS_DATA = {
         "G200",
         "KB-651",
         "RETROCESO",
-        "VALVULA"
+        "VALVULA",
+        "GEN",
+        "WMC"
       ],
       "linked_ids": [
         1029
@@ -29557,16 +40451,31 @@ const PRODUCTS_DATA = {
       "slug": "valvula-retroceso-caribe-g200",
       "variants": [
         {
-          "brand": "WMC",
-          "codigo_oem": "8-94411-3661",
-          "precio_usd": 45
-        },
-        {
+          "id_variante": 1323,
+          "id_repuesto": 1029,
           "brand": "GEN",
           "codigo_oem": "8-94411-3661",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
+        },
+        {
+          "id_variante": 1060,
+          "id_repuesto": 1029,
+          "brand": "WMC",
+          "codigo_oem": "8-94411-3661",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Valvula Retroceso",
@@ -29579,7 +40488,9 @@ const PRODUCTS_DATA = {
         "KB-651",
         "LUV",
         "RETROCESO",
-        "VALVULA"
+        "VALVULA",
+        "GEN",
+        "WMC"
       ],
       "linked_ids": [
         1029
@@ -29589,16 +40500,31 @@ const PRODUCTS_DATA = {
       "slug": "valvula-retroceso-luv",
       "variants": [
         {
-          "brand": "WMC",
-          "codigo_oem": "8-94411-3661",
-          "precio_usd": 45
-        },
-        {
+          "id_variante": 1323,
+          "id_repuesto": 1029,
           "brand": "GEN",
           "codigo_oem": "8-94411-3661",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
+        },
+        {
+          "id_variante": 1060,
+          "id_repuesto": 1029,
+          "brand": "WMC",
+          "codigo_oem": "8-94411-3661",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Valvula Retroceso",
@@ -29612,7 +40538,9 @@ const PRODUCTS_DATA = {
         "KB-651",
         "LUV",
         "RETROCESO",
-        "VALVULA"
+        "VALVULA",
+        "GEN",
+        "WMC"
       ],
       "linked_ids": [
         1029
@@ -29622,16 +40550,31 @@ const PRODUCTS_DATA = {
       "slug": "valvula-retroceso-luv-dmax",
       "variants": [
         {
-          "brand": "WMC",
-          "codigo_oem": "8-94411-3661",
-          "precio_usd": 45
-        },
-        {
+          "id_variante": 1323,
+          "id_repuesto": 1029,
           "brand": "GEN",
           "codigo_oem": "8-94411-3661",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
+        },
+        {
+          "id_variante": 1060,
+          "id_repuesto": 1029,
+          "brand": "WMC",
+          "codigo_oem": "8-94411-3661",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Valvula Retroceso",
@@ -29644,7 +40587,9 @@ const PRODUCTS_DATA = {
         "KB-651",
         "RETROCESO",
         "TROOPER",
-        "VALVULA"
+        "VALVULA",
+        "GEN",
+        "WMC"
       ],
       "linked_ids": [
         1029
@@ -29654,16 +40599,31 @@ const PRODUCTS_DATA = {
       "slug": "valvula-retroceso-trooper",
       "variants": [
         {
-          "brand": "WMC",
-          "codigo_oem": "8-94411-3661",
-          "precio_usd": 45
-        },
-        {
+          "id_variante": 1323,
+          "id_repuesto": 1029,
           "brand": "GEN",
           "codigo_oem": "8-94411-3661",
-          "precio_usd": 20
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 20.0,
+          "stock": 5
+        },
+        {
+          "id_variante": 1060,
+          "id_repuesto": 1029,
+          "brand": "WMC",
+          "codigo_oem": "8-94411-3661",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 45.0,
+          "stock": 2
         }
-      ]
+      ],
+      "total_stock": 7,
+      "is_out_of_stock": false,
+      "min_price_usd": 20.0
     },
     {
       "category": "Valvula Temperatura",
@@ -29678,7 +40638,8 @@ const PRODUCTS_DATA = {
         "PRESION",
         "TEMPERATURA",
         "TROOPER",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1027
@@ -29688,11 +40649,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-presion-aceite-trooper",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1058,
+          "id_repuesto": 1027,
+          "brand": "Genérica",
           "codigo_oem": "9-82720-2092",
-          "precio_usd": 5
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 5.0,
+          "stock": 25
         }
-      ]
+      ],
+      "total_stock": 25,
+      "is_out_of_stock": false,
+      "min_price_usd": 5.0
     },
     {
       "category": "Valvula Temperatura",
@@ -29705,7 +40675,8 @@ const PRODUCTS_DATA = {
         "83420-16020",
         "CARIBE",
         "TEMPERATURA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1031
@@ -29715,11 +40686,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-temperatura-caribe-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1062,
+          "id_repuesto": 1031,
+          "brand": "Genérica",
           "codigo_oem": "8-94247-4370",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 61
         }
-      ]
+      ],
+      "total_stock": 61,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Temperatura",
@@ -29732,7 +40712,8 @@ const PRODUCTS_DATA = {
         "83420-16020",
         "CARIBE",
         "TEMPERATURA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1031
@@ -29742,11 +40723,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-temperatura-caribe-2-6",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1062,
+          "id_repuesto": 1031,
+          "brand": "Genérica",
           "codigo_oem": "8-94247-4370",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 61
         }
-      ]
+      ],
+      "total_stock": 61,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "id": "ec9f67b5-1ca0-4023-aa30-b0e48ad4cda3",
@@ -29758,14 +40748,31 @@ const PRODUCTS_DATA = {
         "CARIBE",
         "G200",
         "TEMPERATURA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "oem": "8-94235-6910",
       "slug": "valvula-temperatura-caribe-g200",
       "original_filename": "Valvula Temperatura/ec9f67b5-1ca0-4023-aa30-b0e48ad4cda3.jpg",
       "linked_ids": [
         1030
-      ]
+      ],
+      "variants": [
+        {
+          "id_variante": 1061,
+          "id_repuesto": 1030,
+          "brand": "Genérica",
+          "codigo_oem": "8-94235-6910",
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 3
+        }
+      ],
+      "total_stock": 3,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Temperatura",
@@ -29777,7 +40784,8 @@ const PRODUCTS_DATA = {
         "83420-20040",
         "LUV",
         "TEMPERATURA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1033
@@ -29787,11 +40795,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-temperatura-luv-2-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1064,
+          "id_repuesto": 1033,
+          "brand": "Genérica",
           "codigo_oem": "8-92063-8930",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Temperatura",
@@ -29804,7 +40821,8 @@ const PRODUCTS_DATA = {
         "83420-16020",
         "LUV",
         "TEMPERATURA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1031
@@ -29814,11 +40832,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-temperatura-luv-2-3",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1062,
+          "id_repuesto": 1031,
+          "brand": "Genérica",
           "codigo_oem": "8-94247-4370",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 61
         }
-      ]
+      ],
+      "total_stock": 61,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Temperatura",
@@ -29831,7 +40858,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "TEMPERATURA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1033
@@ -29841,11 +40869,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-temperatura-luv-dmax-2-4",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1064,
+          "id_repuesto": 1033,
+          "brand": "Genérica",
           "codigo_oem": "8-92063-8930",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 4
         }
-      ]
+      ],
+      "total_stock": 4,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Temperatura",
@@ -29859,7 +40896,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "TEMPERATURA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1031
@@ -29869,11 +40907,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-temperatura-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1062,
+          "id_repuesto": 1031,
+          "brand": "Genérica",
           "codigo_oem": "8-94247-4370",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 61
         }
-      ]
+      ],
+      "total_stock": 61,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Temperatura",
@@ -29886,7 +40933,8 @@ const PRODUCTS_DATA = {
         "DMAX",
         "LUV",
         "TEMPERATURA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1032
@@ -29896,11 +40944,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-temperatura-luv-dmax-3-5-2",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1063,
+          "id_repuesto": 1032,
+          "brand": "Genérica",
           "codigo_oem": "8-15326-3860",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 6
         }
-      ]
+      ],
+      "total_stock": 6,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Temperatura",
@@ -29913,7 +40970,8 @@ const PRODUCTS_DATA = {
         "83420-16020",
         "RODEO",
         "TEMPERATURA",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1031
@@ -29923,11 +40981,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-temperatura-rodeo",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1062,
+          "id_repuesto": 1031,
+          "brand": "Genérica",
           "codigo_oem": "8-94247-4370",
-          "precio_usd": 10
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 10.0,
+          "stock": 61
         }
-      ]
+      ],
+      "total_stock": 61,
+      "is_out_of_stock": false,
+      "min_price_usd": 10.0
     },
     {
       "category": "Valvula Transfer",
@@ -29942,7 +41009,8 @@ const PRODUCTS_DATA = {
         "INFERIOR",
         "LUV",
         "TRANSFER",
-        "VALVULA"
+        "VALVULA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1185
@@ -29952,11 +41020,20 @@ const PRODUCTS_DATA = {
       "slug": "valvula-transfer-inferior-luv-dmax-3-5",
       "variants": [
         {
-          "brand": "Original",
+          "id_variante": 1248,
+          "id_repuesto": 1185,
+          "brand": "Genérica",
           "codigo_oem": "8-97314-2040",
-          "precio_usd": 40
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 40.0,
+          "stock": 11
         }
-      ]
+      ],
+      "total_stock": 11,
+      "is_out_of_stock": false,
+      "min_price_usd": 40.0
     },
     {
       "category": "Varilla Aceite",
@@ -29970,7 +41047,8 @@ const PRODUCTS_DATA = {
         "ACEITE",
         "D-MAX",
         "LUV",
-        "VARILLA"
+        "VARILLA",
+        "GENÉRICA"
       ],
       "linked_ids": [
         1034
@@ -29979,11 +41057,22 @@ const PRODUCTS_DATA = {
       "slug": "varilla-aceite-luv-d-max-3-5",
       "variants": [
         {
+          "id_variante": 1065,
+          "id_repuesto": 1034,
+          "brand": "Genérica",
           "codigo_oem": "8-97326-9971",
-          "brand": "Original",
-          "precio_usd": 0
+          "medida": null,
+          "lado": null,
+          "tipo": null,
+          "precio_usd": 0.0,
+          "stock": 0
         }
-      ]
+      ],
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     }
-  ]
+  ],
+  "tc": 1010.0,
+  "fecha_tasa": "2026-10-16 11:20:22"
 };
