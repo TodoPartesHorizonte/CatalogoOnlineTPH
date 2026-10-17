@@ -253,8 +253,8 @@
     
     <!-- INICIO PRECARGA -->
     <!-- FIN PRECARGA -->
-    <link rel="preload" href="./style.min.css?v=9" as="style">
-    <link rel="stylesheet" href="./style.min.css?v=9">
+    <link rel="preload" href="./style.min.css?v=35" as="style">
+    <link rel="stylesheet" href="./style.min.css?v=35">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -365,7 +365,7 @@
             </div>
 
             <button class="filter-toggle-btn" id="btnToggleFilters" title="Filtrar por precio, stock y disponibilidad" aria-expanded="false" aria-controls="filtersPanel">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
                 </svg>
                 <span>Filtros</span>
@@ -377,8 +377,8 @@
     <!-- BARRA RÁPIDA DE FILTROS Y ESTADO -->
     <div class="filter-quick-bar" id="filterQuickBar">
         <div class="quick-filter-chips">
-            <button class="quick-chip" id="quickFilterInStock" type="button" title="Ocultar repuestos agotados y ver solo disponibles">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <button class="quick-chip active" id="quickFilterInStock" type="button" title="Ocultar repuestos agotados y ver solo disponibles">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
                 <span>Solo disponibles</span>
             </button>
             
@@ -419,12 +419,12 @@
                 <div class="filter-group-title">Disponibilidad / Stock</div>
                 <div class="filter-options-grid">
                     <label class="filter-radio-pill">
-                        <input type="radio" name="filterStockRadio" value="ALL" checked>
-                        <span>Todos los repuestos</span>
+                        <input type="radio" name="filterStockRadio" value="ALL">
+                        <span>Todos los repuestos (incluir agotados)</span>
                     </label>
                     <label class="filter-radio-pill">
-                        <input type="radio" name="filterStockRadio" value="IN_STOCK">
-                        <span class="pill-stock-available">Solo con Stock (Ocultar agotados)</span>
+                        <input type="radio" name="filterStockRadio" value="IN_STOCK" checked>
+                        <span class="pill-stock-available">Solo disponibles (Ocultar agotados)</span>
                     </label>
                     <label class="filter-radio-pill">
                         <input type="radio" name="filterStockRadio" value="OUT_OF_STOCK">
@@ -1708,7 +1708,7 @@
     <!-- JAVASCRIPT DE CONTROL -->
     <script defer src="./products.js?v=15"></script>
     <script>window.defaultVehicleFilter = 'D-MAX';</script>
-    <script defer src="./app.min.js?v=15"></script>
+    <script defer src="./app.min.js?v=35"></script>
 </body>
 
 </html>

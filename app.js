@@ -18,7 +18,7 @@
         let cart = [];
 
         // Estado de Filtros (Precio, Stock, Disponibilidad, Ordenación)
-        let filterStock = "ALL"; // "ALL" | "IN_STOCK" | "OUT_OF_STOCK"
+        let filterStock = "IN_STOCK"; // "IN_STOCK" (por defecto: ocultar agotados) | "ALL" | "OUT_OF_STOCK"
         let filterPriceMin = null;
         let filterPriceMax = null;
         let filterSort = "DEFAULT"; // "DEFAULT" | "PRICE_ASC" | "PRICE_DESC" | "STOCK_DESC"
@@ -1594,7 +1594,7 @@
         // Funciones de gestión de filtros (Precio, Stock, Disponibilidad)
         function updateFilterUI() {
             let activeFiltersCount = 0;
-            if (filterStock !== 'ALL') activeFiltersCount++;
+            if (filterStock !== 'IN_STOCK') activeFiltersCount++;
             if (filterPriceMin !== null || filterPriceMax !== null) activeFiltersCount++;
             if (filterSort !== 'DEFAULT') activeFiltersCount++;
 
@@ -1637,13 +1637,33 @@
 
             const btnClearAll = document.getElementById('btnClearAllFilters');
             if (btnClearAll) {
-                btnClearAll.style.display = (activeFiltersCount > 0 || (searchQuery && searchQuery.trim() !== '')) ? 'inline-flex' : 'none';
+                const hasNonDefaultStock = (filterStock !== 'IN_STOCK');
+                const hasPrice = (filterPriceMin !== null || filterPriceMax !== null);
+                const hasSort = (filterSort !== 'DEFAULT');
+                const hasSearch = (searchQuery && searchQuery.trim() !== '');
+                btnClearAll.style.display = (hasNonDefaultStock || hasPrice || hasSort || hasSearch) ? 'inline-flex' : 'none';
             }
 
             const filterCountDisplay = document.getElementById('filterCountDisplay');
             if (filterCountDisplay) {
-                const count = currentFilteredProducts.length;
-                filterCountDisplay.innerHTML = `Mostrando <strong>${count}</strong> ${count === 1 ? 'repuesto' : 'repuestos'}`;
+                if (activeView === 'FOLDERS') {
+                    const totalCount = productsData.filter(p => {
+                        const matchesVehicle = matchesVehicleFilter(p, activeVehicle);
+                        let matchesStock = true;
+                        if (filterStock === 'IN_STOCK') {
+                            matchesStock = !p.is_out_of_stock && (Number(p.total_stock) > 0);
+                        } else if (filterStock === 'OUT_OF_STOCK') {
+                            matchesStock = p.is_out_of_stock || (Number(p.total_stock) <= 0);
+                        }
+                        return matchesVehicle && matchesStock;
+                    }).length;
+                    filterCountDisplay.innerHTML = `Mostrando <strong>${totalCount}</strong> repuestos en categorías`;
+                } else {
+                    const count = currentFilteredProducts.length;
+                    const label = count === 1 ? 'repuesto' : 'repuestos';
+                    const stockLabel = filterStock === 'IN_STOCK' ? ' disponibles' : '';
+                    filterCountDisplay.innerHTML = `Mostrando <strong>${count}</strong> ${label}${stockLabel}`;
+                }
             }
 
             const filterTcHint = document.getElementById('filterTcHint');
@@ -1697,7 +1717,7 @@
         }
 
         function resetAllFilters() {
-            filterStock = 'ALL';
+            filterStock = 'IN_STOCK'; // Por defecto siempre ocultar agotados
             filterPriceMin = null;
             filterPriceMax = null;
             filterSort = 'DEFAULT';
@@ -2011,10 +2031,17 @@
         // Renderizado de Carpetas (Categorías como tarjetas visuales)
         function renderFolders() {
             checkCarouselVisibility();
-            // Filtrar productos por vehículo y buscador
+            // Filtrar productos por vehículo, stock y buscador
             const vehicleFiltered = productsData.filter(product => {
                 const matchesVehicle = matchesVehicleFilter(product, activeVehicle);
                 
+                let matchesStock = true;
+                if (filterStock === 'IN_STOCK') {
+                    matchesStock = !product.is_out_of_stock && (Number(product.total_stock) > 0);
+                } else if (filterStock === 'OUT_OF_STOCK') {
+                    matchesStock = product.is_out_of_stock || (Number(product.total_stock) <= 0);
+                }
+
                 let matchesSearch = true;
                 if (searchQuery.trim() !== '') {
                     const normalizedQuery = normalizeText(searchQuery);
@@ -2026,7 +2053,7 @@
                         return inDesc || inCat || inKeywords;
                     });
                 }
-                return matchesVehicle && matchesSearch;
+                return matchesVehicle && matchesStock && matchesSearch;
             });
 
             const counts = {};
