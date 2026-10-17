@@ -166,6 +166,14 @@
             };
         }
 
+        // Obtiene el precio mínimo en Bolívares para filtrado y ordenación
+        function getProductMinPriceBs(product) {
+            if (product._cachedMinPriceBs !== undefined) return product._cachedMinPriceBs;
+            const priceInfo = getProductPriceInfo(product);
+            product._cachedMinPriceBs = priceInfo.minPriceBs || 0;
+            return product._cachedMinPriceBs;
+        }
+
         // Inicializar carrito cargándolo de localStorage
         function initCart() {
             try {
@@ -1665,14 +1673,6 @@
                     filterCountDisplay.innerHTML = `Mostrando <strong>${count}</strong> ${label}${stockLabel}`;
                 }
             }
-
-            const filterTcHint = document.getElementById('filterTcHint');
-            if (filterTcHint) {
-                const tc = getTC();
-                if (tc > 1) {
-                    filterTcHint.innerText = `Tasa BCV: ${formatBs(tc)}`;
-                }
-            }
         }
 
         function toggleFiltersPanel(forceState) {
@@ -1768,14 +1768,14 @@
                         matchesStock = product.is_out_of_stock || (Number(product.total_stock) <= 0);
                     }
 
-                    // Filtro por rango de precio ($ USD)
+                    // Filtro por rango de precio (Bs.)
                     let matchesPrice = true;
-                    const price = Number(product.min_price_usd || 0);
+                    const priceBs = getProductMinPriceBs(product);
                     if (filterPriceMin !== null && filterPriceMin > 0) {
-                        matchesPrice = matchesPrice && (price >= filterPriceMin);
+                        matchesPrice = matchesPrice && (priceBs >= filterPriceMin);
                     }
                     if (filterPriceMax !== null && filterPriceMax > 0) {
-                        matchesPrice = matchesPrice && (price > 0 && price <= filterPriceMax);
+                        matchesPrice = matchesPrice && (priceBs > 0 && priceBs <= filterPriceMax);
                     }
 
                     if (!matchesCategory || !matchesVehicle || !matchesStock || !matchesPrice) {
@@ -1820,14 +1820,14 @@
                 // Criterio de Ordenación si no es DEFAULT
                 if (filterSort === 'PRICE_ASC') {
                     currentFilteredProducts.sort((a, b) => {
-                        const pa = (a.is_out_of_stock || Number(a.total_stock) <= 0) ? Infinity : (Number(a.min_price_usd) || Infinity);
-                        const pb = (b.is_out_of_stock || Number(b.total_stock) <= 0) ? Infinity : (Number(b.min_price_usd) || Infinity);
+                        const pa = (a.is_out_of_stock || Number(a.total_stock) <= 0) ? Infinity : (getProductMinPriceBs(a) || Infinity);
+                        const pb = (b.is_out_of_stock || Number(b.total_stock) <= 0) ? Infinity : (getProductMinPriceBs(b) || Infinity);
                         return pa - pb;
                     });
                 } else if (filterSort === 'PRICE_DESC') {
                     currentFilteredProducts.sort((a, b) => {
-                        const pa = (a.is_out_of_stock || Number(a.total_stock) <= 0) ? -1 : (Number(a.min_price_usd) || 0);
-                        const pb = (b.is_out_of_stock || Number(b.total_stock) <= 0) ? -1 : (Number(b.min_price_usd) || 0);
+                        const pa = (a.is_out_of_stock || Number(a.total_stock) <= 0) ? -1 : (getProductMinPriceBs(a) || 0);
+                        const pb = (b.is_out_of_stock || Number(b.total_stock) <= 0) ? -1 : (getProductMinPriceBs(b) || 0);
                         return pb - pa;
                     });
                 } else if (filterSort === 'STOCK_DESC') {

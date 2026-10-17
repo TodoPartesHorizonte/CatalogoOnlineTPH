@@ -253,8 +253,8 @@
     
     <!-- INICIO PRECARGA -->
     <!-- FIN PRECARGA -->
-    <link rel="preload" href="./style.min.css?v=35" as="style">
-    <link rel="stylesheet" href="./style.min.css?v=35">
+    <link rel="preload" href="./style.min.css?v=37" as="style">
+    <link rel="stylesheet" href="./style.min.css?v=37">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -435,29 +435,28 @@
             <!-- Sección Rango de Precio -->
             <div class="filter-group">
                 <div class="filter-group-header">
-                    <div class="filter-group-title">Rango de Precio ($ USD)</div>
-                    <span class="filter-tc-hint" id="filterTcHint">Tasa oficial BCV</span>
+                    <div class="filter-group-title">Rango de Precio (Bs.)</div>
                 </div>
                 
                 <!-- Rangos rápidos -->
                 <div class="price-presets-row">
                     <button type="button" class="price-preset-btn active" data-min="" data-max="">Todos</button>
-                    <button type="button" class="price-preset-btn" data-min="0" data-max="15">Hasta $15</button>
-                    <button type="button" class="price-preset-btn" data-min="15" data-max="35">$15 - $35</button>
-                    <button type="button" class="price-preset-btn" data-min="35" data-max="80">$35 - $80</button>
-                    <button type="button" class="price-preset-btn" data-min="80" data-max="">+$80</button>
+                    <button type="button" class="price-preset-btn" data-min="0" data-max="20000">Hasta Bs. 20.000</button>
+                    <button type="button" class="price-preset-btn" data-min="20000" data-max="50000">Bs. 20.000 - 50.000</button>
+                    <button type="button" class="price-preset-btn" data-min="50000" data-max="100000">Bs. 50.000 - 100.000</button>
+                    <button type="button" class="price-preset-btn" data-min="100000" data-max="">+Bs. 100.000</button>
                 </div>
 
                 <!-- Inputs manuales Min y Max -->
                 <div class="price-inputs-row">
                     <div class="price-input-box">
-                        <label for="priceMinInput">Mínimo ($)</label>
-                        <input type="number" id="priceMinInput" placeholder="0" min="0" step="1">
+                        <label for="priceMinInput">Mínimo (Bs.)</label>
+                        <input type="number" id="priceMinInput" placeholder="0" min="0" step="500">
                     </div>
                     <span class="price-input-sep">—</span>
                     <div class="price-input-box">
-                        <label for="priceMaxInput">Máximo ($)</label>
-                        <input type="number" id="priceMaxInput" placeholder="Sin límite" min="0" step="1">
+                        <label for="priceMaxInput">Máximo (Bs.)</label>
+                        <input type="number" id="priceMaxInput" placeholder="Sin límite" min="0" step="500">
                     </div>
                     <button type="button" id="btnApplyPriceRange" class="btn-apply-price">Aplicar</button>
                 </div>
@@ -1706,7 +1705,7 @@
 
     <!-- JAVASCRIPT DE CONTROL -->
     <script defer src="./products.js?v=15"></script>
-    <script defer src="./app.min.js?v=35"></script>
+    <script defer src="./app.min.js?v=37"></script>
 </body>
 
 </html>
