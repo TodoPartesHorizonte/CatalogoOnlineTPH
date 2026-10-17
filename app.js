@@ -17,6 +17,13 @@
         // Estado del Carrito y Funciones de Soporte
         let cart = [];
 
+        // Estado de Filtros (Precio, Stock, Disponibilidad, Ordenación)
+        let filterStock = "ALL"; // "ALL" | "IN_STOCK" | "OUT_OF_STOCK"
+        let filterPriceMin = null;
+        let filterPriceMax = null;
+        let filterSort = "DEFAULT"; // "DEFAULT" | "PRICE_ASC" | "PRICE_DESC" | "STOCK_DESC"
+        let isFiltersPanelOpen = false;
+
         // Normaliza texto eliminando acentos para búsqueda insensible a tildes
         function normalizeText(text) {
             if (!text) return '';
@@ -685,6 +692,7 @@
                     navBack.style.display = 'none';
                 }
                 renderFolders();
+                updateFilterUI();
             }
 
             // Control de lightbox
@@ -1583,6 +1591,134 @@
             });
         }
 
+        // Funciones de gestión de filtros (Precio, Stock, Disponibilidad)
+        function updateFilterUI() {
+            let activeFiltersCount = 0;
+            if (filterStock !== 'ALL') activeFiltersCount++;
+            if (filterPriceMin !== null || filterPriceMax !== null) activeFiltersCount++;
+            if (filterSort !== 'DEFAULT') activeFiltersCount++;
+
+            const btnToggleFilters = document.getElementById('btnToggleFilters');
+            const activeFiltersBadge = document.getElementById('activeFiltersBadge');
+            if (btnToggleFilters && activeFiltersBadge) {
+                if (activeFiltersCount > 0) {
+                    btnToggleFilters.classList.add('has-filters');
+                    activeFiltersBadge.innerText = activeFiltersCount;
+                    activeFiltersBadge.style.display = 'inline-flex';
+                } else {
+                    btnToggleFilters.classList.remove('has-filters');
+                    activeFiltersBadge.style.display = 'none';
+                }
+            }
+
+            const quickInStockBtn = document.getElementById('quickFilterInStock');
+            if (quickInStockBtn) {
+                if (filterStock === 'IN_STOCK') {
+                    quickInStockBtn.classList.add('active');
+                } else {
+                    quickInStockBtn.classList.remove('active');
+                }
+            }
+
+            const sortSelect = document.getElementById('sortSelect');
+            if (sortSelect && sortSelect.value !== filterSort) {
+                sortSelect.value = filterSort;
+            }
+
+            const stockRadios = document.querySelectorAll('input[name="filterStockRadio"]');
+            stockRadios.forEach(r => {
+                r.checked = (r.value === filterStock);
+            });
+
+            const sortRadios = document.querySelectorAll('input[name="filterSortRadio"]');
+            sortRadios.forEach(r => {
+                r.checked = (r.value === filterSort);
+            });
+
+            const btnClearAll = document.getElementById('btnClearAllFilters');
+            if (btnClearAll) {
+                btnClearAll.style.display = (activeFiltersCount > 0 || (searchQuery && searchQuery.trim() !== '')) ? 'inline-flex' : 'none';
+            }
+
+            const filterCountDisplay = document.getElementById('filterCountDisplay');
+            if (filterCountDisplay) {
+                const count = currentFilteredProducts.length;
+                filterCountDisplay.innerHTML = `Mostrando <strong>${count}</strong> ${count === 1 ? 'repuesto' : 'repuestos'}`;
+            }
+
+            const filterTcHint = document.getElementById('filterTcHint');
+            if (filterTcHint) {
+                const tc = getTC();
+                if (tc > 1) {
+                    filterTcHint.innerText = `Tasa BCV: ${formatBs(tc)}`;
+                }
+            }
+        }
+
+        function toggleFiltersPanel(forceState) {
+            const panel = document.getElementById('filtersPanel');
+            const btn = document.getElementById('btnToggleFilters');
+            if (!panel) return;
+
+            const shouldOpen = typeof forceState === 'boolean' ? forceState : (panel.style.display === 'none' || !panel.style.display);
+            isFiltersPanelOpen = shouldOpen;
+
+            if (shouldOpen) {
+                panel.style.display = 'block';
+                if (btn) {
+                    btn.classList.add('active');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            } else {
+                panel.style.display = 'none';
+                if (btn) {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            }
+        }
+
+        function activateProductFilterMode() {
+            if (activeView === 'FOLDERS') {
+                activeView = 'PHOTOS';
+                const btnPhotos = document.getElementById('btnViewPhotos');
+                const btnFolders = document.getElementById('btnViewFolders');
+                const pGrid = document.getElementById('productsGrid');
+                const fGrid = document.getElementById('foldersGrid');
+                const navBack = document.getElementById('navBackContainer');
+                const viewTitle = document.getElementById('currentViewTitle');
+                if (btnPhotos) btnPhotos.classList.add('active');
+                if (btnFolders) btnFolders.classList.remove('active');
+                if (pGrid) pGrid.style.display = 'grid';
+                if (fGrid) fGrid.style.display = 'none';
+                if (navBack) navBack.style.display = 'flex';
+                if (viewTitle) viewTitle.innerText = activeCategory === 'ALL' ? 'Catálogo' : activeCategory;
+            }
+        }
+
+        function resetAllFilters() {
+            filterStock = 'ALL';
+            filterPriceMin = null;
+            filterPriceMax = null;
+            filterSort = 'DEFAULT';
+
+            const minIn = document.getElementById('priceMinInput');
+            const maxIn = document.getElementById('priceMaxInput');
+            if (minIn) minIn.value = '';
+            if (maxIn) maxIn.value = '';
+
+            document.querySelectorAll('.price-preset-btn').forEach(btn => {
+                if (!btn.getAttribute('data-min') && !btn.getAttribute('data-max')) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            updateFilterUI();
+            renderProducts();
+        }
+
         // Renderizado de Productos
         function renderProducts(reset = true) {
             checkCarouselVisibility();
@@ -1596,13 +1732,35 @@
                                                  .map(stemWord);
                 }
 
-                // Filtrar productos aplicando el scoring
+                // Filtrar productos aplicando categoría, vehículo, disponibilidad, precio y búsqueda
                 const allFiltered = productsData.filter(product => {
                     // Filtro por categoría
                     const matchesCategory = activeCategory === 'ALL' || product.category === activeCategory;
                     
                     // Filtro por vehículo
                     const matchesVehicle = matchesVehicleFilter(product, activeVehicle);
+
+                    // Filtro por disponibilidad / stock
+                    let matchesStock = true;
+                    if (filterStock === 'IN_STOCK') {
+                        matchesStock = !product.is_out_of_stock && (Number(product.total_stock) > 0);
+                    } else if (filterStock === 'OUT_OF_STOCK') {
+                        matchesStock = product.is_out_of_stock || (Number(product.total_stock) <= 0);
+                    }
+
+                    // Filtro por rango de precio ($ USD)
+                    let matchesPrice = true;
+                    const price = Number(product.min_price_usd || 0);
+                    if (filterPriceMin !== null && filterPriceMin > 0) {
+                        matchesPrice = matchesPrice && (price >= filterPriceMin);
+                    }
+                    if (filterPriceMax !== null && filterPriceMax > 0) {
+                        matchesPrice = matchesPrice && (price > 0 && price <= filterPriceMax);
+                    }
+
+                    if (!matchesCategory || !matchesVehicle || !matchesStock || !matchesPrice) {
+                        return false;
+                    }
 
                     if (searchTerms.length > 0) {
                         const tokens = getProductTokens(product);
@@ -1613,10 +1771,10 @@
                             }
                         });
                         product._searchScore = score;
-                        return matchesCategory && matchesVehicle && score > 0;
+                        return score > 0;
                     } else {
                         product._searchScore = 0;
-                        return matchesCategory && matchesVehicle;
+                        return true;
                     }
                 });
 
@@ -1639,7 +1797,29 @@
                     window._searchTermsLength = 0;
                 }
 
+                // Criterio de Ordenación si no es DEFAULT
+                if (filterSort === 'PRICE_ASC') {
+                    currentFilteredProducts.sort((a, b) => {
+                        const pa = (a.is_out_of_stock || Number(a.total_stock) <= 0) ? Infinity : (Number(a.min_price_usd) || Infinity);
+                        const pb = (b.is_out_of_stock || Number(b.total_stock) <= 0) ? Infinity : (Number(b.min_price_usd) || Infinity);
+                        return pa - pb;
+                    });
+                } else if (filterSort === 'PRICE_DESC') {
+                    currentFilteredProducts.sort((a, b) => {
+                        const pa = (a.is_out_of_stock || Number(a.total_stock) <= 0) ? -1 : (Number(a.min_price_usd) || 0);
+                        const pb = (b.is_out_of_stock || Number(b.total_stock) <= 0) ? -1 : (Number(b.min_price_usd) || 0);
+                        return pb - pa;
+                    });
+                } else if (filterSort === 'STOCK_DESC') {
+                    currentFilteredProducts.sort((a, b) => {
+                        const sa = Number(a.total_stock) || 0;
+                        const sb = Number(b.total_stock) || 0;
+                        return sb - sa;
+                    });
+                }
 
+                // Actualizar barra de estado y contadores de filtros
+                updateFilterUI();
 
                 // Si no hay productos, mostrar estado vacío
                 if (currentFilteredProducts.length === 0) {
@@ -2119,6 +2299,159 @@
                     activeCategory = 'ALL';
                     syncStateToURL(true);
                     parseURLState();
+                });
+            }
+
+            // Control de Filtros (Botón, Panel y Barra Rápida)
+            const btnToggleFilters = document.getElementById('btnToggleFilters');
+            if (btnToggleFilters) {
+                btnToggleFilters.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleFiltersPanel();
+                });
+            }
+
+            const btnCloseFiltersPanel = document.getElementById('btnCloseFiltersPanel');
+            if (btnCloseFiltersPanel) {
+                btnCloseFiltersPanel.addEventListener('click', () => {
+                    toggleFiltersPanel(false);
+                });
+            }
+
+            const btnApplyAndClose = document.getElementById('btnApplyAndClose');
+            if (btnApplyAndClose) {
+                btnApplyAndClose.addEventListener('click', () => {
+                    toggleFiltersPanel(false);
+                    activateProductFilterMode();
+                    renderProducts();
+                });
+            }
+
+            // Quick chip: Solo disponibles (ocultar agotados)
+            const quickInStockBtn = document.getElementById('quickFilterInStock');
+            if (quickInStockBtn) {
+                quickInStockBtn.addEventListener('click', () => {
+                    filterStock = (filterStock === 'IN_STOCK') ? 'ALL' : 'IN_STOCK';
+                    trackEvent('filtrar_stock', {
+                        filtro: filterStock,
+                        origen: 'quick_chip'
+                    });
+                    activateProductFilterMode();
+                    updateFilterUI();
+                    renderProducts();
+                });
+            }
+
+            // Select de ordenación rápida
+            const sortSelect = document.getElementById('sortSelect');
+            if (sortSelect) {
+                sortSelect.addEventListener('change', (e) => {
+                    filterSort = e.target.value;
+                    trackEvent('ordenar_catalogo', {
+                        criterio: filterSort,
+                        origen: 'sort_select'
+                    });
+                    activateProductFilterMode();
+                    updateFilterUI();
+                    renderProducts();
+                });
+            }
+
+            // Radios de disponibilidad en el panel
+            document.querySelectorAll('input[name="filterStockRadio"]').forEach(radio => {
+                radio.addEventListener('change', (e) => {
+                    filterStock = e.target.value;
+                    trackEvent('filtrar_stock', {
+                        filtro: filterStock,
+                        origen: 'panel_radio'
+                    });
+                    activateProductFilterMode();
+                    updateFilterUI();
+                    renderProducts();
+                });
+            });
+
+            // Radios de ordenación en el panel
+            document.querySelectorAll('input[name="filterSortRadio"]').forEach(radio => {
+                radio.addEventListener('change', (e) => {
+                    filterSort = e.target.value;
+                    trackEvent('ordenar_catalogo', {
+                        criterio: filterSort,
+                        origen: 'panel_radio'
+                    });
+                    activateProductFilterMode();
+                    updateFilterUI();
+                    renderProducts();
+                });
+            });
+
+            // Presets de precios rápidos en el panel
+            document.querySelectorAll('.price-preset-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    document.querySelectorAll('.price-preset-btn').forEach(b => b.classList.remove('active'));
+                    e.currentTarget.classList.add('active');
+
+                    const minVal = e.currentTarget.getAttribute('data-min');
+                    const maxVal = e.currentTarget.getAttribute('data-max');
+
+                    filterPriceMin = minVal ? parseFloat(minVal) : null;
+                    filterPriceMax = maxVal ? parseFloat(maxVal) : null;
+
+                    const minIn = document.getElementById('priceMinInput');
+                    const maxIn = document.getElementById('priceMaxInput');
+                    if (minIn) minIn.value = minVal || '';
+                    if (maxIn) maxIn.value = maxVal || '';
+
+                    trackEvent('filtrar_precio_preset', {
+                        min: filterPriceMin,
+                        max: filterPriceMax,
+                        origen: 'price_presets'
+                    });
+
+                    activateProductFilterMode();
+                    updateFilterUI();
+                    renderProducts();
+                });
+            });
+
+            // Botón aplicar rango de precio manual
+            const btnApplyPrice = document.getElementById('btnApplyPriceRange');
+            if (btnApplyPrice) {
+                btnApplyPrice.addEventListener('click', () => {
+                    const minIn = document.getElementById('priceMinInput');
+                    const maxIn = document.getElementById('priceMaxInput');
+                    const minVal = minIn && minIn.value !== '' ? parseFloat(minIn.value) : null;
+                    const maxVal = maxIn && maxIn.value !== '' ? parseFloat(maxIn.value) : null;
+
+                    filterPriceMin = (minVal !== null && !isNaN(minVal) && minVal >= 0) ? minVal : null;
+                    filterPriceMax = (maxVal !== null && !isNaN(maxVal) && maxVal >= 0) ? maxVal : null;
+
+                    document.querySelectorAll('.price-preset-btn').forEach(b => b.classList.remove('active'));
+
+                    trackEvent('filtrar_precio_manual', {
+                        min: filterPriceMin,
+                        max: filterPriceMax,
+                        origen: 'price_manual_inputs'
+                    });
+
+                    activateProductFilterMode();
+                    updateFilterUI();
+                    renderProducts();
+                });
+            }
+
+            // Botones de limpiar filtros
+            const btnClearAll = document.getElementById('btnClearAllFilters');
+            if (btnClearAll) {
+                btnClearAll.addEventListener('click', () => {
+                    resetAllFilters();
+                });
+            }
+
+            const btnResetFilters = document.getElementById('btnResetFilters');
+            if (btnResetFilters) {
+                btnResetFilters.addEventListener('click', () => {
+                    resetAllFilters();
                 });
             }
 
