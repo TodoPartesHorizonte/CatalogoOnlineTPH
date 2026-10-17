@@ -2027,13 +2027,13 @@ const PRODUCTS_DATA = {
           "medida": null,
           "lado": null,
           "tipo": null,
-          "precio_usd": 0.0,
-          "stock": 0
+          "precio_usd": 60.0,
+          "stock": 1
         }
       ],
-      "total_stock": 0,
-      "is_out_of_stock": true,
-      "min_price_usd": 0.0
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Araña",
@@ -2064,13 +2064,13 @@ const PRODUCTS_DATA = {
           "medida": null,
           "lado": null,
           "tipo": null,
-          "precio_usd": 0.0,
-          "stock": 0
+          "precio_usd": 60.0,
+          "stock": 1
         }
       ],
-      "total_stock": 0,
-      "is_out_of_stock": true,
-      "min_price_usd": 0.0
+      "total_stock": 1,
+      "is_out_of_stock": false,
+      "min_price_usd": 60.0
     },
     {
       "category": "Araña",
@@ -7457,10 +7457,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 22
+          "stock": 18
         }
       ],
-      "total_stock": 22,
+      "total_stock": 18,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -7544,10 +7544,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 22
+          "stock": 18
         }
       ],
-      "total_stock": 22,
+      "total_stock": 18,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -12833,10 +12833,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 85
+          "stock": 84
         }
       ],
-      "total_stock": 85,
+      "total_stock": 84,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -41121,6 +41121,6 @@ const PRODUCTS_DATA = {
       "min_price_usd": 0.0
     }
   ],
-  "tc": 1010.0,
-  "fecha_tasa": "2026-10-17 11:17:42"
+  "tc": 1020.0,
+  "fecha_tasa": "2026-10-17 12:22:20"
 };
