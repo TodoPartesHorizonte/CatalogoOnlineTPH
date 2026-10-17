@@ -41121,6 +41121,6 @@ const PRODUCTS_DATA = {
       "min_price_usd": 0.0
     }
   ],
-  "tc": 1020.0,
-  "fecha_tasa": "2026-10-17 12:22:20"
+  "tc": 1010.0,
+  "fecha_tasa": "2026-10-17 12:26:09"
 };
