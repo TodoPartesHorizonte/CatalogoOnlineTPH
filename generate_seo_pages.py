@@ -171,6 +171,7 @@ PP_CSS = """
             background: rgba(37,211,102,0.12); border: 1px solid rgba(37,211,102,0.25); color: #25d366;
         }
         .pp-badge.out { background: rgba(239,68,68,0.12); border-color: rgba(239,68,68,0.25); color: #ef4444; }
+        .pp-badge.combo { background: rgba(255,106,0,0.14); border-color: rgba(255,106,0,0.35); color: #ff8a3d; }
         .pp-badge i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 6px currentColor; }
         .pp-trust {
             display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; padding-top: 14px;
@@ -212,6 +213,7 @@ PP_CSS = """
         .pp-cur { font-size: 24px; font-weight: 800; color: var(--accent-orange); }
         .pp-amount { font-size: 42px; font-weight: 900; color: #fff; line-height: 1; letter-spacing: -0.8px; }
         .pp-amount.out { color: #ff4d4f; font-size: 38px; }
+        .pp-amount.combo { color: var(--accent-orange); font-size: 34px; }
         .pp-stock { display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 600; color: #25d366; }
         .pp-stock svg { width: 15px; height: 15px; fill: currentColor; flex-shrink: 0; }
         .pp-specs { display: flex; flex-direction: column; gap: 9px; }
@@ -2451,12 +2453,30 @@ def generate_pages(data):
                         medidas.append(str(medida).strip())
                         
         total_stock = product.get('total_stock')
-        is_out_of_stock = bool(product.get('is_out_of_stock') or not has_stock or (total_stock is not None and total_stock <= 0) or len(variant_prices_bs) == 0)
+        cat_lower = (product.get('category') or product.get('categoria') or '').lower()
+        desc_lower_check = (product.get('description') or product.get('descripcion') or '').lower()
+        is_promo_kit = (
+            'kit de motor' in cat_lower or
+            'tren delantero' in cat_lower or
+            (
+                not direct_variants and not product.get('linked_ids') and
+                ('kit' in cat_lower or 'combo' in cat_lower or 'kit' in desc_lower_check or 'tren delantero' in desc_lower_check)
+            )
+        )
+        is_out_of_stock = False if is_promo_kit else bool(product.get('is_out_of_stock') or not has_stock or (total_stock is not None and total_stock <= 0) or len(variant_prices_bs) == 0)
         max_price_bs = max(variant_prices_bs) if variant_prices_bs else 0.0
         price_bs_str = f"{max_price_bs:.2f}"
-        availability_str = "https://schema.org/OutOfStock" if is_out_of_stock else "https://schema.org/InStock"
+        availability_str = "https://schema.org/InStock" if (not is_out_of_stock or is_promo_kit) else "https://schema.org/OutOfStock"
 
-        if is_out_of_stock:
+        if is_promo_kit:
+            price_box_html = (
+                '<div class="pp-price"><div class="pp-price-row">'
+                '<span class="pp-amount combo">Combo Armable</span></div>'
+                '<div class="pp-stock" style="color: #ff8a3d;"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>'
+                '<span>Kit promocional configurable a tu medida</span></div></div>'
+            )
+            wa_consult_msg = urllib.parse.quote(f"¡Hola! Me gustaría cotizar y armar el combo: *{desc}*. ¿Cuáles repuestos incluye y qué opciones tienen disponibles?\nEnlace: {base_url}p/{safe_filename.replace('.html', '')}")
+        elif is_out_of_stock:
             price_box_html = '<div class="pp-price"><div class="pp-price-row"><span class="pp-amount out">Agotado</span></div></div>'
             wa_consult_msg = urllib.parse.quote(f"¡Hola! Me interesa consultar por el repuesto: *{desc}*. Veo que figura agotado en su página web, ¿tienen fecha estimada de llegada o algún equivalente?\nEnlace: {base_url}p/{safe_filename.replace('.html', '')}")
         else:
@@ -2680,10 +2700,12 @@ def generate_pages(data):
         review_author = selected_review["author"].replace('"', '\\"')
         review_body = selected_review["body"].replace('"', '\\"')
 
-        status_badge_html = (
-            '<span class="pp-badge out"><i></i>Agotado</span>' if is_out_of_stock
-            else '<span class="pp-badge"><i></i>En stock</span>'
-        )
+        if is_promo_kit:
+            status_badge_html = '<span class="pp-badge combo"><i></i>Combo Armable</span>'
+        elif is_out_of_stock:
+            status_badge_html = '<span class="pp-badge out"><i></i>Agotado</span>'
+        else:
+            status_badge_html = '<span class="pp-badge"><i></i>En stock</span>'
 
         specs_pills_html = ""
         if unique_medidas:
