@@ -2835,6 +2835,19 @@ height:18px;
     letter-spacing: 0.5px;
 }
 
+.badge-combo-armable {
+    display: inline-block;
+    background: rgba(255, 106, 0, 0.12);
+    color: #ff914d;
+    border: 1px solid rgba(255, 106, 0, 0.4);
+    font-size: 11px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .photo-badge-agotado {
     position: absolute;
     top: 8px;
@@ -2851,6 +2864,30 @@ height:18px;
     letter-spacing: 0.5px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     z-index: 3;
+}
+
+.photo-badge-combo {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255, 106, 0, 0.92);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(255, 106, 0, 0.4);
+    z-index: 3;
+}
+
+.status-badge.status-combo {
+    background: rgba(255, 106, 0, 0.15);
+    border-color: rgba(255, 106, 0, 0.4);
+    color: #ff914d;
 }
 
 /* Caja de precio y variantes en Modal / Lightbox */
