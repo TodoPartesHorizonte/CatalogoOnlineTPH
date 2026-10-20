@@ -1183,7 +1183,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 25.0,
-          "stock": 3
+          "stock": 2
         },
         {
           "id_variante": 1346,
@@ -1241,7 +1241,7 @@ const PRODUCTS_DATA = {
           "stock": 1
         }
       ],
-      "total_stock": 22,
+      "total_stock": 21,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -2028,12 +2028,12 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 60.0,
-          "stock": 1
+          "stock": 0
         }
       ],
-      "total_stock": 1,
-      "is_out_of_stock": false,
-      "min_price_usd": 60.0
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Araña",
@@ -2065,12 +2065,12 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 60.0,
-          "stock": 1
+          "stock": 0
         }
       ],
-      "total_stock": 1,
-      "is_out_of_stock": false,
-      "min_price_usd": 60.0
+      "total_stock": 0,
+      "is_out_of_stock": true,
+      "min_price_usd": 0.0
     },
     {
       "category": "Araña",
@@ -2393,10 +2393,10 @@ const PRODUCTS_DATA = {
           "lado": "Izquierdo",
           "tipo": null,
           "precio_usd": 60.0,
-          "stock": 10
+          "stock": 9
         }
       ],
-      "total_stock": 24,
+      "total_stock": 23,
       "is_out_of_stock": false,
       "min_price_usd": 60.0
     },
@@ -5592,10 +5592,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 45.0,
-          "stock": 10
+          "stock": 9
         }
       ],
-      "total_stock": 10,
+      "total_stock": 9,
       "is_out_of_stock": false,
       "min_price_usd": 45.0
     },
@@ -5906,10 +5906,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 9
+          "stock": 8
         }
       ],
-      "total_stock": 10,
+      "total_stock": 9,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -6255,10 +6255,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 75.0,
-          "stock": 13
+          "stock": 12
         }
       ],
-      "total_stock": 13,
+      "total_stock": 12,
       "is_out_of_stock": false,
       "min_price_usd": 75.0
     },
@@ -6291,10 +6291,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 75.0,
-          "stock": 13
+          "stock": 12
         }
       ],
-      "total_stock": 13,
+      "total_stock": 12,
       "is_out_of_stock": false,
       "min_price_usd": 75.0
     },
@@ -6948,10 +6948,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 30.0,
-          "stock": 9
+          "stock": 8
         }
       ],
-      "total_stock": 9,
+      "total_stock": 8,
       "is_out_of_stock": false,
       "min_price_usd": 30.0
     },
@@ -7111,10 +7111,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 25.0,
-          "stock": 9
+          "stock": 8
         }
       ],
-      "total_stock": 9,
+      "total_stock": 8,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -7282,10 +7282,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 25.0,
-          "stock": 9
+          "stock": 8
         }
       ],
-      "total_stock": 9,
+      "total_stock": 8,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -7457,10 +7457,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 18
+          "stock": 16
         }
       ],
-      "total_stock": 18,
+      "total_stock": 16,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -7544,10 +7544,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 18
+          "stock": 16
         }
       ],
-      "total_stock": 18,
+      "total_stock": 16,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -8439,10 +8439,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 20
+          "stock": 16
         }
       ],
-      "total_stock": 20,
+      "total_stock": 16,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -8478,10 +8478,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 20
+          "stock": 16
         }
       ],
-      "total_stock": 20,
+      "total_stock": 16,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -8512,10 +8512,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 29
+          "stock": 28
         }
       ],
-      "total_stock": 29,
+      "total_stock": 28,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -8547,10 +8547,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 29
+          "stock": 28
         }
       ],
-      "total_stock": 29,
+      "total_stock": 28,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -8770,10 +8770,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 9
+          "stock": 7
         }
       ],
-      "total_stock": 9,
+      "total_stock": 7,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -8807,10 +8807,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 9
+          "stock": 7
         }
       ],
-      "total_stock": 9,
+      "total_stock": 7,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -8844,10 +8844,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 9
+          "stock": 7
         }
       ],
-      "total_stock": 9,
+      "total_stock": 7,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -8880,10 +8880,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 9
+          "stock": 7
         }
       ],
-      "total_stock": 9,
+      "total_stock": 7,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -8916,10 +8916,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 9
+          "stock": 7
         }
       ],
-      "total_stock": 9,
+      "total_stock": 7,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -9049,10 +9049,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 3.75,
-          "stock": 100
+          "stock": 92
         }
       ],
-      "total_stock": 260,
+      "total_stock": 252,
       "is_out_of_stock": false,
       "min_price_usd": 2.5
     },
@@ -9099,10 +9099,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 3.75,
-          "stock": 100
+          "stock": 92
         }
       ],
-      "total_stock": 260,
+      "total_stock": 252,
       "is_out_of_stock": false,
       "min_price_usd": 2.5
     },
@@ -9395,10 +9395,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 3.75,
-          "stock": 100
+          "stock": 92
         }
       ],
-      "total_stock": 260,
+      "total_stock": 252,
       "is_out_of_stock": false,
       "min_price_usd": 2.5
     },
@@ -11163,7 +11163,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 9
+          "stock": 8
         },
         {
           "id_variante": 1345,
@@ -11210,7 +11210,7 @@ const PRODUCTS_DATA = {
           "stock": 6
         }
       ],
-      "total_stock": 126,
+      "total_stock": 125,
       "is_out_of_stock": false,
       "min_price_usd": 20.0
     },
@@ -11758,7 +11758,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 25.0,
-          "stock": 9
+          "stock": 8
         },
         {
           "id_variante": 401,
@@ -11783,7 +11783,7 @@ const PRODUCTS_DATA = {
           "stock": 1
         }
       ],
-      "total_stock": 147,
+      "total_stock": 146,
       "is_out_of_stock": false,
       "min_price_usd": 20.0
     },
@@ -12796,10 +12796,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 11
+          "stock": 9
         }
       ],
-      "total_stock": 11,
+      "total_stock": 9,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -12833,10 +12833,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 84
+          "stock": 82
         }
       ],
-      "total_stock": 84,
+      "total_stock": 82,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -12870,10 +12870,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 11
+          "stock": 9
         }
       ],
-      "total_stock": 11,
+      "total_stock": 9,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -12941,10 +12941,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 11
+          "stock": 9
         }
       ],
-      "total_stock": 11,
+      "total_stock": 9,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -12978,10 +12978,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 11
+          "stock": 9
         }
       ],
-      "total_stock": 11,
+      "total_stock": 9,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -14053,10 +14053,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 193
+          "stock": 192
         }
       ],
-      "total_stock": 193,
+      "total_stock": 192,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -14158,10 +14158,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 193
+          "stock": 192
         }
       ],
-      "total_stock": 193,
+      "total_stock": 192,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -14192,10 +14192,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 196
+          "stock": 195
         }
       ],
-      "total_stock": 196,
+      "total_stock": 195,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -14555,10 +14555,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 37
+          "stock": 36
         }
       ],
-      "total_stock": 37,
+      "total_stock": 36,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -14592,10 +14592,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 37
+          "stock": 36
         }
       ],
-      "total_stock": 37,
+      "total_stock": 36,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -14629,10 +14629,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 37
+          "stock": 36
         }
       ],
-      "total_stock": 37,
+      "total_stock": 36,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -14665,10 +14665,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 33
+          "stock": 32
         }
       ],
-      "total_stock": 33,
+      "total_stock": 32,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -14701,10 +14701,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 33
+          "stock": 32
         }
       ],
-      "total_stock": 33,
+      "total_stock": 32,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -14737,10 +14737,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 33
+          "stock": 32
         }
       ],
-      "total_stock": 33,
+      "total_stock": 32,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -15846,10 +15846,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 96
+          "stock": 94
         }
       ],
-      "total_stock": 326,
+      "total_stock": 324,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -15908,10 +15908,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 96
+          "stock": 94
         }
       ],
-      "total_stock": 326,
+      "total_stock": 324,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -15970,10 +15970,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 96
+          "stock": 94
         }
       ],
-      "total_stock": 326,
+      "total_stock": 324,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16033,10 +16033,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 96
+          "stock": 94
         }
       ],
-      "total_stock": 326,
+      "total_stock": 324,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16095,10 +16095,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 96
+          "stock": 94
         }
       ],
-      "total_stock": 326,
+      "total_stock": 324,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16157,10 +16157,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 96
+          "stock": 94
         }
       ],
-      "total_stock": 326,
+      "total_stock": 324,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16342,10 +16342,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 64
+          "stock": 63
         }
       ],
-      "total_stock": 64,
+      "total_stock": 63,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16380,10 +16380,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 64
+          "stock": 63
         }
       ],
-      "total_stock": 64,
+      "total_stock": 63,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -16456,10 +16456,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 64
+          "stock": 63
         }
       ],
-      "total_stock": 64,
+      "total_stock": 63,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -18864,10 +18864,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 46
+          "stock": 45
         }
       ],
-      "total_stock": 46,
+      "total_stock": 45,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -18903,10 +18903,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 46
+          "stock": 45
         }
       ],
-      "total_stock": 46,
+      "total_stock": 45,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -18941,10 +18941,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 46
+          "stock": 45
         }
       ],
-      "total_stock": 46,
+      "total_stock": 45,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -18979,10 +18979,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 46
+          "stock": 45
         }
       ],
-      "total_stock": 46,
+      "total_stock": 45,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -19019,10 +19019,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 46
+          "stock": 45
         }
       ],
-      "total_stock": 46,
+      "total_stock": 45,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -19057,10 +19057,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 46
+          "stock": 45
         }
       ],
-      "total_stock": 46,
+      "total_stock": 45,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -19095,10 +19095,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 46
+          "stock": 45
         }
       ],
-      "total_stock": 46,
+      "total_stock": 45,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -22450,7 +22450,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 22
+          "stock": 21
         },
         {
           "id_variante": 1177,
@@ -22461,10 +22461,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 23
+          "stock": 22
         }
       ],
-      "total_stock": 45,
+      "total_stock": 43,
       "is_out_of_stock": false,
       "min_price_usd": 20.0
     },
@@ -22497,7 +22497,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 22
+          "stock": 21
         },
         {
           "id_variante": 1177,
@@ -22508,10 +22508,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 23
+          "stock": 22
         }
       ],
-      "total_stock": 45,
+      "total_stock": 43,
       "is_out_of_stock": false,
       "min_price_usd": 20.0
     },
@@ -23111,10 +23111,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 100.0,
-          "stock": 2
+          "stock": 1
         }
       ],
-      "total_stock": 4,
+      "total_stock": 3,
       "is_out_of_stock": false,
       "min_price_usd": 100.0
     },
@@ -23198,10 +23198,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 100.0,
-          "stock": 2
+          "stock": 1
         }
       ],
-      "total_stock": 4,
+      "total_stock": 3,
       "is_out_of_stock": false,
       "min_price_usd": 100.0
     },
@@ -24291,10 +24291,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 7
+          "stock": 6
         }
       ],
-      "total_stock": 7,
+      "total_stock": 6,
       "is_out_of_stock": false,
       "min_price_usd": 20.0
     },
@@ -24328,10 +24328,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 7
+          "stock": 6
         }
       ],
-      "total_stock": 7,
+      "total_stock": 6,
       "is_out_of_stock": false,
       "min_price_usd": 20.0
     },
@@ -24911,10 +24911,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 55.0,
-          "stock": 6
+          "stock": 5
         }
       ],
-      "total_stock": 6,
+      "total_stock": 5,
       "is_out_of_stock": false,
       "min_price_usd": 55.0
     },
@@ -25105,7 +25105,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 155.0,
-          "stock": 1
+          "stock": 0
         },
         {
           "id_variante": 1068,
@@ -25119,7 +25119,7 @@ const PRODUCTS_DATA = {
           "stock": 5
         }
       ],
-      "total_stock": 6,
+      "total_stock": 5,
       "is_out_of_stock": false,
       "min_price_usd": 145.0
     },
@@ -26338,10 +26338,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 7
+          "stock": 6
         }
       ],
-      "total_stock": 7,
+      "total_stock": 6,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -26490,10 +26490,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 11
+          "stock": 10
         }
       ],
-      "total_stock": 11,
+      "total_stock": 10,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -27734,10 +27734,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 30.0,
-          "stock": 12
+          "stock": 11
         }
       ],
-      "total_stock": 12,
+      "total_stock": 11,
       "is_out_of_stock": false,
       "min_price_usd": 30.0
     },
@@ -27770,10 +27770,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 30.0,
-          "stock": 12
+          "stock": 11
         }
       ],
-      "total_stock": 12,
+      "total_stock": 11,
       "is_out_of_stock": false,
       "min_price_usd": 30.0
     },
@@ -27806,10 +27806,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 20
+          "stock": 18
         }
       ],
-      "total_stock": 20,
+      "total_stock": 18,
       "is_out_of_stock": false,
       "min_price_usd": 20.0
     },
@@ -27885,10 +27885,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 20.0,
-          "stock": 20
+          "stock": 18
         }
       ],
-      "total_stock": 20,
+      "total_stock": 18,
       "is_out_of_stock": false,
       "min_price_usd": 20.0
     },
@@ -27923,10 +27923,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 25.0,
-          "stock": 8
+          "stock": 6
         }
       ],
-      "total_stock": 8,
+      "total_stock": 6,
       "is_out_of_stock": false,
       "min_price_usd": 25.0
     },
@@ -28131,10 +28131,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 24
+          "stock": 20
         }
       ],
-      "total_stock": 24,
+      "total_stock": 20,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -28169,10 +28169,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 24
+          "stock": 20
         }
       ],
-      "total_stock": 24,
+      "total_stock": 20,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -28420,10 +28420,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 15.0,
-          "stock": 24
+          "stock": 20
         }
       ],
-      "total_stock": 24,
+      "total_stock": 20,
       "is_out_of_stock": false,
       "min_price_usd": 15.0
     },
@@ -28508,10 +28508,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 22
+          "stock": 21
         }
       ],
-      "total_stock": 22,
+      "total_stock": 21,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -28584,10 +28584,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 35.0,
-          "stock": 22
+          "stock": 21
         }
       ],
-      "total_stock": 22,
+      "total_stock": 21,
       "is_out_of_stock": false,
       "min_price_usd": 35.0
     },
@@ -28922,10 +28922,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 30.0,
-          "stock": 22
+          "stock": 21
         }
       ],
-      "total_stock": 22,
+      "total_stock": 21,
       "is_out_of_stock": false,
       "min_price_usd": 30.0
     },
@@ -32911,10 +32911,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 51
+          "stock": 50
         }
       ],
-      "total_stock": 51,
+      "total_stock": 50,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -32945,10 +32945,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 51
+          "stock": 50
         }
       ],
-      "total_stock": 51,
+      "total_stock": 50,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -32980,10 +32980,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 51
+          "stock": 50
         }
       ],
-      "total_stock": 51,
+      "total_stock": 50,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -33014,10 +33014,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 5.0,
-          "stock": 51
+          "stock": 50
         }
       ],
-      "total_stock": 51,
+      "total_stock": 50,
       "is_out_of_stock": false,
       "min_price_usd": 5.0
     },
@@ -34015,7 +34015,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 39
+          "stock": 38
         },
         {
           "id_variante": 941,
@@ -34040,7 +34040,7 @@ const PRODUCTS_DATA = {
           "stock": 28
         }
       ],
-      "total_stock": 97,
+      "total_stock": 96,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -34077,7 +34077,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 39
+          "stock": 38
         },
         {
           "id_variante": 941,
@@ -34102,7 +34102,7 @@ const PRODUCTS_DATA = {
           "stock": 28
         }
       ],
-      "total_stock": 97,
+      "total_stock": 96,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -34140,7 +34140,7 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 39
+          "stock": 38
         },
         {
           "id_variante": 941,
@@ -34165,7 +34165,7 @@ const PRODUCTS_DATA = {
           "stock": 28
         }
       ],
-      "total_stock": 97,
+      "total_stock": 96,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -39683,10 +39683,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 50
+          "stock": 47
         }
       ],
-      "total_stock": 50,
+      "total_stock": 47,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -39794,10 +39794,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 48
+          "stock": 45
         }
       ],
-      "total_stock": 48,
+      "total_stock": 45,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -40742,10 +40742,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 61
+          "stock": 60
         }
       ],
-      "total_stock": 61,
+      "total_stock": 60,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -40779,10 +40779,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 61
+          "stock": 60
         }
       ],
-      "total_stock": 61,
+      "total_stock": 60,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -40888,10 +40888,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 61
+          "stock": 60
         }
       ],
-      "total_stock": 61,
+      "total_stock": 60,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -40963,10 +40963,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 61
+          "stock": 60
         }
       ],
-      "total_stock": 61,
+      "total_stock": 60,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -41037,10 +41037,10 @@ const PRODUCTS_DATA = {
           "lado": null,
           "tipo": null,
           "precio_usd": 10.0,
-          "stock": 61
+          "stock": 60
         }
       ],
-      "total_stock": 61,
+      "total_stock": 60,
       "is_out_of_stock": false,
       "min_price_usd": 10.0
     },
@@ -41122,5 +41122,5 @@ const PRODUCTS_DATA = {
     }
   ],
   "tc": 1010.0,
-  "fecha_tasa": "2026-10-17 12:26:09"
+  "fecha_tasa": "2026-10-20 08:25:32"
 };
