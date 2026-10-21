@@ -349,56 +349,37 @@
       <!-- CUERPO PRINCIPAL (EL 2x1 EN EL MOSTRADOR) -->
       <div class="p-3 p-md-4">
         
-        <!-- PASO 1: NOTIFICACIONES DE OFERTAS & AGENDA -->
-        <div class="step-box-rustic" style="border-left: 4px solid var(--accent-orange);">
+        <!-- ACCIÓN RÁPIDA 1 SOLO TOQUE (TODO EN UNO) -->
+        <div class="step-box-rustic" style="border: 2px solid var(--accent-orange); background: linear-gradient(180deg, rgba(255, 106, 0, 0.1) 0%, rgba(18, 19, 25, 0.98) 100%); box-shadow: 0 10px 30px -10px var(--accent-orange-dim);">
           <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="step-tag-orange">PASO 1 · TU CELULAR</span>
-            <small style="color: var(--accent-orange-bright); font-size: 0.78rem; font-weight: 800;">
-              <i class="bi bi-bell-fill"></i> Ofertas Semanales
-            </small>
-          </div>
-          
-          <h5 class="fw-bold mb-1 text-white" style="font-size: 1.15rem;">
-            Guarda nuestro contacto y recibe descuentos
-          </h5>
-          <p class="small mb-3" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.35;">
-            Activa las notificaciones en tu celular para recibir ofertas de repuestos cada semana sin descargar aplicaciones pesadas.
-          </p>
-
-          <button id="btn-subscribe-push" class="btn-orange-todopartes mb-2" onclick="solicitarNotificaciones()">
-            <i class="bi bi-bell-fill"></i>
-            <span id="btn-subscribe-text">Activar Ofertas en mi Celular</span>
-          </button>
-
-          <a href="./contacto.vcf" download="Todo_Partes_Horizonte.vcf" class="btn btn-outline-light w-100 fw-bold rounded-pill py-2" style="font-size: 0.88rem; border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.02);">
-            <i class="bi bi-person-vcard me-1 text-warning"></i> Guardar en mi Agenda Telefónica (.vcf)
-          </a>
-          
-          <div id="push-status-msg" class="text-center mt-2 small fw-bold" style="display:none; font-size: 0.85rem; color: #34d399;">
-            <i class="bi bi-check-circle-fill"></i> ¡Listo! Ya estás suscrito a promociones semanales.
-          </div>
-        </div>
-
-        <!-- PASO 2: OPINIÓN EN GOOGLE MAPS -->
-        <div class="step-box-rustic" style="border-left: 4px solid var(--accent-gold); background: rgba(245, 158, 11, 0.04);">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="step-tag-gold">PASO 2 · TU OPINIÓN</span>
+            <span class="step-tag-orange"><i class="bi bi-lightning-charge-fill me-1"></i>1 SOLO TOQUE</span>
             <div style="color: var(--accent-gold); font-size: 1.15rem; letter-spacing: 2px;">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>
           </div>
           
-          <h5 class="fw-bold mb-1 text-white" style="font-size: 1.15rem;">
-            ¡Califícanos en Google Maps!
-          </h5>
-          <p class="small mb-3" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.35;">
-            ¿Te atendimos bien hoy? Tu reseña de 5 estrellas nos ayuda a seguir trayendo los mejores repuestos al mejor precio para tu rústico.
+          <h4 class="fw-bold mb-1 text-white" style="font-size: 1.3rem; letter-spacing: 0.5px;">
+            Guardar Contacto, Ofertas y Calificar
+          </h4>
+          <p class="small mb-3" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.4;">
+            ¡Facilito y en un solo clic! Guarda nuestro contacto en tu agenda, activa descuentos semanales y califica nuestra atención con 5 estrellas en Google Maps.
           </p>
 
-          <a href="https://g.page/r/CXMpkN_I_0jiEBM/review" target="_blank" rel="noopener noreferrer" class="btn-maps-rustic">
-            <i class="bi bi-google text-danger fs-5"></i>
-            <span>Dejar Reseña de 5 Estrellas</span>
-          </a>
+          <!-- BOTÓN PRINCIPAL MAESTRO -->
+          <button id="btn-master-action" class="btn-orange-todopartes mb-2 py-3" style="font-size: 1.05rem; font-weight: 900;" onclick="ejecutarAccionUnica()">
+            <i class="bi bi-lightning-charge-fill fs-5"></i>
+            <span id="btn-master-text">⚡ VINCULAR Y CALIFICAR (1 TOQUE)</span>
+          </button>
+          
+          <div id="master-status-msg" class="text-center mt-2 small fw-bold" style="display:none; font-size: 0.88rem; color: #34d399;">
+            <i class="bi bi-check-circle-fill"></i> ¡Listo! Ya estás suscrito a promociones semanales.
+          </div>
+
+          <div class="text-center mt-2">
+            <a href="./contacto.vcf" download="Todo_Partes_Horizonte.vcf" class="text-secondary small text-decoration-none" style="font-size: 0.78rem;">
+              <i class="bi bi-person-vcard me-1 text-warning"></i> Descargar únicamente archivo de agenda (.vcf)
+            </a>
+          </div>
         </div>
 
         <!-- CANALES DE ATENCIÓN DIRECTA -->
@@ -489,15 +470,16 @@
     }
 
     function marcarSuscritoEnUI() {
-      const btn = document.getElementById('btn-subscribe-push');
-      const btnText = document.getElementById('btn-subscribe-text');
-      if (btnText) btnText.textContent = '✓ Ofertas Activas en este Celular';
+      const btn = document.getElementById('btn-master-action');
+      const btnText = document.getElementById('btn-master-text');
+      if (btnText) btnText.innerHTML = '<i class="bi bi-star-fill text-warning me-1"></i>⭐ DEJAR RESEÑA 5★ EN GOOGLE MAPS';
       if (btn) {
-        btn.style.background = '#059669';
-        btn.style.boxShadow = '0 10px 24px -4px rgba(16, 185, 129, 0.4)';
-        btn.disabled = true;
+        btn.style.background = '#181920';
+        btn.style.border = '1.5px solid #f59e0b';
+        btn.style.boxShadow = '0 8px 20px -4px rgba(245, 158, 11, 0.4)';
+        btn.onclick = () => { window.location.href = 'https://g.page/r/CXMpkN_I_0jiEBM/review'; };
       }
-      const msg = document.getElementById('push-status-msg');
+      const msg = document.getElementById('master-status-msg');
       if (msg) msg.style.display = 'block';
     }
 
@@ -516,67 +498,67 @@
       }
     }
 
-    async function solicitarNotificaciones() {
-      const btn = document.getElementById('btn-subscribe-push');
-      const btnText = document.getElementById('btn-subscribe-text');
+    async function ejecutarAccionUnica() {
+      const btn = document.getElementById('btn-master-action');
+      const btnText = document.getElementById('btn-master-text');
 
-      if (!('serviceWorker' in navigator) || !('PushManager' in window) || !('Notification' in window)) {
-        showToast('Tu navegador no admite notificaciones automáticas. Te conectamos por WhatsApp...');
-        setTimeout(() => {
-          window.open('https://wa.me/584242116375?text=Hola%2C%20quiero%20recibir%20las%20ofertas%20semanales%20de%20repuestos%20en%20mi%20celular', '_blank');
-        }, 1200);
-        return;
-      }
-
-      btnText.textContent = 'Activando ofertas...';
+      btnText.textContent = 'Procesando en 1 toque...';
       btn.disabled = true;
 
+      // 1. Descargar contacto vCard a la agenda
       try {
-        const permission = await Notification.requestPermission();
-        if (permission !== 'granted') {
-          showToast('Permiso no concedido. Puedes activarlo en los ajustes de tu navegador.');
-          btnText.textContent = 'Activar Ofertas en mi Celular';
-          btn.disabled = false;
-          return;
-        }
+        const link = document.createElement('a');
+        link.href = './contacto.vcf';
+        link.download = 'Todo_Partes_Horizonte.vcf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (e) {
+        console.warn('VCF download error:', e);
+      }
 
-        // 1. Registrar Service Worker
-        const reg = await navigator.serviceWorker.register('/sw.js', { scope: '/' });
-        await navigator.serviceWorker.ready;
+      // 2. Activar Notificaciones Web Push
+      let pushRegistrado = false;
+      try {
+        if ('serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window) {
+          const permission = await Notification.requestPermission();
+          if (permission === 'granted') {
+            const reg = await navigator.serviceWorker.register('/sw.js', { scope: '/' });
+            await navigator.serviceWorker.ready;
+            let sub = await reg.pushManager.getSubscription();
+            if (!sub) {
+              sub = await reg.pushManager.subscribe({
+                userVisibleOnly: true,
+                applicationServerKey: urlB64ToUint8Array(VAPID_PUBLIC_KEY)
+              });
+            }
+            const endpointUrl = (window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1'))
+              ? '/api/marketing/subscribe'
+              : '/api/marketing-subscribe';
 
-        // 2. Suscribirse en PushManager con la clave VAPID
-        let sub = await reg.pushManager.getSubscription();
-        if (!sub) {
-          sub = await reg.pushManager.subscribe({
-            userVisibleOnly: true,
-            applicationServerKey: urlB64ToUint8Array(VAPID_PUBLIC_KEY)
-          });
-        }
-
-        // 3. Enviar al endpoint correspondiente (Cloudflare Pages o Local)
-        const endpointUrl = (window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1'))
-          ? '/api/marketing/subscribe'
-          : '/api/marketing-subscribe';
-
-        const resp = await fetch(endpointUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ subscription: sub })
-        });
-
-        const data = await resp.json();
-        if (data.success) {
-          marcarSuscritoEnUI();
-          showToast('🎉 ¡Excelente! Ya estás suscrito a las promociones semanales.');
-        } else {
-          throw new Error(data.error || 'Error al guardar la suscripción');
+            await fetch(endpointUrl, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ subscription: sub })
+            });
+            pushRegistrado = true;
+          }
         }
       } catch (err) {
-        console.error('Error suscribiendo push:', err);
-        showToast('Error al activar: ' + (err.message || 'Verifica tu conexión'));
-        btnText.textContent = 'Activar Ofertas en mi Celular';
-        btn.disabled = false;
+        console.warn('Push error:', err);
       }
+
+      // 3. Confirmación visual y redirección a Google Maps
+      btnText.textContent = '✓ ¡Listo! Abriendo Google Maps 5★...';
+      btn.style.background = '#059669';
+      btn.style.boxShadow = '0 10px 24px -4px rgba(16, 185, 129, 0.4)';
+      const msg = document.getElementById('master-status-msg');
+      if (msg) msg.style.display = 'block';
+      showToast('🎉 ¡Excelente! Contacto guardado y ofertas activadas.');
+
+      setTimeout(() => {
+        window.location.href = 'https://g.page/r/CXMpkN_I_0jiEBM/review';
+      }, 1200);
     }
 
     document.addEventListener('DOMContentLoaded', () => {
