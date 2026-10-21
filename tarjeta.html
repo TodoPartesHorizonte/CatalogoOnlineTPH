@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#030304">
+  <title>Todo Partes Horizonte — Tarjeta Digital 4x4</title>
+  
+  <meta name="description" content="Tarjeta digital oficial de Todo Partes Horizonte. Guarda nuestro contacto, recibe promociones exclusivas en tu celular y califícanos en Google Maps.">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+  
+  <!-- Google Fonts: Rajdhani & Barlow Semi Condensed (Tipografía Recta y Angular Industrial) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700;800&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+  <style>
+    :root {
+      --bg-base: #030304;
+      --bg-surface: #0a0a0f;
+      --bg-card: rgba(14, 15, 20, 0.94);
+      --bg-box: rgba(22, 23, 30, 0.7);
+      
+      /* Colores Oficiales Todo Partes Horizonte */
+      --accent-orange: #ff6a00;
+      --accent-orange-bright: #ff8a00;
+      --accent-orange-dim: rgba(255, 106, 0, 0.16);
+      --accent-orange-glow: rgba(255, 106, 0, 0.45);
+      
+      --accent-green: #25d366;
+      --accent-gold: #f59e0b;
+      
+      --text-primary: #ffffff;
+      --text-secondary: #c0c2d0;
+      --text-muted: #7e8092;
+      
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-orange: rgba(255, 106, 0, 0.35);
+      
+      --neon-shadow: 0 0 25px var(--accent-orange-dim);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Rajdhani', 'Barlow Semi Condensed', -apple-system, sans-serif;
+      letter-spacing: 0.4px;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    h1, h2, h3, h4, h5, h6, .btn, .badge-offroad, .step-tag-orange, .step-tag-gold {
+      font-family: 'Barlow Semi Condensed', 'Rajdhani', sans-serif;
+      letter-spacing: 0.8px;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px 12px 40px;
+      
+      /* Rejilla técnica de ingeniería automotriz 4x4 */
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(255, 106, 0, 0.15) 0%, transparent 60%),
+        radial-gradient(circle at 100% 100%, rgba(255, 106, 0, 0.08) 0%, transparent 50%),
+        linear-gradient(rgba(255, 106, 0, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 106, 0, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 28px 28px, 28px 28px;
+    }
+
+    .card-wrapper {
+      width: 100%;
+      max-width: 440px;
+    }
+
+    /* Tarjeta Principal Rústica / Off-Road */
+    .rustic-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-subtle);
+      border-top: 3px solid var(--accent-orange);
+      border-radius: 26px;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 30px var(--accent-orange-dim);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Detalle de tornillos/pernos mecánicos en las esquinas */
+    .rustic-card::before, .rustic-card::after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #333842;
+      border: 1px solid #5a6270;
+      box-shadow: inset 0 1px 1px #111;
+    }
+    .rustic-card::before { left: 16px; }
+    .rustic-card::after { right: 16px; }
+
+    /* Cabecera */
+    .hero-banner {
+      padding: 28px 20px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(255, 106, 0, 0.06) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border-subtle);
+      position: relative;
+    }
+
+    /* Logo oficial con relieve industrial */
+    .logo-container {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 14px;
+      border-radius: 24px;
+      background: #0f1015;
+      padding: 6px;
+      border: 2px solid var(--accent-orange);
+      box-shadow: 0 0 25px var(--accent-orange-glow), inset 0 0 15px rgba(255, 106, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .logo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 18px;
+    }
+
+    /* Badges Rústicos 4x4 */
+    .badge-offroad {
+      background: rgba(255, 106, 0, 0.12);
+      color: var(--accent-orange-bright);
+      border: 1px solid var(--border-orange);
+      border-radius: 100px;
+      padding: 4px 12px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge-vehicles {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 3px 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* Cajas de Pasos (El 2x1) */
+    .step-box-rustic {
+      background: var(--bg-box);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 14px;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+    .step-box-rustic:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+      background: rgba(26, 27, 36, 0.85);
+    }
+
+    .step-tag-orange {
+      background: var(--accent-orange);
+      color: #000;
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .step-tag-gold {
+      background: var(--accent-gold);
+      color: #000;
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    /* Botón Naranja Todo Partes (Paso 1) */
+    .btn-orange-todopartes {
+      background: linear-gradient(135deg, #ff6a00 0%, #e65100 100%);
+      color: #ffffff;
+      font-weight: 800;
+      border: none;
+      border-radius: 14px;
+      padding: 14px 18px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 10px 24px -4px var(--accent-orange-glow);
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      text-decoration: none;
+    }
+    .btn-orange-todopartes:hover, .btn-orange-todopartes:active {
+      background: linear-gradient(135deg, #ff8a00 0%, #ff6a00 100%);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px -4px rgba(255, 106, 0, 0.6);
+    }
+
+    /* Botón Google Maps (Paso 2) */
+    .btn-maps-rustic {
+      background: #181920;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-weight: 800;
+      border-radius: 14px;
+      padding: 14px 18px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+    .btn-maps-rustic:hover, .btn-maps-rustic:active {
+      background: #242530;
+      border-color: #ea4335;
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(234, 67, 53, 0.3);
+    }
+
+    /* Cuadrícula de Contactos Rústicos */
+    .contact-grid-rustic {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .contact-card-rustic {
+      background: var(--bg-box);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 14px 12px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .contact-card-rustic:hover, .contact-card-rustic:active {
+      background: rgba(30, 31, 40, 0.9);
+      border-color: var(--border-orange);
+      transform: translateY(-2px);
+      color: #ffffff;
+    }
+    .contact-card-rustic i {
+      font-size: 1.6rem;
+    }
+
+    /* Toast Notification */
+    .toast-box-rustic {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #14151c;
+      border: 1px solid var(--accent-orange);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 0 0 20px var(--accent-orange-dim);
+      padding: 14px 22px;
+      border-radius: 50px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #ffffff;
+      z-index: 9999;
+      display: none;
+      text-align: center;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-wrapper">
+    <div class="rustic-card">
+      
+      <!-- CABECERA DE LA MARCA (ESENCIA TODO PARTES) -->
+      <div class="hero-banner">
+        
+        <!-- LOGO OFICIAL CON RESPLANDOR INDUSTRIAL -->
+        <div class="logo-container">
+          <img src="./assets/logo.png" alt="Todo Partes Horizonte" class="logo-img">
+        </div>
+
+        <div class="badge-offroad mb-2">
+          <i class="bi bi-shield-check"></i> Especialistas Isuzu & Chevrolet 4x4
+        </div>
+        
+        <h2 class="fw-bold mb-1" style="font-weight: 900; letter-spacing: -0.5px; color: #ffffff; font-size: 1.85rem;">
+          Todo Partes Horizonte
+        </h2>
+        
+        <div class="d-flex flex-wrap justify-content-center gap-1 my-2">
+          <span class="badge-vehicles">CARIBE 442</span>
+          <span class="badge-vehicles">LUV D-MAX</span>
+          <span class="badge-vehicles">TROOPER</span>
+          <span class="badge-vehicles">RODEO</span>
+          <span class="badge-vehicles">LUV 2.3</span>
+        </div>
+
+        <p class="small mb-0 px-2" style="font-size: 0.9rem; line-height: 1.4; color: var(--text-secondary);">
+          Más de 30 años de experiencia en Caracas. Repuestos originales y de reemplazo con calidad garantizada.
+        </p>
+      </div>
+
+      <!-- CUERPO PRINCIPAL (EL 2x1 EN EL MOSTRADOR) -->
+      <div class="p-3 p-md-4">
+        
+        <!-- PASO 1: NOTIFICACIONES DE OFERTAS & AGENDA -->
+        <div class="step-box-rustic" style="border-left: 4px solid var(--accent-orange);">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="step-tag-orange">PASO 1 · TU CELULAR</span>
+            <small style="color: var(--accent-orange-bright); font-size: 0.78rem; font-weight: 800;">
+              <i class="bi bi-bell-fill"></i> Ofertas Semanales
+            </small>
+          </div>
+          
+          <h5 class="fw-bold mb-1 text-white" style="font-size: 1.15rem;">
+            Guarda nuestro contacto y recibe descuentos
+          </h5>
+          <p class="small mb-3" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.35;">
+            Activa las notificaciones en tu celular para recibir ofertas de repuestos cada semana sin descargar aplicaciones pesadas.
+          </p>
+
+          <button id="btn-subscribe-push" class="btn-orange-todopartes mb-2" onclick="solicitarNotificaciones()">
+            <i class="bi bi-bell-fill"></i>
+            <span id="btn-subscribe-text">Activar Ofertas en mi Celular</span>
+          </button>
+
+          <a href="./contacto.vcf" download="Todo_Partes_Horizonte.vcf" class="btn btn-outline-light w-100 fw-bold rounded-pill py-2" style="font-size: 0.88rem; border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.02);">
+            <i class="bi bi-person-vcard me-1 text-warning"></i> Guardar en mi Agenda Telefónica (.vcf)
+          </a>
+          
+          <div id="push-status-msg" class="text-center mt-2 small fw-bold" style="display:none; font-size: 0.85rem; color: #34d399;">
+            <i class="bi bi-check-circle-fill"></i> ¡Listo! Ya estás suscrito a promociones semanales.
+          </div>
+        </div>
+
+        <!-- PASO 2: OPINIÓN EN GOOGLE MAPS -->
+        <div class="step-box-rustic" style="border-left: 4px solid var(--accent-gold); background: rgba(245, 158, 11, 0.04);">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="step-tag-gold">PASO 2 · TU OPINIÓN</span>
+            <div style="color: var(--accent-gold); font-size: 1.15rem; letter-spacing: 2px;">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          
+          <h5 class="fw-bold mb-1 text-white" style="font-size: 1.15rem;">
+            ¡Califícanos en Google Maps!
+          </h5>
+          <p class="small mb-3" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.35;">
+            ¿Te atendimos bien hoy? Tu reseña de 5 estrellas nos ayuda a seguir trayendo los mejores repuestos al mejor precio para tu rústico.
+          </p>
+
+          <a href="https://g.page/r/CXMpkN_I_0jiEBM/review" target="_blank" rel="noopener noreferrer" class="btn-maps-rustic">
+            <i class="bi bi-google text-danger fs-5"></i>
+            <span>Dejar Reseña de 5 Estrellas</span>
+          </a>
+        </div>
+
+        <!-- CANALES DE ATENCIÓN DIRECTA -->
+        <div class="mt-4">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <small class="text-uppercase fw-bold" style="font-size: 0.78rem; letter-spacing: 1px; color: var(--accent-orange-bright);">
+              <i class="bi bi-tools me-1"></i> Contacto y Atención Inmediata
+            </small>
+            <span class="badge bg-dark text-secondary" style="font-size: 0.72rem;">Lun-Vie 9-5 / Sáb 9-1</span>
+          </div>
+
+          <div class="contact-grid-rustic">
+            
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/584242116375?text=Hola%2C%20vi%20su%20tarjeta%20digital%20y%20quisiera%20consultar%20un%20repuesto" target="_blank" class="contact-card-rustic" style="border-color: rgba(37, 211, 102, 0.25);">
+              <i class="bi bi-whatsapp text-success"></i>
+              <span class="fw-bold small text-white">WhatsApp</span>
+              <small style="color: #34d399; font-size: 0.76rem; font-weight: 700;">+58 424-2116375</small>
+            </a>
+
+            <!-- LLAMADA MOSTRADOR -->
+            <a href="tel:+584242116375" class="contact-card-rustic">
+              <i class="bi bi-telephone-fill" style="color: var(--accent-orange);"></i>
+              <span class="fw-bold small text-white">Llamar a Tienda</span>
+              <small class="text-secondary" style="font-size: 0.76rem;">Mostrador Boleíta</small>
+            </a>
+
+            <!-- CATÁLOGO WEB -->
+            <a href="https://todoparteshorizonte.com/" class="contact-card-rustic">
+              <i class="bi bi-globe2 text-info"></i>
+              <span class="fw-bold small text-white">Catálogo Online</span>
+              <small class="text-secondary" style="font-size: 0.76rem;">todopartes.com</small>
+            </a>
+
+            <!-- INSTAGRAM OFICIAL -->
+            <a href="https://www.instagram.com/todopartes_horizonte" target="_blank" class="contact-card-rustic">
+              <i class="bi bi-instagram text-danger"></i>
+              <span class="fw-bold small text-white">Instagram</span>
+              <small class="text-secondary" style="font-size: 0.76rem;">@todopartes_horizonte</small>
+            </a>
+          </div>
+
+          <!-- UBICACIÓN FÍSICA -->
+          <a href="https://share.google/3jXZ44CMybUut4NUb" target="_blank" class="contact-card-rustic mt-2 text-start p-3 w-100 flex-row justify-content-start gap-3">
+            <div class="p-2 rounded-3 d-flex align-items-center justify-content-center" style="background: rgba(255, 106, 0, 0.12); color: var(--accent-orange); width: 44px; height: 44px; flex-shrink: 0;">
+              <i class="bi bi-geo-alt-fill fs-4"></i>
+            </div>
+            <div>
+              <div class="fw-bold small text-white">¿Cómo llegar a la tienda física?</div>
+              <small class="text-secondary" style="font-size: 0.8rem;">Av. Principal de Boleíta Sur, Caracas, Venezuela</small>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- FOOTER OFF-ROAD -->
+      <div class="p-3 text-center border-top" style="border-color: var(--border-subtle) !important; background: rgba(5, 5, 8, 0.8);">
+        <small class="text-secondary" style="font-size: 0.76rem; letter-spacing: 0.5px;">
+          Todo Partes Horizonte © Especialistas en Rústicos 4x4
+        </small>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="toast-notify" class="toast-box-rustic"></div>
+
+  <script>
+    function showToast(msg) {
+      const toast = document.getElementById('toast-notify');
+      toast.textContent = msg;
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 4000);
+    }
+
+    async function solicitarNotificaciones() {
+      const btn = document.getElementById('btn-subscribe-push');
+      const btnText = document.getElementById('btn-subscribe-text');
+
+      if ('Notification' in window) {
+        try {
+          const permission = await Notification.requestPermission();
+          if (permission === 'granted') {
+            btnText.textContent = '✓ Ofertas Activas en este Celular';
+            btn.style.background = '#059669';
+            btn.style.boxShadow = '0 10px 24px -4px rgba(16, 185, 129, 0.4)';
+            document.getElementById('push-status-msg').style.display = 'block';
+            showToast('🎉 ¡Excelente! Ya estás suscrito a las promociones semanales.');
+            return;
+          }
+        } catch(e) {
+          console.warn('Notification error:', e);
+        }
+      }
+
+      // Si no soporta push nativo o en iOS Safari previo, ofrece suscribirse por WhatsApp VIP
+      window.open('https://wa.me/584242116375?text=Hola%2C%20quiero%20recibir%20las%20ofertas%20semanales%20de%20repuestos%20en%20mi%20celular', '_blank');
+    }
+  </script>
+</body>
+</html>
