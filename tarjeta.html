@@ -468,6 +468,8 @@
   <div id="toast-notify" class="toast-box-rustic"></div>
 
   <script>
+    const VAPID_PUBLIC_KEY = "BGW5nMdZ2ykivU7VD_TPNY6i2MbYy0w0kQZbWY6-QneQ6A6M9aBKHviveD2FPVnnvsiHmZRkr1Y3GrwV70XgUP0";
+
     function showToast(msg) {
       const toast = document.getElementById('toast-notify');
       toast.textContent = msg;
@@ -475,29 +477,111 @@
       setTimeout(() => { toast.style.display = 'none'; }, 4000);
     }
 
+    function urlB64ToUint8Array(base64String) {
+      const padding = '='.repeat((4 - base64String.length % 4) % 4);
+      const base64 = (base64String + padding).replace(/\-/g, '+').replace(/_/g, '/');
+      const rawData = window.atob(base64);
+      const outputArray = new Uint8Array(rawData.length);
+      for (let i = 0; i < rawData.length; ++i) {
+        outputArray[i] = rawData.charCodeAt(i);
+      }
+      return outputArray;
+    }
+
+    function marcarSuscritoEnUI() {
+      const btn = document.getElementById('btn-subscribe-push');
+      const btnText = document.getElementById('btn-subscribe-text');
+      if (btnText) btnText.textContent = '✓ Ofertas Activas en este Celular';
+      if (btn) {
+        btn.style.background = '#059669';
+        btn.style.boxShadow = '0 10px 24px -4px rgba(16, 185, 129, 0.4)';
+        btn.disabled = true;
+      }
+      const msg = document.getElementById('push-status-msg');
+      if (msg) msg.style.display = 'block';
+    }
+
+    async function checkExistingSubscription() {
+      if (!('serviceWorker' in navigator) || !('PushManager' in window)) return;
+      try {
+        const reg = await navigator.serviceWorker.getRegistration('/sw.js');
+        if (reg) {
+          const sub = await reg.pushManager.getSubscription();
+          if (sub) {
+            marcarSuscritoEnUI();
+          }
+        }
+      } catch (e) {
+        console.warn('Check sub error:', e);
+      }
+    }
+
     async function solicitarNotificaciones() {
       const btn = document.getElementById('btn-subscribe-push');
       const btnText = document.getElementById('btn-subscribe-text');
 
-      if ('Notification' in window) {
-        try {
-          const permission = await Notification.requestPermission();
-          if (permission === 'granted') {
-            btnText.textContent = '✓ Ofertas Activas en este Celular';
-            btn.style.background = '#059669';
-            btn.style.boxShadow = '0 10px 24px -4px rgba(16, 185, 129, 0.4)';
-            document.getElementById('push-status-msg').style.display = 'block';
-            showToast('🎉 ¡Excelente! Ya estás suscrito a las promociones semanales.');
-            return;
-          }
-        } catch(e) {
-          console.warn('Notification error:', e);
-        }
+      if (!('serviceWorker' in navigator) || !('PushManager' in window) || !('Notification' in window)) {
+        showToast('Tu navegador no admite notificaciones automáticas. Te conectamos por WhatsApp...');
+        setTimeout(() => {
+          window.open('https://wa.me/584242116375?text=Hola%2C%20quiero%20recibir%20las%20ofertas%20semanales%20de%20repuestos%20en%20mi%20celular', '_blank');
+        }, 1200);
+        return;
       }
 
-      // Si no soporta push nativo o en iOS Safari previo, ofrece suscribirse por WhatsApp VIP
-      window.open('https://wa.me/584242116375?text=Hola%2C%20quiero%20recibir%20las%20ofertas%20semanales%20de%20repuestos%20en%20mi%20celular', '_blank');
+      btnText.textContent = 'Activando ofertas...';
+      btn.disabled = true;
+
+      try {
+        const permission = await Notification.requestPermission();
+        if (permission !== 'granted') {
+          showToast('Permiso no concedido. Puedes activarlo en los ajustes de tu navegador.');
+          btnText.textContent = 'Activar Ofertas en mi Celular';
+          btn.disabled = false;
+          return;
+        }
+
+        // 1. Registrar Service Worker
+        const reg = await navigator.serviceWorker.register('/sw.js', { scope: '/' });
+        await navigator.serviceWorker.ready;
+
+        // 2. Suscribirse en PushManager con la clave VAPID
+        let sub = await reg.pushManager.getSubscription();
+        if (!sub) {
+          sub = await reg.pushManager.subscribe({
+            userVisibleOnly: true,
+            applicationServerKey: urlB64ToUint8Array(VAPID_PUBLIC_KEY)
+          });
+        }
+
+        // 3. Enviar al endpoint correspondiente (Cloudflare Pages o Local)
+        const endpointUrl = (window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1'))
+          ? '/api/marketing/subscribe'
+          : '/api/marketing-subscribe';
+
+        const resp = await fetch(endpointUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ subscription: sub })
+        });
+
+        const data = await resp.json();
+        if (data.success) {
+          marcarSuscritoEnUI();
+          showToast('🎉 ¡Excelente! Ya estás suscrito a las promociones semanales.');
+        } else {
+          throw new Error(data.error || 'Error al guardar la suscripción');
+        }
+      } catch (err) {
+        console.error('Error suscribiendo push:', err);
+        showToast('Error al activar: ' + (err.message || 'Verifica tu conexión'));
+        btnText.textContent = 'Activar Ofertas en mi Celular';
+        btn.disabled = false;
+      }
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      checkExistingSubscription();
+    });
   </script>
 </body>
 </html>
