@@ -2,460 +2,675 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#030304">
-  <title>Todo Partes Horizonte — Tarjeta Digital 4x4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#06070a">
+  <title>Todo Partes Horizonte — Tarjeta Digital</title>
   
-  <meta name="description" content="Tarjeta digital oficial de Todo Partes Horizonte. Guarda nuestro contacto, recibe promociones exclusivas en tu celular y califícanos en Google Maps.">
+  <meta name="description" content="Tarjeta digital oficial de Todo Partes Horizonte. Desbloquea ofertas exclusivas, guarda nuestro contacto directo y califícanos en Google Maps.">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
   
-  <!-- Google Fonts: Rajdhani & Barlow Semi Condensed (Tipografía Recta y Angular Industrial) -->
+  <!-- Tipografía Moderna Premium: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700;800&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
-  <!-- Bootstrap 5 & Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
   <style>
     :root {
-      --bg-base: #030304;
-      --bg-surface: #0a0a0f;
-      --bg-card: rgba(14, 15, 20, 0.94);
-      --bg-box: rgba(22, 23, 30, 0.7);
+      --bg-canvas: #06070a;
+      --card-bg: rgba(16, 18, 25, 0.96);
+      --card-border: rgba(255, 255, 255, 0.08);
       
-      /* Colores Oficiales Todo Partes Horizonte */
-      --accent-orange: #ff6a00;
-      --accent-orange-bright: #ff8a00;
-      --accent-orange-dim: rgba(255, 106, 0, 0.16);
-      --accent-orange-glow: rgba(255, 106, 0, 0.45);
+      --brand-orange: #ff6a00;
+      --brand-orange-bright: #ff7d1a;
+      --brand-orange-glow: rgba(255, 106, 0, 0.45);
+      --brand-gradient: linear-gradient(135deg, #ff7d1a 0%, #ff5500 52%, #d93d00 100%);
       
-      --accent-green: #25d366;
-      --accent-gold: #f59e0b;
-      
-      --text-primary: #ffffff;
-      --text-secondary: #c0c2d0;
-      --text-muted: #7e8092;
-      
-      --border-subtle: rgba(255, 255, 255, 0.08);
-      --border-orange: rgba(255, 106, 0, 0.35);
-      
-      --neon-shadow: 0 0 25px var(--accent-orange-dim);
+      --gold: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --cubic-spring: cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Rajdhani', 'Barlow Semi Condensed', -apple-system, sans-serif;
-      letter-spacing: 0.4px;
       -webkit-tap-highlight-color: transparent;
+      user-select: none;
     }
 
-    h1, h2, h3, h4, h5, h6, .btn, .badge-offroad, .step-tag-orange, .step-tag-gold {
-      font-family: 'Barlow Semi Condensed', 'Rajdhani', sans-serif;
-      letter-spacing: 0.8px;
+    html, body {
+      width: 100%;
+      height: 100%;
+      min-height: 100dvh;
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      overflow-x: hidden;
     }
 
     body {
-      background-color: var(--bg-base);
-      color: var(--text-primary);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 16px 12px 40px;
-      
-      /* Rejilla técnica de ingeniería automotriz 4x4 */
-      background-image: 
-        radial-gradient(circle at 50% 0%, rgba(255, 106, 0, 0.15) 0%, transparent 60%),
-        radial-gradient(circle at 100% 100%, rgba(255, 106, 0, 0.08) 0%, transparent 50%),
-        linear-gradient(rgba(255, 106, 0, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 106, 0, 0.02) 1px, transparent 1px);
-      background-size: 100% 100%, 100% 100%, 28px 28px, 28px 28px;
-    }
-
-    .card-wrapper {
-      width: 100%;
-      max-width: 440px;
-    }
-
-    /* Tarjeta Principal Rústica / Off-Road */
-    .rustic-card {
-      background: var(--bg-card);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid var(--border-subtle);
-      border-top: 3px solid var(--accent-orange);
-      border-radius: 26px;
-      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 30px var(--accent-orange-dim);
-      overflow: hidden;
-      position: relative;
-    }
-
-    /* Detalle de tornillos/pernos mecánicos en las esquinas */
-    .rustic-card::before, .rustic-card::after {
-      content: "";
-      position: absolute;
-      top: 14px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #333842;
-      border: 1px solid #5a6270;
-      box-shadow: inset 0 1px 1px #111;
-    }
-    .rustic-card::before { left: 16px; }
-    .rustic-card::after { right: 16px; }
-
-    /* Cabecera */
-    .hero-banner {
-      padding: 28px 20px 20px;
-      text-align: center;
-      background: linear-gradient(180deg, rgba(255, 106, 0, 0.06) 0%, transparent 100%);
-      border-bottom: 1px solid var(--border-subtle);
-      position: relative;
-    }
-
-    /* Logo oficial con relieve industrial */
-    .logo-container {
-      width: 96px;
-      height: 96px;
-      margin: 0 auto 14px;
-      border-radius: 24px;
-      background: #0f1015;
-      padding: 6px;
-      border: 2px solid var(--accent-orange);
-      box-shadow: 0 0 25px var(--accent-orange-glow), inset 0 0 15px rgba(255, 106, 0, 0.2);
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
+      padding: 10px;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(255, 106, 0, 0.18) 0%, transparent 65%),
+        radial-gradient(circle at 50% 100%, rgba(255, 106, 0, 0.06) 0%, transparent 55%);
     }
-    .logo-img {
+
+    /* Tarjeta Principal Contenida (Doble Bezel & High Agency Glow) */
+    .business-card {
+      width: 100%;
+      max-width: 395px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      padding: 20px 18px 15px;
+      box-shadow: 
+        0 25px 60px -15px rgba(0, 0, 0, 0.95), 
+        0 0 45px rgba(255, 106, 0, 0.08),
+        inset 0 1px 1px rgba(255, 255, 255, 0.12);
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      overflow: hidden;
+      box-sizing: border-box;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      transform: translate3d(0, 0, 0);
+    }
+
+    /* 1. Header de Identidad */
+    .profile-header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    .avatar-img-box {
+      width: 64px;
+      height: 64px;
+      border-radius: 19px;
+      background: #000000;
+      padding: 5px;
+      border: 1.5px solid rgba(255, 106, 0, 0.7);
+      box-shadow: 
+        0 0 0 3px rgba(255, 106, 0, 0.12),
+        0 8px 24px var(--brand-orange-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar-img-box img {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      border-radius: 18px;
+      border-radius: 14px;
     }
 
-    /* Badges Rústicos 4x4 */
-    .badge-offroad {
-      background: rgba(255, 106, 0, 0.12);
-      color: var(--accent-orange-bright);
-      border: 1px solid var(--border-orange);
-      border-radius: 100px;
-      padding: 4px 12px;
-      font-size: 0.76rem;
+    .verified-badge {
+      position: absolute;
+      bottom: -3px;
+      right: -3px;
+      background: #0d0f15;
+      color: var(--brand-orange-bright);
+      border-radius: 50%;
+      font-size: 1.05rem;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #0d0f15;
+    }
+
+    .profile-name {
+      font-size: 1.28rem;
       font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+      color: var(--text-main);
+      letter-spacing: -0.3px;
+      margin-bottom: 2px;
+    }
+
+    .profile-sub {
+      font-size: 0.79rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .rating-chip {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.28);
+      color: #fbbf24;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 11px;
+      border-radius: 100px;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
+      letter-spacing: 0.2px;
     }
 
-    .badge-vehicles {
-      background: rgba(255, 255, 255, 0.04);
-      color: var(--text-secondary);
-      border: 1px solid var(--border-subtle);
-      border-radius: 8px;
-      padding: 3px 10px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-
-    /* Cajas de Pasos (El 2x1) */
-    .step-box-rustic {
-      background: var(--bg-box);
-      border: 1px solid var(--border-subtle);
-      border-radius: 18px;
-      padding: 18px;
-      margin-bottom: 14px;
-      position: relative;
-      transition: all 0.2s ease;
-    }
-    .step-box-rustic:hover {
-      border-color: rgba(255, 255, 255, 0.15);
-      background: rgba(26, 27, 36, 0.85);
-    }
-
-    .step-tag-orange {
-      background: var(--accent-orange);
-      color: #000;
-      font-size: 0.72rem;
-      font-weight: 900;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 3px 8px;
-      border-radius: 6px;
-    }
-
-    .step-tag-gold {
-      background: var(--accent-gold);
-      color: #000;
-      font-size: 0.72rem;
-      font-weight: 900;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 3px 8px;
-      border-radius: 6px;
-    }
-
-    /* Botón Naranja Todo Partes (Paso 1) */
-    .btn-orange-todopartes {
-      background: linear-gradient(135deg, #ff6a00 0%, #e65100 100%);
-      color: #ffffff;
-      font-weight: 800;
-      border: none;
-      border-radius: 14px;
-      padding: 14px 18px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      font-size: 1rem;
-      letter-spacing: 0.5px;
-      box-shadow: 0 10px 24px -4px var(--accent-orange-glow);
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-      text-decoration: none;
-    }
-    .btn-orange-todopartes:hover, .btn-orange-todopartes:active {
-      background: linear-gradient(135deg, #ff8a00 0%, #ff6a00 100%);
-      color: #ffffff;
-      transform: translateY(-2px);
-      box-shadow: 0 14px 30px -4px rgba(255, 106, 0, 0.6);
-    }
-
-    /* Botón Google Maps (Paso 2) */
-    .btn-maps-rustic {
-      background: #181920;
-      color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      font-weight: 800;
-      border-radius: 14px;
-      padding: 14px 18px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      font-size: 1rem;
-      letter-spacing: 0.5px;
-      transition: all 0.2s ease;
-      text-decoration: none;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-    }
-    .btn-maps-rustic:hover, .btn-maps-rustic:active {
-      background: #242530;
-      border-color: #ea4335;
-      color: #ffffff;
-      transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(234, 67, 53, 0.3);
-    }
-
-    /* Cuadrícula de Contactos Rústicos */
-    .contact-grid-rustic {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .contact-card-rustic {
-      background: var(--bg-box);
-      border: 1px solid var(--border-subtle);
-      border-radius: 16px;
-      padding: 14px 12px;
+    /* 2. EL CENTRO PSICOLÓGICO: HERO REWARD CARD */
+    .reward-hero-card {
+      background: linear-gradient(180deg, rgba(255, 106, 0, 0.13) 0%, rgba(255, 106, 0, 0.02) 100%);
+      border: 1.5px solid rgba(255, 106, 0, 0.35);
+      border-radius: 20px;
+      padding: 12px 11px 10px;
       text-align: center;
+      position: relative;
+      box-shadow: 0 10px 30px -8px rgba(255, 106, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .reward-pill-top {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: #ff9d42;
+      text-transform: uppercase;
+      background: rgba(255, 106, 0, 0.08);
+      border: 1px solid rgba(255, 106, 0, 0.22);
+      border-radius: 100px;
+      padding: 3px 10px;
+      align-self: center;
+    }
+
+    .live-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--brand-orange-bright);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--brand-orange-bright);
+      animation: pulseDot 1.4s infinite;
+    }
+    @keyframes pulseDot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.6; }
+    }
+
+    /* BOTÓN MAGNÉTICO CON HARDWARE ACCELERATED SHIMMER */
+    .btn-reward-magnetic {
+      width: 100%;
+      background: var(--brand-gradient);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 16px;
+      padding: 12px 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 
+        0 10px 28px -4px var(--brand-orange-glow), 
+        inset 0 1px 1px rgba(255, 255, 255, 0.45);
+      transition: all 0.2s var(--cubic-spring);
       text-decoration: none;
-      color: var(--text-primary);
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+      transform: translate3d(0, 0, 0);
+    }
+
+    /* Shimmer con hardware acceleration */
+    .btn-reward-magnetic::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+      transform: translateX(-160%) skewX(-20deg);
+      animation: sweepShimmer 3.2s infinite;
+      pointer-events: none;
+    }
+    @keyframes sweepShimmer {
+      0%, 25% { transform: translateX(-160%) skewX(-20deg); }
+      55%, 100% { transform: translateX(280%) skewX(-20deg); }
+    }
+
+    .btn-reward-magnetic:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+      color: #ffffff;
+    }
+    .btn-reward-magnetic:active {
+      transform: scale(0.985);
+      box-shadow: 0 4px 14px -2px rgba(255, 106, 0, 0.5);
+    }
+
+    .reward-icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: #ffffff;
+      flex-shrink: 0;
+      transition: transform 0.2s var(--cubic-spring);
+    }
+    .btn-reward-magnetic:hover .reward-icon-box {
+      transform: scale(1.05);
+    }
+
+    .reward-texts {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      min-width: 0;
+    }
+
+    .reward-heading {
+      font-size: 0.92rem;
+      font-weight: 800;
+      letter-spacing: -0.2px;
+      color: #ffffff;
+      line-height: 1.18;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .reward-subline {
+      font-size: 0.70rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.92);
+      line-height: 1.22;
+      margin-top: 3px;
+    }
+
+    .reward-chevron {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.22);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+      color: #ffffff;
+      transition: transform 0.2s var(--cubic-spring);
+    }
+    .btn-reward-magnetic:hover .reward-chevron {
+      transform: translateX(2px);
+    }
+
+    /* FILA DE CHIPS DE BENEFICIO (100% CONTENIDA, SIN DESBORDE) */
+    .reward-benefits-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.69rem;
+      font-weight: 700;
+      color: #94a3b8;
+      white-space: nowrap;
+      margin-top: 2px;
+      padding: 0 4px;
+    }
+    .benefit-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      letter-spacing: 0.1px;
+    }
+    .benefit-chip i {
+      color: #10b981;
+      font-size: 0.78rem;
+    }
+    .chip-sep {
+      color: rgba(255, 255, 255, 0.2);
+      font-size: 0.65rem;
+    }
+
+    /* 3. SECCIÓN SECUNDARIA CON SEPARADOR ELEGANTE */
+    .elegant-divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 4px;
+    }
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18) 40%, rgba(255, 255, 255, 0.18));
+    }
+    .divider-line:last-child {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18) 60%, transparent);
+    }
+    .divider-text {
+      font-size: 0.67rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-dim);
+      white-space: nowrap;
+    }
+
+    /* DOCK HORIZONTAL DE 4 ACCESOS */
+    .secondary-dock {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .dock-tile {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 9px 2px 8px;
+      text-decoration: none;
+      color: var(--text-main);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 6px;
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      gap: 5px;
+      min-width: 0;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+      transition: all 0.18s var(--cubic-spring);
     }
-    .contact-card-rustic:hover, .contact-card-rustic:active {
-      background: rgba(30, 31, 40, 0.9);
-      border-color: var(--border-orange);
+    .dock-tile:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.14);
       transform: translateY(-2px);
-      color: #ffffff;
+      color: var(--text-main);
     }
-    .contact-card-rustic i {
-      font-size: 1.6rem;
+    .dock-tile:active {
+      transform: scale(0.95);
+    }
+    .dock-icon-circle {
+      width: 35px;
+      height: 35px;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.18rem;
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+      transition: transform 0.18s var(--cubic-spring);
+    }
+    .dock-tile:hover .dock-icon-circle {
+      transform: scale(1.06);
+    }
+    .dock-name {
+      font-size: 0.69rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.2px;
+      text-align: center;
     }
 
-    /* Toast Notification */
-    .toast-box-rustic {
+    /* Ubicación Física Secundaria */
+    .address-strip {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-main);
+      width: 100%;
+      box-sizing: border-box;
+      min-width: 0;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+      transition: all 0.18s var(--cubic-spring);
+    }
+    .address-strip:hover {
+      background: rgba(255, 255, 255, 0.045);
+      border-color: rgba(255, 106, 0, 0.3);
+      color: var(--text-main);
+      transform: translateY(-1px);
+    }
+    .address-strip:active {
+      transform: scale(0.98);
+    }
+    .address-pin-box {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: rgba(255, 106, 0, 0.12);
+      border: 1px solid rgba(255, 106, 0, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--brand-orange-bright);
+      font-size: 1rem;
+    }
+    .address-strip-texts {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      min-width: 0;
+      flex-grow: 1;
+    }
+    .address-strip-title {
+      font-size: 0.77rem;
+      font-weight: 700;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .address-strip-desc {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* 4. Footer */
+    .card-footer {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.68rem;
+      color: var(--text-dim);
+    }
+    .card-footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .card-footer a:hover {
+      color: var(--text-main);
+    }
+
+    /* Toast */
+    .toast-pill {
       position: fixed;
       bottom: 24px;
       left: 50%;
       transform: translateX(-50%);
-      background: #14151c;
-      border: 1px solid var(--accent-orange);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 0 0 20px var(--accent-orange-dim);
-      padding: 14px 22px;
-      border-radius: 50px;
-      font-size: 0.92rem;
-      font-weight: 700;
+      background: #181a24;
+      border: 1px solid rgba(255, 106, 0, 0.5);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+      padding: 10px 20px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 600;
       color: #ffffff;
       z-index: 9999;
       display: none;
-      text-align: center;
       white-space: nowrap;
     }
+
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    .spin { animation: spin 0.8s linear infinite; display: inline-block; }
   </style>
 </head>
 <body>
 
-  <div class="card-wrapper">
-    <div class="rustic-card">
+  <main class="business-card">
+    
+    <!-- 1. IDENTIDAD DE LA EMPRESA -->
+    <header class="profile-header">
+      <div class="avatar-wrapper">
+        <div class="avatar-img-box">
+          <img src="./assets/apple-touch-icon.png" alt="Todo Partes Horizonte" onerror="this.onerror=null; this.src='./favicon.ico';">
+        </div>
+        <div class="verified-badge" title="Negocio Oficial Verificado">
+          <i class="bi bi-patch-check-fill"></i>
+        </div>
+      </div>
+
+      <h1 class="profile-name">Todo Partes Horizonte</h1>
+      <p class="profile-sub">Repuestos Automotrices Isuzu & Chevrolet</p>
+
+      <div>
+        <span class="rating-chip">
+          <i class="bi bi-star-fill"></i> 4.9 · Google Maps · 30+ años
+        </span>
+      </div>
+    </header>
+
+    <!-- 2. EL CENTRO MAGNÉTICO: SUSCRIPCIÓN GRATUITA Y BENEFICIOS -->
+    <section class="reward-hero-card">
       
-      <!-- CABECERA DE LA MARCA (ESENCIA TODO PARTES) -->
-      <div class="hero-banner">
-        
-        <!-- LOGO OFICIAL CON RESPLANDOR INDUSTRIAL -->
-        <div class="logo-container">
-          <img src="./assets/logo.png" alt="Todo Partes Horizonte" class="logo-img">
-        </div>
-
-        <div class="badge-offroad mb-2">
-          <i class="bi bi-shield-check"></i> Especialistas Isuzu & Chevrolet 4x4
-        </div>
-        
-        <h2 class="fw-bold mb-1" style="font-weight: 900; letter-spacing: -0.5px; color: #ffffff; font-size: 1.85rem;">
-          Todo Partes Horizonte
-        </h2>
-        
-        <div class="d-flex flex-wrap justify-content-center gap-1 my-2">
-          <span class="badge-vehicles">CARIBE 442</span>
-          <span class="badge-vehicles">LUV D-MAX</span>
-          <span class="badge-vehicles">TROOPER</span>
-          <span class="badge-vehicles">RODEO</span>
-          <span class="badge-vehicles">LUV 2.3</span>
-        </div>
-
-        <p class="small mb-0 px-2" style="font-size: 0.9rem; line-height: 1.4; color: var(--text-secondary);">
-          Más de 30 años de experiencia en Caracas. Repuestos originales y de reemplazo con calidad garantizada.
-        </p>
+      <div class="reward-pill-top">
+        <span class="live-dot"></span>
+        <span>Suscripción Gratuita · Beneficios</span>
       </div>
 
-      <!-- CUERPO PRINCIPAL (EL 2x1 EN EL MOSTRADOR) -->
-      <div class="p-3 p-md-4">
+      <!-- BOTÓN PRINCIPAL HONESTO Y CLARO -->
+      <button id="btn-master-action" class="btn-reward-magnetic" onclick="ejecutarAccionUnica()">
+        <div class="reward-icon-box">
+          <i class="bi bi-bell-fill" id="btn-action-icon"></i>
+        </div>
         
-        <!-- ACCIÓN RÁPIDA 1 SOLO TOQUE (TODO EN UNO) -->
-        <div class="step-box-rustic" style="border: 2px solid var(--accent-orange); background: linear-gradient(180deg, rgba(255, 106, 0, 0.1) 0%, rgba(18, 19, 25, 0.98) 100%); box-shadow: 0 10px 30px -10px var(--accent-orange-dim);">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="step-tag-orange"><i class="bi bi-lightning-charge-fill me-1"></i>1 SOLO TOQUE</span>
-            <div style="color: var(--accent-gold); font-size: 1.15rem; letter-spacing: 2px;">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-          </div>
-          
-          <h4 class="fw-bold mb-1 text-white" style="font-size: 1.3rem; letter-spacing: 0.5px;">
-            Guardar Contacto, Ofertas y Calificar
-          </h4>
-          <p class="small mb-3" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.4;">
-            ¡Facilito y en un solo clic! Guarda nuestro contacto en tu agenda, activa descuentos semanales y califica nuestra atención con 5 estrellas en Google Maps.
-          </p>
-
-          <!-- BOTÓN PRINCIPAL MAESTRO -->
-          <button id="btn-master-action" class="btn-orange-todopartes mb-2 py-3" style="font-size: 1.05rem; font-weight: 900;" onclick="ejecutarAccionUnica()">
-            <i class="bi bi-lightning-charge-fill fs-5"></i>
-            <span id="btn-master-text">⚡ VINCULAR Y CALIFICAR (1 TOQUE)</span>
-          </button>
-          
-          <div id="master-status-msg" class="text-center mt-2 small fw-bold" style="display:none; font-size: 0.88rem; color: #34d399;">
-            <i class="bi bi-check-circle-fill"></i> ¡Listo! Ya estás suscrito a promociones semanales.
-          </div>
-
-          <div class="text-center mt-2">
-            <a href="./contacto.vcf" download="Todo_Partes_Horizonte.vcf" class="text-secondary small text-decoration-none" style="font-size: 0.78rem;">
-              <i class="bi bi-person-vcard me-1 text-warning"></i> Descargar únicamente archivo de agenda (.vcf)
-            </a>
-          </div>
+        <div class="reward-texts">
+          <div class="reward-heading" id="btn-master-text">SUSCRÍBETE Y RECIBE BENEFICIOS</div>
+          <div class="reward-subline" id="btn-master-sub">Guarda nuestro contacto y recibe avisos exclusivos</div>
         </div>
 
-        <!-- CANALES DE ATENCIÓN DIRECTA -->
-        <div class="mt-4">
-          <div class="d-flex align-items-center justify-content-between mb-2">
-            <small class="text-uppercase fw-bold" style="font-size: 0.78rem; letter-spacing: 1px; color: var(--accent-orange-bright);">
-              <i class="bi bi-tools me-1"></i> Contacto y Atención Inmediata
-            </small>
-            <span class="badge bg-dark text-secondary" style="font-size: 0.72rem;">Lun-Vie 9-5 / Sáb 9-1</span>
-          </div>
-
-          <div class="contact-grid-rustic">
-            
-            <!-- WHATSAPP -->
-            <a href="https://wa.me/584242116375?text=Hola%2C%20vi%20su%20tarjeta%20digital%20y%20quisiera%20consultar%20un%20repuesto" target="_blank" class="contact-card-rustic" style="border-color: rgba(37, 211, 102, 0.25);">
-              <i class="bi bi-whatsapp text-success"></i>
-              <span class="fw-bold small text-white">WhatsApp</span>
-              <small style="color: #34d399; font-size: 0.76rem; font-weight: 700;">+58 424-2116375</small>
-            </a>
-
-            <!-- LLAMADA MOSTRADOR -->
-            <a href="tel:+584242116375" class="contact-card-rustic">
-              <i class="bi bi-telephone-fill" style="color: var(--accent-orange);"></i>
-              <span class="fw-bold small text-white">Llamar a Tienda</span>
-              <small class="text-secondary" style="font-size: 0.76rem;">Mostrador Boleíta</small>
-            </a>
-
-            <!-- CATÁLOGO WEB -->
-            <a href="https://todoparteshorizonte.com/" class="contact-card-rustic">
-              <i class="bi bi-globe2 text-info"></i>
-              <span class="fw-bold small text-white">Catálogo Online</span>
-              <small class="text-secondary" style="font-size: 0.76rem;">todopartes.com</small>
-            </a>
-
-            <!-- INSTAGRAM OFICIAL -->
-            <a href="https://www.instagram.com/todopartes_horizonte" target="_blank" class="contact-card-rustic">
-              <i class="bi bi-instagram text-danger"></i>
-              <span class="fw-bold small text-white">Instagram</span>
-              <small class="text-secondary" style="font-size: 0.76rem;">@todopartes_horizonte</small>
-            </a>
-          </div>
-
-          <!-- UBICACIÓN FÍSICA -->
-          <a href="https://share.google/3jXZ44CMybUut4NUb" target="_blank" class="contact-card-rustic mt-2 text-start p-3 w-100 flex-row justify-content-start gap-3">
-            <div class="p-2 rounded-3 d-flex align-items-center justify-content-center" style="background: rgba(255, 106, 0, 0.12); color: var(--accent-orange); width: 44px; height: 44px; flex-shrink: 0;">
-              <i class="bi bi-geo-alt-fill fs-4"></i>
-            </div>
-            <div>
-              <div class="fw-bold small text-white">¿Cómo llegar a la tienda física?</div>
-              <small class="text-secondary" style="font-size: 0.8rem;">Av. Principal de Boleíta Sur, Caracas, Venezuela</small>
-            </div>
-          </a>
+        <div class="reward-chevron">
+          <i class="bi bi-arrow-right-short"></i>
         </div>
+      </button>
 
+      <!-- CHIPS VERACES Y TRANSPARENTES (COMPACTOS Y 100% CONTENIDOS) -->
+      <div class="reward-benefits-row">
+        <span class="benefit-chip"><i class="bi bi-check-circle-fill"></i> 100% Gratis</span>
+        <span class="chip-sep">•</span>
+        <span class="benefit-chip"><i class="bi bi-check-circle-fill"></i> En tu Agenda</span>
+        <span class="chip-sep">•</span>
+        <span class="benefit-chip"><i class="bi bi-check-circle-fill"></i> Google 5★</span>
       </div>
 
-      <!-- FOOTER OFF-ROAD -->
-      <div class="p-3 text-center border-top" style="border-color: var(--border-subtle) !important; background: rgba(5, 5, 8, 0.8);">
-        <small class="text-secondary" style="font-size: 0.76rem; letter-spacing: 0.5px;">
-          Todo Partes Horizonte © Especialistas en Rústicos 4x4
-        </small>
+    </section>
+
+    <!-- 3. CANALES DE CONTACTO SECUNDARIOS (100% CONTENIDOS) -->
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      
+      <div class="elegant-divider">
+        <span class="divider-line"></span>
+        <span class="divider-text">O contáctanos directamente</span>
+        <span class="divider-line"></span>
       </div>
+
+      <!-- DOCK HORIZONTAL COMPACTO 4 BOTONES -->
+      <nav class="secondary-dock">
+        
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/584242116375?text=Hola%2C%20vi%20su%20tarjeta%20digital%20y%20quisiera%20consultar%20un%20repuesto" target="_blank" class="dock-tile">
+          <div class="dock-icon-circle" style="background: rgba(37, 211, 102, 0.12); color: #25d366;">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <span class="dock-name">WhatsApp</span>
+        </a>
+
+        <!-- LLAMAR -->
+        <a href="tel:+584242116375" class="dock-tile">
+          <div class="dock-icon-circle" style="background: rgba(255, 106, 0, 0.12); color: var(--brand-orange-bright);">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <span class="dock-name">Llamar</span>
+        </a>
+
+        <!-- CATÁLOGO -->
+        <a href="https://todoparteshorizonte.com/" class="dock-tile">
+          <div class="dock-icon-circle" style="background: rgba(56, 189, 248, 0.12); color: #38bdf8;">
+            <i class="bi bi-globe2"></i>
+          </div>
+          <span class="dock-name">Catálogo</span>
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a href="https://www.instagram.com/todopartes_horizonte" target="_blank" class="dock-tile">
+          <div class="dock-icon-circle" style="background: rgba(244, 63, 94, 0.12); color: #f43f5e;">
+            <i class="bi bi-instagram"></i>
+          </div>
+          <span class="dock-name">Instagram</span>
+        </a>
+
+      </nav>
+
+      <!-- DIRECCIÓN FÍSICA -->
+      <a href="https://share.google/3jXZ44CMybUut4NUb" target="_blank" class="address-strip">
+        <div class="address-pin-box">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="address-strip-texts">
+          <span class="address-strip-title">¿Cómo llegar a la tienda física?</span>
+          <span class="address-strip-desc">Av. Principal de Horizonte, Caracas, Venezuela</span>
+        </div>
+        <i class="bi bi-chevron-right" style="color: var(--text-dim); font-size: 0.8rem; margin-left: auto;"></i>
+      </a>
 
     </div>
-  </div>
 
-  <div id="toast-notify" class="toast-box-rustic"></div>
+    <!-- 4. FOOTER -->
+    <footer class="card-footer">
+      <span>Todo Partes Horizonte · Caracas</span>
+      <span>•</span>
+      <a href="./contacto.vcf" download="Todo_Partes_Horizonte.vcf"><i class="bi bi-download me-1"></i>vCard directa</a>
+    </footer>
+
+  </main>
+
+  <div id="toast-notify" class="toast-pill"></div>
 
   <script>
     const VAPID_PUBLIC_KEY = "BGW5nMdZ2ykivU7VD_TPNY6i2MbYy0w0kQZbWY6-QneQ6A6M9aBKHviveD2FPVnnvsiHmZRkr1Y3GrwV70XgUP0";
 
     function showToast(msg) {
       const toast = document.getElementById('toast-notify');
-      toast.textContent = msg;
+      toast.innerHTML = `<i class="bi bi-check-circle-fill" style="color: #34d399; margin-right: 6px;"></i> ${msg}`;
       toast.style.display = 'block';
-      setTimeout(() => { toast.style.display = 'none'; }, 4000);
+      setTimeout(() => { toast.style.display = 'none'; }, 3500);
     }
 
     function urlB64ToUint8Array(base64String) {
@@ -472,15 +687,17 @@
     function marcarSuscritoEnUI() {
       const btn = document.getElementById('btn-master-action');
       const btnText = document.getElementById('btn-master-text');
-      if (btnText) btnText.innerHTML = '<i class="bi bi-star-fill text-warning me-1"></i>⭐ DEJAR RESEÑA 5★ EN GOOGLE MAPS';
+      const btnSub = document.getElementById('btn-master-sub');
+      const btnIcon = document.getElementById('btn-action-icon');
+      if (btnText) btnText.textContent = 'DEJAR RESEÑA 5★ EN GOOGLE';
+      if (btnSub) btnSub.textContent = '¡Ya estás suscrito! Toca para apoyarnos en Google';
+      if (btnIcon) btnIcon.className = 'bi bi-star-fill text-warning';
       if (btn) {
-        btn.style.background = '#181920';
-        btn.style.border = '1.5px solid #f59e0b';
-        btn.style.boxShadow = '0 8px 20px -4px rgba(245, 158, 11, 0.4)';
+        btn.style.background = '#181b26';
+        btn.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.4)';
+        btn.style.borderColor = 'rgba(245, 158, 11, 0.4)';
         btn.onclick = () => { window.location.href = 'https://g.page/r/CXMpkN_I_0jiEBM/review'; };
       }
-      const msg = document.getElementById('master-status-msg');
-      if (msg) msg.style.display = 'block';
     }
 
     async function checkExistingSubscription() {
@@ -501,8 +718,12 @@
     async function ejecutarAccionUnica() {
       const btn = document.getElementById('btn-master-action');
       const btnText = document.getElementById('btn-master-text');
+      const btnSub = document.getElementById('btn-master-sub');
+      const btnIcon = document.getElementById('btn-action-icon');
 
-      btnText.textContent = 'Procesando en 1 toque...';
+      btnText.textContent = 'PROCESANDO SUSCRIPCIÓN...';
+      btnSub.textContent = 'Guardando contacto en tu agenda...';
+      btnIcon.className = 'bi bi-arrow-repeat spin';
       btn.disabled = true;
 
       // 1. Descargar contacto vCard a la agenda
@@ -518,7 +739,6 @@
       }
 
       // 2. Activar Notificaciones Web Push
-      let pushRegistrado = false;
       try {
         if ('serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window) {
           const permission = await Notification.requestPermission();
@@ -541,24 +761,22 @@
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ subscription: sub })
             });
-            pushRegistrado = true;
           }
         }
       } catch (err) {
         console.warn('Push error:', err);
       }
 
-      // 3. Confirmación visual y redirección a Google Maps
-      btnText.textContent = '✓ ¡Listo! Abriendo Google Maps 5★...';
-      btn.style.background = '#059669';
-      btn.style.boxShadow = '0 10px 24px -4px rgba(16, 185, 129, 0.4)';
-      const msg = document.getElementById('master-status-msg');
-      if (msg) msg.style.display = 'block';
-      showToast('🎉 ¡Excelente! Contacto guardado y ofertas activadas.');
+      // 3. Confirmación y apertura directa de Google Maps 5★
+      btnText.textContent = '¡SUSCRITO CON ÉXITO!';
+      btnSub.textContent = 'Gracias por apoyarnos en Google Maps...';
+      btnIcon.className = 'bi bi-check-lg text-success';
+      btn.style.background = 'linear-gradient(135deg, #059669 0%, #047857 100%)';
+      showToast('¡Te has suscrito con éxito! Contacto guardado');
 
       setTimeout(() => {
         window.location.href = 'https://g.page/r/CXMpkN_I_0jiEBM/review';
-      }, 1200);
+      }, 1000);
     }
 
     document.addEventListener('DOMContentLoaded', () => {
