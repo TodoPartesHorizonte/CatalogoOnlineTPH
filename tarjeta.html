@@ -3,37 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <meta name="theme-color" content="#06070a">
-  <title>Todo Partes Horizonte — Tarjeta Digital</title>
+  <meta name="theme-color" content="#0a0c10">
+  <title>Todo Partes Horizonte — Tarjeta Digital de Presentación</title>
   
-  <meta name="description" content="Tarjeta digital oficial de Todo Partes Horizonte. Desbloquea ofertas exclusivas, guarda nuestro contacto directo y califícanos en Google Maps.">
+  <meta name="description" content="Tarjeta digital oficial de Todo Partes Horizonte. Guarda nuestro contacto directo en tu agenda, chatea por WhatsApp y consulta nuestro catálogo de repuestos.">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
-  
-  <!-- Tipografía Moderna Premium: Plus Jakarta Sans -->
+
+  <!-- Tipografías Premium: Plus Jakarta Sans & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
   <style>
     :root {
-      --bg-canvas: #06070a;
-      --card-bg: rgba(16, 18, 25, 0.96);
+      --bg-body: #07080b;
+      --card-surface: #12141a;
+      --card-surface-elevated: #181b24;
       --card-border: rgba(255, 255, 255, 0.08);
+      --card-border-light: rgba(255, 255, 255, 0.12);
       
       --brand-orange: #ff6a00;
       --brand-orange-bright: #ff7d1a;
-      --brand-orange-glow: rgba(255, 106, 0, 0.45);
-      --brand-gradient: linear-gradient(135deg, #ff7d1a 0%, #ff5500 52%, #d93d00 100%);
+      --brand-orange-glow: rgba(255, 106, 0, 0.35);
       
-      --gold: #f59e0b;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --text-dim: #64748b;
-      --cubic-spring: cubic-bezier(0.16, 1, 0.3, 1);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      
+      --font-display: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --spring: cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
@@ -41,472 +44,591 @@
       margin: 0;
       padding: 0;
       -webkit-tap-highlight-color: transparent;
-      user-select: none;
     }
 
     html, body {
       width: 100%;
-      height: 100%;
       min-height: 100dvh;
-      background-color: var(--bg-canvas);
-      color: var(--text-main);
-      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 12px 10px 32px;
       overflow-x: hidden;
     }
 
-    body {
+    /* CONTENEDOR PRINCIPAL: ESTILO TARJETA DE PRESENTACIÓN DIGITAL LÍDER (BLINQ / POPL) */
+    .business-card-frame {
+      width: 100%;
+      max-width: 410px;
+      background: var(--card-surface);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85), 0 0 40px rgba(255, 106, 0, 0.06);
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+      transition: filter 0.3s ease;
+    }
+
+    /* 1. PORTADA HERO DE LA TARJETA */
+    .card-cover {
+      width: 100%;
+      height: 135px;
+      background: 
+        radial-gradient(circle at 85% 20%, rgba(255, 106, 0, 0.45) 0%, transparent 60%),
+        linear-gradient(135deg, #181b24 0%, #0d0f14 100%);
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      overflow: hidden;
+    }
+
+    /* Textura técnica sutil */
+    .card-cover::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 14px 14px;
+      opacity: 0.6;
+    }
+
+    .cover-top-bar {
+      position: absolute;
+      top: 14px;
+      left: 16px;
+      right: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .brand-verified-pill {
+      background: rgba(10, 12, 16, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 100px;
+      padding: 4px 11px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .brand-verified-pill i {
+      color: var(--brand-orange-bright);
+    }
+
+    .share-btn-round {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(10, 12, 16, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 10px;
-      background-image: 
-        radial-gradient(circle at 50% 0%, rgba(255, 106, 0, 0.18) 0%, transparent 65%),
-        radial-gradient(circle at 50% 100%, rgba(255, 106, 0, 0.06) 0%, transparent 55%);
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s var(--spring);
+    }
+    .share-btn-round:active {
+      transform: scale(0.92);
     }
 
-    /* Tarjeta Principal Contenida (Doble Bezel & High Agency Glow) */
-    .business-card {
-      width: 100%;
-      max-width: 395px;
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 28px;
-      padding: 20px 18px 15px;
-      box-shadow: 
-        0 25px 60px -15px rgba(0, 0, 0, 0.95), 
-        0 0 45px rgba(255, 106, 0, 0.08),
-        inset 0 1px 1px rgba(255, 255, 255, 0.12);
-      display: flex;
-      flex-direction: column;
-      gap: 13px;
-      overflow: hidden;
-      box-sizing: border-box;
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      transform: translate3d(0, 0, 0);
-    }
-
-    /* 1. Header de Identidad */
-    .profile-header {
+    /* 2. AVATAR SUPERPUESTO (ESTILO REAL DIGITAL CARD) */
+    .card-profile-section {
+      padding: 0 20px 14px;
+      position: relative;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    .avatar-wrapper {
+    .avatar-anchor {
       position: relative;
-      margin-bottom: 8px;
+      margin-top: -46px;
+      margin-bottom: 12px;
+      z-index: 3;
     }
 
-    .avatar-img-box {
-      width: 64px;
-      height: 64px;
-      border-radius: 19px;
+    .avatar-frame {
+      width: 88px;
+      height: 88px;
+      border-radius: 26px;
       background: #000000;
-      padding: 5px;
-      border: 1.5px solid rgba(255, 106, 0, 0.7);
-      box-shadow: 
-        0 0 0 3px rgba(255, 106, 0, 0.12),
-        0 8px 24px var(--brand-orange-glow);
+      padding: 6px;
+      border: 2.5px solid var(--card-surface);
+      box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.9), 0 0 25px var(--brand-orange-glow);
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
     }
 
-    .avatar-img-box img {
+    .avatar-frame img {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      border-radius: 14px;
+      border-radius: 20px;
     }
 
-    .verified-badge {
+    .avatar-verified-badge {
       position: absolute;
-      bottom: -3px;
-      right: -3px;
-      background: #0d0f15;
+      bottom: -2px;
+      right: -2px;
+      background: #000000;
       color: var(--brand-orange-bright);
       border-radius: 50%;
-      font-size: 1.05rem;
+      font-size: 1.15rem;
       line-height: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px solid #0d0f15;
+      border: 2px solid var(--card-surface);
     }
 
-    .profile-name {
-      font-size: 1.28rem;
+    .card-name {
+      font-family: var(--font-display);
+      font-size: 1.38rem;
       font-weight: 800;
-      color: var(--text-main);
+      color: var(--text-primary);
       letter-spacing: -0.3px;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
 
-    .profile-sub {
-      font-size: 0.79rem;
-      font-weight: 500;
-      color: var(--text-muted);
-      margin-bottom: 6px;
+    .card-title-spec {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--brand-orange-bright);
+      margin-bottom: 8px;
     }
 
-    .rating-chip {
-      background: rgba(245, 158, 11, 0.1);
-      border: 1px solid rgba(245, 158, 11, 0.28);
-      color: #fbbf24;
+    .rating-badge-pill {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid rgba(245, 158, 11, 0.22);
+      border-radius: 100px;
+      padding: 3px 12px;
       font-size: 0.72rem;
       font-weight: 700;
-      padding: 3px 11px;
-      border-radius: 100px;
+      color: #fbbf24;
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      letter-spacing: 0.2px;
+      margin-bottom: 16px;
     }
 
-    /* 2. EL CENTRO PSICOLÓGICO: HERO REWARD CARD */
-    .reward-hero-card {
-      background: linear-gradient(180deg, rgba(255, 106, 0, 0.13) 0%, rgba(255, 106, 0, 0.02) 100%);
-      border: 1.5px solid rgba(255, 106, 0, 0.35);
-      border-radius: 20px;
-      padding: 12px 11px 10px;
-      text-align: center;
-      position: relative;
-      box-shadow: 0 10px 30px -8px rgba(255, 106, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .reward-pill-top {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      font-size: 0.68rem;
-      font-weight: 800;
-      letter-spacing: 0.8px;
-      color: #ff9d42;
-      text-transform: uppercase;
-      background: rgba(255, 106, 0, 0.08);
-      border: 1px solid rgba(255, 106, 0, 0.22);
-      border-radius: 100px;
-      padding: 3px 10px;
-      align-self: center;
-    }
-
-    .live-dot {
-      width: 6px;
-      height: 6px;
-      background: var(--brand-orange-bright);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--brand-orange-bright);
-      animation: pulseDot 1.4s infinite;
-    }
-    @keyframes pulseDot {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.4); opacity: 0.6; }
-    }
-
-    /* BOTÓN MAGNÉTICO CON HARDWARE ACCELERATED SHIMMER */
-    .btn-reward-magnetic {
+    /* 3. CTA NÚMERO 1: GUARDAR CONTACTO EN EL TELÉFONO */
+    .primary-cta-box {
       width: 100%;
-      background: var(--brand-gradient);
+      margin-bottom: 20px;
+    }
+
+    .btn-save-contact {
+      width: 100%;
+      background: linear-gradient(135deg, #ff7d1a 0%, #ff5500 55%, #d93d00 100%);
       color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       border-radius: 16px;
-      padding: 12px 14px;
+      padding: 14px 18px;
+      font-family: var(--font-display);
+      font-size: 0.98rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 12px;
-      box-shadow: 
-        0 10px 28px -4px var(--brand-orange-glow), 
-        inset 0 1px 1px rgba(255, 255, 255, 0.45);
-      transition: all 0.2s var(--cubic-spring);
-      text-decoration: none;
-      text-align: left;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 10px 25px -4px var(--brand-orange-glow), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+      transition: all 0.2s var(--spring);
       position: relative;
       overflow: hidden;
-      transform: translate3d(0, 0, 0);
     }
 
-    /* Shimmer con hardware acceleration */
-    .btn-reward-magnetic::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 60%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
-      transform: translateX(-160%) skewX(-20deg);
-      animation: sweepShimmer 3.2s infinite;
-      pointer-events: none;
-    }
-    @keyframes sweepShimmer {
-      0%, 25% { transform: translateX(-160%) skewX(-20deg); }
-      55%, 100% { transform: translateX(280%) skewX(-20deg); }
-    }
-
-    .btn-reward-magnetic:hover {
+    .btn-save-contact:hover {
       transform: translateY(-2px);
       filter: brightness(1.05);
-      color: #ffffff;
     }
-    .btn-reward-magnetic:active {
-      transform: scale(0.985);
-      box-shadow: 0 4px 14px -2px rgba(255, 106, 0, 0.5);
-    }
-
-    .reward-icon-box {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      color: #ffffff;
-      flex-shrink: 0;
-      transition: transform 0.2s var(--cubic-spring);
-    }
-    .btn-reward-magnetic:hover .reward-icon-box {
-      transform: scale(1.05);
+    .btn-save-contact:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 12px rgba(255, 106, 0, 0.4);
     }
 
-    .reward-texts {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      min-width: 0;
-    }
-
-    .reward-heading {
-      font-size: 0.92rem;
-      font-weight: 800;
-      letter-spacing: -0.2px;
-      color: #ffffff;
-      line-height: 1.18;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    }
-
-    .reward-subline {
-      font-size: 0.70rem;
-      font-weight: 600;
-      color: rgba(255, 255, 255, 0.92);
-      line-height: 1.22;
-      margin-top: 3px;
-    }
-
-    .reward-chevron {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.22);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .btn-save-contact i {
       font-size: 1.15rem;
-      flex-shrink: 0;
-      color: #ffffff;
-      transition: transform 0.2s var(--cubic-spring);
-    }
-    .btn-reward-magnetic:hover .reward-chevron {
-      transform: translateX(2px);
     }
 
-    /* FILA DE CHIPS DE BENEFICIO (100% CONTENIDA, SIN DESBORDE) */
-    .reward-benefits-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      font-size: 0.69rem;
-      font-weight: 700;
-      color: #94a3b8;
-      white-space: nowrap;
-      margin-top: 2px;
-      padding: 0 4px;
-    }
-    .benefit-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      letter-spacing: 0.1px;
-    }
-    .benefit-chip i {
-      color: #10b981;
-      font-size: 0.78rem;
-    }
-    .chip-sep {
-      color: rgba(255, 255, 255, 0.2);
-      font-size: 0.65rem;
-    }
-
-    /* 3. SECCIÓN SECUNDARIA CON SEPARADOR ELEGANTE */
-    .elegant-divider {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 0 4px;
-    }
-    .divider-line {
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18) 40%, rgba(255, 255, 255, 0.18));
-    }
-    .divider-line:last-child {
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18) 60%, transparent);
-    }
-    .divider-text {
-      font-size: 0.67rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--text-dim);
-      white-space: nowrap;
-    }
-
-    /* DOCK HORIZONTAL DE 4 ACCESOS */
-    .secondary-dock {
+    /* 4. BANDEJA DE ACCESOS RÁPIDOS (QUICK ACTIONS DOCK) */
+    .quick-actions-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 6px;
+      gap: 8px;
       width: 100%;
-      box-sizing: border-box;
+      margin-bottom: 20px;
     }
 
-    .dock-tile {
-      background: rgba(255, 255, 255, 0.025);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 14px;
-      padding: 9px 2px 8px;
+    .quick-action-card {
+      background: var(--card-surface-elevated);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 10px 4px 9px;
       text-decoration: none;
-      color: var(--text-main);
+      color: var(--text-primary);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 5px;
-      min-width: 0;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
-      transition: all 0.18s var(--cubic-spring);
+      gap: 6px;
+      transition: all 0.18s var(--spring);
     }
-    .dock-tile:hover {
+    .quick-action-card:hover {
       background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(255, 255, 255, 0.14);
+      border-color: var(--card-border-light);
       transform: translateY(-2px);
-      color: var(--text-main);
+      color: var(--text-primary);
     }
-    .dock-tile:active {
+    .quick-action-card:active {
       transform: scale(0.95);
     }
-    .dock-icon-circle {
-      width: 35px;
-      height: 35px;
-      border-radius: 11px;
+
+    .action-icon-circle {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.18rem;
+      font-size: 1.25rem;
       box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
-      transition: transform 0.18s var(--cubic-spring);
     }
-    .dock-tile:hover .dock-icon-circle {
-      transform: scale(1.06);
-    }
-    .dock-name {
-      font-size: 0.69rem;
+    .action-label {
+      font-size: 0.70rem;
       font-weight: 700;
-      color: var(--text-muted);
-      letter-spacing: 0.2px;
-      text-align: center;
+      color: var(--text-secondary);
+      letter-spacing: 0.1px;
     }
 
-    /* Ubicación Física Secundaria */
-    .address-strip {
-      background: rgba(255, 255, 255, 0.025);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 14px;
-      padding: 8px 12px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      color: var(--text-main);
+    /* 5. SECCIÓN DE INFORMACIÓN Y SERVICIOS */
+    .card-body-details {
       width: 100%;
-      box-sizing: border-box;
-      min-width: 0;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
-      transition: all 0.18s var(--cubic-spring);
-    }
-    .address-strip:hover {
-      background: rgba(255, 255, 255, 0.045);
-      border-color: rgba(255, 106, 0, 0.3);
-      color: var(--text-main);
-      transform: translateY(-1px);
-    }
-    .address-strip:active {
-      transform: scale(0.98);
-    }
-    .address-pin-box {
-      width: 32px;
-      height: 32px;
-      border-radius: 10px;
-      background: rgba(255, 106, 0, 0.12);
-      border: 1px solid rgba(255, 106, 0, 0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      color: var(--brand-orange-bright);
-      font-size: 1rem;
-    }
-    .address-strip-texts {
       display: flex;
       flex-direction: column;
-      overflow: hidden;
-      min-width: 0;
-      flex-grow: 1;
+      gap: 10px;
+      text-align: left;
     }
-    .address-strip-title {
-      font-size: 0.77rem;
+
+    .detail-card {
+      background: var(--card-surface-elevated);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: all 0.18s var(--spring);
+    }
+    .detail-card:hover {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 106, 0, 0.3);
+      color: var(--text-primary);
+    }
+
+    .detail-icon-box {
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+      background: rgba(255, 106, 0, 0.12);
+      border: 1px solid rgba(255, 106, 0, 0.25);
+      color: var(--brand-orange-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .detail-texts {
+      flex: 1;
+      min-width: 0;
+    }
+    .detail-title {
+      font-size: 0.78rem;
       font-weight: 700;
-      color: var(--text-main);
+      color: var(--text-primary);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    .address-strip-desc {
-      font-size: 0.68rem;
-      color: var(--text-muted);
+    .detail-sub {
+      font-size: 0.70rem;
+      color: var(--text-secondary);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
-    /* 4. Footer */
+    .detail-chevron {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    /* HORARIOS CARD */
+    .hours-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 12px 14px;
+    }
+    .hours-header {
+      font-size: 0.73rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      padding: 2px 0;
+    }
+    .hours-row strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    /* 6. BANNER DE FIDELIZACIÓN (DISCRETO Y HONESTO) */
+    .loyalty-banner {
+      background: linear-gradient(135deg, rgba(255, 106, 0, 0.1) 0%, rgba(255, 106, 0, 0.02) 100%);
+      border: 1px dashed rgba(255, 106, 0, 0.3);
+      border-radius: 16px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .loyalty-banner-texts {
+      text-align: left;
+    }
+    .loyalty-banner-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #ff9d42;
+    }
+    .loyalty-banner-sub {
+      font-size: 0.69rem;
+      color: var(--text-secondary);
+    }
+    .btn-loyalty-mini {
+      background: var(--brand-orange);
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      padding: 6px 12px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+    .btn-loyalty-mini:hover {
+      background: var(--brand-orange-bright);
+    }
+
+    /* 7. FOOTER */
     .card-footer {
+      padding: 16px 20px 10px;
       text-align: center;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .card-footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+    .card-footer a:hover {
+      color: var(--text-primary);
+    }
+
+    /* ========================================================
+       MODALES FLOTANTES DE ENTRADA (ONBOARDING FUNNEL)
+       ======================================================== */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 6, 9, 0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-sheet {
+      width: 100%;
+      max-width: 380px;
+      background: #141720;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 28px;
+      padding: 24px 22px 20px;
+      text-align: center;
+      box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.9), 0 0 40px rgba(255, 106, 0, 0.15);
+      transform: scale(0.92) translateY(20px);
+      transition: transform 0.3s var(--spring);
+      position: relative;
+      overflow: hidden;
+    }
+    .modal-overlay.active .modal-sheet {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-icon-badge {
+      width: 62px;
+      height: 62px;
+      border-radius: 22px;
+      margin: 0 auto 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+    }
+    .modal-icon-badge.orange {
+      background: rgba(255, 106, 0, 0.14);
+      border: 1.5px solid rgba(255, 106, 0, 0.35);
+      color: var(--brand-orange-bright);
+      box-shadow: 0 8px 24px rgba(255, 106, 0, 0.25);
+    }
+    .modal-icon-badge.gold {
+      background: rgba(245, 158, 11, 0.14);
+      border: 1.5px solid rgba(245, 158, 11, 0.35);
+      color: #fbbf24;
+      box-shadow: 0 8px 24px rgba(245, 158, 11, 0.25);
+    }
+
+    .modal-step-tag {
+      font-size: 0.67rem;
+      font-weight: 800;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+      color: var(--brand-orange-bright);
+      margin-bottom: 6px;
+    }
+
+    .modal-title {
+      font-family: var(--font-display);
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+
+    .modal-desc {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+      margin-bottom: 20px;
+    }
+
+    .modal-buttons-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .btn-modal-primary {
+      width: 100%;
+      background: linear-gradient(135deg, #ff7d1a 0%, #ff5500 100%);
+      color: #ffffff;
+      border: none;
+      border-radius: 14px;
+      padding: 13px 16px;
+      font-family: var(--font-display);
+      font-size: 0.94rem;
+      font-weight: 700;
+      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
-      font-size: 0.68rem;
-      color: var(--text-dim);
+      box-shadow: 0 8px 20px -3px var(--brand-orange-glow);
+      transition: all 0.2s var(--spring);
     }
-    .card-footer a {
+    .btn-modal-primary:active {
+      transform: scale(0.97);
+    }
+
+    .btn-modal-gold {
+      width: 100%;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #ffffff;
+      border: none;
+      border-radius: 14px;
+      padding: 13px 16px;
+      font-family: var(--font-display);
+      font-size: 0.94rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 8px 20px -3px rgba(245, 158, 11, 0.4);
+      transition: all 0.2s var(--spring);
+    }
+    .btn-modal-gold:active {
+      transform: scale(0.97);
+    }
+
+    .btn-modal-ghost {
+      width: 100%;
+      background: transparent;
       color: var(--text-muted);
-      text-decoration: none;
-      transition: color 0.15s ease;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 11px 16px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
     }
-    .card-footer a:hover {
-      color: var(--text-main);
+    .btn-modal-ghost:hover {
+      color: var(--text-primary);
+      border-color: rgba(255, 255, 255, 0.16);
     }
 
     /* Toast */
@@ -517,13 +639,13 @@
       transform: translateX(-50%);
       background: #181a24;
       border: 1px solid rgba(255, 106, 0, 0.5);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-      padding: 10px 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.85);
+      padding: 10px 22px;
       border-radius: 100px;
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       font-weight: 600;
       color: #ffffff;
-      z-index: 9999;
+      z-index: 999999;
       display: none;
       white-space: nowrap;
     }
@@ -534,133 +656,191 @@
 </head>
 <body>
 
-  <main class="business-card">
+  <!-- ========================================================
+       TARJETA DE PRESENTACIÓN DIGITAL OFICIAL (BLINQ/POPL STYLE)
+       ======================================================== -->
+  <main class="business-card-frame" id="main-business-card">
     
-    <!-- 1. IDENTIDAD DE LA EMPRESA -->
-    <header class="profile-header">
-      <div class="avatar-wrapper">
-        <div class="avatar-img-box">
-          <img src="./assets/apple-touch-icon.png" alt="Todo Partes Horizonte" onerror="this.onerror=null; this.src='./favicon.ico';">
-        </div>
-        <div class="verified-badge" title="Negocio Oficial Verificado">
-          <i class="bi bi-patch-check-fill"></i>
-        </div>
-      </div>
-
-      <h1 class="profile-name">Todo Partes Horizonte</h1>
-      <p class="profile-sub">Repuestos Automotrices Isuzu & Chevrolet</p>
-
-      <div>
-        <span class="rating-chip">
-          <i class="bi bi-star-fill"></i> 4.9 · Google Maps · 30+ años
+    <!-- 1. PORTADA HERO DE LA TARJETA -->
+    <header class="card-cover">
+      <div class="cover-top-bar">
+        <span class="brand-verified-pill">
+          <i class="bi bi-patch-check-fill"></i> Negocio Verificado
         </span>
+        <button class="share-btn-round" title="Compartir Tarjeta" onclick="compartirTarjeta()">
+          <i class="bi bi-share-fill"></i>
+        </button>
       </div>
     </header>
 
-    <!-- 2. EL CENTRO MAGNÉTICO: SUSCRIPCIÓN GRATUITA Y BENEFICIOS -->
-    <section class="reward-hero-card">
+    <!-- 2. AVATAR SUPERPUESTO & IDENTIDAD PROFESIONAL -->
+    <div class="card-profile-section">
       
-      <div class="reward-pill-top">
-        <span class="live-dot"></span>
-        <span>Suscripción Gratuita · Beneficios</span>
+      <div class="avatar-anchor">
+        <div class="avatar-frame">
+          <img src="./assets/apple-touch-icon.png" alt="Todo Partes Horizonte" onerror="this.onerror=null; this.src='./favicon.ico';">
+        </div>
+        <div class="avatar-verified-badge" title="Oficial">
+          <i class="bi bi-check-circle-fill"></i>
+        </div>
       </div>
 
-      <!-- BOTÓN PRINCIPAL HONESTO Y CLARO -->
-      <button id="btn-master-action" class="btn-reward-magnetic" onclick="ejecutarAccionUnica()">
-        <div class="reward-icon-box">
-          <i class="bi bi-bell-fill" id="btn-action-icon"></i>
-        </div>
-        
-        <div class="reward-texts">
-          <div class="reward-heading" id="btn-master-text">SUSCRÍBETE Y RECIBE BENEFICIOS</div>
-          <div class="reward-subline" id="btn-master-sub">Guarda nuestro contacto y recibe avisos exclusivos</div>
-        </div>
+      <h1 class="card-name">Todo Partes Horizonte</h1>
+      <p class="card-title-spec">Especialistas en Repuestos Isuzu & Chevrolet</p>
 
-        <div class="reward-chevron">
-          <i class="bi bi-arrow-right-short"></i>
-        </div>
-      </button>
-
-      <!-- CHIPS VERACES Y TRANSPARENTES (COMPACTOS Y 100% CONTENIDOS) -->
-      <div class="reward-benefits-row">
-        <span class="benefit-chip"><i class="bi bi-check-circle-fill"></i> 100% Gratis</span>
-        <span class="chip-sep">•</span>
-        <span class="benefit-chip"><i class="bi bi-check-circle-fill"></i> En tu Agenda</span>
-        <span class="chip-sep">•</span>
-        <span class="benefit-chip"><i class="bi bi-check-circle-fill"></i> Google 5★</span>
+      <div class="rating-badge-pill">
+        <i class="bi bi-star-fill"></i> 4.9 · Google Maps · 30+ años en Caracas
       </div>
 
-    </section>
-
-    <!-- 3. CANALES DE CONTACTO SECUNDARIOS (100% CONTENIDOS) -->
-    <div style="display: flex; flex-direction: column; gap: 8px;">
-      
-      <div class="elegant-divider">
-        <span class="divider-line"></span>
-        <span class="divider-text">O contáctanos directamente</span>
-        <span class="divider-line"></span>
+      <!-- 3. ACCIÓN PRINCIPAL DE CUALQUIER TARJETA: GUARDAR CONTACTO -->
+      <div class="primary-cta-box">
+        <button id="btn-save-vcard" class="btn-save-contact" onclick="guardarContactoDirecto()">
+          <i class="bi bi-person-plus-fill" id="save-icon"></i>
+          <span id="save-text">AÑADIR A CONTACTOS</span>
+        </button>
       </div>
 
-      <!-- DOCK HORIZONTAL COMPACTO 4 BOTONES -->
-      <nav class="secondary-dock">
+      <!-- 4. BANDEJA DE ACCESOS RÁPIDOS (QUICK ACTIONS DOCK) -->
+      <nav class="quick-actions-grid">
         
         <!-- WHATSAPP -->
-        <a href="https://wa.me/584242116375?text=Hola%2C%20vi%20su%20tarjeta%20digital%20y%20quisiera%20consultar%20un%20repuesto" target="_blank" class="dock-tile">
-          <div class="dock-icon-circle" style="background: rgba(37, 211, 102, 0.12); color: #25d366;">
+        <a href="https://wa.me/584242116375?text=Hola%2C%20vi%20su%20tarjeta%20digital%20y%20quisiera%20consultar%20un%20repuesto" target="_blank" class="quick-action-card">
+          <div class="action-icon-circle" style="background: rgba(37, 211, 102, 0.14); color: #25d366;">
             <i class="bi bi-whatsapp"></i>
           </div>
-          <span class="dock-name">WhatsApp</span>
+          <span class="action-label">WhatsApp</span>
         </a>
 
         <!-- LLAMAR -->
-        <a href="tel:+584242116375" class="dock-tile">
-          <div class="dock-icon-circle" style="background: rgba(255, 106, 0, 0.12); color: var(--brand-orange-bright);">
+        <a href="tel:+584242116375" class="quick-action-card">
+          <div class="action-icon-circle" style="background: rgba(255, 106, 0, 0.14); color: var(--brand-orange-bright);">
             <i class="bi bi-telephone-fill"></i>
           </div>
-          <span class="dock-name">Llamar</span>
+          <span class="action-label">Llamar</span>
         </a>
 
         <!-- CATÁLOGO -->
-        <a href="https://todoparteshorizonte.com/" class="dock-tile">
-          <div class="dock-icon-circle" style="background: rgba(56, 189, 248, 0.12); color: #38bdf8;">
+        <a href="https://todoparteshorizonte.com/" class="quick-action-card">
+          <div class="action-icon-circle" style="background: rgba(56, 189, 248, 0.14); color: #38bdf8;">
             <i class="bi bi-globe2"></i>
           </div>
-          <span class="dock-name">Catálogo</span>
+          <span class="action-label">Catálogo</span>
         </a>
 
         <!-- INSTAGRAM -->
-        <a href="https://www.instagram.com/todopartes_horizonte" target="_blank" class="dock-tile">
-          <div class="dock-icon-circle" style="background: rgba(244, 63, 94, 0.12); color: #f43f5e;">
+        <a href="https://www.instagram.com/todopartes_horizonte" target="_blank" class="quick-action-card">
+          <div class="action-icon-circle" style="background: rgba(244, 63, 94, 0.14); color: #f43f5e;">
             <i class="bi bi-instagram"></i>
           </div>
-          <span class="dock-name">Instagram</span>
+          <span class="action-label">Instagram</span>
         </a>
 
       </nav>
 
-      <!-- DIRECCIÓN FÍSICA -->
-      <a href="https://share.google/3jXZ44CMybUut4NUb" target="_blank" class="address-strip">
-        <div class="address-pin-box">
-          <i class="bi bi-geo-alt-fill"></i>
+      <!-- 5. DETALLES DE TIENDA Y UBICACIÓN -->
+      <div class="card-body-details">
+        
+        <!-- DIRECCIÓN FÍSICA -->
+        <a href="https://share.google/3jXZ44CMybUut4NUb" target="_blank" class="detail-card">
+          <div class="detail-icon-box">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="detail-texts">
+            <div class="detail-title">¿Cómo llegar a la tienda física?</div>
+            <div class="detail-sub">Av. Principal de Horizonte, Caracas, Venezuela</div>
+          </div>
+          <i class="bi bi-chevron-right detail-chevron"></i>
+        </a>
+
+        <!-- HORARIO DE ATENCIÓN -->
+        <div class="hours-card">
+          <div class="hours-header">
+            <i class="bi bi-clock-fill text-warning"></i> Horario de Atención en Mostrador
+          </div>
+          <div class="hours-row">
+            <span>Lunes a Viernes</span>
+            <strong>8:00 AM – 5:00 PM</strong>
+          </div>
+          <div class="hours-row">
+            <span>Sábados</span>
+            <strong>8:00 AM – 1:00 PM</strong>
+          </div>
         </div>
-        <div class="address-strip-texts">
-          <span class="address-strip-title">¿Cómo llegar a la tienda física?</span>
-          <span class="address-strip-desc">Av. Principal de Horizonte, Caracas, Venezuela</span>
+
+        <!-- BANNER DE SUSCRIPCIÓN / AVISOS (POR SI DESEA ACTIVARLOS DESPUÉS) -->
+        <div class="loyalty-banner">
+          <div class="loyalty-banner-texts">
+            <div class="loyalty-banner-title">¿Avisos de Repuestos y Ofertas?</div>
+            <div class="loyalty-banner-sub">Recibe notificaciones en tu móvil</div>
+          </div>
+          <button class="btn-loyalty-mini" onclick="abrirModalPaso1()">Activar</button>
         </div>
-        <i class="bi bi-chevron-right" style="color: var(--text-dim); font-size: 0.8rem; margin-left: auto;"></i>
-      </a>
+
+      </div>
 
     </div>
 
-    <!-- 4. FOOTER -->
+    <!-- 6. FOOTER -->
     <footer class="card-footer">
-      <span>Todo Partes Horizonte · Caracas</span>
-      <span>•</span>
-      <a href="./contacto.vcf" download="Todo_Partes_Horizonte.vcf"><i class="bi bi-download me-1"></i>vCard directa</a>
+      <div>Todo Partes Horizonte · Boleíta, Caracas</div>
+      <div>
+        <a href="javascript:void(0)" onclick="abrirModalPaso2()"><i class="bi bi-star-fill text-warning me-1"></i>Calificar en Google</a>
+        <span class="mx-1">•</span>
+        <a href="./contacto.vcf" download="Todo_Partes_Horizonte.vcf"><i class="bi bi-download me-1"></i>vCard directa</a>
+      </div>
     </footer>
 
   </main>
 
+  <!-- ========================================================
+       MODALES FLOTANTES DE ENTRADA (ONBOARDING FUNNEL)
+       ======================================================== -->
+
+  <!-- PASO 1: MODAL DE SUSCRIPCIÓN -->
+  <div id="modal-onboarding-step1" class="modal-overlay">
+    <div class="modal-sheet">
+      <div class="modal-icon-badge orange">
+        <i class="bi bi-bell-fill"></i>
+      </div>
+      <div class="modal-step-tag">Avisos Exclusivos</div>
+      <h2 class="modal-title">¿Quieres que te avisemos cuando haya promociones o llegue mercancía?</h2>
+      <p class="modal-desc">
+        Sé el primero en enterarte cuando recibamos nuevos repuestos Isuzu y Chevrolet y ofertas en tienda. Sin costo y sin spam.
+      </p>
+      <div class="modal-buttons-group">
+        <button class="btn-modal-primary" onclick="responderPaso1(true)">
+          <i class="bi bi-check-circle-fill"></i> ¡Sí, avisarme!
+        </button>
+        <button class="btn-modal-ghost" onclick="responderPaso1(false)">
+          Ahora no
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PASO 2: MODAL DE RESEÑA EN GOOGLE MAPS -->
+  <div id="modal-onboarding-step2" class="modal-overlay">
+    <div class="modal-sheet">
+      <div class="modal-icon-badge gold">
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <div class="modal-step-tag">Tu Opinión Nos Ayuda</div>
+      <h2 class="modal-title">¿Quieres dejarnos tu reseña sobre el local?</h2>
+      <p class="modal-desc">
+        Tu calificación de 5★ en Google Maps nos ayuda a seguir brindándote la mejor atención y los mejores repuestos de Caracas.
+      </p>
+      <div class="modal-buttons-group">
+        <button class="btn-modal-gold" onclick="responderPaso2(true)">
+          <i class="bi bi-google"></i> Dejar reseña 5★ en Google
+        </button>
+        <button class="btn-modal-ghost" onclick="responderPaso2(false)">
+          Ver tarjeta de presentación
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
   <div id="toast-notify" class="toast-pill"></div>
 
   <script>
@@ -684,103 +864,118 @@
       return outputArray;
     }
 
-    function marcarSuscritoEnUI() {
-      const btn = document.getElementById('btn-master-action');
-      const btnText = document.getElementById('btn-master-text');
-      const btnSub = document.getElementById('btn-master-sub');
-      const btnIcon = document.getElementById('btn-action-icon');
-      if (btnText) btnText.textContent = 'DEJAR RESEÑA 5★ EN GOOGLE';
-      if (btnSub) btnSub.textContent = '¡Ya estás suscrito! Toca para apoyarnos en Google';
-      if (btnIcon) btnIcon.className = 'bi bi-star-fill text-warning';
-      if (btn) {
-        btn.style.background = '#181b26';
-        btn.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.4)';
-        btn.style.borderColor = 'rgba(245, 158, 11, 0.4)';
-        btn.onclick = () => { window.location.href = 'https://g.page/r/CXMpkN_I_0jiEBM/review'; };
-      }
-    }
+    // 1. GUARDAR CONTACTO VCARD
+    function guardarContactoDirecto() {
+      const btn = document.getElementById('btn-save-vcard');
+      const icon = document.getElementById('save-icon');
+      const text = document.getElementById('save-text');
 
-    async function checkExistingSubscription() {
-      if (!('serviceWorker' in navigator) || !('PushManager' in window)) return;
-      try {
-        const reg = await navigator.serviceWorker.getRegistration('/sw.js');
-        if (reg) {
-          const sub = await reg.pushManager.getSubscription();
-          if (sub) {
-            marcarSuscritoEnUI();
-          }
-        }
-      } catch (e) {
-        console.warn('Check sub error:', e);
-      }
-    }
+      icon.className = 'bi bi-arrow-repeat spin';
+      text.textContent = 'GUARDANDO...';
 
-    async function ejecutarAccionUnica() {
-      const btn = document.getElementById('btn-master-action');
-      const btnText = document.getElementById('btn-master-text');
-      const btnSub = document.getElementById('btn-master-sub');
-      const btnIcon = document.getElementById('btn-action-icon');
-
-      btnText.textContent = 'PROCESANDO SUSCRIPCIÓN...';
-      btnSub.textContent = 'Guardando contacto en tu agenda...';
-      btnIcon.className = 'bi bi-arrow-repeat spin';
-      btn.disabled = true;
-
-      // 1. Descargar contacto vCard a la agenda
-      try {
-        const link = document.createElement('a');
-        link.href = './contacto.vcf';
-        link.download = 'Todo_Partes_Horizonte.vcf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } catch (e) {
-        console.warn('VCF download error:', e);
-      }
-
-      // 2. Activar Notificaciones Web Push
-      try {
-        if ('serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window) {
-          const permission = await Notification.requestPermission();
-          if (permission === 'granted') {
-            const reg = await navigator.serviceWorker.register('/sw.js', { scope: '/' });
-            await navigator.serviceWorker.ready;
-            let sub = await reg.pushManager.getSubscription();
-            if (!sub) {
-              sub = await reg.pushManager.subscribe({
-                userVisibleOnly: true,
-                applicationServerKey: urlB64ToUint8Array(VAPID_PUBLIC_KEY)
-              });
-            }
-            const endpointUrl = (window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1'))
-              ? '/api/marketing/subscribe'
-              : '/api/marketing-subscribe';
-
-            await fetch(endpointUrl, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ subscription: sub })
-            });
-          }
-        }
-      } catch (err) {
-        console.warn('Push error:', err);
-      }
-
-      // 3. Confirmación y apertura directa de Google Maps 5★
-      btnText.textContent = '¡SUSCRITO CON ÉXITO!';
-      btnSub.textContent = 'Gracias por apoyarnos en Google Maps...';
-      btnIcon.className = 'bi bi-check-lg text-success';
-      btn.style.background = 'linear-gradient(135deg, #059669 0%, #047857 100%)';
-      showToast('¡Te has suscrito con éxito! Contacto guardado');
+      const link = document.createElement('a');
+      link.href = './contacto.vcf';
+      link.download = 'Todo_Partes_Horizonte.vcf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
 
       setTimeout(() => {
-        window.location.href = 'https://g.page/r/CXMpkN_I_0jiEBM/review';
-      }, 1000);
+        icon.className = 'bi bi-check-circle-fill';
+        text.textContent = '¡CONTACTO EN TU AGENDA!';
+        btn.style.background = 'linear-gradient(135deg, #059669 0%, #047857 100%)';
+        showToast('Contacto descargado en tu agenda');
+      }, 700);
     }
 
+    // 2. GESTIÓN DEL FLUJO DE VENTANAS FLOTANTES (FUNNEL)
+    const modalStep1 = document.getElementById('modal-onboarding-step1');
+    const modalStep2 = document.getElementById('modal-onboarding-step2');
+
+    function abrirModalPaso1() {
+      modalStep2.classList.remove('active');
+      modalStep1.classList.add('active');
+    }
+
+    function abrirModalPaso2() {
+      modalStep1.classList.remove('active');
+      modalStep2.classList.add('active');
+    }
+
+    function cerrarTodosLosModales() {
+      modalStep1.classList.remove('active');
+      modalStep2.classList.remove('active');
+    }
+
+    async function responderPaso1(aceptado) {
+      if (aceptado) {
+        // Solicitar permiso de Web Push
+        try {
+          if ('serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window) {
+            const permission = await Notification.requestPermission();
+            if (permission === 'granted') {
+              const reg = await navigator.serviceWorker.register('/sw.js', { scope: '/' });
+              await navigator.serviceWorker.ready;
+              let sub = await reg.pushManager.getSubscription();
+              if (!sub) {
+                sub = await reg.pushManager.subscribe({
+                  userVisibleOnly: true,
+                  applicationServerKey: urlB64ToUint8Array(VAPID_PUBLIC_KEY)
+                });
+              }
+              const endpointUrl = (window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1'))
+                ? '/api/marketing/subscribe'
+                : '/api/marketing-subscribe';
+
+              await fetch(endpointUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ subscription: sub })
+              });
+              showToast('¡Avisos activados con éxito!');
+            }
+          }
+        } catch (e) {
+          console.warn('Push error:', e);
+        }
+      }
+      
+      // Pasar inmediatamente al Paso 2
+      abrirModalPaso2();
+    }
+
+    function responderPaso2(abrirResena) {
+      cerrarTodosLosModales();
+      sessionStorage.setItem('aph_funnel_completed', 'true');
+      
+      if (abrirResena) {
+        window.open('https://g.page/r/CXMpkN_I_0jiEBM/review', '_blank');
+        showToast('¡Gracias por apoyarnos con tu reseña!');
+      }
+    }
+
+    // Compartir tarjeta mediante Web Share API
+    function compartirTarjeta() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'Todo Partes Horizonte — Tarjeta Digital',
+          text: 'Contacto oficial y catálogo de Todo Partes Horizonte: especialistas en repuestos Isuzu y Chevrolet.',
+          url: window.location.href
+        }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(window.location.href);
+        showToast('Enlace de la tarjeta copiado al portapapeles');
+      }
+    }
+
+    // Auto-disparar el Onboarding al abrir por primera vez en la sesión
     document.addEventListener('DOMContentLoaded', () => {
-      checkExistingSubscription();
+      const yaVisto = sessionStorage.getItem('aph_funnel_completed');
+      if (!yaVisto) {
+        setTimeout(() => {
+          abrirModalPaso1();
+        }, 500);
+      }
     });
   </script>
 </body>
