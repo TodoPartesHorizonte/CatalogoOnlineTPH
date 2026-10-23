@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta name="theme-color" content="#0a0c10">
   <title>Todo Partes Horizonte — Tarjeta Digital de Presentación</title>
+
+  <!-- IAB BREAKOUT: Salto automático a Chrome si el usuario abre desde Instagram o Facebook en Android -->
+  <script>
+    (function() {
+      try {
+        var ua = navigator.userAgent || navigator.vendor || window.opera || '';
+        var isMeta = /Instagram|FBAN|FBAV|FB_IAB|Messenger/i.test(ua);
+        var isAndroid = /Android/i.test(ua);
+        if (isAndroid && isMeta && !sessionStorage.getItem('aph_iab_breakout')) {
+          sessionStorage.setItem('aph_iab_breakout', '1');
+          var cleanUrl = window.location.href.replace(/^https?:\/\//, '');
+          window.location.replace('intent://' + cleanUrl + '#Intent;scheme=https;package=com.android.chrome;end');
+        }
+      } catch (e) {}
+    })();
+  </script>
   
   <meta name="description" content="Tarjeta digital oficial de Todo Partes Horizonte. Guarda nuestro contacto directo en tu agenda, chatea por WhatsApp y consulta nuestro catálogo de repuestos.">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -53,8 +69,9 @@
       color: var(--text-primary);
       font-family: var(--font-body);
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
       padding: 12px 10px 32px;
       overflow-x: hidden;
     }
@@ -652,9 +669,70 @@
 
     @keyframes spin { 100% { transform: rotate(360deg); } }
     .spin { animation: spin 0.8s linear infinite; display: inline-block; }
+
+    /* BANNER INFORMATIVO PARA NAVEGADORES IN-APP (INSTAGRAM / FACEBOOK) */
+    .iab-banner {
+      display: none;
+      width: 100%;
+      max-width: 410px;
+      margin: 0 auto 12px;
+      padding: 11px 14px;
+      background: linear-gradient(135deg, rgba(255, 106, 0, 0.16) 0%, rgba(20, 22, 28, 0.96) 100%);
+      border: 1px solid rgba(255, 106, 0, 0.4);
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+    }
+    .iab-banner-flex {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .iab-banner-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: rgba(255, 106, 0, 0.22);
+      color: var(--brand-orange-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .iab-banner-body {
+      flex: 1;
+      font-size: 0.77rem;
+      color: var(--text-secondary);
+      line-height: 1.35;
+    }
+    .iab-banner-body strong {
+      color: var(--text-primary);
+      display: block;
+      font-size: 0.82rem;
+      margin-bottom: 2px;
+    }
+    .iab-banner-body em {
+      color: #ff9d4d;
+      font-style: normal;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
+
+  <!-- BANNER INDICADOR PARA NAVEGADORES IN-APP (INSTAGRAM / FACEBOOK) -->
+  <aside id="iab-banner" class="iab-banner" aria-label="Aviso para navegador">
+    <div class="iab-banner-flex">
+      <div class="iab-banner-icon">
+        <i class="bi bi-box-arrow-up-right"></i>
+      </div>
+      <div class="iab-banner-body">
+        <strong>Para activar ofertas en tu teléfono:</strong>
+        Toca los 3 puntos <em>(•••)</em> arriba y selecciona <em>"Abrir en Chrome / Safari"</em>.
+      </div>
+    </div>
+  </aside>
 
   <!-- ========================================================
        TARJETA DE PRESENTACIÓN DIGITAL OFICIAL (BLINQ/POPL STYLE)
@@ -909,9 +987,10 @@
 
     async function responderPaso1(aceptado) {
       if (aceptado) {
-        // Solicitar permiso de Web Push
-        try {
-          if ('serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window) {
+        const soportaPush = ('serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window);
+        if (soportaPush) {
+          // Solicitar permiso de Web Push nativo
+          try {
             const permission = await Notification.requestPermission();
             if (permission === 'granted') {
               const reg = await navigator.serviceWorker.register('/sw.js', { scope: '/' });
@@ -933,15 +1012,28 @@
                 body: JSON.stringify({ subscription: sub })
               });
               showToast('¡Avisos activados con éxito!');
+            } else {
+              // Si denegó o el navegador no concedió permiso, ofrecer WhatsApp
+              abrirWhatsAppOfertas();
             }
+          } catch (e) {
+            console.warn('Push error:', e);
+            abrirWhatsAppOfertas();
           }
-        } catch (e) {
-          console.warn('Push error:', e);
+        } else {
+          // Si el navegador no soporta Push (como Instagram/Facebook In-App o iOS estándar)
+          abrirWhatsAppOfertas();
         }
       }
       
       // Pasar inmediatamente al Paso 2
       abrirModalPaso2();
+    }
+
+    function abrirWhatsAppOfertas() {
+      const waUrl = 'https://wa.me/584242116375?text=' + encodeURIComponent('¡Hola! Deseo recibir ofertas y promociones de Todo Partes Horizonte por WhatsApp.');
+      window.open(waUrl, '_blank');
+      showToast('¡Te abrimos WhatsApp para recibir ofertas!');
     }
 
     function responderPaso2(abrirResena) {
@@ -968,8 +1060,15 @@
       }
     }
 
-    // Auto-disparar el Onboarding al abrir por primera vez en la sesión
+    // Auto-disparar el Onboarding y detectar In-App Browser al abrir por primera vez en la sesión
     document.addEventListener('DOMContentLoaded', () => {
+      // Mostrar banner de aviso si está dentro de Instagram, Facebook o WebView
+      const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+      if (/Instagram|FBAN|FBAV|FB_IAB|Messenger/i.test(ua)) {
+        const banner = document.getElementById('iab-banner');
+        if (banner) banner.style.display = 'block';
+      }
+
       const yaVisto = sessionStorage.getItem('aph_funnel_completed');
       if (!yaVisto) {
         setTimeout(() => {
