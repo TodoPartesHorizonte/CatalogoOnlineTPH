@@ -1443,7 +1443,7 @@
                 html += `
                     <div class="carousel-item" onclick="openLightbox('${p.id}')">
                         <div class="carousel-item-img-wrapper">
-                            <img src="${p.image_path}" alt="${p.description}" class="carousel-item-img" loading="lazy" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                            <img src="${p.image_path}" alt="${p.description}" class="carousel-item-img" width="240" height="300" loading="lazy" decoding="async" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                         </div>
                         <div class="carousel-item-info">
                             <span class="carousel-item-category">${p.category}</span>
@@ -1944,7 +1944,7 @@
                 }
 
                 let isLcp = reset && index < 4;
-                let imgPriority = isLcp ? 'fetchpriority="high"' : 'loading="lazy"';
+                let imgPriority = isLcp ? 'fetchpriority="high" loading="eager" decoding="async"' : 'loading="lazy" decoding="async"';
                 
                 const priceInfo = getProductPriceInfo(product);
 
@@ -2149,7 +2149,7 @@
                 const gradAngle = 120 + (index % 5) * 15;
 
                 foldersHtml += `
-                    <div class="category-card" onclick="selectFolderCategory('${cat.replace(/'/g, "\\'")}')" id="${folderId}" role="button" tabindex="0" aria-label="Ver categoría ${cat}">
+                    <div class="category-card" onclick="selectFolderCategory('${cat.replace(/'/g, "\\'")}')" id="${folderId}" role="button" tabindex="0">
                         <div class="category-card-bg-layer">
                             <svg style="position: absolute; right: -20px; bottom: -20px; width: 140px; height: 140px; color: rgba(255, 106, 0, 0.03); pointer-events: none;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="4"></circle>

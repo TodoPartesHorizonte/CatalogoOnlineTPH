@@ -1,1 +1,9 @@
 .git
+.gitignore
+.wrangler/
+__pycache__/
+*.py
+*.bak
+*.tmp
+old_render.txt
+products.source.js

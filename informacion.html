@@ -81,14 +81,20 @@
     }
     </script>
     
-    <!-- Google Fonts asíncrono para mejorar LCP -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700;1,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700;1,900&display=swap" rel="stylesheet"></noscript>
+    <!-- Fuente Outfit local WOFF2 autohospedada (cero peticiones externas bloqueantes) -->
+    <link rel="preload" href="./assets/fonts/outfit-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 100 900;
+            font-display: swap;
+            src: url('./assets/fonts/outfit-variable.woff2') format('woff2');
+        }
+    </style>
     
     <!-- Base de datos para enlaces -->
-    <script defer src="./products.js?v=15"></script>
+    <script defer src="./products.js?v=16"></script>
 
     <!-- Script de Analíticas (Google Analytics) -->
     <script>

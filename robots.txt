@@ -5,3 +5,4 @@ Disallow: /admin/
 Disallow: /*?*
 
 Sitemap: https://todoparteshorizonte.com/sitemap.xml
+# LLMs context: https://todoparteshorizonte.com/llms.txt

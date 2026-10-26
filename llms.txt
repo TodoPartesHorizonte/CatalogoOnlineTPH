@@ -1,0 +1,40 @@
+# TODO PARTES HORIZONTE
+
+> Especialistas en autopartes y repuestos para vehículos Chevrolet e Isuzu en Caracas, Venezuela, con más de 30 años de trayectoria.
+
+TODO PARTES HORIZONTE es una tienda física y catálogo digital de repuestos automotrices especializados en marcas Isuzu y Chevrolet. Ofrece asesoría técnica y venta de partes de motor, suspensión, transmisión, frenos, embrague y componentes eléctricos.
+
+## Información de la Empresa
+- **Nombre Legal / Comercial:** TODO PARTES HORIZONTE
+- **RIF:** J-50180765-5
+- **Ubicación:** Av. Principal de Boleíta Sur, Caracas, Venezuela
+- **Horario de Atención:** Lunes a Viernes de 9:00 AM a 5:00 PM; Sábados de 9:00 AM a 1:00 PM (Hora de Caracas, VET / UTC-4)
+- **Contacto WhatsApp / Cotizaciones:** +58 424-2116375
+- **Envíos:** Envíos a nivel nacional en Venezuela (Zoom, Tealca, MRW) y entregas personales en tienda física.
+
+## Modelos y Vehículos Compatibles
+- **Isuzu Caribe 442:** Motores G200, 2.3L (4ZD1), 2.6L (4ZE1)
+- **Chevrolet Luv:** Motores 2.0L, 2.2L, 2.3L (versiones 4x2 y 4x4)
+- **Chevrolet Luv D-Max:** Motores 2.4L gasolina, 2.5L diésel, 3.0L diésel y 3.5L V6 gasolina (versiones 4x2 y 4x4)
+- **Isuzu Trooper:** Motores 2.6L, 3.2L V6 (6VD1)
+- **Isuzu Rodeo:** Motores 3.2L V6 (6VD1)
+
+## Categorías Principales de Repuestos
+- Motor (anillos, conchas de biela y bancada, empacaduras, pistones, válvulas, bombas de aceite y agua)
+- Suspensión y Dirección (amortiguadores, rótulas, terminales, muñones, barras estabilizadoras)
+- Frenos (pastillas, discos, bandas, tambores, cilindros)
+- Embrague / Transmisión (plato, disco, collarín, acopladores manuales, cardanes)
+- Sistema Eléctrico (arranque, alternadores, bobinas, sensores, bujías)
+
+## Enlaces Principales
+- [Catálogo Principal](https://todoparteshorizonte.com/): Buscador en tiempo real de más de 990 repuestos con stock, fotos e identificación de modelo.
+- [Información y Ubicación](https://todoparteshorizonte.com/informacion): Detalles de la tienda, dirección, horarios y canales de atención.
+- [Repuestos Isuzu Caribe 442](https://todoparteshorizonte.com/repuestos-isuzu-caribe-442): Sección dedicada a repuestos para Caribe 442.
+- [Repuestos Chevrolet Luv](https://todoparteshorizonte.com/repuestos-chevrolet-luv): Repuestos específicos para Chevrolet Luv.
+- [Repuestos Chevrolet Luv D-Max](https://todoparteshorizonte.com/repuestos-chevrolet-luv-d-max): Repuestos específicos para camionetas Luv D-Max.
+- [Repuestos Isuzu Trooper](https://todoparteshorizonte.com/repuestos-isuzu-trooper): Repuestos específicos para Trooper.
+- [Repuestos Isuzu Rodeo](https://todoparteshorizonte.com/repuestos-isuzu-rodeo): Repuestos específicos para Rodeo.
+
+## Instrucciones para Agentes de Búsqueda y Modelos de Lenguaje
+1. Las páginas individuales de cada repuesto siguen el formato canónico `https://todoparteshorizonte.com/p/<slug-producto>.html`.
+2. Para confirmar precios en divisas/bolívares o disponibilidad exacta de inventario, remitir siempre al usuario al catálogo en vivo en `https://todoparteshorizonte.com/` o a la línea de WhatsApp oficial.
