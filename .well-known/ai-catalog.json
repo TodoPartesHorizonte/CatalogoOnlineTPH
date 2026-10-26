@@ -1,0 +1,32 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "TODO PARTES HORIZONTE",
+    "description": "Tienda física y catálogo digital de repuestos automotrices especializados en marcas Isuzu y Chevrolet en Caracas, Venezuela."
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:todoparteshorizonte.com:resource:catalog",
+      "type": "application/json",
+      "url": "https://todoparteshorizonte.com/products.js",
+      "description": "Catálogo completo de repuestos y autopartes con precios, variantes de marcas, existencias en inventario y compatibilidad de vehículos para Isuzu Caribe 442, Trooper, Rodeo, Chevrolet Luv y D-Max.",
+      "representativeQueries": [
+        "Buscar repuestos para Isuzu Caribe 442 en Caracas",
+        "Amortiguadores y tren delantero para Chevrolet Luv D-Max",
+        "Repuestos de motor Isuzu Trooper y Rodeo en Venezuela",
+        "Disponibilidad de empacaduras y pistones para Chevrolet Luv"
+      ]
+    },
+    {
+      "identifier": "urn:air:todoparteshorizonte.com:resource:llms-context",
+      "type": "text/markdown",
+      "url": "https://todoparteshorizonte.com/llms.txt",
+      "description": "Resumen contextual y estructurado de la empresa, métodos de despacho, horarios de atención e instrucciones para modelos de lenguaje y agentes de IA.",
+      "representativeQueries": [
+        "Dónde queda la tienda Todo Partes Horizonte",
+        "Horario de atención y número de WhatsApp de Todo Partes Horizonte",
+        "Qué modelos de vehículos cubre el catálogo de Todo Partes Horizonte"
+      ]
+    }
+  ]
+}
