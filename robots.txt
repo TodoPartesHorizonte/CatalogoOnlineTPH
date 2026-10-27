@@ -5,5 +5,5 @@ Disallow: /admin/
 Disallow: /*?*
 
 Sitemap: https://todoparteshorizonte.com/sitemap.xml
-Agentmap: https://todoparteshorizonte.com/.well-known/ai-catalog.json
+# Agentmap: https://todoparteshorizonte.com/.well-known/ai-catalog.json
 # LLMs context: https://todoparteshorizonte.com/llms.txt
