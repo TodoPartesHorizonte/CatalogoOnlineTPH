@@ -1714,13 +1714,34 @@
         .pp-amount.combo { color: var(--accent-orange); font-size: 34px; }
         .pp-stock { display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 600; color: #25d366; }
         .pp-stock svg { width: 15px; height: 15px; fill: currentColor; flex-shrink: 0; }
-        .pp-specs { display: flex; flex-direction: column; gap: 9px; }
+        .pp-specs { display: flex; flex-direction: column; gap: 10px; }
+        .pp-step-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+        .pp-step-badge {
+            display: inline-flex; align-items: center; padding: 2px 7px; border-radius: 6px;
+            font-size: 10px; font-weight: 800; letter-spacing: 0.4px; text-transform: uppercase; margin-right: 6px;
+            background: rgba(255,106,0,0.18); color: var(--accent-orange); border: 1px solid rgba(255,106,0,0.45);
+        }
+        .pp-step-badge.done { background: rgba(37,211,102,0.15); color: #25d366; border-color: rgba(37,211,102,0.35); }
         .pp-pills { display: flex; flex-wrap: wrap; gap: 8px; }
         .pp-pill {
             min-width: 54px; height: 38px; padding: 0 14px; display: inline-flex; align-items: center; justify-content: center;
             border-radius: 9px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.09);
-            font-weight: 800; font-size: 13.5px; color: #e5e7eb;
+            font-weight: 800; font-size: 13.5px; color: #e5e7eb; cursor: pointer; transition: var(--transition);
         }
+        .pp-pill.active { background: var(--accent-orange); border-color: var(--accent-orange); color: #fff; box-shadow: 0 4px 14px rgba(255,106,0,0.35); }
+        .pp-pill.out { opacity: 0.45; cursor: not-allowed; border-style: dashed; color: var(--text-muted); }
+        .pp-pill.out small { font-size: 10px; color: #ff4d4f; margin-left: 4px; }
+        .pp-brands { display: flex; flex-direction: column; gap: 8px; }
+        .pp-brand-card {
+            display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 14px;
+            border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.09);
+            cursor: pointer; transition: var(--transition);
+        }
+        .pp-brand-card.selected { border-color: var(--accent-orange); background: rgba(255,106,0,0.08); }
+        .pp-brand-name { font-weight: 800; font-size: 14px; color: #fff; }
+        .pp-brand-stock { font-size: 11.5px; color: #25d366; font-weight: 600; }
+        .pp-brand-price { font-weight: 900; font-size: 16px; color: #fff; }
+        .pp-btn.pending { opacity: 0.72; filter: saturate(0.35); border-style: dashed; }
         .pp-actions { display: flex; gap: 10px; margin-top: 4px; }
         .pp-btn {
             height: 50px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; gap: 9px;
@@ -1864,7 +1885,7 @@
                 </div>
                 <div class="pp-oem"><span class="pp-label">OEM</span><div class="pp-chips"><button type="button" class="pp-chip" data-oem="8-94312-8140" title="Clic para copiar código OEM">8-94312-8140<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button><button type="button" class="pp-chip" data-oem="KS0005" title="Clic para copiar código OEM">KS0005<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button><button type="button" class="pp-chip" data-oem="SD1009" title="Clic para copiar código OEM">SD1009<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button></div></div>
                 <div class="pp-price"><div class="pp-price-row"><span class="pp-from">Desde</span><span class="pp-cur">Bs.</span><span class="pp-amount">41.400,00</span></div><div class="pp-stock"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Disponible en tienda física (Boleíta Sur)</span></div></div>
-                
+                <div id="ppVariantsMount" data-variants="[{&quot;brand&quot;: &quot;PERFECT&quot;, &quot;medida&quot;: &quot;&quot;, &quot;lado&quot;: &quot;&quot;, &quot;tipo&quot;: &quot;&quot;, &quot;stock&quot;: 2, &quot;price_bs&quot;: 41400.0, &quot;price_fmt&quot;: &quot;Bs. 41.400,00&quot;}, {&quot;brand&quot;: &quot;TOKIKO&quot;, &quot;medida&quot;: &quot;&quot;, &quot;lado&quot;: &quot;&quot;, &quot;tipo&quot;: &quot;&quot;, &quot;stock&quot;: 3, &quot;price_bs&quot;: 87975.0, &quot;price_fmt&quot;: &quot;Bs. 87.975,00&quot;}]"></div>
                 <div class="pp-actions">
                     <a href="https://wa.me/584242116375?text=%C2%A1Hola%21%20Me%20interesa%20consultar%20por%20el%20repuesto%3A%20%2AAmortiguador%20Direccion%20Caribe%202.6%2A.%20Precio%3A%20Bs.%2041.400%2C00.%20%C2%BFTienen%20disponibilidad%20inmediata%3F%0AEnlace%3A%20https%3A//todoparteshorizonte.com/p/amortiguador-direccion-caribe-2-6" class="pp-btn pp-btn-wa" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
@@ -1919,21 +1940,6 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="./amortiguador-de-direccion-caribe-g-200.html" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/amortiguador-de-direccion-caribe-g-200.webp" alt="Repuesto AMORTIGUADOR DE DIRECCION CARIBE G-200 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Amortiguador Direccion</span></span>
-                        <div class="related-title" title="AMORTIGUADOR DE DIRECCION CARIBE G-200">AMORTIGUADOR DE DIRECCION CARIBE G-200</div>
-                        <div class="related-oem">OEM: 8-94241-4692</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
-
                 <a href="./amortiguador-de-direccion-caribe-2-3.html" class="related-card">
                     <div class="related-img-wrapper">
                         <img src="../assets/amortiguador-de-direccion-caribe-2-3.webp" alt="Repuesto AMORTIGUADOR DE DIRECCION CARIBE 2.3 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
@@ -1949,14 +1955,14 @@
                     </div>
                 </a>
 
-                <a href="./amortiguador-direccion-trooper.html" class="related-card">
+                <a href="./amortiguador-de-direccion-caribe-g-200.html" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/amortiguador-direccion-trooper.webp" alt="Repuesto AMORTIGUADOR DIRECCION TROOPER original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/amortiguador-de-direccion-caribe-g-200.webp" alt="Repuesto AMORTIGUADOR DE DIRECCION CARIBE G-200 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Amortiguador Direccion</span></span>
-                        <div class="related-title" title="AMORTIGUADOR DIRECCION TROOPER">AMORTIGUADOR DIRECCION TROOPER</div>
-                        <div class="related-oem">OEM: 8-94312-8140</div>
+                        <div class="related-title" title="AMORTIGUADOR DE DIRECCION CARIBE G-200">AMORTIGUADOR DE DIRECCION CARIBE G-200</div>
+                        <div class="related-oem">OEM: 8-94241-4692</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -1971,6 +1977,21 @@
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Amortiguador Direccion</span></span>
                         <div class="related-title" title="AMORTIGUADOR DIRECCION LUV 2.3">AMORTIGUADOR DIRECCION LUV 2.3</div>
+                        <div class="related-oem">OEM: 8-94312-8140</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./amortiguador-direccion-trooper.html" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/amortiguador-direccion-trooper.webp" alt="Repuesto AMORTIGUADOR DIRECCION TROOPER original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Amortiguador Direccion</span></span>
+                        <div class="related-title" title="AMORTIGUADOR DIRECCION TROOPER">AMORTIGUADOR DIRECCION TROOPER</div>
                         <div class="related-oem">OEM: 8-94312-8140</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -2171,6 +2192,99 @@
             });
         });
     }
+    var mount = document.getElementById('ppVariantsMount');
+    if (!mount) return;
+    var raw = mount.getAttribute('data-variants');
+    if (!raw) return;
+    var variants = [];
+    try { variants = JSON.parse(raw); } catch (e) { return; }
+    if (!variants || variants.length <= 1) return;
+    var hasStock = function (v) { return Number(v.price_bs || 0) > 0 && Number(v.stock || 0) > 0; };
+    var availAll = variants.filter(hasStock);
+    if (availAll.length === 0) return;
+    var uniq = function (arr) { return arr.filter(function (v, i, a) { return v && a.indexOf(v) === i; }); };
+    var tipos = uniq(variants.map(function (v) { return v.tipo || ''; }));
+    var lados = uniq(variants.map(function (v) { return v.lado || ''; }));
+    var medidas = uniq(variants.map(function (v) { return v.medida || ''; }));
+    var needTipo = tipos.length > 1, needLado = lados.length > 1, needMedida = medidas.length > 1;
+    var guided = needTipo || needLado || needMedida || availAll.length > 1;
+    if (!guided) return;
+    var activeTipo = tipos.length === 1 ? tipos[0] : null;
+    var activeLado = lados.length === 1 ? lados[0] : null;
+    var activeMedida = medidas.length === 1 ? medidas[0] : null;
+    var selected = null;
+    var priceBox = document.querySelector('.pp-price');
+    var waBtn = document.querySelector('.pp-btn-wa');
+    var addBtn = document.getElementById('btnAddProduct');
+    var origWaHref = waBtn ? waBtn.getAttribute('href') : '';
+    function render() {
+        var tReady = !needTipo || !!activeTipo;
+        var lReady = tReady && (!needLado || !!activeLado);
+        var mReady = lReady && (!needMedida || !!activeMedida);
+        var pool = mReady ? availAll.filter(function (v) {
+            return (!needTipo || v.tipo === activeTipo) && (!needLado || v.lado === activeLado) && (!needMedida || v.medida === activeMedida);
+        }) : [];
+        if (mReady && (needTipo || needLado || needMedida) && pool.length === 1) { selected = pool[0]; }
+        else if (!mReady || (selected && pool.indexOf(selected) === -1)) { selected = null; }
+        var html = '', step = 1;
+        if (needTipo) {
+            html += '<div class="pp-specs"><div class="pp-step-head"><span class="pp-label"><span class="pp-step-badge ' + (activeTipo ? 'done' : '') + '">Paso ' + (step++) + '</span>Versión / Ranura</span></div><div class="pp-pills">' +
+                tipos.map(function (t) {
+                    var ok = availAll.some(function (v) { return v.tipo === t; });
+                    return '<button type="button" class="pp-pill ' + (activeTipo === t ? 'active' : '') + ' ' + (!ok ? 'out' : '') + '" data-t="' + t + '" ' + (!ok ? 'disabled' : '') + '>' + t + (!ok ? '<small>(Agotado)</small>' : '') + '</button>';
+                }).join('') + '</div></div>';
+        }
+        if (needLado && tReady) {
+            html += '<div class="pp-specs"><div class="pp-step-head"><span class="pp-label"><span class="pp-step-badge ' + (activeLado ? 'done' : '') + '">Paso ' + (step++) + '</span>Lado del Vehículo</span></div><div class="pp-pills">' +
+                lados.map(function (l) {
+                    var ok = availAll.some(function (v) { return (!needTipo || v.tipo === activeTipo) && v.lado === l; });
+                    var lbl = l === 'Derecho' ? 'Lado Derecho (RH)' : (l === 'Izquierdo' ? 'Lado Izquierdo (LH)' : l);
+                    return '<button type="button" class="pp-pill ' + (activeLado === l ? 'active' : '') + ' ' + (!ok ? 'out' : '') + '" data-l="' + l + '" ' + (!ok ? 'disabled' : '') + '>' + lbl + (!ok ? '<small>(Agotado)</small>' : '') + '</button>';
+                }).join('') + '</div></div>';
+        }
+        if (needMedida && lReady) {
+            html += '<div class="pp-specs"><div class="pp-step-head"><span class="pp-label"><span class="pp-step-badge ' + (activeMedida ? 'done' : '') + '">Paso ' + (step++) + '</span>Medida del Motor</span></div><div class="pp-pills">' +
+                medidas.map(function (m) {
+                    var ok = availAll.some(function (v) { return (!needTipo || v.tipo === activeTipo) && (!needLado || v.lado === activeLado) && v.medida === m; });
+                    return '<button type="button" class="pp-pill ' + (activeMedida === m ? 'active' : '') + ' ' + (!ok ? 'out' : '') + '" data-m="' + m + '" ' + (!ok ? 'disabled' : '') + '>' + m + (!ok ? '<small>(Agotado)</small>' : '') + '</button>';
+                }).join('') + '</div></div>';
+        }
+        if (mReady && pool.length > 0) {
+            html += '<div class="pp-specs"><div class="pp-step-head"><span class="pp-label"><span class="pp-step-badge ' + (selected ? 'done' : '') + '">Paso ' + step + '</span>Marcas Disponibles</span></div><div class="pp-brands">' +
+                pool.map(function (v, idx) {
+                    var isSel = selected === v;
+                    return '<div class="pp-brand-card ' + (isSel ? 'selected' : '') + '" data-idx="' + idx + '"><div><div class="pp-brand-name">' + (v.brand || 'Estándar') + '</div><div class="pp-brand-stock">Stock verificado (' + v.stock + ' disp.)</div></div><div class="pp-brand-price">' + v.price_fmt + '</div></div>';
+                }).join('') + '</div></div>';
+        }
+        mount.innerHTML = html;
+        mount.querySelectorAll('[data-t]').forEach(function (b) { b.onclick = function () { activeTipo = b.getAttribute('data-t'); activeLado = lados.length === 1 ? lados[0] : null; activeMedida = medidas.length === 1 ? medidas[0] : null; selected = null; render(); }; });
+        mount.querySelectorAll('[data-l]').forEach(function (b) { b.onclick = function () { activeLado = b.getAttribute('data-l'); activeMedida = medidas.length === 1 ? medidas[0] : null; selected = null; render(); }; });
+        mount.querySelectorAll('[data-m]').forEach(function (b) { b.onclick = function () { activeMedida = b.getAttribute('data-m'); selected = null; render(); }; });
+        mount.querySelectorAll('[data-idx]').forEach(function (c) { c.onclick = function () { selected = pool[parseInt(c.getAttribute('data-idx'), 10)]; render(); }; });
+        if (priceBox) {
+            if (!selected) {
+                var pLbl = !tReady ? 'la versión' : (!lReady ? 'el lado' : (!mReady ? 'la medida' : 'la marca'));
+                priceBox.innerHTML = '<div class="pp-price-row"><span class="pp-amount combo" style="font-size:22px;">Selecciona tus opciones ↓</span></div><div class="pp-stock" style="color:#ff914d;"><span>Selecciona ' + pLbl + ' abajo para verificar existencia y ver tu precio</span></div>';
+                if (waBtn) { waBtn.classList.add('pending'); waBtn.querySelector('span').textContent = 'Selecciona ' + pLbl + ' arriba ↑'; }
+                if (addBtn) { addBtn.classList.add('pending'); }
+            } else {
+                var numTxt = (selected.price_fmt || '').replace(/^Bs\.\s*/, '');
+                priceBox.innerHTML = '<div class="pp-price-row"><span class="pp-cur">Bs.</span><span class="pp-amount">' + numTxt + '</span></div><div class="pp-stock"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Disponible en tienda física (Boleíta Sur)</span></div>';
+                if (waBtn) {
+                    waBtn.classList.remove('pending');
+                    waBtn.querySelector('span').textContent = 'Consultar por WhatsApp';
+                    waBtn.setAttribute('href', origWaHref);
+                }
+                if (addBtn) { addBtn.classList.remove('pending'); }
+            }
+        }
+    }
+    if (waBtn) {
+        waBtn.addEventListener('click', function (e) {
+            if (!selected) { e.preventDefault(); mount.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+        });
+    }
+    render();
 })();
 </script>
 </body>
