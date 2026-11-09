@@ -331,15 +331,41 @@
             return '';
         }
 
+        function hasVariantStock(v) {
+            if (!v) return false;
+            const p = Number(v.precio_usd || v.precio_venta_usd || 0);
+            const s = (v.stock !== undefined && v.stock !== null) ? Number(v.stock) : 0;
+            return p > 0 && s > 0;
+        }
+
+        function productNeedsGuidedSelection(product) {
+            if (!product || isPromoKitOrCombo(product)) return false;
+            const vars = product.variants || [];
+            if (vars.length <= 1) return false;
+            const avail = vars.filter(hasVariantStock);
+            if (avail.length === 0) return false;
+            const hasOversize = vars.some(other => /[-/ ]0[1-9][0-9]$/i.test((other.codigo_oem || '').trim()));
+            const resolveMed = (v) => getVariantMedida(v) || (hasOversize ? 'STD' : '');
+            const medidas = new Set(vars.map(resolveMed).filter(Boolean));
+            const lados = new Set(vars.map(getVariantLado).filter(Boolean));
+            const tipos = new Set(vars.map(getVariantTipo).filter(Boolean));
+            return tipos.size > 1 || lados.size > 1 || medidas.size > 1 || avail.length > 1;
+        }
+
         // Agregar producto al carrito (soporta variantes de marca, medida, lado y tipo con precio en Bs)
         function addToCart(productId, selectedVariant) {
             const product = productsData.find(p => p.id === productId);
             if (!product) return;
 
+            if (!selectedVariant && productNeedsGuidedSelection(product)) {
+                openLightbox(productId);
+                return;
+            }
+
             incrementInteractionCount();
             const tc = getTC();
 
-            const variant = selectedVariant || (product.variants && product.variants.length > 0 ? (product.variants.find(v => v.stock === undefined || v.stock > 0) || product.variants[0]) : null);
+            const variant = selectedVariant || (product.variants && product.variants.length > 0 ? (product.variants.find(hasVariantStock) || product.variants[0]) : null);
             const brand = variant ? (variant.marca || variant.brand || null) : null;
             const medida = variant ? getVariantMedida(variant) : null;
             const lado = variant ? getVariantLado(variant) : null;
@@ -853,47 +879,95 @@
             // Tipos / Versiones distintas si existen (Fino/Fino, Grueso/Grueso)
             const distinctTipos = [...new Set(variants.map(v => getVariantTipo(v)).filter(Boolean))];
 
-            // Inicializar opciones activas con stock
-            let activeTipo = null;
-            if (distinctTipos.length > 0) {
-                const tipoWithStock = distinctTipos.find(t => {
-                    return variants.some(v => getVariantTipo(v) === t && Number(v.precio_usd || v.precio_venta_usd || 0) > 0 && (v.stock === undefined || Number(v.stock) > 0));
-                });
-                activeTipo = tipoWithStock || distinctTipos[0];
+            const allAvailableVariants = variants.filter(hasVariantStock);
+            const needTipo = distinctTipos.length > 1;
+            const needLado = distinctLados.length > 1;
+            const needMedida = distinctMedidas.length > 1;
+            const requiresGuidedSelection = !isPromoKitOrCombo(product) && allAvailableVariants.length > 0 && (
+                needTipo || needLado || needMedida || allAvailableVariants.length > 1
+            );
+
+            // Inicializar opciones: sin preselección si requiere selección guiada fase por fase
+            let activeTipo = distinctTipos.length === 1 ? distinctTipos[0] : (requiresGuidedSelection ? null : (distinctTipos[0] || null));
+            let activeLado = distinctLados.length === 1 ? distinctLados[0] : (requiresGuidedSelection ? null : (distinctLados[0] || null));
+            let activeMedida = distinctMedidas.length === 1 ? distinctMedidas[0] : (requiresGuidedSelection ? null : (distinctMedidas[0] || null));
+            selectedVariant = requiresGuidedSelection ? null : (allAvailableVariants[0] || null);
+
+            function hasTipoStock(t) {
+                return variants.some(v => getVariantTipo(v) === t && hasVariantStock(v));
             }
 
-            let activeLado = null;
-            if (distinctLados.length > 0) {
-                const ladoWithStock = distinctLados.find(l => {
-                    return variants.some(v => getVariantLado(v) === l && Number(v.precio_usd || v.precio_venta_usd || 0) > 0 && (v.stock === undefined || Number(v.stock) > 0));
-                });
-                activeLado = ladoWithStock || distinctLados[0];
+            function hasLadoStock(l) {
+                return variants.some(v => (!needTipo || !activeTipo || getVariantTipo(v) === activeTipo) && getVariantLado(v) === l && hasVariantStock(v));
             }
 
-            let activeMedida = null;
-            if (distinctMedidas.length > 0) {
-                const measureWithStock = distinctMedidas.find(m => {
-                    return variants.some(v => getVariantMedida(v) === m && Number(v.precio_usd || v.precio_venta_usd || 0) > 0 && (v.stock === undefined || Number(v.stock) > 0));
-                });
-                activeMedida = measureWithStock || distinctMedidas[0];
+            function hasMedidaStock(m) {
+                return variants.some(v =>
+                    (!needTipo || !activeTipo || getVariantTipo(v) === activeTipo) &&
+                    (!needLado || !activeLado || getVariantLado(v) === activeLado) &&
+                    getVariantMedida(v) === m &&
+                    hasVariantStock(v)
+                );
+            }
+
+            function getMatchingVariants() {
+                let pool = variants;
+                if (needTipo) {
+                    if (!activeTipo) return [];
+                    pool = pool.filter(v => getVariantTipo(v) === activeTipo);
+                }
+                if (needLado) {
+                    if (!activeLado) return [];
+                    pool = pool.filter(v => getVariantLado(v) === activeLado);
+                }
+                if (needMedida) {
+                    if (!activeMedida) return [];
+                    pool = pool.filter(v => getVariantMedida(v) === activeMedida);
+                } else if (activeMedida && distinctMedidas.length === 1) {
+                    pool = pool.filter(v => getVariantMedida(v) === activeMedida);
+                }
+                return pool;
             }
 
             function getFilteredAvailableVariants() {
-                let pool = variants;
-                if (activeTipo && distinctTipos.length > 1) {
-                    pool = pool.filter(v => getVariantTipo(v) === activeTipo);
+                return getMatchingVariants().filter(hasVariantStock);
+            }
+
+            function getPendingStepInfo() {
+                let stepNum = 1;
+                if (needTipo) {
+                    if (!activeTipo) {
+                        return { stepNum, label: 'la versión / ranura', shortBtn: 'Selecciona Versión arriba ↑', selector: '[data-step-section="tipo"]' };
+                    }
+                    stepNum++;
                 }
-                if (activeLado && distinctLados.length > 1) {
-                    pool = pool.filter(v => getVariantLado(v) === activeLado);
+                if (needLado) {
+                    if (!activeLado) {
+                        return { stepNum, label: 'el lado del vehículo', shortBtn: 'Selecciona Lado arriba ↑', selector: '[data-step-section="lado"]' };
+                    }
+                    stepNum++;
                 }
-                if (activeMedida && distinctMedidas.length > 0) {
-                    pool = pool.filter(v => getVariantMedida(v) === activeMedida);
+                if (needMedida) {
+                    if (!activeMedida) {
+                        return { stepNum, label: 'la medida del motor', shortBtn: 'Selecciona Medida arriba ↑', selector: '[data-step-section="medida"]' };
+                    }
+                    stepNum++;
                 }
-                return pool.filter(v => {
-                    const p = Number(v.precio_usd || v.precio_venta_usd || 0);
-                    const s = (v.stock !== undefined && v.stock !== null) ? Number(v.stock) : 0;
-                    return p > 0 && s > 0;
-                });
+                if (!selectedVariant) {
+                    return { stepNum, label: 'la marca', shortBtn: 'Selecciona Marca arriba ↑', selector: '[data-step-section="marca"]' };
+                }
+                return null;
+            }
+
+            function highlightPendingStep() {
+                const pending = getPendingStepInfo();
+                if (!pending || !lightboxVariantsContainer) return;
+                const block = lightboxVariantsContainer.querySelector(pending.selector) || lightboxVariantsContainer;
+                block.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                block.classList.remove('pulse-attention');
+                void block.offsetWidth;
+                block.classList.add('pulse-attention');
+                setTimeout(() => block.classList.remove('pulse-attention'), 950);
             }
 
             function renderLightboxVariants() {
@@ -914,48 +988,46 @@
                     return;
                 }
 
-                const availablePool = getFilteredAvailableVariants();
+                const tipoReady = !needTipo || Boolean(activeTipo);
+                const ladoReady = tipoReady && (!needLado || Boolean(activeLado));
+                const medidaReady = ladoReady && (!needMedida || Boolean(activeMedida));
+                const availablePool = medidaReady ? getFilteredAvailableVariants() : [];
 
-                // Seleccionar primera variante disponible bajo los filtros activos
-                if (!selectedVariant || !availablePool.some(v => (v.id && selectedVariant.id && v.id === selectedVariant.id) || v === selectedVariant)) {
-                    selectedVariant = availablePool.length > 0 ? availablePool[0] : null;
+                // Si todas las fases previas están listas:
+                // - Producto de opción única: autoseleccionar la única variante.
+                // - Producto guiado donde el usuario ya eligió fase previa (tipo/lado/medida) y sólo existe 1 marca disponible: autoseleccionarla.
+                // - Si hay 2+ marcas disponibles: mantener sin preselección hasta que el cliente toque su marca preferida.
+                if (medidaReady) {
+                    if (!requiresGuidedSelection) {
+                        selectedVariant = availablePool[0] || null;
+                    } else if ((needTipo || needLado || needMedida) && availablePool.length === 1) {
+                        selectedVariant = availablePool[0];
+                    } else if (selectedVariant && !availablePool.some(v => (v.id_variante && selectedVariant.id_variante && v.id_variante === selectedVariant.id_variante) || v === selectedVariant)) {
+                        selectedVariant = null;
+                    }
+                } else {
+                    selectedVariant = null;
                 }
 
                 let containerHtml = '';
+                let stepIdx = 1;
 
                 // 1. Selector de Tipo / Ranura (ej. Fino/Fino vs Grueso/Grueso en Anillos)
-                if (distinctTipos.length > 1) {
+                if (needTipo) {
+                    const stepBadge = requiresGuidedSelection ? `<span class="step-badge ${activeTipo ? 'done' : 'current'}">Paso ${stepIdx}</span>` : '';
+                    stepIdx++;
                     containerHtml += `
-                        <div class="variant-section-block">
+                        <div class="variant-section-block" data-step-section="tipo">
                             <div class="section-header-title">
-                                <span>Versión / Ranura:</span>
-                                <span class="count-badge">${distinctTipos.length} opciones</span>
+                                <span>${stepBadge}Versión / Ranura:</span>
+                                <span class="count-badge">${ activeTipo ? activeTipo : 'Selecciona una opción' }</span>
                             </div>
                             <div class="measures-grid-pills">
-                                ${distinctTipos.map(t => `
-                                    <button type="button" class="pill-measure pill-tipo ${t === activeTipo ? 'active' : ''}" data-tipo="${t}">
-                                        ${t}
-                                    </button>
-                                `).join('')}
-                            </div>
-                        </div>
-                    `;
-                }
-
-                // 2. Selector de Lado (Derecho / Izquierdo)
-                if (distinctLados.length > 1) {
-                    containerHtml += `
-                        <div class="variant-section-block" style="${distinctTipos.length > 1 ? 'margin-top: 8px;' : ''}">
-                            <div class="section-header-title">
-                                <span>Lado del Vehículo:</span>
-                                <span class="count-badge">${distinctLados.length} lados</span>
-                            </div>
-                            <div class="measures-grid-pills">
-                                ${distinctLados.map(l => {
-                                    const label = l === 'Derecho' ? 'Lado Derecho (RH)' : (l === 'Izquierdo' ? 'Lado Izquierdo (LH)' : l);
+                                ${distinctTipos.map(t => {
+                                    const inStock = hasTipoStock(t);
                                     return `
-                                        <button type="button" class="pill-measure pill-lado ${l === activeLado ? 'active' : ''}" data-lado="${l}">
-                                            ${label}
+                                        <button type="button" class="pill-measure pill-tipo ${t === activeTipo ? 'active' : ''} ${!inStock ? 'pill-out' : ''}" data-tipo="${t}" ${!inStock ? 'disabled' : ''}>
+                                            ${t}${!inStock ? ' <small>(Agotado)</small>' : ''}
                                         </button>
                                     `;
                                 }).join('')}
@@ -964,36 +1036,67 @@
                     `;
                 }
 
-                // 3. Selector de Medida del Motor (STD, 0.10, etc.)
-                if (distinctMedidas.length > 1) {
+                // 2. Selector de Lado (Derecho / Izquierdo) - se desbloquea tras elegir Tipo si aplica
+                if (needLado && tipoReady) {
+                    const stepBadge = requiresGuidedSelection ? `<span class="step-badge ${activeLado ? 'done' : 'current'}">Paso ${stepIdx}</span>` : '';
+                    stepIdx++;
                     containerHtml += `
-                        <div class="variant-section-block" style="${(distinctTipos.length > 1 || distinctLados.length > 1) ? 'margin-top: 8px;' : ''}">
+                        <div class="variant-section-block" data-step-section="lado" style="${needTipo ? 'margin-top: 8px;' : ''}">
                             <div class="section-header-title">
-                                <span>Medida del Motor:</span>
-                                <span class="count-badge">${distinctMedidas.length} opciones</span>
+                                <span>${stepBadge}Lado del Vehículo:</span>
+                                <span class="count-badge">${ activeLado ? (activeLado === 'Derecho' ? 'Derecho (RH)' : 'Izquierdo (LH)') : 'Selecciona el lado' }</span>
                             </div>
                             <div class="measures-grid-pills">
-                                ${distinctMedidas.map(m => `
-                                    <button type="button" class="pill-measure pill-medida ${m === activeMedida ? 'active' : ''}" data-medida="${m}">
-                                        ${m}
-                                    </button>
-                                `).join('')}
+                                ${distinctLados.map(l => {
+                                    const inStock = hasLadoStock(l);
+                                    const label = l === 'Derecho' ? 'Lado Derecho (RH)' : (l === 'Izquierdo' ? 'Lado Izquierdo (LH)' : l);
+                                    return `
+                                        <button type="button" class="pill-measure pill-lado ${l === activeLado ? 'active' : ''} ${!inStock ? 'pill-out' : ''}" data-lado="${l}" ${!inStock ? 'disabled' : ''}>
+                                            ${label}${!inStock ? ' <small>(Agotado)</small>' : ''}
+                                        </button>
+                                    `;
+                                }).join('')}
                             </div>
                         </div>
                     `;
                 }
 
-                // 4. Lista de Marcas Disponibles
-                if (availablePool.length > 1) {
+                // 3. Selector de Medida del Motor (STD, 0.10, etc.) - se desbloquea tras elegir fases previas
+                if (needMedida && ladoReady) {
+                    const stepBadge = requiresGuidedSelection ? `<span class="step-badge ${activeMedida ? 'done' : 'current'}">Paso ${stepIdx}</span>` : '';
+                    stepIdx++;
                     containerHtml += `
-                        <div class="variant-section-block" style="margin-top: 8px;">
+                        <div class="variant-section-block" data-step-section="medida" style="${(needTipo || needLado) ? 'margin-top: 8px;' : ''}">
                             <div class="section-header-title">
-                                <span>Marcas Disponibles:</span>
-                                <span style="font-size: 10px; color: var(--text-muted);">Selecciona tu preferencia</span>
+                                <span>${stepBadge}Medida del Motor:</span>
+                                <span class="count-badge">${ activeMedida ? activeMedida : 'Selecciona la medida' }</span>
+                            </div>
+                            <div class="measures-grid-pills">
+                                ${distinctMedidas.map(m => {
+                                    const inStock = hasMedidaStock(m);
+                                    return `
+                                        <button type="button" class="pill-measure pill-medida ${m === activeMedida ? 'active' : ''} ${!inStock ? 'pill-out' : ''}" data-medida="${m}" ${!inStock ? 'disabled' : ''}>
+                                            ${m}${!inStock ? ' <small>(Agotado)</small>' : ''}
+                                        </button>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 4. Lista de Marcas Disponibles - se desbloquea cuando las fases anteriores están completas
+                if (medidaReady && availablePool.length > 1) {
+                    const stepBadge = requiresGuidedSelection ? `<span class="step-badge ${selectedVariant ? 'done' : 'current'}">Paso ${stepIdx}</span>` : '';
+                    containerHtml += `
+                        <div class="variant-section-block" data-step-section="marca" style="margin-top: 8px;">
+                            <div class="section-header-title">
+                                <span>${stepBadge}Marcas Disponibles:</span>
+                                <span style="font-size: 10px; color: var(--text-muted);">${selectedVariant ? 'Marca seleccionada' : 'Selecciona tu marca para ver el precio'}</span>
                             </div>
                             <div class="brands-grid-cards">
                                 ${availablePool.map((v, idx) => {
-                                    const isSel = selectedVariant && (v === selectedVariant || (v.id && selectedVariant.id && v.id === selectedVariant.id));
+                                    const isSel = selectedVariant && (v === selectedVariant || (v.id_variante && selectedVariant.id_variante && v.id_variante === selectedVariant.id_variante));
                                     const vPriceBs = calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc);
                                     const displayPrice = vPriceBs > 0 ? formatBs(vPriceBs) : 'Consultar';
                                     const brandName = v.marca || v.brand || 'Estándar';
@@ -1003,11 +1106,11 @@
                                     const vLado = getVariantLado(v);
                                     const vTipo = getVariantTipo(v);
                                     let badgeHtml = '';
-                                    if (vLado && distinctLados.length > 1) {
+                                    if (vLado && needLado) {
                                         const ladoColor = vLado === 'Derecho' ? '#ff6a00' : '#3b82f6';
                                         badgeHtml += `<span style="display:inline-block; font-size:10px; font-weight:700; background:rgba(255,106,0,0.12); color:${ladoColor}; padding:2px 7px; border-radius:5px; margin-left:6px; letter-spacing:0.3px;">${vLado === 'Derecho' ? 'Lado Der. (RH)' : 'Lado Izq. (LH)'}</span>`;
                                     }
-                                    if (vTipo && distinctTipos.length > 1) {
+                                    if (vTipo && needTipo) {
                                         badgeHtml += `<span style="display:inline-block; font-size:10px; font-weight:700; background:rgba(37,211,102,0.12); color:#25d366; padding:2px 7px; border-radius:5px; margin-left:6px; letter-spacing:0.3px;">${vTipo}</span>`;
                                     }
 
@@ -1034,7 +1137,7 @@
                             </div>
                         </div>
                     `;
-                } else if (availablePool.length === 1 && (variants.length > 1 || distinctMedidas.length > 0 || distinctLados.length > 0 || distinctTipos.length > 0)) {
+                } else if (medidaReady && availablePool.length === 1 && (variants.length > 1 || distinctMedidas.length > 0 || distinctLados.length > 0 || distinctTipos.length > 0)) {
                     const v = availablePool[0];
                     const vPriceBs = calculatePriceBs(v.precio_usd || v.precio_venta_usd, tc);
                     const brandName = v.marca || v.brand || 'Estándar';
@@ -1044,16 +1147,16 @@
                     const vLado = getVariantLado(v);
                     const vTipo = getVariantTipo(v);
                     let badgeHtml = '';
-                    if (vLado && distinctLados.length > 1) {
+                    if (vLado && needLado) {
                         const ladoColor = vLado === 'Derecho' ? '#ff6a00' : '#3b82f6';
                         badgeHtml += `<span style="display:inline-block; font-size:10px; font-weight:700; background:rgba(255,106,0,0.12); color:${ladoColor}; padding:2px 7px; border-radius:5px; margin-left:6px; letter-spacing:0.3px;">${vLado === 'Derecho' ? 'Lado Der. (RH)' : 'Lado Izq. (LH)'}</span>`;
                     }
-                    if (vTipo && distinctTipos.length > 1) {
+                    if (vTipo && needTipo) {
                         badgeHtml += `<span style="display:inline-block; font-size:10px; font-weight:700; background:rgba(37,211,102,0.12); color:#25d366; padding:2px 7px; border-radius:5px; margin-left:6px; letter-spacing:0.3px;">${vTipo}</span>`;
                     }
 
                     containerHtml += `
-                        <div class="variant-section-block" style="margin-top: 8px;">
+                        <div class="variant-section-block" data-step-section="marca" style="margin-top: 8px;">
                             <div class="section-header-title">
                                 <span>Marca Disponible:</span>
                             </div>
@@ -1083,10 +1186,12 @@
                 lightboxVariantsContainer.innerHTML = containerHtml;
 
                 // Event listeners para píldoras de tipo
-                lightboxVariantsContainer.querySelectorAll('.pill-tipo').forEach(pill => {
+                lightboxVariantsContainer.querySelectorAll('.pill-tipo:not([disabled])').forEach(pill => {
                     pill.onclick = (e) => {
                         e.stopPropagation();
                         activeTipo = pill.getAttribute('data-tipo');
+                        if (needLado && activeLado && !hasLadoStock(activeLado)) activeLado = null;
+                        if (needMedida && activeMedida && !hasMedidaStock(activeMedida)) activeMedida = null;
                         selectedVariant = null;
                         renderLightboxVariants();
                         updateLightboxState();
@@ -1094,10 +1199,11 @@
                 });
 
                 // Event listeners para píldoras de lado
-                lightboxVariantsContainer.querySelectorAll('.pill-lado').forEach(pill => {
+                lightboxVariantsContainer.querySelectorAll('.pill-lado:not([disabled])').forEach(pill => {
                     pill.onclick = (e) => {
                         e.stopPropagation();
                         activeLado = pill.getAttribute('data-lado');
+                        if (needMedida && activeMedida && !hasMedidaStock(activeMedida)) activeMedida = null;
                         selectedVariant = null;
                         renderLightboxVariants();
                         updateLightboxState();
@@ -1105,7 +1211,7 @@
                 });
 
                 // Event listeners para píldoras de medida
-                lightboxVariantsContainer.querySelectorAll('.pill-medida').forEach(pill => {
+                lightboxVariantsContainer.querySelectorAll('.pill-medida:not([disabled])').forEach(pill => {
                     pill.onclick = (e) => {
                         e.stopPropagation();
                         activeMedida = pill.getAttribute('data-medida');
@@ -1116,14 +1222,13 @@
                 });
 
                 // Event listeners para marcas
-                lightboxVariantsContainer.querySelectorAll('.brand-option-card').forEach(card => {
+                lightboxVariantsContainer.querySelectorAll('.brand-option-card[data-variant-index]').forEach(card => {
                     card.onclick = (e) => {
                         e.stopPropagation();
                         const idx = parseInt(card.getAttribute('data-variant-index'), 10);
                         if (!isNaN(idx) && availablePool[idx]) {
                             selectedVariant = availablePool[idx];
-                            lightboxVariantsContainer.querySelectorAll('.brand-option-card').forEach(b => b.classList.remove('selected'));
-                            card.classList.add('selected');
+                            renderLightboxVariants();
                             updateLightboxState();
                         }
                     };
@@ -1132,14 +1237,15 @@
 
             function updateLightboxState() {
                 const isCombo = isPromoKitOrCombo(product);
-                const availablePool = getFilteredAvailableVariants();
                 const isOutOfStock = !isCombo && (product.is_out_of_stock || 
                                     (product.total_stock !== undefined && product.total_stock !== null && product.total_stock <= 0) ||
                                     (variants.length === 0) ||
-                                    (availablePool.length === 0));
+                                    (allAvailableVariants.length === 0));
+                const pendingStep = (!isCombo && !isOutOfStock && requiresGuidedSelection && !selectedVariant) ? getPendingStepInfo() : null;
 
                 if (lightboxPriceBox && lightboxPriceVal && lightboxStockBadge) {
                     lightboxPriceBox.style.display = 'flex';
+                    lightboxPriceVal.classList.remove('price-pending-prompt');
                     if (isCombo) {
                         lightboxPriceVal.innerText = 'Combo Armable';
                         lightboxPriceVal.style.color = '#ff914d';
@@ -1164,6 +1270,20 @@
                         if (lightboxStockPillText) {
                             lightboxStockPillText.innerText = 'Agotado';
                         }
+                    } else if (pendingStep) {
+                        lightboxPriceVal.innerText = 'Selecciona tus opciones ↓';
+                        lightboxPriceVal.classList.add('price-pending-prompt');
+                        lightboxPriceVal.style.color = '#ff914d';
+                        if (lightboxCurrencySymbol) lightboxCurrencySymbol.style.display = 'none';
+                        lightboxStockBadge.innerHTML = `<svg viewBox="0 0 24 24" class="badge-icon" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg> <span>Paso ${pendingStep.stepNum}: Selecciona ${pendingStep.label} abajo para verificar existencia y ver tu precio</span>`;
+                        lightboxStockBadge.style.display = 'inline-flex';
+                        lightboxStockBadge.style.color = '#ff914d';
+                        if (lightboxStockStatusPill) {
+                            lightboxStockStatusPill.className = 'status-badge';
+                        }
+                        if (lightboxStockPillText) {
+                            lightboxStockPillText.innerText = 'En Stock';
+                        }
                     } else {
                         const targetPriceUsd = selectedVariant ? (selectedVariant.precio_usd || selectedVariant.precio_venta_usd) : 0;
                         const priceBs = calculatePriceBs(targetPriceUsd, tc);
@@ -1186,6 +1306,29 @@
                         if (lightboxStockPillText) {
                             lightboxStockPillText.innerText = 'En Stock';
                         }
+                    }
+                }
+
+                const lightboxAddBtnEl = document.getElementById('lightboxAddBtn');
+                const actionSpan = lightboxActionBtn ? lightboxActionBtn.querySelector('span') : null;
+                if (pendingStep) {
+                    if (lightboxActionBtn) {
+                        lightboxActionBtn.classList.add('btn-pending-selection');
+                        lightboxActionBtn.href = '#';
+                        if (actionSpan) actionSpan.innerText = pendingStep.shortBtn;
+                    }
+                    if (lightboxAddBtnEl) {
+                        lightboxAddBtnEl.classList.add('btn-pending-selection');
+                    }
+                    window.currentSelectedVariant = null;
+                    return;
+                } else {
+                    if (lightboxActionBtn) {
+                        lightboxActionBtn.classList.remove('btn-pending-selection');
+                        if (actionSpan) actionSpan.innerText = 'Consultar por WhatsApp';
+                    }
+                    if (lightboxAddBtnEl) {
+                        lightboxAddBtnEl.classList.remove('btn-pending-selection');
                     }
                 }
 
@@ -1220,7 +1363,12 @@
             renderLightboxVariants();
             updateLightboxState();
 
-            lightboxActionBtn.onclick = () => {
+            lightboxActionBtn.onclick = (e) => {
+                if (!isPromoKitOrCombo(product) && requiresGuidedSelection && !window.currentSelectedVariant && allAvailableVariants.length > 0) {
+                    e.preventDefault();
+                    highlightPendingStep();
+                    return false;
+                }
                 trackEvent('consultar_producto_whatsapp', {
                     item_id: product.id,
                     nombre_producto: product.description,
@@ -1241,7 +1389,12 @@
             // Asignar evento al botón de agregar en el lightbox
             const lightboxAddBtn = document.getElementById('lightboxAddBtn');
             if (lightboxAddBtn) {
-                lightboxAddBtn.onclick = () => {
+                lightboxAddBtn.onclick = (e) => {
+                    if (!isPromoKitOrCombo(product) && requiresGuidedSelection && !window.currentSelectedVariant && allAvailableVariants.length > 0) {
+                        e.preventDefault();
+                        highlightPendingStep();
+                        return;
+                    }
                     addToCart(productId, window.currentSelectedVariant);
                 };
             }
