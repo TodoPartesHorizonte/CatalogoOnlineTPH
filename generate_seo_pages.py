@@ -2782,7 +2782,7 @@ def generate_pages(data):
             _copy_svg = '<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>'
             _chips = "".join(
                 f'<button type="button" class="pp-chip" data-oem="{part}" title="Clic para copiar código OEM">{part}{_copy_svg}</button>'
-                for part in oem_parts
+                for part in oem_parts[:1]
             )
             oem_html = f'<div class="pp-oem"><span class="pp-label">OEM</span><div class="pp-chips">{_chips}</div></div>'
         else:
