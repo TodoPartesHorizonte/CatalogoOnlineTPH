@@ -455,6 +455,24 @@ def pp_medida_key(m):
     return (2, 0.0, u)
 
 
+def build_canonical_slug_map(products):
+    """Mapea cada slug al slug canónico principal cuando existen clones exactos (misma descripción y mismo OEM)."""
+    groups = {}
+    for p in products:
+        slug = (p.get('slug') or '').strip()
+        if not slug:
+            continue
+        desc_key = (p.get('description') or '').strip().upper()
+        oem_key = (p.get('oem') or '').strip().upper()
+        groups.setdefault((desc_key, oem_key), []).append(slug)
+    canonical_map = {}
+    for slugs in groups.values():
+        primary = sorted(slugs, key=lambda s: (bool(re.search(r'-\d+$', s)), len(s), s))[0]
+        for s in slugs:
+            canonical_map[s] = primary
+    return canonical_map
+
+
 def generate_pages(data):
     def to_title_case(text):
         if not text:
@@ -543,7 +561,7 @@ def generate_pages(data):
             "years": year_str
         }
 
-    def get_related_products_html(current_product, all_products, base_url):
+    def get_related_products_html(current_product, all_products, base_url, canonical_map=None):
         import random
         import html
         current_id = current_product.get('id')
@@ -569,6 +587,8 @@ def generate_pages(data):
                 
             p_slug = p.get('slug')
             if not p_slug or uuid_pattern.match(p_slug) or p_slug == p_id:
+                continue
+            if canonical_map and canonical_map.get(p_slug, p_slug) != p_slug:
                 continue
                 
             p_cat = p.get('category', '')
@@ -620,7 +640,7 @@ def generate_pages(data):
             escaped_cat = html.escape(p_cat)
             
             card_html = f"""
-                <a href="./{p_slug}.html" class="related-card">
+                <a href="/p/{p_slug}" class="related-card">
                     <div class="related-img-wrapper">
                         <img src="..{p_img}" alt="Repuesto {escaped_desc} original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){{this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}}">
                     </div>
@@ -994,7 +1014,7 @@ def generate_pages(data):
           "@type": "ListItem",
           "position": 2,
           "name": "{category}",
-          "item": "{base_url}index.html?categoria={category_slug}"
+          "item": "{base_url}#{category_slug}"
         }},
         {{
           "@type": "ListItem",
@@ -2319,7 +2339,7 @@ def generate_pages(data):
 <body>
     <header>
         <div class="header-container">
-            <a href="../index.html" class="brand-lockup">
+            <a href="/" class="brand-lockup">
                 <img src="../assets/logo{logo_ext}" alt="Logo de TODO PARTES HORIZONTE" class="logo-image" onerror="this.onerror=null; this.src='../assets/logo.png';">
                 <div class="brand-text">
                     <div class="logo-title">TODO PARTES <span>HORIZONTE</span></div>
@@ -2346,8 +2366,8 @@ def generate_pages(data):
     <main class="pp-container">
         <nav aria-label="Breadcrumb">
             <ul class="breadcrumbs">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../index.html?categoria={category_slug}">{category}</a></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/?categoria={category_slug}" rel="nofollow">{category}</a></li>
                 <li>{description}</li>
             </ul>
         </nav>
@@ -2369,7 +2389,7 @@ def generate_pages(data):
                     <span class="pp-cat">{category}</span>
                     <button type="button" class="pp-share" id="ppShareBtn" title="Copiar enlace para compartir"><svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg><span>Compartir</span></button>
                 </div>
-                <h1 class="pp-title">{description}</h1>
+                <h1 class="pp-title">{h1_title}</h1>
                 <div class="pp-rating">
                     <span class="pp-stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
                     <strong>4.8</strong>
@@ -2446,8 +2466,8 @@ def generate_pages(data):
             <div class="footer-col">
                 <h4 class="footer-title">Enlaces Rápidos</h4>
                 <ul class="footer-links">
-                    <li><a href="../index.html">Catálogo Principal</a></li>
-                    <li><a href="../index.html?categoria={category_slug}">Categoría: {category}</a></li>
+                    <li><a href="/">Catálogo Principal</a></li>
+                    <li><a href="/?categoria={category_slug}" rel="nofollow">Categoría: {category}</a></li>
                     <li><a href="https://wa.me/{whatsapp_number}">Asistencia Técnica</a></li>
                 </ul>
             </div>
@@ -2493,6 +2513,11 @@ def generate_pages(data):
             print(f"[INFO] Se eliminaron {orphan_count} páginas huérfanas en /p/")
 
     db_config, db_products = load_db_config_and_prices(products)
+    canonical_map = build_canonical_slug_map(products)
+    desc_counts = {}
+    for _p in products:
+        _dk = (_p.get('description') or '').strip().upper()
+        desc_counts[_dk] = desc_counts.get(_dk, 0) + 1
 
     for product in products:
         p_id = escape_html(product.get('id', ''))
@@ -2859,15 +2884,20 @@ def generate_pages(data):
         )
 
         # Obtener HTML de productos relacionados
-        related_products_html = get_related_products_html(product, products, base_url)
+        related_products_html = get_related_products_html(product, products, base_url, canonical_map=canonical_map)
+        clean_slug = safe_filename.replace('.html', '')
+        canonical_slug = canonical_map.get(p_slug, clean_slug) if p_slug else clean_slug
+        _desc_key = (product.get('description') or '').strip().upper()
+        h1_title = f"{desc} ({oem_parts[0]})" if (desc_counts.get(_desc_key, 0) > 1 and oem_parts and oem_parts[0] not in desc) else desc
 
         html_content = template.format(
             id=p_id,
             sku=sku_code,
             slug=p_slug if p_slug else p_id,
             safe_filename=safe_filename,
-            clean_filename=safe_filename.replace('.html', ''),
+            clean_filename=canonical_slug,
             description=desc,
+            h1_title=h1_title,
             url_description=url_desc,
             category=cat,
             category_slug=cat_slug,
@@ -2921,6 +2951,7 @@ def generate_sitemap(data):
     uuid_pattern = re.compile(r'^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$')
     
     # Recopilar todas las URLs válidas de productos
+    canonical_map = build_canonical_slug_map(products)
     product_urls = []
     import urllib.parse
     import html
@@ -2928,8 +2959,10 @@ def generate_sitemap(data):
         prod_id = product.get("id")
         p_slug = product.get("slug")
         if prod_id:
-            # Omitir si no hay slug, o si el slug es un UUID, o si coincide con el ID
+            # Omitir si no hay slug, o si el slug es un UUID, o si coincide con el ID, o si es un clon exacto
             if not p_slug or uuid_pattern.match(p_slug) or p_slug == prod_id:
+                continue
+            if canonical_map.get(p_slug, p_slug) != p_slug:
                 continue
             safe_filename = f"{p_slug}.html"
             
@@ -3178,14 +3211,16 @@ def update_index_seo_links(products):
         end_idx = content.find(end_marker)
         
         links = []
+        canonical_map = build_canonical_slug_map(products)
         uuid_pattern = re.compile(r'^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$')
         for product in products:
             prod_id = product.get("id")
             p_slug = product.get("slug")
             if prod_id and p_slug and not uuid_pattern.match(p_slug) and p_slug != prod_id:
-                safe_filename = f"{p_slug}.html"
+                if canonical_map.get(p_slug, p_slug) != p_slug:
+                    continue
                 desc = html.escape(product.get('description', 'Repuesto'))
-                links.append(f'        <a href="./p/{safe_filename}">{desc}</a>')
+                links.append(f'        <a href="/p/{p_slug}">{desc}</a>')
                 
         new_links_html = "\n" + "\n".join(links) + "\n        "
         new_content = content[:start_idx] + new_links_html + content[end_idx:]

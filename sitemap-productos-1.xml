@@ -5131,16 +5131,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/gomas-valvula-luv-2-2-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/gomas-valvula-luv-2-2-2.webp</image:loc>
-      <image:title>GOMAS VALVULA LUV 2.2</image:title>
-    </image:image>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/gomas-valvula-luv-2-3</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/gomas-valvula-luv-2-3.webp</image:loc>
@@ -6584,16 +6574,6 @@
     <loc>https://todoparteshorizonte.com/p/manguera-radiador-superior-luv-2-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-superior-luv-2-2.webp</image:loc>
-      <image:title>MANGUERA RADIADOR SUPERIOR LUV 2.2</image:title>
-    </image:image>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/manguera-radiador-superior-luv-2-2-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/manguera-radiador-superior-luv-2-2-2.webp</image:loc>
       <image:title>MANGUERA RADIADOR SUPERIOR LUV 2.2</image:title>
     </image:image>
     <lastmod>2026-11-12</lastmod>
@@ -8561,16 +8541,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-luv-dmax-3-5-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-luv-dmax-3-5-2.webp</image:loc>
-      <image:title>SOPORTE CARDAN / CHUMACERA LUV DMAX 3.5</image:title>
-    </image:image>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/soporte-cardan-chumacera-rodeo</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/soporte-cardan-chumacera-rodeo.webp</image:loc>
@@ -9441,30 +9411,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-2-6-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6-2.webp</image:loc>
-      <image:title>TREN DELANTERO CARIBE 2.6</image:title>
-    </image:image>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-2-6</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-2-6.webp</image:loc>
       <image:title>TREN DELANTERO CARIBE 2.6</image:title>
-    </image:image>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-caribe-83-88-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-caribe-83-88-2.webp</image:loc>
-      <image:title>TREN DELANTERO CARIBE 83-88</image:title>
     </image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -9491,26 +9441,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x2-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x2-2.webp</image:loc>
-      <image:title>TREN DELANTERO LUV 4X2</image:title>
-    </image:image>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4-2.webp</image:loc>
-      <image:title>TREN DELANTERO LUV 4X4</image:title>
-    </image:image>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-4x4</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-4x4.webp</image:loc>
@@ -9525,26 +9455,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-2-4.webp</image:loc>
       <image:title>TREN DELANTERO LUV D-MAX 2.4</image:title>
-    </image:image>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-2-4-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-2-4-2.webp</image:loc>
-      <image:title>TREN DELANTERO LUV D-MAX 2.4</image:title>
-    </image:image>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-luv-d-max-3-5-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-luv-d-max-3-5-2.webp</image:loc>
-      <image:title>TREN DELANTERO LUV D-MAX 3.5</image:title>
     </image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -9574,16 +9484,6 @@
     <loc>https://todoparteshorizonte.com/p/tren-delantero-trooper-3-2</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-trooper-3-2.webp</image:loc>
-      <image:title>TREN DELANTERO TROOPER 3.2</image:title>
-    </image:image>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/tren-delantero-trooper-3-2-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/tren-delantero-trooper-3-2-2.webp</image:loc>
       <image:title>TREN DELANTERO TROOPER 3.2</image:title>
     </image:image>
     <lastmod>2026-11-12</lastmod>
@@ -9995,6 +9895,106 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/valvula-control-de-aire-iac-trooper-3-2.webp</image:loc>
       <image:title>VALVULA CONTROL DE AIRE (IAC) TROOPER 3.2</image:title>
+    </image:image>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-de-minimo-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-de-minimo-caribe-2-3.webp</image:loc>
+      <image:title>VÁLVULA DE MINIMO CARIBE 2.3</image:title>
+    </image:image>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-de-minimo-caribe-2-6</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-de-minimo-caribe-2-6.webp</image:loc>
+      <image:title>VÁLVULA DE MINIMO CARIBE 2.6</image:title>
+    </image:image>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-de-minimo-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-de-minimo-luv-2-3.webp</image:loc>
+      <image:title>VÁLVULA DE MINIMO LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-pcv-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-pcv-luv-2-3.webp</image:loc>
+      <image:title>VALVULA PCV LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-pcv-caribe</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-pcv-caribe.webp</image:loc>
+      <image:title>VÁLVULA PCV CARIBE</image:title>
+    </image:image>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-pcv-luv-d-max</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-pcv-luv-d-max.webp</image:loc>
+      <image:title>VÁLVULA PCV LUV D-MAX</image:title>
+    </image:image>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-presion-aceite-caribe</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-presion-aceite-caribe.webp</image:loc>
+      <image:title>VALVULA PRESION ACEITE CARIBE</image:title>
+    </image:image>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-presion-aceite-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-presion-aceite-luv-2-3.webp</image:loc>
+      <image:title>VALVULA PRESION ACEITE LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-presion-aceite-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-presion-aceite-luv-dmax-3-5.webp</image:loc>
+      <image:title>VALVULA PRESION ACEITE LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/valvula-retroceso-caribe-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/valvula-retroceso-caribe-2-3.webp</image:loc>
+      <image:title>VALVULA RETROCESO CARIBE 2.3</image:title>
     </image:image>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>

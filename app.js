@@ -792,7 +792,7 @@
             lightboxImg.style.cursor = 'pointer';
             lightboxImg.title = 'Haz clic para abrir la página individual y compartirla';
             lightboxImg.onclick = () => {
-                window.location.href = `./p/${product.slug || product.id}.html`;
+                window.location.href = `/p/${product.slug || product.id}`;
             };
             lightboxBadge.innerText = product.category;
             lightboxDesc.innerText = product.description;
@@ -1405,7 +1405,7 @@
             const lightboxShareText = document.getElementById('lightboxShareText');
             if (lightboxShareBtn && lightboxShareText) {
                 lightboxShareBtn.onclick = () => {
-                    const shareUrl = `${window.location.origin}/p/${product.slug || product.id}.html`;
+                    const shareUrl = `${window.location.origin}/p/${product.slug || product.id}`;
                     navigator.clipboard.writeText(shareUrl).then(() => {
                         const originalText = lightboxShareText.innerText;
                         lightboxShareText.innerText = '¡Copiado!';
@@ -2387,7 +2387,7 @@
             if (!container) return;
             
             let html = `
-                <a href="./informacion.html" class="contact-link home-btn" title="Conoce más sobre nosotros" onclick="trackEvent('clic_ver_informacion', { origen: 'catalogo_header' })">
+                <a href="/informacion" class="contact-link home-btn" title="Conoce más sobre nosotros" onclick="trackEvent('clic_ver_informacion', { origen: 'catalogo_header' })">
                     <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
                     <span>Nosotros</span>
                 </a>
