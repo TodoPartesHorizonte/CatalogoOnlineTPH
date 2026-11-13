@@ -1558,6 +1558,9 @@
 
                 // Inicializar Carrusel de Destacados
                 initFeaturedCarousel();
+
+                // Ventana flotante de promociones seleccionadas desde el programa base
+                initPromoWelcomeModal();
             } catch (error) {
                 console.error('Error al inicializar el catálogo:', error);
                 productsGrid.innerHTML = `
@@ -1567,6 +1570,114 @@
                     </div>
                 `;
             }
+        }
+
+        // Ventana flotante de promociones de inicio (solo productos disponibles marcados con promo_modal)
+        function initPromoWelcomeModal() {
+            const overlay = document.getElementById('promoModalOverlay');
+            const card = document.getElementById('promoModalCard');
+            const track = document.getElementById('promoModalTrack');
+            const viewport = document.getElementById('promoModalViewport');
+            const prevBtn = document.getElementById('promoModalPrev');
+            const nextBtn = document.getElementById('promoModalNext');
+            const dotsWrap = document.getElementById('promoModalDots');
+            const closeBtn = document.getElementById('promoModalClose');
+            if (!overlay || !card || !track || !viewport || window.defaultVehicleFilter) return;
+
+            const promoItems = productsData.filter(p => {
+                if (!p.promo_modal || !p.image_path) return false;
+                const info = getProductPriceInfo(p);
+                return !info.isAgotado;
+            });
+            if (promoItems.length === 0) return;
+
+            const campaignSig = promoItems.map(p => p.id).sort().join(',');
+            try {
+                if (localStorage.getItem('aph_promo_seen_sig') === campaignSig) return;
+            } catch (e) {}
+
+            const markSeen = () => {
+                try { localStorage.setItem('aph_promo_seen_sig', campaignSig); } catch (e) {}
+            };
+
+            card.classList.toggle('single-item', promoItems.length === 1);
+            track.innerHTML = promoItems.map(p => {
+                const info = getProductPriceInfo(p);
+                const priceHtml = info.priceText && info.priceText !== 'Agotado'
+                    ? `<div class="promo-modal-price">${info.priceText}</div>` : '';
+                const detailUrl = `/p/${p.slug || p.id}`;
+                return `
+                    <div class="promo-modal-slide">
+                        <div class="promo-modal-img-wrap">
+                            <img src="${p.image_path}" alt="${p.description}" class="promo-modal-img" loading="eager">
+                        </div>
+                        <div class="promo-modal-body">
+                            <span class="promo-modal-cat">${p.category || 'Repuesto'}</span>
+                            <div class="promo-modal-name" title="${p.description}">${p.description}</div>
+                            ${priceHtml}
+                            <a href="${detailUrl}" class="promo-modal-btn-more">Ver más</a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            track.querySelectorAll('.promo-modal-btn-more').forEach(btn => {
+                btn.addEventListener('click', markSeen);
+            });
+
+            let page = 0;
+            const getPerPage = () => (window.innerWidth <= 640 || promoItems.length === 1) ? 1 : 2;
+            const update = () => {
+                const perPage = getPerPage();
+                const totalPages = Math.max(1, Math.ceil(promoItems.length / perPage));
+                if (page >= totalPages) page = totalPages - 1;
+                const slide = track.querySelector('.promo-modal-slide');
+                const gap = 14;
+                const stepPx = slide ? (slide.getBoundingClientRect().width + gap) * perPage : 0;
+                const maxOffset = Math.max(0, track.scrollWidth - viewport.clientWidth);
+                track.style.transform = `translateX(-${Math.min(page * stepPx, maxOffset)}px)`;
+
+                const showNav = totalPages > 1;
+                if (prevBtn) { prevBtn.style.display = showNav ? 'inline-flex' : 'none'; prevBtn.disabled = page === 0; }
+                if (nextBtn) { nextBtn.style.display = showNav ? 'inline-flex' : 'none'; nextBtn.disabled = page >= totalPages - 1; }
+                if (dotsWrap) {
+                    dotsWrap.style.display = showNav ? 'flex' : 'none';
+                    dotsWrap.innerHTML = showNav ? Array.from({ length: totalPages }, (_, i) =>
+                        `<button type="button" class="promo-modal-dot ${i === page ? 'active' : ''}" aria-label="Página ${i + 1}" data-p="${i}"></button>`
+                    ).join('') : '';
+                    dotsWrap.querySelectorAll('.promo-modal-dot').forEach(d => {
+                        d.onclick = () => { page = Number(d.dataset.p); update(); };
+                    });
+                }
+            };
+
+            if (prevBtn) prevBtn.onclick = () => { if (page > 0) { page--; update(); } };
+            if (nextBtn) nextBtn.onclick = () => {
+                const totalPages = Math.ceil(promoItems.length / getPerPage());
+                if (page < totalPages - 1) { page++; update(); }
+            };
+
+            let touchStartX = 0;
+            viewport.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+            viewport.addEventListener('touchend', e => {
+                const dx = e.changedTouches[0].screenX - touchStartX;
+                if (dx < -40 && nextBtn && !nextBtn.disabled) nextBtn.click();
+                if (dx > 40 && prevBtn && !prevBtn.disabled) prevBtn.click();
+            }, { passive: true });
+
+            const closeModal = () => {
+                markSeen();
+                overlay.style.display = 'none';
+                document.removeEventListener('keydown', onEsc);
+            };
+            const onEsc = e => { if (e.key === 'Escape') closeModal(); };
+            if (closeBtn) closeBtn.onclick = closeModal;
+            overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+            document.addEventListener('keydown', onEsc);
+            window.addEventListener('resize', update);
+
+            overlay.style.display = 'flex';
+            requestAnimationFrame(update);
         }
 
         // Lógica del Carrusel de Repuestos Destacados

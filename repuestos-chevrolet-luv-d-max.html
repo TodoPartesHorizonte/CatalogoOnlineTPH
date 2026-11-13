@@ -326,8 +326,8 @@
     </style>
 
     <!-- Estilos completos diferidos de forma asíncrona (Cero bloqueo de render) -->
-    <link rel="preload" href="./style.min.css?v=40" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./style.min.css?v=40"></noscript>
+    <link rel="preload" href="./style.min.css?v=41" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./style.min.css?v=41"></noscript>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -1818,10 +1818,33 @@
         </div>
     </div>
 
+    <!-- VENTANA FLOTANTE DE PROMOCIONES DE INICIO -->
+    <div class="promo-modal-overlay" id="promoModalOverlay" role="dialog" aria-modal="true" aria-labelledby="promoModalTitle" style="display:none;">
+        <div class="promo-modal-card" id="promoModalCard">
+            <button type="button" class="promo-modal-close" id="promoModalClose" aria-label="Cerrar promociones">&times;</button>
+            <div class="promo-modal-header">
+                <span class="promo-modal-badge">Destacados</span>
+                <h2 class="promo-modal-title" id="promoModalTitle">Repuestos Recomendados</h2>
+            </div>
+            <div class="promo-modal-carousel">
+                <button type="button" class="promo-modal-nav prev" id="promoModalPrev" aria-label="Anterior">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                </button>
+                <div class="promo-modal-viewport" id="promoModalViewport">
+                    <div class="promo-modal-track" id="promoModalTrack"></div>
+                </div>
+                <button type="button" class="promo-modal-nav next" id="promoModalNext" aria-label="Siguiente">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                </button>
+            </div>
+            <div class="promo-modal-dots" id="promoModalDots"></div>
+        </div>
+    </div>
+
     <!-- JAVASCRIPT DE CONTROL -->
     <script defer src="./products.js?v=16"></script>
     <script>window.defaultVehicleFilter = 'D-MAX';</script>
-    <script defer src="./app.min.js?v=40"></script>
+    <script defer src="./app.min.js?v=41"></script>
 </body>
 
 </html>
