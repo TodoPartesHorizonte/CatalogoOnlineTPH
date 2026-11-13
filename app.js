@@ -1626,10 +1626,12 @@
             });
 
             let page = 0;
+            let autoTimer = null;
             const getPerPage = () => (window.innerWidth <= 640 || promoItems.length === 1) ? 1 : 2;
+            const getTotalPages = () => Math.max(1, Math.ceil(promoItems.length / getPerPage()));
             const update = () => {
                 const perPage = getPerPage();
-                const totalPages = Math.max(1, Math.ceil(promoItems.length / perPage));
+                const totalPages = getTotalPages();
                 if (page >= totalPages) page = totalPages - 1;
                 const slide = track.querySelector('.promo-modal-slide');
                 const gap = 14;
@@ -1646,29 +1648,45 @@
                         `<button type="button" class="promo-modal-dot ${i === page ? 'active' : ''}" aria-label="Página ${i + 1}" data-p="${i}"></button>`
                     ).join('') : '';
                     dotsWrap.querySelectorAll('.promo-modal-dot').forEach(d => {
-                        d.onclick = () => { page = Number(d.dataset.p); update(); };
+                        d.onclick = () => { page = Number(d.dataset.p); update(); startAuto(); };
                     });
                 }
             };
 
-            if (prevBtn) prevBtn.onclick = () => { if (page > 0) { page--; update(); } };
+            const stopAuto = () => {
+                if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+            };
+            const startAuto = () => {
+                stopAuto();
+                if (getTotalPages() <= 1) return;
+                autoTimer = setInterval(() => {
+                    page = (page + 1) % getTotalPages();
+                    update();
+                }, 2000);
+            };
+
+            if (prevBtn) prevBtn.onclick = () => { if (page > 0) { page--; update(); startAuto(); } };
             if (nextBtn) nextBtn.onclick = () => {
-                const totalPages = Math.ceil(promoItems.length / getPerPage());
-                if (page < totalPages - 1) { page++; update(); }
+                if (page < getTotalPages() - 1) { page++; update(); startAuto(); }
             };
 
             let touchStartX = 0;
-            viewport.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+            viewport.addEventListener('touchstart', e => { stopAuto(); touchStartX = e.changedTouches[0].screenX; }, { passive: true });
             viewport.addEventListener('touchend', e => {
                 const dx = e.changedTouches[0].screenX - touchStartX;
                 if (dx < -40 && nextBtn && !nextBtn.disabled) nextBtn.click();
-                if (dx > 40 && prevBtn && !prevBtn.disabled) prevBtn.click();
+                else if (dx > 40 && prevBtn && !prevBtn.disabled) prevBtn.click();
+                else startAuto();
             }, { passive: true });
+            card.addEventListener('mouseenter', stopAuto);
+            card.addEventListener('mouseleave', startAuto);
 
             const closeModal = () => {
+                stopAuto();
                 markSeen();
                 overlay.style.display = 'none';
                 document.removeEventListener('keydown', onEsc);
+                window.removeEventListener('resize', update);
             };
             const onEsc = e => { if (e.key === 'Escape') closeModal(); };
             if (closeBtn) closeBtn.onclick = closeModal;
@@ -1677,7 +1695,7 @@
             window.addEventListener('resize', update);
 
             overlay.style.display = 'flex';
-            requestAnimationFrame(update);
+            requestAnimationFrame(() => { update(); startAuto(); });
         }
 
         // Lógica del Carrusel de Repuestos Destacados

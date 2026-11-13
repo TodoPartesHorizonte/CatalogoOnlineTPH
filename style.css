@@ -4365,17 +4365,21 @@ height:18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
+    padding: 12px;
+    overflow-y: auto;
 }
 
 .promo-modal-card {
     position: relative;
     width: 100%;
-    max-width: 680px;
+    max-width: 640px;
+    max-height: 92dvh;
+    overflow-y: auto;
+    margin: auto;
     background: #12141a;
     border: 1px solid rgba(255, 106, 0, 0.28);
-    border-radius: 22px;
-    padding: 24px 22px 20px;
+    border-radius: 20px;
+    padding: 18px 18px 16px;
     box-shadow: 0 28px 70px rgba(0, 0, 0, 0.75);
 }
 
@@ -4409,8 +4413,8 @@ height:18px;
 
 .promo-modal-header {
     text-align: center;
-    margin-bottom: 16px;
-    padding: 0 28px;
+    margin-bottom: 12px;
+    padding: 0 36px;
 }
 
 .promo-modal-badge {
@@ -4470,11 +4474,11 @@ height:18px;
 
 .promo-modal-img-wrap {
     background: #0b0d11;
-    aspect-ratio: 4 / 3;
+    height: clamp(140px, 32dvh, 210px);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
+    padding: 10px;
 }
 
 .promo-modal-img {
@@ -4589,14 +4593,20 @@ height:18px;
 
 @media (max-width: 640px) {
     .promo-modal-card {
-        padding: 20px 14px 16px;
-        max-width: 390px;
+        padding: 16px 12px 14px;
+        max-width: 380px;
+    }
+    .promo-modal-title {
+        font-size: 17px;
+    }
+    .promo-modal-img-wrap {
+        height: clamp(130px, 28dvh, 180px);
     }
     .promo-modal-slide {
         flex: 0 0 100%;
     }
     .promo-modal-nav {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
     }
 }
