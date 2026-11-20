@@ -3961,6 +3961,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/esparrago-caribe</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/esparrago-caribe.webp</image:loc>
+      <image:title>ESPARRAGO CARIBE</image:title>
+    </image:image>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/esparrago-rueda-delantera-luv-d-max</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/esparrago-rueda-delantera-luv-d-max.webp</image:loc>
@@ -4511,6 +4521,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/estopera-tripoide-luv-dmax-3-5</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/estopera-tripoide-luv-dmax-3-5.webp</image:loc>
+      <image:title>ESTOPERA TRIPOIDE LUV DMAX 3.5</image:title>
+    </image:image>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/estopera-yoke-transfer-caribe-2-0</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/estopera-yoke-transfer-caribe-2-0.webp</image:loc>
@@ -4891,10 +4911,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://todoparteshorizonte.com/p/filtro-gasolina-caribe-luv-2-3</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/filtro-gasolina-caribe-luv-2-3.webp</image:loc>
+      <image:title>FILTRO GASOLINA CARIBE / LUV 2.3</image:title>
+    </image:image>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://todoparteshorizonte.com/p/filtro-gasolina-luv-d-max</loc>
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/filtro-gasolina-luv-d-max.webp</image:loc>
       <image:title>FILTRO GASOLINA LUV D-MAX</image:title>
+    </image:image>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://todoparteshorizonte.com/p/filtro-gasolina-luv-dmax</loc>
+    <image:image>
+      <image:loc>https://todoparteshorizonte.com/assets/filtro-gasolina-luv-dmax.webp</image:loc>
+      <image:title>FILTRO GASOLINA LUV DMAX</image:title>
     </image:image>
     <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -9955,46 +9995,6 @@
     <image:image>
       <image:loc>https://todoparteshorizonte.com/assets/valvula-de-escape-caribe-2300.webp</image:loc>
       <image:title>VÁLVULA DE ESCAPE CARIBE 2300</image:title>
-    </image:image>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/valvula-de-escape-caribe-2600</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/valvula-de-escape-caribe-2600.webp</image:loc>
-      <image:title>VÁLVULA DE ESCAPE CARIBE 2600</image:title>
-    </image:image>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/valvula-de-escape-luv-2-2</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/valvula-de-escape-luv-2-2.webp</image:loc>
-      <image:title>VÁLVULA DE ESCAPE LUV 2.2</image:title>
-    </image:image>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/valvula-de-escape-luv-d-max-2-4</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/valvula-de-escape-luv-d-max-2-4.webp</image:loc>
-      <image:title>VÁLVULA DE ESCAPE LUV D-MAX 2.4</image:title>
-    </image:image>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://todoparteshorizonte.com/p/valvula-desfogue-de-gases-egr-luv-dmax-2-4</loc>
-    <image:image>
-      <image:loc>https://todoparteshorizonte.com/assets/valvula-desfogue-de-gases-egr-luv-dmax-2-4.webp</image:loc>
-      <image:title>VALVULA DESFOGUE DE GASES (EGR) LUV DMAX 2.4</image:title>
     </image:image>
     <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
