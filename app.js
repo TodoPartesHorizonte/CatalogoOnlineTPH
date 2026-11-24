@@ -4,7 +4,7 @@
         let activeCategory = "ALL";
         let activeVehicle = "ALL";
         let searchQuery = "";
-        let activeView = "FOLDERS"; // Empezar por carpetas por defecto
+        let activeView = "PHOTOS"; // Empezar por fotos por defecto
         window.currentProductId = null;
         let hasNavigatedWithinApp = false;
 
@@ -58,6 +58,7 @@
             const text = [
                 product.description || '',
                 product.category || '',
+                product.oem || '',
                 (product.keywords || []).join(' ')
             ].join(' ');
             
@@ -456,6 +457,8 @@
             const container = document.getElementById('cartItemsContainer');
             const totalItemsEl = document.getElementById('cartTotalItems');
             const badgeEl = document.getElementById('fabCartBadge');
+            const fabTextEl = document.getElementById('fabWhatsappText');
+            const submitLabelEl = document.getElementById('cartSubmitLabel');
 
             if (!container || !totalItemsEl || !badgeEl) return;
 
@@ -463,13 +466,22 @@
             let totalBs = 0;
 
             if (cart.length === 0) {
+                const q = (searchQuery || '').trim();
+                const directMsg = q
+                    ? `¡Hola TODO PARTES HORIZONTE! Estaba buscando "${q}" en su catálogo web y necesito asesoría.`
+                    : `¡Hola TODO PARTES HORIZONTE! Vengo desde su catálogo web y tengo una consulta sobre un repuesto.`;
+                const directWaHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(directMsg)}`;
                 container.innerHTML = `
                     <div class="cart-empty">
                         <svg aria-hidden="true" viewBox="0 0 24 24">
                             <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
                         </svg>
                         <p>Tu lista de pedido está vacía</p>
-                        <span style="font-size: 12px; color: var(--text-muted)">Agrega piezas usando el botón "Añadir"</span>
+                        <span style="font-size: 12px; color: var(--text-muted); max-width: 260px;">Agrega piezas con "+ Lista" para cotizar varias juntas, o escríbenos directo si tienes dudas.</span>
+                        <a href="${directWaHref}" target="_blank" rel="noopener noreferrer" class="cart-empty-wa-btn" onclick="trackEvent('contacto_whatsapp', { origen: 'cart_empty_direct' })">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            <span>Escribir duda por WhatsApp</span>
+                        </a>
                     </div>
                 `;
             } else {
@@ -530,6 +542,12 @@
 
             totalItemsEl.innerText = totalQty;
             badgeEl.innerText = totalQty;
+            if (fabTextEl) {
+                fabTextEl.innerText = totalQty > 0 ? `Ver Pedido (${totalQty})` : '¿Dudas? WhatsApp';
+            }
+            if (submitLabelEl) {
+                submitLabelEl.innerText = totalQty > 0 ? 'Enviar Pedido por WhatsApp' : 'Consultar duda por WhatsApp';
+            }
 
             if (totalQty > 0) {
                 badgeEl.classList.add('active');
@@ -581,7 +599,12 @@
         // Construir el mensaje de cotización consolidado y enviar a WhatsApp
         function sendCartToWhatsApp() {
             if (cart.length === 0) {
-                toggleCart(false);
+                const q = (searchQuery || '').trim();
+                const msg = q
+                    ? `¡Hola TODO PARTES HORIZONTE! Estaba buscando "${q}" en su catálogo web y necesito asesoría.`
+                    : `¡Hola TODO PARTES HORIZONTE! Vengo desde su catálogo web y tengo una consulta sobre un repuesto.`;
+                trackEvent('contacto_whatsapp', { origen: 'cart_drawer_empty_cta' });
+                window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
                 return;
             }
 
@@ -608,12 +631,10 @@
             }
             msg += `Quedo atento a su respuesta para concretar la compra. ¡Muchas gracias!`;
 
-            trackEvent('generate_lead', {
+            trackEvent('enviar_pedido_whatsapp', {
                 currency: 'VES',
                 value: totalBs,
-                items: cart.map(i => ({ item_id: i.id, item_name: i.description, item_category: i.category, quantity: i.quantity }))
-            });
-            trackEvent('enviar_pedido_whatsapp', {
+                items: cart.map(i => ({ item_id: i.id, item_name: i.description, item_category: i.category, quantity: i.quantity })),
                 cantidad_items: cart.length,
                 monto_total: totalBs,
                 descripcion: 'El usuario envió un pedido al WhatsApp de la tienda',
@@ -637,7 +658,7 @@
             if (searchQuery && searchQuery.trim() !== '') {
                 params.set('buscar', searchQuery);
             }
-            if (activeView && activeView !== 'FOLDERS') {
+            if (activeView && activeView !== 'PHOTOS') {
                 params.set('vista', activeView);
             }
             
@@ -697,13 +718,15 @@
             }
 
             const initSearch = urlParams.get('buscar') || '';
-            const initView = urlParams.get('vista') || 'FOLDERS';
+            const initView = urlParams.get('vista') || 'PHOTOS';
             const initProduct = urlParams.get('producto');
 
             activeVehicle = initVehicle;
             activeCategory = initCategory;
             searchQuery = initSearch;
             if (searchInput) searchInput.value = initSearch;
+            const btnClearSearch = document.getElementById('btnClearSearch');
+            if (btnClearSearch) btnClearSearch.style.display = initSearch.trim() ? 'flex' : 'none';
 
             // Actualizar clases activas en los botones de vehículos
             document.querySelectorAll('.vehicle-card').forEach(card => {
@@ -720,14 +743,14 @@
                 activeView = 'PHOTOS';
                 if (btnViewPhotos) btnViewPhotos.classList.add('active');
                 if (btnViewFolders) btnViewFolders.classList.remove('active');
-                if (categoriesScrollContainer) categoriesScrollContainer.style.display = 'none';
+                if (categoriesScrollContainer) categoriesScrollContainer.style.display = initSearch !== '' ? 'none' : 'block';
                 if (productsGrid) productsGrid.style.display = 'grid';
                 if (foldersGrid) foldersGrid.style.display = 'none';
                 renderProducts();
                 
                 const navBack = document.getElementById('navBackContainer');
                 if (navBack) {
-                    navBack.style.display = 'flex';
+                    navBack.style.display = (activeCategory !== 'ALL' || initSearch !== '') ? 'flex' : 'none';
                 }
                 const viewTitle = document.getElementById('currentViewTitle');
                 if (viewTitle) {
@@ -1550,6 +1573,9 @@
                     vehicleFilterContainer.style.display = 'block';
                 }
 
+                // Presets de precio dinámicos basados en la tasa del día
+                renderDynamicPricePresets();
+
                 // Reconstruir estado inicial desde la URL
                 parseURLState();
 
@@ -1606,6 +1632,8 @@
                 const priceHtml = info.priceText && info.priceText !== 'Agotado'
                     ? `<div class="promo-modal-price">${info.priceText}</div>` : '';
                 const detailUrl = `/p/${p.slug || p.id}`;
+                const waPromoText = `¡Hola TODO PARTES HORIZONTE! Vi *${p.description}* en sus recomendados${info.priceText ? ` (${info.priceText})` : ''}. ¿Tienen disponibilidad?`;
+                const waPromoUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waPromoText)}`;
                 return `
                     <div class="promo-modal-slide">
                         <div class="promo-modal-img-wrap">
@@ -1615,7 +1643,13 @@
                             <span class="promo-modal-cat">${p.category || 'Repuesto'}</span>
                             <div class="promo-modal-name" title="${p.description}">${p.description}</div>
                             ${priceHtml}
-                            <a href="${detailUrl}" class="promo-modal-btn-more">Ver más</a>
+                            <div class="promo-modal-actions">
+                                <a href="${waPromoUrl}" target="_blank" rel="noopener noreferrer" class="promo-modal-wa-btn" data-pid="${p.id}" data-pname="${(p.description || '').replace(/"/g, '&quot;')}" data-pcat="${(p.category || '').replace(/"/g, '&quot;')}">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                    <span>Cotizar</span>
+                                </a>
+                                <a href="${detailUrl}" class="promo-modal-btn-more">Ver ficha</a>
+                            </div>
                         </div>
                     </div>
                 `;
@@ -1623,6 +1657,17 @@
 
             track.querySelectorAll('.promo-modal-btn-more').forEach(btn => {
                 btn.addEventListener('click', markSeen);
+            });
+            track.querySelectorAll('.promo-modal-wa-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    markSeen();
+                    trackEvent('consultar_producto_whatsapp', {
+                        item_id: btn.dataset.pid || '',
+                        nombre_producto: btn.dataset.pname || '',
+                        categoria: btn.dataset.pcat || '',
+                        origen: 'promo_modal'
+                    });
+                });
             });
 
             let page = 0;
@@ -1662,7 +1707,7 @@
                 autoTimer = setInterval(() => {
                     page = (page + 1) % getTotalPages();
                     update();
-                }, 2000);
+                }, 4500);
             };
 
             if (prevBtn) prevBtn.onclick = () => { if (page > 0) { page--; update(); startAuto(); } };
@@ -1704,8 +1749,12 @@
             const section = document.getElementById('featuredCarouselSection');
             if (!track || !section) return;
 
-            // Filtrar productos que tengan imagen válida
-            const validProducts = productsData.filter(p => p.image_path && !p.image_path.includes('logo.png'));
+            // Filtrar productos disponibles que tengan imagen válida
+            const validProducts = productsData.filter(p => {
+                if (!p.image_path || p.image_path.includes('logo.png')) return false;
+                const info = getProductPriceInfo(p);
+                return !info.isAgotado;
+            });
             if (validProducts.length < 5) return;
 
             // Seleccionar 10 productos en móvil y 15 en escritorio/tablet
@@ -1723,6 +1772,8 @@
             // Renderizar items
             let html = '';
             carouselProducts.forEach(p => {
+                const info = getProductPriceInfo(p);
+                const priceHtml = info.priceText ? `<div class="carousel-item-price">${info.priceText}</div>` : '';
                 html += `
                     <div class="carousel-item" onclick="openLightbox('${p.id}')">
                         <div class="carousel-item-img-wrapper">
@@ -1731,6 +1782,7 @@
                         <div class="carousel-item-info">
                             <span class="carousel-item-category">${p.category}</span>
                             <div class="carousel-item-title" title="${p.description}">${p.description}</div>
+                            ${priceHtml}
                         </div>
                     </div>
                 `;
@@ -1868,10 +1920,16 @@
 
         // Renderizado de Categorías
         function renderCategories() {
-            // Filtrar productos solo por el vehículo activo (y buscador) para obtener los conteos de categorías
+            // Filtrar productos por vehículo activo, stock y buscador para obtener los conteos reales de categorías
             const vehicleFiltered = productsData.filter(product => {
                 const matchesVehicle = matchesVehicleFilter(product, activeVehicle);
-                
+                let matchesStock = true;
+                const isCombo = isPromoKitOrCombo(product);
+                if (filterStock === 'IN_STOCK') {
+                    matchesStock = isCombo || (!product.is_out_of_stock && (Number(product.total_stock) > 0));
+                } else if (filterStock === 'OUT_OF_STOCK') {
+                    matchesStock = !isCombo && (product.is_out_of_stock || (Number(product.total_stock) <= 0));
+                }
                 let matchesSearch = true;
                 if (searchQuery.trim() !== '') {
                     const normalizedQuery = normalizeText(searchQuery);
@@ -1879,11 +1937,12 @@
                     matchesSearch = terms.every(term => {
                         const inDesc = normalizeText(product.description).includes(term);
                         const inCat = normalizeText(product.category).includes(term);
+                        const inOem = normalizeText(product.oem).includes(term);
                         const inKeywords = (product.keywords || []).some(k => normalizeText(k).includes(term));
-                        return inDesc || inCat || inKeywords;
+                        return inDesc || inCat || inOem || inKeywords;
                     });
                 }
-                return matchesVehicle && matchesSearch;
+                return matchesVehicle && matchesStock && matchesSearch;
             });
 
             // Contar productos por categoría
@@ -2052,11 +2111,34 @@
                 const viewTitle = document.getElementById('currentViewTitle');
                 if (btnPhotos) btnPhotos.classList.add('active');
                 if (btnFolders) btnFolders.classList.remove('active');
+                if (categoriesScrollContainer) categoriesScrollContainer.style.display = (searchQuery && searchQuery.trim() !== '') ? 'none' : 'block';
                 if (pGrid) pGrid.style.display = 'grid';
                 if (fGrid) fGrid.style.display = 'none';
-                if (navBack) navBack.style.display = 'flex';
+                if (navBack) navBack.style.display = (activeCategory !== 'ALL' || (searchQuery && searchQuery.trim() !== '')) ? 'flex' : 'none';
                 if (viewTitle) viewTitle.innerText = activeCategory === 'ALL' ? 'Catálogo' : activeCategory;
             }
+        }
+
+        function renderDynamicPricePresets() {
+            const row = document.getElementById('pricePresetsRow');
+            if (!row) return;
+            const tc = getTC();
+            if (!tc || tc <= 1) return;
+            const roundClean = (val) => {
+                const step = val >= 10000 ? 1000 : 500;
+                return Math.max(step, Math.round(val / step) * step);
+            };
+            const t1 = roundClean(15 * tc);
+            const t2 = roundClean(40 * tc);
+            const t3 = roundClean(80 * tc);
+            const fmt = (n) => 'Bs. ' + Number(n).toLocaleString('es-VE', { maximumFractionDigits: 0 });
+            row.innerHTML = `
+                <button type="button" class="price-preset-btn active" data-min="" data-max="">Todos</button>
+                <button type="button" class="price-preset-btn" data-min="0" data-max="${t1}">Hasta ${fmt(t1)}</button>
+                <button type="button" class="price-preset-btn" data-min="${t1}" data-max="${t2}">${fmt(t1)} - ${fmt(t2)}</button>
+                <button type="button" class="price-preset-btn" data-min="${t2}" data-max="${t3}">${fmt(t2)} - ${fmt(t3)}</button>
+                <button type="button" class="price-preset-btn" data-min="${t3}" data-max="">+${fmt(t3)}</button>
+            `;
         }
 
         function resetAllFilters() {
@@ -2185,10 +2267,35 @@
                 // Actualizar barra de estado y contadores de filtros
                 updateFilterUI();
 
-                // Si no hay productos, mostrar estado vacío
+                // Si no hay productos, mostrar estado vacío con salida a WhatsApp
                 if (currentFilteredProducts.length === 0) {
                     productsGrid.style.display = 'none';
                     emptyState.style.display = 'flex';
+                    const q = (searchQuery || '').trim();
+                    const emptyTitle = document.getElementById('emptyStateTitle');
+                    const emptyDesc = document.getElementById('emptyStateDesc');
+                    const emptyWaBtn = document.getElementById('emptyStateWaBtn');
+                    const emptyWaLabel = document.getElementById('emptyStateWaLabel');
+                    const emptyOutBtn = document.getElementById('emptyStateIncludeOutBtn');
+                    if (emptyTitle) {
+                        emptyTitle.innerText = q ? `No encontramos "${q}" en pantalla` : 'No hay repuestos con esos filtros';
+                    }
+                    if (emptyDesc) {
+                        emptyDesc.innerText = 'Muchas piezas tienen nombres técnicos distintos o acaban de llegar al almacén. Pregúntanos directo por WhatsApp.';
+                    }
+                    if (emptyWaBtn) {
+                        const vTxt = activeVehicle && activeVehicle !== 'ALL' ? ` para ${activeVehicle}` : '';
+                        const waText = q
+                            ? `¡Hola TODO PARTES HORIZONTE! Busqué "${q}"${vTxt} en su catálogo web y no me apareció. ¿Lo tienen disponible o algún equivalente?`
+                            : `¡Hola TODO PARTES HORIZONTE! Necesito ayuda buscando un repuesto${vTxt} en su catálogo web.`;
+                        emptyWaBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}`;
+                    }
+                    if (emptyWaLabel) {
+                        emptyWaLabel.innerText = q ? `Preguntar por "${q}" en WhatsApp` : 'Consultar repuesto por WhatsApp';
+                    }
+                    if (emptyOutBtn) {
+                        emptyOutBtn.style.display = (filterStock === 'IN_STOCK') ? 'inline-flex' : 'none';
+                    }
                     return;
                 }
 
@@ -2271,17 +2378,17 @@
                             ${product.oem ? `<div class="product-oem" style="font-family: monospace; font-size: 11px; color: var(--text-secondary); background: rgba(255, 106, 0, 0.05); padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(255, 106, 0, 0.15); align-self: flex-start; margin-top: -4px;">OEM: ${product.oem.split('/')[0].trim()}</div>` : ''}
                             ${priceRowHtml}
                             <div class="card-actions">
-                                <a href="${whatsappLink}" target="_blank" class="card-btn" id="btn-wa-${product.id}" onclick="trackEvent('consultar_producto_whatsapp', { item_id: '${product.id}', nombre_producto: '${product.description.replace(/'/g, "\\'")}', categoria: '${product.category}', origen: 'tarjeta_grid' })" aria-label="Consultar repuesto por WhatsApp">
+                                <a href="${whatsappLink}" target="_blank" rel="noopener noreferrer" class="card-btn" id="btn-wa-${product.id}" aria-label="Cotizar repuesto por WhatsApp">
                                     <svg aria-hidden="true" viewBox="0 0 24 24">
                                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                                     </svg>
-                                    <span>Consultar</span>
+                                    <span>Cotizar</span>
                                 </a>
-                                <button class="card-btn-add" id="btn-add-${product.id}" onclick="event.stopPropagation(); addToCart('${product.id}')" aria-label="Añadir a la lista de pedido">
+                                <button class="card-btn-add" id="btn-add-${product.id}" onclick="event.stopPropagation(); addToCart('${product.id}')" aria-label="Agregar a tu lista de cotización">
                                     <svg aria-hidden="true" viewBox="0 0 24 24">
                                         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
                                     </svg>
-                                    <span>Añadir</span>
+                                    <span>+ Lista</span>
                                 </button>
                             </div>
                         </div>
@@ -2357,7 +2464,7 @@
                 if (btnViewPhotos) btnViewPhotos.classList.add('active');
                 if (btnViewFolders) btnViewFolders.classList.remove('active');
                 
-                categoriesScrollContainer.style.display = 'none';
+                categoriesScrollContainer.style.display = (searchQuery && searchQuery.trim() !== '') ? 'none' : 'block';
                 productsGrid.style.display = 'grid';
                 foldersGrid.style.display = 'none';
                 
@@ -2400,8 +2507,9 @@
                     matchesSearch = terms.every(term => {
                         const inDesc = normalizeText(product.description).includes(term);
                         const inCat = normalizeText(product.category).includes(term);
+                        const inOem = normalizeText(product.oem).includes(term);
                         const inKeywords = (product.keywords || []).some(k => normalizeText(k).includes(term));
-                        return inDesc || inCat || inKeywords;
+                        return inDesc || inCat || inOem || inKeywords;
                     });
                 }
                 return matchesVehicle && matchesStock && matchesSearch;
@@ -2594,7 +2702,13 @@
                                        !window.location.pathname.includes('.html');
                     if (isHomepage) {
                         e.preventDefault();
-                        goBackToFolders();
+                        activeCategory = 'ALL';
+                        activeView = 'PHOTOS';
+                        searchQuery = '';
+                        if (searchInput) searchInput.value = '';
+                        syncStateToURL(false);
+                        parseURLState();
+                        window.scrollTo({ top: 0, behavior: 'instant' });
                     }
                 });
             }
@@ -2621,9 +2735,26 @@
                 }
             });
 
+            const btnClearSearch = document.getElementById('btnClearSearch');
+            if (btnClearSearch) {
+                btnClearSearch.addEventListener('click', () => {
+                    searchInput.value = '';
+                    searchQuery = '';
+                    btnClearSearch.style.display = 'none';
+                    activeCategory = 'ALL';
+                    activeView = 'PHOTOS';
+                    syncStateToURL(false);
+                    parseURLState();
+                    searchInput.focus();
+                });
+            }
+
             searchInput.addEventListener('input', (e) => {
                 const oldQuery = searchQuery;
                 searchQuery = e.target.value;
+                if (btnClearSearch) {
+                    btnClearSearch.style.display = searchQuery.trim() ? 'flex' : 'none';
+                }
 
                 clearTimeout(searchDebounceTimer);
                 if (searchQuery.trim().length >= 2) {
@@ -2654,9 +2785,9 @@
                         window.scrollTo({ top: 0, behavior: 'instant' });
                     }
                 } else {
-                    // Volver a carpetas al borrar
+                    // Volver a la vista por defecto (fotos) al borrar
                     activeCategory = 'ALL';
-                    activeView = 'FOLDERS';
+                    activeView = 'PHOTOS';
                     syncStateToURL(false);
                     parseURLState();
                     window.scrollTo({ top: 0, behavior: 'instant' });
@@ -2763,14 +2894,17 @@
                 });
             });
 
-            // Presets de precios rápidos en el panel
-            document.querySelectorAll('.price-preset-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    document.querySelectorAll('.price-preset-btn').forEach(b => b.classList.remove('active'));
-                    e.currentTarget.classList.add('active');
+            // Presets de precios rápidos en el panel (delegación para presets dinámicos)
+            const pricePresetsRow = document.getElementById('pricePresetsRow');
+            if (pricePresetsRow) {
+                pricePresetsRow.addEventListener('click', (e) => {
+                    const btn = e.target.closest('.price-preset-btn');
+                    if (!btn) return;
+                    pricePresetsRow.querySelectorAll('.price-preset-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-                    const minVal = e.currentTarget.getAttribute('data-min');
-                    const maxVal = e.currentTarget.getAttribute('data-max');
+                    const minVal = btn.getAttribute('data-min');
+                    const maxVal = btn.getAttribute('data-max');
 
                     filterPriceMin = minVal ? parseFloat(minVal) : null;
                     filterPriceMax = maxVal ? parseFloat(maxVal) : null;
@@ -2790,7 +2924,39 @@
                     updateFilterUI();
                     renderProducts();
                 });
-            });
+            }
+
+            const emptyIncludeOutBtn = document.getElementById('emptyStateIncludeOutBtn');
+            if (emptyIncludeOutBtn) {
+                emptyIncludeOutBtn.addEventListener('click', () => {
+                    filterStock = 'ALL';
+                    updateFilterUI();
+                    renderCategories();
+                    renderProducts();
+                });
+            }
+            const emptyResetBtn = document.getElementById('emptyStateResetBtn');
+            if (emptyResetBtn) {
+                emptyResetBtn.addEventListener('click', () => {
+                    searchQuery = '';
+                    if (searchInput) searchInput.value = '';
+                    if (btnClearSearch) btnClearSearch.style.display = 'none';
+                    activeCategory = 'ALL';
+                    resetAllFilters();
+                    renderCategories();
+                    syncStateToURL(false);
+                    parseURLState();
+                });
+            }
+            const emptyWaBtn = document.getElementById('emptyStateWaBtn');
+            if (emptyWaBtn) {
+                emptyWaBtn.addEventListener('click', () => {
+                    trackEvent('contacto_whatsapp', {
+                        origen: 'empty_state',
+                        termino_busqueda: searchQuery || ''
+                    });
+                });
+            }
 
             // Botón aplicar rango de precio manual
             const btnApplyPrice = document.getElementById('btnApplyPriceRange');
@@ -2953,7 +3119,8 @@
                         trackEvent('consultar_producto_whatsapp', {
                             item_name: product.description,
                             item_id: product.id,
-                            origen: 'catalogo_page'
+                            categoria: product.category,
+                            origen: 'tarjeta_grid'
                         });
                         incrementInteractionCount();
                     }
@@ -2997,15 +3164,10 @@
         const INTERACTIONS_THRESHOLD = 3; // Trigger after 3 interactions
 
         function incrementInteractionCount() {
-            if (sessionStorage.getItem(FEEDBACK_SHOWN_KEY) === "true") return;
-
+            // No interrumpir la sesión de compra durante la búsqueda activa.
             let count = parseInt(sessionStorage.getItem(FEEDBACK_INTERACTIONS_KEY) || "0", 10);
             count++;
             sessionStorage.setItem(FEEDBACK_INTERACTIONS_KEY, count.toString());
-
-            if (count >= INTERACTIONS_THRESHOLD) {
-                showFeedbackModal();
-            }
         }
 
         function initFeedbackModal() {

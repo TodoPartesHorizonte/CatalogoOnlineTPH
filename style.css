@@ -1988,10 +1988,15 @@ transform:translateY(100%);
 .card-btn span {display:none;
 }
 
-.card-btn::after {content:"Consultar";
+.card-btn::after {content:"Cotizar";
 }
 
 .card-btn-add span {display:none;
+}
+
+.card-btn-add::after {content:"+";
+font-weight:800;
+font-size:16px;
 }
 
 .card-btn-add {padding:10px;
@@ -4608,5 +4613,270 @@ height:18px;
     .promo-modal-nav {
         width: 28px;
         height: 28px;
+    }
+}
+
+/* ==========================================================================
+   CRO ENHANCEMENTS: TRUST BAR, SEARCH CLEAR, EMPTY STATE, PROMO & CART CTA
+   ========================================================================== */
+.trust-bar-strip {
+    width: 100%;
+    background: rgba(17, 17, 22, 0.85);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 8px 16px;
+}
+
+.trust-bar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.trust-bar-item strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.trust-bar-sep {
+    color: rgba(255, 255, 255, 0.22);
+}
+
+.trust-bar-link {
+    color: #ffa24d;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(255, 162, 77, 0.45);
+    white-space: nowrap;
+}
+
+.trust-bar-link:hover {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.vehicle-card#vehicle-all {
+    flex-direction: column;
+    gap: 2px;
+}
+
+.vehicle-all-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: currentColor;
+}
+
+.search-input {
+    padding-right: 44px;
+}
+
+.search-clear-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.08);
+    color: #e5e7eb;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.search-clear-btn:hover {
+    background: var(--accent-orange);
+    border-color: var(--accent-orange);
+    color: #ffffff;
+}
+
+.empty-state-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.empty-state-wa-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: var(--accent-green);
+    color: #06240f;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25);
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.empty-state-wa-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.empty-state-wa-btn:hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+}
+
+.empty-state-sec-btn {
+    padding: 11px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.05);
+    color: #e5e7eb;
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.empty-state-sec-btn:hover {
+    border-color: var(--accent-orange);
+    color: #ffffff;
+}
+
+.promo-modal-actions {
+    margin-top: 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.promo-modal-wa-btn {
+    flex: 1.2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--accent-green);
+    color: #06240f;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.promo-modal-wa-btn svg {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+}
+
+.promo-modal-actions .promo-modal-btn-more {
+    margin-top: 0;
+    flex: 1;
+}
+
+.carousel-item-price {
+    font-size: 13px;
+    font-weight: 800;
+    color: #25d366;
+    margin-top: auto;
+    padding-top: 6px;
+}
+
+.lightbox-policies-note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--text-secondary);
+    padding-top: 4px;
+    line-height: 1.4;
+}
+
+.lightbox-policies-note strong {
+    color: #ffffff;
+}
+
+.lightbox-policies-note a {
+    color: #ffa24d;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 1px dashed rgba(255, 162, 77, 0.45);
+}
+
+.cart-drawer-policies {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.45;
+}
+
+.cart-drawer-policies strong {
+    color: var(--text-secondary);
+}
+
+.cart-drawer-policies a {
+    color: #ffa24d;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cart-empty-wa-btn {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    background: rgba(37, 211, 102, 0.14);
+    border: 1px solid rgba(37, 211, 102, 0.4);
+    color: #25d366;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.cart-empty-wa-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .trust-bar-strip {
+        padding: 7px 12px;
+    }
+    .trust-bar-inner {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+        white-space: nowrap;
+        gap: 8px;
+        font-size: 11.5px;
+    }
+    .trust-bar-inner::-webkit-scrollbar {
+        display: none;
+    }
+    .featured-carousel-section {
+        min-height: 360px !important;
+        margin-top: 24px !important;
     }
 }

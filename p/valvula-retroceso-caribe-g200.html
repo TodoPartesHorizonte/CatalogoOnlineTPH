@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://todoparteshorizonte.com https://www.todoparteshorizonte.com https://todoparteshorizonte.pages.dev https://*.pages.dev https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com https://www.facebook.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com https://connect.facebook.net; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self' https://todoparteshorizonte.com https://www.todoparteshorizonte.com https://todoparteshorizonte.pages.dev https://*.pages.dev https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://cloudflareinsights.com https://www.facebook.com;">
     <title>Valvula Retroceso Caribe G200 8944113661 | Repuestos Caracas</title>
     <meta name="description" content="Compra Valvula Retroceso Caribe G200. Código OEM: 8944113661. Repuestos originales en Caracas. Envíos nacionales. Especialistas en autopartes de alta calidad.">
     <meta name="robots" content="index, follow">
@@ -79,29 +79,9 @@
         },
         "shippingDetails": {
           "@type": "OfferShippingDetails",
-          "shippingRate": {
-            "@type": "MonetaryAmount",
-            "value": "0.00",
-            "currency": "USD"
-          },
           "shippingDestination": {
             "@type": "DefinedRegion",
             "addressCountry": "VE"
-          },
-          "deliveryTime": {
-            "@type": "ShippingDeliveryTime",
-            "handlingTime": {
-              "@type": "QuantitativeValue",
-              "minValue": 0,
-              "maxValue": 1,
-              "unitCode": "DAY"
-            },
-            "transitTime": {
-              "@type": "QuantitativeValue",
-              "minValue": 1,
-              "maxValue": 3,
-              "unitCode": "DAY"
-            }
           }
         },
         "hasMerchantReturnPolicy": {
@@ -109,13 +89,8 @@
           "applicableCountry": "VE",
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
           "merchantReturnDays": 10,
-          "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/ReturnShippingFees",
-          "returnShippingFeesAmount": {
-            "@type": "MonetaryAmount",
-            "value": "5.00",
-            "currency": "USD"
-          }
+          "returnMethod": "https://schema.org/ReturnInStore",
+          "merchantReturnLink": "https://todoparteshorizonte.com/politicas"
         }
       },
       "aggregateRating": {
@@ -335,11 +310,16 @@
         }, 800);
       });
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <script defer src="../cart.js"></script>
+    <link rel="preload" href="../assets/fonts/outfit-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <script defer src="../cart.js?v=2"></script>
     <style>
+        @font-face {
+            font-family: 'Outfit';
+            src: url('../assets/fonts/outfit-variable.woff2') format('woff2');
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
         :root {
             --bg-primary: #0a0a0c;
             --bg-secondary: #111116;
@@ -428,6 +408,12 @@
             0% { transform: translate3d(0, 0, 0) scale(1.1); }
             50% { transform: translate3d(-10vw, -8vw, 0) scale(0.95); }
             100% { transform: translate3d(5vw, -12vw, 0) scale(1.05); }
+        }
+        @media (max-width: 900px) {
+            body::before, body::after {
+                display: none;
+                animation: none;
+            }
         }
 
         ::-webkit-scrollbar {
@@ -1752,6 +1738,11 @@
         .pp-btn-wa:hover { background: #2fe477; transform: translateY(-1px); }
         .pp-btn-add { flex: 1; background: rgba(255,106,0,0.08); color: #ffa24d; border-color: rgba(255,106,0,0.35); }
         .pp-btn-add:hover { background: rgba(255,106,0,0.16); color: #fff; transform: translateY(-1px); }
+        .pp-lbl-mob { display: none; }
+        .pp-policies-micro { font-size: 12px; color: var(--text-muted); line-height: 1.5; margin-top: 2px; }
+        .pp-policies-micro strong { color: var(--text-secondary); }
+        .pp-policies-micro a { color: var(--accent-orange); text-decoration: none; font-weight: 600; }
+        .pp-policies-micro a:hover { text-decoration: underline; }
         .pp-section { margin-top: 22px; background: #12141a; border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 22px 24px; }
         .pp-h2 { font-size: 15px; font-weight: 800; letter-spacing: 0.7px; text-transform: uppercase; color: #fff; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
         .pp-h2::before { content: ""; width: 3px; height: 16px; border-radius: 2px; background: var(--accent-orange); }
@@ -1803,10 +1794,11 @@
                 background: rgba(11,13,17,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
                 border-top: 1px solid rgba(255,255,255,0.08);
             }
-            .pp-btn { height: 48px; }
-            .pp-btn-wa { flex: 1; }
-            .pp-btn-add { flex: 0 0 52px; padding: 0; }
-            .pp-btn-add .pp-btn-label { display: none; }
+            .pp-btn { height: 48px; font-size: 14px; }
+            .pp-btn-wa { flex: 1.45; }
+            .pp-btn-add { flex: 0 0 auto; min-width: 86px; padding: 0 12px; }
+            .pp-lbl-desk { display: none; }
+            .pp-lbl-mob { display: inline; font-size: 13px; }
             body { padding-bottom: 86px; }
             .fab-whatsapp { bottom: 96px !important; }
         }
@@ -1889,12 +1881,16 @@
                 <div class="pp-actions">
                     <a href="https://wa.me/584242116375?text=%C2%A1Hola%21%20Me%20interesa%20consultar%20por%20el%20repuesto%3A%20%2AValvula%20Retroceso%20Caribe%20G200%2A.%20Precio%3A%20Bs.%2022.100%2C00.%20%C2%BFTienen%20disponibilidad%20inmediata%3F%0AEnlace%3A%20https%3A//todoparteshorizonte.com/p/valvula-retroceso-caribe-g200" class="pp-btn pp-btn-wa" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        <span>Consultar por WhatsApp</span>
+                        <span>Cotizar por WhatsApp</span>
                     </a>
-                    <button type="button" class="pp-btn pp-btn-add" id="btnAddProduct" aria-label="Añadir a la lista de pedido" onclick="addToCart('0acc51cc-142c-4fd5-9b17-767ce21bc42b', 'Valvula Retroceso Caribe G200', 'Valvula Retroceso', './assets/valvula-retroceso-caribe-g200.webp')">
+                    <button type="button" class="pp-btn pp-btn-add" id="btnAddProduct" aria-label="Añadir a la lista de pedido" data-pid="0acc51cc-142c-4fd5-9b17-767ce21bc42b" data-pdesc="Valvula Retroceso Caribe G200" data-pcat="Valvula Retroceso" data-pimg="./assets/valvula-retroceso-caribe-g200.webp" data-pvar="" onclick="var d=this.dataset,v=null;try{v=d.pvar?JSON.parse(d.pvar):null}catch(e){};addToCart(d.pid,d.pdesc,d.pcat,d.pimg,v)">
                         <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                        <span class="pp-btn-label">Añadir al Pedido</span>
+                        <span class="pp-btn-label"><span class="pp-lbl-desk">Añadir a Lista</span><span class="pp-lbl-mob">Lista</span></span>
                     </button>
+                </div>
+                <div class="pp-policies-micro">
+                    <strong>Pagos:</strong> Pago Móvil · Transferencia Bancaria · Efectivo · Precios en Bs. al día<br>
+                    <strong>Envíos:</strong> Zoom, Tealca y MRW (cobro en destino) · <a href="/politicas">Políticas de devolución y garantías</a>
                 </div>
             </div>
         </section>
@@ -1906,15 +1902,15 @@
         <div class="pp-strip">
             <div class="pp-strip-item">
                 <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                <div><strong>Ubicación</strong><span>Av. Principal de Boleíta Sur, Caracas, Venezuela.</span></div>
+                <div><strong>Ubicación y Horario</strong><span>Av. Principal de Boleíta Sur, Caracas.<br>Lun–Vie 9:00 AM–5:00 PM · Sáb 9:00 AM–1:00 PM</span></div>
             </div>
             <div class="pp-strip-item">
-                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
-                <div><strong>Horario de Atención</strong><span>Lunes a Viernes: 9:00 AM - 5:00 PM<br>Sábados: 9:00 AM - 1:00 PM</span></div>
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+                <div><strong>Pagos y Envíos</strong><span>Pago Móvil, Transferencia Bancaria y Efectivo. Precios en Bs. al día. Envíos cobro en destino (Zoom, Tealca, MRW).</span></div>
             </div>
             <div class="pp-strip-item">
-                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                <div><strong>Contacto Directo</strong><span>Atención personalizada y asesoría técnica vía WhatsApp.</span></div>
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                <div><strong>Políticas y Garantías</strong><span>Cambios hasta 10 días hábiles sin uso y en su empaque original. <a href="/politicas" style="color:var(--accent-orange);text-decoration:none;font-weight:600;">Ver políticas</a></span></div>
             </div>
         </div>
 
@@ -1922,16 +1918,20 @@
         <section class="pp-section pp-faq">
             <h2 class="pp-h2">Preguntas frecuentes</h2>
             <details>
-                <summary>¿Tienen disponibilidad del repuesto Valvula Retroceso Caribe G200?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
-                <p>Sí, contamos con stock de este repuesto en Caracas. Te sugerimos confirmar disponibilidad exacta de forma rápida haciendo clic en el botón de WhatsApp.</p>
+                <summary>¿Qué métodos de pago aceptan y el precio en Bs. está actualizado?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
+                <p>Aceptamos exclusivamente <strong>Pago Móvil</strong>, <strong>Transferencia Bancaria</strong> y <strong>Efectivo</strong>. Nuestros precios en Bolívares (Bs.) están actualizados al día.</p>
             </details>
             <details>
-                <summary>¿Dónde puedo retirar la pieza?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
-                <p>Puedes retirar tu pedido personalmente en nuestra oficina comercial en Boleíta Sur, Caracas. También realizamos envíos a nivel nacional.</p>
+                <summary>¿Dónde puedo retirar la pieza o cómo realizan los envíos nacionales?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
+                <p>Puedes retirar personalmente en nuestra tienda física en Boleíta Sur, Caracas, o solicitar envío nacional <strong>cobro en destino</strong> mediante <strong>Zoom, Tealca o MRW</strong>. Las tarifas y tiempos de entrega dependen directamente de las condiciones de la empresa de encomiendas elegida.</p>
             </details>
             <details>
-                <summary>¿Qué métodos de envío manejan para el interior de Venezuela?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
-                <p>Realizamos envíos cobro en destino a todo el país a través de agencias de encomienda confiables como Zoom, Tealca y MRW.</p>
+                <summary>¿Cuáles son las políticas de devolución y garantías?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
+                <p>Tienes un máximo de <strong>10 días hábiles</strong> para cambios de piezas totalmente nuevas, sin marcas de instalación y con su empaque original intacto (aplica cambio de mercancía o nota de crédito, sin reembolsos en dinero; las piezas eléctricas no tienen cambio). Toda garantía por defecto de fábrica requiere revisión del proveedor e informe técnico detallado del taller o mecánico. <a href="/politicas" style="color:var(--accent-orange);text-decoration:none;font-weight:600;">Leer políticas completas →</a></p>
+            </details>
+            <details>
+                <summary>¿Cómo confirmo compatibilidad del repuesto Valvula Retroceso Caribe G200 con mi Isuzu?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
+                <p>Presiona <strong>Cotizar por WhatsApp</strong> para validar compatibilidad por año, motor, medida o código OEM junto a nuestros especialistas en Caracas.</p>
             </details>
         </section>
 
@@ -1947,6 +1947,21 @@
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Valvula Retroceso</span></span>
                         <div class="related-title" title="VALVULA RETROCESO CARIBE 2.3">VALVULA RETROCESO CARIBE 2.3</div>
+                        <div class="related-oem">OEM: 8-94411-3661</div>
+                        <div class="related-footer">
+                            <span>Ver Detalle</span>
+                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/p/valvula-retroceso-trooper" class="related-card">
+                    <div class="related-img-wrapper">
+                        <img src="../assets/valvula-retroceso-trooper.webp" alt="Repuesto VALVULA RETROCESO TROOPER original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                    </div>
+                    <div class="related-content">
+                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Valvula Retroceso</span></span>
+                        <div class="related-title" title="VALVULA RETROCESO TROOPER">VALVULA RETROCESO TROOPER</div>
                         <div class="related-oem">OEM: 8-94411-3661</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1984,21 +1999,6 @@
                         </div>
                     </div>
                 </a>
-
-                <a href="/p/valvula-retroceso-trooper" class="related-card">
-                    <div class="related-img-wrapper">
-                        <img src="../assets/valvula-retroceso-trooper.webp" alt="Repuesto VALVULA RETROCESO TROOPER original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
-                    </div>
-                    <div class="related-content">
-                        <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Valvula Retroceso</span></span>
-                        <div class="related-title" title="VALVULA RETROCESO TROOPER">VALVULA RETROCESO TROOPER</div>
-                        <div class="related-oem">OEM: 8-94411-3661</div>
-                        <div class="related-footer">
-                            <span>Ver Detalle</span>
-                            <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
-                        </div>
-                    </div>
-                </a>
             </div>
         </div>
     </main>
@@ -2014,6 +2014,8 @@
                 <ul class="footer-links">
                     <li><a href="/">Catálogo Principal</a></li>
                     <li><a href="/?categoria=valvula-retroceso" rel="nofollow">Categoría: Valvula Retroceso</a></li>
+                    <li><a href="/politicas">Políticas de Devolución y Garantías</a></li>
+                    <li><a href="/informacion">Ubicación y Contacto</a></li>
                     <li><a href="https://wa.me/584242116375">Asistencia Técnica</a></li>
                 </ul>
             </div>
@@ -2028,147 +2030,6 @@
         </div>
         <div class="pp-footer-bottom"><p>RIF: J-50180765-5 · Especialistas Isuzu</p></div>
     </footer>
-    
-    <!-- Google Analytics & Meta Pixel Tracker Diferido y Reactivo -->
-    <script>
-      window.GA_ID = "G-QDYFPKJNJE";
-      window.META_PIXEL_ID = "1502067325291645";
-      var analyticsInitialized = false;
-
-      function forceInitAnalytics() {
-        if (analyticsInitialized) return;
-        analyticsInitialized = true;
-
-        if (window.GA_ID && window.GA_ID.startsWith('G-') && !document.getElementById('ga-script')) {
-          var script = document.createElement('script');
-          script.id = 'ga-script';
-          script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
-          document.head.appendChild(script);
-
-          window.dataLayer = window.dataLayer || [];
-          window.gtag = function() { window.dataLayer.push(arguments); };
-          gtag('js', new Date());
-          gtag('config', window.GA_ID);
-        }
-
-        if (window.META_PIXEL_ID && !document.getElementById('meta-pixel-script')) {
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.id='meta-pixel-script';
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-
-          fbq('init', window.META_PIXEL_ID);
-          fbq('track', 'PageView');
-        }
-      }
-
-      function trackEvent(eventName, params = {}) {
-        forceInitAnalytics();
-
-        // 1. Telemetría Cloudflare KV
-        try {
-          let cfEvent = null;
-          let cfData = {};
-
-          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
-            cfEvent = 'product_view';
-            cfData = {
-              product_id: params.item_id || params.id || '',
-              product_name: params.item_name || params.nombre_producto || '',
-              product_model: params.item_category || params.categoria || '',
-              product_photo: params.image_path || ''
-            };
-          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp' || eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
-            cfEvent = 'whatsapp_click';
-            cfData = {
-              product_id: params.item_id || (params.items && params.items[0] ? params.items[0].item_id : ''),
-              product_name: params.nombre_producto || params.item_name || (params.items && params.items[0] ? (params.items[0].item_name || params.items[0].nombre_producto) : ''),
-              product_model: params.categoria || params.item_category || (params.items && params.items[0] ? (params.items[0].item_category || params.items[0].categoria) : '')
-            };
-          } else if (eventName === 'page_view') {
-            cfEvent = 'page_view';
-            cfData = {
-              path: window.location.pathname || '/'
-            };
-          }
-
-          if (cfEvent) {
-            const payload = JSON.stringify({ event: cfEvent, data: cfData });
-            const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-              ? '/api/track-event'
-              : 'https://todoparteshorizonte.pages.dev/api/track-event';
-
-            try {
-              if (typeof fetch === 'function') {
-                fetch(targetEndpoint, {
-                  method: 'POST',
-                  mode: 'cors',
-                  headers: { 'Content-Type': 'application/json' },
-                  body: payload,
-                  keepalive: true
-                }).catch(() => {});
-              } else if (navigator.sendBeacon) {
-                const blob = new Blob([payload], { type: 'application/json' });
-                navigator.sendBeacon(targetEndpoint, blob);
-              }
-            } catch (e) {
-              if (navigator.sendBeacon) {
-                navigator.sendBeacon(targetEndpoint, payload);
-              }
-            }
-          }
-        } catch (e) {}
-
-        if (typeof gtag === 'function') gtag('event', eventName, params);
-        if (typeof fbq === 'function') {
-          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
-            fbq('track', 'ViewContent', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
-          } else if (eventName === 'add_to_cart' || eventName === 'agregar_al_carrito') {
-            fbq('track', 'AddToCart', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
-          } else if (eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
-            fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
-            fbq('track', 'Contact');
-          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
-            fbq('track', 'Contact', { content_name: params.nombre_producto || params.item_name || 'Consulta WhatsApp' });
-          } else {
-            fbq('trackCustom', eventName, params);
-          }
-        }
-      }
-      window.trackEvent = trackEvent;
-      window.forceInitAnalytics = forceInitAnalytics;
-
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          forceInitAnalytics();
-          trackEvent('page_view', { path: window.location.pathname });
-          
-          var titleEl = document.querySelector('h1.product-title');
-          var catBadge = document.querySelector('.category-badge span');
-          var prodImg = document.querySelector('.product-img');
-          
-          var pName = titleEl ? titleEl.innerText.trim() : '';
-          var pCat = catBadge ? catBadge.innerText.trim() : '';
-          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
-          var pId = window.location.pathname.split('/').pop().replace('.html', '');
-          
-          if (pId) {
-            trackEvent('view_item', {
-              item_id: pId,
-              item_name: pName,
-              item_category: pCat,
-              image_path: pPhoto
-            });
-          }
-        }, 800);
-      });
-    </script>
     <script>
 (function () {
     document.querySelectorAll('.pp-chip[data-oem]').forEach(function (chip) {
@@ -2272,8 +2133,19 @@
                 priceBox.innerHTML = '<div class="pp-price-row"><span class="pp-cur">Bs.</span><span class="pp-amount">' + numTxt + '</span></div><div class="pp-stock"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Disponible en tienda física (Boleíta Sur)</span></div>';
                 if (waBtn) {
                     waBtn.classList.remove('pending');
-                    waBtn.querySelector('span').textContent = 'Consultar por WhatsApp';
-                    waBtn.setAttribute('href', origWaHref);
+                    waBtn.querySelector('span').textContent = 'Cotizar por WhatsApp';
+                    var waBase = (origWaHref || '').split('?')[0];
+                    var pTitle = (addBtn && addBtn.dataset && addBtn.dataset.pdesc) || (document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : '');
+                    var canonEl = document.querySelector('link[rel="canonical"]');
+                    var pUrl = canonEl ? canonEl.href : window.location.href;
+                    var specParts = [];
+                    if (selected.tipo) specParts.push('Versión ' + selected.tipo);
+                    if (selected.lado) specParts.push('Lado ' + selected.lado);
+                    if (selected.medida) specParts.push('Medida ' + selected.medida);
+                    if (selected.brand) specParts.push('Marca ' + selected.brand);
+                    var specStr = specParts.length ? ' (' + specParts.join(' / ') + ')' : '';
+                    var waMsg = '¡Hola! Me interesa consultar por el repuesto: *' + pTitle + '*' + specStr + '. Precio: ' + (selected.price_fmt || 'Consultar') + '. ¿Tienen disponibilidad inmediata?\nEnlace: ' + pUrl;
+                    waBtn.setAttribute('href', waBase ? (waBase + '?text=' + encodeURIComponent(waMsg)) : origWaHref);
                 }
                 if (addBtn) { addBtn.classList.remove('pending'); }
             }
@@ -2282,6 +2154,16 @@
     if (waBtn) {
         waBtn.addEventListener('click', function (e) {
             if (!selected) { e.preventDefault(); mount.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+        });
+    }
+    if (addBtn) {
+        addBtn.removeAttribute('onclick');
+        addBtn.addEventListener('click', function () {
+            if (!selected) { mount.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); return; }
+            if (typeof window.addToCart === 'function') {
+                var d = addBtn.dataset;
+                window.addToCart(d.pid, d.pdesc, d.pcat, d.pimg, selected);
+            }
         });
     }
     render();
