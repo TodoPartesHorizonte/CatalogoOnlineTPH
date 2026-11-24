@@ -287,6 +287,7 @@
       .social-links-header { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: nowrap; flex-shrink: 0; }
       @media (max-width: 1080px) and (min-width: 769px) { .header-wrapper { height: 74px; } header { padding: 12px 18px; } .brand-lockup { gap: 10px; flex: 0 1 auto; } .logo-image { width: 48px; height: 48px; } .logo-title { font-size: 16.5px; letter-spacing: 0.9px; } .logo-subtitle { font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 355px; } .logo-rif { display: none; } }
       @media (max-width: 768px) { .header-wrapper { height: 112px; } header { padding: 10px 14px; } .header-top-row { flex-direction: column; gap: 10px; align-items: stretch; } .brand-lockup { gap: 10px; } .logo-image { width: 44px; height: 44px; } .logo-title { font-size: clamp(14px, 4.3vw, 17px); letter-spacing: 0.8px; } .logo-subtitle { font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .logo-rif { display: none; } .social-links-header { width: 100%; justify-content: space-between; gap: 6px; } }
+      .trust-link-mob { display: none; }
       .logo-title span { color: var(--accent-orange); font-weight: 900; }
       .search-wrapper { position: relative; width: 100%; max-width: 600px; }
       .search-input { width: 100%; padding: 14px 20px 14px 50px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.15); background-color: rgba(10,10,12,0.9); color: var(--text-primary); font-size: 15px; outline: none; }
@@ -334,15 +335,42 @@
       .filter-toggle-btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; border-radius: 30px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); font-size: 13px; font-weight: 600; cursor: pointer; }
       .filter-quick-bar { max-width: 1200px; margin: 14px auto 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
       @media (max-width: 1210px) { .trust-bar-strip { padding: 10px 18px; } .trust-bar-items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px; } .trust-bar-item { white-space: normal; line-height: 1.3; font-size: 12px; } }
-      @media (max-width: 640px) { .trust-bar-strip { padding: 10px 14px; } .trust-bar-inner { flex-direction: column; align-items: stretch; gap: 8px; } .trust-bar-items { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; } .trust-bar-item { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; padding: 8px 10px; font-size: 11.5px; } .trust-item-wide { grid-column: 1 / -1; } .trust-bar-link { width: 100%; justify-content: space-between; padding: 9px 12px; border-radius: 10px; font-size: 12.5px; } }
+      @media (max-width: 640px) {
+        .header-wrapper { height: 56px; }
+        header { padding: 8px 12px; }
+        .header-top-row { flex-direction: row; align-items: center; justify-content: space-between; gap: 8px; }
+        .brand-lockup { gap: 8px; flex: 1; min-width: 0; }
+        .brand-text { min-width: 0; overflow: hidden; }
+        .logo-image { width: 34px; height: 34px; }
+        .logo-title { font-size: clamp(11.5px, 3.3vw, 13.5px); letter-spacing: 0.2px; }
+        .brand-meta { display: none; }
+        .social-links-header { width: auto; flex-shrink: 0; justify-content: flex-end; gap: 6px; }
+        .trust-bar-strip { padding: 6px 12px; }
+        .trust-bar-inner { flex-direction: row; align-items: center; justify-content: space-between; gap: 8px; }
+        .trust-bar-items { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
+        .trust-item-wide { display: none; }
+        .trust-bar-item { font-size: 11.5px; gap: 5px; white-space: nowrap; }
+        .trust-bar-item small { display: none; }
+        .trust-link-desk { display: none; }
+        .trust-link-mob { display: inline; }
+        .trust-bar-link { padding: 4px 10px; font-size: 11.5px; border-radius: 999px; }
+        h2.vehicle-filter-title { display: none; }
+        .vehicle-filter-container { margin-top: 10px; padding: 0 12px; }
+        .vehicle-grid { gap: 8px; padding-bottom: 4px; }
+        .vehicle-card { flex: 0 0 auto; min-width: 82px; height: 42px; min-height: 42px; padding: 6px 10px; border-radius: 10px; }
+        .vehicle-card#vehicle-all { flex-direction: row; gap: 5px; min-width: 72px; }
+        .vehicle-logo-img { max-height: 22px; }
+        .controls-wrapper { margin-top: 8px; padding: 0 12px; gap: 8px; }
+        #filterQuickBar { display: none; }
+      }
       @media (max-width: 768px) { .controls-wrapper { flex-direction: column; gap: 12px; padding: 0 16px; margin-top: 15px; } .controls-wrapper .search-wrapper { max-width: 100% !important; } .controls-wrapper .controls-actions { width: 100%; justify-content: space-between; } .filter-quick-bar { padding: 0 14px; flex-direction: column; align-items: stretch; gap: 8px; } }
       .skeleton-folder-card { position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 16/10; border: 1px solid var(--border-color); background: var(--bg-card); }
       @media (max-width: 768px) { .skeleton-folder-card { aspect-ratio: 1.4; } }
     </style>
 
     <!-- Estilos completos diferidos de forma asíncrona (Cero bloqueo de render) -->
-    <link rel="preload" href="./style.min.css?v=44" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./style.min.css?v=44"></noscript>
+    <link rel="preload" href="./style.min.css?v=45" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./style.min.css?v=45"></noscript>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
@@ -378,7 +406,7 @@
             <div class="trust-bar-items">
                 <div class="trust-bar-item trust-item-compact">
                     <svg class="trust-icon star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                    <span><strong>4.8</strong> Google <small>(87 reseñas)</small></span>
+                    <span><strong>4.7</strong> Google <small>(138 reseñas)</small></span>
                 </div>
                 <div class="trust-bar-item trust-item-compact">
                     <svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -394,7 +422,8 @@
                 </div>
             </div>
             <a href="/politicas" class="trust-bar-link">
-                <span>Políticas y Garantías</span>
+                <span class="trust-link-desk">Políticas y Garantías</span>
+                <span class="trust-link-mob">Pagos y políticas</span>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
             </a>
         </div>
@@ -436,7 +465,7 @@
     <div class="controls-wrapper">
         <div class="search-wrapper">
             <label for="searchInput" class="sr-only">Buscar repuesto o código OEM</label>
-            <input type="text" id="searchInput" class="search-input" placeholder="Buscar pieza, código OEM, marca o modelo…" aria-label="Buscar pieza, código OEM, marca o modelo" autocomplete="off">
+            <input type="text" id="searchInput" class="search-input" placeholder="Buscar repuesto o código OEM..." aria-label="Buscar repuesto o código OEM" autocomplete="off">
             <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
             </svg>

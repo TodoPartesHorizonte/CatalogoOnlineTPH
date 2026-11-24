@@ -952,8 +952,8 @@ def generate_pages(data):
       }},
       "aggregateRating": {{
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "87"
+        "ratingValue": "4.7",
+        "reviewCount": "138"
       }},
       "review": {{
         "@type": "Review",
@@ -2405,9 +2405,9 @@ def generate_pages(data):
                 <h1 class="pp-title">{h1_title}</h1>
                 <div class="pp-rating">
                     <span class="pp-stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
-                    <strong>4.8</strong>
+                    <strong>4.7</strong>
                     <span>|</span>
-                    <a href="{reviews_url}" target="_blank" rel="noopener noreferrer">87 valoraciones en Google</a>
+                    <a href="{reviews_url}" target="_blank" rel="noopener noreferrer">138 valoraciones en Google</a>
                 </div>
                 {oem_html}
                 {price_box_html}

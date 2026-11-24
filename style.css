@@ -2009,11 +2009,6 @@ transform:translateY(100%);
 .card-btn-add span {display:none;
 }
 
-.card-btn-add::after {content:"+";
-font-weight:800;
-font-size:16px;
-}
-
 .card-btn-add {padding:10px;
 flex:0 0 46px;
 border-radius:10px;
@@ -4718,6 +4713,10 @@ height:18px;
     transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
+.trust-link-mob {
+    display: none;
+}
+
 .trust-bar-link svg {
     width: 14px;
     height: 14px;
@@ -4751,39 +4750,7 @@ height:18px;
     }
 }
 
-@media (max-width: 640px) {
-    .trust-bar-strip {
-        padding: 10px 14px;
-    }
-    .trust-bar-inner {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 8px;
-    }
-    .trust-bar-items {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 6px;
-    }
-    .trust-bar-item {
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.07);
-        border-radius: 10px;
-        padding: 8px 10px;
-        font-size: 11.5px;
-        line-height: 1.35;
-    }
-    .trust-item-wide {
-        grid-column: 1 / -1;
-    }
-    .trust-bar-link {
-        width: 100%;
-        justify-content: space-between;
-        padding: 9px 12px;
-        border-radius: 10px;
-        font-size: 12.5px;
-    }
-}
+/* mobile trust & header overrides consolidated at bottom */
 
 .vehicle-card#vehicle-all {
     flex-direction: column;
@@ -4985,23 +4952,236 @@ height:18px;
 }
 
 @media (max-width: 768px) {
-    .trust-bar-strip {
-        padding: 7px 12px;
-    }
-    .trust-bar-inner {
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scrollbar-width: none;
-        white-space: nowrap;
-        gap: 8px;
-        font-size: 11.5px;
-    }
-    .trust-bar-inner::-webkit-scrollbar {
-        display: none;
-    }
     .featured-carousel-section {
         min-height: 360px !important;
         margin-top: 24px !important;
+    }
+}
+
+/* ==========================================================================
+   MOBILE ABOVE-THE-FOLD STREAMLINE (<= 640px)
+   ========================================================================== */
+@media (max-width: 640px) {
+    .header-wrapper {
+        height: 56px;
+    }
+    .header-wrapper.collapsed {
+        height: 52px;
+    }
+    header,
+    header:not(.collapsed) {
+        padding: 8px 12px;
+    }
+    header.collapsed {
+        padding: 8px 12px !important;
+    }
+    .header-top-row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        max-height: 56px;
+    }
+    .brand-lockup {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+        flex: 1;
+    }
+    .brand-text {
+        min-width: 0;
+        overflow: hidden;
+    }
+    .logo-image,
+    header.collapsed .logo-image {
+        width: 34px !important;
+        height: 34px !important;
+        max-height: 34px !important;
+    }
+    .logo-title,
+    header.collapsed .logo-title {
+        font-size: clamp(11.5px, 3.3vw, 13.5px) !important;
+        letter-spacing: 0.2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .brand-meta {
+        display: none;
+    }
+    .social-links-header {
+        width: auto;
+        flex-shrink: 0;
+        justify-content: flex-end;
+        gap: 6px;
+    }
+    .contact-link.instagram,
+    .contact-link.facebook,
+    .contact-link.google-maps,
+    .contact-link.google-reviews {
+        display: none;
+    }
+    .contact-link.home-btn {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        border-radius: 10px;
+    }
+    .contact-link.home-btn span {
+        display: none;
+    }
+    .contact-link.whatsapp {
+        flex: 0 0 auto;
+        height: 32px;
+        padding: 0 9px;
+        border-radius: 10px;
+        font-size: 11px;
+        gap: 4px;
+    }
+    .contact-link.whatsapp span {
+        display: inline;
+    }
+
+    /* Barra superior compacta de 1 línea */
+    .trust-bar-strip {
+        padding: 6px 12px;
+        background: rgba(13, 14, 19, 0.9);
+    }
+    .trust-bar-inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+    .trust-bar-items {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+        min-width: 0;
+    }
+    .trust-item-wide {
+        display: none;
+    }
+    .trust-bar-item {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        font-size: 11.5px;
+        line-height: 1.2;
+        white-space: nowrap;
+        gap: 5px;
+    }
+    .trust-bar-item small {
+        display: none;
+    }
+    .trust-link-desk {
+        display: none;
+    }
+    .trust-link-mob {
+        display: inline;
+    }
+    .trust-bar-link {
+        width: auto;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 11.5px;
+        gap: 3px;
+    }
+
+    /* Vehículos compactos (ocultar H2 redundante en home, conservar H1 en páginas SEO) */
+    h2.vehicle-filter-title {
+        display: none;
+    }
+    .vehicle-filter-container {
+        margin-top: 10px;
+        padding: 0 12px;
+    }
+    .vehicle-grid {
+        gap: 8px;
+        padding-bottom: 4px;
+    }
+    .vehicle-card {
+        flex: 0 0 auto;
+        min-width: 82px;
+        height: 42px;
+        min-height: 42px;
+        padding: 6px 10px;
+        border-radius: 10px;
+    }
+    .vehicle-card#vehicle-all {
+        flex-direction: row;
+        gap: 5px;
+        min-width: 72px;
+    }
+    .vehicle-card#vehicle-all .vehicle-logo {
+        width: 18px;
+        height: 18px;
+    }
+    .vehicle-logo-img {
+        max-height: 22px;
+        max-width: 74px;
+    }
+
+    /* Buscador y controles compactos */
+    .controls-wrapper {
+        margin-top: 8px;
+        padding: 0 12px;
+        gap: 8px;
+    }
+    .search-input {
+        padding: 10px 38px 10px 38px;
+        font-size: 13.5px;
+        border-radius: 12px;
+    }
+    .search-icon {
+        left: 12px;
+        width: 17px;
+        height: 17px;
+    }
+    .controls-actions {
+        gap: 8px;
+    }
+    .view-selector {
+        padding: 3px;
+        border-radius: 12px;
+        flex: 1;
+    }
+    .view-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 9px;
+    }
+    .filter-toggle-btn {
+        padding: 7px 12px;
+        border-radius: 12px;
+        font-size: 12px;
+        height: 36px;
+    }
+    #filterQuickBar {
+        display: none;
+    }
+
+    /* Categorías y grilla más arriba del pliegue */
+    .categories-container {
+        margin-top: 8px;
+        padding: 0 12px;
+    }
+    .categories-scroll {
+        gap: 6px;
+        padding: 2px 0 8px 0;
+    }
+    .category-pill {
+        padding: 6px 12px;
+        font-size: 12px;
+        border-radius: 999px;
+    }
+    main {
+        padding: 0 12px;
+    }
+    .grid-container {
+        margin-top: 4px;
+        gap: 10px;
     }
 }
