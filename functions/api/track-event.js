@@ -3,6 +3,45 @@
  * Recopila eventos de interacción del catálogo online de repuestos
  */
 
+const ALLOWED_SECONDARY_ACTIONS = new Set([
+    "share",
+    "oem_copy",
+    "instagram",
+    "facebook",
+    "maps",
+    "reviews",
+    "phone_call",
+    "save_contact",
+    "push_subscribe"
+]);
+
+export function getCaracasDateString(now = new Date()) {
+    const caracasMs = now.getTime() - (4 * 60 * 60 * 1000);
+    return new Date(caracasMs).toISOString().split("T")[0];
+}
+
+function upsertProductEntry(productsMap, item) {
+    const pId = String((item && item.product_id) || "").trim();
+    if (!pId) return null;
+
+    if (!productsMap[pId]) {
+        productsMap[pId] = {
+            name: (item && item.product_name) || "Repuesto",
+            model: (item && item.product_model) || "",
+            photo: (item && item.product_photo) || "",
+            views: 0,
+            cart_adds: 0,
+            whatsapp_clicks: 0
+        };
+    } else {
+        if (item.product_name) productsMap[pId].name = item.product_name;
+        if (item.product_model) productsMap[pId].model = item.product_model;
+        if (item.product_photo) productsMap[pId].photo = item.product_photo;
+        if (typeof productsMap[pId].cart_adds !== "number") productsMap[pId].cart_adds = 0;
+    }
+    return productsMap[pId];
+}
+
 export async function onRequestPost(context) {
     const { request, env } = context;
 
@@ -20,7 +59,7 @@ export async function onRequestPost(context) {
         let body = {};
         const rawText = await request.text();
         try {
-            body = JSON.parse(rawText);
+            body = rawText ? JSON.parse(rawText) : {};
         } catch (e) {
             body = {};
         }
@@ -37,17 +76,21 @@ export async function onRequestPost(context) {
             });
         }
 
-        const today = new Date().toISOString().split("T")[0];
+        const today = getCaracasDateString(new Date());
         const dailyKey = `stats_daily:${today}`;
 
         let statsDaily = {
             page_views: 0,
             whatsapp_clicks_total: 0,
+            add_to_cart_total: 0,
             searches_count: 0,
             pages: {},
             products: {},
             searches: {},
-            vehicle_filters: {}
+            zero_result_searches: {},
+            vehicle_filters: {},
+            cta_sources: {},
+            secondary_actions: {}
         };
 
         const rawDaily = await env.STATS_KV.get(dailyKey);
@@ -56,11 +99,15 @@ export async function onRequestPost(context) {
                 const parsed = JSON.parse(rawDaily);
                 statsDaily.page_views = parsed.page_views || 0;
                 statsDaily.whatsapp_clicks_total = parsed.whatsapp_clicks_total || 0;
+                statsDaily.add_to_cart_total = parsed.add_to_cart_total || 0;
                 statsDaily.searches_count = parsed.searches_count || 0;
                 statsDaily.pages = parsed.pages || {};
                 statsDaily.products = parsed.products || {};
                 statsDaily.searches = parsed.searches || {};
+                statsDaily.zero_result_searches = parsed.zero_result_searches || {};
                 statsDaily.vehicle_filters = parsed.vehicle_filters || {};
+                statsDaily.cta_sources = parsed.cta_sources || {};
+                statsDaily.secondary_actions = parsed.secondary_actions || {};
             } catch (e) {
                 // Si falla el parseo, conservamos el objeto inicial
             }
@@ -70,50 +117,48 @@ export async function onRequestPost(context) {
             case "page_view": {
                 statsDaily.page_views += 1;
                 const pagePath = String(data.path || "/").trim() || "/";
-                if (!statsDaily.pages) statsDaily.pages = {};
                 statsDaily.pages[pagePath] = (statsDaily.pages[pagePath] || 0) + 1;
                 break;
             }
 
             case "product_view": {
-                const pId = String(data.product_id || "").trim();
-                if (pId) {
-                    if (!statsDaily.products[pId]) {
-                        statsDaily.products[pId] = {
-                            name: data.product_name || "Repuesto",
-                            model: data.product_model || "",
-                            photo: data.product_photo || "",
-                            views: 0,
-                            whatsapp_clicks: 0
-                        };
-                    } else {
-                        if (data.product_name) statsDaily.products[pId].name = data.product_name;
-                        if (data.product_model) statsDaily.products[pId].model = data.product_model;
-                        if (data.product_photo) statsDaily.products[pId].photo = data.product_photo;
-                    }
-                    statsDaily.products[pId].views += 1;
+                const entry = upsertProductEntry(statsDaily.products, data);
+                if (entry) {
+                    entry.views += 1;
+                }
+                break;
+            }
+
+            case "add_to_cart": {
+                statsDaily.add_to_cart_total += 1;
+                const entry = upsertProductEntry(statsDaily.products, data);
+                if (entry) {
+                    entry.cart_adds = (entry.cart_adds || 0) + 1;
                 }
                 break;
             }
 
             case "whatsapp_click": {
                 statsDaily.whatsapp_clicks_total += 1;
-                const pId = String(data.product_id || "").trim();
-                if (pId) {
-                    if (!statsDaily.products[pId]) {
-                        statsDaily.products[pId] = {
-                            name: data.product_name || "Repuesto",
-                            model: data.product_model || "",
-                            photo: data.product_photo || "",
-                            views: 0,
-                            whatsapp_clicks: 0
-                        };
-                    } else {
-                        if (data.product_name) statsDaily.products[pId].name = data.product_name;
-                        if (data.product_model) statsDaily.products[pId].model = data.product_model;
-                        if (data.product_photo) statsDaily.products[pId].photo = data.product_photo;
+                const source = String(data.source || data.origen || "directo").trim().toLowerCase().slice(0, 40) || "directo";
+                statsDaily.cta_sources[source] = (statsDaily.cta_sources[source] || 0) + 1;
+
+                if (Array.isArray(data.items) && data.items.length > 0) {
+                    const seenIds = new Set();
+                    for (const item of data.items) {
+                        const pId = String((item && item.product_id) || "").trim();
+                        if (!pId || seenIds.has(pId)) continue;
+                        seenIds.add(pId);
+                        const entry = upsertProductEntry(statsDaily.products, item);
+                        if (entry) {
+                            entry.whatsapp_clicks += 1;
+                        }
                     }
-                    statsDaily.products[pId].whatsapp_clicks += 1;
+                } else {
+                    const entry = upsertProductEntry(statsDaily.products, data);
+                    if (entry) {
+                        entry.whatsapp_clicks += 1;
+                    }
                 }
                 break;
             }
@@ -123,6 +168,9 @@ export async function onRequestPost(context) {
                 if (query.length >= 2) {
                     statsDaily.searches_count += 1;
                     statsDaily.searches[query] = (statsDaily.searches[query] || 0) + 1;
+                    if (data.results_count === 0) {
+                        statsDaily.zero_result_searches[query] = (statsDaily.zero_result_searches[query] || 0) + 1;
+                    }
                 }
                 break;
             }
@@ -131,6 +179,14 @@ export async function onRequestPost(context) {
                 const slug = String(data.model_slug || "").trim().toLowerCase().slice(0, 80);
                 if (slug) {
                     statsDaily.vehicle_filters[slug] = (statsDaily.vehicle_filters[slug] || 0) + 1;
+                }
+                break;
+            }
+
+            case "secondary_action": {
+                const action = String(data.action || "").trim().toLowerCase().slice(0, 30);
+                if (action && ALLOWED_SECONDARY_ACTIONS.has(action)) {
+                    statsDaily.secondary_actions[action] = (statsDaily.secondary_actions[action] || 0) + 1;
                 }
                 break;
             }

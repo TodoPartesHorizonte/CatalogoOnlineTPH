@@ -96,123 +96,8 @@
     <!-- Base de datos para enlaces -->
     <script defer src="./products.js?v=16"></script>
 
-    <!-- Script de Analíticas (Google Analytics) -->
-    <script>
-        let analyticsInitialized = false;
-
-        function forceInitAnalytics() {
-            if (analyticsInitialized) return;
-            analyticsInitialized = true;
-
-            if (typeof PRODUCTS_DATA !== 'undefined') {
-                if (PRODUCTS_DATA.google_analytics_id) {
-                    const gaId = deobfuscateAnalytics(PRODUCTS_DATA.google_analytics_id).trim();
-                    if (gaId && gaId.startsWith('G-') && !document.getElementById('ga-script')) {
-                        const script = document.createElement('script');
-                        script.id = 'ga-script';
-                        script.async = true;
-                        script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
-                        document.head.appendChild(script);
-
-                        window.dataLayer = window.dataLayer || [];
-                        window.gtag = function() { window.dataLayer.push(arguments); };
-                        gtag('js', new Date());
-                        gtag('config', gaId);
-                    }
-                }
-
-                if (PRODUCTS_DATA.meta_pixel_id) {
-                    const metaId = deobfuscateAnalytics(PRODUCTS_DATA.meta_pixel_id).trim();
-                    if (metaId && !document.getElementById('meta-pixel-script')) {
-                        !function(f,b,e,v,n,t,s)
-                        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                        n.queue=[];t=b.createElement(e);t.async=!0;
-                        t.id='meta-pixel-script';
-                        t.src=v;s=b.getElementsByTagName(e)[0];
-                        s.parentNode.insertBefore(t,s)}(window, document,'script',
-                        'https://connect.facebook.net/en_US/fbevents.js');
-
-                        fbq('init', metaId);
-                        fbq('track', 'PageView');
-                    }
-                }
-            }
-        }
-
-        function trackEvent(eventName, params = {}) {
-            forceInitAnalytics();
-
-            // Envío asíncrono a Cloudflare KV Telemetry (/api/track-event)
-            try {
-                let cfEvent = null;
-                let cfData = {};
-
-                if (eventName === 'contacto_whatsapp') {
-                    cfEvent = 'whatsapp_click';
-                    cfData = {
-                        product_id: '',
-                        product_name: 'Contacto General WhatsApp (Nosotros)',
-                        product_model: ''
-                    };
-                } else if (eventName === 'page_view' || eventName === 'visita_catalogo') {
-                    cfEvent = 'page_view';
-                    cfData = {
-                        path: window.location.pathname || '/informacion'
-                    };
-                }
-
-                if (cfEvent) {
-                    const payload = JSON.stringify({ event: cfEvent, data: cfData });
-                    const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-                        ? '/api/track-event'
-                        : 'https://todoparteshorizonte.pages.dev/api/track-event';
-
-                    try {
-                        if (typeof fetch === 'function') {
-                            fetch(targetEndpoint, {
-                                method: 'POST',
-                                mode: 'cors',
-                                headers: { 'Content-Type': 'application/json' },
-                                body: payload,
-                                keepalive: true
-                            }).catch(() => {});
-                        } else if (navigator.sendBeacon) {
-                            const blob = new Blob([payload], { type: 'application/json' });
-                            navigator.sendBeacon(targetEndpoint, blob);
-                        }
-                    } catch (e) {
-                        if (navigator.sendBeacon) {
-                            navigator.sendBeacon(targetEndpoint, payload);
-                        }
-                    }
-                }
-            } catch (e) {
-                // Silencioso
-            }
-
-            if (typeof gtag === 'function') {
-                gtag('event', eventName, params);
-            }
-            if (typeof fbq === 'function') {
-                if (eventName === 'contacto_whatsapp') {
-                    fbq('track', 'Contact', { content_name: 'WhatsApp Informacion' });
-                } else if (eventName === 'clic_redes_sociales') {
-                    fbq('trackCustom', 'SocialClick', params);
-                } else {
-                    fbq('trackCustom', eventName, params);
-                }
-            }
-        }
-
-        window.trackEvent = trackEvent;
-        window.forceInitAnalytics = forceInitAnalytics;
-
-        window.addEventListener('load', function() {
-            setTimeout(forceInitAnalytics, 1500);
-        });
-    </script>
+    <!-- Telemetría Unificada (Cloudflare KV + GA4 + Meta Pixel) -->
+    <script src="./analytics.js?v=1"></script>
 
     <link rel="stylesheet" href="./informacion.css">
 </head>
@@ -380,33 +265,9 @@
 
     <!-- JavaScript para lógica e inicialización -->
     <script>
-        // Función para telemetría
-        function trackEvent(eventName, params = {}) {
-            try {
-                let cfEvent = 'page_view';
-                let cfData = { path: window.location.pathname || '/informacion.html' };
-                if (eventName === 'contacto_whatsapp') {
-                    cfEvent = 'whatsapp_click';
-                    cfData = { origen: 'informacion_page' };
-                }
-                const payload = JSON.stringify({ event: cfEvent, data: cfData });
-                if (navigator.sendBeacon) {
-                    navigator.sendBeacon('https://todoparteshorizonte.pages.dev/api/track-event', payload);
-                } else {
-                    fetch('https://todoparteshorizonte.pages.dev/api/track-event', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: payload, keepalive: true }).catch(() => {});
-                }
-            } catch(e) {}
-        }
-
-        // Función para descodificar cadenas Base64
-        function deobfuscate(val) {
-            if (!val) return "";
-            try { return atob(val); } catch (e) { return val; }
-        }
-
         // Cargar datos al iniciar
         document.addEventListener('DOMContentLoaded', () => {
-            trackEvent('page_view', { path: '/informacion.html' });
+            trackEvent('page_view', { path: window.location.pathname || '/informacion' });
             if (typeof PRODUCTS_DATA !== 'undefined') {
                 // Configurar logo personalizado si es diferente al por defecto
                 if (PRODUCTS_DATA.use_custom_logo && PRODUCTS_DATA.use_custom_logo !== './assets/logo.png') {
@@ -447,7 +308,7 @@
                 if (PRODUCTS_DATA.instagram_url) {
                     const instagramLink = document.getElementById('linkInstagram');
                     instagramLink.href = deobfuscate(PRODUCTS_DATA.instagram_url);
-                    instagramLink.addEventListener('click', () => trackEvent('clic_redes_sociales', { red_social: 'instagram' }));
+                    instagramLink.addEventListener('click', () => trackEvent('clic_redes_sociales', { red_social: 'instagram', origen: 'informacion_page' }));
                 } else {
                     document.getElementById('linkInstagram').style.display = 'none';
                 }
@@ -455,7 +316,7 @@
                 if (PRODUCTS_DATA.facebook_url) {
                     const facebookLink = document.getElementById('linkFacebook');
                     facebookLink.href = deobfuscate(PRODUCTS_DATA.facebook_url);
-                    facebookLink.addEventListener('click', () => trackEvent('clic_redes_sociales', { red_social: 'facebook' }));
+                    facebookLink.addEventListener('click', () => trackEvent('clic_redes_sociales', { red_social: 'facebook', origen: 'informacion_page' }));
                 } else {
                     document.getElementById('linkFacebook').style.display = 'none';
                 }

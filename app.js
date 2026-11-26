@@ -402,10 +402,12 @@
             saveCart();
             renderCart();
 
-            // Rastrear evento en GA4 + Meta Pixel
+            // Rastrear evento en Cloudflare KV + GA4 + Meta Pixel
             trackEvent('add_to_cart', {
                 currency: 'VES',
                 value: priceBs,
+                origen: 'catalogo_page',
+                image_path: product.image_path || '',
                 items: [{
                     item_id: product.id,
                     item_name: product.description,
@@ -414,17 +416,6 @@
                     price: priceBs,
                     quantity: 1
                 }]
-            });
-            trackEvent('agregar_al_carrito', {
-                items: [{
-                    item_id: product.id,
-                    item_name: product.description,
-                    item_category: product.category,
-                    item_variant: brand || '',
-                    quantity: 1
-                }],
-                descripcion: 'Se agregó un producto al carrito de compras',
-                origen: 'catalogo_page'
             });
 
             animateAddToCartBtn(productId);
@@ -603,7 +594,7 @@
                 const msg = q
                     ? `¡Hola TODO PARTES HORIZONTE! Estaba buscando "${q}" en su catálogo web y necesito asesoría.`
                     : `¡Hola TODO PARTES HORIZONTE! Vengo desde su catálogo web y tengo una consulta sobre un repuesto.`;
-                trackEvent('contacto_whatsapp', { origen: 'cart_drawer_empty_cta' });
+                trackEvent('contacto_whatsapp', { origen: 'cart_empty_cta' });
                 window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
                 return;
             }
@@ -638,7 +629,7 @@
                 cantidad_items: cart.length,
                 monto_total: totalBs,
                 descripcion: 'El usuario envió un pedido al WhatsApp de la tienda',
-                origen: 'catalogo_page'
+                origen: 'cart_checkout'
             });
 
             const waMsgEncoded = encodeURIComponent(msg);
@@ -859,6 +850,7 @@
                             chip.onclick = (e) => {
                                 e.stopPropagation();
                                 const code = chip.getAttribute('data-oem');
+                                trackEvent('copiar_oem', { codigo_oem: code, origen: 'catalogo_lightbox' });
                                 navigator.clipboard.writeText(code).then(() => {
                                     const orig = chip.innerHTML;
                                     chip.innerHTML = `${code} <svg viewBox="0 0 24 24" style="width:11px;height:11px;fill:var(--accent-green);vertical-align:middle;margin-left:3px;"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`;
@@ -1397,8 +1389,9 @@
                     item_id: product.id,
                     nombre_producto: product.description,
                     categoria: product.category,
-                    origen: 'modal_lightbox'
+                    origen: 'catalogo_lightbox'
                 });
+                incrementInteractionCount();
             };
             
             // Rastrear evento en GA4
@@ -1429,6 +1422,7 @@
             if (lightboxShareBtn && lightboxShareText) {
                 lightboxShareBtn.onclick = () => {
                     const shareUrl = `${window.location.origin}/p/${product.slug || product.id}`;
+                    trackEvent('compartir_producto', { item_id: product.id, origen: 'catalogo_lightbox' });
                     navigator.clipboard.writeText(shareUrl).then(() => {
                         const originalText = lightboxShareText.innerText;
                         lightboxShareText.innerText = '¡Copiado!';
@@ -1556,13 +1550,9 @@
                 // Renderizar redes sociales y contacto (Opción A)
                 renderSocialLinks(data);
 
-                // Configurar FAB General de WhatsApp
-                const catalogUrl = window.location.href.split('?')[0];
+                // Configurar FAB General de WhatsApp (solo href de respaldo; el click abre la lista de pedido)
                 const generalMsg = encodeURIComponent(`¡Hola! Vengo desde el catálogo online y me gustaría hacer una consulta.`);
                 fabWhatsapp.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${generalMsg}`;
-                fabWhatsapp.onclick = () => {
-                    trackEvent('contacto_whatsapp', { origen: 'fab_button' });
-                };
 
                 // Registrar visita de página
                 trackEvent('page_view');
@@ -2713,31 +2703,40 @@
                 });
             }
 
-            // Evento Buscador (Búsqueda en tiempo real)
+            // Evento Buscador (Búsqueda en tiempo real deduplicada + reporte de 0 resultados)
             let searchDebounceTimer = null;
-            searchInput.addEventListener('change', (e) => {
-                if (e.target.value.trim() !== '') {
-                    trackEvent('buscar_producto', {
-                        search_term: e.target.value.trim(),
-                        origen: 'catalogo_page'
-                    });
-                    incrementInteractionCount();
-                }
-            });
+            let lastTrackedSearch = '';
+
+            function trackSearchOnce(rawTerm, origen) {
+                const clean = String(rawTerm || '').trim();
+                const normKey = normalizeText(clean);
+                if (clean.length < 2 || normKey === lastTrackedSearch) return;
+                lastTrackedSearch = normKey;
+                const count = Array.isArray(currentFilteredProducts) ? currentFilteredProducts.length : null;
+                trackEvent('buscar_producto', {
+                    search_term: clean,
+                    origen: origen,
+                    results_count: count
+                });
+                incrementInteractionCount();
+            }
 
             searchInput.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter' && e.target.value.trim().length >= 2) {
                     clearTimeout(searchDebounceTimer);
-                    trackEvent('buscar_producto', {
-                        search_term: e.target.value.trim(),
-                        origen: 'catalogo_search_enter'
-                    });
+                    if (searchQuery !== e.target.value) {
+                        searchQuery = e.target.value;
+                        renderProducts();
+                    }
+                    trackSearchOnce(e.target.value, 'catalogo_search_enter');
                 }
             });
 
             const btnClearSearch = document.getElementById('btnClearSearch');
             if (btnClearSearch) {
                 btnClearSearch.addEventListener('click', () => {
+                    clearTimeout(searchDebounceTimer);
+                    lastTrackedSearch = '';
                     searchInput.value = '';
                     searchQuery = '';
                     btnClearSearch.style.display = 'none';
@@ -2757,14 +2756,6 @@
                 }
 
                 clearTimeout(searchDebounceTimer);
-                if (searchQuery.trim().length >= 2) {
-                    searchDebounceTimer = setTimeout(() => {
-                        trackEvent('buscar_producto', {
-                            search_term: searchQuery.trim(),
-                            origen: 'catalogo_search_typing'
-                        });
-                    }, 400);
-                }
                 if (searchQuery.trim() !== '') {
                     const wasFolders = activeView === 'FOLDERS';
                     activeCategory = 'ALL';
@@ -2780,11 +2771,19 @@
                     foldersGrid.style.display = 'none';
                     
                     renderProducts();
+
+                    if (searchQuery.trim().length >= 2) {
+                        const pendingTerm = searchQuery.trim();
+                        searchDebounceTimer = setTimeout(() => {
+                            trackSearchOnce(pendingTerm, 'catalogo_search');
+                        }, 700);
+                    }
                     
                     if (wasFolders || oldQuery.trim() === '') {
                         window.scrollTo({ top: 0, behavior: 'instant' });
                     }
                 } else {
+                    lastTrackedSearch = '';
                     // Volver a la vista por defecto (fotos) al borrar
                     activeCategory = 'ALL';
                     activeView = 'PHOTOS';
@@ -3131,25 +3130,6 @@
                     incrementInteractionCount();
                 }
             });
-
-            // Rastreo de click en botón de consultar en Lightbox
-            const lightboxActionBtn = document.getElementById('lightboxActionBtn');
-            if (lightboxActionBtn) {
-                lightboxActionBtn.addEventListener('click', () => {
-                    if (window.currentProductId) {
-                        const product = productsData.find(p => p.id === window.currentProductId);
-                        if (product) {
-                            trackEvent('consultar_producto_whatsapp', {
-                                item_name: product.description,
-                                item_id: product.id,
-                                origen: 'catalogo_lightbox',
-                                descripcion: 'Clic en consultar desde el Lightbox (ventana de detalles)'
-                            });
-                            incrementInteractionCount();
-                        }
-                    }
-                });
-            }
         }
 
         document.addEventListener('DOMContentLoaded', () => {

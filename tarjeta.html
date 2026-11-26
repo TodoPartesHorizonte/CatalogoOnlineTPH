@@ -33,6 +33,7 @@
   
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <script src="./analytics.js?v=1"></script>
 
   <style>
     :root {
@@ -782,7 +783,7 @@
       <nav class="quick-actions-grid">
         
         <!-- WHATSAPP -->
-        <a href="https://wa.me/584242116375?text=Hola%2C%20vi%20su%20tarjeta%20digital%20y%20quisiera%20consultar%20un%20repuesto" target="_blank" class="quick-action-card">
+        <a href="https://wa.me/584242116375?text=Hola%2C%20vi%20su%20tarjeta%20digital%20y%20quisiera%20consultar%20un%20repuesto" target="_blank" rel="noopener noreferrer" class="quick-action-card" onclick="if(typeof trackEvent==='function')trackEvent('contacto_whatsapp',{origen:'tarjeta_digital'})">
           <div class="action-icon-circle" style="background: rgba(37, 211, 102, 0.14); color: #25d366;">
             <i class="bi bi-whatsapp"></i>
           </div>
@@ -790,7 +791,7 @@
         </a>
 
         <!-- LLAMAR -->
-        <a href="tel:+584242116375" class="quick-action-card">
+        <a href="tel:+584242116375" class="quick-action-card" onclick="if(typeof trackEvent==='function')trackEvent('clic_llamar',{origen:'tarjeta_digital'})">
           <div class="action-icon-circle" style="background: rgba(255, 106, 0, 0.14); color: var(--brand-orange-bright);">
             <i class="bi bi-telephone-fill"></i>
           </div>
@@ -806,7 +807,7 @@
         </a>
 
         <!-- INSTAGRAM -->
-        <a href="https://www.instagram.com/todopartes_horizonte" target="_blank" class="quick-action-card">
+        <a href="https://www.instagram.com/todopartes_horizonte" target="_blank" rel="noopener noreferrer" class="quick-action-card" onclick="if(typeof trackEvent==='function')trackEvent('clic_redes_sociales',{red_social:'instagram',origen:'tarjeta_digital'})">
           <div class="action-icon-circle" style="background: rgba(244, 63, 94, 0.14); color: #f43f5e;">
             <i class="bi bi-instagram"></i>
           </div>
@@ -819,7 +820,7 @@
       <div class="card-body-details">
         
         <!-- DIRECCIÓN FÍSICA -->
-        <a href="https://share.google/3jXZ44CMybUut4NUb" target="_blank" class="detail-card">
+        <a href="https://share.google/3jXZ44CMybUut4NUb" target="_blank" rel="noopener noreferrer" class="detail-card" onclick="if(typeof trackEvent==='function')trackEvent('clic_ver_mapa',{origen:'tarjeta_digital'})">
           <div class="detail-icon-box">
             <i class="bi bi-geo-alt-fill"></i>
           </div>
@@ -864,7 +865,7 @@
       <div>
         <a href="javascript:void(0)" onclick="abrirModalPaso2()"><i class="bi bi-star-fill text-warning me-1"></i>Calificar en Google</a>
         <span class="mx-1">•</span>
-        <a href="./contacto.vcf" download="Todo_Partes_Horizonte.vcf"><i class="bi bi-download me-1"></i>vCard directa</a>
+        <a href="./contacto.vcf" download="Todo_Partes_Horizonte.vcf" onclick="if(typeof trackEvent==='function')trackEvent('guardar_contacto',{origen:'tarjeta_digital'})"><i class="bi bi-download me-1"></i>vCard directa</a>
       </div>
     </footer>
 
@@ -944,6 +945,9 @@
 
     // 1. GUARDAR CONTACTO VCARD
     function guardarContactoDirecto() {
+      if (typeof trackEvent === 'function') {
+        trackEvent('guardar_contacto', { origen: 'tarjeta_digital' });
+      }
       const btn = document.getElementById('btn-save-vcard');
       const icon = document.getElementById('save-icon');
       const text = document.getElementById('save-text');
@@ -1011,6 +1015,9 @@
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ subscription: sub })
               });
+              if (typeof trackEvent === 'function') {
+                trackEvent('activar_push', { origen: 'tarjeta_digital' });
+              }
               showToast('¡Avisos activados con éxito!');
             } else {
               // Si denegó o el navegador no concedió permiso, ofrecer WhatsApp
@@ -1031,6 +1038,9 @@
     }
 
     function abrirWhatsAppOfertas() {
+      if (typeof trackEvent === 'function') {
+        trackEvent('contacto_whatsapp', { origen: 'tarjeta_ofertas' });
+      }
       const waUrl = 'https://wa.me/584242116375?text=' + encodeURIComponent('¡Hola! Deseo recibir ofertas y promociones de Todo Partes Horizonte por WhatsApp.');
       window.open(waUrl, '_blank');
       showToast('¡Te abrimos WhatsApp para recibir ofertas!');
@@ -1041,6 +1051,9 @@
       sessionStorage.setItem('aph_funnel_completed', 'true');
       
       if (abrirResena) {
+        if (typeof trackEvent === 'function') {
+          trackEvent('clic_ver_resenas', { origen: 'tarjeta_digital' });
+        }
         window.open('https://g.page/r/CXMpkN_I_0jiEBM/review', '_blank');
         showToast('¡Gracias por apoyarnos con tu reseña!');
       }
@@ -1048,6 +1061,9 @@
 
     // Compartir tarjeta mediante Web Share API
     function compartirTarjeta() {
+      if (typeof trackEvent === 'function') {
+        trackEvent('compartir_producto', { origen: 'tarjeta_digital' });
+      }
       if (navigator.share) {
         navigator.share({
           title: 'Todo Partes Horizonte — Tarjeta Digital',
@@ -1062,6 +1078,9 @@
 
     // Auto-disparar el Onboarding y detectar In-App Browser al abrir por primera vez en la sesión
     document.addEventListener('DOMContentLoaded', () => {
+      if (typeof trackEvent === 'function') {
+        trackEvent('page_view', { path: window.location.pathname || '/tarjeta' });
+      }
       // Mostrar banner de aviso si está dentro de Instagram, Facebook o WebView
       const ua = navigator.userAgent || navigator.vendor || window.opera || '';
       if (/Instagram|FBAN|FBAV|FB_IAB|Messenger/i.test(ua)) {

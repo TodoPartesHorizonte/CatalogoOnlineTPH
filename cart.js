@@ -175,6 +175,8 @@
         trackAnalyticsEvent('add_to_cart', {
             currency: 'VES',
             value: priceBs,
+            origen: 'ficha_seo',
+            image_path: relativeImagePath,
             items: [{
                 item_id: id,
                 item_name: description,
@@ -183,12 +185,6 @@
                 price: priceBs,
                 quantity: 1
             }]
-        });
-        trackAnalyticsEvent('agregar_al_carrito', {
-            id_producto: id,
-            nombre_producto: description,
-            categoria: category,
-            origen: 'pagina_producto_estatica'
         });
 
         const btn = document.getElementById('btnAddProduct');
@@ -352,12 +348,12 @@
 
     function sendCartToWhatsApp() {
         if (cart.length === 0) {
-            const prodTitle = document.querySelector('h1.product-title, h1');
+            const prodTitle = document.querySelector('h1.pp-title, h1.product-title, h1');
             const prodName = prodTitle ? prodTitle.textContent.trim() : '';
             const msg = prodName
                 ? `¡Hola TODO PARTES HORIZONTE! Tengo una consulta sobre el repuesto *${prodName}*. ¿Me pueden asesorar?`
                 : `¡Hola TODO PARTES HORIZONTE! Vengo desde su catálogo web y me gustaría consultar por un repuesto.`;
-            trackAnalyticsEvent('contacto_whatsapp', { origen: 'cart_drawer_empty_cta' });
+            trackAnalyticsEvent('contacto_whatsapp', { origen: 'cart_empty_cta' });
             window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
             return;
         }
@@ -388,7 +384,7 @@
         trackAnalyticsEvent('enviar_pedido_whatsapp', {
             currency: 'VES',
             value: totalBs,
-            origen: 'cart_drawer_static',
+            origen: 'cart_checkout',
             total_items: cart.reduce((acc, i) => acc + i.quantity, 0),
             items: cart.map(i => ({ item_id: i.id, item_name: i.description, item_category: i.category, quantity: i.quantity }))
         });
@@ -399,16 +395,6 @@
     }
 
     function setupEventListeners() {
-        const prodHeading = document.querySelector('.product-title, h1');
-        const prodCat = document.querySelector('.product-category');
-        if (prodHeading) {
-            trackAnalyticsEvent('view_item', {
-                item_name: prodHeading.textContent.trim(),
-                item_category: prodCat ? prodCat.textContent.trim() : 'Repuesto',
-                currency: 'USD'
-            });
-        }
-
         const fabBtn = document.getElementById('fabWhatsapp');
         if (fabBtn) {
             fabBtn.addEventListener('click', (e) => {

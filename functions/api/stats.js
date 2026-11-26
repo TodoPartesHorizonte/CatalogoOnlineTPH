@@ -1,7 +1,12 @@
 /**
  * Cloudflare Pages Function: GET /api/stats
- * Devuelve el historial analítico de los últimos 90 días almacenado en Cloudflare KV
+ * Devuelve el historial analítico almacenado en Cloudflare KV (hora Caracas UTC-4)
  */
+
+export function getCaracasDateString(now = new Date()) {
+    const caracasMs = now.getTime() - (4 * 60 * 60 * 1000);
+    return new Date(caracasMs).toISOString().split("T")[0];
+}
 
 export async function onRequestGet(context) {
     const { request, env } = context;
@@ -32,27 +37,36 @@ export async function onRequestGet(context) {
     }
 
     try {
-        const now = new Date();
-        const daily_history = [];
-        const promises = [];
-        const dates = [];
+        const url = new URL(request.url);
+        const rawDays = parseInt(url.searchParams.get("days") || "90", 10);
+        const daysLimit = Number.isFinite(rawDays) ? Math.max(1, Math.min(365, rawDays)) : 90;
 
-        // Consultar los últimos 90 días en paralelo
-        for (let i = 89; i >= 0; i--) {
-            const d = new Date(now);
-            d.setDate(d.getDate() - i);
-            const dateStr = d.toISOString().split("T")[0];
-            dates.push(dateStr);
-            promises.push(env.STATS_KV.get(`stats_daily:${dateStr}`));
+        const keyNames = [];
+        let cursor = undefined;
+        for (let page = 0; page < 20; page++) {
+            const listResult = await env.STATS_KV.list({ prefix: "stats_daily:", cursor });
+            for (const key of (listResult.keys || [])) {
+                if (key && key.name && key.name.startsWith("stats_daily:")) {
+                    keyNames.push(key.name);
+                }
+            }
+            if (listResult.list_complete || !listResult.cursor) {
+                break;
+            }
+            cursor = listResult.cursor;
         }
 
-        const results = await Promise.all(promises);
-        for (let i = 0; i < dates.length; i++) {
-            if (results[i]) {
+        const uniqueSortedKeys = Array.from(new Set(keyNames)).sort((a, b) => b.localeCompare(a));
+        const targetKeys = uniqueSortedKeys.slice(0, daysLimit);
+        const values = await Promise.all(targetKeys.map(k => env.STATS_KV.get(k)));
+
+        const daily_history = [];
+        for (let i = 0; i < targetKeys.length; i++) {
+            if (values[i]) {
                 try {
                     daily_history.push({
-                        date: dates[i],
-                        data: JSON.parse(results[i])
+                        date: targetKeys[i].replace("stats_daily:", ""),
+                        data: JSON.parse(values[i])
                     });
                 } catch (e) {
                     // Ignorar registros corruptos
@@ -62,7 +76,10 @@ export async function onRequestGet(context) {
 
         return new Response(JSON.stringify({
             ok: true,
+            today_caracas: getCaracasDateString(new Date()),
+            total_days_available: uniqueSortedKeys.length,
             total_days_tracked: daily_history.length,
+            latest_date: uniqueSortedKeys.length > 0 ? uniqueSortedKeys[0].replace("stats_daily:", "") : null,
             daily_history
         }), {
             status: 200,
