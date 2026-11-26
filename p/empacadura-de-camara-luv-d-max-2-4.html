@@ -170,144 +170,40 @@
       ]
     }
     </script>
-    <!-- Google Analytics & Meta Pixel Tracker Diferido y Reactivo -->
+    <!-- Google Analytics, Meta Pixel y Telemetría Unificada -->
     <script>
       window.GA_ID = "G-QDYFPKJNJE";
       window.META_PIXEL_ID = "1502067325291645";
-      var analyticsInitialized = false;
-
-      function forceInitAnalytics() {
-        if (analyticsInitialized) return;
-        analyticsInitialized = true;
-
-        if (window.GA_ID && window.GA_ID.startsWith('G-') && !document.getElementById('ga-script')) {
-          var script = document.createElement('script');
-          script.id = 'ga-script';
-          script.async = true;
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
-          document.head.appendChild(script);
-
-          window.dataLayer = window.dataLayer || [];
-          window.gtag = function() { window.dataLayer.push(arguments); };
-          gtag('js', new Date());
-          gtag('config', window.GA_ID);
-        }
-
-        if (window.META_PIXEL_ID && !document.getElementById('meta-pixel-script')) {
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.id='meta-pixel-script';
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-
-          fbq('init', window.META_PIXEL_ID);
-          fbq('track', 'PageView');
-        }
-      }
-
-      function trackEvent(eventName, params = {}) {
-        forceInitAnalytics();
-
-        // 1. Telemetría Cloudflare KV
-        try {
-          let cfEvent = null;
-          let cfData = {};
-
-          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
-            cfEvent = 'product_view';
-            cfData = {
-              product_id: params.item_id || params.id || '',
-              product_name: params.item_name || params.nombre_producto || '',
-              product_model: params.item_category || params.categoria || '',
-              product_photo: params.image_path || ''
-            };
-          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp' || eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
-            cfEvent = 'whatsapp_click';
-            cfData = {
-              product_id: params.item_id || (params.items && params.items[0] ? params.items[0].item_id : ''),
-              product_name: params.nombre_producto || params.item_name || (params.items && params.items[0] ? (params.items[0].item_name || params.items[0].nombre_producto) : ''),
-              product_model: params.categoria || params.item_category || (params.items && params.items[0] ? (params.items[0].item_category || params.items[0].categoria) : '')
-            };
-          } else if (eventName === 'page_view') {
-            cfEvent = 'page_view';
-            cfData = {
-              path: window.location.pathname || '/'
-            };
-          }
-
-          if (cfEvent) {
-            const payload = JSON.stringify({ event: cfEvent, data: cfData });
-            const targetEndpoint = (window.location.hostname === 'todoparteshorizonte.pages.dev' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-              ? '/api/track-event'
-              : 'https://todoparteshorizonte.pages.dev/api/track-event';
-
-            try {
-              if (typeof fetch === 'function') {
-                fetch(targetEndpoint, {
-                  method: 'POST',
-                  mode: 'cors',
-                  headers: { 'Content-Type': 'application/json' },
-                  body: payload,
-                  keepalive: true
-                }).catch(() => {});
-              } else if (navigator.sendBeacon) {
-                const blob = new Blob([payload], { type: 'application/json' });
-                navigator.sendBeacon(targetEndpoint, blob);
-              }
-            } catch (e) {
-              if (navigator.sendBeacon) {
-                navigator.sendBeacon(targetEndpoint, payload);
-              }
-            }
-          }
-        } catch (e) {}
-
-        if (typeof gtag === 'function') gtag('event', eventName, params);
-        if (typeof fbq === 'function') {
-          if (eventName === 'view_item' || eventName === 'ver_detalle_producto') {
-            fbq('track', 'ViewContent', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
-          } else if (eventName === 'add_to_cart' || eventName === 'agregar_al_carrito') {
-            fbq('track', 'AddToCart', { content_name: params.item_name || params.nombre_producto || '', currency: 'USD' });
-          } else if (eventName === 'enviar_pedido_whatsapp' || eventName === 'generate_lead') {
-            fbq('track', 'Lead', { content_name: 'Pedido WhatsApp', currency: 'USD' });
-            fbq('track', 'Contact');
-          } else if (eventName === 'consultar_producto_whatsapp' || eventName === 'contacto_whatsapp') {
-            fbq('track', 'Contact', { content_name: params.nombre_producto || params.item_name || 'Consulta WhatsApp' });
-          } else {
-            fbq('trackCustom', eventName, params);
-          }
-        }
-      }
-      window.trackEvent = trackEvent;
-      window.forceInitAnalytics = forceInitAnalytics;
-
+    </script>
+    <script src="../analytics.js?v=1"></script>
+    <script>
       window.addEventListener('load', function() {
         setTimeout(function() {
-          forceInitAnalytics();
-          trackEvent('page_view', { path: window.location.pathname });
-          
-          var titleEl = document.querySelector('h1.product-title');
-          var catBadge = document.querySelector('.category-badge span');
-          var prodImg = document.querySelector('.product-img');
-          
-          var pName = titleEl ? titleEl.innerText.trim() : '';
-          var pCat = catBadge ? catBadge.innerText.trim() : '';
-          var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
-          var pId = window.location.pathname.split('/').pop().replace('.html', '');
-          
-          if (pId) {
-            trackEvent('view_item', {
-              item_id: pId,
-              item_name: pName,
-              item_category: pCat,
-              image_path: pPhoto
-            });
+          if (typeof forceInitAnalytics === 'function') forceInitAnalytics();
+          if (typeof trackEvent === 'function') {
+            trackEvent('page_view', { path: window.location.pathname });
+
+            var addBtn = document.getElementById('btnAddProduct');
+            var titleEl = document.querySelector('h1.pp-title, h1.product-title, h1');
+            var catBadge = document.querySelector('.pp-cat, .category-badge span');
+            var prodImg = document.querySelector('.pp-img, .product-img');
+
+            var fallbackSlug = window.location.pathname.split('/').pop().replace('.html', '');
+            var pId = (addBtn && addBtn.dataset && addBtn.dataset.pid) ? addBtn.dataset.pid : fallbackSlug;
+            var pName = (addBtn && addBtn.dataset && addBtn.dataset.pdesc) ? addBtn.dataset.pdesc : (titleEl ? titleEl.innerText.trim() : '');
+            var pCat = (addBtn && addBtn.dataset && addBtn.dataset.pcat) ? addBtn.dataset.pcat : (catBadge ? catBadge.innerText.trim() : '');
+            var pPhoto = prodImg ? prodImg.getAttribute('src') : '';
+
+            if (pId) {
+              trackEvent('view_item', {
+                item_id: pId,
+                item_name: pName,
+                item_category: pCat,
+                image_path: pPhoto
+              });
+            }
           }
-        }, 800);
+        }, 500);
       });
     </script>
     <link rel="preload" href="../assets/fonts/outfit-variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -1826,16 +1722,16 @@
                 </div>
             </a>
             <div class="social-links">
-                <a href="https://www.instagram.com/todopartes_horizonte?igsh=c3F0ZDJ3aXF0ejdv" class="social-btn instagram" target="_blank" rel="noopener noreferrer" title="Síguenos en Instagram">
+                <a href="https://www.instagram.com/todopartes_horizonte?igsh=c3F0ZDJ3aXF0ejdv" class="social-btn instagram" target="_blank" rel="noopener noreferrer" title="Síguenos en Instagram" onclick="if(typeof trackEvent==='function')trackEvent('clic_redes_sociales',{red_social:'instagram',origen:'ficha_seo'})">
                     <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                 </a>
-                <a href="https://www.facebook.com/todoparteshorizonte493" class="social-btn facebook" target="_blank" rel="noopener noreferrer" title="Síguenos en Facebook">
+                <a href="https://www.facebook.com/todoparteshorizonte493" class="social-btn facebook" target="_blank" rel="noopener noreferrer" title="Síguenos en Facebook" onclick="if(typeof trackEvent==='function')trackEvent('clic_redes_sociales',{red_social:'facebook',origen:'ficha_seo'})">
                     <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                 </a>
-                <a href="https://share.google/3jXZ44CMybUut4NUb" class="social-btn maps" target="_blank" rel="noopener noreferrer" title="Ubicación en Google Maps">
+                <a href="https://share.google/3jXZ44CMybUut4NUb" class="social-btn maps" target="_blank" rel="noopener noreferrer" title="Ubicación en Google Maps" onclick="if(typeof trackEvent==='function')trackEvent('clic_ver_mapa',{origen:'ficha_seo'})">
                     <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 </a>
-                <a href="https://g.page/r/CXMpkN_I_0jiEBM/review" class="social-btn reviews" target="_blank" rel="noopener noreferrer" title="Nuestras Calificaciones en Google">
+                <a href="https://g.page/r/CXMpkN_I_0jiEBM/review" class="social-btn reviews" target="_blank" rel="noopener noreferrer" title="Nuestras Calificaciones en Google" onclick="if(typeof trackEvent==='function')trackEvent('clic_ver_resenas',{origen:'ficha_seo'})">
                     <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                 </a>
             </div>
@@ -1873,7 +1769,7 @@
                     <span class="pp-stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
                     <strong>4.7</strong>
                     <span>|</span>
-                    <a href="https://g.page/r/CXMpkN_I_0jiEBM/review" target="_blank" rel="noopener noreferrer">138 valoraciones en Google</a>
+                    <a href="https://g.page/r/CXMpkN_I_0jiEBM/review" target="_blank" rel="noopener noreferrer" onclick="if(typeof trackEvent==='function')trackEvent('clic_ver_resenas',{origen:'ficha_seo'})">138 valoraciones en Google</a>
                 </div>
                 <div class="pp-oem"><span class="pp-label">OEM</span><div class="pp-chips"><button type="button" class="pp-chip" data-oem="8-92062-3300" title="Clic para copiar código OEM">8-92062-3300<svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></button></div></div>
                 <div class="pp-price"><div class="pp-price-row"><span class="pp-amount out">Agotado</span></div></div>
@@ -1940,13 +1836,13 @@
             <h3>Repuestos Relacionados</h3>
             <div class="related-grid">
                 
-                <a href="/p/empacadura-de-camara-de-amianto-luv-d-max-3-5" class="related-card">
+                <a href="/p/empacadura-de-camara-metalica-luv-d-max-3-5" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/empacadura-de-camara-de-amianto-luv-d-max-3-5.webp" alt="Repuesto EMPACADURA DE CAMARA DE AMIANTO LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/empacadura-de-camara-metalica-luv-d-max-3-5.webp" alt="Repuesto EMPACADURA DE CAMARA METALICA LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Camara</span></span>
-                        <div class="related-title" title="EMPACADURA DE CAMARA DE AMIANTO LUV D-MAX 3.5">EMPACADURA DE CAMARA DE AMIANTO LUV D-MAX 3.5</div>
+                        <div class="related-title" title="EMPACADURA DE CAMARA METALICA LUV D-MAX 3.5">EMPACADURA DE CAMARA METALICA LUV D-MAX 3.5</div>
                         <div class="related-oem">OEM: 8-97262-0940</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1955,13 +1851,13 @@
                     </div>
                 </a>
 
-                <a href="/p/empacadura-de-camara-metalica-luv-d-max-3-5" class="related-card">
+                <a href="/p/empacadura-de-camara-de-amianto-luv-d-max-3-5" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/empacadura-de-camara-metalica-luv-d-max-3-5.webp" alt="Repuesto EMPACADURA DE CAMARA METALICA LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/empacadura-de-camara-de-amianto-luv-d-max-3-5.webp" alt="Repuesto EMPACADURA DE CAMARA DE AMIANTO LUV D-MAX 3.5 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Camara</span></span>
-                        <div class="related-title" title="EMPACADURA DE CAMARA METALICA LUV D-MAX 3.5">EMPACADURA DE CAMARA METALICA LUV D-MAX 3.5</div>
+                        <div class="related-title" title="EMPACADURA DE CAMARA DE AMIANTO LUV D-MAX 3.5">EMPACADURA DE CAMARA DE AMIANTO LUV D-MAX 3.5</div>
                         <div class="related-oem">OEM: 8-97262-0940</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
@@ -1985,14 +1881,14 @@
                     </div>
                 </a>
 
-                <a href="/p/empacadura-de-camara-luv-2-2" class="related-card">
+                <a href="/p/empacadura-camara-rodeo-3-2-soch" class="related-card">
                     <div class="related-img-wrapper">
-                        <img src="../assets/empacadura-de-camara-luv-2-2.webp" alt="Repuesto EMPACADURA DE CAMARA LUV 2.2 original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
+                        <img src="../assets/empacadura-camara-rodeo-3-2-soch.webp" alt="Repuesto EMPACADURA CAMARA RODEO 3.2 SOCH original" class="related-img" loading="lazy" width="200" height="170" onerror="if(!this.dataset.retried){this.dataset.retried='1';this.src=this.src.split('?')[0]+'?v='+Date.now();}">
                     </div>
                     <div class="related-content">
                         <span class="category-badge" style="margin-bottom: 4px; align-self: flex-start; display: block;"><span style="font-size: 10px; padding: 2px 8px; line-height: 1.2;">Empacadura Camara</span></span>
-                        <div class="related-title" title="EMPACADURA DE CAMARA LUV 2.2">EMPACADURA DE CAMARA LUV 2.2</div>
-                        <div class="related-oem">OEM: 8-92062-3300</div>
+                        <div class="related-title" title="EMPACADURA CAMARA RODEO 3.2 SOCH">EMPACADURA CAMARA RODEO 3.2 SOCH</div>
+                        <div class="related-oem">OEM: 8-97019-3611</div>
                         <div class="related-footer">
                             <span>Ver Detalle</span>
                             <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; fill: currentColor;"><path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z"/></svg>
@@ -2016,7 +1912,7 @@
                     <li><a href="/?categoria=empacadura-camara" rel="nofollow">Categoría: Empacadura Camara</a></li>
                     <li><a href="/politicas">Políticas de Devolución y Garantías</a></li>
                     <li><a href="/informacion">Ubicación y Contacto</a></li>
-                    <li><a href="https://wa.me/584242116375">Asistencia Técnica</a></li>
+                    <li><a href="https://wa.me/584242116375" target="_blank" rel="noopener noreferrer" onclick="if(typeof trackEvent==='function')trackEvent('contacto_whatsapp',{origen:'seo_footer'})">Asistencia Técnica</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -2035,6 +1931,9 @@
     document.querySelectorAll('.pp-chip[data-oem]').forEach(function (chip) {
         chip.addEventListener('click', function () {
             var code = chip.getAttribute('data-oem'), orig = chip.innerHTML;
+            if (typeof trackEvent === 'function') {
+                trackEvent('copiar_oem', { codigo_oem: code, origen: 'ficha_seo' });
+            }
             if (!navigator.clipboard) { return; }
             navigator.clipboard.writeText(code).then(function () {
                 chip.innerHTML = code + ' <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>';
@@ -2044,13 +1943,41 @@
         });
     });
     var sh = document.getElementById('ppShareBtn');
-    if (sh && navigator.clipboard) {
+    if (sh) {
         sh.addEventListener('click', function () {
+            if (typeof trackEvent === 'function') {
+                trackEvent('compartir_producto', { origen: 'ficha_seo' });
+            }
+            if (!navigator.clipboard) { return; }
             var t = sh.querySelector('span'), o = t.textContent;
             navigator.clipboard.writeText(location.href.split('?')[0]).then(function () {
                 t.textContent = '¡Copiado!';
                 setTimeout(function () { t.textContent = o; }, 1800);
             });
+        });
+    }
+    var waBtnTop = document.querySelector('.pp-btn-wa');
+    var addBtnTop = document.getElementById('btnAddProduct');
+    if (waBtnTop) {
+        waBtnTop.addEventListener('click', function (e) {
+            if (waBtnTop.dataset.pendingVariant === '1') {
+                e.preventDefault();
+                var mountEl = document.getElementById('ppVariantsMount');
+                if (mountEl) mountEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                return;
+            }
+            if (typeof trackEvent === 'function') {
+                var d = (addBtnTop && addBtnTop.dataset) ? addBtnTop.dataset : {};
+                var titleNode = document.querySelector('h1.pp-title, h1');
+                var catNode = document.querySelector('.pp-cat');
+                var fallbackId = window.location.pathname.split('/').pop().replace('.html', '');
+                trackEvent('consultar_producto_whatsapp', {
+                    item_id: d.pid || fallbackId,
+                    nombre_producto: d.pdesc || (titleNode ? titleNode.textContent.trim() : ''),
+                    categoria: d.pcat || (catNode ? catNode.textContent.trim() : ''),
+                    origen: 'ficha_seo'
+                });
+            }
         });
     }
     var mount = document.getElementById('ppVariantsMount');
@@ -2126,12 +2053,13 @@
             if (!selected) {
                 var pLbl = !tReady ? 'la versión' : (!lReady ? 'el lado' : (!mReady ? 'la medida' : 'la marca'));
                 priceBox.innerHTML = '<div class="pp-price-row"><span class="pp-amount combo" style="font-size:22px;">Selecciona tus opciones ↓</span></div><div class="pp-stock" style="color:#ff914d;"><span>Selecciona ' + pLbl + ' abajo para verificar existencia y ver tu precio</span></div>';
-                if (waBtn) { waBtn.classList.add('pending'); waBtn.querySelector('span').textContent = 'Selecciona ' + pLbl + ' arriba ↑'; }
+                if (waBtn) { waBtn.dataset.pendingVariant = '1'; waBtn.classList.add('pending'); waBtn.querySelector('span').textContent = 'Selecciona ' + pLbl + ' arriba ↑'; }
                 if (addBtn) { addBtn.classList.add('pending'); }
             } else {
                 var numTxt = (selected.price_fmt || '').replace(/^Bs\.\s*/, '');
                 priceBox.innerHTML = '<div class="pp-price-row"><span class="pp-cur">Bs.</span><span class="pp-amount">' + numTxt + '</span></div><div class="pp-stock"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Disponible en tienda física (Boleíta Sur)</span></div>';
                 if (waBtn) {
+                    waBtn.dataset.pendingVariant = '0';
                     waBtn.classList.remove('pending');
                     waBtn.querySelector('span').textContent = 'Cotizar por WhatsApp';
                     var waBase = (origWaHref || '').split('?')[0];
@@ -2150,11 +2078,6 @@
                 if (addBtn) { addBtn.classList.remove('pending'); }
             }
         }
-    }
-    if (waBtn) {
-        waBtn.addEventListener('click', function (e) {
-            if (!selected) { e.preventDefault(); mount.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
-        });
     }
     if (addBtn) {
         addBtn.removeAttribute('onclick');
