@@ -362,6 +362,51 @@ PP_JS = r"""<script>
     }
     var waBtnTop = document.querySelector('.pp-btn-wa');
     var addBtnTop = document.getElementById('btnAddProduct');
+    function parseInitWa() {
+        if (!waBtnTop) return;
+        var origHref = waBtnTop.getAttribute('href') || '';
+        var qIdx = origHref.indexOf('?text=');
+        waBtnTop.dataset.baseWaUrl = qIdx >= 0 ? origHref.slice(0, qIdx) : origHref;
+        if (qIdx >= 0) {
+            try { waBtnTop.dataset.baseMsg = decodeURIComponent(origHref.slice(qIdx + 6)); }
+            catch (e) { waBtnTop.dataset.baseMsg = ''; }
+        }
+        var initPriceBs = 0;
+        if (addBtnTop && addBtnTop.dataset && addBtnTop.dataset.pvar) {
+            try {
+                var pv = JSON.parse(addBtnTop.dataset.pvar);
+                if (pv && pv.price_bs) initPriceBs = Number(pv.price_bs) || 0;
+            } catch (e) {}
+        }
+        waBtnTop.dataset.priceBs = String(initPriceBs);
+    }
+    parseInitWa();
+    window.__ppRefreshWa = function () {
+        if (!waBtnTop || waBtnTop.dataset.pendingVariant === '1') return;
+        var baseUrl = waBtnTop.dataset.baseWaUrl || '';
+        var baseMsg = waBtnTop.dataset.baseMsg || '';
+        var priceBs = Number(waBtnTop.dataset.priceBs || 0);
+        if (!baseUrl || !baseMsg) return;
+        var addon = (window.TPHDelivery && typeof window.TPHDelivery.formatWhatsAppAddon === 'function')
+            ? window.TPHDelivery.formatWhatsAppAddon('product', priceBs)
+            : '';
+        var fullMsg = addon ? (baseMsg + '\n' + addon) : baseMsg;
+        waBtnTop.setAttribute('href', baseUrl + '?text=' + encodeURIComponent(fullMsg));
+    };
+    function initPpDeliveryMount() {
+        var delMount = document.getElementById('ppDeliveryMount');
+        if (delMount && window.TPHDelivery && typeof window.TPHDelivery.mount === 'function') {
+            window.TPHDelivery.mount('product', delMount, {
+                basePath: '../',
+                onChange: window.__ppRefreshWa
+            });
+        }
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initPpDeliveryMount);
+    } else {
+        initPpDeliveryMount();
+    }
     if (waBtnTop) {
         waBtnTop.addEventListener('click', function (e) {
             if (waBtnTop.dataset.pendingVariant === '1') {
@@ -370,6 +415,14 @@ PP_JS = r"""<script>
                 if (mountEl) mountEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 return;
             }
+            if (window.TPHDelivery && typeof window.TPHDelivery.validate === 'function') {
+                var check = window.TPHDelivery.validate('product');
+                if (!check.valid) {
+                    e.preventDefault();
+                    return;
+                }
+            }
+            window.__ppRefreshWa();
             if (typeof trackEvent === 'function') {
                 var d = (addBtnTop && addBtnTop.dataset) ? addBtnTop.dataset : {};
                 var titleNode = document.querySelector('h1.pp-title, h1');
@@ -477,7 +530,11 @@ PP_JS = r"""<script>
                     if (selected.brand) specParts.push('Marca ' + selected.brand);
                     var specStr = specParts.length ? ' (' + specParts.join(' / ') + ')' : '';
                     var waMsg = '¡Hola! Me interesa consultar por el repuesto: *' + pTitle + '*' + specStr + '. Precio: ' + (selected.price_fmt || 'Consultar') + '. ¿Tienen disponibilidad inmediata?\nEnlace: ' + pUrl;
+                    waBtn.dataset.baseWaUrl = waBase;
+                    waBtn.dataset.baseMsg = waMsg;
+                    waBtn.dataset.priceBs = String(selected.price_bs || 0);
                     waBtn.setAttribute('href', waBase ? (waBase + '?text=' + encodeURIComponent(waMsg)) : origWaHref);
+                    if (typeof window.__ppRefreshWa === 'function') window.__ppRefreshWa();
                 }
                 if (addBtn) { addBtn.classList.remove('pending'); }
             }
@@ -918,7 +975,7 @@ def generate_pages(data):
           "name": "¿Hacen envíos al interior de Venezuela?",
           "acceptedAnswer": {{
             "@type": "Answer",
-            "text": "Sí, hacemos envíos a nivel nacional a través de agencias de encomienda confiables como Zoom, Tealca y MRW con cobro en destino."
+            "text": "Sí, hacemos envíos a nivel nacional a través de agencias de encomienda confiables como Zoom, Tealca, MRW y Domesa con cobro en destino."
           }}
         }}
       ]
@@ -951,7 +1008,9 @@ def generate_pages(data):
     }}
     </script>{ga_script}
     <link rel="preload" href="../assets/fonts/outfit-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <script defer src="../cart.js?v=3"></script>
+    <script defer src="../delivery_zones.js?v=1"></script>
+    <script defer src="../delivery.min.js?v=1"></script>
+    <script defer src="../cart.js?v=4"></script>
     <style>
         @font-face {{
             font-family: 'Outfit';
@@ -2335,6 +2394,7 @@ def generate_pages(data):
                 {oem_html}
                 {price_box_html}
                 {specs_pills_html}
+                <div id="ppDeliveryMount"></div>
                 <div class="pp-actions">
                     <a href="https://wa.me/{whatsapp_number}?text={wa_consult_msg}" class="pp-btn pp-btn-wa" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.456h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
@@ -2347,7 +2407,7 @@ def generate_pages(data):
                 </div>
                 <div class="pp-policies-micro">
                     <strong>Pagos:</strong> Pago Móvil · Transferencia Bancaria · Efectivo · Precios en Bs. al día<br>
-                    <strong>Envíos:</strong> Zoom, Tealca y MRW (cobro en destino) · <a href="/politicas">Políticas de devolución y garantías</a>
+                    <strong>Envíos:</strong> Zoom, Tealca, MRW y Domesa (cobro en destino) · <a href="/politicas">Políticas de devolución y garantías</a>
                 </div>
             </div>
         </section>
@@ -2363,7 +2423,7 @@ def generate_pages(data):
             </div>
             <div class="pp-strip-item">
                 <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-                <div><strong>Pagos y Envíos</strong><span>Pago Móvil, Transferencia Bancaria y Efectivo. Precios en Bs. al día. Envíos cobro en destino (Zoom, Tealca, MRW).</span></div>
+                <div><strong>Pagos y Envíos</strong><span>Pago Móvil, Transferencia Bancaria y Efectivo. Precios en Bs. al día. Envíos cobro en destino (Zoom, Tealca, MRW, Domesa).</span></div>
             </div>
             <div class="pp-strip-item">
                 <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
@@ -2380,7 +2440,7 @@ def generate_pages(data):
             </details>
             <details>
                 <summary>¿Dónde puedo retirar la pieza o cómo realizan los envíos nacionales?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
-                <p>Puedes retirar personalmente en nuestra tienda física en Boleíta Sur, Caracas, o solicitar envío nacional <strong>cobro en destino</strong> mediante <strong>Zoom, Tealca o MRW</strong>. Las tarifas y tiempos de entrega dependen directamente de las condiciones de la empresa de encomiendas elegida.</p>
+                <p>Puedes retirar personalmente en nuestra tienda física en Boleíta Sur, Caracas, o solicitar envío nacional <strong>cobro en destino</strong> mediante <strong>Zoom, Tealca, MRW o Domesa</strong>. Las tarifas y tiempos de entrega dependen directamente de las condiciones de la empresa de encomiendas elegida.</p>
             </details>
             <details>
                 <summary>¿Cuáles son las políticas de devolución y garantías?<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg></summary>
@@ -2736,7 +2796,7 @@ def generate_pages(data):
             desc_paragraph += f" Número de parte OEM: <strong>{escape_html(p_oem_raw)}</strong>."
         if unique_medidas:
             desc_paragraph += f" Presenta especificaciones técnicas de: <strong>{escape_html(' / '.join(unique_medidas))}</strong>."
-        desc_paragraph += " Puedes retirar este producto personalmente en nuestra sede física ubicada en Boleíta Sur, Caracas, o solicitar un envío nacional a través de agencias de encomienda confiables como Zoom, Tealca o MRW con cobro en destino."
+        desc_paragraph += " Puedes retirar este producto personalmente en nuestra sede física ubicada en Boleíta Sur, Caracas, o solicitar un envío nacional a través de agencias de encomienda confiables como Zoom, Tealca, MRW o Domesa con cobro en destino."
         
         desc_paragraph_clean = desc_paragraph.replace('<strong>', '').replace('</strong>', '')
         
@@ -3057,7 +3117,7 @@ def generate_vehicle_pages(base_url):
                     "filter": "D-MAX",
                     "card_id": "vehicle-dmax",
                     "h1": "Repuestos para tu Chevrolet Luv D-Max",
-                    "seo_paragraph": "Encuentra todos los repuestos para Chevrolet Luv D-Max (motores 2.4, 2.5, 3.0, 3.5) en Caracas. Ofrecemos amortiguadores, bujes, filtros, bombas de agua, kits de tiempo y partes de embrague con disponibilidad inmediata. Envíos nacionales rápidos con Zoom, Tealca y MRW."
+                    "seo_paragraph": "Encuentra todos los repuestos para Chevrolet Luv D-Max (motores 2.4, 2.5, 3.0, 3.5) en Caracas. Ofrecemos amortiguadores, bujes, filtros, bombas de agua, kits de tiempo y partes de embrague con disponibilidad inmediata. Envíos nacionales rápidos con Zoom, Tealca, MRW y Domesa."
                 },
                 {
                     "filename": "repuestos-isuzu-rodeo.html",
@@ -3138,8 +3198,8 @@ def generate_vehicle_pages(base_url):
                 # 8. Agregar JavaScript de filtro predeterminado (antes de app.min.js, con cualquier ?v=N)
                 filter_tag = f"<script>window.defaultVehicleFilter = '{v['filter']}';</script>"
                 v_content, n_subs = re.subn(
-                    r'(<script defer src="\./products\.js(?:\?v=[^"]*)?"></script>\s*)(<script defer src="\./app\.min\.js[^"]*"></script>)',
-                    lambda m: m.group(1) + filter_tag + "\n    " + m.group(2),
+                    r'(<script defer src="\./app\.min\.js[^"]*"></script>)',
+                    lambda m: filter_tag + "\n    " + m.group(1),
                     v_content,
                     count=1
                 )

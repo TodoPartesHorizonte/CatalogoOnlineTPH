@@ -514,13 +514,35 @@
                     `;
                 });
 
-                if (totalBs > 0) {
+                const deliveryFeeBs = (window.TPHDelivery && typeof window.TPHDelivery.getDeliveryFeeBs === 'function')
+                    ? window.TPHDelivery.getDeliveryFeeBs('cart')
+                    : 0;
+                if (totalBs > 0 || deliveryFeeBs > 0) {
                     const allPriced = cart.length > 0 && cart.every(i => Number(i.price_bs) > 0);
-                    const totalLabel = allPriced ? 'Total del Pedido:' : 'Subtotal Confirmado:';
-                    html += `
-                        <div style="padding: 14px; background: rgba(255, 106, 0, 0.08); border: 1px solid rgba(255, 106, 0, 0.2); border-radius: 10px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
+                    const totalLabel = deliveryFeeBs > 0
+                        ? (allPriced ? 'Repuestos:' : 'Subtotal repuestos:')
+                        : (allPriced ? 'Total del Pedido:' : 'Subtotal Confirmado:');
+                    const itemsRow = totalBs > 0 ? `
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-size: 13px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase;">${totalLabel}</span>
                             <span style="font-size: 18px; font-weight: 800; color: #ffffff; font-family: 'Outfit', sans-serif;">${formatBs(totalBs)}</span>
+                        </div>
+                    ` : '';
+                    const deliveryRow = deliveryFeeBs > 0 ? `
+                        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #6ee7a8; margin-top: ${totalBs > 0 ? '6px' : '0'};">
+                            <span>Delivery zona:</span>
+                            <strong>+${formatBs(deliveryFeeBs)}</strong>
+                        </div>
+                        ${totalBs > 0 ? `
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 8px; margin-top: 8px; border-top: 1px solid rgba(255,255,255,0.12);">
+                            <span style="font-size: 13px; font-weight: 800; color: #ffffff; text-transform: uppercase;">${allPriced ? 'Total con Delivery:' : 'Subtotal con Delivery:'}</span>
+                            <span style="font-size: 18px; font-weight: 800; color: #6ee7a8; font-family: 'Outfit', sans-serif;">${formatBs(totalBs + deliveryFeeBs)}</span>
+                        </div>` : ''}
+                    ` : '';
+                    html += `
+                        <div style="padding: 14px; background: rgba(255, 106, 0, 0.08); border: 1px solid rgba(255, 106, 0, 0.2); border-radius: 10px; margin-top: 12px;">
+                            ${itemsRow}
+                            ${deliveryRow}
                         </div>
                     `;
                 }
@@ -601,6 +623,11 @@
                 return;
             }
 
+            if (window.TPHDelivery && typeof window.TPHDelivery.validate === 'function') {
+                const check = window.TPHDelivery.validate('cart');
+                if (!check.valid) return;
+            }
+
             let totalBs = 0;
             let totalQty = 0;
             let pricedCount = 0;
@@ -641,14 +668,20 @@
                 msg += `   • ${metaParts.join(' | ')}\n\n`;
             });
 
+            const deliveryAddon = (window.TPHDelivery && typeof window.TPHDelivery.formatWhatsAppAddon === 'function')
+                ? window.TPHDelivery.formatWhatsAppAddon('cart', totalBs)
+                : '';
             const itemWord = totalQty === 1 ? '1 repuesto' : `${totalQty} repuestos`;
             if (allPriced && totalBs > 0) {
-                msg += `*Total (${itemWord}):* ${formatBs(totalBs)}\n\n`;
-                msg += `¿Me confirman disponibilidad y los datos de pago para concretar la compra? ¡Gracias!`;
+                msg += `*Total (${itemWord}):* ${formatBs(totalBs)}\n`;
+                if (deliveryAddon) msg += `${deliveryAddon}\n`;
+                msg += `\n¿Me confirman disponibilidad y los datos de pago para concretar la compra? ¡Gracias!`;
             } else if (totalBs > 0) {
-                msg += `*Subtotal confirmado:* ${formatBs(totalBs)} _(faltan repuestos por confirmar precio)_\n\n`;
-                msg += `¿Me confirman disponibilidad y el total final para concretar la compra? ¡Gracias!`;
+                msg += `*Subtotal confirmado:* ${formatBs(totalBs)} _(faltan repuestos por confirmar precio)_\n`;
+                if (deliveryAddon) msg += `${deliveryAddon}\n`;
+                msg += `\n¿Me confirman disponibilidad y el total final para concretar la compra? ¡Gracias!`;
             } else {
+                if (deliveryAddon) msg += `${deliveryAddon}\n\n`;
                 msg += `Quedo atento a su respuesta para concretar la compra. ¡Gracias!`;
             }
 
@@ -840,6 +873,30 @@
             };
             lightboxBadge.innerText = product.category;
             lightboxDesc.innerText = product.description;
+
+            window.__lbBaseWaMsg = '';
+            window.__lbPriceBs = 0;
+            window.__refreshLightboxWaHref = function () {
+                if (!lightboxActionBtn || !window.__lbBaseWaMsg) return;
+                const addon = (window.TPHDelivery && typeof window.TPHDelivery.formatWhatsAppAddon === 'function')
+                    ? window.TPHDelivery.formatWhatsAppAddon('lightbox', window.__lbPriceBs || 0)
+                    : '';
+                const finalMsg = addon ? `${window.__lbBaseWaMsg}\n${addon}` : window.__lbBaseWaMsg;
+                lightboxActionBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(finalMsg)}`;
+            };
+
+            const lbDelMount = document.getElementById('lightboxDeliveryMount');
+            if (lbDelMount && window.TPHDelivery) {
+                window.TPHDelivery.reset('lightbox');
+                window.TPHDelivery.mount('lightbox', lbDelMount, {
+                    basePath: './',
+                    onChange: () => {
+                        if (typeof window.__refreshLightboxWaHref === 'function') {
+                            window.__refreshLightboxWaHref();
+                        }
+                    }
+                });
+            }
 
             // Actualizar título y metadatos dinámicamente para indexabilidad SEO de Google
             window.originalTitle = window.originalTitle || document.title;
@@ -1367,6 +1424,8 @@
                         lightboxAddBtnEl.classList.add('btn-pending-selection');
                     }
                     window.currentSelectedVariant = null;
+                    window.__lbBaseWaMsg = '';
+                    window.__lbPriceBs = 0;
                     return;
                 } else {
                     if (lightboxActionBtn) {
@@ -1391,6 +1450,7 @@
                 const variantText = variantDetails ? ` (${variantDetails})` : '';
 
                 let waMsgText = '';
+                let currentPriceBs = 0;
                 if (isCombo) {
                     waMsgText = `¡Hola! Me gustaría cotizar y armar el combo promocional de: *${product.description}* (Categoría: *${product.category}*).\n¿Qué marcas y repuestos tienen disponibles para armarlo a mi medida?\nEnlace: ${cardUrl}`;
                 } else if (isOutOfStock) {
@@ -1398,11 +1458,14 @@
                 } else {
                     const targetPriceUsd = selectedVariant ? (selectedVariant.precio_usd || selectedVariant.precio_venta_usd) : 0;
                     const priceBs = calculatePriceBs(targetPriceUsd, tc);
+                    currentPriceBs = priceBs;
                     const priceFormatted = priceBs > 0 ? `\nPrecio: *${formatBs(priceBs)}*` : '';
                     waMsgText = `¡Hola! Estoy interesado en el repuesto: *${product.description}* (Categoría: *${product.category}*)${variantText}.${priceFormatted}\n¿Tienen disponibilidad?\nEnlace: ${cardUrl}`;
                 }
 
-                lightboxActionBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMsgText)}`;
+                window.__lbBaseWaMsg = waMsgText;
+                window.__lbPriceBs = currentPriceBs;
+                window.__refreshLightboxWaHref();
                 window.currentSelectedVariant = selectedVariant;
             }
 
@@ -1414,6 +1477,16 @@
                     e.preventDefault();
                     highlightPendingStep();
                     return false;
+                }
+                if (window.TPHDelivery && typeof window.TPHDelivery.validate === 'function') {
+                    const check = window.TPHDelivery.validate('lightbox');
+                    if (!check.valid) {
+                        e.preventDefault();
+                        return false;
+                    }
+                }
+                if (typeof window.__refreshLightboxWaHref === 'function') {
+                    window.__refreshLightboxWaHref();
                 }
                 trackEvent('consultar_producto_whatsapp', {
                     item_id: product.id,
@@ -3128,6 +3201,14 @@
             if (cartOverlay) {
                 cartOverlay.addEventListener('click', () => {
                     toggleCart(false);
+                });
+            }
+
+            const cartDeliveryMount = document.getElementById('cartDeliveryMount');
+            if (cartDeliveryMount && window.TPHDelivery) {
+                window.TPHDelivery.mount('cart', cartDeliveryMount, {
+                    basePath: './',
+                    onChange: () => renderCart()
                 });
             }
 

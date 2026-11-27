@@ -61,6 +61,7 @@
                     <span>Total de repuestos:</span>
                     <strong id="cartTotalItems">0</strong>
                 </div>
+                <div id="cartDeliveryMount"></div>
                 <button class="cart-submit-btn" id="cartSubmitBtn">
                     <svg viewBox="0 0 24 24" aria-hidden="true" style="width: 20px; height: 20px; fill: #fff; margin-right: 8px;">
                         <path d="${WA_ICON_PATH}"/>
@@ -313,13 +314,35 @@
                 `;
             });
 
-            if (totalBs > 0) {
+            const deliveryFeeBs = (window.TPHDelivery && typeof window.TPHDelivery.getDeliveryFeeBs === 'function')
+                ? window.TPHDelivery.getDeliveryFeeBs('cart')
+                : 0;
+            if (totalBs > 0 || deliveryFeeBs > 0) {
                 const allPriced = cart.length > 0 && cart.every(i => Number(i.price_bs) > 0);
-                const totalLabel = allPriced ? 'Total del Pedido:' : 'Subtotal Confirmado:';
-                html += `
-                    <div style="padding: 14px; background: rgba(255, 106, 0, 0.08); border: 1px solid rgba(255, 106, 0, 0.2); border-radius: 10px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
+                const totalLabel = deliveryFeeBs > 0
+                    ? (allPriced ? 'Repuestos:' : 'Subtotal repuestos:')
+                    : (allPriced ? 'Total del Pedido:' : 'Subtotal Confirmado:');
+                const itemsRow = totalBs > 0 ? `
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="font-size: 13px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase;">${totalLabel}</span>
                         <span style="font-size: 18px; font-weight: 800; color: #ffffff; font-family: 'Outfit', sans-serif;">${formatBs(totalBs)}</span>
+                    </div>
+                ` : '';
+                const deliveryRow = deliveryFeeBs > 0 ? `
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #6ee7a8; margin-top: ${totalBs > 0 ? '6px' : '0'};">
+                        <span>Delivery zona:</span>
+                        <strong>+${formatBs(deliveryFeeBs)}</strong>
+                    </div>
+                    ${totalBs > 0 ? `
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 8px; margin-top: 8px; border-top: 1px solid rgba(255,255,255,0.12);">
+                        <span style="font-size: 13px; font-weight: 800; color: #ffffff; text-transform: uppercase;">${allPriced ? 'Total con Delivery:' : 'Subtotal con Delivery:'}</span>
+                        <span style="font-size: 18px; font-weight: 800; color: #6ee7a8; font-family: 'Outfit', sans-serif;">${formatBs(totalBs + deliveryFeeBs)}</span>
+                    </div>` : ''}
+                ` : '';
+                html += `
+                    <div style="padding: 14px; background: rgba(255, 106, 0, 0.08); border: 1px solid rgba(255, 106, 0, 0.2); border-radius: 10px; margin-top: 12px;">
+                        ${itemsRow}
+                        ${deliveryRow}
                     </div>
                 `;
             }
@@ -358,6 +381,11 @@
             trackAnalyticsEvent('contacto_whatsapp', { origen: 'cart_empty_cta' });
             window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
             return;
+        }
+
+        if (window.TPHDelivery && typeof window.TPHDelivery.validate === 'function') {
+            const check = window.TPHDelivery.validate('cart');
+            if (!check.valid) return;
         }
 
         let totalBs = 0;
@@ -400,14 +428,20 @@
             msg += `   • ${metaParts.join(' | ')}\n\n`;
         });
 
+        const deliveryAddon = (window.TPHDelivery && typeof window.TPHDelivery.formatWhatsAppAddon === 'function')
+            ? window.TPHDelivery.formatWhatsAppAddon('cart', totalBs)
+            : '';
         const itemWord = totalQty === 1 ? '1 repuesto' : `${totalQty} repuestos`;
         if (allPriced && totalBs > 0) {
-            msg += `*Total (${itemWord}):* ${formatBs(totalBs)}\n\n`;
-            msg += `¿Me confirman disponibilidad y los datos de pago para concretar la compra? ¡Gracias!`;
+            msg += `*Total (${itemWord}):* ${formatBs(totalBs)}\n`;
+            if (deliveryAddon) msg += `${deliveryAddon}\n`;
+            msg += `\n¿Me confirman disponibilidad y los datos de pago para concretar la compra? ¡Gracias!`;
         } else if (totalBs > 0) {
-            msg += `*Subtotal confirmado:* ${formatBs(totalBs)} _(faltan repuestos por confirmar precio)_\n\n`;
-            msg += `¿Me confirman disponibilidad y el total final para concretar la compra? ¡Gracias!`;
+            msg += `*Subtotal confirmado:* ${formatBs(totalBs)} _(faltan repuestos por confirmar precio)_\n`;
+            if (deliveryAddon) msg += `${deliveryAddon}\n`;
+            msg += `\n¿Me confirman disponibilidad y el total final para concretar la compra? ¡Gracias!`;
         } else {
+            if (deliveryAddon) msg += `${deliveryAddon}\n\n`;
             msg += `Quedo atento a su respuesta para concretar la compra. ¡Gracias!`;
         }
 
@@ -438,6 +472,14 @@
 
         const overlay = document.getElementById('cartOverlay');
         if (overlay) overlay.addEventListener('click', () => toggleCart(false));
+
+        const cartDeliveryMount = document.getElementById('cartDeliveryMount');
+        if (cartDeliveryMount && window.TPHDelivery) {
+            window.TPHDelivery.mount('cart', cartDeliveryMount, {
+                basePath: '../',
+                onChange: () => renderCart()
+            });
+        }
 
         const submitBtn = document.getElementById('cartSubmitBtn');
         if (submitBtn) submitBtn.addEventListener('click', sendCartToWhatsApp);
