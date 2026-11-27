@@ -951,7 +951,7 @@ def generate_pages(data):
     }}
     </script>{ga_script}
     <link rel="preload" href="../assets/fonts/outfit-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <script defer src="../cart.js?v=2"></script>
+    <script defer src="../cart.js?v=3"></script>
     <style>
         @font-face {{
             font-family: 'Outfit';

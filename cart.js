@@ -314,9 +314,11 @@
             });
 
             if (totalBs > 0) {
+                const allPriced = cart.length > 0 && cart.every(i => Number(i.price_bs) > 0);
+                const totalLabel = allPriced ? 'Total del Pedido:' : 'Subtotal Confirmado:';
                 html += `
                     <div style="padding: 14px; background: rgba(255, 106, 0, 0.08); border: 1px solid rgba(255, 106, 0, 0.2); border-radius: 10px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
-                        <span style="font-size: 13px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase;">Total Estimado:</span>
+                        <span style="font-size: 13px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase;">${totalLabel}</span>
                         <span style="font-size: 18px; font-weight: 800; color: #ffffff; font-family: 'Outfit', sans-serif;">${formatBs(totalBs)}</span>
                     </div>
                 `;
@@ -359,9 +361,23 @@
         }
 
         let totalBs = 0;
-        let msg = `¡Hola TODO PARTES HORIZONTE! Vengo desde su catálogo web y me gustaría cotizar/pedir los siguientes repuestos:\n\n`;
+        let totalQty = 0;
+        let pricedCount = 0;
+        cart.forEach(item => {
+            totalQty += item.quantity;
+            if (Number(item.price_bs) > 0) pricedCount += 1;
+        });
+        const allPriced = pricedCount === cart.length;
+
+        let msg = allPriced
+            ? `¡Hola TODO PARTES HORIZONTE! Quiero realizar el siguiente pedido desde su catálogo web:\n\n`
+            : pricedCount > 0
+                ? `¡Hola TODO PARTES HORIZONTE! Quiero armar el siguiente pedido desde su catálogo web:\n\n`
+                : `¡Hola TODO PARTES HORIZONTE! Vengo desde su catálogo web y quiero confirmar precio y disponibilidad de:\n\n`;
+
         cart.forEach((item, index) => {
-            const subtotalBs = (item.price_bs || 0) * item.quantity;
+            const unitBs = Number(item.price_bs) || 0;
+            const subtotalBs = unitBs * item.quantity;
             totalBs += subtotalBs;
 
             const details = [];
@@ -369,17 +385,31 @@
             if (item.lado) details.push(`Lado: ${item.lado}`);
             if (item.tipo) details.push(`Tipo: ${item.tipo}`);
             if (item.medida) details.push(`Medida: ${item.medida}`);
-            const detailText = details.length > 0 ? ` (${details.join(' | ')})` : '';
-            const priceText = item.price_bs ? ` | Precio: ${formatBs(subtotalBs)}` : '';
 
-            msg += `*${index + 1}.* ${item.description}${detailText}\n`;
-            msg += `    *Cantidad:* ${item.quantity} pc(s) | *Categoría:* _${item.category}_${priceText}\n\n`;
+            const qtyStr = unitBs > 0 && item.quantity > 1
+                ? `Cant.: ${item.quantity} (${formatBs(unitBs)} c/u)`
+                : `Cant.: ${item.quantity}`;
+            const pricePart = unitBs > 0 ? `*${formatBs(subtotalBs)}*` : `Precio: Por confirmar`;
+
+            const metaParts = [];
+            if (details.length > 0) metaParts.push(details.join(' · '));
+            metaParts.push(qtyStr);
+            metaParts.push(pricePart);
+
+            msg += `*${index + 1}.* ${item.description}\n`;
+            msg += `   • ${metaParts.join(' | ')}\n\n`;
         });
 
-        if (totalBs > 0) {
-            msg += `*Monto Total Estimado:* ${formatBs(totalBs)}\n\n`;
+        const itemWord = totalQty === 1 ? '1 repuesto' : `${totalQty} repuestos`;
+        if (allPriced && totalBs > 0) {
+            msg += `*Total (${itemWord}):* ${formatBs(totalBs)}\n\n`;
+            msg += `¿Me confirman disponibilidad y los datos de pago para concretar la compra? ¡Gracias!`;
+        } else if (totalBs > 0) {
+            msg += `*Subtotal confirmado:* ${formatBs(totalBs)} _(faltan repuestos por confirmar precio)_\n\n`;
+            msg += `¿Me confirman disponibilidad y el total final para concretar la compra? ¡Gracias!`;
+        } else {
+            msg += `Quedo atento a su respuesta para concretar la compra. ¡Gracias!`;
         }
-        msg += `Quedo atento a su respuesta para concretar la compra. ¡Muchas gracias!`;
 
         trackAnalyticsEvent('enviar_pedido_whatsapp', {
             currency: 'VES',
